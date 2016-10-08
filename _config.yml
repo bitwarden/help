@@ -1,0 +1,12 @@
+markdown: kramdown
+permalink: pretty
+encoding: UTF-8
+
+collections:
+  categories:
+    output: true
+    permalink: /:path/
+  articles:
+    output: true
+    permalink: /:path/
+    
