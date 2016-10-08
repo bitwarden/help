@@ -1,5 +1,5 @@
 ---
 layout: category
-category: getting-started
+title: Getting Started
 featured: true
 ---
