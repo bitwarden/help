@@ -1,26 +1,84 @@
 ---
 ---
 
+$brand-primary: #3c8dbc;
+$brand-danger: #dd4b39;
+$brand-success: #00a65a;
+$brand-info: #555555;
+$brand-warning: #f39c12;
+$brand-primary-accent: #286090;
+$brand-secondary: #2c3e50;
+$brand-dark-accent: #222d32;
+
+$font-size-base: 15px;
+$font-family-sans-serif: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$headings-font-family: "Open Sans", sans-serif;
+$text-color: $brand-secondary;
+$gray-lighter: lighten(#000, 93.5%);
+
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
 }
 
 body {
-  margin-bottom: 60px;
-  padding-top: 51px;
+    margin-bottom: 60px;
+    padding-top: 51px;
+    font-family: $font-family-sans-serif;
+    font-size: 15px;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: $headings-font-family;
+    margin-top: 0;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+a {
+    color: $brand-primary;
+}
+
+.navbar-inverse {
+    background-color: $brand-dark-accent;
+    color: white;
+
+    .navbar-brand {
+        font-family: $headings-font-family;
+
+        .navbar-nav > li > a {
+            color: white;
+        }
+    }
+
+    .navbar-brand, .navbar-nav > li > a {
+        color: white;
+    }
 }
 
 .search-header {
-    background: lightblue;
+    background-color: $brand-primary;
     padding: 50px 0;
     margin-bottom: 20px;
+    color: white;
 }
 
 footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 60px;
-  background-color: lightgray;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: $brand-dark-accent;
+    color: white;
+    padding: 8px 0;
 }
