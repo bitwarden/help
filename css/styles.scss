@@ -27,7 +27,7 @@ body {
     font-family: $font-family-sans-serif;
     font-size: 15px;
     background-color: #fafafa;
-    
+
     @media(min-width:768px) {
         margin-bottom: 101px;
     }
@@ -70,6 +70,14 @@ a {
         &:hover, &:focus {
             text-decoration: underline;
         }
+    }
+
+    .navbar-toggle {
+        border-color: darken($brand-dark-accent, 5%);
+    }
+
+    .navbar-toggle:focus, .navbar-toggle:hover {
+        background-color: $brand-secondary;
     }
 }
 
@@ -147,4 +155,10 @@ footer {
 
 .breadcrumb {
     border: 1px solid #ddd;
+}
+
+@media (max-width: 767px) {
+    .fa-support.visible-xs {
+        display: inline-block !important;
+    }
 }
