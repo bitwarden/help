@@ -3,7 +3,7 @@ layout: article
 title: Changing Your Master Password
 category: Getting Started
 featured: true
-popular: true
+popular: false
 tags: [password, account]
 ---
 
