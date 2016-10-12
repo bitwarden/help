@@ -150,6 +150,18 @@ footer {
         margin-bottom: 0;
         margin-left: 0;
         padding-left: 20px;
+
+        li + li {
+            margin-top: 0.25em;
+        }
+    }
+}
+
+.panel-article {
+    ul, ol {
+        li + li {
+            margin-top: 0.45em;
+        }
     }
 }
 
