@@ -51,8 +51,30 @@
     {{content}}
 
     <footer class="text-center">
-        &copy; Copyright  2015 - {{'now' | date: "%Y"}}<br />
-        8bit Solutions LLC
+        <div class="container">
+            <ul class="list-inline social-buttons">
+                <li>
+                    <a href="https://www.facebook.com/bitwarden/" onclick="gaEvent('Social Facebook')"
+                       title="Like us on Facebook" target="_blank" class="btn-social btn-outline">
+                        <i class="fa fa-fw fa-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://plus.google.com/114869903467947368993" onclick="gaEvent('Social Google+')"
+                       title="Follow us on Google Plus" target="_blank" class="btn-social btn-outline">
+                        <i class="fa fa-fw fa-google-plus"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/bitwarden_app" onclick="gaEvent('Social Twitter')"
+                       title="Follow us on Twitter" target="_blank" class="btn-social btn-outline">
+                        <i class="fa fa-fw fa-twitter"></i>
+                    </a>
+                </li>
+            </ul>
+            &copy; Copyright  2015 - {{ 'now' | date: "%Y" }}<br />
+            8bit Solutions LLC
+        </div>
     </footer>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>

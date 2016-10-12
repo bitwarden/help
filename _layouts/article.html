@@ -2,6 +2,18 @@
 layout: default
 ---
 
-<div class="container">
-    {{content}}
+<div class="container container-content">
+    <ol class="breadcrumb">
+        <li><a href="/">Help Center</a></li>
+        <li><a href="/{{page.category | slugify}}/">{{page.category}}</a></li>
+        <li class="active">{{page.title}}</li>
+    </ol>
+    <div class="panel panel-default panel-article">
+        <div class="panel-heading">
+            <h3 class="panel-title"><i class="fa fa-file-text-o"></i> {{page.title}}</h3>
+        </div>
+        <div class="panel-body">
+            {{content}}
+        </div>
+    </div>
 </div>

@@ -3,9 +3,34 @@ layout: default
 title: Search Results
 ---
 
-<div class="container">
-    <ul id="search-results"></ul>
+<div class="search-header">
+    <div class="container">
+        <form action="/search/" method="get">
+            <div class="input-group">
+                <input type="search" id="search-box" class="form-control input-lg"
+                       placeholder="Type your problem here..." name="q">
+                <span class="input-group-btn">
+                    <button class="btn btn-lg btn-default" type="submit">Search</button>
+                </span>
+            </div>
+        </form>
+    </div>
 </div>
+<div class="container">
+    <ol class="breadcrumb">
+        <li><a href="/">Help Center</a></li>
+        <li class="active">{{page.title}}</li>
+    </ol>
+    <div class="panel panel-default panel-articles">
+        <div class="panel-heading">
+            <h3 class="panel-title"><i class="fa fa-search"></i> {{page.title}} for "<span id="search-term"></span>"</h3>
+        </div>
+        <div class="panel-body">
+            <ul id="search-results"></ul>
+        </div>
+    </div>
+</div>
+
 
 <script src="/scripts/lunr.min.js"></script>
 <script>
@@ -30,14 +55,14 @@ title: Search Results
 
                 for (var i = 0; i < results.length; i++) {  // Iterate over the results
                     var item = store[results[i].ref];
-                    appendString += '<li><a href="' + item.url + '"><h3>' + item.title + '</h3></a>';
-                    appendString += '<p>' + item.content.substring(0, 150) + '...</p></li>';
+                    appendString += '<li><a href="' + item.url + '">' + item.title + '</a>';
+                    appendString += '<p class="text-muted small">' + item.content.substring(0, 300) + '...</p></li>';
                 }
 
                 searchResults.innerHTML = appendString;
             }
             else {
-                searchResults.innerHTML = '<li>No results found</li>';
+                searchResults.innerHTML = '<li>No results found. Try another search term.</li>';
             }
         }
 
@@ -57,7 +82,8 @@ title: Search Results
         var searchTerm = getQueryVariable('q');
 
         if (searchTerm) {
-            //document.getElementById('search-box').setAttribute("value", searchTerm);
+            document.getElementById('search-box').setAttribute("value", searchTerm);
+            document.getElementById('search-term').innerText = searchTerm;
 
             // Initalize lunr with the fields it will be searching on. I've given title
             // a boost of 10 to indicate matches on this field are more important.
@@ -79,6 +105,9 @@ title: Search Results
                 var results = idx.search(searchTerm); // Get lunr to perform a search
                 displaySearchResults(results, window.store); // We'll write this in the next section
             }
+        }
+        else {
+            displaySearchResults([], window.store);
         }
     })();
 </script>

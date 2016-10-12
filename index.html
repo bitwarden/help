@@ -20,9 +20,9 @@ title: Help, FAQ, and Support
         <div class="col-md-8">
             {% for category in site.categories %}
             {% if category.featured == true %}
-            <div class="panel panel-default">
+            <div class="panel panel-default panel-articles">
                 <div class="panel-heading">
-                    <h3 class="panel-title"><i class="fa fa-newspaper-o"></i> {{category.title}}</h3>
+                    <h3 class="panel-title"><i class="fa fa-folder-open"></i> {{category.title}}</h3>
                 </div>
                 <div class="panel-body">
                     <ul>
@@ -38,11 +38,11 @@ title: Help, FAQ, and Support
             {% endfor %}
         </div>
         <div class="col-md-4">
-            <div class="panel panel-default">
+            <div class="panel panel-default panel-articles">
                 <div class="panel-heading">
-                    <h3 class="panel-title"><i class="fa fa-newspaper-o"></i> Categories</h3>
+                    <h3 class="panel-title"><i class="fa fa-list-alt"></i> Categories</h3>
                 </div>
-                <div class="panel-body">
+                <div class="panel-body small">
                     <ul>
                         {% for category in site.categories %}
                         <li><a href="{{category.url}}">{{category.title}}</a></li>
@@ -50,11 +50,11 @@ title: Help, FAQ, and Support
                     </ul>
                 </div>
             </div>
-            <div class="panel panel-default">
+            <div class="panel panel-default panel-articles">
                 <div class="panel-heading">
-                    <h3 class="panel-title"><i class="fa fa-newspaper-o"></i> Popular</h3>
+                    <h3 class="panel-title"><i class="fa fa-star"></i> Popular</h3>
                 </div>
-                <div class="panel-body">
+                <div class="panel-body small">
                     <ul>
                         {% for article in site.articles %}
                         {% if article.popular == true %}
