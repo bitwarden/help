@@ -1,6 +1,7 @@
 markdown: kramdown
 permalink: pretty
 encoding: utf-8
+port: 4009
 
 exclude: [node_modules, ./bitwarden-help.sln]
 
