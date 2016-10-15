@@ -159,8 +159,10 @@ footer {
 
 .panel-article {
     ul, ol {
-        li + li {
-            margin-top: 0.45em;
+        li + li,
+        ul li:first-child,
+        ol li:first-child {
+            margin-top: 0.40em;
         }
     }
 }

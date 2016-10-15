@@ -10,7 +10,7 @@ tags: [encryption]
 bitwarden uses [AES][aes] 256 bit encryption as well as [PBKDF2][pbkdf2] to secure your data.
 
 [AES][aes] is used by the US government and other government agencies around the world for protecting top secret data. With
-proper implementation and a strong encryption key (your master password), it is considered unbreakable.
+proper implementation and a strong encryption key (your master password), AES is considered unbreakable.
 
 [PBKDF2][pbkdf2] is used to derive the encryption key from your master password. This key is then salted and hashed.
 
