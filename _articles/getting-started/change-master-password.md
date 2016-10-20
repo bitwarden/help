@@ -2,9 +2,9 @@
 layout: article
 title: Changing Your Master Password
 category: Getting Started
-featured: true
+featured: false
 popular: false
 tags: [password, account]
 ---
 
-This is how you change your master password.
+Coming soon...
