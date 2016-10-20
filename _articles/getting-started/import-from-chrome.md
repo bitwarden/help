@@ -11,13 +11,13 @@ Importing your data from Google Chrome into bitwarden is easy.
 
 **Export Your Chrome Passwords**
 
-1. Open Chrome and enter [`chrome://flags/#password-import-export`][flags] into the address bar and press enter (or just click
-   [this link][flags]). This will open the Chrome system flags page.
+1. Open Chrome and enter `chrome://flags/#password-import-export` into the address bar and press enter. This will open 
+   the Chrome system flags page.
 2. Look for the "Password import and export" option and change the dropdown option to "Enabled".
 3. A prompt will pop up from the bottom asking you to "Relaunch Now". Click the button to restart the browser so that the
    changes can take effect.
-4. After relaunching the browser, enter [`chrome://settings/passwords`][passwords] into the address bar and press enter (or
-   just click [this link][passwords]). This will open a window with all your saved passwords for Chrome.
+4. After relaunching the browser, enter `chrome://settings/passwords` into the address bar and press enter. This will
+   open a window with all your saved passwords for Chrome.
 5. Scroll down through the list and look for the "Export" and "Import" buttons at the end of the list.
 6. Click the "Export" button. You'll be prompted to enter your computer's password for authorization.
 7. Once your computer's password is entered and validated, you can save your passwords to a [CSV][csv] file on your
@@ -33,7 +33,5 @@ Importing your data from Google Chrome into bitwarden is easy.
 
 Congraulations! You have just transferred all of your data from Google Chrome into bitwarden.
 
-[flags]: chrome://flags/#password-import-export
-[passwords]: chrome://settings/passwords
 [csv]: https://en.wikipedia.org/wiki/Comma-separated_values
 [bitwarden-vault]: https://vault.bitwarden.com
