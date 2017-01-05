@@ -26,7 +26,13 @@ Importing your data from 1Password into bitwarden is easy. 1Password has two ver
 
 1. Open the 1Password 6 desktop application on your computer and enter your 1Password master password to unlock
    your vault.
-2. 
+2. Select the items you want to export. Select multiple items by holding down the Ctrl key (Command on macOS) when
+   clicking on them. Select all of the items by pressing Ctrl+A (Command+A on macOS) after clicking one of the items
+   in the list.
+3. Click the gear icon in the top right corner and then "Export".
+4. Select the format "Comma Delimited Text (.csv)".
+5. Select a folder to save your export file to (recommended to use your desktop folder). Enter a file name and click
+   Save.
 
 **Import Your 1Password Logins Into bitwarden**
 
