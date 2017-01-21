@@ -54,8 +54,8 @@ This set of instructions is only for:
 
 1. Go to the [bitwarden web vault][bitwarden-vault] and log in.
 2. Navigate to "Tools" > "Import".
-3. Select "1Password 4 (1pif)" or "1Password 6 (csv)" as the source (depending on which path you followed above) and
-   select your data file from the desktop that you created in the last step from above.
+3. Select "1Password (1pif)" or "1Password 6 Windows (csv)" as the source (depending on which path you followed above)
+   and select your data file from the desktop that you created in the last step from above.
 4. Click the "Import" button.
 
 Congratulations! You have just transferred your data from 1Password into bitwarden.
