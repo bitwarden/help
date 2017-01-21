@@ -8,11 +8,21 @@ tags: [import, 1password]
 ---
 
 Importing your data from 1Password into bitwarden is easy. 1Password has two versions of their application:
-1Password 4 and 1Password 6. Depending on which version you are using, follow the proper steps below.
+1Password 4 and 1Password 6. Depending on which operation system and version of 1Password and you are using,
+follow the proper steps below.
 
-**Export Your 1Password 4 Logins**
+**Export Your 1Password 1pif Logins**
 
-1. Open the 1Password 4 desktop application on your computer and enter your 1Password master password to unlock
+```
+!!!!!! IMPORTANT !!!!!!
+This set of instructions is only for:
+- 1Password 4 users on macOS and Windows
+- 1Password 6 users on macOS
+
+These instructions may vary slightly for macOS users.
+```
+
+1. Open the 1Password desktop application on your computer and enter your 1Password master password to unlock
    your vault.
 2. Select the vault that you wish to export. It is not possible to export from "All Vaults", so you'll need to switch
    to a specific vault.
@@ -22,7 +32,13 @@ Importing your data from 1Password into bitwarden is easy. 1Password has two ver
 6. Select a folder to save your export file to (recommended to use your desktop folder). Click save to export your
    .1pif data file.
 
-**Export Your 1Password 6 Logins**
+**Export Your 1Password 6 csv Logins From Windows**
+
+```
+!!!!!! IMPORTANT !!!!!!
+This set of instructions is only for:
+- 1Password 6 users on Windows
+```
 
 1. Open the 1Password 6 desktop application on your computer and enter your 1Password master password to unlock
    your vault.
