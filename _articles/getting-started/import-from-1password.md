@@ -8,7 +8,7 @@ tags: [import, 1password]
 ---
 
 Importing your data from 1Password into bitwarden is easy. 1Password has two versions of their application:
-1Password 4 and 1Password 6. Depending on which operation system and version of 1Password and you are using,
+1Password 4 and 1Password 6. Depending on which operating system and version of 1Password and you are using,
 follow the proper steps below.
 
 **Export Your 1Password 1pif Logins**
