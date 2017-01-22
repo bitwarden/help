@@ -183,8 +183,8 @@ footer {
     padding-left: 20px;
 }
 
-ul + p, ol + p {
-    margin-top: 20px;
+.panel-article .alert ul + p, .panel-article .alert ol + p {
+    margin-top: 15px;
 }
 
 @media (max-width: 767px) {
