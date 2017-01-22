@@ -23,7 +23,7 @@ Importing your data from LastPass into bitwarden is easy.
 
 ```
 !!!!!! IMPORTANT !!!!!!
-If you are using the Chrome extension, export through the web vault instead (above)
+If you are using the LastPass Chrome extension, it is preferred to export through the LastPass web vault in order to avoid known bugs with the extension exporter.
 ```
 
 1. Click the LastPass icon in your browser and navigate to "More Options" > "Advanced" > "Export" > "LastPass CSV File".
