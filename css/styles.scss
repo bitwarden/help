@@ -175,6 +175,18 @@ footer {
     border: 1px solid #ddd;
 }
 
+.panel-article .alert {
+    margin-top: 18px;
+}
+
+.panel-article .alert ul, .panel-article .alert ol {
+    padding-left: 20px;
+}
+
+ul + p, ol + p {
+    margin-top: 20px;
+}
+
 @media (max-width: 767px) {
     .fa-support.visible-xs {
         display: inline-block !important;

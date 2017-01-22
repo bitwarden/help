@@ -13,10 +13,10 @@ follow the proper steps below.
 
 **Export Your 1Password 1pif Logins**
 
-<div class="alert alert-info" style="margin-top:18px;">
+<div class="alert alert-info">
     <p>This set of instructions is only for:</p>
     <ul><li>1Password 4 users on macOS and Windows</li><li>1Password 6 users on macOS</li></ul>
-    <br><p>These instructions may vary slightly for macOS users.</p>
+    <p>These instructions may vary slightly for macOS users.</p>
 </div>
 
 1. Open the 1Password desktop application on your computer and enter your 1Password master password to unlock
@@ -31,7 +31,7 @@ follow the proper steps below.
 
 **Export Your 1Password 6 csv Logins From Windows**
 
-<div class="alert alert-info" style="margin-top:18px;">
+<div class="alert alert-info">
     <p>This set of instructions is only for:</p>
     <ul><li>1Password 6 users on Windows</li></ul>
 </div>
