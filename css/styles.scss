@@ -176,15 +176,15 @@ footer {
 }
 
 .panel-article .alert {
-    margin-top: 18px;
-}
+    ul, ol {
+        li {
+            margin: 0;
+        }
+    }
 
-.panel-article .alert ul, .panel-article .alert ol {
-    padding-left: 20px;
-}
-
-.panel-article .alert ul + p, .panel-article .alert ol + p {
-    margin-top: 15px;
+    p + *, ul + *, ol + * {
+        margin-top: 10px;
+    }
 }
 
 @media (max-width: 767px) {
