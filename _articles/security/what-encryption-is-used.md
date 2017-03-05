@@ -24,7 +24,7 @@ written and maintined by cryptography experts. The following crypto libraries ar
   - Javax.Crypto (Android, Oracle)
   - [BouncyCastle][bouncy] (Android)
 
-bitwarden **always** encrypts and/or hashes your data on your local device before it is every sent to the cloud servers for
+bitwarden **always** encrypts and/or hashes your data on your local device before it is ever sent to the cloud servers for
 syncing. The bitwarden servers are only used for storing encrypted data. It is not possible to get your unencrypted data from
 the bitwarden cloud servers.
 
