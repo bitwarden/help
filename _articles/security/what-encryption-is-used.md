@@ -15,10 +15,11 @@ proper implementation and a strong encryption key (your master password), AES is
 [PBKDF2][pbkdf2] is used to derive the encryption key from your master password. This key is then salted and hashed.
 
 bitwarden does not write any crypto code. bitwarden only invokes crypto from popular and reputable crypto libraries that are
-written and maintined by cryptography experts. The following crypto libraries are used:
+written and maintained by cryptography experts. The following crypto libraries are used:
 
 - Javascript (web and browser extension vaults)
-  - [SJCL][sjcl]
+  - [Forge][forge]
+  - [Web Crypto][webcrypto]
 - C# (mobile vault)
   - CommonCrypto (iOS, Apple)
   - Javax.Crypto (Android, Oracle)
@@ -30,5 +31,6 @@ the bitwarden cloud servers.
 
 [aes]: https://en.wikipedia.org/wiki/Advanced_Encryption_Standard
 [pbkdf2]: https://en.wikipedia.org/wiki/PBKDF2
-[sjcl]: https://crypto.stanford.edu/sjcl/
+[forge]: https://github.com/digitalbazaar/forge
+[webcrypto]: https://w3c.github.io/webcrypto/Overview.html
 [bouncy]: http://www.bouncycastle.org/csharp/

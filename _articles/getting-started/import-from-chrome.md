@@ -31,7 +31,7 @@ Importing your data from Google Chrome into bitwarden is easy.
    above.
 4. Click the "Import" button.
 
-Congraulations! You have just transferred all of your data from Google Chrome into bitwarden.
+Congratulations! You have just transferred all of your data from Google Chrome into bitwarden.
 
 [csv]: https://en.wikipedia.org/wiki/Comma-separated_values
 [bitwarden-vault]: https://vault.bitwarden.com

@@ -12,6 +12,6 @@ comes from the fact that [we rely on managed services and do not manage our clou
 
 However, if for some reason bitwarden were to get hacked and your data was exposed, your information is still protected. This is
 because bitwarden uses strong encryption and one-way salted hashing. As long as you use a strong master password, your data is
-safe no matter who gets ahold of it.
+safe no matter who gets hold of it.
 
 [cloud]: https://help.bitwarden.com/security/cloud-server-security/

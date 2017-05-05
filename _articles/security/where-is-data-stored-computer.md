@@ -21,6 +21,6 @@ Your encrypted data can be found on your computer/device in the following locati
   - `/data/data/com.x8bit.bitwarden/`
 
 You data is also automatically synced to our [cloud servers][cloud]. In the event that you need to recover your data due to
-a device crash, simply reinstall the bitwarden application and log in and your data will be resynced.
+a device crash, simply reinstall the bitwarden application and log in and your data will be re-synced.
 
 [cloud]: https://help.bitwarden.com/security/where-is-data-stored-cloud/

@@ -7,7 +7,7 @@ popular: false
 tags: [encryption]
 ---
 
-bitwarden takes security very seriously when it comes to handling your sensative data. Your data is never sent to the
+bitwarden takes security very seriously when it comes to handling your sensitive data. Your data is never sent to the
 bitwarden cloud servers without first being encrypted on your local device using [AES][aes] 256 bit encryption. You can read
 more about bitwarden encryption [here][encryption]. bitwarden never stores meaningful data on its servers.
 
