@@ -14,7 +14,7 @@ Run the following commands:
 - `jekyll build`
 - `jekyll serve`
 
-You can now access the help center at `localhost:4009`.
+You can now access the help center at `http://localhost:4009`.
 
 # Contribute
 
