@@ -7,11 +7,12 @@ popular: false
 tags: [password, account]
 ---
 
-The master password can only be changed from the [web](https://vault.bitwarden.com) vault.
+The master password can only be changed from the [web vault](https://vault.bitwarden.com).
 
-1. Log in to the [web vault](https://vault.bitwarden.com)
+1. Log in to the [web vault](https://vault.bitwarden.com) at https://vault.bitwarden.com.
 2. Click **Settings** on the sidebar 
-3. Click **Change Master Password** under the **Master Password** section
+3. Click **Change Master Password** under the **Master Password** panel
 4. Type in your current password, the new password you want, and then re-type to confirm
 5. Click **Change Password**
-6. Log in to confirm that your new password is working
+   - Note that you will be logged out after changing your password.
+6. Log back in to confirm that your new password is working
