@@ -16,3 +16,5 @@ The master password can only be changed from the [web vault](https://vault.bitwa
 5. Click **Change Password**
    - Note that you will be logged out after changing your password.
 6. Log back in to confirm that your new password is working
+7. Log out and back in any other bitwarden applications that you are using.
+   - You will eventually be logged out automatically.
