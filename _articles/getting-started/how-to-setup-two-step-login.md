@@ -14,9 +14,9 @@ Two-step login (or two-factor authentication) can only be configured from the [w
 3. Click **Manage Two-step Log in** under the **Two-step Log In** panel  
 4. Type in your current password and click **Continue**
 5. Follow the steps that appear
-   - Download a two-step verification app. We recommend [Authy](https://authy.com/).
+   - Download a two-step verification app (usually on your mobile device). We recommend [Authy](https://authy.com/).
    - Scan the QR code with the verification app.
-   - Enter verification code from the app.
+   - Enter the verification code from the app.
 6. Click **Enable Two-step**. Note:
    - A green alert will appear at the top stating that two-step login has been enabled; and
    - **Very Important**: An orange alert will appear at the bottom with a recovery code
