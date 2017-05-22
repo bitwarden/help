@@ -4,10 +4,15 @@ layout: default
 
 <content>
     <div class="container">
-        <h1 class="page-header"><i class="fa fa-file-text-o"></i> {{page.title}}</h1>
-        <article>
-            {{content}}
-        </article>
+        <h1 class="page-header">
+            <i class="fa fa-file-text-o"></i>
+            {{page.title}}
+        </h1>
+        <div class="panel panel-default panel-article">
+            <div class="panel-body">
+                {{content}}
+            </div>
+        </div>
         <div class="row">
             <div class="col-sm-6">
                 <div class="panel panel-default panel-contact">

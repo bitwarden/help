@@ -18,10 +18,11 @@ layout: default
     <div class="container">
         <div class="row">
             <div class="col-md-8">
-                <div class="panel panel-default panel-articles">
-                    <div class="panel-heading">
-                        <h3 class="panel-title"><i class="fa fa-folder-open"></i> {{page.title}}</h3>
-                    </div>
+                <h1 class="page-header">
+                    <i class="fa fa-folder-open"></i>
+                    {{page.title}}
+                </h1>
+                <div class="panel panel-default panel-article">
                     <div class="panel-body">
                         <ol>
                             {% for article in site.articles %}

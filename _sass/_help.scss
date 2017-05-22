@@ -124,6 +124,12 @@ article {
 
 .page-header {
     margin-top: 0;
+    padding-left: 50px;
+
+    i {
+        float: left;
+        margin-left: -50px;
+    }
 }
 
 h1, h2, h3, h4, h5, h6 {
