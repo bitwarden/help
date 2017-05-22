@@ -2,41 +2,32 @@
 layout: default
 ---
 
-<content>
-    <div class="container">
-        <h1 class="page-header">
-            <i class="fa fa-file-text-o"></i>
-            {{page.title}}
-        </h1>
-        <div class="panel panel-default panel-article">
-            <div class="panel-body">
-                {{content}}
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-6">
-                <div class="panel panel-default panel-contact">
-                    <div class="panel-heading">
-                        <h3 class="panel-title"><i class="fa fa-file-text-o"></i> Was this helpful?</h3>
-                    </div>
-                    <div class="panel-body">
-                        <div class="rw-ui-container"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <div class="panel panel-default panel-contact">
-                    <div class="panel-heading">
-                        <h3 class="panel-title"><i class="fa fa-file-text-o"></i> Email Us</h3>
-                    </div>
-                    <div class="panel-body">
-                        Want to talk to a human?
-                    </div>
-                </div>
-            </div>
+<div class="container">
+    <h1 class="page-header">
+        <i class="fa fa-file-text-o"></i>
+        {{page.title}}
+    </h1>
+    <div class="panel panel-default panel-article">
+        <div class="panel-body">
+            {{content}}
         </div>
     </div>
-</content>
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="panel panel-default panel-contact">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><i class="fa fa-thumbs-o-up"></i> Was this helpful?</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="rw-ui-container"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            {% include contact.html %}
+        </div>
+    </div>
+</div>
 
 <script>
     (function (d, t, e, m) {

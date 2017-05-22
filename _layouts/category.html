@@ -2,49 +2,23 @@
 layout: default
 ---
 
-<header>
-    <div class="container">
-        <form action="/search/" method="get">
-            <div class="input-group">
-                <input type="search" class="form-control input-lg" placeholder="Type your problem here..." name="q">
-                <span class="input-group-btn">
-                    <button class="btn btn-lg btn-default" type="submit">Search</button>
-                </span>
-            </div>
-        </form>
-    </div>
-</header>
-<content>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8">
-                <h1 class="page-header">
-                    <i class="fa fa-folder-open"></i>
-                    {{page.title}}
-                </h1>
-                <div class="panel panel-default panel-article">
-                    <div class="panel-body">
-                        <ol>
-                            {% for article in site.articles %}
-                            {% if article.categories contains page.title %}
-                            <li><a href="{{article.url}}">{{article.title}}</a></li>
-                            {% endif %}
-                            {% endfor %}
-                        </ol>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="panel panel-default panel-contact">
-                    <div class="panel-heading">
-                        <h3 class="panel-title"><i class="fa fa-envelope"></i> Email Us</h3>
-                    </div>
-                    <div class="panel-body">
-                        Want to talk to a human?
-                        Email Us
-                    </div>
-                </div>
-            </div>
+<div class="container">
+    <h1 class="page-header">
+        <i class="fa fa-folder-open"></i>
+        {{page.title}}
+    </h1>
+    <div class="row">
+        <div class="col-md-8">
+            <ol>
+                {% for article in site.articles %}
+                {% if article.categories contains page.title %}
+                <li><a href="{{article.url}}">{{article.title}}</a></li>
+                {% endif %}
+                {% endfor %}
+            </ol>
+        </div>
+        <div class="col-md-4">
+            {% include contact.html %}
         </div>
     </div>
-</content>
+</div>

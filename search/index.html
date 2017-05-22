@@ -3,31 +3,17 @@ layout: default
 title: Search Results
 ---
 
-<header>
-    <div class="container">
-        <form action="/search/" method="get">
-            <div class="input-group">
-                <input type="search" id="search-box" class="form-control input-lg"
-                       placeholder="Type your problem here..." name="q">
-                <span class="input-group-btn">
-                    <button class="btn btn-lg btn-default" type="submit">Search</button>
-                </span>
-            </div>
-        </form>
-    </div>
-</header>
-<content>
-    <div class="container">
-        <div class="panel panel-default panel-articles">
-            <div class="panel-heading">
-                <h3 class="panel-title"><i class="fa fa-search"></i> {{page.title}} for "<span id="search-term"></span>"</h3>
-            </div>
-            <div class="panel-body">
-                <ol id="search-results"></ol>
-            </div>
+
+<div class="container">
+    <div class="panel panel-default panel-articles">
+        <div class="panel-heading">
+            <h3 class="panel-title"><i class="fa fa-search"></i> {{page.title}} for "<span id="search-term"></span>"</h3>
+        </div>
+        <div class="panel-body">
+            <ol id="search-results"></ol>
         </div>
     </div>
-</content>
+</div>
 
 <script src="../lib/lunr/lunr.js"></script>
 <script>

@@ -52,8 +52,22 @@
             </div>
         </div>
     </nav>
+    <header>
+        <div class="container">
+            <form action="/search/" method="get">
+                <div class="input-group">
+                    <input type="search" class="form-control input-lg" placeholder="Search the help center..." name="q">
+                    <span class="input-group-btn">
+                        <button class="btn btn-lg btn-default" type="submit">Search</button>
+                    </span>
+                </div>
+            </form>
+        </div>
+    </header>
 
-    {{content}}
+    <content>
+        {{content}}
+    </content>
 
     <footer>
         <div class="container">
