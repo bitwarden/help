@@ -3,7 +3,7 @@ layout: default
 title: Search Results
 ---
 
-<div class="search-header">
+<header>
     <div class="container">
         <form action="/search/" method="get">
             <div class="input-group">
@@ -15,22 +15,19 @@ title: Search Results
             </div>
         </form>
     </div>
-</div>
-<div class="container">
-    <ol class="breadcrumb">
-        <li><a href="/">Help Center</a></li>
-        <li class="active">{{page.title}}</li>
-    </ol>
-    <div class="panel panel-default panel-articles">
-        <div class="panel-heading">
-            <h3 class="panel-title"><i class="fa fa-search"></i> {{page.title}} for "<span id="search-term"></span>"</h3>
-        </div>
-        <div class="panel-body">
-            <ol id="search-results"></ol>
+</header>
+<content>
+    <div class="container">
+        <div class="panel panel-default panel-articles">
+            <div class="panel-heading">
+                <h3 class="panel-title"><i class="fa fa-search"></i> {{page.title}} for "<span id="search-term"></span>"</h3>
+            </div>
+            <div class="panel-body">
+                <ol id="search-results"></ol>
+            </div>
         </div>
     </div>
-</div>
-
+</content>
 
 <script src="../lib/lunr/lunr.js"></script>
 <script>

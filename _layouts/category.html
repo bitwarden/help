@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<div class="search-header">
+<header>
     <div class="container">
         <form action="/search/" method="get">
             <div class="input-group">
@@ -13,24 +13,37 @@ layout: default
             </div>
         </form>
     </div>
-</div>
-<div class="container">
-    <ol class="breadcrumb">
-        <li><a href="/">Help Center</a></li>
-        <li class="active">{{page.title}}</li>
-    </ol>
-    <div class="panel panel-default panel-articles">
-        <div class="panel-heading">
-            <h3 class="panel-title"><i class="fa fa-folder-open"></i> {{page.title}}</h3>
-        </div>
-        <div class="panel-body">
-            <ol>
-                {% for article in site.articles %}
-                {% if article.categories contains page.title %}
-                <li><a href="{{article.url}}">{{article.title}}</a></li>
-                {% endif %}
-                {% endfor %}
-            </ol>
+</header>
+<content>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="panel panel-default panel-articles">
+                    <div class="panel-heading">
+                        <h3 class="panel-title"><i class="fa fa-folder-open"></i> {{page.title}}</h3>
+                    </div>
+                    <div class="panel-body">
+                        <ol>
+                            {% for article in site.articles %}
+                            {% if article.categories contains page.title %}
+                            <li><a href="{{article.url}}">{{article.title}}</a></li>
+                            {% endif %}
+                            {% endfor %}
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default panel-contact">
+                    <div class="panel-heading">
+                        <h3 class="panel-title"><i class="fa fa-envelope"></i> Email Us</h3>
+                    </div>
+                    <div class="panel-body">
+                        Want to talk to a human?
+                        Email Us
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-</div>
+</content>
