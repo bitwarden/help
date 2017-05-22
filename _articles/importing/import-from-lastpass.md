@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Import Your Account Data From LastPass
+title: Importing your data from LastPass
 categories: [Getting Started]
 featured: true
 popular: true

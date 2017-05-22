@@ -1,10 +1,10 @@
 ---
 layout: article
-title: Import Your Account Data From Google Chrome
+title: Importing your data from Google Chrome
 categories: [Getting Started]
 featured: true
 popular: true
-tags: [import, chrome]
+tags: [import, chrome, opera, vivaldi]
 ---
 
 Importing your data from Google Chrome into bitwarden is easy. 
