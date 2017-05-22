@@ -6,3 +6,5 @@ _site/
 .jekyll-metadata
 *.bat
 *.tmp
+/lib
+_sass/

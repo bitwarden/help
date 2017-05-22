@@ -3,7 +3,12 @@ permalink: pretty
 encoding: utf-8
 port: 4009
 
-exclude: [node_modules, ./bitwarden-help.sln]
+exclude:
+  - node_modules
+  - bitwarden-help.sln
+  - package.json
+  - gulpfile.js
+  - README.md
 
 collections:
   categories:
