@@ -26,7 +26,7 @@ layout: default
         <div class="panel-body">
             <ol>
                 {% for article in site.articles %}
-                {% if article.category == page.title %}
+                {% if article.categories contains page.title %}
                 <li><a href="{{article.url}}">{{article.title}}</a></li>
                 {% endif %}
                 {% endfor %}

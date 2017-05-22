@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Does bitwarden use a salted hash for my password?
-category: Security
+categories: [Security]
 featured: true
 popular: false
 tags: [encryption, hash]

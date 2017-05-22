@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Can the bitwarden team see my passwords?
-category: Security
+categories: [Security]
 featured: true
 popular: false
 tags: []

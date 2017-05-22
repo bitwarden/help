@@ -1,7 +1,7 @@
 ---
 layout: article
 title: What encryption is being used?
-category: Security
+categories: [Security]
 featured: true
 popular: false
 tags: [encryption]

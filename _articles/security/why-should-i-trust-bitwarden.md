@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Why should I trust bitwarden with my passwords?
-category: Security
+categories: [Security]
 featured: true
 popular: true
 tags: []

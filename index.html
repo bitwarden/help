@@ -27,7 +27,7 @@ title: Help Center
                 <div class="panel-body">
                     <ul>
                         {% for article in site.articles %}
-                        {% if article.category == category.title and article.featured == true %}
+                        {% if article.categories contains category.title and article.featured == true %}
                         <li><a href="{{article.url}}">{{article.title}}</a></li>
                         {% endif %}
                         {% endfor %}

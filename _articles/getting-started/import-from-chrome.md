@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Import Your Account Data From Google Chrome
-category: Getting Started
+categories: [Getting Started]
 featured: true
 popular: true
 tags: [import, chrome]

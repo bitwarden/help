@@ -1,7 +1,7 @@
 ---
 layout: article
 title: What happens if bitwarden gets hacked?
-category: Security
+categories: [Security]
 featured: true
 popular: false
 tags: [hacked]

@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Import Your Account Data From 1Password
-category: Getting Started
+categories: [Getting Started]
 featured: true
 popular: true
 tags: [import, 1password]
