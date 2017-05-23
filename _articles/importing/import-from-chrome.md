@@ -27,7 +27,7 @@ The process is exactly the same for Opera and Vivaldi browser users.
 
 1. Go to the [bitwarden web vault][bitwarden-vault] and log in.
 2. Navigate to "Tools" > "Import".
-3. Select "Chrome (csv)" as the source and select your `chromedata.csv` file from the desktop that you created in step 7 above.
+3. Select "Chrome (csv)" as the file format and select your `chromedata.csv` file from the desktop that you created in step 7 above.
 4. Click the "Import" button.
 
 Congratulations! You have just transferred all of your data from Google Chrome into bitwarden.
