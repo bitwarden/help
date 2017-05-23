@@ -37,6 +37,10 @@ gulp.task('lib', ['clean:lib'], function () {
             dest: paths.libDir + 'bootstrap/fonts'
         },
         {
+            src: paths.npmDir + 'bootstrap-sass/assets/stylesheets/bootstrap/*',
+            dest: paths.libDir + 'bootstrap/sass'
+        },
+        {
             src: [
                 paths.npmDir + 'font-awesome/**/css/font-awesome.min.css',
                 paths.npmDir + 'font-awesome/**/fonts/*'

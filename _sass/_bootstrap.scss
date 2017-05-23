@@ -60,4 +60,4 @@ $screen-xxs: 375px;
 $screen-xxs-min: 375px;
 $screen-xxs-max: ($screen-xxs-min - 1);
 
-@import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "../lib/bootstrap/sass/bootstrap";
