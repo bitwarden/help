@@ -8,8 +8,8 @@
       end
 
       def render(context)
-        "<a href=\"#{src}\" target=\"_blank\">
-            <img class=\"img-responsive img-thumbnail\" src=\"#{src}\" />
+        "<a href=\"images/#{src}\" target=\"_blank\">
+            <img class=\"img-responsive img-thumbnail\" src=\"images/#{src}\" />
         </a>"
       end
     end
