@@ -250,4 +250,31 @@ footer {
             }
         }
     }
+
+    h2, h3 {
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    h2 {
+        font-size: $font-size-h2 * .6;
+    }
+
+    h3 {
+        font-size: $font-size-base;
+    }
+
+    h4 {
+        font-size: $font-size-base;
+    }
+}
+
+.alert {
+    p, ul, ol {
+        margin-bottom: 12.5px;
+    }
+
+    p:last-child, ul:last-child, ol:last-child {
+        margin-bottom: 0;
+    }
 }

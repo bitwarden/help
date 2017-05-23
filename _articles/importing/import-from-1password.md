@@ -11,13 +11,16 @@ Importing your data from 1Password into bitwarden is easy. 1Password has two ver
 1Password 4 and 1Password 6. Depending on which operating system and version of 1Password and you are using,
 follow the proper steps below.
 
-**Export Your 1Password 1pif Logins**
+## Export Your 1Password 1pif Logins
 
-<div class="alert alert-info">
-    <p>This set of instructions is only for:</p>
-    <ul><li>1Password 4 users on macOS and Windows</li><li>1Password 6 users on macOS</li></ul>
-    <p>These instructions may vary slightly for macOS users.</p>
-</div>
+{% alert info %}
+This set of instructions is only for:
+
+- 1Password 4 users on macOS and Windows
+- 1Password 6 users on macOS
+
+These instructions may vary slightly for macOS users.
+{% endalert %}
 
 1. Open the 1Password desktop application on your computer and enter your 1Password master password to unlock
    your vault.
@@ -29,12 +32,13 @@ follow the proper steps below.
 6. Select a folder to save your export file to (recommended to use your desktop folder). Click save to export your
    .1pif data file.
 
-**Export Your 1Password 6 csv Logins From Windows**
+## Export your 1Password 6 csv logins from Windows
 
-<div class="alert alert-info">
-    <p>This set of instructions is only for:</p>
-    <ul><li>1Password 6 users on Windows</li></ul>
-</div>
+{% alert info %}
+This set of instructions is only for:
+
+- 1Password 6 users on Windows
+{% endalert %}
 
 1. Open the 1Password 6 desktop application on your computer and enter your 1Password master password to unlock
    your vault.
@@ -46,7 +50,7 @@ follow the proper steps below.
 5. Select a folder to save your export file to (recommended to use your desktop folder). Enter a file name and click
    Save.
 
-**Import Your 1Password Logins Into bitwarden**
+## Import your logins into bitwarden
 
 1. Go to the [bitwarden web vault][bitwarden-vault] and log in.
 2. Navigate to "Tools" > "Import".
