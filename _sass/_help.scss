@@ -227,7 +227,7 @@ footer {
 }
 
 .article {
-    ul, ol {
+    ul {
         li + li,
         ul li:first-child,
         ol li:first-child {
@@ -277,6 +277,37 @@ footer {
     .img-tag {
         max-width: 600px;
         max-height: 600px;
+    }
+
+    .panel-body > ol {
+        counter-reset: li;
+        list-style: none;
+        position: relative;
+        margin-left: 0;
+        padding-left: 0;
+
+        > li {
+            padding: 5px 0 5px 50px;
+            position: relative;
+            margin-bottom: 5px;
+
+            &:before {
+                content: counter(li);
+                counter-increment: li;
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 30px;
+                padding: 0 10px 0 0;
+                color: $text-muted;
+                font-size: 22px;
+                font-weight: bold;
+                line-height: 35px;
+                text-align: right;
+                border-right: 1px solid $table-border-color;
+            }
+        }
     }
 }
 
