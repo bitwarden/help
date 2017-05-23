@@ -1,15 +1,10 @@
 ﻿module Jekyll
   module Tags
-    class ImageTag < Liquid::Block
-      def initialize(tag_name, src)
-        super
-        src.strip!
-        @src = src
-      end
-
+    class ImageTag < Liquid::Tag
       def render(context)
-        "<a href=\"images/#{src}\" target=\"_blank\">
-            <img class=\"img-responsive img-thumbnail\" src=\"images/#{src}\" />
+        src = @markup.strip
+        "<a href=\"/images/#{src}\" target=\"_blank\">
+            <img class=\"img-responsive img-thumbnail\" src=\"/images/#{src}\" />
         </a>"
       end
     end
