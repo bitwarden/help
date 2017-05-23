@@ -7,4 +7,4 @@ _site/
 *.bat
 *.tmp
 /lib
-.publish
+_publish/

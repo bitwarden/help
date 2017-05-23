@@ -12,6 +12,7 @@ exclude:
   - package.json
   - gulpfile.js
   - README.md
+  - _publish
 
 collections:
   categories:
