@@ -15,6 +15,9 @@
     <link href="/css/styles.css?v={{'now' | date: "%s"}}"
           rel="stylesheet" type="text/css">
 
+    <link href="/lib/fluidbox/css/fluidbox.min.css?v={{'now' | date: "%s"}}"
+          rel="stylesheet" type="text/css">
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
         <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -140,6 +143,9 @@
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script>((window.jQuery && window.jQuery.fn && window.jQuery.fn.modal) || document.write('<script src="lib\/bootstrap\/js\/bootstrap.min.js?v={{"now" | date: "%s"}}"><\/script>'));</script>
 
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-throttle-debounce/1.1/jquery.ba-throttle-debounce.min.js"></script>
+    <script src="/lib/fluidbox/js/jquery.fluidbox.min.js"></script>
+
     <script>
         (function (i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
@@ -158,6 +164,16 @@
                 eventAction: action
             });
         }
+
+        $(function () {
+            $('a[rel="lightbox"]').fluidbox();
+
+            $(document).keydown(function (e) {
+                if (e.keyCode === 27) {
+                    $('a[rel="lightbox"]').trigger('close.fluidbox');
+                }
+            });
+        });
     </script>
 </body>
 </html>

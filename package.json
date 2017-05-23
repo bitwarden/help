@@ -12,6 +12,7 @@
     "bootstrap-sass": "3.3.7",
     "font-awesome": "4.7.0",
     "jquery": "2.1.4",
-    "lunr": "0.7.1"
+    "lunr": "0.7.1",
+    "fluidbox": "2.0.0"
   }
 }

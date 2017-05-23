@@ -55,6 +55,10 @@ gulp.task('lib', ['clean:lib'], function () {
         {
             src: paths.npmDir + 'lunr/lunr.js',
             dest: paths.libDir + 'lunr'
+        },
+        {
+            src: paths.npmDir + 'fluidbox/dist/**/*',
+            dest: paths.libDir + 'fluidbox'
         }
     ];
 
