@@ -7,18 +7,32 @@ layout: default
         <i class="fa fa-file-text-o"></i>
         {{page.title}}
     </h1>
-    <div class="panel panel-default panel-article">
+    <div class="breadcrumb">
+        {{ page.categories | size | pluralize: 'Category', 'Categories' }}:
+        {% for category in page.categories %}
+        <a href="/{{category | slugify}}">{{category}}</a>{% if forloop.last != true %}, {% endif %}
+        {% endfor %}
+    </div>
+    <div class="panel panel-default article">
         <div class="panel-body">
             {{content}}
         </div>
+        {% assign tags_size = page.tags | size %}
+        {% if tags_size > 0 %}
+        <div class="panel-footer">
+            <i class="fa fa-tags fa-fw"></i>
+            {{ page.tags | join: ', ' }}
+        </div>
+        {% endif %}
     </div>
-    <div class="row">
+    <div class="row article-blocks">
         <div class="col-sm-6">
-            <div class="panel panel-default panel-contact">
+            <div class="panel panel-default panel-rate">
                 <div class="panel-heading">
                     <h3 class="panel-title"><i class="fa fa-thumbs-o-up"></i> Was this helpful?</h3>
                 </div>
                 <div class="panel-body">
+                    <p>Rate this article:</p>
                     <div class="rw-ui-container"></div>
                 </div>
             </div>

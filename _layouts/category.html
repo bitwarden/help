@@ -4,11 +4,11 @@ layout: default
 
 <div class="container">
     <h1 class="page-header">
-        <i class="fa fa-folder-open"></i>
+        <i class="fa fa-folder-open-o"></i>
         {{page.title}}
     </h1>
     <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-8 articles">
             <ol>
                 {% for article in site.articles %}
                 {% if article.categories contains page.title %}

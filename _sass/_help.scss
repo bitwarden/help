@@ -51,6 +51,14 @@ body {
     }
 }
 
+.btn-secondary {
+    @include button-variant(#ffffff, $brand-secondary, $brand-secondary);
+}
+
+.btn-xl {
+    @include button-size(20px, 25px, $font-size-large, $line-height-large, 5px);
+}
+
 header {
     padding: 10px 0 40px;
     color: #fff;
@@ -60,7 +68,7 @@ header {
 }
 
 content {
-    margin: 30px 0;
+    padding: 30px 0;
     display: block;
 }
 
@@ -119,22 +127,104 @@ footer {
     }
 }
 
-article {
+.panel-secondary {
+    @include panel-variant($brand-secondary, #ffffff, $brand-secondary, $brand-secondary);
+}
+
+.panel-primary-accent {
+    @include panel-variant($brand-primary-accent, #ffffff, $brand-primary-accent, $brand-primary-accent);
 }
 
 .page-header {
     margin-top: 0;
-    padding-left: 50px;
+    padding-left: 35px;
 
     i {
         float: left;
-        margin-left: -50px;
+        margin-left: -35px;
+    }
+
+    @media(min-width:$screen-sm) {
+        padding-left: 50px;
+
+        i {
+            margin-left: -50px;
+        }
     }
 }
 
-h1, h2, h3, h4, h5, h6 {
-    margin-top: 0;
+@media(max-width:$screen-sm-max) {
+    h1 {
+        font-size: 25px;
+    }
 }
 
-h1 {
+.article-blocks {
+    .panel-contact {
+        margin-bottom: 0;
+    }
+
+    @media(min-width:$screen-sm) {
+        .panel-body {
+            min-height: 95px;
+        }
+
+        .panel {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.articles {
+    margin-bottom: 25px;
+
+    ul, ol {
+        margin-left: 0;
+        padding-left: 20px;
+
+        li + li {
+            margin-top: 0.25em;
+        }
+    }
+
+    &.panel {
+        ul, ol {
+            margin-bottom: 0;
+        }
+    }
+
+    .fa-ul {
+        padding-left: 30px;
+
+        .fa {
+            color: $text-muted;
+        }
+    }
+}
+
+.article {
+    ul, ol {
+        li + li,
+        ul li:first-child,
+        ol li:first-child {
+            margin-top: 0.40em;
+        }
+    }
+
+    @media(max-width:$screen-sm-max) {
+        &.panel {
+            border: 0;
+            box-shadow: none;
+
+            .panel-body {
+                padding: 0;
+            }
+
+            .panel-footer {
+                margin-top: 10px;
+                border: 1px solid $panel-default-border;
+                border-radius: $panel-border-radius;
+            }
+        }
+    }
 }

@@ -55,11 +55,14 @@
     <header>
         <div class="container">
             <form action="/search/" method="get">
-                <div class="input-group">
-                    <input type="search" class="form-control input-lg" placeholder="Search the help center..."
+                <div class="input-group input-group-lg">
+                    <input type="search" class="form-control" placeholder="Search the help center..."
                            id="search-box" name="q">
                     <span class="input-group-btn">
-                        <button class="btn btn-lg btn-default" type="submit">Search</button>
+                        <button class="btn btn-default" type="submit">
+                            <i class="fa fa-search"></i>
+                            <span class="sr-only">Search</span>
+                        </button>
                     </span>
                 </div>
             </form>

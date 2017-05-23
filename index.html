@@ -3,52 +3,58 @@ layout: default
 title: Help Center
 ---
 
-
 <div class="container">
     <div class="row">
         <div class="col-md-8">
-            {% for category in site.categories %}
-            {% if category.featured == true %}
-            <div class="panel panel-default panel-articles">
+            <div class="panel panel-secondary articles">
                 <div class="panel-heading">
-                    <h3 class="panel-title"><i class="fa fa-folder-open"></i> {{category.title}}</h3>
+                    <h3 class="panel-title"><i class="fa fa-star-o"></i> Popular Articles</h3>
                 </div>
                 <div class="panel-body">
-                    <ul>
+                    <ul class="fa-ul">
                         {% for article in site.articles %}
-                        {% if article.categories contains category.title and article.featured == true %}
-                        <li><a href="{{article.url}}">{{article.title}}</a></li>
+                        {% if article.popular == true %}
+                        <li>
+                            <i class="fa-li fa fa-file-text-o"></i>
+                            <a href="{{article.url}}">{{article.title}}</a>
+                        </li>
                         {% endif %}
                         {% endfor %}
                     </ul>
                 </div>
             </div>
-            {% endif %}
+            {% for category in site.categories %}
+            <div class="panel panel-default articles">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><i class="fa fa-folder-open-o"></i> {{category.title}}</h3>
+                </div>
+                <div class="panel-body">
+                    <ul class="fa-ul">
+                        {% for article in site.articles %}
+                        {% if article.categories contains category.title %}
+                        <li>
+                            <i class="fa-li fa fa-file-text-o"></i>
+                            <a href="{{article.url}}">{{article.title}}</a>
+                        </li>
+                        {% endif %}
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
             {% endfor %}
         </div>
         <div class="col-md-4">
-            <div class="panel panel-default panel-articles">
+            {% include contact.html %}
+            <div class="panel panel-default articles" style="margin-bottom: 0;">
                 <div class="panel-heading">
                     <h3 class="panel-title"><i class="fa fa-list-alt"></i> Categories</h3>
                 </div>
                 <div class="panel-body small">
                     <ul>
                         {% for category in site.categories %}
-                        <li><a href="{{category.url}}">{{category.title}}</a></li>
-                        {% endfor %}
-                    </ul>
-                </div>
-            </div>
-            <div class="panel panel-default panel-articles">
-                <div class="panel-heading">
-                    <h3 class="panel-title"><i class="fa fa-star"></i> Popular</h3>
-                </div>
-                <div class="panel-body small">
-                    <ul>
-                        {% for article in site.articles %}
-                        {% if article.popular == true %}
-                        <li><a href="{{article.url}}">{{article.title}}</a></li>
-                        {% endif %}
+                        <li>
+                            <a href="{{category.url}}">{{category.title}}</a>
+                        </li>
                         {% endfor %}
                     </ul>
                 </div>
