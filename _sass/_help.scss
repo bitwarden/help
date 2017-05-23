@@ -48,7 +48,7 @@ body {
     .navbar-collapse {
         background-color: $brand-primary-accent;
         border: 0;
-        @include box-shadow("inset 0 10px 10px -10px rgba(0,0,0,.35), inset 0 -10px 10px -10px rgba(0,0,0,.35);");
+        @include box-shadow(inset 0 10px 10px -10px rgba(0,0,0,.35), inset 0 -10px 10px -10px rgba(0,0,0,.35));
     }
 }
 
@@ -238,7 +238,7 @@ footer {
     @media(max-width:$screen-xs-max) {
         &.panel {
             border: 0;
-            box-shadow: none;
+            @include box-shadow(none);
 
             .panel-body {
                 padding: 0;
