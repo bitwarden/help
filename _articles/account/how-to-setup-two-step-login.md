@@ -9,12 +9,12 @@ tags: [two-step login, 2fa, two factor authentication, account]
 
 Two-step login (or two-factor authentication) can only be configured from the [web vault](https://vault.bitwarden.com).
 
-1. Log in to the [web vault](https://vault.bitwarden.com) at https://vault.bitwarden.com
+1. Log in to the web vault at <https://vault.bitwarden.com>
 2. Click **Settings** on the sidebar 
 3. Click **Manage Two-step Log in** under the **Two-step Log In** panel  
 4. Type in your current password and click **Continue**
 5. Follow the steps that appear
-   - Download a two-step verification app (usually on your mobile device). We recommend [Authy](https://authy.com/).
+   - Download a two-step verification app (usually on your mobile device). We recommend [Authy](https://authy.com/){:target="_blank"}.
    - Scan the QR code with the verification app.
    - Enter the verification code from the app.
 6. Click **Enable Two-step**. Note:

@@ -258,15 +258,20 @@ footer {
     }
 
     h2 {
-        font-size: $font-size-h2 * .6;
+        font-size: 20px;
     }
 
     h3 {
-        font-size: $font-size-base;
+        font-size: 16px;
     }
 
     h4 {
-        font-size: $font-size-base;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    h5 {
+        font-size: 16px;
     }
 }
 
