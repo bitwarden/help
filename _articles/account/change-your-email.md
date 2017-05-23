@@ -1,7 +1,7 @@
 ---
 layout: article
-title: How to change your email
-categories: [Getting Started]
+title: Change your email
+categories: [Getting Started, Account Management]
 featured: false
 popular: false
 tags: [account, email]
