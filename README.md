@@ -7,10 +7,15 @@ The bitwarden help center project is written using Jekyll, which is hosted/deplo
 # Build/Run
 
 **Requirements**
+
+- Node.js
+- Gulp
 - [Ruby](https://www.ruby-lang.org/)
 - [Jekyll](https://jekyllrb.com/)
 
 Run the following commands:
+- `npm install`
+- `gulp build`
 - `jekyll build`
 - `jekyll serve`
 
