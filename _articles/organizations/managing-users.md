@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Managing organization users
+title: Managings users
 categories: [Organizations]
 featured: true
 popular: false
