@@ -9,6 +9,7 @@ html {
 
 body {
     margin-bottom: 465px;
+    background-color: #ffffff;
 }
 
 @media(min-width:$screen-sm) {
@@ -145,15 +146,29 @@ footer {
     }
 
     @media(min-width:$screen-sm) {
-        padding-left: 50px;
+        padding-left: 38px;
 
         i {
-            margin-left: -50px;
+            margin-left: -38px;
+        }
+    }
+
+    @media(min-width:$screen-md) {
+        padding-left: 52px;
+
+        i {
+            margin-left: -52px;
         }
     }
 }
 
 @media(max-width:$screen-sm-max) {
+    h1 {
+        font-size: 30px;
+    }
+}
+
+@media(max-width:$screen-xs-max) {
     h1 {
         font-size: 25px;
     }
@@ -170,6 +185,14 @@ footer {
         }
 
         .panel {
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media(min-width:$screen-md) {
+    .main {
+        .articles:last-child {
             margin-bottom: 0;
         }
     }
@@ -211,7 +234,7 @@ footer {
         }
     }
 
-    @media(max-width:$screen-sm-max) {
+    @media(max-width:$screen-xs-max) {
         &.panel {
             border: 0;
             box-shadow: none;
