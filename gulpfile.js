@@ -3,6 +3,7 @@ var gulp = require('gulp'),
     concat = require('gulp-concat'),
     rename = require('gulp-rename'),
     runSequence = require('run-sequence'),
+    ghPages = require('gulp-gh-pages'),
     merge = require('merge-stream');
 
 var paths = {};
@@ -24,7 +25,11 @@ gulp.task('clean:lib', function (cb) {
     return rimraf(paths.libDir, cb);
 });
 
-gulp.task('clean', ['clean:lib']);
+gulp.task('clean:dist', function (cb) {
+    return rimraf(paths.dist, cb);
+});
+
+gulp.task('clean', ['clean:lib', 'clean:dist']);
 
 gulp.task('lib', ['clean:lib'], function () {
     var libs = [
@@ -58,4 +63,9 @@ gulp.task('lib', ['clean:lib'], function () {
     });
 
     return merge(tasks);
+});
+
+gulp.task('deploy', [], function () {
+    return gulp.src(paths.dist + '**/*')
+        .pipe(ghPages({ cacheDir: './.publish' }));
 });
