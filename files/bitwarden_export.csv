@@ -1,0 +1,4 @@
+name,uri,username,password,notes,folder,favorite
+Twitter,https://twitter.com,hello@bitwarden.com,password123,,Social,1
+EVGA,https://www.evga.com/support/login.asp,hello@bitwarden.com,fakepassword,,,
+My Bank,https://www.wellsfargo.com/home.jhtml,john.smith,password123,Bank PIN is 1234,,
