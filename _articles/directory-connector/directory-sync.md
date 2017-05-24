@@ -80,10 +80,10 @@ Console.exe logout
 1. Launch the Directory Connector console by double clicking the shortcut. 
 2. Select option 3 (Configure directory connection) from the main menu.
 3. Select the type of directory server you are configuring.
-4. Step through and set each configuration setting for the directory server type that you selected in step 3. The settings are different for each type of directory. You can read more about setting up each type of directory connection in the articles below:
-   - Active Directory & Other LDAP-based directories
-   - Azure Active Directory
-   - GSuite (Google)
+4. Step through and set each configuration setting for the directory server type that you selected in step 3. The settings are different for each type of directory. You can read more about setting up each type of directory connection in the following articles:
+   - [Active Directory & Other LDAP-based Directories Setup]({% link _articles/directory-connector/ldap-directory.md %})
+   - [Azure Active Directory Setup]({% link _articles/directory-connector/azure-active-directory.md %})
+   - [GSuite (Google) Setup]({% link _articles/directory-connector/gsuite-directory.md %})
 
 Optionally, from the command line:
 
@@ -124,7 +124,7 @@ Console.exe configdir -t [azure: -i -s -te] [gsuite: -f -u [-d] [-c]] [ad/ldap: 
 | Password     | -p       | mypassword          | n        |
 
 {% note %}
-Any sensitive information such as secret keys and server passwords are encrypted and stored locally in the settings file.
+Any sensitive information such as secret keys and server passwords are encrypted and stored locally in the [settings file](#changing-configurations-manually).
 {% endnote %}
 
 ### Configure sync options
@@ -147,6 +147,12 @@ Console.exe configsync [-g] [-u] [-i] [-uf] [-gf] [-rd] [ad/ldap: [-go] [-gp] [-
 | User Filter     | -uf      | (&(objectClass=user))  | n        | Value syntax is different for each directory type. |
 | Group Filter    | -gf      | (&(objectClass=group)) | n        | Value syntax is different for each directory type. |
 | Remove Disabled | -rd      | n/a                    | n        |                                                    |
+
+{% note %}
+The syntax for user and group filters is different for each type of directory. Learn more about how user and group filters work in the following article:
+
+- [Configuring user and group sync filters]({% link _articles/directory-connector/user-group-filters.md %})
+{% endnote %}
 
 #### Active Directory / Other LDAP
 
@@ -236,7 +242,7 @@ You can configure the bitwarden Directory Connector to run automatically each ti
 All configuration data is saved to a `.json` configuration file stored on the local computer. No configuration data in synced to bitwarden servers. You can find the configuration file in it's default location at `C:/ProgramData/bitwarden/Directory Connector/settings.json`. Any changes that you make directory to the configuration file will require you to restart the application (if it is currently running).
 
 {% note %}
-Some configuration data that is stored in the settings file, such as LDAP server credentials, is encrypted. Therefore, you cannot edit it directly in this file. Any encrypted data must be managed through the application normally.
+Some configuration data that is stored in the settings file, such as LDAP server credentials, is encrypted. Therefore, you cannot edit these values directly in this file. Any encrypted data must be edited through the application normally.
 {% endnote %}
 
 ### Source code
