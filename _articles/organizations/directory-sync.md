@@ -4,6 +4,7 @@ title: Syncing users and groups with a directory
 categories: [Organizations]
 featured: true
 popular: false
+hidden: true
 tags: []
 ---
 
