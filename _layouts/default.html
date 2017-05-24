@@ -151,7 +151,7 @@
             i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
                 (i[r].q = i[r].q || []).push(arguments)
             }, i[r].l = 1 * new Date(); a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
         })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
         ga('create', 'UA-81915606-10', 'auto');
@@ -166,11 +166,27 @@
         }
 
         $(function () {
-            $('a[rel="lightbox"]').fluidbox();
+            var lightboxOpen = false,
+                lightboxSelector = 'a[rel="lightbox"]';
+
+            $(lightboxSelector)
+                .on('openstart.fluidbox', function () {
+                    lightboxOpen = true;
+                })
+                .on('closestart.fluidbox', function () {
+                    lightboxOpen = false;
+                })
+                .fluidbox();
 
             $(document).keydown(function (e) {
-                if (e.keyCode === 27) {
-                    $('a[rel="lightbox"]').trigger('close.fluidbox');
+                if (lightboxOpen && e.keyCode === 27) {
+                    $(lightboxSelector).trigger('close.fluidbox');
+                }
+            });
+
+            $(window).scroll(function () {
+                if (lightboxOpen) {
+                    $(lightboxSelector).trigger('close.fluidbox');
                 }
             });
 
