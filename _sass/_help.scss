@@ -352,6 +352,14 @@ footer {
     pre code {
         white-space: nowrap;
     }
+
+    li img, li pre {
+        margin-top: 12.5px;
+    }
+
+    li > *:last-child {
+        margin-bottom: 0;
+    }
 }
 
 a[rel='lightbox'] {
