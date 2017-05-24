@@ -26,6 +26,8 @@ The bitwarden Directory Connector is a windows-based console application (CLI) t
 
 You can install and run Directory Connector on the server that hosts your directory, an administrator's machine, or any other windows-based device than can access the directory.
 
+{% image directory-connector/console.png %}
+
 ### Table of Contents
 
 - [Install](#install)
@@ -36,6 +38,7 @@ You can install and run Directory Connector on the server that hosts your direct
 - [Perform a sync](#perform-a-sync)
 - [Manage the background service](#manage-the-background-service)
 - [Changing configurations manually](#changing-configurations-manually)
+- [Source code](#source-code)
 
 ### Install
 
@@ -201,3 +204,7 @@ All configuration data is saved to a `.json` configuration file stored on the lo
 {% note %}
 Some configuration data that is stored in the settings file, such as LDAP server credentials, is encrypted. Therefore, you cannot edit it directly in this file. Any encrypted data must be managed through the application normally.
 {% endnote %}
+
+### Source code
+
+As with everything here at bitwarden, the Directory Connector is open source and hosted on GitHub at <https://github.com/bitwarden/directory-connector>.
