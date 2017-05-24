@@ -3,7 +3,7 @@ layout: article
 title: Importing your data from Google Chrome
 categories: [Getting Started]
 featured: true
-popular: true
+popular: false
 tags: [import, chrome, opera, vivaldi]
 ---
 
