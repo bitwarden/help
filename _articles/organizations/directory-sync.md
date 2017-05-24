@@ -136,8 +136,34 @@ Any sensitive information such as secret keys and server passwords are encrypted
 Optionally, from the command line:
 
 ```
-Console.exe configsync [-g] [-u] [-i] [-uf] [-gf] [-rd] [ad/ldap: [-go] [-gp] [-gf] [-gn] [-uo] [-up] [-ue] [-m] [-ps] [-ep] [-c] [-r]]
+Console.exe configsync [-g] [-u] [-i] [-uf] [-gf] [-rd] [ad/ldap: [-go] [-gp] [-gn] [-uo] [-up] [-ue] [-m] [-ps] [-ep] [-es] [-c] [-r]]
 ```
+
+| Description     | Argument | Example Value          | Required | Notes                                              |
+|-----------------|----------|------------------------|----------|----------------------------------------------------|
+| Sync Groups     | -g       | n/a                    | n        |                                                    |
+| Sync Users      | -u       | n/a                    | n        |                                                    |
+| Sync Interval   | -i       | 5                      | n        | Value is in minutes.                               |
+| User Filter     | -uf      | (&(objectClass=user))  | n        | Value syntax is different for each directory type. |
+| Group Filter    | -gf      | (&(objectClass=group)) | n        | Value syntax is different for each directory type. |
+| Remove Disabled | -rd      | n/a                    | n        |                                                    |
+
+#### Active Directory / Other LDAP
+
+| Description             | Argument | Example Value  | Required |
+|-------------------------|----------|----------------|----------|
+| Group Object Class      | -go      | group          | y        |
+| User Object Class       | -uo      | user           | y        |
+| Group Path              | -gp      | CN=Groups      | n        |
+| User Path               | -up      | CN=Users       | n        |
+| Group Name Attribute    | -gn      | name           | n        |
+| User Email Attribute    | -ue      | mail           | n        |
+| Member Attribute        | -m       | member         | n        |
+| Use Email Prefix/Suffix | -ps      | n/a            | n        |
+| Email Prefix Attribute  | -ep      | sAMAccountName | n        |
+| Email Suffix            | -es      | @company.com   | n        |
+| Creation Date Attribute | -c       | whenCreated    | n        |
+| Revision Date Attribute | -r       | whenChanged    | n        |
 
 ### Manually simulate a sync
 
@@ -150,8 +176,12 @@ You can simulate a directory sync in order to check that all of your configurati
 Optionally, from the command line:
 
 ```
-Console.exe sim
+Console.exe sim [-f]
 ```
+
+| Description | Argument | Example Value | Required | Notes               |
+|-------------|----------|---------------|----------|---------------------|
+| Force       | -f       | n/a           | n        | Forces a full sync. |
 
 ### Perform a sync
 
@@ -161,8 +191,12 @@ Console.exe sim
 Optionally, from the command line:
 
 ```
-Console.exe sync
+Console.exe sync [-f]
 ```
+
+| Description | Argument | Example Value | Required | Notes               |
+|-------------|----------|---------------|----------|---------------------|
+| Force       | -f       | n/a           | n        | Forces a full sync. |
 
 ### Manage the background service
 
