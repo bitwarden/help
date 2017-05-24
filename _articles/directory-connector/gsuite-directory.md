@@ -47,7 +47,7 @@ If you already have a Google Cloud project available, you can skip this step and
 5. Select **New service account**.
 6. Name the service account **bitwarden Directory Connector**. For the role, select **Project** and then **Owner**. Ensure that **JSON** is the selected **Key type**. Upon clicking **Create**, a JSON file will be downloaded; this is important for later so keep a note of where you have downloaded it.
    {% image directory-connector/gsuite/create-service-account.png %}
-7. Click on **Manage service accounts** (on the right-hand side).
+7. You should now see your newly created service account listed. Click on **Manage service accounts** (on the right-hand side).
    {% image directory-connector/gsuite/click-manage-service-accounts.png %}
 8. Select the options button next to your service account, and select **Edit**.
    {% image directory-connector/gsuite/edit-service-account.png %}
