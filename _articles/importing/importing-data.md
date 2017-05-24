@@ -10,11 +10,11 @@ tags: [import]
 You can very easily import your data from an array of different password manager applications. bitwarden supports importing data from the following sources:
 
 - bitwarden (csv)
-- 1Password (1pif)
+- [1Password (1pif)]({% link _articles/importing/import-from-1password.md %})
 - 1Password 6 Windows (csv)
 - Ascendo DataVault (csv)
 - Avira (json)
-- Chrome (csv)
+- [Chrome (csv)]({% link _articles/importing/import-from-chrome.md %})
 - Clipperz (html)
 - Dashlane (csv)
 - Enpass (csv)
@@ -22,7 +22,7 @@ You can very easily import your data from an array of different password manager
 - KeePass 2 (xml)
 - KeePassX (csv)
 - Keeper (csv)
-- LastPass (csv)
+- [LastPass (csv)]({% link _articles/importing/import-from-lastpass.md %})
 - Meldium (csv)
 - mSecure (csv)
 - Opera (csv)
