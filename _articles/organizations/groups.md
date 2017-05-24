@@ -19,9 +19,13 @@ After creating a user, you can assign that user to one or more groups. From the 
 
 You can also view which users belong to a specific group by navigating to the groups listing page and selecting the **Users** option for a specific group. Users can be removed from the group from this page as well, however, adding a new user to a group must be done from the individual user.
 
+{% image organizations/user-groups.png %}
+
 ## Collection Assignment
 
 Access control for a group is done by assigning collections to a group (or vice versa). You can assign which collections a group can access by editing the group from the group listing page.
+
+{% image organizations/group-edit.png %}
 
 Alternatively, edit a collection from the collections listing page to choose which groups can access it.
 
