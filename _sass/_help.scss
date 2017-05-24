@@ -323,6 +323,31 @@ footer {
         @extend .table-bordered;
         @extend .table-striped;
     }
+
+    .header-link {
+        color: $text-muted;
+        text-decoration: none !important;
+        opacity: 0;
+        margin-left: 5px;
+
+        @media (max-width: 767px) {
+            display: none !important;
+        }
+    }
+
+    h2:hover > .header-link,
+    h3:hover > .header-link {
+        opacity: .5;
+        -webkit-transition: color .16s linear;
+        transition: color .16s linear;
+    }
+
+    h2:hover > .header-link:hover,
+    h3:hover > .header-link:hover,
+    h2:hover > .header-link:focus,
+    h3:hover > .header-link:focus {
+        opacity: 1;
+    }
 }
 
 a[rel='lightbox'] {

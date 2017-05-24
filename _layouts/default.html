@@ -173,6 +173,21 @@
                     $('a[rel="lightbox"]').trigger('close.fluidbox');
                 }
             });
+
+            $('.article .panel-body > h2, .article .panel-body > h3').filter('[id]').each(function () {
+                var header = $(this),
+                    headerID = header.attr('id'),
+                    anchorClass = 'header-link',
+                    anchorIcon = '<i class="fa fa-link" aria-hidden="true"></i>';
+
+                if (headerID) {
+                    header.append($('<a />')
+                        .addClass(anchorClass)
+                        .attr({ 'href': '#' + headerID, 'aria-hidden': 'true', title: 'Permalink' })
+                        .html(anchorIcon));
+                }
+                return this;
+            });
         });
     </script>
 </body>
