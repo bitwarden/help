@@ -27,7 +27,11 @@ title: Help Center
             {% for category in site.categories %}
             <div class="panel panel-default articles">
                 <div class="panel-heading">
-                    <h3 class="panel-title"><i class="fa fa-folder-open-o"></i> {{category.title}}</h3>
+                    <h3 class="panel-title">
+                        <a href="{{category.url}}">
+                            <i class="fa fa-folder-open-o"></i> {{category.title}}
+                        </a>
+                    </h3>
                 </div>
                 <div class="panel-body">
                     <ul class="fa-ul">
