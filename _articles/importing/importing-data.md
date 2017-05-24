@@ -25,7 +25,7 @@ You can very easily import your data from an array of different password manager
 - [LastPass (csv)]({% link _articles/importing/import-from-lastpass.md %})
 - Meldium (csv)
 - mSecure (csv)
-- Opera (csv)
+- [Opera (csv)]({% link _articles/importing/import-from-chrome.md %})
 - Padlock (csv)
 - PassKeep (csv)
 - Password Boss (json)
@@ -38,7 +38,7 @@ You can very easily import your data from an array of different password manager
 - Sticky Password (xml)
 - True Key (csv)
 - Universal Password Manager (csv)
-- Vivaldi (csv)
+- [Vivaldi (csv)]({% link _articles/importing/import-from-chrome.md %})
 - Zoho Vault (csv)
 
 To import your data, log into the web vault at <https://vault.bitwarden.com> and navigate to **Tools** > **Import Data**. Instructions for importing from each source are available after selecting the desired file format from the dropdown menu.
