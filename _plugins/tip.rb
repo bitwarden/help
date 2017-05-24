@@ -5,7 +5,7 @@
         site = context.registers[:site]
         converter = site.find_converter_instance(::Jekyll::Converters::Markdown)
         output = converter.convert(super(context))
-        "<div class=\"callout callout-default\">
+        "<div class=\"callout callout-success\">
             <h3><i class=\"fa fa-lightbulb-o\"></i> Tip</h3>
             #{output}
         </div>"
