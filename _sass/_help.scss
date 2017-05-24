@@ -348,6 +348,10 @@ footer {
     h3:hover > .header-link:focus {
         opacity: 1;
     }
+
+    pre code {
+        white-space: nowrap;
+    }
 }
 
 a[rel='lightbox'] {

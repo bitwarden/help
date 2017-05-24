@@ -26,6 +26,17 @@ The bitwarden Directory Connector is a windows-based console application (CLI) t
 
 You can install and run Directory Connector on the server that hosts your directory, an administrator's machine, or any other windows-based device than can access the directory.
 
+### Table of Contents
+
+- [Install](#install)
+- [Log in to your bitwarden organization account](#log-in-to-your-bitwarden-organization-account)
+- [Configure the directory connection](#configure-the-directory-connection)
+- [Configure sync options](#configure-sync-options)
+- [Manually simulate a sync](#manually-simulate-a-sync)
+- [Perform a sync](#perform-a-sync)
+- [Manage the background service](#manage-the-background-service)
+- [Changing configurations manually](#changing-configurations-manually)
+
 ### Install
 
 1. Download the latest version of the Directory Connector installer (`.msi`) from our GitHub releases page.
@@ -45,16 +56,21 @@ You can install and run Directory Connector on the server that hosts your direct
 Optionally, from the command line:
 
 ```
-Console.exe -e -p [[-t] [-o]]
+Console.exe login -e -p [-t] [-o]
 ```
 
-| Description     | Argument | Required | Example                                |
-|-----------------|----------|----------|----------------------------------------|
-| Email           | -e       | y        | user@example.com                       |
-| Password        | -p       | y        | mypassword123                          |
-| 2FA Token       | -t       | n        | 381119                                 |
-| Organization Id | -o       | n        | `acadad98-b666-498d-b89f-f220f21e453f` |
+| Description     | Argument | Example Value                        | Required |
+|-----------------|----------|--------------------------------------|----------|
+| Email           | -e       | user@example.com                     | y        |
+| Password        | -p       | mypassword123                        | y        |
+| 2FA Token       | -t       | 381119                               | n        |
+| Organization Id | -o       | acadad98-b666-498d-b89f-f220f21e453f | n        |
 
+You can also log out with the following command:
+
+```
+Console.exe logout
+```
 
 ### Configure the directory connection
 
@@ -66,11 +82,59 @@ Console.exe -e -p [[-t] [-o]]
    - Azure Active Directory
    - GSuite (Google)
 
+Optionally, from the command line:
+
+```
+Console.exe configdir -t [azure: -i -s -te] [gsuite: -f -u [-d] [-c]] [ad/ldap: -a -path [-port] [-cu] [-u] [-p]]
+```
+
+| Description     | Argument | Example Value                        | Required | Notes                                    |
+|-----------------|----------|--------------------------------------|----------|------------------------------------------|
+| Type            | -t       | 1                                    | y        | AD = 0, Azure = 1, Other = 2, GSuite = 3 |
+
+#### Azure
+
+| Description    | Argument | Example Value                        | Required |
+|----------------|----------|--------------------------------------|----------|
+| Application Id | -i       | 0f82b419-c5b3-4b63-8afc-67d240da85a6 | y        |
+| Secret Key     | -s       | c2VjcmV0X2tleQ==                     | y        |
+| Tenant         | -te      | mycompany.onmicrosoft.com            | y        |
+
+#### GSuite
+
+| Description | Argument | Example Value      | Required |
+|-------------|----------|--------------------|----------|
+| Secret File | -f       | client_secret.json | y        |
+| Admin User  | -u       | admin@company.com  | y        |
+| Domain      | -d       | company.com        | y        |
+| Customer Id | -c       | 39204722352        | n        |
+
+#### Active Directory / Other LDAP
+
+| Description  | Argument | Example Value       | Required |
+|--------------|----------|---------------------|----------|
+| Address      | -a       | company.local       | y        |
+| Port         | -port    | 389                 | n        |
+| Root Path    | -path    | DC=company,DC=local | y        |
+| Current User | -cu      | n/a                 | n        |
+| Username     | -u       | admin@company.com   | n        |
+| Password     | -p       | mypassword          | n        |
+
+{% note %}
+Any sensitive information such as secret keys and server passwords are encrypted and stored locally in the settings file.
+{% endnote %}
+
 ### Configure sync options
 
 1. Launch the Directory Connector console by double clicking the shortcut.
 2. Select option 4 (Configure sync) from the main menu.
 3. Step through and set each sync configuration setting. Some settings are dependent on the type of directory connection you are using.
+
+Optionally, from the command line:
+
+```
+Console.exe configsync [-g] [-u] [-i] [-uf] [-gf] [-rd] [ad/ldap: [-go] [-gp] [-gf] [-gn] [-uo] [-up] [-ue] [-m] [-ps] [-ep] [-c] [-r]]
+```
 
 ### Manually simulate a sync
 
@@ -80,10 +144,22 @@ You can simulate a directory sync in order to check that all of your configurati
 2. Select option 5 (Simulate directory sync) from the main menu.
 3. Review the results that are printed in the console window for accuracy.
 
+Optionally, from the command line:
+
+```
+Console.exe sim
+```
+
 ### Perform a sync
 
 1. Launch the Directory Connector console by double clicking the shortcut.
 2. Select option 6 (Sync directory) from the main menu.
+
+Optionally, from the command line:
+
+```
+Console.exe sync
+```
 
 ### Manage the background service
 
@@ -92,6 +168,17 @@ The background service allows sync operations to run in the background based on 
 1. Launch the Directory Connector console by double clicking the shortcut.
 2. Select option 7 (Control background service) from the main menu.
 3. Select the option you wish to perform: Start, Stop, or Check Status.
+
+Optionally, from the command line:
+
+```
+Console.exe service [-start] [-stop]
+```
+
+| Description | Argument | Example Value | Required |
+|-------------|----------|---------------|----------|
+| Start       | -start   | n/a           | n        |
+| Stop        | -stop    | n/a           | n        |
 
 {% note %}
 The application must be run in administrator mode to be able to manage the background service.
