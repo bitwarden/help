@@ -317,6 +317,12 @@ footer {
             }
         }
     }
+
+    table {
+        @extend .table;
+        @extend .table-bordered;
+        @extend .table-striped;
+    }
 }
 
 a[rel='lightbox'] {
