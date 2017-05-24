@@ -3,7 +3,6 @@ layout: default
 title: Search Results
 ---
 
-
 <div class="container">
     <h1 class="page-header">
         <i class="fa fa-search"></i>
@@ -19,6 +18,7 @@ title: Search Results
 <script>
     window.store = {
     {% for article in site.articles %}
+    {% if article.hidden != true %}
       "{{article.url | slugify}}": {
           "title": "{{article.title | xml_escape}}",
           "categories": "{{article.categories | join: ', ' | xml_escape}}",
@@ -27,6 +27,7 @@ title: Search Results
         "url": "{{article.url | xml_escape}}"
       }
     {% unless forloop.last %},{% endunless %}
+    {% endif %}
     {% endfor %}
     };
 
