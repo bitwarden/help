@@ -71,5 +71,5 @@ gulp.task('lib', ['clean:lib'], function () {
 
 gulp.task('deploy', [], function () {
     return gulp.src(paths.dist + '**/*')
-        .pipe(ghPages({ cacheDir: './_publish' }));
+        .pipe(ghPages({ cacheDir: './.publish' }));
 });
