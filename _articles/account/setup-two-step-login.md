@@ -7,7 +7,11 @@ popular: true
 tags: [two-step login, 2fa, two factor authentication, account]
 ---
 
-bitwarden supports two-step login (or two-factor authentication) by using a third-party authenticator app such as [Authy](https://authy.com/) or [Google Authenticator](https://support.google.com/accounts/answer/1066447?hl=en). Two-step login can only be configured from the [web vault](https://vault.bitwarden.com).
+Two-step login (or two-factor authentication) greatly increases the security of your account by requiring you to enter (in addition to your master password) a verification code generated from another app each time you log in. We recommend that all users activate and use two-step login with their bitwarden account.
+
+bitwarden supports two-step login by using a third-party authenticator app such as [Authy](https://authy.com/) or [Google Authenticator](https://support.google.com/accounts/answer/1066447?hl=en). Two-step login can only be configured from the [web vault](https://vault.bitwarden.com).
+
+## Enable Two-step Login
 
 {% warning %}
 Two-step login can permanently lock you out of your account. It is very important that you write down and keep your two-step login **recovery code** in a safe place in the event that you lose access to your authenticator app (see below for details).
