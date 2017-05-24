@@ -31,7 +31,7 @@ You can install and run Directory Connector on the server that hosts your direct
 
 1. Download the latest version of the Directory Connector installer (`.msi`) from our GitHub releases page.
    <br />
-   [{% icon fa-download %} Download Directory Connector Installer](https://github.com/bitwarden/directory-connector/releases)
+   [{% icon fa-download %} Download Directory Connector Installer](https://github.com/bitwarden/directory-connector/releases){:target="_blank"}
 2. Launch the setup wizard by running (double-clicking) the downloaded `.msi` installer.
 3. Step through the wizard and complete the installation.
 4. After the setup wizard has successfully completed, you should find a shortcut on your desktop for **Directory Connector** with the bitwarden logo {% icon fa-shield %}. The full path to the application can be found at `{install_folder}/Console.exe`.
