@@ -2,6 +2,7 @@
 layout: default
 title: Help Center
 ---
+{% assign sorted_articles = site.articles | sort: 'title' %}
 
 <div class="container main">
     <div class="row">
@@ -12,7 +13,7 @@ title: Help Center
                 </div>
                 <div class="panel-body">
                     <ul class="fa-ul">
-                        {% for article in site.articles %}
+                        {% for article in sorted_articles %}
                         {% if article.popular == true %}
                         <li>
                             <i class="fa-li fa fa-file-text-o"></i>
@@ -30,7 +31,7 @@ title: Help Center
                 </div>
                 <div class="panel-body">
                     <ul class="fa-ul">
-                        {% for article in site.articles %}
+                        {% for article in sorted_articles %}
                         {% if article.categories contains category.title %}
                         <li>
                             <i class="fa-li fa fa-file-text-o"></i>

@@ -16,9 +16,9 @@ The following directories are supported:
 - GSuite (Google)
 - Any other LDAP-based directory
 
-{% alert info %}
+{% note %}
 Directory sync is only available to enterprise organizations.
-{% endalert %}
+{% endnote %}
 
 ## bitwarden Directory Connector Tool
 

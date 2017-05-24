@@ -9,9 +9,9 @@ tags: []
 
 In addition to collections, groups are a way for organizations to further control user access. They are particularly useful to larger organizations where user access can be difficult to manage.
 
-{% alert info %}
+{% note %}
 User groups are only available to enterprise organizations.
-{% endalert %}
+{% endnote %}
 
 ## User Assignment
 

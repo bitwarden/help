@@ -9,11 +9,11 @@ tags: [import, lastpass]
 
 Importing your data from LastPass into bitwarden is easy. 
 
-{% alert warning %}
+{% warning %}
 It is recommended to export through the LastPass.com web vault in order to avoid known bugs with the LastPass extension exporter.
 
 If you use the LastPass browser extension to export your sites, your password data could be corrupted.
-{% endalert %}
+{% endwarning %}
 
 ## Export your sites from the LastPass.com web vault
 

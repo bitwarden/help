@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+{% assign sorted_articles = site.articles | sort: 'title' %}
 
 <div class="container">
     <h1 class="page-header">
@@ -10,7 +11,7 @@ layout: default
     <div class="row">
         <div class="col-md-8 articles">
             <ol>
-                {% for article in site.articles %}
+                {% for article in sorted_articles %}
                 {% if article.categories contains page.title %}
                 <li><a href="{{article.url}}">{{article.title}}</a></li>
                 {% endif %}
