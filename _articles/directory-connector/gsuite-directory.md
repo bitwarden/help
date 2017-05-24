@@ -19,7 +19,8 @@ This article will cover how to connect the bitwarden Directory Connector tool to
 ## Table of Contents
 
 - [Create a Google Cloud Project](#create-a-google-cloud-project)
-- [Create & Configure a Service Account](#create---configure-a-service-account)
+- [Enable the Admin SDK API for Your Project](#enable-the-admin-sdk-api-for-your-project)
+- [Create & Configure a Service Account](#create--configure-a-service-account)
 - [Configure GSuite Security](#configure-gsuite-security)
 - [Configure Directory Connector](#configure-directory-connector)
 - [Testing](#testing)
@@ -36,6 +37,18 @@ If you already have a Google Cloud project available, you can skip this step and
 3. Enter a project name and click **Create**
    {% image directory-connector/gsuite/new-project.png %}
 4. Refresh the page and you should now see your project
+
+## Enable the Admin SDK API for Your Project
+
+1. Go to <https://console.cloud.google.com>
+2. Make sure the appropriate project is selected.
+3. Open the navigation menu and navigate to **API Manager** -> **Dashboard**.
+4. Select the **Enable API** button near the top.
+   {% image directory-connector/gsuite/enable-api.png %}
+5. Click the **Admin SDK** link under the **Google Apps APIs** section.
+   {% image directory-connector/gsuite/admin-sdk.png %}
+6. Click the **Enable** button near the top.
+   {% image directory-connector/gsuite/admin-sdk-enable.png %}
 
 ## Create & Configure a Service Account
 
