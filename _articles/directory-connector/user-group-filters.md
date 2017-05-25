@@ -66,7 +66,7 @@ An include/exclude filter + a G Suite `query` search:
 exclude:john@company.com,bill@company.com|orgName=Engineering orgTitle:Manager
 ```
 
-Only the G Suite `query` search:
+Only the G Suite `query` search (notice the `|` prefix that is required):
 
 ```
 |orgName=Engineering orgTitle:Manager
