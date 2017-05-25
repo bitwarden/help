@@ -10,7 +10,7 @@ tags: [export, accounts, csv]
 bitwarden allows you to export all of your vault data at any time.
 
 {% warning %}
-Data exports contain your unencrypted data in .csv format. You should not store or send the file over unsecure channels (such as email). Delete it immediately after you are done using it.
+Data exports contain your unencrypted data in `.csv` format. You should not store or send the file over unsecure channels (such as email). Delete it immediately after you are done using it.
 {% endwarning %}
 
 ## From the web vault
