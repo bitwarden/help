@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Configuring directory sync with Google GSuite
+title: Configuring directory sync with G Suite (Google)
 categories: [Organizations]
 featured: true
 popular: false
@@ -8,7 +8,7 @@ hidden: false
 tags: []
 ---
 
-This article will cover how to connect the bitwarden Directory Connector tool to your GSuite directory.
+This article will cover how to connect the bitwarden Directory Connector tool to your G Suite directory.
 
 ## Requirements
 
@@ -21,7 +21,7 @@ This article will cover how to connect the bitwarden Directory Connector tool to
 - [Create a Google Cloud Project](#create-a-google-cloud-project)
 - [Enable the Admin SDK API for Your Project](#enable-the-admin-sdk-api-for-your-project)
 - [Create & Configure a Service Account](#create--configure-a-service-account)
-- [Configure GSuite Security](#configure-gsuite-security)
+- [Configure G Suite Security](#configure-g-suite-security)
 - [Configure Directory Connector](#configure-directory-connector)
 - [Testing](#testing)
 
@@ -66,11 +66,11 @@ If you already have a Google Cloud project available, you can skip this step and
    {% image directory-connector/gsuite/edit-service-account.png %}
 9. Check the box "Enable G Suite Domain-wide Delegation", enter anything for "Product name for the consent screen" and click **Save**.
    {% image directory-connector/gsuite/tick-gsuite.png %}
-10. Click **View Client ID** and you'll see the Client ID on screen. You will need the Client ID to configure security within GSuite. Highlight the Client ID and copy it to your clipboard.
+10. Click **View Client ID** and you'll see the Client ID on screen. You will need the Client ID to configure security within G Suite. Highlight the Client ID and copy it to your clipboard.
    {% image directory-connector/gsuite/view-client-id.png %}
    {% image directory-connector/gsuite/copy-client-id.png %}
 
-## Configure GSuite Security
+## Configure G Suite Security
 
 1. Go to <https://admin.google.com>
 2. Open the navigation menu and navigate to **Security**.
@@ -92,13 +92,13 @@ If you already have a Google Cloud project available, you can skip this step and
    - Optionally rename the JSON file to something that is easier to remember, such as `client_secret.json`
 3. Launch the Directory Connector console by double clicking the shortcut. 
 4. Select option 3 (Configure directory connection) from the main menu.
-5. Select **GSuite Directory** as the type.
+5. Select **G Suite Directory** as the type.
 6. Enter the name of the JSON file that you copied in step 2.
-7. Enter the domain of your GSuite account.
-8. Enter the email address of an admin user that has full access to the GSuite directory (such as your own).
+7. Enter the domain of your G Suite account.
+8. Enter the email address of an admin user that has full access to the G Suite directory (such as your own).
 
-Congrats! You are done configuring GSuite with the bitwarden Directory Connector.
+Congrats! You are done configuring G Suite with the bitwarden Directory Connector.
 
 ## Testing
 
-Test your configurations by running a simulated directory sync. You should see your GSuite groups and/or users printed to the screen.
+Test your configurations by running a simulated directory sync. You should see your G Suite groups and/or users printed to the screen.

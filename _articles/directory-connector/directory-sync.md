@@ -13,7 +13,7 @@ The following directories are supported:
 
 - Active Directory
 - Azure Active Directory
-- GSuite (Google)
+- G Suite (Google)
 - Any other LDAP-based directory
 
 {% note %}
@@ -83,7 +83,7 @@ Console.exe logout
 4. Step through and set each configuration setting for the directory server type that you selected in step 3. The settings are different for each type of directory. You can read more about setting up each type of directory connection in the following articles:
    - [Active Directory & Other LDAP-based Directories Setup]({% link _articles/directory-connector/ldap-directory.md %})
    - [Azure Active Directory Setup]({% link _articles/directory-connector/azure-active-directory.md %})
-   - [GSuite (Google) Setup]({% link _articles/directory-connector/gsuite-directory.md %})
+   - [G Suite (Google) Setup]({% link _articles/directory-connector/gsuite-directory.md %})
 
 Optionally, from the command line:
 
@@ -103,7 +103,7 @@ Console.exe configdir -t [azure: -i -s -te] [gsuite: -f -u [-d] [-c]] [ad/ldap: 
 | Secret Key     | -s       | c2VjcmV0X2tleQ==                     | y        |
 | Tenant         | -te      | mycompany.onmicrosoft.com            | y        |
 
-#### GSuite
+#### G Suite
 
 | Description | Argument | Example Value      | Required |
 |-------------|----------|--------------------|----------|
