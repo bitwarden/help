@@ -12,9 +12,55 @@ You can configure the bitwarden Directory Connector to use filters to limit the 
 
 The syntax for filtering is different for each directory server type and is covered in detail below.
 
+## Table of Contents
+
+- [Active Directory and Other LDAP Directories](#active-directory-and-other-ldap-directories)
+- [Azure Active Directory](#azure-active-directory)
+- [G Suite](#g-suite)
+
 ## Active Directory and Other LDAP Directories
 
-Coming soon...
+The group and user filters can be in the form of any LDAP compatible search filter. Additionally, Active Directory provides a few more advanced options as well as a few limitations when writing search filters as opposed to other more standard LDAP directories. You can read more about writing LDAP search filters here: <https://msdn.microsoft.com/en-us/library/windows/desktop/aa746475(v=vs.85).aspx>
+
+#### Examples
+
+Search for all entries that have objectClass=user AND cn that contains the word 'Marketing'.
+
+```
+(&(objectClass=user)(cn=*Marketing*))
+```
+
+{% note %}
+Active Directory does not implement extensible matching, the following examples won't work with it.
+{% endnote %}
+
+Find entries with an OU component of their DN which is either 'Miami' or 'Orlando'. 
+
+```
+(|(ou:dn:=Miami)(ou:dn:=Orlando))
+```
+
+To exclude entities which match an expression, use '!'. Find all Chicago entries except those with a Wrigleyville OU component.
+
+```
+(&(ou:dn:=Chicago)(!(ou:dn:=Wrigleyville)))
+```
+
+{% note %}
+These examples are written for Active Directory. In order to use them for something such as OpenLDAP the attributes will need to be changed.
+{% endnote %}
+
+Users in the 'Heroes' group
+
+```
+(&(objectCategory=Person)(sAMAccountName=*)(memberOf=cn=Heroes,ou=users,dc=company,dc=com))
+```
+
+Users that are a member of the 'Heroes' group, either directly or via nesting
+
+```
+(&(objectCategory=Person)(sAMAccountName=*)(memberOf:1.2.840.113556.1.4.1941:=cn=Heroes,ou=users,dc=company,dc=com))
+```
 
 ## Azure Active Directory
 
