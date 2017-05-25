@@ -22,7 +22,7 @@ The Microsoft Graph API provides advanced filtering capabilities through the `$f
 
 Read more about the `$filter` parameter with OData syntax here: <https://developer.microsoft.com/en-us/graph/docs/concepts/query_parameters#filter>
 
-### Example
+#### Example
 
 ```
 startswith(displayName,'J')
