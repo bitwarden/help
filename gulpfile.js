@@ -4,7 +4,10 @@ var gulp = require('gulp'),
     rename = require('gulp-rename'),
     runSequence = require('run-sequence'),
     ghPages = require('gulp-gh-pages'),
-    merge = require('merge-stream');
+    merge = require('merge-stream'),
+    gulpUtil = require('gulp-util'),
+    child = require('child_process'),
+    browserSync = require('browser-sync').create();
 
 var paths = {};
 paths.dist = './_site/';
@@ -72,4 +75,43 @@ gulp.task('lib', ['clean:lib'], function () {
 gulp.task('deploy', [], function () {
     return gulp.src(paths.dist + '**/*')
         .pipe(ghPages({ cacheDir: '../.publish_cache/help' }));
+});
+
+function jekyll(commands, cb) {
+    var jekyllLogger = (buffer) => {
+        buffer.toString()
+            .split(/\n/)
+            .forEach((message) => gulpUtil.log(message));
+    };
+    var jekyllCommand = process.platform === "win32" ? "jekyll.bat" : "jekyll";
+    var jekyll = child.spawn(jekyllCommand, commands);
+    jekyll.stdout.on('data', jekyllLogger);
+    jekyll.stderr.on('data', jekyllLogger);
+    jekyll.stderr.on('close', cb);
+    return jekyll;
+}
+
+gulp.task('jekyll:build', function (cb) {
+    return jekyll(['build', '--watch'], cb);
+});
+
+gulp.task('jekyll:serve', function (cb) {
+    return jekyll(['serve', '--watch'], cb);
+});
+
+gulp.task('serve', () => {
+    return browserSync.init({
+        files: [paths.dist + '/**'],
+        port: 4009,
+        server: {
+            baseDir: paths.dist
+        }
+    });
+});
+
+gulp.task('default', function (cb) {
+    return runSequence(
+        'build',
+        'jekyll:serve',
+        cb);
 });
