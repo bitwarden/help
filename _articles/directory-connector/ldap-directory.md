@@ -68,7 +68,7 @@ The following options can be set:
 | Group Name Attribute | The attribute field to use when loading the group name. | name |
 | User Email Attribute | The attribute field to use when loading the user email address. | mail |
 | Member Attribute | The attribute field to use when loading the group's members. | member |
-| Use Email Prefix/Suffix | Email addresses are required by bitwarden. If your directory users do not have email addresses they will be skipped. Alternatively, you can specify that users without an email address use a prefix attribute and suffix to attempt to form a valid email address. |  |
+| Use Email Prefix/Suffix | Email addresses are required by bitwarden. If your directory users do not have email addresses they will be skipped. Alternatively, you can specify that users without an email address use a prefix attribute concatenated with a suffix to attempt to form a valid email address. |  |
 | Email Prefix Attribute | The attribute field to use when forming a user's email address from the prefix/suffix setting. | sAMAccountName |
 | Email Suffix | The specified suffix to use when forming a user's email address from the prefix/suffix setting. | @company.com |
 | Creation Date Attribute | The attribute field that specifies when an entry was created. | whenCreated |
