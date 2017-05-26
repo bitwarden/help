@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Importing your data from Google Chrome
+title: Import your data from Google Chrome
 categories: [Getting Started]
 featured: true
 popular: false

@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Importing your data from another application
+title: Import your data from another application
 categories: [Getting Started]
 featured: true
 popular: true
