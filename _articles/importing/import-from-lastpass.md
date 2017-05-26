@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Importing your data from LastPass
+title: Import your data from LastPass
 categories: [Getting Started]
 featured: true
 popular: true
