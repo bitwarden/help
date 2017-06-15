@@ -1,5 +1,5 @@
 ---
 layout: category
-title: Misc
+title: Miscellaneous
 featured: true
 ---
