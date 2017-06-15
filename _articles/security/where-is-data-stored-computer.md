@@ -7,13 +7,16 @@ popular: false
 tags: []
 ---
 
-Your encrypted data can be found on your computer/device in the following locations:
+You data is also automatically synced to our [cloud servers]({% link _articles/security/where-is-data-stored-cloud.md %}). In the event that you need to recover your data due to a device crash, simply reinstall the bitwarden application and log in and your data will be re-synced.
+
+All sensitive data stored on your computer/device is encrypted. The data can be found in the following locations:
 
 - Windows
   - Chrome Extension: `%AppData%\Local\Google\Chrome\User Data\Default\Local Extension Settings\nngceckbapebfimnlniiiahkandclblb`
   - Firefox Extension: `%AppData%\Roaming\Mozilla\Firefox\Profiles\your_profile\browser-extension-data\{446900e4-71c2-419f-a6a7-df9c091e268b}`
   - Opera Extension: `%AppData%\Roaming\Opera Software\Opera Stable\Local Extension Settings\ccnckbpmaceehanjmeomladnmlffdjgn`
   - Vivaldi Extension: `%AppData%\Local\Vivaldi\User Data\Default\Local Extension Settings\nngceckbapebfimnlniiiahkandclblb`
+  - Brave Extension: `%AppData%\Roaming\brave\Local Extension Settings\nngceckbapebfimnlniiiahkandclblb`
 - Linux
   - Chrome Extension: `~/.config/google-chrome/Default/Local Extension Settings/nngceckbapebfimnlniiiahkandclblb`
 - Mac
@@ -23,4 +26,3 @@ Your encrypted data can be found on your computer/device in the following locati
 - Android
   - `/data/data/com.x8bit.bitwarden/`
 
-You data is also automatically synced to our [cloud servers]({% link _articles/security/where-is-data-stored-cloud.md %}). In the event that you need to recover your data due to a device crash, simply reinstall the bitwarden application and log in and your data will be re-synced.
