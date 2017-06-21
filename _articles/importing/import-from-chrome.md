@@ -7,6 +7,12 @@ popular: false
 tags: [import, chrome, opera, vivaldi]
 ---
 
+{% warning %}
+Starting with Chrome v59, the Chrome team has removed the ability to export passwords from Chrome. Please see [this topic](https://productforums.google.com/forum/?utm_medium=email&utm_source=footer#!topic/chrome/99KZmH2DRrA){:target="blank"} on the Chrome forums for further information and to let the Chrome team know that you would like to bring this feature back.
+
+If you are using a version prior to v59, you can still use the instructions below.
+{% endwarning %}
+
 Importing your data from Google Chrome into bitwarden is easy. 
 
 {% note %}
