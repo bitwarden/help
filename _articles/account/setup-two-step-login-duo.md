@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Set up two-step login with Duo Security
-categories: [Getting Started, Account Management]
+categories: [Account Management]
 featured: false
 popular: true
 hidden: true
@@ -37,29 +37,30 @@ It is recommended to install the free [Duo Mobile](https://duo.com/product/trust
 ## Enable Two-step Login with Duo
 
 {% warning %}
-Two-step login can permanently lock you out of your account. It is very important that you write down and keep your two-step login **recovery code** in a safe place in the event that you lose access to your normal two-step login methods.
+Two-step login can permanently lock you out of your account. It is very important that you write down and keep your [two-step login recovery code]({% link _articles/account/lost-two-step-device.md %}) in a safe place in the event that you lose access to your normal two-step login methods.
 {% endwarning %}
 
 1. Log in to the web vault at <https://vault.bitwarden.com>.
 2. Click **Settings** on the sidebar. Click **Two-step Login** in the sub-menu that opens under **Settings**.  
-4. Select the **Duo** option and then type in your master password to continue.
+3. Select the **Duo** option and then type in your master password to continue.
    {% image two-step/duo/select.png %}
-5. Enter the configuration information provided from the Duo Admin **Web SDK** application that was set up earlier: **Integration Key**, **Secret Key**, and **API Hostname**.
+4. Enter the configuration information provided from the Duo Admin **Web SDK** application that was set up earlier: **Integration Key**, **Secret Key**, and **API Hostname**.
    {% image two-step/duo/config.png %}
-6. Click **Save** to enable Duo.
-7. Click the **Close** button and confirm that the Duo option now shows as **Enabled**.
+5. Click the **Enable** button. A green alert will appear at the top stating that two-step login has been enabled.
+6. Click the **Close** button and confirm that the **Duo** option now shows as **Enabled**.
    {% image two-step/duo/enabled.png %}
 
-## Log In, Enroll, and Test
+## Enroll and Test
 
-1. Log out of the bitwarden web vault.
-2. Log back into the bitwarden web vault. You should now be prompted with a Duo two-step login option.
-3. Upon your first login using Duo you may be prompted to enroll your bitwarden account and device(s) with Duo. Complete the Duo enrollment process following the on-screen instructions.
+1. **IMPORTANT:** Ensure that you have copied down your [two-step login recovery code]({% link _articles/account/lost-two-step-device.md %}) in case something goes wrong.
+2. Log out of the bitwarden web vault.
+3. Log back into the bitwarden web vault. You should now be prompted with a Duo two-step login option.
+4. Upon your first login using Duo you may be prompted to enroll your bitwarden account and device(s) with Duo. Complete the Duo enrollment process following the on-screen instructions.
    {% image two-step/duo/enroll1.png %}
    {% image two-step/duo/enroll2.png %}
-4. After enrolling you can log in with Duo.
+5. After enrolling you can log in with Duo.
    {% image two-step/duo/login.png %}
-5. Duo security protection working with all bitwarden applications (web, mobile, desktop, browser). Log out of and back in to any other bitwarden applications that you are using to confirm that Duo is properly working. You will eventually be logged out automatically.
+6. Duo security protection works with all bitwarden applications (web, mobile, desktop, browser). Log out of and back in to any other bitwarden applications that you are using to confirm that two-step login via Duo is properly working. You will eventually be logged out automatically.
    
    Browser extension
    {% image two-step/duo/browser.png %}
