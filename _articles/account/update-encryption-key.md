@@ -16,5 +16,5 @@ Updating your encryption key is simple:
 
 1. Log into the web vault at <https://vault.bitwarden.com>
 2. If your encryption key needs to be updated you will find a notice at the top of the page that states so. Click this notification.
-3. A page will pop up that explains why you need to update your encryption key. Enter your master password to verify and your encryption key will be updated. Additionally, all of your data be re-encrypted with this new key.
+3. A page will pop up that explains why you need to update your encryption key. Enter your master password to verify and your encryption key will be updated. Additionally, all of your data will be re-encrypted with this new key.
 4. **VERY IMPORTANT:** Log out of and back in to **ALL** bitwarden applications that you are using. This will download your new encryption key. Failure to complete this last step may result in data corruption in your vault.
