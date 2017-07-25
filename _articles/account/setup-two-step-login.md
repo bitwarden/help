@@ -16,3 +16,5 @@ bitwarden supports two-step login using the following methods:
 - Duo Security with Duo Push, SMS, phone call, and U2F security keys, [&rarr; setup]({% link _articles/account/setup-two-step-login-duo.md %})
 - YubiKey (any 4 series device or YubiKey NEO), [&rarr; setup]({% link _articles/account/setup-two-step-login-yubikey.md %})
 - FIDO U2F (any FIDO U2F certified key), [&rarr; setup]({% link _articles/account/setup-two-step-login-u2f.md %})
+
+You can enable multiple two-step login methods. If you have multiple two-step login methods enabled, the order of preference for the default method that is displayed while logging in is as follows: FIDO U2F &rarr; YubiKey &rarr; Duo &rarr; Authenticator app &rarr; Email. You can manually switch to and use any method during login, however.
