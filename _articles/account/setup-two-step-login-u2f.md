@@ -3,7 +3,7 @@ layout: article
 title: Set up two-step login with FIDO U2F
 categories: [Account Management]
 featured: false
-popular: true
+popular: false
 tags: [two-step login, 2fa, two factor authentication, account, u2f, fido]
 ---
 

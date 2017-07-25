@@ -3,7 +3,7 @@ layout: article
 title: Set up two-step login with Duo Security
 categories: [Account Management]
 featured: false
-popular: true
+popular: false
 hidden: true
 tags: [two-step login, 2fa, two factor authentication, account, duo, sms]
 ---
