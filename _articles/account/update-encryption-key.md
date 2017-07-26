@@ -4,7 +4,6 @@ title: Updating an old encryption key
 categories: [Account Management]
 featured: false
 popular: false
-hidden: true
 tags: [encryption key, account]
 ---
 
