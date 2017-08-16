@@ -11,8 +11,13 @@ Two-step login (or two-factor authentication) greatly increases the security of 
 
 bitwarden supports two-step login using the following methods:
 
+**Free**
+
 - Authenticator app such as [Authy](https://authy.com/){:target="_blank"} or [Google Authenticator](https://support.google.com/accounts/answer/1066447?hl=en){:target="_blank"}, [&rarr; setup]({% link _articles/account/setup-two-step-login-authenticator.md %})
 - Email, [&rarr; setup]({% link _articles/account/setup-two-step-login-email.md %})
+
+**Premium**
+
 - Duo Security with Duo Push, SMS, phone call, and U2F security keys, [&rarr; setup]({% link _articles/account/setup-two-step-login-duo.md %})
 - YubiKey (any 4 series device or YubiKey NEO), [&rarr; setup]({% link _articles/account/setup-two-step-login-yubikey.md %})
 - FIDO U2F (any FIDO U2F certified key), [&rarr; setup]({% link _articles/account/setup-two-step-login-u2f.md %})
