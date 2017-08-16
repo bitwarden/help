@@ -16,6 +16,7 @@ All information associated with your stored vault data is protected with end-to-
 - Passwords
 - URLs
 - Notes
+- Authenticator keys (TOTP)
 
 Certain information in bitwarden cannot be encrypted. This includes:
 
