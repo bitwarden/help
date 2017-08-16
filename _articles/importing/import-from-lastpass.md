@@ -9,12 +9,6 @@ tags: [import, lastpass]
 
 Importing your data from LastPass into bitwarden is easy. 
 
-{% warning %}
-It is recommended to export through the LastPass.com web vault in order to avoid known bugs with the LastPass extension exporter.
-
-If you use the LastPass browser extension to export your sites, your password data could be corrupted.
-{% endwarning %}
-
 ## Export your sites from the LastPass.com web vault
 
 1. Log into your LastPass account and navigate to "More Options" > "Advanced" > "Export". 
@@ -22,6 +16,10 @@ If you use the LastPass browser extension to export your sites, your password da
 3. Your data will be decrypted and shown on screen in [CSV][csv] format.
 4. Highlight all of the data on the page and copy it to your clipboard.
    - Highlight all of the data with your mouse, then right click with your mouse and select "Copy".
+
+{% warning %}
+There are known bugs with the LastPass exporter regarding the ampersand character (<code>&amp;</code>). The LastPass exporter may change all ampersand characters in your passwords to the value <code>&amp;amp;</code>. If this LastPass bug affects your export you should use a text editor (such as notepad) to find/replace all values <code>&amp;amp;</code> with <code>&amp;</code> before importing into bitwarden.
+{% endwarning %}
 
 ## Import your sites into bitwarden
 
