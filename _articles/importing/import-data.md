@@ -19,6 +19,7 @@ You can very easily import your data from an array of different password manager
 - Dashlane (csv)
 - Enpass (csv)
 - Firefox Password Exporter (xml)
+- GNOME Passwords and Keys/Seahorse (json)
 - KeePass 2 (xml)
 - KeePassX (csv)
 - Keeper (csv)
