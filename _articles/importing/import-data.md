@@ -49,16 +49,16 @@ To import your data, log into the web vault at <https://vault.bitwarden.com> and
 Alternatively you can manually condition a [CSV](https://en.wikipedia.org/wiki/Comma-separated_values) file using the generic bitwarden format. Create a UTF-8 encoded plaintext file with the following format:
 
 ```
-name,uri,username,password,notes,folder,favorite
+name,uri,username,password,notes,folder,favorite,totp
 ```
 
 The above header must be the first line in the file. An example file may look like the following:
 
 ```
-name,uri,username,password,notes,folder,favorite
-Twitter,https://twitter.com,hello@bitwarden.com,password123,,Social,1
-EVGA,https://www.evga.com/support/login.asp,hello@bitwarden.com,fakepassword,,,
-My Bank,https://www.wellsfargo.com/home.jhtml,john.smith,password123,Bank PIN is 1234,,
+name,uri,username,password,notes,folder,favorite,totp
+Twitter,https://twitter.com,hello@bitwarden.com,password123,,Social,1,
+EVGA,https://www.evga.com/support/login.asp,hello@bitwarden.com,fakepassword,,,,TOTPSEED123
+My Bank,https://www.wellsfargo.com/home.jhtml,john.smith,password123,Bank PIN is 1234,,,
 ```
 
 [{% icon fa-download %} Download example](/files/bitwarden_export.csv)
