@@ -11,7 +11,7 @@ You can very easily import your data from an array of different password manager
 
 - bitwarden (csv)
 - [1Password (1pif)]({% link _articles/importing/import-from-1password.md %})
-- 1Password 6 Windows (csv)
+- [1Password 6 Windows (csv)]({% link _articles/importing/import-from-1password.md %})
 - Ascendo DataVault (csv)
 - Avira (json)
 - [Chrome (csv)]({% link _articles/importing/import-from-chrome.md %})
