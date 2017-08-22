@@ -11,7 +11,7 @@ Importing your data from LastPass into bitwarden is easy.
 
 ## Export your sites from the LastPass.com web vault
 
-1. Log into your LastPass account and navigate to "More Options" (at the very bottom of the left sidebar menu) > "Advanced" > "Export".<br />
+1. Log into your LastPass account at www.lastpass.com and navigate to "More Options" (at the very bottom of the left sidebar menu) > "Advanced" > "Export".<br />
    {% image lastpass-options.png %}
 2. This will take you to a page that then asks you to enter your LastPass master password for verification. Enter your LastPass master password.<br />
    {% image lastpass-password.png %}
