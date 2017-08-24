@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Change your master password
-categories: [Getting Started, Account Management]
+categories: [getting-started, account-management]
 featured: false
 popular: false
 tags: [password, account]

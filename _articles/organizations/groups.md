@@ -1,7 +1,7 @@
 ---
 layout: article
 title: User groups
-categories: [Organizations]
+categories: [organizations]
 featured: true
 popular: false
 tags: []

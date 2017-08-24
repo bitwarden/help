@@ -36,7 +36,8 @@ title: Help Center
                 <div class="panel-body">
                     <ul class="fa-ul">
                         {% for article in sorted_articles %}
-                        {% if article.categories contains category.title and article.hidden != true %}
+                        {% assign catFilename = category.path | filename %}
+                        {% if article.categories contains catFilename and article.hidden != true %}
                         <li>
                             <i class="fa-li fa fa-file-text-o"></i>
                             <a href="{{article.url}}">{{article.title}}</a>

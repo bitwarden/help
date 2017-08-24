@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Delete your account
-categories: [Account Management]
+categories: [account-management]
 featured: false
 popular: false
 tags: [account, delete]

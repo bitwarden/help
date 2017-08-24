@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Extension won't load in Firefox Private Browsing mode
-categories: [Miscellaneous]
+categories: [miscellaneous]
 featured: false
 popular: false
 tags: [firefox, extension, private mode, private browsing]

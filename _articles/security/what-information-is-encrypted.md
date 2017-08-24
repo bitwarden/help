@@ -1,7 +1,7 @@
 ---
 layout: article
 title: What information is encrypted?
-categories: [Security]
+categories: [security]
 featured: true
 popular: false
 tags: []

@@ -1,7 +1,7 @@
 ---
 layout: article
 title: I lost my two-step login (2FA) device
-categories: [Account Management]
+categories: [account-management]
 featured: false
 popular: false
 tags: [two-step login, 2fa, two factor authentication, account]

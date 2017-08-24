@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Where is my data stored on my computer/device?
-categories: [Security]
+categories: [security]
 featured: true
 popular: false
 tags: []

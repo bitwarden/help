@@ -1,6 +1,8 @@
 ---
 layout: default
 ---
+{% assign catIteration = 0 %}
+{% assign catSize = page.categories | size %}
 
 <div class="container">
     <h1 class="page-header">
@@ -8,9 +10,13 @@ layout: default
         {{page.title}}
     </h1>
     <div class="breadcrumb">
-        {{ page.categories | size | pluralize: 'Category', 'Categories' }}:
-        {% for category in page.categories %}
-        <a href="/{{category | slugify}}">{{category}}</a>{% if forloop.last != true %}, {% endif %}
+        {{ catSize | pluralize: 'Category', 'Categories' }}:
+        {% for category in site.categories %}
+        {% assign catFilename = category.path | filename %}
+        {% if page.categories contains catFilename %}
+        {% assign catIteration = catIteration | plus: 1 %}
+        <a href="{{category.url}}">{{category.title}}</a>{% if catIteration != catSize %}, {% endif %}
+        {% endif %}
         {% endfor %}
     </div>
     <div class="panel panel-default article">

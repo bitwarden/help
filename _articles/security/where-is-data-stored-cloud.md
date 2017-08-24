@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Where is my data stored in the cloud?
-categories: [Security]
+categories: [security]
 featured: true
 popular: false
 tags: [cloud]

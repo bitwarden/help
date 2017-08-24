@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Set up two-step login with email
-categories: [Account Management]
+categories: [account-management]
 featured: false
 popular: false
 tags: [two-step login, 2fa, two factor authentication, account, email, totp]

@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Set up two-step login (2FA)
-categories: [Getting Started, Account Management]
+categories: [getting-started, account-management]
 featured: false
 popular: true
 tags: [two-step login, 2fa, two factor authentication, account]

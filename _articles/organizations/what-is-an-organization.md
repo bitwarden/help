@@ -1,7 +1,7 @@
 ---
 layout: article
 title: What are organizations?
-categories: [Organizations]
+categories: [organizations]
 featured: true
 popular: false
 tags: []

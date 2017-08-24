@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Export your vault data
-categories: [Account Management]
+categories: [account-management]
 featured: false
 popular: false
 tags: [export, accounts, csv]

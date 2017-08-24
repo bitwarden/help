@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Help translate bitwarden to other languages
-categories: [Miscellaneous]
+categories: [miscellaneous]
 featured: false
 popular: false
 tags: [localize, l10n, translate, i18n, internationalization, language]

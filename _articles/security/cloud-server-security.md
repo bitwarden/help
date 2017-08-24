@@ -1,7 +1,7 @@
 ---
 layout: article
 title: How do you keep the cloud servers secure?
-categories: [Security]
+categories: [security]
 featured: true
 popular: false
 tags: [cloud, azure]

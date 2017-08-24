@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Managing users for your organization
-categories: [Organizations]
+categories: [organizations]
 featured: true
 popular: false
 tags: []

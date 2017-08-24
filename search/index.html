@@ -21,10 +21,9 @@ title: Search Results
     {% if article.hidden != true %}
       "{{article.url | slugify}}": {
           "title": "{{article.title | xml_escape}}",
-          "categories": "{{article.categories | join: ', ' | xml_escape}}",
           "tags": "{{article.tags | join: ', ' | xml_escape}}",
           "content": {{article.content | strip_html | strip_newlines | jsonify}},
-        "url": "{{article.url | xml_escape}}"
+          "url": "{{article.url | xml_escape}}"
       }
     {% unless forloop.last %},{% endunless %}
     {% endif %}
@@ -75,7 +74,6 @@ title: Search Results
             var idx = lunr(function () {
                 this.field('id');
                 this.field('title', { boost: 20 });
-                this.field('categories');
                 this.field('tags', { boost: 10 });
                 this.field('content');
             });
@@ -84,7 +82,6 @@ title: Search Results
                 idx.add({
                     'id': key,
                     'title': window.store[key].title,
-                    'categories': window.store[key].categories,
                     'tags': window.store[key].tags,
                     'content': window.store[key].content
                 });

@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Configuring user and group sync filters
-categories: [Organizations]
+categories: [organizations]
 featured: false
 popular: false
 hidden: false

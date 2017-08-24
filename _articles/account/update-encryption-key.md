@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Updating an old encryption key
-categories: [Account Management]
+categories: [account-management]
 featured: false
 popular: false
 tags: [encryption key, account]

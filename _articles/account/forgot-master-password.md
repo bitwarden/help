@@ -1,7 +1,7 @@
 ---
 layout: article
 title: I forgot my master password
-categories: [Account Management]
+categories: [account-management]
 featured: true
 popular: false
 tags: [master password, account]

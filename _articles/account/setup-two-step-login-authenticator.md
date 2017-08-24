@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Set up two-step login with an authenticator app
-categories: [Account Management]
+categories: [account-management]
 featured: false
 popular: false
 tags: [two-step login, 2fa, two factor authentication, account, google authenticator, authy, totp]

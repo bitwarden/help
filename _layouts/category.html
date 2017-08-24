@@ -12,7 +12,8 @@ layout: default
         <div class="col-md-8 articles">
             <ol>
                 {% for article in sorted_articles %}
-                {% if article.categories contains page.title and article.hidden != true %}
+                {% assign pageFilename = page.path | filename %}
+                {% if article.categories contains pageFilename and article.hidden != true %}
                 <li><a href="{{article.url}}">{{article.title}}</a></li>
                 {% endif %}
                 {% endfor %}
