@@ -25,7 +25,7 @@ This article will walk you through how to install and deploy bitwarden to your o
 
 1. Set DNS records for a domain name pointing to your machine. Open ports 80 and 443 on the machine.
 2. Install [Docker](https://docs.docker.com/engine/installation/){:target="_blank"} and [Docker Compose](https://docs.docker.com/compose/install/){:target="_blank"}. If using Windows or macOS, adjust Docker so that it has at least 4 GB of RAM available.
-3. Get an installation id and key from [https://bitwarden.com/install](https://bitwarden.com/install){:target="_blank"}.
+3. Get an installation id and key from [https://bitwarden.com/host](https://bitwarden.com/host){:target="_blank"}.
 4. Install & deploy bitwarden.
     
     {% icon fa-linux %} {% icon fa-apple %} Bash
@@ -133,7 +133,7 @@ We've made installing bitwarden very simple. Depending in your environment (non-
 
     Each bitwarden installation requires a unique installation id and installation key. You should not share your installation id or installation key across multiple bitwarden installations. They should be treated as secrets.
 
-    You can obtain an installation id and key from [https://bitwarden.com/install](https://bitwarden.com/install){:target="_blank"}.
+    You can obtain an installation id and key from [https://bitwarden.com/host](https://bitwarden.com/host){:target="_blank"}.
 
     **Push Notifications**
 
