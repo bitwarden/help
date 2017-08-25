@@ -78,9 +78,9 @@ For reference, you can find the official bitwarden images hosted on Docker Hub a
 
 ## Adjust Docker Resources
 
-SQL Server requires that Docker be allocated with 4 GB of RAM. By default, Docker on macOS and Windows only has 2 GB of RAM allocated. Docker on Linux should be ok.
+SQL Server requires that Docker be allocated with a minimum of 4 GB of RAM. By default, Docker on macOS and Windows only has 2 GB of RAM allocated. Docker on Linux should be ok.
 
-To adjust this, simply go to Docker (click on the docker icon) &rarr; Preferences &rarr; Advanced. Change the slider to 4 GB or more, save, and restart Docker.
+To adjust this, simply go to Docker (click on the docker icon) &rarr; Preferences &rarr; Advanced. Change the slider to 4 GB (or more), save, and restart Docker.
 
 You can read more about this at [https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-docker](https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-docker){:target="_blank"}.
 
