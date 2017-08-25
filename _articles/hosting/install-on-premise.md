@@ -8,7 +8,7 @@ hidden: true
 tags: [hosting, docker, install, deploy]
 ---
 
-This article will walk you through how to install and deploy bitwarden to your own server.
+This article will walk you through how to install and deploy bitwarden to your own server. Because bitwarden is a cross platform application, you can install and deploy it on Linux, macOS, and Windows machines.
 
 ## Table of Contents
 
