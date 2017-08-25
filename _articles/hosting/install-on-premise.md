@@ -28,7 +28,7 @@ This article will walk you through how to install and deploy bitwarden to your o
 3. Get an installation id and key from [https://bitwarden.com/install](https://bitwarden.com/install){:target="_blank"}.
 4. Install & deploy bitwarden.
     
-    Bash
+    {% icon fa-linux %} {% icon fa-apple %} Bash
 
        curl -s -o bitwarden.sh \
            https://raw.githubusercontent.com/bitwarden/core/master/scripts/bitwarden.sh \
@@ -37,7 +37,7 @@ This article will walk you through how to install and deploy bitwarden to your o
        ./bitwarden.sh start
        ./bitwarden.sh updatedb
 
-    PowerShell
+    {% icon fa-windows %} PowerShell
 
        Invoke-RestMethod -OutFile bitwarden.ps1 `
            -Uri https://raw.githubusercontent.com/bitwarden/core/master/scripts/bitwarden.ps1
@@ -46,11 +46,11 @@ This article will walk you through how to install and deploy bitwarden to your o
        .\bitwarden.ps1 -updatedb
 5. Adjust additional configuration settings in `./bitwarden/env/global.override.env` and restart.
     
-    Bash
+    {% icon fa-linux %} {% icon fa-apple %} Bash
 
        ./bitwarden.sh restart
 
-    PowerShell
+    {% icon fa-windows %} PowerShell
 
        .\bitwarden.ps1 -restart
 6. Test your deployment. Visit the web vault at your configured domain name, register a new account, and log in.
@@ -92,24 +92,24 @@ We've made installing bitwarden very simple. Depending in your environment (non-
 
     {% note %}All bitwarden assets will be installed in the `./bitwarden` directory relative to where the main script resides.{% endnote %}
 
-    Bash
+    {% icon fa-linux %} {% icon fa-apple %} Bash
 
        curl -s -o bitwarden.sh \
            https://raw.githubusercontent.com/bitwarden/core/master/scripts/bitwarden.sh \
            && sudo chmod u+x bitwarden.sh
 
-    PowerShell
+    {% icon fa-windows %} PowerShell
 
        Invoke-RestMethod -OutFile bitwarden.ps1 `
            -Uri https://raw.githubusercontent.com/bitwarden/core/master/scripts/bitwarden.ps1
 
 2. Start the installer:
 
-    Bash
+    {% icon fa-linux %} {% icon fa-apple %} Bash
 
        ./bitwarden.sh install
 
-    PowerShell
+    {% icon fa-windows %} PowerShell
 
        .\bitwarden.ps1 -install
 
@@ -165,11 +165,11 @@ Once you've completed installing and configuring your bitwarden installation you
 The first time you start bitwarden it may take some time as it downloads all of the images from Docker Hub.
 {% endnote %}
 
-Bash
+{% icon fa-linux %} {% icon fa-apple %} Bash
 
     ./bitwarden.sh start
 
-PowerShell
+{% icon fa-windows %} PowerShell
 
     .\bitwarden.ps1 -start
 
@@ -181,11 +181,11 @@ You can then verify that all containers are up and running correctly:
 
 Finally, you need to initialize and update the bitwarden database:
 
-Bash
+{% icon fa-linux %} {% icon fa-apple %} Bash
 
     ./bitwarden.sh updatedb
 
-PowerShell
+{% icon fa-windows %} PowerShell
 
     .\bitwarden.ps1 -updatedb
 
@@ -196,10 +196,11 @@ Congratulations! bitwarden is now up and running at `https://your.domain.com`. V
 The bitwarden main script (`bitwarden.sh` or `bitwarden.ps1`) has the following commands available:
 
 {% note %}
-PowerShell users will run the commands with a prefixed `-`. For example `.\bitwarden.ps1 -start`.
+PowerShell users will run the commands with a prefixed `-` (switch). For example `.\bitwarden.ps1 -start`.
 {% endnote %}
 
 {% table %}
+
 | Command    | Description                             |
 |------------|-----------------------------------------|
 | install    | Start the installer.                    |
@@ -209,4 +210,5 @@ PowerShell users will run the commands with a prefixed `-`. For example `.\bitwa
 | updatedb   | Update the database.                    |
 | update     | Update all containers and the database. |
 | updateself | Update this main script.                |
+
 {% endtable %}
