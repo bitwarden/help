@@ -36,6 +36,7 @@ We provide built-in connectors for the most popular LDAP directory servers, such
 The following options can be set:
 
 {% table %}
+
 | Property | Description | Examples |
 |----------|-------------|----------|
 | Address | The host name of your directory server. | `ad.company.com` or `ldap.company.local` |
@@ -44,6 +45,7 @@ The following options can be set:
 | Current user | Authenticate to the directory server as the currently logged in user. For Active Directory, the user should be a member of the built-in administrators group. |  |
 | Username | The distinguished name of an administrative user that the application will use when connecting to the directory server. For Active Directory, the user should be a member of the built-in administrators group. | `cn=admin,cn=users,dc=ad,dc=company,dc=com` or `admin@company.com` |
 | Password | The password of the user specified above. Note that the password is safely encrypted before being stored for the application, however, to better guarantee its security, you should ensure that other processes do not have OS-level read permissions for this application's settings files. |  |
+
 {% endtable %}
 
 ## Configuring Sync Settings
@@ -53,6 +55,7 @@ The following options can be set:
 3. Step through and set each sync configuration setting.
 
 {% table %}
+
 | Property | Description | Examples |
 |----------|---------- --|----------|
 | Sync Groups | Sync groups to your organization. |  |
@@ -73,4 +76,5 @@ The following options can be set:
 | Email Suffix | The specified suffix to use when forming a user's email address from the prefix/suffix setting. | @company.com |
 | Creation Date Attribute | The attribute field that specifies when an entry was created. | whenCreated |
 | Revision Date Attribute | The attribute field that specifies when an entry was changed. | whenChanged |
+
 {% endtable %}

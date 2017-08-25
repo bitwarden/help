@@ -63,12 +63,14 @@ Console.exe login -e -p [-t] [-o]
 ```
 
 {% table %}
+
 | Description     | Argument | Example Value                        | Required |
 |-----------------|----------|--------------------------------------|----------|
 | Email           | -e       | user@example.com                     | y        |
 | Password        | -p       | mypassword123                        | y        |
 | 2FA Token       | -t       | 381119                               | n        |
 | Organization Id | -o       | acadad98-b666-498d-b89f-f220f21e453f | n        |
+
 {% endtable %}
 
 You can also log out with the following command:
@@ -94,35 +96,42 @@ Console.exe configdir -t [azure: -i -s -te] [gsuite: -f -u [-d] [-c]] [ad/ldap: 
 ```
 
 {% table %}
+
 | Description     | Argument | Example Value                        | Required | Notes                                    |
 |-----------------|----------|--------------------------------------|----------|------------------------------------------|
 | Type            | -t       | 1                                    | y        | AD = 0, Azure = 1, Other = 2, GSuite = 3 |
+
 {% endtable %}
 
 #### Azure
 
 {% table %}
+
 | Description    | Argument | Example Value                        | Required |
 |----------------|----------|--------------------------------------|----------|
 | Application Id | -i       | 0f82b419-c5b3-4b63-8afc-67d240da85a6 | y        |
 | Secret Key     | -s       | c2VjcmV0X2tleQ==                     | y        |
 | Tenant         | -te      | mycompany.onmicrosoft.com            | y        |
+
 {% endtable %}
 
 #### G Suite
 
 {% table %}
+
 | Description | Argument | Example Value      | Required |
 |-------------|----------|--------------------|----------|
 | Secret File | -f       | client_secret.json | y        |
 | Admin User  | -u       | admin@company.com  | y        |
 | Domain      | -d       | company.com        | y        |
 | Customer Id | -c       | 39204722352        | n        |
+
 {% endtable %}
 
 #### Active Directory / Other LDAP
 
 {% table %}
+
 | Description  | Argument | Example Value       | Required |
 |--------------|----------|---------------------|----------|
 | Address      | -a       | company.local       | y        |
@@ -131,6 +140,7 @@ Console.exe configdir -t [azure: -i -s -te] [gsuite: -f -u [-d] [-c]] [ad/ldap: 
 | Current User | -cu      | n/a                 | n        |
 | Username     | -u       | admin@company.com   | n        |
 | Password     | -p       | mypassword          | n        |
+
 {% endtable %}
 
 {% note %}
@@ -150,6 +160,7 @@ Console.exe configsync [-g] [-u] [-i] [-uf] [-gf] [-rd] [ad/ldap: [-go] [-gp] [-
 ```
 
 {% table %}
+
 | Description     | Argument | Example Value          | Required | Notes                                              |
 |-----------------|----------|------------------------|----------|----------------------------------------------------|
 | Sync Groups     | -g       | n/a                    | n        |                                                    |
@@ -158,6 +169,7 @@ Console.exe configsync [-g] [-u] [-i] [-uf] [-gf] [-rd] [ad/ldap: [-go] [-gp] [-
 | User Filter     | -uf      | (&(objectClass=user))  | n        | Value syntax is different for each directory type. |
 | Group Filter    | -gf      | (&(objectClass=group)) | n        | Value syntax is different for each directory type. |
 | Remove Disabled | -rd      | n/a                    | n        |                                                    |
+
 {% endtable %}
 
 {% note %}
@@ -169,6 +181,7 @@ The syntax for user and group filters is different for each type of directory. L
 #### Active Directory / Other LDAP
 
 {% table %}
+
 | Description             | Argument | Example Value  | Required |
 |-------------------------|----------|----------------|----------|
 | Group Object Class      | -go      | group          | y        |
@@ -183,6 +196,7 @@ The syntax for user and group filters is different for each type of directory. L
 | Email Suffix            | -es      | @company.com   | n        |
 | Creation Date Attribute | -c       | whenCreated    | n        |
 | Revision Date Attribute | -r       | whenChanged    | n        |
+
 {% endtable %}
 
 ### Manually simulate a sync
@@ -200,9 +214,11 @@ Console.exe sim [-f]
 ```
 
 {% table %}
+
 | Description | Argument | Example Value | Required | Notes               |
 |-------------|----------|---------------|----------|---------------------|
 | Force       | -f       | n/a           | n        | Forces a full sync. |
+
 {% endtable %}
 
 ### Perform a sync
@@ -217,9 +233,11 @@ Console.exe sync [-f]
 ```
 
 {% table %}
+
 | Description | Argument | Example Value | Required | Notes               |
 |-------------|----------|---------------|----------|---------------------|
 | Force       | -f       | n/a           | n        | Forces a full sync. |
+
 {% endtable %}
 
 ### Manage the background service
@@ -237,10 +255,12 @@ Console.exe service [-start] [-stop]
 ```
 
 {% table %}
+
 | Description | Argument | Example Value | Required |
 |-------------|----------|---------------|----------|
 | Start       | -start   | n/a           | n        |
 | Stop        | -stop    | n/a           | n        |
+
 {% endtable %}
 
 {% note %}
