@@ -25,7 +25,8 @@ This article will walk you through how to install and deploy bitwarden to your o
 
 1. Set DNS records for a domain name pointing to your machine. Open ports 80 and 443 on the machine.
 2. Install [Docker](https://docs.docker.com/engine/installation/){:target="_blank"} and [Docker Compose](https://docs.docker.com/compose/install/){:target="_blank"}. If using Windows or macOS, adjust Docker so that it has at least 4 GB of RAM available.
-3. Install & deploy bitwarden.
+3. Get an installation id and key from [https://bitwarden.com/install](https://bitwarden.com/install){:target="_blank"}.
+4. Install & deploy bitwarden.
     
     Bash
 
@@ -43,7 +44,7 @@ This article will walk you through how to install and deploy bitwarden to your o
        .\bitwarden.ps1 -install
        .\bitwarden.ps1 -start
        .\bitwarden.ps1 -updatedb
-4. Adjust additional configuration settings in `./bitwarden/env/global.override.env` and restart.
+5. Adjust additional configuration settings in `./bitwarden/env/global.override.env` and restart.
     
     Bash
 
@@ -52,7 +53,7 @@ This article will walk you through how to install and deploy bitwarden to your o
     PowerShell
 
        .\bitwarden.ps1 -restart
-5. Test your deployment. Visit the web vault at your configured domain name, register a new account, and log in.
+6. Test your deployment. Visit the web vault at your configured domain name, register a new account, and log in.
 
 ## Configure Your Domain
 
