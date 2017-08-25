@@ -4,7 +4,7 @@ title: Configuring directory sync with Active Directory or other LDAP servers
 categories: [organizations]
 featured: true
 popular: false
-tags: []
+tags: [active directory, ldap, ad]
 ---
 
 An LDAP directory is a collection of data about users and groups. LDAP (Lightweight Directory Access Protocol) is an Internet protocol that web applications can use to look up information about those users and groups from the LDAP server.
@@ -57,7 +57,7 @@ The following options can be set:
 {% table %}
 
 | Property | Description | Examples |
-|----------|---------- --|----------|
+|----------|-------------|----------|
 | Sync Groups | Sync groups to your organization. |  |
 | Sync Users | Sync users to your organization. |  |
 | Sync Interval | When using the background service, the interval, in minutes, that you wish to automatically sync. | 5 |
