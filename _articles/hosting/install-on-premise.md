@@ -12,6 +12,7 @@ This article will walk you through how to install and deploy bitwarden to your o
 
 ## Table of Contents
 
+- [TL;DR](#tldr)
 - [Configure Your Domain](#configure-your-domain)
 - [Install Docker](#install-docker)
 - [Adjust Docker Resources](#adjust-docker-resources)
@@ -19,6 +20,39 @@ This article will walk you through how to install and deploy bitwarden to your o
 - [Post-install Environment Configuration](#post-install-environment-configuration)
 - [Deploy bitwarden](#deploy-bitwarden)
 - [Script Commands](#script-commands)
+
+## TL;DR
+
+1. Set DNS records for a domain name pointing to your machine. Open ports 80 and 443 on the machine.
+2. Install [Docker](https://docs.docker.com/engine/installation/){:target="_blank"} and [Docker Compose](https://docs.docker.com/compose/install/){:target="_blank"}. If using Windows or macOS, adjust Docker so that it has at least 4 GB of RAM available.
+3. Install & deploy bitwarden.
+    
+    Bash
+
+       curl -s -o bitwarden.sh \
+           https://raw.githubusercontent.com/bitwarden/core/master/scripts/bitwarden.sh \
+           && sudo chmod u+x bitwarden.sh
+       ./bitwarden.sh install
+       ./bitwarden.sh start
+       ./bitwarden.sh updatedb
+
+    PowerShell
+
+       Invoke-RestMethod -OutFile bitwarden.ps1 `
+           -Uri https://raw.githubusercontent.com/bitwarden/core/master/scripts/bitwarden.ps1
+       .\bitwarden.ps1 -install
+       .\bitwarden.ps1 -start
+       .\bitwarden.ps1 -updatedb
+4. Adjust additional configuration settings in `./bitwarden/env/global.override.env` and restart.
+    
+    Bash
+
+       ./bitwarden.sh restart
+
+    PowerShell
+
+       .\bitwarden.ps1 -restart
+5. Test your deployment. Visit the web vault at your configured domain name, register a new account, and log in.
 
 ## Configure Your Domain
 
