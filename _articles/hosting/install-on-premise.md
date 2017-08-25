@@ -8,7 +8,7 @@ hidden: true
 tags: [hosting, docker, install, deploy]
 ---
 
-This article will walk you through how to install and deplay bitwarden to your own server.
+This article will walk you through how to install and deploy bitwarden to your own server.
 
 ## Table of Contents
 
