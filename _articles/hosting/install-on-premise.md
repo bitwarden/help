@@ -8,6 +8,18 @@ hidden: true
 tags: [hosting, docker, install, deploy]
 ---
 
+This article will walk you through how to install and deplay bitwarden to your own server.
+
+## Table of Contents
+
+- [Configure Your Domain](#configure-your-domain)
+- [Install Docker](#install-docker)
+- [Adjust Docker Resources](#adjust-docker-resources)
+- [Install bitwarden](#install-bitwarden)
+- [Post-install Environment Configuration](#post-install-environment-configuration)
+- [Deploy bitwarden](#deploy-bitwarden)
+- [Script Commands](#script-commands)
+
 ## Configure Your Domain
 
 bitwarden will be served through ports 80 (http) and 443 (https) on the localhost machine. You should open these ports so that bitwarden can be accessed from within and/or outside of the network.
@@ -144,7 +156,7 @@ PowerShell
 
 Congratulations! bitwarden is now up and running at `https://your.domain.com`. Visit the web vault in your web browser to confirm. You should register a new account and log in.
 
-## Main Script Commands
+## Script Commands
 
 The bitwarden main script (`bitwarden.sh` or `bitwarden.ps1`) has the following commands available:
 
