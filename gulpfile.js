@@ -96,7 +96,7 @@ gulp.task('jekyll:build', function (cb) {
 });
 
 gulp.task('jekyll:serve', function (cb) {
-    return jekyll(['serve', '--watch'], cb);
+    return jekyll(['serve', '--watch', '--host=0.0.0.0'], cb);
 });
 
 gulp.task('serve', () => {
