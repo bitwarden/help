@@ -23,7 +23,7 @@ This article will walk you through how to install and deploy bitwarden to your o
 - [Adjust Docker Resources](#adjust-docker-resources)
 - [Install bitwarden](#install-bitwarden)
 - [Post-install Environment Configuration](#post-install-environment-configuration)
-- [Deploy bitwarden](#deploy-bitwarden)
+- [Start bitwarden](#start-bitwarden)
 - [Script Commands](#script-commands)
 
 ## TL;DR
@@ -164,7 +164,7 @@ globalSettings__mail__smtp__port=587
 
 You can get a YubiKey client id and key at [https://upgrade.yubico.com/getapikey/](https://upgrade.yubico.com/getapikey/){:target="_blank"}.
 
-## Deploy bitwarden
+## Start bitwarden
 
 Once you've completed installing and configuring your bitwarden installation you can start it up:
 
