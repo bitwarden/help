@@ -4,7 +4,6 @@ title: What platforms can I host on?
 categories: [hosting]
 featured: false
 popular: false
-hidden: true
 tags: [platforms, hosting, docker]
 ---
 

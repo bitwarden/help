@@ -4,9 +4,14 @@ title: Installing and deploying
 categories: [hosting]
 featured: false
 popular: false
-hidden: true
 tags: [hosting, docker, install, deploy]
 ---
+
+{% warning %}
+On-premise hosting is currently in beta. It is not yet ready for real, production use. You should only use this beta for testing purposes. DO NOT STORE SENSITIVE DATA IN THESE BETA INSTALLATIONS. There will be no upgrade path to the production versions from these beta installations and they should be removed when you are done testing.
+
+You can provide feedback about this beta on GitHub at <https://github.com/bitwarden/core/issues/62>.
+{% endwarning %}
 
 This article will walk you through how to install and deploy bitwarden to your own server. Because bitwarden is a cross platform application, you can install and deploy it on Linux, macOS, and Windows machines.
 
@@ -143,14 +148,16 @@ We've made installing bitwarden very simple. Depending in your environment (non-
 
 ## Post-install Environment Configuration
 
-Some features such as a SMTP mail server and YubiKey OTP API credentials are not configured by the installer. You can find the environment file for these settings (and all others) in the following location: `./bitwarden/env/global.override.env`. Edit this file and REPLACE the placeholders values for them.
+Some features such as a SMTP mail server settings, YubiKey OTP API credentials, etc. are not configured by the installer. You can find the environment file for these settings (and all others) in the following location: `./bitwarden/env/global.override.env`. Edit this file and REPLACE the placeholders values for them.
+
+Example:
 
 ```
-globalSettings__yubico__clientId=REPLACE
-globalSettings__yubico__key=REPLACE
-globalSettings__mail__smtp__host=REPLACE
-globalSettings__mail__smtp__username=REPLACE
-globalSettings__mail__smtp__password=REPLACE
+globalSettings__yubico__clientId=294620155
+globalSettings__yubico__key=YOUR_KEY
+globalSettings__mail__smtp__host=smtp.sendgrid.net
+globalSettings__mail__smtp__username=apikey
+globalSettings__mail__smtp__password=SG.YOUR.API_KEY
 globalSettings__mail__smtp__ssl=true
 globalSettings__mail__smtp__port=587
 ```
