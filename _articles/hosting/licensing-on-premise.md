@@ -4,8 +4,26 @@ title: Licensing for paid features
 categories: [hosting]
 featured: false
 popular: false
-hidden: true
 tags: [hosting, licensing]
 ---
 
+Hosting bitwarden yourself is free. However, some features of bitwarden require that you obtain a paid license in order to unlock.
 
+## Premium Membership
+
+Using premium features of bitwarden in a self-hosted installation requires that you obtain a premium membership license.
+
+1. If you haven't already, purchase a premium membership by logging in to your bitwarden.com account at <https://vault.bitwarden.com> and navigating to **Settings** &rarr; **Go Premium**.
+2. Download your premium license file from <https://vault.bitwarden.com> by navigating to **Settings** &rarr; **Billing** &rarr; **Download License**.
+3. Log in to the web vault of your self-hosted bitwarden installation. Ensure that the email address used for your user account on your self-hosted installation matches the email address used on your bitwarden.com account. Also make sure that your account's email address is verified.
+4. In your self hosted installation's web vault, navigate to **Settings** &rarr; **Go Premium**.
+5. Upload the license file that you downloaded in step 2 and your user account will upgraded to premium.
+
+## Organization Account (Sharing)
+
+The sharing features of bitwarden require that you create an organization account. To create an organization in an on-premise hosted bitwarden installation you must first obtain an **enterprise organization** license. Only enterprise organizations are eligible for on-premise hosting.
+
+1. If you haven't already, purchase an enterprise organization plan by logging in to your bitwarden.com account at <https://vault.bitwarden.com> and navigating to **Settings** &rarr; **New Organization**. If you would like to upgrade an existing organization account to the enterprise plan, please [contact bitwarden support](https://bitwarden.com/contact).
+2. Download your enterprise organization license file from <https://vault.bitwarden.com> by navigating to your organization's admin area, and then **Settings** &rarr; **Billing &amp; Licensing** &rarr; **Download License**. Enter the [installation id]({% link _articles/hosting/install-on-premise.md %}#install-bitwarden) that matches your bitwarden installation.
+3. Log in to the web vault of your self-hosted bitwarden installation and navigate to **Settings** &rarr; **New Organization**.
+5. Upload the license file that you downloaded in step 2 and your enterprise organization account will be created.
