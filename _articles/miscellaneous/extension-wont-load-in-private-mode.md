@@ -13,7 +13,7 @@ As a workaround, if you are looking to auto-fill a login while in Firefox Privat
 
 1. Navigate to the website's login page in Firefox Private Browsing.
 2. Right click the page. A context menu will appear.
-3. Select **bitwarden -> Auto-fill -> [your login]**.
+3. Select **bitwarden** &rarr; **Auto-fill &rarr; **[your login]**.
 
 Alternatively, you can also copy/paste your login credentials by accessing your vault from the regular, non-private browsing mode.
 

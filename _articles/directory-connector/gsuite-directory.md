@@ -42,7 +42,7 @@ If you already have a Google Cloud project available, you can skip this step and
 
 1. Go to <https://console.cloud.google.com>
 2. Make sure the appropriate project is selected.
-3. Open the navigation menu and navigate to **API Manager** -> **Dashboard**.
+3. Open the navigation menu and navigate to **API Manager** &rarr; **Dashboard**.
 4. Select the **Enable API** button near the top.
    {% image directory-connector/gsuite/enable-api.png %}
 5. Click the **Admin SDK** link under the **Google Apps APIs** section.
@@ -54,7 +54,7 @@ If you already have a Google Cloud project available, you can skip this step and
 
 1. Go to <https://console.cloud.google.com>
 2. Make sure the appropriate project is selected.
-3. Open the navigation menu and navigate to **API Manager** -> **Credentials**.
+3. Open the navigation menu and navigate to **API Manager** &rarr; **Credentials**.
 4. Click the **Create credentials** button and select **Service account key**.
    {% image directory-connector/gsuite/create-credentials.png %}
 5. Select **New service account**.
@@ -76,7 +76,7 @@ If you already have a Google Cloud project available, you can skip this step and
 2. Open the navigation menu and navigate to **Security**.
 3. Select the **API reference** option and make sure **Enable API access** is checked.
    {% image directory-connector/gsuite/enable-api-access.png %}
-4. Back in the list of options, select **Show more** -> **Advanced settings** -> **Manage API client access**
+4. Back in the list of options, select **Show more** &rarr; **Advanced settings** -> **Manage API client access**
    {% image directory-connector/gsuite/manage-api-access.png %}
 5. For **Client Name**, paste the **Client ID** of the service account that you created in the previous steps. For **API Scopes**, paste the following values to grant read-only access to users and groups:
    <pre>https://www.googleapis.com/auth/admin.directory.user.readonly,https://www.googleapis.com/auth/admin.directory.group.readonly,https://www.googleapis.com/auth/admin.directory.group.member.readonly</pre>

@@ -23,7 +23,7 @@ Once you invite a user they will receive an email where they will need to click 
 
 {% image organizations/user-accept.png %}
 
-After the user has successfully accepted the organization invite, an organization admin will then need to **confirm** the user from the same area in the web vault that you invited the user from (Organization Admin -> People). Only after the user is confirmed will they then have access to that organization and the items being shared with them.
+After the user has successfully accepted the organization invite, an organization admin will then need to **confirm** the user from the same area in the web vault that you invited the user from (Organization Admin &rarr; People). Only after the user is confirmed will they then have access to that organization and the items being shared with them.
 
 {% image organizations/org-people-options.png %}
 

@@ -12,11 +12,11 @@ You can use the bitwarden Android app to add new and auto-fill existing logins o
 ## Enabling the service
 
 1. Open the bitwarden Android app.
-2. Tap **Tools** -> **bitwarden Auto-fill Service**. Status *Disabled* will appear.
+2. Tap **Tools** &rarr; **bitwarden Auto-fill Service**. Status *Disabled* will appear.
 3. Tap **Open Accessibility Settings**.
 4. Locate **bitwarden** from the list and enable it.
 
-Auto-fill is context-sensitive. This means that the bitwarden auto-fill icon, and notification will only appear when the app detects a login form. You can change the way auto-fill behaves by navigating to **Settings** -> **Features** -> **Auto-fill**.
+Auto-fill is context-sensitive. This means that the bitwarden auto-fill icon, and notification will only appear when the app detects a login form. You can change the way auto-fill behaves by navigating to **Settings** &rarr; **Features** &rarr; **Auto-fill**.
 
 ## Testing auto-fill
 
