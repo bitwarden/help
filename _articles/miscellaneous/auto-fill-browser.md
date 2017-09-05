@@ -23,9 +23,9 @@ The same list of logins that are available when using the popup window are also 
 
 {% image autofill-context-menu.png %}
 
-## Keyboard shortcuts
+## Keyboard shortcuts (hot keys)
 
-You can use a set of keyboard shortcuts to quickly auto-fill a login form. When viewing the login form press `Ctrl + Shift + L` (`Cmd + Shift + L` on macOS) and the last used login for that website will be auto-filled.
+You can use a set of keyboard shortcuts (hot keys) to quickly auto-fill a login form. When viewing the login form press `Ctrl + Shift + L` (`Cmd + Shift + L` on macOS) and the last used login for that website will be auto-filled.
 
 Another option is to open the popup window using the shortcut `Ctrl + Shift + Y` (`Cmd + Shift + Y` on macOS). You can then `TAB` to the login that you would like to auto-fill and then press `ENTER` to select.
 
