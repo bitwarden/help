@@ -122,7 +122,7 @@ We've made installing bitwarden very simple. Depending in your environment (non-
 
     **SSL Certificate**
 
-    - bitwarden can generate a maintain renewal of a trusted SSL certificate for your domain for completely free provided by [Let's Encrypt](https://letsencrypt.org){:target="_blank"} and [Certbot](https://certbot.eff.org){:target="_blank"}. Certificate renewal checks occur each time bitwarden is restarted.
+    - bitwarden can generate and maintain renewal of a trusted SSL certificate for your domain for completely free provided by [Let's Encrypt](https://letsencrypt.org){:target="_blank"} and [Certbot](https://certbot.eff.org){:target="_blank"}. Certificate renewal checks occur each time bitwarden is restarted.
 
     - If you already have your own SSL certificate you can place the following files in the `./bitwarden/ssl/your.domain.com` directory:
       - certificate.crt (required)
@@ -130,9 +130,7 @@ We've made installing bitwarden very simple. Depending in your environment (non-
       - ca.crt (optional, if trusted)
       - dhparam.pem (optional, if using Diffie Hellman ephemeral parameters)
 
-    - If you are only testing, you can choose to generate a self-signed certificate for your installation.
-
-    {% warning %}It is not recommended to use bitwarden without a SSL certificate. You should at least use a self-signed certificate.{% endwarning %}
+    - If you are only testing and do not have an SSL certificate, a self-signed certificate will be generated for your installation.
 
     **Installation Id/Key**
 
