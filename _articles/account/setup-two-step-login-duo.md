@@ -22,7 +22,7 @@ A Duo account is required to use this feature. A Duo account [for up to 10 users
 1. If you do not already have one, sign up for a new Duo account at [https://signup.duo.com/](https://signup.duo.com/){:target="_blank"}
 2. Log in to the Duo Admin panel with your Duo account at [https://admin.duosecurity.com/login](https://admin.duosecurity.com/login){:target="_blank"}
 3. In the left menu, navigate to **Applications**, then click the **Protect an Application** button.
-4. Find the **Web SDK** application and click the **Protect this Application** button.
+4. Find the **bitwarden** application and click the **Protect this Application** button.
 5. Note the **Integration Key**, **Secret Key**, and **API Hostname** details. We will need to reference these later when configuring bitwarden.
    {% image two-step/duo/application-details.png %}
 
@@ -43,7 +43,7 @@ Two-step login can permanently lock you out of your account. It is very importan
 2. Click **Settings** on the sidebar. Click **Two-step Login** in the sub-menu that opens under **Settings**.  
 3. Select the **Duo** option and then type in your master password to continue.
    {% image two-step/duo/select.png %}
-4. Enter the configuration information provided from the Duo Admin **Web SDK** application that was set up earlier: **Integration Key**, **Secret Key**, and **API Hostname**.
+4. Enter the configuration information provided from the Duo Admin **bitwarden** application that was set up earlier: **Integration Key**, **Secret Key**, and **API Hostname**.
    {% image two-step/duo/config.png %}
 5. Click the **Enable** button. A green alert will appear at the top stating that two-step login has been enabled.
 6. Click the **Close** button and confirm that the **Duo** option now shows as **Enabled**.
