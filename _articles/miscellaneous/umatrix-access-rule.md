@@ -7,7 +7,7 @@ popular: false
 tags: [umatrix, firefox]
 ---
 
-By default, the uMatrix addon will block the bitwarden Firefox addon from accessing the bitwarden API servers. Without adding proper rules to allow bitwarden API servers, logging in will fail.
+By default, the uMatrix addon will block the bitwarden Firefox addon from accessing the bitwarden API servers. Without adding proper rules to allow the bitwarden API servers, logging in will fail.
 
 The following [uMatrix rules](https://github.com/gorhill/uMatrix/wiki/Rules-syntax) are required:
 
