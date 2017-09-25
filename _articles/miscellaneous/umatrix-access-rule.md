@@ -18,4 +18,5 @@ dc8ef5f6-eb0d-4c87-9e9f-0cf803f619e8.moz-extension-scheme bitwarden.com cookie a
 
 {% note %}
 The UUID included in the above rule will be different for your installation.
+Use the `about:debugging#addons` page to find your UUID.
 {% endnote %}
