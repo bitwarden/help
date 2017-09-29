@@ -22,7 +22,7 @@ A Duo account is required to use this feature. A Duo account [for up to 10 users
 1. If you do not already have one, sign up for a new Duo account at [https://signup.duo.com/](https://signup.duo.com/){:target="_blank"}
 2. Log in to the Duo Admin panel with your Duo account at [https://admin.duosecurity.com/login](https://admin.duosecurity.com/login){:target="_blank"}
 3. In the left menu, navigate to **Applications**, then click the **Protect an Application** button.
-4. Find the **bitwarden** application and click the **Protect this Application** button.
+4. Find/search for the **Bitwarden** application and click the **Protect this Application** button.
 5. Note the **Integration Key**, **Secret Key**, and **API Hostname** details. We will need to reference these later when configuring bitwarden.
    {% image two-step/duo/application-details.png %}
 
