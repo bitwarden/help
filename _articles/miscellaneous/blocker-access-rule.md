@@ -18,7 +18,7 @@ dc8ef5f6-eb0d-4c87-9e9f-0cf803f619e8.moz-extension-scheme bitwarden.com xhr allo
 ```
 
 {% note %}
-The UUID included in the above rule will be different for your installation.
+The UUID included in the above rule (`dc8ef5f6-eb0d-4c87-9e9f-0cf803f619e8`) will be different for your installation.
 Use the `about:debugging#addons` page (navigate from your address bar) to locate your bitwarden extension UUID.
 {% endnote %}
 
