@@ -1,6 +1,6 @@
 ---
 layout: article
-title: uMatrix & NoScript access rules
+title: uMatrix and NoScript access rules
 categories: [miscellaneous]
 featured: false
 popular: false
