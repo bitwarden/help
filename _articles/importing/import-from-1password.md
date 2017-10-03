@@ -3,7 +3,7 @@ layout: article
 title: Import your data from 1Password
 categories: [getting-started]
 featured: true
-popular: true
+popular: false
 tags: [import, 1password]
 ---
 

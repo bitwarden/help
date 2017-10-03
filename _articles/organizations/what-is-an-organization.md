@@ -3,7 +3,7 @@ layout: article
 title: What are organizations?
 categories: [organizations]
 featured: true
-popular: false
+popular: true
 tags: []
 ---
 
