@@ -49,7 +49,7 @@ This article will walk you through how to install and deploy bitwarden to your o
        .\bitwarden.ps1 -install
        .\bitwarden.ps1 -start
        .\bitwarden.ps1 -updatedb
-5. Adjust additional configuration settings in `./bitwarden/env/global.override.env` and restart.
+5. Adjust additional configuration settings in `./bwdata/env/global.override.env` and restart.
     
     {% icon fa-linux %} {% icon fa-apple %} Bash
 
@@ -95,7 +95,7 @@ We've made installing bitwarden very simple. Depending in your environment (non-
 
 1. Download the main bitwarden script to your machine in the desired location:
 
-    {% note %}All bitwarden assets will be installed in the `./bitwarden` directory relative to where the main script resides.{% endnote %}
+    {% note %}All bitwarden assets will be installed in the `./bwdata` directory relative to where the main bitwarden script resides.{% endnote %}
 
     {% icon fa-linux %} {% icon fa-apple %} Bash
 
@@ -124,7 +124,7 @@ We've made installing bitwarden very simple. Depending in your environment (non-
 
     - bitwarden can generate and maintain renewal of a trusted SSL certificate for your domain for completely free provided by [Let's Encrypt](https://letsencrypt.org){:target="_blank"} and [Certbot](https://certbot.eff.org){:target="_blank"}. Certificate renewal checks occur each time bitwarden is restarted.
 
-    - If you already have your own SSL certificate you can place the following files in the `./bitwarden/ssl/your.domain.com` directory:
+    - If you already have your own SSL certificate you can place the following files in the `./bwdata/ssl/your.domain.com` directory:
       - certificate.crt (required)
       - private.key (required)
       - ca.crt (optional, if trusted)
@@ -146,7 +146,7 @@ We've made installing bitwarden very simple. Depending in your environment (non-
 
 ## Post-install Environment Configuration
 
-Some features such as a SMTP mail server settings, YubiKey OTP API credentials, etc. are not configured by the installer. You can find the environment file for these settings (and all others) in the following location: `./bitwarden/env/global.override.env`. Edit this file and REPLACE the placeholders values for them.
+Some features such as a SMTP mail server settings, YubiKey OTP API credentials, etc. are not configured by the installer. You can find the environment file for these settings (and all others) in the following location: `./bwdata/env/global.override.env`. Edit this file and REPLACE the placeholders values for them.
 
 Example:
 
