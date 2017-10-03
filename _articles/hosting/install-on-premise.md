@@ -7,12 +7,6 @@ popular: false
 tags: [hosting, docker, install, deploy]
 ---
 
-{% warning %}
-On-premise hosting is currently in beta. It is not yet ready for real, production use. You should only use this beta for testing purposes. DO NOT STORE SENSITIVE DATA IN THESE BETA INSTALLATIONS. There will be no upgrade path to the production versions from these beta installations and they should be removed when you are done testing.
-
-You can provide feedback about this beta on GitHub at <https://github.com/bitwarden/core/issues/62>.
-{% endwarning %}
-
 This article will walk you through how to install and deploy bitwarden to your own server. Because bitwarden is a cross platform application, you can install and deploy it on Linux, macOS, and Windows machines.
 
 ## Table of Contents
