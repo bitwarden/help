@@ -11,10 +11,6 @@ Unlike most services that you use on the internet, due to the way bitwarden work
 
 If you have forgotten your master password unfortunately there is no way to fully recover the account. The only option to gain access to the account again is to delete the account so that you can register again and start over. Note that deleting the account will also delete all of your stored login data associated with the account.
 
-{% tip %}
-If you still have an active login session open in the browser extension you can export your data from **Tools** &rarr; **Export Vault** so that you can import it back in after the account has been deleted and you have registered again.
-{% endtip %}
-
 ## Deleting the account
 
 1. Navigate to <https://vault.bitwarden.com/#/recover-delete>
