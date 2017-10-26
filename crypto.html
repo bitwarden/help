@@ -23,28 +23,36 @@
 <body>
     <div class="container" id="app">
         <h1>Key Derivation</h1>
+
         <form>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="text" id="email" class="form-control" v-model="email">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" class="form-control" v-model="email">
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label for="masterPassword">Master Password</label>
+                        <input type="password" id="masterPassword" class="form-control" v-model="masterPassword">
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label for="pbkdf2Iterations">Client PBKDF2 Iterations</label>
+                        <input type="number" id="pbkdf2Iterations" class="form-control" v-model="pbkdf2Iterations">
+                    </div>
+                </div>
             </div>
-            <div class="form-group">
-                <label for="masterPassword">Master Password</label>
-                <input type="password" id="masterPassword" class="form-control" v-model="masterPassword">
-            </div>
-            <div class="form-group">
-                <label for="pbkdf2Iterations">PBKDF2 Client Iterations</label>
-                <input type="number" id="pbkdf2Iterations" class="form-control" v-model="pbkdf2Iterations">
-            </div>
-            <button type="button" id="deriveKeys" class="btn btn-default" v-on:click="deriveKeys">
-                Derive Keys
-            </button>
         </form>
-        <hr>
-        <h2>Private Key</h2>
+
+        <h2>User Key</h2>
         <p>{{userKey.b64}}</p>
+
         <h2>Master Password Hash</h2>
         <p>{{userKeyHash.b64}}</p>
+
         <h2>Generated Symmetric Key Material</h2>
         <p>{{key.key.b64}}</p>
         <h3>Encryption Key</h3>
@@ -53,17 +61,27 @@
         <p>{{key.macKey.b64}}</p>
 
         <h2>Generated RSA Keypair</h2>
+        <h3>Public Key</h3>
+        <p></p>
+        <h3>Private Key</h3>
+        <p></p>
+
+        <button type="button" id="deriveKeys" class="btn btn-primary" v-on:click="generateKeys">
+            Regenerate Keys
+        </button>
+
+        <hr />
 
         <h1>Encryption</h1>
+
         <form>
             <div class="form-group">
                 <label for="plaintext">Plaintext Value</label>
                 <input type="text" id="plaintext" class="form-control" v-model="plaintext">
             </div>
-            <button type="button" id="encrypt" class="btn btn-default" v-on:click="encrypt">
-                Encrypt
-            </button>
         </form>
+
+        <hr />
 
         <h2>The "Cipher String"</h2>
         <p>{{cipher.string}}</p>
@@ -78,7 +96,7 @@
 
     <script>
         (function () {
-            // Objects
+            // Constants/Enums
 
             var encType = {
                 AesCbc256_B64: 0,
@@ -89,6 +107,8 @@
                 Rsa2048_OaepSha256_HmacSha256_B64: 5,
                 Rsa2048_OaepSha1_HmacSha256_B64: 6
             };
+
+            // Classes
 
             var Cipher = function (encType, iv, ct, mac) {
                 if (!arguments.length) {
@@ -179,7 +199,11 @@
                 return window.btoa(binary);
             }
 
-            // Methods
+            function hasValue(str) {
+                return str && str !== '';
+            }
+
+            // Crypto
 
             function pbkdf2(password, salt, iterations, length) {
                 var importAlg = {
@@ -317,7 +341,7 @@
 
             // App
 
-            new Vue({
+            var vm = new Vue({
                 el: '#app',
                 data: {
                     email: null,
@@ -332,38 +356,80 @@
                     cipher: new Cipher(),
                     decPlaintext: ''
                 },
-                methods: {
-                    deriveKeys: function () {
-                        var self = this,
-                            password = fromUtf8(self.masterPassword),
-                            salt = fromUtf8(self.email);
-
-                        pbkdf2(password, salt, self.pbkdf2Iterations, 256).then(function (userKey) {
-                            self.userKey = userKey;
-                            return pbkdf2(userKey.arr.buffer, password, 1, 256);
-                        }).then(function (userKeyHash) {
-                            self.userKeyHash = userKeyHash;
-                            var key = new Uint8Array(512 / 8);
-                            window.crypto.getRandomValues(key);
-                            self.key = new SymmetricCryptoKey(key.buffer);
-                        }).then(function () {
-                            // Something else...
-                        });
+                computed: {
+                    masterPasswordBuffer: function () {
+                        return this.masterPassword ? fromUtf8(this.masterPassword) : null;
                     },
-                    encrypt: function () {
-                        var self = this,
-                            data = fromUtf8(self.plaintext);
+                    emailBuffer: function () {
+                        return this.email ? fromUtf8(this.email) : null;
+                    },
+                    plaintextBuffer: function () {
+                        return this.plaintext ? fromUtf8(this.plaintext) : null;
+                    }
+                },
+                watch: {
+                    userKey: function (newUserKey) {
+                        var self = this;
 
-                        aesEncrypt(data, self.key)
-                            .then(function (cipher) {
-                                self.cipher = cipher;
-                                return aesDecrypt(cipher, self.key);
-                            }).then(function (plaintext) {
-                                self.decPlaintext = toUtf8(plaintext);
-                            });
+                        if (!newUserKey || !newUserKey.arr || !self.masterPasswordBuffer) {
+                            return new ByteData();
+                        }
+
+                        pbkdf2(newUserKey.arr.buffer, self.masterPasswordBuffer, 1, 256).then(function (userKeyHash) {
+                            self.userKeyHash = userKeyHash;
+                        });
+                    }
+                },
+                methods: {
+                    generateKeys: function () {
+                        var key = new Uint8Array(512 / 8);
+                        window.crypto.getRandomValues(key);
+                        this.key = new SymmetricCryptoKey(key);
                     }
                 }
             });
+
+            vm.$watch(function () {
+                return {
+                    masterPassword: vm.masterPasswordBuffer,
+                    email: vm.emailBuffer,
+                    iterations: vm.pbkdf2Iterations
+                };
+            }, function (newVal, oldVal) {
+                if (!newVal.masterPassword || !newVal.email || !newVal.iterations || newVal.iterations < 1) {
+                    vm.userKey = new ByteData();
+                    return;
+                }
+
+                pbkdf2(newVal.masterPassword, newVal.email, newVal.iterations, 256)
+                    .then(function (userKey) {
+                        vm.userKey = userKey;
+                    });
+            });
+
+            vm.$watch(function () {
+                return {
+                    key: vm.key,
+                    plaintext: vm.plaintextBuffer
+                };
+            }, function (newVal, oldVal) {
+                if (!newVal.key || !newVal.plaintext) {
+                    vm.cipher = new Cipher();
+                    vm.decPlaintext = '';
+                    return;
+                }
+
+                aesEncrypt(newVal.plaintext, newVal.key)
+                    .then(function (cipher) {
+                        vm.cipher = cipher;
+                        return aesDecrypt(cipher, newVal.key);
+                    }).then(function (plaintext) {
+                        vm.decPlaintext = toUtf8(plaintext);
+                    });
+            });
+
+            // Generate initial set of keys
+            vm.generateKeys();
         })();
     </script>
 </body>
