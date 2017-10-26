@@ -375,9 +375,10 @@
                             return new ByteData();
                         }
 
-                        pbkdf2(newUserKey.arr.buffer, self.masterPasswordBuffer, 1, 256).then(function (userKeyHash) {
-                            self.userKeyHash = userKeyHash;
-                        });
+                        pbkdf2(newUserKey.arr.buffer, self.masterPasswordBuffer, 1, 256)
+                            .then(function (userKeyHash) {
+                                self.userKeyHash = userKeyHash;
+                            });
                     }
                 },
                 methods: {
