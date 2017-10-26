@@ -73,7 +73,7 @@
         <pre>{{privateKey.b64}}</pre>
 
         <button type="button" id="deriveKeys" class="btn btn-primary" v-on:click="generateKeys">
-            Regenerate Keys
+            <i class="fa fa-refresh"></i> Regenerate Keys
         </button>
 
         <hr />
@@ -86,8 +86,6 @@
                 <textarea id="plaintext" class="form-control" v-model="plaintext"></textarea>
             </div>
         </form>
-
-        <hr />
 
         <h2>The "Cipher String"</h2>
         <pre>{{cipher.string}}</pre>
@@ -470,6 +468,11 @@
 
             // Generate initial set of keys
             vm.generateKeys();
+
+            // Set default values
+            vm.email = 'user@example.com';
+            vm.masterPassword = 'password123';
+            vm.plaintext = 'This is a secret.';
         })();
     </script>
 </body>
