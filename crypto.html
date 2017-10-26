@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>bitwarden crypto</title>
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+          rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,300italic,400italic,600italic"
+          rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <script src="//unpkg.com/vue"></script>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div class="container" id="app">
+        <h1>Key Derivation</h1>
+        <form>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="text" id="email" class="form-control" v-model="email">
+            </div>
+            <div class="form-group">
+                <label for="masterPassword">Master Password</label>
+                <input type="password" id="masterPassword" class="form-control" v-model="masterPassword">
+            </div>
+            <div class="form-group">
+                <label for="pbkdf2Iterations">PBKDF2 Client Iterations</label>
+                <input type="number" id="pbkdf2Iterations" class="form-control" v-model="pbkdf2Iterations">
+            </div>
+            <button type="button" id="deriveKeys" class="btn btn-default"
+                    v-on:click="deriveKeys">Derive Keys</button>
+        </form>
+        <hr>
+        <h2>Private Key</h2>
+        <p>{{key.b64}}</p>
+        <h2>Master Password Hash</h2>
+
+        <h2>Generated Symmetric Key Material</h2>
+
+        <h3>Encryption Key</h3>
+        <h3>MAC Key</h3>
+
+        <h2>Generated RSA Keypair</h2>
+
+        <h1>Encryption</h1>
+        <form>
+            <div class="form-group">
+                <label for="plaintext">Plaintext Value</label>
+                <input type="text" id="plaintext" class="form-control">
+            </div>
+            <button type="button" id="encrypt" class="btn btn-default">Encrypt</button>
+        </form>
+
+        <h2>The "Cipher String"</h2>
+    </div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+        (function(){
+            var CipherString = function(type, iv, ct, mac) {
+                this.type = type;
+                this.iv = iv;
+                this.ct = ct;
+                this.mac = mac;
+                this.string = type + '.' + iv.b64 + '|' + ct.b64;
+                if(mac) {
+                    this.string += ('|' + mac.b64);
+                }
+            }
+
+            var ByteData = function(buf) {
+                if(!buf) {
+                    return;
+                }
+                this.buf = buf;
+                this.b64 = toB64(buf);
+            }
+
+            function pbkdf2(password, salt, iterations, length) {
+                console.log('pbkdf2');
+
+                return window.crypto.subtle.importKey('raw', password, { name: 'PBKDF2' }, 
+                    false, ['deriveKey', 'deriveBits']).then(function (importedKey) {
+                    return window.crypto.subtle.deriveKey({
+                            'name': 'PBKDF2',
+                            salt: salt,
+                            iterations: iterations,
+                            hash: { name: 'SHA-256' }
+                        }, importedKey, {
+                            name: 'AES-CBC',
+                            length: 256
+                        }, true, ['encrypt', 'decrypt']);
+                }).then(function (derivedKey) {
+                    return window.crypto.subtle.exportKey('raw', derivedKey);
+                }).then(function (exportedKey) {
+                    return new ByteData(exportedKey);
+                }).catch(function (err) {
+                    console.error(err);
+                });
+            }
+
+            function fromUtf8(str) {
+                var strUtf8 = unescape(encodeURIComponent(str));
+                var ab = new Uint8Array(strUtf8.length);
+                for (var i = 0; i < strUtf8.length; i++) {
+                    ab[i] = strUtf8.charCodeAt(i);
+                }
+                return ab;
+            }
+
+            function toUtf8(buf) {
+                var bytes = new Uint8Array(buf);
+                var encodedString = String.fromCharCode.apply(null, bytes),
+                    decodedString = decodeURIComponent(escape(encodedString));
+                return decodedString;
+            }
+
+            function fromB64(str) {
+                var binary_string = window.atob(str);
+                var len = binary_string.length;
+                var bytes = new Uint8Array(len);
+                for (var i = 0; i < len; i++) {
+                    bytes[i] = binary_string.charCodeAt(i);
+                }
+                return bytes.buffer;
+            }
+
+            function toB64(buf) {
+                var binary = '';
+                var bytes = new Uint8Array(buf);
+                var len = bytes.byteLength;
+                for (var i = 0; i < len; i++) {
+                    binary += String.fromCharCode(bytes[i]);
+                }
+                return window.btoa(binary);
+            }
+
+            new Vue({
+                el: '#app',
+                data: {
+                    email: null,
+                    masterPassword: null,
+                    pbkdf2Iterations: 5000,
+                    key: new ByteData(),
+                    keyHash: null,
+                    keyMaterial: null,
+                    keyMaterialEnc: null,
+                    keyMaterialMac: null,
+                    publicKey: null,
+                    privateKey: null,
+                    plaintext: null,
+                    cipherString: null,
+                    decPlaintext: null
+                },
+                methods: {
+                    deriveKeys: function () {
+                        var self = this,
+                            password = fromUtf8(this.masterPassword),
+                            salt = fromUtf8(this.email);
+
+                        pbkdf2(password, salt, this.pbkdf2Iterations, 256).then(function(key) {
+                            self.key = key;
+                        });
+                    },
+                }
+            });
+        })();
+    </script>
+</body>
+</html>
