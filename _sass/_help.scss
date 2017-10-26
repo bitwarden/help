@@ -235,7 +235,7 @@ footer {
         margin-bottom: 0;
     }
 
-    ul {
+    ul, ol {
         li + li,
         ul li:first-child,
         ol li:first-child {
@@ -316,6 +316,18 @@ footer {
                 line-height: 35px;
                 text-align: right;
                 border-right: 1px solid $table-border-color;
+            }
+
+            & + li {
+                margin-top: 0;
+            }
+        }
+
+        ol, ul {
+            margin-bottom: 12.5px;
+
+            ol, ul {
+                margin-bottom: 0;
             }
         }
     }

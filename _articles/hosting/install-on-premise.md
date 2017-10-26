@@ -14,7 +14,7 @@ This article will walk you through how to install and deploy bitwarden to your o
 - [TL;DR](#tldr)
 - [Configure Your Domain](#configure-your-domain)
 - [Install Docker](#install-docker)
-- [Adjust Docker Resources](#adjust-docker-resources)
+- [Adjust Resources](#adjust-resources)
 - [Install bitwarden](#install-bitwarden)
 - [Post-install Environment Configuration](#post-install-environment-configuration)
 - [Start bitwarden](#start-bitwarden)
@@ -75,13 +75,11 @@ Some Docker installations such as Windows and macOS already come with Docker Com
 
 For reference, you can find the official bitwarden images hosted on Docker Hub at [https://hub.docker.com/u/bitwarden/](https://hub.docker.com/u/bitwarden/){:target="_blank"}.
 
-## Adjust Docker Resources
+## Adjust Resources
 
-SQL Server requires that Docker be allocated with a minimum of 4 GB of RAM. By default, Docker on macOS and Windows only has 2 GB of RAM allocated. Docker on Linux should be ok.
+SQL Server requires that Docker be allocated with a minimum of 4 GB of RAM. By default, Docker on **macOS and Windows** only has 2 GB of RAM allocated. To adjust this, simply go to Docker (click on the docker icon) &rarr; Preferences &rarr; Advanced. Change the slider to 4 GB (or more), save, and restart Docker. You can read more about this at [https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-docker#requirements](https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-docker#requirements){:target="_blank"}.
 
-To adjust this, simply go to Docker (click on the docker icon) &rarr; Preferences &rarr; Advanced. Change the slider to 4 GB (or more), save, and restart Docker.
-
-You can read more about this at [https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-docker](https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-docker){:target="_blank"}.
+The default docker settings on **Linux** should be ok, but still requires that the host machine have a minimum of 3.25 GB of RAM.
 
 ## Install bitwarden
 
@@ -128,13 +126,19 @@ We've made installing bitwarden very simple. Depending in your environment (non-
 
     **Installation Id/Key**
 
-    Each bitwarden installation requires a unique installation id and installation key. You should not share your installation id or installation key across multiple bitwarden installations. They should be treated as secrets.
+    Each bitwarden installation requires a unique installation id and installation key. The installation id and key is used to:
+
+    1. Register your installation and contact email so that we can contact you in case of important security updates
+    2. Validate licensing of paid features
+    3. Authenticate to push relay servers for push notifications (see below)
+
+    You should not share your installation id or installation key across multiple bitwarden installations. They should be treated as secrets.
 
     You can obtain an installation id and key from [https://bitwarden.com/host](https://bitwarden.com/host){:target="_blank"}.
 
     **Push Notifications**
 
-    If you would like to take advantage of having push notifications automatically keep your bitwarden client applications synced in real time you can choose to use the bitwarden push notification relay service. This relay service is provided by external bitwarden servers. You should ensure that your machine can communicate with the `https://push.bitwarden.com` endpoint. Your bitwarden installation will POST **non-sensitive data** (reference ids) to the relay service which will then notify the bitwarden client applications to "phone home" for an update back to your installation.
+    If you would like to take advantage of having push notifications automatically keep your bitwarden client applications synced in real time you can choose to use the bitwarden push notification relay service. This relay service is provided by external bitwarden servers. You should ensure that your machine can communicate with the `https://push.bitwarden.com` endpoint. Your bitwarden installation will POST **non-sensitive data** (reference ids) to the push relay service which will then notify the bitwarden client applications to "phone home" back to **your installation** for an update.
 
     The use of the push notification relay service is optional. If you do not use this service you will need to keep your client applications in sync manually.
 
@@ -154,7 +158,7 @@ globalSettings__mail__smtp__ssl=true
 globalSettings__mail__smtp__port=587
 ```
 
-You can get a YubiKey client id and key at [https://upgrade.yubico.com/getapikey/](https://upgrade.yubico.com/getapikey/){:target="_blank"}.
+If you plan to use YubiKeys for two-step login, you can get your YubiKey client id and key at [https://upgrade.yubico.com/getapikey/](https://upgrade.yubico.com/getapikey/){:target="_blank"}.
 
 ## Start bitwarden
 
