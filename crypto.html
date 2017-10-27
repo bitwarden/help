@@ -53,24 +53,28 @@
             </div>
         </form>
 
-        <h2>User Key</h2>
-        <pre>{{userKey.b64}}</pre>
+        <h2>Master Key</h2>
+        <pre>{{masterKey.b64}}</pre>
 
         <h2>Master Password Hash</h2>
-        <pre>{{userKeyHash.b64}}</pre>
+        <pre>{{masterKeyHash.b64}}</pre>
 
-        <h2>Generated Symmetric Key Material</h2>
-        <pre>{{key.key.b64}}</pre>
+        <h2>Generated Symmetric Key</h2>
+        <pre>{{symKey.key.b64}}</pre>
         <h3>Encryption Key</h3>
-        <pre>{{key.encKey.b64}}</pre>
+        <pre>{{symKey.encKey.b64}}</pre>
         <h3>MAC Key</h3>
-        <pre>{{key.macKey.b64}}</pre>
+        <pre>{{symKey.macKey.b64}}</pre>
+        <h3>Protected Symmetric Key</h3>
+        <pre>{{protectedSymKey.string}}</pre>
 
         <h2>Generated RSA Keypair</h2>
         <h3>Public Key</h3>
         <pre>{{publicKey.b64}}</pre>
         <h3>Private Key</h3>
         <pre>{{privateKey.b64}}</pre>
+        <h3>Protected Private Key</h3>
+        <pre>{{protectedPrivateKey.string}}</pre>
 
         <button type="button" id="deriveKeys" class="btn btn-primary" v-on:click="generateKeys">
             <i class="fa fa-refresh"></i> Regenerate Keys
@@ -82,16 +86,16 @@
 
         <form>
             <div class="form-group">
-                <label for="plaintext">Plaintext Value</label>
-                <textarea id="plaintext" class="form-control" v-model="plaintext"></textarea>
+                <label for="secret">Secret Value</label>
+                <textarea id="secret" class="form-control" v-model="secret"></textarea>
             </div>
         </form>
 
         <h2>The "Cipher String"</h2>
-        <pre>{{cipher.string}}</pre>
+        <pre>{{protectedSecret.string}}</pre>
 
         <h2>Decrypt</h2>
-        <textarea class="form-control" v-model="decPlaintext" readonly></textarea>
+        <textarea class="form-control" v-model="unprotectedSecret" readonly></textarea>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
@@ -102,7 +106,7 @@
         (function () {
             // Constants/Enums
 
-            var encType = {
+            var encTypes = {
                 AesCbc256_B64: 0,
                 AesCbc128_HmacSha256_B64: 1,
                 AesCbc256_HmacSha256_B64: 2,
@@ -238,7 +242,7 @@
                     });
             }
 
-            function aesEncrypt(data, key) {
+            function aesEncrypt(data, encKey, macKey) {
                 var keyOptions = {
                     name: 'AES-CBC'
                 };
@@ -248,25 +252,32 @@
                     iv: new Uint8Array(16)
                 };
                 window.crypto.getRandomValues(encOptions.iv);
+                var ivData = new ByteData(encOptions.iv.buffer);
 
-                var ivData, ctData, macData;
-                return window.crypto.subtle.importKey('raw', key.encKey.arr.buffer, keyOptions, false, ['encrypt'])
+                var ctData, macData;
+                return window.crypto.subtle.importKey('raw', encKey.arr.buffer, keyOptions, false, ['encrypt'])
                     .then(function (importedKey) {
                         return window.crypto.subtle.encrypt(encOptions, importedKey, data);
                     }).then(function (encryptedBuffer) {
-                        ivData = new ByteData(encOptions.iv.buffer);
                         ctData = new ByteData(encryptedBuffer);
+                        if (!macKey) {
+                            return null;
+                        }
                         var dataForMac = buildDataForMac(ivData.arr, ctData.arr);
-                        return computeMac(dataForMac.buffer, key.macKey.arr.buffer);
+                        return computeMac(dataForMac.buffer, macKey.arr.buffer);
                     }).then(function (macBuffer) {
-                        macData = new ByteData(macBuffer);
-                        return new Cipher(encType.AesCbc256_HmacSha256_B64, ivData, ctData, macData);
+                        var type = encTypes.AesCbc256_B64;
+                        if (macBuffer) {
+                            type = encTypes.AesCbc256_HmacSha256_B64;
+                            macData = new ByteData(macBuffer);
+                        }
+                        return new Cipher(type, ivData, ctData, macData);
                     }).catch(function (err) {
                         console.error(err);
                     });
             }
 
-            function aesDecrypt(cipher, key) {
+            function aesDecrypt(cipher, encKey, macKey) {
                 var keyOptions = {
                     name: 'AES-CBC'
                 };
@@ -276,15 +287,33 @@
                     iv: cipher.iv.arr.buffer
                 };
 
-                var dataForMac = buildDataForMac(cipher.iv.arr, cipher.ct.arr);
-                return computeMac(dataForMac.buffer, key.macKey.arr.buffer)
+                return new Promise(function (resolve) {
+                    if (cipher.encType == encTypes.AesCbc256_B64) {
+                        resolve(false);
+                        return;
+                    }
+                    if (!macKey) {
+                        throw 'MAC key not provided.';
+                    }
+                    resolve(true);
+                })
+                    .then(function (checkMac) {
+                        if (!checkMac) {
+                            return null;
+                        }
+                        var dataForMac = buildDataForMac(cipher.iv.arr, cipher.ct.arr);
+                        return computeMac(dataForMac.buffer, macKey.arr.buffer)
+                    })
                     .then(function (macBuffer) {
-                        return macsEqual(cipher.mac.arr.buffer, macBuffer, key.macKey.arr.buffer);
+                        if (!macBuffer) {
+                            return true;
+                        }
+                        return macsEqual(cipher.mac.arr.buffer, macBuffer, macKey.arr.buffer);
                     }).then(function (macsMatch) {
                         if (macsMatch === false) {
                             throw 'MAC check failed.';
                         }
-                        return window.crypto.subtle.importKey('raw', key.encKey.arr.buffer, keyOptions, false, ['decrypt']);
+                        return window.crypto.subtle.importKey('raw', encKey.arr.buffer, keyOptions, false, ['decrypt']);
                     }).then(function (importedKey) {
                         return window.crypto.subtle.decrypt(decOptions, importedKey, cipher.ct.arr.buffer);
                     }).catch(function (err) {
@@ -377,14 +406,22 @@
                     email: '',
                     masterPassword: '',
                     pbkdf2Iterations: 5000,
-                    userKey: new ByteData(),
-                    userKeyHash: new ByteData(),
-                    key: new SymmetricCryptoKey(),
+
+                    masterKey: new ByteData(),
+                    masterKeyHash: new ByteData(),
+
+                    symKey: new SymmetricCryptoKey(),
+                    protectedSymKey: new Cipher(),
+                    unprotectedSymKey: new ByteData(),
+
                     publicKey: new ByteData(),
                     privateKey: new ByteData(),
-                    plaintext: '',
-                    cipher: new Cipher(),
-                    decPlaintext: ''
+                    protectedPrivateKey: new Cipher(),
+                    unprotectedPrivateKey: new ByteData(),
+
+                    secret: '',
+                    protectedSecret: new Cipher(),
+                    unprotectedSecret: ''
                 },
                 computed: {
                     masterPasswordBuffer: function () {
@@ -393,21 +430,21 @@
                     emailBuffer: function () {
                         return this.email ? fromUtf8(this.email) : null;
                     },
-                    plaintextBuffer: function () {
-                        return this.plaintext ? fromUtf8(this.plaintext) : null;
+                    secretBuffer: function () {
+                        return this.secret ? fromUtf8(this.secret) : null;
                     }
                 },
                 watch: {
-                    userKey: function (newUserKey) {
+                    masterKey: function (newMasterKey) {
                         var self = this;
 
-                        if (!newUserKey || !newUserKey.arr || !self.masterPasswordBuffer) {
+                        if (!newMasterKey || !newMasterKey.arr || !self.masterPasswordBuffer) {
                             return new ByteData();
                         }
 
-                        pbkdf2(newUserKey.arr.buffer, self.masterPasswordBuffer, 1, 256)
-                            .then(function (userKeyHash) {
-                                self.userKeyHash = userKeyHash;
+                        pbkdf2(newMasterKey.arr.buffer, self.masterPasswordBuffer, 1, 256)
+                            .then(function (masterKeyHash) {
+                                self.masterKeyHash = masterKeyHash;
                             });
                     }
                 },
@@ -415,9 +452,9 @@
                     generateKeys: function () {
                         var self = this;
 
-                        var key = new Uint8Array(512 / 8);
-                        window.crypto.getRandomValues(key);
-                        self.key = new SymmetricCryptoKey(key);
+                        var symKey = new Uint8Array(512 / 8);
+                        window.crypto.getRandomValues(symKey);
+                        self.symKey = new SymmetricCryptoKey(symKey);
 
                         generateRsaKeypair().then(function (keypair) {
                             self.publicKey = keypair.publicKey;
@@ -435,44 +472,84 @@
                 };
             }, function (newVal, oldVal) {
                 if (!newVal.masterPassword || !newVal.email || !newVal.iterations || newVal.iterations < 1) {
-                    vm.userKey = new ByteData();
+                    vm.masterKey = new ByteData();
                     return;
                 }
 
                 pbkdf2(newVal.masterPassword, newVal.email, newVal.iterations, 256)
-                    .then(function (userKey) {
-                        vm.userKey = userKey;
+                    .then(function (masterKey) {
+                        vm.masterKey = masterKey;
                     });
             });
 
             vm.$watch(function () {
                 return {
-                    key: vm.key,
-                    plaintext: vm.plaintextBuffer
+                    symKey: vm.symKey,
+                    secret: vm.secretBuffer
                 };
             }, function (newVal, oldVal) {
-                if (!newVal.key || !newVal.plaintext) {
-                    vm.cipher = new Cipher();
-                    vm.decPlaintext = '';
+                if (!newVal.symKey || !newVal.secret) {
+                    vm.protectedSecret = new Cipher();
+                    vm.unprotectedSecret = '';
                     return;
                 }
 
-                aesEncrypt(newVal.plaintext, newVal.key)
+                aesEncrypt(newVal.secret, newVal.symKey.encKey, newVal.symKey.macKey)
                     .then(function (cipher) {
-                        vm.cipher = cipher;
-                        return aesDecrypt(cipher, newVal.key);
-                    }).then(function (plaintext) {
-                        vm.decPlaintext = toUtf8(plaintext);
+                        vm.protectedSecret = cipher;
+                        return aesDecrypt(vm.protectedSecret, newVal.symKey.encKey, newVal.symKey.macKey);
+                    }).then(function (secret) {
+                        vm.unprotectedSecret = toUtf8(secret);
                     });
             });
 
-            // Generate initial set of keys
-            vm.generateKeys();
+            vm.$watch(function () {
+                return {
+                    masterKey: vm.masterKey,
+                    symKey: vm.symKey
+                };
+            }, function (newVal, oldVal) {
+                if (!newVal.masterKey || !newVal.masterKey.arr || !newVal.symKey || !newVal.symKey.key) {
+                    vm.protectedSymKey = new Cipher();
+                    return;
+                }
+
+                aesEncrypt(newVal.symKey.key.arr, newVal.masterKey, null)
+                    .then(function (cipher) {
+                        vm.protectedSymKey = cipher;
+                        return aesDecrypt(vm.protectedSymKey, newVal.masterKey, null);
+                    }).then(function (unprotectedSymKey) {
+                        vm.unprotectedSymKey = new ByteData(unprotectedSymKey);
+                    });
+            });
+
+            vm.$watch(function () {
+                return {
+                    symKey: vm.symKey,
+                    privateKey: vm.privateKey
+                };
+            }, function (newVal, oldVal) {
+                if (!newVal.symKey || !newVal.symKey.key || !newVal.privateKey || !newVal.privateKey.arr) {
+                    vm.protectedPrivateKey = new Cipher();
+                    return;
+                }
+
+                aesEncrypt(newVal.privateKey.arr, newVal.symKey.encKey, newVal.symKey.macKey)
+                    .then(function (cipher) {
+                        vm.protectedPrivateKey = cipher;
+                        return aesDecrypt(vm.protectedPrivateKey, newVal.symKey.encKey, newVal.symKey.macKey);
+                    }).then(function (unprotectedPrivateKey) {
+                        vm.unprotectedPrivateKey = new ByteData(unprotectedPrivateKey);
+                    });
+            });
 
             // Set default values
             vm.email = 'user@example.com';
             vm.masterPassword = 'password123';
-            vm.plaintext = 'This is a secret.';
+            vm.secret = 'This is a secret.';
+
+            // Generate initial set of keys
+            vm.generateKeys();
         })();
     </script>
 </body>
