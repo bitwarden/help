@@ -13,7 +13,7 @@ tags: [icons, website icons, privacy]
 
 When bitwarden displays a login item associated with a website in your bitwarden vault it attempts to accompany it with a "website icon". This "website icons" feature allows you to easily identify particular logins in your vault by a recognizable icon. This is usually represented by a logo or brand image of that website. The bitwarden icons server provides the delivery endpoint for these website icons.
 
-If you are using the "website icons" feature on a device, bitwarden will issue requests to `icons.bitwarden.com` for each item of type "Login" in your vault that has a URI that resembles a website (ex. `google.com` or `https://google.com`, but not `google` or `http://localhost`). The icons server is fronted with a CDN that caches the icon responses on Cloudflare's edge nodes all around the world. Subsequent requests to the same icon will likely hit CDN caches instead of the icons server directly. Your requests may never actually hit bitwarden's icons server because another bitwarden user with the same website in their vault requested it before you.
+If you are using the "website icons" feature on a device, bitwarden will issue requests to `icons.bitwarden.com` for each item of type "Login" in your vault that has a URI that resembles a website (ex. `google.com` or `https://google.com`, but not `google` or `http://localhost`). The icons server is fronted with a CDN that caches the icons on Cloudflare's edge nodes all around the world. Subsequent requests to the same icon will likely hit CDN caches instead of the icons server directly. Your requests may never actually hit bitwarden's icons server because another bitwarden user with the same website in their vault requested the icon before you.
 
 ## Privacy concerns
 
@@ -25,7 +25,7 @@ Because a request for an icon image contains the hostname of the website stored 
 
 ## Disabling website icons
 
-We understand that certain privacy-minded users may not want to use the website icons feature. We provide the option to disable website icons on all bitwarden client applications:
+We understand that certain privacy-minded users may not want to use the "website icons" feature. We provide the option to disable website icons on all bitwarden client applications:
 
 - **Web vault:** Settings &rarr; Web Vault Options &rarr; Disable Website Icons
 - **Browser extension:** Settings &rarr; Features &rarr; Disable Website Icons
