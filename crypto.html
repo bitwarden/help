@@ -188,16 +188,6 @@
                 return decodedString;
             }
 
-            function fromB64(str) {
-                var binary_string = window.atob(str),
-                    len = binary_string.length,
-                    bytes = new Uint8Array(len);
-                for (var i = 0; i < len; i++) {
-                    bytes[i] = binary_string.charCodeAt(i);
-                }
-                return bytes.buffer;
-            }
-
             function toB64(buf) {
                 var binary = '',
                     bytes = new Uint8Array(buf);
@@ -287,7 +277,7 @@
                     iv: cipher.iv.arr.buffer
                 };
 
-                return new Promise(function (resolve) {
+                var checkMacPromise = new Promise(function (resolve) {
                     if (cipher.encType == encTypes.AesCbc256_B64) {
                         resolve(false);
                         return;
@@ -296,7 +286,9 @@
                         throw 'MAC key not provided.';
                     }
                     resolve(true);
-                })
+                });
+
+                return checkMacPromise
                     .then(function (checkMac) {
                         if (!checkMac) {
                             return null;
