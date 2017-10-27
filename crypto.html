@@ -422,18 +422,18 @@
                     unprotectedSecret: ''
                 },
                 computed: {
-                    masterPasswordBuffer: function () {
+                    masterPasswordBuffer() {
                         return this.masterPassword ? fromUtf8(this.masterPassword) : null;
                     },
-                    emailBuffer: function () {
+                    emailBuffer() {
                         return this.email ? fromUtf8(this.email) : null;
                     },
-                    secretBuffer: function () {
+                    secretBuffer() {
                         return this.secret ? fromUtf8(this.secret) : null;
                     }
                 },
                 watch: {
-                    masterKey: function (newMasterKey) {
+                    masterKey(newMasterKey) {
                         let self = this;
 
                         if (!newMasterKey || !newMasterKey.arr || !self.masterPasswordBuffer) {
@@ -447,7 +447,7 @@
                     }
                 },
                 methods: {
-                    generateKeys: function () {
+                    generateKeys() {
                         let self = this;
 
                         let symKey = new Uint8Array(512 / 8);
