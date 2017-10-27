@@ -9,14 +9,30 @@ tags: []
 
 All information associated with your stored vault data is protected with end-to-end encryption. This includes:
 
-- Login names
 - Folder names
 - Collection names
-- Usernames
-- Passwords
-- URLs
-- Notes
-- Authenticator keys (TOTP)
+- Item names
+- Item notes
+- Custom field names/values
+- Login information
+  - Usernames
+  - Passwords
+  - URLs
+  - Authenticator keys (TOTP)
+- Card information
+  - Cardholder names
+  - Numbers
+  - Brands
+  - Expirations
+  - Security codes
+- Identity information
+  - Names
+  - Contact info (email, phone, etc)
+  - Password numbers
+  - License numbers
+  - SSNs
+  - Addresses
+- Secure note information
 
 Certain information in bitwarden cannot be encrypted. This includes:
 
