@@ -433,14 +433,14 @@
                     }
                 },
                 watch: {
-                    masterKey(newMasterKey) {
+                    masterKey(newValue) {
                         let self = this;
 
-                        if (!newMasterKey || !newMasterKey.arr || !self.masterPasswordBuffer) {
+                        if (!newValue || !newValue.arr || !self.masterPasswordBuffer) {
                             return new ByteData();
                         }
 
-                        pbkdf2(newMasterKey.arr.buffer, self.masterPasswordBuffer, 1, 256)
+                        pbkdf2(newValue.arr.buffer, self.masterPasswordBuffer, 1, 256)
                             .then((masterKeyHash) => {
                                 self.masterKeyHash = masterKeyHash;
                             });
