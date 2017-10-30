@@ -58,16 +58,17 @@ To import your data, log into the web vault at <https://vault.bitwarden.com> and
 You can manually condition a [CSV](https://en.wikipedia.org/wiki/Comma-separated_values) file for your individual account import using the generic bitwarden format. Create a UTF-8 encoded plaintext file with the following format:
 
 ```
-name,uri,username,password,notes,folder,favorite,totp,fields
+folder,favorite,type,name,notes,fields,login_uri,login_username,login_password,login_totp
 ```
 
 The above header must be the first line in the file. An example file may look like the following:
 
 ```
-name,uri,username,password,notes,folder,favorite,totp,fields
-Twitter,https://twitter.com,hello@bitwarden.com,password123,,Social,1,,
-EVGA,https://www.evga.com/support/login.asp,hello@bitwarden.com,fakepassword,,,,TOTPSEED123,
-My Bank,https://www.wellsfargo.com/home.jhtml,john.smith,password123,Bank PIN is 1234,,,,"PIN: 1234"
+folder,favorite,type,name,notes,fields,login_uri,login_username,login_password,login_totp
+Social,1,login,Twitter,,,twitter.com,me@example.com,password123,
+,,login,EVGA,,,https://www.evga.com/support/login.asp,hello@bitwarden.com,fakepassword,TOTPSEED123
+,,login,My Bank,Bank PIN is 1234,"PIN: 1234",https://www.wellsfargo.com/home.jhtml,john.smith,password123456,
+,,note,My Note,"This is a secure note.",,,,,
 ```
 
 [{% icon fa-download %} Download example](/files/bitwarden_export.csv)
@@ -79,16 +80,17 @@ When importing from this format, select the **bitwarden (csv)** file format opti
 You can manually condition a [CSV](https://en.wikipedia.org/wiki/Comma-separated_values) file for your organization account import using the generic bitwarden format. The format is almost the same as the individual account format above, however, organizations have "collections" instead of a "folder" and no "favorite". Create a UTF-8 encoded plaintext file with the following format:
 
 ```
-name,uri,username,password,notes,collections,totp,fields
+collections,type,name,notes,fields,login_uri,login_username,login_password,login_totp
 ```
 
 The above header must be the first line in the file. An example file may look like the following:
 
 ```
-name,uri,username,password,notes,collections,totp,fields
-Twitter,https://twitter.com,hello@bitwarden.com,password123,,"Social,Marketing",,
-EVGA,https://www.evga.com/support/login.asp,hello@bitwarden.com,fakepassword,,,TOTPSEED123,
-Bank,https://www.wellsfargo.com/home.jhtml,john.smith,password123,Bank PIN is 1234,"Finance",,"PIN: 1234"
+collections,type,name,notes,fields,login_uri,login_username,login_password,login_totp
+"Social,Marketing",login,Twitter,,,twitter.com,me@example.com,password123,
+"Finance",login,My Bank,Bank PIN is 1234,"PIN: 1234",https://www.wellsfargo.com/home.jhtml,john.smith,password123456,
+,login,EVGA,,,https://www.evga.com/support/login.asp,hello@bitwarden.com,fakepassword,TOTPSEED123
+,note,My Note,"This is a secure note.",,,,,
 ```
 
 [{% icon fa-download %} Download example](/files/bitwarden_export_org.csv)
