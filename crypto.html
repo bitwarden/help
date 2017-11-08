@@ -189,11 +189,11 @@
                     this.key = new ByteData(buf);
 
                     // First half
-                    let encKey = this.key.arr.slice(0, this.key.arr.length / 2).buffer;
+                    const encKey = this.key.arr.slice(0, this.key.arr.length / 2).buffer;
                     this.encKey = new ByteData(encKey);
 
                     // Second half
-                    let macKey = this.key.arr.slice(this.key.arr.length / 2).buffer;
+                    const macKey = this.key.arr.slice(this.key.arr.length / 2).buffer;
                     this.macKey = new ByteData(macKey);
                 }
             }
@@ -201,8 +201,8 @@
             // Helpers
 
             function fromUtf8(str) {
-                let strUtf8 = unescape(encodeURIComponent(str)),
-                    bytes = new Uint8Array(strUtf8.length);
+                const strUtf8 = unescape(encodeURIComponent(str));
+                const bytes = new Uint8Array(strUtf8.length);
                 for (let i = 0; i < strUtf8.length; i++) {
                     bytes[i] = strUtf8.charCodeAt(i);
                 }
@@ -210,15 +210,14 @@
             }
 
             function toUtf8(buf) {
-                let bytes = new Uint8Array(buf),
-                    encodedString = String.fromCharCode.apply(null, bytes),
-                    decodedString = decodeURIComponent(escape(encodedString));
-                return decodedString;
+                const bytes = new Uint8Array(buf);
+                const encodedString = String.fromCharCode.apply(null, bytes);
+                return decodeURIComponent(escape(encodedString));;
             }
 
             function toB64(buf) {
-                let binary = '',
-                    bytes = new Uint8Array(buf);
+                let binary = '';
+                const bytes = new Uint8Array(buf);
                 for (let i = 0; i < bytes.byteLength; i++) {
                     binary += String.fromCharCode(bytes[i]);
                 }
@@ -232,18 +231,18 @@
             // Crypto
 
             function pbkdf2(password, salt, iterations, length) {
-                let importAlg = {
+                const importAlg = {
                     name: 'PBKDF2'
                 };
 
-                let deriveAlg = {
+                const deriveAlg = {
                     name: 'PBKDF2',
                     salt: salt,
                     iterations: iterations,
                     hash: { name: 'SHA-256' }
                 };
 
-                let aesOptions = {
+                const aesOptions = {
                     name: 'AES-CBC',
                     length: 256
                 };
@@ -261,16 +260,16 @@
             }
 
             function aesEncrypt(data, encKey, macKey) {
-                let keyOptions = {
+                const keyOptions = {
                     name: 'AES-CBC'
                 };
 
-                let encOptions = {
+                const encOptions = {
                     name: 'AES-CBC',
                     iv: new Uint8Array(16)
                 };
                 window.crypto.getRandomValues(encOptions.iv);
-                let ivData = new ByteData(encOptions.iv.buffer);
+                const ivData = new ByteData(encOptions.iv.buffer);
 
                 let ctData, macData;
                 return window.crypto.subtle.importKey('raw', encKey.arr.buffer, keyOptions, false, ['encrypt'])
@@ -281,7 +280,7 @@
                         if (!macKey) {
                             return null;
                         }
-                        let dataForMac = buildDataForMac(ivData.arr, ctData.arr);
+                        const dataForMac = buildDataForMac(ivData.arr, ctData.arr);
                         return computeMac(dataForMac.buffer, macKey.arr.buffer);
                     }).then((macBuffer) => {
                         let type = encTypes.AesCbc256_B64;
@@ -296,16 +295,16 @@
             }
 
             function aesDecrypt(cipher, encKey, macKey) {
-                let keyOptions = {
+                const keyOptions = {
                     name: 'AES-CBC'
                 };
 
-                let decOptions = {
+                const decOptions = {
                     name: 'AES-CBC',
                     iv: cipher.iv.arr.buffer
                 };
 
-                let checkMacPromise = new Promise((resolve) => {
+                const checkMacPromise = new Promise((resolve) => {
                     if (cipher.encType == encTypes.AesCbc256_B64) {
                         resolve(false);
                         return;
@@ -321,7 +320,7 @@
                         if (!checkMac) {
                             return null;
                         }
-                        let dataForMac = buildDataForMac(cipher.iv.arr, cipher.ct.arr);
+                        const dataForMac = buildDataForMac(cipher.iv.arr, cipher.ct.arr);
                         return computeMac(dataForMac.buffer, macKey.arr.buffer)
                     })
                     .then((macBuffer) => {
@@ -342,7 +341,7 @@
             }
 
             function computeMac(data, key) {
-                let alg = {
+                const alg = {
                     name: 'HMAC',
                     hash: { name: 'SHA-256' }
                 };
@@ -354,7 +353,7 @@
             }
 
             function macsEqual(mac1Data, mac2Data, key) {
-                let alg = {
+                const alg = {
                     name: 'HMAC',
                     hash: { name: 'SHA-256' }
                 };
@@ -372,8 +371,8 @@
                             return false;
                         }
 
-                        let arr1 = new Uint8Array(mac1);
-                        let arr2 = new Uint8Array(mac2);
+                        const arr1 = new Uint8Array(mac1);
+                        const arr2 = new Uint8Array(mac2);
 
                         for (let i = 0; i < arr2.length; i++) {
                             if (arr1[i] !== arr2[i]) {
@@ -386,14 +385,14 @@
             }
 
             function buildDataForMac(ivArr, ctArr) {
-                let dataForMac = new Uint8Array(ivArr.length + ctArr.length);
+                const dataForMac = new Uint8Array(ivArr.length + ctArr.length);
                 dataForMac.set(ivArr, 0);
                 dataForMac.set(ctArr, ivArr.length);
                 return dataForMac;
             }
 
             function generateRsaKeypair() {
-                let rsaOptions = {
+                const rsaOptions = {
                     name: 'RSA-OAEP',
                     modulusLength: 2048,
                     publicExponent: new Uint8Array([0x01, 0x00, 0x01]), // 65537
@@ -420,7 +419,7 @@
 
             // App
 
-            let vm = new Vue({
+            const vm = new Vue({
                 el: '#app',
                 data: {
                     email: '',
@@ -456,7 +455,7 @@
                 },
                 watch: {
                     masterKey(newValue) {
-                        let self = this;
+                        const self = this;
 
                         if (!newValue || !newValue.arr || !self.masterPasswordBuffer) {
                             return new ByteData();
@@ -470,9 +469,9 @@
                 },
                 methods: {
                     generateKeys() {
-                        let self = this;
+                        const self = this;
 
-                        let symKey = new Uint8Array(512 / 8);
+                        const symKey = new Uint8Array(512 / 8);
                         window.crypto.getRandomValues(symKey);
                         self.symKey = new SymmetricCryptoKey(symKey);
 
