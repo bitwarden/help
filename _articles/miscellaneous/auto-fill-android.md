@@ -35,9 +35,13 @@ Android may turn off the bitwarden Auto-fill Service to optimize battery life. T
 
 **2. The auto-fill notification does not appear when I visit a login page in my web browser.**
 
-This is a currently a known issue with the following browsers:
+This is a currently a known issue with the following browsers, which do not support accessibility services:
 
-- Firefox for Android
+- Firefox for Android - As a workaround you can use the bitwarden Firefox addon instead. Navigate to Firefox Settings &rarr; Addons and search for "bitwarden".
 - Samsung Internet Browser
 
 Android has many web browsers. It can be hard to keep up with them all. We have to add support for each browser individually. If auto-fill does not work and your browser is not listed above please report it at <https://github.com/bitwarden/mobile/issues> so that we can add support.
+
+**3. bitwarden is using a lot of my device's battery power.**
+
+Unfortunately Android accessibility services can be fairly resource intensive on certain devices. We provide a few alternative auto-fill modes that can help reduce battery consumption. You can find these under bitwarden's Settings &rarr; Features menu.

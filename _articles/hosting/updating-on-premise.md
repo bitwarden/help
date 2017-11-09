@@ -14,15 +14,15 @@ We have made updating your bitwarden installation very simple. Use the same bitw
 {% icon fa-linux %} {% icon fa-apple %} Bash
 
     ./bitwarden.sh updateself
-    ./bitwarden.sh stop
     ./bitwarden.sh update
-    ./bitwarden.sh start
 
 {% icon fa-windows %} PowerShell
 
     .\bitwarden.ps1 -updateself
-    .\bitwarden.ps1 -stop
     .\bitwarden.ps1 -update
-    .\bitwarden.ps1 -start
 
 Your bitwarden installation should now be fully up to date and running.
+
+{% tip %}
+Create a cronjob or scheduled task to run these update commands weekly, or even nightly. This will automaticallty keep your installation up to date.
+{% endtip %}

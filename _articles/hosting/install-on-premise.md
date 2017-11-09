@@ -56,9 +56,11 @@ This article will walk you through how to install and deploy bitwarden to your o
 
 ## Configure Your Domain
 
-bitwarden will be served through ports 80 (http) and 443 (https) on the localhost machine. You should open these ports so that bitwarden can be accessed from within and/or outside of the network.
+By default, bitwarden will be served through ports 80 (http) and 443 (https) on the localhost machine. You should open these ports so that bitwarden can be accessed from within and/or outside of the network. You can choose different ports during installation if you like.
 
-It you are serving bitwarden to the outside world you will need to configure a domain name with DNS records that point to your host machine (ex. bitwarden.company.com). You should configure this domain before beginning your bitwarden installation.
+It you are serving bitwarden to the outside world you will need to configure a domain name with DNS records that point to your host machine (ex. bitwarden.company.com). *You should configure this domain before beginning your bitwarden installation.*
+
+Alternatively, if you are only testing you can install bitwarden to the "localhost" domain.
 
 ## Install Docker
 
@@ -80,6 +82,10 @@ For reference, you can find the official bitwarden images hosted on Docker Hub a
 SQL Server requires that Docker be allocated with a minimum of 4 GB of RAM. By default, Docker on **macOS and Windows** only has 2 GB of RAM allocated. To adjust this, simply go to Docker (click on the docker icon) &rarr; Preferences &rarr; Advanced. Change the slider to 4 GB (or more), save, and restart Docker. You can read more about this at [https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-docker#requirements](https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-docker#requirements){:target="_blank"}.
 
 The default docker settings on **Linux** should be ok, but still requires that the host machine have a minimum of 3.25 GB of RAM.
+
+{% note %}
+A future SQL Server update is planned to reduce this RAM requirement by at least 50%.
+{% endnote %}
 
 ## Install bitwarden
 
@@ -150,12 +156,13 @@ Example:
 
 ```
 globalSettings__yubico__clientId=294620155
-globalSettings__yubico__key=YOUR_KEY
+globalSettings__yubico__key=owdez88RdxVZuGbZ4fv
 globalSettings__mail__smtp__host=smtp.sendgrid.net
 globalSettings__mail__smtp__username=apikey
 globalSettings__mail__smtp__password=SG.YOUR.API_KEY
 globalSettings__mail__smtp__ssl=true
 globalSettings__mail__smtp__port=587
+globalSettings__mail__smtp__useDefaultCredentials=false
 ```
 
 If you plan to use YubiKeys for two-step login, you can get your YubiKey client id and key at [https://upgrade.yubico.com/getapikey/](https://upgrade.yubico.com/getapikey/){:target="_blank"}.
@@ -210,7 +217,7 @@ PowerShell users will run the commands with a prefixed `-` (switch). For example
 | start      | Start all containers.                   |
 | restart    | Restart all containers (same as start). |
 | stop       | Stop all containers.                    |
-| updatedb   | Update the database.                    |
+| updatedb   | Update/initialize the database.         |
 | update     | Update all containers and the database. |
 | updateself | Update this main script.                |
 
