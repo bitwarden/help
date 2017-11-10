@@ -37,6 +37,8 @@ You can install and run Directory Connector on the server that hosts your direct
 - [Manually simulate a sync](#manually-simulate-a-sync)
 - [Perform a sync](#perform-a-sync)
 - [Manage the background service](#manage-the-background-service)
+- [Configure environment](#configure-environment)
+- [Clear sync cache](#clear-sync-cache)
 - [Changing configurations manually](#changing-configurations-manually)
 - [Source code](#source-code)
 
@@ -275,6 +277,42 @@ Alternatively, you can also manage the background service from the windows servi
 
 {% tip %}
 You can configure the bitwarden Directory Connector to run automatically each time the machine starts. Use the windows service manager to set the bitwarden Directory Connector service to "Startup type: Automatic".
+{% endtip %}
+
+### Configure environment
+
+By default the Directory Connector communicates with the bitwarden public cloud servers. If you are using a self-hosted deployment of bitwarden you will want to change the configured environment endpoints of the Directory Connector to your own on-premise installation.
+
+1. Launch the Directory Connector console by double clicking the shortcut.
+2. Select option 8 (Configure environment) from the main menu.
+3. Enter your installation's API and Identity endpoints. For example, if your installation's domain is `bitwarden.company.com` your API and Identity endpoints would be `https://bitwarden.company.com/api` and `https://bitwarden.company.com/identity` respectively.
+
+Optionally, from the command line:
+
+```
+Console.exe env [-api] [-id]
+```
+
+| Description     | Argument | Example Value                          | Required |
+|-----------------|----------|----------------------------------------|----------|
+| API Server      | -api     | https://bitwarden.company.com/api      | n        |
+| Identity Server | -id      | https://bitwarden.company.com/identity | n        |
+
+### Clear sync cache
+
+As the Directory Connector works at syncing changes up to your bitwarden organization it keeps a local cache. This cache helps the Directory Connector only send the difference in directory changes from the previous time that it performed a sync operation. If you encounter sync errors or a particular directory change is not correctly being synced, you may need to clear this cache. Clearing the cache will allow a full sync to occur during the next sync operation.
+
+1. Launch the Directory Connector console by double clicking the shortcut.
+2. Select option 9 (Clear sync cache) from the main menu.
+
+Optionally, from the command line:
+
+```
+Console.exe clearcache
+```
+
+{% tip %}
+You can also perform a "forced" sync by using the `-f` command as described in the **Perform a sync** section above. i.e. `Console.exe sync -f`. This command will ignore the local cache.
 {% endtip %}
 
 ### Changing configurations manually
