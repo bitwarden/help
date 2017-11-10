@@ -126,7 +126,7 @@ We've made installing bitwarden very simple. Depending in your environment (non-
       - certificate.crt (required)
       - private.key (required)
       - ca.crt (optional, if trusted)
-      - dhparam.pem (optional, if using Diffie Hellman ephemeral parameters)
+      - dhparam.pem (optional, if using Diffie Hellman ephemeral parameters). You can create your own `dhparam.pem` by using OpenSSL with `openssl dhparam -out ./dhparam.pem 2048`.
 
     - If you are only testing and do not have an SSL certificate, a self-signed certificate will be generated for your installation.
 
