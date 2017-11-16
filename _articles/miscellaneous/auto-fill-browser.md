@@ -27,7 +27,7 @@ The same list of logins that are available when using the popup window are also 
 
 You can use a set of keyboard shortcuts (hot keys) to quickly auto-fill a login form. When viewing the login form press `Ctrl + Shift + L` (`Cmd + Shift + L` on macOS) and the last used login for that website will be auto-filled.
 
-Another option is to open the popup window using the shortcut `Ctrl + Shift + Y` (`Cmd + Shift + Y` on macOS). You can then `TAB` to the login that you would like to auto-fill and then press `ENTER` to select.
+Another option is to open the popup window using the shortcut `Ctrl + Shift + Y` (`Cmd + Shift + Y` on macOS and `Ctrl + Shift + U` on Linux). You can then `TAB` to the login that you would like to auto-fill and then press `ENTER` to select.
 
 You can easily customize these keyboard shortcuts in Chrome, Opera, and Vivaldi browsers. In the address bar navigate to `chrome://extensions` and locate the "Keyboard shortcuts" button (you may need to scroll to the bottom). Other browsers such as Firefox, Brave, and Edge do not currently support changing the default keyboard shortcuts for extensions.
 
