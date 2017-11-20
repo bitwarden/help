@@ -22,7 +22,7 @@ If one of these matches is found, bitwarden will auto-fill the custom field's va
 
 ## Special name prefixes for auto-filling
 
-When bitwarden searches for a webpage's form element to match with your custom field's name, an exact, case-insensitive comparison is done. For example, if your custom field has the name "PIN", the following form element's values (from the id, name, label, etc) will match for auto-filling: "pin", "PIN", and "Pin". However, values such as "pin2" or "mypin" will not match.
+When bitwarden searches a webpage's form elements to match with your custom field's name, an exact, case-insensitive comparison is done. For example, if your custom field has the name "PIN", the following form element's values (from the id, name, label, etc) will match for auto-filling: "pin", "PIN", and "Pin". However, values such as "pin2" or "mypin" will not match.
 
 There are two special name prefixes that can give you even more control over how your custom field is auto-filled:
 
