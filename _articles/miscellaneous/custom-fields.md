@@ -1,0 +1,43 @@
+---
+layout: article
+title: Using custom fields
+categories: [miscellaneous]
+featured: false
+popular: false
+tags: [fields, autofill, custom fields]
+---
+
+Custom fields allow you to store additional, well structured data fields within your vault entries. These fields could be security questions, PINs, or anything else. Custom fields have a name, a value, and a type (text, hidden, and boolean).
+
+## Auto-filling custom fields
+
+Custom field names are an important identifier. Depending on the name you give your custom field, bitwarden will attempt to auto-fill the custom field's value for you. If you intend to auto-fill custom fields you should name your field based on an identifier from the webpage form. These names are searched for using the following criteria:
+
+- HTML form element's **id** attribute
+- then the HTML form element's **name** attribute
+- then the HTML form element's corresponding **label** value
+- then the HTML form element's **placeholder** value
+
+If one of these matches is found, bitwarden will auto-fill the custom field's value for you.
+
+## Special name prefixes for auto-filling
+
+When bitwarden searches for a webpage's element to match with your custom fields's name, an exact match (case-insensitive) comparison is done. For example, if your custom field has the name "PIN", the following webpage elements values (from the id, name, label, etc) will match for auto-filling: "pin", "PIN", and "Pin". However, values such as "pin2" or "mypin" will not match.
+
+There are two special prefixes that can give you even more control over how your custom field is auto-filled:
+
+**CSV**
+
+Prefixing your custom field's name with `csv=` allows you to specify multiple names to search for when an auto-fill is performed.
+
+Example:
+
+`csv=pin,pin2,mypin` will match all of the examples above.
+
+**Regular Expressions**
+
+Prefixing your custom field's name with `regex=` allows you to perform regular expression comparisons when an auto-fill is performed.
+
+Example:
+
+`regex=pin` will match all of the examples above.
