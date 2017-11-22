@@ -41,3 +41,9 @@ Prefixing your custom field's name with `regex=` allows you to perform [regular 
 Example:
 
 `regex=pin` will match all of the examples above.
+
+You can use any complex regular expression.
+
+Example:
+
+`regex=^first.*name` will match "firstName", "First_name", and "First Name".
