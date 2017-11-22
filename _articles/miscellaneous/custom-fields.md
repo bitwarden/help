@@ -42,8 +42,6 @@ Example:
 
 `regex=pin` will match all of the examples above.
 
-You can use any complex regular expression.
-
 Example:
 
 `regex=^first.*name` will match "firstName", "First_name", and "First Name".
