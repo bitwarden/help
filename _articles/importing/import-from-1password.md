@@ -14,7 +14,7 @@ Importing your data from 1Password into bitwarden is easy. 1Password has two ver
 {% note %}
 This set of instructions is only for:
 
-- 1Password 4 users on macOS and Windows
+- 1Password 4 users on macOS and Windows (only the .agilekeychain format is supported for Windows users)
 - 1Password 6 users on macOS
 
 These instructions may vary slightly for macOS users.
