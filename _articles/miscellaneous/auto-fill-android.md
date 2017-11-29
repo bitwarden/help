@@ -16,7 +16,7 @@ You can use the bitwarden Android app to add new and auto-fill existing logins o
 3. Tap **Open Accessibility Settings**.
 4. Locate **bitwarden** from the list and enable it.
 
-Auto-fill is context-sensitive. This means that the bitwarden auto-fill icon, and notification will only appear when the app detects a login form. You can change the way auto-fill behaves by navigating to **Settings** &rarr; **Features** &rarr; **Auto-fill**.
+Auto-fill is context-sensitive. This means that the bitwarden auto-fill icon, and notification will only appear when the app detects a login form. You can change the way auto-fill behaves by navigating to **Settings** &rarr; **Options** &rarr; **Auto-fill**.
 
 ## Testing auto-fill
 
@@ -44,4 +44,4 @@ Android has many web browsers. It can be hard to keep up with them all. We have 
 
 **3. bitwarden is using a lot of my device's battery power.**
 
-Unfortunately Android accessibility services can be fairly resource intensive on certain devices. We provide a few alternative auto-fill modes that can help reduce battery consumption. You can find these under bitwarden's Settings &rarr; Features menu.
+Unfortunately Android accessibility services can be fairly resource intensive on certain devices. We provide a few alternative auto-fill modes that can help reduce battery consumption. You can find these under bitwarden's Settings &rarr; Options menu.
