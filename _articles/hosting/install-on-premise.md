@@ -12,9 +12,9 @@ This article will walk you through how to install and deploy bitwarden to your o
 ## Table of Contents
 
 - [TL;DR](#tldr)
+- [System Requirements](#system-requirements)
 - [Configure Your Domain](#configure-your-domain)
 - [Install Docker](#install-docker)
-- [Adjust Resources](#adjust-resources)
 - [Install bitwarden](#install-bitwarden)
 - [Post-install Environment Configuration](#post-install-environment-configuration)
 - [Start bitwarden](#start-bitwarden)
@@ -23,7 +23,7 @@ This article will walk you through how to install and deploy bitwarden to your o
 ## TL;DR
 
 1. Set DNS records for a domain name pointing to your machine. Open ports 80 and 443 on the machine.
-2. Install [Docker](https://docs.docker.com/engine/installation/){:target="_blank"} and [Docker Compose](https://docs.docker.com/compose/install/){:target="_blank"}. If using Windows or macOS, adjust Docker so that it has at least 4 GB of RAM available.
+2. Install [Docker](https://docs.docker.com/engine/installation/){:target="_blank"} and [Docker Compose](https://docs.docker.com/compose/install/){:target="_blank"}.
 3. Get an installation id and key from [https://bitwarden.com/host](https://bitwarden.com/host){:target="_blank"}.
 4. Install & deploy bitwarden.
     
@@ -54,6 +54,13 @@ This article will walk you through how to install and deploy bitwarden to your o
        .\bitwarden.ps1 -restart
 6. Test your deployment. Visit the web vault at your configured domain name, register a new account, and log in.
 
+## System Requirements
+
+- CPU: Dual core @ 2GHz or faster
+- Memory: 2GB of RAM or more
+- Storage: 10GB or more
+- Docker: Engine 1.8+ and Compose 1.17.1+
+
 ## Configure Your Domain
 
 By default, bitwarden will be served through ports 80 (http) and 443 (https) on the localhost machine. You should open these ports so that bitwarden can be accessed from within and/or outside of the network. You can choose different ports during installation if you like.
@@ -76,16 +83,6 @@ Some Docker installations such as Windows and macOS already come with Docker Com
 {% endnote %}
 
 For reference, you can find the official bitwarden images hosted on Docker Hub at [https://hub.docker.com/u/bitwarden/](https://hub.docker.com/u/bitwarden/){:target="_blank"}.
-
-## Adjust Resources
-
-SQL Server requires that Docker be allocated with a minimum of 4 GB of RAM. By default, Docker on **macOS and Windows** only has 2 GB of RAM allocated. To adjust this, simply go to Docker (click on the docker icon) &rarr; Preferences &rarr; Advanced. Change the slider to 4 GB (or more), save, and restart Docker. You can read more about this at [https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-docker#requirements](https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-docker#requirements){:target="_blank"}.
-
-The default docker settings on **Linux** should be ok, but still requires that the host machine have a minimum of 3.25 GB of RAM.
-
-{% note %}
-A future SQL Server update is planned to reduce this RAM requirement by at least 50%.
-{% endnote %}
 
 ## Install bitwarden
 
