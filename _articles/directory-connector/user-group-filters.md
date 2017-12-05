@@ -64,14 +64,28 @@ Users that are a member of the 'Heroes' group, either directly or via nesting
 
 ## Azure Active Directory
 
-The Microsoft Graph API provides advanced filtering capabilities through the `$filter` parameter using OData syntax. This parameter is exposed to you in both the user and group filters of the Directory Connector.
-
-Read more about the `$filter` parameter with OData syntax here: <https://developer.microsoft.com/en-us/graph/docs/concepts/query_parameters#filter>
+The Microsoft Graph API does not provide a way to filter groups and users directly, however, you can use our custom filtering syntax that allows you to exclude or include a comma separated list of group names and user emails.
 
 #### Example
 
+Groups:
+
 ```
-startswith(displayName,'J')
+include:Group A,Sales People,My Other Group
+```
+
+```
+exclude:Group C,Developers,Some Other Group
+```
+
+Users:
+
+```
+include:joe@company.com,bill@company.com,tom@company.com
+```
+
+```
+exclude:joe@company.com
 ```
 
 ## G Suite
