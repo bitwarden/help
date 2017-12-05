@@ -66,9 +66,9 @@ Users that are a member of the 'Heroes' group, either directly or via nesting
 
 The Microsoft Graph API does not provide a way to filter groups and users directly, however, you can use our custom filtering syntax that allows you to exclude or include a comma separated list of group names and user emails.
 
-#### Example
+#### Examples
 
-Groups:
+Groups
 
 ```
 include:Group A,Sales People,My Other Group
@@ -78,7 +78,7 @@ include:Group A,Sales People,My Other Group
 exclude:Group C,Developers,Some Other Group
 ```
 
-Users:
+Users
 
 ```
 include:joe@company.com,bill@company.com,tom@company.com
