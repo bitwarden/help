@@ -7,7 +7,8 @@ popular: false
 tags: [attachments, item, storage, premium]
 ---
 
-{% note %}Note: Support for attachments is a **PREMIUM ONLY** feature.{% endnote %}
+{% note %}Support for attachments is a **PREMIUM ONLY** feature.{% endnote %}
+
 ## Overview
 
 Attaching and managing files for an item in your vault can be done easily in the bitwarden Web Vault. Any file type 100MB or smaller can be attached to an any of the four item types (login, identity, note, or card).
