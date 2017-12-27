@@ -1,6 +1,6 @@
 ---
 layout: article
-title: How-to attach files to an entry
+title: How-to attach files to an item
 categories: [miscellaneous]
 featured: false
 popular: false
