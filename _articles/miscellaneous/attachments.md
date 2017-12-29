@@ -1,26 +1,22 @@
 ---
 layout: article
-title: How-to attach files to an entry
+title: Using file attachments
 categories: [miscellaneous]
 featured: false
 popular: false
-tags: [attachments, item, storage, premium]
+tags: [attachments, storage, files]
 ---
 
-{% note %}Support for attachments is a **PREMIUM ONLY** feature.{% endnote %}
+{% note %}Using file attachments requires a premium membership or paid organization account.{% endnote %}
 
-## Overview
+Attaching and managing files can be done from any bitwarden client application. Any file  100MB or smaller can be attached to an item in your vault.
 
-Attaching and managing files for an item in your vault can be done easily in the bitwarden Web Vault. Any file type 100MB or smaller can be attached to an any of the four item types (login, identity, note, or card).
+All **premium membership** and **paid organization** accounts include 1GB of encrypted file storage. Additional storage can be purchased in 1GB increments if needed.
 
-**Premium** accounts and organations include 1GB of storage and additional stoage can be purchased in 1GB increments via the account **Settings** or the organization **Billing and Licensing** pages.
+## Web Vault
 
-## Attaching Files
+Select the {% icon fa-cog %} options button next to the item in your vault and then select the **Attachments** option. You will then be presented with a list of all attached files for that item as well as options for uploading new attachments.
 
-1. Create any item type (login, identity, note, or card) and save it
-2. Once the item has been saved, select the gear icon {% icon fa-cog %} next to the item and select **Attachments**. You can attach any file 100MB or less.
+## Other Applications
 
-## Managing Attachments
-
-1. Select the gear icon {% icon fa-cog %} next to the item you want to edit and select **Attachments**. You will then be presented with a list of all attached files for that item
-2. In this dialog, you can **Download** or **Delete** attachments by selecting the gear icon next to the individual attachment(s) and selecting the appropriate option
+After viewing an item in your vault you will see existing attachments listed at the bottom of the page. To upload a new attachment, or to delete existing attachments, edit the item and then select the **Attachments** option.
