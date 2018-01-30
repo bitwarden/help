@@ -120,7 +120,7 @@ We've made installing bitwarden very simple. Depending in your environment (non-
     - bitwarden can generate and maintain renewal of a trusted SSL certificate for your domain for completely free provided by [Let's Encrypt](https://letsencrypt.org){:target="_blank"} and [Certbot](https://certbot.eff.org){:target="_blank"}. Certificate renewal checks occur each time bitwarden is restarted.
 
     - If you already have your own SSL certificate you can place the following files in the `./bwdata/ssl/your.domain.com` directory:
-      - certificate.crt (required)
+      - certificate.crt (required). If not done so already, you may need to bundle your primary certificate with any intermediate certificates provided by the CA or else you will receive SSL trust errors. ex. `cat domain.crt ca.crt >> certificate.crt`. [See here](https://www.google.com/search?q=nginx+ssl+bundle+certificate+and+ca){:target="_blank"} for more information.
       - private.key (required)
       - ca.crt (optional, if trusted)
       - dhparam.pem (optional, if using Diffie Hellman ephemeral parameters). You can create your own `dhparam.pem` by using OpenSSL with `openssl dhparam -out ./dhparam.pem 2048`.
