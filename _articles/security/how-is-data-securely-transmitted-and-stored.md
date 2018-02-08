@@ -1,6 +1,6 @@
 ---
 layout: article
-title: How is my data securely trasmitted and stored on bitwarden servers?
+title: How is my data securely transmitted and stored on bitwarden servers?
 categories: [security]
 featured: true
 popular: false
