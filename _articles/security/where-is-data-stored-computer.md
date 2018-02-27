@@ -36,6 +36,7 @@ You can override the storage location for your Bitwarden desktop application dat
   - Chrome: `~/.config/google-chrome/Default/Local Extension Settings/nngceckbapebfimnlniiiahkandclblb`
 - macOS Browser Extensions
   - Chrome: `~/Library/Application Support/Google/Chrome/Default/Local App Settings/nngceckbapebfimnlniiiahkandclblb`
+  - Safari: `~/Library/Safari/Databases`
 - iOS Mobile App
   - App group for `group.com.8bit.bitwarden`
 - Android Mobile App
