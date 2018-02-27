@@ -7,11 +7,11 @@ popular: false
 tags: [browser, auto-fill, autofill]
 ---
 
-You can use the bitwarden browser extension to easily auto-fill login forms on websites with your username/email and password credentials. There are a variety of ways to perform auto-fill operations with bitwarden.
+You can use the Bitwarden browser extension to easily auto-fill login forms on websites with your username/email and password credentials. There are a variety of ways to perform auto-fill operations with bitwarden.
 
 ## Popup window
 
-The bitwarden icon in the toolbar of your browser will show the number of logins in your vault that match the current website you are viewing. Selecting the bitwarden icon will open the bitwarden popup window, defaulting to the "Current Tab" page. The "Current Tab" page shows a listing of these matching logins.
+The Bitwarden icon in the toolbar of your browser will show the number of logins in your vault that match the current website you are viewing. Selecting the Bitwarden icon will open the Bitwarden popup window, defaulting to the "Current Tab" page. The "Current Tab" page shows a listing of these matching logins.
 
 If you are currently viewing a login form on a website, selecting a login from the "Current Tab" list will result in the login credentials being auto-filled into the login form.
 
@@ -45,6 +45,6 @@ You can easily customize these keyboard shortcuts in Chrome and Opera browsers. 
 
 ## Auto-fill on page load
 
-bitwarden includes an experimental feature to auto-fill logins immediately after a webpage containing a login form loads in your browser. This feature requires you to opt-in to use it. You can enable "Auto-fill On Page Load" under **Settings** &rarr; **Options**.
+Bitwarden includes an experimental feature to auto-fill logins immediately after a webpage containing a login form loads in your browser. This feature requires you to opt-in to use it. You can enable "Auto-fill On Page Load" under **Settings** &rarr; **Options**.
 
 In the case of multiple logins matching the current website, the last used login will be used for the auto-fill operation. If the wrong login is auto-filled, you can auto-fill again using the popup window and reset the last used login.

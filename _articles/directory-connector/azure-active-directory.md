@@ -8,13 +8,13 @@ hidden: false
 tags: []
 ---
 
-This article will cover how to connect the bitwarden Directory Connector tool to your Azure Active Directory.
+This article will cover how to connect the Bitwarden Directory Connector tool to your Azure Active Directory.
 
 ## Requirements
 
 - Read through the following article: [Syncing users and groups with a directory]({% link _articles/directory-connector/directory-sync.md %})
-- Install bitwarden Directory Connector
-- Using Directory Connector, log into your bitwarden account and select your enterprise organization
+- Install Bitwarden Directory Connector
+- Using Directory Connector, log into your Bitwarden account and select your enterprise organization
 
 ## Table of Contents
 
@@ -33,7 +33,7 @@ This article will cover how to connect the bitwarden Directory Connector tool to
 2. Select the **Azure Active Directory** resource
 3. Navigate to **App registrations** and select **New application registration**
    {% image directory-connector/azure/new-application.png %}
-4. **Name** your application "bitwarden"
+4. **Name** your application "Bitwarden"
 5. Set the **Application type** to "Web app / API" 
 6. Set the **Sign-on URL** to any website value, such as "https://company.com". This URL is not used in this setup process so it can be anything.
 7. Click the **Create** button to create the application.
@@ -41,7 +41,7 @@ This article will cover how to connect the bitwarden Directory Connector tool to
 
 ## Grant Application Permissions
 
-1. Select the **bitwarden** application you created in the previous section.
+1. Select the **Bitwarden** application you created in the previous section.
 2. Navigate to **Settings** and select **Required Permissions**.
 3. Select the existing **Windows Azure Active Directory** API.
 4. Check **all** Application and Delegated permissions and click **Save**.
@@ -63,7 +63,7 @@ This article will cover how to connect the bitwarden Directory Connector tool to
 
 ## Create Application Secret Key
 
-1. Go back to the **bitwarden** application that you created.
+1. Go back to the **Bitwarden** application that you created.
 2. Navigate to **Settings** and select **Keys**.
 3. Add a new **Password** key by entering a **Name** and **Duration**. We recommend selecting "Never Expires" for the duration.
 4. Click **Save** to create a new secret key.
@@ -72,7 +72,7 @@ This article will cover how to connect the bitwarden Directory Connector tool to
 
 ## Get Your Application ID
 
-1. Go back to the **bitwarden** application that you created.
+1. Go back to the **Bitwarden** application that you created.
 2. Copy the **Application ID** to a safe place.  We will need to reference it later.
    {% image directory-connector/azure/application-id.png %}
 
@@ -91,7 +91,7 @@ This article will cover how to connect the bitwarden Directory Connector tool to
 7. Enter the **Application ID** that you copied from the steps above.
 8. Enter the Application **Secret** Key that you copied from the steps above.
 
-Congrats! You are done configuring Azure Active Directory with the bitwarden Directory Connector.
+Congrats! You are done configuring Azure Active Directory with the Bitwarden Directory Connector.
 
 ## Testing
 

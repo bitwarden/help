@@ -7,9 +7,9 @@ popular: true
 tags: [import]
 ---
 
-You can very easily import your data from an array of different password manager applications. bitwarden supports importing data into your individual account from the following sources:
+You can very easily import your data from an array of different password manager applications. Bitwarden supports importing data into your individual account from the following sources:
 
-- bitwarden (csv)
+- Bitwarden (csv)
 - [1Password (1pif)]({% link _articles/importing/import-from-1password.md %})
 - [1Password 6 Windows (csv)]({% link _articles/importing/import-from-1password.md %})
 - Ascendo DataVault (csv)
@@ -46,16 +46,16 @@ To import your data, log into the web vault at <https://vault.bitwarden.com> and
 
 **Organization Accounts**
 
-Additionally, you can also import data directly into an organization account for sharing. bitwarden supports importing data into your organization account from the following sources:
+Additionally, you can also import data directly into an organization account for sharing. Bitwarden supports importing data into your organization account from the following sources:
 
-- bitwarden (csv)
+- Bitwarden (csv)
 - LastPass (csv)
 
 To import your data, log into the web vault at <https://vault.bitwarden.com> and navigate to your organization admin area. Then navigate to **Settings** &rarr; **Import Data**.
 
 ## Generic CSV Format (individual account)
 
-You can manually condition a [CSV](https://en.wikipedia.org/wiki/Comma-separated_values) file for your individual account import using the generic bitwarden format. Create a UTF-8 encoded plaintext file with the following format:
+You can manually condition a [CSV](https://en.wikipedia.org/wiki/Comma-separated_values) file for your individual account import using the generic Bitwarden format. Create a UTF-8 encoded plaintext file with the following format:
 
 ```
 folder,favorite,type,name,notes,fields,login_uri,login_username,login_password,login_totp
@@ -73,11 +73,11 @@ Social,1,login,Twitter,,,twitter.com,me@example.com,password123,
 
 [{% icon fa-download %} Download example](/files/bitwarden_export.csv)
 
-When importing from this format, select the **bitwarden (csv)** file format option from the dropdown menu.
+When importing from this format, select the **Bitwarden (csv)** file format option from the dropdown menu.
 
 ## Generic CSV Format (organization account)
 
-You can manually condition a [CSV](https://en.wikipedia.org/wiki/Comma-separated_values) file for your organization account import using the generic bitwarden format. The format is almost the same as the individual account format above, however, organizations have "collections" instead of a "folder" and no "favorite". Create a UTF-8 encoded plaintext file with the following format:
+You can manually condition a [CSV](https://en.wikipedia.org/wiki/Comma-separated_values) file for your organization account import using the generic Bitwarden format. The format is almost the same as the individual account format above, however, organizations have "collections" instead of a "folder" and no "favorite". Create a UTF-8 encoded plaintext file with the following format:
 
 ```
 collections,type,name,notes,fields,login_uri,login_username,login_password,login_totp
@@ -95,4 +95,4 @@ collections,type,name,notes,fields,login_uri,login_username,login_password,login
 
 [{% icon fa-download %} Download example](/files/bitwarden_export_org.csv)
 
-When importing from this format, select the **bitwarden (csv)** file format option from the dropdown menu.
+When importing from this format, select the **Bitwarden (csv)** file format option from the dropdown menu.

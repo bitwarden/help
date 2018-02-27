@@ -7,10 +7,10 @@ popular: false
 tags: [two-step login, 2fa, two factor authentication, account, yubikey, yubi, yubico]
 ---
 
-bitwarden supports two-step login via [YubiKey](https://www.yubico.com){:target="_blank"}. Any YubiKey that supports [OTP capabilities](https://www.yubico.com/products/yubikey-hardware/compare-yubikeys/){:target="_blank"} can be used. This includes all YubiKey 4 series devices as well as YubiKey NEO.
+Bitwarden supports two-step login via [YubiKey](https://www.yubico.com){:target="_blank"}. Any YubiKey that supports [OTP capabilities](https://www.yubico.com/products/yubikey-hardware/compare-yubikeys/){:target="_blank"} can be used. This includes all YubiKey 4 series devices as well as YubiKey NEO.
 
 {% note %}
-Due to platform limitations, YubiKeys cannot be used on all bitwarden applications. You should enable another two-step login provider so that you can access your account when YubiKeys cannot be used.
+Due to platform limitations, YubiKeys cannot be used on all Bitwarden applications. You should enable another two-step login provider so that you can access your account when YubiKeys cannot be used.
 
 Supported platforms:
 
@@ -44,9 +44,9 @@ Two-step login can permanently lock you out of your account. It is very importan
 ## Test
 
 1. **IMPORTANT:** Ensure that you have copied down your [two-step login recovery code]({% link _articles/account/lost-two-step-device.md %}) in case something goes wrong.
-2. Log out of the bitwarden web vault.
-3. Log back into the bitwarden web vault. You should now be prompted with a YubiKey two-step login option. Insert your YubiKey and touch it's button to complete logging in.
-4. Log out of and back in to any other bitwarden applications that you are using to confirm that two-step login via YubiKey is properly working. You will eventually be logged out automatically. If the application (or device) your are using does not support YubiKey you will be presented with other two-step login options that you have configured (if any).
+2. Log out of the Bitwarden web vault.
+3. Log back into the Bitwarden web vault. You should now be prompted with a YubiKey two-step login option. Insert your YubiKey and touch it's button to complete logging in.
+4. Log out of and back in to any other Bitwarden applications that you are using to confirm that two-step login via YubiKey is properly working. You will eventually be logged out automatically. If the application (or device) your are using does not support YubiKey you will be presented with other two-step login options that you have configured (if any).
 
    Web
    {% image two-step/yubikey/web.png %}
@@ -65,5 +65,5 @@ If you are having trouble getting the YubiKey NEO to work on your Android device
 2. Your Android device [supports NFC](https://en.wikipedia.org/wiki/List_of_NFC-enabled_mobile_devices){:target="_blank"} and is [known to work properly](https://forum.yubico.com/viewtopic.php?f=26&t=1302){:target="_blank"} with YubiKey NEO.
 3. You have NFC enabled on your Android device. Enable NFC by going to Android **Settings** &rarr; **More** and enable the **NFC** option.
 
-If the YubiKey NEO can be used on your Android device you will be prompted with a YubiKey option while logging in to bitwarden. Simply place the YubiKey NEO on the back of your Android device near the NFC receiver. If you do not know where your NFC receiver is located, you may need to move it around some, trying different areas. Once bitwarden detects the YubiKey it will automatically validate and log you in.
+If the YubiKey NEO can be used on your Android device you will be prompted with a YubiKey option while logging in to Bitwarden. Simply place the YubiKey NEO on the back of your Android device near the NFC receiver. If you do not know where your NFC receiver is located, you may need to move it around some, trying different areas. Once Bitwarden detects the YubiKey it will automatically validate and log you in.
 

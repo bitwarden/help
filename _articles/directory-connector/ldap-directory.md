@@ -24,8 +24,8 @@ We provide built-in connectors for the most popular LDAP directory servers, such
 ## Requirements
 
 - Read through the following article: [Syncing users and groups with a directory]({% link _articles/directory-connector/directory-sync.md %})
-- Install bitwarden Directory Connector
-- Using Directory Connector, log into your bitwarden account and select your enterprise organization
+- Install Bitwarden Directory Connector
+- Using Directory Connector, log into your Bitwarden account and select your enterprise organization
 
 ## Connecting to the LDAP Server
 
@@ -63,7 +63,7 @@ The following options can be set:
 | Sync Interval | When using the background service, the interval, in minutes, that you wish to automatically sync. | 5 |
 | User Filter | A filter for limiting the users that are synced. Read more at [Configuring user and group sync filters]({% link _articles/directory-connector/user-group-filters.md %}). | (&(objectClass=user)) |
 | Group Filter | A filter for limiting the groups that are synced. Read more at [Configuring user and group sync filters]({% link _articles/directory-connector/user-group-filters.md %}). | (&(objectClass=group)) |
-| Remove Disabled | When a user is disabled in the directory, should they also be removed from your bitwarden organization? |  |
+| Remove Disabled | When a user is disabled in the directory, should they also be removed from your Bitwarden organization? |  |
 | Group Object Class | The name of the class used for the LDAP group object. | group |
 | User Object Class | The name of the class used for the LDAP user object. | user |
 | Group Path | This value is used in addition to the root path when searching and loading groups. If no value is supplied, the subtree search will start from the root path. | ou=Groups |
@@ -71,7 +71,7 @@ The following options can be set:
 | Group Name Attribute | The attribute field to use when loading the group name. | name |
 | User Email Attribute | The attribute field to use when loading the user email address. | mail |
 | Member Attribute | The attribute field to use when loading the group's members. | member |
-| Use Email Prefix/Suffix | Email addresses are required by bitwarden. If your directory users do not have email addresses they will be skipped. Alternatively, you can specify that users without an email address use a prefix attribute concatenated with a suffix to attempt to form a valid email address. |  |
+| Use Email Prefix/Suffix | Email addresses are required by Bitwarden. If your directory users do not have email addresses they will be skipped. Alternatively, you can specify that users without an email address use a prefix attribute concatenated with a suffix to attempt to form a valid email address. |  |
 | Email Prefix Attribute | The attribute field to use when forming a user's email address from the prefix/suffix setting. | sAMAccountName |
 | Email Suffix | The specified suffix to use when forming a user's email address from the prefix/suffix setting. | @company.com |
 | Creation Date Attribute | The attribute field that specifies when an entry was created. | whenCreated |

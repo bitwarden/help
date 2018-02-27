@@ -7,7 +7,7 @@ popular: false
 tags: [two-step login, 2fa, two factor authentication, account, google authenticator, authy, totp]
 ---
 
-bitwarden supports two-step login by using a third-party authenticator app such as [Authy](https://authy.com/){:target="_blank"} or [Google Authenticator](https://support.google.com/accounts/answer/1066447?hl=en){:target="_blank"}.
+Bitwarden supports two-step login by using a third-party authenticator app such as [Authy](https://authy.com/){:target="_blank"} or [Google Authenticator](https://support.google.com/accounts/answer/1066447?hl=en){:target="_blank"}.
 
 ## Enable Two-step Login with Authenticator App
 
@@ -28,6 +28,6 @@ Two-step login can permanently lock you out of your account. It is very importan
 ## Test
 
 1. **IMPORTANT:** Ensure that you have copied down your [two-step login recovery code]({% link _articles/account/lost-two-step-device.md %}) in case something goes wrong.
-2. Log out of the bitwarden web vault.
-3. Log back into the bitwarden web vault. You should now be prompted with an authenticator two-step login option.
-4. Authenticator protection works with all bitwarden applications (web, mobile, desktop, browser). Log out of and back in to any other bitwarden applications that you are using to confirm that two-step login via authenticator app is properly working. You will eventually be logged out automatically.
+2. Log out of the Bitwarden web vault.
+3. Log back into the Bitwarden web vault. You should now be prompted with an authenticator two-step login option.
+4. Authenticator protection works with all Bitwarden applications (web, mobile, desktop, browser). Log out of and back in to any other Bitwarden applications that you are using to confirm that two-step login via authenticator app is properly working. You will eventually be logged out automatically.

@@ -8,7 +8,7 @@ hidden: false
 tags: []
 ---
 
-You can configure the bitwarden Directory Connector to use filters to limit the users and/or groups that are processed for syncing to your bitwarden organization.
+You can configure the Bitwarden Directory Connector to use filters to limit the users and/or groups that are processed for syncing to your bitwarden organization.
 
 The syntax for filtering is different for each directory server type and is covered in detail below.
 

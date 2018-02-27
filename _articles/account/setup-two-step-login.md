@@ -7,9 +7,9 @@ popular: true
 tags: [two-step login, 2fa, two factor authentication, account]
 ---
 
-Two-step login (or two-factor authentication) greatly increases the security of your account by requiring you to complete a secondary step while logging into bitwarden (in addition to your master password). Even if someone were to discover your master password, they could not log into your bitwarden account without access to the secondary step. You can read more about [two-step login here](https://en.wikipedia.org/wiki/Multi-factor_authentication){:target="_blank"}. We recommend that all users activate and use two-step login with their bitwarden account.
+Two-step login (or two-factor authentication) greatly increases the security of your account by requiring you to complete a secondary step while logging into Bitwarden (in addition to your master password). Even if someone were to discover your master password, they could not log into your Bitwarden account without access to the secondary step. You can read more about [two-step login here](https://en.wikipedia.org/wiki/Multi-factor_authentication){:target="_blank"}. We recommend that all users activate and use two-step login with their Bitwarden account.
 
-bitwarden supports two-step login using the following methods:
+Bitwarden supports two-step login using the following methods:
 
 **Free**
 

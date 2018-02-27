@@ -7,10 +7,10 @@ popular: false
 tags: [two-step login, 2fa, two factor authentication, account, u2f, fido]
 ---
 
-bitwarden supports two-step login via [FIDO U2F](https://www.yubico.com/solutions/fido-u2f/){:target="_blank"}. Any FIDO U2F certified device will work. We recommend a [YubiKey](https://www.yubico.com/products/yubikey-hardware/){:target="_blank"}.
+Bitwarden supports two-step login via [FIDO U2F](https://www.yubico.com/solutions/fido-u2f/){:target="_blank"}. Any FIDO U2F certified device will work. We recommend a [YubiKey](https://www.yubico.com/products/yubikey-hardware/){:target="_blank"}.
 
 {% note %}
-Due to platform limitations, FIDO U2F cannot be used on all bitwarden applications. You should enable another two-step login provider so that you can access your account when FIDO U2F cannot be used.
+Due to platform limitations, FIDO U2F cannot be used on all Bitwarden applications. You should enable another two-step login provider so that you can access your account when FIDO U2F cannot be used.
 
 Supported platforms:
 
@@ -41,9 +41,9 @@ Two-step login can permanently lock you out of your account. It is very importan
 ## Test
 
 1. **IMPORTANT:** Ensure that you have copied down your [two-step login recovery code]({% link _articles/account/lost-two-step-device.md %}) in case something goes wrong.
-2. Log out of the bitwarden web vault.
-3. Log back into the bitwarden web vault. You should now be prompted with a FIDO U2F two-step login option. Insert your FIDO U2F security key (if it has a button, touch it) to complete logging in.
-4. Log out of and back in to any other bitwarden applications that you are using to confirm that two-step login via FIDO U2F is properly working. You will eventually be logged out automatically. If the application (or device) your are using does not support FIDO U2F you will be presented with other two-step login options that you have configured (if any).
+2. Log out of the Bitwarden web vault.
+3. Log back into the Bitwarden web vault. You should now be prompted with a FIDO U2F two-step login option. Insert your FIDO U2F security key (if it has a button, touch it) to complete logging in.
+4. Log out of and back in to any other Bitwarden applications that you are using to confirm that two-step login via FIDO U2F is properly working. You will eventually be logged out automatically. If the application (or device) your are using does not support FIDO U2F you will be presented with other two-step login options that you have configured (if any).
 
    Web
    {% image two-step/u2f/web.png %}

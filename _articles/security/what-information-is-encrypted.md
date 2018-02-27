@@ -34,7 +34,7 @@ All information associated with your stored vault data is protected with end-to-
   - Addresses
 - Secure note information
 
-Certain information in bitwarden cannot be encrypted. This includes:
+Certain information in Bitwarden cannot be encrypted. This includes:
 
 - Your name (if provided)
 - Your account's email address

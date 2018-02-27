@@ -7,7 +7,7 @@ popular: false
 tags: [import, chrome, opera, vivaldi]
 ---
 
-Importing your data from Google Chrome into bitwarden is easy. 
+Importing your data from Google Chrome into Bitwarden is easy. 
 
 {% note %}
 The process is exactly the same for Opera and Vivaldi browser users.
@@ -23,14 +23,14 @@ The process is exactly the same for Opera and Vivaldi browser users.
 6. Click the **Export** button. You may be prompted to enter your computer's password for authorization.
 7. You'll then be prompted to save your passwords to a [CSV][csv] file on your computer. Save this file to your desktop as `chrome_passwords.csv`.
 
-## Import your passwords into bitwarden
+## Import your passwords into Bitwarden
 
-1. Go to the [bitwarden web vault][bitwarden-vault] and log in.
+1. Go to the [Bitwarden web vault][bitwarden-vault] and log in.
 2. Navigate to **Tools** &rarr; **Import**.
 3. Select **Chrome (csv)** as the file format and select your `chrome_passwords.csv` file from the desktop that you created in step 7 above.
 4. Click the **Import** button.
 
-Congratulations! You have just transferred all of your data from Google Chrome into bitwarden.
+Congratulations! You have just transferred all of your data from Google Chrome into Bitwarden.
 
 [csv]: https://en.wikipedia.org/wiki/Comma-separated_values
 [bitwarden-vault]: https://vault.bitwarden.com

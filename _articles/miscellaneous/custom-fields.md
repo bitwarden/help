@@ -11,18 +11,18 @@ Custom fields allow you to store additional, well structured data fields within 
 
 ## Auto-filling custom fields
 
-Custom field names are an important identifier. Depending on the name you give your custom field, bitwarden will attempt to auto-fill the custom field's value for you. If you intend to auto-fill custom fields you should name your field based on an identifier from the webpage form. These names are searched for using the following criteria:
+Custom field names are an important identifier. Depending on the name you give your custom field, Bitwarden will attempt to auto-fill the custom field's value for you. If you intend to auto-fill custom fields you should name your field based on an identifier from the webpage form. These names are searched for using the following criteria:
 
 - HTML form element's **id** attribute
 - then the HTML form element's **name** attribute
 - then the HTML form element's corresponding **label** value
 - then the HTML form element's **placeholder** value
 
-If one of these matches is found, bitwarden will auto-fill the custom field's value for you.
+If one of these matches is found, Bitwarden will auto-fill the custom field's value for you.
 
 ## Special name prefixes for auto-filling
 
-When bitwarden searches a webpage's form elements to match with your custom field's name, an exact, case-insensitive comparison is done. For example, if your custom field has the name "PIN", the following form element's values (from the id, name, label, etc) will match for auto-filling: "pin", "PIN", and "Pin". However, values such as "pin2" or "mypin" will not match.
+When Bitwarden searches a webpage's form elements to match with your custom field's name, an exact, case-insensitive comparison is done. For example, if your custom field has the name "PIN", the following form element's values (from the id, name, label, etc) will match for auto-filling: "pin", "PIN", and "Pin". However, values such as "pin2" or "mypin" will not match.
 
 There are two special name prefixes that can give you even more control over how your custom field is auto-filled:
 
