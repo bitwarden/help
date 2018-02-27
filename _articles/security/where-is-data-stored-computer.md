@@ -11,19 +11,33 @@ You data is also automatically synced to our [cloud servers]({% link _articles/s
 
 All sensitive data stored on your computer/device is encrypted. The data can be found in the following locations:
 
-- Windows
-  - Chrome Extension: `%AppData%\Local\Google\Chrome\User Data\Default\Local Extension Settings\nngceckbapebfimnlniiiahkandclblb`
-  - Firefox Extension: `%AppData%\Roaming\Mozilla\Firefox\Profiles\your_profile\browser-extension-data\{446900e4-71c2-419f-a6a7-df9c091e268b}`
-  - Opera Extension: `%AppData%\Roaming\Opera Software\Opera Stable\Local Extension Settings\ccnckbpmaceehanjmeomladnmlffdjgn`
-  - Vivaldi Extension: `%AppData%\Local\Vivaldi\User Data\Default\Local Extension Settings\nngceckbapebfimnlniiiahkandclblb`
-  - Brave Extension: `%AppData%\Roaming\brave\Local Extension Settings\nngceckbapebfimnlniiiahkandclblb`
-  - Edge Extension: `%AppData%\Local\Packages\Microsoft.MicrosoftEdge_8wekyb3d8bbwe\AC\MicrosoftEdge\Extensions\Storage`
-- Linux
-  - Chrome Extension: `~/.config/google-chrome/Default/Local Extension Settings/nngceckbapebfimnlniiiahkandclblb`
-- Mac
-  - Chrome Extension: `~/Library/Application Support/Google/Chrome/Default/Local App Settings/nngceckbapebfimnlniiiahkandclblb`
-- iOS
+- Windows Desktop App
+  - Standard Installations &amp; Store: `%AppData%\Roaming\Bitwarden`
+  - Portable: `.\bitwarden-appdata`
+- macOS Desktop App
+  - Standard Installations: `~/Library/Application Support/Bitwarden`
+  - Mac App Store: `~/Library/Containers/com.bitwarden.desktop/Data/Library/Application Support/Bitwarden`
+- Linux Desktop App
+  - Standard Installations: `~/.config/Bitwarden`
+  - Snap: `~/snap/bitwarden/current/.config/Bitwarden`
+
+{% tip %}
+You can override the storage location for your Bitwarden desktop application data by setting the `BITWARDEN_APPDATA_DIR` environment variable to an absolute path.
+{% endtip %}
+
+- Windows Browser Extensions
+  - Chrome: `%AppData%\Local\Google\Chrome\User Data\Default\Local Extension Settings\nngceckbapebfimnlniiiahkandclblb`
+  - Firefox: `%AppData%\Roaming\Mozilla\Firefox\Profiles\your_profile\browser-extension-data\{446900e4-71c2-419f-a6a7-df9c091e268b}`
+  - Opera: `%AppData%\Roaming\Opera Software\Opera Stable\Local Extension Settings\ccnckbpmaceehanjmeomladnmlffdjgn`
+  - Vivaldi: `%AppData%\Local\Vivaldi\User Data\Default\Local Extension Settings\nngceckbapebfimnlniiiahkandclblb`
+  - Brave: `%AppData%\Roaming\brave\Local Extension Settings\nngceckbapebfimnlniiiahkandclblb`
+  - Edge: `%AppData%\Local\Packages\Microsoft.MicrosoftEdge_8wekyb3d8bbwe\AC\MicrosoftEdge\Extensions\Storage`
+- Linux Browser Extensions
+  - Chrome: `~/.config/google-chrome/Default/Local Extension Settings/nngceckbapebfimnlniiiahkandclblb`
+- macOS Browser Extensions
+  - Chrome: `~/Library/Application Support/Google/Chrome/Default/Local App Settings/nngceckbapebfimnlniiiahkandclblb`
+- iOS Mobile App
   - App group for `group.com.8bit.bitwarden`
-- Android
+- Android Mobile App
   - `/data/data/com.x8bit.bitwarden/`
 
