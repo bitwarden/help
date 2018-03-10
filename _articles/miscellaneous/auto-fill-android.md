@@ -10,7 +10,7 @@ tags: [android, autofill, auto-fill]
 You can use the Bitwarden Android app to add new and auto-fill existing logins on the web and in other apps. Bitwarden provides two auto-fill services: 
 
 1. The **Autofill Framework Service** for Android users on Oreo (8.0) and greater.
-2. The **Auto-fill Accessibility Service** for all Android versions, and
+2. The **Auto-fill Accessibility Service** for all Android versions.
 
 --------------
 
