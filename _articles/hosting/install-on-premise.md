@@ -56,10 +56,14 @@ This article will walk you through how to install and deploy Bitwarden to your o
 
 ## System Requirements
 
-- CPU: Dual core @ 2GHz or faster
+- Processor: x64, 1.4GHz or faster
 - Memory: 2GB of RAM or more
 - Storage: 10GB or more
 - Docker: Engine 1.8+ and Compose 1.17.1+
+
+If you are looking for a quality provider with affordable prices, we recommend:
+
+[![Digital Ocean](/images/digital-ocean.png "Digital Ocean")](https://m.do.co/c/512986b01931){:target="_blank"}
 
 ## Configure Your Domain
 
