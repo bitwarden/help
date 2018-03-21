@@ -71,7 +71,7 @@ Example:
 Regular expressions are an advanced option and can be quite dangerous if used incorrectly. You should not use this option if you do not know exactly what you are doing.
 {% endwarning %}
 
-The regular expression option allows you to write any simple or complex [regular expression](https://en.wikipedia.org/wiki/Regular_expression){:target="_blank"} to match the current website/application URI.
+The regular expression option allows you to write any simple or complex [regular expression](https://en.wikipedia.org/wiki/Regular_expression){:target="_blank"} to match the current website/application URI. All regular expressions are case *insensitive*.
 
 Example:
 
