@@ -31,4 +31,4 @@ We understand that certain privacy-minded users may not want to use the "website
 - **Browser extension:** Settings &rarr; Options &rarr; Disable Website Icons
 - **Mobile app:** Settings &rarr; Options &rarr; Disable Website Icons
 
-When the website icons feature is disable, Bitwarden will opt to show you a generic, locally accessed icon instead ({% icon fa-globe %}) that is the same for all login items stored in your vault.
+When the website icons feature is disabled, Bitwarden will opt to show you a generic, locally accessed icon instead ({% icon fa-globe %}) that is the same for all login items stored in your vault.
