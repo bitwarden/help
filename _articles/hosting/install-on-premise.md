@@ -69,7 +69,7 @@ If you are looking for a quality provider with affordable prices, we recommend:
 
 By default, Bitwarden will be served through ports 80 (http) and 443 (https) on the localhost machine. You should open these ports so that Bitwarden can be accessed from within and/or outside of the network. You can choose different ports during installation if you like.
 
-It you are serving Bitwarden to the outside world you will need to configure a domain name with DNS records that point to your host machine (ex. bitwarden.company.com). *You should configure this domain before beginning your Bitwarden installation.*
+If you are serving Bitwarden to the outside world you will need to configure a domain name with DNS records that point to your host machine (ex. bitwarden.company.com). *You should configure this domain before beginning your Bitwarden installation.*
 
 Alternatively, if you are only testing you can install Bitwarden to the "localhost" domain.
 
@@ -90,7 +90,7 @@ For reference, you can find the official Bitwarden images hosted on Docker Hub a
 
 ## Install Bitwarden
 
-We've made installing Bitwarden very simple. Depending in your environment (non-Windows vs. Windows) we provide Bash (Linux and macOS) and PowerShell (Windows) scripts to aide in installing and managing your bitwarden installation. The following steps will include references for both Bash and PowerShell.
+We've made installing Bitwarden very simple. Depending on your environment (non-Windows vs. Windows) we provide Bash (Linux and macOS) and PowerShell (Windows) scripts to aide in installing and managing your Bitwarden installation. The following steps will include references for both Bash and PowerShell.
 
 1. Download the main Bitwarden script to your machine in the desired location:
 
