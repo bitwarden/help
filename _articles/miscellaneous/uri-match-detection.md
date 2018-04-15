@@ -76,7 +76,7 @@ The regular expression option allows you to write any simple or complex [regular
 Example:
 
 - URI regex value: `^https://.*google.com`
-- Matches: `https://google.com`, `https://sub.google.com`, `https://anything.can.go.here.google.com`
+- Matches: `https://google.com`, `https://sub.google.com`, `https://sub.sub2.google.com`, `https://malicious-site.com?q=google.com`
 - Not matches: `http://google.com` (not https), `https://yahoo.com`
 
 **Exact**
