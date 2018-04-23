@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Set up two-step login with Duo Security
-categories: [account-management]
+categories: [account-management, organizations]
 featured: false
 popular: false
 tags: [two-step login, 2fa, two factor authentication, account, duo, sms]
@@ -11,9 +11,9 @@ Bitwarden has partnered with Duo Security to bring two-factor authentication to 
 
 ## Overview
 
-This article takes you through configuring your Bitwarden Premium account to use Duo two-factor authentication services. You'll sign up for a Duo account, configure Bitwarden to use your new Duo account, and enroll your Bitwarden account and your device for use with Duo's service.
+This article takes you through configuring your Bitwarden Premium or Enterprise Organzation account to use Duo two-factor authentication services. You'll sign up for a Duo account, configure Bitwarden to use your new Duo account, and enroll your Bitwarden account and your device for use with Duo's service.
 
-Once you complete this process, Duo Security's two-factor authentication platform protects access to your Bitwarden data by requiring two-step approval when logging in to your Bitwarden vault.
+Once you complete this process, Duo Security's two-factor authentication platform protects access to your Bitwarden data by requiring two-step approval when logging in to your Bitwarden vault. If you are using this Duo integration with your Bitwarden enterprise organization, all users in your organization will be required to complete two-factor authentication with Duo when logging into their Bitwarden vault.
 
 ## Create a Duo Security Account
 
@@ -40,7 +40,9 @@ Two-step login can permanently lock you out of your account. It is very importan
 {% endwarning %}
 
 1. Log in to the web vault at <https://vault.bitwarden.com>.
-2. Click **Settings** on the sidebar. Click **Two-step Login** in the sub-menu that opens under **Settings**.  
+2. Depending on your account type:
+  - Premium Users: Click **Settings** on the sidebar. Click **Two-step Login** in the sub-menu that opens under **Settings**.
+  - Enterprise Organizations: Visit the admin area for your organization. Select **Settings** in the sidebar and locate the **Two-step Login Providers** section.
 3. Select the **Duo** option and then type in your master password to continue.
    {% image two-step/duo/select.png %}
 4. Enter the configuration information provided from the Duo Admin **Bitwarden** application that was set up earlier: **Integration Key**, **Secret Key**, and **API Hostname**.
@@ -52,7 +54,7 @@ Two-step login can permanently lock you out of your account. It is very importan
 ## Enroll and Test
 
 1. **IMPORTANT:** Ensure that you have copied down your [two-step login recovery code]({% link _articles/account/lost-two-step-device.md %}) in case something goes wrong.
-2. Log out of the Bitwarden web vault.
+2. Log out of the Bitwarden web vault (or to be safe incase something is misconfigured, just use a new browser tab so that you can keep your currently logged in browser tab session active).
 3. Log back into the Bitwarden web vault. You should now be prompted with a Duo two-step login option.
 4. Upon your first login using Duo you may be prompted to enroll your Bitwarden account and device(s) with Duo. Complete the Duo enrollment process following the on-screen instructions.
    {% image two-step/duo/enroll1.png %}
