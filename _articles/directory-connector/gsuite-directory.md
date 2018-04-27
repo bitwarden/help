@@ -31,8 +31,8 @@ This article will cover how to connect the Bitwarden Directory Connector tool to
 If you already have a Google Cloud project available, you can skip this step and re-use it here.
 {% endnote %}
 
-1. Go to <https://console.cloud.google.com>
-2. Click **Create Project**
+1. Go to <https://console.cloud.google.com/home>
+2. Click the **Create** project button
    {% image directory-connector/gsuite/create-project.png %}
 3. Enter a project name and click **Create**
    {% image directory-connector/gsuite/new-project.png %}
@@ -40,24 +40,22 @@ If you already have a Google Cloud project available, you can skip this step and
 
 ## Enable the Admin SDK API for Your Project
 
-1. Go to <https://console.cloud.google.com>
-2. Make sure the appropriate project is selected.
-3. Open the navigation menu and navigate to **API Manager** &rarr; **Dashboard**.
-4. Select the **Enable API** button near the top.
-   {% image directory-connector/gsuite/enable-api.png %}
-5. Click the **Admin SDK** link under the **Google Apps APIs** section.
+1. Go to <https://console.cloud.google.com>.
+2. Make sure the appropriate project is selected. You should be on the **Dashboard** page for your project.
+3. Open the navigation menu and navigate to **APIs &amp; Services** &rarr; **Library**.
+4. Search for and select the **Admin SDK** service.
    {% image directory-connector/gsuite/admin-sdk.png %}
-6. Click the **Enable** button near the top.
+5. Click the **Enable** button near the top.
    {% image directory-connector/gsuite/admin-sdk-enable.png %}
 
 ## Create & Configure a Service Account
 
 1. Go to <https://console.cloud.google.com>
-2. Make sure the appropriate project is selected.
-3. Open the navigation menu and navigate to **API Manager** &rarr; **Credentials**.
+2. Make sure the appropriate project is selected. You should be on the **Dashboard** page for your project.
+3. Open the navigation menu and navigate to **APIs &amp; Services** &rarr; **Credentials**.
 4. Click the **Create credentials** button and select **Service account key**.
    {% image directory-connector/gsuite/create-credentials.png %}
-5. Select **New service account**.
+5. Select **New service account** from the **Service account** dropdown menu.
 6. Name the service account **Bitwarden Directory Connector**. For the role, select **Project** and then **Owner**. Ensure that **JSON** is the selected **Key type**. Upon clicking **Create**, a JSON file will be downloaded; this is important for later so keep a note of where you have downloaded it.
    {% image directory-connector/gsuite/create-service-account.png %}
 7. You should now see your newly created service account listed. Click on **Manage service accounts** (on the right-hand side).
@@ -73,10 +71,10 @@ If you already have a Google Cloud project available, you can skip this step and
 ## Configure G Suite Security
 
 1. Go to <https://admin.google.com>
-2. Open the navigation menu and navigate to **Security**.
+2. Open the navigation menu and navigate to **Security** &rarr; **Settings**.
 3. Select the **API reference** option and make sure **Enable API access** is checked.
    {% image directory-connector/gsuite/enable-api-access.png %}
-4. Back in the list of options, select **Show more** &rarr; **Advanced settings** -> **Manage API client access**
+4. Back in the list of options, select the **Advanced settings** options and then the **Manage API client access** link.
    {% image directory-connector/gsuite/manage-api-access.png %}
 5. For **Client Name**, paste the **Client ID** of the service account that you created in the previous steps. For **API Scopes**, paste the following values to grant read-only access to users and groups:
    <pre>https://www.googleapis.com/auth/admin.directory.user.readonly,https://www.googleapis.com/auth/admin.directory.group.readonly,https://www.googleapis.com/auth/admin.directory.group.member.readonly</pre>
