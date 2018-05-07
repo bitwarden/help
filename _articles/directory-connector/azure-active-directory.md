@@ -43,9 +43,7 @@ This article will cover how to connect the Bitwarden Directory Connector tool to
 
 1. Select the **Bitwarden** application you created in the previous section.
 2. Navigate to **Settings** and select **Required Permissions**.
-3. Select the existing **Windows Azure Active Directory** API.
-4. Check **all** Application and Delegated permissions and click **Save**.
-   {% image directory-connector/azure/directory-permissions.png %}
+3. Delete the existing **Windows Azure Active Directory** API permission set that is automatically created by default. It is not needed.
 5. Select the **Add** button to create a new API permission set.
 6. For step 1, **Select an API** for **Microsoft Graph**.
 7. For step 2, **Select Permissions** for the following:
@@ -78,15 +76,15 @@ This article will cover how to connect the Bitwarden Directory Connector tool to
 
 ## Get Your Tenant Hostname
 
-1. Select your username in the top right corner of the Azure Portal.
+1. Select the **Directory and Subscription** filter in the top right corner of the Azure Portal.
 2. Note the **hostname** value that appears under your directory (ex. company.onmicrosoft.com). This is your **Tenant** hostname. Copy the **Tenant** hostname to a safe place. We will need to reference it later.
    {% image directory-connector/azure/tenant.png %}
 
 ## Configure Directory Connector
 
-1. Launch the Directory Connector console by double clicking the shortcut. 
-2. Select option 3 (Configure directory connection) from the main menu.
-3. Select **Azure Active Directory** as the type.
+1. Launch the Directory Connector desktop application
+2. Go to the **Settings** tab.
+3. Select **Azure Active Directory** as the directory type.
 6. Enter the **Tenant** hostname that you copied from the steps above (ex. company.onmicrosoft.com).
 7. Enter the **Application ID** that you copied from the steps above.
 8. Enter the Application **Secret** Key that you copied from the steps above.
@@ -94,7 +92,6 @@ This article will cover how to connect the Bitwarden Directory Connector tool to
 Congrats! You are done configuring Azure Active Directory with the Bitwarden Directory Connector.
 
 ## Testing
-
 
 {% note %}
 It can take up to 15 minutes for the granted permissions for your application to properly propagate. You may receive "Insufficient privileges to complete the operation" errors in the meantime.

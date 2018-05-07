@@ -50,9 +50,10 @@ The following options can be set:
 
 ## Configuring Sync Settings
 
-1. Launch the Directory Connector console by double clicking the shortcut.
-2. Select option 4 (Configure sync) from the main menu.
-3. Step through and set each sync configuration setting.
+1. Launch the Directory Connector desktop application
+2. Go to the **Settings** tab.
+3. Select **Active Directory / LDAP** as the directory type.
+3. Specify the appropriate settings for your Active Directory or LDAP server.
 
 {% table %}
 

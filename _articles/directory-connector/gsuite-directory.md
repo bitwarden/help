@@ -85,15 +85,13 @@ If you already have a Google Cloud project available, you can skip this step and
 
 ## Configure Directory Connector
 
-1. Locate the secret key JSON file that was downloaded whenever you created your service account in the steps above.
-2. Copy this file to the Bitwarden Directory Connector program data folder at `C:/ProgramData/bitwarden/Directory Connector`.
-   - Optionally rename the JSON file to something that is easier to remember, such as `client_secret.json`
-3. Launch the Directory Connector console by double clicking the shortcut. 
-4. Select option 3 (Configure directory connection) from the main menu.
-5. Select **G Suite Directory** as the type.
-6. Enter the name of the JSON file that you copied in step 2.
-7. Enter the domain of your G Suite account.
-8. Enter the email address of an admin user that has full access to the G Suite directory (such as your own).
+1. Launch the Directory Connector desktop application
+2. Go to the **Settings** tab.
+3. Select **G Suite Directory** as the directory type.
+4. Enter the **Domain** of your G Suite account.
+5. Enter the email address of an **Admin User** that has full access to the G Suite directory (such as your own).
+6. If you have one, enter the **Customer Id** of your directory (most users won't need to enter a Customer Id).
+7. Select the **JSON Key File** that was downloaded whenever you created your service account in the steps above. The **Client Email** and **Private Key** will be automatically extracted from this key file for you.
 
 Congrats! You are done configuring G Suite with the Bitwarden Directory Connector.
 
