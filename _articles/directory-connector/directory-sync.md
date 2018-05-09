@@ -21,13 +21,13 @@ The following directories are supported:
 Directory sync is only available to enterprise organizations.
 {% endnote %}
 
-## Bitwarden Directory Connector Tool
+## Bitwarden Directory Connector Application
 
 The Bitwarden Directory Connector is cross-platform desktop application that allows you to keep your Bitwarden organization and user directory in sync. Directory Connector can be run on-demand manually as well as automatically in the background on an configured interval. The Directory Connector application can be installed on Windows, macOS, and most Linux distributions.
 
 You can install and run Directory Connector as an agent on the server that hosts your directory, an administrator's workstation, or any other desktop device than can access the directory.
 
-{% image directory-connector/console.png %}
+{% image directory-connector/app.png %}
 
 ### Table of Contents
 
@@ -77,6 +77,7 @@ By default the Directory Connector communicates with the Bitwarden public cloud 
    - [Active Directory & Other LDAP-based Directories Setup]({% link _articles/directory-connector/ldap-directory.md %})
    - [Azure Active Directory Setup]({% link _articles/directory-connector/azure-active-directory.md %})
    - [G Suite (Google) Setup]({% link _articles/directory-connector/gsuite-directory.md %})
+   - [Okta Setup]({% link _articles/directory-connector/okta-directory.md %})
 
 ### Configure sync options
 

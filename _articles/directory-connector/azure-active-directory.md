@@ -8,7 +8,7 @@ hidden: false
 tags: []
 ---
 
-This article will cover how to connect the Bitwarden Directory Connector tool to your Azure Active Directory.
+This article will cover how to connect the Bitwarden Directory Connector application to your Azure Active Directory.
 
 ## Requirements
 
@@ -82,7 +82,7 @@ This article will cover how to connect the Bitwarden Directory Connector tool to
 
 ## Configure Directory Connector
 
-1. Launch the Directory Connector desktop application
+1. Launch the Directory Connector desktop application.
 2. Go to the **Settings** tab.
 3. Select **Azure Active Directory** as the directory type.
 6. Enter the **Tenant** hostname that you copied from the steps above (ex. company.onmicrosoft.com).
@@ -97,4 +97,4 @@ Congrats! You are done configuring Azure Active Directory with the Bitwarden Dir
 It can take up to 15 minutes for the granted permissions for your application to properly propagate. You may receive "Insufficient privileges to complete the operation" errors in the meantime.
 {% endnote %}
 
-Test your configurations by running a simulated directory sync. You should see your Azure Active Directory groups and/or users printed to the screen.
+Test your configuration by running a sync test. You should see your Azure Active Directory groups and/or users printed to the screen.

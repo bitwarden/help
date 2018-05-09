@@ -8,7 +8,7 @@ hidden: false
 tags: []
 ---
 
-This article will cover how to connect the Bitwarden Directory Connector tool to your G Suite directory.
+This article will cover how to connect the Bitwarden Directory Connector application to your G Suite directory.
 
 ## Requirements
 
@@ -85,7 +85,7 @@ If you already have a Google Cloud project available, you can skip this step and
 
 ## Configure Directory Connector
 
-1. Launch the Directory Connector desktop application
+1. Launch the Directory Connector desktop application.
 2. Go to the **Settings** tab.
 3. Select **G Suite Directory** as the directory type.
 4. Enter the **Domain** of your G Suite account.
@@ -97,4 +97,4 @@ Congrats! You are done configuring G Suite with the Bitwarden Directory Connecto
 
 ## Testing
 
-Test your configurations by running a simulated directory sync. You should see your G Suite groups and/or users printed to the screen.
+Test your configuration by running a sync test. You should see your G Suite groups and/or users printed to the screen.

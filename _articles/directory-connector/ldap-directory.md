@@ -29,22 +29,23 @@ We provide built-in connectors for the most popular LDAP directory servers, such
 
 ## Connecting to the LDAP Server
 
-1. Launch the Directory Connector console by double clicking the shortcut. 
-2. Select option 3 (Configure directory connection) from the main menu.
-3. Select the type of directory server you are configuring. In this case, either **Active Directory** or **Other LDAP Directory**.
+1. Run the Directory Connector application.
+2. Go to the **Settings** tab.
+3. Select **Active Directory / LDAP** as the **Type** of directory server you are configuring.
 
-The following options can be set:
+The following directory configuration options can be set:
 
 {% table %}
 
 | Property | Description | Examples |
 |----------|-------------|----------|
-| Address | The host name of your directory server. | `ad.company.com` or `ldap.company.local` |
+| Server Hostname | The hostname of your directory server. | `ad.company.com` or `ldap.company.local` |
 | Port | The port on which your directory server is listening. | 389 or 10389 |
-| Path | The root path at which the Directory Connector should start all queries. | `cn=users,dc=ad,dc=company,dc=com` |
-| Current user | Authenticate to the directory server as the currently logged in user. For Active Directory, the user should be a member of the built-in administrators group. |  |
-| Username | The distinguished name of an administrative user that the application will use when connecting to the directory server. For Active Directory, the user should be a member of the built-in administrators group. | `cn=admin,cn=users,dc=ad,dc=company,dc=com` or `admin@company.com` |
-| Password | The password of the user specified above. Note that the password is safely encrypted before being stored for the application, however, to better guarantee its security, you should ensure that other processes do not have OS-level read permissions for this application's settings files. |  |
+| Root Path | The root path at which the Directory Connector should start all queries. | `cn=users,dc=ad,dc=company,dc=com` |
+| LDAPS | If the server is using LDAP over SSL (LDAPS). |  |
+| Active Directory | If the server is an Active Directory server. |  |
+| Username | The distinguished name of an administrative user that the application will use when connecting to the directory server. For Active Directory, the user should be a member of the built-in administrators group. | `cn=admin,cn=users,dc=ad,dc=company,dc=com` or `company\admin` (Active Directory) |
+| Password | The password of the user specified above. The password is safely stored in the operating system's native credential manager. |  |
 
 {% endtable %}
 
@@ -52,30 +53,33 @@ The following options can be set:
 
 1. Launch the Directory Connector desktop application
 2. Go to the **Settings** tab.
-3. Select **Active Directory / LDAP** as the directory type.
-3. Specify the appropriate settings for your Active Directory or LDAP server.
+3. Configure the appropriate **Sync** settings for your Active Directory or LDAP server.
+
+{% note %}
+If you are using Active Directory, many of these settings are predetermined for you and are therefore are not shown.
+{% endnote %}
 
 {% table %}
 
 | Property | Description | Examples |
 |----------|-------------|----------|
-| Sync Groups | Sync groups to your organization. |  |
-| Sync Users | Sync users to your organization. |  |
-| Sync Interval | When using the background service, the interval, in minutes, that you wish to automatically sync. | 5 |
-| User Filter | A filter for limiting the users that are synced. Read more at [Configuring user and group sync filters]({% link _articles/directory-connector/user-group-filters.md %}). | (&(objectClass=user)) |
-| Group Filter | A filter for limiting the groups that are synced. Read more at [Configuring user and group sync filters]({% link _articles/directory-connector/user-group-filters.md %}). | (&(objectClass=group)) |
-| Remove Disabled | When a user is disabled in the directory, should they also be removed from your Bitwarden organization? |  |
-| Group Object Class | The name of the class used for the LDAP group object. | group |
-| User Object Class | The name of the class used for the LDAP user object. | user |
-| Group Path | This value is used in addition to the root path when searching and loading groups. If no value is supplied, the subtree search will start from the root path. | ou=Groups |
-| User Path | This value is used in addition to the root path when searching and loading users. If no value is supplied, the subtree search will start from the root path. | ou=Users |
-| Group Name Attribute | The attribute field to use when loading the group name. | name |
-| User Email Attribute | The attribute field to use when loading the user email address. | mail |
-| Member Attribute | The attribute field to use when loading the group's members. | member |
-| Use Email Prefix/Suffix | Email addresses are required by Bitwarden. If your directory users do not have email addresses they will be skipped. Alternatively, you can specify that users without an email address use a prefix attribute concatenated with a suffix to attempt to form a valid email address. |  |
-| Email Prefix Attribute | The attribute field to use when forming a user's email address from the prefix/suffix setting. | sAMAccountName |
-| Email Suffix | The specified suffix to use when forming a user's email address from the prefix/suffix setting. | @company.com |
+| Interval | The interval, in minutes, that you wish to perform automatic sync checks. | 5 |
+| Remove Disabled Users | When a user is disabled in the directory, should they also be removed from your Bitwarden organization? |  |
+| Member Attribute | The attribute field to use when loading the group's members. | uniqueMember |
 | Creation Date Attribute | The attribute field that specifies when an entry was created. | whenCreated |
 | Revision Date Attribute | The attribute field that specifies when an entry was changed. | whenChanged |
+| Use Email Prefix/Suffix | Email addresses are required by Bitwarden. If your directory users do not have email addresses they will be skipped. Alternatively, you can specify that users without an email address use a prefix attribute concatenated with a suffix to attempt to form a valid email address. |  |
+| Email Prefix Attribute | The attribute field to use when forming a user's email address from the prefix/suffix setting. | accountName |
+| Email Suffix | The specified suffix to use when forming a user's email address from the prefix/suffix setting. | @company.com |
+| Sync Users | Sync users to your organization. |  |
+| User Filter | A filter for limiting the users that are synced. Read more at [Configuring user and group sync filters]({% link _articles/directory-connector/user-group-filters.md %}). | (&(givenName=John)) |
+| User Object Class | The name of the class used for the LDAP user object. | user |
+| User Path | This value is used in addition to the root path when searching and loading users. If no value is supplied, the subtree search will start from the root path. | ou=Users |
+| User Email Attribute | The attribute field to use when loading the user email address. | mail |
+| Sync Groups | Sync groups to your organization. |  |
+| Group Filter | A filter for limiting the groups that are synced. Read more at [Configuring user and group sync filters]({% link _articles/directory-connector/user-group-filters.md %}). | (&!(name=Sales*)) |
+| Group Object Class | The name of the class used for the LDAP group object. | groupOfUniqueNames |
+| Group Path | This value is used in addition to the root path when searching and loading groups. If no value is supplied, the subtree search will start from the root path. | ou=Groups |
+| Group Name Attribute | The attribute field to use when loading the group name. | name |
 
 {% endtable %}
