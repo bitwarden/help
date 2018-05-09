@@ -10,6 +10,8 @@ tags: [import, chrome, opera, vivaldi]
 Importing your data from Google Chrome into Bitwarden is easy. 
 
 {% note %}
+You can only export passwords from the Chrome desktop application. It is not possible to export from the Chrome mobile app.
+
 The process is exactly the same for Opera and Vivaldi browser users.
 {% endnote %}
 
