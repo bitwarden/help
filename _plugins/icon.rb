@@ -36,8 +36,8 @@ module Jekyll
 
     def render(context)
       if tag_contents = determine_arguments(@markup.strip)
-        icon_class, icon_extra = tag_contents[0], tag_contents[1]
-        icon_tag(icon_class, icon_extra)
+        icon_class, icon_extra, icon_extra2 = tag_contents[0], tag_contents[1], tag_contents[2]
+        icon_tag(icon_class, icon_extra, icon_extra2)
       else
         raise ArgumentError.new <<-eos
 Syntax error in tag 'icon' while parsing the following markup:
@@ -54,15 +54,17 @@ eos
     private
 
     def determine_arguments(input)
-      matched = input.match(/\A(\S+) ?(\S+)?\Z/)
-      [matched[1].to_s.strip, matched[2].to_s.strip] if matched && matched.length >= 3
+      matched = input.match(/\A(\S+) ?(\S+)? ?(\S+)?\Z/)
+      [matched[1].to_s.strip, matched[2].to_s.strip, matched[3].to_s.strip] if matched && matched.length >= 4
     end
 
-    def icon_tag(icon_class, icon_extra = nil)
+    def icon_tag(icon_class, icon_extra = nil, icon_extra2 = nil)
       if icon_extra.empty?
         "<i class=\"fa #{icon_class}\"></i>"
-      else
+      elsif icon_extra2.empty?
         "<i class=\"fa #{icon_class} #{icon_extra}\"></i>"
+      else
+        "<i class=\"fa #{icon_class} #{icon_extra} #{icon_extra2}\"></i>"
       end
     end
   end
