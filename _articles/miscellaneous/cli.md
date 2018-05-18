@@ -38,6 +38,7 @@ Bitwarden provides a powerful, full-featured command-line interface (CLI) tool t
     - [Delete](#delete)
 - [Other Useful Commands](#other-useful-commands)
     - [Export](#export)
+    - [Generate](#generate)
     - [Encode](#encode)
     - [Config](#config)
     - [Update](#update)
@@ -246,6 +247,19 @@ bw export [password] [--output <filePath>]
 ```
 bw export
 bw export myPassword321 --output ./backups/
+```
+
+### Generate
+
+The `generate` command allows you to generate strong passwords.
+
+```
+bw generate [--lowercase --uppercase --number --special --length]
+```
+```
+bw generate
+bw generate -u -l --length 18
+bw generate -ulns --length 25
 ```
 
 ### Encode
