@@ -151,7 +151,7 @@ You can use the `--last` option to get an [ISO 8601](https://en.wikipedia.org/wi
 
 The `list` command allows you to retrieve an array of objects from your vault.
 
-    bw list (items|folders|collections) [options]
+    bw list (items|folders|collections|organizations) [options]
 
 You can search the list of returned objects by using the `--search` option. You can also filter the list by using the `--folderid`, `--collectionid`, or `--organizationid` options. Combining search with filter options performs a logical AND operation.
 
@@ -165,7 +165,7 @@ Special syntax is available for filters that allows you to specify `null` and `!
 
 The `get` command allows you to retrieve a single object from your vault.
 
-    bw list (item|username|password|uri|totp|exposed|attachment|folder|collection|template) <id>
+    bw get (item|username|password|uri|totp|exposed|attachment|folder|collection|organization|template) <id>
 
 You can retrieve an object by its globally using `id` property (usually a GUID), or you can provide a search term. The search term must be specific enough to only return a single result or you will get an error.
 
