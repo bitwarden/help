@@ -96,8 +96,21 @@ This option will list all available commands that you can use with the CLI.
 Additionally, you can run the `--help` option on an command to learn more about it specifically. For example:
 
     bw list --help
+    bw create --help
 
 ## Managing Your Vault
+
+### Sync
+
+The `sync` command downloads your encrypted vault from the Bitwarden server. If you have changed something in your Bitwarden vault on another client device (ex. the browser extension) you may need to use the `sync` command to see those changes:
+
+    bw sync
+
+It's important to note that the `sync` command is only a *pull* operation. It does not push data to the server since that is already done for you each time you make a change to your vault (`create`, `edit`, `delete`).
+
+You can use the `--last` option to get an [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601){:target="_blank"} timestamp of the last time a `sync` has been performed:
+
+    bw sync --last
 
 ### List
 
@@ -128,8 +141,10 @@ You can retrieve an object by its globally using `id` property (usually a GUID),
 
 If you are getting an attachment, you must also specify the `--itemid <id>` option of the item that the attachment belongs to.
 
-    bw get attachment b857igwl1d --itemid 99ee88d2-6046-4ea7-92c2-acac464b1412 --output ./pic.jpg
-    bw get attachment pic.jpg --itemid 99ee88d2-6046-4ea7-92c2-acac464b1412 --raw
+    bw get attachment b857igwl1dzrs2 --output ./photo.jpg \ 
+        --itemid 99ee88d2-6046-4ea7-92c2-acac464b1412
+    bw get attachment photo.jpg --raw \
+        --itemid 99ee88d2-6046-4ea7-92c2-acac464b1412
 
 ### Create
 
@@ -150,11 +165,16 @@ The process for creating an object may look something like this:
     
        bw create folder eyJuYW1lIjoiTXkgRm9sZGVyIn0=
 
+The `create` command can also receive encoded JSON as stdin. A complete example, using `jq` to update a template's JSON (see more working with JSON below), may look something like this:
+
+    bw get template folder | jq '.name = "My Folder"' | bw encode | bw create folder
+
 Upon success, the newly created object's `id` will be returned.
 
 To create a new attachment for an item, specify the `--file` path on disk as well as the `--itemid`.
 
-    bw create attachment --file ./myfile.csv --itemid 16b15b89-65b3-4639-ad2a-95052a6d8f66
+    bw create attachment --file ./path/to/myfile.csv \
+        --itemid 16b15b89-65b3-4639-ad2a-95052a6d8f66
 
 ### Edit
 
@@ -165,6 +185,8 @@ bw edit (item|folder) <id> [encodedJson]
 ```
 ```
 bw edit folder dadc91e0-dcda-4bc2-8cd6-52100027c782 eyJuYW1lIjoiV2hhdCBGb2xkZXIifQ==
+bw get folder dadc91e0-dcda-4bc2-8cd6-52100027c782 | jq '.name = "Updated Folder"' | \
+    bw encode | bw edit folder dadc91e0-dcda-4bc2-8cd6-52100027c782
 ```
 
 ### Delete
@@ -181,7 +203,75 @@ bw delete attachment b857igwl1d --itemid 310d5ffd-e9a2-4451-af87-ea054dce0f78
 
 ## Other Useful Commands
 
+The CLI comes with several other commands that you may find useful.
+
+### Export
+
+The `export` command allows you to export your unencrypted vault data to a CSV formatted file on disk.
+
+```
+bw export [password] [--output <filePath>]
+```
+```
+bw export
+bw export myPassword321 --output ./backups/
+```
+
+### Encode
+
+The `encode` command Base 64 encodes stdin. This command is a helpful utility when performing `create` and `update` operations.
+
+```
+<jsonString> | bw encode
+```
+```
+echo '{"name":"My Folder"}' | bw encode
+bw get template folder | jq '.name = "My Folder"' | bw encode | bw create folder
+```
+
+### Config
+
+The `config` command allow you to specify settings for the CLI to use.
+
+    bw config <setting> <value>
+
+For example, if you are using a self hosted Bitwarden server you will need to change the endpoint that the CLI communicates with.
+
+    bw server https://bitwarden.company.com
+
+### Update
+
+The `update` command allows you to check if your CLI is up to date. The CLI will not automatically update. You must download new versions of the CLI manually.
+
+    bw update
+
+A URL to download a new version of the CLI executable will be returned to you.
+
+{% note %}
+If you have installed the CLI through a package managers (such as NPM), you should use the update commands available for that tool. For example, `npm update -g @bitwarden/cli`.
+{% endnote %}
+
+### Version
+
+The `--version` option allows you to check which version the CLI you are currently using.
+
+```
+bw --version
+```
+
 ## Working with JSON
+
+All commands in the CLI will either return JSON or a simple string like a URL or GUID. When you need to parse or manipulate JSON output or input from the CLI we recommend using the [`jq` command-line tool](https://stedolan.github.io/jq/).
+
+    # Get a login item's password
+    bw get item google | jq '.login.password'
+
+    # Create a new folder from a template
+    bw get template folder | jq '.name = "My Folder"' | bw encode | bw create folder
+
+    # Update an existing folder's name
+    bw get folder dadc91e0-dcda-4bc2-8cd6-52100027c782 | jq '.name = "Updated Folder"' | \
+        bw encode | bw edit folder dadc91e0-dcda-4bc2-8cd6-52100027c782
 
 ## Source Code
 
@@ -191,10 +281,68 @@ As with everything here at Bitwarden, the CLI is fully open source and hosted on
 
 ### Templates
 
+You can use the `get` command to retrieve templates for various types of objects and sub-objects. Templates are useful when needing to get the "base" JSON object to work with while using the `create` command. A template's JSON properties are sometimes populated with example data that you should change.
+
+- `item`
+- `item.field`
+- `item.login`
+- `item.login.uri`
+- `item.card`
+- `item.identity`
+- `item.securenote`
+- `folder`
+- `collection`
+
+```
+bw get template item
+```
+
+Some templates are meant to be used a sub-objects to another template's properties. For example, the `item.login` template is to be used with the `item` template's `login` property.
+
 ### Enums
 
 **Two Step Login Methods**
 
+| Name          | Value |
+|---------------|-------|
+| Authenticator | 0     |
+| Email         | 1     |
+| Yubikey       | 3     |
+
+{% note %}
+Other two-step login methods such as FIDO U2F and Duo are not supported by the CLI.
+{% endnote %}
+
 **Item Types**
 
+| Name        | Value |
+|-------------|-------|
+| Login       | 1     |
+| Secure Note | 2     |
+| Card        | 3     |
+| Identity    | 4     |
+
 **Login URI Match Types**
+
+| Name               | Value |
+|--------------------|-------|
+| Domain             | 0     |
+| Host               | 1     |
+| Starts With        | 2     |
+| Exact              | 3     |
+| Regular Expression | 4     |
+| Never              | 5     |
+
+**Field Types**
+
+| Name    | Value |
+|---------|-------|
+| Text    | 0     |
+| Hidden  | 1     |
+| Boolean | 2     |
+
+**Secure Note Types**
+
+| Name    | Value |
+|---------|-------|
+| Generic | 0     |
