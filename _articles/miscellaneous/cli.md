@@ -17,6 +17,36 @@ Bitwarden provides a powerful, full-featured command-line interface (CLI) tool t
 
        bw --help
 
+## Table of Contents
+
+- [Download &amp; Install](#download--install)
+    - [Native executable](#native-executable)
+    - [NPM](#npm)
+- [Session Management](#session-management)
+    - [Environment Variable](#environment-variable)
+    - [`--session <key>` Option](#--session-key-option)
+    - [Locking](#locking)
+    - [Login != Unlock](#login--unlock)
+- [Explore the CLI](#explore-the-cli)
+- [Managing Your Vault](#managing-your-vault)
+    - [Sync](#sync)
+    - [List](#list)
+    - [Get](#get)
+    - [Create](#create)
+    - [Edit](#edit)
+    - [Delete](#delete)
+- [Other Useful Commands](#other-useful-commands)
+    - [Export](#export)
+    - [Encode](#encode)
+    - [Config](#config)
+    - [Update](#update)
+    - [Version](#version)
+- [Working with JSON](#working-with-json)
+- [Source Code](#source-code)
+- [Appendix](#appendix)
+    - [Templates](#templates)
+    - [Enums](#enums)
+
 ## Download &amp; Install
 
 You can install the Bitwarden CLI multiple different ways:
