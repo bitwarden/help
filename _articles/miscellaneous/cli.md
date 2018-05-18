@@ -394,3 +394,19 @@ Other two-step login methods such as FIDO U2F and Duo are not supported by the C
 | Name    | Value |
 |---------|-------|
 | Generic | 0     |
+
+**Organization User Types**
+
+| Name  | Value |
+|-------|-------|
+| Owner | 0     |
+| Admin | 1     |
+| User  | 2     |
+
+**Organization User Status Types**
+
+| Name      | Value |
+|-----------|-------|
+| Invited   | 0     |
+| Accepted  | 1     |
+| Confirmed | 2     |
