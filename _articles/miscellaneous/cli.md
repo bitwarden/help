@@ -12,16 +12,9 @@ Bitwarden provides a powerful, full-featured command-line interface (CLI) tool t
 
 ![CLI Screenshot](/images/cli.png "CLI Window")
 
-## Quick Start
-
-1. [Download and install](#download--install) the CLI for your platform.
-2. Move `bw` to `/usr/local/bin` or another directory in your `$PATH`. Windows users can [add `bw.exe` to the current user's `PATH`](https://www.howtogeek.com/118594/how-to-edit-your-system-path-for-easy-command-line-access/){:target="_blank"}. If you installed the CLI with [NPM](https://www.npmjs.com/package/@bitwarden/cli){:target="_blank"} (or another package manager) you can skip this step since `bw` should automatically be added to your path.
-3. Verify the `bw` command works in your terminal.
-
-       bw --help
-
 ## Table of Contents
 
+- [Quick Start](#quick-start)
 - [Download &amp; Install](#download--install)
     - [Native executable](#native-executable)
     - [NPM](#npm)
@@ -50,6 +43,14 @@ Bitwarden provides a powerful, full-featured command-line interface (CLI) tool t
 - [Appendix](#appendix)
     - [Templates](#templates)
     - [Enums](#enums)
+
+## Quick Start
+
+1. [Download and install](#download--install) the CLI for your platform.
+2. Move `bw` to `/usr/local/bin` or another directory in your `$PATH`. Windows users can [add `bw.exe` to the current user's `PATH`](https://www.howtogeek.com/118594/how-to-edit-your-system-path-for-easy-command-line-access/){:target="_blank"}. If you installed the CLI with [NPM](https://www.npmjs.com/package/@bitwarden/cli){:target="_blank"} (or another package manager) you can skip this step since `bw` should automatically be added to your path.
+3. Verify the `bw` command works in your terminal.
+
+       bw --help
 
 ## Download &amp; Install
 

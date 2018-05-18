@@ -12,8 +12,6 @@ You can use the Bitwarden Android app to add new and auto-fill existing logins o
 1. The **Autofill Framework Service** for Android users on Oreo (8.0) and greater.
 2. The **Auto-fill Accessibility Service** for all Android versions.
 
---------------
-
 ## Autofill Framework Service
 
 {% note %}The Autofill Framework Service is only available to users on Android Oreo (8.0) and greater. If you are on a version of  Android prior to Oreo (8.0) you should use the **Auto-fill Accessibility Service** as explained further down in this article.{% endnote %}
@@ -33,8 +31,6 @@ The Autofill Framework Service is context-sensitive and will appear whenever you
 1. Open an app that has not been signed in to.
 2. View the login page for the app and focus the username or password field. A Bitwarden pop-up will appear below the input field.
 3. Select the appropriate login from the list or select the option to open Bitwarden to search for the correct login. Your username and password will be auto-filled.
-
-------------
 
 ## Auto-fill Accessibility Service
 
