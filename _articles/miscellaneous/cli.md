@@ -4,6 +4,7 @@ title: The Bitwarden command-line tool (CLI)
 categories: [miscellaneous]
 featured: false
 popular: false
+hidden: true
 tags: [cli, command, script, bash, shell, powershell]
 ---
 
