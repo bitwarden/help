@@ -10,6 +10,8 @@ tags: [cli, command, script, bash, shell, powershell]
 
 Bitwarden provides a powerful, full-featured command-line interface (CLI) tool to access and manage your Bitwarden vault. All features that you find in other Bitwarden client applications (desktop, browser extension, etc) are also available through the CLI. The CLI can be used cross-platform on Windows, macOS, and Linux distributions.
 
+![CLI Screenshot](/images/cli.png "CLI Window")
+
 ## Quick Start
 
 1. [Download and install](#download--install) the CLI for your platform.
@@ -125,7 +127,7 @@ The Bitwarden CLI is self-documented with `--help` content and examples for ever
 
 This option will list all available commands that you can use with the CLI.
 
-Additionally, you can run the `--help` option on an command to learn more about it specifically. For example:
+Additionally, you can run the `--help` option on a specific command to learn more about it:
 
     bw list --help
     bw create --help
