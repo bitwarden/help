@@ -5,12 +5,12 @@ categories: [miscellaneous]
 featured: false
 popular: false
 hidden: true
-tags: [cli, command, script, bash, shell, powershell]
+tags: [cli, command, script, bash, shell, powershell, terminal]
 ---
 
 Bitwarden provides a powerful, full-featured command-line interface (CLI) tool to access and manage your Bitwarden vault. All features that you find in other Bitwarden client applications (desktop, browser extension, etc) are also available through the CLI. The CLI can be used cross-platform on Windows, macOS, and Linux distributions.
 
-![CLI Screenshot](/images/cli.png "CLI Window")
+{% image cli.png %}
 
 ## Table of Contents
 
@@ -76,7 +76,7 @@ You can log into your Bitwarden user account by using the `login` command:
 
     bw login [email] [password]
 
-After logging in you will be returned a *session key*. This session key is necessary to perform any commands that require your vault to be unlocked (`list`, `get`, `edit`, etc). You can pass the `--raw` option to `login` to receive *only* the session key from stdout.
+After successfully logging into the CLI a *session key* will be returned. This session key is necessary to perform any commands that require your vault to be unlocked (`list`, `get`, `edit`, etc). You can pass the `--raw` option to `login` to receive *only the session key* from stdout.
 
     bw login [email] [password] --raw
 
@@ -128,7 +128,7 @@ The Bitwarden CLI is self-documented with `--help` content and examples for ever
 
 This option will list all available commands that you can use with the CLI.
 
-Additionally, you can run the `--help` option on a specific command to learn more about it:
+Additionally, you can use the `--help` option on a specific command to learn more about it:
 
     bw list --help
     bw create --help
@@ -137,7 +137,7 @@ Additionally, you can run the `--help` option on a specific command to learn mor
 
 ### Sync
 
-The `sync` command downloads your encrypted vault from the Bitwarden server. If you have changed something in your Bitwarden vault on another client device (ex. the browser extension) you may need to use the `sync` command to see those changes:
+The `sync` command downloads your encrypted vault from the Bitwarden server. If you have changed something in your Bitwarden vault on another client device (for example, the browser extension) you may need to use the `sync` command before you will see those changes in the CLI:
 
     bw sync
 
@@ -153,7 +153,7 @@ The `list` command allows you to retrieve an array of objects from your vault.
 
     bw list (items|folders|collections|organizations) [options]
 
-You can search the list of returned objects by using the `--search` option. You can also filter the list by using the `--folderid`, `--collectionid`, or `--organizationid` options. Combining search with filter options performs a logical AND operation.
+You can *search* the list of returned objects by using the `--search` option. You can also *filter* the list by using the `--folderid`, `--collectionid`, or `--organizationid` options. Combining search and filter options performs a logical AND operation.
 
     bw list items --search github --folderid 9742101e-68b8-4a07-b5b1-9578b5f88e6f
 
@@ -167,7 +167,7 @@ The `get` command allows you to retrieve a single object from your vault.
 
     bw get (item|username|password|uri|totp|exposed|attachment|folder|collection|organization|template) <id>
 
-You can retrieve an object by its globally using `id` property (usually a GUID), or you can provide a search term. The search term must be specific enough to only return a single result or you will get an error.
+You can retrieve an object by its globally using `id` property (usually a GUID), or you can provide a search term. The search term must be specific enough to only return a single result or the CLI will return an error.
 
     bw get item 99ee88d2-6046-4ea7-92c2-acac464b1412
     bw get password https://google.com
@@ -193,14 +193,14 @@ The process for creating an object may look something like this:
     
        bw get template folder
 2. Edit the JSON template with the values you want to use for that object.
-3. Base 64 encode the JSON string. You can use the `encode` command included with the CLI and pipe in the JSON string from stdin:
+3. Base 64 encode the JSON string. You can [use the `encode` command](#encode) included with the CLI and pipe in the JSON string from stdin:
     
        echo '{"name":"My Folder"}' | bw encode
 4. Create the item:
     
        bw create folder eyJuYW1lIjoiTXkgRm9sZGVyIn0=
 
-The `create` command can also receive encoded JSON as stdin. A complete example, using `jq` to update a template's JSON (see more working with JSON below), may look something like this:
+The `create` command can also receive encoded JSON as stdin. A complete example, using `jq` to update a template's JSON (see more about [working with JSON](#working-with-json) below), may look something like this:
 
     bw get template folder | jq '.name = "My Folder"' | bw encode | bw create folder
 
@@ -213,7 +213,7 @@ To create a new attachment for an item, specify the `--file` path on disk as wel
 
 ### Edit
 
-The `edit` command allows you to edit an item in your vault. It works similarly to the `create` command with the added requirement of an object id. The `edit` command will perform a replace operation on the object.
+The `edit` command allows you to edit an item in your vault. It works similarly to the `create` command with the added requirement of an object id. The `edit` command will perform a *replace* operation on the object.
 
 ```
 bw edit (item|folder) <id> [encodedJson]
@@ -242,7 +242,7 @@ The CLI comes with several other commands that you may find useful.
 
 ### Export
 
-The `export` command allows you to export your unencrypted vault data to a CSV formatted file on disk.
+The `export` command allows you to export your *unencrypted* vault data to a CSV formatted file on disk.
 
 ```
 bw export [password] [--output <filePath>]
@@ -267,7 +267,7 @@ bw generate -ulns --length 25
 
 ### Encode
 
-The `encode` command Base 64 encodes stdin. This command is a helpful utility when performing `create` and `update` operations.
+The `encode` command Base 64 encodes stdin. This command a helpful when performing `create` and `edit` operations.
 
 ```
 <jsonString> | bw encode
@@ -309,7 +309,7 @@ bw --version
 
 ## Working with JSON
 
-All commands in the CLI will either return JSON or a simple string like a URL or GUID. When you need to parse or manipulate JSON output or input from the CLI we recommend using the [`jq` command-line tool](https://stedolan.github.io/jq/).
+All commands in the CLI will either return a JSON string or a simple string such as a URL or GUID. When you need to parse or manipulate JSON input/output from the CLI we recommend using the [`jq` command-line tool](https://stedolan.github.io/jq/){:target="_blank"}.
 
     # Get a login item's password
     bw get item google | jq '.login.password'
@@ -329,7 +329,7 @@ As with everything here at Bitwarden, the CLI is fully open source and hosted on
 
 ### Templates
 
-You can use the `get` command to retrieve templates for various types of objects and sub-objects. Templates are useful when needing to get the "base" JSON object to work with while using the `create` command. A template's JSON properties are sometimes populated with example data that you should change.
+You can use the `get` command to retrieve templates for various types of *request* objects and sub-objects. Templates are useful when needing to get the "base" JSON object to work with while using the `create` command. A template's JSON properties are sometimes populated with example data that you should change.
 
 - `item`
 - `item.field`
@@ -345,7 +345,7 @@ You can use the `get` command to retrieve templates for various types of objects
 bw get template item
 ```
 
-Some templates are meant to be used a sub-objects to another template's properties. For example, the `item.login` template is to be used with the `item` template's `login` property.
+Some templates are meant to be used as sub-objects to another template's properties. For example, the `item.login` template is to be used with the `item` template's `login` property.
 
 ### Enums
 
