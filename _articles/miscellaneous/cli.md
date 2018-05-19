@@ -204,7 +204,7 @@ The `create` command can also receive encoded JSON as stdin. A complete example,
 
     bw get template folder | jq '.name = "My Folder"' | bw encode | bw create folder
 
-Upon success, the newly created object's `id` will be returned.
+Upon success, the newly created object will be returned.
 
 To create a new attachment for an item, specify the `--file` path on disk as well as the `--itemid`.
 
@@ -213,7 +213,7 @@ To create a new attachment for an item, specify the `--file` path on disk as wel
 
 ### Edit
 
-The `edit` command allows you to edit an item in your vault. It works similarly to the `create` command with the added requirement of an object id. The `edit` command will perform a *replace* operation on the object.
+The `edit` command allows you to edit an item in your vault. It works similarly to the `create` command with the added requirement of an object id. The `edit` command will perform a *replace* operation on the object. Upon success, the updated object will be returned.
 
 ```
 bw edit (item|folder) <id> [encodedJson]
@@ -309,7 +309,7 @@ bw --version
 
 ## Working with JSON
 
-All commands in the CLI will either return a JSON string or a simple string such as a URL or GUID. When you need to parse or manipulate JSON input/output from the CLI we recommend using the [`jq` command-line tool](https://stedolan.github.io/jq/){:target="_blank"}.
+Commands in the CLI will either return a JSON string or a simple string such as a URL, GUID, or message. When you need to parse or manipulate JSON input/output with the CLI we recommend using the [`jq` command-line tool](https://stedolan.github.io/jq/){:target="_blank"}.
 
     # Get a login item's password
     bw get item google | jq '.login.password'
