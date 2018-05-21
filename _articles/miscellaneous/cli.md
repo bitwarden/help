@@ -157,9 +157,9 @@ You can *search* the list of returned objects by using the `--search` option. Yo
 
     bw list items --search github --folderid 9742101e-68b8-4a07-b5b1-9578b5f88e6f
 
-Special syntax is available for filters that allows you to specify `null` and `!null` as valid values. Combining multiple filters together performs a logical OR operation.
+Special syntax is available for filters that allows you to specify `null` and `notnull` as valid values. Combining multiple filters together performs a logical OR operation.
 
-    bw list items --folderid null --organizationid !null
+    bw list items --folderid null --organizationid notnull
 
 ### Get
 
