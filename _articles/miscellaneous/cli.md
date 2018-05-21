@@ -296,7 +296,7 @@ The `update` command allows you to check if your CLI is up to date. The CLI will
 A URL to download a new version of the CLI executable will be returned to you.
 
 {% note %}
-If you have installed the CLI through a package managers (such as NPM), you should use the update commands available for that tool. For example, `npm update -g @bitwarden/cli`.
+If you have installed the CLI through a package managers (such as NPM), you should use the update commands available for that tool. For example, `npm install -g @bitwarden/cli` will update you to the latest version of the CLI on NPM.
 {% endnote %}
 
 ### Version
