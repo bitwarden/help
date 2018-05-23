@@ -4,7 +4,6 @@ title: The Bitwarden command-line tool (CLI)
 categories: [miscellaneous]
 featured: false
 popular: false
-hidden: true
 tags: [cli, command, script, bash, shell, powershell, terminal]
 ---
 
@@ -18,6 +17,7 @@ Bitwarden provides a powerful, full-featured command-line interface (CLI) tool t
 - [Download &amp; Install](#download--install)
     - [Native executable](#native-executable)
     - [NPM](#npm)
+    - [Other Package Managers](#other-package-managers)
 - [Session Management](#session-management)
     - [Environment Variable](#environment-variable)
     - [`--session <key>` Option](#--session-key-option)
@@ -60,15 +60,20 @@ You can install the Bitwarden CLI multiple different ways:
 
 Natively packaged versions of the CLI for each platform have no dependencies.
 
-- {% icon fa-windows fa-lg fa-fw %} [Windows x64]()
-- {% icon fa-apple fa-lg fa-fw %} [macOS x64]()
-- {% icon fa-linux fa-lg fa-fw %} [Linux x64]()
+- {% icon fa-windows fa-lg fa-fw %} [Windows x64](https://vault.bitwarden.com/download/?app=cli&platform=windows)
+- {% icon fa-apple fa-lg fa-fw %} [macOS x64](https://vault.bitwarden.com/download/?app=cli&platform=macos)
+- {% icon fa-linux fa-lg fa-fw %} [Linux x64](https://vault.bitwarden.com/download/?app=cli&platform=linux)
 
 ### NPM
 
 If you already have the Node.js runtime installed on your system, you can install the CLI using [NPM](https://www.npmjs.com/package/@bitwarden/cli){:target="_blank"}. NPM makes it easy to keep your installation updated and should be the preferred installation method if you are already using Node.js.
 
     npm install -g @bitwarden/cli
+
+### Other Package Managers
+
+- Homebrew - coming soon
+- Chocolatey - coming soon
 
 ## Session Management
 
