@@ -1,4 +1,5 @@
 markdown: kramdown
+highlighter: none
 permalink: pretty
 encoding: utf-8
 port: 4009

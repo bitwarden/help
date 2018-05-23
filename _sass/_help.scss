@@ -367,6 +367,9 @@ footer {
 
     pre code {
         white-space: pre;
+        word-break: initial;
+        word-wrap: initial;
+        display: block;
     }
 
     li img, li pre {
