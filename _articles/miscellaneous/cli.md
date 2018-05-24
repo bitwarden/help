@@ -73,7 +73,9 @@ If you already have the Node.js runtime installed on your system, you can instal
 ### Other Package Managers
 
 - Homebrew - coming soon
-- Chocolatey - coming soon
+- [Chocolatey](https://chocolatey.org/packages/bitwarden-cli){:target="_blank"}
+    
+       choco install bitwarden-cli
 
 ## Session Management
 
