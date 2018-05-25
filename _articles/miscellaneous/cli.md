@@ -72,10 +72,13 @@ If you already have the Node.js runtime installed on your system, you can instal
 
 ### Other Package Managers
 
-- Homebrew - coming soon
 - [Chocolatey](https://chocolatey.org/packages/bitwarden-cli){:target="_blank"}
     
        choco install bitwarden-cli
+- Homebrew - coming soon
+- [Snap](https://snapcraft.io/bw){:target="_blank"}
+    
+       sudo snap install bw
 
 ## Session Management
 
