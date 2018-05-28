@@ -75,7 +75,9 @@ If you already have the Node.js runtime installed on your system, you can instal
 - [Chocolatey](https://chocolatey.org/packages/bitwarden-cli){:target="_blank"}
     
        choco install bitwarden-cli
-- Homebrew - coming soon
+- [Homebrew](https://formulae.brew.sh/formula/bitwarden-cli){:target="_blank"}
+    
+       brew install bitwarden-cli
 - [Snap](https://snapcraft.io/bw){:target="_blank"}
     
        sudo snap install bw
