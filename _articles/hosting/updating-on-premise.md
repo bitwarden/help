@@ -24,5 +24,5 @@ We have made updating your Bitwarden installation very simple. Use the same Bitw
 Your Bitwarden installation should now be fully up to date and running.
 
 {% tip %}
-Create a cronjob or scheduled task to run these update commands weekly, or even nightly. This will automaticallty keep your installation up to date.
+Create a cronjob or scheduled task to run these update commands weekly, or even nightly. This will automatically keep your installation up to date.
 {% endtip %}
