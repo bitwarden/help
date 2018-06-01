@@ -31,7 +31,7 @@ This article will walk you through how to install and deploy Bitwarden to your o
 
        curl -s -o bitwarden.sh \
            https://raw.githubusercontent.com/bitwarden/core/master/scripts/bitwarden.sh \
-           && sudo chmod u+x bitwarden.sh
+           && chmod +x bitwarden.sh
        ./bitwarden.sh install
        ./bitwarden.sh start
        ./bitwarden.sh updatedb
