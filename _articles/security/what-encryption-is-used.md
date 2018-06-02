@@ -15,9 +15,10 @@ Bitwarden uses [AES][aes]{:target="blank"} 256 bit encryption as well as [PBKDF2
 
 Bitwarden does not write any crypto code. Bitwarden only invokes crypto from popular and reputable crypto libraries that are written and maintained by cryptography experts. The following crypto libraries are used:
 
-- Javascript (web and browser extension vaults)
+- JavaScript (web, browser extension, desktop, and CLI vaults)
   - [Forge][forge]{:target="blank"}
   - [Web Crypto][webcrypto]{:target="blank"}
+  - [Node.js Crypto][nodecrypto]{:target="blank"}
 - C# (mobile vault)
   - CommonCrypto (iOS, Apple)
   - Javax.Crypto (Android, Oracle)
@@ -30,3 +31,4 @@ Bitwarden **always** encrypts and/or hashes your data on your local device befor
 [forge]: https://github.com/digitalbazaar/forge
 [webcrypto]: https://w3c.github.io/webcrypto/Overview.html
 [bouncy]: http://www.bouncycastle.org/csharp/
+[nodecrypto]: https://nodejs.org/api/crypto.html
