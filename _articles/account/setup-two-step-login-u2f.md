@@ -14,8 +14,8 @@ Due to platform limitations, FIDO U2F cannot be used on all Bitwarden applicatio
 
 Supported platforms:
 
-- Web vault on a desktop/laptop with a U2F enabled browser (Chrome, Opera, Vivaldi, Brave, or [Firefox with addon](https://addons.mozilla.org/en-US/firefox/addon/u2f-support-add-on/){:target="_blank"}).
-- Browser extensions on Chrome, Opera, Vivaldi, or Brave.
+- Web vault on a desktop/laptop with a U2F enabled browser (Chrome, Opera, Vivaldi, or [Firefox with FIDO U2F enabled](https://www.yubico.com/2017/11/how-to-navigate-fido-u2f-in-firefox-quantum/){:target="_blank"}).
+- Browser extensions on Chrome, Opera, Vivaldi, or [Firefox with FIDO U2F enabled](https://www.yubico.com/2017/11/how-to-navigate-fido-u2f-in-firefox-quantum/){:target="_blank"}.
 {% endnote %}
 
 ## Enable Two-step Login with FIDO U2F

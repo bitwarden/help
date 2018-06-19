@@ -15,8 +15,11 @@ Due to platform limitations, YubiKeys cannot be used on all Bitwarden applicatio
 Supported platforms:
 
 - Web vault on a device with a USB port that can accept your YubiKey.
-- Browser extensions.
-- Android on a device with [NFC capabilities](https://en.wikipedia.org/wiki/List_of_NFC-enabled_mobile_devices){:target="_blank"}. Read more [here](https://forum.yubico.com/viewtopic.php?f=26&t=1302){:target="_blank"}.
+- Browser extensions on a device with a USB port that can accept your YubiKey.
+- Desktop app on a device with a USB port that can accept your YubiKey.
+- CLI on a device with a USB port that can accept your YubiKey.
+- Android on a device with [NFC capabilities](https://en.wikipedia.org/wiki/List_of_NFC-enabled_mobile_devices){:target="_blank"} or a USB port that can accept your YubiKey. Read more [here](https://forum.yubico.com/viewtopic1c5f.html?f=26&t=1302){:target="_blank"}.
+- iOS on a device with [NFC capabilities](https://en.wikipedia.org/wiki/List_of_NFC-enabled_mobile_devices){:target="_blank"}.
 {% endnote %}
 
 ## Enable Two-step Login with YubiKey
