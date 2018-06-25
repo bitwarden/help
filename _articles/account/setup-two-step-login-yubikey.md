@@ -54,11 +54,17 @@ Two-step login can permanently lock you out of your account. It is very importan
    Web
    {% image two-step/yubikey/web.png %}
 
+   Desktop
+   {% image two-step/yubikey/desktop.png %}
+
    Browser extension
    {% image two-step/yubikey/browser.png %}
 
    Android
    {% image two-step/yubikey/android.png %}
+
+   iOS
+   {% image two-step/yubikey/ios.png %}
 
 ## Android
 
