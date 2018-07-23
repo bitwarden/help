@@ -11,9 +11,10 @@ You can very easily import your data from an array of different password manager
 
 - Bitwarden (csv)
 - [1Password (1pif)]({% link _articles/importing/import-from-1password.md %})
-- [1Password 6 Windows (csv)]({% link _articles/importing/import-from-1password.md %})
+- [1Password 6 &amp; 7 Windows (csv)]({% link _articles/importing/import-from-1password.md %})
 - Ascendo DataVault (csv)
 - Avira (json)
+- Blur (csv)
 - [Chrome (csv)]({% link _articles/importing/import-from-chrome.md %})
 - Clipperz (html)
 - Dashlane (csv)
@@ -28,11 +29,12 @@ You can very easily import your data from an array of different password manager
 - mSecure (csv)
 - [Opera (csv)]({% link _articles/importing/import-from-chrome.md %})
 - Padlock (csv)
+- Passbolt (csv)
 - PassKeep (csv)
 - Password Boss (json)
 - Password Dragon (xml)
 - Password Safe (xml)
-- RoboForm (html)
+- RoboForm (csv)
 - SafeInCloud (xml)
 - SaferPass (csv)
 - SplashID (csv)
@@ -42,16 +44,13 @@ You can very easily import your data from an array of different password manager
 - [Vivaldi (csv)]({% link _articles/importing/import-from-chrome.md %})
 - Zoho Vault (csv)
 
+**Personal Accounts**
+
 To import your data, log into the web vault at <https://vault.bitwarden.com> and navigate to **Tools** &rarr; **Import Data**. Instructions for importing from each source are available after selecting the desired file format from the dropdown menu.
 
 **Organization Accounts**
 
-Additionally, you can also import data directly into an organization account for sharing. Bitwarden supports importing data into your organization account from the following sources:
-
-- Bitwarden (csv)
-- LastPass (csv)
-
-To import your data, log into the web vault at <https://vault.bitwarden.com> and navigate to your organization admin area. Then navigate to **Settings** &rarr; **Import Data**.
+You can also import data directly into an organization account for sharing. To import your data, log into the web vault at <https://vault.bitwarden.com> and navigate to your organization admin area. Then navigate to **Tools** &rarr; **Import Data**. Instructions for importing from each source are available after selecting the desired file format from the dropdown menu.
 
 ## Generic CSV Format (individual account)
 
