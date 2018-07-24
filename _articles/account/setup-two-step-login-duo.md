@@ -62,6 +62,9 @@ Two-step login can permanently lock you out of your account. It is very importan
 5. After enrolling you can log in with Duo.
    {% image two-step/duo/login.png %}
 6. Duo security protection works with all Bitwarden applications (web, mobile, desktop, browser). Log out of and back in to any other Bitwarden applications that you are using to confirm that two-step login via Duo is properly working. You will eventually be logged out automatically.
+
+   Desktop
+   {% image two-step/duo/desktop.png %}
    
    Browser extension
    {% image two-step/duo/browser.png %}
