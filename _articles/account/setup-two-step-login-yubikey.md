@@ -29,17 +29,17 @@ Two-step login can permanently lock you out of your account. It is very importan
 {% endwarning %}
 
 1. Log in to the web vault at <https://vault.bitwarden.com>
-2. Click **Settings** on the sidebar. Click **Two-step Login** in the sub-menu that opens under **Settings**.  
-3. Select the **YubiKey OTP Security Key** option and then type in your master password to continue.
+2. Click **Settings** in the top navigation bar, then click **Two-step Login** from the side menu.
+3. Select the **Manage** button for the **YubiKey OTP Security Key** option and then type in your master password to continue.
    {% image two-step/yubikey/select.png %}
 4. Follow the instructions shown:
    - Plug the YubiKey (NEO or 4 series) into your computer's USB port.
    - Select in the first empty Key input field.
    - Touch the YubiKey's button.
    
-   Repeat this process for each YubiKey you wish to add to your account. You can add up to three YubiKeys to your account.
+   Repeat this process for each YubiKey you wish to add to your account. You can add up to five YubiKeys to your account.
    {% image two-step/yubikey/config.png %}
-5. If you are using a YubiKey that has NFC capabilities (YubiKey NEO), check the **One of my keys supports NFC** checkbox. This option enables the use of your YubiKey on Android devices that support NFC.
+5. If you are using a YubiKey that has NFC capabilities (YubiKey NEO), check the **One of my keys supports NFC** checkbox. This option enables the use of your YubiKey on Android and iOS devices that support NFC.
 6. Click the **Enable** button. A green alert will appear at the top stating that two-step login has been enabled.
 7. Click the **Close** button and confirm that the **YubiKey OTP Security Key** option now shows as **Enabled**.
    {% image two-step/yubikey/enabled.png %}

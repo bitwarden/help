@@ -27,7 +27,7 @@ Because a request for an icon image contains the hostname of the website stored 
 
 We understand that certain privacy-minded users may not want to use the "website icons" feature. We provide the option to disable website icons on all Bitwarden client applications:
 
-- **Web vault:** Settings &rarr; Web Vault Options &rarr; Disable Website Icons
+- **Web vault:** Settings &rarr; Options &rarr; Disable Website Icons
 - **Browser extension:** Settings &rarr; Options &rarr; Disable Website Icons
 - **Mobile app:** Settings &rarr; Options &rarr; Disable Website Icons
 - **Desktop app:** Settings &rarr; Options &rarr; Disable Website Icons

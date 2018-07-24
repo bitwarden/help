@@ -16,8 +16,8 @@ Two-step login can permanently lock you out of your account. It is very importan
 {% endwarning %}
 
 1. Log in to the web vault at <https://vault.bitwarden.com>
-2. Click **Settings** on the sidebar. Click **Two-step Login** in the sub-menu that opens under **Settings**.  
-3. Select the **Email** option and then type in your master password to continue.
+2. Click **Settings** in the top navigation bar, then click **Two-step Login** from the side menu.
+3. Select the **Manage** button for the **Email** option and then type in your master password to continue.
 4. Enter an email address that you would like to use that will receive verification codes during login. You can use the same email address that you use for your Bitwarden account or any other email address. Click the **Send Email** button to send a test verification code to that email address.
 5. Check your email inbox for the verification code and then enter it into Bitwarden for confirmation.
 6. Click the **Enable** button. A green alert will appear at the top stating that two-step login has been enabled.

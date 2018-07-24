@@ -14,9 +14,9 @@ This action is permanent and cannot be undone.
 {% endwarning %}
 
 1. Log in to the web vault at <https://vault.bitwarden.com>
-2. Click **Settings** on the sidebar 
-3. Click **Delete Account** under the **Danger Zone** panel
-4. Type in your master password and click **Delete**. You will be logged out when the delete completes.
+2. Click **Settings** in the top navigation bar
+3. Click the **Delete Account** button under the **Danger Zone** section of **My Account**
+4. Type in your master password and click the **Delete Account**. You will be logged out when the delete completes.
 
 ## Delete without logging in
 

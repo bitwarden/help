@@ -7,7 +7,7 @@ popular: false
 tags: [export, accounts, csv]
 ---
 
-Bitwarden allows you to export all of your vault data at any time.
+Bitwarden allows you to export your vault data at any time.
 
 {% warning %}
 Data exports contain your unencrypted data in `.csv` format. You should not store or send the file over unsecure channels (such as email). Delete it immediately after you are done using it.
@@ -16,9 +16,9 @@ Data exports contain your unencrypted data in `.csv` format. You should not stor
 ## From the web vault
 
 1. Log in to the web vault at <https://vault.bitwarden.com>
-2. Click **Tools** on the sidebar 
-3. Click **Export Data** under the **Import/Export** panel
-4. Type in your master password and click **Export**. Your browser will either automatically download the `.csv` file or prompt you to save it
+2. Click **Tools** in the top navigation bar 
+3. Click **Export Vault** under the **Tools** side navigation
+4. Type in your master password and click **Export Vault**. Your browser will either automatically download the `.csv` file or prompt you to save it
 
 ## From the browser extension
 

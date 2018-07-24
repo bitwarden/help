@@ -28,9 +28,9 @@ There are known bugs (for years now) with the LastPass exporter regarding specia
 
 1. Go to the [Bitwarden web vault][bitwarden-vault] and log in.
 2. Navigate to **Tools** &rarr; **Import Data**.
-3. Select **LastPass** as the file format and paste the [CSV][csv] content into the textbox that you copied to your clipboard in step 4 above.
+3. Select **LastPass (csv)** as the file format and paste the [CSV][csv] content into the textbox that you copied to your clipboard in step 4 above.
    - Click into the textbox with your mouse, then right click with your mouse and select **Paste**.
-4. Click the **Import** button.
+4. Click the **Import Data** button.
 
 Congratulations! You have just transferred all of your data from LastPass into Bitwarden.
 

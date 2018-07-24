@@ -41,9 +41,9 @@ Two-step login can permanently lock you out of your account. It is very importan
 
 1. Log in to the web vault at <https://vault.bitwarden.com>.
 2. Depending on your account type:
-  - Premium Users: Click **Settings** on the sidebar. Click **Two-step Login** in the sub-menu that opens under **Settings**.
-  - Enterprise Organizations: Visit the admin area for your organization. Select **Settings** in the sidebar and locate the **Two-step Login Providers** section.
-3. Select the **Duo** option and then type in your master password to continue.
+  - Premium Users: Click **Settings** in the top navigation bar, then click **Two-step Login** from the side menu.
+  - Enterprise Organizations: Visit the admin area for your organization. Select **Settings** in the sub-menu and then click **Two-step Login** from the side menu.
+3. Select the **Manage** button for the **Duo** option and then type in your master password to continue.
    {% image two-step/duo/select.png %}
 4. Enter the configuration information provided from the Duo Admin **Bitwarden** application that was set up earlier: **Integration Key**, **Secret Key**, and **API Hostname**.
    {% image two-step/duo/config.png %}

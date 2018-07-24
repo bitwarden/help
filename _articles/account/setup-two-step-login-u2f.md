@@ -25,8 +25,8 @@ Two-step login can permanently lock you out of your account. It is very importan
 {% endwarning %}
 
 1. Log in to the web vault at <https://vault.bitwarden.com>
-2. Click **Settings** on the sidebar. Click **Two-step Login** in the sub-menu that opens under **Settings**.  
-3. Select the **FIDO U2F Security Key** option and then type in your master password to continue.
+2. Click **Settings** in the top navigation bar, then click **Two-step Login** from the side menu.
+3. Select the **Manage** button for the **FIDO U2F Security Key** option and then type in your master password to continue.
    {% image two-step/u2f/select.png %}
 4. Follow the instructions shown:
    - Plug the security key into your computer's USB port.
