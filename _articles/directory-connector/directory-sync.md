@@ -7,7 +7,7 @@ popular: false
 tags: []
 ---
 
-Bitwarden supports syncing users and/or groups from outside directories through the use of the **Bitwarden Directory Connector** application.
+Bitwarden supports syncing users and/or groups from outside directories through the use of the **Bitwarden Directory Connector** application. The application will automatically provision and deprovision users, groups, and group associations from your configured user directory.
 
 The following directories are supported:
 
