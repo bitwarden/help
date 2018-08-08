@@ -32,6 +32,7 @@ Bitwarden provides a powerful, full-featured command-line interface (CLI) tool t
     - [Edit](#edit)
     - [Delete](#delete)
 - [Other Useful Commands](#other-useful-commands)
+    - [Import](#import)
     - [Export](#export)
     - [Generate](#generate)
     - [Encode](#encode)
@@ -251,6 +252,18 @@ bw delete attachment b857igwl1d --itemid 310d5ffd-e9a2-4451-af87-ea054dce0f78
 ## Other Useful Commands
 
 The CLI comes with several other commands that you may find useful.
+
+### Import
+
+The `import` command allows you to import data from a previous Bitwarden export or another [supported password management application]({% link _articles/importing/import-data.md %}).
+
+```
+bw import [<format> <input> [password]] [--formats] 
+```
+```
+bw import --formats
+bw import bitwardencsv ./file.csv
+```
 
 ### Export
 
