@@ -5,6 +5,7 @@ categories: [miscellaneous]
 featured: false
 popular: false
 tags: [search, lunr]
+hidden: true
 ---
 
 Bitwarden indexes your vault using a [full-text search](https://en.wikipedia.org/wiki/Full-text_search){:target="_blank"} programming library called [Lunr](https://lunrjs.com/){:target="_blank"}. Lunr provides the ability to invoke high-performance search queries against your vault to quickly find what you need with great accuracy.
