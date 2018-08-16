@@ -258,7 +258,7 @@ The CLI comes with several other commands that you may find useful.
 The `import` command allows you to import data from a previous Bitwarden export or another [supported password management application]({% link _articles/importing/import-data.md %}).
 
 ```
-bw import [<format> <input> [password]] [--formats] 
+bw import [<format> <input>] [--formats] 
 ```
 ```
 bw import --formats
