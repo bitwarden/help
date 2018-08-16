@@ -13,6 +13,10 @@ Bitwarden allows you to export your vault data at any time.
 Data exports contain your unencrypted data in `.csv` format. You should not store or send the file over unsecure channels (such as email). Delete it immediately after you are done using it.
 {% endwarning %}
 
+{% note %}
+The downloaded `.csv` file can be opened, read, and modified in spreadsheet programs such as Microsoft Excel or a simple text editor like Notepad.
+{% endnote %}
+
 ## From the web vault
 
 1. Log in to the web vault at <https://vault.bitwarden.com>
@@ -26,4 +30,11 @@ Data exports contain your unencrypted data in `.csv` format. You should not stor
 2. Scroll down and click **Export Vault**
 3. Type in your master password and click **Submit**. Your browser will either automatically download the `.csv` file or prompt you to save it
 
-The downloaded `.csv` file can be opened, read, and modified in spreadsheet programs such as Microsoft Excel or a simple text editor like Notepad.
+## From the desktop app
+
+1. Open the desktop application and navigate to **File** (Bitwarden on macOS) &rarr; **Export Vault**
+2. Type in your master password and click the Submit button. You will be prompted to download the `.csv` file.
+
+## From the CLI
+
+In the CLI application, you can use the `bw export` command to export your data to a `.csv` file in the current working directory. Or pass the `--output` option to specify a location of your choice.
