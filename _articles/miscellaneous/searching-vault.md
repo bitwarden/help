@@ -45,13 +45,13 @@ The asterisk character (`*`) provides the ability to perform wildcard searches i
 - `*bit*war*den*`
 
 {% note %}
-The following fields automatically include leading and trailing wildcard searches while performing normal search queries:
+The following fields automatically include trailing wildcard searches while performing normal search queries:
 
 - `name`
 - `subTitle`
 - `login.uris`
 
-It is not necessary to provide wildcards if you are searching these fields.
+It is not necessary to provide trailing wildcards if you are searching these fields.
 {% endnote %}
 
 ## Advanced Searches
