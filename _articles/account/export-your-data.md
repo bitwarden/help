@@ -32,7 +32,7 @@ The downloaded `.csv` file can be opened, read, and modified in spreadsheet prog
 
 ## From the desktop app
 
-1. Open the desktop application and navigate to **File** (Bitwarden on macOS) &rarr; **Export Vault**
+1. Open the desktop application and navigate to **File** &rarr; **Export Vault**
 2. Type in your master password and click the Submit button. You will be prompted to download the `.csv` file.
 
 ## From the CLI
