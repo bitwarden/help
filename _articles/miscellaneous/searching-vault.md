@@ -17,12 +17,10 @@ The following Bitwarden applications provide full-text searching capabilities an
 - Desktop applications
 - Browser extensions
 
-This article **does not** apply to the following Bitwarden applications:
+This article **does not** apply to the following Bitwarden applications, which provide only basic search capabilities:
 
 - CLI
 - Mobile apps
-
-These applications only provide basic search capabilities.
 
 ## Indexed Fields
 
