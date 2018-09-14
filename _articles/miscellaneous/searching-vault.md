@@ -26,9 +26,9 @@ This article **does not** apply to the following Bitwarden applications, which p
 
 The following fields from items in your vault are indexed and are searchable:
 
-- `shortId` - First 8 characters of the item's id.
+- `shortid` - First 8 characters of the item's id.
 - `name`
-- `subTitle` - Login username, card last four, and identity name.
+- `subtitle` - Login username, card brand + last four, and identity name.
 - `notes`
 - `fields` - Name and value. Only "text" type field values are included.
 - `attachments` - File name
@@ -45,13 +45,13 @@ The asterisk character (`*`) provides the ability to perform wildcard searches i
 - `*bit*war*den*`
 
 {% note %}
-The following fields automatically include trailing wildcard searches while performing normal search queries:
+The following fields automatically include leading and trailing wildcards while performing normal search queries:
 
 - `name`
-- `subTitle`
+- `subtitle`
 - `login.uris`
 
-It is not necessary to provide trailing wildcards if you are searching these fields.
+It is not necessary to provide wildcards if you are searching for information in these fields.
 {% endnote %}
 
 ## Advanced Searches
