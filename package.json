@@ -1,18 +1,21 @@
 {
-  "name": "bitwarden",
+  "name": "bitwarden-help",
   "version": "0.0.0",
+  "scripts": {
+    "build": "gulp build && jekyll build",
+    "build:watch": "gulp build && jekyll serve --watch --host=0.0.0.0",
+    "deploy": "npm run build && gh-pages --dotfiles --dist _site"
+  },
   "devDependencies": {
     "gulp": "3.9.1",
     "rimraf": "2.6.1",
     "run-sequence": "2.1.0",
     "merge-stream": "1.0.1",
-    "gulp-gh-pages": "0.5.4",
     "bootstrap-sass": "3.3.7",
     "font-awesome": "4.7.0",
     "jquery": "2.2.4",
     "lunr": "0.7.1",
     "fluidbox": "2.0.5",
-    "gulp-util": "3.0.8",
-    "child_process": "1.0.2"
+    "gh-pages": "^1.2.0"
   }
 }

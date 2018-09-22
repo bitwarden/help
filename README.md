@@ -9,13 +9,12 @@ The Bitwarden help center project is written using Jekyll, which is hosted/deplo
 **Requirements**
 
 - Node.js
-- Gulp
 - [Ruby](https://www.ruby-lang.org/)
 - [Jekyll](https://jekyllrb.com/)
 
 Run the following commands:
 - `npm install`
-- `gulp`
+- `npm run build:watch`
 
 You can now access the help center at `http://localhost:4009`.
 
