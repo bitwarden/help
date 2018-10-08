@@ -31,6 +31,7 @@ You can very easily import your data from an array of different password manager
 - Padlock (csv)
 - Passbolt (csv)
 - PassKeep (csv)
+- Passman (json)
 - Passpack (csv)
 - Password Agent (csv)
 - Password Boss (json)
