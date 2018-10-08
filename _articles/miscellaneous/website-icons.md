@@ -7,7 +7,7 @@ popular: false
 tags: [icons, website icons, privacy]
 ---
 
-*Bitwarden does not collect any information when you download icons for website logins stored in your bitwarden vault.*
+*Bitwarden does not collect any information when you download icons for website logins stored in your Bitwarden vault.*
 
 ## The Bitwarden icons server
 

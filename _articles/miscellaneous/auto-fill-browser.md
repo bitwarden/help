@@ -7,7 +7,7 @@ popular: false
 tags: [browser, auto-fill, autofill]
 ---
 
-You can use the Bitwarden browser extension to easily auto-fill login forms on websites with your username/email and password credentials. There are a variety of ways to perform auto-fill operations with bitwarden.
+You can use the Bitwarden browser extension to easily auto-fill login forms on websites with your username/email and password credentials. There are a variety of ways to perform auto-fill operations with Bitwarden.
 
 ## Popup window
 
