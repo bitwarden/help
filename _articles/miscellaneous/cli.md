@@ -279,15 +279,16 @@ bw export myPassword321 --output ./backups/
 
 ### Generate
 
-The `generate` command allows you to generate strong passwords.
+The `generate` command allows you to generate strong passwords and passphrases.
 
 ```
-bw generate [--lowercase --uppercase --number --special --length]
+bw generate [--lowercase --uppercase --number --special --length --passphrase --separator --words]
 ```
 ```
 bw generate
 bw generate -u -l --length 18
 bw generate -ulns --length 25
+bw generate -p --words 5 --separator _
 ```
 
 ### Encode
