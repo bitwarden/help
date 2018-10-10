@@ -7,7 +7,7 @@ popular: false
 tags: [two-step login, 2fa, two factor authentication, account, yubikey, yubi, yubico]
 ---
 
-Bitwarden supports two-step login via [YubiKey](https://www.yubico.com){:target="_blank"}. Any YubiKey that supports [OTP capabilities](https://www.yubico.com/products/yubikey-hardware/compare-yubikeys/){:target="_blank"} can be used. This includes all YubiKey 4 series devices as well as YubiKey NEO.
+Bitwarden supports two-step login via [YubiKey](https://www.yubico.com){:target="_blank"}. Any YubiKey that supports [OTP capabilities](https://www.yubico.com/products/yubikey-hardware/compare-yubikeys/){:target="_blank"} can be used. This includes all YubiKey 4 and 5 series devices as well as YubiKey NEO.
 
 {% note %}
 Due to platform limitations, YubiKeys cannot be used on all Bitwarden applications. You should enable another two-step login provider so that you can access your account when YubiKeys cannot be used.
@@ -33,7 +33,7 @@ Two-step login can permanently lock you out of your account. It is very importan
 3. Select the **Manage** button for the **YubiKey OTP Security Key** option and then type in your master password to continue.
    {% image two-step/yubikey/select.png %}
 4. Follow the instructions shown:
-   - Plug the YubiKey (NEO or 4 series) into your computer's USB port.
+   - Plug the YubiKey (NEO, 4, or 5 series) into your computer's USB port.
    - Select in the first empty Key input field.
    - Touch the YubiKey's button.
    

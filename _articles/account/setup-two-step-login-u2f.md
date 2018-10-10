@@ -29,12 +29,11 @@ Two-step login can permanently lock you out of your account. It is very importan
 3. Select the **Manage** button for the **FIDO U2F Security Key** option and then type in your master password to continue.
    {% image two-step/u2f/select.png %}
 4. Follow the instructions shown:
-   - Plug the security key into your computer's USB port.
-   - If the security key has a button, touch it.
-
-   You will receive a success message when your key has been properly read. Click the **Try again** button if it fails.
+   - Give the security key a friendly name to identify it.
+   - Plug the security key into your computer's USB port and click the **Read Key** button.
+   - If the security key has a button, touch it. You will receive a success message when your key has been properly read. Click the **Read Key** button to try again if it fails.
    {% image two-step/u2f/config.png %}
-5. Click the **Enable** button. A green alert will appear at the top stating that two-step login has been enabled.
+5. Click the **Save** button. A green alert will appear at the top stating that two-step login has been enabled. You can add up to five security keys to your account.
 6. Click the **Close** button and confirm that the **FIDO U2F Security Key** option now shows as **Enabled**.
    {% image two-step/u2f/enabled.png %}
 
