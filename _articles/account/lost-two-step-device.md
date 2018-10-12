@@ -21,6 +21,10 @@ Visit <https://vault.bitwarden.com/#/recover-2fa> to complete the recovery proce
 
 The recovery process will deactivate two-step login on the account so that you can log in without requiring the normal two-step login verification code. You will need to re-enable two-step login in the web vault if you wish to continue using it after recovering the account.
 
+{% warning %}
+The recovery process also resets your account's recovery code. Make sure that you take note of your new recovery code when re-enabling two-step login.
+{% endwarning %}
+
 If you do not have your recovery code, unfortunately there is no way to fully recover the account. The only option to gain access to the account again is to delete the account so that you can register again and start over. Note that deleting the account will also delete all of your stored login data associated with the account.
 
 {% tip %}
