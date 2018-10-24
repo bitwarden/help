@@ -31,6 +31,7 @@ Bitwarden provides a powerful, full-featured command-line interface (CLI) tool t
     - [Create](#create)
     - [Edit](#edit)
     - [Delete](#delete)
+    - [Share](#share)
 - [Other Useful Commands](#other-useful-commands)
     - [Import](#import)
     - [Export](#export)
@@ -229,12 +230,14 @@ To create a new attachment for an item, specify the `--file` path on disk as wel
 The `edit` command allows you to edit an item in your vault. It works similarly to the `create` command with the added requirement of an object id. The `edit` command will perform a *replace* operation on the object. Upon success, the updated object will be returned.
 
 ```
-bw edit (item|folder) <id> [encodedJson]
+bw edit (item|item-collections|folder) <id> [encodedJson]
 ```
 ```
 bw edit folder dadc91e0-dcda-4bc2-8cd6-52100027c782 eyJuYW1lIjoiV2hhdCBGb2xkZXIifQ==
 bw get folder dadc91e0-dcda-4bc2-8cd6-52100027c782 | jq '.name = "Updated Folder"' | \
     bw encode | bw edit folder dadc91e0-dcda-4bc2-8cd6-52100027c782
+echo '["86544cd3-7e07-42bb-ba3c-e7f59852acaa","ae8c6c9e-26de-442c-b63b-3e28ef61d72d"]' | \
+    bw edit item-collections db71c8d6-3e69-4593-a6de-505e94966290
 ```
 
 ### Delete
@@ -247,6 +250,24 @@ bw delete (item|attachment|collection) <id> [options]
 ```
 bw delete folder dadc91e0-dcda-4bc2-8cd6-52100027c782
 bw delete attachment b857igwl1d --itemid 310d5ffd-e9a2-4451-af87-ea054dce0f78
+```
+
+### Share
+
+The `share` command allows you to transfer an item from your personal vault to an organization's vault for sharing. Upon success, the updated item will be returned.
+
+```
+bw share <id> <organizationId> [encodedJson]
+```
+
+`encodedJson` contains a Base 64 encoded JSON array of collection ids for the organization being shared to. At least one collection ID must be provided.
+
+```
+bw share 4af958ce-96a7-45d9-beed-1e70fabaa27a 6d82949b-b44d-468a-adae-3f3bacb0ea32 WyI5NzQwNTNkMC0zYjMzLTRiOTgtODg2ZS1mZWNmNWM4ZGJhOTYiXQ==
+echo 'WyI5NzQwNTNkMC0zYjMzLTRiOTgtODg2ZS1mZWNmNWM4ZGJhOTYiXQ==' | \
+    bw share 4af958ce-96a7-45d9-beed-1e70fabaa27a 6d82949b-b44d-468a-adae-3f3bacb0ea32
+echo '["974053d0-3b33-4b98-886e-fecf5c8dba96"]' | bw encode | \
+    bw share 4af958ce-96a7-45d9-beed-1e70fabaa27a 6d82949b-b44d-468a-adae-3f3bacb0ea32
 ```
 
 ## Other Useful Commands
@@ -366,6 +387,7 @@ You can use the `get` command to retrieve templates for various types of *reques
 - `item.securenote`
 - `folder`
 - `collection`
+- `item-collections`
 
 ```
 bw get template item
