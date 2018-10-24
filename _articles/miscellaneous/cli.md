@@ -263,7 +263,8 @@ bw share <id> <organizationId> [encodedJson]
 `encodedJson` contains a Base 64 encoded JSON array of collection ids for the organization being shared to. At least one collection ID must be provided.
 
 ```
-bw share 4af958ce-96a7-45d9-beed-1e70fabaa27a 6d82949b-b44d-468a-adae-3f3bacb0ea32 WyI5NzQwNTNkMC0zYjMzLTRiOTgtODg2ZS1mZWNmNWM4ZGJhOTYiXQ==
+bw share 4af958ce-96a7-45d9-beed-1e70fabaa27a 6d82949b-b44d-468a-adae-3f3bacb0ea32 \
+    WyI5NzQwNTNkMC0zYjMzLTRiOTgtODg2ZS1mZWNmNWM4ZGJhOTYiXQ==
 echo 'WyI5NzQwNTNkMC0zYjMzLTRiOTgtODg2ZS1mZWNmNWM4ZGJhOTYiXQ==' | \
     bw share 4af958ce-96a7-45d9-beed-1e70fabaa27a 6d82949b-b44d-468a-adae-3f3bacb0ea32
 echo '["974053d0-3b33-4b98-886e-fecf5c8dba96"]' | bw encode | \
