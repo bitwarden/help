@@ -65,7 +65,7 @@ Users that are a member of the 'Heroes' group, either directly or via nesting
 
 ## Azure Active Directory
 
-The Microsoft Graph API does not provide a way to filter groups and users directly, however, you can use our custom filtering syntax that allows you to exclude or include a comma separated list of group names, user e-mails or users based on their group membership.
+The Microsoft Graph API does not provide a way to filter groups and users directly, however, you can use our custom filtering syntax that allows you to exclude or include a comma separated list of group names, user emails, or users based on their group membership.
 
 ### Examples
 
@@ -95,7 +95,7 @@ include:joe@company.com,bill@company.com,tom@company.com
 exclude:joe@company.com
 ```
 
-Alternatively, you can filter users based on their group membership by using `includeGroup` or `excludeGroup` keywords. You have to obtain the group ID and include it with the keyword. You can get group's ID in the [Azure Portal](https://portal.azure.com) or through [Azure AD PowerShell](https://docs.microsoft.com/en-us/powershell/module/azuread/get-azureadgroup?view=azureadps-2.0).
+Alternatively, you can filter users based on their Azure AD group membership by using `includeGroup` or `excludeGroup` keywords. You must obtain the Azure AD group ID and include it with the keyword. You can get the group's ID in the [Azure Portal](https://portal.azure.com) or through [Azure AD PowerShell](https://docs.microsoft.com/en-us/powershell/module/azuread/get-azureadgroup?view=azureadps-2.0).
 
 ```
 includeGroup:97b9ff2a-7d4f-463d-a925-efb1677fd40d,b389c339-8c13-4c1a-8ac1-4fde56d9f70f
