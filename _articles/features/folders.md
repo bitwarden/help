@@ -1,10 +1,10 @@
 ---
 layout: article
-title: Folders
+title: Organizing your vault with folders
 categories: [features]
 featured: false
 popular: false
-tags: [categories]
+tags: [categories, folders, sub-folders]
 ---
 
 Folders are a great way to categorize items in your Bitwarden vault.

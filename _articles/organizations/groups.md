@@ -4,10 +4,10 @@ title: User groups
 categories: [organizations]
 featured: true
 popular: false
-tags: []
+tags: [groups, access control]
 ---
 
-In addition to collections, groups are a way for organizations to further control user access. They are particularly useful to larger organizations where user access can be difficult to manage.
+In addition to [collections]({% link _articles/organizations/collections.md %}), groups are a way for organizations to further control user access. They are particularly useful to larger organizations where user access can be difficult to manage.
 
 {% note %}
 User groups are only available to enterprise organizations.
