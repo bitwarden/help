@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Match detection for URIs
-categories: [miscellaneous]
+categories: [features]
 featured: false
 popular: false
 tags: [uri, match detection, autofill]

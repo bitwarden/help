@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Auto-fill logins on Android
-categories: [miscellaneous]
+categories: [features]
 featured: false
 popular: false
 tags: [android, autofill, auto-fill]

@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Using custom fields
-categories: [miscellaneous]
+categories: [features]
 featured: false
 popular: false
 tags: [fields, autofill, custom fields]

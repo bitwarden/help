@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Searching the vault
-categories: [miscellaneous]
+categories: [features]
 featured: false
 popular: false
 tags: [search, lunr]

@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Using file attachments
-categories: [miscellaneous]
+categories: [features]
 featured: false
 popular: false
 tags: [attachments, storage, files]
