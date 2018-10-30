@@ -65,7 +65,7 @@ Starting your search query with a greater than character (`>`) enables the full 
 - `>notes:something` - Search the notes field for the term "something".
 - `>login.username:jsmith` - Search a login's username field for the term "jsmith".
 - `>+organizationid:*` - Search for all items that belong to an organization.
-- `>-organizationid:*` - Search for all items that *do not* belong to an organization.
+- `>-organizationid:*` - Search for all items that *do not* belong to an organization (item's that you own).
 - `>+foo bar -baz` - Search for items that must contain "foo", might contain "bar" and must not contain "baz".
 
 Learn more about writing advanced search queries using [Lunr's searching guide](https://lunrjs.com/guides/searching.html){:target="_blank"}.
