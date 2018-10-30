@@ -27,6 +27,7 @@ This article **does not** apply to the following Bitwarden applications, which p
 The following fields from items in your vault are indexed and are searchable:
 
 - `shortid` - First 8 characters of the item's id.
+- `organizationid` - Id of the item's organization (if it belongs to one).
 - `name`
 - `subtitle` - Login username, card brand + last four, and identity name.
 - `notes`
@@ -56,11 +57,15 @@ It is not necessary to provide wildcards if you are searching for information in
 
 ## Advanced Searches
 
-Starting your search query with a greater than character (`>`) enables the full power of [Lunr search queries](https://lunrjs.com/guides/searching.html){:target="_blank"}. Examples:
+Starting your search query with a greater than character (`>`) enables the full power of [Lunr search queries](https://lunrjs.com/guides/searching.html){:target="_blank"}.
 
-- `>bitwarden*`
-- `>notes:something`
-- `>login.username:jsmith`
-- `>+foo bar -baz`
+### Advanced Search Examples
+
+- `>bitwarden*` - Search all fields for a term that starts with "bitwarden".
+- `>notes:something` - Search the notes field for the term "something".
+- `>login.username:jsmith` - Search a login's username field for the term "jsmith".
+- `>+organizationid:*` - Search for all items that belong to an organization.
+- `>-organizationid:*` - Search for all items that *do not* belong to an organization.
+- `>+foo bar -baz` - Search for items that must contain "foo", might contain "bar" and must not contain "baz".
 
 Learn more about writing advanced search queries using [Lunr's searching guide](https://lunrjs.com/guides/searching.html){:target="_blank"}.
