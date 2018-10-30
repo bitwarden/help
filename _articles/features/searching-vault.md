@@ -63,7 +63,7 @@ Starting your search query with a greater than character (`>`) enables the full 
 
 - `>bitwarden*` - Search all fields for a term that starts with "bitwarden".
 - `>notes:something` - Search the notes field for the term "something".
-- `>login.username:jsmith` - Search a login's username field for the term "jsmith".
+- `>login.username:jsmith` - Search the username field on items of type login for the term "jsmith".
 - `>+organizationid:*` - Search for all items that belong to an organization.
 - `>-organizationid:*` - Search for all items that *do not* belong to an organization (items that you own).
 - `>+foo bar -baz` - Search for items that must contain "foo", might contain "bar" and must not contain "baz".
