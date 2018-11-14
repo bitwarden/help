@@ -37,7 +37,7 @@ You can override the storage location for your Bitwarden desktop application dat
   - Brave: `%AppData%\Roaming\brave\Local Extension Settings\nngceckbapebfimnlniiiahkandclblb`
   - Edge: `%AppData%\Local\Packages\Microsoft.MicrosoftEdge_8wekyb3d8bbwe\AC\MicrosoftEdge\Extensions\Storage`
 - macOS
-  - Chrome: `~/Library/Application Support/Google/Chrome/Default/Local App Settings/nngceckbapebfimnlniiiahkandclblb`
+  - Chrome: `~/Library/Application Support/Google/Chrome/Default/Local Extension Settings/nngceckbapebfimnlniiiahkandclblb`
   - Firefox: `~/Library/Application Support/Firefox/Profiles/your_profile/browser-extension-data/{446900e4-71c2-419f-a6a7-df9c091e268b}`
   - Safari: `~/Library/Safari/Databases`
 - Linux
