@@ -3,7 +3,7 @@ layout: article
 title: Is Bitwarden audited?
 categories: [security]
 featured: true
-popular: true
+popular: false
 tags: [audit]
 ---
 
