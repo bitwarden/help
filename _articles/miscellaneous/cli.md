@@ -179,7 +179,7 @@ Special syntax is available for filters that allows you to specify `null` and `n
 
 The `get` command allows you to retrieve a single object from your vault.
 
-    bw get (item|username|password|uri|totp|exposed|attachment|folder|collection|organization|template) <id>
+    bw get (item|username|password|uri|totp|exposed|attachment|folder|collection|organization|template|fingerprint) <id>
 
 You can retrieve an object by its globally using `id` property (usually a GUID), or you can provide a search term. The search term must be specific enough to only return a single result or the CLI will return an error.
 
