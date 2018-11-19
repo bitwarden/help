@@ -24,6 +24,10 @@ The downloaded `.csv` file can be opened, read, and modified in spreadsheet prog
 3. Click **Export Vault** under the **Tools** side navigation
 4. Type in your master password and click **Export Vault**. Your browser will either automatically download the `.csv` file or prompt you to save it
 
+{% note %}
+Exporting your vault will not include items that belong to an organization. Organization admins can export their organization's vault from the web vault under the organization's admin area in the **Tools** section. Then click **Export Vault** under the **Tools** side navigation.
+{% endnote %}
+
 ## From the browser extension
 
 1. Open the browser extension and click the **Tools** tab
