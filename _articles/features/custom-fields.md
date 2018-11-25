@@ -16,7 +16,8 @@ Custom field names are an important identifier. Depending on the name you give y
 - HTML form element's **id** attribute
 - then the HTML form element's **name** attribute
 - then the HTML form element's corresponding **label** value
-- then the HTML form element's **placeholder** value
+- then the HTML form element's **aria-label** attribute
+- then the HTML form element's **placeholder** attribute
 
 If one of these matches is found, Bitwarden will auto-fill the custom field's value for you.
 
