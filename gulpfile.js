@@ -1,9 +1,8 @@
-var gulp = require('gulp'),
-    rimraf = require('rimraf'),
-    runSequence = require('run-sequence'),
-    merge = require('merge-stream');
+const gulp = require('gulp');
+const del = require('del');
+const merge = require('merge-stream');
 
-var paths = {};
+const paths = {};
 paths.dist = './_site/';
 paths.sass = './_sass/';
 paths.libDir = './lib/';
@@ -11,24 +10,15 @@ paths.npmDir = './node_modules/';
 paths.cssDir = './css/';
 paths.jsDir = './scripts/';
 
-gulp.task('build', function (cb) {
-    return runSequence(
-        'clean',
-        'lib',
-        cb);
-});
+function cleanLib() {
+    return del(paths.libDir)
+}
 
-gulp.task('clean:lib', function (cb) {
-    return rimraf(paths.libDir, cb);
-});
+function cleanDist() {
+    return del(paths.dist)
+}
 
-gulp.task('clean:dist', function (cb) {
-    return rimraf(paths.dist, cb);
-});
-
-gulp.task('clean', ['clean:lib', 'clean:dist']);
-
-gulp.task('lib', ['clean:lib'], function () {
+function lib() {
     var libs = [
         {
             src: paths.npmDir + 'bootstrap-sass/assets/javascripts/bootstrap.min.js',
@@ -59,9 +49,15 @@ gulp.task('lib', ['clean:lib'], function () {
         }
     ];
 
-    var tasks = libs.map(function (lib) {
+    var tasks = libs.map((lib) => {
         return gulp.src(lib.src).pipe(gulp.dest(lib.dest));
     });
 
     return merge(tasks);
-});
+}
+
+exports.build = gulp.series(gulp.parallel(cleanLib, cleanDist), lib);
+exports['clean:dist'] = cleanDist;
+exports['clean:lib'] = cleanLib;
+exports.clean = gulp.parallel(cleanLib, cleanDist);
+exports.lib = gulp.series(cleanLib, lib);

@@ -7,15 +7,14 @@
     "deploy": "npm run build && gh-pages --dotfiles --dist _site"
   },
   "devDependencies": {
-    "gulp": "3.9.1",
-    "rimraf": "2.6.1",
-    "run-sequence": "2.1.0",
-    "merge-stream": "1.0.1",
     "bootstrap-sass": "3.3.7",
+    "fluidbox": "2.0.5",
     "font-awesome": "4.7.0",
+    "gh-pages": "^1.2.0",
+    "gulp": "^4.0.0",
     "jquery": "2.2.4",
     "lunr": "0.7.1",
-    "fluidbox": "2.0.5",
-    "gh-pages": "^1.2.0"
+    "merge-stream": "1.0.1",
+    "del": "^3.0.0"
   }
 }
