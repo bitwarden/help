@@ -7,9 +7,9 @@ popular: true
 tags: []
 ---
 
-A Bitwarden organization is an entity that relates users together that want to share logins. An organization could be a family, team, company, or any other type of group that desires to share logins in Bitwarden.
+A Bitwarden organization is an entity that relates users together that want to share items. An organization could be a family, team, company, or any other type of group that desires to share items in Bitwarden.
 
-An individual user account can create and/or belong to many different organizations, allowing you to manage your logins from a single account.
+An individual user account can create and/or belong to many different organizations, allowing you to manage your items from a single account.
 
 You can create a new Bitwarden organization from the [web vault](https://vault.bitwarden.com) or request that an admin of an existing organization send you an invite.
 
