@@ -245,7 +245,7 @@ echo '["86544cd3-7e07-42bb-ba3c-e7f59852acaa","ae8c6c9e-26de-442c-b63b-3e28ef61d
 The `delete` command allows you to delete an object from your vault.
 
 ```
-bw delete (item|attachment|collection) <id> [options]
+bw delete (item|attachment|folder) <id> [options]
 ```
 ```
 bw delete folder dadc91e0-dcda-4bc2-8cd6-52100027c782
