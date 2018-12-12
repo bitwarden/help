@@ -315,7 +315,7 @@ bw generate -p --words 5 --separator _
 
 ### Encode
 
-The `encode` command Base 64 encodes stdin. This command a helpful when performing `create` and `edit` operations.
+The `encode` command Base 64 encodes stdin. This command is helpful when performing `create` and `edit` operations.
 
 ```
 <jsonString> | bw encode
