@@ -39,7 +39,7 @@ Two-step login can permanently lock you out of your account. It is very importan
    
    Repeat this process for each YubiKey you wish to add to your account. You can add up to five YubiKeys to your account.
    {% image two-step/yubikey/config.png %}
-5. If you are using a YubiKey that has NFC capabilities (YubiKey NEO), check the **One of my keys supports NFC** checkbox. This option enables the use of your YubiKey on Android and iOS devices that support NFC.
+5. If you are using a YubiKey that has NFC capabilities (YubiKey NEO or YubiKey 5 NFC), check the **One of my keys supports NFC** checkbox. This option enables the use of your YubiKey on Android and iOS devices that support NFC.
 6. Click the **Enable** button. A green alert will appear at the top stating that two-step login has been enabled.
 7. Click the **Close** button and confirm that the **YubiKey OTP Security Key** option now shows as **Enabled**.
    {% image two-step/yubikey/enabled.png %}
@@ -68,11 +68,11 @@ Two-step login can permanently lock you out of your account. It is very importan
 
 ## Android
 
-If you are having trouble getting the YubiKey NEO to work on your Android device, confirm the following:
+If you are having trouble getting the YubiKey NEO or YubiKey 5 NFC to work on your Android device, confirm the following:
 
 1. You have checked the **One of my keys supports NFC** checkbox from step 5 above.
-2. Your Android device [supports NFC](https://en.wikipedia.org/wiki/List_of_NFC-enabled_mobile_devices){:target="_blank"} and is [known to work properly](https://forum.yubico.com/viewtopic.php?f=26&t=1302){:target="_blank"} with YubiKey NEO.
+2. Your Android device [supports NFC](https://en.wikipedia.org/wiki/List_of_NFC-enabled_mobile_devices){:target="_blank"} and is [known to work properly](https://forum.yubico.com/viewtopic.php?f=26&t=1302){:target="_blank"} with YubiKey NEO or YubiKey 5 NFC.
 3. You have NFC enabled on your Android device. Enable NFC by going to Android **Settings** &rarr; **More** and enable the **NFC** option.
 
-If the YubiKey NEO can be used on your Android device you will be prompted with a YubiKey option while logging in to Bitwarden. Simply place the YubiKey NEO on the back of your Android device near the NFC receiver. If you do not know where your NFC receiver is located, you may need to move it around some, trying different areas. Once Bitwarden detects the YubiKey it will automatically validate and log you in.
+If the YubiKey NEO or YubiKey 5 NFC can be used on your Android device you will be prompted with a YubiKey option while logging in to Bitwarden. Simply place the YubiKey on the back of your Android device near the NFC receiver. If you do not know where your NFC receiver is located, you may need to move it around some, trying different areas. Once Bitwarden detects the YubiKey it will automatically validate and log you in.
 
