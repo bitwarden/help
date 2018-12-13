@@ -19,6 +19,7 @@ You can very easily import your data from an array of different password manager
 - Clipperz (html)
 - Dashlane (json)
 - Enpass (csv)
+- Enpass (json)
 - Firefox (csv)
 - GNOME Passwords and Keys/Seahorse (json)
 - KeePass 2 (xml)
