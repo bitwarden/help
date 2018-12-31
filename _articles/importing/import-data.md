@@ -14,6 +14,7 @@ You can very easily import your data from an array of different password manager
 - [1Password (1pif)]({% link _articles/importing/import-from-1password.md %})
 - [1Password 6 &amp; 7 Windows (csv)]({% link _articles/importing/import-from-1password.md %})
 - Ascendo DataVault (csv)
+- Avast Passwords (csv)
 - Avira (json)
 - Blur (csv)
 - [Chrome (csv)]({% link _articles/importing/import-from-chrome.md %})
