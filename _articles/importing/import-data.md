@@ -23,6 +23,7 @@ You can very easily import your data from an array of different password manager
 - Enpass (csv)
 - Enpass (json)
 - Firefox (csv)
+- F-Secure KEY (fsk)
 - GNOME Passwords and Keys/Seahorse (json)
 - KeePass 2 (xml)
 - KeePassX (csv)
