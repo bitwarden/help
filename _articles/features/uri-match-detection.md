@@ -9,17 +9,17 @@ tags: [uri, match detection, autofill]
 
 A login item stored in your vault can have one or more [URI](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier){:target="_blank"} values associated with it. URIs can relate your login to a website address (URL), server IP address, mobile app package ID, and more. URIs are important values for a login since they determine how the auto-fill functions in Bitwarden will behave.
 
-## URI protocols
+## URI schemes
 
-A well-formed URI also has a protocol at the beginning of it. The most common protocol that many of us are familiar with is the `http://` protocol used for a website address.
+A well-formed URI also has a "scheme" at the beginning of it. The most common scheme that many of us are familiar with is the `http://` scheme used for a website address.
 
-The protocol can also have special meaning in Bitwarden:
+The scheme can also have special meaning in Bitwarden:
 
 - **`http://`** or **`https://`** tells Bitwarden that this is a website address. Example: `https://www.google.com`
 - **`androidapp://`** tells Bitwarden that this is an android application package ID (or package name). Example: `androidapp://com.twitter.android`. Android apps typically follow [reverse domain name notation](https://en.wikipedia.org/wiki/Reverse_domain_name_notation){:target="_blank"}.
 
 {% note %}
-If a URI omits the protocol, `http://` is assumed.
+If a URI omits the scheme, `http://` is assumed.
 {% endnote %}
 
 ## Match detection options
@@ -30,11 +30,11 @@ While editing a login you can adjust the match detection value for a given URI b
 
 The following match detection options are available:
 
-**Base domain**
-
 {% note %}
-Base domain is the default match detection value for all URIs.
+**Base domain** is the default URI match detection value for all URIs. You can adjust this default value under **Settings** &rarr; **Options**.
 {% endnote %}
+
+**Base domain**
 
 The base domain is defined as the second-level domain plus the top-level domain of the given URI. A URI with a value of `https://www.google.com` would have a base domain value of `google.com`.
 
