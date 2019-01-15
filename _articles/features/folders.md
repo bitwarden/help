@@ -35,4 +35,4 @@ This would produce a folder structure that looks like this in the web vault (and
 
 There is no limit on the depth that you can go with nested folders, though the application interface may begin to "break" if you go too deep.
 
-If a folder's name contains the forward slash delimiter, yet no "parent" folder exists, its name will be displayed in its entirety. In the example above, "Finance/Banking" would not produce a nested structure. You would need to create a "Finance" folder as well if nesting is desired.
+If a folder's name contains the forward slash delimiter, yet no "parent" folder exists, its name will be displayed in its entirety. In the example shown above, a folder named "Finance/Banking" would not produce a nested structure. You would need to create a "Finance" folder as well if nesting is desired.
