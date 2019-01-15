@@ -14,7 +14,7 @@ All sensitive data stored on your computer/device is encrypted. The data can be 
 ## Desktop
 
 - Windows
-  - Standard Installations &amp; Store: `%AppData%\Roaming\Bitwarden`
+  - Standard Installations &amp; Store: `%AppData%\Bitwarden`
   - Portable: `.\bitwarden-appdata`
 - macOS
   - Standard Installations: `~/Library/Application Support/Bitwarden`
@@ -30,12 +30,12 @@ You can override the storage location for your Bitwarden desktop application dat
 ## Browser Extension
 
 - Windows
-  - Chrome: `%AppData%\Local\Google\Chrome\User Data\Default\Local Extension Settings\nngceckbapebfimnlniiiahkandclblb`
-  - Firefox: `%AppData%\Roaming\Mozilla\Firefox\Profiles\your_profile\browser-extension-data\{446900e4-71c2-419f-a6a7-df9c091e268b}`
-  - Opera: `%AppData%\Roaming\Opera Software\Opera Stable\Local Extension Settings\ccnckbpmaceehanjmeomladnmlffdjgn`
-  - Vivaldi: `%AppData%\Local\Vivaldi\User Data\Default\Local Extension Settings\nngceckbapebfimnlniiiahkandclblb`
-  - Brave: `%AppData%\Roaming\brave\Local Extension Settings\nngceckbapebfimnlniiiahkandclblb`
-  - Edge: `%AppData%\Local\Packages\Microsoft.MicrosoftEdge_8wekyb3d8bbwe\AC\MicrosoftEdge\Extensions\Storage`
+  - Chrome: `%LocalAppData%\Google\Chrome\User Data\Default\Local Extension Settings\nngceckbapebfimnlniiiahkandclblb`
+  - Firefox: `%AppData%\Mozilla\Firefox\Profiles\your_profile\browser-extension-data\{446900e4-71c2-419f-a6a7-df9c091e268b}`
+  - Opera: `%AppData%\Opera Software\Opera Stable\Local Extension Settings\ccnckbpmaceehanjmeomladnmlffdjgn`
+  - Vivaldi: `%LocalAppData%\Vivaldi\User Data\Default\Local Extension Settings\nngceckbapebfimnlniiiahkandclblb`
+  - Brave: `%AppData%\brave\Local Extension Settings\nngceckbapebfimnlniiiahkandclblb`
+  - Edge: `%LocalAppData%\Packages\Microsoft.MicrosoftEdge_8wekyb3d8bbwe\AC\MicrosoftEdge\Extensions\Storage`
 - macOS
   - Chrome: `~/Library/Application Support/Google/Chrome/Default/Local Extension Settings/nngceckbapebfimnlniiiahkandclblb`
   - Firefox: `~/Library/Application Support/Firefox/Profiles/your_profile/browser-extension-data/{446900e4-71c2-419f-a6a7-df9c091e268b}`
@@ -51,7 +51,7 @@ You can override the storage location for your Bitwarden desktop application dat
 
 ## CLI
 
-- Windows: `%AppData%\Roaming\Bitwarden CLI`
+- Windows: `%AppData%\Bitwarden CLI`
 - macOS: `~/Library/Application Support/Bitwarden CLI`
 - Linux: `~/.config/Bitwarden CLI`
 
