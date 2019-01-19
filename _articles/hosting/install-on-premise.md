@@ -30,7 +30,7 @@ This article will walk you through how to install and deploy Bitwarden to your o
     {% icon fa-linux %} {% icon fa-apple %} Bash
 
        curl -s -o bitwarden.sh \
-           https://raw.githubusercontent.com/bitwarden/core/master/scripts/bitwarden.sh \
+           https://raw.githubusercontent.com/bitwarden/server/master/scripts/bitwarden.sh \
            && chmod +x bitwarden.sh
        ./bitwarden.sh install
        ./bitwarden.sh start
@@ -39,7 +39,7 @@ This article will walk you through how to install and deploy Bitwarden to your o
     {% icon fa-windows %} PowerShell
 
        Invoke-RestMethod -OutFile bitwarden.ps1 `
-           -Uri https://raw.githubusercontent.com/bitwarden/core/master/scripts/bitwarden.ps1
+           -Uri https://raw.githubusercontent.com/bitwarden/server/master/scripts/bitwarden.ps1
        .\bitwarden.ps1 -install
        .\bitwarden.ps1 -start
        .\bitwarden.ps1 -updatedb
@@ -99,13 +99,13 @@ We've made installing Bitwarden very simple. Depending on your environment (non-
     {% icon fa-linux %} {% icon fa-apple %} Bash
 
        curl -s -o bitwarden.sh \
-           https://raw.githubusercontent.com/bitwarden/core/master/scripts/bitwarden.sh \
+           https://raw.githubusercontent.com/bitwarden/server/master/scripts/bitwarden.sh \
            && sudo chmod u+x bitwarden.sh
 
     {% icon fa-windows %} PowerShell
 
        Invoke-RestMethod -OutFile bitwarden.ps1 `
-           -Uri https://raw.githubusercontent.com/bitwarden/core/master/scripts/bitwarden.ps1
+           -Uri https://raw.githubusercontent.com/bitwarden/server/master/scripts/bitwarden.ps1
 
 2. Start the installer:
 
