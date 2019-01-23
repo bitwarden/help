@@ -171,11 +171,10 @@ Example:
 globalSettings__yubico__clientId=294620155
 globalSettings__yubico__key=owdez88RdxVZuGbZ4fv
 globalSettings__mail__smtp__host=smtp.sendgrid.net
+globalSettings__mail__smtp__port=587
+globalSettings__mail__smtp__ssl=false
 globalSettings__mail__smtp__username=apikey
 globalSettings__mail__smtp__password=SG.YOUR.API_KEY
-globalSettings__mail__smtp__ssl=true
-globalSettings__mail__smtp__port=587
-globalSettings__mail__smtp__useDefaultCredentials=false
 ```
 
 If you plan to use YubiKeys for two-step login, you can get your YubiKey client id and key at [https://upgrade.yubico.com/getapikey/](https://upgrade.yubico.com/getapikey/){:target="_blank"}.
