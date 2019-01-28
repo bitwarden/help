@@ -25,6 +25,7 @@ You can very easily import your data from an array of different password manager
 - Firefox (csv)
 - F-Secure KEY (fsk)
 - GNOME Passwords and Keys/Seahorse (json)
+- Kaspersky Password Manager (txt)
 - KeePass 2 (xml)
 - KeePassX (csv)
 - Keeper (csv)
