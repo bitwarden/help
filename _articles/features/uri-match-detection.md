@@ -52,7 +52,7 @@ Example:
 
 - URI host value: `https://sub.domain.com:4000`
 - Matches: `http://sub.domain.com:4000`, `http://sub.domain.com:4000/page.html`
-- Not matches: `https://domain.com`, `https://sub.domain.com`, `https://sub2.domain.com`, `https://sub.domain.com:5000`
+- Not matches: `https://domain.com`, `https://sub.domain.com`, `https://sub2.domain.com`, `https://sub.domain.com:5000`, `http://sub2.sub.domain.com:4000`
 
 **Starts with**
 
@@ -75,7 +75,7 @@ The regular expression option allows you to write any simple or complex [regular
 
 Example:
 
-- URI regex value: `^https://.*google.com`
+- URI regex value: `^https://.*google.com$`
 - Matches: `https://google.com`, `https://sub.google.com`, `https://sub.sub2.google.com`, `https://malicious-site.com?q=google.com`
 - Not matches: `http://google.com` (not https), `https://yahoo.com`
 
