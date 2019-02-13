@@ -42,6 +42,7 @@ You can very easily import your data from an array of different password manager
 - Password Boss (json)
 - Password Dragon (xml)
 - Password Safe (xml)
+- RememBear (csv)
 - RoboForm (csv)
 - SafeInCloud (xml)
 - SaferPass (csv)
