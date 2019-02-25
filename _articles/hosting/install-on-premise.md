@@ -75,7 +75,7 @@ Alternatively, if you are only testing you can install Bitwarden to the "localho
 
 ## Install Docker
 
-Bitwarden will be deployed and ran on your machine using an array of [Docker](https://www.docker.com/what-docker){:target="_blank"} containers. Bitwarden will work equally well with Docker Community (free) and Enterprise editions. You should evaluate which edition is best for your installation. Additionally, deployment of these containers is orchestrated through the use of [Docker Compose](https://docs.docker.com/compose/){:target="_blank"}. Docker and Docker Compose must first be installed on your machine before beginning a Bitwarden installation.
+Bitwarden will be deployed and run on your machine using an array of [Docker](https://www.docker.com/what-docker){:target="_blank"} containers. Bitwarden will work equally well with Docker Community (free) and Enterprise editions. You should evaluate which edition is best for your installation. Additionally, deployment of these containers is orchestrated through the use of [Docker Compose](https://docs.docker.com/compose/){:target="_blank"}. Docker and Docker Compose must first be installed on your machine before beginning a Bitwarden installation.
 
 See the following official Docker documentation for more information:
 
