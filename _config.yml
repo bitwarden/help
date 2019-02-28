@@ -11,6 +11,7 @@ exclude:
   - node_modules
   - bitwarden-help.sln
   - package.json
+  - package-lock.json
   - gulpfile.js
   - README.md
 
