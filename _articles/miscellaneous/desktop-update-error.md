@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Resolving desktop app update errors
+title: Resolving desktop application update errors
 categories: [miscellaneous]
 featured: false
 popular: false
