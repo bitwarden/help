@@ -42,4 +42,5 @@ Certain information in Bitwarden cannot be encrypted. This includes:
 - Organization names
 - Organization business names
 - Organization billing email
-- Organization group names
+- Collection external ids
+- Organization group names and external ids
