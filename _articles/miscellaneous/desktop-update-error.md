@@ -14,7 +14,7 @@ A JavaScript error occurred in the main process
 
 Uncaught Exception:
 Error: spawn
-C:\Users\Username\AppData\Roaming\Bitwarden\__update__\Bitwarden.exe
+C:\Users\Username\AppData\Roaming\Bitwarden\__update__\Bitwarden-Installer-1.14.0.exe
 EACCES
     at Process.ChildProcess._handle.onexit (internal/child_process.js:229:19)
     at onErrorNT (internal/child_process.js:406:16)
