@@ -144,7 +144,7 @@ As the Directory Connector works at syncing changes up to your Bitwarden organiz
 
 ## Command-line Interface
 
-A command-line interface (CLI) tool is also available to connect to and sync your directory. The Bitwarden Directory Connector CLI is especially useful whenever you are working in environments where a GUI is not available, or if you want to programmatically script directory sync operations using tools provided by the operating system (cron job, scheduled task, etc). The Bitwarden Directory Connector CLI can be used cross-platform on Windows, macOS, and Linux distributions.
+A command-line interface (CLI) tool is also available to connect to and sync your directory. The Bitwarden Directory Connector CLI is especially useful whenever you are working in environments where a desktop GUI is not available, or if you want to programmatically script directory sync operations using tools provided by the operating system (cron job, scheduled task, etc). The Bitwarden Directory Connector CLI can be used cross-platform on Windows, macOS, and Linux distributions.
 
 ### Quick Start
 
@@ -164,9 +164,9 @@ When extracting the zip, make sure that the included `keytar.node` dependency re
 
 ### Shared Data
 
-The Directory Connector CLI shares the same database and configuration settings with the Directory Connector GUI application. You can install and use both applications together, however, you should avoid using them both at the same time.
+The Directory Connector CLI shares the same database and configuration settings with the Directory Connector desktop application. You can install and use both applications together, however, you should avoid using them both at the same time.
 
-Though not required, often times it may be helpful to use the Directory Connector GUI application first to setup and configure all of your settings before using the Directory Connector CLI.
+Though not required, often times it may be helpful to use the Directory Connector desktop application first to setup and configure all of your settings before using the Directory Connector CLI.
 
 The default location for the shared `data.json` database file depends on which platform you are using.
 
@@ -218,10 +218,10 @@ You can also use the `config` command to set parameters that require secure stor
     bwdc config gsuite.key <key>
     bwdc config okta.token <token>
 
-Additional configuration settings can be modified in the Bitwarden Directory Connector GUI application or by editing the `data.json` database file directly in your favorite text editor. [Read more about shared data](#shared-data).
+Additional configuration settings can be modified in the Bitwarden Directory Connector desktop application or by editing the `data.json` database file directly in your favorite text editor. [Read more about shared data](#shared-data).
 
 {% note %}
-You should avoid opening or modifying the `data.json` database file while the Directory Connector GUI application or CLI executable is running.
+You should avoid opening or modifying the `data.json` database file while the Directory Connector desktop application or CLI executable is running.
 {% endnote %}
 
 ### Clear Cache Command
@@ -239,7 +239,7 @@ The `update` command allows you to check if your Directory Connector CLI is up t
 A URL to download a new version of the CLI executable will be returned to you.
 
 {% note %}
-If you are also using the Directory Connector GUI application, it is important that you keep them both up to date and that their versions match. Running two different versions of the Directory Connector GUI application and Directory Connector CLI may cause unexpected issues.
+If you are also using the Directory Connector desktop application, it is important that you keep them both up to date and that their versions match. Running two different versions of the Directory Connector desktop application and Directory Connector CLI may cause unexpected issues.
 {% endnote %}
 
 ### Version Option
