@@ -201,6 +201,13 @@ The `sync` command runs a live sync operation and pushes data to your Bitwarden 
 
 Your synced users and groups will be immediately available in your Bitwarden organization. Synced users will receive an email invite to your organization.
 
+### Last Sync Command
+
+The `last-sync` command returns an [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601){:target="_blank"} timestamp of the last time a `sync` has been performed for users or groups:
+
+    bwdc last-sync users
+    bwdc last-sync groups
+
 ### Config Command
 
 The `config` command allow you to specify settings for the Directory Connector CLI to use.
@@ -223,6 +230,14 @@ Additional configuration settings can be modified in the Bitwarden Directory Con
 {% note %}
 You should avoid opening or modifying the `data.json` database file while the Directory Connector desktop application or CLI executable is running.
 {% endnote %}
+
+### Data File Command
+
+The `data-file` command returns an absolute path to the `data.json` database file used by the Directory Connector CLI.
+
+    bwdc data-file
+
+Configuration settings can be modified for the Directory Connector CLI by editing the `data.json` database file directly in your favorite text editor. [Read more about shared data](#shared-data).
 
 ### Clear Cache Command
 
