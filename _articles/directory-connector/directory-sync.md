@@ -47,7 +47,9 @@ You can install and run Directory Connector as an agent on the server that hosts
   * [Explore the CLI](#explore-the-cli)
   * [Test Command](#test-command)
   * [Sync Command](#sync-command)
+  * [Last Sync Command](#last-sync-command)
   * [Config Command](#config-command)
+  * [Data File Command](#data-file-command)
   * [Clear Cache Command](#clear-cache-command)
   * [Update Command](#update-command)
   * [Version Option](#version-option)
@@ -174,6 +176,8 @@ The default location for the shared `data.json` database file depends on which p
 - macOS: `~/Library/Application Support/Bitwarden Directory Connector`
 - Linux: `~/.config/Bitwarden Directory Connector`
 
+The [`data-file` command](#data-file-command) can be used to discover the absolute path to the `data.json` database file on your system.
+
 ### Explore the CLI
 
 The Bitwarden Directory Connector CLI is self-documented with `--help` content and examples for every command. You should start exploring the Directory Connector CLI by using the global `--help` option:
@@ -203,7 +207,7 @@ Your synced users and groups will be immediately available in your Bitwarden org
 
 ### Last Sync Command
 
-The `last-sync` command returns an [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601){:target="_blank"} timestamp of the last time a `sync` has been performed for users or groups:
+The `last-sync` command returns an [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601){:target="_blank"} timestamp of the last time a sync operation has been performed for users or groups:
 
     bwdc last-sync users
     bwdc last-sync groups
