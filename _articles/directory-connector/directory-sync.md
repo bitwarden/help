@@ -201,7 +201,7 @@ The `test` command queries your directory and prints a JSON formatted array of g
 
 The `sync` command runs a live sync operation and pushes data to your Bitwarden organization.
 
-    bw sync
+    bwdc sync
 
 Your synced users and groups will be immediately available in your Bitwarden organization. Synced users will receive an email invite to your organization.
 
