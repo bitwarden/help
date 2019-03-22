@@ -7,12 +7,13 @@ branches:
 
 stack: node 10, ruby 2.6.0
 
-init:
+install:
 - gem install jekyll bundler
 
 before_build:
 - node --version
 - npm --version
+- ruby --version
 
 build_script:
 - npm install
