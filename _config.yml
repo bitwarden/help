@@ -13,6 +13,7 @@ exclude:
   - package.json
   - package-lock.json
   - gulpfile.js
+  - appveyor.yml
   - README.md
 
 include: 
