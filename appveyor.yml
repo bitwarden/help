@@ -7,6 +7,9 @@ branches:
 
 stack: node 10
 
+install:
+- gem install jekyll bundler
+
 before_build:
 - node --version
 - npm --version
