@@ -25,10 +25,7 @@ before_build:
 
 build_script:
 - npm install
-- npm run build
-- sh: |
-    ./node_modules/.bin/gh-pages --dotfiles --dist _site --silent \
-      --repo "https://${GH_TOKEN}@github.com/bitwarden/help.git"
+- npm run deploy:ci
 
 on_finish:
 - sh: |
