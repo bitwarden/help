@@ -5,9 +5,9 @@ branches:
   except:
     - gh-pages
 
-stack: node 10
+stack: node 10, ruby 2.6.0
 
-install:
+init:
 - gem install jekyll bundler
 
 before_build:
