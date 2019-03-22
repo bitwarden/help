@@ -23,7 +23,7 @@ Importing your data from LastPass into Bitwarden is easy.
 {% warning %}
 There are known bugs (for years now) with the LastPass exporter regarding special characters such as the ampersand (<code>&amp;</code>), the greater than sign (<code>&gt;</code>), and the less than sign (<code>&lt;</code>). The LastPass exporter may change (HTML encode) these and possibly other special characters in your passwords to their respective HTML encoded values (ex. <code>&amp;amp;</code>, <code>&amp;gt;</code>, and <code>&amp;lt;</code>). If this LastPass bug affects your exported data you should use a text editor (such as Notepad) to find and replace all of these values before importing into Bitwarden. For example, you may want to do a find and replace for <code>&amp;amp;</code> &rarr; <code>&amp;</code> and <code>&amp;lt;</code> &rarr; <code>&lt;</code>).
 
-Alternatively, you can use the [LastPass Pocket application](https://lastpass.com/misc_download2.php){:target="_blank"} (near the bottom of the page) to export your CSV data. The LastPass Pocket application does not appear to be affected by these bugs.
+Alternatively, you can use the [LastPass Pocket application](https://lastpass.com/misc_download2.php){:target="_blank"} to export your CSV data. The LastPass Pocket application does not appear to be affected by these bugs.
 {% endwarning %}
 
 ## Import your data into Bitwarden
