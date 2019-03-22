@@ -16,6 +16,14 @@ init:
 
 install:
 - gem install jekyll bundler
+- sh: |
+    if [ "${GH_TOKEN}" != "" ]
+    then
+      git config --global credential.helper store
+      echo "https://${GH_TOKEN}:x-oauth-basic@github.com" >> ~/.git-credentials
+      git config --global user.email "ci@bitwarden.com"
+      git config --global user.name "Bitwarden CI"
+    fi
 
 before_build:
 - node --version
@@ -25,7 +33,13 @@ before_build:
 
 build_script:
 - npm install
-- npm run deploy:ci
+- sh: |
+    if [ "${GH_TOKEN}" != "" ]
+    then
+      npm run deploy:ci
+    else
+      npm run build
+    fi
 
 on_finish:
 - sh: |
