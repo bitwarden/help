@@ -5,7 +5,7 @@
     "build": "gulp build && jekyll build",
     "build:watch": "gulp build && jekyll serve --watch --host=0.0.0.0",
     "deploy": "npm run build && gh-pages --dotfiles --dist _site",
-    "deploy:ci": "npm run build && gh-pages --dotfiles --dist _site --silent --repo \"https://${GH_TOKEN}@github.com/bitwarden/help.git\""
+    "deploy:ci": "npm run build && gh-pages --dotfiles --dist _site --silent --repo https://${GH_TOKEN}@github.com/bitwarden/help.git"
   },
   "devDependencies": {
     "bootstrap-sass": "3.3.7",

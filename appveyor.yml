@@ -14,6 +14,7 @@ before_build:
 - node --version
 - npm --version
 - ruby --version
+- jekyll --version
 
 build_script:
 - npm install
