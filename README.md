@@ -1,3 +1,4 @@
+[![appveyor build](https://ci.appveyor.com/api/projects/status/83ywnqo5i72aubfv?svg=true)](https://ci.appveyor.com/project/bitwarden/help)
 [![Join the chat at https://gitter.im/bitwarden/Lobby](https://badges.gitter.im/bitwarden/Lobby.svg)](https://gitter.im/bitwarden/Lobby)
 
 # Bitwarden Help Center
