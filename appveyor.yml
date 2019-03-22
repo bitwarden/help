@@ -19,7 +19,7 @@ before_build:
 
 build_script:
 - cmd: npm install
-- cmd: npm deploy:ci
+- cmd: npm run deploy:ci
 
 on_finish:
   - ps: |
