@@ -1,0 +1,30 @@
+image:
+- Visual Studio 2017
+
+branches:
+  except:
+    - gh-pages
+
+init:
+- ps: |
+    if($isWindows -and $env:DEBUG_RDP -eq "true") {
+      iex ((new-object net.webclient).DownloadString(`
+        'https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
+    }
+- ps: Install-Product node 10
+
+before_build:
+- cmd: node --version
+- cmd: npm --version
+
+build_script:
+- cmd: npm install
+- cmd: npm deploy:ci
+
+on_finish:
+  - ps: |
+      if($isWindows -and $env:DEBUG_RDP -eq "true") {
+        $blockRdp = $true
+        iex ((new-object net.webclient).DownloadString(`
+          'https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
+      }
