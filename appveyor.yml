@@ -7,6 +7,13 @@ branches:
 
 stack: node 10, ruby 2.6.0
 
+init:
+- sh: |
+    if [ "${DEBUG_SSH}" == "true" ]
+    then
+      curl -sflL 'https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-ssh.sh' | bash -e -
+    fi
+
 install:
 - gem install jekyll bundler
 
@@ -22,3 +29,11 @@ build_script:
 - sh: |
     ./node_modules/.bin/gh-pages --dotfiles --dist _site --silent \
       --repo "https://${GH_TOKEN}@github.com/bitwarden/help.git"
+
+on_finish:
+- sh: |
+    if [ "${DEBUG_SSH}" == "true" ]
+    then
+      export APPVEYOR_SSH_BLOCK=true
+      curl -sflL 'https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-ssh.sh' | bash -e -
+    fi
