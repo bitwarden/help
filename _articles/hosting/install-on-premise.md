@@ -225,7 +225,7 @@ PowerShell users will run the commands with a prefixed `-` (switch). For example
 
 ## Manual Docker Installations
 
-Using the provided installation script is the recommended approach for most users, however, you can also install Bitwarden manually using Docker and Docker Compose. A manual installation may be appropriate if you are intimately familiar with Docker technologies and desire more control over your Bitwarden installation. A manual installation follows most of the same steps that the installation script performs for your automatically.
+Using the provided installation script is the recommended approach for most users, however, you can also install and configure Bitwarden manually using Docker and Docker Compose. A manual installation may be appropriate if you are intimately familiar with Docker technologies and desire more control over your Bitwarden installation. A manual installation follows most of the same steps that the installation script performs for you automatically.
 
 {% warning %}
 Manual installations are for advanced users only.
