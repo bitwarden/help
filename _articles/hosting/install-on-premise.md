@@ -237,21 +237,43 @@ Manual installations lose the ability to automatically update certain dependenci
 2. Create a new directory named `bwdata` and extract the `docker-stub.zip` archive to it. The directory structure provided matches what the `./docker/docker-compose.yml` file's mapped volumes expect, however, you are free to change the location of these mappings on the host machine if desired.
 3. Get your `installation__id` and `installation__key` from [https://bitwarden.com/host](https://bitwarden.com/host){:target="_blank"} and provide them to the application's environment variables at `./env/global.override.env`.
 4. Update the `baseServiceUri__*` and `attachment__baseUrl` application environment variables for your hostname at `./env/global.override.env`.
-5. Generate a `.pfx` certificate file for the identity container and place it in the mapped volume at `./identity/identity.pfx`. Example:
+5. Generate a `.pfx` certificate file for the identity container and place it in the mapped volume at `./identity/identity.pfx`.
+
+    Example:
 
        openssl req -x509 -newkey rsa:4096 -sha256 -nodes -keyout identity.key \
-           -out identity.crt -subj \"/CN=Bitwarden IdentityServer\" -days 10950
+         -out identity.crt -subj "/CN=Bitwarden IdentityServer" -days 10950
+       # mkdir ./identity
        openssl pkcs12 -export -out ./identity/identity.pfx -inkey identity.key \
-           -in identity.crt -certfile identity.crt -passout pass:IDENTITY_CERT_PASSWORD
+         -in identity.crt -certfile identity.crt -passout pass:IDENTITY_CERT_PASSWORD
 
-    Make sure that you provide your IDENTITY_CERT_PASSWORD to the application's environment variables at `./env/global.override.env`.
+    Make sure that you provide your `IDENTITY_CERT_PASSWORD` to the application's environment variables at `./env/global.override.env`.
 6. Copy your SSL certificate and keys to the `./ssl` directory. By default, this directory is mapped to the nginx container at `/etc/ssl`. The `./nginx/default.conf` can be adjusted to utilize these certificates as desired.
 
     {% note %}Accessing the Bitwarden web vault and APIs via HTTPS is required. You should provide trusted SSL certificates to the nginx container or front the installation with a proxy that provides an HTTPS endpoint to Bitwarden client applications.{% endnote %}
 
-7. Generate your own random password strings for the `sqlServer__connectionString` `RANDOM_DATABASE_PASSWORD`, `internalIdentityKey` `RANDOM_IDENTITY_KEY`, and `duo__aKey` `RANDOM_DUO_AKEY` and update the variables at `./env/global.override.env`.
-8. For using FIDO U2F keys, create your own `app-id.json` including your hostname's URL (ex. `https://bitwarden.company.com`) and place it at `./web/app-id.json`. An `app-id.json` template can be found on GitHub [here](https://github.com/bitwarden/server/blob/master/util/Setup/Templates/AppId.hbs){:target="_blank"}.
-9. Configure your SMTP mail server and any other desired application settings at `./env/global.override.env`.
-10. Start your Bitwarden installation and access it at your configured hostname:
+    Example self-signed certificate:
+
+       # mkdir -p ./ssl/self/localhost
+       openssl req -x509 -newkey rsa:4096 -sha256 -nodes -days 365 \
+         -keyout ./ssl/self/bitwarden.company.com/private.key \
+         -out ./ssl/self/bitwarden.company.com/certificate.crt \
+         -reqexts SAN -extensions SAN \
+         -config <(cat /usr/lib/ssl/openssl.cnf <(printf '[SAN]\nsubjectAltName=DNS:bitwarden.company.com\nbasicConstraints=CA:true')) \
+         -subj "/C=US/ST=New York/L=New York/O=Company Name/OU=Bitwarden/CN=bitwarden.company.com"
+
+7. Update the `server_name`, HTTPS redirects, and `Content-Security-Policy` header with your hostname at `./nginx/default.conf`.
+8.  Generate your own random password strings for the `sqlServer__connectionString` `RANDOM_DATABASE_PASSWORD`, `internalIdentityKey` `RANDOM_IDENTITY_KEY`, and `duo__aKey` `RANDOM_DUO_AKEY` and update the variables at `./env/global.override.env`. Also be sure to apply the same `RANDOM_DATABASE_PASSWORD` at `./env/mssql.override.env`
+9.  Update the `app-id.json` file at `./web/app-id.json` to include your hostname's URL (ex. `https://bitwarden.company.com`).
+10. Configure your SMTP mail server and any other desired application settings at `./env/global.override.env`.
+11. Map the desired user and group id for the Bitwarden containers to run under by creating a `uid.env` file at `./env/uid.env`.
+
+    Example:
+
+       LOCAL_UID=1000
+       LOCAL_GID=1000
+
+    Otherwise, remove the `uid.env` mappings from `./docker/docker-compose.yml` and the containers will run as `nobody`.
+12. Start your Bitwarden installation and access it at your configured hostname:
 
         docker-compose -f ./docker/docker-compose.yml up -d
