@@ -270,8 +270,8 @@ Manual installations lose the ability to automatically update certain dependenci
 
     Example:
 
-       LOCAL_UID=1000
-       LOCAL_GID=1000
+        LOCAL_UID=1000
+        LOCAL_GID=1000
 
     Otherwise, remove the `uid.env` mappings from `./docker/docker-compose.yml` and the containers will run as `nobody`.
 12. Start your Bitwarden installation and access it at your configured hostname:
