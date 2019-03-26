@@ -254,10 +254,10 @@ Manual installations lose the ability to automatically update certain dependenci
 
     Example self-signed certificate:
 
-       # mkdir -p ./ssl/self/localhost
+       # mkdir -p ./ssl/bitwarden.company.com
        openssl req -x509 -newkey rsa:4096 -sha256 -nodes -days 365 \
-         -keyout ./ssl/self/bitwarden.company.com/private.key \
-         -out ./ssl/self/bitwarden.company.com/certificate.crt \
+         -keyout ./ssl/bitwarden.company.com/private.key \
+         -out ./ssl/bitwarden.company.com/certificate.crt \
          -reqexts SAN -extensions SAN \
          -config <(cat /usr/lib/ssl/openssl.cnf <(printf '[SAN]\nsubjectAltName=DNS:bitwarden.company.com\nbasicConstraints=CA:true')) \
          -subj "/C=US/ST=New York/L=New York/O=Company Name/OU=Bitwarden/CN=bitwarden.company.com"
