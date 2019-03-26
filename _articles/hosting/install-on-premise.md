@@ -272,7 +272,7 @@ Manual installations lose the ability to automatically update certain dependenci
         LOCAL_UID=1000
         LOCAL_GID=1000
 
-    Otherwise, the containers will run as `nobody`.
+    Otherwise, you can leave the `./env/uid.env` file empty and the containers will run as `nobody:nobody`.
 12. Start your Bitwarden installation and access it at your configured hostname:
 
         docker-compose -f ./docker/docker-compose.yml up -d
