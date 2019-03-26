@@ -249,7 +249,7 @@ Manual installations lose the ability to automatically update certain dependenci
     Make sure that you provide your `IDENTITY_CERT_PASSWORD` to the application's environment variables at `./env/global.override.env`.
 6. Copy your SSL certificate and keys to the `./ssl` directory. By default, this directory is mapped to the nginx container at `/etc/ssl`. The `./nginx/default.conf` can be adjusted to utilize these certificates as desired.
 
-    {% note %}Accessing the Bitwarden web vault and APIs via HTTPS is required. You should provide trusted SSL certificates to the nginx container or front the installation with a proxy that provides an HTTPS endpoint to Bitwarden client applications.{% endnote %}
+    {% note %}Accessing the Bitwarden web vault and APIs via HTTPS is required. You should provide a trusted SSL certificate to the nginx container or front the installation with a proxy that provides a HTTPS endpoint to Bitwarden client applications.{% endnote %}
 
     Example self-signed certificate:
 
