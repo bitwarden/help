@@ -19,6 +19,7 @@ This article will walk you through how to install and deploy Bitwarden to your o
 - [Post-install Environment Configuration](#post-install-environment-configuration)
 - [Start Bitwarden](#start-bitwarden)
 - [Script Commands](#script-commands)
+- [Manual Docker Installations](#manual-docker-installations)
 
 ## TL;DR
 
@@ -33,7 +34,6 @@ This article will walk you through how to install and deploy Bitwarden to your o
            && chmod +x bitwarden.sh
        ./bitwarden.sh install
        ./bitwarden.sh start
-       ./bitwarden.sh updatedb
 
     {% icon fa-windows %} PowerShell
 
@@ -41,7 +41,6 @@ This article will walk you through how to install and deploy Bitwarden to your o
            -Uri https://go.btwrdn.co/bw-ps
        .\bitwarden.ps1 -install
        .\bitwarden.ps1 -start
-       .\bitwarden.ps1 -updatedb
 5. Adjust additional configuration settings in `./bwdata/env/global.override.env` and restart.
     
     {% icon fa-linux %} {% icon fa-apple %} Bash
@@ -199,16 +198,6 @@ You can then verify that all containers are up and running correctly:
 
 {% image hosting/docker-ps.png %}
 
-Finally, you need to initialize and update the Bitwarden database:
-
-{% icon fa-linux %} {% icon fa-apple %} Bash
-
-    ./bitwarden.sh updatedb
-
-{% icon fa-windows %} PowerShell
-
-    .\bitwarden.ps1 -updatedb
-
 Congratulations! Bitwarden is now up and running at `https://your.domain.com`. Visit the web vault in your web browser to confirm. You should register a new account and log in.
 
 ## Script Commands
@@ -233,3 +222,36 @@ PowerShell users will run the commands with a prefixed `-` (switch). For example
 | rebuild    | Rebuild generated installation assets from `config.yml`. |
 
 {% endtable %}
+
+## Manual Docker Installations
+
+Using the provided installation script is the recommended approach for most users, however, you can also install Bitwarden manually using Docker and Docker Compose. A manual installation may be appropriate if you are intimately familiar with Docker technologies and desire more control over your Bitwarden installation. A manual installation follows most of the same steps that the installation script performs for your automatically.
+
+{% warning %}
+Manual installations are for advanced users only.
+
+Manual installations lose the ability to automatically update certain dependencies of the Bitwarden installation. As you upgrade from one version of Bitwarden to the next you will be responsible for changes to required environment variables, changes to nginx `default.conf`, changes to `docker-compose.yml`, etc. We will try to highlight these in the [release notes on GitHub](https://github.com/bitwarden/server/releases){:target="_blank"}. You can also monitor changes to the [dependency templates](https://github.com/bitwarden/server/tree/master/util/Setup/Templates){:target="_blank"} used by the Bitwarden installation script on GitHub.
+{% endwarning %}
+
+1. Download a stubbed version of Bitwarden's dependencies (`docker-stub.zip`) from the [releases pages on GitHub](https://github.com/bitwarden/server/releases){:target="_blank"}.
+2. Create a new directory named `bwdata` and extract the `docker-stub.zip` archive to it. The directory structure provided matches what the `./docker/docker-compose.yml` file's mapped volumes expect, however, you are free to change the location of these mappings on the host machine if desired.
+3. Get your `installation__id` and `installation__key` from [https://bitwarden.com/host](https://bitwarden.com/host){:target="_blank"} and provide them to the application's environment variables at `./env/global.override.env`.
+4. Update the `baseServiceUri__*` and `attachment__baseUrl` application environment variables for your hostname at `./env/global.override.env`.
+5. Generate a `.pfx` certificate file for the identity container and place it in the mapped volume at `./identity/identity.pfx`. Example:
+
+       openssl req -x509 -newkey rsa:4096 -sha256 -nodes -keyout identity.key \
+           -out identity.crt -subj \"/CN=Bitwarden IdentityServer\" -days 10950
+       openssl pkcs12 -export -out ./identity/identity.pfx -inkey identity.key \
+           -in identity.crt -certfile identity.crt -passout pass:IDENTITY_CERT_PASSWORD
+
+    Make sure that you provide your IDENTITY_CERT_PASSWORD to the application's environment variables at `./env/global.override.env`.
+6. Copy your SSL certificate and keys to the `./ssl` directory. By default, this directory is mapped to the nginx container at `/etc/ssl`. The `./nginx/default.conf` can be adjusted to utilize these certificates as desired.
+
+    {% note %}Accessing the Bitwarden web vault and APIs via HTTPS is required. You should provide trusted SSL certificates to the nginx container or front the installation with a proxy that provides an HTTPS endpoint to Bitwarden client applications.{% endnote %}
+
+7. Generate your own random password strings for the `sqlServer__connectionString` `RANDOM_DATABASE_PASSWORD`, `internalIdentityKey` `RANDOM_IDENTITY_KEY`, and `duo__aKey` `RANDOM_DUO_AKEY` and update the variables at `./env/global.override.env`.
+8. For using FIDO U2F keys, create your own `app-id.json` including your hostname's URL (ex. `https://bitwarden.company.com`) and place it at `./web/app-id.json`. An `app-id.json` template can be found on GitHub [here](https://github.com/bitwarden/server/blob/master/util/Setup/Templates/AppId.hbs){:target="_blank"}.
+9. Configure your SMTP mail server and any other desired application settings at `./env/global.override.env`.
+10. Start your Bitwarden installation and access it at your configured hostname:
+
+        docker-compose -f ./docker/docker-compose.yml up -d
