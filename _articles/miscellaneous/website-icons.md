@@ -21,7 +21,7 @@ Because a request for an icon image contains the hostname of the website stored 
 
 `https://icons.bitwarden.net/google.com/icon.png`
 
-**The icons server endpoints do not log or collection any information regarding icon image requests.** However, this is something you would have to take our word for since we have no way to demonstrate this publicly other than reviewing our [open source codebase](https://github.com/bitwarden).
+**The icons server endpoints do not log or collect any information regarding icon image requests.** However, this is something you would have to take our word for since we have no way to demonstrate this publicly other than reviewing our [open source codebase](https://github.com/bitwarden).
 
 ## Disabling website icons
 
