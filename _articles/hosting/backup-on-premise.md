@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Backing up your on-premise hosted data
+title: Backing up your on-premises hosted data
 categories: [hosting]
 featured: false
 popular: false

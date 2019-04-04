@@ -74,7 +74,7 @@ Command-line Interface
 
 ## Configure environment
 
-By default the Directory Connector communicates with the Bitwarden public cloud servers. If you are using the public cloud version of Bitwarden, you can skip this step. If you are using a self-hosted deployment of Bitwarden you will want to change the configured environment endpoints of the Directory Connector to your own on-premise installation.
+By default the Directory Connector communicates with the Bitwarden public cloud servers. If you are using the public cloud version of Bitwarden, you can skip this step. If you are using a self-hosted deployment of Bitwarden you will want to change the configured environment endpoints of the Directory Connector to your own on-premises installation.
 
 1. Run the Directory Connector application.
 2. If you are already logged into the application, go to the **More** tab and **Log Out**.

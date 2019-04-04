@@ -1,5 +1,5 @@
 ---
 layout: category
-title: On-premise Hosting
+title: On-premises Hosting
 featured: true
 ---
