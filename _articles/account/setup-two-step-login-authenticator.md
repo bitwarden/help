@@ -7,7 +7,7 @@ popular: false
 tags: [two-step login, 2fa, two factor authentication, account, google authenticator, authy, totp]
 ---
 
-Bitwarden supports two-step login by using a third-party authenticator app such as [Authy](https://authy.com/){:target="_blank"} or [Google Authenticator](https://support.google.com/accounts/answer/1066447?hl=en){:target="_blank"}.
+Bitwarden supports two-step login by using a third-party authenticator app such as [Authy](https://authy.com/){:target="_blank"}, [Google Authenticator](https://support.google.com/accounts/answer/1066447?hl=en){:target="_blank"}, or [FreeOTP](https://freeotp.github.io/){:target="_blank"}.
 
 ## Enable Two-step Login with Authenticator App
 
