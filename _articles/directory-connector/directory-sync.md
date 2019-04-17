@@ -269,6 +269,10 @@ The `--version` option allows you to check which version the Directory Connector
 bwdc --version
 ```
 
+### Troubleshooting
+
+If you receive an error message referring to the libsecret shared object `Error: libsecret-1.so.0: cannot open shared object file: No such file or directory`, you may need to install libsecret which is required to store things securely on the host. 
+
 ## Source code
 
 As with everything here at Bitwarden, the Directory Connector is open source and hosted on GitHub at <https://github.com/bitwarden/directory-connector>.
