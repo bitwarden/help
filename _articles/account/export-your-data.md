@@ -19,6 +19,8 @@ The `.json` file format offers a more complete export of your data and should be
 An exported `.json` file can be opened, read, and modified in a simple text editor like Notepad.
 
 An exported `.csv` file can be opened, read, and modified in spreadsheet programs such as Microsoft Excel (preferred) or a simple text editor like Notepad.
+
+At this time, exports do not include file attachment data.
 {% endnote %}
 
 ## From the web vault
