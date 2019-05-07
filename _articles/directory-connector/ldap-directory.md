@@ -65,6 +65,7 @@ If you are using Active Directory, many of these settings are predetermined for 
 |----------|-------------|----------|
 | Interval | The interval, in minutes, that you wish to perform automatic sync checks. | 5 |
 | Remove Disabled Users | When a user is disabled in the directory, should they also be removed from your Bitwarden organization? |  |
+| Overwrite Existing Users | Always perform a full sync and remove any users from your organization if they are not in the synced users set. |  |
 | Member Attribute | The attribute field to use when loading the group's members. | uniqueMember |
 | Creation Date Attribute | The attribute field that specifies when an entry was created. | whenCreated |
 | Revision Date Attribute | The attribute field that specifies when an entry was changed. | whenChanged |
