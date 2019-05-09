@@ -14,7 +14,7 @@ Hosting Bitwarden yourself is free. However, some features of Bitwarden require 
 Using premium features of Bitwarden in a self-hosted installation requires that you obtain a premium membership license.
 
 1. If you haven't already, purchase a premium membership by logging in to your bitwarden.com account at <https://vault.bitwarden.com> and navigating to **Settings** &rarr; **Go Premium**.
-2. Download your premium license file from <https://vault.bitwarden.com> by navigating to **Settings** &rarr; **Billing** &rarr; **Download License**.
+2. Download your premium license file from <https://vault.bitwarden.com> by navigating to **Settings** &rarr; **Premium Membership** &rarr; **Download License**.
 3. Log in to the web vault of your self-hosted Bitwarden installation. Ensure that the email address used for your user account on your self-hosted installation matches the email address used on your bitwarden.com account. Also make sure that your account's email address is verified.
 4. In your self hosted installation's web vault, navigate to **Settings** &rarr; **Go Premium**.
 5. Upload the license file that you downloaded in step 2 and your user account will upgraded to premium.
