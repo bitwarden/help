@@ -335,7 +335,7 @@ The `config` command allow you to specify settings for the CLI to use.
 
 For example, if you are using a self hosted Bitwarden server you will need to change the endpoint that the CLI communicates with.
 
-    bw config server https://bitwarden.company.com
+    bw config server https://bitwarden.example.com
 
 ### Update
 

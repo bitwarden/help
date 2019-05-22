@@ -67,7 +67,7 @@ If you are looking for a quality provider with affordable prices, we recommend:
 
 By default, Bitwarden will be served through ports 80 (http) and 443 (https) on the localhost machine. You should open these ports so that Bitwarden can be accessed from within and/or outside of the network. You can choose different ports during installation if you like.
 
-If you are serving Bitwarden to the outside world you will need to configure a domain name with DNS records that point to your host machine (ex. bitwarden.company.com). *You should configure this domain before beginning your Bitwarden installation.*
+If you are serving Bitwarden to the outside world you will need to configure a domain name with DNS records that point to your host machine (ex. bitwarden.example.com). *You should configure this domain before beginning your Bitwarden installation.*
 
 Alternatively, if you are only testing you can install Bitwarden to the "localhost" domain.
 
@@ -253,17 +253,17 @@ Manual installations lose the ability to automatically update certain dependenci
 
     Example self-signed certificate:
 
-       # mkdir ./ssl/bitwarden.company.com
+       # mkdir ./ssl/bitwarden.example.com
        openssl req -x509 -newkey rsa:4096 -sha256 -nodes -days 365 \
-         -keyout ./ssl/bitwarden.company.com/private.key \
-         -out ./ssl/bitwarden.company.com/certificate.crt \
+         -keyout ./ssl/bitwarden.example.com/private.key \
+         -out ./ssl/bitwarden.example.com/certificate.crt \
          -reqexts SAN -extensions SAN \
-         -config <(cat /usr/lib/ssl/openssl.cnf <(printf '[SAN]\nsubjectAltName=DNS:bitwarden.company.com\nbasicConstraints=CA:true')) \
-         -subj "/C=US/ST=New York/L=New York/O=Company Name/OU=Bitwarden/CN=bitwarden.company.com"
+         -config <(cat /usr/lib/ssl/openssl.cnf <(printf '[SAN]\nsubjectAltName=DNS:bitwarden.example.com\nbasicConstraints=CA:true')) \
+         -subj "/C=US/ST=New York/L=New York/O=Company Name/OU=Bitwarden/CN=bitwarden.example.com"
 
 7. Update the `server_name`, HTTPS redirects, and `Content-Security-Policy` header with your hostname at `./nginx/default.conf`.
 8.  Generate your own random password strings for the `sqlServer__connectionString` `RANDOM_DATABASE_PASSWORD`, `internalIdentityKey` `RANDOM_IDENTITY_KEY`, and `duo__aKey` `RANDOM_DUO_AKEY` and update the variables at `./env/global.override.env`. Also be sure to apply the same `RANDOM_DATABASE_PASSWORD` at `./env/mssql.override.env`
-9.  Update the `app-id.json` file at `./web/app-id.json` to include your hostname's URL (ex. `https://bitwarden.company.com`).
+9.  Update the `app-id.json` file at `./web/app-id.json` to include your hostname's URL (ex. `https://bitwarden.example.com`).
 10. Configure your SMTP mail server and any other desired application settings at `./env/global.override.env`.
 11. Map the desired user and group id for the Bitwarden containers to run under at `./env/uid.env`.
 

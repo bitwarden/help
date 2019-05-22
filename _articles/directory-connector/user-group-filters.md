@@ -88,11 +88,11 @@ exclude:Group C,Developers,Some Other Group
 You can include/exclude users directly by using `include` or `exclude` keywords like below:
 
 ```
-include:joe@company.com,bill@company.com,tom@company.com
+include:joe@example.com,bill@example.com,tom@example.com
 ```
 
 ```
-exclude:joe@company.com
+exclude:joe@example.com
 ```
 
 Alternatively, you can filter users based on their Azure AD group membership by using `includeGroup` or `excludeGroup` keywords. You must obtain the Azure AD group ID and include it with the keyword. You can get the group's ID in the [Azure Portal](https://portal.azure.com) or through [Azure AD PowerShell](https://docs.microsoft.com/en-us/powershell/module/azuread/get-azureadgroup?view=azureadps-2.0).
@@ -138,13 +138,13 @@ You can combine both of these filtering options by concatenating the two strings
 Only the include/exclude filter:
 
 ```
-include:joe@company.com,bill@company.com,tom@company.com
+include:joe@example.com,bill@example.com,tom@example.com
 ```
 
 An include/exclude filter + a G Suite `query` search:
 
 ```
-exclude:john@company.com,bill@company.com|orgName=Engineering orgTitle:Manager
+exclude:john@example.com,bill@example.com|orgName=Engineering orgTitle:Manager
 ```
 
 Only the G Suite `query` search (notice the `|` prefix that is required):
@@ -188,13 +188,13 @@ Only the Okta `filter` search (notice the `|` prefix that is required):
 Only the include/exclude filter:
 
 ```
-include:joe@company.com,bill@company.com,tom@company.com
+include:joe@example.com,bill@example.com,tom@example.com
 ```
 
 An include/exclude filter + an Okta `filter`:
 
 ```
-exclude:john@company.com,bill@company.com|profile.firstName eq "John"
+exclude:john@example.com,bill@example.com|profile.firstName eq "John"
 ```
 
 Only the Okta `filter` search (notice the `|` prefix that is required):

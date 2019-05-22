@@ -39,7 +39,7 @@ The following directory configuration options can be set:
 
 | Property | Description | Examples |
 |----------|-------------|----------|
-| Server Hostname | The hostname of your directory server. | `ad.company.com` or `ldap.company.local` |
+| Server Hostname | The hostname of your directory server. | `ad.example.com` or `ldap.company.local` |
 | Port | The port on which your directory server is listening. | 389 or 10389 |
 | Root Path | The root path at which the Directory Connector should start all queries. | `cn=users,dc=ad,dc=company,dc=com` |
 | LDAPS | If the server is using LDAP over SSL (LDAPS). |  |
@@ -71,7 +71,7 @@ If you are using Active Directory, many of these settings are predetermined for 
 | Revision Date Attribute | The attribute field that specifies when an entry was changed. | whenChanged |
 | Use Email Prefix/Suffix | Email addresses are required by Bitwarden. If your directory users do not have email addresses they will be skipped. Alternatively, you can specify that users without an email address use a prefix attribute concatenated with a suffix to attempt to form a valid email address. |  |
 | Email Prefix Attribute | The attribute field to use when forming a user's email address from the prefix/suffix setting. | accountName |
-| Email Suffix | The specified suffix to use when forming a user's email address from the prefix/suffix setting. | @company.com |
+| Email Suffix | The specified suffix to use when forming a user's email address from the prefix/suffix setting. | @example.com |
 | Sync Users | Sync users to your organization. |  |
 | User Filter | A filter for limiting the users that are synced. Read more at [Configuring user and group sync filters]({% link _articles/directory-connector/user-group-filters.md %}). | (&(givenName=John)) |
 | User Object Class | The name of the class used for the LDAP user object. | user |
