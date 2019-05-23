@@ -35,7 +35,7 @@ This article will cover how to connect the Bitwarden Directory Connector applica
    {% image directory-connector/azure/new-application.png %}
 4. **Name** your application "Bitwarden"
 5. Set the **Application type** to "Web app / API" 
-6. Set the **Sign-on URL** to any website value, such as "https://company.com". This URL is not used in this setup process so it can be anything.
+6. Set the **Sign-on URL** to any website value, such as "https://example.com". This URL is not used in this setup process so it can be anything.
 7. Click the **Create** button to create the application.
    {% image directory-connector/azure/create-application.png %}
 
