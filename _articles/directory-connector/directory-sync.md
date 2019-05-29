@@ -162,6 +162,10 @@ See the [download and install](#download-and-install) section above for links to
 
 {% note %}
 When extracting the zip, make sure that the included `keytar.node` dependency remains in the same directory as the main `bwdc` executable.
+
+Linux users must have `libsecret` installed, which is usually already available on most systems. Example:
+
+    apt-get install libsecret-1-0
 {% endnote %}
 
 ### Shared Data
