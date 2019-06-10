@@ -63,8 +63,9 @@ If you already have a Google Cloud project available, you can skip this step and
 8. Select the options button next to your service account, and select **Edit**.
    {% image directory-connector/gsuite/edit-service-account.png %}
 9. Check the box "Enable G Suite Domain-wide Delegation", enter anything for "Product name for the consent screen" and click **Save**.
+   {% note %}"Enable G Suite Domain-wide Delegation" is only required on some older G Suite accounts. Newer G Suite accounts will automatically have domain-wide delegation enabled for all service accounts. If you do not see the "Enable G Suite Domain-wide Delegation" checkbox option available for your service account, you can assume it is already enabled.{% endnote %}
    {% image directory-connector/gsuite/tick-gsuite.png %}
-10. Click **View Client ID** and you'll see the Client ID on screen. You will need the Client ID to configure security within G Suite. Highlight the Client ID and copy it to your clipboard.
+1.  Click **View Client ID** and you'll see the Client ID on screen. You will need the Client ID to configure security within G Suite. Highlight the Client ID and copy it to your clipboard.
    {% image directory-connector/gsuite/view-client-id.png %}
    {% image directory-connector/gsuite/copy-client-id.png %}
 
