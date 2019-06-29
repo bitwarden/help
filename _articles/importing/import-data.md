@@ -32,6 +32,7 @@ You can very easily import your data from an array of different password manager
 - [LastPass (csv)]({% link _articles/importing/import-from-lastpass.md %})
 - Meldium (csv)
 - mSecure (csv)
+- Myki (csv)
 - [Opera (csv)]({% link _articles/importing/import-from-chrome.md %})
 - Padlock (csv)
 - Passbolt (csv)
