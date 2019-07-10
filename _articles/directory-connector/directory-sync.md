@@ -44,6 +44,7 @@ You can install and run Directory Connector as an agent on the server that hosts
   * [Quick Start](#quick-start)
   * [Download and Install](#download-and-install-1)
   * [Shared Data](#shared-data)
+  * [Secret Storage](#secret-storage)
   * [Explore the CLI](#explore-the-cli)
   * [Test Command](#test-command)
   * [Sync Command](#sync-command)
@@ -177,10 +178,27 @@ Though not required, often times it may be helpful to use the Directory Connecto
 The default location for the shared `data.json` database file depends on which platform you are using.
 
 - Windows : `%AppData%\Bitwarden Directory Connector`
+  - Portable: `.\bitwarden-connector-appdata`
 - macOS: `~/Library/Application Support/Bitwarden Directory Connector`
 - Linux: `~/.config/Bitwarden Directory Connector`
 
 The [`data-file` command](#data-file-command) can be used to discover the absolute path to the `data.json` database file on your system.
+
+### Secret Storage
+
+By default, the Directory Connector desktop application and CLI both use a secure method for persisting sensitive data such as your directory account password, API keys, etc. On Linux systems, this requires the GNOME keyring and X11 which are usually reserved for desktop environments. If you are using a headless Linux environment you may encounter errors such as:
+
+> Cannot autolaunch D-Bus without X11 $DISPLAY
+
+If a secure storage environment is not available, you can configure the Directory Connector CLI to use plaintext storage of secrets. Set the following environment variable to override secure storage:
+
+    BITWARDENCLI_CONNECTOR_PLAINTEXT_SECRETS=true
+
+With plaintext storage enabled, you can then configure all settings directly, in plaintext, from the `data.json` database file.
+
+{% note %}
+Plaintext storage of secrets is not compatible with the Directory Connector desktop application. You should only use the Directory Connector CLI with plaintext storage of secrets.
+{% endnote %}
 
 ### Explore the CLI
 
