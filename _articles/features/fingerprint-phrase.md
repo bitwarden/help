@@ -24,5 +24,5 @@ You can find your account's fingerprint phrase using Bitwarden applications in t
 - Web vault: Settings &rarr; My Account
 - Desktop apps: Account &rarr; Fingerprint Phrase
 - Browser extensions: Settings &rarr; Account &rarr; Fingerprint Phrase
-- Mobile: Coming soon...
+- Mobile: Settings &rarr; Account &rarr; Fingerprint Phrase
 - CLI: `bw get fingerprint me`
