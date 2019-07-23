@@ -160,7 +160,7 @@ After changing settings in `./bwdata/config.yml`, you can apply them by running:
 
 **Environment Variables**
 
-Some features such as a SMTP mail server settings, YubiKey OTP API credentials, etc. are not configured by the installer. You can find the environment file for these settings (and all others) in the following location: `./bwdata/env/global.override.env`. Edit this file and REPLACE the placeholders values for them.
+Some features such as a SMTP mail server settings, YubiKey OTP API credentials, HaveIBeenPwned breach report API key, etc. are not configured by the installer. You can find the environment file for these settings (and all others) in the following location: `./bwdata/env/global.override.env`. Edit this file and REPLACE the placeholders values for them.
 
 Example:
 
