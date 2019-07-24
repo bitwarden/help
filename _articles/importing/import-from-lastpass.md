@@ -36,21 +36,5 @@ Alternatively, you can use the [LastPass Pocket application](https://lastpass.co
 
 Congratulations! You have just transferred all of your data from LastPass into Bitwarden.
 
-## Importing form fills (optional)
-
-LastPass does not include form fills with the standard export from the LastPass web vault. If you want to import form fill information into Bitwarden you can export the form fill CSV data from the LastPass browser extension.
-
-{% note %}
-You can only export form fill data from the LastPass browser extension.
-{% endnote %}
-
-1. Click the LastPass icon from the browser toolbar to open the LastPass popup interface.
-2. Navigate to **More options** &rarr; **Advanced** &rarr; **Export** &rarr; **Form Fills**.
-3. This will take you to a page that then asks you to enter your LastPass master password for verification. Enter your LastPass master password.
-4. Your data will be decrypted and shown on screen in [CSV][csv] format.
-5. Highlight all of the data on the page and copy it to your clipboard.
-   - Highlight all of the data with your mouse (or simply press <code>Ctrl + A</code>), then right click with your mouse and select **Copy**.
-6. Follow the same import steps in [Import your data into Bitwarden](#import-your-data-into-bitwarden).
-
 [csv]: https://en.wikipedia.org/wiki/Comma-separated_values
 [bitwarden-vault]: https://vault.bitwarden.com
