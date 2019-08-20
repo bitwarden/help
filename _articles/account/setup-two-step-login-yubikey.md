@@ -7,7 +7,7 @@ popular: false
 tags: [two-step login, 2fa, two factor authentication, account, yubikey, yubi, yubico]
 ---
 
-Bitwarden supports two-step login via [YubiKey](https://www.yubico.com){:target="_blank"}. Any YubiKey that supports [OTP capabilities](https://www.yubico.com/products/yubikey-hardware/compare-yubikeys/){:target="_blank"} can be used. This includes all YubiKey 4 and 5 series devices as well as YubiKey NEO.
+Bitwarden supports two-step login via [YubiKey](https://www.yubico.com){:target="_blank"}. Any YubiKey that supports [OTP capabilities](https://www.yubico.com/products/yubikey-hardware/compare-yubikeys/){:target="_blank"} can be used. This includes all YubiKey 4 and 5 series devices as well as YubiKey NEO and YubiKey NFC.
 
 {% note %}
 Due to platform limitations, YubiKeys cannot be used on all Bitwarden applications. You should enable another two-step login provider so that you can access your account when YubiKeys cannot be used.
@@ -19,7 +19,7 @@ Supported platforms:
 - Desktop app on a device with a USB port that can accept your YubiKey.
 - CLI on a device with a USB port that can accept your YubiKey.
 - Android on a device with [NFC capabilities](https://en.wikipedia.org/wiki/List_of_NFC-enabled_mobile_devices){:target="_blank"} or a USB port that can accept your YubiKey. Read more [here](https://forum.yubico.com/viewtopic1c5f.html?f=26&t=1302){:target="_blank"}.
-- iOS on a device with [NFC capabilities](https://en.wikipedia.org/wiki/List_of_NFC-enabled_mobile_devices){:target="_blank"}.
+- iOS on a device with [NFC capabilities](https://en.wikipedia.org/wiki/List_of_NFC-enabled_mobile_devices){:target="_blank"} or via lightning port with YubiKey 5Ci.
 {% endnote %}
 
 ## Enable Two-step Login with YubiKey
@@ -75,4 +75,3 @@ If you are having trouble getting the YubiKey NEO or YubiKey 5 NFC to work on yo
 3. You have NFC enabled on your Android device. Enable NFC by going to Android **Settings** &rarr; **More** and enable the **NFC** option.
 
 If the YubiKey NEO or YubiKey 5 NFC can be used on your Android device you will be prompted with a YubiKey option while logging in to Bitwarden. Simply place the YubiKey on the back of your Android device near the NFC receiver. If you do not know where your NFC receiver is located, you may need to move it around some, trying different areas. Once Bitwarden detects the YubiKey it will automatically validate and log you in.
-
