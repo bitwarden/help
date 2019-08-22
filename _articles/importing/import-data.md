@@ -48,6 +48,7 @@ You can very easily import your data from an array of different password manager
 - RoboForm (csv)
 - SafeInCloud (xml)
 - SaferPass (csv)
+- SecureSafe (csv)
 - SplashID (csv)
 - Sticky Password (xml)
 - True Key (csv)
