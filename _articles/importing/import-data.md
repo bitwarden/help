@@ -30,6 +30,7 @@ You can very easily import your data from an array of different password manager
 - KeePassX (csv)
 - Keeper (csv)
 - [LastPass (csv)]({% link _articles/importing/import-from-lastpass.md %})
+- LogMeOnce (csv)
 - Meldium (csv)
 - mSecure (csv)
 - Myki (csv)
