@@ -16,6 +16,7 @@ You can very easily import your data from an array of different password manager
 - Ascendo DataVault (csv)
 - Avast Passwords (csv)
 - Avira (json)
+- BlackBerry Password Keeper (csv)
 - Blur (csv)
 - [Chrome (csv)]({% link _articles/importing/import-from-chrome.md %})
 - Clipperz (html)
