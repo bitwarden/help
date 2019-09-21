@@ -240,8 +240,8 @@ bw get folder dadc91e0-dcda-4bc2-8cd6-52100027c782 | jq '.name = "Updated Folder
     bw encode | bw edit folder dadc91e0-dcda-4bc2-8cd6-52100027c782
 ```
 ```
-echo '["86544cd3-7e07-42bb-ba3c-e7f59852acaa","ae8c6c9e-26de-442c-b63b-3e28ef61d72d"]' | bw encode | \
-    bw edit item-collections db71c8d6-3e69-4593-a6de-505e94966290
+echo '["86544cd3-7e07-42bb-ba3c-e7f59852acaa","ae8c6c9e-26de-442c-b63b-3e28ef61d72d"]' | \
+    bw encode | bw edit item-collections db71c8d6-3e69-4593-a6de-505e94966290
 ```
 
 ### Delete
