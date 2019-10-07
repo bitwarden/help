@@ -7,7 +7,7 @@
     "deploy": "npm run build && gh-pages --dotfiles --dist _site"
   },
   "devDependencies": {
-    "bootstrap-sass": "3.3.7",
+    "bootstrap-sass": "3.4.1",
     "del": "^3.0.0",
     "fluidbox": "2.0.5",
     "font-awesome": "4.7.0",
