@@ -165,7 +165,7 @@ You can use the `--last` option to get an [ISO 8601](https://en.wikipedia.org/wi
 
 The `list` command allows you to retrieve an array of objects from your vault.
 
-    bw list (items|folders|collections|organizations) [options]
+    bw list (items|folders|collections|organizations|org-collections|org-members) [options]
 
 You can *search* the list of returned objects by using the `--search` option. You can also *filter* the list by using the `--folderid`, `--collectionid`, or `--organizationid` options. Combining search and filter options performs a logical AND operation.
 
@@ -179,7 +179,7 @@ Special syntax is available for filters that allows you to specify `null` and `n
 
 The `get` command allows you to retrieve a single object from your vault.
 
-    bw get (item|username|password|uri|totp|exposed|attachment|folder|collection|organization|template|fingerprint) <id>
+    bw get (item|username|password|uri|totp|exposed|attachment|folder|collection|organization|org-collection|template|fingerprint) <id> [options]
 
 You can retrieve an object by its globally using `id` property (usually a GUID), or you can provide a search term. The search term must be specific enough to only return a single result or the CLI will return an error.
 
@@ -199,7 +199,7 @@ If you are getting an attachment, you must also specify the `--itemid <id>` opti
 
 The `create` command allows you to create new objects in your vault.
 
-    bw create (item|folder) [encodedJson]
+    bw create (item|attachment|folder|org-collection) [encodedJson] [options]
 
 The process for creating an object may look something like this:
 
@@ -230,7 +230,7 @@ To create a new attachment for an item, specify the `--file` path on disk as wel
 The `edit` command allows you to edit an item in your vault. It works similarly to the `create` command with the added requirement of an object id. The `edit` command will perform a *replace* operation on the object. Upon success, the updated object will be returned.
 
 ```
-bw edit (item|item-collections|folder) <id> [encodedJson]
+bw edit (item|item-collections|folder|org-collection) <id> [encodedJson] [options]
 ```
 ```
 bw edit folder dadc91e0-dcda-4bc2-8cd6-52100027c782 eyJuYW1lIjoiV2hhdCBGb2xkZXIifQ==
@@ -245,7 +245,7 @@ echo '["86544cd3-7e07-42bb-ba3c-e7f59852acaa","ae8c6c9e-26de-442c-b63b-3e28ef61d
 The `delete` command allows you to delete an object from your vault.
 
 ```
-bw delete (item|attachment|folder) <id> [options]
+bw delete (item|attachment|folder|org-collection) <id> [options]
 ```
 ```
 bw delete folder dadc91e0-dcda-4bc2-8cd6-52100027c782
@@ -292,13 +292,14 @@ bw import bitwardencsv ./file.csv
 The `export` command allows you to export your *unencrypted* vault data to a CSV or JSON formatted file on disk.
 
 ```
-bw export [password] [--output <filePath>] [--format <format>]
+bw export [password] [--output <filePath>] [--format <format>] [--organizationid <orgId>]
 ```
 ```
 bw export
 bw export --format csv
 bw export myPassword321 --output ./backups/
 bw export myPassword321 --output ./my_backup.json --format json
+bw export myPassword321 --organizationid 7063feab-4b10-472e-b64c-785e2b870b92
 ```
 
 ### Generate
