@@ -33,6 +33,7 @@ Bitwarden provides a powerful, full-featured command-line interface (CLI) tool t
     - [Delete](#delete)
     - [Share](#share)
 - [Other Useful Commands](#other-useful-commands)
+    - [Confirm](#confirm)
     - [Import](#import)
     - [Export](#export)
     - [Generate](#generate)
@@ -275,6 +276,14 @@ echo '["974053d0-3b33-4b98-886e-fecf5c8dba96"]' | bw encode | \
 
 The CLI comes with several other commands that you may find useful.
 
+### Confirm
+
+The `confirm` command allows you to confirm invited members of your organization that have already accepted their invitation.
+
+```
+bw confirm org-member <id> --organizationid <orgId>
+```
+
 ### Import
 
 The `import` command allows you to import data from a previous Bitwarden export or another [supported password management application]({% link _articles/importing/import-data.md %}).
@@ -392,6 +401,7 @@ You can use the `get` command to retrieve templates for various types of *reques
 - `folder`
 - `collection`
 - `item-collections`
+- `org-collection`
 
 ```
 bw get template item
@@ -449,11 +459,12 @@ Other two-step login methods such as FIDO U2F and Duo are not supported by the C
 
 **Organization User Types**
 
-| Name  | Value |
-|-------|-------|
-| Owner | 0     |
-| Admin | 1     |
-| User  | 2     |
+| Name    | Value |
+|---------|-------|
+| Owner   | 0     |
+| Admin   | 1     |
+| User    | 2     |
+| Manager | 3     |
 
 **Organization User Status Types**
 
