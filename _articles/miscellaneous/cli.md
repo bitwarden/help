@@ -341,11 +341,15 @@ bw get template folder | jq '.name = "My Folder"' | bw encode | bw create folder
 
 The `config` command allow you to specify settings for the CLI to use.
 
-    bw config <setting> <value>
+    bw config <setting> [value]
 
 For example, if you are using a self hosted Bitwarden server you will need to change the endpoint that the CLI communicates with.
 
     bw config server https://bitwarden.example.com
+
+You can read the value of a configured setting by not specifying a value.
+
+    bw config server
 
 ### Update
 
