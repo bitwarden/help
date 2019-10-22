@@ -54,6 +54,7 @@ You can install and run Directory Connector as an agent on the server that hosts
   * [Clear Cache Command](#clear-cache-command)
   * [Update Command](#update-command)
   * [Version Option](#version-option)
+  * [Enums](#enums)
 - [Source code](#source-code)
 
 ## Download and Install
@@ -294,6 +295,20 @@ bwdc --version
 ### Troubleshooting
 
 If you receive an error message referring to the libsecret shared object `Error: libsecret-1.so.0: cannot open shared object file: No such file or directory`, you may need to install libsecret which is required to store things securely on the host. 
+
+### Enums
+
+**Two Step Login Methods**
+
+| Name          | Value |
+|---------------|-------|
+| Authenticator | 0     |
+| Email         | 1     |
+| Yubikey       | 3     |
+
+{% note %}
+Other two-step login methods such as FIDO U2F and Duo are not supported by the CLI.
+{% endnote %}
 
 ## Source code
 
