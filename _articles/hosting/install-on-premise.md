@@ -118,7 +118,7 @@ We've made installing Bitwarden very simple. Depending on your environment (non-
 
     **Installation Id/Key**
 
-    Each Bitwarden installation requires a unique installation id and installation key. The installation id and key is used to:
+    Each Bitwarden installation configures a unique installation id and installation key. The installation id and key is used to:
 
     1. Register your installation and contact email so that we can contact you in case of important security updates.
     2. Validate licensing of paid features.
