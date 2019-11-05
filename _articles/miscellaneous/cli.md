@@ -42,6 +42,7 @@ Bitwarden provides a powerful, full-featured command-line interface (CLI) tool t
     - [Update](#update)
     - [Version](#version)
 - [Working with JSON](#working-with-json)
+- [Self-signed Certificates](#self-signed-certificates)
 - [Source Code](#source-code)
 - [Appendix](#appendix)
     - [Templates](#templates)
@@ -350,10 +351,6 @@ For example, if you are using a self hosted Bitwarden server you will need to ch
 You can read the value of a configured setting by not specifying a value.
 
     bw config server
-    
-If your Bitwarden server exposes as self-signed TLS certiciate, specify the Node.js environment variable [`NODE_EXTRA_CA_CERTS`](https://nodejs.org/api/cli.html#cli_node_extra_ca_certs_file):
-
-    export NODE_EXTRA_CA_CERTS="absolute_path_to_your_certificates.pem"
 
 ### Update
 
@@ -388,6 +385,18 @@ Commands in the CLI will either return a JSON string or a simple string such as 
     # Update an existing folder's name
     bw get folder dadc91e0-dcda-4bc2-8cd6-52100027c782 | jq '.name = "Updated Folder"' | \
         bw encode | bw edit folder dadc91e0-dcda-4bc2-8cd6-52100027c782
+
+## Self-signed Certificates
+
+If your self-hosted Bitwarden server exposes as self-signed TLS certificate, specify the Node.js environment variable [`NODE_EXTRA_CA_CERTS`](https://nodejs.org/api/cli.html#cli_node_extra_ca_certs_file):
+
+{% icon fa-linux %} {% icon fa-apple %} Bash
+
+    export NODE_EXTRA_CA_CERTS="absolute/path/to/your/certificates.pem"
+
+{% icon fa-windows %} PowerShell
+
+    $env:NODE_EXTRA_CA_CERTS="absolute/path/to/your/certificates.pem"
 
 ## Source Code
 
