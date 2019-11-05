@@ -350,6 +350,10 @@ For example, if you are using a self hosted Bitwarden server you will need to ch
 You can read the value of a configured setting by not specifying a value.
 
     bw config server
+    
+If your Bitwarden server exposes as self-signed TLS certiciate, specify the Node.js environment variable [`NODE_EXTRA_CA_CERTS`](https://nodejs.org/api/cli.html#cli_node_extra_ca_certs_file):
+
+    export NODE_EXTRA_CA_CERTS="absolute_path_to_your_certificates.pem"
 
 ### Update
 
