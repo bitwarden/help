@@ -13,6 +13,7 @@ All information associated with your stored vault data is protected with end-to-
 - Collection names
 - Item names
 - Item notes
+- Attachments
 - Custom field names/values
 - Login information
   - Usernames
