@@ -20,6 +20,7 @@ You can very easily import your data from an array of different password manager
 - Blur (csv)
 - [Chrome (csv)]({% link _articles/importing/import-from-chrome.md %})
 - Clipperz (html)
+- Codebook (csv)
 - Dashlane (json)
 - Enpass (csv)
 - Enpass (json)
