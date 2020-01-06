@@ -31,18 +31,25 @@ You can override the storage location for your Bitwarden desktop application dat
 
 - Windows
   - Chrome: `%LocalAppData%\Google\Chrome\User Data\Default\Local Extension Settings\nngceckbapebfimnlniiiahkandclblb`
-  - Firefox: `%AppData%\Mozilla\Firefox\Profiles\your_profile\browser-extension-data\{446900e4-71c2-419f-a6a7-df9c091e268b}`
+  - Firefox: `%AppData%\Mozilla\Firefox\Profiles\your_profile\storage\default\moz-extension+++[UUID]^userContextId=[integer]`
   - Opera: `%AppData%\Opera Software\Opera Stable\Local Extension Settings\ccnckbpmaceehanjmeomladnmlffdjgn`
   - Vivaldi: `%LocalAppData%\Vivaldi\User Data\Default\Local Extension Settings\nngceckbapebfimnlniiiahkandclblb`
   - Brave: `%AppData%\brave\Local Extension Settings\nngceckbapebfimnlniiiahkandclblb`
   - Edge: `%LocalAppData%\Packages\Microsoft.MicrosoftEdge_8wekyb3d8bbwe\AC\MicrosoftEdge\Extensions\Storage`
 - macOS
   - Chrome: `~/Library/Application Support/Google/Chrome/Default/Local Extension Settings/nngceckbapebfimnlniiiahkandclblb`
-  - Firefox: `~/Library/Application Support/Firefox/Profiles/your_profile/browser-extension-data/{446900e4-71c2-419f-a6a7-df9c091e268b}`
+  - Firefox: `~/Library/Application Support/Firefox/Profiles/your_profile/storage/default/moz-extension+++[UUID]^userContextID=[integer]`
   - Safari: `~/Library/Safari/Databases`
 - Linux
   - Chrome: `~/.config/google-chrome/Default/Local Extension Settings/nngceckbapebfimnlniiiahkandclblb`
-  - Firefox: `~/.mozilla/firefox/your_profile/browser-extension-data/{446900e4-71c2-419f-a6a7-df9c091e268b}`
+  - Firefox: `~/.mozilla/firefox/your_profile/storage/default/moz-extension+++[UUID]^userContextID=[integer]`
+
+{% note %}
+To enhance security, Firefox uses Universally Unique Identifiers (UUIDs) within extension storage folder names.
+Use the `about:debugging#/runtime/this-firefox` page (navigate from Firefox's address bar) to locate your Bitwarden extension UUID.
+Replace [UUID] with that UUID.
+Note also that Firefox allows users to customize where to store their profiles (and thus local Bitwarden data). The location specified above is the default.
+{% endnote %}
 
 ## Mobile
 
