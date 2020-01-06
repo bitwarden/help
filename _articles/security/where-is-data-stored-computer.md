@@ -48,7 +48,7 @@ You can override the storage location for your Bitwarden desktop application dat
 To enhance security, Firefox uses Universally Unique Identifiers (UUIDs) within extension storage folder names.
 Use the `about:debugging#/runtime/this-firefox` page (navigate from Firefox's address bar) to locate your Bitwarden extension UUID.
 Replace [UUID] with that UUID.
-Note also that Firefox allows users to customize where to store their profiles (and thus local Bitwarden data). The location specified above is the default.
+Note also that Firefox allows users to customize where to store their profiles (and thus local Bitwarden extension data). The location specified above is the default.
 {% endnote %}
 
 ## Mobile
