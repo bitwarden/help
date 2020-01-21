@@ -10,6 +10,12 @@ pool:
   vmImage: 'Ubuntu-16.04'
 
 steps:
+- task: UseRubyVersion@0
+  displayName: 'Use Ruby >= 2.4'
+
+- script: 'gem install jekyll bundler'
+  displayName: 'Install jekyll and bundler gems'
+
 - task: NodeTool@0
   inputs:
     versionSpec: '10.x'
