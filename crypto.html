@@ -138,7 +138,7 @@
                 Rsa2048_OaepSha1_HmacSha256_B64: 6
             };
 
-            // Classes
+            // Object Classes
 
             class Cipher {
                 constructor(encType, iv, ct, mac) {
@@ -424,7 +424,7 @@
                 data: {
                     email: '',
                     masterPassword: '',
-                    pbkdf2Iterations: 5000,
+                    pbkdf2Iterations: 100000,
 
                     masterKey: new ByteData(),
                     masterKeyHash: new ByteData(),
