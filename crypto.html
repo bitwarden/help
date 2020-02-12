@@ -417,6 +417,35 @@
                     });
             }
 
+            async function stretchKey(key) {
+                const newKey = new Uint8Array(64);
+                newKey.set(await hkdfExpand(key, new Uint8Array(fromUtf8('enc')), 32));
+                newKey.set(await hkdfExpand(key, new Uint8Array(fromUtf8('mac')), 32), 32);
+                return new SymmetricCryptoKey(newKey.buffer);
+            }
+
+            // ref: https://tools.ietf.org/html/rfc5869
+            async function hkdfExpand(prk, info, size) {
+                const alg = {
+                    name: 'HMAC',
+                    hash: { name: 'SHA-256' }
+                };
+                const importedKey = await window.crypto.subtle.importKey('raw', prk, alg, false, ['sign']);
+                const hashLen = 32; // sha256
+                const okm = new Uint8Array(size);
+                let previousT = new Uint8Array(0);
+                const n = Math.ceil(size / hashLen);
+                for (let i = 0; i < n; i++) {
+                    const t = new Uint8Array(previousT.length + info.length + 1);
+                    t.set(previousT);
+                    t.set(info, previousT.length);
+                    t.set([i + 1], t.length - 1);
+                    previousT = new Uint8Array(await window.crypto.subtle.sign(alg, importedKey, t.buffer));
+                    okm.set(previousT, i * hashLen);
+                }
+                return okm;
+            }
+
             // App
 
             const vm = new Vue({
