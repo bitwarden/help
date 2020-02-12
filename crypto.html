@@ -8,34 +8,21 @@
 
     <title>Bitwarden Crypto</title>
 
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,300italic,400italic,600italic"
         rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-        <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
         body {
-            padding: 50px 0;
-        }
-
-
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-            margin-top: 0;
+            padding-bottom: 50px;
         }
 
         h1 {
-            font-size: 32px;
+            border-bottom: 2px solid #ced4da;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            margin-top: 50px;
         }
 
         h2 {
@@ -46,9 +33,18 @@
             font-size: 18px;
         }
 
-        h4 {
-            font-size: 14px;
-            font-weight: bold;
+        pre {
+            padding: 9.5px;
+            line-height: 1.42857143;
+            word-break: break-all;
+            word-wrap: break-word;
+            background-color: #f5f5f5;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+        }
+
+        section {
+            margin-bottom: 50px;
         }
     </style>
 </head>
@@ -80,34 +76,49 @@
             </div>
         </form>
 
-        <h2>Master Key</h2>
-        <pre>{{masterKey.b64}}</pre>
+        <section>
+            <h2>Master Key</h2>
+            <pre>{{masterKey.b64}}</pre>
+        </section>
 
-        <h2>Master Password Hash</h2>
-        <pre>{{masterKeyHash.b64}}</pre>
+        <section>
+            <h2>Master Password Hash</h2>
+            <pre>{{masterKeyHash.b64}}</pre>
+        </section>
 
-        <h2>Generated Symmetric Key</h2>
-        <pre>{{symKey.key.b64}}</pre>
-        <h3>Encryption Key</h3>
-        <pre>{{symKey.encKey.b64}}</pre>
-        <h3>MAC Key</h3>
-        <pre>{{symKey.macKey.b64}}</pre>
-        <h3>Protected Symmetric Key</h3>
-        <pre>{{protectedSymKey.string}}</pre>
+        <section>
+            <h2>Stretched Master Key</h2>
+            <pre>{{stretchedMasterKey.key.b64}}</pre>
+            <h3>Encryption Key</h3>
+            <pre>{{stretchedMasterKey.encKey.b64}}</pre>
+            <h3>MAC Key</h3>
+            <pre>{{stretchedMasterKey.macKey.b64}}</pre>
+        </section>
 
-        <h2>Generated RSA Keypair</h2>
-        <h3>Public Key</h3>
-        <pre>{{publicKey.b64}}</pre>
-        <h3>Private Key</h3>
-        <pre>{{privateKey.b64}}</pre>
-        <h3>Protected Private Key</h3>
-        <pre>{{protectedPrivateKey.string}}</pre>
+        <section>
+            <h2>Generated Symmetric Key</h2>
+            <pre>{{symKey.key.b64}}</pre>
+            <h3>Encryption Key</h3>
+            <pre>{{symKey.encKey.b64}}</pre>
+            <h3>MAC Key</h3>
+            <pre>{{symKey.macKey.b64}}</pre>
+            <h3>Protected Symmetric Key</h3>
+            <pre>{{protectedSymKey.string}}</pre>
+        </section>
+
+        <section>
+            <h2>Generated RSA Key Pair</h2>
+            <h3>Public Key</h3>
+            <pre>{{publicKey.b64}}</pre>
+            <h3>Private Key</h3>
+            <pre>{{privateKey.b64}}</pre>
+            <h3>Protected Private Key</h3>
+            <pre>{{protectedPrivateKey.string}}</pre>
+        </section>
 
         <button type="button" id="deriveKeys" class="btn btn-primary" v-on:click="generateKeys">
             <i class="fa fa-refresh"></i> Regenerate Keys
         </button>
-
-        <hr />
 
         <h1>Encryption</h1>
 
@@ -368,7 +379,7 @@
                 return dataForMac;
             }
 
-            async function generateRsaKeypair() {
+            async function generateRsaKeyPair() {
                 const rsaOptions = {
                     name: 'RSA-OAEP',
                     modulusLength: 2048,
@@ -429,6 +440,7 @@
 
                     masterKey: new ByteData(),
                     masterKeyHash: new ByteData(),
+                    stretchedMasterKey: new SymmetricCryptoKey(),
 
                     symKey: new SymmetricCryptoKey(),
                     protectedSymKey: new Cipher(),
@@ -462,6 +474,7 @@
                             return new ByteData();
                         }
 
+                        self.stretchedMasterKey = await stretchKey(newValue.arr.buffer);
                         self.masterKeyHash = await pbkdf2(newValue.arr.buffer, self.masterPasswordBuffer, 1, 256);
                     }
                 },
@@ -473,7 +486,7 @@
                         window.crypto.getRandomValues(symKey);
                         self.symKey = new SymmetricCryptoKey(symKey);
 
-                        const keyPair = await generateRsaKeypair();
+                        const keyPair = await generateRsaKeyPair();
                         self.publicKey = keyPair.publicKey;
                         self.privateKey = keyPair.privateKey;
                     }
@@ -514,17 +527,21 @@
 
             vm.$watch(() => {
                 return {
-                    masterKey: vm.masterKey,
+                    stretchedMasterKey: vm.stretchedMasterKey,
                     symKey: vm.symKey
                 };
             }, async (newVal, oldVal) => {
-                if (!newVal.masterKey || !newVal.masterKey.arr || !newVal.symKey || !newVal.symKey.key) {
+                if (!newVal.stretchedMasterKey || !newVal.stretchedMasterKey.key ||
+                    !newVal.stretchedMasterKey.key.arr || !newVal.symKey || !newVal.symKey.key ||
+                    !newVal.symKey.key.arr) {
                     vm.protectedSymKey = new Cipher();
                     return;
                 }
 
-                vm.protectedSymKey = await aesEncrypt(newVal.symKey.key.arr, newVal.masterKey, null);
-                const unprotectedSymKey = await aesDecrypt(vm.protectedSymKey, newVal.masterKey, null);
+                vm.protectedSymKey = await aesEncrypt(newVal.symKey.key.arr, newVal.stretchedMasterKey.encKey,
+                    newVal.stretchedMasterKey.macKey);
+                const unprotectedSymKey = await aesDecrypt(vm.protectedSymKey, newVal.stretchedMasterKey.encKey,
+                    newVal.stretchedMasterKey.macKey);
                 vm.unprotectedSymKey = new ByteData(unprotectedSymKey);
             });
 
