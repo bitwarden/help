@@ -7,7 +7,7 @@ popular: false
 tags: []
 ---
 
-You data is also automatically synced to our [cloud servers]({% link _articles/security/where-is-data-stored-cloud.md %}). In the event that you need to recover your data due to a device crash, simply reinstall the Bitwarden application and log in and your data will be re-synced.
+Your data is also automatically synced to our [cloud servers]({% link _articles/security/where-is-data-stored-cloud.md %}). In the event that you need to recover your data due to a device crash, simply reinstall the Bitwarden application and log in and your data will be re-synced.
 
 All sensitive data stored on your computer/device is encrypted. The data can be found in the following locations:
 
