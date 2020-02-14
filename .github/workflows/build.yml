@@ -1,0 +1,49 @@
+name: Build Website
+
+on: [push, pull_request]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Set up Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: '10.x'
+
+      - name: Set up Ruby
+        uses: actions/setup-ruby@v1
+        with:
+          ruby-version: 2.6
+
+      - name: Set up Jekyll
+        run: gem install bundler jekyll
+
+      - name: Set up git credentials
+        if: github.event == 'push' && github.ref == 'refs/heads/master'
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: |
+          git config --global credential.helper store
+          echo "https://${GH_TOKEN}:x-oauth-basic@github.com" >> ~/.git-credentials
+          git config --global user.email "ci@bitwarden.com"
+          git config --global user.name "Bitwarden CI"
+
+      - name: Print environment
+        run: node --version && npm --version && ruby --version && jekyll --version && git --version
+
+      - name: Checkout repo
+        uses: actions/checkout@v2
+
+      - name: Install Node dependencies
+        run: npm install
+
+      - name: Build site
+        if: github.event != 'push' || (github.event == 'push' && github.ref != 'refs/heads/master')
+        run: npm run build
+
+      - name: Build site and deploy to gh-pages
+        if: github.event == 'push' && github.ref == 'refs/heads/master'
+        run: npm run deploy
