@@ -22,7 +22,7 @@ jobs:
         run: gem install bundler jekyll
 
       - name: Set up git credentials
-        if: github.event == 'push' && github.ref == 'refs/heads/master'
+        if: github.event_name == 'push' && github.ref == 'refs/heads/master'
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
@@ -32,7 +32,12 @@ jobs:
           git config --global user.name "Bitwarden CI"
 
       - name: Print environment
-        run: node --version && npm --version && ruby --version && jekyll --version && git --version
+        run: |
+          node --version
+          npm --version
+          ruby --version
+          jekyll --version
+          git --version
 
       - name: Checkout repo
         uses: actions/checkout@v2
@@ -41,9 +46,9 @@ jobs:
         run: npm install
 
       - name: Build site
-        if: github.event != 'push' || (github.event == 'push' && github.ref != 'refs/heads/master')
+        if: github.event_name != 'push' || (github.event_name == 'push' && github.ref != 'refs/heads/master')
         run: npm run build
 
       - name: Build site and deploy to gh-pages
-        if: github.event == 'push' && github.ref == 'refs/heads/master'
+        if: github.event_name == 'push' && github.ref == 'refs/heads/master'
         run: npm run deploy
