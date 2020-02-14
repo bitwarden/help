@@ -1,4 +1,4 @@
-![Build](https://github.com/bitwarden/help/workflows/Build/badge.svg)
+[![Build](https://github.com/bitwarden/help/workflows/Build/badge.svg)](https://github.com/bitwarden/help/actions?query=workflow%3ABuild)
 [![Join the chat at https://gitter.im/bitwarden/Lobby](https://badges.gitter.im/bitwarden/Lobby.svg)](https://gitter.im/bitwarden/Lobby)
 
 # Bitwarden Help Center
