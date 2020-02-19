@@ -22,6 +22,7 @@ You can very easily import your data from an array of different password manager
 - Clipperz (html)
 - Codebook (csv)
 - Dashlane (json)
+- Encryptr (csv)
 - Enpass (csv)
 - Enpass (json)
 - Firefox (csv)
