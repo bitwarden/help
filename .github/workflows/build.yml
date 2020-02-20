@@ -1,6 +1,6 @@
 name: Build
 
-on: [push, pull_request]
+on: push
 
 jobs:
   build:
@@ -22,7 +22,7 @@ jobs:
         run: gem install bundler jekyll
 
       - name: Set up git credentials
-        if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+        if: github.ref == 'refs/heads/master'
         env:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         run: |
@@ -46,9 +46,9 @@ jobs:
         run: npm install
 
       - name: Build site
-        if: github.event_name != 'push' || (github.event_name == 'push' && github.ref != 'refs/heads/master')
+        if: github.ref != 'refs/heads/master'
         run: npm run build
 
       - name: Build site and deploy to gh-pages
-        if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+        if: github.ref == 'refs/heads/master'
         run: npm run deploy
