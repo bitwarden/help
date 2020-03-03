@@ -18,7 +18,4 @@ You can also use the App Store version of the Bitwadren desktop app.
 
 Be sure to run the desktop application once. If the extension still does not appear, it may just need to be enabled. In Safari, check under Preferences > Extensions.
 
-
 For developer detail on Safari App Extensions, click [here](https://developer.apple.com/documentation/safariservices/safari_app_extensions).
-
-
