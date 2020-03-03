@@ -14,7 +14,7 @@ You can download the latest Bitwarden Desktop App for macOS with the Safari App 
  Bitwarden Safari App Extension within the Bitwarden Desktop App
 [https://vault.bitwarden.com/download/?app=desktop&platform=macos](https://vault.bitwarden.com/download/?app=desktop&platform=macos)
 
-You can also use the App Store version of the Bitwaren desktop app.
+You can also use the App Store version of the Bitwadren desktop app.
 
 Be sure to run the desktop application once. If the extension still does not appear, it may just need to be enabled. In Safari, check under Preferences > Extensions.
 
