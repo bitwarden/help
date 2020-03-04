@@ -42,7 +42,8 @@ The following directory configuration options can be set:
 | Server Hostname | The hostname of your directory server. | `ad.example.com` or `ldap.company.local` |
 | Port | The port on which your directory server is listening. | 389 or 10389 |
 | Root Path | The root path at which the Directory Connector should start all queries. | `cn=users,dc=ad,dc=company,dc=com` |
-| LDAPS | If the server is using LDAP over SSL (LDAPS). |  |
+| SSL | If the server is using LDAP over SSL (LDAPS). |  |
+| TLS | If the server is using LDAP over TLS (STARTTLS). |  |
 | Active Directory | If the server is an Active Directory server. |  |
 | Username | The distinguished name of an administrative user that the application will use when connecting to the directory server. For Active Directory, the user should be a member of the built-in administrators group. | `cn=admin,cn=users,dc=ad,dc=company,dc=com` or `company\admin` (Active Directory) |
 | Password | The password of the user specified above. The password is safely stored in the operating system's native credential manager. |  |
