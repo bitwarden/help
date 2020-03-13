@@ -33,7 +33,9 @@ Bitwarden enables all types of password and secure sharing through Organizations
 If you would like to try it out, Bitwarden has a free account for individuals, and the ability to set up a free Organization for up to two users and two Collections of secure information.
 
 This tutorial walks you through the setup for two basic accounts and sharing in an Organization.
+
 ## What are organizations?
+
 A Bitwarden organization is an entity that relates users together that want to share items. An organization could be a family, team, company, or any other type of group that desires to share items in Bitwarden.
 
 For more, please see [What are organizations?](https://help.bitwarden.com/article/what-is-an-organization/)
