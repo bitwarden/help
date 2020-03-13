@@ -22,6 +22,7 @@ With the Bitwarden free account, and a free Organization for up to 2 users, you 
   * [6. Accepting the Invitation](#6-accepting-the-invitation)
   * [7. Sharing within an Organization](#7-sharing-within-an-organization)
 - [Continuing with Bitwarden](#continuing-with-bitwarden)
+
 # Introduction
 Using a password manager makes it easy to store and access unique and secure passwords across all of your devices. This keeps your online accounts safer than repeating passwords or leaving them exposed in unencrypted formats like spreadsheets, documents, or sticky notes!
 
