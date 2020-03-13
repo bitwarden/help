@@ -59,7 +59,9 @@ Command Line Tools
 Web access through [https://vault.bitwarden.com](https://vault.bitwarden.com)
 
 For the purpose of this tutorial, we’ll focus on the Web interface.
+
 ## 1. Create an account for User 1
+
 Create the first account by starting at [https://vault.bitwarden.com](https://vault.bitwarden.com)
 Pick a strong master password and write it down in a safe place.
 
