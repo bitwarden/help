@@ -48,7 +48,9 @@ Two-step login with YubiKey, FIDO U2F, & Duo
 Password hygiene & vault health reports
 TOTP authenticator key storage & code gen.
 Priority customer support
+
 # Set up the First and Second User Accounts
+
 You can choose many ways to create an account at [www.bitwarden.com](www.bitwarden.com) where you will find
 Desktop Apps for Windows, Mac, and Linux
 Browser Extensions for Google Chrome, Mozilla Firefox, Opera, Microsoft Edge, Safari, Vivaldi, Brave, Tor Browser
