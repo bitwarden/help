@@ -154,7 +154,7 @@ Sharing items in an Organization is simply a matter of creating them within the 
 We’ll use the example of creating a Secure Note, but the same process applies to a Login or any other item in the vault.
 
 {% image organizations/orgstart/7-add-Item-in-organization.png %}
-**Adding an Item to an Organization)
+**Adding an Item to an Organization**
 
 {% image organizations/orgstart/7-adding-a-secure-note.png %}
 **Adding a Secure Note**
