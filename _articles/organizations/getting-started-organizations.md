@@ -193,4 +193,4 @@ However, that second note can easily be shared with an Organization by clicking 
 # Continuing with Bitwarden
 Now that you have mastered the basics of Organizations feel free to explore all of the possibilities sharing logins and more!
 
-If you’d like to dig deeper into Bitwarden please visit [www.bitwarden.com](www.bitwarden.com).
+If you’d like to dig deeper into Bitwarden please visit [www.bitwarden.com](www.bitwarden.com). 
