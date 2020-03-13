@@ -23,7 +23,7 @@ With the Bitwarden free account, and a free Organization for up to 2 users, you 
   * [7. Sharing within an Organization](#7-sharing-within-an-organization)
 - [Continuing with Bitwarden](#continuing-with-bitwarden)
 
-# Introduction
+## Introduction
 Using a password manager makes it easy to store and access unique and secure passwords across all of your devices. This keeps your online accounts safer than repeating passwords or leaving them exposed in unencrypted formats like spreadsheets, documents, or sticky notes!
 
 To get even more out of your password manager, you can collaborate and share with others. At work, you may choose to share common logins to office wifi networks and online services, or a shared company credit card, or a set of secure notes. Personally you may choose to share a few passwords with a significant other.
@@ -34,10 +34,10 @@ If you would like to try it out, Bitwarden has a free account for individuals, a
 
 This tutorial walks you through the setup for two basic accounts and sharing in an Organization.
 
-## What are organizations?
+### What are organizations?
 A Bitwarden organization is an entity that relates users together that want to share items. An organization could be a family, team, company, or any other type of group that desires to share items in Bitwarden.
 
-For more, please see [What are organizations?](https://help.bitwarden.com/article/what-is-an-organization/)
+For more, please see [What are organizations?](https://help.bitwarden.com/article/what-is-an-organization/).
 
 **Are Organizations Different than a Premium Membership?**
 Yes. Organizations are for sharing items across multiple users
@@ -48,17 +48,17 @@ Premium membership gives your individual user account additional premium feature
 - TOTP authenticator key storage & code gen.
 - Priority customer support
 
-# Set up the First and Second User Accounts
-You can choose many ways to create an account at [www.bitwarden.com](www.bitwarden.com) where you will find
-Desktop Apps for Windows, Mac, and Linux
-Browser Extensions for Google Chrome, Mozilla Firefox, Opera, Microsoft Edge, Safari, Vivaldi, Brave, Tor Browser
-Mobile Apps for iOS and Android
-Command Line Tools
-Web access through [https://vault.bitwarden.com](https://vault.bitwarden.com)
+## Set up the First and Second User Accounts
+You can choose many ways to create an account at [www.bitwarden.com](https://www.bitwarden.com) where you will find
+- Desktop Apps for Windows, Mac, and Linux
+- Browser Extensions for Google Chrome, Mozilla Firefox, Opera, Microsoft Edge, Safari, Vivaldi, Brave, Tor Browser
+- Mobile Apps for iOS and Android
+- Command Line Tools
+- Web access through [https://vault.bitwarden.com](https://vault.bitwarden.com)
 
-For the purpose of this tutorial, we’ll focus on the Web interface.
+For the purpose of this tutorial, we’ll focus on the Web Vault.
 
-## 1. Create an account for User 1
+### 1. Create an account for User 1
 Create the first account by starting at [https://vault.bitwarden.com](https://vault.bitwarden.com)
 Pick a strong master password and write it down in a safe place.
 
@@ -69,7 +69,7 @@ The Bitwarden security model does not support master password recovery. You can 
 {% image organizations/orgstart/1-create-account-user-1.png %}
 **Create account for user 1**
 
-## 2. Verify Your Email
+### 2. Verify Your Email
 After you create the account and log in, you will want to verify your email.
 
 {% note %}
@@ -88,12 +88,12 @@ As noted in the Introduction above, Organizations for sharing secure information
 
 Premium features are not required for this tutorial, however we do recommend them to get the most out of Bitwarden.
 
-## 3. Set up the Second User Account
+### 3. Set up the Second User Account
 Follow the same procedures to set up the second account. In our case, we will use gotest+2@bitwarden.com for that.
 
-# Setup and Share with Organizations
+## Setup and Share with Organizations
 
-## 4. Create a new Organization
+### 4. Create a new Organization
 Next create a new Organization via the **New Organization** button on the right of the screen.
 
 Identify your Organization name, billing name, and plan. In this case we are choosing the free plan which supports 2 users and 2 collections of items.
@@ -119,7 +119,7 @@ When we move back to our personal vault, we’ll see that we have **Folders** on
 {% image organizations/orgstart/4-personal-vault.png %}
 **View of the Personal Vault**
 
-## 5. Add the Second User to your Organization
+### 5. Add the Second User to your Organization
 Now it is time to add a second user from our Organization admin console, in our case we click back on **GOTEST Organization** and then the **Manage** tab.
 
 {% image organizations/orgstart/5-add-user.png %}
@@ -135,7 +135,7 @@ Once User 2 has been invited, they will receive an email invitation to join the 
 {% image organizations/orgstart/5-user-2-invited.png %}
 **Inviting User 2**
 
-## 6. Accepting the Invitation
+### 6. Accepting the Invitation
 To ensure a trusted security relationship, **User 2** must accept the invitation, and then **User 1** must accept the **User 2** into the Organization. This sequence is imperative to ensure the highest level or security.
 
 When **User 2** accepts the invitation they will receive a message:
@@ -158,7 +158,7 @@ Once the confirmation process is complete, **User 2** will have access to the De
 {% image organizations/orgstart/6-user-2-organization-vault-view.png %}
 **User 2 Organization Vault view**
 
-## 7. Sharing within an Organization
+### 7. Sharing within an Organization
 Sharing items in an Organization is simply a matter of creating them within the Organization Vault, or creating them in your Personal Vault and then sharing them with the Organization.
 
 We’ll use the example of creating a Secure Note, but the same process applies to a Login or any other item in the vault.
@@ -182,15 +182,15 @@ Congratulations! You have now set up sharing between two users with Bitwarden Or
 From here you can share any item using the collaborative capabilities of Bitwarden.
 
 If by chance you have an item in your personal vault that you wish to share, you can choose that option too. Here we have two items seen in the **User 1** Vault
-A secure note **GOTEST Secure Note** that has a sharing icon to the right of it indicating that is it being shared within a Collection
-A secure note **User 1 Note for Sharing** that is not part of Collection and only within the **User 1** vault
+- A secure note **GOTEST Secure Note** that has a sharing icon to the right of it indicating that is it being shared within a Collection
+- A secure note **User 1 Note for Sharing** that is not part of Collection and only within the **User 1** vault
 
 However, that second note can easily be shared with an Organization by clicking the drop down menu next to the item.
 
 {% image organizations/orgstart/7-sharing-items-with-organizations.png %}
 **Sharing Items with Organizations**
 
-# Continuing with Bitwarden
+## Continuing with Bitwarden
 Now that you have mastered the basics of Organizations feel free to explore all of the possibilities sharing logins and more!
 
-If you’d like to dig deeper into Bitwarden please visit [www.bitwarden.com](www.bitwarden.com). 
+If you’d like to dig deeper into Bitwarden please visit [www.bitwarden.com](https//www.bitwarden.com). 
