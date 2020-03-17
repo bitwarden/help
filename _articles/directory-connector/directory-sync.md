@@ -16,6 +16,7 @@ The following directories are supported:
 - Azure Active Directory
 - G Suite (Google)
 - Okta
+- OneLogin
 
 {% note %}
 Directory sync is only available to enterprise organizations.
@@ -99,6 +100,7 @@ By default the Directory Connector communicates with the Bitwarden public cloud 
    - [Azure Active Directory Setup]({% link _articles/directory-connector/azure-active-directory.md %})
    - [G Suite (Google) Setup]({% link _articles/directory-connector/gsuite-directory.md %})
    - [Okta Setup]({% link _articles/directory-connector/okta-directory.md %})
+   - [OneLogin Setup]({% link _articles/directory-connector/onelogin-directory.md %})
 
 ## Configure sync options
 
