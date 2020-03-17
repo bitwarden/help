@@ -41,7 +41,7 @@ This article will cover how to connect the Bitwarden Directory Connector applica
 3. Select **OneLogin** as the directory type.
 4. Enter the **Client ID** and **Client Secret** copied from the previous steps.
 5. Select the correct Region.
-6. Configure sync options.
+6. Configure sync options. It is recommended to use the **Overwrite existing organization users based on current sync settings** option with OneLogin.
 {% tip %}For minimal testing check "Sync users".{% endtip %}
 
 Congrats! You are done configuring OneLogin with the Bitwarden Directory Connector.
