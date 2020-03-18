@@ -4,7 +4,7 @@ title: Getting Started with Bitwarden Organizations
 categories: [organizations]
 featured: false
 popular: false
-hidden: true
+hidden: false
 tags: [tutorial]
 ---
 
