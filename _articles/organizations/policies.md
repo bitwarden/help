@@ -9,8 +9,8 @@ tags: [organizations, policies, access control, enterprise]
 ---
 ## Table of contents
 
-- [What are organizations](#what-are-organizations)
-- [What are Enterprise Policies](#what-are-enterprise-policies)
+- [What are Organizations?](#what-are-organizations)
+- [What are Enterprise Policies?](#what-are-enterprise-policies)
 - [Available Policies](#available-policies)
   * [Two-Step Login](#two-step-login)
     + [Setting the Policy](#setting-the-policy)
@@ -20,7 +20,7 @@ tags: [organizations, policies, access control, enterprise]
   * [Master Password](#master-password)
     + [Setting the Policy](#setting-the-policy-2)
 
-# What are organizations
+## What are Organizations?
 
 A Bitwarden organization is an entity that relates users together that want to share items. An organization could be a family, team, company, or any other type of group that desires to share items in Bitwarden.
 
@@ -28,13 +28,13 @@ An individual user account can create and/or belong to many different organizati
 
 You can create a new Bitwarden organization from the web vault or request that an admin of an existing organization send you an invite.
 
-# What are Enterprise Policies
+## What are Enterprise Policies?
 
 Bitwarden client applications have many settings for users to customize their environments. When users are members of an Enterprise Organization such as a company, the Company may want all users to maintain certain settings such as two-factor authentication and password parameters.
 
 Enterprise Policies allow owners or administrators of an organization to set and enforce parameters for all members of their organization.
 
-# Available Policies
+## Available Policies
 
 Bitwarden currently supports the following Organization Policies
 - Two-step Login
@@ -101,7 +101,7 @@ If the user is affected by the policy, we will show a banner on the Bitwarden Pa
 
 ## Master Password
 
-When this policy is set, organization administrators can choose and permanently set the complexity required for a user’s Master Password. Password complexity is calculated using the zxcvbn library on a scale from 0 - 4, 4 being the most complex.
+When this policy is set, organization administrators can choose and permanently set the complexity required for a user’s Master Password. Password complexity is calculated using the [zxcvbn](https://github.com/dropbox/zxcvbn) library on a scale from 0 to 4, with 4 being the most complex.
 
 {% image policies/policies-master-password.png %}
 
