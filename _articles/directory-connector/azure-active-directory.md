@@ -31,22 +31,19 @@ This article will cover how to connect the Bitwarden Directory Connector applica
 
 1. Go to <https://portal.azure.com>
 2. Select the **Azure Active Directory** resource
-3. Navigate to **App registrations** and select **New application registration**
+3. Navigate to **App registrations** and select **New registration**
    {% image directory-connector/azure/new-application.png %}
 4. **Name** your application "Bitwarden"
-5. Set the **Application type** to "Web app / API" 
-6. Set the **Sign-on URL** to any website value, such as "https://example.com". This URL is not used in this setup process so it can be anything.
-7. Click the **Create** button to create the application.
+5. Click the **Create** button to create the application.
    {% image directory-connector/azure/create-application.png %}
 
 ## Grant Application Permissions
 
 1. Select the **Bitwarden** application you created in the previous section.
-2. Navigate to **Settings** and select **Required Permissions**.
-3. Delete the existing **Windows Azure Active Directory** API permission set that is automatically created by default. It is not needed.
-5. Select the **Add** button to create a new API permission set.
-6. For step 1, **Select an API** for **Microsoft Graph**.
-7. For step 2, **Select Permissions** for the following:
+2. Select **API Permissions**.
+3. Select the **Add** button to create a new API permission set.
+4. For step 1, **Select an API** for **Microsoft Graph**.
+5. For step 2, **Select Permissions** for the following:
    - Application Permissions:
      - "Read all users' full profiles"
      - "Read all groups"
@@ -54,15 +51,15 @@ This article will cover how to connect the Bitwarden Directory Connector applica
      - "Read all groups"
      - "Read all users' full profiles"
      - "Read all users basic profiles"
-8. Click the **Select** button and then **Done** to add the Microsoft Graph API permissions.
+6. Click the **Select** button and then **Done** to add the Microsoft Graph API permissions.
    {% image directory-connector/azure/graph-permissions.png %}
-9. Click the **Grant Permissions** button to grant the permissions to the application.
+7. Click the **Grant Permissions** button to grant the permissions to the application.
    {% image directory-connector/azure/grant-permissions.png %}
 
 ## Create Application Secret Key
 
 1. Go back to the **Bitwarden** application that you created.
-2. Navigate to **Settings** and select **Keys**.
+2. Select **Certificates & Keys**.
 3. Add a new **Password** key by entering a **Name** and **Duration**. We recommend selecting "Never Expires" for the duration.
 4. Click **Save** to create a new secret key.
 5. Copy the key's value to safe place. We will need to reference it later.
@@ -71,13 +68,13 @@ This article will cover how to connect the Bitwarden Directory Connector applica
 ## Get Your Application ID
 
 1. Go back to the **Bitwarden** application that you created.
-2. Copy the **Application ID** to a safe place.  We will need to reference it later.
+2. Copy the **Application (client) ID** to a safe place.  We will need to reference it later.
    {% image directory-connector/azure/application-id.png %}
 
 ## Get Your Tenant Hostname
 
 1. Select the **Directory and Subscription** filter in the top right corner of the Azure Portal.
-2. Note the **hostname** value that appears under your directory (ex. company.onmicrosoft.com). This is your **Tenant** hostname. Copy the **Tenant** hostname to a safe place. We will need to reference it later.
+2. Note the **Current directory** (ex. acmeinc.onmicrosoft.com). This is your **Tenant** hostname. Copy the **Tenant** hostname to a safe place. We will need to reference it later.
    {% image directory-connector/azure/tenant.png %}
 
 ## Configure Directory Connector
