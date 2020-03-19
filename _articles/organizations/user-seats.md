@@ -9,7 +9,7 @@ tags: []
 
 ## Add User Seats
 
-You can add user seats at any time by logging into the **Web Vault** (https://vault.bitwarden.com) and go to **Settings** &rarr; **Organizations** &rarr; {YOUR ORG NAME} &rarr; **Settings** sub-tab (Gears Icon) &rarr; **Subscription**. There you can locate the **User Seats** section and select the **Add Seats** button.
+You can add user seats at any time by logging into the **Web Vault** (https://vault.bitwarden.com) and going to **Settings** &rarr; **Organizations** &rarr; {YOUR ORG NAME} &rarr; {% icon fa-cog %} **Settings** sub-tab &rarr; **Subscription**. There you can locate the **User Seats** section and select the **Add Seats** button.
 
 {% note %}
 The cost will be automatically prorated and debited based on the billing cycle.
@@ -19,7 +19,7 @@ The cost will be automatically prorated and debited based on the billing cycle.
 
 ## Remove User Seats
 
-You can remove user seats at any time by logging into the **Web Vault** (https://vault.bitwarden.com) and go to **Settings** &rarr; **Organizations** &rarr; {YOUR ORG NAME} &rarr; **Settings** sub-tab (Gears Icon) &rarr; **Subscription**. There you can locate the **User Seats** section and select the **Remove Seats** button.
+You can remove user seats at any time by logging into the **Web Vault** (https://vault.bitwarden.com) and going to **Settings** &rarr; **Organizations** &rarr; {YOUR ORG NAME} &rarr; {% icon fa-cog %} **Settings** sub-tab &rarr; **Subscription**. There you can locate the **User Seats** section and select the **Remove Seats** button.
 
 {% note %}
 A credit for any unused time will be automatically issued to the account balance.
