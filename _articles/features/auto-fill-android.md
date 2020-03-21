@@ -24,7 +24,7 @@ You can use the Bitwarden Android app to add new and auto-fill existing logins o
 
 The Autofill Framework Service is now enabled.
 
-The Autofill Framework Service is context-sensitive and will appear whenever you encounter a form that can be auto-filled on your device. You can read more about the Autofill Framework service from [this posting on our blog](https://blog.bitwarden.com/bitwarden-the-oreo-autofill-framework-2a8b2e04f29e){:target="_blank"}.
+The Autofill Framework Service is context-sensitive and will appear whenever you encounter a form that can be auto-filled on your device. You can read more about the Autofill Framework service from [this posting on our blog](https://bitwarden.com/blog/post/the-oreo-autofill-framework){:target="_blank"}.
 
 ### Testing the Auto-fill Framework Service
 
