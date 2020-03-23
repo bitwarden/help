@@ -15,7 +15,7 @@ Supported Versions:
 
 ## Autofill Framework Service
 
-{% note %}The Autofill Framework Service is only available to users on Android Oreo (8.0) and greater. If you are on a version of  Android prior to Oreo (8.0) you should use the **Auto-fill Accessibility Service** as explained further down in this article.{% endnote %}
+{% note %}The Autofill Framework Service is only available to users on Android Oreo (8.0) and greater. If you are on a version of  Android prior to Oreo (8.0) you should only use the **Auto-fill Accessibility Service** as explained further down in this article. Otherwise, you should use both services for optimal functionality.{% endnote %}
 
 1. Open the Bitwarden Android app.
 2. Tap **{% icon fa-cog %} Settings**.
