@@ -185,7 +185,7 @@ If by chance you have an item in your personal vault that you wish to share, you
 - A secure note **GOTEST Secure Note** that has a sharing icon to the right of it indicating that is it being shared within a Collection
 - A secure note **User 1 Note for Sharing** that is not part of Collection and only within the **User 1** vault
 
-However, that second note can easily be shared with an Organization by clicking the drop down menu next to the item.
+However, that second note can easily be shared with an Organization by clicking the drop down menu next to the item..
 
 {% image organizations/orgstart/7-sharing-items-with-organizations.png %}
 **Sharing Items with Organizations**
