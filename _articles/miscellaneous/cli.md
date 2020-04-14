@@ -68,6 +68,11 @@ Natively packaged versions of the CLI for each platform have no dependencies.
 - {% icon fa-apple fa-lg fa-fw %} [macOS x64](https://vault.bitwarden.com/download/?app=cli&platform=macos)
 - {% icon fa-linux fa-lg fa-fw %} [Linux x64](https://vault.bitwarden.com/download/?app=cli&platform=linux)
 
+In UNIX systems you might get a `Permission denied` message. If you do, in order to grant permissions you can run
+```bash
+chmod +x </path/to/bw>
+```
+
 ### NPM
 
 If you already have the Node.js runtime installed on your system, you can install the CLI using [NPM](https://www.npmjs.com/package/@bitwarden/cli){:target="_blank"}. NPM makes it easy to keep your installation updated and should be the preferred installation method if you are already using Node.js.
