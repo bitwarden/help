@@ -43,7 +43,11 @@ Another option is to open the popup window using the keyboard shortcut (see belo
 - Linux: `Ctrl + Shift + U`
 - macOS: `Cmd + Shift + Y`
 
-You can easily customize these keyboard shortcuts in Chrome and Opera browsers. In the address bar navigate to `chrome://extensions` and locate the "Keyboard shortcuts" button (you may need to scroll to the bottom). Other browsers such as Firefox, Safari, Brave, and Edge do not currently support changing the default keyboard shortcuts for extensions.
+You can easily customize these keyboard shortcuts in Chrome, Opera, Edge, and Brave browsers. In the address bar navigate to `chrome://extensions` and locate the "Keyboard shortcuts" button (you may need to scroll to the bottom). 
+
+In Firefox, you need can go to the addons preference page and under the cogwheel click the "Manage Extension Shortcuts" as explained [here](https://support.mozilla.org/en-US/kb/manage-extension-shortcuts-firefox).
+
+Other browsers such as Safari and legacy Edge do not currently support changing the default keyboard shortcuts for extensions.
 
 ## Auto-fill on page load
 
