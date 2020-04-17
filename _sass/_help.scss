@@ -78,19 +78,15 @@ footer {
     background-color: $brand-dark-accent;
     height: 465px;
     margin: 0;
-    color: #b8c7ce;
+    color: #fff;
     position: absolute;
     width: 100%;
     bottom: 0;
     font-size: 16px;
     padding: 40px 0;
 
-    h4 {
-        color: #fff;
-    }
-
     a {
-        color: #8aa4af;
+        color: #fff;
 
         &:hover {
             color: #fff;
