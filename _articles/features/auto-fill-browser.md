@@ -45,7 +45,7 @@ Another option is to open the popup window using the keyboard shortcut (see belo
 
 You can easily customize these keyboard shortcuts in Chrome, Opera, Edge, and Brave browsers. In the address bar navigate to `chrome://extensions` and locate the "Keyboard shortcuts" button (you may need to scroll to the bottom). 
 
-In Firefox, you need can go to the addons preference page and under the cogwheel click the "Manage Extension Shortcuts" as explained [here](https://support.mozilla.org/en-US/kb/manage-extension-shortcuts-firefox).
+In Firefox, you need can go to the addons preference page. Under the gears icon click the "Manage Extension Shortcuts" as explained [here](https://support.mozilla.org/en-US/kb/manage-extension-shortcuts-firefox).
 
 Other browsers such as Safari and legacy Edge do not currently support changing the default keyboard shortcuts for extensions.
 
