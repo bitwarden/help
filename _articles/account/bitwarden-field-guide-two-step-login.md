@@ -1,10 +1,10 @@
 ---
 layout: article
 title: Field Guide for Two-Step Login
-categories: [account]
+categories: [account-management]
 featured: false
 popular: false
-hidden: false
+hidden: true
 tags: [tutorial, two-step login, 2fa, two factor authentication]
 ---
 
@@ -49,13 +49,13 @@ Within the Bitwarden Premium account
 - YubiKey (any 4/5 series device or YubiKey NEO/NFC)
 - FIDO U2F (any FIDO U2F certified key)
 
-Visit (bitwarden.com/article/setup-two-step-login)[https://help.bitwarden.com/article/setup-two-step-login/]{:target="_blank"} for direct links to all of the above two-step login setup methods.
+Visit [bitwarden.com/article/setup-two-step-login](https://help.bitwarden.com/article/setup-two-step-login/){:target="_blank"} for direct links to all of the above two-step login setup methods.
 
 You can also enable multiple two-step login methods.
 
 If you have multiple two-step login methods enabled, the order of preference for the default method that is displayed while logging in is as follows:
 
-FIDO U2F &rarr YubiKey &rarr Duo &rarr Authenticator app &rarr Email.
+FIDO U2F > YubiKey > Duo > Authenticator app > Email.
 
 You can manually switch to and use any method during login, however.
 
@@ -76,7 +76,7 @@ Reddit will prompt you for your password, and then present this dialog
 {% image two-step/field-guide/reddit-2fa-setup.png %} 
 
 {% note %}
-*About Authy and Google Authenticator*
+**About Authy and Google Authenticator**<br>
 Both of these applications serve the authenticator function well. However, ONLY Authy has the ability to backup your two-factor authentication pairings.
 This means that if you rely on Google Authenticator and you lose your phone, you may end up locked out of accounts if you do not have recovery codes for each account.
 With Authy, as long as you have your Authy password, you can install Authy on a new device and recover all of your two-step login pairings.
@@ -97,7 +97,7 @@ While two-factor authentication adds an extra layer of protection to our account
 {% image two-step/field-guide/two-step-login-bitwarden-authy-reddit.png %} 
 
 {% note %}
-*How Authenticators Work*
+**How Authenticators Work**<br>
 Authy, Google Authenticator, and Bitwarden all operate similarly for authentication using TOTP which stands for Time-based One-Time Password algorithm. At the initiation such as the QR code scan, both the website and the authenticator app share an authentication key. That key is then used to generate time-based tokens which change every several seconds. Without that original authentication key, it is not possible to create the right token at the right time, thereby providing extra protection.
 {% endnote %}
 
@@ -127,7 +127,7 @@ Directly within the browser extension, you can manually add an Authentication Ke
 
 When Reddit displays the dialogue with the barcode, it offers two options:
 
-> Step 2: Use your authenticator app to scan the barcode below or *get a token to enter manually instead*.
+> Step 2: Use your authenticator app to scan the barcode below or **get a token to enter manually instead**.
 
 You can click ‘get a token to enter manually instead’ to copy the long string of numbers and digits.
 
@@ -165,4 +165,4 @@ Whichever path you choose, remember the basics
 
 Here’s to happy logins!
 
-To get your own personal Bitwarden Vault visit (bitwarden.com)[https://bitwarden.com]. Add Premium Features for full access to the Authenticator built into Bitwarden.
+To get your own personal Bitwarden Vault visit [bitwarden.com](https://bitwarden.com). Add Premium Features for full access to the Authenticator built into Bitwarden.
