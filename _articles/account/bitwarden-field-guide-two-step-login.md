@@ -4,7 +4,7 @@ title: Field Guide for Two-Step Login
 categories: [account-management]
 featured: false
 popular: false
-hidden: true
+hidden: false
 tags: [tutorial, two-step login, 2fa, two factor authentication]
 ---
 
