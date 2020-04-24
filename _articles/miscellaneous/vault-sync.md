@@ -20,18 +20,18 @@ tags: [vault, sync, automatic, FAQ]
 
 ## What is vault syncing?
 
-Vault syncing is purely downloading the latest content from your Bitwarden vault onto your device for access. In some cases, this happens automatically. On iOS and Android apps, Bitwarden leverages push notifications to kick-off a vault synchronization.
+Vault syncing is purely downloading the latest content from your Bitwarden vault onto your device for access. '
 
-In some cases, this isn’t available, for instance, Organization (shared) vault items must be synchronized manually.
+In some cases, this happens automatically. On iOS and Android apps, Bitwarden leverages push notifications to kick-off a **personal** vault synchronization.
+
+**Organization Vaults** synchronize to devices every 30 minutes, or upon manual sync.
 
 ## When does my vault sync?
-
-Bitwarden mobile apps for iOS and Android will automatically sync when new changes are made to the vault. These changes can come from other devices adding or editing items, or by making those edits directly in the web vault.
 
 ### Mobile APPS
 
 The Bitwarden mobile apps sync **personal** vaults automatically.
-Organization vaults are synchronized on-demand by navigating to:
+Organization vaults are synchronized once every 30 minutes, or on-demand by navigating to:
 **Settings > Sync > Sync Vault now**
 
 {%note%}Self-hosted users can enable Push notifications powered by the Bitwarden cloud.{%endnote%}
@@ -39,18 +39,18 @@ Organization vaults are synchronized on-demand by navigating to:
 ### Browser extensions
 
 The Bitwarden browser extensions sync **personal** vaults automatically.
-Organization vaults are synchronized on-demand by navigating to:
+Organization vaults are synchronized once every 30 minutes, or on-demand by navigating to:
 **Settings > Sync > Sync Vault now**
 
 ### Desktop applications
 
 The Bitwarden desktop apps sync **personal** vaults automatically.
-Organization vaults are synchronized on-demand by navigating to: **File > Sync Vault**
+Organization vaults are synchronized once every 30 minutes, or on-demand by navigating to: **File > Sync Vault**
 
 ### Command-line interface
 
 The Bitwarden CLI client syncs **personal** vaults automatically.
-Organization vaults are synchronized on-demand by running the command: ```bw sync```
+Organization vaults are synchronized once every 30 minutes, or on-demand by running the command: ```bw sync```
 
 ## Common issues
 
