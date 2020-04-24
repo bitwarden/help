@@ -55,4 +55,4 @@ Organization vaults are synchronized once every 30 minutes, or on-demand by runn
 ## Common issues
 
 - Pulling to refresh on mobile applications does **not** sync your vault. You must do so within the application settings.
-- Sync failure can occur if your device’s time is not correct. Syncing (and all of Bitwarden services) require SSL, which will fail to connect to a host with invalid timestamps.
+- Sync failure can occur if your device’s time is not correct. Syncing (and all of Bitwarden services) require TLS/SSL, which will fail to connect to a host with invalid timestamps.
