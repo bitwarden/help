@@ -20,7 +20,7 @@ tags: [vault, sync, automatic, FAQ]
 
 ## What is vault syncing?
 
-Vault syncing is purely downloading the latest content from your Bitwarden vault onto your device for access. '
+Vault syncing is purely downloading the latest content from your Bitwarden vault onto your device for access.
 
 In some cases, this happens automatically. On iOS and Android apps, Bitwarden leverages push notifications to kick-off a **personal** vault synchronization.
 
