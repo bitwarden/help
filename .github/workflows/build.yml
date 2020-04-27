@@ -53,6 +53,10 @@ jobs:
         if: github.ref == 'refs/heads/master'
         run: npm run deploy
 
+      - name: Build site for S3
+        if: github.ref == 'refs/heads/master'
+        run: npm run build:prod:sub
+
       - name: Deploy to S3
         if: github.ref == 'refs/heads/master'
         uses: jakejarvis/s3-sync-action@master

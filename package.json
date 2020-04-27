@@ -5,6 +5,7 @@
     "build": "gulp build && jekyll build",
     "build:watch": "gulp build && jekyll serve --watch --host=0.0.0.0",
     "build:prod": "cross-env JEKYLL_ENV=production gulp build && jekyll build",
+    "build:prod:sub": "cross-env JEKYLL_ENV=production gulp build && jekyll build --config _config.yml,_config-sub.yml",
     "deploy": "npm run build:prod && gh-pages --dotfiles --dist _site"
   },
   "devDependencies": {
