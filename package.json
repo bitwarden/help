@@ -4,7 +4,8 @@
   "scripts": {
     "build": "gulp build && jekyll build",
     "build:watch": "gulp build && jekyll serve --watch --host=0.0.0.0",
-    "deploy": "npm run build && gh-pages --dotfiles --dist _site"
+    "build:prod": "cross-env JEKYLL_ENV=production gulp build && jekyll build",
+    "deploy": "npm run build:prod && gh-pages --dotfiles --dist _site"
   },
   "devDependencies": {
     "bootstrap-sass": "3.4.1",
@@ -15,6 +16,7 @@
     "gulp": "^4.0.0",
     "jquery": "3.4.1",
     "lunr": "0.7.1",
-    "merge-stream": "1.0.1"
+    "merge-stream": "1.0.1",
+    "cross-env": "^5.2.0"
   }
 }

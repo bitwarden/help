@@ -47,7 +47,7 @@ jobs:
 
       - name: Build site
         if: github.ref != 'refs/heads/master'
-        run: npm run build
+        run: npm run build:prod
 
       - name: Build site and deploy to gh-pages
         if: github.ref == 'refs/heads/master'
