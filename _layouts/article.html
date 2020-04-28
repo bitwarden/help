@@ -15,7 +15,7 @@ layout: default
         {% assign catFilename = category.path | filename %}
         {% if page.categories contains catFilename %}
         {% assign catIteration = catIteration | plus: 1 %}
-        <a href="{{category.url}}">{{category.title}}</a>{% if catIteration != catSize %}, {% endif %}
+        <a href="{{site.baseurl}}{{category.url}}">{{category.title}}</a>{% if catIteration != catSize %}, {% endif %}
         {% endif %}
         {% endfor %}
     </div>

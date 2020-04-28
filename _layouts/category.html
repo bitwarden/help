@@ -14,7 +14,7 @@ layout: default
                 {% for article in sorted_articles %}
                 {% assign pageFilename = page.path | filename %}
                 {% if article.categories contains pageFilename and article.hidden != true %}
-                <li><a href="{{article.url}}">{{article.title}}</a></li>
+                <li><a href="{{site.baseurl}}{{article.url}}">{{article.title}}</a></li>
                 {% endif %}
                 {% endfor %}
             </ol>
