@@ -21,23 +21,12 @@ jobs:
       - name: Set up Jekyll
         run: gem install bundler jekyll
 
-      - name: Set up git credentials
-        if: github.ref == 'refs/heads/master'
-        env:
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        run: |
-          git config --global credential.helper store
-          echo "https://${ACCESS_TOKEN}:x-oauth-basic@github.com" >> ~/.git-credentials
-          git config --global user.email "ci@bitwarden.com"
-          git config --global user.name "Bitwarden CI"
-
       - name: Print environment
         run: |
           node --version
           npm --version
           ruby --version
           jekyll --version
-          git --version
 
       - name: Checkout repo
         uses: actions/checkout@v2
@@ -48,10 +37,6 @@ jobs:
       - name: Build site
         if: github.ref != 'refs/heads/master'
         run: npm run build:prod
-
-      - name: Build site and deploy to gh-pages
-        if: github.ref == 'refs/heads/master'
-        run: npm run deploy
 
       - name: Build site for S3
         if: github.ref == 'refs/heads/master'
