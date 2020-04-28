@@ -49,7 +49,7 @@ Within the Bitwarden Premium account
 - YubiKey (any 4/5 series device or YubiKey NEO/NFC)
 - FIDO U2F (any FIDO U2F certified key)
 
-Visit [bitwarden.com/article/setup-two-step-login](https://help.bitwarden.com/article/setup-two-step-login/){:target="_blank"} for direct links to all of the above two-step login setup methods.
+Visit [bitwarden.com/help/article/setup-two-step-login]({% link _articles/account/setup-two-step-login.md %}){:target="_blank"} for direct links to all of the above two-step login setup methods.
 
 You can also enable multiple two-step login methods.
 

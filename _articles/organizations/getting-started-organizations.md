@@ -37,7 +37,7 @@ This tutorial walks you through the setup for two basic accounts and sharing in 
 ### What are organizations?
 A Bitwarden organization is an entity that relates users together that want to share items. An organization could be a family, team, company, or any other type of group that desires to share items in Bitwarden.
 
-For more, please see [What are organizations?](https://help.bitwarden.com/article/what-is-an-organization/).
+For more, please see [What are organizations?]({% link _articles/organizations/what-is-an-organization.md %}).
 
 **Are Organizations Different than a Premium Membership?**
 Yes. Organizations are for sharing items across multiple users
@@ -49,7 +49,7 @@ Premium membership gives your individual user account additional premium feature
 - Priority customer support
 
 ## Set up the First and Second User Accounts
-You can choose many ways to create an account at [www.bitwarden.com](https://www.bitwarden.com) where you will find
+You can choose many ways to create an account at [bitwarden.com](https://bitwarden.com) where you will find
 - Desktop Apps for Windows, Mac, and Linux
 - Browser Extensions for Google Chrome, Mozilla Firefox, Opera, Microsoft Edge, Safari, Vivaldi, Brave, Tor Browser
 - Mobile Apps for iOS and Android
@@ -63,7 +63,7 @@ Create the first account by starting at [https://vault.bitwarden.com](https://va
 Pick a strong master password and write it down in a safe place.
 
 {% warning %}
-The Bitwarden security model does not support master password recovery. You can read more in the help article [I forgot my master password](https://help.bitwarden.com/article/forgot-master-password/)
+The Bitwarden security model does not support master password recovery. You can read more in the help article [I forgot my master password]({% link _articles/account/forgot-master-password.md %})
 {% endwarning %}
 
 {% image organizations/orgstart/1-create-account-user-1.png %}
@@ -148,7 +148,7 @@ Back at the Organization administration console, **User 1** will see the accepte
 {% image organizations/orgstart/6-confirming-users-with-accepted-invitations.png %}
 **Confirming users with accepted invitations**
 
-Keeping with the trusted security model, further confirmation on a unique fingerprint phrase is built into the exchange. For more information on this step visit [What is my account's fingerprint phrase?](https://help.bitwarden.com/article/fingerprint-phrase/)
+Keeping with the trusted security model, further confirmation on a unique fingerprint phrase is built into the exchange. For more information on this step visit [What is my account's fingerprint phrase?]({% link _articles/features/fingerprint-phrase.md %})
 
 {% image organizations/orgstart/6-confirm-fingerprint-phrase.png %}
 **Confirming the fingerprint phrase**
@@ -193,4 +193,4 @@ However, that second note can easily be shared with an Organization by clicking 
 ## Continuing with Bitwarden
 Now that you have mastered the basics of Organizations feel free to explore all of the possibilities sharing logins and more!
 
-If you’d like to dig deeper into Bitwarden please visit [www.bitwarden.com](https//www.bitwarden.com). 
+If you’d like to dig deeper into Bitwarden please visit [bitwarden.com](https//bitwarden.com). 
