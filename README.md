@@ -3,7 +3,7 @@
 
 # Bitwarden Help Center
 
-The Bitwarden help center project is written using Jekyll, which is hosted/deployed to a GitHub pages branch ([https://help.bitwarden.com/](https://help.bitwarden.com/)).
+The Bitwarden help center project is written using Jekyll, which is deployed at ([https://bitwarden.com/help/](https://bitwarden.com/help/)).
 
 # Build/Run
 
@@ -14,6 +14,7 @@ The Bitwarden help center project is written using Jekyll, which is hosted/deplo
 - [Jekyll](https://jekyllrb.com/)
 
 Run the following commands:
+
 - `npm install`
 - `npm run build:watch`
 
