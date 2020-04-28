@@ -5,15 +5,13 @@
     "build": "gulp build && jekyll build",
     "build:watch": "gulp build && jekyll serve --watch --host=0.0.0.0",
     "build:prod": "gulp build && cross-env JEKYLL_ENV=production jekyll build",
-    "build:prod:sub": "gulp build && cross-env JEKYLL_ENV=production jekyll build --config _config.yml,_config-sub.yml",
-    "deploy": "npm run build:prod && gh-pages --dotfiles --dist _site"
+    "build:prod:sub": "gulp build && cross-env JEKYLL_ENV=production jekyll build --config _config.yml,_config-sub.yml"
   },
   "devDependencies": {
     "bootstrap-sass": "3.4.1",
     "del": "^3.0.0",
     "fluidbox": "2.0.5",
     "font-awesome": "4.7.0",
-    "gh-pages": "^1.2.0",
     "gulp": "^4.0.0",
     "jquery": "3.4.1",
     "lunr": "0.7.1",
