@@ -23,7 +23,7 @@ title: Search Results
           "title": "{{article.title | xml_escape}}",
           "tags": "{{article.tags | join: ', ' | xml_escape}}",
           "content": {{article.content | strip_html | strip_newlines | jsonify}},
-          "url": "{{article.url | xml_escape}}"
+          "url": "{{site.baseurl}}{{article.url | xml_escape}}"
       }
     {% unless forloop.last %},{% endunless %}
     {% endif %}
