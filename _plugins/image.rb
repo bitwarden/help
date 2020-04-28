@@ -3,7 +3,7 @@
     class ImageTag < Liquid::Tag
       def render(context)
         src = @markup.strip
-        baseurl = Jekyll.configuration({})['baseurl']
+        baseurl = context.registers[:site].config['baseurl']
         "<a href=\"#{baseurl}/images/#{src}\" target=\"_blank\" rel=\"lightbox\">
             <img class=\"img-responsive img-thumbnail img-tag\" src=\"#{baseurl}/images/#{src}\" />
         </a>"
