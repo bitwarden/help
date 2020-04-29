@@ -136,7 +136,7 @@ Once User 2 has been invited, they will receive an email invitation to join the 
 **Inviting User 2**
 
 ### 6. Accepting the Invitation
-To ensure a trusted security relationship, **User 2** must accept the invitation, and then **User 1** must accept the **User 2** into the Organization. This sequence is imperative to ensure the highest level or security.
+To ensure a trusted security relationship, **User 2** must accept the invitation, and then **User 1** must accept the **User 2** into the Organization. This sequence is imperative to ensure the highest level of security.
 
 When **User 2** accepts the invitation they will receive a message:
 
