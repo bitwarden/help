@@ -13,7 +13,7 @@
     "fluidbox": "2.0.5",
     "font-awesome": "4.7.0",
     "gulp": "^4.0.0",
-    "jquery": "3.4.1",
+    "jquery": "3.5.0",
     "lunr": "0.7.1",
     "merge-stream": "1.0.1",
     "cross-env": "^5.2.0"
