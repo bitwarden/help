@@ -9,7 +9,7 @@ tags: []
 
 Reference the table below for a list of Bitwarden's subprocessors.
 
-| Subprocessor                              | Nature of Procession                | Corporate Office  |
+| Subprocessor                              | Nature of Processing                | Corporate Office  |
 | ----------------------------------------- | ----------------------------------- | ----------------- |
 | Microsoft Inc.                            | Hosting infrastructure              | California        |
 | Freshworks Inc.                           | Customer relationship management    | California        |
