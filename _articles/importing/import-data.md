@@ -86,7 +86,7 @@ Social,1,login,Twitter,,,twitter.com,me@example.com,password123,
 ,,note,My Note,"This is a secure note.",,,,,
 ```
 
-[{% icon fa-download %} Download example]({{site.baseurl}}/../../account/forgot-master-password.mdfiles/bitwarden_export.csv)
+[{% icon fa-download %} Download example]({{site.baseurl}}/files/bitwarden_export.csv)
 
 When importing from this format, select the **Bitwarden (csv)** file format option from the dropdown menu.
 
