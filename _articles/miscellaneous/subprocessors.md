@@ -1,13 +1,13 @@
 ---
 layout: article
-title: Subprocessor List
+title: Who are Bitwarden's Subprocessors?
 categories: [miscellaneous]
 featured: false
 popular: false
 tags: []
 ---
 
-Reference the table below for a list of Bitwarden subprocessors.
+Reference the table below for a list of Bitwarden's subprocessors.
 
 | Subprocessor                              | Nature of Procession                | Corporate Office  |
 | ----------------------------------------- | ----------------------------------- | ----------------- |
