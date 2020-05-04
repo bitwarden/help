@@ -14,6 +14,7 @@ Reference the table below for a list of Bitwarden's subprocessors.
 | Microsoft Inc.                            | Hosting infrastructure              | California        |
 | DigitalOcean, LLC                         | Hosting infrastructure              | New York          |
 | Amazon Web Services, Inc.                 | Hosting infrastructure              | Washington        |
+| Cloudflare, Inc.                          | Proxy server                        | California        |
 | Google, Inc.                              | Communication tools                 | California        |
 | Slack Technologies                        | Collaboration tool                  | San Francisco, CA |
 | Freshworks Inc.                           | Customer relationship management    | California        |
