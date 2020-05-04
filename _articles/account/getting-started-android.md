@@ -8,6 +8,8 @@ hidden: false
 tags: [tutorial, android]
 ---
 
+See the video and presentation below for tips on getting started with Bitwarden on Android.
+
 ## Video - Getting Started with Android
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/qyFeEZMZpEY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
