@@ -4,9 +4,7 @@ title: User Types and Access Control
 categories: [organizations]
 featured: true
 popular: false
-hidden: false
 tags: [user types, access control]
-
 ---
 
 ## User Types
