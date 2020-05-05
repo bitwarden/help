@@ -15,9 +15,13 @@ The recovery code is a 32 character alpha-numeric code. You can get your two-ste
 Without your recovery code, two-step login can permanently lock you out of your Bitwarden account. It is very important to have your recovery code if you plan to use two-step login. Bitwarden support will not be able to assist you if you lose access to your account.
 {% endwarning %}
 
+{% tip %}
+If you still have an active login session open in the browser extension or a mobile application you can export your data from **Tools** &rarr; **Export Vault** so that you can import it back in after the account has been deleted and you have registered again.
+{% endtip %}
+
 ## Recovering Your Account
 
-Visit <https://vault.bitwarden.com/#/recover-2fa> to complete the recovery process.
+Please use this link to enter your 2FA recovery code: <https://vault.bitwarden.com/#/recover-2fa>
 
 The recovery process will deactivate two-step login on the account so that you can log in without requiring the normal two-step login verification code. You will need to re-enable two-step login in the web vault if you wish to continue using it after recovering the account.
 
@@ -27,10 +31,6 @@ The recovery process also resets your account's recovery code. Make sure that yo
 
 If you do not have your recovery code, unfortunately there is no way to fully recover the account. The only option to gain access to the account again is to delete the account so that you can register again and start over. Note that deleting the account will also delete all of your stored login data associated with the account.
 
-{% tip %}
-If you still have an active login session open in the browser extension you can export your data from **Tools** &rarr; **Export Vault** so that you can import it back in after the account has been deleted and you have registered again.
-{% endtip %}
-
 ## Deleting the account
 
 1. Navigate to <https://vault.bitwarden.com/#/recover-delete>
@@ -38,4 +38,4 @@ If you still have an active login session open in the browser extension you can 
 3. Go to your email inbox and click the verification link that was sent to you
 4. Confirm the delete
 
-You can now register a new account using the same email address.
+You can now register a new account using the same email address. If you have an active subscription use our [contact page](https://bitwarden.com/contact/) to let us know, and we will re-instate it to your newly created account.
