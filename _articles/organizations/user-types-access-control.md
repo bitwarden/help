@@ -2,10 +2,11 @@
 layout: article
 title: User Types and Access Control
 categories: [organizations]
-featured: false
+featured: true
 popular: false
 hidden: false
 tags: [user types, access control]
+
 ---
 
 ## User Types
