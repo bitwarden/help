@@ -95,13 +95,13 @@ The Bitwarden RESTful API uses conventional HTTP response codes to indicate the 
 
 ## Explore the API
 
-The Bitwarden RESTful API is compatible with the OpenAPI specification and publishes a compliant [`swagger.json`](https://docs.bitwarden.com/api/specs/public/swagger.json) definition file.
+The Bitwarden RESTful API is compatible with the OpenAPI specification and publishes a compliant [`swagger.json`](https://bitwarden.com/help/api/specs/public/swagger.json) definition file.
 
 You can explore and execute the API endpoints and their definitions using Swagger UI at:
 
 **Public Cloud Server API**
 
-- [https://docs.bitwarden.com/api/](https://docs.bitwarden.com/api/){:target="_blank"}
+- [https://bitwarden.com/help/api/](https://bitwarden.com/help/api/){:target="_blank"}
 
 **On-premises Server API**
 
