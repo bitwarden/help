@@ -287,6 +287,16 @@ footer {
         }
     }
 
+    figure {
+        display: block;
+        margin: 0 auto 35px;
+        
+        figcaption {
+            font-size: 14px;
+            color: $text-muted;
+        }
+    }
+
     .panel-body > ol {
         counter-reset: li;
         list-style: none;
