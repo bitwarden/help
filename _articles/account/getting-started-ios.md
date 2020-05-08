@@ -8,7 +8,7 @@ hidden: false
 tags: [tutorial, ios]
 ---
 
-See the video and presentation below for tips on getting started with Bitwarden on Android.
+See the video and presentation below for tips on getting started with Bitwarden on iOS.
 
 ## Video - Getting Started with iOS
 
