@@ -31,6 +31,8 @@ Bitwarden provides a powerful, full-featured command-line interface (CLI) tool t
     - [Create](#create)
     - [Edit](#edit)
     - [Delete](#delete)
+        - [`--permanent` Option](#--permanent-option)
+    - [Restore](#restore)
     - [Share](#share)
 - [Other Useful Commands](#other-useful-commands)
     - [Confirm](#confirm)
@@ -249,7 +251,10 @@ echo '["86544cd3-7e07-42bb-ba3c-e7f59852acaa","ae8c6c9e-26de-442c-b63b-3e28ef61d
 
 ### Delete
 
-The `delete` command allows you to delete an object from your vault.
+The `delete` command allows you to delete an object from your vault. By default this command will
+only "soft delete" the item (sending it to your trash bin). To permanently delete an item you must
+use the `-p, --permanent` option. When calling the `delete` command for an item already in the trash
+the command will be ignored/return an error.
 
 ```
 bw delete (item|attachment|folder|org-collection) <id> [options]
@@ -257,6 +262,25 @@ bw delete (item|attachment|folder|org-collection) <id> [options]
 ```
 bw delete folder dadc91e0-dcda-4bc2-8cd6-52100027c782
 bw delete attachment b857igwl1d --itemid 310d5ffd-e9a2-4451-af87-ea054dce0f78
+```
+
+#### `--permanent` Option
+
+By default when using the `delete` command for an `item` it will simply be moved to the trash (soft deleted). In order to permanently delete that item you must also pass the `-p, --permanent` option. When calling the `delete` command for an item already in the trash the command will be ignored/return an error.
+
+```
+bw delete item 7063feab-4b10-472e-b64c-785e2b870b92 --permanent
+```
+
+### Restore
+
+The `restore` command allows you to restore a previously deleted object from your trash.
+
+```
+bw restore (item) <id> [options]
+```
+```
+bw restore item 7063feab-4b10-472e-b64c-785e2b870b92
 ```
 
 ### Share
