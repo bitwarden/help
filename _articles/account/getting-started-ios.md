@@ -12,7 +12,7 @@ See the video and presentation below for tips on getting started with Bitwarden 
 
 ## Video - Getting Started with iOS
 
-<iframe width="560" height="315" src="https://youtu.be/LrhMmNTmOno" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LrhMmNTmOno" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Presentation - Getting Started with iOS
 
