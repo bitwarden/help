@@ -265,9 +265,9 @@ bw delete attachment b857igwl1d --itemid 310d5ffd-e9a2-4451-af87-ea054dce0f78
 ```
 
 #### `--permanent` Option
-By default when using the `delete` command for an `item` it will simply be moved to the trash (soft deleted).
-In order to permanently delete that item you must also pass the `-p, --permanent` option. 
-When calling the `delete` command for an item already in the trash the command will be ignored/return an error.
+
+By default when using the `delete` command for an `item` it will simply be moved to the trash (soft deleted). In order to permanently delete that item you must also pass the `-p, --permanent` option. When calling the `delete` command for an item already in the trash the command will be ignored/return an error.
+
 ```
 bw delete item 7063feab-4b10-472e-b64c-785e2b870b92 --permanent
 ```
