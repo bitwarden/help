@@ -19,7 +19,6 @@ Jump to a specific video:
 - [Account Management](#account-management)
 - [How to setup the browser extension](#how-to-setup-the-browser-extension)
 
-
 ### How to create an account and login
 
 <iframe width="800" height="450" src="https://www.youtube.com/embed/W6Miu-TJI1c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
