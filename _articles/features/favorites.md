@@ -2,7 +2,7 @@
 layout: article
 title: Using favorites
 categories: [features]
-featured: false
+featured: true
 popular: false
 tags: [favorites, features, tutorial]
 ---
