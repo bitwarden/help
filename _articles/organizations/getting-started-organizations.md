@@ -29,7 +29,7 @@ Using a password manager makes it easy to store and access unique and secure pas
 
 To get even more out of your password manager, you can collaborate and share with others. At work, you may choose to share common logins to office wifi networks and online services, or a shared company credit card, or a set of secure notes. Personally you may choose to share a few passwords with a significant other.
 
-Bitwarden enables all types of password and secure sharing through Organizations. 
+Bitwarden enables all types of password and secure sharing through Organizations.
 
 If you would like to try it out, Bitwarden has a free account for individuals, and the ability to set up a free Organization for up to two users and two Collections of secure information.
 
@@ -81,7 +81,7 @@ After you create the account and log in, you will want to verify your email.
 
 {% note %}
 Reminder: You will also want to make sure your master password is written down and in a safe place where you can find it.
-{% endnote %} 
+{% endnote %}
 
 {% image organizations/orgstart/2-verify-email.png Verify your email %}
 
@@ -144,7 +144,7 @@ To ensure a trusted security relationship, **User 2** must accept the invitation
 When **User 2** accepts the invitation they will receive a message:
 
 > **Invitation Accepted**
-> 
+>
 > You can access this organization once an administrator confirms your membership. We'll send you an email when that happens
 
 Back at the Organization administration console, **User 1** will see the accepted invitation, and have the ability to confirm that user.
@@ -192,4 +192,4 @@ However, that second note can easily be shared with an Organization by clicking 
 
 Now that you have mastered the basics of Organizations feel free to explore all of the possibilities sharing logins and more!
 
-If you'd like to dig deeper into Bitwarden please visit [bitwarden.com](https//bitwarden.com). 
+If you'd like to dig deeper into Bitwarden please visit [bitwarden.com](https://bitwarden.com).
