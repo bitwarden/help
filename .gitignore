@@ -8,3 +8,4 @@ _site/
 *.tmp
 /lib
 /.jekyll-cache
+.DS_Store
