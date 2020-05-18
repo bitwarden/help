@@ -21,10 +21,10 @@ The Web Vault and desktop application will have a "Favorites" filter you can sel
 
 ### Examples
 - Web Vault
-![Web Vault](/images/favorites/favorite_webvault.gif){:class="img-responsive"}
+{% image /favorites/favorite_webvault.gif %}
 ​
 - Desktop Application
-![Desktop](/images/favorites/favorite_desktop.gif){:class="img-responsive"}
+{% image /favorites/favorite_desktop.gif %}
 ​
 - Browser Extension
-![Extension](/images/favorites/favorite_extension.gif){:class="img-responsive"}
+{% image /favorites/favorite_extension.gif %}
