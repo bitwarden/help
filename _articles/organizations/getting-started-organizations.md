@@ -11,7 +11,7 @@ tags: [tutorial]
 With the Bitwarden free account, and a free Organization for up to 2 users, you can experience secure sharing in no time!
 
 - [Introduction](#introduction)
-  - [What are organizations?](#what-are-organizations)
+  - [What are Organizations?](#what-are-organizations)
 - [Set up the First and Second User Accounts](#set-up-the-first-and-second-user-accounts)
   - [1. Create an account for User 1](#1-create-an-account-for-user-1)
   - [2. Verify Your Email](#2-verify-your-email)
@@ -19,8 +19,8 @@ With the Bitwarden free account, and a free Organization for up to 2 users, you 
 - [Setup and Share with Organizations](#setup-and-share-with-organizations)
   - [4. Create a new Organization](#4-create-a-new-organization)
   - [5. Add the Second User to your Organization](#5-add-the-second-user-to-your-organization)
-  - [6. Accepting the Invitation](#6-accepting-the-invitation)
-  - [7. Sharing within an Organization](#7-sharing-within-an-organization)
+  - [6. Accept the Invitation](#6-accepting-the-invitation)
+  - [7. Share within an Organization](#7-sharing-within-an-organization)
 - [Continuing with Bitwarden](#continuing-with-bitwarden)
 
 ## Introduction
@@ -37,7 +37,7 @@ This tutorial walks you through the setup for two basic accounts and sharing in 
 
 {% note %} The free two-user organization is only available in Bitwarden Cloud. {% endnote %}
 
-### What are organizations?
+### What are Organizations?
 
 A Bitwarden organization is an entity that relates users together that want to share items. An organization could be a family, team, company, or any other type of group that desires to share items in Bitwarden.
 
@@ -137,7 +137,7 @@ Once User 2 has been invited, they will receive an email invitation to join the 
 
 {% image organizations/orgstart/5-user-2-invited.png Inviting User 2 %}
 
-### 6. Accepting the Invitation
+### 6. Accept the Invitation
 
 To ensure a trusted security relationship, **User 2** must accept the invitation, and then **User 1** must accept the **User 2** into the Organization. This sequence is imperative to ensure the highest level of security.
 
@@ -159,7 +159,7 @@ Once the confirmation process is complete, **User 2** will have access to the De
 
 {% image organizations/orgstart/6-user-2-organization-vault-view.png User 2 Organization Vault view %}
 
-### 7. Sharing within an Organization
+### 7. Share within an Organization
 
 Sharing items in an Organization is simply a matter of creating them within the Organization Vault, or creating them in your Personal Vault and then sharing them with the Organization.
 
