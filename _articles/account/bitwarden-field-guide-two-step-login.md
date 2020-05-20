@@ -79,7 +79,7 @@ Reddit will prompt you for your password, and then present this dialog
 **About Authy and Google Authenticator**<br>
 Both of these applications serve the authenticator function well. However, ONLY Authy has the ability to backup your two-factor authentication pairings.
 This means that if you rely on Google Authenticator and you lose your phone, you may end up locked out of accounts if you do not have recovery codes for each account.
-With Authy, as long as you have your Authy password, you can install Authy on a new device and recover all of your two-step login pairings.
+With Authy, as long as you have your Authy password, you can install Authy on a new device and recover all of your two-step login pairings. [Update May 7, 2020. Google introduced portability of Google Authenticator 2-Step Verification codes across Android devices]
 {% endnote %}
 
 In this case, we’ll use the Authy application as the authenticator. We open it, add an account, scan the barcode and then Authy presents a 6 digit token.
