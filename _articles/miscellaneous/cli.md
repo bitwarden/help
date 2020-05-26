@@ -43,10 +43,10 @@ Bitwarden provides a powerful, full-featured command-line interface (CLI) tool t
     - [Config](#config)
     - [Update](#update)
     - [Version](#version)
-- [Shell Completion](#shell-completion)
-    - [ZSH](#zsh)
 - [Working with JSON](#working-with-json)
 - [Self-signed Certificates](#self-signed-certificates)
+- [Shell Completion](#shell-completion)
+    - [ZSH](#zsh)
 - [Source Code](#source-code)
 - [Appendix](#appendix)
     - [Templates](#templates)
@@ -403,39 +403,6 @@ The `--version` option allows you to check which version the CLI you are current
 bw --version
 ```
 
-## Shell Completion
-
-Bitwarded CLI comes with support for shell completion. It can generate shell completion scripts that you can use to enable completion for `bw` in your shell.
-
-### ZSH
-
-You can enable `bw` completion for ZSH using various methods. A few of them are mentioned below:
-
-**vanilla (.zshrc)**:
-
-Add the following line in your `.zshrc` file:
-
-```shell
-eval "$(bw completion --shell zsh); compdef _bw bw;"
-```
-
-**vanilla (vendor-completions)**:
-
-Run the following command:
-
-```shell
-bw completion --shell zsh | sudo tee /usr/share/zsh/vendor-completions/_bw
-```
-
-[**zinit**](https://github.com/zdharma/zinit):
-
-Run the following commands:
-
-```shell
-bw completion --shell zsh > ~/.local/share/zsh/completions/_bw
-zinit creinstall ~/.local/share/zsh/completions
-```
-
 ## Working with JSON
 
 Commands in the CLI will either return a JSON string or a simple string such as a URL, GUID, or message. When you need to parse or manipulate JSON input/output with the CLI we recommend using the [`jq` command-line tool](https://stedolan.github.io/jq/){:target="_blank"}.
@@ -461,6 +428,40 @@ If your self-hosted Bitwarden server exposes as self-signed TLS certificate, spe
 {% icon fa-windows %} PowerShell
 
     $env:NODE_EXTRA_CA_CERTS="absolute/path/to/your/certificates.pem"
+
+
+## Shell Completion
+
+Bitwarded CLI comes with support for shell completion. It can generate shell completion scripts that you can use to enable completion for `bw` in your shell.
+
+### ZSH
+
+You can enable `bw` completion for ZSH using various methods. A few of them are mentioned below:
+
+**vanilla (.zshrc)**:
+
+Add the following line in your `.zshrc` file:
+
+```
+eval "$(bw completion --shell zsh); compdef _bw bw;"
+```
+
+**vanilla (vendor-completions)**:
+
+Run the following command:
+
+```
+bw completion --shell zsh | sudo tee /usr/share/zsh/vendor-completions/_bw
+```
+
+[**zinit**](https://github.com/zdharma/zinit):
+
+Run the following commands:
+
+```
+bw completion --shell zsh > ~/.local/share/zsh/completions/_bw
+zinit creinstall ~/.local/share/zsh/completions
+```
 
 ## Source Code
 
