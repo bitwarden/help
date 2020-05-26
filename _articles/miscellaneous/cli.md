@@ -43,6 +43,8 @@ Bitwarden provides a powerful, full-featured command-line interface (CLI) tool t
     - [Config](#config)
     - [Update](#update)
     - [Version](#version)
+- [Shell Completion](#shell-completion)
+    - [ZSH](#zsh)
 - [Working with JSON](#working-with-json)
 - [Self-signed Certificates](#self-signed-certificates)
 - [Source Code](#source-code)
@@ -399,6 +401,39 @@ The `--version` option allows you to check which version the CLI you are current
 
 ```
 bw --version
+```
+
+## Shell Completion
+
+Bitwarded CLI comes with support for shell completion. It can generate shell completion scripts that you can use to enable completion for `bw` in your shell.
+
+### ZSH
+
+You can enable `bw` completion for ZSH using various methods. A few of them are mentioned below:
+
+**vanilla (.zshrc)**:
+
+Add the following line in your `.zshrc` file:
+
+```shell
+eval "$(bw completion --shell zsh); compdef _bw bw;"
+```
+
+**vanilla (vendor-completions)**:
+
+Run the following command:
+
+```shell
+bw completion --shell zsh | sudo tee /usr/share/zsh/vendor-completions/_bw
+```
+
+[**zinit**](https://github.com/zdharma/zinit):
+
+Run the following commands:
+
+```shell
+bw completion --shell zsh > ~/.local/share/zsh/completions/_bw
+zinit creinstall ~/.local/share/zsh/completions
 ```
 
 ## Working with JSON
