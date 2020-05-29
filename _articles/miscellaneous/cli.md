@@ -432,7 +432,7 @@ If your self-hosted Bitwarden server exposes as self-signed TLS certificate, spe
 
 ## Shell Completion
 
-Bitwarded CLI comes with support for shell completion. It can generate shell completion scripts that you can use to enable completion for `bw` in your shell.
+Bitwarden CLI comes with support for shell completion. It can generate shell completion scripts that you can use to enable completion for `bw` in your shell.
 
 ### ZSH
 
