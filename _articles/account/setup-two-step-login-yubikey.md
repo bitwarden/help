@@ -73,5 +73,6 @@ If you are having trouble getting the YubiKey NEO or YubiKey 5 NFC to work on yo
 1. You have checked the **One of my keys supports NFC** checkbox from step 5 above.
 2. Your Android device [supports NFC](https://en.wikipedia.org/wiki/List_of_NFC-enabled_mobile_devices){:target="_blank"} and is [known to work properly](https://forum.yubico.com/viewtopic.php?f=26&t=1302){:target="_blank"} with YubiKey NEO or YubiKey 5 NFC.
 3. You have NFC enabled on your Android device. Enable NFC by going to Android **Settings** &rarr; **More** and enable the **NFC** option.
+4. Your keyboard layout/format/mode is set to QWERTY. 
 
 If the YubiKey NEO or YubiKey 5 NFC can be used on your Android device you will be prompted with a YubiKey option while logging in to Bitwarden. Simply place the YubiKey on the back of your Android device near the NFC receiver. If you do not know where your NFC receiver is located, you may need to move it around some, trying different areas. Once Bitwarden detects the YubiKey it will automatically validate and log you in.
