@@ -61,7 +61,7 @@ This article will walk you through how to install and deploy Bitwarden to your o
 
 If you are looking for a quality provider with affordable prices, we recommend:
 
-[![Digital Ocean](/images/digital-ocean.png "Digital Ocean")](https://m.do.co/c/512986b01931){:target="_blank"}
+[![Digital Ocean](/help/images/digital-ocean.png "Digital Ocean")](https://m.do.co/c/512986b01931){:target="_blank"}
 
 ## Configure Your Domain
 
