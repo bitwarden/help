@@ -42,6 +42,7 @@ Bitwarden provides a powerful, full-featured command-line interface (CLI) tool t
     - [Encode](#encode)
     - [Config](#config)
     - [Update](#update)
+    - [Status](#status)
     - [Version](#version)
 - [Working with JSON](#working-with-json)
 - [Self-signed Certificates](#self-signed-certificates)
@@ -394,6 +395,41 @@ A URL to download a new version of the CLI executable will be returned to you.
 {% note %}
 If you have installed the CLI through a package managers (such as NPM), you should use the update commands available for that tool. For example, `npm install -g @bitwarden/cli` will update you to the latest version of the CLI on NPM.
 {% endnote %}
+
+### Status
+
+The `status` command shows the server URL, last synced time in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601){:target="_blank"} format, user email and ID, and the vault status.
+
+```
+bw status
+```
+
+The vault status is one of:
+ - `"unauthenticated"` when you're not logged in
+ - `"locked"` when the vault is locked
+ - `"unlocked"` when the vault is unlocked
+
+Example output when the vault is locked:
+```
+{
+  "serverUrl": "https://bitwarden.example.com",
+  "lastSync": "2020-06-16T06:33:51.419Z",
+  "userEmail": "user@example.com",
+  "userId": "00000000-0000-0000-0000-000000000000",
+  "status": "locked"
+}
+```
+
+Example output when you are not logged in:
+```
+{
+  "serverUrl": "https://bitwarden.example.com",
+  "lastSync": null,
+  "userEmail": null,
+  "userId": null,
+  "status": "unauthenticated"
+}
+```
 
 ### Version
 
