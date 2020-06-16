@@ -52,14 +52,14 @@ This article will walk you through how to install and deploy Bitwarden to your o
        .\bitwarden.ps1 -restart
 6. Test your deployment. Visit the web vault at your configured domain name, register a new account, and log in.
 
-## *Minimum System* Requirements
+## Minimum System Requirements
 
 - Processor: x64, 1.4GHz or faster
 - Memory: 2GB of RAM or more
 - Storage: 10GB or more
 - Docker: Engine 1.8+ and Compose 1.17.1+
 
-## *Recommended* System Requirements
+## Recommended System Requirements
 
 - Processor: x64, 2GHz or faster
 - Memory: 16GB of RAM or more
@@ -68,7 +68,7 @@ This article will walk you through how to install and deploy Bitwarden to your o
 
 If you are looking for a quality provider with affordable prices, we recommend:
 
-[![Digital Ocean](/help/images/digital-ocean.png "Digital Ocean")](https://m.do.co/c/512986b01931){:target="_blank"}
+[![Digital Ocean](/images/digital-ocean.png "Digital Ocean")](https://m.do.co/c/512986b01931){:target="_blank"}
 
 ## Configure Your Domain
 
