@@ -2,7 +2,7 @@
 layout: article
 title: Auto-fill logins on iOS
 categories: [features]
-featured: false
+featured: true
 popular: false
 tags: [iOS, Auto-fill, autofill]
 ---
