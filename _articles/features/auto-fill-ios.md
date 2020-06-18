@@ -45,7 +45,7 @@ The App Extension feature is now enabled.
 
 1. Open the browser of your choice.
 2. View the login page for the website you'd like to enter. 
-3. Tap the <img src="/images/features/auto-fill-ios/ios_share_icon.png" style="margin-top:0px"> share icon.
+3. Tap the <img src="../../images/features/auto-fill-ios/ios_share_icon.png" style="margin-top:0px"> share icon.
 4. Scroll down until you see **Bitwarden** and tap on it.
 5. This will launch the Bitwarden application.
 6. Select the appropriate login from the list or search Bitwarden for the correct login.
