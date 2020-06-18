@@ -50,7 +50,3 @@ The App Extension feature is now enabled.
 5. This will launch the Bitwarden application.
 6. Select the appropriate login from the list or search Bitwarden for the correct login.
 7. Your username and password will be auto-filled.
-
-{% note %}
-iOS has many web browsers. It can be hard to keep up with them all. We have to add support for each browser individually. If auto-fill does not work and your browser is not listed above please report it at <https://github.com/bitwarden/mobile/issues> so that we can add support.
-{% endnote %}
