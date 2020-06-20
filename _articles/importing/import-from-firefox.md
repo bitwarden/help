@@ -28,5 +28,5 @@ If you have set a master password to protect your Firefox passwords, enter it.
 Congratulations! You have just transferred your data from Firefox into Bitwarden.
 
 [bitwarden-vault]: https://vault.bitwarden.com
-[link-ffexporter]:[https://github.com/kspearrin/ff-password-exporter]
+[link-ffexporter]: https://github.com/kspearrin/ff-password-exporter
 [csv]: https://en.wikipedia.org/wiki/Comma-separated_values
