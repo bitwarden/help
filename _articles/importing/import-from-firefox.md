@@ -7,7 +7,7 @@ popular: false
 tags: [import, firefox]
 ---
 
-Since version 57, the Firefox browser no longer provides any password export addons and you will need to use third-party tools. We recomend FF Password Exporter, an open-source tool that works on Windows, macOS, and Linux distributions.
+Since version 57, the Firefox browser no longer provides any password export addons and you will need to use third-party tools. We recommend FF Password Exporter, an open-source tool that works on Windows, macOS, and Linux distributions.
 
 ## EXPORT YOUR FIREFOX PASSWORDS
 
