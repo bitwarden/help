@@ -25,7 +25,7 @@ You can very easily import your data from an array of different password manager
 - Encryptr (csv)
 - Enpass (csv)
 - Enpass (json)
-- Firefox (csv)
+- [Firefox (csv)]({% link _articles/importing/import-from-firefox.md %})
 - F-Secure KEY (fsk)
 - GNOME Passwords and Keys/Seahorse (json)
 - Kaspersky Password Manager (txt)
