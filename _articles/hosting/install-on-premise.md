@@ -27,7 +27,7 @@ This article will walk you through how to install and deploy Bitwarden to your o
 2. Install [Docker](https://docs.docker.com/engine/installation/){:target="_blank"} and [Docker Compose](https://docs.docker.com/compose/install/){:target="_blank"}.
 3. Get an installation id and key from [https://bitwarden.com/host](https://bitwarden.com/host){:target="_blank"}.
 4. Install & deploy Bitwarden.
-    
+
     {% icon fa-linux %} {% icon fa-apple %} Bash
 
        curl -Lso bitwarden.sh https://go.btwrdn.co/bw-sh \
@@ -42,7 +42,7 @@ This article will walk you through how to install and deploy Bitwarden to your o
        .\bitwarden.ps1 -install
        .\bitwarden.ps1 -start
 5. Adjust additional configuration settings in `./bwdata/env/global.override.env` and restart.
-    
+
     {% icon fa-linux %} {% icon fa-apple %} Bash
 
        ./bitwarden.sh restart
@@ -52,12 +52,12 @@ This article will walk you through how to install and deploy Bitwarden to your o
        .\bitwarden.ps1 -restart
 6. Test your deployment. Visit the web vault at your configured domain name, register a new account, and log in.
 
-## System Requirements
+## Recommended Minimum System Requirements
 
-- Processor: x64, 1.4GHz or faster
-- Memory: 2GB of RAM or more
-- Storage: 10GB or more
-- Docker: Engine 1.8+ and Compose 1.17.1+
+- Processor: x64, 2 GHz dual core
+- Memory: 4 GB RAM (system memory)
+- Storage: 25 GB
+- Docker: Engine 19+ and Compose 1.24+
 
 If you are looking for a quality provider with affordable prices, we recommend:
 
@@ -78,7 +78,7 @@ Bitwarden will be deployed and run on your machine using an array of [Docker](ht
 See the following official Docker documentation for more information:
 
 - [Install Docker](https://docs.docker.com/engine/installation/){:target="_blank"}
-- [Install Docker Compose](https://docs.docker.com/compose/install/){:target="_blank"} 
+- [Install Docker Compose](https://docs.docker.com/compose/install/){:target="_blank"}
 
 {% note %}
 Some Docker installations such as Windows and macOS already come with Docker Compose installed.
