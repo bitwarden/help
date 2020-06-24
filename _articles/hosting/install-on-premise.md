@@ -52,7 +52,7 @@ This article will walk you through how to install and deploy Bitwarden to your o
        .\bitwarden.ps1 -restart
 6. Test your deployment. Visit the web vault at your configured domain name, register a new account, and log in.
 
-## Recommended System Requirements
+## Recommended Minimum System Requirements
 
 - Processor: x64, 2 GHz dual core
 - Memory: 4 GB RAM (system memory)
