@@ -49,7 +49,7 @@ In addition to defining the User Type, Access Control determines a full or parti
 Choose **all items** or **selected collections** to set the appropriate access for the user.
 
 {% note %}
-Admin and Owner user-types can access all collections regardless of assignment.
+Admin and Owner user-types can access all collections regardless of assignment when accessing Bitwarden from the Organization View. Assignments will control client access and display of collections.
 {% endnote %}
 
 ### Item Access and Control
@@ -59,5 +59,9 @@ Admin and Owner user-types can access all collections regardless of assignment.
 
 **Hide Passwords**
 - This option hides passwords, TOTP seeds, and any custom fields of type *hidden* in this collection. This also disables the ability for an end-user to copy a password. In this configuration, an item may only be used with auto-fill.
+
+{% warning %}
+Enabling hidden passwords prevents the easy copy and paste of hidden items, however it does not completely prevent user access to this information. Please treat hidden passwords as you would any shared credential.
+{% endwarning %}
 
 {% image organizations/user-types-access-control.png %}
