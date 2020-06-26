@@ -9,7 +9,7 @@ tags: [browser, autofill, auto-fill, identity, card, form fill]
 
 Bitwarden can autofill more than just your usernames and passwords! It can make online purchases and account creations a breeze. If you're unfamiliar with what these item types are, refer to our [Managing Items][managing-items-doc] article.
 
-{% note %}The Bitwarden web browser extension is currently the only client capable of auto-filling these types of items.{% endnote %}
+{% note %}The ability to autofill identities and cards is only available with the Bitwarden web browser extension at this time. Unfortunatley, mobile platforms such as Android and iOS do not support these types of autofill functions.{% endnote %}
 
 ## Autofill an Identity
 
