@@ -1,5 +1,5 @@
 layout: article
-title: Import your data from Firefox
+title: Autofill Identities and Cards
 categories: [features]
 featured: true
 popular: false
