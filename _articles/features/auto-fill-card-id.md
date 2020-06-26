@@ -23,7 +23,7 @@ Bitwarden can autofill more than just your usernames and passwords! It can make 
 
 ## Hide Identities and Cards
 
-If you prefer that the Identities and Cards not be shown when opening the extension they can be hidden from view of the **Tab** section of the browser extension.
+Identities and Cards can be hidden from view of the **Tab** section if your prefer them not be shown when opening the browser extension.
 
 {% note %}Hiding these items will disable their ability to be auto-filled.{% endnote %}
 
