@@ -11,7 +11,13 @@ Collections allow you to group related items that are being shared from your org
 
 {% image organizations/collection-listing.png %}
 
-When you add a new user to your organization, you can associate that user to one or more collections within your organization. Once the user has access to your organization, any items that are placed into that user's associated collections will be available in their vault. When associating a user to a particular collection, you can also decide whether or not that user has write access to logins contained within it. Selecting the **Read Only** option will ensure that the user cannot add, edit, or delete any items within that particular collection (they can just view and use them). You can also associate [user groups]({% link _articles/organizations/groups.md %}) to collections in the same way.
+When you add a new user to your organization, you can associate that user to one or more collections within your organization. Once the user has access to your organization, any items that are placed into that user's associated collections will be available in their vault.
+
+When associating a user to a particular collection, you can select options for users and groups that will access the items within the collection.
+
+**Read Only:** Selecting this option will ensure that the user cannot add, edit, or delete any items within that particular collection (they can just view and use them). You can also associate [user groups]({% link _articles/organizations/groups.md %}) to collections in the same way.
+
+**Hide Passwords:** This option will hide all passwords, hidden fields, and TOTP seeds within the collection, from users who are assigned to it. This will also prevent copy and paste actions as well. Credentials in this collection will have to leverage autofill functions for input.
 
 {% note %}
 Collections are different than [folders]({% link _articles/features/folders.md %}). Collections are a way to organize items and control user access within an organization’s vault while folders are a way for individual users to organize items within their own personal vault. An individual user may wish to further organize the items being shared with them in their own vault into a personalized folder structure that makes sense just for them.
