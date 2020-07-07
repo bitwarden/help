@@ -31,7 +31,7 @@ You can search for up to 30 days of log events that scroll continuously.
 
 {% image organizations/event-logs.png Web Vault Management %}
 
-To gather more data  plans with API access can use the [Bitwarden API](https://bitwarden.com/help/api/). API responses will contain the type of event (enums referenced below) and relevant data.
+To gather more data, plans with API access can use the [Bitwarden API](https://bitwarden.com/help/api/). API responses will contain the type of event (enums referenced below) and relevant data.
 
 Example:
 ```
@@ -58,7 +58,7 @@ Example:
 
 ## What information is contained in event logs?
 
-Log data contains different events  based on the action and level of action taken. Below are the items currently captured in the Event logs.
+Log data contains different events based on the action and level of action taken. Below are the items currently captured in the Event logs.
 
 ### User events
 
