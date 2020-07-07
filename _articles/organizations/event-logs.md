@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Bitwarden event logs
+title: Organization event logs
 categories: [organizations]
 featured: true
 popular: false
