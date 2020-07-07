@@ -25,7 +25,7 @@ Event logs are notes that contain time-stamped, detailed information about what 
 
 ## Where can I access event logs?
 
-Inside the Web Vault  navigate to your Organization > Tools > Event logs.
+Inside the Web Vault  navigate to your Organization &#8594; Manage &#8594; Event logs.
 
 You can search for up to 30 days of log events that scroll continuously.
 
