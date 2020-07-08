@@ -20,7 +20,7 @@ As the system administrator of your Bitwarden installation you can use the **Adm
 Admins cannot globally view sensitive data that is protected (encrypted) in a user's or organization's vault.
 {% endnote %}
 
-The admin portal for your installation is available at <https://bitwarden-domain.com/admin>.
+The admin portal for your installation is available at https://bitwarden.example.com/admin.
 
 ## Configuring Admin Portal Access
 
