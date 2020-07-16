@@ -52,4 +52,6 @@ Other browsers such as Safari and legacy Edge do not currently support changing 
 
 Bitwarden includes an experimental feature to auto-fill logins immediately after a webpage containing a login form loads in your browser. This feature requires you to opt-in to use it. You can enable "Auto-fill On Page Load" under **Settings** &rarr; **Options**.
 
+{% image autofill-extension-option.png %}
+
 In the case of multiple logins matching the current website, the last used login will be used for the auto-fill operation. If the wrong login is auto-filled, you can auto-fill again using the popup window and reset the last used login.
