@@ -22,3 +22,7 @@ Changing your email address will log you out of all Bitwarden applications.
 7. Click the **Change Email** button
 8. Log back in to confirm that you can log in using the new email
 9. Log out and back in to any other Bitwarden applications that you are using. You will eventually be logged out automatically.
+
+{% note %}
+If you have not receive the verification code from Bitwarden after a few minutes, please check your spam folder to see if the message got filtered by mistake. Adding "no-reply@bitwarden.com" to your contacts and whitelist the same domain may help to ensure delivery.
+{% endnote %}
