@@ -26,7 +26,7 @@ Directory sync is only available to enterprise organizations.
 
 The Bitwarden Directory Connector is cross-platform desktop application that allows you to keep your Bitwarden organization and user directory in sync. Directory Connector can be run on-demand manually as well as automatically in the background on an configured interval. The Directory Connector application can be installed on Windows, macOS, and most Linux distributions.
 
-You can install and run Directory Connector as an agent on the server that hosts your directory, an administrator's workstation, or any other desktop device than can access the directory.
+You can install and run Directory Connector as an agent on the server that hosts your directory, an administrator's workstation, or any other desktop device that can access the directory.
 
 {% image directory-connector/app.png %}
 
@@ -296,7 +296,7 @@ bwdc --version
 
 ### Troubleshooting
 
-If you receive an error message referring to the libsecret shared object `Error: libsecret-1.so.0: cannot open shared object file: No such file or directory`, you may need to install libsecret which is required to store things securely on the host. 
+If you receive an error message referring to the libsecret shared object `Error: libsecret-1.so.0: cannot open shared object file: No such file or directory`, you may need to install libsecret which is required to store things securely on the host.
 
 ### Enums
 
