@@ -1,13 +1,13 @@
 ---
 layout: article
-title: Authentication with biometrics
+title: Unlocking with biometrics
 categories: [account-management, organizations]
 featured: false
 popular: false
-tags: [authentication, face id, touch id, hello, windows, mac, ios, android]
+tags: [unlock, face id, touch id, hello, windows, mac, ios, android]
 ---
 
-## Authentication
+## Unlocking
 
 After logging into your Bitwarden account using your Master Password and any two-step login (if enabled) - you can leverage your device’s biometrics capabilities to unlock your vault faster.
 
@@ -17,7 +17,7 @@ Bitwarden is leveraging native APIs to perform this validation, and as such does
 
 ## Windows
 
-### Supported Authentication:
+### Supported unlocking options:
 - Hello (includes below options)
   - PIN
   - Facial Recognition
@@ -31,7 +31,7 @@ Bitwarden is leveraging native APIs to perform this validation, and as such does
 
 ## macOS
 
-### Supported authentication methods
+### Supported unlocking options
 
 - Touch ID
 
@@ -43,7 +43,7 @@ Bitwarden is leveraging native APIs to perform this validation, and as such does
 
 ## Android
 
-### Supported authentication methods
+### Supported unlocking options
 
 - Fingerprint unlock
 - Face Unlock
@@ -59,7 +59,7 @@ Bitwarden is leveraging native APIs to perform this validation, and as such does
 
 ## iOS
 
-### Supported authentication methods
+### Supported unlocking options
 - Touch ID
 - Face ID
 
