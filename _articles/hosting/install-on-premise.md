@@ -69,8 +69,6 @@ By default, Bitwarden will be served through ports 80 (http) and 443 (https) on 
 
 If you are serving Bitwarden to the outside world you will need to configure a domain name with DNS records that point to your host machine (ex. bitwarden.example.com). *You should configure this domain before beginning your Bitwarden installation.*
 
-Alternatively, if you are only testing you can install Bitwarden to the "localhost" domain.
-
 ## Install Docker
 
 Bitwarden will be deployed and run on your machine using an array of [Docker](https://www.docker.com/what-docker){:target="_blank"} containers. Bitwarden will work equally well with Docker Community (free) and Enterprise editions. You should evaluate which edition is best for your installation. Additionally, deployment of these containers is orchestrated through the use of [Docker Compose](https://docs.docker.com/compose/){:target="_blank"}. Docker and Docker Compose must first be installed on your machine before beginning a Bitwarden installation.
