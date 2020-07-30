@@ -17,7 +17,7 @@ exclude:
   - appveyor.yml
   - README.md
 
-include: 
+include:
   - ".nojekyll"
 
 collections:
@@ -26,4 +26,4 @@ collections:
     permalink: /:path/
   articles:
     output: true
-    permalink: /article/:name/
+    permalink: /:name/
