@@ -18,7 +18,7 @@ exclude:
   - README.md
 
 include:
-  - ".nojekyll"
+  - '.nojekyll'
 
 collections:
   categories:
@@ -27,3 +27,6 @@ collections:
   articles:
     output: true
     permalink: /:name/
+
+plugins:
+  - jekyll-redirect-from
