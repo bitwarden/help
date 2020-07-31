@@ -1,0 +1,22 @@
+---
+layout: null
+title: Sitemap XML
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  {% assign sorted_articles = site.articles | sort: 'title' %}
+  {% for post in sorted_articles %}
+    <url>
+      <loc>https://bitwarden.com/help{{ post.url }}</loc>
+      {% if post.lastmod == null %}
+        <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
+      {% else %}
+        <lastmod>{{ post.lastmod | date_to_xmlschema }}</lastmod>
+      {% endif %}
+      <changefreq>monthly</changefreq>
+      <priority>0.6400</priority>
+    </url>
+  {% endfor %}
+
+</urlset>
