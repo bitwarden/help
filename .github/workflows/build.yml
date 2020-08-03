@@ -18,7 +18,7 @@ jobs:
           ruby-version: 2.6
 
       - name: Set up Jekyll
-        run: gem install bundler jekyll jekyll-redirect-from
+        run: gem install bundler jekyll
 
       - name: Print environment
         run: |

@@ -27,6 +27,3 @@ collections:
   articles:
     output: true
     permalink: /:name/
-
-plugins:
-  - jekyll-redirect-from
