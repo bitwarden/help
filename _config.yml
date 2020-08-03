@@ -26,4 +26,4 @@ collections:
     permalink: /:path/
   articles:
     output: true
-    permalink: /:name/
+    permalink: /article/:name/
