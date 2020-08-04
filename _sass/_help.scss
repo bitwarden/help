@@ -8,14 +8,7 @@ html {
 }
 
 body {
-    margin-bottom: 465px;
-    background-color: #ffffff;
-}
-
-@media(min-width:$screen-sm) {
-    body {
-        margin-bottom: 300px;
-    }
+    padding-top: 81px;
 }
 
 .navbar-brand {
@@ -74,23 +67,36 @@ content {
     font-size: 16px;
 }
 
-footer {
+footer.default-footer {
     background-color: $brand-dark-accent;
-    height: 465px;
     margin: 0;
     color: #fff;
-    position: absolute;
     width: 100%;
-    bottom: 0;
     font-size: 16px;
-    padding: 40px 0;
+    padding: 40px 0 100px;
+
+    .footer-logo {
+        display: block;
+        margin-bottom: 30px;
+    }
 
     a {
         color: #fff;
 
-        &:hover {
+        &:hover,
+        &:focus {
             color: #fff;
         }
+
+        &[disabled] {
+            cursor: not-allowed;
+            opacity: 0.5;
+            text-decoration: none;
+        }
+    }
+
+    h4 {
+        margin-top: 0;
     }
 
     ul {
@@ -99,28 +105,42 @@ footer {
         }
     }
 
-    .social {
-        i {
-            font-size: 40px;
-            margin-bottom: 10px;
-        }
+    .copyright {
+        margin-top: 30px;
     }
 
-    @media(min-width:$screen-md) {
-        .social {
-            margin-top: 40px;
+    .social {
+        .list-inline {
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-end;
+        }
 
-            i {
-                font-size: 55px;
+        i {
+            font-size: 30px;
+
+            &.discourse-logo {
+                height: 30px;
+                width: 30px;
+
+                &:before {
+                    background-size: 30px 30px;
+                    background: url('./../images/discourse-logo.svg') no-repeat center top;
+                    content: '';
+                    display: block;
+                    height: 30px;
+                    width: 30px;
+                }
+
             }
         }
     }
 
-    @media(min-width:$screen-sm) {
-        height: 300px;
-
+    @media(max-width:$screen-sm) {
         .social {
-            margin-top: 0;
+            .list-inline {
+                justify-content: flex-start;
+            }
         }
     }
 }
@@ -290,7 +310,7 @@ footer {
     figure {
         display: block;
         margin: 0 auto 35px;
-        
+
         figcaption {
             font-size: 14px;
             color: $text-muted;

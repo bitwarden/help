@@ -17,8 +17,8 @@ exclude:
   - appveyor.yml
   - README.md
 
-include: 
-  - ".nojekyll"
+include:
+  - '.nojekyll'
 
 collections:
   categories:

@@ -54,13 +54,8 @@ $navbar-inverse-toggle-border-color: darken($brand-primary, 5%);
 
 //== Container sizes
 $grid-gutter-width: 30px !default;
-// Large screen / wide desktop
-$container-large-desktop: (940px + $grid-gutter-width) !default;
-//** For `$screen-lg-min` and up.
-$container-lg: $container-large-desktop !default;
 
 // Screen sizes
-
 $screen-xxs: 375px;
 $screen-xxs-min: 375px;
 $screen-xxs-max: ($screen-xxs-min - 1);

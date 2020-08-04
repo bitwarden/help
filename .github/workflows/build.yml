@@ -4,9 +4,7 @@ on: push
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
     steps:
       - name: Set up Node
         uses: actions/setup-node@v1
