@@ -101,7 +101,11 @@ A: Features developed that apply for all users will be added to applicable plans
 
 **Q: I am using a Families Plan--how do I upgrade to receive the new Premium Features?**
 
-A: You will need to wait for the new plan to arrive in September and then contact the Bitwarden team to move to the new plan [here](https://bitwarden.com/contact/).
+A: You will need to wait for the new plan to arrive in September and then contact the Bitwarden team.
+
+**Q: Is it possible to purchase a Families Plan without Premium Features?**
+
+A: After August 31, 2020 all Families Plan will include Premium Features automatically. If you currently have a Families Plan without Premium, your pricing will remain the same unless you upgrade your plan. The legacy Families Plan without Premium Features will no longer be available after August 31, 2020.
 
 **Q: I am a current Enterprise Plan customer and would like to implement the new Login with SSO feature, what do I need to do?**
 
