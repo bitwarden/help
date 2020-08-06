@@ -9,7 +9,7 @@ tags: [fields, autofill, custom fields]
 
 Custom fields allow you to store additional, well structured data fields within your vault entries. These fields could be security questions, PINs, or anything else. Custom fields have a name, a value, and a type (text, hidden, and boolean).
 
-## Auto-filling custom fields
+## Using Custom Fields to Auto-fill
 
 Custom field names are an important identifier. Depending on the name you give your custom field, Bitwarden will attempt to auto-fill the custom field's value for you. If you intend to auto-fill custom fields you should name your field based on an identifier from the webpage form. These names are searched for using the following criteria:
 
@@ -20,6 +20,18 @@ Custom field names are an important identifier. Depending on the name you give y
 - then the HTML form element's **placeholder** attribute
 
 If one of these matches is found, Bitwarden will auto-fill the custom field's value for you.
+
+### Here is an example of how to configure a Custom Field using the id attribute:
+
+1. Right-click the field you want to fill and select "Inspect". The HTML element will appear highlighted in the console window.
+2. Find the element id. You are looking for what comes after id=" ". Copy what is in between the " ".
+    <img width="80%" src="../../images/features/custom-fields/custom_field.gif">
+3. Open the website, login in to your vault and edit it.
+4. Select the corresponding type (text, hidden or boolean) and then press the blue "+" icon.
+    <img width="60%" src="../../images/features/custom-fields/types.png">
+5. In the "Name" field paste the element ID.
+6. In the "Value" field enter your info you want auto-filled.
+7. Save the entry.  
 
 ## Special name prefixes for auto-filling
 
