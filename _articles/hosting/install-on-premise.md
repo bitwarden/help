@@ -12,7 +12,7 @@ This article will walk you through how to install and deploy Bitwarden to your o
 ## Table of Contents
 
 - [TL;DR](#tldr)
-- [System Requirements](#system-requirements)
+- [System Requirements](#recommended-minimum-system-requirements)
 - [Configure Your Domain](#configure-your-domain)
 - [Install Docker](#install-docker)
 - [Install Bitwarden](#install-bitwarden)
@@ -217,7 +217,7 @@ PowerShell users will run the commands with a prefixed `-` (switch). For example
 | update     | Update all containers and the database.                        |
 | updatedb   | Update/initialize the database.                                |
 | updateself | Update this main script.                                       |
-| updateconf | Update all containers without restarting the running instance. | 
+| updateconf | Update all containers without restarting the running instance. |
 | renewcert  | Renew certificates.                                            |
 | rebuild    | Rebuild generated installation assets from `config.yml`.       |
 | help       | List all commands.                                             |
