@@ -113,8 +113,32 @@ Log data contains different events based on the action and level of action taken
         Organization_PurgedVault = 1601
         Policy_Updated = 1700
 
-## GitHub Link
+### GitHub Link
 
 To see the most current enumerations and data model for event logs, please see the below project file
 
 - [https://github.com/bitwarden/server/blob/master/src/Core/Enums/EventType.cs](https://github.com/bitwarden/server/blob/master/src/Core/Enums/EventType.cs)
+
+## SIEM and external system integrations
+
+When exporting data from Bitwarden into other systems, a combination of data from the API and CLI may be used to gather data.
+
+For example, Bitwarden RESTful APIs gather data around the structure of the organization.
+
+- GET /public/members returns the Members,Ids, and assigned groupIds
+- GET /public/groups returns all the Groups, Ids, assigned Collections, and their permissions
+- GET /public/collections returns all Collections, and their assigned Groups
+
+Once you have the unique ID for each member, group, and collection, you can now use the CLI tool to gather  information using the CLI command ```bw-list``` retrieve the following items in JSON format:
+
+- Org Members
+- Items
+- Collections
+- Groups
+
+After gathering this data, you can join rows on their unique Ids to build a reference to all parts of your Bitwarden Organization.
+
+### Documentation
+
+- API documentation is available [here.](https://bitwarden.com/help/api/)
+- CLI documentation is available [here.](https://bitwarden.com/help/article/cli/)
