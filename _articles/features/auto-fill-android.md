@@ -7,7 +7,7 @@ popular: false
 tags: [android, autofill, auto-fill]
 ---
 
-You can use the Bitwarden Android app to add new and auto-fill existing logins on the web and in other apps. There are two services which need to be enabled on Android to cover all Auto-fill scenarios, AUTO-FILL FRAMEWORK SERVICE and AUTO-FILL ACCESSIBILITY SERVICE. These services can be enabled from within the Bitwarden App under **{% icon fa-cog %} Settings**. When configured, you should see "Enabled" in green text. Double-check under the AUTO-FILL ACCESSIBILITY SERVICE that the Permission shows "Granted" in green text as well. 
+You can use the Bitwarden Android app to add new and auto-fill existing logins on the web and in other apps. There are two services which need to be enabled on Android to cover all Auto-fill scenarios, AUTO-FILL FRAMEWORK SERVICE and AUTO-FILL ACCESSIBILITY SERVICE. These services can be enabled from within the Bitwarden App under **{% icon fa-cog %} Settings**. When configured, you should see "Enabled" in green text. Double-check under the AUTO-FILL ACCESSIBILITY SERVICE that the Permission shows "Granted" in green text as well.
 
 Supported Versions:
 1. The **Autofill Framework Service** for Android users on Oreo (8.0) and greater.
@@ -40,7 +40,7 @@ The Autofill Framework Service is context-sensitive and will appear whenever you
 3. Tap **Auto-fill Accessibility Service**. Status *Disabled* will appear in red.
 4. Tap the **OPEN ACCESSIBILITY SETTINGS** button.
 5. Locate **Bitwarden** from the list and enable it.
-6. You will now see Permission is still *Denied* and appears in red. 
+6. You will now see Permission is still *Denied* and appears in red.
 7. Tap the **OPEN OVERLAY PERMISSION SETTINGS** button.
 8. Tap **Allow permission** and go back.
 
@@ -69,5 +69,7 @@ Here is an interesting site regarding devices and their battery optimization def
 [https://dontkillmyapp.com/](https://dontkillmyapp.com/this){:target="_blank"}
 
 {% note %}
-Android has many web browsers. It can be hard to keep up with them all. We have to add support for each browser individually. If auto-fill does not work and your browser is not listed above please report it at <https://github.com/bitwarden/mobile/issues> so that we can add support.
+Android has many web browsers. It can be hard to keep up with them all. We have to add support for each browser individually.
+
+If your browser is not currently supported, please visit our community forums at <https://community.bitwarden.com> and submit a feature request for your browser.
 {% endnote %}
