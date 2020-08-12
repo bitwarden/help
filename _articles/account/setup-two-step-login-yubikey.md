@@ -71,7 +71,7 @@ Two-step login can permanently lock you out of your account. It is very importan
 If you are having trouble getting the YubiKey NEO or YubiKey 5 NFC to work on your Android device, confirm the following:
 
 1. You have checked the **One of my keys supports NFC** checkbox from step 5 above.
-2. Your Android device [supports NFC](https://en.wikipedia.org/wiki/List_of_NFC-enabled_mobile_devices){:target="_blank"} and is [known to work properly](https://forum.yubico.com/viewtopic.php?f=26&t=1302){:target="_blank"} with YubiKey NEO or YubiKey 5 NFC.
+2. Your Android device [supports NFC](https://en.wikipedia.org/wiki/List_of_NFC-enabled_mobile_devices){:target="_blank"} and is [known to work properly](https://forum.yubico.com/viewtopic1c5f.html?f=26&t=1302){:target="_blank"} with YubiKey NEO or YubiKey 5 NFC.
 3. You have NFC enabled on your Android device. Enable NFC by going to Android **Settings** &rarr; **More** and enable the **NFC** option.
 4. Your keyboard layout/format/mode is set to QWERTY. 
 
