@@ -30,7 +30,7 @@ There are no changes to the **Bitwarden Free Account**, and **Bitwarden Premium 
 
 **Bitwarden Teams** gets upgraded with Premium Features for all users, as well as some administrative features such as event logs, user group configuration, API access, 2FA with Duo, and access to the Directory Connector. The updated Teams plan is $3 per user per month billed annually.
 
-**Bitwarden Enterprise** now includes our new [Login with SSO](https://bitwarden.com/blog/post/bitwarden-announces-integrated-password-security-with-identity-based-sso/), as well as Enterprise Policies. The updated Enterprise plan is $5 per user per month billed annually.
+**Bitwarden Enterprise** now includes our new [Login with SSO](https://bitwarden.com/blog/post/bitwarden-password-manager-login-with-sso/), as well as Enterprise Policies. The updated Enterprise plan is $5 per user per month billed annually.
 
 ## Family Plan now has Premium Features
 
@@ -50,7 +50,7 @@ Teams Plans get expanded Bitwarden access with more features for team members an
 
 ## Enterprise Plan: Take advantage of Login with SSO
 
-The new Enterprise Plan brings significant value to users with the highly anticipated [Login with SSO](https://bitwarden.com/blog/post/bitwarden-announces-integrated-password-security-with-identity-based-sso/) capability.
+The new Enterprise Plan brings significant value to users with the highly anticipated [Login with SSO](https://bitwarden.com/blog/post/bitwarden-password-manager-login-with-sso/) capability.
 
 Login with SSO increases the value of Bitwarden for enterprises by bringing advantages to administrators and end-users:
 
