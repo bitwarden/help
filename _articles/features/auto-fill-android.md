@@ -69,7 +69,7 @@ Here is an interesting site regarding devices and their battery optimization def
 [https://dontkillmyapp.com/](https://dontkillmyapp.com/this){:target="_blank"}
 
 {% note %}
-Android has many web browsers. It can be hard to keep up with them all. We have to add support for each browser individually.
+Android has many web browsers. It can be hard to keep up with them all. We have to add support for each browser individually. 
 
-If your browser is not currently supported, please visit our community forums at <https://community.bitwarden.com> and submit a feature request for your browser.
+If auto-fill does not work on your browser, please report it at <https://github.com/bitwarden/mobile/issues> so that we can add support.
 {% endnote %}
