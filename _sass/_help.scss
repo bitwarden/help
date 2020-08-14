@@ -11,6 +11,13 @@ body {
     padding-top: 81px;
 }
 
+:target::before {
+    content: '';
+    display: block;
+    height: 91px;
+    margin-top: -91px;
+}
+
 .navbar-brand {
     @media(min-width:$screen-sm) {
         .fa {
