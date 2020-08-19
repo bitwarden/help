@@ -28,7 +28,7 @@ A Duo account is required to use this feature. A Duo account [for up to 10 users
 
 ## Get the Duo Mobile App
 
-It is recommended to install the free [Duo Mobile](https://duo.com/product/trusted-users/two-factor-authentication/duo-mobile){:target="_blank"} app if you want to take advantage of quickly logging in with push notifications. This is optional, however, since Duo also supports SMS, phone calls, and U2F security keys.
+It is recommended to install the free [Duo Mobile](https://duo.com/product/trusted-users/two-factor-authentication/duo-mobile){:target="_blank"} app if you want to take advantage of quickly logging in with push notifications. This is optional since Duo also supports SMS, phone calls, and U2F security keys.
 
 - iOS: [Download on the App Store](https://itunes.apple.com/us/app/duo-mobile/id422663827?mt=8){:target="_blank"}
 - Android: [Download on Google Play](https://play.google.com/store/apps/details?id=com.duosecurity.duomobile){:target="_blank"}
