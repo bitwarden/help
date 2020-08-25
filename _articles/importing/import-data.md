@@ -58,6 +58,7 @@ You can very easily import your data from an array of different password manager
 - True Key (csv)
 - Universal Password Manager (csv)
 - [Vivaldi (csv)]({% link _articles/importing/import-from-chrome.md %})
+- Yoti (csv)
 - Zoho Vault (csv)
 
 **Personal Accounts**
