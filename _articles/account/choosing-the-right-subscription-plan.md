@@ -143,4 +143,4 @@ A: Once you elect to move forward with the new subscription plan, going back to 
 
 {%note%}
 The date for plan changes was removed to generalize the messaging. Login with SSO will be available on the Bitwarden platform in September.
-{%end note%}
+{%endnote%}
