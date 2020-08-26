@@ -22,7 +22,7 @@ tags: [free, personal, organization, enterprise, teams, family, plans, subscript
 
 In continuing our mission to empower individuals and organizations to store and share sensitive data easily and securely, we are upgrading features included in some Plans. Certain Plan pricing is being updated as well.
 
-**For existing customers as of August 31, 2020, your Plan and your pricing will not change--your existing Plan will continue as it is now. Further, there is no plan to change your Plan or your pricing. However, if you are interested in moving to a new Plan, you can choose to upgrade anytime.**
+**For existing customers, your Plan and your pricing will not change--your existing Plan will continue as it is now. Further, there is no plan to change your Plan or your pricing. However, if you are interested in moving to a new Plan, you can choose to upgrade anytime.**
 
 There are no changes to the **Bitwarden Free Account**, and **Bitwarden Premium Features**, which remain at $10/year. We believe password management for individuals can and should be free. We also believe advanced options for individuals should be affordable.
 
@@ -140,3 +140,7 @@ A: To use Login with SSO you would need to move to the upgraded plan. We are off
 **Q: Can I change to the new subscription plan with Login with SSO, and then go back to the old subscription plan if we decide we don’t need the feature?**
 
 A: Once you elect to move forward with the new subscription plan, going back to your previous subscription plan will not be an option.
+
+{%note%}
+The date for plan changes was removed to generalize the messaging. Login with SSO will be available on the Bitwarden platform in September.
+{%end note%}
