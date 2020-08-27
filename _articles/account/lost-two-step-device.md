@@ -9,7 +9,7 @@ tags: [two-step login, 2fa, two factor authentication, account]
 
 If you have lost access to the device or method that you use for two-step login (2FA) you can recover your account using your two-step login **recovery code**.
 
-The recovery code is a 32 character alpha-numeric code. You can get your two-step login recovery code in the [web vault](https://vault.bitwarden.com) under **Settings** &rarr; **Two-step Login**, then click the **View Recovery Code** button. We recommend that your print your recovery code and keep it in a safe place.
+The recovery code is a 32 character alpha-numeric code. You can get your two-step login recovery code in the [web vault](https://vault.bitwarden.com) under **Settings** &rarr; **Two-step Login**, then click the **View Recovery Code** button. We recommend that you print your recovery code and keep it in a safe place.
 
 {% warning %}
 Without your recovery code, two-step login can permanently lock you out of your Bitwarden account. It is very important to have your recovery code if you plan to use two-step login. Bitwarden support will not be able to assist you if you lose access to your account.
