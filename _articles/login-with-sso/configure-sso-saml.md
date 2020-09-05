@@ -10,7 +10,7 @@ tags: [sso, saml, oidc, openid, saml2.0, idp, identity]
 
 ## SAML *Service Provider* Configuration
 
-### SP Entity ID
+### SP Entity ID *Required*
 
 Bitwarden Login with SSO endpoint
 
@@ -49,9 +49,9 @@ Options:
 
 ## SAML *Identity Provider* Configuration
 
-### Entity ID (Required)
+### Entity ID (*Required*)
 
-The Address or URL of your SAML Server.
+The Address or URL of your Identity Server.
 
 ### Binding Type
 
@@ -60,13 +60,21 @@ Options:
 - HttpPost
 - Artifact
 
-### Single Sign On Service URL (Required if IdP Entity is not a URL)
+### Single Sign On Service URL
+
+*Required if IdP Entity is not a URL*
 
 ### Single Log Out Service URL
 
-### Artifact Resolution Service URL (Required if Binding type = Artifact)
+URL for SLO messages. This functionality is not yet available for Bitwarden, however you can preconfigure this URL.
 
-### X509 Public Certificate (Required if Signing behavior != Never)
+### Artifact Resolution Service URL
+
+*Required if Binding type = Artifact*
+
+### X509 Public Certificate
+
+*Required if Signing behavior != Never*
 
 ### Outbound Signing Algorithm
 
@@ -79,6 +87,6 @@ Options:
 
 ### Other Identity Provider Options
 
-- Allow Unsolicited Authentication Response (Boolean)
-- Disable Outbound Logout Requests (Boolean)
-- Want Authentication Requests Signed (Boolean)
+- Allow Unsolicited Authentication Response (*Boolean*)
+- Disable Outbound Logout Requests (*Boolean*)
+- Want Authentication Requests Signed (*Boolean*)
