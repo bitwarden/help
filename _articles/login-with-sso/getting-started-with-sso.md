@@ -1,6 +1,6 @@
 ---
 layout: article
-title:  Getting started with Login with SSO
+title: Getting started with Login with SSO
 categories: [login-with-sso]
 featured: true
 popular: false
@@ -9,7 +9,7 @@ tags: [sso, saml, oidc, openid, saml2.0, idp, identity]
 
 ## What is Login with SSO?
 
-The Login with SSO feature allows you to use your existing Identity Provider to authenticate into Bitwarden. Login with SSO is available on the updated Enterprise Plan.
+The Login with SSO feature allows you to use your existing Identity Provider to authenticate into Bitwarden. Login with SSO is available on the current Enterprise Plan.
 
 ### Identity Server Requirements
 - Support for SAML 2.0
@@ -71,7 +71,7 @@ Bitwarden Login with SSO is configurable to work with your OIDC IdP - for detail
 
 ## Logging In with SSO
 
-Logging into your Bitwarden client using Login with SSO is accomplished by a few simple steps.
+Logging into your Bitwarden client using Login with SSO is accomplished by a few steps.
 
 1. Once your Bitwarden client app is installed, navigate to the login screen or window.
 2. Click or tap the **Enterprise Single Sign-On** button.
@@ -83,7 +83,7 @@ Logging into your Bitwarden client using Login with SSO is accomplished by a few
 - The user is now logged into their Bitwarden account and is in *accepted* status within their organization.
 
 {%note%}
-Users that register “Just-In-Time” or “on the fly” for their Organization will still need to be confirmed to access any shared Organization Items.
+Users that register “Just-In-Time” or “on the fly” for their Organization will still need to be confirmed to access any shared Organization Items. For more information about managing and confirming users, visit our article [here.](https://bitwarden.com/help/article/managing-users/)
 
 Users will also need to be assigned to any Groups and Collections.
 
