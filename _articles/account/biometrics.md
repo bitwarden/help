@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Unlocking with biometrics
-categories: [account-management, organizations]
+categories: [account-management]
 featured: false
 popular: false
 tags: [unlock, face id, touch id, hello, windows, mac, ios, android]

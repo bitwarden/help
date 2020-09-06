@@ -43,6 +43,14 @@ Bitwarden currently supports the following Organization Policies
 
 {% image policies/policies-enable.png %}
 
+{%note%}
+For Bitwarden server versions 1.37+ you will use the business portal to configure policies.
+{%endnote%}
+
+{% image policies/policies-business-portal.png Enter the business portal to manage policies %}
+
+{% image policies/policies-menu-business-portal.png Choose Policies to enable and configure enterprise policies %}
+
 ## Two-Step Login
 
 When this policy is set, members will need to have two-step login configured on their user account in order to join the organization.
@@ -54,10 +62,10 @@ When this policy is set, members will need to have two-step login configured on 
 Ideally, this policy is set before any users are invited to join an organization. The following events will occur when an Organization enabled the two-step policy for the first time:
 
 - The administrator will receive a warning that Organization members, in confirmed status, who don’t have two-step for their account will be removed from the organization and will receive an email notifying them about the change.
-- If the administrator proceeds to enable the two-step login policy Confirmed members of the organization who do not have two-step login enabled will lose access to the organization. 
-- Members who lose access to an organization will receive an email informing them of such. 
+- If the administrator proceeds to enable the two-step login policy Confirmed members of the organization who do not have two-step login enabled will lose access to the organization.
+- Members who lose access to an organization will receive an email informing them of such.
  - Once the user enables two-step login on their account they can then be re-join to the organization through a new invite.
- - Newly invited members will not be able to accept their invitation to the organization until they enabled two-step login on their user account. 
+ - Newly invited members will not be able to accept their invitation to the organization until they enabled two-step login on their user account.
 - If a newly invited member currently has a Bitwarden account using the invited email address, they will be notified and must enable two-step login before accepting their invitation.
  - If a newly invited member does not have an account, they will default to using email-based two-step login but will be able to change this configuration at any time.
 - If a member of the organization later disables two-step login on their account, they will be removed from the organization.

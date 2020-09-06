@@ -40,13 +40,48 @@ Premium Features include 1 GB of encrypted file storage, two-step authentication
 
 The Families Plan includes 6 user seats for $40/year and all members automatically get Bitwarden Premium Features.
 
-{% image /plans/families.png Families now includes premium features for up to 6 users %}
+|  | Classic Families Plan + Premium Features | Families Plan (includes premium) |
+|:---|:---:|:---:|
+|  **Cost** | $52/year |  $40/year |
+| **Feature**  |   |   |
+| Base users | 5 | 6 |
+| Max users | 5 | 6 |
+| Max collections | Unlimited | Unlimited |
+| Cloud-hosted | <i class="fa fa-check" aria-hidden="true"></i> | <i class="fa fa-check" aria-hidden="true"></i> |
+| Self-hosted | <i class="fa fa-check" aria-hidden="true"></i> | <i class="fa fa-check" aria-hidden="true"></i> |
+| 1 GB encrypted file storage | <i class="fa fa-check" aria-hidden="true"></i> | <i class="fa fa-check" aria-hidden="true"></i> |
+| Bitwarden Authenticator (TOTP) | <i class="fa fa-check" aria-hidden="true"></i> | <i class="fa fa-check" aria-hidden="true"></i> |
+| Two-step login with YubiKey, U2F, Duo | <i class="fa fa-check" aria-hidden="true"></i> | <i class="fa fa-check" aria-hidden="true"></i> |
+| Vault health reports | <i class="fa fa-check" aria-hidden="true"></i> | <i class="fa fa-check" aria-hidden="true"></i> |
+| Priority customer support | <i class="fa fa-check" aria-hidden="true"></i> | <i class="fa fa-check" aria-hidden="true"></i> |
+
+*Pricing shown is based on an annual subscription*
 
 ## Teams Plan: Premium Features and more organizational features
 
 
 Teams Plans get expanded Bitwarden access with more features for team members and each Team organization as a whole.
-{% image /plans/teams.png Teams now has even more features to help you manage security and sharing %}
+
+|  | Classic Teams Plan | Teams Plan |
+|:---|:---:|:---:|
+|  **Cost** | $2/User/Month (billed annually) |  $3/User/Month (billed annually) |
+| **Feature**  |   |   |
+| Base users | 5 | 1 |
+| Max users | Unlimited | Unlimited |
+| Max collections | Unlimited | Unlimited |
+| Cloud-hosted | <i class="fa fa-check" aria-hidden="true"></i> | <i class="fa fa-check" aria-hidden="true"></i> |
+| Users get Premium features | - | <i class="fa fa-check" aria-hidden="true"></i> |
+| 1 GB encrypted file storage for Org items| <i class="fa fa-check" aria-hidden="true"></i> | <i class="fa fa-check" aria-hidden="true"></i> |
+| Bitwarden Authenticator (TOTP) for Org items | <i class="fa fa-check" aria-hidden="true"></i> | <i class="fa fa-check" aria-hidden="true"></i> |
+| Two-step login with YubiKey, U2F, Duo | - | <i class="fa fa-check" aria-hidden="true"></i> |
+| Vault health reports for Org items | <i class="fa fa-check" aria-hidden="true"></i> | <i class="fa fa-check" aria-hidden="true"></i> |
+| Priority customer support | <i class="fa fa-check" aria-hidden="true"></i> | <i class="fa fa-check" aria-hidden="true"></i> |
+| Event Logs | - | <i class="fa fa-check" aria-hidden="true"></i> |
+| User groups | - | <i class="fa fa-check" aria-hidden="true"></i> |
+| API Access | - | <i class="fa fa-check" aria-hidden="true"></i> |
+| Directory Connector | - | <i class="fa fa-check" aria-hidden="true"></i> |
+
+*Pricing shown is based on an annual subscription*
 
 ## Enterprise Plan: Take advantage of Login with SSO
 
@@ -61,13 +96,42 @@ Login with SSO increases the value of Bitwarden for enterprises by bringing adva
 
 Login with SSO also gives you ultimate flexibility, integrating with any existing identity management solution that uses SAML 2.0 or OpenID Connect. This feature is only available to organizations on the new Enterprise Plan, which is $5/user/month.
 
-{% image /plans/enterprise.png Enterprise is now more powerful than ever, offering identity based SSO %}
+|  | Classic Enterprise Plan | Enterprise Plan |
+|:---|:---:|:---:|
+|  **Cost** | $3/User/Month (billed annually) |  $5/User/Month (billed annually) |
+| **Feature**  |   |   |
+| Base users | 1 | 1 |
+| Max users | Unlimited | Unlimited |
+| Max collections | Unlimited | Unlimited |
+| Login with SSO | - | <i class="fa fa-check" aria-hidden="true"></i> |
+| Cloud-hosted | <i class="fa fa-check" aria-hidden="true"></i> | <i class="fa fa-check" aria-hidden="true"></i> |
+| Self-host option | <i class="fa fa-check" aria-hidden="true"></i> | <i class="fa fa-check" aria-hidden="true"></i> |
+| 1 GB encrypted file storage | <i class="fa fa-check" aria-hidden="true"></i> | <i class="fa fa-check" aria-hidden="true"></i> |
+| Bitwarden Authenticator (TOTP) | <i class="fa fa-check" aria-hidden="true"></i> | <i class="fa fa-check" aria-hidden="true"></i> |
+| Two-step login with YubiKey, U2F, Duo | <i class="fa fa-check" aria-hidden="true"></i> | <i class="fa fa-check" aria-hidden="true"></i> |
+| Vault health reports | <i class="fa fa-check" aria-hidden="true"></i> | <i class="fa fa-check" aria-hidden="true"></i> |
+| Priority customer support | <i class="fa fa-check" aria-hidden="true"></i> | <i class="fa fa-check" aria-hidden="true"></i> |
+| Event Logs | <i class="fa fa-check" aria-hidden="true"></i> | <i class="fa fa-check" aria-hidden="true"></i> |
+| User groups | <i class="fa fa-check" aria-hidden="true"></i> | <i class="fa fa-check" aria-hidden="true"></i> |
+| API Access | <i class="fa fa-check" aria-hidden="true"></i> | <i class="fa fa-check" aria-hidden="true"></i> |
+| Directory Connector | <i class="fa fa-check" aria-hidden="true"></i> | <i class="fa fa-check" aria-hidden="true"></i> |
+| Enterprise Policies | <i class="fa fa-check" aria-hidden="true"></i> | <i class="fa fa-check" aria-hidden="true"></i> |
+
+*Pricing shown is based on an annual subscription*
 
 As our roadmap expands, we expect more enterprise capabilities to reside within this plan beyond Login with SSO and Enterprise Policies.
 
 ## Compare Teams and Enterprise Plans
 
-{% image /plans/teams-enterprise.png Choose the plan that fits your organization the best %}
+|  | Bitwarden Teams | Bitwarden Enterprise |
+|:---|:---:|:---:|
+|  **Cost** | $3/User/Month (billed annually) |  $5/User/Month (billed annually) |
+| **Feature**  |   |   |
+| Login with SSO | - | <i class="fa fa-check" aria-hidden="true"></i> |
+| Enterprise Policies | - | <i class="fa fa-check" aria-hidden="true"></i> |
+| Self-host option | - | <i class="fa fa-check" aria-hidden="true"></i> |
+
+*Pricing shown is based on an annual subscription*
 
 ## Frequently Asked Questions
 
