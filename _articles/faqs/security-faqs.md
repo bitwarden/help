@@ -8,8 +8,23 @@ hidden: false
 tags: []
 ---
 
-## Compliance General
+## Table of Contents
 
+- [Compliance General](#compliance-general)
+  * [Current Certifications](#current-certifications)
+  * [GDPR](#gdpr)
+  * [SOC Certifications](#soc-certifications)
+- [Desktop Electron Backdoor Concern](#desktop-electron-backdoor-concern)
+- [Duo MFA / 2FA / Two-step Login Requirement](#duo-mfa---2fa---two-step-login-requirement)
+- [New Device Not Recognized](#new-device-not-recognized)
+- [Master Password Stored Locally?](#master-password-stored-locally-)
+- [Third party scripts, libraries, and services](#third-party-scripts--libraries--and-services)
+- [Security General (Whitepaper, Audit report, etc.)](#security-general--whitepaper--audit-report--etc-)
+- [Self-signed Certificate Setup, On-premises/self-hosted](#self-signed-certificate-setup--on-premises-self-hosted)
+- [Web Browser Extension Security/Safety Concern](#web-browser-extension-security-safety-concern)
+- [Web Browser Permission Request](#web-browser-permission-request)
+
+## Compliance General
 
 ### Current Certifications
 
