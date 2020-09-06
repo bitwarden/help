@@ -180,12 +180,16 @@ If you edit the ./bwdata/env/global.override.env file on your server, you will w
 **Trust a private CA issued or Self-signed certificate for Bitwarden Client**
 
 When using a self-signed certificate, you will need to add the certificate to your OS's Trusted Root Certification Authorities Store. Are you running the Directory Connector on Windows or Linux? If you are using Windows then you can simply run certmgr.msc and then import the certificate into the correct store/folder. If you are using Linux then you will want to add the certificate to these directories:
+```
 /usr/local/share/ca-certificates/
 /usr/share/ca-certificates/
+```
 
 Then run these commands:
+```
 sudo dpkg-reconfigure ca-certificates
 sudo update-ca-certificates
+```
 
 Once you have trusted the certificate then you will need to close the client/app and relaunch it.
 

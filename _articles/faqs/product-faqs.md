@@ -12,8 +12,10 @@ tags: []
 
 **A:** In order to change a Collection, you will use a dedicated command (bw edit item-collections).    
 
-e.g., $ echo '["a17a5b7f-66b8-4980-91a1-aaac005df696"]' | bw encode | bw edit item-collections ee9f9dc2-ec29-4b7f-9afb-aac8010631a1
-
+For example:
+```
+$ echo '["a17a5b7f-66b8-4980-91a1-aaac005df696"]' | bw encode | bw edit item-collections ee9f9dc2-ec29-4b7f-9afb-aac8010631a1
+```
 You can add multiple Collection IDs at the same time by using a comma to separate them.
 
 **Q: Can I install Bitwarden without Google Play?**   
