@@ -66,8 +66,9 @@ Once you have the new license file then you can log into your self-hosted Web Va
 
 **A:** Web Vault (<https://vault.bitwarden.com>) and go to Settings > Organizations > {YOUR ORG NAME} > Settings sub-tab (Gears Icon) > Subscription
 
-Q: Where in my account can I view Billing information?
-A: Web Vault (<https://vault.bitwarden.com>) and go to Settings > Organizations > {YOUR ORG NAME} > Settings sub-tab (Gears Icon) > Billing.
+**Q: Where in my account can I view Billing information?**
+
+**A:** Web Vault (<https://vault.bitwarden.com>) and go to Settings > Organizations > {YOUR ORG NAME} > Settings sub-tab (Gears Icon) > Billing.
 
 **Q: How do I delete my account?**
 
