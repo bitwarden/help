@@ -27,7 +27,11 @@ tags: [sso, saml, oidc, openid, saml2.0, idp, identity]
 
 ### SP Entity ID
 
-Bitwarden Login with SSO endpoint (automatically generated)
+Bitwarden Login with SSO endpoint (automatically generated from the Bitwarden instance URL) {https://bitwarden.yourdomain.com/}/sso/saml/
+
+The SP ACS URL will be your Entity ID followed by `/acs`
+
+For example:  `https://bitwarden.yourdomain.com/sso/saml/acs`
 
 ### Name ID Format
 
