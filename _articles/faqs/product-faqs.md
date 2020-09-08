@@ -271,6 +271,10 @@ Now, Bitwarden will store and generate the timed code that you will be asked for
 
 Whenever you auto-fill a website that has TOTP attached, the code will automatically be copied to your device's system clipboard. Now you can quickly paste the code into the field when challenged.
 
+### **Q: Why are my TOTP codes incorrect/not working?**
+
+**A:** TOTP codes are ***time based*** and use device time for generation. A device with the wrong time will generate incorrect codes. Please check your device's system time and try your TOTP code again.
+
 ### **Q: Why is U2F Not Supported on my iOS or Android App?**
 
 **A:** At this time, due to platform/OS limitations, FIDO U2F cannot be used with all Bitwarden applications. You should enable another two-step login provider so that you can access your account when FIDO U2F cannot be used. We are expanding our U2F capabilities
