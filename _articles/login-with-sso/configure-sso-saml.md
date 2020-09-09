@@ -98,6 +98,10 @@ Only include the X.509 Base-64 encoded certificate body and not the `-----BEGIN 
 
 *Required if Signing behavior != Never*
 
+{%warning%}
+Please note, any extra spaces, carriage returns, etc. inside this field will cause certificate validation failure. Please copy **only** the certificate data into this field.
+{%endwarning%}
+
 ### Outbound Signing Algorithm
 
 Options:
