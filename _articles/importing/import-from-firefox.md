@@ -7,9 +7,18 @@ popular: false
 tags: [import, firefox]
 ---
 
-Since version 57, the Firefox browser no longer provides any password export addons and you will need to use third-party tools. We recommend FF Password Exporter, an open-source tool that works on Windows, macOS, and Linux distributions.
+## FIREFOX EXPORTS
 
-## EXPORT YOUR FIREFOX PASSWORDS
+If your version of Firefox does not support native export, please use the FF Password Exporter instructions below.
+
+## EXPORT YOUR PASSWORDS USING NATIVE FIREFOX EXPORT
+
+1. Navigate to `about:preferences#privacy` in Firefox.
+2. Click the 'Saved Logins' button.
+3. Click the `...` menu from the top right and choose 'Export Logins'.
+4. Firefox will now prompt where to save the exported CSV file.
+
+## EXPORT YOUR FIREFOX PASSWORDS USING FF PASSWORD EXPORTER
 
 1. [Download][link-ffexporter] and install/run FF Password Exporter. The installation file is under Download/Install section.
 2. Choose the Firefox user's profile directory you want to export passwords from.
