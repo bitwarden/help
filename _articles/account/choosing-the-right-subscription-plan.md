@@ -151,7 +151,7 @@ A: No, there will be no changes to your existing Enterprise Plan unless you choo
 
 **Q: I am a current Teams user with a base user group of 5. Can I maintain that when upgrading to the new plan?**
 
-A: When released, the new Teams plan is billed per-user, so yes you can move that team size, but you would be billed according to the new Teams pricing. You may also choose to add more than 5 users on the new Teams plan. Be aware that the new Teams plan does not have a 5-user get started package, so all users are billed at $3/user/month based on annual pricing.
+A: The new Teams plan is billed per-user, so yes you can move that team size, but you would be billed according to the new Teams pricing. You may also choose to add more than 5 users on the new Teams plan. Be aware that the new Teams plan does not have a 5-user get started package, so all users are billed at $3/user/month based on annual pricing.
 
 **Q: Will pricing changes automatically be reflected in my invoices?**
 
@@ -169,7 +169,7 @@ A: Note that the Families Plan is $40/year for 6 users including Premium Feature
 
 **Q: Is it possible to purchase a Families Plan without Premium Features?**
 
-A: After September 6, 2020 all Families Plan will include Premium Features automatically. If you currently have a Families Plan without Premium, your pricing will remain the same unless you upgrade your plan. The legacy Families Plan without Premium Features will no longer be available after September 6, 2020.
+A: After September 6, 2020 all Families Plan will include Premium Features automatically. If you currently have a Families Plan without Premium, your pricing will remain the same unless you upgrade your plan. The classic Families Plan without Premium Features will no longer be available after September 6, 2020.
 
 **Q: I am a current Enterprise Plan customer and would like to implement the new Login with SSO feature, what do I need to do?**
 
