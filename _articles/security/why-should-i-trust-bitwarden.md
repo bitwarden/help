@@ -7,7 +7,7 @@ popular: true
 tags: []
 ---
 
-1. Bitwarden is 100% open source software. All of our source code is hosted on [GitHub](https://github.com/bitwarden){:target="_blank"} and is free for anyone to review. Thousands of software developers follow Bitwarden's source code projects (and you can too!).
+1. Bitwarden is open source software. All of our source code is hosted on [GitHub](https://github.com/bitwarden){:target="_blank"} and is free for anyone to review. Thousands of software developers follow Bitwarden's source code projects (and you can too!).
 2. Bitwarden [is audited]({% link _articles/security/is-bitwarden-audited.md %}) by reputable third-party security auditing firms as well as independent security researchers.
 3. Bitwarden does not store your passwords. Bitwarden stores encrypted versions of your passwords [that only you can unlock]({% link _articles/security/can-bitwarden-see-my-passwords.md %}).
 Your sensitive information is encrypted locally on your personal device before ever being sent to our cloud servers.
