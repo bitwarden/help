@@ -36,6 +36,8 @@ Organization vaults are synchronized once every 30 minutes, or on-demand by navi
 
 {%note%}Self-hosted users can enable Push notifications powered by the Bitwarden cloud.{%endnote%}
 
+You can also sync your vault on-demand with the pull down gesture. Navigate to **Settings > Sync > Enable sync on refresh** to enable sync on refresh.
+
 ### Browser extensions
 
 The Bitwarden browser extensions sync **personal** vaults automatically.
@@ -54,5 +56,4 @@ Organization vaults are synchronized once every 30 minutes, or on-demand by runn
 
 ## Common issues
 
-- Pulling to refresh on mobile applications does **not** sync your vault. You must do so within the application settings.
 - Sync failure can occur if your device’s time is not correct. Syncing (and all of Bitwarden services) require TLS/SSL, which will fail to connect to a host with invalid timestamps.
