@@ -10,8 +10,8 @@ tags: [free, personal, organization, enterprise, teams, family, plans, subscript
 ## Table of contents
 
 - [Family Plan now has Premium Features](#family-plan-now-has-premium-features)
-- [Teams Plan: Premium Features and more organizational features](#teams-plan--premium-features-and-more-organizational-features)
-- [Enterprise Plan: Take advantage of Login with SSO](#enterprise-plan--take-advantage-of-login-with-sso)
+- [Teams Plan: Premium Features and more organizational features](#teams-plan-premium-features-and-more-organizational-features)
+- [Enterprise Plan: Take advantage of Login with SSO](#enterprise-plan-take-advantage-of-login-with-sso)
 - [Compare Teams and Enterprise Plans](#compare-teams-and-enterprise-plans)
 - [Frequently Asked Questions](#frequently-asked-questions)
   * [FAQS about Changes to Existing Plans](#faqs-about-changes-to-existing-plans)
