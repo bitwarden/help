@@ -3,7 +3,7 @@ layout: article
 title: Choosing the right subscription plan
 categories: [account-management]
 featured: false
-popular: false
+popular: true
 tags: [free, personal, organization, enterprise, teams, family, plans, subscription]
 ---
 
@@ -40,7 +40,7 @@ Premium Features include 1 GB of encrypted file storage, two-step authentication
 
 The Families Plan includes 6 user seats for $40/year and all members automatically get Bitwarden Premium Features.
 
-|  | Classic Families Plan + Premium Features | Families Plan (includes premium) |
+|  | Classic 2019 Families Plan + Premium Features | Families Plan (includes premium) |
 |:---|:---:|:---:|
 |  **Cost** | $52/year |  $40/year |
 | **Feature**  |   |   |
@@ -62,7 +62,7 @@ The Families Plan includes 6 user seats for $40/year and all members automatical
 
 Teams Plans get expanded Bitwarden access with more features for team members and each Team organization as a whole.
 
-|  | Classic Teams Plan | Teams Plan |
+|  | Classic 2019 Teams Plan | Teams Plan |
 |:---|:---:|:---:|
 |  **Cost** | $2/User/Month (billed annually) |  $3/User/Month (billed annually) |
 | **Feature**  |   |   |
@@ -96,7 +96,7 @@ Login with SSO increases the value of Bitwarden for enterprises by bringing adva
 
 Login with SSO also gives you ultimate flexibility, integrating with any existing identity management solution that uses SAML 2.0 or OpenID Connect. This feature is only available to organizations on the Enterprise Plan, which is $5/user/month.
 
-|  | Classic Enterprise Plan | Enterprise Plan |
+|  | Classic 2019 Enterprise Plan | Enterprise Plan |
 |:---|:---:|:---:|
 |  **Cost** | $3/User/Month (billed annually) |  $5/User/Month (billed annually) |
 | **Feature**  |   |   |
@@ -169,7 +169,7 @@ A: Note that the Families Plan is $40/year for 6 users including Premium Feature
 
 **Q: Is it possible to purchase a Families Plan without Premium Features?**
 
-A: After September 6, 2020 all Families Plan will include Premium Features automatically. If you currently have a Families Plan without Premium, your pricing will remain the same unless you upgrade your plan. The classic Families Plan without Premium Features will no longer be available after September 6, 2020.
+A: After September 6, 2020 all Families Plan will include Premium Features automatically. If you currently have a Families Plan without Premium, your pricing will remain the same unless you upgrade your plan. The Classic 2019 Families Plan without Premium Features will no longer be available after September 6, 2020.
 
 **Q: I am a current Enterprise Plan customer and would like to implement the new Login with SSO feature, what do I need to do?**
 
