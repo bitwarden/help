@@ -11,10 +11,12 @@ A Bitwarden organization is an entity that relates users together that want to s
 
 An individual user account can create and/or belong to many different organizations, allowing you to manage your items from a single account.
 
-You can create a new Bitwarden organization from the [web vault](https://vault.bitwarden.com) or request that an admin of an existing organization send you an invite.
+You can create a new Bitwarden organization from the [web vault](https://vault.bitwarden.com) or request an admin of an existing organization to send you an invite.
 
-## Are organizations different than a premium membership?
+## Are organizations different from a premium membership?
 
-Yes. Whereas an organization is used for sharing items across multiple users, a premium membership gives your individual user account additional premium features (called **premium access**). Some of these features may also exist within an organization (ex. file storage and TOTP), however, they only apply to items that are actually store/shared within the organization itself. If you also want premium access on your personal user account you will additionally need a premium membership for that account.
+Yes. Whereas an organization is used for sharing items across multiple users, a premium membership gives your individual user account additional premium features (called **premium access**). Some of these features may also exist within an organization (ex. file storage and TOTP), however, they only apply to items that are actually store/shared within the organization itself. If you also want premium access on your personal user account, you will additionally need a premium membership for that account.
 
-Some organization plans, such as the Enterprise plan, also grant premium access to its users. The Families organization plan can also grant premium access to its users by purchasing the optional **Premium Access Addon**. Users that are granted premium access by an organization that they are a member of would not need to purchase a separate premium membership (unless they leave that organization).
+Some organization plans, such as the Enterprise plan, and current Teams and Families plans, also grant premium access to its users. Users that are granted premium access by an organization that they are a member of would not need to purchase a separate premium membership (unless they leave that organization).
+
+Classic 2019 Families and Teams plans require the seperate purchase of a Premium membership, per user. To upgrade to a new Teams or Family plan, [contact us](https://bitwarden.com/contact)
