@@ -29,9 +29,24 @@ tags: [sso, saml, oidc, openid, saml2.0, idp, identity]
 
 Bitwarden Login with SSO endpoint (automatically generated from the Bitwarden instance URL) {https://bitwarden.yourdomain.com/}/sso/saml/
 
-The SP ACS URL will be your Entity ID followed by `/Acs`
 
-For example:  `https://bitwarden.yourdomain.com/sso/saml/Acs`
+### SP ACS URL
+
+The SP ACS URL will be your Entity ID followed by `/Acs` and is automatically generated.
+
+For example:  
+
+- Cloud Instances: `https://sso.bitwarden.com/saml/Acs`
+- Self-hosted Instances: `https://bitwarden.yourdomain.com/sso/saml/Acs`
+
+### SSO URL or Login URL
+
+If your IdP Supports a Login URL for your SSO Application, this is the URL of your Bitwarden Web Vault and `/#/sso`
+
+For example:
+
+- Cloud Instances: `https://vault.bitwarden.com/#/sso`
+- Self-hosted Instances: 'https://bitwarden.yourdomain.com/#/sso'
 
 ### Name ID Format
 
