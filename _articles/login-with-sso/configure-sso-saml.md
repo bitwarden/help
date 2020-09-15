@@ -23,6 +23,10 @@ tags: [sso, saml, oidc, openid, saml2.0, idp, identity]
 
 - Signing - This is a digital signature created using a party’s private signing certificate and then verified by the relaying party using the source public key.
 
+{%note%}
+Login with SSO currently **does not** support unsolicited SSO assertions (IdP initiated login).
+{%endnote%}
+
 ## SAML *Service Provider* Configuration
 
 ### SP Entity ID
