@@ -10,17 +10,17 @@ tags: []
 
 ## Table of Contents
 
-- [**Q: How can I add an extra user to my Families Plan?**](#--q--how-can-i-add-an-extra-user-to-my-families-plan---)
-- [**Q: How do I add or remove a user seat from my organization?**](#--q--how-do-i-add-or-remove-a-user-seat-from-my-organization---)
-- [**Q: Can I pay with Bitcoin?**](#--q--can-i-pay-with-bitcoin---)
-- [**Q: How do I get started with my organization?**](#--q--how-do-i-get-started-with-my-organization---)
-- [**Q: What payments do you accept for customers outside the US?**](#--q--what-payments-do-you-accept-for-customers-outside-the-us---)
-- [**Q: What payments do you accept for customers based in the United States?**](#--q--what-payments-do-you-accept-for-customers-based-in-the-united-states---)
-- [**Q: How do I update my Organization license for my upcoming renewal?**](#--q--how-do-i-update-my-organization-license-for-my-upcoming-renewal---)
-- [**Q: Where in my account do I enter tax information (VAT)?**](#--q--where-in-my-account-do-i-enter-tax-information--vat----)
-- [**Q: Where in my account can I view my subscription plan?**](#--q--where-in-my-account-can-i-view-my-subscription-plan---)
-- [**Q: Where in my account can I view Billing information?**](#--q--where-in-my-account-can-i-view-billing-information---)
-- [**Q: How do I delete my account?**](#--q--how-do-i-delete-my-account---)
+- [**Q: How can I add an extra user to my Families Plan?**](#q-how-can-i-add-an-extra-user-to-my-families-plan)
+- [**Q: How do I add or remove a user seat from my organization?**](#q-how-do-i-add-or-remove-a-user-seat-from-my-organization)
+- [**Q: Can I pay with Bitcoin?**](#q-can-i-pay-with-bitcoin)
+- [**Q: How do I get started with my organization?**](#q-how-do-i-get-started-with-my-organization)
+- [**Q: What payments do you accept for customers outside the US?**](#q-what-payments-do-you-accept-for-customers-outside-the-us)
+- [**Q: What payments do you accept for customers based in the United States?**](#q-what-payments-do-you-accept-for-customers-based-in-the-united-states)
+- [**Q: How do I update my Organization license for my upcoming renewal?**](#q-how-do-i-update-my-organization-license-for-my-upcoming-renewal)
+- [**Q: Where in my account do I enter tax information (VAT)?**](#q-where-in-my-account-do-i-enter-tax-information--vat)
+- [**Q: Where in my account can I view my subscription plan?**](#q-where-in-my-account-can-i-view-my-subscription-plan)
+- [**Q: Where in my account can I view Billing information?**](#q-where-in-my-account-can-i-view-billing-information)
+- [**Q: How do I delete my account?**](#q-how-do-i-delete-my-account)
 
 
 ### **Q: How can I add an extra user to my Families Plan?**
