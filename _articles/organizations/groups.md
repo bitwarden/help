@@ -27,6 +27,6 @@ Access control for a group is done by assigning collections to a group (or vice 
 
 {% image organizations/group-edit.png %}
 
-Alternatively, edit a collection from the collections listing page to choose which groups can access it.
+Alternatively, you can edit a collection from the collections listing page to choose which groups can access it.
 
 Organization users will only be able to access items that belong to the groups (and therefore collections) that they are members of. If a user belongs to multiple groups, that user will be able to access items from the _union_ of all collections for their groups plus any individual collections that they have been assigned to.
