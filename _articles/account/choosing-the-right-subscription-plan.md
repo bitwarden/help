@@ -3,7 +3,7 @@ layout: article
 title: Choosing the right subscription plan
 categories: [account-management]
 featured: false
-popular: true
+popular: false
 tags: [free, personal, organization, enterprise, teams, family, plans, subscription]
 ---
 
