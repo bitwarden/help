@@ -87,13 +87,13 @@ If you already have the Node.js runtime installed on your system, you can instal
 ### Other Package Managers
 
 - [Chocolatey](https://chocolatey.org/packages/bitwarden-cli){:target="_blank"}
-    
+
        choco install bitwarden-cli
 - [Homebrew](https://formulae.brew.sh/formula/bitwarden-cli){:target="_blank"}
-    
+
        brew install bitwarden-cli
 - [Snap](https://snapcraft.io/bw){:target="_blank"}
-    
+
        sudo snap install bw
 
 ## Session Management
@@ -202,12 +202,12 @@ You can retrieve an object by its globally using `id` property (usually a GUID),
 
 If you are getting an attachment, you must also specify the `--itemid <id>` option of the item that the attachment belongs to.
 
-    bw get attachment b857igwl1dzrs2 --output ./photo.jpg \ 
+    bw get attachment b857igwl1dzrs2 --output ./photo.jpg \
         --itemid 99ee88d2-6046-4ea7-92c2-acac464b1412
     bw get attachment photo.jpg --raw \
         --itemid 99ee88d2-6046-4ea7-92c2-acac464b1412
 
-### Create
+### Create Items, attachments, and folders
 
 The `create` command allows you to create new objects in your vault.
 
@@ -216,14 +216,14 @@ The `create` command allows you to create new objects in your vault.
 The process for creating an object may look something like this:
 
 1. Get the JSON template(s) for the object you are trying to create:
-    
+
        bw get template folder
 2. Edit the JSON template with the values you want to use for that object.
 3. Base 64 encode the JSON string. You can [use the `encode` command](#encode) included with the CLI and pipe in the JSON string from stdin:
-    
+
        echo '{"name":"My Folder"}' | bw encode
 4. Create the item:
-    
+
        bw create folder eyJuYW1lIjoiTXkgRm9sZGVyIn0=
 
 The `create` command can also receive encoded JSON as stdin. A complete example, using `jq` to update a template's JSON (see more about [working with JSON](#working-with-json) below), may look something like this:
@@ -233,9 +233,24 @@ The `create` command can also receive encoded JSON as stdin. A complete example,
 Upon success, the newly created object will be returned.
 
 To create a new attachment for an item, specify the `--file` path on disk as well as the `--itemid`.
-
+```
     bw create attachment --file ./path/to/myfile.csv \
         --itemid 16b15b89-65b3-4639-ad2a-95052a6d8f66
+```
+
+### Creating Collections
+
+PowerShell:
+
+```
+bw get template org-collection | jq ('.organizationId="""00000000-0000-0000-0000-00000000""" | .name="""TestCollection"""') | bw encode | bw create org-collection --organizationid 00000000-0000-0000-0000-00000000
+```
+
+Bash:
+
+```
+bw get template org-collection | jq ('.organizationId="00000000-0000-0000-0000-00000000" | .name="TestCollection"') | bw encode | bw create org-collection --organizationid 00000000-0000-0000-0000-00000000
+```
 
 ### Edit
 
@@ -322,7 +337,7 @@ bw confirm org-member <id> --organizationid <orgId>
 The `import` command allows you to import data from a previous Bitwarden export or another [supported password management application]({% link _articles/importing/import-data.md %}).
 
 ```
-bw import [<format> <input>] [--formats] 
+bw import [<format> <input>] [--formats]
 ```
 ```
 bw import --formats
