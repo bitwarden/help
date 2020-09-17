@@ -128,9 +128,21 @@ To do this, the user will need to log into their Web Vault using their `email` a
 
 **A:** Current Enterprise plans offer this feature. To upgrade from a Classic Enterprise plan to a current Enterprise offering, please [contact us](https://bitwarden.com/contact)
 
+**Q: Does SSO Replace my Master Password and Email?**
+
+**A:** No, SSO is meant to be an easier way for Organizations to maintain control of Organization users, allow just-in-time new user provisioning, centralized MFA, and in the near future, improved employee succession management.
+
+Logging in with SSO will authenticate your Bitwarden session and allow you to use an existing IdP session if it exists, and leverage any currently implemented MFA rules as well.
+
+Once logged in, after providing (or creating) your Master Password will perform the encryption/decryption of your Vault data, just as it always has, keeping the audited Bitwarden security model intact.
+
 **Q: Will changing my SSO password affect my Master Password?**
 
-**A:** No, your Master Password will remain the same unless changed within the web Vault.
+**A:** No, your Master Password will remain the same and will still be used to decrypt your Vault data. You can change your Master Password in the Web Vault.
+
+**Q: Can I still log in with my Master Password if my Organization has SSO enabled?**
+
+**A:** Currently, yes. In the near future we will be enabling Enterprise Policies to allow Organizations to control authentication mechanisms for their users.
 
 **Q: Will this work with a self-hosted instance of Bitwarden?**
 
