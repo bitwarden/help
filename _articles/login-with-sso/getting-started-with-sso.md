@@ -13,7 +13,7 @@ The Login with SSO feature allows you to use your existing Identity Provider to 
 
 ### Trialing Login with SSO
 
-We understand that security requirements and Identity providers can vary greatly between Organizations, which is why customers on our Classic 2019 Enterprise Plan are encouraged to trial Login with SSO before upgrading to the new Enterprise Plan and deploying globally.
+We understand that security requirements and Identity providers can vary greatly between Organizations. Classic 2019 Enterprise Plan customers are encouraged to trial Login with SSO before upgrading to the new Enterprise Plan and deploying globally.
 
 To Trial our new Enterprise Plan, we recommend creating a new Trial Organization.
 
