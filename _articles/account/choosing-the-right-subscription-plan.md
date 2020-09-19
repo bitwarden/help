@@ -179,7 +179,7 @@ A: We highly recommend you test the feature using the Bitwarden free 7-day trial
 
 **Q: When will Login with SSO be available?**
 
-A: General availability is September 2020.
+A: Login with SSO is now available to all the client applications.
 
 **Q: What is your pricing for Enterprise and does that include Login with SSO?**
 
@@ -200,7 +200,3 @@ A: To use Login with SSO you would need to move to the upgraded plan. We are off
 **Q: Can I change to the new subscription plan with Login with SSO, and then go back to the old subscription plan if we decide we don’t need the feature?**
 
 A: Once you elect to move forward with the new subscription plan, going back to your previous subscription plan will not be an option.
-
-{%note%}
-The date for plan changes was removed to generalize the messaging. Login with SSO will be available on the Bitwarden platform in September.
-{%endnote%}
