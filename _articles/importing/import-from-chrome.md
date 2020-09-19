@@ -28,7 +28,7 @@ The process is exactly the same for Opera and Vivaldi browser users.
 3. Go to **Settings > Passwords**.This will open a page with all your **Saved Passwords** for Chrome.
 4. Then tap on the **more/three dots** to the top right.
 5. Select **Export Passwords**.You may be prompted to enter your device pin or biometric for authorization.
-6. You'll then be prompted to save your passwords. Select a safe and secure location.
+6. You'll then be prompted to save your passwords. Select a safe and secure location and remember toc completely delete your export as soon as you are done importing it.
 
 ## Import your passwords into Bitwarden
 
