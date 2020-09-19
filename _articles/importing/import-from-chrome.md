@@ -10,17 +10,25 @@ tags: [import, chrome, opera, vivaldi]
 Importing your data from Google Chrome into Bitwarden is easy. 
 
 {% note %}
-You can only export passwords from the Chrome desktop application. It is not possible to export from the Chrome mobile app.
-
 The process is exactly the same for Opera and Vivaldi browser users.
 {% endnote %}
 
-## Export your Chrome passwords
+## Export your Chrome passwords (Desktop)
 
 1. Open Chrome and enter `chrome://settings/passwords` into the address bar and press enter. This will open a page with all your **Saved Passwords** for Chrome.
 2. Locate the **Export passwords** option at the top of the **Saved Passwords** list. It is hidden under the options icon (`...`) next to the **Saved Passwords** heading.
 3. Click the **Export passwords** option in the options menu. You may be prompted to enter your computer's password for authorization.
 4. You'll then be prompted to save your passwords to a [CSV][csv] file on your computer. Save this file to your desktop as `chrome_passwords.csv` (or whatever name you want to call it).
+
+
+## Export your Chrome passwords (Mobile)
+
+1. Open the Chrome app on your mobile device
+2.Tap the **more/three dots** located to the top right.
+3. Go to **Settings > Passwords**.This will open a page with all your **Saved Passwords** for Chrome.
+4. Then tap on the **more/three dots** to the top right.
+5. Select **Export Passwords**.You may be prompted to enter your device pin or biometric for authorization.
+6. You'll then be prompted to save your passwords. Select a safe and secure location and remember to completely delete your export as soon as you are done importing it.
 
 ## Import your passwords into Bitwarden
 
