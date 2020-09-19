@@ -37,6 +37,7 @@ You can very easily import your data from an array of different password manager
 - Meldium (csv)
 - mSecure (csv)
 - Myki (csv)
+- [Microsoft Edge(Chromium) (csv)]({% link _articles/importing/import-from-chrome.md %})
 - [Opera (csv)]({% link _articles/importing/import-from-chrome.md %})
 - Padlock (csv)
 - Passbolt (csv)
