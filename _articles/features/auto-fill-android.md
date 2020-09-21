@@ -68,6 +68,14 @@ Please note, the service can also halt if you ever "Force stop" the Bitwarden ap
 Here is an interesting site regarding devices and their battery optimization default configurations:
 [https://dontkillmyapp.com/](https://dontkillmyapp.com/this){:target="_blank"}
 
+If you have Bitwarden installed on a **Huawei** or **Honor** device with EMUI 4.1 or above, please enable **Dropzone** for Bitwarden. Otherwise, the Bitwarden Auto-fill overlay will not be visible.
+
+To enable Dropzone:
+
+1. Open Huawei/Honor Optimizer app (also known as Phone Manager)
+2. Tap Dropzone in the middle of the bottom row.
+3. Slide the toggle to the right to allow Dropzone for Bitwarden.
+
 {% note %}
 Android has many web browsers. It can be hard to keep up with them all. We have to add support for each browser individually. 
 
