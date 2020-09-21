@@ -18,6 +18,7 @@ You can very easily import your data from an array of different password manager
 - Avira (json)
 - BlackBerry Password Keeper (csv)
 - Blur (csv)
+- [Brave (csv)]({% link _articles/importing/import-from-chrome.md %})
 - [Chrome (csv)]({% link _articles/importing/import-from-chrome.md %})
 - Clipperz (html)
 - Codebook (csv)
