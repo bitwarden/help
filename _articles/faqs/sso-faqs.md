@@ -40,7 +40,7 @@ tags: [sso, enterprise, security]
 
 ### Q: How does the new Login with SSO capability work?
 
-**A:** Implementing Bitwarden Login with SSO option separates user authentication from Vault encryption.  Logging in with SSO will authenticate your Bitwarden session using an existing Identity Provider (IdP) session if it exists, and leverage any currently implemented MFA rules.
+**A:** Implementing Bitwarden Login with SSO option separates user authentication from Vault encryption. Logging in with SSO will authenticate your Bitwarden session using an existing Identity Provider (IdP) session if it exists, and leverage any currently implemented multi-factor authentication (MFA) rules.
 
 Once authenticated in, after providing (or creating) your Master Password, your personal Bitwarden Vault data will be decrypted for viewing.
 
@@ -54,9 +54,9 @@ The current distinction between authentication and Vault encryption keeps the au
 
 **A:** Bitwarden Login with SSO only performs user authentication and does not decrypt user data. Adding SSO functionality does not introduce any further individually identifiable information into the Bitwarden database.
 
-### Q: Do I still need to use Bitwarden Directory Connector?  
+### Q: Do I still need to use Bitwarden Directory Connector?
 
-**A:** If you \ manage your Bitwarden Group and Collection assignments directly within Bitwarden, there is no need to leverage the Directory Connector. However, if you would like to have Groups and users automatically synchronized with your organizations directory, we recommended using Login with SSO in conjunction with Directory Connector for the most complete solution.
+**A:** If you manage your Bitwarden Group and Collection assignments directly within Bitwarden, there is no need to leverage the Directory Connector. However, if you would like to have Groups and users automatically synchronized with your organizations directory, we recommend using Login with SSO in conjunction with Directory Connector for the most complete solution.
 
 ### Q: Will changing my SSO password affect my Master Password?
 
@@ -68,7 +68,7 @@ The current distinction between authentication and Vault encryption keeps the au
 
 ### Q: Does SSO authentication Replace my Master Password and Email?
 
-**A:** No, SSO authentication is meant to provide an easier way for Organizations to facilitate Organization users, allow just-in-time new user provisioning, centralized MFA, and in the near future, improved employee succession management.
+**A:** No, SSO authentication is meant to provide an easier way for Organizations to facilitate Organization users, allow just-in-time new user provisioning, centralize MFA, and in the near future, improved employee succession management.
 
 ### Q: Can existing users login with SSO?
 
