@@ -10,7 +10,7 @@ tags: [import, chrome, opera, vivaldi, edge]
 Importing your data from Google Chrome into Bitwarden is easy. 
 
 {% note %}
-The process is exactly the same for Opera, Microsoft Edge (Chromium) and Vivaldi browser users.
+The process is exactly the same for Opera, Microsoft Edge (Chromium), Brave and Vivaldi browser users.
 {% endnote %}
 
 ## Export your Chrome passwords (Desktop)
