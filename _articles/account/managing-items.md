@@ -45,13 +45,21 @@ You can find more details about importing items and supported import formats [he
 
 ### Import FAQs
 
-- Why is my import file invalid?
-  - Check to make sure the file has content. Most of the time the exported file does not contain any data.
-- Why do I have duplicate entries?
-  - The Bitwarden import tool does not perform duplicate entry detection on import. If you run an import on an existing vault, or import multiple times, your data may be duplicated.
-- How do I clean up duplicates?
-  - We recommend exporting the data from your vault into a CSV/JSON file and performing a vault purge to delete your data.
+### **Q:Why is my import file invalid?**
+**A:** Check to make sure the file has content. Most of the time the exported file does not contain any data.
+### **Q:Why do I have duplicate entries?**
+**A:** The Bitwarden import tool does not perform duplicate entry detection on import. If you run an import on an existing vault, or import multiple times, your data may be duplicated.
+### **Q:How do I clean up duplicates?**
+**A:** We recommend exporting the data from your vault into a CSV/JSON file and performing a vault purge to delete your data.
   {% warning %} Performing a vault purge is permanent and cannot be undone. Once the vault has been emptied and the CSV/JSON file has been pruned of any duplicates, simply re-import your data.{% endwarning %}
+
+## Troubleshooting Import Errors
+
+<u>Ciphers[<b>X</b>].Login: The field <b>yyyy</b> exceeds the maximum encrypted value length of <b>zzzz</b> characters.</u>
+
+This error occurs whenever an item in your exported file has a large amount of data associated with it, which exceeds the limits allowed for items stored in your Bitwarden vault. You will need to correct this data by removing it, or reducing its size so that the Bitwarden importer will succeed.
+
+You can open the exported file in a text editor or spreadsheet program (such as Excel) to locate it. The offending item can be found at index **X** (as referenced in the error message) in the file. Once you have located the offending item, remove it or update its data, then resave and try the import operation with Bitwarden again.
 
 ## Cloning an item
 
