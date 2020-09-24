@@ -10,7 +10,10 @@ tags: [api]
 Bitwarden provides a full-featured RESTful API for managing your organization. You can use the API to manage your organization's members, collections, groups, event logs, and more. The API has predictable resource-oriented URLs, accepts JSON-encoded request bodies, returns JSON-encoded responses, and uses standard HTTP response codes, authentication, and verbs.
 
 {% note %}
-API access is only available to enterprise organizations.
+API access is available for the following plans:
+- Classic 2019 Enterprise
+- Current Enterprise
+- Current Teams
 {% endnote %}
 
 ## Table of Contents
