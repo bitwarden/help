@@ -18,10 +18,10 @@ tags: []
 - [Duo MFA / 2FA / Two-step Login Requirement](#duo-mfa-2fa-two-step-login-requirement)
 - [New Device Not Recognized](#new-device-not-recognized)
 - [Master Password Stored Locally?](#master-password-stored-locally)
-- [Third party scripts, libraries, and services](#third-party-scripts-libraries--and-services)
+- [Third party scripts, libraries, and services](#third-party-scripts-libraries-and-services)
 - [Security General (Whitepaper, Audit report, etc.)](#security-general-whitepaper-audit-report-etc)
-- [Self-signed Certificate Setup, On-premises/self-hosted](#self-signed-certificate-setup-on-premises-self-hosted)
-- [Web Browser Extension Security/Safety Concern](#web-browser-extension-security-safety-concern)
+- [Self-signed Certificate Setup, On-premises/self-hosted](#self-signed-certificate-setup-on-premisesself-hosted)
+- [Web Browser Extension Security/Safety Concern](#web-browser-extension-securitysafety-concern)
 - [Web Browser Permission Request](#web-browser-permission-request)
 
 ## Compliance General
