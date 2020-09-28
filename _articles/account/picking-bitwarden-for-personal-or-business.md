@@ -4,7 +4,7 @@ title: Picking Bitwarden for Personal or Business Use
 categories: [account-management]
 featured: false
 popular: false
-hidden: true
+hidden: false
 tags: [free, personal, organization, enterprise, teams, family, plans, subscription]
 ---
 
