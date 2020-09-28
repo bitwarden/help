@@ -21,7 +21,7 @@ One you create an account, you can
 
 | Question | Decision / Action |
 |:---|:---:|
-|  Do you want to start protecting<br>your online accountswith Bitwarden? | Yes!<br>[Create an account](https://vault.bitwarden.com/) |
+|  Do you want to start protecting<br>your online accounts with Bitwarden? | Yes!<br>[Create an account](https://vault.bitwarden.com/) |
 | Who will join you? | [Just me](#just-me)<br>---<br>[Everybody on board](#everybody-on-board) | 
 
 ## Just me
