@@ -91,6 +91,10 @@ When biometrics are configured and your vault is locked, you will have a new but
 
 {% image /biometrics/windows.png Configuring Hello in Windows %}
 
+{%note%}
+If you do not see the option to enable Windows Hello within the Desktop preferences, you may need to install [Node.js](https://nodejs.org/en/download/) and its dependencies.
+{%endnote%}
+
 {% image /biometrics/hello-unlock.png Prompt to unlock with Windows Hello %}
 
 ### Browser Extensions
