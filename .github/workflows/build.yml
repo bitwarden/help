@@ -52,3 +52,16 @@ jobs:
           AWS_REGION: 'us-east-1'
           SOURCE_DIR: '_site'
           DEST_DIR: 'help'
+
+      - name: Deploy to staging
+        if: github.ref == 'refs/heads/staging'
+        uses: SamKirkland/FTP-Deploy-Action@2.0.0
+        env:
+          FTP_SERVER: ${{ secrets.STAGING_FTP_SERVER }}
+          FTP_USERNAME: ftpuser
+          FTP_PASSWORD: ${{ secrets.STAGING_FTP_PASSWORD }}
+          METHOD: sftp
+          PORT: 22
+          LOCAL_DIR: '_site'
+          REMOTE_DIR: help
+          ARGS: --delete
