@@ -124,4 +124,4 @@ To do this, the user will need to log into their Web Vault using their `email` a
 
 ## FAQs
 
-Please visit our [Login with SSO FAQs](/article/sso-faqs/) for more information.
+Please visit our [Login with SSO FAQs](https://bitwarden.com/help/article/sso-faqs/) for more information.
