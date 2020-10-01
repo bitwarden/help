@@ -48,6 +48,7 @@ tags: []
 - [**Q: How do I use the web browser extension?**](#q-how-do-i-use-the-web-browser-extension)
 - [**Q: How do I add attachments?**](#q-how-do-i-add-attachments)
 - [**Q: I am asked for my master password even though I have PIN unlock enabled on iOS / Android**](#q-i-am-asked-for-my-master-password-even-though-i-have-pin-unlock-enabled-on-iosandroid--)
+- [**Q: How can I import items directly into collections?**](#q-how-can-i-import-items-directly-to-collections)
 
 ### **Q: How do I change a collection via the CLI?**
 
@@ -327,3 +328,11 @@ To reset this:
 - Disable PIN Unlock
 - Enable PIN Unlock
 - Select ‘No’ when prompted about using the Master Password after application restart.
+
+### Q: How can I import items directly to collections?
+
+**A:** To import items directly to collections, you'll want to format your import into a Bitwarden CSV and provide the collection names you'd like to import to. You can read more about the Bitwarden CSV import here: https://bitwarden.com/help/article/import-data/#generic-csv-format-organization-account
+
+{%note%}
+Each import will create new records. To prevent duplicates while organizing your data, you will want to use the `Purge Vault` option to clear any existing data before importing it again. The option can be found by logging into the Web Vault (https://vault.bitwarden.com/) and going to Settings > Organizations > {YOUR ORG NAME} > Settings sub-tab (Gears Icon) > My Organization > Danger Zone > Purge Vault.
+{%endnote%}
