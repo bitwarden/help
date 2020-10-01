@@ -25,21 +25,25 @@ Bitwarden will automatically take nightly backups of the `mssql` container datab
 
 ### Restoring a nightly backup
 
-1. Execute an interactive bash shell on the `bitwarden-mssql` container.
+1. First log into `bitwarden-mssql` container. In order to log into the container you will first need to figure out the container ID.
+
+       docker ps
+
+2. Note the container ID, and execute an interactive bash shell on the `bitwarden-mssql` container.
 
        docker exec -it bitwarden-mssql /bin/bash
 
-2. Take note of the backup file you wish to restore in the nightly backups directory. The backups directory is mapped from a host volume at `./bwdata/mssql/backups` to `/etc/bitwarden/mssql/backups` within the `bitwarden-mssql` container.
+3. Take note of the backup file you wish to restore in the nightly backups directory. The backups directory is mapped from a host volume at `./bwdata/mssql/backups` to `/etc/bitwarden/mssql/backups` within the `bitwarden-mssql` container.
 
        ls /etc/bitwarden/mssql/backups
 
     For this example, the backup we will be using is named `vault_FULL_20200302_235901.BAK`, which is a backup of the vault database on March 2, 2020 at 11:53pm. The full path of the backup in the container would be `/etc/bitwarden/mssql/backups/vault_FULL_20200302_235901.BAK`
 
-3. Execute `sqlcmd` with the required authentication.
+4. Execute `sqlcmd` with the required authentication. Please note that you will want to get the database sa password from the `./bwdata/env/global.override.env` file on your host.
 
        /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P ${SA_PASSWORD}
 
-4. Execute the SQL command `RESTORE DATABASE` with your backup to restore the nightly backup, followed by a `GO` command.
+5. Execute the SQL command `RESTORE DATABASE` with your backup to restore the nightly backup, followed by a `GO` command.
 
        RESTORE DATABASE vault FROM DISK = '/etc/bitwarden/mssql/backups/vault_FULL_20200302_235901.BAK' WITH REPLACE
        GO
