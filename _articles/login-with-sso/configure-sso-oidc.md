@@ -35,6 +35,16 @@ In conjunction with your Client ID for authentication against your Identity Prov
 
 Provides Identity Provider information back to Bitwarden. This is required if the Authority is not a valid URL.
 
+### OIDC Redirect Behavior
+
+Options:
+- Form POST (***default***)
+- Redirect GET
+
+{%note%}
+You may need to specify this if you are experiencing errors stating that URL or Query String is `too long` 
+{%endnote%}
+
 ### Other OIDC Options
 
 - Get Claims From User Info Endpoint (*Boolean*) - Check this value if you start receiving URL too long errors (HTTP 414), truncated URLs, and/or failures during SSO.
