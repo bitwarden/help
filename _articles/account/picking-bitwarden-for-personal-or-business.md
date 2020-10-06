@@ -8,6 +8,7 @@ hidden: false
 tags: [free, personal, organization, enterprise, teams, family, plans, subscription]
 ---
 
+<img src="/images/picking-plan.png">
 
 ## Start Here!
 Hi there! Here are a few tips to figure out which Bitwarden options work for you.
