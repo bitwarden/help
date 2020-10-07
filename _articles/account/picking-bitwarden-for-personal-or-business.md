@@ -7,7 +7,6 @@ popular: false
 hidden: false
 tags: [free, personal, organization, enterprise, teams, family, plans, subscription]
 ---
-## How to get started with Bitwarden
 {% image picking-plan.png %}
 
 ## Start Here!
