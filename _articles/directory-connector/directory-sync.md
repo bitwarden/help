@@ -19,7 +19,7 @@ The following directories are supported:
 - OneLogin
 
 {% note %}
-Directory sync is only available to enterprise organizations.
+Directory sync is only available to Teams and Enterprise organizations.
 {% endnote %}
 
 ## Bitwarden Directory Connector Application
