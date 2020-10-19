@@ -37,16 +37,6 @@ But why do we use only the first 5 digits of the hash of your passwords? If the 
 
 And even tough this report’s result may not mean your individual account has been compromised, just that you are using a password that has been found in these databases of exposed passwords, you should avoid using leaked and non-unique passwords.
 
-{% note %}
-If you are self-hosting in order to run this report in your instance you will need to buy an HIBP subscription key that will authorize you to make calls to the API. You can find how to purchase this key [here](https://haveibeenpwned.com/API/Key){:target="_blank"}. 
-
-Once you have the key you will need to go to your `./bwdata/env/golbal.override.env` file, edit it and REPLACE the placeholders values for the API key:
-
-```
-globalSettings__hibpApiKey=REPLACE
-```
-{% endnote %}
-
 **Reused Passwords Report**
 
 If a service that you use is compromised, reusing the same password elsewhere can allow hackers to easily gain access to more of your online accounts. You should use a unique password for every account or service. The Reused Passwords Report helps you easily identify these offending passwords.
@@ -63,6 +53,16 @@ Using unsecured websites with the http:// scheme can be dangerous. If the websit
 
 Two-factor authentication (2FA) is an important security setting that helps secure your accounts. If the website offers it, you should always enable two-factor authentication. The Inactive 2FA Report locates items in your Bitwarden vault where you have not stored a TOTP authenticator key and then cross-references it with data from [https://twofactorauth.org/](https://twofactorauth.org/){:target="_blank"}.
 
-**Data Breach Report**
+**Data Breach Report (Individual Vaults Only)**
 
 A “breach” is an incident where a site’s data has been illegally accessed by hackers and then released publicly. The Data Breach Report allows you to review the types of data that were compromised in these breaches (email addresses, passwords, credit cards, etc.) and take appropriate action, such as changing passwords.
+
+{%note%}
+If you are self-hosting in order to run the **Data Breach** report in your instance, you will need to buy an HIBP subscription key that will authorize you to make calls to the API. You can find how to purchase this key [here](https://haveibeenpwned.com/API/Key){:target="_blank"}.
+
+Once you have the key you will need to go to your `./bwdata/env/golbal.override.env` file, edit it and REPLACE the placeholders values for the API key:
+
+```
+globalSettings__hibpApiKey=REPLACE
+```
+{%endnote%}
