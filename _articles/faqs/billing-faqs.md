@@ -61,11 +61,11 @@ Here are additional articles related to an on-premise configuration and installa
 
 ### **Q: What payments do you accept for customers outside the US?**
 
-**A:** We accept Credit/Debit Cards, PayPal, and Bitcoin. We also accept international Wire Transfers or Corporate Checks. Please contact support for payment options here: <https://bitwarden.com/contact>
+**A:** We accept Credit/Debit Cards, PayPal, and Bitcoin. For business subscriptions, we also accept international wire transfers and corporate checks, with a minimum payment of 500 USD. For more information regarding payment options, please [Contact Support](https://bitwarden.com/contact/).
 
 ### **Q: What payments do you accept for customers based in the United States?**
 
-**A:** We accept Credit/Debit Cards, PayPal, Bank Account (ACH), and Bitcoin. For business accounts, we can also accept wire transfers and corporate checks, please contact billing support regarding these payment options. <https://bitwarden.com/contact>
+**A:** We accept Credit/Debit Cards, PayPal, Bank Account (ACH), and Bitcoin. For business subscriptions, we also accept wire transfers and corporate checks, with a minimum payment of 500 USD. For more information regarding payment options, please [Contact Support](https://bitwarden.com/contact/).
 
 ### **Q: How do I update my Organization license for my upcoming renewal?**
 
