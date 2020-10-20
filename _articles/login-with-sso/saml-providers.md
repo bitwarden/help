@@ -1,14 +1,18 @@
 ---
 layout: article
-title: SAML Provider Fields
-categories: [login-with-sso]
+title: Configuring Bitwarden at your IdP - SAML 2.0
+categories: []
 featured: false
 popular: false
 tags: [sso, saml, oidc, openid, saml2.0, idp, identity]
 ---
-Field Mapping based on Bitwarden SAML configuration and associated Identify Provider fields.
 
-## Serice Provider Configuration
+### In This Article
+- [Service Provider Configuration Mapping](#service-provider-configuration)
+- [Identity Provider Configuration Mapping](#identity-provider-configuration)
+- [Screenshots of Sample Configurations](#screenshots-of-sample-configurations)
+
+## Service Provider Configuration Mapping
 
 | Bitwarden Field                                          | Azure AD Field                                   | JumpCloud Field                                  | OneLogin Field                                   | G-Suite Field                             | Okta Field                                             |
 |----------------------------------------------------------|--------------------------------------------------|--------------------------------------------------|--------------------------------------------------|-------------------------------------------|--------------------------------------------------------|
@@ -30,6 +34,9 @@ Field Mapping based on Bitwarden SAML configuration and associated Identify Prov
 | X509 Public Certificate         | Certificate (Base64)           | Download after activation, available under "IDP Certificate Valid" | X.509 Certificate                 | Certificate (download PEM file, open as text) | x.509 Certificate                             |
 | Outbound Signing Algorithm      | Azure + Bitwarden should match | Signature Algorithm                                                | Azure + Bitwarden should match    | Checkbox to turn off/on                       | Signature Algorithm  + Bitwarden should match |
 
+## Screenshots of Sample Configurations
+
+[{% icon fa-download %} Download Okta Sample]({{site.baseurl}}/files/bitwarden_export.csv)
 
 {%note%}
 This table is meant to make locating some fields and values easier. Some configurations and provider versions may differ depending on your Organization's policies and procedures. If you are having trouble configuring Login with SSO for your Bitwarden Organization, please [contact us](https://bitwarden.com/contact/) for assitance.
