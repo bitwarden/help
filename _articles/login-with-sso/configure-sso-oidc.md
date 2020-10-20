@@ -12,9 +12,9 @@ This article will guide you through the steps required to configure Login with S
 
 ### In This Article
 
-- [Step 1: Enabling Login with SSO](#enabling-login-with-sso)
-- [Step 2: Configure Your IdP](#configure-your-idp)
-- [Step 3: Open ID Connect Configuration](#openid-connect-configuration)
+- [Step 1: Enabling Login with SSO](#step-1-enabling-login-with-sso)
+- [Step 2: Configure Your IdP](#step-2-configure-your-idp)
+- [Step 3: Open ID Connect Configuration](#step-3-openid-connect-configuration)
 
 ## Step 1: Enabling Login with SSO
 
