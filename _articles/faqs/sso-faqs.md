@@ -16,7 +16,7 @@ This article contains Frequently Asked Questions (FAQs) regarding **Login with S
 - [Supportability](#supportability)
 
 Or, for more high-level information about **Login with SSO**, refer to the following articles:
-- [About Login with SSO](https://bitwarden.com/help/article/sso-about/)
+- [Getting Started with Login with SSO](https://bitwarden.com/help/article/getting-started-with-sso/)
 - [About the Business Portal](https://bitwarden.com/help/article/about-business-portal/)
 
 ## Using Login with SSO

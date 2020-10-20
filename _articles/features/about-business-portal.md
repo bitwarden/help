@@ -19,7 +19,7 @@ The Bitwarden Business Portal provides access to configuration for Single Sign-O
 
 ### Next Steps
 To learn how to configure Single Sign-On, see:
-- [About Login with SSO](https://bitwarden.com/help/article/sso-about/)
+- [Getting Started with Login with SSO](https://bitwarden.com/help/article/getting-started-with-sso/)
 - [Configure Login with SSO (SAML 2.0)](https://bitwarden.com/help/article/configure-sso-saml/)
 - [Configure Login with SSO (OIDC)](https://bitwarden.com/help/article/configure-sso-oidc/)
 

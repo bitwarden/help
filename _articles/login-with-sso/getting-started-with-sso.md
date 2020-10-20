@@ -1,6 +1,6 @@
 ---
 layout: article
-title: About Login with SSO
+title: Getting Started with Login with SSO
 categories: [login-with-sso]
 featured: true
 popular: true
