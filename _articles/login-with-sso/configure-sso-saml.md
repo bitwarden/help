@@ -13,8 +13,8 @@ This article will guide you through the steps required to configure Login with S
 
 - [Step 1: Enabling Login with SSO](#step-1-enabling-login-with-sso)
 - [Step 2: Provider Configuration](#step-2-service-provider-configuration)
-- [Step 3: Configure Your IdP](#step-4-configure-your-idp)
-- [Step 4: Identity Provider Configuration](#step-3-identity-provider-configuration)
+- [Step 3: Configure Your IdP](#step-3-configure-your-idp)
+- [Step 4: Identity Provider Configuration](#step-4-identity-provider-configuration)
 - [Field Mappings Reference](#field-mappings-reference)
   - [For Service Provider Configuration](#for-service-provider-configuration)
   - [For Identity Provider Configuration](#for-identity-provider-configuration)
