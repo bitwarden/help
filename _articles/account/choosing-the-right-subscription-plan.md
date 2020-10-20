@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Choosing the right subscription plan
+title: Choosing the Right Subscription Plan
 categories: [account-management]
 featured: false
 popular: false
