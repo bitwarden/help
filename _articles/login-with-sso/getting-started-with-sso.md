@@ -22,7 +22,7 @@ Administrators can configure Login with SSO in the Business Portal. For more inf
 
 ### In This Article
 
-- [Enterprise Free Trail](#bitwarden-enterprise-free-trial)
+- [Enterprise Free Trial](#enterprise-free-trial)
 - [Requirements](#requirements)
   - [Identity Server Requirements](#identity-server-requirements)
   - [Client Application Requirements](#client-requirements)
