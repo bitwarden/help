@@ -33,7 +33,7 @@ Administrators can configure Login with SSO in the Business Portal. For more inf
 ## Enterprise Free Trial
 
 Login with SSO is available for all customers on the current (2020) Enterprise plan. Classic 2019 Enterprise plan customers are encouraged to participate in a 7 Day Free Trial of the current (2020) Enterprise Plan in order to test Login with SSO. For more information, see:
-- [Start an Enterprise Free Trial](https://bitwarden.com/help/article/pricing-start-enterprise-trial/)
+- [Start an Enterprise Free Trial](https://bitwarden.com/help/article/enterprise-free-trial/)
 - [Choosing the Right Subscription Plan](https://bitwarden.com/help/article/choosing-the-right-subscription-plan/)
 
 If you are self-hosting Bitwarden, you will need to generate a new license file after starting your 7 Day Free Trial. We recommend using a separate Bitwarden instance for testing Login with SSO. For more information, see [Licensing Paid Features](https://bitwarden.com/help/article/licensing-on-premise).

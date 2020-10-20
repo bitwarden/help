@@ -22,4 +22,4 @@ Users with existing Bitwarden accounts will need to complete the following steps
 ### Next Steps
 You can now authenticate into your Vault using Login with SSO:
 
-- [Access your Vault Using SSO](https://bitwarden.com/help/article/logging-in-with-sso/)
+- [Access your Vault Using SSO](https://bitwarden.com/help/article/sso-access-your-vault/)
