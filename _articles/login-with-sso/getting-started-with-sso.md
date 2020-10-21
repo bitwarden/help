@@ -72,7 +72,7 @@ For administrators configuring Login with SSO, see:
 
 For existing users, see:
 - [Link an Existing Account to SSO](https://bitwarden.com/help/article/link-to-sso/)
-- [Access Your Vault Using SSO](http://bitwarden.com/help/aricle/logging-in-with-Assertion)
+- [Access Your Vault Using SSO](https://bitwarden.com/help/article/sso-access-your-vault/)
 
 For more information, see:
 - [SSO FAQs](https://bitwarden.com/help/article/sso-faqs)
