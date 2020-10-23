@@ -19,6 +19,7 @@ tags: [organizations, policies, access control, enterprise]
     + [Setting the Policy](#setting-the-policy-1)
   * [Master Password](#master-password)
     + [Setting the Policy](#setting-the-policy-2)
+  * [Only Organization](#only-organization)
 
 ## What are Organizations?
 
@@ -40,6 +41,7 @@ Bitwarden currently supports the following Organization Policies
 - Two-step Login
 - Password Generator
 - Master Password
+- Only Organization
 
 {% image policies/policies-enable.png %}
 
@@ -118,3 +120,11 @@ When this policy is set, organization administrators can choose and permanently 
 Ideally, this policy is set before any users are invited to join an organization.
 
 If users have already joined an organization or already have a Bitwarden account, their master password - regardless of complexity - will remain in place unless it is changed, at which point it will need to conform with the policy.
+
+### Only Organization
+
+When this policy is set, administrators can restrict members of their organization from being part of other organizations.
+
+{%note%}
+When this policy is enabled, organization members who are already a part of another organization will be removed from this organization. They will be notifed about the change via email.
+{%endnote%}
