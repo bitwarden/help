@@ -28,7 +28,7 @@ Bitwarden provides a powerful, full-featured command-line interface (CLI) tool t
     - [Sync](#sync)
     - [List](#list)
     - [Get](#get)
-    - [Create](#create)
+    - [Create](#create-items-attachments-and-folders)
     - [Edit](#edit)
     - [Delete](#delete)
         - [`--permanent` Option](#--permanent-option)
