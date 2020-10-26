@@ -12,7 +12,7 @@ order: 01
 
 Login with SSO separates user authentication from Vault decryption by leveraging your existing Identity Provider (IdP) to authenticate users into their Bitwarden Vault and using Master Passwords for decryption of Vault data.
 
-Login with SSO currently supports SAML 2.0 and OpenID Connect authentication for customers on the current (2020) Enterprise Plan.
+Login with SSO currently supports SAML 2.0 and OpenID Connect authentication for customers on the current Enterprise Plan.
 
 Users of Bitwarden authenticate into their vaults using the **Enterprise Single Sign-On** button located on the login screen of any Bitwarden client application. For more information, see [Access Your Vault Using SSO](https://bitwarden.com/help/article/sso-access-your-vault/).
 
@@ -32,9 +32,9 @@ Administrators can configure Login with SSO in the Business Portal. For more inf
 
 ## Enterprise Free Trial
 
-Login with SSO is available for all customers on the current (2020) Enterprise plan. Classic 2019 Enterprise plan customers are encouraged to participate in a 7 Day Free Trial of the current (2020) Enterprise Plan in order to test Login with SSO. For more information, see:
+Login with SSO is available for all customers on the current Enterprise plan (for more information, see [here](https://bitwarden.com/help/article/2020-plan-updates/)). Customers are encouraged to participate in a 7 Day Free Trial of the current Enterprise Plan in order to test Login with SSO. For more information, see:
 - [Start an Enterprise Free Trial](https://bitwarden.com/help/article/enterprise-free-trial/)
-- [Choosing the Right Subscription Plan](https://bitwarden.com/help/article/choosing-the-right-subscription-plan/)
+- [About Bitwarden Plans](https://bitwarden.com/help/article/about-bitwarden-plans/)
 
 If you are self-hosting Bitwarden, you will need to generate a new license file after starting your 7 Day Free Trial. We recommend using a separate Bitwarden instance for testing Login with SSO. For more information, see [Licensing Paid Features](https://bitwarden.com/help/article/licensing-on-premise).
 
