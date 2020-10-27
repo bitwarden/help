@@ -31,11 +31,11 @@ In this article, we'll define each Bitwarden subscription plan to help you along
 
 Bitwarden For You plans are designed to give you or your family all the tools needed to securely manage data:
 
-### Free
+### Free Individual
 
 We believe everyone should have access to password security tools. The core features of Bitwarden are 100% free, including unlimited storage of Logins, Notes, Cards, and Identities, access to Bitwarden on any device, a Secure Password Generator, and more. Signup **[for free](https://vault.bitwarden.com/#/register/)**.
 
-### Premium
+### Premium Individual
 
 Upgrade your personal Bitwarden account to unlock premium password security and management features, including advanced 2FA options, the Bitwarden Authenticator (TOTP), encrypted file storage, and more. Upgrade **[now](https://vault.bitwarden.com/#/?premium=purchase)**.
 
@@ -45,27 +45,27 @@ Premium does not include secure data sharing. In order to access sharing feature
 
 ### Families Organizations
 
-Start a Families Organization to share private data between you and 5 friends or family members. Families Organizations include all **Premium** features for all 6 users and unlimited secure data sharing within the Families Organization.
+Start a Families Organization to share private data between you and 5 friends or family members. Families Organizations include all premium features for all 6 users and unlimited secure data sharing within the Families Organization.
 
 ### Compare the Plans
 
-|Features For You|Free|Premium|Families|
-|----------------|----|-------|--------|
+In the following table, "premium features" (included for users of **Premium Individual** plans and **Families Organizations**) are marked with an asterisk (*).
+
+|Features For You|Free Individual|Premium Individual|Families Organizations|
+|:---------------|:--:|:-----:|:------:|
 |No. of users|1|1|6|
 |Secure storage for Logins, Notes, Cards, and Identities|Unlimited|Unlimited|Unlimited|
 |Access to Bitwarden across devices|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
 |Storage sync across devices|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
 |Secure Password Generator|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
 |Cloud or Self-hosting|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
-|**Two-step login**|via authenticator apps or email|via authenticator apps, email, Yubikey, U2F, and Duo|via authenticator apps, email, Yubikey, U2F, and Duo|
-|**Encrypted file storage**|-|1 GB|1 GB per user + 1 GB shared|
-|**Bitwarden Authenticator (TOTP)**|-|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
-|**Vault Health Reports**|-|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
-|**Priority Support**|-|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
-|Secure sharing for Logins, Notes, Cards, and Identities|-|-|Unlimited|
-|Cost to you|Free|Less than $1/month|$3.33/month|
-
-*Bolded row indicates "Premium" feature*
+|*Two-step login|via authenticator apps or email|via authenticator apps, email, Yubikey, U2F, and Duo|via authenticator apps, email, Yubikey, U2F, and Duo|
+|*Encrypted file storage|-|1 GB|1 GB per user + 1 GB shared|
+|*Bitwarden Authenticator (TOTP)|-|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
+|*Vault Health Reports|-|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
+|*Priority Support|-|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
+|Data sharing|-|-|Unlimited|
+|Cost to you|Free|$10 /year, billed annually|$40 /year, billed annually|
 
 ## Bitwarden For Your Business
 
@@ -77,22 +77,22 @@ Start a Free Organization to store and securely share data with one other user. 
 
 ### Teams Organizations
 
-Start a Teams Organization to securely share data with your coworkers, department, or entire company. Teams Organizations include all **Premium** features for all enrolled users, unlimited secure data sharing within the Teams Organization, and a suite of operational tools like Event Logging and an API for Organization Management.
+Start a Teams Organization to securely share data with your coworkers, department, or entire company. Teams Organizations include all premium features for all enrolled users, unlimited secure data sharing within the Teams Organization, and a suite of operational tools like Event Logging and an API for Organization Management.
 
-Unlike Families Organizations and Free Organizations, Teams can have an unlimited number of users (*priced Per User Per Month (PUPM)*).
+Unlike Families Organizations and Free Organizations, Teams can have an unlimited number of users (*priced Per User Per Month*).
 
 ### Enterprise Organizations
 
-Start an Enterprise Organization to secure your business secrets. Enterprise Organizations include all **Premium** features for for all enrolled users, all operational tools included in **Teams Organizations**, and enterprise-only tools like SSO Authentication, Enterprise Policy enforcement, and a Self-host option.
+Start an Enterprise Organization to secure your business secrets. Enterprise Organizations include all premium features for for all enrolled users, all operational tools included in **Teams Organizations**, and enterprise-only tools like SSO Authentication, Enterprise Policy enforcement, and a Self-host option.
 
-Unlike Families Organizations and Free Organizations, Enterprises can have an unlimited number of users (*priced Per User Per Month (PUPM)*).
+Unlike Families Organizations and Free Organizations, Enterprises can have an unlimited number of users (*priced Per User Per Month*).
 
 ### Compare the Plans
 
-|Features For Your Business|Free|Teams|Enterprise|
-|--------------------------|----|-----|----------|
+|Features For Your Business|Free Organizations|Teams Organizations|Enterprise Organizations|
+|--------------------------|:---:|:-----:|:----------:|
 |Secure storage for Logins, Notes, Cards, and Identities|Unlimited|Unlimited|Unlimited|
-|Secure sharing for Logins, Notes, Cards, and Identities|Unlimited|Unlimited|Unlimited|
+|Data sharing|Unlimited|Unlimited|Unlimited|
 |Access to Bitwarden across devices|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
 |Storage sync across devices|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
 |Secure Password Generator|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
@@ -107,9 +107,7 @@ Unlike Families Organizations and Free Organizations, Enterprises can have an un
 |Login with SSO|-|-|<i class="fa fa-check" aria-hidden="true"></i>|
 |Enterprise Policies|-|-|<i class="fa fa-check" aria-hidden="true"></i>|
 |Self-host option|-|-|<i class="fa fa-check" aria-hidden="true"></i>|
-|Cost to you|Free|$3 PUPM|$5 PUPM|
-
-*PUPM, Per User Per Month*
+|Cost to you|Free|$3 Per User Per Month, billed annually|$5 Per User Per Month, billed annually|
 
 ### Next Steps
 

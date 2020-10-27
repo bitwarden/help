@@ -1,10 +1,10 @@
 ---
 layout: article
-title: Updates to Bitwarden Plans (2020)
+title: Updates to Bitwarden Plans (2019-2020)
 categories: [plans-and-pricing]
 featured: false
 popular: false
-hidden: false
+hidden: true
 tags: [free, personal, organization, enterprise, teams, family, plans, subscription]
 order: 03
 ---

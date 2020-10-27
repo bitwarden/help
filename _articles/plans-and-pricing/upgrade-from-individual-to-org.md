@@ -8,11 +8,11 @@ hidden: false
 tags: [account, individual, organization, premium, subscription]
 order: 04
 ---
-This article will guide existing individual Bitwarden users ([**Free**](https://bitwarden.com/help/article/about-bitwarden-plans/#free) or [**Premium**](https://bitwarden.com/help/article/about-bitwarden-plans/#premium)) through the process of transitioning to an Organizations plan ([**Free**](https://bitwarden.com/help/article/about-bitwarden-plans/#free-organizations), [**Families**](https://bitwarden.com/help/about-bitwarden-plans/#families-organizations), [**Teams**](https://bitwarden.com/help/article/about-bitwarden-plans/#teams-organizations), or [**Enterprise**](https://bitwarden.com/help/article/about-bitwarden-plans/#enterprise-organizations)) in order to start securely sharing data between friends, family, co-workers, a department, or an entire company.
+This article will guide existing individual Bitwarden users ([**Free**](https://bitwarden.com/help/article/about-bitwarden-plans/#free-individual) or [**Premium**](https://bitwarden.com/help/article/about-bitwarden-plans/#premium-individual)) through the process of transitioning to an Organizations plan ([**Free**](https://bitwarden.com/help/article/about-bitwarden-plans/#free-organizations), [**Families**](https://bitwarden.com/help/about-bitwarden-plans/#families-organizations), [**Teams**](https://bitwarden.com/help/article/about-bitwarden-plans/#teams-organizations), or [**Enterprise**](https://bitwarden.com/help/article/about-bitwarden-plans/#enterprise-organizations)) in order to start securely sharing data between friends, family, co-workers, a department, or an entire company.
 
 ### In This Article
 - [Start Your Organization](#start-your-organization)
-- [Cancel Individual Premium](#cancel-individual-premium)
+- [Cancel Premium Individual Plan](#cancel-premium-individual-plan)
 - [Next Steps](#next-steps)
 
 ## Start Your Organization
@@ -39,21 +39,25 @@ Complete the following steps to start your Organization:
    - **Teams:** For businesses and other team organizations. **[Learn more](https://bitwarden.com/help/article/about-bitwarden-plans/#teams-organizations/)**.
    - **Enterprise:** For businesses and other large organizations. **[Learn more](https://bitwarden.com/help/article/about-bitwarden-plans/#enterprise-organizations/)**.
 
-   {% note %}Paid Organizations (Families, Teams, or Enterprise) include **Premium** features for all enrolled users. For more information about Premium features, see [About Bitwarden Plans](https://bitwarden.com/help/article/about-bitwarden-plans/#compare-the-plans/).
+   {% note %}Paid Organizations (Families, Teams, or Enterprise) include premium features for all enrolled users. For more information about Premium features, see [About Bitwarden Plans](https://bitwarden.com/help/article/about-bitwarden-plans/#compare-the-plans/).
    {% endnote %}
 
 6. Enter the following information:
    - If you selected **Teams** or **Enterprise**, enter the number of Bitwarden **User Seats** you need. You can add additional seats later if required.
    - If you selected **Families**, **Teams**, or **Enterprise**, enter the amount of **Additional Storage (GB)** you need. Your plan comes with 1 GB of shared encrypted file storage, and you can add additional storage later if needed.
 7. In the **Summary** section, select whether you'd like to be billed **Annually** or **Monthly**.
+
+   Families Organizations may only be billed **Annually**.
 8. Enter your **Payment Information** and select **Submit**.
 
-## Cancel Individual Premium
+## Cancel Premium Individual Plan
 
 Paid Organizations (Families, Teams, or Enterprise) automatically provide all users with access to premium features. If you had a **Premium** individual subscription at the time of creating the Organization, you can cancel your **Premium** individual subscription without losing access to premium features.
 
 {% warning %}
-If you cancel your **Premium** individual subscription, leaving the Paid Organization will result in a loss of access to premium features.
+Bitwarden offers refunds for cancelled Premium Individual plans **within 30 days of account creation**. If you create a paid Organization within 30 days of creating a Premium individual account, [Contact Us](https://bitwarden.com/contact) to initiation your refund.
+
+At this time, Bitwarden does not offer refunds to paid subscriptions older than 30 days.
 {% endwarning %}
 
 Complete the following steps to cancel your **Premium** individual subscription:

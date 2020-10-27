@@ -22,7 +22,7 @@ This article will guide you through a few questions that can help you determine 
 
 Use this flowchart to guide you through your journey:
 
-{% image /plans-and-pricing/what-plan-flowchart.png What Plan is Right for Me? %}
+{% image /plans-and-pricing/what-plan-flowchart-1.png What Plan is Right for Me? %}
 
 ## Do You Want to Start Protecting Your Online Accounts with Bitwarden?
 
@@ -49,7 +49,7 @@ As a Bitwarden Solo-Practicioner, will you be a Bitwarden Black Belt using Premi
 
 |If your answer is "Absolutely"...|If your answer is "Not yet"...|
 |---------------------------------|-----------------------------------------------|
-|...we recommend a Premium membership.<br><br>**Your journey ends here.** [**Upgrade now!**](https://vault.bitwarden.com/#/?premium=purchase)|...we recommend a free individual account.<br><br>**Your journey ends here.** [**Download the Apps!**](https://bitwarden.com/download/)|
+|...we recommend a Premium membership.<br><br>[**Upgrade now!**](https://vault.bitwarden.com/#/?premium=purchase)|...we recommend a free individual account.<br><br>[**Download the Apps!**](https://bitwarden.com/download/)|
 
 ## Who will you share with?
 
@@ -61,7 +61,7 @@ Bitwarden is a great way to securely share data like Logins, Notes, Cards, and I
 
 |If your answer is "Family & Friends"...|If your answer is "Business"...|If your answer is "Not sure...|
 |--------------------|--------------------|--------------------|
-|...we recommend a Families Organization for:<br><br>- Premium features for up to 6 users<br>- Unlimited sharing between up to 6 users<br><br>**Your journey ends here.** [**Create your Families Organization.**](https://bitwarden.com/help/article/upgrade-from-individual-to-org/)|...we have one last question.<br><br>**Continue to:** [What tools will you need?](#what-tools-will-you-need)|...we recommend trying a Free Organization for:<br><br>- Core Bitwarden features for 2 users<br>- Limited sharing between 2 users<br><br>**Your journey ends here.** [**Create your Free Organization.**](https://bitwarden.com/help/article/upgrade-from-individual-to-org/)|
+|...we recommend a Families Organization for:<br><br>- Premium features for up to 6 users<br>- Unlimited sharing between up to 6 users<br><br>[**Create your Families Organization.**](https://bitwarden.com/help/article/upgrade-from-individual-to-org/)|...we have one last question.<br><br>**Continue to:** [What tools will you need?](#what-tools-will-you-need)|...we recommend trying a Free Organization for:<br><br>- Core Bitwarden features for 2 users<br>- Limited sharing between 2 users<br><br>[**Create your Free Organization.**](https://bitwarden.com/help/article/upgrade-from-individual-to-org/)|
 
 ## What tools will you need?
 
@@ -81,7 +81,7 @@ However, only Enterprise Organizations include:
 
 |If your answer is "Just the first few"...|If your answer is "I need all of them"...|
 |------------------------------------------------|------------------------------------------------|
-|...we recommend a Teams Organization.<br><br>**Your journey ends here.** [**Create your Teams Organization.**](https://bitwarden.com/help/article/upgrade-from-individual-to-org/)|...we recommend an Enterprise Organization.<br><br>**Your journey ends here.** [**Create your Enterprise Organization.**](https://bitwarden.com/help/article/upgrade-from-individual-to-org/)|
+|...we recommend a Teams Organization.<br><br>[**Create your Teams Organization.**](https://bitwarden.com/help/article/upgrade-from-individual-to-org/)|...we recommend an Enterprise Organization.<br><br>[**Create your Enterprise Organization.**](https://bitwarden.com/help/article/upgrade-from-individual-to-org/)|
 
 ## Still Not Sure?
 
