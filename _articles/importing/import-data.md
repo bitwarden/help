@@ -7,7 +7,7 @@ popular: true
 tags: [import]
 ---
 
-You can very easily import your data from an array of different password manager applications. Bitwarden supports importing data into your individual account from the following sources:
+You can very easily import your data from an array of different password manager applications. Bitwarden supports importing data into your individual or Organization account from the following sources:
 
 - Bitwarden (json)
 - Bitwarden (csv)
@@ -63,7 +63,7 @@ You can very easily import your data from an array of different password manager
 - Yoti (csv)
 - Zoho Vault (csv)
 
-If the password manager that you use is not on the list, please  manually condition a [CSV](https://en.wikipedia.org/wiki/Comma-separated_values) file for your individual account import using the generic Bitwarden format.
+If the password manager that you use is not on the list, please  manually condition a [CSV](https://en.wikipedia.org/wiki/Comma-separated_values) file for your  account import using the generic Bitwarden format.
 
 **Personal Accounts**
 
