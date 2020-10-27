@@ -82,6 +82,6 @@ For more information, see [Hosting](https://bitwarden.com/help/hosting).
 
 `You passed an empty string for 'payment_method_data[referrer]'. We assume empty values are an attempt to unset a parameter; however 'payment_method_data[referrer]' cannot be unset. You should remove 'payment_method_data[referrer]' from your request or supply a non-empty value.`
 
-This usually occurs when submitting is impeded by an installed browser Extension or configured Browser option.
+This usually occurs when submitting your payment method is impeded by an installed browser Extension or configured Browser option.
 
 **Open Firefox in a Private Window and try resubmitting.**

@@ -18,12 +18,12 @@ In this article, we'll define each Bitwarden subscription plan to help you along
 - [Bitwarden For You](#bitwarden-for-you)
   - [Free](#free)
   - [Premium](#premium)
-  - [Families](#families)
+  - [Families Organizations](#families-organizations)
   - [Compare the Plans](#compare-the-plans)
 - [Bitwarden For Your Business](#bitwarden-for-your-business)
   - [Free Organizations](#free-organizations)
-  - [Teams](#teams)
-  - [Enterprise](#enterprise)
+  - [Teams Organizations](#teams-organizations)
+  - [Enterprise Organizations](#enterprise-organizations)
   - [Compare the Plans](#compare-the-plans-1)
 - [Next Steps](#next-steps)
 
@@ -40,12 +40,12 @@ We believe everyone should have access to password security tools. The core feat
 Upgrade your personal Bitwarden account to unlock premium password security and management features, including advanced 2FA options, the Bitwarden Authenticator (TOTP), encrypted file storage, and more. Upgrade **[now](https://vault.bitwarden.com/#/?premium=purchase)**.
 
 {% note %}
-Premium does not include secure data sharing. In order to access sharing features, you will need a subscription to an Organization ([Families](#families), [Free Organizations](#free-organizations), [Teams](#teams), or [Enterprise](#enterprise)). Paid Organizations ([Families](#families), [Teams](#teams), or [Enterprise](#enterprise)) include Premium features for all individual users that are enrolled in that Organization.
+Premium does not include secure data sharing. In order to access sharing features, you will need a subscription to an Organization ([Free](#free-organizations), [Families](#families-organizations), [Teams](#teams-organizations), or [Enterprise](#enterprise-organizations)). Paid Organizations ([Families](#families-organizations), [Teams](#teams-organizations), or [Enterprise](#enterprise-organizations)) include Premium features for all individual users that are enrolled in that Organization.
 {% endnote %}
 
-### Families
+### Families Organizations
 
-Start a Families Organization to share private data between you and 5 friends or family members. Families Organizations include all **Premium** features for all 6 users, and add the ability for users to securely share data within the Families Organization.
+Start a Families Organization to share private data between you and 5 friends or family members. Families Organizations include all **Premium** features for all 6 users and unlimited secure data sharing within the Families Organization.
 
 ### Compare the Plans
 
@@ -58,7 +58,7 @@ Start a Families Organization to share private data between you and 5 friends or
 |Secure Password Generator|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
 |Cloud or Self-hosting|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
 |**Two-step login**|via authenticator apps or email|via authenticator apps, email, Yubikey, U2F, and Duo|via authenticator apps, email, Yubikey, U2F, and Duo|
-|**Encrypted file storage**|-|1 GB|1 GB per user + 1 GB Shared|
+|**Encrypted file storage**|-|1 GB|1 GB per user + 1 GB shared|
 |**Bitwarden Authenticator (TOTP)**|-|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
 |**Vault Health Reports**|-|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
 |**Priority Support**|-|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
@@ -73,17 +73,17 @@ Bitwarden For Your Business offers a suite of plans designed to meet the storage
 
 ### Free Organizations
 
-Start a Free Organization to store and share secure data with one other user. Free Organizations offer both users all the core features that make Bitwarden great, and add the ability for users to securely share data in up to two Collections.
+Start a Free Organization to store and securely share data with one other user. Free Organizations offer both users all the core features of Bitwarden and secure data sharing in up to two Collections.
 
-### Teams
+### Teams Organizations
 
-Start a Teams Organization to securely share data with your coworkers, department, or entire organization. Teams Organizations include all **Premium** features for all enrolled users, unlimited secure data sharing, and add a suite of operational tools like Event Logging and an Organization Management API.
+Start a Teams Organization to securely share data with your coworkers, department, or entire company. Teams Organizations include all **Premium** features for all enrolled users, unlimited secure data sharing within the Teams Organization, and a suite of operational tools like Event Logging and an API for Organization Management.
 
 Unlike Families Organizations and Free Organizations, Teams can have an unlimited number of users (*priced Per User Per Month (PUPM)*).
 
-### Enterprise
+### Enterprise Organizations
 
-Start an Enterprise Organization to secure your business secrets. Enterprise Organizations include all **Premium** features for for all enrolled users, all operational tools included in **Teams**, and add enterprise-only tools like SSO Authentication, Enterprise Policy enforcement, and a Self-host option.
+Start an Enterprise Organization to secure your business secrets. Enterprise Organizations include all **Premium** features for for all enrolled users, all operational tools included in **Teams Organizations**, and enterprise-only tools like SSO Authentication, Enterprise Policy enforcement, and a Self-host option.
 
 Unlike Families Organizations and Free Organizations, Enterprises can have an unlimited number of users (*priced Per User Per Month (PUPM)*).
 
@@ -117,10 +117,10 @@ For help choosing the right plan, see:
 - [What Plan is Right for Me?](https://bitwarden.com/help/article/what-plan-is-right-for-me/)
 
 For help moving from an individual plan to an Organization, see:
-- [Upgrading From Individual to Organization](https://bitwarden.com/help/article/ugrade-from-individual-to-org/).
+- [Upgrade From Individual to Organization](https://bitwarden.com/help/article/ugrade-from-individual-to-org/)
 
 For help starting a free trial of Bitwarden Enterprise, see:
-- [Start a Free Trial of Bitwarden Enterprise](https://bitwarden.com/help/article/enterprise-free-trial/).
+- [Start a Free Trial of Bitwarden Enterprise](https://bitwarden.com/help/article/enterprise-free-trial/)
 
 Still can't find what you're looking for?
-- Try our [Billing FAQs](https://bitwarden.com/help/article/billing-faqs/).
+- Try our [Billing FAQs](https://bitwarden.com/help/article/billing-faqs/)

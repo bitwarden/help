@@ -8,7 +8,7 @@ tags: [account, enterprise, free trial, organization]
 order: 05
 ---
 
-Paid Organizations, including Enterprise, have a 7 Day Free Trial built in. To learn what is included in Bitwarden Enterprise, see [Bitwarden Plans and Pricing](https://bitwarden.com/pricing/business).
+Paid Organizations, including Enterprise, have a 7 Day Free Trial built in. To learn what is included in Bitwarden Enterprise, see [Bitwarden Plans and Pricing](https://bitwarden.com/pricing/business) or [About Bitwarden Plans](https://bitwarden.com/help/article/about-bitwarden-plans/#enterprise-organizations).
 
 Complete the following steps to start your 7 Day Free Trial of Bitwarden Enterprise:
 
@@ -26,7 +26,7 @@ Complete the following steps to start your 7 Day Free Trial of Bitwarden Enterpr
    - Check the **This account is owned by a business** checkbox.
    - Provide your **Business Name**.
 5. Select the **Enterprise** plan option. Doing so will trigger additional enterprise-oriented fields to be displayed.
-6. In the **Users** section, enter the number of Bitwarden **User Seats** you need. You can add additional seats later if required.
+6. In the **Users** section, enter the number of **User Seats** you need. You can add additional seats later if required.
 7. In the **Addons** section, enter the amount of **Additional Storage (GB)** you need. Your plan comes with 1 GB of shared encrypted file storage, and you can add additional storage later if required.
 8. In the **Summary** section, select whether you'd like to be billed **Annually** or **Monthly**.
 9. Enter your **Payment Information** and select **Submit**.

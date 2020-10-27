@@ -8,14 +8,14 @@ hidden: false
 tags: [account, individual, organization, premium, subscription]
 order: 04
 ---
-This article will guide existing individual Bitwarden users (**Free** or **Premium**) through the process of transitioning to an Organization plan, in order to start securely sharing data between friends, family, co-workers, department, or an entire organization.
+This article will guide existing individual Bitwarden users (**Free** or **Premium**) through the process of transitioning to an Organizations plan, in order to start securely sharing data between friends, family, co-workers, department, or an entire company.
 
 ### In This Article
 - [Start Your Organization](#start-your-organization)
 - [Cancel Individual Premium](#cancel-individual-premium)
 - [Next Steps](#next-steps)
 
-### Start Your Organization
+## Start Your Organization
 
 Complete the following steps to start your Organization:
 
@@ -35,9 +35,9 @@ Complete the following steps to start your Organization:
 
 5. In the **Choose Your Plan** section, select which type of Organization to create. Options include:
    - **Free:** For testing or personal users to share with 1 other user. **[Learn more](https://bitwarden.com/help/article/about-bitwarden-plans/#free-organizations/)**.
-   - **Families:** For personal use, to share with family & friends. **[Learn more](https://bitwarden.com/help/article/about-bitwarden-plans/#families/)**.
-   - **Teams:** For businesses and other team organizations. **[Learn more](https://bitwarden.com/help/article/about-bitwarden-plans/#teams/)**.
-   - **Enterprise:** For businesses and other large organizations. **[Learn more](https://bitwarden.com/help/article/about-bitwarden-plans/#enterprise/)**.
+   - **Families:** For personal use, to share with family & friends. **[Learn more](https://bitwarden.com/help/article/about-bitwarden-plans/#families-organizations/)**.
+   - **Teams:** For businesses and other team organizations. **[Learn more](https://bitwarden.com/help/article/about-bitwarden-plans/#teams-organizations/)**.
+   - **Enterprise:** For businesses and other large organizations. **[Learn more](https://bitwarden.com/help/article/about-bitwarden-plans/#enterprise-organizations/)**.
 
    {% note %}Paid Organizations (Families, Teams, or Enterprise) include **Premium** features for all enrolled users. For more information about Premium features, see [About Bitwarden Plans](https://bitwarden.com/help/article/about-bitwarden-plans/#compare-the-plans/).
    {% endnote %}
@@ -48,15 +48,15 @@ Complete the following steps to start your Organization:
 7. In the **Summary** section, select whether you'd like to be billed **Annually** or **Monthly**.
 8. Enter your **Payment Information** and select **Submit**.
 
-### Cancel Individual Premium
+## Cancel Individual Premium
 
-Paid Organizations (Families, Teams, or Enterprise) automatically provide all users with access to premium features. If you had a **Premium** subscription at the time of creating the Organization, you can cancel your individual subscription without losing access to premium features.
+Paid Organizations (Families, Teams, or Enterprise) automatically provide all users with access to premium features. If you had a **Premium** individual subscription at the time of creating the Organization, you can cancel your **Premium** individual subscription without losing access to premium features.
 
 {% warning %}
-If you cancel your **Premium** subscription, leaving the Paid Organization will result in a loss of access to premium features.
+If you cancel your **Premium** individual subscription, leaving the Paid Organization will result in a loss of access to premium features.
 {% endwarning %}
 
-Complete the following steps to cancel your Premium Individual subscription:
+Complete the following steps to cancel your **Premium** individual subscription:
 
 1. Log in to your [Web Vault](https://vault.bitwarden.com/).
 2. Open the **Settings** tab and select **Premium Membership** from the left menu.

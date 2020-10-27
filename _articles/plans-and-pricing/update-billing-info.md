@@ -11,7 +11,7 @@ order: 06
 Your billing information can only be updated from the [Bitwarden Web Vault](https://vault.bitwarden.com).
 
 {% warning %}
-Subscriptions to individual Premium plans and Organizations plans are **separate**; you will need to update your billing information in separate areas. If you have **both** Premium and Organizations subscriptions, updating billing information for one will not update the other.
+Subscriptions to individual plans and Organizations plans are **separate**; you will need to update your billing information in separate areas. If you have **both** Premium and Organizations subscriptions, updating billing information for one will not update the other.
 {% endwarning %}
 
 ### In This Article
@@ -37,7 +37,7 @@ Complete the following steps to update the billing information for your individu
 
 ## Update Billing Information for Organizations
 
-Complete the following steps to update the billing information for you Organization subscription:
+Complete the following steps to update the billing information for your Organizations subscription:
 
 1. In the [Web Vault](https://vault.bitwarden.com), select your Organization.
 
