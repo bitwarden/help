@@ -8,7 +8,7 @@ hidden: false
 tags: [account, individual, organization, premium, subscription]
 order: 04
 ---
-This article will guide existing individual Bitwarden users (**Free** or **Premium**) through the process of transitioning to an Organizations plan, in order to start securely sharing data between friends, family, co-workers, department, or an entire company.
+This article will guide existing individual Bitwarden users ([**Free**](https://bitwarden.com/help/article/about-bitwarden-plans/#free) or [**Premium**](https://bitwarden.com/help/article/about-bitwarden-plans/#premium)) through the process of transitioning to an Organizations plan ([**Free**](https://bitwarden.com/help/article/about-bitwarden-plans/#free-organizations), [**Families**](https://bitwarden.com/help/about-bitwarden-plans/#families-organizations), [**Teams**](https://bitwarden.com/help/article/about-bitwarden-plans/#teams-organizations), or [**Enterprise**](https://bitwarden.com/help/article/about-bitwarden-plans/#enterprise-organizations)) in order to start securely sharing data between friends, family, co-workers, a department, or an entire company.
 
 ### In This Article
 - [Start Your Organization](#start-your-organization)
