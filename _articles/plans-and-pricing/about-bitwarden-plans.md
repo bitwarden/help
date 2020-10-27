@@ -49,7 +49,7 @@ Start a Families Organization to share private data between you and 5 friends or
 
 ### Compare the Plans
 
-In the following table, "premium features" (included for users of **Premium Individual** plans and **Families Organizations**) are marked with an asterisk (*).
+In the following table, "premium features" (included for **Premium Individual** and **Families Organizations**) are marked with an asterisk (*).
 
 |Features For You|Free Individual|Premium Individual|Families Organizations|
 |:---------------|:--:|:-----:|:------:|
@@ -89,6 +89,8 @@ Unlike Families Organizations and Free Organizations, Enterprises can have an un
 
 ### Compare the Plans
 
+In the following table, "premium features" (included for **Teams Organizations** and **Enterprise Organizations**) are marked with an asterisk.
+
 |Features For Your Business|Free Organizations|Teams Organizations|Enterprise Organizations|
 |--------------------------|:---:|:-----:|:----------:|
 |Secure storage for Logins, Notes, Cards, and Identities|Unlimited|Unlimited|Unlimited|
@@ -99,7 +101,11 @@ Unlike Families Organizations and Free Organizations, Enterprises can have an un
 |Base no. of users|2|1|1|
 |Max no. of users|2|Unlimited|Unlimited|
 |Max no. of Collections|2|Unlimited|Unlimited|
-|Premium features for enrolled users (see **[Premium](#compare-the-plans)**)|-|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
+|*Two-step login|via authenticator apps or email|via authenticator apps, email, Yubikey, U2F, and Duo|via authenticator apps, email, Yubikey, U2F, and Duo|
+|*Encrypted file storage|-|1 GB|1 GB per user + 1 GB shared|
+|*Bitwarden Authenticator (TOTP)|-|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
+|*Vault Health Reports|-|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
+|*Priority Support|-|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
 |Event Logs|-|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
 |User Groups|-|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
 |API access|-|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
