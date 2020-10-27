@@ -16,7 +16,7 @@ Hi there! Bitwarden is here to help you take your first steps, whether you're a 
 This article will guide you through a few questions that can help you determine which Bitwarden plan is right for you. Questions like:
 
 - [Do you need to share your data?](#do-you-need-to-share-your-data)
-- [Do you need Premium features?](#do-you-need-premium-features)
+- [Do you need premium features?](#do-you-need-premium-features)
 - [Who will you share with?](#who-will-you-share-with)
 - [What tools will you need?](#what-tools-will-you-need)
 
@@ -49,7 +49,7 @@ As a Bitwarden Solo-Practicioner, will you be a Bitwarden Black Belt using Premi
 
 |If your answer is "Absolutely"...|If your answer is "Not yet"...|
 |---------------------------------|-----------------------------------------------|
-|...we recommend a Premium membership.<br><br>[**Upgrade now!**](https://vault.bitwarden.com/#/?premium=purchase)|...we recommend a free individual account.<br><br>[**Download the Apps!**](https://bitwarden.com/download/)|
+|...we recommend a Premium Individual plan.<br><br>[**Upgrade now!**](https://vault.bitwarden.com/#/?premium=purchase)|...we recommend staying on the free individual plan.<br><br>[**Download the Apps!**](https://bitwarden.com/download/)|
 
 ## Who will you share with?
 

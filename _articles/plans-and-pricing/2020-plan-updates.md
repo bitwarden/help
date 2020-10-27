@@ -23,11 +23,11 @@ You **will not** be moved to a current plan automatically, and are **not require
 - [Enterprise Organizations](#enterprise-organizations)
 - [FAQs About Changes](#faqs-about-changes)
 
-## Free
+## Free Individual
 
 There have been no changes made to the **Free** plan for individual users. For more information on what this plan includes, see [About Bitwarden Plans](https://bitwarden.com/help/article/about-bitwarden-plans/).
 
-## Premium
+## Premium Individual
 
 There have been no changes made to the **Premium** plan for individual users. For more information on what this plan includes, see [About Bitwarden Plans](https://bitwarden.com/help/article/about-bitwarden-plans/).
 
@@ -35,7 +35,7 @@ There have been no changes made to the **Premium** plan for individual users. Fo
 
 Upgrading from Classic 2019 to the current Families Organizations plan will increase your number of users from 5 to 6.
 
-With the current plan, all 6 members of your Families Organization will automatically get all **Premium** features, including advanced 2FA options, the Bitwarden Authenticator (TOTP), encrypted file storage, and more.
+With the current plan, all 6 members of your Families Organization will automatically get all premium features, including advanced 2FA options, the Bitwarden Authenticator (TOTP), encrypted file storage, and more.
 
 We've reduced the price of a Families Organization to $40/year (*compared to $52/year for a Families Organization and Premium Features for all users*).
 
@@ -48,7 +48,7 @@ Upgrading from Classic 2019 to the current Teams Organizations plan will enable 
 - API access
 - Directory Connector
 
-With the current plan, all members of your Teams Organization will also automatically get all **Premium** features, including advanced 2FA options, the Bitwarden Authenticator (TOTP), encrypted file storage, and more.
+With the current plan, all members of your Teams Organization will also automatically get all premium features, including advanced 2FA options, the Bitwarden Authenticator (TOTP), encrypted file storage, and more.
 
 There is no longer a minimum number of users required for a Teams Organization (*compared to 5 users min. for Classic 2019*). The improved Teams Organizations plan is $3 Per User Per Month (PUPM) (*compared to $2 PUPM for Classic 2019*).
 
@@ -56,7 +56,7 @@ There is no longer a minimum number of users required for a Teams Organization (
 
 Upgrading from Classic 2019 to the current Enterprise plan unlocks the highly anticipated Login with SSO feature-set, simplifying access for enterprise users by fully integrating with your existing Identity Management solution.
 
-As before, all members of your Enterprise Organization will automatically get all **Premium** features, including advanced 2FA options, the Bitwarden Authenticator (TOTP), encrypted file storage, and more.
+As before, all members of your Enterprise Organization will automatically get all premium features, including advanced 2FA options, the Bitwarden Authenticator (TOTP), encrypted file storage, and more.
 
 As before, there is no limit to the number of users in your Enterprise Organization. The current Enterprise Organizations plan is $5 Per User Per Month (*compared to $3 PUPM for Classic 2019 plan*).
 

@@ -16,8 +16,8 @@ In this article, we'll define each Bitwarden subscription plan to help you along
 
 ### In This Article
 - [Bitwarden For You](#bitwarden-for-you)
-  - [Free](#free)
-  - [Premium](#premium)
+  - [Free Individual](#free-individual)
+  - [Premium Individual](#premium-individual)
   - [Families Organizations](#families-organizations)
   - [Compare the Plans](#compare-the-plans)
 - [Bitwarden For Your Business](#bitwarden-for-your-business)
@@ -37,10 +37,10 @@ We believe everyone should have access to password security tools. The core feat
 
 ### Premium Individual
 
-Upgrade your personal Bitwarden account to unlock premium password security and management features, including advanced 2FA options, the Bitwarden Authenticator (TOTP), encrypted file storage, and more. Upgrade **[now](https://vault.bitwarden.com/#/?premium=purchase)**.
+Upgrade your individual Bitwarden account to unlock premium password security and management features, including advanced 2FA options, the Bitwarden Authenticator (TOTP), encrypted file storage, and more. Upgrade **[now](https://vault.bitwarden.com/#/?premium=purchase)**.
 
 {% note %}
-Premium does not include secure data sharing. In order to access sharing features, you will need a subscription to an Organization ([Free](#free-organizations), [Families](#families-organizations), [Teams](#teams-organizations), or [Enterprise](#enterprise-organizations)). Paid Organizations ([Families](#families-organizations), [Teams](#teams-organizations), or [Enterprise](#enterprise-organizations)) include Premium features for all individual users that are enrolled in that Organization.
+Premium does not include secure data sharing. In order to access sharing features, you will need a subscription to an Organization ([Free](#free-organizations), [Families](#families-organizations), [Teams](#teams-organizations), or [Enterprise](#enterprise-organizations)). Paid Organizations ([Families](#families-organizations), [Teams](#teams-organizations), or [Enterprise](#enterprise-organizations)) include premium features for all users enrolled in that Organization.
 {% endnote %}
 
 ### Families Organizations
@@ -89,7 +89,7 @@ Unlike Families Organizations and Free Organizations, Enterprises can have an un
 
 ### Compare the Plans
 
-In the following table, "premium features" (included for **Teams Organizations** and **Enterprise Organizations**) are marked with an asterisk.
+In the following table, "premium features" (included for **Teams Organizations** and **Enterprise Organizations**) are marked with an asterisk (*).
 
 |Features For Your Business|Free Organizations|Teams Organizations|Enterprise Organizations|
 |--------------------------|:---:|:-----:|:----------:|
