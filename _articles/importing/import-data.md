@@ -63,6 +63,8 @@ You can very easily import your data from an array of different password manager
 - Yoti (csv)
 - Zoho Vault (csv)
 
+If the password manager that you use is not on the list, please  manually condition a [CSV](https://en.wikipedia.org/wiki/Comma-separated_values) file for your individual account import using the generic Bitwarden format.
+
 **Personal Accounts**
 
 To import your data, log into the web vault at <https://vault.bitwarden.com> and navigate to **Tools** &rarr; **Import Data**. Instructions for importing from each source are available after selecting the desired file format from the dropdown menu.
