@@ -8,7 +8,6 @@ hidden: true
 tags: [tutorial]
 ---
 
-# Deploying Bitwarden as an MSP
 Today, Bitwarden supports a reseller and managed service provider (MSP) model. This article details one recommended configuration to set partners and their customers up for success.
 
 ## Create an Organization
