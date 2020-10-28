@@ -16,8 +16,8 @@ You **will not** be moved to a current plan automatically, and are **not require
 
 ### In This Article
 
-- [Free](#free)
-- [Premium](#premium)
+- [Free Individual](#free-individual)
+- [Premium Individual](#premium-individual)
 - [Families Organizations](#families-organizations)
 - [Teams Organizations](#teams-organizations)
 - [Enterprise Organizations](#enterprise-organizations)

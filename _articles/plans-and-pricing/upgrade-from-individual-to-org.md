@@ -8,7 +8,7 @@ hidden: false
 tags: [account, individual, organization, premium, subscription]
 order: 04
 ---
-This article will guide existing individual Bitwarden users ([**Free**](https://bitwarden.com/help/article/about-bitwarden-plans/#free-individual) or [**Premium**](https://bitwarden.com/help/article/about-bitwarden-plans/#premium-individual)) through the process of transitioning to an Organizations plan ([**Free**](https://bitwarden.com/help/article/about-bitwarden-plans/#free-organizations), [**Families**](https://bitwarden.com/help/about-bitwarden-plans/#families-organizations), [**Teams**](https://bitwarden.com/help/article/about-bitwarden-plans/#teams-organizations), or [**Enterprise**](https://bitwarden.com/help/article/about-bitwarden-plans/#enterprise-organizations)) in order to start securely sharing data between friends, family, co-workers, a department, or an entire company.
+This article will guide existing individual Bitwarden users ([**Free**](https://bitwarden.com/help/article/about-bitwarden-plans/#free-individual) or [**Premium**](https://bitwarden.com/help/article/about-bitwarden-plans/#premium-individual)) through the process of transitioning to an Organizations plan ([**Free**](https://bitwarden.com/help/article/about-bitwarden-plans/#free-organizations), [**Families**](https://bitwarden.com/help/article/about-bitwarden-plans/#families-organizations), [**Teams**](https://bitwarden.com/help/article/about-bitwarden-plans/#teams-organizations), or [**Enterprise**](https://bitwarden.com/help/article/about-bitwarden-plans/#enterprise-organizations)) in order to start securely sharing data between friends, family, co-workers, a department, or an entire company.
 
 ### In This Article
 - [Start Your Organization](#start-your-organization)
@@ -34,10 +34,10 @@ Complete the following steps to start your Organization:
    - Provide your **Business Name**.
 
 5. In the **Choose Your Plan** section, select which type of Organization to create. Options include:
-   - **Free:** For testing or personal users to share with 1 other user. **[Learn more](https://bitwarden.com/help/article/about-bitwarden-plans/#free-organizations/)**.
-   - **Families:** For personal use, to share with family & friends. **[Learn more](https://bitwarden.com/help/article/about-bitwarden-plans/#families-organizations/)**.
-   - **Teams:** For businesses and other team organizations. **[Learn more](https://bitwarden.com/help/article/about-bitwarden-plans/#teams-organizations/)**.
-   - **Enterprise:** For businesses and other large organizations. **[Learn more](https://bitwarden.com/help/article/about-bitwarden-plans/#enterprise-organizations/)**.
+   - **Free:** For testing or personal users to share with 1 other user. **[Learn more](https://bitwarden.com/help/article/about-bitwarden-plans/#free-organizations)**.
+   - **Families:** For personal use, to share with family & friends. **[Learn more](https://bitwarden.com/help/article/about-bitwarden-plans/#families-organizations)**.
+   - **Teams:** For businesses and other team organizations. **[Learn more](https://bitwarden.com/help/article/about-bitwarden-plans/#teams-organizations)**.
+   - **Enterprise:** For businesses and other large organizations. **[Learn more](https://bitwarden.com/help/article/about-bitwarden-plans/#enterprise-organizations)**.
 
    {% note %}Paid Organizations (Families, Teams, or Enterprise) include premium features for all enrolled users. For more information about Premium features, see [About Bitwarden Plans](https://bitwarden.com/help/article/about-bitwarden-plans/#compare-the-plans/).
    {% endnote %}
