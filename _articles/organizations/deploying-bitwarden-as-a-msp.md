@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Deployment Bitwarden as an MSP
+title: Deploying Bitwarden as an MSP
 categories: [organizations]
 featured: false
 popular: false
