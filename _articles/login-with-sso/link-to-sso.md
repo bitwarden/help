@@ -20,6 +20,5 @@ Users with existing Bitwarden accounts will need to complete the following steps
    Selecting this option will initiate an authentication session to link your account. Successfully linking your account to SSO will allow you to use Login with SSO to authenticate into your Vault.
 
 ### Next Steps
-You can now authenticate into your Vault using Login with SSO:
-
+Now that you've linked your account, you can now: 
 - [Access your Vault Using SSO](https://bitwarden.com/help/article/sso-access-your-vault/)

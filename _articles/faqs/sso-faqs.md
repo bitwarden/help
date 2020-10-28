@@ -51,11 +51,15 @@ Or, for more high-level information about **Login with SSO**, refer to the follo
 
 ### Q: What plans offer Login with SSO?
 
-**A:** Only our current (2020) Enterprise Plan offers this feature. To upgrade from a Classic Enterprise 2019 Plan to the current Enterprise offering, please [Contact Us](https://bitwarden.com/contact).
+**A:** Only our current Enterprise Plan offers this feature. For more information, see [here](https://bitwarden.com/help/article/2020-plan-updates/).
 
-### Q: Can I change to the new subscription plan with Login with SSO, and then go back to the old subscription plan if we decide we don’t need the feature?
+### Q: How do I upgrade my plan so that I can use Login with SSO?
 
-**A:** Once you elect to move forward with the new subscription plan, going back to your previous subscription plan will not be an option.
+**A:** [Contact Us](https://bitwarden.com/contact/) and select **Upgrade/Change Plan** from the **Subject** dropdown menu. We highly recommend you test Login with SSO by starting a [7 Day Enterprise Free Trial](https://bitwarden.com/help/article/enterprise-free-trial).
+
+### Q: I would like to test Login with SSO. If I decide I don't need it, can I revert to my Classic 2019 plan?
+
+**A:** Unfortunately, we aren't able to revert you back to a Classic 2019 plan once you've upgraded. We recommend creating a new Organization to start a [7 Day Enterprise Free Trial](https://bitwarden.com/help/article/enterprise-free-trial/) to test Login with SSO outside of your Primary Organization.
 
 ## Supportability
 
