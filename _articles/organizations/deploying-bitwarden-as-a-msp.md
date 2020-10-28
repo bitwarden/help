@@ -56,17 +56,17 @@ These user management strategies apply to MSPs as well as end-users and Clients.
 ### Onboarding and Deprovisioning
 Adding a new user to an Organization involves three steps: Invite, Accept, and Confirm. To remove a user from an Organization, select the Remove option from the options menu for that user. 
 
-Read more: [Managing Users for your Organization] (https://bitwarden.com/help/article/managing-users/)
+Read more: [Managing Users for your Organization](https://bitwarden.com/help/article/managing-users/)
 ### Adding and Removing User Seats
 Administrators and owners can add or remove user seats at any time. 
 
-Read more: [User Seat Management for your Organization] (https://bitwarden.com/help/article/user-seats/)
+Read more: [User Seat Management for your Organization](https://bitwarden.com/help/article/user-seats/)
 ### Syncing Users and Groups with a Directory
 The Bitwarden Directory Connector synchronizes with outside directories of users and/or groups. This function can save time by automatically provisioning and deprovision users, groups, and group associations from the existing user directory. 
 
 Directory Sync can be configured on a per-Organization basis.
 
-Read more: [Syncing Users and Groups with a Directory] (https://bitwarden.com/help/article/directory-sync/)
+Read more: [Syncing Users and Groups with a Directory](https://bitwarden.com/help/article/directory-sync/)
 ## Best Practices and Other Information
 ### Cross-Platform Accessibility
 One of the best parts about Bitwarden is that end-users can access it anytime, anywhere, from any device and any platform. 
