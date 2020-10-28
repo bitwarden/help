@@ -121,7 +121,7 @@ For help choosing the right plan, see:
 - [What Plan is Right for Me?](https://bitwarden.com/help/article/what-plan-is-right-for-me/)
 
 For help moving from an individual plan to an Organization, see:
-- [Upgrade From Individual to Organization](https://bitwarden.com/help/article/ugrade-from-individual-to-org/)
+- [Upgrade From Individual to Organization](https://bitwarden.com/help/article/upgrade-from-individual-to-org/)
 
 For help starting a free trial of Bitwarden Enterprise, see:
 - [Start a Free Trial of Bitwarden Enterprise](https://bitwarden.com/help/article/enterprise-free-trial/)

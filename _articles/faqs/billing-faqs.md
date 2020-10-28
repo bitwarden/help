@@ -36,7 +36,7 @@ Or, for help selecting the right Bitwarden plan for you, refer to [What Plan is 
 
 ### Q: How do I upgrade from an Individual subscription to an Organization?
 
-**A:** Use [Upgrade from Individual to Organization](https://bitwarden.com/help/article/upgrade-from-individual-to-organization/) to guide you through this process.
+**A:** Use [Upgrade from Individual to Organization](https://bitwarden.com/help/article/upgrade-from-individual-to-org/) to guide you through this process.
 ### Q: How do I add or remove a user seat from my Organization?
 
 **A:** Login to your [Web Vault](https://vault.bitwarden.com) and open your Organization. In your Organization's **Settings** tab, select the **Subscription** from the left menu:
