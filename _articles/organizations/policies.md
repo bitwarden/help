@@ -20,7 +20,7 @@ tags: [organizations, policies, access control, enterprise]
   * [Master Password](#master-password)
     + [Setting the Policy](#setting-the-policy-2)
   * [Only Organization](#only-organization)
-  * [Single Sign-On Authentication]
+  * [Single Sign-On Authentication](#single-sign-on-authentication)
 
 ## What are Organizations?
 
@@ -134,6 +134,6 @@ When this policy is enabled, organization members who are already a part of anot
 
 When this policy is activated, administrators can require users to log in with the Enterprise Single Sign-On method.
 
-## Setting the Policy
-
+{%note%}
 The Only Organization policy must be enabled before activating this Policy.
+{%endnote%}
