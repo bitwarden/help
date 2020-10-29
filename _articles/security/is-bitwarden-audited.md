@@ -15,6 +15,6 @@ In October 2018, Bitwarden successfully completed a source code audit and crypto
 
 In July 2020, Bitarden successfully completed a thorough security assessment and penetration test by auditing firm [Insight Risk Consulting](https://www.insightriskconsulting.com/). You can read more about this security audit [here](https://bitwarden.com/blog/post/bitwarden-network-security-assessment-2020/).
 
-In August 2020, Bitwarden achieved SOC 2 Type 2 and SOC 3 certification. You learn more about this [here](https://bitwarden.com/blog/post/bitwarden-achieves-soc-2-certification/)
+In August 2020, Bitwarden achieved SOC 2 Type 2 and SOC 3 certification. You can learn more about this [here](https://bitwarden.com/blog/post/bitwarden-achieves-soc-2-certification/)
 
 Bitwarden also interacts with independent security researchers through our public bug bounty program on [HackerOne](https://hackerone.com/bitwarden/).
