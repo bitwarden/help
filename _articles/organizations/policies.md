@@ -20,6 +20,7 @@ tags: [organizations, policies, access control, enterprise]
   * [Master Password](#master-password)
     + [Setting the Policy](#setting-the-policy-2)
   * [Only Organization](#only-organization)
+  * [Single Sign-On Authentication]
 
 ## What are Organizations?
 
@@ -128,3 +129,11 @@ When this policy is set, administrators can restrict members of their organizati
 {%note%}
 When this policy is enabled, organization members who are already a part of another organization will be removed from this organization. They will be notifed about the change via email.
 {%endnote%}
+
+## Single Sign-On Authentication
+
+When this policy is activated, administrators can require users to log in with the Enterprise Single Sign-On method.
+
+## Setting the Policy
+
+The Only Organization policy must be enabled before activating this Policy.
