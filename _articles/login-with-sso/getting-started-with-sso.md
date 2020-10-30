@@ -8,9 +8,10 @@ tags: [saml, saml2.0, single sign-on, sso, oidc, openid, openid connect, idp, id
 order: 01
 ---
 
-## What is Login with SSO?
+## What is SSO?
+Single Sign-On (SSO) is a user authentication service to access SaaS applications. With SSO, employees are able to use one set of credentials, such as a username and password, to securely access multiple applications.
 
-Login with SSO separates user authentication from Vault decryption by leveraging your existing Identity Provider (IdP) to authenticate users into their Bitwarden Vault and using Master Passwords for decryption of Vault data.
+## What is Login with SSO?
 
 Login with SSO currently supports SAML 2.0 and OpenID Connect authentication for customers on the current Enterprise Plan.
 
@@ -76,3 +77,5 @@ For existing users, see:
 
 For more information, see:
 - [SSO FAQs](https://bitwarden.com/help/article/sso-faqs)
+- [Blog Post](https://bitwarden.com/blog/post/bitwarden-password-manager-login-with-sso/)
+- [Blog Post](https://bitwarden.com/blog/post/bitwarden-launches-sso-authentication/)
