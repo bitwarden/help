@@ -122,7 +122,7 @@ Ideally, this policy is set before any users are invited to join an organization
 
 If users have already joined an organization or already have a Bitwarden account, their master password - regardless of complexity - will remain in place unless it is changed, at which point it will need to conform with the policy.
 
-### Only Organization
+### Single Organization
 
 When this policy is set, administrators can restrict members of their organization from being part of other organizations.
 
@@ -130,10 +130,13 @@ When this policy is set, administrators can restrict members of their organizati
 When this policy is enabled, organization members who are already a part of another organization will be removed from this organization. They will be notifed about the change via email.
 {%endnote%}
 
+## Setting the Policy
+
 ## Single Sign-On Authentication
 
 When this policy is activated, administrators can require users to log in with the Enterprise Single Sign-On method.
 
 {%note%}
-The Only Organization policy must be enabled before activating this Policy.
+The Single Organization policy must be enabled before activating this Policy.
 {%endnote%}
+## Setting the Policy
