@@ -42,7 +42,8 @@ Bitwarden currently supports the following Organization Policies
 - Two-step Login
 - Password Generator
 - Master Password
-- Only Organization
+- Single Organization
+- Single Sign-On Authentication
 
 {% image policies/policies-enable.png %}
 
