@@ -19,7 +19,7 @@ tags: [organizations, policies, access control, enterprise]
     + [Setting the Policy](#setting-the-policy-1)
   * [Master Password](#master-password)
     + [Setting the Policy](#setting-the-policy-2)
-  * [Only Organization](#only-organization)
+  * [Single Organization](#single-organization)
   * [Single Sign-On Authentication](#single-sign-on-authentication)
 
 ## What are Organizations?
