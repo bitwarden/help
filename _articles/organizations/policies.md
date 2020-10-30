@@ -126,11 +126,13 @@ If users have already joined an organization or already have a Bitwarden account
 
 When this policy is set, administrators can restrict members of their organization from being part of other organizations.
 
-{%note%}
-When this policy is enabled, organization members who are already a part of another organization will be removed from this organization. They will be notifed about the change via email.
-{%endnote%}
+### Setting the Policy
 
-## Setting the Policy
+- The administrator will receive a warning that Organization members, in confirmed status, who are part of another another orgaization will be removed from this organization and will receive an email notifying them about the change.
+- If the administrator proceeds to enable the Single Organization policy, confirmed members of the organization who are part of another organization will lose access to the organization.
+- Members who lose access to an organization will receive an email informing them of such.
+- Newly invited members will not be able to accept their invitation to the organization if they are part of another organization.
+- Users in an organization with the Single Organization Policy enabled will not be able to create new organizations.
 
 ## Single Sign-On Authentication
 
