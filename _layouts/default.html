@@ -32,163 +32,22 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="{{site.main_baseurl}}/" onclick="gaEvent('Nav Logo')">
-                    <i class="fa fa-shield"></i>
-                    <span class="hidden-sm"><strong>bit</strong>warden</span>
-                </a>
-            </div>
-            <div class="collapse navbar-collapse" id="menu">
-                <ul class="nav navbar-nav">
-                    <li><a href="{{site.baseurl}}/">Help Center</a></li>
-                    <li><a href="https://community.bitwarden.com/">Forums</a></li>
-                    <li><a href="{{site.main_baseurl}}/contact/">Contact Us</a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="{{site.main_baseurl}}/" onclick="gaEvent('Return')">
-                            <i class="fa fa-share fa-flip-horizontal fa-fw"></i> Return to bitwarden.com
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <header>
-        <div class="container">
-            <form action="{{site.baseurl}}/search/" method="get">
-                <div class="input-group input-group-lg">
-                    <input type="search" class="form-control" placeholder="Search the help center..."
-                           id="search-box" name="q">
-                    <span class="input-group-btn">
-                        <button class="btn btn-default" type="submit" onclick="gaEvent('Search')">
-                            <i class="fa fa-search"></i>
-                            <span class="sr-only">Search</span>
-                        </button>
-                    </span>
-                </div>
-            </form>
-        </div>
-    </header>
+    {% include header.html %}
+    {% include search.html %}
 
     <content>
         {{content}}
     </content>
 
-
-    <footer class="default-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-2 hidden-xs">
-                    <a href="/" class="footer-logo">
-                        <img src="/images/logo-vertical-white.svg" class="img-responsive" width="132" alt="Bitwarden logo" />
-                    </a>
-                </div>
-                <div class="col-sm-1 hidden-xs"></div>
-                <div class="col-sm-9 col-xs-12">
-                    <div class="row">
-                        <div class="col-sm-4 col-xs-6">
-                            <h4>Products</h4>
-                            <ul class="list-unstyled">
-                                <li><a href="{{site.main_baseurl}}/products/">How it works</a></li>
-                                <li><a href="{{site.main_baseurl}}/products/#features">Features</a></li>
-                                <li><a href="{{site.main_baseurl}}/blog/post/bitwarden-network-security-assessment-2020/">3rd Party Audited</a></li>
-                                <li><a href="{{site.main_baseurl}}/pricing/">Pricing</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-sm-4 col-xs-6">
-                            <h4>Company</h4>
-                            <ul class="list-unstyled">
-                                <li><a href="{{site.main_baseurl}}/about/">About</a></li>
-                                <li><a href="{{site.main_baseurl}}/careers/">Careers</a></li>
-                                <li><a href="{{site.main_baseurl}}/newsfeed/">Newsfeed</a></li>
-                                <li><a href="{{site.main_baseurl}}/blog/" onclick="gaEvent('Footer Blog')">Blog</a></li>
-                                <li><a href="{{site.main_baseurl}}/contact/">Contact</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-sm-4 col-xs-6">
-                            <h4>Resources</h4>
-                            <ul class="list-unstyled">
-                                <li><a href="{{site.main_baseurl}}/download/" onclick="gaEvent('Footer Download')">Download</a></li>
-                                <li><a href="{{site.main_baseurl}}/open-source/">Open Source</a></li>
-                                <li><a href="{{site.baseurl}}/" onclick="gaEvent('Footer Help')">Help/Support</a></li>
-                                <li><a href="{{site.main_baseurl}}/resources/">Resources</a></li>
-                                <li>
-                                    <a href="https://community.bitwarden.com" target="_blank" rel="noopener" onclick="gaEvent('Footer Forums')">
-                                        Community
-                                    </a>
-                                </li>
-                                <li><a href="{{site.main_baseurl}}/credits/">Credits</a></li>
-                                <li><a href="{{site.main_baseurl}}/sitemap/">Sitemap</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row copyright">
-                <div class="col-sm-8 col-xs-12">
-                    <p><a href="{{site.main_baseurl}}/terms/">Terms of Service</a> · <a href="{{site.main_baseurl}}/privacy/">Privacy Policy</a> · <a href="javascript:void(0);" onclick="Osano.cm.showDrawer()">Cookies</a></p>
-                    <p>&copy; Copyright {{ 'now' | date: "%Y" }} Bitwarden, Inc.</p>
-                </div>
-                <div class="col-sm-4 col-xs-12 social">
-                    <ul class="list-inline">
-                        <li>
-                            <a href="https://twitter.com/bitwarden" title="Twitter" onclick="gaEvent('Follow Twitter')"
-                                target="_blank" rel="noopener">
-                                <i class="fa fa-twitter"></i><span class="sr-only">Twitter</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://reddit.com/r/bitwarden" title="Reddit" onclick="gaEvent('Follow Reddit')"
-                                target="_blank" rel="noopener">
-                                <i class="fa fa-reddit"></i><span class="sr-only">Reddit</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://community.bitwarden.com/" title="Community Forums" onclick="gaEvent('Follow Discourse')"
-                                target="_blank" rel="noopener">
-                                <i class="fa discourse-logo"></i><span class="sr-only">Community Forums</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/bitwarden" title="GitHub" onclick="gaEvent('Follow GitHub')" target="_blank" rel="noopener">
-                                <i class="fa fa-github"></i><span class="sr-only">GitHub</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.youtube.com/channel/UCId9a_jQqvJre0_dE2lE_Rw" title="YouTube" onclick="gaEvent('Follow YouTube')" target="_blank" rel="noopener">
-                                <i class="fa fa-youtube-play"></i><span class="sr-only">YouTube</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/company/bitwarden1" title="LinkedIn" onclick="gaEvent('Follow LinkedIn')" target="_blank" rel="noopener">
-                                <i class="fa fa-linkedin-square"></i><span class="sr-only">LinkedIn</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.facebook.com/bitwarden/" title="Facebook" onclick="gaEvent('Follow Facebook')" target="_blank" rel="noopener">
-                                <i class="fa fa-facebook-square"></i><span class="sr-only">Facebook</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
+    {% include footer.html %}
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" crossorigin="anonymous"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo= sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh sha512-bnIvzh6FU75ZKxp0GXLH9bewza/OIw6dLVh9ICg0gogclmYGguQJWl8U30WpbsGTqbIiAwxTsbe76DErLq5EDQ=="></script>
     <script>(window.jQuery || document.write('<script src="{{site.baseurl}}/lib\/jquery\/jquery.min.js?v={{"now" | date: "%s"}}"><\/script>'));</script>
 
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" crossorigin="anonymous"
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.3/js/bootstrap.min.js" crossorigin="anonymous"
             integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4= sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd sha512-oBTprMeNEKCnqfuqKd6sbvFzmFQtlXS3e0C/RGFV0hD6QzhHV+ODfaQbAlmY6/q0ubbwlAM/nCJjkrgA3waLzg=="></script>
     <script>((window.jQuery && window.jQuery.fn && window.jQuery.fn.modal) || document.write('<script src="{{site.baseurl}}/lib\/bootstrap\/js\/bootstrap.min.js?v={{"now" | date: "%s"}}"><\/script>'));</script>
 

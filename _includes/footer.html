@@ -1,0 +1,99 @@
+<footer class="default-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-2 hidden-xs">
+                <a href="/" class="footer-logo">
+                    <img src="/images/logo-vertical-white.svg" class="img-responsive" width="132" alt="Bitwarden logo" />
+                </a>
+            </div>
+            <div class="col-sm-1 hidden-xs"></div>
+            <div class="col-sm-9 col-xs-12">
+                <div class="row">
+                    <div class="col-sm-4 col-xs-6">
+                        <h4>Products</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="{{site.main_baseurl}}/products/">How it works</a></li>
+                            <li><a href="{{site.main_baseurl}}/products/#features">Features</a></li>
+                            <li><a href="{{site.main_baseurl}}/blog/post/bitwarden-network-security-assessment-2020/">3rd Party Audited</a></li>
+                            <li><a href="{{site.main_baseurl}}/pricing/">Pricing</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-xs-6">
+                        <h4>Company</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="{{site.main_baseurl}}/about/">About</a></li>
+                            <li><a href="{{site.main_baseurl}}/careers/">Careers</a></li>
+                            <li><a href="{{site.main_baseurl}}/newsfeed/">Newsfeed</a></li>
+                            <li><a href="{{site.main_baseurl}}/blog/" onclick="gaEvent('Footer Blog')">Blog</a></li>
+                            <li><a href="{{site.main_baseurl}}/contact/">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-xs-6">
+                        <h4>Resources</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="{{site.main_baseurl}}/download/" onclick="gaEvent('Footer Download')">Download</a></li>
+                            <li><a href="{{site.main_baseurl}}/open-source/">Open Source</a></li>
+                            <li><a href="{{site.baseurl}}/" onclick="gaEvent('Footer Help')">Help/Support</a></li>
+                            <li><a href="{{site.main_baseurl}}/resources/">Resources</a></li>
+                            <li>
+                                <a href="https://community.bitwarden.com" target="_blank" rel="noopener" onclick="gaEvent('Footer Forums')">
+                                    Community
+                                </a>
+                            </li>
+                            <li><a href="{{site.main_baseurl}}/credits/">Credits</a></li>
+                            <li><a href="{{site.main_baseurl}}/sitemap/">Sitemap</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row copyright">
+            <div class="col-sm-8 col-xs-12">
+                <p><a href="{{site.main_baseurl}}/terms/">Terms of Service</a> · <a href="{{site.main_baseurl}}/privacy/">Privacy Policy</a> · <a href="javascript:void(0);" onclick="Osano.cm.showDrawer()">Cookies</a></p>
+                <p>&copy; Copyright {{ 'now' | date: "%Y" }} Bitwarden, Inc.</p>
+            </div>
+            <div class="col-sm-4 col-xs-12 social">
+                <ul class="list-inline">
+                    <li>
+                        <a href="https://twitter.com/bitwarden" title="Twitter" onclick="gaEvent('Follow Twitter')"
+                            target="_blank" rel="noopener">
+                            <i class="fa fa-twitter"></i><span class="sr-only">Twitter</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://reddit.com/r/bitwarden" title="Reddit" onclick="gaEvent('Follow Reddit')"
+                            target="_blank" rel="noopener">
+                            <i class="fa fa-reddit"></i><span class="sr-only">Reddit</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://community.bitwarden.com/" title="Community Forums" onclick="gaEvent('Follow Discourse')"
+                            target="_blank" rel="noopener">
+                            <i class="fa discourse-logo"></i><span class="sr-only">Community Forums</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/bitwarden" title="GitHub" onclick="gaEvent('Follow GitHub')" target="_blank" rel="noopener">
+                            <i class="fa fa-github"></i><span class="sr-only">GitHub</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/channel/UCId9a_jQqvJre0_dE2lE_Rw" title="YouTube" onclick="gaEvent('Follow YouTube')" target="_blank" rel="noopener">
+                            <i class="fa fa-youtube-play"></i><span class="sr-only">YouTube</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/company/bitwarden1" title="LinkedIn" onclick="gaEvent('Follow LinkedIn')" target="_blank" rel="noopener">
+                            <i class="fa fa-linkedin-square"></i><span class="sr-only">LinkedIn</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/bitwarden/" title="Facebook" onclick="gaEvent('Follow Facebook')" target="_blank" rel="noopener">
+                            <i class="fa fa-facebook-square"></i><span class="sr-only">Facebook</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
