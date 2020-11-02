@@ -19,7 +19,7 @@ Some MSPs choose to create the Organization on behalf of their client as a value
 
 Once the Organization is configured, you should invite other administrators to join. This is an important step for setting a foundation of security for the MSP team, as well as the client team. 
 
-Note: Adding a new user to an Organization involves three steps: Invite, Accept, and Confirm. Give users a heads-up once Invite emails are sent, so they are aware they need to accept the invitation to join the Organization.
+{% note %} Note: Adding a new user to an Organization involves three steps: Invite, Accept, and Confirm. Give users a heads-up once Invite emails are sent, so they are aware they need to accept the invitation to join the Organization.{% endnote %}
 
 Administrators can access and manage all Items, Collections, and users in the Organization. You’ll want to share your administrative duties with another person, especially if you have a large number of users.
 
