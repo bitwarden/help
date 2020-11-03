@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Configuring directory sync with G Suite (Google)
-categories: [organizations]
+categories: [directory-connector]
 featured: true
 popular: false
 hidden: false

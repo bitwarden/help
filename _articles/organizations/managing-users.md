@@ -1,38 +1,78 @@
 ---
 layout: article
-title: Managing users for your organization
+title: Add or Remove Users
 categories: [organizations]
 featured: true
 popular: false
 tags: []
+order: 08
 ---
+This article will guide you through the process of inviting or removing users from your Organization.
 
-## Onboarding Users
-
-Adding new users to your organization involves a three step process: invite, accept, and confirm.
-
-To **invite** a user to your organization simply enter their email address, select what type of user they are (normal user, admin, or owner) and select the collection(s) that they should have access to (you can change this later by editing the user). You can also designate a user as having access to all items for the organization and collection assignment will not be necessary.
+Teams and Enterprise Organizations can sync Bitwarden to an existing user directory to automatically add or remove new users using the **Bitwarden Directory Connector**. For more information, see [Syncing users and groups with a directory](https://bitwarden.com/help/article/directory-sync/).
 
 {% note %}
-Enterprise organizations can sync their existing user directory with their Bitwarden organization to automatically invite new users into Bitwarden.
+**Free** Organizations and **Families** Organizations have a maximum number of users; 2 and 6 respectively.
+
+**Teams** Organizations and **Enterprise** Organizations must ensure that there are available users seats for their account before inviting users. For more information, see [Add or Remove User Seats for your Organization](https://bitwarden.com/help/article/user-seats/).
 {% endnote %}
 
-{% image organizations/invite-modal.png %}
+### In This Article
+- [Invite Users](#add-users)
+  - [Invited Users](#invited-users)
+  - [Confirm Invited Users](#confirm-invited-users)
+- [Remove Users](#remove-users)
 
-Once you invite a user they will receive an email where they will need to click a link to **accept** the invitation. After clicking the accept link the user will be prompted to create a new Bitwarden account or log into the an existing account registered at that email address.
+## Invite Users
 
-{% image organizations/user-accept.png %}
+{% warning %}
+**For Enterprise Organizations**, Bitwarden recommends configuring Enterprise Policies prior to inviting users to ensure compliance on-entrance to your Organization. For more information, see [Enterprise Policies](https://bitwarden.com/help/article/policies/).
+{% endwarning %}
 
-After the user has successfully accepted the organization invite, an organization admin will then need to **confirm** the user from the same area in the web vault that you invited the user from (Organization Admin &rarr; People). Only after the user is confirmed will they then have access to that organization and the items being shared with them.
+Complete the following steps to invite users to your Organization:
 
-{% image organizations/org-people-options.png %}
+1. Login to your [Web Vault](https://vault.bitwarden.com){:target="\_blank"} and open your Organization.
+2. In your Organization, open the **Manage** tab and select **People** from the left menu.
+3. On the **People** screen, select the **Invite User** button.
 
-## Removing Users
+   {% image /organizations/org-people-invite.png Select Invite User %}
+4. On the **Invite User** panel:
+   - Enter the **Email** address where new users should receive invites. You can add up to 20 users at a time by comma-separating email addresses.
+   - Select the **User Type** to be applied to new users. User Type will determine what permissions these users will have at an Organizational level. For more information, see [User Types and Access Control](https://bitwarden.com/help/article/user-types-access-control/).
+   - Select the **Access Control** to be applied to new users. Access Control will determine which Collections these users will have access to, and what level of access within those Collections. For more information, see [User Types and Access Control](https://bitwarden.com/help/article/user-types-access-control/).
+5. Click **Save** to invite the designated users to your Organization.
 
-{% note %}
-Enterprise organizations can sync their existing user directory with their Bitwarden organization to automatically remove users when they are disabled or deleted from the directory.
-{% endnote %}
+Once users have accepted the invitation, you will need to [Confirm Invited Users](#confirm-invited-users).
 
-To remove a user from your organization, select the **Remove** option from the options menu for that user. Once a user is removed from your organization, they will no longer have access to any shared logins.
+### Invited Users
 
-{% image organizations/org-people-options.png %}
+Invited users will receive an email from Bitwarden asking them to join the Organization. Clicking the **Join Organization Now** button in the email invitation will open a screen prompting users to **Log In** or **Create Account**.
+
+{% image organizations/user-accept-updated.png %}
+
+### Confirm Invited Users
+
+Once a user has accepted the invitation to join the Organization, you'll need to **Confirm** their acceptance.
+
+On the **People** screen for your Organization, users who have accepted invitations will have an `Accepted` status indicator next to their email address. Users who are invited but have not yet accepted will have an `Invited` status indicator next to their email address.
+
+Confirm an `Accepted` user by hovering over the user, selecting the gear dropdown, and selecting **Confirm** from the dropdown menu.
+
+{% image organizations/org-people-options-overlay.png Confirm an Accepted user %}
+
+Selecting **Confirm** will open a panel asking you to verify the user's fingerprint phrase. For added security, ask the user to verify the fingerprint phrase before confirming them into your Organization. Once confirmed, the user will have access to all assigned Collections within the Organization.
+
+## Remove A User
+
+Complete the following steps to remove a user from your Organization:
+
+1. Login to your [Web Vault](https://vault.bitwarden.com){:target="\_blank"} and open your Organization.
+2. In your Organization, open the **Manage** tab and select **People** from the left menu.
+3. On the **People** screen, hover over the user you want to remove and select the gear dropdown.
+4. From the gear dropdown, select the **Remove** option.
+
+{% image organizations/org-people-options-updated-overlay.png Remove a user %}
+
+Once a user is removed they can no longer access any shared items or Collections.
+
+### Next Steps

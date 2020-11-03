@@ -5,63 +5,55 @@ categories: [organizations]
 featured: true
 popular: false
 tags: [user types, access control]
+order: 10
 ---
+
+Users in Bitwarden Organizations can be granted a variety of User Types and Access Controls in order to manage their permissions.
+
+You can designate User Type and Access Control when you invite users to your Organization (see [Add or Remove Users From Your Organization](https://bitwarden.com/help/article/managing-users/)), or at any time from the **Manage** &rarr; **People** screen in your Organization.
+
+### In This Article
+- [User Types](#user-types)
+- [Access Control](#access-control)
+  - [Granular Access Control](#granular-access-control)
 
 ## User Types
 
-When adding users to your Bitwarden Organization, you can grant certain levels of access by user type. Options include Owner, Admin, Manager and User. See further details below:
+User Type determines the level of access that a user will have within your Organization. User Type is configured at the Organization level.
 
-### User
-- Most common user type
-- Only have access to assigned collections
-- Consumers of shared items in addition to their individual vault items
-- Only work with items under collections they have been associated with
-- Unable to create collections
+Options include:
 
-### Manager
-- Only administer a collection it is associated with by an Owner or Admin
-- Access and manage assigned collections in an organization
-- Create new collections and modify the assigned collections
-- Able to set user access for assigned collections
-
-### Admin
-- Access and manage all items, collections, and users in your organization
-- Invite and confirm users to join an organization
-- Manage Enterprise Policies
-- Manage Groups
-- View Event Logs
-- Export organization vault data
-- Normally only a few select Admins in an organization
-
-### Owner
-- Highest level of access
-- Manage all aspects of the organization
-- Manage billing, subscription, and integration mechanisms
-- Normally only a few select Owners in an organization
-
-{% note %}
-Once the user or user’s group is saved with their Collections access, the user will inherit those items into their Vault view.
-{% endnote %}
+|User Type|Permissions|
+|---------|-----------|
+|User|Access shared items in assigned Collections<br>Add, edit, or remove items from assigned Collections|
+|Manager|All of the above,<br>+ Assign Users to Collections<br>+ Assign User Groups to Collections<br>+ Create or delete new Collections|
+|Admin|All of the above,<br>+ Assign Users to User Groups<br>+ Create or delete User Groups<br>+ Invite and confirm new Users<br>+ Manage Enterprise Policies<br>+ View Event Logs<br>+ Export Organization Vault data<br><br>**Admin Users automatically have access to all Collections.**|
+|Owner|All of the above,<br>+ Manage Billing, Subscription, and Integrations<br><br>**Owner Users automatically have access to all Collections.**|
 
 ## Access Control
-In addition to defining the User Type, Access Control determines a full or partial view of the collections within an organization.
 
-Choose **all items** or **selected collections** to set the appropriate access for the user.
+Access Control determines the Collection assignment of **Users** and **Managers**, as well as permissions within a given Collection. Access Control is configured at the Collection level.
 
-{% note %}
-Admin and Owner user-types can access all collections regardless of assignment when accessing Bitwarden from the Organization View. Assignments will control client access and display of collections.
-{% endnote %}
+Assigning **Admins** and **Owners** to Collections via Access Control will only impact which Collections appear readily in the **Filters** section of their Vault. Admins and Owners will always be able to access "un-assigned" Collections via the Organization view.
 
-### Item Access and Control
+{% image /organizations/collection-access-control.png Configure Access Control options %}
 
-**Read Only**
-- Selecting this option will prevent users assigned to this collection from adding new items, and editing or deleting existing items.
+Selecting **This user can access and modify all items** will allow users to use all Collections in your Organization.
+
+Selecting **This user can access only the selected collections** will restrict users to only the assigned Collections, and activate Granular Access Control:
+
+### Granular Access Control
+
+To assign users to only selected Collections, check the checkbox to the left of each desired Collection. For each checked Collection, you may also configure:
 
 **Hide Passwords**
-- This option hides passwords, TOTP seeds, and any custom fields of type *hidden* in this collection. This also disables the ability for an end-user to copy a password. In this configuration, an item may only be used with auto-fill.
+
+Selecting **Hide Password** prevents users from seeing or copying all passwords, TOTP seeds, or *Hidden* custom fields. Users with **Hide Passwords** active may only use items in the Collection via Auto-Fill.
 
 {% warning %}
-Enabling hidden passwords prevents the easy copy and paste of hidden items, however it does not completely prevent user access to this information. Please treat hidden passwords as you would any shared credential.
+Enabling **Hide Passwords** prevents easy copy-and-paste of hidden items, however it does not completely prevent user access to this information. Treat hidden passwords as you would any shared credential.
 {% endwarning %}
 
-{% image organizations/user-types-access-control.png %}
+**Read Only**
+
+Selecting **Read Only** prevents users from adding, editing, or removing items within the Collection. Users with **Read Only** active may still see and use all passwords, TOTP seeds, and *Hidden* custom fields.

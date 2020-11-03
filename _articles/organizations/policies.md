@@ -5,116 +5,80 @@ categories: [organizations]
 featured: true
 popular: false
 hidden: false
-tags: [organizations, policies, access control, enterprise]
+tags: [organizations, enterprise, policies]
+order: 12
 ---
-## Table of contents
-
-- [What are Organizations?](#what-are-organizations)
-- [What are Enterprise Policies?](#what-are-enterprise-policies)
-- [Available Policies](#available-policies)
-  * [Two-Step Login](#two-step-login)
-    + [Setting the Policy](#setting-the-policy)
-  * [Password Generator](#password-generator)
-    + [Generator Options](#generator-options)
-    + [Setting the Policy](#setting-the-policy-1)
-  * [Master Password](#master-password)
-    + [Setting the Policy](#setting-the-policy-2)
-
-## What are Organizations?
-
-A Bitwarden organization is an entity that relates users together that want to share items. An organization could be a family, team, company, or any other type of group that desires to share items in Bitwarden.
-
-An individual user account can create and/or belong to many different organizations, allowing you to manage your items from a single account.
-
-You can create a new Bitwarden organization from the web vault or request that an admin of an existing organization send you an invite.
 
 ## What are Enterprise Policies?
 
-Bitwarden client applications have many settings for users to customize their environments. When users are members of an Enterprise Organization such as a company, the Company may want all users to maintain certain settings such as two-factor authentication and password parameters.
+Enterprise Polices enable Enterprise Organizations to enforce security rules for all users, for example mandating use of Two-step Login.
 
-Enterprise Policies allow owners or administrators of an organization to set and enforce parameters for all members of their organization.
+Enterprise Policies can be set by users with the User Type **Admin** or **Owner**.
+
+{% warning %}
+Bitwarden highly recommends setting Enterprise Policies prior to inviting users to your Organization. Some Policies will remove non-compliant users on enabling, and some are not retroactively enforceable.
+{% endwarning %}
+
+### In This Article
+
+- [Setting Enterprise Policies](#setting-enterprise-policies)
+- [Available Policies](#available-policies)
+  - [Two-Step Login Policy](#two-step-login)
+  - [Master Password Policy](#master-password)
+  - [Password Generator Policy](#password-generator)
+
+## Setting Enterprise Policies
+
+Policies can be set in two locations:
+
+- In your Organization, open the **Manage** tab and select **Policies** from the left menu.
+- Navigate to the Business Portal, and select the **Policies** button. For more information, see [About the Business Portal](https://bitwarden.com/help/article/about-business-portal/).
 
 ## Available Policies
 
-Bitwarden currently supports the following Organization Policies
-- Two-step Login
-- Password Generator
-- Master Password
+### Two-Step Login
 
-{% image policies/policies-enable.png %}
+Enabling the **Two-step Login** policy will require users to use any two-step login method to access their Vaults.
 
-{%note%}
-For Bitwarden server versions 1.37+ you will use the business portal to configure policies.
-{%endnote%}
+{% warning %}
+**Users in the Organization who do not have two-step login enabled will be removed from the Organization when you enable this policy.**
 
-{% image policies/policies-business-portal.png Enter the business portal to manage policies %}
+Users who are removed as a result of this policy will be notified via email, and must be re-invited to the Organization.
+- Existing users will not be able to accept the invitation until two-step login is enabled for their Vault.
+- New users will be automatically setup with email-based two-step login, but can change this at any time.
+{% endwarning %}
 
-{% image policies/policies-menu-business-portal.png Choose Policies to enable and configure enterprise policies %}
+### Master Password
 
-## Two-Step Login
+Enabling the **Master Password** policy will enforce a configurable set of minimum requirements for users' Master Password strength. Organizations can enforce:
+- Minimum Master Password complexity
+- Minimum Master Password length
+- Types of characters required
 
-When this policy is set, members will need to have two-step login configured on their user account in order to join the organization.
+Password complexity is calculated on a scale from 0 (Weak) to 4 (Strong). Bitwarden calculates password complexity using [the zxcvbn library](https://github.com/dropbox/zxcvbn).
 
-{% image policies/policies-two-step.png %}
+{% warning %}
+Existing non-compliant users **will not** have their Master Passwords changed when this policy is enabled, nor will they be removed from the Organization. The next time this group of users changes their Master Password, this policy will be enforced.
+{% endwarning %}
 
-### Setting the Policy
+### Password Generator
 
-Ideally, this policy is set before any users are invited to join an organization. The following events will occur when an Organization enabled the two-step policy for the first time:
+Enabling the **Password Generator** policy will enforce a configurable set of minimum requirements for any user-generated passwords. Organizations can enforce:
+- Password , Passphrase, or User Preference
 
-- The administrator will receive a warning that Organization members, in confirmed status, who don’t have two-step for their account will be removed from the organization and will receive an email notifying them about the change.
-- If the administrator proceeds to enable the two-step login policy Confirmed members of the organization who do not have two-step login enabled will lose access to the organization.
-- Members who lose access to an organization will receive an email informing them of such.
- - Once the user enables two-step login on their account they can then be re-join to the organization through a new invite.
- - Newly invited members will not be able to accept their invitation to the organization until they enabled two-step login on their user account.
-- If a newly invited member currently has a Bitwarden account using the invited email address, they will be notified and must enable two-step login before accepting their invitation.
- - If a newly invited member does not have an account, they will default to using email-based two-step login but will be able to change this configuration at any time.
-- If a member of the organization later disables two-step login on their account, they will be removed from the organization.
+**For Passwords:**
+- Minimum Password Length
+- Minimum Number (0-9) count
+- Minimum Special Character (!@#$%^&*) count
+- Types of characters required
 
-## Password Generator
-
-When this policy is set, administrators can choose and permanently set the parameters within the Bitwarden Password Generator.
-
-The Bitwarden Password Generator offers options for password and passphrase generation.
-
-### Generator Options
-
-**Default type**
-- User defined
-- Password
-- Passphrase
-
-**Password options:**
-- Length
-- Minimum Numbers
-- Minimum Special
-- Uppercase letters
-- Lowercase letters
-- Numbers
-- Symbols/Special
-
-**Passphrase Options:**
+**For Passphrases:**
 - Minimum number of words
-- Capitalization
-- Include Number
+- Whether to capitalize
+- Whether to include numbers
 
-{% image policies/policies-password-generator.png %}
+{% warning %}
+Existing non-compliant passwords **will not** be changed when this policy is enabled, nor will the items be removed from the Organization. When changing or generating a password after this policy is enabled, configured policy rules will be enforced.
 
-### Setting the Policy
-
-Ideally, this policy is set before any users are invited to join an organization.
-
-If the policy is set after users have joined the organization, prior generated passwords that may be outside the enforced parameters of the policy will remain in place. Any new passwords using the Password Generator will conform with the policy.
-
-If the user is affected by the policy, we will show a banner on the Bitwarden Password Generator informing them as such.
-
-## Master Password
-
-When this policy is set, organization administrators can choose and permanently set the complexity required for a user’s Master Password. Password complexity is calculated using the [zxcvbn](https://github.com/dropbox/zxcvbn) library on a scale from 0 to 4, with 4 being the most complex.
-
-{% image policies/policies-master-password.png %}
-
-### Setting the Policy
-
-Ideally, this policy is set before any users are invited to join an organization.
-
-If users have already joined an organization or already have a Bitwarden account, their master password - regardless of complexity - will remain in place unless it is changed, at which point it will need to conform with the policy.
+A banner will appear to users on the Password Generator screen indicating that a policy will affect their generator settings.
+{% endwarning %}
