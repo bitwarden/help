@@ -1,13 +1,10 @@
 const gulp = require('gulp');
-const sass = require('gulp-sass');
-const sourcemaps = require('gulp-sourcemaps');
 const del = require('del');
 const merge = require('merge-stream');
-const bs = require('browser-sync').create();
 
 const paths = {};
 paths.dist = './_site/';
-paths.sass = './_sass/';
+paths.sass = './_scss/';
 paths.libDir = './lib/';
 paths.npmDir = './node_modules/';
 paths.cssDir = './css/';
@@ -55,18 +52,8 @@ function lib() {
     return merge(tasks);
 }
 
-function convertSass() {
-    return gulp.src('_scss/**/*.scss')
-        .pipe(sass())
-        .pipe(sourcemaps.write('.'))
-        .pipe(gulp.dest('css/'))
-        .pipe(bs.reload({
-            stream: true
-        }));
-}
-
-exports.build = gulp.series(gulp.parallel(cleanLib, cleanDist), lib, convertSass);
+exports.build = gulp.series(gulp.parallel(cleanLib, cleanDist), lib);
 exports['clean:dist'] = cleanDist;
 exports['clean:lib'] = cleanLib;
-exports.clean = gulp.parallel(cleanLib, cleanDist, convertSass);
-exports.lib = gulp.series(cleanLib, lib, convertSass);
+exports.clean = gulp.parallel(cleanLib, cleanDist);
+exports.lib = gulp.series(cleanLib, lib);
