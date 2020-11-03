@@ -13,6 +13,12 @@ If your version of Firefox does not support native export, please use the FF Pas
 
 ## EXPORT YOUR PASSWORDS USING NATIVE FIREFOX EXPORT
 
+1. Navigate to `about:logins`
+2. Click the `...` menu from the top right and choose 'Export Logins'.
+3. Firefox will now prompt where to save the exported CSV file.
+
+## EXPORTING FROM OTHER FIREFOX BASED BROWSERS
+
 1. Navigate to `about:preferences#privacy` in Firefox.
 2. Click the 'Saved Logins' button.
 3. Click the `...` menu from the top right and choose 'Export Logins'.

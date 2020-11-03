@@ -68,16 +68,26 @@ Please note, the service can also halt if you ever "Force stop" the Bitwarden ap
 Here is an interesting site regarding devices and their battery optimization default configurations:
 [https://dontkillmyapp.com/](https://dontkillmyapp.com/this){:target="_blank"}
 
-If you have Bitwarden installed on a **Huawei** or **Honor** device with EMUI 4.1 or above, please enable **Dropzone** for Bitwarden. Otherwise, the Bitwarden Auto-fill overlay will not be visible.
+### Troubleshooting the Bitwarden Auto-Fill Overlay
+
+A **floating window** or **Dropzone** is a feature that allows certain apps to float anywhere on your screen. If the Bitwarden Auto-fill overlay is not visible when tapping on a password field, please enable **Dropzone**(Huawei/Honor devices) or **Floating window**(Oppo,etc.) for Bitwarden.
 
 To enable Dropzone:
 
 1. Open Huawei/Honor Optimizer app (also known as Phone Manager)
-2. Tap Dropzone in the middle of the bottom row.
+2. Tap **Dropzone** in the middle of the bottom row.
 3. Slide the toggle to the right to allow Dropzone for Bitwarden.
+
+To enable floating window:
+
+1. Go to Settings
+2. Then Privacy/Security
+3. Find **floating windows** or **App Management**
+4. Enable floating window for Bitwarden by sliding the toggle to the right.
 
 {% note %}
 Android has many web browsers. It can be hard to keep up with them all. We have to add support for each browser individually. 
 
 If auto-fill does not work on your browser, please report it at <https://github.com/bitwarden/mobile/issues> so that we can add support.
 {% endnote %}
+

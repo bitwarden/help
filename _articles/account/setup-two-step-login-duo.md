@@ -54,7 +54,7 @@ Two-step login can permanently lock you out of your account. It is very importan
 ## Enroll and Test
 
 1. **IMPORTANT:** Ensure that you have copied down your [two-step login recovery code]({% link _articles/account/lost-two-step-device.md %}) in case something goes wrong.
-2. Log out of the Bitwarden web vault (or to be safe incase something is misconfigured, just use a new browser tab so that you can keep your currently logged in browser tab session active).
+2. Log out of the Bitwarden web vault (or to be safe in case something is misconfigured, just use a new browser tab so that you can keep your currently logged in browser tab session active).
 3. Log back into the Bitwarden web vault. You should now be prompted with a Duo two-step login option.
 4. Upon your first login using Duo you may be prompted to enroll your Bitwarden account and device(s) with Duo. Complete the Duo enrollment process following the on-screen instructions.
    {% image two-step/duo/enroll1.png %}
