@@ -41,7 +41,7 @@ Or, for more high-level information about **Login with SSO**, refer to the follo
 
   **A:** If you manage your Bitwarden Group and Collection assignments directly within Bitwarden, there is no need to leverage the Directory Connector. However, if you would like to have Groups and users automatically synchronized with your organizations directory, we recommend using Login with SSO in conjunction with Directory Connector for the most complete solution.
 
-### Q: Do need to enter my Organization Identifier every time I login?
+### Q: Do I need to enter my Organization Identifier every time I login?
 
   **A:** Nope! Bookmarking the **Enterprise Single Sign-On** page with your Organization Identifier included as a query string will save you the trouble of entering it each time. For example:
 
