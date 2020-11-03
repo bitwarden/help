@@ -22,6 +22,9 @@ Complete the following steps to use Login with SSO to authenticate into your Bit
 
 3. Enter your **Organization Identifier** and select **Log In**.
 
+   {% note %}We recommend bookmarking this page with Organization Identifier included as a query string so that you don't have to enter it each time, for example `https://vault.bitwarden.com/#/sso?identifier=your-org-id` or `https://your.domain.com/#/sso?identifier=your-org-id`.
+   {% endnote %}
+
    {% image /sso/org-id-input.png Organization Identifier field %}
 
    A browser window will open prompting you to enter your SSO credentials or other required authentication mechanisms.
