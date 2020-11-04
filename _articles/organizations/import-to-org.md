@@ -1,11 +1,11 @@
 ---
 layout: article
-title: Import to an Organization
+title: Import Items to an Organization
 categories: [organizations]
 featured: true
 popular: false
 tags: [organizations, import]
-order: 10
+order: 08
 ---
 
 Importing data directly into a Bitwarden Organization is a simple procedure:

@@ -5,7 +5,7 @@ categories: [organizations]
 featured: true
 popular: false
 tags: []
-order: 09
+order: 10
 ---
 
 This article will guide you through the process of adding or removing user seats from your Bitwarden Teams or Enterprise Organization.

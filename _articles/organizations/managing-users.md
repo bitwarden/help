@@ -5,7 +5,7 @@ categories: [organizations]
 featured: true
 popular: false
 tags: []
-order: 08
+order: 09
 ---
 This article will guide you through the process of inviting or removing users from your Organization.
 
