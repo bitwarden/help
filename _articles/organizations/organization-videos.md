@@ -1,30 +1,24 @@
 ---
 layout: article
-title: Videos - Getting Started with your Bitwarden Organization
+title: Bitwarden 101 Video Series - Organizations
 categories: [organizations]
 featured: true
 popular: false
-tags: [organizations,videos,tutorial]
+tags: [organizations, videos, bitwarden 101]
+order: 15
 ---
 
-Videos on getting started with your Bitwarden Account and Organization:
+## Bitwarden 101 - Organizations
 
-Jump to a specific video:
-- [How to create an account and login](#how-to-create-an-account-and-login)
-- [Vault Management](#vault-management)
+Videos in this article are intended to walk you through the key aspects of using a Bitwarden Organization:
+
+### Jump to Videos:
 - [How to manage organizations](#how-to-manage-organizations)
 - [How to manage collections](#how-to-manage-collections)
 - [How to organize groups](#how-to-organize-groups)
 - [How to manage people in your organization](#how-to-manage-people-in-your-organization)
 - [Account Management](#account-management)
 - [How to setup the browser extension](#how-to-setup-the-browser-extension)
-
-### How to create an account and login
-
-<iframe width="800" height="450" src="https://www.youtube.com/embed/W6Miu-TJI1c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-### Vault Management
-<iframe width="800" height="450" src="https://www.youtube.com/embed/xY9mRvOKTCs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### How to manage organizations
 <iframe width="800" height="450" src="https://www.youtube.com/embed/2qJYi_xDTIE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -44,7 +38,3 @@ Jump to a specific video:
 ### Account Management
 
 <iframe width="800" height="450" src="https://www.youtube.com/embed/eZZOSkr9PV0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-### How to setup the browser extension
-
-<iframe width="800" height="450" src="https://www.youtube.com/embed/Epx6bLBsYlI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
