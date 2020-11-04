@@ -1,58 +1,61 @@
 ---
 layout: article
-title: RESTful API for managing your organization
+title: Bitwarden Public API
 categories: [organizations]
 featured: true
 popular: false
-tags: [api]
+tags: [public api, oas, organizations]
+order: 13
 ---
 
-Bitwarden provides a full-featured RESTful API for managing your organization. You can use the API to manage your organization's members, collections, groups, event logs, and more. The API has predictable resource-oriented URLs, accepts JSON-encoded request bodies, returns JSON-encoded responses, and uses standard HTTP response codes, authentication, and verbs.
+The Bitwarden Public API provides Organizations a suite of tools for managing members, collections, groups, event logs, and policies.
+
+The Public API is a RESTful API with predictable resource-oriented URLs, accepts JSON-encoded request bodies, returns JSON-encoded responses, and uses standard HTTP response codes, authentication, and verbs.
+
+The Public API is compatible with the OpenAPI Specification (OAS3) and publishes a compliant [`swagger.json`](https://bitwarden.com/help/api/specs/public/swagger.json) definition file. Explore the OpenAPI Specification using the Swagger UI:
+- For Public Cloud-hosted instances: [https://bitwarden.com/help/api/](https://bitwarden.com/help/api/){:target="\_blank"}
+- For Self-hosted instances: https://your.domain.com/api/docs/
 
 {% note %}
-API access is available for the following plans:
-- Classic 2019 Enterprise
-- Current Enterprise
-- Current Teams
+Access to the Bitwarden Public API is available customers on the following plans, **Classic 2019 Enterprise Organizations**, current **Enterprise Organizations**, and current **Teams Organizations**. For more information, see [About Bitwarden Plans](https://bitwarden.com/help/article/about-bitwarden-plans/#compare-the-plans-1).
 {% endnote %}
 
-## Table of Contents
-
+### In This Article
 - [Endpoints](#endpoints)
-- [Content Types](#content-types)
 - [Authentication](#authentication)
-- [Errors](#errors)
-- [Explore the API](#explore-the-api)
+- [Content Types](#content-types)
+- [Sample Request](#sample-request)
+- [Status](#status)
+- [Response Codes](#response-codes)
+- [Further Reading](#further-reading)
 
 ## Endpoints
 
-The following endpoints are used when accessing the API:
+### Base URL
 
-**Public Cloud Server API**
+For Cloud-hosted, `https://api.bitwarden.com`.
 
-- Authentication: `https://identity.bitwarden.com/connect/token`
-- Base URL: `https://api.bitwarden.com`
+For Self-hosted, `https://your.domain.com/api`.
 
-**On-premises Server API**
+### Authentication Endpoints
 
-- Authentication: `https://your.server.com/identity/connect/token`
-- Base URL: `https://your.server.com/api`
+For Cloud-hosted, `https://identity.bitwarden.com/connect/token`.
 
-## Content Types
-
-The Bitwarden RESTful API communicates with `application/json` requests and responses. The only exception is the authentication endpoint, which expects a `application/x-www-form-urlencoded` request. The authentication endpoint will respond with `application/json`.
+For Self-hosted, `https://your.domain.com/identity/connect/token`.
 
 ## Authentication
 
-The Bitwarden RESTful API uses bearer access tokens to authenticate with protected API endpoints. An [OAuth2 client credentials](https://www.oauth.com/oauth2-servers/access-tokens/client-credentials/){:target="_blank"} (application) flow is used to obtain a bearer access token from the authentication endpoint. You can obtain your `client_id` and `client_secret` from your organization through the web vault. Navigate to your organization's administrative area, then **Settings** &rarr; **My Organization** &rarr; **API Key**.
+The API uses bearer access tokens to authenticate with protected API endpoints. Bitwarden uses an [OAuth2 Client Credentials](https://www.oauth.com/oauth2-servers/access-tokens/client-credentials/){:target="_blank"} application request flow to grant bearer access tokens from the endpoint.
 
-{% note %}
-Your API Key (specifically the `client_secret`) should be kept private. If you believe that this key has been compromised, you can always invalidate and rotate the key from the organization's administrative area.
-{% endnote %}
+Authentication requests take `client_id` and `client_secret` as required parameters. `client_id` and `client_secret` can be obtained from the Web Vault by navigating to the **Settings** tab &rarr; **My Organization** and scrolling down to the **API Key** section.
 
-To obtain a bearer access token, make a `application/x-www-form-urlencoded` `POST` request with your `client_id` and `client_secret` to the authentication endpoint. For access to the organization APIs, you will use the `api.organization` scope.
+{% warning %}
+Your API key enables full access to your Organization. Keep your API key private. If you believe your API key has been compromised, select the **Rotate API Key** button on this screen. Active uses of your current API key will need to be reconfigured with the new key before use.
+{% endwarning %}
 
-Example request:
+### Bearer Access Tokens
+
+To obtain a bearer access token, make a `POST` request with `Content-Type: application/x-www-form-urlencoded` with your `client_id` and `client_secret` to the [Authentication Endpoint](#authentication-endpoints). When using the API for Organization Management, you will always use `grant_type=client_credentials` and `scope=api.organization`. For example:
 
 ```
 curl -X POST \
@@ -61,9 +64,7 @@ curl -X POST \
   -d 'grant_type=client_credentials&scope=api.organization&client_id=<ID>&client_secret=<SECRET>'
 ```
 
-A bearer access token with a expiration value (in seconds, from now) will be returned.
-
-Example response:
+This request will result in the following response:
 
 ```
 {
@@ -73,39 +74,66 @@ Example response:
 }
 ```
 
-You can then use this bearer token in the `Authorization` header to make authorized calls to API endpoints.
+In this response, `3600` represents the expiration value (in seconds), meaning this token is valid for 6 minutes after being issued. Making an API call with an expired token will return a `401 Unauthorized` [response code](#response-codes).
 
-Example:
+## Content Types
+
+The Bitwarden Public API communicates with `application/json` requests and responses, with one exception:
+
+The [Authentication Endpoint](#authentication-endpoints) expects a `application/x-www-form-urlencoded` request, however will respond with `application/json`.
+
+## Sample Request
 
 ```
 curl -X GET \
   https://api.bitwarden.com/public/collections \
   -H 'Authorization: Bearer <TOKEN>'
 ```
+Where `<TOKEN>` is the value for the `access_token:` key in the obtained [bearer access token](#bearer-access-tokens).
 
-You will need to keep track of the token's expiration and renew it whenever it nears expiration or has expired. Calling API endpoints that require authorization without a bearer token or with an expired token will return a `401 Unauthorized` status code.
+This request will result in a response:
 
-## Errors
+```
+{
+  "object": "list",
+  "data": [
+    {
+      "object": "event",
+      "type": 1000,
+      "itemId": "string",
+      "collectionId": "string",
+      "groupId": "string",
+      "policyId": "string",
+      "memberId": "string",
+      "actingUserId": "string",
+      "date": "2020-11-04T15:01:21.698Z",
+      "device": 0,
+      "ipAddress": "xxx.xx.xxx.x"
+    }
+  ],
+  "continuationToken": "string"
+}
+```
 
-The Bitwarden RESTful API uses conventional HTTP response codes to indicate the success or failure of an API request. In general: Codes in the `2xx` range indicate success. Codes in the `4xx` range indicate an error that failed given the information provided. Codes in the `5xx` range indicate an error with Bitwarden's servers (these are rare).
+## Status
 
-- `200` - OK: Everything worked as expected.
-- `400` - Bad Request: The request was unacceptable, often due to missing or malformed parameter.
-- `401` - Unauthorized: No valid bearer token provided.
-- `404` - Not Found: The requested resource doesn't exist.
-- `429` - Too Many Requests: Too many requests hit the API too quickly. We recommend an exponential backoff of your requests.
-- `500, 502, 503, 504` - Server Errors: Something went wrong on Bitwarden's end. (These are rare.)
+Bitwarden has a public [status page](https://status.bitwarden.com), where you can find information about service health and incidents for all services including the Public API.
 
-## Explore the API
+## Response Codes
 
-The Bitwarden RESTful API is compatible with the OpenAPI specification and publishes a compliant [`swagger.json`](https://bitwarden.com/help/api/specs/public/swagger.json) definition file.
+The Bitwarden Public API uses conventional HTTP response codes to indicate the success or failure of an API request:
 
-You can explore and execute the API endpoints and their definitions using Swagger UI at:
+|Status Code|Description|
+|-----------|-----------|
+|`200 OK`|Everything worked as expected.|
+|`400 Bad Request`|The request was unacceptable, possibly due to missing or malformed parameter(s).|
+|`401 Unauthorized`|The bearer access token was missing, invalid, or expired.|
+|`404 Not Found`|The requested resource doesn't exist.|
+|`429 Too Many Requests`|Too many requests hit the API too quickly. We recommend scaling back the number of requests.|
+|`500, 502, 503, 504 Server Error`|Something went wrong on Bitwarden's end. These are rare, but [Contact Us](https://bitwarden.com/contact/) if they occur.|
 
-**Public Cloud Server API**
+## Further Reading
 
-- [https://bitwarden.com/help/api/](https://bitwarden.com/help/api/){:target="_blank"}
-
-**On-premises Server API**
-
-- https://your.domain.com/api/docs/
+For more information about using the Bitwarden Public API, see the following articles:
+- [Bitwarden Public API OAS Specification](https://bitwarden.com/help/api/){:target="\_blank"}
+- [Event Logs](https://bitwarden.com/help/article/event-logs/)
