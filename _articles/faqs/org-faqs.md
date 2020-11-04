@@ -5,7 +5,7 @@ categories: [organizations, faqs]
 featured: true
 popular: false
 tags: []
-order: 16
+order: 17
 ---
 
 This article contains Frequently Asked Questions (FAQs) regarding **Organizations** in the following categories:

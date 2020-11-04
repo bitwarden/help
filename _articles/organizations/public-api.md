@@ -5,7 +5,7 @@ categories: [organizations]
 featured: true
 popular: false
 tags: [public api, oas, organizations]
-order: 14
+order: 15
 ---
 
 The Bitwarden Public API provides Organizations a suite of tools for managing members, collections, groups, event logs, and policies.
