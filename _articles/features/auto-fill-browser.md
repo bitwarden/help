@@ -7,9 +7,25 @@ popular: false
 tags: [browser, auto-fill, autofill]
 ---
 
-You can use the Bitwarden browser extension to easily auto-fill login forms on websites with your username/email and password credentials. There are a variety of ways to perform auto-fill operations with Bitwarden.
+You can use the Bitwarden browser extension to easily auto-fill login forms on websites with your username/email and password credentials. 
 
-## Popup window
+## How to add a website to a saved login
+
+To use most auto-fill features, you need to add the website URL to the login details you have saved in Bitwarden.
+
+You can manually edit the websites associated with a login in the "Edit" page for that login. The URI list shows the websites currently associated with the login. If you create a new login while you have the website open, the website will automatically appear in the URI list.
+
+{% image autofill-uri-list.png %}
+
+Alternatively, you can auto-fill the login for the current website and add the website to that login by clicking the **Auto-fill and Save** button on the "View Item" screen for that login.
+
+{% image autofill-autofill-and-save.png %}
+
+## How to auto-fill
+
+There are a variety of ways to perform auto-fill operations with Bitwarden.
+
+### Popup window
 
 The Bitwarden icon in the toolbar of your browser will show the number of logins in your vault that match the current website you are viewing. Selecting the Bitwarden icon will open the Bitwarden popup window, defaulting to the "Current Tab" page. The "Current Tab" page shows a listing of these matching logins.
 
@@ -17,7 +33,9 @@ If you are currently viewing a login form on a website, selecting a login from t
 
 {% image autofill-popup.png %}
 
-## Right-click context menu
+If the login does not appear in the "Current Tab" page, you can open the login from your Vault and click the **Auto-fill** button. This will auto-fill the current website even if that website is not associated with the login.
+
+### Right-click context menu
 
 {% note %}This feature is currently unavailable in Safari browser.{% endnote %}
 
@@ -25,7 +43,7 @@ The same list of logins that are available when using the popup window are also 
 
 {% image autofill-context-menu.png %}
 
-## Keyboard shortcuts (hot keys)
+### Keyboard shortcuts (hot keys)
 
 You can use a set of keyboard shortcuts (hot keys) to quickly auto-fill a login form. When viewing the login form press the keyboard shortcut (see below) and the last used login for that website will be auto-filled.
 
@@ -48,7 +66,7 @@ In Firefox, you need can go to the addons preference page. Under the gears icon 
 
 Other browsers such as Safari and legacy Edge do not currently support changing the default keyboard shortcuts for extensions.
 
-## Auto-fill on page load
+### Auto-fill on page load
 
 Bitwarden includes an experimental feature to auto-fill logins immediately after a webpage containing a login form loads in your browser. This feature requires you to opt-in to use it. You can enable "Auto-fill On Page Load" under **Settings** &rarr; **Options**.
 

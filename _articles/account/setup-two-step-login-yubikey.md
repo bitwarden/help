@@ -48,7 +48,7 @@ Two-step login can permanently lock you out of your account. It is very importan
 
 1. **IMPORTANT:** Ensure that you have copied down your [two-step login recovery code]({% link _articles/account/lost-two-step-device.md %}) in case something goes wrong.
 2. Log out of the Bitwarden web vault.
-3. Log back into the Bitwarden web vault. You should now be prompted with a YubiKey two-step login option. Insert your YubiKey and touch it's button to complete logging in.
+3. Log back into the Bitwarden web vault. You should now be prompted with a YubiKey two-step login option. Insert your YubiKey and touch its button to complete logging in.
 4. Log out of and back in to any other Bitwarden applications that you are using to confirm that two-step login via YubiKey is properly working. You will eventually be logged out automatically. If the application (or device) your are using does not support YubiKey you will be presented with other two-step login options that you have configured (if any).
 
    Web

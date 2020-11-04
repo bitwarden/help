@@ -1,40 +1,87 @@
 ---
 layout: article
-title: Open ID Connect (OIDC) Configuration
+title: Configure Login with SSO (OIDC)
 categories: [login-with-sso]
 featured: false
 popular: false
-tags: [sso, saml, oidc, openid, saml2.0, idp, identity]
+tags: [sso, oidc, openid, idp, identity]
+order: 04
 ---
 
-## OpenID Connect Configuration
+This article will guide you through the steps required to configure Login with SSO for OpenID Connect (OIDC) authentication.
+
+### In This Article
+
+- [Step 1: Enabling Login with SSO](#step-1-enabling-login-with-sso)
+- [Step 2: Configure Your IdP](#step-2-configure-your-idp)
+- [Step 3: Open ID Connect Configuration](#step-3-openid-connect-configuration)
+
+## Step 1: Enabling Login with SSO
+
+Complete the following steps to enable Login with SSO for OIDC authentication:
+
+1. In the Web Vault, navigate to your Organization and open the **Settings** tab.
+2. In the **Identifier** field, enter a unique identifier for your Organization.
+
+   Don't forget to **Save** your identifier. Users will be required to enter this **Identifier** upon login.
+
+3. Navigate to the **Business Portal**.
+
+   {% image /organizations/business-portal-button-overlay.png Business Portal button %}
+
+4. Select the **Single Sign-On** button.
+5. Check the **Enabled** checkbox.
+6. From the **Type** dropdown menu, select the **OpenID Connect** option.
+
+After selecting **OpenID Connect**, this page will display a list of configuration fields you will need to configure.
+
+Keep this page on-hand, as you will need the values of **Callback Path** and **Signed Out Callback Path** to complete [Step 2](#step-2-configure-your-idp).
+
+## Step 2: Configure Your IdP
+
+Before you can complete your configuration settings, you must configure your IdP to receive requests from and send responses to Bitwarden.
+
+{% comment %}
+PLACEHOLDER TO ADD PROVIDER SCREENSHOTS Configuration can vary provider-to-provider. Refer to the following samples for assistance:
+
+- [{% icon fa-download %} Okta OIDC Sample]({{site.baseurl}}/files/bitwarden_export.csv)
+{% endcomment %}
+
+When you've successfully set your IdP, return to the Bitwarden Business Portal to complete your OIDC configuration.
+
+## Step 3: OpenID Connect Configuration
+
+Fields in this section should come from the configured values in [Step 2: Configure your IdP](#step-2-configure-your-idp).
+
+Required fields will be marked. Failing to provide a value for a required field will cause your configuration to be rejected.
+
+{% image /sso/sso-oidc.png OpenID Connect Configuration screen %}
 
 ### Callback Path
-
-URL for Bitwarden authentication redirect (automatically generated). Configure this in your identity provider for the login redirect URI.
+The URL for Bitwarden authentication automatic redirect. This value will be automatically generated. For all Cloud-hosted instances, `https://sso.bitwarden.com/oidc-signin`. For self-hosted instances, domain is based on your configured Server URL.
 
 ### Signed Out Callback Path
+The URL for Bitwarden sign-out automatic redirect. This value will be automatically generated. For all Cloud-hosted instances, `https://sso.bitwarden.com/oidc-signedout`. For self-hosted instances, domain is based on your configured Server URL.
 
-URL for Bitwarden sign-out redirect (automatically generated). Configure this value in your identity provider for the logout redirect URI.
+### Authority (*Required*)
+Your Identity Provider URL or the Authority that Bitwarden will perform authentication against.
 
-### Authority
+### Client ID (*Required*)
+The Client identifier used for Bitwarden, as configured in your Identity Provider.
 
-*Required* Your Identity Provider URL or Authority that Bitwarden will perform Authentication against.
+### Client Secret (*Required*)
+*May be required depending on your IdP's configuration, needs, or requirements*
 
-### Client ID
+A secret used  in conjunction with **Client ID** to exchange for an authentication token.
 
-*Required* for Bitwarden messages to be identified by your Identity Provider
+### Metadata Address (*Required if Authority is not a valid URL*)
 
-Your Identity Provider's client ID for Bitwarden. You will need to configure this before enabling SSO.
+Identity Provider information which Bitwarden will perform authentication against (*e.g.* Okta Metadata URI).
 
-### Client Secret
+### OIDC Redirect Behavior
+Method used by the IdP to respond to Bitwarden authentication requests. Options include:
+- Form POST
+- Redirect GET
 
-In conjunction with your Client ID for authentication against your Identity Provider, this value may be required depending on your identity provider’s configuration, needs, or requirements.
-
-### Metadata Address
-
-Provides Identity Provider information back to Bitwarden. This is required if the Authority is not a valid URL.
-
-### Other OIDC Options
-
-- Get Claims From User Info Endpoint (*Boolean*) - Check this value if you start receiving URL too long errors (HTTP 414), truncated URLs, and/or failures during SSO.
+### Get Claims From User Info Endpoint
+Check this checkbox if you receive `URI Too Long (HTTP 414)` errors, truncated URLs, or failures during SSO.

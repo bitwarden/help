@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Syncing users and groups with a directory
-categories: [organizations]
+categories: [directory-connector]
 featured: true
 popular: false
 tags: []
@@ -19,7 +19,7 @@ The following directories are supported:
 - OneLogin
 
 {% note %}
-Directory sync is only available to enterprise organizations.
+Directory sync is only available to Teams and Enterprise organizations.
 {% endnote %}
 
 ## Bitwarden Directory Connector Application
