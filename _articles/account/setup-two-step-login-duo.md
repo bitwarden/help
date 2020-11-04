@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Set up two-step login with Duo Security
-categories: [account-management, organizations]
+categories: [account-management]
 featured: false
 popular: false
 tags: [two-step login, 2fa, two factor authentication, account, duo, sms]
@@ -65,7 +65,7 @@ Two-step login can permanently lock you out of your account. It is very importan
 
    Desktop
    {% image two-step/duo/desktop.png %}
-   
+
    Browser extension
    {% image two-step/duo/browser.png %}
 

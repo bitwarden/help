@@ -1,15 +1,15 @@
 ---
 layout: article
 title: About the Business Portal
-categories: [login-with-sso]
+categories: [organizations]
 featured: false
 popular: false
 tags: [organizations, business portal, sso, policies]
-order: 02
+order: 12
 ---
 ## What is the Business Portal?
 
-The Bitwarden Business Portal is a dedicated space for administrators to configure security controls for their organization. Users with the type **Admin** (and higher) can access the Business Portal by selecting the **Business Portal** button from their Organization screen.
+The Bitwarden Business Portal is a dedicated space for administrators to configure security controls for their organization. Users with the User Type **Admin** or higher can access the Business Portal by selecting the **Business Portal** button from their Organization screen.
 
 {% image /organizations/business-portal-button-overlay.png Business Portal button %}
 
