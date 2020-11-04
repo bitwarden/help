@@ -5,7 +5,7 @@ categories: [organizations]
 featured: true
 popular: false
 tags: [organizations  events  event logs  audit  access control]
-order: 11
+order: 12
 ---
 
 ## What are Event Logs?

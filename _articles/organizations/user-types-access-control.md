@@ -5,7 +5,7 @@ categories: [organizations]
 featured: true
 popular: false
 tags: [user types, access control]
-order: 10
+order: 11
 ---
 
 Users in Bitwarden Organizations can be granted a variety of User Types and Access Controls in order to manage their permissions.
@@ -25,10 +25,14 @@ Options include:
 
 |User Type|Permissions|
 |---------|-----------|
-|User|Access shared items in assigned Collections<br>Add, edit, or remove items from assigned Collections|
+|User|Access shared items in assigned Collections<br>Add, edit, or remove items from assigned Collections (unless **Read Only**)|
 |Manager|All of the above,<br>+ Assign Users to Collections<br>+ Assign User Groups to Collections<br>+ Create or delete new Collections|
 |Admin|All of the above,<br>+ Assign Users to User Groups<br>+ Create or delete User Groups<br>+ Invite and confirm new Users<br>+ Manage Enterprise Policies<br>+ View Event Logs<br>+ Export Organization Vault data<br><br>**Admin Users automatically have access to all Collections.**|
 |Owner|All of the above,<br>+ Manage Billing, Subscription, and Integrations<br><br>**Owner Users automatically have access to all Collections.**|
+
+{% warning %}
+**Only an Owner** can create a new Owner or assign Owner to an existing user. For failover purposes, Bitwarden recommends creating multiple Owner users.
+{% endwarning %}
 
 ## Access Control
 
