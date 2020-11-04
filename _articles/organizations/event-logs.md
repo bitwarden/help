@@ -82,10 +82,10 @@ https://github.com/bitwarden/web/blob/master/src/locales/en/messages.json
 - Edited user *user-identifier*. (`1502`)
 - Removed user *user-identifier*. (`1503`)
 - Edited groups for user *user-identifier*. (`1504`)
-- *unlinked sso placeholder*. (`1505`)
+- Unlinked SSO. (`1505`)
 - Edited organization settings. (`1600`)
 - Purged organization vault. (`1601`)
-- *Updated Policy placeholder*. (`1700`)
+- Updated a Policy. (`1700`)
 
 ## API Responses
 
@@ -98,15 +98,15 @@ Accessing Event Logs via API will return a response like the following. For more
     {
       "object": "event",
       "type": 1000,
-      "itemId": "3767a302-8208-4dc6-b842-030428a1cfad",
-      "collectionId": "bce212a4-25f3-4888-8a0a-4c5736d851e0",
-      "groupId": "f29a2515-91d2-4452-b49b-5e8040e6b0f4",
-      "policyId": "f29a2515-91d2-4452-b49b-5e8040e6b0f4",
-      "memberId": "e68b8629-85eb-4929-92c0-b84464976ba4",
-      "actingUserId": "a2549f79-a71f-4eb9-9234-eb7247333f94",
-      "date": "2020-07-06T17:25:50.932Z",
+      "itemId": "string",
+      "collectionId": "string",
+      "groupId": "string",
+      "policyId": "string",
+      "memberId": "string",
+      "actingUserId": "string",
+      "date": "2020-11-04T15:01:21.698Z",
       "device": 0,
-      "ipAddress": "172.16.254.1"
+      "ipAddress": "xxx.xx.xxx.x"
     }
   ],
   "continuationToken": "string"

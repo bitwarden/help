@@ -31,8 +31,6 @@ Complete the following steps to create a collection:
    - (*Teams and Enterprise Organizations*) Set the **Group Access** configuration for your Collection, including which Groups should be allowed to access this Collection. For more information, see [About Groups](https://bitwarden.com/help/article/about-groups/).
 5. Select **Save** to finish creating your Collection.
 
-
-
 ## Create Nested Collections
 
 Collections be "nested" in order to logically organize them within your Vault. There's no limit to the depth with which you can nest Collections, but creating too many levels may interfere with your Vault's interface.
@@ -48,3 +46,9 @@ To create a nested Collection, give your new Collection a **Name** that includes
 If there is no Collection with the corresponding "parent" name or if you don't have access to the "parent", the Collection won't nest and instead it's title will be displayed in-full.
 
 {% image organizations/collection-nested-create.png Create a nested Collection %}
+
+### Next Steps
+
+Now that you've created a Collection, we recommend that you:
+- [Share Items to a Collection](https://bitwarden.com/help/article/share-to-a-collection/)
+- [Import Items to an Organization](https://bitwarden.com/help/article/import-to-org/)

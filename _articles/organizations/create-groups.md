@@ -65,3 +65,8 @@ You can select which Collections a Group should have access to when you [Create 
 
 - Opening the Group from the **Manage** tab of your Organization, and configuring the Access Control section.
 - Opening the Collection from the **Manage** tab of your Organization, and configuring the Group Access section.
+
+### Next Steps
+
+Now that you've created a Group, we recommend that you:
+- [Invite Users to Your Organization](https://bitwarden.com/help/article/managing-users/)

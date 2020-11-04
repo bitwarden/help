@@ -74,5 +74,3 @@ Complete the following steps to remove a user from your Organization:
 {% image organizations/org-people-options-updated-overlay.png Remove a user %}
 
 Once a user is removed they can no longer access any shared items or Collections.
-
-### Next Steps

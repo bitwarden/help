@@ -53,8 +53,9 @@ Complete the following steps to create an Organization:
 
 ### Next Steps
 
-Now that you've created your Organization, we recommend the following:
+Now that you've created your Organization, we recommend that you:
 
 - [Invite Users to Your Organization](https://bitwarden.com/help/article/managing-users)
 - [Create a Collection](https://bitwarden.com/help/article/create-collections/)
 - [Share Items to a Collection](https://bitwarden.com/help/article/share-to-a-collection/)
+- [Import Items to an Organization](https://bitwarden.com/help/article/import-to-org/)
