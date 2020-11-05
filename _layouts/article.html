@@ -18,25 +18,28 @@ layout: default
     {% endif %}
     {% endfor %}
 </div>
-<div class="panel panel-default article">
-    <div class="panel-body">
+
+<div class="card article-card">
+    <div class="card-body">
         {{content}}
     </div>
     {% assign tags_size = page.tags | size %}
     {% if tags_size > 0 %}
-    <div class="panel-footer">
+    <div class="card-footer">
         <i class="fa fa-tags fa-fw"></i>
         {{ page.tags | join: ', ' }}
     </div>
     {% endif %}
 </div>
-<div class="row article-blocks">
+
+<div class="row">
     <div class="col-sm-6">
-        <div class="panel panel-default panel-rate">
-            <div class="panel-heading">
-                <h3 class="panel-title"><i class="fa fa-thumbs-o-up"></i> Was this helpful?</h3>
-            </div>
-            <div class="panel-body">
+        <div class="card">
+            <h3 class="card-header">
+                <i class="fa fa-thumbs-o-up"></i>
+                Was this helpful?
+            </h3>
+            <div class="card-body">
                 <p>Rate this article:</p>
                 <div class="rw-ui-container"></div>
             </div>
