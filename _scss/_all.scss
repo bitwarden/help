@@ -20,14 +20,14 @@ body {
     margin-bottom: 0;
 }
 
-// .navbar-nav {
-//     b {
-//         font-weight: 600;
-//     }
-// }
+a[rel='lightbox'] {
+    cursor: -webkit-zoom-in;
+    cursor: -moz-zoom-in;
+    cursor: zoom-in;
+}
 
 // .btn-secondary {
-//     @include button-variant(#ffffff, $brand-secondary, $brand-secondary);
+//     @include button-variant(#ffffff, $secondary, $secondary);
 // }
 
 // .btn-xl {
@@ -207,75 +207,6 @@ body {
 
 //     li > *:last-child {
 //         margin-bottom: 0;
-//     }
-// }
-
-// a[rel='lightbox'] {
-//     cursor: -webkit-zoom-in;
-//     cursor: -moz-zoom-in;
-//     cursor: zoom-in;
-// }
-
-// .alert, .callout {
-//     p, ul, ol {
-//         margin-bottom: 12.5px;
-//     }
-
-//     p:last-child, ul:last-child, ol:last-child {
-//         margin-bottom: 0;
-//     }
-// }
-
-// .callout {
-//     padding: 20px;
-//     margin: 20px 0;
-//     border: 1px solid $panel-default-border;
-//     border-left-width: 5px;
-//     border-radius: $panel-border-radius;
-//     background-color: #fafafa;
-
-//     h3 {
-//         margin-top: 0;
-//     }
-
-//     &.callout-primary, &.callout-info {
-//         border-left-color: $brand-primary;
-
-//         h3 {
-//             color: $brand-primary;
-//         }
-//     }
-
-//     &.callout-default {
-//         border-left-color: $gray;
-
-//         h3 {
-//             color: $gray;
-//         }
-//     }
-
-//     &.callout-danger {
-//         border-left-color: $brand-danger;
-
-//         h3 {
-//             color: $brand-danger;
-//         }
-//     }
-
-//     &.callout-success {
-//         border-left-color: $brand-success;
-
-//         h3 {
-//             color: $brand-success;
-//         }
-//     }
-
-//     &.callout-warning {
-//         border-left-color: $brand-warning;
-
-//         h3 {
-//             color: $brand-warning;
-//         }
 //     }
 // }
 

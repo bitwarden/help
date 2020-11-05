@@ -25,7 +25,29 @@
         h4,
         h5,
         h6 {
+            display: flex;
+            align-items: center;
             margin-top: 25px;
+        }
+    }
+
+    .header-link {
+        color: $text-muted;
+        font-size: $h3-font-size;
+        text-decoration: none;
+        opacity: 0;
+        margin-left: 5px;
+    }
+
+    h2:hover > .header-link,
+    h3:hover > .header-link {
+        opacity: .5;
+        -webkit-transition: color .16s linear;
+        transition: color .16s linear;
+
+        &:hover,
+        &:focus {
+            opacity: 1;
         }
     }
 }

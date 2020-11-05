@@ -1,14 +1,14 @@
 .bd-sidebar {
     order: 0;
-    // background-color: #f5f2f9;
+    background-color: $light;
     border-bottom: 1px solid rgba(0, 0, 0, .1);
 
     @include media-breakpoint-up(md) {
         @supports (position: sticky) {
-        position: sticky;
-        top: 4rem;
-        z-index: 1000;
-        height: subtract(100vh, 4rem);
+            position: sticky;
+            top: 4rem;
+            z-index: 1000;
+            height: subtract(100vh, 4rem);
         }
         border-right: 1px solid rgba(0, 0, 0, .1);
     }
@@ -26,7 +26,7 @@
 
     @include media-breakpoint-up(md) {
         @supports (position: sticky) {
-            max-height: subtract(100vh, 9rem);
+            max-height: subtract(100vh, 4rem);
             overflow-y: auto;
         }
     }
@@ -54,19 +54,26 @@
 }
 
 .bd-toc-item {
+    border-top: 1px solid $border-color;
+    padding: 0.5rem 0;
+
+    &:first-child {
+        border-top: 0;
+    }
+
     &.active {
-        margin-bottom: 1rem;
+        padding-bottom: 1.5rem;
 
         &:not(:first-child) {
-        margin-top: 1rem;
+            padding-top: 1rem;
         }
 
         > .bd-toc-link {
-        color: rgba(0, 0, 0, .85);
+            color: rgba(0, 0, 0, .85);
 
-        &:hover {
-            background-color: transparent;
-        }
+            &:hover {
+                background-color: transparent;
+            }
         }
 
         > .bd-sidenav {

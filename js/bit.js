@@ -23,7 +23,7 @@ $(function () {
         }
     });
 
-    $('.article .panel-body > h2, .article .panel-body > h3').filter('[id]').each(function () {
+    $('.article-card .card-body > h2, .article-card .card-body > h3').filter('[id]').each(function () {
         var header = $(this),
             headerID = header.attr('id'),
             anchorClass = 'header-link',

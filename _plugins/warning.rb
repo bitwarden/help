@@ -6,7 +6,7 @@
         converter = site.find_converter_instance(::Jekyll::Converters::Markdown)
         output = converter.convert(super(context))
         "<div class=\"callout callout-warning\">
-            <h3><i class=\"fa fa-warning\"></i> Warning</h3>
+            <h5><i class=\"fa fa-warning\"></i> Warning</h5>
             #{output}
         </div>"
       end
