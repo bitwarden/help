@@ -1,0 +1,12 @@
+.article-header {
+    border-bottom: 1px solid $border-color;
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    font-weight: normal;
+
+    i {
+        margin-right: 10px;
+    }
+}

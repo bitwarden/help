@@ -60,18 +60,5 @@ $screen-xxs: 375px;
 $screen-xxs-min: 375px;
 $screen-xxs-max: ($screen-xxs-min - 1);
 
-// Bootstrap 3 variables:
-$font-size-large: 36px;
-$line-height-large: 48px;
-$panel-default-border: #ccc;
-$panel-border-radius: 4px;
-$gray: gray;
-
-// Navbar
-$primary: #175ddc !default;
-$navbar-dark-color: #fff;
-$navbar-dark-hover-color: #afc8f7;
-
-$theme-colors: (
-  "primary": #175ddc
-);
+$border-color: #eee;
+$navbar-height: 56px;
