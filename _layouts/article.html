@@ -9,12 +9,12 @@ layout: default
     {{page.title}}
 </h1>
 <div class="breadcrumb">
-    {{ catSize | pluralize: 'Category', 'Categories' }}:
+    {{ catSize | pluralize: 'Category', 'Categories' }}:&nbsp;
     {% for category in site.categories %}
     {% assign catFilename = category.path | filename %}
     {% if page.categories contains catFilename %}
     {% assign catIteration = catIteration | plus: 1 %}
-    <a href="{{site.baseurl}}{{category.url}}">{{category.title}}</a>{% if catIteration != catSize %}, {% endif %}
+    <a href="{{site.baseurl}}{{category.url}}">{{category.title}}</a>{% if catIteration != catSize %},&nbsp;{% endif %}
     {% endif %}
     {% endfor %}
 </div>
@@ -35,10 +35,10 @@ layout: default
 <div class="row">
     <div class="col-sm-6">
         <div class="card">
-            <h3 class="card-header">
+            <h4 class="card-header">
                 <i class="fa fa-thumbs-o-up"></i>
                 Was this helpful?
-            </h3>
+            </h4>
             <div class="card-body">
                 <p>Rate this article:</p>
                 <div class="rw-ui-container"></div>
