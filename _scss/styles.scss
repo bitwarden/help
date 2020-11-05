@@ -1,5 +1,8 @@
-@import '../node_modules/bootstrap/scss/bootstrap.scss';
+@import '../node_modules/bootstrap/scss/bootstrap';
 
 @import 'variables';
 @import 'all';
-@import 'sidebar';
+@import 'header';
+@import 'search';
+@import 'toc';
+@import 'footer';

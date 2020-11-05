@@ -1,344 +1,279 @@
-<div class="col-md-3 col-xl-2 bd-sidebar">
-    <form role="search" class="bd-search d-flex align-items-center">
-        <span class="algolia-autocomplete" style="position: relative; display: inline-block; direction: ltr;">
-        <input
-            type="search"
-            class="form-control ds-input"
-            id="search-input"
-            placeholder="Search..."
-            aria-label="Search for..."
-            autocomplete="off"
-            data-docs-version="4.5"
-            spellcheck="false"
-            role="combobox"
-            aria-autocomplete="list"
-            aria-expanded="false"
-            aria-owns="algolia-autocomplete-listbox-0"
-            dir="auto"
-            style="position: relative; vertical-align: top;"
-        >
-            <pre
-            aria-hidden="true"
-            style='position: absolute; visibility: hidden; white-space: pre; font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; font-size: 16px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: normal; text-indent: 0px; text-rendering: auto; text-transform: none;'
-            ></pre>
-            <span
-            class="ds-dropdown-menu"
-            role="listbox"
-            id="algolia-autocomplete-listbox-0"
-            style="position: absolute; top: 100%; z-index: 100; display: none; left: 0px; right: auto;"
-            >
-            <div class="ds-dataset-1"></div>
-            </span>
-        </span>
-        <button
-            class="btn bd-search-docs-toggle d-md-none p-0 ml-3"
-            type="button"
-            data-toggle="collapse"
-            data-target="#bd-docs-nav"
-            aria-controls="bd-docs-nav"
-            aria-expanded="false"
-            aria-label="Toggle docs navigation"
-        >
-            <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="30"
-            height="30"
-            viewBox="0 0 30 30"
-            role="img"
-            focusable="false"
-            >
-            <title>Menu</title>
-            <path
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-miterlimit="10"
-                stroke-width="2"
-                d="M4 7h22M4 15h22M4 23h22"
-            ></path>
-            </svg>
-        </button>
-    </form>
 
-    <nav
-        class="collapse bd-links"
-        id="bd-docs-nav"
-        aria-label="Main navigation"
-        >
-        <div class="bd-toc-item">
-            <a class="bd-toc-link" href="/docs/4.5/getting-started/introduction/">
-            Getting started
-            </a>
+<nav class="collapse bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item">
+        <a class="bd-toc-link active" href="/help/">
+            Help Center
+        </a>
 
-            <ul class="nav bd-sidenav">
-                <li>
-                    <a href="/docs/4.5/getting-started/introduction/">Introduction</a>
-                </li>
-                <li>
-                    <a href="/docs/4.5/getting-started/download/">Download</a>
-                </li>
-                <li>
-                    <a href="/docs/4.5/getting-started/contents/">Contents</a>
-                </li>
-                <li>
-                    <a href="/docs/4.5/getting-started/browsers-devices/">
-                    Browsers &amp; devices
-                    </a>
-                </li>
-                <li>
-                    <a href="/docs/4.5/getting-started/javascript/">JavaScript</a>
-                </li>
-                <li>
-                    <a href="/docs/4.5/getting-started/theming/">Theming</a>
-                </li>
-                <li>
-                    <a href="/docs/4.5/getting-started/build-tools/">Build tools</a>
-                </li>
-                <li>
-                    <a href="/docs/4.5/getting-started/webpack/">Webpack</a>
-                </li>
-                <li>
-                    <a href="/docs/4.5/getting-started/accessibility/">Accessibility</a>
-                </li>
-            </ul>
-        </div>
-        <div class="bd-toc-item">
-            <a class="bd-toc-link" href="/docs/4.5/layout/overview/">
-            Layout
-            </a>
-
-            <ul class="nav bd-sidenav">
-                <li>
-                    <a href="/docs/4.5/layout/overview/">Overview</a>
-                </li>
-                <li>
-                    <a href="/docs/4.5/layout/grid/">Grid</a>
-                </li>
-                <li>
-                    <a href="/docs/4.5/layout/utilities-for-layout/">
-                    Utilities for layout
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <div class="bd-toc-item">
-            <a class="bd-toc-link" href="/docs/4.5/content/reboot/">
-                Content
-            </a>
-
-            <ul class="nav bd-sidenav">
-                <li>
-                    <a href="/docs/4.5/content/reboot/">Reboot</a>
-                </li>
-                <li>
-                    <a href="/docs/4.5/content/typography/">Typography</a>
-                </li>
-                <li>
-                    <a href="/docs/4.5/content/code/">Code</a>
-                </li>
-                <li>
-                    <a href="/docs/4.5/content/images/">Images</a>
-                </li>
-                <li>
-                    <a href="/docs/4.5/content/tables/">Tables</a>
-                </li>
-                <li>
-                    <a href="/docs/4.5/content/figures/">Figures</a>
-                </li>
-            </ul>
-        </div>
-        <div class="bd-toc-item active">
-            <a class="bd-toc-link" href="/docs/4.5/components/alerts/">
-            Components
-            </a>
-
-            <ul class="nav bd-sidenav">
-                <li>
-                    <a href="/docs/4.5/components/alerts/">Alerts</a>
-                </li>
-                <li>
-                    <a href="/docs/4.5/components/badge/">Badge</a>
-                </li>
-                <li>
-                    <a href="/docs/4.5/components/breadcrumb/">Breadcrumb</a>
-                </li>
-                <li>
-                    <a href="/docs/4.5/components/buttons/">Buttons</a>
-                </li>
-                <li>
-                    <a href="/docs/4.5/components/button-group/">Button group</a>
-                </li>
-                <li>
-                    <a href="/docs/4.5/components/card/">Card</a>
-                </li>
-                <li>
-                    <a href="/docs/4.5/components/carousel/">Carousel</a>
-                </li>
-                <li>
-                    <a href="/docs/4.5/components/collapse/">Collapse</a>
-                </li>
-                <li>
-                    <a href="/docs/4.5/components/dropdowns/">Dropdowns</a>
-                </li>
-                <li>
-                    <a href="/docs/4.5/components/forms/">Forms</a>
-                </li>
-                <li class="active bd-sidenav-active">
-                    <a href="/docs/4.5/components/input-group/">Input group</a>
-                </li>
-                <li>
-                    <a href="/docs/4.5/components/jumbotron/">Jumbotron</a>
-                </li>
-                <li>
-                    <a href="/docs/4.5/components/list-group/">List group</a>
-                </li>
-                <li>
-                    <a href="/docs/4.5/components/media-object/">Media object</a>
-                </li>
-                <li>
-                    <a href="/docs/4.5/components/modal/">Modal</a>
-                </li>
-                <li>
-                    <a href="/docs/4.5/components/navs/">Navs</a>
-                </li>
-                <li>
-                    <a href="/docs/4.5/components/navbar/">Navbar</a>
-                </li>
-                <li>
-                    <a href="/docs/4.5/components/pagination/">Pagination</a>
-                </li>
-                <li>
-                    <a href="/docs/4.5/components/popovers/">Popovers</a>
-                </li>
-                <li>
-                    <a href="/docs/4.5/components/progress/">Progress</a>
-                </li>
-                <li>
-                    <a href="/docs/4.5/components/scrollspy/">Scrollspy</a>
-                </li>
-                <li>
-                    <a href="/docs/4.5/components/spinners/">Spinners</a>
-                </li>
-                <li>
-                    <a href="/docs/4.5/components/toasts/">Toasts</a>
-                </li>
-                <li>
-                    <a href="/docs/4.5/components/tooltips/">Tooltips</a>
-                </li>
-            </ul>
-        </div>
-        <div class="bd-toc-item">
-            <a class="bd-toc-link" href="/docs/4.5/utilities/borders/">
-            Utilities
-            </a>
-
-            <ul class="nav bd-sidenav">
-                <li>
-                    <a href="/docs/4.5/utilities/borders/">Borders</a>
-                </li>
-                <li>
-                    <a href="/docs/4.5/utilities/clearfix/">Clearfix</a>
-                </li>
-                <li>
-                    <a href="/docs/4.5/utilities/close-icon/">Close icon</a>
-                </li>
-                <li>
-                    <a href="/docs/4.5/utilities/colors/">Colors</a>
-                </li>
-                <li>
-                    <a href="/docs/4.5/utilities/display/">Display</a>
-                </li>
-                <li>
-                    <a href="/docs/4.5/utilities/embed/">Embed</a>
-                </li>
-                <li>
-                    <a href="/docs/4.5/utilities/flex/">Flex</a>
-                </li>
-                <li>
-                    <a href="/docs/4.5/utilities/float/">Float</a>
-                </li>
-                <li>
-                    <a href="/docs/4.5/utilities/image-replacement/">
-                    Image replacement
-                    </a>
-                </li>
-                <li>
-                    <a href="/docs/4.5/utilities/interactions/">Interactions</a>
-                </li>
-                <li>
-                    <a href="/docs/4.5/utilities/overflow/">Overflow</a>
-                </li>
-                <li>
-                    <a href="/docs/4.5/utilities/position/">Position</a>
-                </li>
-                <li>
-                    <a href="/docs/4.5/utilities/screen-readers/">Screen readers</a>
-                </li>
-                <li>
-                    <a href="/docs/4.5/utilities/shadows/">Shadows</a>
-                </li>
-                <li>
-                    <a href="/docs/4.5/utilities/sizing/">Sizing</a>
-                </li>
-                <li>
-                    <a href="/docs/4.5/utilities/spacing/">Spacing</a>
-                </li>
-                <li>
-                    <a href="/docs/4.5/utilities/stretched-link/">Stretched link</a>
-                </li>
-                <li>
-                    <a href="/docs/4.5/utilities/text/">Text</a>
-                </li>
-                <li>
-                    <a href="/docs/4.5/utilities/vertical-align/">Vertical align</a>
-                </li>
-                <li>
-                    <a href="/docs/4.5/utilities/visibility/">Visibility</a>
-                </li>
-            </ul>
-        </div>
-        <div class="bd-toc-item">
-            <a class="bd-toc-link" href="/docs/4.5/extend/approach/">
-            Extend
-            </a>
-
-            <ul class="nav bd-sidenav">
+        <ul class="nav bd-sidenav">
             <li>
-                <a href="/docs/4.5/extend/approach/">Approach</a>
+                <a href="/docs/4.5/getting-started/introduction/">Introduction</a>
             </li>
             <li>
-                <a href="/docs/4.5/extend/icons/">Icons</a>
+                <a href="/docs/4.5/getting-started/download/">Download</a>
             </li>
-            </ul>
-        </div>
-        <div class="bd-toc-item">
-            <a class="bd-toc-link" href="/docs/4.5/migration/">
-            Migration
-            </a>
+            <li>
+                <a href="/docs/4.5/getting-started/contents/">Contents</a>
+            </li>
+            <li>
+                <a href="/docs/4.5/getting-started/browsers-devices/">
+                Browsers &amp; devices
+                </a>
+            </li>
+            <li>
+                <a href="/docs/4.5/getting-started/javascript/">JavaScript</a>
+            </li>
+            <li>
+                <a href="/docs/4.5/getting-started/theming/">Theming</a>
+            </li>
+            <li>
+                <a href="/docs/4.5/getting-started/build-tools/">Build tools</a>
+            </li>
+            <li>
+                <a href="/docs/4.5/getting-started/webpack/">Webpack</a>
+            </li>
+            <li>
+                <a href="/docs/4.5/getting-started/accessibility/">Accessibility</a>
+            </li>
+        </ul>
+    </div>
+    <div class="bd-toc-item">
+        <a class="bd-toc-link" href="/docs/4.5/layout/overview/">
+        Layout
+        </a>
 
-            <ul class="nav bd-sidenav"></ul>
-        </div>
-        <div class="bd-toc-item">
-            <a class="bd-toc-link" href="/docs/4.5/about/overview/">
-            About
-            </a>
+        <ul class="nav bd-sidenav">
+            <li>
+                <a href="/docs/4.5/layout/overview/">Overview</a>
+            </li>
+            <li>
+                <a href="/docs/4.5/layout/grid/">Grid</a>
+            </li>
+            <li>
+                <a href="/docs/4.5/layout/utilities-for-layout/">
+                Utilities for layout
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="bd-toc-item">
+        <a class="bd-toc-link" href="/docs/4.5/content/reboot/">
+            Content
+        </a>
 
-            <ul class="nav bd-sidenav">
+        <ul class="nav bd-sidenav">
             <li>
-                <a href="/docs/4.5/about/overview/">Overview</a>
+                <a href="/docs/4.5/content/reboot/">Reboot</a>
             </li>
             <li>
-                <a href="/docs/4.5/about/team/">Team</a>
+                <a href="/docs/4.5/content/typography/">Typography</a>
             </li>
             <li>
-                <a href="/docs/4.5/about/brand/">Brand</a>
+                <a href="/docs/4.5/content/code/">Code</a>
             </li>
             <li>
-                <a href="/docs/4.5/about/license/">License</a>
+                <a href="/docs/4.5/content/images/">Images</a>
             </li>
             <li>
-                <a href="/docs/4.5/about/translations/">Translations</a>
+                <a href="/docs/4.5/content/tables/">Tables</a>
             </li>
-            </ul>
-        </div>
-    </nav>
-</div>
+            <li>
+                <a href="/docs/4.5/content/figures/">Figures</a>
+            </li>
+        </ul>
+    </div>
+    <div class="bd-toc-item active">
+        <a class="bd-toc-link" href="/docs/4.5/components/alerts/">
+        Components
+        </a>
+
+        <ul class="nav bd-sidenav">
+            <li>
+                <a href="/docs/4.5/components/alerts/">Alerts</a>
+            </li>
+            <li>
+                <a href="/docs/4.5/components/badge/">Badge</a>
+            </li>
+            <li>
+                <a href="/docs/4.5/components/breadcrumb/">Breadcrumb</a>
+            </li>
+            <li>
+                <a href="/docs/4.5/components/buttons/">Buttons</a>
+            </li>
+            <li>
+                <a href="/docs/4.5/components/button-group/">Button group</a>
+            </li>
+            <li>
+                <a href="/docs/4.5/components/card/">Card</a>
+            </li>
+            <li>
+                <a href="/docs/4.5/components/carousel/">Carousel</a>
+            </li>
+            <li>
+                <a href="/docs/4.5/components/collapse/">Collapse</a>
+            </li>
+            <li>
+                <a href="/docs/4.5/components/dropdowns/">Dropdowns</a>
+            </li>
+            <li>
+                <a href="/docs/4.5/components/forms/">Forms</a>
+            </li>
+            <li class="active bd-sidenav-active">
+                <a href="/docs/4.5/components/input-group/">Input group</a>
+            </li>
+            <li>
+                <a href="/docs/4.5/components/jumbotron/">Jumbotron</a>
+            </li>
+            <li>
+                <a href="/docs/4.5/components/list-group/">List group</a>
+            </li>
+            <li>
+                <a href="/docs/4.5/components/media-object/">Media object</a>
+            </li>
+            <li>
+                <a href="/docs/4.5/components/modal/">Modal</a>
+            </li>
+            <li>
+                <a href="/docs/4.5/components/navs/">Navs</a>
+            </li>
+            <li>
+                <a href="/docs/4.5/components/navbar/">Navbar</a>
+            </li>
+            <li>
+                <a href="/docs/4.5/components/pagination/">Pagination</a>
+            </li>
+            <li>
+                <a href="/docs/4.5/components/popovers/">Popovers</a>
+            </li>
+            <li>
+                <a href="/docs/4.5/components/progress/">Progress</a>
+            </li>
+            <li>
+                <a href="/docs/4.5/components/scrollspy/">Scrollspy</a>
+            </li>
+            <li>
+                <a href="/docs/4.5/components/spinners/">Spinners</a>
+            </li>
+            <li>
+                <a href="/docs/4.5/components/toasts/">Toasts</a>
+            </li>
+            <li>
+                <a href="/docs/4.5/components/tooltips/">Tooltips</a>
+            </li>
+        </ul>
+    </div>
+    <div class="bd-toc-item">
+        <a class="bd-toc-link" href="/docs/4.5/utilities/borders/">
+        Utilities
+        </a>
+
+        <ul class="nav bd-sidenav">
+            <li>
+                <a href="/docs/4.5/utilities/borders/">Borders</a>
+            </li>
+            <li>
+                <a href="/docs/4.5/utilities/clearfix/">Clearfix</a>
+            </li>
+            <li>
+                <a href="/docs/4.5/utilities/close-icon/">Close icon</a>
+            </li>
+            <li>
+                <a href="/docs/4.5/utilities/colors/">Colors</a>
+            </li>
+            <li>
+                <a href="/docs/4.5/utilities/display/">Display</a>
+            </li>
+            <li>
+                <a href="/docs/4.5/utilities/embed/">Embed</a>
+            </li>
+            <li>
+                <a href="/docs/4.5/utilities/flex/">Flex</a>
+            </li>
+            <li>
+                <a href="/docs/4.5/utilities/float/">Float</a>
+            </li>
+            <li>
+                <a href="/docs/4.5/utilities/image-replacement/">
+                Image replacement
+                </a>
+            </li>
+            <li>
+                <a href="/docs/4.5/utilities/interactions/">Interactions</a>
+            </li>
+            <li>
+                <a href="/docs/4.5/utilities/overflow/">Overflow</a>
+            </li>
+            <li>
+                <a href="/docs/4.5/utilities/position/">Position</a>
+            </li>
+            <li>
+                <a href="/docs/4.5/utilities/screen-readers/">Screen readers</a>
+            </li>
+            <li>
+                <a href="/docs/4.5/utilities/shadows/">Shadows</a>
+            </li>
+            <li>
+                <a href="/docs/4.5/utilities/sizing/">Sizing</a>
+            </li>
+            <li>
+                <a href="/docs/4.5/utilities/spacing/">Spacing</a>
+            </li>
+            <li>
+                <a href="/docs/4.5/utilities/stretched-link/">Stretched link</a>
+            </li>
+            <li>
+                <a href="/docs/4.5/utilities/text/">Text</a>
+            </li>
+            <li>
+                <a href="/docs/4.5/utilities/vertical-align/">Vertical align</a>
+            </li>
+            <li>
+                <a href="/docs/4.5/utilities/visibility/">Visibility</a>
+            </li>
+        </ul>
+    </div>
+    <div class="bd-toc-item">
+        <a class="bd-toc-link" href="/docs/4.5/extend/approach/">
+        Extend
+        </a>
+
+        <ul class="nav bd-sidenav">
+        <li>
+            <a href="/docs/4.5/extend/approach/">Approach</a>
+        </li>
+        <li>
+            <a href="/docs/4.5/extend/icons/">Icons</a>
+        </li>
+        </ul>
+    </div>
+    <div class="bd-toc-item">
+        <a class="bd-toc-link" href="/docs/4.5/migration/">
+        Migration
+        </a>
+
+        <ul class="nav bd-sidenav"></ul>
+    </div>
+    <div class="bd-toc-item">
+        <a class="bd-toc-link" href="/docs/4.5/about/overview/">
+        About
+        </a>
+
+        <ul class="nav bd-sidenav">
+        <li>
+            <a href="/docs/4.5/about/overview/">Overview</a>
+        </li>
+        <li>
+            <a href="/docs/4.5/about/team/">Team</a>
+        </li>
+        <li>
+            <a href="/docs/4.5/about/brand/">Brand</a>
+        </li>
+        <li>
+            <a href="/docs/4.5/about/license/">License</a>
+        </li>
+        <li>
+            <a href="/docs/4.5/about/translations/">Translations</a>
+        </li>
+        </ul>
+    </div>
+</nav>

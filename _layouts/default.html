@@ -37,27 +37,12 @@
 
     <div class="container-fluid">
         <div class="row flex-xl-nowrap">
-            {% include sidebar.html %}
+            <div class="col-md-3 col-xl-2 bd-sidebar">
+                {% include sidebar.html %}
+            </div>
 
             <nav class="d-none d-xl-block col-xl-2 bd-toc" aria-label="Secondary navigation">
-                <ul class="section-nav">
-                    <li class="toc-entry toc-h2"><a href="#basic-example">Basic example</a></li>
-                    <li class="toc-entry toc-h2"><a href="#wrapping">Wrapping</a></li>
-                    <li class="toc-entry toc-h2"><a href="#sizing">Sizing</a></li>
-                    <li class="toc-entry toc-h2"><a href="#checkboxes-and-radios">Checkboxes and radios</a></li>
-                    <li class="toc-entry toc-h2"><a href="#multiple-inputs">Multiple inputs</a></li>
-                    <li class="toc-entry toc-h2"><a href="#multiple-addons">Multiple addons</a></li>
-                    <li class="toc-entry toc-h2"><a href="#button-addons">Button addons</a></li>
-                    <li class="toc-entry toc-h2"><a href="#buttons-with-dropdowns">Buttons with dropdowns</a></li>
-                    <li class="toc-entry toc-h2"><a href="#segmented-buttons">Segmented buttons</a></li>
-                    <li class="toc-entry toc-h2"><a href="#custom-forms">Custom forms</a>
-                        <ul>
-                            <li class="toc-entry toc-h3"><a href="#custom-select">Custom select</a></li>
-                            <li class="toc-entry toc-h3"><a href="#custom-file-input">Custom file input</a></li>
-                        </ul>
-                    </li>
-                    <li class="toc-entry toc-h2"><a href="#accessibility">Accessibility</a></li>
-                </ul>
+                {% include toc.html %}
             </nav>
 
             <main class="col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">

@@ -10,7 +10,7 @@ tags: []
 
 ## Table of Contents
 
-- [Bitwarden Server service/user account and optional systemd service configuration)](#bitwarden-server-service-user-account-and-optional-systemd-service-configuration)
+- [Bitwarden Server service/user account and optional systemd service configuration)](#bitwarden-server-serviceuser-account-and-optional-systemd-service-configuration)
   * [Certificate Setup for Private CA, on-premises or self-hosted](#certificate-setup-for-private-ca-on-premises-or-self-hosted)
   * [Certificate Setup for Public CA, On-premises and self-hosted](#certificate-setup-for-public-ca-on-premises-and-self-hosted)
   * [Change Server Name](#change-server-name)
@@ -32,20 +32,20 @@ tags: []
 {%note%}
 You will want to configure the Bitwarden Server to use a `bitwarden` service account. $USER=bitwarden You will want to have your installation owned by the bitwarden service account, and you should be logged in as bitwarden.
 
-After those are verified, you will want to make sure the UID and GID in the /bwdata/env/uid.env file are set to your bitwarden service account id numbers in Linux. When using the bitwarden service account you will also need to follow these steps:     
+After those are verified, you will want to make sure the UID and GID in the /bwdata/env/uid.env file are set to your bitwarden service account id numbers in Linux. When using the bitwarden service account you will also need to follow these steps:
 
-1. Make sure the docker group has been created.  sudo groupadd docker     
-2. Add the bitwarden account to the docker group  sudo usermod -aG docker $USER     
-3. Create the bitwarden service file (may want to store it with your bitwarden installation)  sudo vi bitwarden.service     [Unit]  Description=Bitwarden  Requires=docker.service  After=docker.service     [Service]  Type=oneshot  User=bitwarden  Group=bitwarden  ExecStart={INSTALL_DIR}/bitwarden.sh start  RemainAfterExit=true  ExecStop= {INSTALL_DIR}/bitwarden.sh stop     [Install]  WantedBy=multi-user.target    
- 4. Copy the bitwarden service file to systemd.  sudo cp bitwarden.service /etc/systemd/system/bitwarden.service     
-5. Set permissions on bitwarden service file under systemd.  sudo chmod 644 /etc/systemd/system/bitwarden.service     
-6. Optional (reload for testing)  systemctl daemon-reload     
-7. Add service to start with system boot.  sudo systemctl enable bitwarden.service     
+1. Make sure the docker group has been created.  sudo groupadd docker
+2. Add the bitwarden account to the docker group  sudo usermod -aG docker $USER
+3. Create the bitwarden service file (may want to store it with your bitwarden installation)  sudo vi bitwarden.service     [Unit]  Description=Bitwarden  Requires=docker.service  After=docker.service     [Service]  Type=oneshot  User=bitwarden  Group=bitwarden  ExecStart={INSTALL_DIR}/bitwarden.sh start  RemainAfterExit=true  ExecStop= {INSTALL_DIR}/bitwarden.sh stop     [Install]  WantedBy=multi-user.target
+ 4. Copy the bitwarden service file to systemd.  sudo cp bitwarden.service /etc/systemd/system/bitwarden.service
+5. Set permissions on bitwarden service file under systemd.  sudo chmod 644 /etc/systemd/system/bitwarden.service
+6. Optional (reload for testing)  systemctl daemon-reload
+7. Add service to start with system boot.  sudo systemctl enable bitwarden.service
 {%endnote%}
 
 ### Certificate Setup for Private CA, on-premises or self-hosted
 
-When configuring your server you will need to have three files, private key, server cert, and the CA cert then you will configure their path in the config.yml file in the Bitwarden installation directory.     
+When configuring your server you will need to have three files, private key, server cert, and the CA cert then you will configure their path in the config.yml file in the Bitwarden installation directory.
 
 The path that is defined in the `config.yml` is actually the location inside the NGINX container. The directory on the host is mapped to the container so you will actually want to make sure your correct certificate related files are under the `./bwdata/ssl/` directory.
 
@@ -111,7 +111,7 @@ globalSettings__mail__replyToEmail=no-reply@bitwarden.domain.com
 globalSettings__mail__smtp__host=smtp.gmail.com
 globalSettings__mail__smtp__port=587
 globalSettings__mail__smtp__ssl=false
-globalSettings__mail__smtp__username=Gmail-username  
+globalSettings__mail__smtp__username=Gmail-username
 globalSettings__mail__smtp__password=Gmail-password
 ```
 If you are using Two-Step Authentication with your Gmail account then you will need to generate an app-specific password for use with Bitwarden. You can generate an app-specific password by signing in to your Google and following their instructions. Once you have the app-specific password, enter it into Bitwarden's SMTP configuration in the ./bwdata/env/global.override.env file.
@@ -146,7 +146,7 @@ After the server is running and the Organization has been created and licensed, 
 
 Once you have completed the import, which will include the Collections, Items and their associations, you will need to set up the groups and users (there are several options so please check the relative links):  <https://help.bitwarden.com/organizations/>
 
-Please take note of the backup procedure:  https://help.bitwarden.com/article/backup-on-premise/     
+Please take note of the backup procedure:  https://help.bitwarden.com/article/backup-on-premise/
 
 ## Restore Bitwarden Server Detailed and Restore From Backup
 

@@ -7,17 +7,19 @@
     }
 
     order: 2;
-    padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     @include font-size(.875rem);
-}
 
-.section-nav {
-    padding-left: 0;
     border-left: 1px solid #eee;
+    margin-top: 1.5rem;
+    padding: 0 0 1.5rem;
 
-    ul {
-    padding-left: 1rem;
+    h3 {
+        padding: .125rem 1.5rem;
+    }
+
+    .section-nav {
+        padding-left: 0;
     }
 }
 
