@@ -1,0 +1,220 @@
+html {
+    position: relative;
+    min-height: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    padding-top: $navbar-height;
+}
+
+:target::before {
+    content: '';
+    display: block;
+    height: $navbar-height;
+    margin-top: -$navbar-height;
+}
+
+.fa-ul {
+    margin-bottom: 0;
+}
+
+a[rel='lightbox'] {
+    cursor: -webkit-zoom-in;
+    cursor: -moz-zoom-in;
+    cursor: zoom-in;
+}
+
+// .btn-secondary {
+//     @include button-variant(#ffffff, $secondary, $secondary);
+// }
+
+// .btn-xl {
+//     @include button-size(20px, 25px, $font-size-large, $line-height-large, 5px);
+// }
+
+// content {
+//     padding: 30px 0;
+//     display: block;
+//     font-size: 16px;
+// }
+
+// .article-blocks {
+//     .panel-contact {
+//         margin-bottom: 0;
+//     }
+// }
+
+// .articles {
+//     margin-bottom: 25px;
+
+//     ul, ol {
+//         margin-left: 0;
+//         padding-left: 20px;
+
+//         li + li {
+//             margin-top: 0.25em;
+//         }
+//     }
+
+//     &.panel {
+//         ul, ol {
+//             margin-bottom: 0;
+//         }
+//     }
+
+//     .fa-ul {
+//         padding-left: 30px;
+
+//         .fa {
+//             color: $text-muted;
+//         }
+//     }
+// }
+
+// .article {
+//     .panel-body > *:first-child {
+//         margin-top: 0;
+//     }
+
+//     .panel-body > *:last-child {
+//         margin-bottom: 0;
+//     }
+
+//     ul, ol {
+//         li + li,
+//         ul li:first-child,
+//         ol li:first-child {
+//             margin-top: 0.40em;
+//         }
+//     }
+
+//     h2, h3 {
+//         text-transform: uppercase;
+//         font-weight: bold;
+//     }
+
+//     h2 {
+//         font-size: 22px;
+//         margin-top: 50px;
+//         margin-bottom: 20px;
+//     }
+
+//     h3 {
+//         font-size: 17px;
+//     }
+
+//     h4 {
+//         font-size: 16px;
+//         font-weight: bold;
+//     }
+
+//     h5 {
+//         font-size: 16px;
+//     }
+
+//     figure {
+//         display: block;
+//         margin: 0 auto 35px;
+
+//         figcaption {
+//             font-size: 14px;
+//             color: $text-muted;
+//         }
+//     }
+
+//     .panel-body > ol {
+//         counter-reset: li;
+//         list-style: none;
+//         position: relative;
+//         margin-left: 0;
+//         padding-left: 0;
+
+//         > li {
+//             padding: 5px 0 5px 50px;
+//             position: relative;
+//             margin-bottom: 5px;
+
+//             &:before {
+//                 content: counter(li);
+//                 counter-increment: li;
+//                 position: absolute;
+//                 top: 0;
+//                 left: 0;
+//                 height: 100%;
+//                 width: 30px;
+//                 padding: 0 10px 0 0;
+//                 color: $text-muted;
+//                 font-size: 22px;
+//                 font-weight: bold;
+//                 line-height: 35px;
+//                 text-align: right;
+//                 border-right: 1px solid $table-border-color;
+//             }
+
+//             & + li {
+//                 margin-top: 0;
+//             }
+//         }
+
+//         ol, ul {
+//             margin-bottom: 12.5px;
+
+//             ol, ul {
+//                 margin-bottom: 0;
+//             }
+//         }
+//     }
+
+//     table {
+//         @extend .table;
+//         @extend .table-bordered;
+//         @extend .table-striped;
+//     }
+
+//     .header-link {
+//         color: $text-muted;
+//         text-decoration: none !important;
+//         opacity: 0;
+//         margin-left: 5px;
+//     }
+
+//     h2:hover > .header-link,
+//     h3:hover > .header-link {
+//         opacity: .5;
+//         -webkit-transition: color .16s linear;
+//         transition: color .16s linear;
+//     }
+
+//     h2:hover > .header-link:hover,
+//     h3:hover > .header-link:hover,
+//     h2:hover > .header-link:focus,
+//     h3:hover > .header-link:focus {
+//         opacity: 1;
+//     }
+
+//     pre code {
+//         white-space: pre;
+//         word-break: initial;
+//         word-wrap: initial;
+//         display: block;
+//     }
+
+//     li img, li pre {
+//         margin-top: 12.5px;
+//     }
+
+//     li > *:last-child {
+//         margin-bottom: 0;
+//     }
+// }
+
+// code {
+//     border-radius: 2px;
+// }
+
+// blockquote {
+//     padding-left: 15px;
+//     padding-right: 15px;
+// }

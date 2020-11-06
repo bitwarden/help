@@ -18,7 +18,7 @@ The Public API is compatible with the OpenAPI Specification (OAS3) and publishes
 
 {% note %}
 Access to the Bitwarden Public API is available for customers on the following plans, **Classic 2019 Enterprise Organizations**, current **Enterprise Organizations**, and current **Teams Organizations**. For more information, see [About Bitwarden Plans](https://bitwarden.com/help/article/about-bitwarden-plans/#compare-the-plans-1).
-{% endnote %}
+{% endnote %
 
 ### In This Article
 - [Endpoints](#endpoints)

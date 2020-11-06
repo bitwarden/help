@@ -4,48 +4,49 @@ layout: default
 {% assign catIteration = 0 %}
 {% assign catSize = page.categories | size %}
 
-<div class="container">
-    <h1 class="page-header">
-        <i class="fa fa-file-text-o"></i>
-        {{page.title}}
-    </h1>
-    <div class="breadcrumb">
-        {{ catSize | pluralize: 'Category', 'Categories' }}:
-        {% for category in site.categories %}
-        {% assign catFilename = category.path | filename %}
-        {% if page.categories contains catFilename %}
-        {% assign catIteration = catIteration | plus: 1 %}
-        <a href="{{site.baseurl}}{{category.url}}">{{category.title}}</a>{% if catIteration != catSize %}, {% endif %}
-        {% endif %}
-        {% endfor %}
+<h1 class="article-header">
+    <i class="fa fa-file-text-o"></i>
+    {{page.title}}
+</h1>
+<div class="breadcrumb">
+    {{ catSize | pluralize: 'Category', 'Categories' }}:&nbsp;
+    {% for category in site.categories %}
+    {% assign catFilename = category.path | filename %}
+    {% if page.categories contains catFilename %}
+    {% assign catIteration = catIteration | plus: 1 %}
+    <a href="{{site.baseurl}}{{category.url}}">{{category.title}}</a>{% if catIteration != catSize %},&nbsp;{% endif %}
+    {% endif %}
+    {% endfor %}
+</div>
+
+<div class="card article-card">
+    <div class="card-body">
+        {{content}}
     </div>
-    <div class="panel panel-default article">
-        <div class="panel-body">
-            {{content}}
-        </div>
-        {% assign tags_size = page.tags | size %}
-        {% if tags_size > 0 %}
-        <div class="panel-footer">
-            <i class="fa fa-tags fa-fw"></i>
-            {{ page.tags | join: ', ' }}
-        </div>
-        {% endif %}
+    {% assign tags_size = page.tags | size %}
+    {% if tags_size > 0 %}
+    <div class="card-footer">
+        <i class="fa fa-tags fa-fw"></i>
+        {{ page.tags | join: ', ' }}
     </div>
-    <div class="row article-blocks">
-        <div class="col-sm-6">
-            <div class="panel panel-default panel-rate">
-                <div class="panel-heading">
-                    <h3 class="panel-title"><i class="fa fa-thumbs-o-up"></i> Was this helpful?</h3>
-                </div>
-                <div class="panel-body">
-                    <p>Rate this article:</p>
-                    <div class="rw-ui-container"></div>
-                </div>
+    {% endif %}
+</div>
+
+<div class="row">
+    <div class="col-sm-6">
+        <div class="card">
+            <h4 class="card-header">
+                <i class="fa fa-thumbs-o-up"></i>
+                Was this helpful?
+            </h4>
+            <div class="card-body">
+                <p>Rate this article:</p>
+                <div class="rw-ui-container"></div>
             </div>
         </div>
-        <div class="col-sm-6">
-            {% include contact.html %}
-        </div>
+    </div>
+    <div class="col-sm-6">
+        {% include contact.html %}
     </div>
 </div>
 
