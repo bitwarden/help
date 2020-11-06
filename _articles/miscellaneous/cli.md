@@ -7,18 +7,21 @@ popular: false
 tags: [cli, command, script, bash, shell, powershell, terminal]
 ---
 
-Bitwarden provides a powerful, full-featured command-line interface (CLI) tool to access and manage your Bitwarden vault. All features that you find in other Bitwarden client applications (desktop, browser extension, etc) are also available through the CLI. The CLI can be used cross-platform on Windows, macOS, and Linux distributions.
+Bitwarden provides a powerful, full-featured command-line interface (CLI) tool for accessing and managing your Bitwarden vault. All features that you find in other Bitwarden client applications (Desktop, Browser Extension, etc.) are also available through the CLI.
+
+The CLI can be used cross-platform on Windows, macOS, and Linux distributions.
 
 {% image cli.png %}
 
-## Table of Contents
+### In This Article
 
 - [Quick Start](#quick-start)
-- [Download &amp; Install](#download--install)
+- [Download and Install](#download-and-install)
     - [Native executable](#native-executable)
     - [NPM](#npm)
     - [Other Package Managers](#other-package-managers)
 - [Session Management](#session-management)
+    - [Logging In](#logging-in)
     - [Environment Variable](#environment-variable)
     - [`--session <key>` Option](#--session-key-option)
     - [Locking](#locking)
@@ -55,60 +58,81 @@ Bitwarden provides a powerful, full-featured command-line interface (CLI) tool t
 
 ## Quick Start
 
-1. [Download and install](#download--install) the CLI for your platform.
-2. Move `bw` to `/usr/local/bin` or another directory in your `$PATH`. Windows users can [add `bw.exe` to the current user's `PATH`](https://www.howtogeek.com/118594/how-to-edit-your-system-path-for-easy-command-line-access/){:target="_blank"}. If you installed the CLI with [NPM](https://www.npmjs.com/package/@bitwarden/cli){:target="_blank"} (or another package manager) you can skip this step since `bw` should automatically be added to your path.
-3. Verify the `bw` command works in your terminal.
+1. [Download and install](#download-and-install) the CLI for your platform.
+2. Move `bw` to `/usr/local/bin` or another directory in your `$PATH`. Windows users can [add `bw.exe` to the current user's `PATH`](https://www.howtogeek.com/118594/how-to-edit-your-system-path-for-easy-command-line-access/){:target="_blank"}.
+
+   **If you installed the CLI with [NPM](https://www.npmjs.com/package/@bitwarden/cli){:target="_blank"} or another package manager you can skip this step as `bw` will automatically be added to your path.**
+3. Verify the `bw` command works in your terminal:
 
        bw --help
 
-## Download &amp; Install
+## Download and Install
 
-You can install the Bitwarden CLI multiple different ways:
+You can install the Bitwarden CLI in a few different ways:
 
 ### Native executable
 
-Natively packaged versions of the CLI for each platform have no dependencies.
+Natively packaged versions of the CLI are available for each platform and have no dependencies:
 
 - {% icon fa-windows fa-lg fa-fw %} [Windows x64](https://vault.bitwarden.com/download/?app=cli&platform=windows)
 - {% icon fa-apple fa-lg fa-fw %} [macOS x64](https://vault.bitwarden.com/download/?app=cli&platform=macos)
 - {% icon fa-linux fa-lg fa-fw %} [Linux x64](https://vault.bitwarden.com/download/?app=cli&platform=linux)
 
 In UNIX systems you might get a `Permission denied` message. If you do, in order to grant permissions you can run
-```bash
-chmod +x </path/to/bw>
+```
+bash chmod +x </path/to/bw>
 ```
 
 ### NPM
 
 If you already have the Node.js runtime installed on your system, you can install the CLI using [NPM](https://www.npmjs.com/package/@bitwarden/cli){:target="_blank"}. NPM makes it easy to keep your installation updated and should be the preferred installation method if you are already using Node.js.
-
-    npm install -g @bitwarden/cli
+```
+npm install -g @bitwarden/cli
+```
 
 ### Other Package Managers
 
 - [Chocolatey](https://chocolatey.org/packages/bitwarden-cli){:target="_blank"}
-
-       choco install bitwarden-cli
+  ```
+  choco install bitwarden-cli
+  ```
 - [Homebrew](https://formulae.brew.sh/formula/bitwarden-cli){:target="_blank"}
-
-       brew install bitwarden-cli
+  ```
+  brew install bitwarden-cli
+  ```
 - [Snap](https://snapcraft.io/bw){:target="_blank"}
-
-       sudo snap install bw
+  ```
+  sudo snap install bw
+  ```
 
 ## Session Management
 
-You can log into your Bitwarden user account by using the `login` command:
+### Logging In
 
-    bw login [email] [password]
+There are a few ways to log into your Bitwarden user account from the command line, all using the `login` command:
+```
+bw login [email] [password]
+```
+where `email` is your account Email Address and `password` is your Master Password.
+```
+bw login [email] [password] --method <method> --code <code>
+```
+where `<method>` is your Two-step Login method (see [Enums](#enums)), and `<code>` is your Two-step Login code.
+```
+bw login --apiKey
+```
+where `--apiKey` will prompt you to enter your `client_id` and `client_secret`. For more information, see [Personal API Key for CLI Authentication](https://bitwarden.com/help/article/personal-api-key/).
+```
+bw login --sso
+```
+where `--sso` starts the SSO Authentication flow from a browser.
+You can also pass the `--raw` option to *only receive the session key* from stdout.
 
-After successfully logging into the CLI a *session key* will be returned. This session key is necessary to perform any commands that require your vault to be unlocked (`list`, `get`, `edit`, etc). You can pass the `--raw` option to `login` to receive *only the session key* from stdout.
-
-    bw login [email] [password] --raw
-
-You should pass the session key to CLI commands by setting the `BW_SESSION` environment variable or by using the `--session <key>` option:
+After successfully logging into the CLI a *session key* will be returned. This session key is necessary to perform any commands that require your vault to be unlocked (`list`, `get`, `edit`, etc.).
 
 ### Environment Variable
+
+Pass the session key to CLI commands by setting the `BW_SESSION` environment variable or by using the `--session <key>` option:
 
 {% icon fa-linux %} {% icon fa-apple %} Bash
 
@@ -127,6 +151,12 @@ You should pass the session key to CLI commands by setting the `BW_SESSION` envi
 {% note %}
 It is possible to persist your session key to your environment (for example, exporting it in `.bashrc`), however, we do not recommend doing this. Your active session key is the encryption key used to unlock all data associated with your Bitwarden vault and is not well-suited for persisting on an unprotected disk.
 {% endnote %}
+
+### `--apiKey` Variables
+
+The Bitwarden CLI will look for non-empty environment variables `BW_CLIENTID` or `BW_CLIENTSECRET`. Save these environment variables with your `client_id` and `client_secret` to prevent Bitwarden from prompting you every time.
+
+You will still need to enter your Master Password to decrypt your Vault.
 
 ### Locking
 
