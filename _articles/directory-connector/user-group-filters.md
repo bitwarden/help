@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Configuring user and group sync filters
-categories: [organizations]
+categories: [directory-connector]
 featured: false
 popular: false
 hidden: false
@@ -35,7 +35,7 @@ Search for all entries that have objectClass=user AND cn that contains the word 
 Active Directory does not implement extensible matching, the following examples won't work with it.
 {% endnote %}
 
-Find entries with an OU component of their DN which is either 'Miami' or 'Orlando'. 
+Find entries with an OU component of their DN which is either 'Miami' or 'Orlando'.
 
 ```
 (|(ou:dn:=Miami)(ou:dn:=Orlando))

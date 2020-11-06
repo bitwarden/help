@@ -1,10 +1,11 @@
 ---
 layout: article
-title: How to Effectively Manage Bitwarden Collections
-categories: [organizations]
+title: Collections & Groups Best Practices
+categories: []
 featured: true
 popular: false
 tags: [collections, groups, access control]
+order: 
 ---
 
 As your organization’s use of Bitwarden grows, it helps to have users who can manage collections independently, without requiring access to everything within the organizational vault.
@@ -24,7 +25,7 @@ Before addressing collection management, let’s review **Collections**, **Group
 ## The Manager Role within Bitwarden
 When a user is granted a Manager role by an organization Admin or Owner, they are given access to manage the collections of which they are a part.  The Manager role has fewer permissions than that Owner or Admin roles.
 
-In this example, our user is a manager of the following collections. Each of these collections represents numerous shared items. 
+In this example, our user is a manager of the following collections. Each of these collections represents numerous shared items.
 
 - Customer Success
 - Employees

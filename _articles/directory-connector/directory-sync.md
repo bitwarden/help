@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Syncing users and groups with a directory
-categories: [organizations]
+categories: [directory-connector]
 featured: true
 popular: false
 tags: []

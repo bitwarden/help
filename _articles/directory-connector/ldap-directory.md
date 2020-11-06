@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Configuring directory sync with Active Directory or other LDAP servers
-categories: [organizations]
+categories: [directory-connector]
 featured: true
 popular: false
 tags: [active directory, ldap, ad]

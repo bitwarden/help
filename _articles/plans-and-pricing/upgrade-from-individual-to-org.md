@@ -19,7 +19,7 @@ This article will guide existing individual Bitwarden users ([**Free**](https://
 
 Complete the following steps to start your Organization:
 
-1. Log in to your [Web Vault](https://vault.bitwarden.com/).
+1. Log in to your [Web Vault](https://vault.bitwarden.com/){:target="\_blank"}.
 2. Select the **New Organization** button.
 
    {%image /organizations/new-org-button-overlay.png Select New Organization %}
@@ -33,6 +33,7 @@ Complete the following steps to start your Organization:
    - Check the **This account is owned by a business** checkbox.
    - Provide your **Business Name**.
 
+   Checking the **This account is owned by a business** checkbox will automatically filter your plan options to those suited to businesses. If you represent a business interested in testing secure sharing using a Free Organization, leave this option unchecked.
 5. In the **Choose Your Plan** section, select which type of Organization to create. Options include:
    - **Free:** For testing or personal users to share with 1 other user. **[Learn more](https://bitwarden.com/help/article/about-bitwarden-plans/#free-organizations)**.
    - **Families:** For personal use, to share with family & friends. **[Learn more](https://bitwarden.com/help/article/about-bitwarden-plans/#families-organizations)**.
@@ -41,14 +42,12 @@ Complete the following steps to start your Organization:
 
    {% note %}Paid Organizations (Families, Teams, or Enterprise) include premium features for all enrolled users. For more information about Premium features, see [About Bitwarden Plans](https://bitwarden.com/help/article/about-bitwarden-plans/#compare-the-plans/).
    {% endnote %}
-
-6. Enter the following information:
-   - If you selected **Teams** or **Enterprise**, enter the number of Bitwarden **User Seats** you need. You can add additional seats later if required.
-   - If you selected **Families**, **Teams**, or **Enterprise**, enter the amount of **Additional Storage (GB)** you need. Your plan comes with 1 GB of shared encrypted file storage, and you can add additional storage later if needed.
-7. In the **Summary** section, select whether you'd like to be billed **Annually** or **Monthly**.
-
-   Families Organizations may only be billed **Annually**.
-8. Enter your **Payment Information** and select **Submit**.
+6. If you selected a Paid Organization, enter the following information:
+   - For **Teams** or **Enterprise**, enter the number of **User Seats** you need. You can add additional seats later if required.
+   - For **Families**, **Teams**, or **Enterprise**, enter the amount of **Additional Storage (GB)** you need. You plan comes with 1 GB of shared encrypted file storage, and you can add additional storage later if needed.
+   - For **Teams** or **Enterprise**, select whether you'd like to be billed **Annually** or **Monthly**. Families Organizations may only be billed annually.
+   - For any Paid Organization, enter your **Payment Information**
+7. Click **Submit** to start using your new Organization.
 
 ## Cancel Premium Individual Plan
 
@@ -70,5 +69,6 @@ Complete the following steps to cancel your Premium Individual subscription:
 
 Now that you've created your Organization, we recommend that you:
 
-- [Add Users to your Organization](https://bitwarden.com/help/article/managing-users/)
-- [Create a Collection for your Organization](https://bitwarden.com/help/article/collections/)
+- [Invite Users to Your Organization](https://bitwarden.com/help/article/managing-users)
+- [Create a Collection](https://bitwarden.com/help/article/create-collections/)
+- [Share Items to a Collection](https://bitwarden.com/help/article/share-to-a-collection/)

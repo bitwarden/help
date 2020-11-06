@@ -13,11 +13,8 @@ tags: []
 - [**Q: Can I install Bitwarden without Google Play?**](#q-can-i-install-bitwarden-without-google-play)
 - [**Q: How do I enable Autofill in Android?**](#q-how-do-i-enable-autofill-in-android)
 - [**Q: How do I view attachments?**](#q-how-do-i-view-attachments)
-- [**Q: What events are audited in my organization?**](#q-what-events-are-audited-in-my-organization)
 - [**Q: Can Bitwarden restore my individual vault?**](#q-can-bitwarden-restore-my-individual-vault)
 - [**Q: How do I backup my self-hosted server?**](#q-how-do-i-backup-my-self-hosted-server)
-- [**Q: I have invited a user to my organization but they cannot see shared items**](#q-i-have-invited-a-user-to-my-organization-but-they-cannot-see-shared-items)
-- [**Q: My organization owner is no longer with the company, how can a new owner be created?**](#q-my-organization-owner-is-no-longer-with-the-company-how-can-a-new-owner-be-created)
 - [**Q: How do I configure custom fields?**](#q-how-do-i-configure-custom-fields)
 - [**Q: How do I import my data if I don’t see my service on the import options?**](#q-how-do-i-import-my-data-if-i-dont-see-my-service-on-the-import-options)
 - [**Q: How do I delete an item?**](#q-how-do-i-delete-an-item)
@@ -34,17 +31,14 @@ tags: []
 - [**Q: Can I see the history of the passwords I have generated?**](#q-can-i-see-the-history-of-the-passwords-i-have-generated)
 - [**Q: Can I export/import from iCloud/Mac Keychain?**](#q-can-i-exportimport-from-icloudmac-keychain)
 - [**Q: How do I enable iOS AutoFill?**](#q-how-do-i-enable-ios-autofill)
-- [**Q: Why does something I shared with the organization stay after I leave?**](#q-why-does-something-i-shared-with-the-organization-stay-after-i-leave)
 - [**Q: Why am I getting a ‘New Device’ Email Message?**](#q-why-am-i-getting-a-new-device-email-message)
 - [**Q: Can I use SMS 2FA?**](#q-can-i-use-sms-2fa)
 - [**Q: How do I install the Safari Extension?**](#q-how-do-i-install-the-safari-extension)
-- [**Q: How do I share items with Organization ?**](#q-how-do-i-share-items-with-organization-)
 - [**Q: How can I start Bitwarden when Windows starts?**](#q-how-can-i-start-bitwarden-when-windows-starts)
 - [**Q: How do I perform a sync on my application?**](#q-how-do-i-perform-a-sync-on-my-application)
 - [**Q: What is TOTP and how can I use it?**](#q-what-is-totp-and-how-can-i-use-it)
 - [**Q: Why are my TOTP codes incorrect/not working?**](#q-why-are-my-totp-codes-incorrectnot-working)
 - [**Q: Why is U2F Not Supported on my iOS or Android App?**](#q-why-is-u2f-not-supported-on-my-ios-or-android-app)
-- [**Q: How do I unshare an item?**](#q-how-do-i-unshare-an-item)
 - [**Q: How do I use the web browser extension?**](#q-how-do-i-use-the-web-browser-extension)
 - [**Q: How do I add attachments?**](#q-how-do-i-add-attachments)
 - [**Q: I am asked for my master password even though I have PIN unlock enabled on iOS / Android**](#q-i-am-asked-for-my-master-password-even-though-i-have-pin-unlock-enabled-on-ios--android)
@@ -78,10 +72,6 @@ One last thing you will want to check is the battery optimization settings on yo
 
 **A:** Here you can see the ways to attach a file in all other clients: <https://help.bitwarden.com/article/attachments/>
 
-### **Q: What events are audited in my organization?**
-
-**A:** You can check to see what events are captured in this article: <https://bitwarden.com/help/article/event-logs/>
-
 ### **Q: Can Bitwarden restore my individual vault?**
 
 Bitwarden is unable to restore user vaults. We recommend everyone make regular backups (via export) of their vault data. You can learn more about backing up your vault here:
@@ -90,14 +80,6 @@ Bitwarden is unable to restore user vaults. We recommend everyone make regular b
 ### **Q: How do I backup my self-hosted server?**
 
 **A:** Please see this helpful article regarding backup procedures for your self-hosted server: <https://help.bitwarden.com/article/backup-on-premise/>
-
-### **Q: I have invited a user to my organization but they cannot see shared items**
-
-**A:** Once a user has accepted the invitation, an Organization Owner or Admin will need to go to the People management page and "Confirm" the user. This is a very important step as it completes the public-key exchange allowing for the sharing of encrypted information.
-
-### **Q: My organization owner is no longer with the company, how can a new owner be created?**
-
-**A:** We recommend having multiple and dedicated owner accounts to prevent this situation, however, if you need assistance with this, please contact customer success here: <https://bitwarden.com/contact>
 
 ### **Q: How do I configure custom fields?**
 
@@ -213,10 +195,6 @@ While testing Bitwarden, it is best to only have Bitwarden enabled to avoid any 
 
 You can see more about Bitwarden for iOS here: <https://bitwarden.com/help/article/getting-started-ios/>
 
-### **Q: Why does something I shared with the organization stay after I leave?**  
-
-**A:** When a user shares an item with an Organization, the Organization takes over ownership of the item. Even if the user account has its association with the Organization removed or if the user account is deleted, the item will remain with the Organization.
-
 ### **Q: Why am I getting a ‘New Device’ Email Message?**
 
 **A:** Typically this occurs for users that have a setting on their browser which clears their local storage and/or cookies whenever they close the browser or while they are using the browser. There are extensions that perform these actions. If this happens, you lose the indicator which tells our servers that it is an existing device. New device notification messages are not contingent on the IP address, only the device itself. We use local storage in the browser or client to label the device with an id. If that id has never logged in before then you will get an email. If a user clears this local storage, a new id is generated for that device and it will get a new email.
@@ -238,14 +216,6 @@ Currently, the Families plan introduced in September 2020, supports premium feat
 **A:** The new Safari extension is now packaged with the Bitwarden Desktop App. You can download the latest app here:  https://vault.bitwarden.com/download/?app=desktop&platform=macos. You can also use the App Store version.
 
 Be sure to run the application once. If the extension still does not appear, it may just need to be enabled. In Safari, check under Preferences > Extensions
-
-### **Q: How do I share items with Organization	?**
-
-**A:** You will want to log into the Web Vault (<https://vault.bitwarden.com>) and select the small gear menu that appears to the right of an item when mouse over it and select share.
-
-​After an item is shared, if you want to adjust the Collections the item is shared with then use the same menu and select Collections.
-
-You can bulk share items by checking the box next to multiple items and then selecting the gear menu at the top next to My Vault and then select Share.
 
 ### **Q: How can I start Bitwarden when Windows starts?**
 
@@ -280,12 +250,6 @@ Whenever you auto-fill a website that has TOTP attached, the code will automatic
 ### **Q: Why is U2F Not Supported on my iOS or Android App?**
 
 **A:** At this time, due to platform/OS limitations, FIDO U2F cannot be used with all Bitwarden applications. You should enable another two-step login provider so that you can access your account when FIDO U2F cannot be used. We are expanding our U2F capabilities
-
-### **Q: How do I unshare an item?**
-
-**A:** At this time there isn't an "unshare" option. You will need to manually create or clone the item back into your personal vault and then delete the item from the Organization. You can also use an export/import method if you ever need to move multiple items back to a personal vault.
-
-Alternatively if you want to 'unshare' it just from non-admin users, you can create a collection for admin-owned items and assign the item to *only* that collection.
 
 ### **Q: How do I use the web browser extension?**   
 

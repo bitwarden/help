@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Getting Started with Bitwarden Organizations
-categories: [organizations]
+categories: [getting-started]
 featured: false
 popular: false
 hidden: false
@@ -41,7 +41,7 @@ This tutorial walks you through the setup for two basic accounts and sharing in 
 
 A Bitwarden organization is an entity that relates users together that want to share items. An organization could be a family, team, company, or any other type of group that desires to share items in Bitwarden.
 
-For more, please see [What are organizations?]({% link _articles/organizations/what-is-an-organization.md %}).
+For more, please see [About Organizations](https://bitwarden.com/help/article/about-organizations/).
 
 **Are Organizations Different than a Premium Membership?**
 

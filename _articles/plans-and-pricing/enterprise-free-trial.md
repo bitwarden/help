@@ -12,7 +12,7 @@ Paid Organizations, including Enterprise, have a 7 Day Free Trial built in. To l
 
 Complete the following steps to start your 7 Day Free Trial of Bitwarden Enterprise:
 
-1. Log in to your [Web Vault](https://vault.bitwarden.com).
+1. Log in to your [Web Vault](https://vault.bitwarden.com){:target="\_blank"}.
 2. Select the **New Organization** button.
 
    {%image /organizations/new-org-button-overlay.png Select New Organization %}
@@ -36,7 +36,7 @@ Complete the following steps to start your 7 Day Free Trial of Bitwarden Enterpr
 Now that you've created your trial Enterprise Organization, we recommend that you:
 
 - [Add Users to your Organization](https://bitwarden.com/help/article/managing-users/)
-- [Create a Collection for your Organization](https://bitwarden.com/help/article/collections/)
+- [Create a Collection](https://bitwarden.com/help/article/create-collections/)
 - Use the [Business Portal](https://bitwarden.com/help/article/about-business-portal) to:
   - Set up [Login with SSO](https://bitwarden.com/help/article/getting-started-with-sso)
   - Create [Enterprise Policies](https://bitwarden.com/help/article/policies)
