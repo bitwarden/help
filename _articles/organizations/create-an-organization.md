@@ -7,8 +7,6 @@ popular: false
 hidden: false
 tags: [organizations, how to]
 order: 04
-redirect_from:
-  - /article/getting-started-organizations/
 ---
 
 This article will guide you through the process of creating an Organization. For more information about Organizations, see [About Organizations](https://bitwarden.com/help/article/about-organizations).
