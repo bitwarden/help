@@ -1,0 +1,78 @@
+
+footer.default-footer {
+    background-color: $secondary;
+    margin: 0;
+    color: #fff;
+    width: 100%;
+    font-size: 16px;
+    padding: 40px 0 100px;
+
+    .footer-logo {
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    a {
+        color: #fff;
+
+        &:hover,
+        &:focus {
+            color: #fff;
+        }
+
+        &[disabled] {
+            cursor: not-allowed;
+            opacity: 0.5;
+            text-decoration: none;
+        }
+    }
+
+    h4 {
+        margin-top: 0;
+    }
+
+    ul {
+        li {
+            padding-bottom: 10px;
+        }
+    }
+
+    .copyright {
+        margin-top: 30px;
+    }
+
+    .social {
+        .list-inline {
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-end;
+
+            li {
+                margin: 0 5px;
+            }
+
+            a {
+                display: block;
+            }
+
+            i {
+                font-size: 30px;
+
+                &.discourse-logo {
+                    height: 30px;
+                    width: 30px;
+
+                    &:before {
+                        background-size: 30px 30px;
+                        background: url('./../images/discourse-logo.svg') no-repeat center top;
+                        content: '';
+                        display: block;
+                        height: 30px;
+                        width: 30px;
+                    }
+
+                }
+            }
+        }
+    }
+}

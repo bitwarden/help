@@ -1,0 +1,13 @@
+nav.navbar-dark {
+    background: $primary;
+
+    .navbar-nav {
+        .nav-link {
+            color: #fff;
+
+            &:hover {
+                opacity: 0.75;
+            }
+        }
+    }
+}

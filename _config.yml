@@ -6,6 +6,7 @@ port: 4009
 main_baseurl: https://bitwarden.com
 
 sass:
+  sass_dir: ./_scss
   style: compressed
 
 exclude:
@@ -29,4 +30,4 @@ collections:
     permalink: /article/:name/
 
 plugins:
-  - jekyll-redirect-from 
+  - jekyll-redirect-from

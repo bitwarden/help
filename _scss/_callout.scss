@@ -1,0 +1,63 @@
+.alert,
+.callout {
+    p, ul, ol {
+        margin-bottom: 12.5px;
+    }
+
+    p:last-child, ul:last-child, ol:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.callout {
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid $border-color;
+    border-left-width: 5px;
+    border-radius: $border-radius;
+    background-color: #fafafa;
+
+    h5 {
+        margin-top: 0 !important;
+    }
+
+    &.callout-primary, &.callout-info {
+        border-left-color: $primary;
+
+        h5 {
+            color: $primary;
+        }
+    }
+
+    &.callout-default {
+        border-left-color: $gray-300;
+
+        h5 {
+            color: $gray-300;
+        }
+    }
+
+    &.callout-danger {
+        border-left-color: $danger;
+
+        h5 {
+            color: $danger;
+        }
+    }
+
+    &.callout-success {
+        border-left-color: $success;
+
+        h5 {
+            color: $success;
+        }
+    }
+
+    &.callout-warning {
+        border-left-color: $warning;
+
+        h5 {
+            color: $warning;
+        }
+    }
+}
