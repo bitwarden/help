@@ -17,7 +17,7 @@ The Public API is compatible with the OpenAPI Specification (OAS3) and publishes
 - For Self-hosted instances: https://your.domain.com/api/docs/
 
 {% note %}
-Access to the Bitwarden Public API is available customers on the following plans, **Classic 2019 Enterprise Organizations**, current **Enterprise Organizations**, and current **Teams Organizations**. For more information, see [About Bitwarden Plans](https://bitwarden.com/help/article/about-bitwarden-plans/#compare-the-plans-1).
+Access to the Bitwarden Public API is available for customers on the following plans, **Classic 2019 Enterprise Organizations**, current **Enterprise Organizations**, and current **Teams Organizations**. For more information, see [About Bitwarden Plans](https://bitwarden.com/help/article/about-bitwarden-plans/#compare-the-plans-1).
 {% endnote %}
 
 ### In This Article
@@ -47,7 +47,7 @@ For Self-hosted, `https://your.domain.com/identity/connect/token`.
 
 The API uses bearer access tokens to authenticate with protected API endpoints. Bitwarden uses an [OAuth2 Client Credentials](https://www.oauth.com/oauth2-servers/access-tokens/client-credentials/){:target="_blank"} application request flow to grant bearer access tokens from the endpoint.
 
-Authentication requests take `client_id` and `client_secret` as required parameters. `client_id` and `client_secret` can be obtained from the Web Vault by navigating to the **Settings** tab &rarr; **My Organization** and scrolling down to the **API Key** section.
+Authentication requests take `client_id` and `client_secret` as required parameters. `client_id` and `client_secret` can be obtained by an **Owner** from the Web Vault by navigating to the **Settings** tab &rarr; **My Organization** and scrolling down to the **API Key** section.
 
 {% warning %}
 Your API key enables full access to your Organization. Keep your API key private. If you believe your API key has been compromised, select the **Rotate API Key** button on this screen. Active uses of your current API key will need to be reconfigured with the new key before use.
