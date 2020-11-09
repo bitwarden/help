@@ -9,18 +9,6 @@ tags: [hosting, docker, install, deploy]
 
 This article will walk you through how to install and deploy Bitwarden to your own server. Because Bitwarden is a cross platform application, you can install and deploy it on Linux, macOS, and Windows machines.
 
-## Table of Contents
-
-- [TL;DR](#tldr)
-- [System Requirements](#recommended-minimum-system-requirements)
-- [Configure Your Domain](#configure-your-domain)
-- [Install Docker](#install-docker)
-- [Install Bitwarden](#install-bitwarden)
-- [Post-install Environment Configuration](#post-install-environment-configuration)
-- [Start Bitwarden](#start-bitwarden)
-- [Script Commands](#script-commands)
-- [Manual Docker Installations](#manual-docker-installations)
-
 ## TL;DR
 
 1. Set DNS records for a domain name pointing to your machine. Open ports 80 and 443 on the machine.
@@ -78,9 +66,9 @@ See the following official Docker documentation for more information:
 - [Install Docker](https://docs.docker.com/engine/installation/){:target="_blank"}
 - [Install Docker Compose](https://docs.docker.com/compose/install/){:target="_blank"}
 
-{% note %}
+{% callout info %}
 Some Docker installations such as Windows and macOS already come with Docker Compose installed.
-{% endnote %}
+{% endcallout %}
 
 For reference, you can find the official Bitwarden images hosted on Docker Hub at [https://hub.docker.com/u/bitwarden/](https://hub.docker.com/u/bitwarden/){:target="_blank"}.
 
@@ -90,7 +78,7 @@ We've made installing Bitwarden very simple. Depending on your environment (non-
 
 1. Download the main Bitwarden script to your machine in the desired location:
 
-    {% note %}All Bitwarden assets will be installed in the `./bwdata` directory relative to where the main Bitwarden script resides.{% endnote %}
+    {% callout info %}All Bitwarden assets will be installed in the `./bwdata` directory relative to where the main Bitwarden script resides.{% endcallout %}
 
     {% icon fa-linux %} {% icon fa-apple %} Bash
 
@@ -178,9 +166,9 @@ If you plan to use YubiKeys for two-step login, you can get your YubiKey client 
 
 Once you've completed installing and configuring your Bitwarden installation you can start it up:
 
-{% note %}
+{% callout info %}
 The first time you start Bitwarden it may take some time as it downloads all of the images from Docker Hub.
-{% endnote %}
+{% endcallout %}
 
 {% icon fa-linux %} {% icon fa-apple %} Bash
 
@@ -202,9 +190,9 @@ Congratulations! Bitwarden is now up and running at `https://your.domain.com`. V
 
 The Bitwarden main script (`bitwarden.sh` or `bitwarden.ps1`) has the following commands available:
 
-{% note %}
+{% callout info %}
 PowerShell users will run the commands with a prefixed `-` (switch). For example `.\bitwarden.ps1 -start`.
-{% endnote %}
+{% endcallout %}
 
 {% table %}
 
@@ -228,11 +216,11 @@ PowerShell users will run the commands with a prefixed `-` (switch). For example
 
 Using the provided installation script is the recommended approach for most users, however, you can also install and configure Bitwarden manually using Docker and Docker Compose. A manual installation may be appropriate if you are intimately familiar with Docker technologies and desire more control over your Bitwarden installation. A manual installation follows most of the same steps that the installation script performs for you automatically.
 
-{% warning %}
+{% callout warning %}
 Manual installations are for advanced users only.
 
 Manual installations lose the ability to automatically update certain dependencies of the Bitwarden installation. As you upgrade from one version of Bitwarden to the next you will be responsible for changes to required environment variables, changes to nginx `default.conf`, changes to `docker-compose.yml`, etc. We will try to highlight these in the [release notes on GitHub](https://github.com/bitwarden/server/releases){:target="_blank"}. You can also monitor changes to the [dependency templates](https://github.com/bitwarden/server/tree/master/util/Setup/Templates){:target="_blank"} used by the Bitwarden installation script on GitHub.
-{% endwarning %}
+{% endcallout %}
 
 1. Download a stubbed version of Bitwarden's dependencies (`docker-stub.zip`) from the [releases pages on GitHub](https://github.com/bitwarden/server/releases){:target="_blank"}.
 2. Create a new directory named `bwdata` and extract the `docker-stub.zip` archive to it. The directory structure provided matches what the `./docker/docker-compose.yml` file's mapped volumes expect, however, you are free to change the location of these mappings on the host machine if desired.
@@ -250,7 +238,7 @@ Manual installations lose the ability to automatically update certain dependenci
     Make sure that you provide your `IDENTITY_CERT_PASSWORD` to the application's environment variables at `./env/global.override.env`.
 6. Copy your SSL certificate and keys to the `./ssl` directory. By default, this directory is mapped to the nginx container at `/etc/ssl`. The `./nginx/default.conf` can be adjusted to utilize these certificates as desired.
 
-    {% note %}Accessing the Bitwarden web vault and APIs via HTTPS is required. You should provide a trusted SSL certificate to the nginx container or front the installation with a proxy that provides a HTTPS endpoint to Bitwarden client applications.{% endnote %}
+    {% callout info %}Accessing the Bitwarden web vault and APIs via HTTPS is required. You should provide a trusted SSL certificate to the nginx container or front the installation with a proxy that provides a HTTPS endpoint to Bitwarden client applications.{% endcallout %}
 
     Example self-signed certificate:
 

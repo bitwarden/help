@@ -1,10 +1,2 @@
-<h3><i class="fa fa-list-alt"></i> Categories</h3>
-<ul class="section-nav">
-    {% for category in site.categories %}
-    {% if category.hidden != true %}
-    <li class="toc-entry toc-h2">
-        <a href="{{site.baseurl}}{{category.url}}">{{category.title}}</a>
-    </li>
-    {% endif %}
-    {% endfor %}
-</ul>
+<strong>Contents</strong>
+<ul class="section-nav toc-nav"></ul>

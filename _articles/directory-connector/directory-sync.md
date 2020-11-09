@@ -18,9 +18,9 @@ The following directories are supported:
 - Okta
 - OneLogin
 
-{% note %}
+{% callout info %}
 Directory sync is only available to Teams and Enterprise organizations.
-{% endnote %}
+{% endcallout %}
 
 ## Bitwarden Directory Connector Application
 
@@ -29,34 +29,6 @@ The Bitwarden Directory Connector is cross-platform desktop application that all
 You can install and run Directory Connector as an agent on the server that hosts your directory, an administrator's workstation, or any other desktop device that can access the directory.
 
 {% image directory-connector/app.png %}
-
-## Table of Contents
-
-- [Download and Install](#download-and-install)
-- [Configure environment](#configure-environment)
-- [Log in to your Bitwarden organization account](#log-in-to-your-bitwarden-organization-account)
-- [Configure the directory connection](#configure-the-directory-connection)
-- [Configure sync options](#configure-sync-options)
-- [Test a sync](#test-a-sync)
-- [Perform a manual sync](#perform-a-manual-sync)
-- [Sync automatically](#sync-automatically)
-- [Clear sync cache](#clear-sync-cache)
-- [Command-line Interface](#command-line-interface)
-  * [Quick Start](#quick-start)
-  * [Download and Install](#download-and-install-1)
-  * [Shared Data](#shared-data)
-  * [Secret Storage](#secret-storage)
-  * [Explore the CLI](#explore-the-cli)
-  * [Test Command](#test-command)
-  * [Sync Command](#sync-command)
-  * [Last Sync Command](#last-sync-command)
-  * [Config Command](#config-command)
-  * [Data File Command](#data-file-command)
-  * [Clear Cache Command](#clear-cache-command)
-  * [Update Command](#update-command)
-  * [Version Option](#version-option)
-  * [Enums](#enums)
-- [Source code](#source-code)
 
 ## Download and Install
 
@@ -108,11 +80,11 @@ By default the Directory Connector communicates with the Bitwarden public cloud 
 2. Go to the **Settings** tab.
 3. Set each configuration setting from the **Sync** section. Some settings are dependent on the **Type** of directory you have configured.
 
-{% note %}
+{% callout info %}
 The syntax for user and group filters is different for each type of directory. Learn more about how user and group filters work in the following article:
 
 - [Configuring user and group sync filters]({% link _articles/directory-connector/user-group-filters.md %})
-{% endnote %}
+{% endcallout %}
 
 ## Test a sync
 
@@ -164,13 +136,13 @@ A command-line interface (CLI) tool is also available to connect to and sync you
 
 See the [download and install](#download-and-install) section above for links to download the CLI executable for your platform.
 
-{% note %}
+{% callout info %}
 When extracting the zip, make sure that the included `keytar.node` dependency remains in the same directory as the main `bwdc` executable.
 
 Linux users must have `libsecret` installed, which is usually already available on most systems. Example:
 
     apt-get install libsecret-1-0
-{% endnote %}
+{% endcallout %}
 
 ### Shared Data
 
@@ -199,9 +171,9 @@ If a secure storage environment is not available, you can configure the Director
 
 With plaintext storage enabled, you can then configure all settings directly, in plaintext, from the `data.json` database file.
 
-{% note %}
+{% callout info %}
 Plaintext storage of secrets is not compatible with the Directory Connector desktop application. You should only use the Directory Connector CLI with plaintext storage of secrets.
-{% endnote %}
+{% endcallout %}
 
 ### Explore the CLI
 
@@ -256,9 +228,9 @@ You can also use the `config` command to set parameters that require secure stor
 
 Additional configuration settings can be modified in the Bitwarden Directory Connector desktop application or by editing the `data.json` database file directly in your favorite text editor. [Read more about shared data](#shared-data).
 
-{% note %}
+{% callout info %}
 You should avoid opening or modifying the `data.json` database file while the Directory Connector desktop application or CLI executable is running.
-{% endnote %}
+{% endcallout %}
 
 ### Data File Command
 
@@ -282,9 +254,9 @@ The `update` command allows you to check if your Directory Connector CLI is up t
 
 A URL to download a new version of the CLI executable will be returned to you.
 
-{% note %}
+{% callout info %}
 If you are also using the Directory Connector desktop application, it is important that you keep them both up to date and that their versions match. Running two different versions of the Directory Connector desktop application and Directory Connector CLI may cause unexpected issues.
-{% endnote %}
+{% endcallout %}
 
 ### Version Option
 
@@ -308,9 +280,9 @@ If you receive an error message referring to the libsecret shared object `Error:
 | Email         | 1     |
 | Yubikey       | 3     |
 
-{% note %}
+{% callout info %}
 Other two-step login methods such as FIDO U2F and Duo are not supported by the CLI.
-{% endnote %}
+{% endcallout %}
 
 ## Source code
 

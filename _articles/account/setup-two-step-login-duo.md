@@ -35,9 +35,9 @@ It is recommended to install the free [Duo Mobile](https://duo.com/product/trust
 
 ## Enable Two-step Login with Duo
 
-{% warning %}
+{% callout warning %}
 Two-step login can permanently lock you out of your account. It is very important that you write down and keep your [two-step login recovery code]({% link _articles/account/lost-two-step-device.md %}) in a safe place in the event that you lose access to your normal two-step login methods.
-{% endwarning %}
+{% endcallout %}
 
 1. Log in to the web vault at <https://vault.bitwarden.com>.
 2. Depending on your account type:

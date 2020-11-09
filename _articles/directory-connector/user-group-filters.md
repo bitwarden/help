@@ -12,13 +12,6 @@ You can configure the Bitwarden Directory Connector application to use filters t
 
 The syntax for filtering is different for each directory server type and is covered in detail below.
 
-## Table of Contents
-
-- [Active Directory and Other LDAP Directories](#active-directory-and-other-ldap-directories)
-- [Azure Active Directory](#azure-active-directory)
-- [G Suite](#g-suite)
-- [Okta](#okta)
-
 ## Active Directory and Other LDAP Directories
 
 The group and user filters can be in the form of any LDAP compatible search filter. Additionally, Active Directory provides a few more advanced options as well as a few limitations when writing search filters as opposed to other more standard LDAP directories. You can read more about writing LDAP search filters here: <https://msdn.microsoft.com/en-us/library/windows/desktop/aa746475(v=vs.85).aspx>
@@ -31,9 +24,9 @@ Search for all entries that have objectClass=user AND cn that contains the word 
 (&(objectClass=user)(cn=*Marketing*))
 ```
 
-{% note %}
+{% callout info %}
 Active Directory does not implement extensible matching, the following examples won't work with it.
-{% endnote %}
+{% endcallout %}
 
 Find entries with an OU component of their DN which is either 'Miami' or 'Orlando'.
 
@@ -47,9 +40,9 @@ To exclude entities which match an expression, use '!'. Find all Chicago entries
 (&(ou:dn:=Chicago)(!(ou:dn:=Wrigleyville)))
 ```
 
-{% note %}
+{% callout info %}
 The following examples are written for Active Directory. In order to use them for something such as OpenLDAP the attributes will need to be changed.
-{% endnote %}
+{% endcallout %}
 
 Users in the 'Heroes' group
 
@@ -71,9 +64,9 @@ The Microsoft Graph API does not provide a way to filter groups and users direct
 
 #### Groups
 
-{% note %}
+{% callout info %}
 If you are filtering groups your user filter will only apply to users from the groups returned.
-{% endnote %}
+{% endcallout %}
 
 ```
 include:Group A,Sales People,My Other Group
@@ -111,9 +104,9 @@ excludeGroup:97b9ff2a-7d4f-463d-a925-efb1677fd40d
 
 The G Suite APIs do not provide a way to filter groups directly, however, you can use our custom filtering syntax that allows you to exclude or include a comma separated list of group names.
 
-{% note %}
+{% callout info %}
 If you are filtering groups your user filter will only apply to users from the groups returned.
-{% endnote %}
+{% endcallout %}
 
 #### Examples
 

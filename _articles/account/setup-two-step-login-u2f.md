@@ -9,20 +9,20 @@ tags: [two-step login, 2fa, two factor authentication, account, u2f, fido]
 
 Bitwarden supports two-step login via [FIDO U2F](https://www.yubico.com/solutions/fido-u2f/){:target="_blank"}. Any FIDO U2F certified device will work. We recommend a [YubiKey](https://www.yubico.com/products/yubikey-hardware/){:target="_blank"}.
 
-{% note %}
+{% callout info %}
 Due to platform limitations, FIDO U2F cannot be used on all Bitwarden applications. You should enable another two-step login provider so that you can access your account when FIDO U2F cannot be used.
 
 Supported platforms:
 
 - Web vault on a desktop/laptop with a U2F enabled browser (Chrome, Opera, Vivaldi, or [Firefox with FIDO U2F enabled](https://www.yubico.com/2017/11/how-to-navigate-fido-u2f-in-firefox-quantum/){:target="_blank"}).
 - Browser extensions on Chrome, Opera, Vivaldi, or [Firefox with FIDO U2F enabled](https://www.yubico.com/2017/11/how-to-navigate-fido-u2f-in-firefox-quantum/){:target="_blank"}.
-{% endnote %}
+{% endcallout %}
 
 ## Enable Two-step Login with FIDO U2F
 
-{% warning %}
+{% callout warning %}
 Two-step login can permanently lock you out of your account. It is very important that you write down and keep your [two-step login recovery code]({% link _articles/account/lost-two-step-device.md %}) in a safe place in the event that you lose access to your FIDO U2F security key.
-{% endwarning %}
+{% endcallout %}
 
 1. Log in to the web vault at <https://vault.bitwarden.com>
 2. Click **Settings** in the top navigation bar, then click **Two-step Login** from the side menu.

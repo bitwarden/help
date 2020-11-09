@@ -10,12 +10,6 @@ order: 04
 
 This article will guide you through the steps required to configure Login with SSO for OpenID Connect (OIDC) authentication.
 
-### In This Article
-
-- [Step 1: Enabling Login with SSO](#step-1-enabling-login-with-sso)
-- [Step 2: Configure Your IdP](#step-2-configure-your-idp)
-- [Step 3: Open ID Connect Configuration](#step-3-openid-connect-configuration)
-
 ## Step 1: Enabling Login with SSO
 
 Complete the following steps to enable Login with SSO for OIDC authentication:

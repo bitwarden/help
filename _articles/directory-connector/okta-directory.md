@@ -16,12 +16,6 @@ This article will cover how to connect the Bitwarden Directory Connector applica
 - Install Bitwarden Directory Connector
 - Using Directory Connector, log into your Bitwarden account and select your enterprise organization
 
-## Table of Contents
-
-- [Create an API token](#create-an-api-token)
-- [Configure Directory Connector](#configure-directory-connector)
-- [Testing](#testing)
-
 ## Create an API token
 
 1. Log into your Okta Developer Console

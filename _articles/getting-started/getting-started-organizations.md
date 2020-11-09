@@ -35,7 +35,7 @@ If you would like to try it out, Bitwarden has a free account for individuals, a
 
 This tutorial walks you through the setup for two basic accounts and sharing in an Organization.
 
-{% note %} The free two-user organization is only available in Bitwarden Cloud. {% endnote %}
+{% callout %} The free two-user organization is only available in Bitwarden Cloud. {% endcallout %}
 
 ### What are Organizations?
 
@@ -69,9 +69,9 @@ For the purpose of this tutorial, we'll focus on the Web Vault.
 
 Create the first account by starting at <https://vault.bitwarden.com>. Pick a strong master password and write it down in a safe place.
 
-{% warning %}
+{% callout warning %}
 The Bitwarden security model does not support master password recovery. You can read more in the help article [I forgot my master password]({% link _articles/account/forgot-master-password.md %})
-{% endwarning %}
+{% endcallout %}
 
 {% image organizations/orgstart/1-create-account-user-1.png Create account for user 1 %}
 
@@ -79,9 +79,9 @@ The Bitwarden security model does not support master password recovery. You can 
 
 After you create the account and log in, you will want to verify your email.
 
-{% note %}
+{% callout %}
 Reminder: You will also want to make sure your master password is written down and in a safe place where you can find it.
-{% endnote %}
+{% endcallout %}
 
 {% image organizations/orgstart/2-verify-email.png Verify your email %}
 
