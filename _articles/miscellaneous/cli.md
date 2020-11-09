@@ -121,7 +121,7 @@ where `<method>` is your Two-step Login method (see [Enums](#enums)), and `<code
 ```
 bw login --apiKey
 ```
-where `--apiKey` will prompt you to enter your `client_id` and `client_secret`. For more information, see [Personal API Key for CLI Authentication](https://bitwarden.com/help/article/personal-api-key/).
+where `--apiKey` will prompt you to enter your personal `client_id` and `client_secret`. For more information, see [Personal API Key for CLI Authentication](https://bitwarden.com/help/article/personal-api-key/).
 ```
 bw login --sso
 ```
