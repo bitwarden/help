@@ -16,9 +16,9 @@ As the system administrator of your Bitwarden installation you can use the **Adm
 - Browse all organizations and information about them
 - Delete organizations
 
-{% note %}
+{% callout info %}
 Admins cannot globally view sensitive data that is protected (encrypted) in a user's or organization's vault.
-{% endnote %}
+{% endcallout %}
 
 The admin portal for your installation is available at https://bitwarden.example.com/admin.
 
@@ -40,6 +40,6 @@ adminSettings__admins=
 
 The admin portal uses a secure means of *passwordless authentication*. When a user attempts to log into the admin portal a secure link is sent to their email address. The user can click this temporary link to continue logging into the admin portal. The authentication link is active for up to **15 minutes** following the log in attempt.
 
-{% note %}
+{% callout info %}
 Since the admin portal uses email to provide secure links for authentication, you need to [configure your installation's SMTP mail settings]({% link _articles/hosting/install-on-premise.md %}) prior to attempting to log into the admin portal.
-{% endnote %}
+{% endcallout %}

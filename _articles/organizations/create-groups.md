@@ -10,15 +10,9 @@ order: 06
 
 This article will guide you through the process of setting up your first Group. For more information about Groups, see [About Groups](https://bitwarden.com/help/article/about-groups/).
 
-{% note %}
+{% callout info %}
 Groups are currently available to Teams Organizations and Enterprise Organizations.
-{% endnote %}
-
-### In This Article
-- [Create a Group](#create-a-group)
-- [Assign Users to a Group](#assign-users-to-a-group)
-- [View Users in a Group](#view-users-in-a-group)
-- [Associate Groups to Collections](#associate-groups-to-collections)
+{% endcallout %}
 
 ## Create a Group
 

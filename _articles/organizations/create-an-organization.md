@@ -29,8 +29,8 @@ Complete the following steps to create an Organization:
    {%image /organizations/new-org-button-overlay.png Select New Organization %}
 3. On the New Organization screen, enter an **Organization Name** for your new Organization and the **Billing Email** we can reach you at.
 
-    {% note %}Paid Organizations (Families, Teams, or Enterprise) have a 7 Day Free Trial built in. We won't charge you until your trial is over. You can cancel your subscription at any time in the **Settings** tab of your Organization.
-    {% endnote %}
+    {% callout info %}Paid Organizations (Families, Teams, or Enterprise) have a 7 Day Free Trial built in. We won't charge you until your trial is over. You can cancel your subscription at any time in the **Settings** tab of your Organization.
+    {% endcallout %}
 4. If you're creating an Organization on behalf of a business:
    - Check the **This account is owned by a business** checkbox.
    - Provide your **Business Name**.
@@ -42,8 +42,8 @@ Complete the following steps to create an Organization:
    - **Teams:** For businesses and other team organizations. [**Learn more.**](https://bitwarden.com/help/article/about-bitwarden-plans/#teams-organizations)
    - **Enterprise:** For businesses and other large organizations. [**Learn more.**](https://bitwarden.com/help/article/about-bitwarden-plans/#enterprise-organizations)
 
-   {% note %}Paid Organizations (Families, Teams, or Enterprise) include premium features for all enrolled users. For more information about premium features, see [About Bitwarden Plans](https://bitwarden.com/help/article/about-bitwarden-plans/#compare-the-plans).
-   {% endnote %}
+   {% callout info %}Paid Organizations (Families, Teams, or Enterprise) include premium features for all enrolled users. For more information about premium features, see [About Bitwarden Plans](https://bitwarden.com/help/article/about-bitwarden-plans/#compare-the-plans).
+   {% endcallout %}
 6. If you selected a Paid Organization, enter the following information:
    - For **Teams** or **Enterprise**, enter the number of **User Seats** you need. You can add additional seats later if required.
    - For **Families**, **Teams**, or **Enterprise**, enter the amount of **Additional Storage (GB)** you need. You plan comes with 1 GB of shared encrypted file storage, and you can add additional storage later if needed.

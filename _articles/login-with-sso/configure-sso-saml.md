@@ -9,16 +9,6 @@ order: 03
 ---
 This article will guide you through the steps required to configure Login with SSO for SAML 2.0 authentication.
 
-### In This Article
-
-- [Step 1: Enabling Login with SSO](#step-1-enabling-login-with-sso)
-- [Step 2: Provider Configuration](#step-2-service-provider-configuration)
-- [Step 3: Configure Your IdP](#step-3-configure-your-idp)
-- [Step 4: Identity Provider Configuration](#step-4-identity-provider-configuration)
-- [Field Mappings Reference](#field-mappings-reference)
-  - [For Service Provider Configuration](#for-service-provider-configuration)
-  - [For Identity Provider Configuration](#for-identity-provider-configuration)
-
 ## Step 1: Enabling Login with SSO
 
 Complete the following steps to enable Login with SSO for SAML 2.0 authentication:
@@ -131,9 +121,9 @@ SSO URL issued by your IdP.
 
 SLO URL issued by your IdP.
 
-{% note %}
+{% callout info %}
 Login with SSO currently **does not** support SLO. This option is planned for future use, however we strongly recommend pre-configuring this field.
-{% endnote %}
+{% endcallout %}
 
 ### Artifact Resolution Service URL (*Required if Binding Type is Artifact*)
 
@@ -143,9 +133,9 @@ URL used for the Artifact Resolution Protocol.
 
 The X.509 Base-64 encoded certificate body. Do not include the `-----BEGIN CERTIFICATE-----` and `-----END CERTIFICATE-----` lines or portions of the CER/PEM formatted certificate.
 
-{%warning%}
+{% callout warning %}
 Extra spaces, carriage returns, and other extraneous characters inside this field will cause certificate validation failure. Copy **only** the certificate data into this field.
-{%endwarning%}
+{% endcallout %}
 
 ### Outbound Signing Algorithm
 Encryption method used by the SAML assertion. Options include:
@@ -156,14 +146,14 @@ Encryption method used by the SAML assertion. Options include:
 
 ### Allow Unsolicited Authentication response
 
-{% note %}
+{% callout info %}
 Login with SSO currently **does not** support unsolicited (IdP-Initiated) SSO assertions. This checkbox is planned for future use.
-{% endnote %}
+{% endcallout %}
 
 ### Disable Outbound Logout requests
-{% note %}
+{% callout info %}
 Login with SSO currently **does not** support SLO. This option is planned for future use, however we strongly recommend pre-configuring this field.
-{% endnote %}
+{% endcallout %}
 
 ### Want Authentication Requests Signed
 Check this checkbox if your IdP should expect SAML requests from Bitwarden to be signed.

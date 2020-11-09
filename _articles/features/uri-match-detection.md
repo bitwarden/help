@@ -18,9 +18,9 @@ The scheme can also have special meaning in Bitwarden:
 - **`http://`** or **`https://`** tells Bitwarden that this is a website address. Example: `https://www.google.com`
 - **`androidapp://`** tells Bitwarden that this is an android application package ID (or package name). Example: `androidapp://com.twitter.android`. Android apps typically follow [reverse domain name notation](https://en.wikipedia.org/wiki/Reverse_domain_name_notation){:target="_blank"}.
 
-{% note %}
+{% callout info %}
 If a URI omits the scheme, `http://` is assumed.
-{% endnote %}
+{% endcallout %}
 
 ## Match detection options
 
@@ -30,9 +30,9 @@ While editing a login you can adjust the match detection value for a given URI b
 
 The following match detection options are available:
 
-{% note %}
+{% callout info %}
 **Base domain** is the default URI match detection value for all URIs. You can adjust this default value under **Settings** &rarr; **Options**.
-{% endnote %}
+{% endcallout %}
 
 **Base domain**
 
@@ -56,7 +56,7 @@ Example:
 
 **Starts with**
 
-The "starts with" option requires that the current website/application URI must *start with* the value defined in the URI. A URI with a value of `https://sub.domain.com/path/page.html?query=123` starts with 
+The "starts with" option requires that the current website/application URI must *start with* the value defined in the URI. A URI with a value of `https://sub.domain.com/path/page.html?query=123` starts with
 `https://sub.domain.com/path/`.
 
 Example:
@@ -67,9 +67,9 @@ Example:
 
 **Regular expression**
 
-{% warning %}
+{% callout warning %}
 Regular expressions are an advanced option and can be quite dangerous if used incorrectly. You should not use this option if you do not know exactly what you are doing.
-{% endwarning %}
+{% endcallout %}
 
 The regular expression option allows you to write any simple or complex [regular expression](https://en.wikipedia.org/wiki/Regular_expression){:target="_blank"} to match the current website/application URI. All regular expressions are case *insensitive*.
 

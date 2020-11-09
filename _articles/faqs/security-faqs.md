@@ -8,22 +8,6 @@ hidden: false
 tags: []
 ---
 
-## Table of Contents
-
-- [Compliance General](#compliance-general)
-  * [Current Certifications](#current-certifications)
-  * [GDPR](#gdpr)
-  * [SOC Certifications](#soc-certifications)
-- [Desktop Electron Backdoor Concern](#desktop-electron-backdoor-concern)
-- [Duo MFA / 2FA / Two-step Login Requirement](#duo-mfa-2fa-two-step-login-requirement)
-- [New Device Not Recognized](#new-device-not-recognized)
-- [Master Password Stored Locally?](#master-password-stored-locally)
-- [Third party scripts, libraries, and services](#third-party-scripts-libraries-and-services)
-- [Security General (Whitepaper, Audit report, etc.)](#security-general-whitepaper-audit-report-etc)
-- [Self-signed Certificate Setup, On-premises/self-hosted](#self-signed-certificate-setup-on-premisesself-hosted)
-- [Web Browser Extension Security/Safety Concern](#web-browser-extension-securitysafety-concern)
-- [Web Browser Permission Request](#web-browser-permission-request)
-
 ## Compliance General
 
 ### Current Certifications
@@ -65,8 +49,8 @@ Currently, we load third-party payment scripts from Stripe and PayPal on payment
 
 ## Security General (Whitepaper, Audit report, etc.)
 
-- Assessment Report: [Available here](https://cdn.bitwarden.net/misc/Bitwarden%20Security%20Assessment%20Report.pdf)     
-- Additional Reading (Security):  <https://help.bitwarden.com/security/>     
+- Assessment Report: [Available here](https://cdn.bitwarden.net/misc/Bitwarden%20Security%20Assessment%20Report.pdf)
+- Additional Reading (Security):  <https://help.bitwarden.com/security/>
 - HackerOne:   <https://hackerone.com/bitwarden>
 - GitHub Project:  <https://github.com/bitwarden>
 

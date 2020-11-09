@@ -11,23 +11,17 @@ This article will guide you through the process of inviting or removing users fr
 
 Teams and Enterprise Organizations can sync Bitwarden to an existing user directory to automatically add or remove new users using the **Bitwarden Directory Connector**. For more information, see [Syncing users and groups with a directory](https://bitwarden.com/help/article/directory-sync/).
 
-{% note %}
+{% callout info %}
 **Free** Organizations and **Families** Organizations have a maximum number of users; 2 and 6 respectively.
 
 **Teams** Organizations and **Enterprise** Organizations must ensure that there are available users seats for their account before inviting users. For more information, see [Add or Remove User Seats for your Organization](https://bitwarden.com/help/article/user-seats/).
-{% endnote %}
-
-### In This Article
-- [Invite Users](#add-users)
-  - [Invited Users](#invited-users)
-  - [Confirm Invited Users](#confirm-invited-users)
-- [Remove Users](#remove-users)
+{% endcallout %}
 
 ## Invite Users
 
-{% warning %}
+{% callout warning %}
 **For Enterprise Organizations**, Bitwarden recommends configuring Enterprise Policies prior to inviting users to ensure compliance on-entrance to your Organization. For more information, see [Enterprise Policies](https://bitwarden.com/help/article/policies/).
-{% endwarning %}
+{% endcallout %}
 
 Complete the following steps to invite users to your Organization:
 

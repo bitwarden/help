@@ -9,9 +9,9 @@ tags: [account, delete]
 
 Your account can only be deleted from the [web vault](https://vault.bitwarden.com). Deleting your Bitwarden account permanently deletes your account and all data that is associated with it. Bitwarden does not "soft delete" any data.
 
-{% warning %}
+{% callout warning %}
 This action is permanent and cannot be undone.
-{% endwarning %}
+{% endcallout %}
 
 1. Log in to the web vault at <https://vault.bitwarden.com>
 2. Click **Settings** in the top navigation bar

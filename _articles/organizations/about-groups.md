@@ -14,9 +14,9 @@ redirect_from:
 
 Groups are structures used by Organizations to together individual users, and provide a scalable way to assign access (including assigning Collections) by configuring Access Controls at the Group-level instead of at the individual-level.
 
-{% note %}
+{% callout info %}
 Groups are currently available to Teams Organizations and Enterprise Organizations.
-{% endnote %}
+{% endcallout %}
 
 When onboarding new users, add them to a Group to have them automatically inherit that Group's Access Controls configuration.
 

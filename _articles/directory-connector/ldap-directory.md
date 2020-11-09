@@ -56,9 +56,9 @@ The following directory configuration options can be set:
 2. Go to the **Settings** tab.
 3. Configure the appropriate **Sync** settings for your Active Directory or LDAP server.
 
-{% note %}
+{% callout info %}
 If you are using Active Directory, many of these settings are predetermined for you and are therefore are not shown.
-{% endnote %}
+{% endcallout %}
 
 {% table %}
 

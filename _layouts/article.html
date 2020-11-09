@@ -8,6 +8,7 @@ layout: default
     <i class="fa fa-file-text-o"></i>
     {{page.title}}
 </h1>
+
 <div class="breadcrumb">
     {{ catSize | pluralize: 'Category', 'Categories' }}:&nbsp;
     {% for category in site.categories %}
@@ -21,6 +22,10 @@ layout: default
 
 <div class="card article-card">
     <div class="card-body">
+        <div class="d-xl-none bd-toc">
+            {% include toc.html %}
+        </div>
+
         {{content}}
     </div>
     {% assign tags_size = page.tags | size %}

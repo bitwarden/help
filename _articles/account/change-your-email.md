@@ -9,9 +9,9 @@ tags: [account, email]
 
 Your email address can only be changed from the [web vault](https://vault.bitwarden.com).
 
-{% warning %}
+{% callout warning %}
 Changing your email address will log you out of all Bitwarden applications.
-{% endwarning %}
+{% endcallout %}
 
 1. Log in to the web vault at <https://vault.bitwarden.com>
 2. Click **Settings** in the top navigation bar
@@ -23,6 +23,6 @@ Changing your email address will log you out of all Bitwarden applications.
 8. Log back in to confirm that you can log in using the new email
 9. Log out and back in to any other Bitwarden applications that you are using. You will eventually be logged out automatically.
 
-{% note %}
+{% callout info %}
 If you have not receive the verification code from Bitwarden after a few minutes, please check your spam folder to see if the message got filtered by mistake. Adding "no-reply@bitwarden.com" to your contacts and whitelist the same domain may help to ensure delivery.
-{% endnote %}
+{% endcallout %}

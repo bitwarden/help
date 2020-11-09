@@ -17,10 +17,10 @@ The following [uMatrix rule](https://github.com/gorhill/uMatrix/wiki/Rules-synta
 dc8ef5f6-eb0d-4c87-9e9f-0cf803f619e8.moz-extension-scheme bitwarden.com xhr allow
 ```
 
-{% note %}
+{% callout info %}
 The UUID included in the above rule (`dc8ef5f6-eb0d-4c87-9e9f-0cf803f619e8`) will be different for your installation.
 Use the `about:debugging#/runtime/this-firefox` page (navigate from Firefox's address bar) to locate your Bitwarden extension UUID.
-{% endnote %}
+{% endcallout %}
 
 ## NoScript
 

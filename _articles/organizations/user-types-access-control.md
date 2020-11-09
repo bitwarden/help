@@ -12,11 +12,6 @@ Users in Bitwarden Organizations can be granted a variety of User Types and Acce
 
 You can designate User Type and Access Control when you invite users to your Organization (see [Add or Remove Users From Your Organization](https://bitwarden.com/help/article/managing-users/)), or at any time from the **Manage** &rarr; **People** screen in your Organization.
 
-### In This Article
-- [User Types](#user-types)
-- [Access Control](#access-control)
-  - [Granular Access Control](#granular-access-control)
-
 ## User Types
 
 User Type determines the level of access that a user will have within your Organization. User Type is configured at the Organization level.
@@ -30,9 +25,9 @@ Options include:
 |Admin|All of the above,<br>+ Assign Users to User Groups<br>+ Create or delete User Groups<br>+ Invite and confirm new Users<br>+ Manage Enterprise Policies<br>+ View Event Logs<br>+ Export Organization Vault data<br><br>**Admin Users automatically have access to all Collections.**|
 |Owner|All of the above,<br>+ Manage Billing, Subscription, and Integrations<br><br>**Owner Users automatically have access to all Collections.**|
 
-{% warning %}
+{% callout warning %}
 **Only an Owner** can create a new Owner or assign Owner to an existing user. For failover purposes, Bitwarden recommends creating multiple Owner users.
-{% endwarning %}
+{% endcallout %}
 
 ## Access Control
 
@@ -54,9 +49,9 @@ To assign users to only selected Collections, check the checkbox to the left of 
 
 Selecting **Hide Password** prevents users from seeing or copying all passwords, TOTP seeds, or *Hidden* custom fields. Users with **Hide Passwords** active may only use items in the Collection via Auto-Fill.
 
-{% warning %}
+{% callout warning %}
 Enabling **Hide Passwords** prevents easy copy-and-paste of hidden items, however it does not completely prevent user access to this information. Treat hidden passwords as you would any shared credential.
-{% endwarning %}
+{% endcallout %}
 
 **Read Only**
 

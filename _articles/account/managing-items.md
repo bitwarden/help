@@ -7,16 +7,6 @@ popular: false
 tags: [account, items, import, delete, trash, clone]
 ---
 
-## Table of Contents
-- [About Managing Items](#about-managing-items)
-- [Adding items](#adding-items)
-- [Importing items](#importing-items)
-- [Troubleshooting Imports](#troubleshooting-imports)
-- [Import FAQs](#import-faqs)
-- [Cloning an item](#cloning-an-item)
-- [Deleting an item](#deleting-an-item)
-- [Items in the trash](#items-in-the-trash)
-
 ## About Managing Items
 
 Managing the items in your vault is key to making sure that you secure, have access to, and can share the correct information with friends, family, teams, and colleagues.
@@ -51,7 +41,7 @@ You can find more details about importing items and supported import formats [he
 **A:** The Bitwarden import tool does not perform duplicate entry detection on import. If you run an import on an existing vault, or import multiple times, your data may be duplicated.
 ### **Q:How do I clean up duplicates?**
 **A:** We recommend exporting the data from your vault into a CSV/JSON file and performing a vault purge to delete your data.
-  {% warning %} Performing a vault purge is permanent and cannot be undone. Once the vault has been emptied and the CSV/JSON file has been pruned of any duplicates, simply re-import your data.{% endwarning %}
+  {% callout warning %} Performing a vault purge is permanent and cannot be undone. Once the vault has been emptied and the CSV/JSON file has been pruned of any duplicates, simply re-import your data.{% endcallout %}
 
 ## Troubleshooting Import Errors
 
@@ -69,7 +59,7 @@ Simply select clone under the item’s action menu:
 
 {% image /manage-items/item-clone.png %}
 
-{%note%}Note - when cloning an item in an organization vault, the user must view the vault from the organization, not the user’s personal vault {%endnote%}
+{% callout info %}Note - when cloning an item in an organization vault, the user must view the vault from the organization, not the user’s personal vault {% endcallout %}
 
 ## Deleting an item
 

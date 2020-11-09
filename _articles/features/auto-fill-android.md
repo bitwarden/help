@@ -15,7 +15,7 @@ Supported Versions:
 
 ## Autofill Framework Service
 
-{% note %}The Autofill Framework Service is only available to users on Android Oreo (8.0) and greater. If you are on a version of  Android prior to Oreo (8.0) you should only use the **Auto-fill Accessibility Service** as explained further down in this article. Otherwise, you should use both services for optimal functionality.{% endnote %}
+{% callout info %}The Autofill Framework Service is only available to users on Android Oreo (8.0) and greater. If you are on a version of  Android prior to Oreo (8.0) you should only use the **Auto-fill Accessibility Service** as explained further down in this article. Otherwise, you should use both services for optimal functionality.{% endcallout %}
 
 1. Open the Bitwarden Android app.
 2. Tap **{% icon fa-cog %} Settings**.
@@ -85,9 +85,9 @@ To enable floating window:
 3. Find **floating windows** or **App Management**
 4. Enable floating window for Bitwarden by sliding the toggle to the right.
 
-{% note %}
-Android has many web browsers. It can be hard to keep up with them all. We have to add support for each browser individually. 
+{% callout info %}
+Android has many web browsers. It can be hard to keep up with them all. We have to add support for each browser individually.
 
 If auto-fill does not work on your browser, please report it at <https://github.com/bitwarden/mobile/issues> so that we can add support.
-{% endnote %}
+{% endcallout %}
 

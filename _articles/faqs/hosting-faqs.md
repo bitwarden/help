@@ -8,28 +8,9 @@ hidden: false
 tags: []
 ---
 
-## Table of Contents
-
-- [Bitwarden Server service/user account and optional systemd service configuration)](#bitwarden-server-serviceuser-account-and-optional-systemd-service-configuration)
-  * [Certificate Setup for Private CA, on-premises or self-hosted](#certificate-setup-for-private-ca-on-premises-or-self-hosted)
-  * [Certificate Setup for Public CA, On-premises and self-hosted](#certificate-setup-for-public-ca-on-premises-and-self-hosted)
-  * [Change Server Name](#change-server-name)
-  * [Gmail self-hosted config](#gmail-self-hosted-config)
-  * [High Availability](#high-availability)
-  * [Let's Encrypt Manual Update - issue or domain and server name change](#let-s-encrypt-manual-update-issue-or-domain-and-server-name-change)
-  * [Migrate cloud to on-premise](#migrate-cloud-to-on-premise)
-- [Restore Bitwarden Server Detailed and Restore From Backup](#restore-bitwarden-server-detailed-and-restore-from-backup)
-  * [Custom Server Ports](#custom-server-ports)
-  * [SMTP Config with Mail Service Options](#smtp-config-with-mail-service-options)
-  * [Trust a private CA issued or Self-signed certificate for Bitwarden Client](#trust-a-private-ca-issued-or-self-signed-certificate-for-bitwarden-client)
-  * [Q: When does an Organization Invitation expire?](#q-when-does-an-organization-invitation-expire)
-  * [Q: When does an Offline Vault session expire?](#q-when-does-an-offline-vault-session-expire)
-  * [Q: How long does an application Remember Me for 2FA?](#q--how-long-does-an-application-remember-me-for-2fa)
-  * [Q: How long are Event Logs stored?](#q-how-long-are-event-logs-stored)
-
 ## Bitwarden Server service/user account and optional systemd service configuration)
 
-{%note%}
+{% callout info %}
 You will want to configure the Bitwarden Server to use a `bitwarden` service account. $USER=bitwarden You will want to have your installation owned by the bitwarden service account, and you should be logged in as bitwarden.
 
 After those are verified, you will want to make sure the UID and GID in the /bwdata/env/uid.env file are set to your bitwarden service account id numbers in Linux. When using the bitwarden service account you will also need to follow these steps:
@@ -41,7 +22,7 @@ After those are verified, you will want to make sure the UID and GID in the /bwd
 5. Set permissions on bitwarden service file under systemd.  sudo chmod 644 /etc/systemd/system/bitwarden.service
 6. Optional (reload for testing)  systemctl daemon-reload
 7. Add service to start with system boot.  sudo systemctl enable bitwarden.service
-{%endnote%}
+{% endcallout %}
 
 ### Certificate Setup for Private CA, on-premises or self-hosted
 

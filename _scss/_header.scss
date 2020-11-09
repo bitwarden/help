@@ -1,6 +1,10 @@
 nav.navbar-dark {
     background: $primary;
 
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+
     .navbar-nav {
         .nav-link {
             color: #fff;

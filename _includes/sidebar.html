@@ -8,29 +8,30 @@
     </div>
 
     {% for category in site.categories %}
-    {% if category.hidden != true %}
-    {% assign catFilename = category.path | filename %}
-    {% if page.categories contains catFilename or page.url contains catFilename %}
-        {% assign activeCategoryPage = true %}
-    {% else %}
-        {% assign activeCategoryPage = false %}
-    {% endif %}
-        <div {% if activeCategoryPage %}class="bd-toc-item active" {% else %}class="bd-toc-item"{% endif %}>
-            <a class="bd-toc-link" href="{{site.baseurl}}{{category.url}}">
-                <i {% if activeCategoryPage %}class="fa fa-folder-open-o" {% else %}class="fa fa-folder-o"{% endif %}></i> {{category.title}}
-            </a>
-            <ul class="nav bd-sidenav">
-                {% for article in sorted_articles %}
-                {% if article.categories contains catFilename and article.hidden != true %}
-                <li {% if page.url contains article.url %}class="active"{% endif %}>
-                    <i class="fa-li fa fa-file-text-o"></i>
-                    <a href="{{site.baseurl}}{{article.url}}">{{article.title}}</a>
-                </li>
-                {% endif %}
-                {% endfor %}
-            </ul>
-        </div>
-    {% endif %}
+        {% if category.hidden != true %}
+        {% assign catFilename = category.path | filename %}
+
+        {% if page.categories contains catFilename or page.url contains catFilename %}
+            {% assign activeCategoryPage = true %}
+        {% else %}
+            {% assign activeCategoryPage = false %}
+        {% endif %}
+            <div {% if activeCategoryPage %}class="bd-toc-item active" {% else %}class="bd-toc-item"{% endif %}>
+                <a class="bd-toc-link" href="{{site.baseurl}}{{category.url}}">
+                    <small><i {% if activeCategoryPage %}class="fa fa-chevron-down" {% else %}class="fa fa-chevron-right"{% endif %}></i></small>&nbsp;{{category.title}}
+                </a>
+                <ul class="nav bd-sidenav">
+                    {% for article in sorted_articles %}
+                    {% if article.categories contains catFilename and article.hidden != true %}
+                    <li {% if page.url contains article.url %}class="active"{% endif %}>
+                        <i class="fa-li fa fa-file-text-o"></i>
+                        <a href="{{site.baseurl}}{{article.url}}">{{article.title}}</a>
+                    </li>
+                    {% endif %}
+                    {% endfor %}
+                </ul>
+            </div>
+        {% endif %}
     {% endfor %}
 
 </nav>

@@ -16,12 +16,6 @@ Event Logs are timestamped records of everything that occurs within your Organiz
 
 Events Logs are also accessible using Bitwarden's API for Organization Management. For more information, see [RESTful API for Organization Management](https://bitwarden.com/help/article/public-api/).
 
-### In This Article
-
-- [Events List](#events-list)
-- [API Responses](#API-responses)
-- [SIEM and External Systems Integrations](#siem-and-external-systems-integrations)
-
 ## Events List
 
 Event Logs record roughly 40 different types of events. In the Web Vault, the action catalogued by each event is described in plain text under the **Event** column.

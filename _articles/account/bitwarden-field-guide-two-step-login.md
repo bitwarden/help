@@ -79,12 +79,12 @@ Reddit will prompt you for your password, and then present this dialog
 
 {% image two-step/field-guide/reddit-2fa-setup.png %}
 
-{% note %}
+{% callout info %}
 **About Authy and Google Authenticator**<br>
 Both of these applications serve the authenticator function well. However, ONLY Authy has the ability to backup your two-factor authentication pairings.
 This means that if you rely on Google Authenticator and you lose your phone, you may end up locked out of accounts if you do not have recovery codes for each account.
 With Authy, as long as you have your Authy password, you can install Authy on a new device and recover all of your two-step login pairings. [Update May 7, 2020. Google introduced portability of Google Authenticator 2-Step Verification codes across Android devices]
-{% endnote %}
+{% endcallout %}
 
 In this case, we’ll use the Authy application as the authenticator. We open it, add an account, scan the barcode and then Authy presents a 6 digit token.
 
@@ -92,18 +92,18 @@ In this case, we’ll use the Authy application as the authenticator. We open it
 
 With that token, we can complete the two-factor authentication setup for Reddit!
 
-{% warning %}
+{% callout warning %}
 Reddit will now offer an option next to the two-factor authentication setting to ‘Get your backup codes.’ This is a critical step. Should you ever lose the ability to complete two-factor authentication with Authy, you can use one of your backup codes to access Reddit.
-{% endwarning %}
+{% endcallout %}
 
 While two-factor authentication adds an extra layer of protection to our accounts, it also makes it harder to recover should things go awry. Therefore always approach with attention and secure your backup codes in a place you will remember...maybe even in Bitwarden, unless the 2FA is being used to get into Bitwarden itself.
 
 {% image two-step/field-guide/two-step-login-bitwarden-authy-reddit.png %}
 
-{% note %}
+{% callout info %}
 **How Authenticators Work**<br>
 Authy, Google Authenticator, and Bitwarden all operate similarly for authentication using TOTP which stands for Time-based One-Time Password algorithm. At the initiation such as the QR code scan, both the website and the authenticator app share an authentication key. That key is then used to generate time-based tokens which change every several seconds. Without that original authentication key, it is not possible to create the right token at the right time, thereby providing extra protection.
-{% endnote %}
+{% endcallout %}
 
 ### Two-step Login with the Bitwarden Authenticator Application
 

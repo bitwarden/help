@@ -6,11 +6,22 @@ module Jekyll
       def initialize(tag_name, type, tokens)
         super
         type.strip!
-        if %w(info danger warning primary success default).include?(type)
+        if %w(info warning success default).include?(type)
           @type = type
         else
-          puts "#{type} callout not supported. Defaulting to default"
+          puts "#{type} callout not supported. Defaulting to info"
           @type = "default"
+        end
+
+        if @type == 'warning'
+          @fa = 'warning'
+          @header = 'Warning'
+        elsif @type =='success'
+          @fa = 'lightbulb-o'
+          @header = 'Tip'
+        else
+          @fa = 'info-circle'
+          @header = 'Note'
         end
       end
 
@@ -18,7 +29,11 @@ module Jekyll
         site = context.registers[:site]
         converter = site.find_converter_instance(::Jekyll::Converters::Markdown)
         output = converter.convert(super(context))
-        "<div class=\"callout callout-#{@type}\">#{output}</div>"
+
+        "<div class=\"callout callout-#{@type}\">
+          <h5><i class=\"fa fa-#{@fa}\"></i> #{@header}</h5>
+          #{output}
+        </div>"
       end
     end
   end

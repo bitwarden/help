@@ -1,21 +1,14 @@
-.alert,
 .callout {
-    p, ul, ol {
-        margin-bottom: 12.5px;
-    }
-
-    p:last-child, ul:last-child, ol:last-child {
-        margin-bottom: 0;
-    }
-}
-
-.callout {
-    padding: 20px;
-    margin: 20px 0;
+    padding: 1rem;
+    margin: 1rem 0;
     border: 1px solid $border-color;
-    border-left-width: 5px;
+    border-left-width: 4px;
     border-radius: $border-radius;
     background-color: #fafafa;
+
+    > *:last-child {
+        margin-bottom: 0;
+    }
 
     h5 {
         margin-top: 0 !important;
@@ -30,10 +23,10 @@
     }
 
     &.callout-default {
-        border-left-color: $gray-300;
+        border-left-color: $border-color;
 
         h5 {
-            color: $gray-300;
+            color: $border-color;
         }
     }
 

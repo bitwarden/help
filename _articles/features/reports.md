@@ -57,7 +57,7 @@ Two-factor authentication (2FA) is an important security setting that helps secu
 
 A “breach” is an incident where a site’s data has been illegally accessed by hackers and then released publicly. The Data Breach Report allows you to review the types of data that were compromised in these breaches (email addresses, passwords, credit cards, etc.) and take appropriate action, such as changing passwords.
 
-{%note%}
+{% callout info %}
 If you are self-hosting in order to run the **Data Breach** report in your instance, you will need to buy an HIBP subscription key that will authorize you to make calls to the API. You can find how to purchase this key [here](https://haveibeenpwned.com/API/Key){:target="_blank"}.
 
 Once you have the key you will need to go to your `./bwdata/env/golbal.override.env` file, edit it and REPLACE the placeholders values for the API key:
@@ -65,4 +65,4 @@ Once you have the key you will need to go to your `./bwdata/env/golbal.override.
 ```
 globalSettings__hibpApiKey=REPLACE
 ```
-{%endnote%}
+{% endcallout %}

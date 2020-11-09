@@ -7,7 +7,7 @@ popular: false
 tags: [attachments, storage, files]
 ---
 
-{% note %}Using file attachments requires a premium membership or paid organization account.{% endnote %}
+{% callout info %}Using file attachments requires a premium membership or paid organization account.{% endcallout %}
 
 Attaching and managing files can be done from any Bitwarden client application. Any file  100MB or smaller can be attached to an item in your vault.
 
