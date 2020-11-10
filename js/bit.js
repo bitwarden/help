@@ -93,4 +93,7 @@ $(function () {
             }
         }
     });
+
+    // collapse
+    // $('.collapse').collapse()
 });

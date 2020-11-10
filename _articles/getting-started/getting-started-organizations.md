@@ -35,7 +35,7 @@ If you would like to try it out, Bitwarden has a free account for individuals, a
 
 This tutorial walks you through the setup for two basic accounts and sharing in an Organization.
 
-{% callout %} The free two-user organization is only available in Bitwarden Cloud. {% endcallout %}
+{% callout info %} The free two-user organization is only available in Bitwarden Cloud. {% endcallout %}
 
 ### What are Organizations?
 
@@ -79,7 +79,7 @@ The Bitwarden security model does not support master password recovery. You can 
 
 After you create the account and log in, you will want to verify your email.
 
-{% callout %}
+{% callout info %}
 Reminder: You will also want to make sure your master password is written down and in a safe place where you can find it.
 {% endcallout %}
 
