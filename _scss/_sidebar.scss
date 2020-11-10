@@ -25,21 +25,20 @@
     margin-left: -15px;
 
     @include media-breakpoint-up(md) {
+        display: block !important;
+
         @supports (position: sticky) {
             max-height: subtract(100vh, 4rem);
             overflow-y: auto;
         }
     }
-
-    // // Override collapse behaviors
-    // @include media-breakpoint-up(md) {
-    //     display: block !important;
-    // }
 }
 
-// .bd-sidenav {
-//     display: none;
-// }
+.bd-sidenav {
+    li {
+        width: 100%;
+    }
+}
 
 .bd-toc-link {
     display: flex;
@@ -83,33 +82,30 @@
                 background-color: transparent;
             }
         }
-
-        // > .bd-sidenav {
-        //     display: block;
-        // }
     }
 }
 
-// All levels of nav
-.bd-sidebar .nav > li > a {
-    border-left: 2px solid transparent;
-    display: block;
-    margin: .25rem 1.5rem;
-    padding-left: 1rem;
-    @include font-size(90%);
-    color: rgba(0, 0, 0, .65);
+.bd-sidebar .nav {
+    > li > a {
+        border-left: 2px solid transparent;
+        display: block;
+        margin: .25rem 1.5rem;
+        padding-left: 1rem;
+        @include font-size(90%);
+        color: rgba(0, 0, 0, .65);
 
-    &:hover {
-        background-color: transparent;
+        &:hover {
+            background-color: transparent;
+            color: $primary;
+            text-decoration: none;
+        }
+    }
+
+    > .active > a,
+    > .active:hover > a {
+        font-weight: 600;
         color: $primary;
-        text-decoration: none;
+        background-color: transparent;
+        border-left-color: $primary;
     }
-}
-
-.bd-sidebar .nav > .active > a,
-.bd-sidebar .nav > .active:hover > a {
-    font-weight: 600;
-    color: $primary;
-    background-color: transparent;
-    border-left-color: $primary;
 }

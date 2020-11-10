@@ -1,7 +1,7 @@
 {% assign sorted_articles = site.articles | sort: 'order' %}
 
-<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
-    <div class="bd-toc-item">
+<nav class="bd-links collapse show" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item d-none d-sm-none d-md-block">
         <a class="bd-toc-link" href="/help/">
             Help Center
         </a>
@@ -26,7 +26,6 @@
             {% for article in sorted_articles %}
             {% if article.categories contains catFilename and article.hidden != true %}
             <li {% if page.url contains article.url %}class="active"{% endif %}>
-                <i class="fa-li fa fa-file-text-o"></i>
                 <a href="{{site.baseurl}}{{article.url}}">{{article.title}}</a>
             </li>
             {% endif %}

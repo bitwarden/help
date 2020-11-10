@@ -1,6 +1,6 @@
 .search-header {
     background: $primary;
-    padding: 15px 0 25px;
+    color: #fff;
 
     .input-group {
         .form-control {
@@ -11,6 +11,28 @@
         .btn.btn-light {
             border-top-left-radius: 0;
             border-bottom-left-radius: 0;
+        }
+    }
+}
+
+.search-navbar {
+    padding: 0;
+}
+
+.search-sidebar-toggle {
+    align-items: center;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+
+    &:hover {
+        background: $gray-300;
+        text-decoration: none;
+    }
+
+    &[aria-expanded="true"] {
+        .fa-chevron-down {
+            transform: rotate(180deg);
         }
     }
 }
