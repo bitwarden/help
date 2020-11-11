@@ -30,7 +30,7 @@ Policies can be set in two locations:
 
 ### Two-Step Login
 
-Enabling the **Two-step Login** policy will require users to use any two-step login method to access their Vaults.
+Enabling the **Two-step Login** policy will require non-Owner/non-Admin users to use any two-step login method to access their Vaults.
 
 {% callout warning %}
 **Users in the Organization who do not have two-step login enabled will be removed from the Organization when you enable this policy.**
@@ -73,4 +73,22 @@ Enabling the **Password Generator** policy will enforce a configurable set of mi
 Existing non-compliant passwords **will not** be changed when this policy is enabled, nor will the items be removed from the Organization. When changing or generating a password after this policy is enabled, configured policy rules will be enforced.
 
 A banner will appear to users on the Password Generator screen indicating that a policy will affect their generator settings.
+{% endcallout %}
+
+### Single Organization
+
+Enabling the **Single Organization** policy will restrict non-Owner/non-Admin members of your Organization from being able to join other Organizations, or from creating other Organizations.
+
+{% callout warning %}
+**Users in the Organization who are members of multiple Organizations will be removed from the Organization when you enable this policy.**
+
+Users who are removed as a result of this policy will be notified via email, and must be re-invited to the Organization. Users will not be able to be confirmed to the Organization until they have removed themselves from all other Organizations.
+{% endcallout %}
+
+### Single Sign-On Authentication
+
+Enabling the **Single Sign-On Authentication** policy will require non-Owner/non-Admin users to log in with Enterprise Single Sign-On. For more information, see [Access Your Vault using SSO](https://bitwarden.com/help/article/sso-access-your-vault/).
+
+{% callout info %}
+The **Single Organization** policy must be enabled before activating this policy.
 {% endcallout %}
