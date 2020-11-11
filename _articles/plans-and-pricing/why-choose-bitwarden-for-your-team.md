@@ -18,7 +18,7 @@ With many choices out there, Bitwarden stands apart with a comprehensive Teams o
 
 ## Notable Differences Between Bitwarden Teams and Others
 
-|                  | ![1p](/images/plans-and-pricing/1p.png)   |![lp](/images/plans-and-pricing/lp.png)                             | ![d](/images/plans-and-pricing/d.png)                   | ![k](/images/plans-and-pricing/k.png)                                   | ![bitwarden-logo](/images/plans-and-pricing/bitwarden-logo-vertical-blue.png)                                    |
+|                  | <img src="/images/plans-and-pricing/1p.png" alt="1P" width="64px" height="64px">   |<img src="/images/plans-and-pricing/lp.png" alt="LP" width="64px" height="64px">                              | <img src="/images/plans-and-pricing/d.png" alt="D" width="64px" height="64px">                    | <img src="/images/plans-and-pricing/k.png" alt="K" width="64px" height="64px">                         | <img src="/images/plans-and-pricing/bitwarden-logo-vertical-blue.png" alt="Bitwarden-logo" width="101.66" height="64.33">                                    |
 |---------------------------------|:--------------------------------:|:--------------------------------------------------------------------:|:-----------------------------------:|:-----------------------------------------------:|:-----------------------------------------------:|
 | Open Source                    | —          | —                                                      | —                        | —                               |  <i class="fa fa-check" aria-hidden="true"></i>| 
  API Access               | —          | —                                                      | —                        | —                               |  <i class="fa fa-check" aria-hidden="true"></i>     
@@ -94,7 +94,7 @@ Cloud-Hosted               | <i class="fa fa-check" aria-hidden="true"></i>     
     |Tor    | —         | —                                                      | —                      | —                             |  <i class="fa fa-check" aria-hidden="true"></i> 
     |Windows and Mac               | <i class="fa fa-check" aria-hidden="true"></i>          | <i class="fa fa-check" aria-hidden="true"></i>                                                      | <i class="fa fa-check" aria-hidden="true"></i>                        | <i class="fa fa-check" aria-hidden="true"></i>                               |  <i class="fa fa-check" aria-hidden="true"></i>  
     |Linux               | <i class="fa fa-check" aria-hidden="true"></i>          | <i class="fa fa-check" aria-hidden="true"></i>                                                      | <i class="fa fa-check" aria-hidden="true"></i>                        | —                               |  <i class="fa fa-check" aria-hidden="true"></i> 
-     |Command and Line Interface               | <i class="fa fa-check" aria-hidden="true"></i>          | <i class="fa fa-check" aria-hidden="true"></i>                                                      | —                        | —                               |  <i class="fa fa-check" aria-hidden="true"></i> 
+     |Command and Line Interface               | <i class="fa fa-check" aria-hidden="true"></i>          | <i class="fa fa-check" aria-hidden="true"></i>                                                      | —                        | —                               |  <i class="fa fa-check" aria-hidden="true"></i> |
 
 
 
