@@ -27,7 +27,7 @@ There are **two options** available to configure what occurs when those time lim
 
 ## Lock
 
-Locking your vault is the default behavior. This will maintain vault data on the device and will only prompt for your master password to decrypt and re-allow access to your vault.
+Locking your vault is the default behavior. This will maintain vault data on the device and will only prompt for your master password to decrypt and re-allow access to your vault. Two-factor authentication (2FA) is **not** required when unlocking.
 
 This is the option most users prefer, as it is usually the fastest and does **not** require the Bitwarden client to be online or able to connect to a Bitwarden server.
 
