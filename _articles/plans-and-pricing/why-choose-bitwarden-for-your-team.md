@@ -9,6 +9,7 @@ tags: [organization, enterprise, teams, plans, subscription]
 order: 03
 ---
 
+<img src="/images/plans-and-pricing/1p.png" alt="1P" width="64px" height="64px">
 
 # Why Choose Bitwarden for Your Team
 Use a Bitwarden Teams Organization to securely share data with coworkers, department, or an entire company. 
