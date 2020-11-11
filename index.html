@@ -4,11 +4,13 @@ title: Help Center
 ---
 {% assign sorted_articles = site.articles | sort: 'order' %}
 
-<div class="container-fluid">
+<div class="container-fluid main-container">
     <div class="row">
         <div class="col-md-8">
-            <div class="card">
-                <h4 class="card-header"><i class="fa fa-star-o"></i> Popular Articles</h4>
+            <div class="card card-popular mb-3">
+                <h4 class="card-header">
+                    <i class="fa fa-star-o"></i> Popular Articles
+                </h4>
                 <div class="card-body">
                     <ul class="fa-ul">
                         {% for article in sorted_articles %}
@@ -22,6 +24,29 @@ title: Help Center
                     </ul>
                 </div>
             </div>
+
+            {% for category in site.categories %}
+            {% if category.hidden != true %}
+            <div class="card mb-3">
+                <h4 class="card-header">
+                    <i class="fa fa-folder-open-o"></i> {{category.title}}
+                </h4>
+                <div class="card-body">
+                    <ul class="fa-ul">
+                        {% for article in sorted_articles %}
+                        {% assign catFilename = category.path | filename %}
+                        {% if article.categories contains catFilename and article.hidden != true %}
+                        <li>
+                            <i class="fa-li fa fa-file-text-o"></i>
+                            <a href="{{site.baseurl}}{{article.url}}">{{article.title}}</a>
+                        </li>
+                        {% endif %}
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+            {% endif %}
+            {% endfor %}
         </div>
         <div class="col-md-4">
             {% include contact.html %}

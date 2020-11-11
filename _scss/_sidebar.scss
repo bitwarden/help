@@ -19,13 +19,13 @@
 }
 
 .bd-links {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
     margin-right: -15px;
     margin-left: -15px;
 
     @include media-breakpoint-up(md) {
         display: block !important;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
 
         @supports (position: sticky) {
             max-height: subtract(100vh, 4rem);

@@ -1,0 +1,14 @@
+.main-container {
+    .card-popular {
+        .card-header {
+            background: $secondary;
+            color: #fff;
+        }
+    }
+
+    .card-body {
+        ul {
+            margin-bottom: 0;
+        }
+    }
+}

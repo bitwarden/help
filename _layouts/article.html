@@ -8,6 +8,7 @@ layout: default
     <i class="fa fa-file-text-o"></i>
     {{page.title}}
 </h1>
+{% if catSize > 0 %}
 <div class="breadcrumb">
     {{ catSize | pluralize: 'Category', 'Categories' }}:&nbsp;
     {% for category in site.categories %}
@@ -18,6 +19,7 @@ layout: default
     {% endif %}
     {% endfor %}
 </div>
+{% endif %}
 
 <div class="card article-card">
     <div class="card-body">
