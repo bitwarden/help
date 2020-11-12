@@ -9,8 +9,6 @@ tags: [organization, enterprise, teams, plans, subscription]
 order: 03
 ---
 
-<img src="../../images/plans-and-pricing/1p.png" alt="1P" width="64px" height="64px">
-
 # Why Choose Bitwarden for Your Team
 Use a Bitwarden Teams Organization to securely share data with coworkers, department, or an entire company. 
 
@@ -19,7 +17,7 @@ With many choices out there, Bitwarden stands apart with a comprehensive Teams o
 
 ## Notable Differences Between Bitwarden Teams and Others
 
-|                  | <img src="../../images/plans-and-pricing/1p.png" alt="1P" width="64px" height="64px"> |<img src="../../images/plans-and-pricing/lp.png" alt="1P" width="64px" height="64px"> | <img src="../../images/plans-and-pricing/d.png" alt="1P" width="64px" height="64px"> | <img src="../../images/plans-and-pricing/k.png" alt="1P" width="64px" height="64px"> | <img src="../../images/plans-and-pricing/bitwarden-logo-vertical-blue.png" alt="1P" width="101.66px" height="64.33px">
+|                  | <img src="../../images/plans-and-pricing/1p.png" alt="1P" width="64px" height="64px"> |<img src="../../images/plans-and-pricing/lp.png" alt="LP" width="64px" height="64px"> | <img src="../../images/plans-and-pricing/d.png" alt="1P" width="64px" height="64px"> | <img src="../../images/plans-and-pricing/k.png" alt="K" width="64px" height="64px"> | <img src="../../images/plans-and-pricing/bitwarden-logo-vertical-blue.png" alt="Bitwarden-logo" width="101.66px" height="64.33px">
 |---------------------------------|:--------------------------------:|:--------------------------------------------------------------------:|:-----------------------------------:|:-----------------------------------------------:|:-----------------------------------------------:|
 | Open Source                    | —          | —                                                      | —                        | —                               |  <i class="fa fa-check" aria-hidden="true"></i>| 
  API Access               | —          | —                                                      | —                        | —                               |  <i class="fa fa-check" aria-hidden="true"></i>     
