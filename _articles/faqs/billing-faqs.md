@@ -51,6 +51,10 @@ You can add or remove seats from your Organization at any time. The cost will be
 
 For more information, see [Hosting](https://bitwarden.com/help/hosting).
 
+### Q: What happens if I discontinue my Premium subscription?
+
+**A:** Premium Individual subscriptions default to automatic renewal on an annual basis. If you proactively cancel your renewal, see [Cancel a Premium Subscription](https://bitwarden.com/help/article/cancel-premium/) for detailed information about what will happen.
+
 ## Payment Options
 
 ### Q: What payment options do you accept for customers based in the United States?
