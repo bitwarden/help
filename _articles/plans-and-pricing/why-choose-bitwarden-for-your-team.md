@@ -37,7 +37,7 @@ Break down the key differences between Bitwarden Teams Organization and other pa
 
 Compared to others, Bitwarden Teams Plan has the most features for the best price.
 
-|                  | <img src="/images/plans-and-pricing/1p.png" alt="1P" width="64px" height="64px">   |<img src="/images/plans-and-pricing/lp.png" alt="LP" width="64px" height="64px">                              | <img src="/images/plans-and-pricing/d.png" alt="D" width="64px" height="64px">                    | <img src="/images/plans-and-pricing/k.png" alt="K" width="64px" height="64px">                                  | <img src="/images/plans-and-pricing/bitwarden-logo-vertical-blue.png" alt="Bitwarden-logo" width="101.66" height="64.33">                                    |
+|                  | <img src="../../images/plans-and-pricing/1p.png" alt="1P" width="64px" height="64px"> |<img src="../../images/plans-and-pricing/lp.png" alt="LP" width="64px" height="64px"> | <img src="../../images/plans-and-pricing/d.png" alt="1P" width="64px" height="64px"> | <img src="../../images/plans-and-pricing/k.png" alt="K" width="64px" height="64px"> | <img src="../../images/plans-and-pricing/bitwarden-logo-vertical-blue.png" alt="Bitwarden-logo" width="101.66px" height="64.33px">                             |
 |---------------------------------|:--------------------------------:|:--------------------------------------------------------------------:|:-----------------------------------:|:-----------------------------------------------:|:-----------------------------------------------:|
 | Cost                    | $3.99          | $4                                                      | $5                        | $3.75                               |  $3| 
 
