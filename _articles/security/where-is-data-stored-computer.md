@@ -40,6 +40,7 @@ You can override the storage location for your Bitwarden desktop application dat
   - Chrome: `~/Library/Application Support/Google/Chrome/Default/Local Extension Settings/nngceckbapebfimnlniiiahkandclblb`
   - Firefox: `~/Library/Application Support/Firefox/Profiles/your_profile/storage/default/moz-extension+++[UUID]^userContextID=[integer]`
   - Safari: `~/Library/Safari/Databases`
+  - Edge: `~/Library/Application Support/Microsoft Edge/Default/Extensions`
 - Linux
   - Chrome: `~/.config/google-chrome/Default/Local Extension Settings/nngceckbapebfimnlniiiahkandclblb`
   - Firefox: `~/.mozilla/firefox/your_profile/storage/default/moz-extension+++[UUID]^userContextID=[integer]`
