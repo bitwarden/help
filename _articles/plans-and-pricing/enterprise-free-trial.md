@@ -5,7 +5,7 @@ categories: [plans-and-pricing]
 featured: false
 popular: false
 tags: [account, enterprise, free trial, organization]
-order: 05
+order: 04
 ---
 
 Paid Organizations, including Enterprise, have a 7 Day Free Trial built in. To learn what is included in Bitwarden Enterprise, see [Bitwarden Plans and Pricing](https://bitwarden.com/pricing/business) or [About Bitwarden Plans](https://bitwarden.com/help/article/about-bitwarden-plans/#enterprise-organizations).
