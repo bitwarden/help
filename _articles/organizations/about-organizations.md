@@ -24,14 +24,6 @@ Once you've created your Organization, invite users to start sharing. Invited us
 
 {% image /organizations/org-use-overlay.png Access shared items %}
 
-### In This Article
-- [Types of Organizations](#types-of-organizations)
-  - [Free Organizations](#free-organizations)
-  - [Families Organizations](#families-organizations)
-  - [Teams Organizations](#teams-organizations)
-  - [Enterprise Organizations](#enterprise-organizations)
-- [Organizations vs. Premium](#organizations-vs-premium)
-
 ## Types of Organizations
 
 There are a few different types of Organizations available. When you create your Organization, you will be prompted to select one of the following options:

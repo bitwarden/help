@@ -45,7 +45,7 @@ The asterisk character (`*`) provides the ability to perform wildcard searches i
 - `*bitwarden*`
 - `*bit*war*den*`
 
-{% note %}
+{% callout info %}
 The following fields automatically include leading and trailing wildcards while performing normal search queries:
 
 - `name`
@@ -53,7 +53,7 @@ The following fields automatically include leading and trailing wildcards while 
 - `login.uris`
 
 It is not necessary to provide wildcards if you are searching for information in these fields.
-{% endnote %}
+{% endcallout %}
 
 ## Advanced Searches
 

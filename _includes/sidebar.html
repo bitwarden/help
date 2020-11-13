@@ -1,0 +1,44 @@
+{% assign sorted_articles = site.articles | sort: 'order' %}
+
+<nav class="bd-links collapse show" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item d-none d-sm-none d-md-block">
+        <a class="bd-toc-link" href="/help/">
+            Help Center
+        </a>
+    </div>
+    <div class="bd-toc-item">
+        <a class="bd-toc-link" href="{{site.baseurl}}/article/releasenotes">
+            Release Notes
+        </a>
+    </div>
+
+    {% for category in site.categories %}
+    {% if category.hidden != true %}
+    {% assign catFilename = category.path | filename %}
+
+    {% if page.categories contains catFilename or page.url contains catFilename %}
+        {% assign activeCategoryPage = true %}
+    {% else %}
+        {% assign activeCategoryPage = false %}
+    {% endif %}
+
+    <div class="bd-toc-item">
+        <a class="bd-toc-link" data-toggle="collapse" data-target="#{{catFilename}}" role="button" {% if activeCategoryPage %}aria-expanded="true"{% else %}aria-expanded="false"{% endif %} aria-controls="{{catFilename}}" aria-label="Toggle {{category.title}}">
+            {{category.title}}
+            <small class="ml-auto"><i class="fa fa-chevron-down"></i></small>
+        </a>
+        <ul {% if activeCategoryPage %}class="nav bd-sidenav collapse show"{% else %}class="nav bd-sidenav collapse"{% endif %} id="{{catFilename}}">
+            {% for article in sorted_articles %}
+            {% if article.categories contains catFilename and article.hidden != true %}
+            <li {% if page.url contains article.url %}class="active"{% endif %}>
+                <a href="{{site.baseurl}}{{article.url}}">{{article.title}}</a>
+            </li>
+            {% endif %}
+            {% endfor %}
+        </ul>
+    </div>
+
+    {% endif %}
+    {% endfor %}
+
+</nav>

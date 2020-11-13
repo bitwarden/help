@@ -7,11 +7,6 @@ popular: false
 tags: [sso, saml, oidc, openid, saml2.0, idp, identity]
 ---
 
-### In This Article
-- [Service Provider Configuration Mapping](#service-provider-configuration)
-- [Identity Provider Configuration Mapping](#identity-provider-configuration)
-- [Screenshots of Sample Configurations](#screenshots-of-sample-configurations)
-
 ## Service Provider Configuration Mapping
 
 | Bitwarden Field                                          | Azure AD Field                                   | JumpCloud Field                                  | OneLogin Field                                   | G-Suite Field                             | Okta Field                                             |
@@ -38,6 +33,6 @@ tags: [sso, saml, oidc, openid, saml2.0, idp, identity]
 
 [{% icon fa-download %} Download Okta Sample]({{site.baseurl}}/files/bitwarden_export.csv)
 
-{%note%}
+{% callout info %}
 This table is meant to make locating some fields and values easier. Some configurations and provider versions may differ depending on your Organization's policies and procedures. If you are having trouble configuring Login with SSO for your Bitwarden Organization, please [contact us](https://bitwarden.com/contact/) for assitance.
-{%endnote%}
+{% endcallout %}

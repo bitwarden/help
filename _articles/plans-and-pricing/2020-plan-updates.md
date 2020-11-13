@@ -14,15 +14,6 @@ To upgrade from your Classic 2019 plan to a current plan, [Contact Us](https://b
 
 You **will not** be moved to a current plan automatically, and are **not required** to move to a current plan. If you elect to keep your Classic 2019 plan, there will be no change to your feature offering or price.
 
-### In This Article
-
-- [Free Individual](#free-individual)
-- [Premium Individual](#premium-individual)
-- [Families Organizations](#families-organizations)
-- [Teams Organizations](#teams-organizations)
-- [Enterprise Organizations](#enterprise-organizations)
-- [FAQs About Changes](#faqs-about-changes)
-
 ## Free Individual
 
 There have been no changes made to the **Free** plan for individual users. For more information on what this plan includes, see [About Bitwarden Plans](https://bitwarden.com/help/article/about-bitwarden-plans/).
@@ -60,9 +51,9 @@ As before, all members of your Enterprise Organization will automatically get al
 
 As before, there is no limit to the number of users in your Enterprise Organization. The current Enterprise Organizations plan is $5 Per User Per Month (*compared to $3 PUPM for Classic 2019 plan*).
 
-{% note %}
+{% callout info %}
 Additional enterprise-only capabilities are planned which will only be available to the current plan, including expanded Enterprise Policies.
-{% endnote %}
+{% endcallout %}
 
 ## FAQs About Changes
 

@@ -5,7 +5,7 @@ categories: []
 featured: true
 popular: false
 tags: [collections, groups, access control]
-order: 
+order:
 ---
 
 As your organization’s use of Bitwarden grows, it helps to have users who can manage collections independently, without requiring access to everything within the organizational vault.
@@ -42,9 +42,9 @@ After clicking **New Collection**, the user is prompted to enter the Name and Ex
 
 From there the Manager of the collection can assign groups to the newly created collection.
 
-{% note %}
+{% callout info %}
 Groups are available in Bitwarden Enterprise
-{% endnote % }
+{% endcallout % }
 
 {% image collections/bitwarden-collections-add-new.png %}
 
@@ -56,9 +56,9 @@ Selecting this option will prevent users assigned to this collection from adding
 **Hide Passwords**
 This option hides passwords, TOTP seeds, and any custom fields of type hidden in this collection. This also disables the ability for an end-user to copy a password. In this configuration, an item may only be used with auto-fill.
 
-{% warning %}
+{% callout warning %}
 Enabling hidden passwords prevents the easy copy and paste of hidden items, however it does not completely prevent user access to this information. Please treat hidden passwords as you would any shared credential.
-{% endwarning %}
+{% endcallout %}
 
 ### Adding items to a Collection
 When residing within the view of a collection in the web vault, new items will be saved within the collection.
@@ -89,9 +89,9 @@ After selecting the Users option, a list of individuals within the organization 
 
 With these capabilities in place, individual employees empowered as Managers will be able to create their own new collections, and add groups and users to those collections. They also have the ability to manage collections created by another manager.
 
-{% note %}
+{% callout info %}
 Managers do not have access to change the composition of Groups. For that access, Admin or Owner roles are required. For example, if a Manager creates a collection of **Design Services** and adds the **Marketing** group to have access, and a user is removed from the Marketing group by the Admin, then that user will no longer have access to the Design Services collection.
-{% endnote %}
+{% endcallout %}
 
 ### Table of User Roles and Access
 

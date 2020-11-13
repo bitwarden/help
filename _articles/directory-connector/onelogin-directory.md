@@ -16,12 +16,6 @@ This article will cover how to connect the Bitwarden Directory Connector applica
 - Install Bitwarden Directory Connector
 - Using the Directory Connector, log into your Bitwarden account and select your enterprise organization
 
-## Table of Contents
-
-- [Creating API Credentials](#creating-api-credentials)
-- [Configure Directory Connector](#configure-directory-connector)
-- [Testing](#testing)
-
 ## Creating API credentials
 
 1. Log into your OneLogin Adminsitration portal.
@@ -42,7 +36,7 @@ This article will cover how to connect the Bitwarden Directory Connector applica
 4. Enter the **Client ID** and **Client Secret** copied from the previous steps.
 5. Select the correct Region.
 6. Configure sync options. It is recommended to use the **Overwrite existing organization users based on current sync settings** option with OneLogin.
-{% tip %}For minimal testing check "Sync users".{% endtip %}
+{% callout success %}For minimal testing check "Sync users".{% endcallout %}
 
 Congrats! You are done configuring OneLogin with the Bitwarden Directory Connector.
 

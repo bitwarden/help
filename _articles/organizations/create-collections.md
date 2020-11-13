@@ -12,10 +12,6 @@ redirect_from:
 
 This article will guide you through the process of creating a Collection. For more information about Collections, see [About Collections](https://bitwarden.com/help/article/about-collections/).
 
-### In This Article
-- [Create a Collection](#create-a-collection)
-- [Create Nested Collections](#create-nested-collections)
-
 ## Create A Collection
 
 Complete the following steps to create a collection:
@@ -35,9 +31,9 @@ Complete the following steps to create a collection:
 
 Collections be "nested" in order to logically organize them within your Vault. There's no limit to the depth with which you can nest Collections, but creating too many levels may interfere with your Vault's interface.
 
-{% note %}
+{% callout info %}
 Nested Collections are designed for in-Vault display purposes only. Nested Collections will not not inherit access or permissions from their "parent" Collection.
-{% endnote %}
+{% endcallout %}
 
 {% image organizations/collection-nested.png Nested Collection %}
 

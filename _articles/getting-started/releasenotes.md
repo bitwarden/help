@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Release Notes
-categories: [release-notes]
+categories: []
 featured: true
 popular: true
 hidden: false

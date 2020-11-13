@@ -11,10 +11,6 @@ order: 07
 
 Collections are structures used by Organizations to gather together Logins, Notes, Cards, and Identities for sharing. There are a few different ways you can share an item to a Collection:
 
-### In This Article
-- [Share Existing Items From Your Personal Vault](#share-existing-items-from-your-personal-vault)
-- [Create a New Shared Item For Your Organization](#create-a-new-shared-item-for-your-organization)
-
 ## Share Existing Items From Your Personal Vault
 
 All users can share items to an assigned Collection from their personal Vault, unless given **Read Only** access to that Collection. For more information, see [User Types and Access Control](https://bitwarden.com/help/article/user-types-access-control/).
@@ -35,9 +31,9 @@ Shared items will have a **Shared** icon next to the item name:
 
 {% image /organizations/collection-shared-item.png Shared Item icon %}
 
-{% note %}
+{% callout info %}
 Sharing an item with an Organization will transfer ownership to the Organization. This means that anyone with permission can alter the item or delete it, thereby removing it from your Vault.
-{% endnote %}
+{% endcallout %}
 
 ## Create a New Shared Item For Your Organization
 

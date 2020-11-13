@@ -13,49 +13,6 @@ The CLI can be used cross-platform on Windows, macOS, and Linux distributions.
 
 {% image cli.png %}
 
-### In This Article
-
-- [Quick Start](#quick-start)
-- [Download and Install](#download-and-install)
-    - [Native executable](#native-executable)
-    - [NPM](#npm)
-    - [Other Package Managers](#other-package-managers)
-- [Session Management](#session-management)
-    - [Logging In](#logging-in)
-    - [Environment Variable](#environment-variable)
-    - [`--session <key>` Option](#--session-key-option)
-    - [Locking](#locking)
-    - [Login != Unlock](#login--unlock)
-- [Explore the CLI](#explore-the-cli)
-- [Managing Your Vault](#managing-your-vault)
-    - [Sync](#sync)
-    - [List](#list)
-    - [Get](#get)
-    - [Create](#create-items-attachments-and-folders)
-    - [Edit](#edit)
-    - [Delete](#delete)
-        - [`--permanent` Option](#--permanent-option)
-    - [Restore](#restore)
-    - [Share](#share)
-- [Other Useful Commands](#other-useful-commands)
-    - [Confirm](#confirm)
-    - [Import](#import)
-    - [Export](#export)
-    - [Generate](#generate)
-    - [Encode](#encode)
-    - [Config](#config)
-    - [Update](#update)
-    - [Status](#status)
-    - [Version](#version)
-- [Working with JSON](#working-with-json)
-- [Self-signed Certificates](#self-signed-certificates)
-- [Shell Completion](#shell-completion)
-    - [ZSH](#zsh)
-- [Source Code](#source-code)
-- [Appendix](#appendix)
-    - [Templates](#templates)
-    - [Enums](#enums)
-
 ## Quick Start
 
 1. [Download and install](#download-and-install) the CLI for your platform.
@@ -148,9 +105,9 @@ Pass the session key to CLI commands by setting the `BW_SESSION` environment var
 
     bw list items --session 5PBYGU+5yt3RHcCjoeJKx/wByU34vokGRZjXpSH7Ylo8w==
 
-{% note %}
+{% callout info %}
 It is possible to persist your session key to your environment (for example, exporting it in `.bashrc`), however, we do not recommend doing this. Your active session key is the encryption key used to unlock all data associated with your Bitwarden vault and is not well-suited for persisting on an unprotected disk.
-{% endnote %}
+{% endcallout %}
 
 ### `--apiKey` Variables
 
@@ -437,9 +394,9 @@ The `update` command allows you to check if your CLI is up to date. The CLI will
 
 A URL to download a new version of the CLI executable will be returned to you.
 
-{% note %}
+{% callout info %}
 If you have installed the CLI through a package managers (such as NPM), you should use the update commands available for that tool. For example, `npm install -g @bitwarden/cli` will update you to the latest version of the CLI on NPM.
-{% endnote %}
+{% endcallout %}
 
 ### Status
 
@@ -582,9 +539,9 @@ Some templates are meant to be used as sub-objects to another template's propert
 | Email         | 1     |
 | Yubikey       | 3     |
 
-{% note %}
+{% callout info %}
 Other two-step login methods such as FIDO U2F and Duo are not supported by the CLI.
-{% endnote %}
+{% endcallout %}
 
 **Item Types**
 

@@ -10,10 +10,6 @@ order: 10
 
 This article will guide you through the process of adding or removing user seats from your Bitwarden Teams or Enterprise Organization.
 
-### In This Article
-- [Add User Seats](#add-user-seats)
-- [Remove User Seats](#remove-user-seats)
-
 ## Add User Seats
 
 Complete the following steps to add user seats to your Organization:

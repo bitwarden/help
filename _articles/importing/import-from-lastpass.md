@@ -7,7 +7,7 @@ popular: true
 tags: [import, lastpass]
 ---
 
-Importing your data from LastPass into Bitwarden is easy. 
+Importing your data from LastPass into Bitwarden is easy.
 
 ## Export your sites from the LastPass.com web vault
 
@@ -20,11 +20,11 @@ Importing your data from LastPass into Bitwarden is easy.
    - Highlight all of the data with your mouse (or simply press <code>Ctrl + A</code>), then right click with your mouse and select **Copy**.<br />
    {% image lastpass-copy.png %}
 
-{% warning %}
+{% callout warning %}
 There are known bugs (for years now) with the LastPass exporter regarding special characters such as the ampersand (<code>&amp;</code>), the greater than sign (<code>&gt;</code>), and the less than sign (<code>&lt;</code>). The LastPass exporter may change (HTML encode) these and possibly other special characters in your passwords to their respective HTML encoded values (ex. <code>&amp;amp;</code>, <code>&amp;gt;</code>, and <code>&amp;lt;</code>). If this LastPass bug affects your exported data you should use a text editor (such as Notepad) to find and replace all of these values before importing into Bitwarden. For example, you may want to do a find and replace for <code>&amp;amp;</code> &rarr; <code>&amp;</code> and <code>&amp;lt;</code> &rarr; <code>&lt;</code>).
 
 Alternatively, you can use the [LastPass Pocket application](https://lastpass.com/misc_download2.php){:target="_blank"} to export your CSV data. The LastPass Pocket application does not appear to be affected by these bugs.
-{% endwarning %}
+{% endcallout %}
 
 ## Import your data into Bitwarden
 
@@ -40,9 +40,9 @@ Congratulations! You have just transferred all of your data from LastPass into B
 
 LastPass does not include form fills with the standard export from the LastPass web vault. If you want to import form fill information into Bitwarden you can export the form fill CSV data from the LastPass browser extension.
 
-{% note %}
+{% callout info %}
 You can only export form fill data from the LastPass browser extension.
-{% endnote %}
+{% endcallout %}
 
 1. Click the LastPass icon from the browser toolbar to open the LastPass popup interface.
 2. Navigate to **More options** &rarr; **Advanced** &rarr; **Export** &rarr; **Form Fills**.

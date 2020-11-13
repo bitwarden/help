@@ -14,19 +14,6 @@ In this article, we'll define each Bitwarden subscription plan to help you along
 
 *This article reflects current Bitwarden plans, updated on September 06, 2020. Users who created accounts prior to that date can learn how to opt-in to the updates **[here](https://bitwarden.com/help/article/2020-plan-updates/)**.*
 
-### In This Article
-- [Bitwarden For You](#bitwarden-for-you)
-  - [Free Individual](#free-individual)
-  - [Premium Individual](#premium-individual)
-  - [Families Organizations](#families-organizations)
-  - [Compare the Plans](#compare-the-plans)
-- [Bitwarden For Your Business](#bitwarden-for-your-business)
-  - [Free Organizations](#free-organizations)
-  - [Teams Organizations](#teams-organizations)
-  - [Enterprise Organizations](#enterprise-organizations)
-  - [Compare the Plans](#compare-the-plans-1)
-- [Next Steps](#next-steps)
-
 ## Bitwarden For You
 
 Bitwarden For You plans are designed to give you or your family all the tools needed to securely manage data:
@@ -39,9 +26,9 @@ We believe everyone should have access to password security tools. The core feat
 
 Upgrade your individual Bitwarden account to unlock premium password security and management features, including advanced 2FA options, the Bitwarden Authenticator (TOTP), encrypted file storage, and more. Upgrade **[now](https://vault.bitwarden.com/#/?premium=purchase)**.
 
-{% note %}
+{% callout info %}
 Premium does not include secure data sharing. In order to access sharing features, you will need a subscription to an Organization ([Free](#free-organizations), [Families](#families-organizations), [Teams](#teams-organizations), or [Enterprise](#enterprise-organizations)). Paid Organizations ([Families](#families-organizations), [Teams](#teams-organizations), or [Enterprise](#enterprise-organizations)) include premium features for all users enrolled in that Organization.
-{% endnote %}
+{% endcallout %}
 
 ### Families Organizations
 

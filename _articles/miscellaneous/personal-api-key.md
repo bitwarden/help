@@ -9,9 +9,9 @@ tags: [api key, cli]
 
 Your Bitwarden Personal API Key can be used as an alternative method for authenticating into the Command Line Interface (CLI).
 
-{% note %}
+{% callout info %}
 Your Personal API Key is not the same as the API Key used to access the Bitwarden Public API for organization management. Personal API Keys will have a `client_id` with format `"user.clientId"`, while Organization API Keys will have a `client_id` with format `"organization.ClientId"`.
-{% endnote %}
+{% endcallout %}
 
 ### In This Article
 - [Get your Personal API Key](#get-your-personal-api-key)

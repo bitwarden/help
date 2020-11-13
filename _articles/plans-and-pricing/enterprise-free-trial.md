@@ -19,8 +19,8 @@ Complete the following steps to start your 7 Day Free Trial of Bitwarden Enterpr
 
 3. On the **New Organization** screen, enter an **Organization Name** for your new Organization and the **Billing Email** we can reach you at.
 
-   {% note %}We won't charge you until your 7 Day Free Trial of the Enterprise Plan is over. You can cancel your subscription at any time in the **Settings** tab of your Organization.
-   {% endnote %}
+   {% callout info %}We won't charge you until your 7 Day Free Trial of the Enterprise Plan is over. You can cancel your subscription at any time in the **Settings** tab of your Organization.
+   {% endcallout %}
 
 4. If you're trialing the Enterprise Plan on behalf of a business:
    - Check the **This account is owned by a business** checkbox.

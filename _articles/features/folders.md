@@ -9,9 +9,9 @@ tags: [categories, folders, sub-folders]
 
 Folders are a great way to categorize items in your Bitwarden vault.
 
-{% note %}
+{% callout info %}
 An Organization's collection are different than folders. Collections are a way to organize items and control user access within an organization's vault while folders are a way for individual users to organize items within their own personal vault. An individual user may wish to further organize the items being shared with them in their own vault into a personalized folder structure that makes sense just for them.
-{% endnote %}
+{% endcallout %}
 
 ## Nested folders (sub-folders)
 

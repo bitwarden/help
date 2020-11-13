@@ -22,8 +22,8 @@ Complete the following steps to use Login with SSO to authenticate into your Bit
 
 3. Enter your **Organization Identifier** and select **Log In**.
 
-   {% note %}We recommend bookmarking this page with your Organization Identifier included as a query string so that you don't have to enter it each time, for example `https://vault.bitwarden.com/#/sso?identifier=your-org-id` or `https://your.domain.com/#/sso?identifier=your-org-id`.
-   {% endnote %}
+   {% callout info %}We recommend bookmarking this page with your Organization Identifier included as a query string so that you don't have to enter it each time, for example `https://vault.bitwarden.com/#/sso?identifier=your-org-id` or `https://your.domain.com/#/sso?identifier=your-org-id`.
+   {% endcallout %}
 
    {% image /sso/org-id-input.png Organization Identifier field %}
 
@@ -38,6 +38,6 @@ In both cases, your account now has an *accepted* status within your Organizatio
 
 
 
-  {%note%}
+  {% callout info %}
   Users that are created via Login with SSO **will still be properly organized into their groups and collections** if leveraging the [Directory Connector](https://bitwarden.com/help/article/directory-sync/) utility.
-  {%endnote%}
+  {% endcallout %}

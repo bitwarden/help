@@ -16,18 +16,9 @@ The Public API is compatible with the OpenAPI Specification (OAS3) and publishes
 - For Public Cloud-hosted instances: [https://bitwarden.com/help/api/](https://bitwarden.com/help/api/){:target="\_blank"}
 - For Self-hosted instances: https://your.domain.com/api/docs/
 
-{% note %}
-Access to the Bitwarden Public API is available for customers on the following plans, **Classic 2019 Enterprise Organizations**, current **Enterprise Organizations**, and current **Teams Organizations**. For more information, see [About Bitwarden Plans](https://bitwarden.com/help/article/about-bitwarden-plans/#compare-the-plans-1).
-{% endnote %}
-
-### In This Article
-- [Endpoints](#endpoints)
-- [Authentication](#authentication)
-- [Content Types](#content-types)
-- [Sample Request](#sample-request)
-- [Status](#status)
-- [Response Codes](#response-codes)
-- [Further Reading](#further-reading)
+{% callout info %}
+Access to the Bitwarden Public API is available customers on the following plans, **Classic 2019 Enterprise Organizations**, current **Enterprise Organizations**, and current **Teams Organizations**. For more information, see [About Bitwarden Plans](https://bitwarden.com/help/article/about-bitwarden-plans/#compare-the-plans-1).
+{% endcallout %}
 
 ## Endpoints
 
@@ -49,9 +40,9 @@ The API uses bearer access tokens to authenticate with protected API endpoints. 
 
 Authentication requests take `client_id` and `client_secret` as required parameters. `client_id` and `client_secret` can be obtained by an **Owner** from the Web Vault by navigating to the **Settings** tab &rarr; **My Organization** and scrolling down to the **API Key** section.
 
-{% warning %}
+{% callout warning %}
 Your API key enables full access to your Organization. Keep your API key private. If you believe your API key has been compromised, select the **Rotate API Key** button on this screen. Active uses of your current API key will need to be reconfigured with the new key before use.
-{% endwarning %}
+{% endcallout %}
 
 ### Bearer Access Tokens
 

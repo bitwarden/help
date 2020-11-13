@@ -1,0 +1,38 @@
+html {
+    position: relative;
+    min-height: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    padding-top: $navbar-height;
+}
+
+// :target::before {
+//     content: '';
+//     display: block;
+//     height: $navbar-height + 5px;
+//     margin-top: -$navbar-height + 5px;
+// }
+
+a {
+    color: $link-color;
+
+    &:hover {
+        color: $link-hover-color;
+    }
+}
+
+a[rel='lightbox'] {
+    cursor: -webkit-zoom-in;
+    cursor: -moz-zoom-in;
+    cursor: zoom-in;
+}
+
+pre {
+    background: $gray-100;
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
+    padding: 0.5rem;
+}

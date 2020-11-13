@@ -7,46 +7,10 @@ popular: true
 hidden: false
 tags: []
 ---
-## Table of contents
-
-- [**Q: How do I change a collection via the CLI?**](#q-how-do-i-change-a-collection-via-the-cli)
-- [**Q: Can I install Bitwarden without Google Play?**](#q-can-i-install-bitwarden-without-google-play)
-- [**Q: How do I enable Autofill in Android?**](#q-how-do-i-enable-autofill-in-android)
-- [**Q: How do I view attachments?**](#q-how-do-i-view-attachments)
-- [**Q: Can Bitwarden restore my individual vault?**](#q-can-bitwarden-restore-my-individual-vault)
-- [**Q: How do I backup my self-hosted server?**](#q-how-do-i-backup-my-self-hosted-server)
-- [**Q: How do I configure custom fields?**](#q-how-do-i-configure-custom-fields)
-- [**Q: How do I import my data if I don’t see my service on the import options?**](#q-how-do-i-import-my-data-if-i-dont-see-my-service-on-the-import-options)
-- [**Q: How do I delete an item?**](#q-how-do-i-delete-an-item)
-- [**Q: Can I use Directory connector to sign into Bitwarden?**](#q-can-i-use-directory-connector-to-sign-into-bitwarden)
-- [**Q: How can I disable Firefox Autofill?**](#q-how-can-i-disable-firefox-autofill)
-- [**Q: Does Bitwarden have a way for me to let someone into my account if I am unable to log in?**](#q-does-bitwarden-have-a-way-for-me-to-let-someone-into-my-account-if-i-am-unable-to-log-in)
-- [**Q: How can I enable Auto-fill On Page Load?**](#q-how-can-i-enable-auto-fill-on-page-load)
-- [**Q: Does Bitwarden have an Encrypted Export File?**](#q-does-bitwarden-have-an-encrypted-export-file)
-- [**Q: Can I download Bitwarden on F-Droid? I cannot find it.**](#q-can-i-download-bitwarden-on-f-droid-i-cannot-find-it)
-- [**Q: How do I rename a folder?**](#q-how-do-i-rename-a-folder)
-- [**Q: I have forgotten my master password, what can I do?**](#q-i-have-forgotten-my-master-password-what-can-i-do)
-- [**Q: How do I hide passwords from users?**](#q-how-do-i-hide-passwords-from-users)
-- [**Q: How can I see the history of a password that has been changed?**](#q-how-can-i-see-the-history-of-a-password-that-has-been-changed)
-- [**Q: Can I see the history of the passwords I have generated?**](#q-can-i-see-the-history-of-the-passwords-i-have-generated)
-- [**Q: Can I export/import from iCloud/Mac Keychain?**](#q-can-i-exportimport-from-icloudmac-keychain)
-- [**Q: How do I enable iOS AutoFill?**](#q-how-do-i-enable-ios-autofill)
-- [**Q: Why am I getting a ‘New Device’ Email Message?**](#q-why-am-i-getting-a-new-device-email-message)
-- [**Q: Can I use SMS 2FA?**](#q-can-i-use-sms-2fa)
-- [**Q: How do I install the Safari Extension?**](#q-how-do-i-install-the-safari-extension)
-- [**Q: How can I start Bitwarden when Windows starts?**](#q-how-can-i-start-bitwarden-when-windows-starts)
-- [**Q: How do I perform a sync on my application?**](#q-how-do-i-perform-a-sync-on-my-application)
-- [**Q: What is TOTP and how can I use it?**](#q-what-is-totp-and-how-can-i-use-it)
-- [**Q: Why are my TOTP codes incorrect/not working?**](#q-why-are-my-totp-codes-incorrectnot-working)
-- [**Q: Why is U2F Not Supported on my iOS or Android App?**](#q-why-is-u2f-not-supported-on-my-ios-or-android-app)
-- [**Q: How do I use the web browser extension?**](#q-how-do-i-use-the-web-browser-extension)
-- [**Q: How do I add attachments?**](#q-how-do-i-add-attachments)
-- [**Q: I am asked for my master password even though I have PIN unlock enabled on iOS / Android**](#q-i-am-asked-for-my-master-password-even-though-i-have-pin-unlock-enabled-on-ios--android)
-- [**Q: How can I import items directly into collections?**](#q-how-can-i-import-items-directly-to-collections)
 
 ### **Q: How do I change a collection via the CLI?**
 
-**A:** In order to change a Collection, you will use a dedicated command (bw edit item-collections).    
+**A:** In order to change a Collection, you will use a dedicated command (bw edit item-collections).
 
 For example:
 ```
@@ -54,7 +18,7 @@ $ echo '["a17a5b7f-66b8-4980-91a1-aaac005df696"]' | bw encode | bw edit item-col
 ```
 You can add multiple Collection IDs at the same time by using a comma to separate them.
 
-### **Q: Can I install Bitwarden without Google Play?**   
+### **Q: Can I install Bitwarden without Google Play?**
 
 **A:** Yes! You can download directly from GitHub <https://github.com/bitwarden/mobile/releases> or via F-Droid by adding our repo <https://mobileapp.bitwarden.com/fdroid/>
 
@@ -62,7 +26,7 @@ You can add multiple Collection IDs at the same time by using a comma to separat
 
 **A:** There are two services that need to be enabled on Android to cover all Auto-fill scenarios, AUTO-FILL SERVICE and AUTO-FILL ACCESSIBILITY SERVICE. These services can be enabled from within the Bitwarden App under Settings.
 
-When configured, you should see "Enabled" in green text. Double-check under the AUTO-FILL ACCESSIBILITY SERVICE that the Permission shows "Granted" in green text as well.     https://help.bitwarden.com/article/auto-fill-android/      
+When configured, you should see "Enabled" in green text. Double-check under the AUTO-FILL ACCESSIBILITY SERVICE that the Permission shows "Granted" in green text as well.     https://help.bitwarden.com/article/auto-fill-android/
 
 One last thing you will want to check is the battery optimization settings on your phone and make sure it is turned off for Bitwarden. Often, Android Battery Optimization will turn off services to save battery and in turn kill the auto-fill services.
 
@@ -132,13 +96,13 @@ If you do not want to enable autofill when a page loads and still want the abili
 
 Alternatively, we recommend using something like PeaZip to create an encrypted archive of the file after you have exported your data from Bitwarden.
 
-You can learn more about PeaZip here:  
-- <http://www.peazip.org/>  
-- <https://github.com/giorgiotani/PeaZip >  
+You can learn more about PeaZip here:
+- <http://www.peazip.org/>
+- <https://github.com/giorgiotani/PeaZip >
 
-{%warning%}
+{% callout warning %}
 Disclaimer: Please note that PeaZip is a third party program and is not supported by Bitwarden. These links were shared with you as an option for you to use at your own risk.
-{%endwarning%}
+{% endcallout %}
 
 ### **Q: Can I download Bitwarden on F-Droid? I cannot find it.**
 
@@ -165,9 +129,9 @@ You can learn more about access control here: <https://bitwarden.com/help/articl
 
 The ability to view the password history of a Login Item is available. You can open the item in question and select the "1" next to Password History near the bottom of the window.
 
-{%warning%}
+{% callout warning %}
 Clicking on the number will expose the historical password values in plain text immediately.
-{%endwarning%}
+{% endcallout %}
 
 ### **Q: Can I see the history of the passwords I have generated?**
 
@@ -178,12 +142,12 @@ Clicking on the number will expose the historical password values in plain text 
 **A:** There isn't an official way to export the data from iCloud, Mac Keychain or Safari as Apple doesn't provide this ability.
 
 Here are some third-party programs available to export this data:
-- <https://gist.github.com/rmondello/b933231b1fcc83a7db0b>  
+- <https://gist.github.com/rmondello/b933231b1fcc83a7db0b>
 - <https://github.com/lifepillar/CSVKeychain>
 
-{%warning%}
+{% callout warning %}
 Please note that these 3rd party scripts/programs are unsupported by Bitwarden and Apple and are used at your own risk.
-{%endwarning%}
+{% endcallout %}
 
 Once you have exported your data, here is a helpful article for importing your data from the two mentioned programs:  <https://help.bitwarden.com/article/import-data/>
 
@@ -191,7 +155,7 @@ Once you have exported your data, here is a helpful article for importing your d
 
 **A:** Make sure Bitwarden is set to your AutoFill app by going to your iOS Settings > Passwords & Accounts > AutoFill Passwords > Bitwarden​.
 
-While testing Bitwarden, it is best to only have Bitwarden enabled to avoid any conflicts. You can always set the Keychain or any other app back as an active option at any time if you choose to do so. Once you have that set, you can go to an app or site to log in and when you select the username or password field, the keyboard will display and the Passwords option will be selectable at the top of the keyboard.  ​  
+While testing Bitwarden, it is best to only have Bitwarden enabled to avoid any conflicts. You can always set the Keychain or any other app back as an active option at any time if you choose to do so. Once you have that set, you can go to an app or site to log in and when you select the username or password field, the keyboard will display and the Passwords option will be selectable at the top of the keyboard.  ​
 
 You can see more about Bitwarden for iOS here: <https://bitwarden.com/help/article/getting-started-ios/>
 
@@ -220,9 +184,9 @@ Be sure to run the application once. If the extension still does not appear, it 
 ### **Q: How can I start Bitwarden when Windows starts?**
 
 In order to set Bitwarden Desktop to startup, please follow these steps:
-1. Select the Start (Windows Logo) button, select All apps, and scroll to find the Bitwarden Desktop app/shortcut.  
-2. Right-click the Bitwarden Desktop app, select More, and then select Open file location.  
-3. With the file location open, press the Windows logo key + R, type shell:startup, then select OK. This opens the Startup folder.  
+1. Select the Start (Windows Logo) button, select All apps, and scroll to find the Bitwarden Desktop app/shortcut.
+2. Right-click the Bitwarden Desktop app, select More, and then select Open file location.
+3. With the file location open, press the Windows logo key + R, type shell:startup, then select OK. This opens the Startup folder.
 4. Copy and paste the shortcut to the Bitwarden Desktop app from the file location to the Startup folder.
 
 ### **Q: How do I perform a sync on my application?**
@@ -233,10 +197,10 @@ In order to set Bitwarden Desktop to startup, please follow these steps:
 
 **A:** Time-based One-time Password (TOTP) - <https://en.wikipedia.org/wiki/Time-based_One-time_Password_algorithm>
 
-Each website that supports TOTP or 2FA with an "Authenticator" calls it differently and each handles the procedure of setting up a little differently. You will need to start the set up from each individual web site that you are accessing. (e.g. google.com, amazon.com).      
+Each website that supports TOTP or 2FA with an "Authenticator" calls it differently and each handles the procedure of setting up a little differently. You will need to start the set up from each individual web site that you are accessing. (e.g. google.com, amazon.com).
 
-​1. You will want to edit any item that you wish to use TOTP with.  
-2. Populate the "Authenticator Key (TOTP)" field with the seed key you are provided with.  *You can also use the Bitwarden mobile application to directly scan QR codes and it will populate automatically.  
+​1. You will want to edit any item that you wish to use TOTP with.
+2. Populate the "Authenticator Key (TOTP)" field with the seed key you are provided with.  *You can also use the Bitwarden mobile application to directly scan QR codes and it will populate automatically.
 3. Save the changes.
 
 Now, Bitwarden will store and generate the timed code that you will be asked for when logging into services with TOTP 2FA enabled. Here is a handy website that you can use to test this feature: <https://totp.danhersam.com/>
@@ -251,22 +215,22 @@ Whenever you auto-fill a website that has TOTP attached, the code will automatic
 
 **A:** At this time, due to platform/OS limitations, FIDO U2F cannot be used with all Bitwarden applications. You should enable another two-step login provider so that you can access your account when FIDO U2F cannot be used. We are expanding our U2F capabilities
 
-### **Q: How do I use the web browser extension?**   
+### **Q: How do I use the web browser extension?**
 
 **A:** Using the Bitwarden Web Browser Extension is a good way to add your passwords to your vault. Anytime it detects a password field on a website that it doesn't have in its database, it will ask to save.
 
 For updating, anytime there is a password field detected, when you enter a password if it doesn't detect the same password as what it has in its database then it will ask you to update it. You will see a banner at the top of the web page that will prompt you to save or update.
 
-Please see this helpful article regarding interacting with a web page to fill your Login Item information:  
+Please see this helpful article regarding interacting with a web page to fill your Login Item information:
 - <https://help.bitwarden.com/article/auto-fill-browser/>
 
 Bitwarden Web Browser Extension video on YouTube:
-- <https://youtu.be/dBPfr7Jiddw>    
+- <https://youtu.be/dBPfr7Jiddw>
 
 More helpful videos from the Bitwarden Community on YouTube:
 
 - <https://youtu.be/L1BNrVrvWw4>
-- <https://youtu.be/TREdS8iq6Qg>   
+- <https://youtu.be/TREdS8iq6Qg>
 - <https://youtu.be/uF6tzGYaIxg>
 
 ### **Q: How do I add attachments?**
@@ -297,6 +261,6 @@ To reset this:
 
 **A:** To import items directly to collections, you'll want to format your import into a Bitwarden CSV and provide the collection names you'd like to import to. You can read more about the Bitwarden CSV import here: https://bitwarden.com/help/article/import-data/#generic-csv-format-organization-account
 
-{%note%}
+{% callout info %}
 Each import will create new records. To prevent duplicates while organizing your data, you will want to use the `Purge Vault` option to clear any existing data before importing it again. The option can be found by logging into the Web Vault (https://vault.bitwarden.com/) and going to Settings > Organizations > {YOUR ORG NAME} > Settings sub-tab (Gears Icon) > My Organization > Danger Zone > Purge Vault.
-{%endnote%}
+{% endcallout %}

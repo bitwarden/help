@@ -23,9 +23,9 @@ All sensitive data stored on your computer/device is encrypted. The data can be 
   - Standard Installations: `~/.config/Bitwarden`
   - Snap: `~/snap/bitwarden/current/.config/Bitwarden`
 
-{% tip %}
+{% callout success %}
 You can override the storage location for your Bitwarden desktop application data by setting the `BITWARDEN_APPDATA_DIR` environment variable to an absolute path.
-{% endtip %}
+{% endcallout %}
 
 ## Browser Extension
 
@@ -45,9 +45,9 @@ You can override the storage location for your Bitwarden desktop application dat
   - Chrome: `~/.config/google-chrome/Default/Local Extension Settings/nngceckbapebfimnlniiiahkandclblb`
   - Firefox: `~/.mozilla/firefox/your_profile/storage/default/moz-extension+++[UUID]^userContextID=[integer]`
 
-{% note %}
+{% callout info %}
 To enhance security, Firefox uses Universally Unique Identifiers (UUIDs) within extension storage folder names. Use the `about:debugging#/runtime/this-firefox` page (navigate from Firefox's address bar) to locate your Bitwarden extension UUID. Replace [UUID] with that UUID. Note also that Firefox allows users to customize where to store their profiles (and thus local Bitwarden extension data). The location specified above is the default.
-{% endnote %}
+{% endcallout %}
 
 ## Mobile
 
@@ -60,6 +60,6 @@ To enhance security, Firefox uses Universally Unique Identifiers (UUIDs) within 
 - macOS: `~/Library/Application Support/Bitwarden CLI`
 - Linux: `~/.config/Bitwarden CLI`
 
-{% tip %}
+{% callout success %}
 You can override the storage location for your Bitwarden CLI application data by setting the `BITWARDENCLI_APPDATA_DIR` environment variable to an absolute path.
-{% endtip %}
+{% endcallout %}

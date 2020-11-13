@@ -13,7 +13,7 @@ Premium Individual subscriptions renew automatically on an annual basis. You can
 
 As your renewal date approaches, Bitwarden recommends that you validate the payment method by navigating to **Settings** &rarr; **Billing**. For help updating your payment method, see [Update Your Billing Information](https://bitwarden.com/help/article/update-billing-info/).
 
-{% warning %}
+{% callout warning %}
 If we cannot process your payment method, or if you have cancelled your subscription, your account will revert to [Free Individual](https://bitwarden.com/help/article/about-bitwarden-plans/#free-individual). Until you re-instate your Premium subscription, this will result in the following:
 
 **Two-step Login**
@@ -29,4 +29,4 @@ Your secret keys will remain stored in Vault items in the **Authenticator Key (T
 **Encrypted File Storage**
 
 Files will **not** be deleted from your Vault, however you will not be able to upload or download.
-{% endwarning %}
+{% endcallout %}

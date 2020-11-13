@@ -4,14 +4,14 @@ title: Help Center
 ---
 {% assign sorted_articles = site.articles | sort: 'order' %}
 
-<div class="container main">
+<div class="container-fluid main-container">
     <div class="row">
         <div class="col-md-8">
-            <div class="panel panel-secondary articles">
-                <div class="panel-heading">
-                    <h3 class="panel-title"><i class="fa fa-star-o"></i> Popular Articles</h3>
-                </div>
-                <div class="panel-body">
+            <div class="card card-popular mb-3">
+                <h4 class="card-header">
+                    <i class="fa fa-star-o"></i> Popular Articles
+                </h4>
+                <div class="card-body">
                     <ul class="fa-ul">
                         {% for article in sorted_articles %}
                         {% if article.popular == true and article.hidden != true %}
@@ -24,17 +24,14 @@ title: Help Center
                     </ul>
                 </div>
             </div>
+
             {% for category in site.categories %}
             {% if category.hidden != true %}
-            <div class="panel panel-default articles">
-                <div class="panel-heading">
-                    <h3 class="panel-title">
-                        <a href="{{site.baseurl}}{{category.url}}">
-                            <i class="fa fa-folder-open-o"></i> {{category.title}}
-                        </a>
-                    </h3>
-                </div>
-                <div class="panel-body">
+            <div class="card mb-3">
+                <h4 class="card-header">
+                    <i class="fa fa-folder-open-o"></i> {{category.title}}
+                </h4>
+                <div class="card-body">
                     <ul class="fa-ul">
                         {% for article in sorted_articles %}
                         {% assign catFilename = category.path | filename %}
@@ -53,22 +50,6 @@ title: Help Center
         </div>
         <div class="col-md-4">
             {% include contact.html %}
-            <div class="panel panel-default articles" style="margin-bottom: 0;">
-                <div class="panel-heading">
-                    <h3 class="panel-title"><i class="fa fa-list-alt"></i> Categories</h3>
-                </div>
-                <div class="panel-body small">
-                    <ul>
-                        {% for category in site.categories %}
-                        {% if category.hidden != true %}
-                        <li>
-                            <a href="{{site.baseurl}}{{category.url}}">{{category.title}}</a>
-                        </li>
-                        {% endif %}
-                        {% endfor %}
-                    </ul>
-                </div>
-            </div>
         </div>
     </div>
 </div>

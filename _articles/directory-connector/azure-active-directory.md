@@ -16,17 +16,6 @@ This article will cover how to connect the Bitwarden Directory Connector applica
 - Install Bitwarden Directory Connector
 - Using Directory Connector, log into your Bitwarden account and select your enterprise organization
 
-## Table of Contents
-
-- [Create a New Application Registration](#create-a-new-application-registration)
-- [Grant Application Permissions](#grant-application-permissions)
-- [Create Application Secret Key](#create-application-secret-key)
-- [Get Your Application ID](#get-your-application-id)
-- [Get Your Tenant Hostname](#get-your-tenant-hostname)
-- [Configure Directory Connector](#configure-directory-connector)
-- [Testing](#testing)
-
-
 ## Create a New Application Registration
 
 1. Go to <https://portal.azure.com>
@@ -90,8 +79,8 @@ Congrats! You are done configuring Azure Active Directory with the Bitwarden Dir
 
 ## Testing
 
-{% note %}
+{% callout info %}
 It can take up to 15 minutes for the granted permissions for your application to properly propagate. You may receive "Insufficient privileges to complete the operation" errors in the meantime.
-{% endnote %}
+{% endcallout %}
 
 Test your configuration by running a sync test. You should see your Azure Active Directory groups and/or users printed to the screen.

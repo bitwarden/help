@@ -7,7 +7,7 @@ popular: false
 tags: [browser, auto-fill, autofill]
 ---
 
-You can use the Bitwarden browser extension to easily auto-fill login forms on websites with your username/email and password credentials. 
+You can use the Bitwarden browser extension to easily auto-fill login forms on websites with your username/email and password credentials.
 
 ## How to add a website to a saved login
 
@@ -37,7 +37,7 @@ If the login does not appear in the "Current Tab" page, you can open the login f
 
 ### Right-click context menu
 
-{% note %}This feature is currently unavailable in Safari browser.{% endnote %}
+{% callout info %}This feature is currently unavailable in Safari browser.{% endcallout %}
 
 The same list of logins that are available when using the popup window are also available from the convenience of the right-click context menu in your browser.
 
@@ -51,8 +51,8 @@ You can use a set of keyboard shortcuts (hot keys) to quickly auto-fill a login 
 - Linux: `Ctrl + Shift + L`
 - macOS: `Cmd + Shift + L`
   - Safari: `Cmd + \` or `Cmd + 8` or `Cmd + Shift + P`
-  
-{% note %}If a shortcut does not work, it may be because another application on your device is already using it. For example, the auto-fill shortcut on Windows is commonly claimed by the AMD Radeon Adrenaline software (AMD graphic drivers) and therefore cannot be used by Bitwarden. You can free up this shortcut by changing it in the AMD Radeon software under Gaming &rarr; Global Settings &rarr; Performance Monitoring: "Toggle Performance Logging Hotkey".{% endnote %}
+
+{% callout info %}If a shortcut does not work, it may be because another application on your device is already using it. For example, the auto-fill shortcut on Windows is commonly claimed by the AMD Radeon Adrenaline software (AMD graphic drivers) and therefore cannot be used by Bitwarden. You can free up this shortcut by changing it in the AMD Radeon software under Gaming &rarr; Global Settings &rarr; Performance Monitoring: "Toggle Performance Logging Hotkey".{% endcallout %}
 
 Another option is to open the popup window using the keyboard shortcut (see below). You can then `TAB` to the login that you would like to auto-fill and then press `ENTER` to select.
 
@@ -60,7 +60,7 @@ Another option is to open the popup window using the keyboard shortcut (see belo
 - Linux: `Ctrl + Shift + U`
 - macOS: `Cmd + Shift + Y`
 
-You can easily customize these keyboard shortcuts in Chrome, Opera, Edge, and Brave browsers. In the address bar navigate to `chrome://extensions` and locate the "Keyboard shortcuts" button (you may need to scroll to the bottom). 
+You can easily customize these keyboard shortcuts in Chrome, Opera, Edge, and Brave browsers. In the address bar navigate to `chrome://extensions` and locate the "Keyboard shortcuts" button (you may need to scroll to the bottom).
 
 In Firefox, you need can go to the addons preference page. Under the gears icon click the "Manage Extension Shortcuts" as explained [here](https://support.mozilla.org/en-US/kb/manage-extension-shortcuts-firefox).
 
