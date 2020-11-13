@@ -26,10 +26,10 @@ With many choices out there, Bitwarden stands apart with a comprehensive Teams o
 
 Break down the key differences between Bitwarden Teams Organization and other password managers’ Teams Plans with the following pricing and features charts:
 
-- [Cost](##cost-per-user-per-month-billed-annually)
-- [Features](##password-management-features)
-- [Security](##security-and-administration-features)
-- [Download and Deployment](##download-and-deployment-options)
+- [Cost](#cost-per-user-per-month-billed-annually)
+- [Features](#password-management-features)
+- [Security](#security-and-administration-features)
+- [Download and Deployment](#download-and-deployment-options)
  
 ## Cost Per User, Per Month, Billed Annually
 
