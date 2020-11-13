@@ -70,7 +70,7 @@ End-to-End Encryption               | <i class="fa fa-check" aria-hidden="true">
 |Directory Services| —          | —                                                      | <i class="fa fa-check" aria-hidden="true"></i>                       | —                              |  <i class="fa fa-check" aria-hidden="true"></i>
 |User and Group Provisioning| —          | —                                                      | <i class="fa fa-check" aria-hidden="true"></i>                       | —                              |  <i class="fa fa-check" aria-hidden="true"></i>
 |Reporting| <i class="fa fa-check" aria-hidden="true"></i>          | —                                                      | <i class="fa fa-check" aria-hidden="true"></i>                       | <i class="fa fa-check" aria-hidden="true"></i>                              |  <i class="fa fa-check" aria-hidden="true"></i>
-|Reporting| —          | —                                                      | —                       | <i class="fa fa-check" aria-hidden="true"></i>                              |  <i class="fa fa-check" aria-hidden="true"></i>
+|Event & Audit Logs| —          | —                                                      | —                       | <i class="fa fa-check" aria-hidden="true"></i>                              |  <i class="fa fa-check" aria-hidden="true"></i>
 |API Access| —          | —                                                      | —                       | —                              |  <i class="fa fa-check" aria-hidden="true"></i>|
 
 ## Download and Deployment Options
