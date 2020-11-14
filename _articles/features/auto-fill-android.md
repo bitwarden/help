@@ -7,13 +7,18 @@ popular: false
 tags: [android, autofill, auto-fill]
 ---
 
-You can use the Bitwarden Android app to add new and auto-fill existing logins on the web and in other apps. There are two services which need to be enabled on Android to cover all Auto-fill scenarios, AUTO-FILL FRAMEWORK SERVICE and AUTO-FILL ACCESSIBILITY SERVICE. These services can be enabled from within the Bitwarden App under **{% icon fa-cog %} Settings**. When configured, you should see "Enabled" in green text. Double-check under the AUTO-FILL ACCESSIBILITY SERVICE that the Permission shows "Granted" in green text as well.
+You can use the Bitwarden Android app to add new and auto-fill existing logins on the web and in other apps. There are services which need to be enabled on Android to cover all Auto-fill scenarios. These services can be enabled from within the Bitwarden App under **{% icon fa-cog %} Settings**. When configured, you should see "Enabled" in green text. Check under the auto-fill services whether the required services are toggled.
 
 Supported Versions:
-1. The **Autofill Framework Service** for Android users on Oreo (8.0) and greater.
+1. The **Autofill Service** for Android users on Oreo (8.0) and greater.
 2. The **Auto-fill Accessibility Service** for all Android versions.
+3. The **Inline Autofill** for Android users on Android 11 and greater.
 
-## Autofill Framework Service
+## Inline Autofill
+
+{% callout info %}The Inline Autofill is only available to users on Android 11 and greater. If you are on a version of Android prior to 11.0, you should use the Autofill Service or Autofill Accessibility Service as explained in this article.{% endcallout %}
+
+## Autofill Service
 
 {% callout info %}The Autofill Framework Service is only available to users on Android Oreo (8.0) and greater. If you are on a version of  Android prior to Oreo (8.0) you should only use the **Auto-fill Accessibility Service** as explained further down in this article. Otherwise, you should use both services for optimal functionality.{% endcallout %}
 
@@ -37,7 +42,8 @@ The Autofill Framework Service is context-sensitive and will appear whenever you
 
 1. Open the Bitwarden Android app.
 2. Tap the **{% icon fa-cog %} Settings** page.
-3. Tap **Auto-fill Accessibility Service**. Status *Disabled* will appear in red.
+3. Tap **Auto-fill Services**.
+4. Enable **Use Accesibility**.
 4. Tap the **OPEN ACCESSIBILITY SETTINGS** button.
 5. Locate **Bitwarden** from the list and enable it.
 6. You will now see Permission is still *Denied* and appears in red.
