@@ -24,13 +24,13 @@ Use this flowchart to guide you through your journey:
 
 {% image /plans-and-pricing/what-plan-flowchart-1.png What Plan is Right for Me? %}
 
-## Do You Want to Start Protecting Your Online Accounts with Bitwarden?
+## Do you want to start protecting your online accounts with Bitwarden?
 
 We certainly hope so! No matter what plan you decide is best for you, the steps to [Create an Account](https://vault.bitwarden.com/#/register) are all the same.
 
 Go ahead, [**Create an Account**](https://vault.bitwarden.com/#/register)! Once your account is created, consider the following questions:
 
-## Do You Need to Share Your Data?
+## Do you need to share your data?
 
 Will you be a Bitwarden Solo-Practitioner, or will you securely share data between friends, family, team of co-workers, or an entire company?
 
@@ -38,7 +38,7 @@ Will you be a Bitwarden Solo-Practitioner, or will you securely share data betwe
 |------------------|-------------------|
 |...we recommend one of our individual plans.<br><br>**Continue to:** [Do you need Premium features?](#do-you-need-premium-features)|...we recommend that you create an Organization.<br><br>**Continue to:** [Who will you share with?](#who-will-you-share-with)|
 
-## Do You Need Premium Features?
+## Do you need Premium Features?
 
 As a Bitwarden Solo-Practicioner, will you be a Bitwarden Black Belt using Premium features like:
 
@@ -83,6 +83,6 @@ However, only Enterprise Organizations include:
 |------------------------------------------------|------------------------------------------------|
 |...we recommend a Teams Organization.<br><br>[**Create your Teams Organization.**](https://bitwarden.com/help/article/upgrade-from-individual-to-org/)|...we recommend an Enterprise Organization.<br><br>[**Create your Enterprise Organization.**](https://bitwarden.com/help/article/upgrade-from-individual-to-org/)|
 
-## Still Not Sure?
+## Still not sure?
 
 If you're still not sure which plan is right for you, you can find comparisons of each plan at [About Bitwarden Plans](https://bitwarden.com/help/article/about-bitwarden-plans/). Or, [Contact Us](https://bitwarden.com/contact/) at any time for further help.

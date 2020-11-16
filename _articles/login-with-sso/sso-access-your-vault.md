@@ -8,7 +8,7 @@ tags: [sso]
 order: 06
 ---
 
-### Before You Begin
+## Before You Begin
 If you are an existing Bitwarden user, you must [Link an Existing Account to SSO](https://bitwarden.com/help/article/link-to-sso/) before authenticating into your Vault using Login with SSO.
 
 ## Logging in with SSO

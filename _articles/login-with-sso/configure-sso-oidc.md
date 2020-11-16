@@ -51,31 +51,31 @@ Required fields will be marked. Failing to provide a value for a required field 
 
 {% image /sso/sso-oidc.png OpenID Connect Configuration screen %}
 
-### Callback Path
+#### Callback Path
 The URL for Bitwarden authentication automatic redirect. This value will be automatically generated. For all Cloud-hosted instances, `https://sso.bitwarden.com/oidc-signin`. For self-hosted instances, domain is based on your configured Server URL.
 
-### Signed Out Callback Path
+#### Signed Out Callback Path
 The URL for Bitwarden sign-out automatic redirect. This value will be automatically generated. For all Cloud-hosted instances, `https://sso.bitwarden.com/oidc-signedout`. For self-hosted instances, domain is based on your configured Server URL.
 
-### Authority (*Required*)
+#### Authority (*Required*)
 Your Identity Provider URL or the Authority that Bitwarden will perform authentication against.
 
-### Client ID (*Required*)
+#### Client ID (*Required*)
 The Client identifier used for Bitwarden, as configured in your Identity Provider.
 
-### Client Secret (*Required*)
+#### Client Secret (*Required*)
 *May be required depending on your IdP's configuration, needs, or requirements*
 
 A secret used  in conjunction with **Client ID** to exchange for an authentication token.
 
-### Metadata Address (*Required if Authority is not a valid URL*)
+#### Metadata Address (*Required if Authority is not a valid URL*)
 
 Identity Provider information which Bitwarden will perform authentication against (*e.g.* Okta Metadata URI).
 
-### OIDC Redirect Behavior
+#### OIDC Redirect Behavior
 Method used by the IdP to respond to Bitwarden authentication requests. Options include:
 - Form POST
 - Redirect GET
 
-### Get Claims From User Info Endpoint
+#### Get Claims From User Info Endpoint
 Check this checkbox if you receive `URI Too Long (HTTP 414)` errors, truncated URLs, or failures during SSO.
