@@ -11,7 +11,7 @@ order: 04
 
 This article will guide you through the process of creating an Organization. For more information about Organizations, see [About Organizations](https://bitwarden.com/help/article/about-organizations).
 
-### Before You Begin
+## Before You Begin
 
 If you're a new user of Bitwarden, you'll need to create an account before you can create your Organization. Create your account for free [**here**](https://vault.bitwarden.com/#/register){:target="\_blank"} or refer to [Create Your Bitwarden Account](https://bitwarden.com/help/article/create-bitwarden-account/) for help.
 
