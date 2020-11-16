@@ -69,31 +69,25 @@ $(function () {
     });
 
     // smooth scrolling
-    $('a[href*="#"]').click(function(e) {
-        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-            var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+    $('a[href^="#"]').click(function () {
+        var target = $(this.hash);
+        var hash = this.hash;
 
-            if (target.length) {
-                e.preventDefault();
-                const NAVBAR_HEIGHT = 62 + 5;
+        if (target.length == 0) target = $('a[name="' + this.hash.substr(1) + '"]');
+        if (target.length == 0) target = $('html');
 
-                $('html, body').animate({
-                    scrollTop: target.offset().top - NAVBAR_HEIGHT
-                }, 500, function() {
-                    var $target = $(target);
-                    $target.focus();
-                    if ($target.is(":focus")) {
-                        return false;
-                    } else {
-                        $target.attr('tabindex','-1');
-                        $target.focus();
-                    };
-                });
+        $('html, body').animate({
+            scrollTop: target.offset().top - $('#main-nav').outerHeight()
+        }, 500, function () {
+            if (history.pushState) {
+                history.pushState(null, null, hash);
+            } else {
+                location.hash = hash;
             }
-        }
+        });
+        return false;
     });
 
-    // collapse
-    // $('.collapse').collapse()
+    // collapse sidebar
+    // $('#bd-docs-nav').toggleClass('show', $(window).width() > 1024);
 });

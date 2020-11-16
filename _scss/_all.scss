@@ -9,12 +9,12 @@ body {
     padding-top: $navbar-height;
 }
 
-// :target::before {
-//     content: '';
-//     display: block;
-//     height: $navbar-height + 5px;
-//     margin-top: -$navbar-height + 5px;
-// }
+:target::before {
+    content: '';
+    display: block;
+    height: $navbar-height + 5px;
+    margin-top: -$navbar-height + 5px;
+}
 
 a {
     color: $link-color;
