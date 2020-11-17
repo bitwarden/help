@@ -78,7 +78,8 @@ To use an existing identity provider for authentication, you’ll need to subscr
 
 #### **Q: How can I disable Firefox Autofill?**
 
-You will want to check the settings of the browser. First, you will select the Options Menu in the top right corner of the window. It is the 3 line icon or "hamburger button" as some people call it. Then select Logins and Passwords. A small window will open and you will uncheck the box for Autofill logins and passwords. Then you can close the small Logins windows and go back to the Options Menu and select Options. Now find the section in my image provided and uncheck those boxes.
+1. Navigate to `about:preferences#privacy` in Firefox.
+2. Scroll down and uncheck Autofill logins and passwords
 
 #### **Q: Does Bitwarden have a way for me to let someone into my account if I am unable to log in?**
 
