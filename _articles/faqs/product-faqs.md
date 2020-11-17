@@ -79,9 +79,17 @@ To use an existing identity provider for authentication, you’ll need to subscr
 #### Q: How can I disable Firefox Autofill?
 
 1. Navigate to `about:preferences#privacy` in Firefox.
-2. Scroll down and uncheck Autofill logins and passwords
+2. Scroll down and uncheck **Autofill logins and passwords**.
+
+**On Android**
+1. Open Firefox
+2. Tap on the three dot menu.
+3. Tap on Settings.
+4. Locate **Logins and passwords**.
+5. Tap on **Autofill** and turn it off.
 
 #### Q: How can I disable Google Auto-fill in my Android Device?
+
 1. Open Settings in your Android device.
 2. Scroll down and tap on Google.
 3. Locate Auto-fill
