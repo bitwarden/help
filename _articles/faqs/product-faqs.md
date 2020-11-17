@@ -81,6 +81,12 @@ To use an existing identity provider for authentication, you’ll need to subscr
 1. Navigate to `about:preferences#privacy` in Firefox.
 2. Scroll down and uncheck Autofill logins and passwords
 
+#### Q: How can I disable Google Auto-fill in my Android Device?
+1. Open Settings in your Android device.
+2. Scroll down and tap on Google.
+3. Locate Auto-fill
+4. Tap on Auto-fill with Google and turn it off.
+
 #### **Q: Does Bitwarden have a way for me to let someone into my account if I am unable to log in?**
 
 **A:** This is what we call Emergency Access feature, and it is one of our most requested according to our community. We have added this feature to our product road map and intend to bring it into the platform soon.
