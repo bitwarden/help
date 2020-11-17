@@ -91,7 +91,7 @@ Cloud-Hosted               | <i class="fa fa-check" aria-hidden="true"></i>     
     |Tor    | —         | —                                                      | —                      | —                             |  <i class="fa fa-check" aria-hidden="true"></i>
     |Windows and Mac               | <i class="fa fa-check" aria-hidden="true"></i>          | <i class="fa fa-check" aria-hidden="true"></i>                                                      | <i class="fa fa-check" aria-hidden="true"></i>                        | <i class="fa fa-check" aria-hidden="true"></i>                               |  <i class="fa fa-check" aria-hidden="true"></i>
     |Linux               | <i class="fa fa-check" aria-hidden="true"></i>          | <i class="fa fa-check" aria-hidden="true"></i>                                                      | <i class="fa fa-check" aria-hidden="true"></i>                        | —                               |  <i class="fa fa-check" aria-hidden="true"></i>
-     |Command and Line Interface               | <i class="fa fa-check" aria-hidden="true"></i>          | <i class="fa fa-check" aria-hidden="true"></i>                                                      | —                        | —                               |  <i class="fa fa-check" aria-hidden="true"></i> |
+     |Command Line Interface               | <i class="fa fa-check" aria-hidden="true"></i>          | <i class="fa fa-check" aria-hidden="true"></i>                                                      | —                        | —                               |  <i class="fa fa-check" aria-hidden="true"></i> |
 
 
 
