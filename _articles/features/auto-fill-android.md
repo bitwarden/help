@@ -10,20 +10,26 @@ tags: [android, autofill, auto-fill]
 You can use the Bitwarden Android app to add new and auto-fill existing logins on the web and in other apps. There are services which need to be enabled on Android to cover all Auto-fill scenarios. These services can be enabled from within the Bitwarden App under **{% icon fa-cog %} Settings**. When configured, you should see "Enabled" in green text. Check under the auto-fill services whether the required services are toggled.
 
 Supported Versions:
-1. The **Autofill Service** for Android users on Oreo (8.0) and greater.
-2. The **Auto-fill Accessibility Service** for all Android versions.
-3. The **Inline Autofill** for users on Android 11 and greater.
+
+1. The **Inline Autofill Framework** for users on Android 11 and greater.
+2. The **Autofill Service** for Android users on Oreo (8.0) and greater.
+3. The **Auto-fill Accessibility Service** for all Android versions.
+4. **Draw Over** for all android versions(On Android 5.0-Lolipop, it is on  by default)
+
 
 ## Inline Autofill
-On Android 11, Bitwarden will display autofill suggestions in the suggestion strip on top of a supported keyboard.
 
-
-{% callout info %}The Inline Autofill is only available to users on Android 11 and greater. If you are on a version of Android prior to 11.0, you should use the Autofill Service or Autofill Accessibility Service as explained in this article.{% endcallout %}
+{% callout info %}The Inline Autofill is only available to users on Android 11 and greater.{% endcallout %}
 
 1. Open the Bitwarden Android App.
 2. Tap **{% icon fa-cog %} Settings**.
 3. Tap **Auto-fill Service**.
 4. Locate **Inline Autofill** and enable it.
+
+The Auto-fill service should also be enabled.
+You can learn more about the Inline Autofill Framework from here https://developer.android.com/guide/topics/text/ime-autofill
+
+## Testing the Inline Autofill
 
 ## Auto-fill Service
 
