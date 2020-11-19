@@ -76,9 +76,9 @@ bw login [email] [password] --method <method> --code <code>
 ```
 where `<method>` is your Two-step Login method (see [Enums](#enums)), and `<code>` is your Two-step Login code.
 ```
-bw login --apiKey
+bw login --apikey
 ```
-where `--apiKey` will prompt you to enter your personal `client_id` and `client_secret`. For more information, see [Personal API Key for CLI Authentication](https://bitwarden.com/help/article/personal-api-key/).
+where `--apikey` will prompt you to enter your personal `client_id` and `client_secret`. For more information, see [Personal API Key for CLI Authentication](https://bitwarden.com/help/article/personal-api-key/).
 ```
 bw login --sso
 ```
@@ -109,7 +109,7 @@ Pass the session key to CLI commands by setting the `BW_SESSION` environment var
 It is possible to persist your session key to your environment (for example, exporting it in `.bashrc`), however, we do not recommend doing this. Your active session key is the encryption key used to unlock all data associated with your Bitwarden vault and is not well-suited for persisting on an unprotected disk.
 {% endcallout %}
 
-### `--apiKey` Variables
+### `--apikey` Variables
 
 The Bitwarden CLI will look for non-empty environment variables `BW_CLIENTID` or `BW_CLIENTSECRET`. Save these environment variables with your `client_id` and `client_secret` to prevent Bitwarden from prompting you every time.
 
