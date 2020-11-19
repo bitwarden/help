@@ -4,7 +4,7 @@ title: Why Choose Bitwarden for Your Team
 categories: [plans-and-pricing]
 featured: false
 popular: false
-hidden: true
+hidden: false
 tags: [organization, enterprise, teams, plans, subscription]
 order: 03
 ---
