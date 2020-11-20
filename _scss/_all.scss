@@ -30,6 +30,11 @@ a[rel='lightbox'] {
     cursor: zoom-in;
 }
 
+figcaption {
+  font-size: 0.9rem;
+  color: gray;
+}
+
 pre {
     background: $gray-100;
     border: 1px solid $border-color;
