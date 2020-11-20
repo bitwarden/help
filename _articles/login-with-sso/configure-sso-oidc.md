@@ -10,6 +10,13 @@ order: 04
 
 This article will guide you through the steps required to configure Login with SSO for OpenID Connect (OIDC) authentication.
 
+{% callout info %}
+**Configuration will vary provider-to-provider.** Refer to the following Provider Samples as you configure Login with SSO:
+
+- [Okta Sample]({% link _articles/login-with-sso/oidc-okta.md %})
+
+{% endcallout %}
+
 ## Step 1: Enabling Login with SSO
 
 Complete the following steps to enable Login with SSO for OIDC authentication:

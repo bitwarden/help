@@ -9,6 +9,22 @@ order: 03
 ---
 This article will guide you through the steps required to configure Login with SSO for SAML 2.0 authentication.
 
+{% callout info %}
+**Configuration will vary provider-to-provider.** Refer to the following Provider Samples as you configure Login with SSO:
+
+- [ADFS Sample]({% link _articles/login-with-sso/saml-adfs.md%})
+- [Azure Sample]({% link _articles/login-with-sso/saml-azure.md %})
+- [Duo Sample]({% link _articles/login-with-sso/saml-duo.md %})
+- [Google Sample]({% link _articles/login-with-sso/saml-google.md %})
+- [JumpCloud Sample]({% link _articles/login-with-sso/saml-jumpcloud.md %})
+- [Keycloak Sample]({% link _articles/login-with-sso/saml-keycloak.md %})
+- [Okta Sample]({% link _articles/login-with-sso/saml-okta.md %})
+- [OneLogin Sample]({% link _articles/login-with-sso/saml-onelogin.md %})
+
+Or, refer to the [Field Mappings Reference](#field-mappings-reference) on this page.
+
+{% endcallout %}
+
 ## Step 1: Enabling Login with SSO
 
 Complete the following steps to enable Login with SSO for SAML 2.0 authentication:
@@ -84,8 +100,6 @@ Check this checkbox when using trusted and valid certificates from your IdP thro
 ## Step 3: Configure Your IdP
 
 Before you can continue, you must configure your IdP to receive requests from and send responses to Bitwarden using values from [Step 2: Service Provider Configuration](#step-2-service-provider-configuration).
-
-Configuration can vary provider-to-provider. Refer to the [Field Mappings Reference](#field-mappings-reference) on this page to see how Bitwarden fields correspond to fields in your IdP's GUI.
 
 Depending on your IdP, you may need to create an additional API key or Application ID. We recommend maintaining a distinct Application ID or Reference for Bitwarden.
 
