@@ -46,11 +46,11 @@ Bitwarden Mobile applications and Browser Extensions will automatically copy the
 
 All Bitwarden applications display your rotating TOTP code inside the Vault item, which can be copied and pasted just like a Username or Password.
 
-{% image two-step/totpcode.png %}
+{% image two-step/totpcode.png Copy a TOTP code %}
 
 ## Support for More Parameters
 
-By default, Bitwarden will generate 6-digit TOTPs using SHA-1 and rotate them every 30 seconds, however custom options are supported by manually editing the `otpauth://totp/` URI for your Vault item.
+By default, Bitwarden will generate 6-digit TOTPs using SHA-1 and rotate them every 30 seconds, however some websites or services will expect different parameters. Parameters can be customized in Bitwarden by manually editing the `otpauth://totp/` URI for your Vault item.
 
 |Parameter|Description|Values|Sample Query|
 |---------|-----------|------|------------|
