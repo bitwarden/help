@@ -23,7 +23,7 @@ Supported applications:
 
 ## Setup FIDO U2F
 
-Complete the following steps to enable Two-step Login via FIDO U2F:
+Complete the following steps to enable Two-step Login using FIDO U2F:
 
 {% callout warning %}
 **Losing access to your FIDO U2F device can permanently lock you out of your Vault,** unless you write down and keep your Two-step Login Recovery Code in a safe place.
@@ -36,7 +36,7 @@ Complete the following steps to enable Two-step Login via FIDO U2F:
 3. Select **Two-step Login** from the left-side menu.
 4. Locate the **FIDO U2F Security Key** option and select the **Manage** button.
 
-   {% image two-step/twostep-options-u2foverlay.png %}
+   {% image two-step/twostep-options-u2foverlay.png Select the Manage button %}
 
    You will be prompted to enter your Master Password to continue.
 
@@ -45,7 +45,7 @@ Complete the following steps to enable Two-step Login via FIDO U2F:
 
    If your security key has a button, touch it.
 
-7. Select **Save**. A green `Enabled` message will indicate that Two-step Login via FIDO U2F has been successfully enabled and your key will appear with a green checkbox ( {% icon fa-check %} ).
+7. Select **Save**. A green `Enabled` message will indicate that Two-step Login using FIDO U2F has been successfully enabled and your key will appear with a green checkbox ( {% icon fa-check %} ).
 8. Select the **Close** button and confirm that the **FIDO U2F Security Key** option is not enabled, as indicated by a green checkbox ( {% icon fa-check %} ).
 
 Repeat this process to add up to 5 FIDO U2F security keys to your account.
@@ -64,4 +64,4 @@ The following assumes that **FIDO U2F** is your [highest-priority enabled method
 
    {% image two-step/u2f/web.png %}
 
-You will not be required to complete your secondary Two-step Login setup to **Unlock** your Vault once timed-out. For help configuring Log Out vs. Lock behavior, see [Vault Timeout Options]({% link _articles/account/vault-timeout.md %}).
+You will not be required to complete your secondary Two-step Login setup to **Unlock** your Vault once logged in. For help configuring Log Out vs. Lock behavior, see [Vault Timeout Options]({% link _articles/account/vault-timeout.md %}).

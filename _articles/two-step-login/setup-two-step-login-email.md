@@ -25,12 +25,12 @@ Complete the following steps to enable Two-step Login using email:
 3. Select **Two-step Login** from the left-side menu.
 4. Locate the **Email** option and select the **Manage** button:
 
-   {% image /two-step/twostep-options-emailoverlay.png Two-step Login Options %}
+   {% image /two-step/twostep-options-emailoverlay.png Select the Manage button %}
    You will be prompted to enter your Master Password to continue.
 5. Enter the email that you wish you receive verification codes and click the **Send Email** button.
 6. Check your inbox for the 6 digit verification code. Enter the code in the dialog box in your Web Vault and select the **Enable** button.
 
-   A green `Enabled` message will indicate that Two-step Login via email has been enabled.
+   A green `Enabled` message will indicate that Two-step Login via Email has been enabled.
 7. Select the **Close** button and confirm that the **Email** option is enabled, as indicated by a green checkbox ( {% icon fa-check %} ).
 
 {% callout info %}
@@ -47,4 +47,4 @@ The following assumes that **Email** is your [highest-priority enabled method](h
 2. Check your inbox for the 6 digit verification code. Enter this code on the Vault login screen.
 3. Select **Continue** to finish logging in.
 
-You will not be required to complete your secondary Two-step Login step to **Unlock** your Vault once timed-out. For help configuring Log Out vs. Lock behavior, see [Vault Timeout Options]({% link _articles/account/vault-timeout.md %}).
+You will not be required to complete your secondary Two-step Login step to **Unlock** your Vault once logged in. For help configuring Log Out vs. Lock behavior, see [Vault Timeout Options]({% link _articles/account/vault-timeout.md %}).

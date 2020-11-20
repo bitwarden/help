@@ -25,7 +25,7 @@ Configuring this option will dictate what Bitwarden will do once the Vault Timeo
 
 - **Lock** (*default*).
 
-  Locking your Vault will maintain Vault data on the device. You will only be prompted to enter your Master Password to decrypt your Vault; no [Two-step Login]({% link _articles/two-step-login/setup-two-step-login.md %}) method will be required to unlock your Vault.
+  Locking your Vault will maintain Vault data on the device. You will only be prompted to enter your Master Password to decrypt your Vault, however no [Two-step Login]({% link _articles/two-step-login/setup-two-step-login.md %}) method will be required to unlock your Vault.
 
   Bitwarden client applications don't need to be online to unlock.
 - **Log Out**.

@@ -18,15 +18,15 @@ In order to use Two-step Login to access Bitwarden using Duo, you'll need a Duo 
 
 1. In the left menu, navigate to **Applications**.
 2. Select the **Protect an Application** button.
-3. Find or search for **Bitwarden** in the Applications list, and select the **Protect** button. You will be redirected to a Bitwarden Application screen:
+3. Find or search for **Bitwarden** in the Applications list, and select the **Protect** button. You will be redirected to a Bitwarden Application page:
 
-    {% image two-step/duo/duoportal.png %}
+    {% image two-step/duo/duoportal.png Bitwarden Application page %}
 
-Take note of the **Integration Key**, **Secret Key**, and **API Hostname**. You will need to reference these values when you [Setup Two-step Login from your Web Vault](#setup-two-step-login).
+Take note of the **Integration Key**, **Secret Key**, and **API Hostname**. You will need to reference these values when you [Setup Duo](#setup-two-step-login) within Bitwarden.
 
 ## Setup Duo
 
-Complete the following steps to enable Two-step Login via Duo:
+Complete the following steps to enable Two-step Login using Duo:
 
 {% callout warning %}
 **Losing access to your Duo-enabled device can permanently lock you out of your Vault,** unless you write down and keep your Two-step Login Recovery Code in a safe place.
@@ -41,11 +41,11 @@ Complete the following steps to enable Two-step Login via Duo:
 3. Select **Two-step Login** from the left-side menu.
 4. Locate the **Duo**  or **Duo (Organization)** option and select the **Manage** option.
 
-   {% image two-step/twostep-options-duooverlay.png %}
+   {% image two-step/twostep-options-duooverlay.png Select the Manage button %}
 
    You will be prompted to enter your Master Password to continue.
-5. Enter the **Integration Key**, **Secret Key**, and **API Hostname** provided in your Duo Admin portal (see [Create a Duo Account](#create-a-duo-account)).
-6. Select the **Enable** button. A green `Enabled` message will indicate that Two-step Login via Duo has been enabled.
+5. Enter the **Integration Key**, **Secret Key**, and **API Hostname** provided in your Duo Admin portal (see [Activate Bitwarden in Duo](#activate-bitwarden-in-duo)).
+6. Select the **Enable** button. A green `Enabled` message will indicate that Two-step Login using Duo has been enabled.
 7. Select the **Close** button and confirm that the **Duo** option is now enabled, as indicated by a green checkmark ( {% icon fa-check %} ).
 
 {% callout info %}
@@ -54,11 +54,11 @@ When you setup Two-step Login, you should logout of all your Bitwarden apps to i
 
 ### Register a Device
 
-In a new tab, navigate to the [Web Vault](https://vault.bitwarde.com){:target="\_blank}. If Duo is your highest-priority Two-step Login method, you will be prompted by a Duo setup screen. Organization members will be prompted by this screen on their next login.
+In a new tab, navigate to the [Web Vault](https://vault.bitwarden.com){:target="\_blank"}. If Duo is your highest-priority Two-step Login method, you will be prompted by a Duo setup screen. Organization members will be prompted by this screen on their next login.
 
 {% image two-step/duo/enroll1.png Duo Setup Screen %}
 
-Follow the on-screen prompts to finish configuring Two-step Login via Duo (for example, *type of device to register* and *send SMS or send push notification*). If you haven't already downloaded the [Duo Mobile App](#get-the-duo-mobile-app), you will be prompted to do so.
+Follow the on-screen prompts to finish configuring Two-step Login using Duo (for example, *type of device to register* and *send SMS or send push notification*). If you haven't already downloaded the [Duo Mobile App](#get-the-duo-mobile-app), you will be prompted to do so.
 
 ### Get the Duo Mobile App
 
@@ -79,4 +79,4 @@ The following assumes that **Duo** is your [highest-priority enabled method](htt
    - Approving the **Duo Push** request from your registered device.
    - Finding the 6 digit verification code in your **Duo Mobile** app or **SMS** messages, and enter the code on the Vault login screen.
 
-You will not be required to complete your secondary Two-step Login step to **Unlock** your Vault once timed-out. For help configuring Log Out vs. Lock behavior, see [Vault Timeout Options]({% link _articles/account/vault-timeout.md %}).
+You will not be required to complete your secondary Two-step Login step to **Unlock** your Vault once logged in. For help configuring Log Out vs. Lock behavior, see [Vault Timeout Options]({% link _articles/account/vault-timeout.md %}).

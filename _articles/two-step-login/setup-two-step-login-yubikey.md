@@ -10,11 +10,11 @@ order: 06
 
 Two-step Login using [YubiKey](https://www.yubico.com){:target="\_blank"} is available for Premium users, including members of Paid Organizations (Families, Teams, or Enterprise).
 
-Any YubiKey that supports [OTP](https://www.yubico.com/products/yubikey-hardware/compare-yubikeys/){:target="_blank"} can be used. This includes all YubiKey 4 and 5 series devices, as well as YubiKey NEO and YubiKey NFC. You can add up to 5 YubiKeys to your account.
+Any [YubiKey that supports OTP](https://www.yubico.com/products/yubikey-hardware/compare-yubikeys/){:target="_blank"} can be used. This includes all YubiKey 4 and 5 series devices, as well as YubiKey NEO and YubiKey NFC. You can add up to 5 YubiKeys to your account.
 
 ## Setup YubiKey
 
-Complete the following steps to enable Two-step Login via Yubikey:
+Complete the following steps to enable Two-step Login using Yubikey:
 
 {% callout warning %}
 **Losing access to your Yubikey can permanently lock you out of your Vault,** unless you write down and keep your Two-step Login Recovery Code in a safe place.
@@ -27,7 +27,7 @@ Complete the following steps to enable Two-step Login via Yubikey:
 3. Select **Two-step Login** from the left-side menu.
 4. Locate the **YubiKey OTP Security Key** option and select the **Manage** button.
 
-   {% image two-step/twostep-options-yubioverlay.png Two-step Login Options %}
+   {% image two-step/twostep-options-yubioverlay.png Select the Manage button %}
 
    You will be prompted to enter your Master Password to continue.
 5. Plug the YubiKey into your computer's USB port.
@@ -35,7 +35,7 @@ Complete the following steps to enable Two-step Login via Yubikey:
 7. Touch the Yubikey's button.
 
    If you will be using the YubiKey for a NFC-enabled mobile device, check the **One of my keys supports NFC** checkbox.
-8. Select **Save**. A green `Enabled` message will indicate that Two-step Login via YubiKey has been enabled.
+8. Select **Save**. A green `Enabled` message will indicate that Two-step Login using YubiKey has been enabled.
 9. Select the **Close** button and confirm that the **YubiKey OTP Security Key** option is now enabled, as indicated by a green checkbox ( {% icon fa-check %} ).
 
 Repeat this process to add up to 5 YubiKeys to your account.
@@ -56,11 +56,11 @@ The following assumes that **YubiKey** is your [highest-priority enabled method]
 
 2. Select or tap **Continue** to finish logging in.
 
-You will not be required to complete your secondary Two-step Login step to **Unlock** your Vault once timed-out. For help configuring Log Out vs. Lock behavior, see [Vault Timeout Options]({% link _articles/account/vault-timeout.md %}).
+You will not be required to complete your secondary Two-step Login step to **Unlock** your Vault once logged in. For help configuring Log Out vs. Lock behavior, see [Vault Timeout Options]({% link _articles/account/vault-timeout.md %}).
 
 ### Troubleshooting Android
 
-If you do not know where your NFC receiver is located, you may need to move it around some, trying different areas. Once Bitwarden detects the YubiKey it will automatically validate and log you in. If YubiKey NEO or YubiKey 5 NFC continue to not work on your Android device, try the following:
+If you do not know where your NFC receiver is located, you may need to move it around some, trying different areas. Once Bitwarden detects the YubiKey it will automatically validate and log you in. If a YubiKey NEO or YubiKey 5 NFC continues to not work on your Android device, check the following:
 
 - That you checked the **One of my keys supports NFC** checkbox during setup.
 - That your Android device supports [NFC](https://en.wikipedia.org/wiki/List_of_NFC-enabled_mobile_devices){:target="_blank"} and is [known to work properly](https://forum.yubico.com/viewtopic1c5f.html?f=26&t=1302){:target="_blank"} with YubiKey NEO or YubiKey 5 NFC.

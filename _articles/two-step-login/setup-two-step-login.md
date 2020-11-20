@@ -37,7 +37,7 @@ For Premium users (including members of Paid Organizations), Bitwarden offers se
 
 ## Using Multiple Methods
 
-You can choose to enable multiple Two-step Login methods. Logging in to Bitwarden will prompt for your highest-priority Enabled Two-step Login method, according to the following order of preference:
+You can choose to enable multiple Two-step Login methods. Logging in to Bitwarden will prompt for your highest-priority enabled Two-step Login method, according to the following order of preference:
 1. FIDO U2F
 2. YubiKey
 3. Duo

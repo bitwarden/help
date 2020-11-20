@@ -12,7 +12,7 @@ Two-step Login using a third-party authenticator app (for example, [Authy](https
 
 ## Setup an Authenticator
 
-Complete the following steps to enable Two-step Login via an authenticator app:
+Complete the following steps to enable Two-step Login using an authenticator app:
 
 {% callout warning %}
 **Losing access to your authenticator app can permanently lock you out of your Vault,** unless you write down and keep your Two-step Login Recovery Code in a safe place.
@@ -25,14 +25,14 @@ Complete the following steps to enable Two-step Login via an authenticator app:
 3. Select **Two-step Login** from the left-side menu.
 4. Locate the **Authenticator App** option and select the **Manage** button:
 
-   {% image /two-step/twostep-options-authoverlay.png Two-step Login Options %}
+   {% image /two-step/twostep-options-authoverlay.png Select the Manage button %}
    You will be prompted to enter your Master Password to continue.
 5. Scan the QR code with your authenticator app of choice.
 
    If you don't have an authenticator app on your mobile device yet, download one and scan the QR code. We recommend [Authy](https://authy.com/){:target="_blank"}.
 6. Once scanned, your authenticator app will return a 6-digit verification code. Enter the code in the dialog box in your Web Vault and select the **Enable** button.
 
-   A green `Enabled` message will indicate that Two-step Login via Authenticator has been enabled.
+   A green `Enabled` message will indicate that Two-step Login via Authenticator App has been enabled.
 6. Select the **Close** button and confirm that the **Authenticator App** option now is enabled, as indicated by a green checkbox ( {% icon fa-check %} ).
 
 {% callout info %}
@@ -51,4 +51,4 @@ The following assumes that **Authenticator** is your [highest-priority enabled m
    Typically, verification codes will change every 30 seconds.
 3. Select **Continue** to finish logging in.
 
-You will not be required to complete your secondary Two-step Login step to **Unlock** your Vault once timed-out. For help configuring Log Out vs. Lock behavior, see [Vault Timeout Options]({% link _articles/account/vault-timeout.md %}).
+You will not be required to complete your secondary Two-step Login step to **Unlock** your Vault once logged in. For help configuring Log Out vs. Lock behavior, see [Vault Timeout Options]({% link _articles/account/vault-timeout.md %}).
