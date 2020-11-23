@@ -21,8 +21,6 @@ The following is a sample SAML 2.0 implementation with Bitwarden in the ADFS cli
 
 {% image sso/cheatsheets/saml-adfs/saml-adfs3.png %}
 
-{% image sso/cheatsheets/saml-adfs/saml-adfs3.png %}
-
 {% image sso/cheatsheets/saml-adfs/saml-adfs4.png %}
 
 {% image sso/cheatsheets/saml-adfs/saml-adfs5.png %}
