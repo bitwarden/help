@@ -250,7 +250,7 @@ If you are a member of an organization that offers attachments, you’ll need to
 
 ### **Q: I am asked for my master password even though I have PIN unlock enabled on iOS / Android**
 
-**A:** When you enable PIN unlock, you are prompted if you’d like to use your Master Password after an application restarted (closed). If you select yes, if the app is closed or backgrounded, the PIN will be prompted.
+**A:** When you enable PIN unlock, you are prompted if you’d like to use your Master Password after an application restarted (closed). If you select yes, if the app is closed or backgrounded, you will be prompted for your Master Password instead of the PIN.
 
 To reset this:
 - Disable PIN Unlock
