@@ -100,7 +100,7 @@ In the following table, "premium features" (included for **Teams Organizations**
 |Login with SSO|-|-|<i class="fa fa-check" aria-hidden="true"></i>|
 |Enterprise Policies|-|-|<i class="fa fa-check" aria-hidden="true"></i>|
 |Self-host option|-|-|<i class="fa fa-check" aria-hidden="true"></i>|
-|Cost to you|Free|$3 Per User Per Month, billed annually|$5 Per User Per Month, billed annually|
+|Cost to you|Free|$3 Per User Per Month, billed annually<br>or<br>$4 Per User Per Month, billed monthly|$5 Per User Per Month, billed annually<br>or<br>$6 Per User Per Month, billed monthly|
 
 ### Next Steps
 
