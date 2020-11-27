@@ -26,9 +26,9 @@ At this time, exports do not include file attachment data.
 ## From the web vault
 
 1. Log in to the web vault at <https://vault.bitwarden.com>
-2. Click **Tools** in the top navigation bar
-3. Click **Export Vault** under the **Tools** side navigation
-4. Choose your exported file format, type in your master password, and click **Export Vault**. Your browser will either automatically download the exported file or prompt you to save it.
+1. Click **Tools** in the top navigation bar
+1. Click **Export Vault** under the **Tools** side navigation
+1. Choose your exported file format, type in your master password, and click **Export Vault**. Your browser will either automatically download the exported file or prompt you to save it.
 
 {% callout info %}
 Exporting your vault will not include items that belong to an organization. Organization admins can export their organization's vault from the web vault under the organization's admin area in the **Tools** section. Then click **Export Vault** under the **Tools** side navigation.
@@ -37,20 +37,22 @@ Exporting your vault will not include items that belong to an organization. Orga
 ## From the mobile app
 
 1. Open the mobile app
-2. Navigate to **Settings**
-3. Scroll down and tap **Export Vault** under **Tools**
-4. Choose your exported file format, type in your master password, and tap **Export Vault**. Your app will either automatically download the exported file or prompt you to save it.
+1. Navigate to **Settings**
+1. Scroll down and tap **Export Vault** under **Tools**
+1. Choose your exported file format, type in your master password, and tap **Export Vault**. Your app will either automatically download the exported file or prompt you to save it.
 
 ## From the browser extension
 
-1. Open the browser extension and click the **Tools** tab
-2. Scroll down and click **Export Vault**
-3. Choose your exported file format, type in your master password, and click **Submit**. Your browser will either automatically download the exported file or prompt you to save it.
+1. Open the browser extension
+1. Click on the **Settings** tab at the bottom
+1. Scroll down to the **Tools** header
+1. Click **Export Vault**
+1. Choose your exported file format, type in your master password, and click **Submit**. Your browser will either automatically download the exported file or prompt you to save it.
 
 ## From the desktop app
 
 1. Open the desktop application and navigate to **File** &rarr; **Export Vault**
-2. Choose your exported file format, type in your master password, and click the Submit button. You will be prompted to download the exported file.
+1. Choose your exported file format, type in your master password, and click the Submit button. You will be prompted to download the exported file.
 
 ## From the CLI
 
