@@ -13,7 +13,7 @@ By making 100% of our source code available under an open source GPLv3 license, 
 
 In October 2018, Bitwarden successfully completed a source code audit and cryptographic analysis by security firm [Cure53](https://cure53.de/). You can read more about this security audit [here](https://bitwarden.com/blog/post/third-party-security-audit).
 
-In July 2020, Bitarden successfully completed a thorough security assessment and penetration test by auditing firm [Insight Risk Consulting](https://www.insightriskconsulting.com/). You can read more about this security audit [here](https://bitwarden.com/blog/post/bitwarden-network-security-assessment-2020/).
+In July 2020, Bitwarden successfully completed a thorough security assessment and penetration test by auditing firm [Insight Risk Consulting](https://www.insightriskconsulting.com/). You can read more about this security audit [here](https://bitwarden.com/blog/post/bitwarden-network-security-assessment-2020/).
 
 In August 2020, Bitwarden achieved SOC 2 Type 2 and SOC 3 certification. You can learn more about this [here](https://bitwarden.com/blog/post/bitwarden-achieves-soc-2-certification/)
 
