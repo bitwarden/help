@@ -151,6 +151,8 @@ Some features such as a SMTP mail server settings, YubiKey OTP API credentials, 
 Example:
 
 ```
+globalSettings__yubico__validationUrls__0=https://api.yubico.com/wsapi/2.0/verify
+globalSettings__yubico__validationUrls__1=https://your.own.yubico.OTP.server/wsapi/2.0/verify
 globalSettings__yubico__clientId=294620155
 globalSettings__yubico__key=owdez88RdxVZuGbZ4fv
 globalSettings__mail__smtp__host=smtp.sendgrid.net
@@ -160,7 +162,7 @@ globalSettings__mail__smtp__username=apikey
 globalSettings__mail__smtp__password=SG.YOUR.API_KEY
 ```
 
-If you plan to use YubiKeys for two-step login, you can get your YubiKey client id and key at [https://upgrade.yubico.com/getapikey/](https://upgrade.yubico.com/getapikey/){:target="_blank"}.
+If you plan to use YubiKeys for two-step login with YubiCloud as OTP server, you can get your YubiKey client id and key at [https://upgrade.yubico.com/getapikey/](https://upgrade.yubico.com/getapikey/){:target="_blank"}.
 
 ## Start Bitwarden
 
