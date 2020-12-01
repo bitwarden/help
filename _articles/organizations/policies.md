@@ -92,3 +92,7 @@ Enabling the **Single Sign-On Authentication** policy will require non-Owner/non
 {% callout info %}
 The **Single Organization** policy must be enabled before activating this policy.
 {% endcallout %}
+
+### Personal Ownership Policy
+
+Enabling the **Personal Ownership** policy will require non-Owner/non-Admin members of your Organization to save newly created or newly cloned items to an organization/collection. 
