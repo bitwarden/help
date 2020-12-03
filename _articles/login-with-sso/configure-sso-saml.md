@@ -20,6 +20,7 @@ This article will guide you through the steps required to configure Login with S
 - [Keycloak Sample]({% link _articles/login-with-sso/saml-keycloak.md %})
 - [Okta Sample]({% link _articles/login-with-sso/saml-okta.md %})
 - [OneLogin Sample]({% link _articles/login-with-sso/saml-onelogin.md %})
+- [PingFederate Sample]({% link _articles/login-with-sso/saml-pingfederate.md %})
 
 Or, refer to the [Field Mappings Reference](#field-mappings-reference) on this page.
 
