@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Deploying Bitwarden as an MSP
-categories: [getting started]
+categories: [getting-started]
 featured: false
 popular: false
 hidden: false
