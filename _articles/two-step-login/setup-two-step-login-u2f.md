@@ -46,7 +46,7 @@ Complete the following steps to enable Two-step Login using FIDO U2F:
    If your security key has a button, touch it.
 
 7. Select **Save**. A green `Enabled` message will indicate that Two-step Login using FIDO U2F has been successfully enabled and your key will appear with a green checkbox ( {% icon fa-check %} ).
-8. Select the **Close** button and confirm that the **FIDO U2F Security Key** option is not enabled, as indicated by a green checkbox ( {% icon fa-check %} ).
+8. Select the **Close** button and confirm that the **FIDO U2F Security Key** option is now enabled, as indicated by a green checkbox ( {% icon fa-check %} ).
 
 Repeat this process to add up to 5 FIDO U2F security keys to your account.
 
