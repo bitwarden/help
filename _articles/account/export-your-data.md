@@ -26,7 +26,7 @@ Export your Personal Vault data from any client application:
 4. On the Export Vault page:
    - Select a **File Format** (`.json` or `.csv`).
    - Enter your **Master Password**.
-5. Select the **Export Vault** button to download your Vault Export.
+5. Select the **Export Vault** button to download your Vault Export. You will be prompted to specify a location for download.
 
 ### From the Mobile App
 
@@ -75,7 +75,7 @@ Admins and Owners may export their Organization Vault from the Web Vault or CLI:
 4. On the Export Vault page:
    - Select a **File Format** (`.json` or `.csv`).
    - Enter your **Master Password**.
-5. Select the **Export Vault** button to download your Vault Export.
+5. Select the **Export Vault** button to download your Vault Export. You will be prompted to specify a location for download.
 
 ### From the CLI
 
