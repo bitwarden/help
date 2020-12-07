@@ -1,59 +1,90 @@
 ---
 layout: article
-title: Export your vault data
+title: Export Vault Data
 categories: [account-management]
 featured: false
 popular: false
 tags: [export, accounts, csv]
 ---
 
-Bitwarden allows you to export your vault data at any time.
+Bitwarden allows you to export your personal Vault data from any client application, or an Organization Vault from the Web Vault or CLI. Exports can be downloaded as `.json` or `.csv` files, however Bitwarden recommends using `.json` for a more complete option for standard backup procedures as `.csv` exports will lack some non-critical information.
+
+Vault Exports currently do not include file attachments.
 
 {% callout warning %}
-Exports contain your vault data in an unencrypted format. You should not store or send the exported file over unsecure channels (such as email). Delete it immediately after you are done using it.
+Vault Exports contain your data in an **unencrypted** format. Do not store or send the exported file over insecure channels, like email. You should delete Vault Exports immediately after you are done using them.
 {% endcallout %}
+
+## Export a Personal Vault
+
+Export your Personal Vault data from any client application:
+
+### From the Web Vault
+
+1. Select **Tools** from the top navigation bar.
+3. Select **Export Vault** from the left-hand Tools menu.
+4. On the Export Vault page:
+   - Select a **File Format** (`.json` or `.csv`).
+   - Enter your **Master Password**.
+5. Select the **Export Vault** button to download your Vault Export. You will be prompted to specify a location for download.
+
+### From the Mobile App
+
+1. Tap the **Settings** tab.
+2. Scroll down to the **Tools** section, and tap **Export Vault**.
+3. On the Export Vault page:
+   - Select a **File Format** (`.json` or `.csv`).
+   - Enter your **Master Password**.
+4. Select the **Export Vault** button to download your Vault Export. You will be prompted to specify a location for download.
+
+### From the Browser Extension
+
+1. Open the **Settings** tab.
+2. Scroll down to the **Tools** section, and select **Export Vault**.
+4. On the Export Vault page:
+   - Select a **File Format** (`.json` or `.csv`).
+   - Enter your **Master Password**.
+5. Select the **Export Vault** button to download your Vault Export. You will be prompted to specify a location for download.
+
+### From the Desktop App
+
+1. Navigate to **File** &rarr; **Export Vault**.
+2. In the Export Vault window:
+   - Select a **File Format** (`.json` or `.csv`).
+   - Enter your **Master Password**.
+3. Select the **Submit** button to download your Vault Export. You will be prompted to specify a location for download.
+
+### From the CLI
+
+Use the `bw export` command to export your Vault data. By default, `bw export` will create a `.csv` export in the current working directory.
+
+You may pass the following options with the `bw export` command:
+- `--output <filePath>` to specify a saving location of your choice.
+- `--format <format>` to specify the file format as `csv` (*default*) or `json`.
+
+## Export an Organization Vault
+
+Admins and Owners may export their Organization Vault from the Web Vault or CLI:
+
+### From the Web Vault
+
+1. Open your Organization and select the **Tools** tab.
+
+   {% image organizations/org-export.png Export Organization Vault %}
+2. Select **Export Vault** from the left-hand Tools menu.
+4. On the Export Vault page:
+   - Select a **File Format** (`.json` or `.csv`).
+   - Enter your **Master Password**.
+5. Select the **Export Vault** button to download your Vault Export. You will be prompted to specify a location for download.
+
+### From the CLI
+
+From the Bitwarden CLI application, use the `bw export` command with the `--organizationid <orgId>` option to export your Organization Vault.
 
 {% callout info %}
-The `.json` file format offers a more complete export of your data and should be used for standard backup procedures. Some non-critical information is not included with the export when using the `.csv` file format.
-
-An exported `.json` file can be opened, read, and modified in a simple text editor like Notepad.
-
-An exported `.csv` file can be opened, read, and modified in spreadsheet programs such as Microsoft Excel (preferred) or a simple text editor like Notepad.
-
-At this time, exports do not include file attachment data.
+Retrieve your `<orgId>` value using the command: `bw list organizations`.
 {% endcallout %}
 
-## From the web vault
-
-1. Log in to the web vault at <https://vault.bitwarden.com>
-1. Click **Tools** in the top navigation bar
-1. Click **Export Vault** under the **Tools** side navigation
-1. Choose your exported file format, type in your master password, and click **Export Vault**. Your browser will either automatically download the exported file or prompt you to save it.
-
-{% callout info %}
-Exporting your vault will not include items that belong to an organization. Organization admins can export their organization's vault from the web vault under the organization's admin area in the **Tools** section. Then click **Export Vault** under the **Tools** side navigation.
-{% endcallout %}
-
-## From the mobile app
-
-1. Open the mobile app
-1. Navigate to **Settings**
-1. Scroll down and tap **Export Vault** under **Tools**
-1. Choose your exported file format, type in your master password, and tap **Export Vault**. Your app will either automatically download the exported file or prompt you to save it.
-
-## From the browser extension
-
-1. Open the browser extension
-1. Click on the **Settings** tab at the bottom
-1. Scroll down to the **Tools** header
-1. Click **Export Vault**
-1. Choose your exported file format, type in your master password, and click **Submit**. Your browser will either automatically download the exported file or prompt you to save it.
-
-## From the desktop app
-
-1. Open the desktop application and navigate to **File** &rarr; **Export Vault**
-1. Choose your exported file format, type in your master password, and click the Submit button. You will be prompted to download the exported file.
-
-## From the CLI
-
-In the CLI application, you can use the `bw export` command to export your data to a `.csv` or `.json` file in the current working directory. You can also pass the `--output` option to specify a saving location of your choice. Using the `--format` option will allow you to specify the file format as `csv` or `json`. The file format defaults to `csv`, if not specified.
+By default, `bw export` will create a `.csv` export in the current working directory, however you may pass the following options with the command:
+- `--output <filePath>` to specify a saving location of your choice.
+- `--format <format>` to specify the file format as `csv` (*default*) or `json`.
