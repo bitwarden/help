@@ -1,102 +1,60 @@
 ---
 layout: article
-title: Unlocking with biometrics
+title: Unlock with Biometrics
 categories: [account-management]
 featured: false
 popular: false
 tags: [unlock, face id, touch id, hello, windows, mac, ios, android]
 ---
 
-## Unlocking
+Bitwarden can be configured to accept biometrics as a method to unlock your Vault. Biometrics can **only be used to unlock** your Vault, you will still be required to log in to your Vault with your Master Password and any enabled [Two-step Login method]({% link _articles/two-step-login/setup-two-step-login.md %}).
 
-After logging into your Bitwarden account using your Master Password and any two-step login (if enabled) - you can leverage your device’s biometrics capabilities to unlock your vault faster.
+Biometric features are part of the built-in security in your device and/or operating system. Bitwarden leverages native APIs to perform this validation, and as such **does not receive any biometrics information** from the device.
 
-These biometric features are part of the built-in security in your device and/or operating system.
+## Mobile Applications
 
-Bitwarden is leveraging native APIs to perform this validation, and as such does not receive any biometrics information from the device.
+Biometric Unlock is supported for both the Android (Google Play or FDroid) and iOS Mobile Applications:
+- For **Android**, via [fingerprint unlock](https://support.google.com/nexus/answer/6285273?hl=en){:target="\_blank"} or [face unlock](https://support.google.com/pixelphone/answer/9517039?hl=en){:target="\_blank"}.
+- For **iOS**, via [Touch ID](https://support.apple.com/en-us/HT201371){:target="\_blank"} and [Face ID](https://support.apple.com/en-us/HT208109){:target="\_blank"}.
 
-## Windows
+### Enable Biometric Unlock in Mobile
 
-### Supported unlocking options:
-- Hello (includes below options)
-  - PIN
-  - Facial Recognition
-  - [Other Windows Hello supported hardware](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/windows-hello-biometric-requirements)
+Complete the following steps to enable Biometric Unlock in your Mobile App:
 
-&rarr; [Enabling up Windows Hello](https://support.microsoft.com/en-us/help/4028017/windows-learn-about-windows-hello-and-set-it-up)
+{% callout info %}
+Your Biometric method of choice must be enabled on your device or operating system **before** it can be enabled in Bitwarden.
+{% endcallout %}
 
-### Supported clients
+1. Open your **Settings** tab.
+2. In the Security section, your available Biometrics options will be listed. Tap the Biometric method you would like to enable:
 
-- Desktop
+{% image /biometrics/ios_faceid.jpeg Enable Face ID in iOS%}
 
-## macOS
+A green `Enabled` status will appear when activated. Once Biometric Unlock is enabled, your device will automatically prompt for your biometric data when unlocking the app.
 
-### Supported unlocking options
+## Desktop Applications
 
-- Touch ID
+Biometric Unlock is supported for both the Windows and macOS Desktop Applications:
+- For **Windows**, via [Windows Hello](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/windows-hello){:target="\_blank"} using PIN, Facial Recognition, or [other hardware that meets Windows Hello biometric requirements](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/windows-hello-biometric-requirements){:target="\_blank"}.
+- For **macOS**, via [Touch ID](https://support.apple.com/en-us/HT207054){:target="\_blank"}.
 
-&rarr; [Enabling Touch ID on macOS](https://support.apple.com/en-us/HT207054)
+### Enable Biometric Unlock in Desktop
 
-### Supported clients
+Complete the following steps to enable Biometric Unlock in your Desktop App:
 
-- Desktop
+{% callout info %}
+Your Biometric method of choice must be enabled on your device or operating system **before** it can be enabled in Bitwarden.
+{% endcallout %}
 
-## Android
+1. Open your **Settings** (on Windows, **File** &rarr; **Settings**) (on macOS, **Bitwarden** &rarr; **Preferences**).
+2. In the Security section, your available Biometrics options will be listed as checkbox items. Check the Biometric method you would like to enable:
 
-### Supported unlocking options
-
-- Fingerprint unlock
-- Face Unlock
-
-&rarr; [Enabling fingerprint unlock](https://support.google.com/nexus/answer/6285273?hl=en)
-
-&rarr; [Enabling face unlock](https://support.google.com/pixelphone/answer/9517039?hl=en)
-
-### Supported clients
-
-- Bitwarden on Google Play
-- Bitwarden on FDroid
-
-## iOS
-
-### Supported unlocking options
-- Touch ID
-- Face ID
-
-&rarr; [Enabling Touch ID on iOS](https://support.apple.com/en-us/HT201371)
-
-&rarr; [Enabling Face ID on iOS](https://support.apple.com/en-us/HT208109)
-
-### Supported clients
-
-- Bitwarden on the App Store
-
-## Enabling Biometrics in Bitwarden
-
-### Mobile Apps
-
-To enable this in Bitwarden, simply navigate to settings and under the Security section, click enable Face ID, Touch ID, Face Unlock or Fingerprint unlock. The option presented will be based on your device and what biometric security features are available.
-
-{% image /biometrics/ios.png Configuring Face ID and Touch ID in iOS%}
-
-### Desktop Apps
-
-Enabling the desktop client is performed in much the same way. Navigate to the settings tab and you’ll see the option to enable Windows Hello or Touch ID for unlocking your vault.
-
-When biometrics are configured and your vault is locked, you will have a new button presented in the desktop application, either “Unlock with Windows Hello”, or “Unlock with Touch ID”. Clicking this button will initiate the unlocking sequence. Alternatively, you can still opt to unlock with your Master Password if you would like.
-
-{% image /biometrics/macos.png Configuring Touch ID in macOS %}
-
-{% image /biometrics/touchid-unlock.png Prompt to unlock with Touch ID in macOS %}
-
-{% image /biometrics/windows.png Configuring Hello in Windows %}
+   {% image /biometrics/windows.png Configuring Hello in Windows %}
 
 {% callout info %}
 If you do not see the option to enable Windows Hello within the Desktop preferences, you may need to install the [Microsoft Visual C++ Redistributable](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads).
 {% endcallout %}
 
-{% image /biometrics/hello-unlock.png Prompt to unlock with Windows Hello %}
+Once Biometric Unlock is enabled, a new button will be presented on the Unlock screen. Selecting this button (for example, **Unlock with Windows Hello**) will initiate unlock. You may at any time choose to unlock your Vault with your Master Password instead.
 
-### Browser Extensions
-
-Biometrics are not currently supported on our Browser extensions. However, we understand that it is incredibly important and this functionality is on our near-term roadmap.
+{% image /biometrics/hello-unlock.png Unlock with Windows Hello %}
