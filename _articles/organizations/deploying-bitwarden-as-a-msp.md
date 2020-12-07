@@ -7,8 +7,10 @@ popular: false
 hidden: false
 tags: [tutorial]
 ---
+If you are looking for information about the Bitwarden Partner Program, look no further. Bitwarden supports a reseller and managed service provider (MSP) model. You can get started right away (no formal agreement needs to be signed).
 
-Today, Bitwarden supports a reseller and managed service provider (MSP) model. This article details one recommended configuration to set partners and their customers up for success.
+This article details one recommended configuration to set partners and their customers up for success, as well as addresses some common questions about our Partner Program.
+
 
 ## Create an Organization
 Bitwarden Organizations are used for sharing items across multiple users.
@@ -68,6 +70,16 @@ Directory Sync can be configured on a per-Organization basis.
 
 Read more: [Syncing Users and Groups with a Directory](https://bitwarden.com/help/article/directory-sync/)
 ## Best Practices and Other Information
+
+### Pricing for Partners
+Whether you’re reselling or using Bitwarden on behalf of clients, Bitwarden offers a transparent pricing model. Price is based on per user per month, and is not dependent on the deployment method (cloud, private cloud, or self-host). Volume discounts start at 500 seats. 
+
+### Invoicing
+Bitwarden will invoice based on Organization Seats for yearly subscriptions and an invoice will be sent to the Billing Contact on your Account. With many of our MSPs, they add on or charge for additional services, so they prefer to handle billing their own clients. 
+
+### Value-Added Services
+Partners have complete flexibility for how they want to structure additional services for Clients. Some examples of services are organization consulting and implementation, onboarding training, Collections management, Support, and Reporting. If you’d like to see an example of how to structure an invoice for your client, [contact us](https://bitwarden.com/contact/).
+
 ### Cross-Platform Accessibility
 One of the best parts about Bitwarden is that end-users can access it anytime, anywhere, from any device and any platform.
 
@@ -81,4 +93,5 @@ Bitwarden recommends every end-user take advantage of their personal Vault to st
 
 Company credentials should be stored in the Organizational Vault and put into a Collection appropriate for team use. Personal credentials should be stored in personal Vaults. This way, if an end-user parts way with the company, both parties can ensure smooth success. The employee retains access to their personal items, but will not have access to Organizational items.
 
-If you have additional questions or feedback, feel free to reach out to the [Bitwarden sales team](https://bitwarden.com/contact).
+Read more about the benefits of the Bitwarden Partner Program on [our blog](https://bitwarden.com/blog/post/secure-password-management-for-msps/). If you have additional questions or feedback, feel free to reach out to the [Bitwarden sales team](https://bitwarden.com/contact).
+
