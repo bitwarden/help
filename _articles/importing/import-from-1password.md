@@ -7,47 +7,61 @@ popular: false
 tags: [import, 1password]
 ---
 
-Importing your data from 1Password into Bitwarden is easy. 1Password has two versions of their application: 1Password 4 and 1Password 6 and 7. Depending on which operating system and version of 1Password and you are using, follow the proper steps below.
+To migrate from 1Password to Bitwarden, export your data from 1Password and use the Bitwarden Import Tool to quickly fill your Vault with logins.
 
-## Export Your 1Password 1pif Logins
+Export your data from 1Password as a `.1pif` or `.csv`, depending on which version and operating system you are using:
 
-{% callout info %}
-This set of instructions is only for:
+- `.1pif` files can be exported by **1Password 4 on Windows**, **1Password 6 on macOS**, and **1Password 7 on macOS** (*latest*).
+- `.csv` files can be exported by **1Password 6 on Windows or macOS** and **1Password 7 on Windows or macOS** (*latest*).
 
-- 1Password 4 users on macOS and Windows (only the .agilekeychain format is supported for Windows users)
-- 1Password 6 and 7 users on macOS
+## Export as .1pif
 
-These instructions may vary slightly for macOS users.
-{% endcallout %}
+Complete the following steps to export your 1Password data as a `.1pif` from **1Password 4 on Windows**, **1Password 6 on macOS**, or **1Password 7 on macOS**:
 
-1. Open the 1Password desktop application on your computer and enter your 1Password master password to unlock your vault.
-2. Select the vault that you wish to export. It is not possible to export from **All Vaults**, so you'll need to switch to a specific vault.
-3. Navigate to **File** &rarr; **Export** and an Export window will pop up.
-4. In the Export window that pops up, select format **1Password Interchange Format (.1pif)** and **All Items**.
-5. Click **OK**. You may be prompted to enter your master password again.
-6. Select a folder to save your export file to (recommended to use your desktop folder). Click save to export your .1pif data file.
+1. In the 1Password Desktop App, navigate to the vault you'd like to export.
 
-## Export your 1Password 6 &amp; 7 csv logins from Windows
+   1Password does not allow you to export from multiple vaults at once.
+2. Select **File** &rarr; **Export**.
 
-{% callout info %}
-This set of instructions is only for:
+   *On macOS, you will also need to select **All Items..**.*
+3. In the Export Window, specify **1Password Interchange Format** (.1pif) in the File Format field.
+4. Specify a filename and location, and select **Save** to complete your export.
 
-- 1Password 6 and 7 users on Windows
-{% endcallout %}
+## Export as .csv
 
-1. Open the 1Password 6/7 desktop application on your computer and enter your 1Password master password to unlock your vault.
-2. Select the items you want to export. Select multiple items by holding down the Ctrl key (Command on macOS) when clicking on them. Select all of the items by pressing Ctrl+A (Command+A on macOS) after clicking one of the items in the list.
-3. Click the gear icon in the top right corner and then **Export**.
-4. Select the type as **Comma-separated values (*.csv)**.
-5. Select a folder to save your export file to (recommended to use your desktop folder). Enter a file name and click Save.
+The steps to export your 1Password data as a `.csv` vary slightly between [Windows](#from-windows) and [macOS](#from-macos):
 
-## Import your logins into Bitwarden
+### From Windows
 
-1. Go to the [Bitwarden web vault][bitwarden-vault] and log in.
-2. Navigate to **Tools** &rarr; **Import Data**.
-3. Select **1Password (1pif)** or **1Password 6 and 7 Windows (csv)** as the file format (depending on which path you followed above) and select your data file from the desktop that you created in the last step from above.
-4. Click the **Import Data** button.
+1. In the 1Password Desktop App, select the items you want to export.
 
-Congratulations! You have just transferred your data from 1Password into Bitwarden.
+   Select multiple items by holding down the Ctrl key when clicking on them. Select all the items by pressing Ctrl + A after clicking one of the items in the list.
+2. Right-click the selected item(s) and select **Export**.
+3. Select the **Comma Delimited Text** (.csv) format.
+4. Enter a filename and select **Save** to complete your export.
 
-[bitwarden-vault]: https://vault.bitwarden.com
+### From macOS
+
+1. In the 1Password Desktop App, navigate to the vault you'd like to export.
+
+   1Password does not allow you to export from multiple vaults at once.
+2. Select **File** &rarr; **Export** and choose **All Items..**.
+3. In the Export Window, specify **Comma Delimited Text** (.csv) in the File Format field. You must also specify the following:
+
+   - In the Fields to Export radio selection, choose the **All Fields** option.
+   - Check the **Include Column Labels** checkbox.
+4. Specify a filename and location, and select **Save** to complete your export.
+
+## Import To Bitwarden
+
+Complete the following steps to import your downloaded 1Password data into Bitwarden:
+
+1. Log in to the [Web Vault](https://vault.bitwarden.com){:target="\_blank"}.
+2. Select **Tools** from the top navigation bar.
+3. Select **Import Data** from the Tools section of the left menu.
+4. From the dropdown menu, **select the format of the import file**:
+   - 1Password (1pif)
+   - 1Password 6 and 7 Windows (csv)
+   - 1Password 6 and 7 Mac (csv)
+5. Select the **Browse...** button and upload your 1Password export file.
+6. Select the **Import Data** button to complete your import.
