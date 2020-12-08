@@ -23,7 +23,7 @@ Complete the following steps to export your 1Password data as a `.1pif` from **1
    1Password does not allow you to export from multiple vaults at once.
 2. Select **File** &rarr; **Export**.
 
-   *On macOS, you will also need to select **All Items..**.*
+   *On macOS, select **File** &rarr; **Export** &arr; **All Items..**.*
 3. In the Export Window, specify **1Password Interchange Format** (.1pif) in the File Format field.
 4. Specify a filename and location, and select **Save** to complete your export.
 
