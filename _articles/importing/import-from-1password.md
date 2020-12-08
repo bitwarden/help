@@ -11,8 +11,8 @@ To migrate from 1Password to Bitwarden, export your data from 1Password and use 
 
 Export your data from 1Password as a `.1pif` or `.csv`, depending on which version and operating system you are using:
 
-- `.1pif` files can be exported by **1Password 4 on Windows**, **1Password 6 on macOS**, and **1Password 7 on macOS** (*latest*).
-- `.csv` files can be exported by **1Password 6 on Windows or macOS** and **1Password 7 on Windows or macOS** (*latest*).
+- `.1pif` files can be exported by **1Password 4 on Windows**, **1Password 6 on macOS**, and **1Password 7 on macOS**.
+- `.csv` files can be exported by **1Password 6 on Windows or macOS** and **1Password 7 on Windows or macOS**.
 
 ## Export as .1pif
 
