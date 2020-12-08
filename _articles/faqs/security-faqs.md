@@ -14,13 +14,20 @@ tags: []
 
 - GDPR
 - CCPA
+- HIPAA
 - SOC 2 Type 2
 - SOC 3
+
+For more information, please visit: <https://bitwarden.com/compliance/>
 
 ### GDPR
 
 You can read more about Bitwarden’s data protection and privacy policies here:
 <https://bitwarden.com/privacy/>
+
+### HIPAA
+
+Read our [blog post](https://bitwarden.com/blog/post/why-use-a-hippa-compliant-password-manager/) for more information.
 
 ### SOC Certifications
 
