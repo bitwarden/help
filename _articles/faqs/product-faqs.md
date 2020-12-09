@@ -244,7 +244,7 @@ More helpful videos from the Bitwarden Community on YouTube:
 If you have a personal premium membership or are a member of an enterprise organization and receive premium features, you can add attachments by:
 
 1. Create the item in which you wish to save the attachment
-2. Once the item is saved, you can then edit the item and add your file attachments
+2. Once the item is saved, click the "Tools" or "Gear" icon, for the vault item, then select "Attachments" from the drop down list, to select the file, and then click save. To access the attachments later, choose the same icon, and attachments, where the files will be listed.
 
 If you are a member of an organization that offers attachments, you’ll need to create the item *within the organization vault* - and then proceed to edit the item and add the attachment. Please note that personal items within this configuration will not support attachments.
 
