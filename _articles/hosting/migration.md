@@ -8,7 +8,7 @@ tags: [hosting, docker, install, deploy]
 order: 03
 ---
 
-This article will walk your through migration procedures if you're moving from **Cloud to On-premise**, or from **on-premises to Cloud**.
+This article will walk your through migration procedures if you're moving from **Cloud to On-premises**, or from **on-premises to Cloud**.
 
 ## Migrate Cloud to On-premises
 
