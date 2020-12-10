@@ -8,25 +8,25 @@ tags: [hosting, docker, install, deploy]
 order: 03
 ---
 
-This article will walk your through migration procedures if you're moving from **Cloud to On-premise**, or from **On-premise to Cloud**.
+This article will walk your through migration procedures if you're moving from **Cloud to On-premise**, or from **on-premises to Cloud**.
 
-## Migrate Cloud to On-premise
+## Migrate Cloud to On-premises
 
-When migrating from the Cloud to an on-premise instance:
+When migrating from the Cloud to an on-premises instance:
 
-1. [Install and Deploy]({% link _articles/hosting/install-on-premise.md %}) Bitwarden to your On-premise server.
-2. [Download your Enterprise Organization License](https://bitwarden.com/help/article/licensing-on-premise/#organization-license) from the Cloud Web Vault and use it to [Create an Organization]({% link _articles/organizations/create-an-organization.md %}) in your on-premise instance.
+1. [Install and Deploy]({% link _articles/hosting/install-on-premise.md %}) Bitwarden to your on-premises server.
+2. [Download your Enterprise Organization License](https://bitwarden.com/help/article/licensing-on-premise/#organization-license) from the Cloud Web Vault and use it to [Create an Organization]({% link _articles/organizations/create-an-organization.md %}) in your on-premises instance.
 3. [Export your Data]({% link _articles/account/export-your-data.md %}) from the Cloud Web Vault.
-4. [Import your Data]({}) to your On-premise instance to automatically create Collections, Vault items, and their associations.
-5. [Create User Groups]({% link _articles/organizations/create-groups.md %}) manually in your On-premise instance.
+4. [Import your Data]({}) to your on-premisesinstance to automatically create Collections, Vault items, and their associations.
+5. [Create User Groups]({% link _articles/organizations/create-groups.md %}) manually in your on-premises instance.
 6. Start [Inviting Users to your Organization]({% link _articles/organizations/managing-users.md %}).
 
-## Migrate On-premise to Cloud
+## Migrate on-premises to Cloud
 
-When migrating from an on-premise instance to the Cloud:
+When migrating from an on-premises instance to the Cloud:
 
 1. [Create an Organization]({% link _articles/organizations/create-an-organization.md %}) in the Cloud [Web Vault](https://vault.bitwarden.com){:target="\_blank"}.
-2. [Create User Groups]({% link _articles/organizations/create-groups.md %}) and [Invite Users to your Organization]({% link _articles/organizations/managing-users.md %}) to mirro your on-premise instance.
-3. [Export your Data]({% link _articles/account/export-your-data.md %}) from your on-premise instance. Encourage your users to export their personal Vaults as well.
+2. [Create User Groups]({% link _articles/organizations/create-groups.md %}) and [Invite Users to your Organization]({% link _articles/organizations/managing-users.md %}) to mirror your on-premises instance.
+3. [Export your Data]({% link _articles/account/export-your-data.md %}) from your on-premises instance. Encourage your users to export their personal Vaults as well.
 4. [Import your Data]({}) to the Cloud.
-5. Manually migrate (download from on-premise and upload to Cloud) any stored attachments.
+5. Manually migrate (download from on-premises and upload to Cloud) any stored attachments.

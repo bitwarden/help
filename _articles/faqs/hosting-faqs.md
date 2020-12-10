@@ -29,7 +29,7 @@ You can read more about Docker and container technologies at [Docker's Website](
 
 #### Q: What are my installation id and installation key used for?
 
-**A:** Installation ids keys are used when installing Bitwarden on-premise in order to:
+**A:** Installation ids keys are used when installing Bitwarden on-premises in order to:
 
 - Register your installation and contain email so that we can contact you for important security updates.
 - Authenticate to push relay servers for push notifications to Bitwarden client applications.
