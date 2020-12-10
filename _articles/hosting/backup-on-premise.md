@@ -1,51 +1,67 @@
 ---
 layout: article
-title: Backing up your on-premises hosted data
+title: Backup your Hosted Data
 categories: [hosting]
 featured: false
 popular: false
 tags: [hosting, docker, backup]
+order: 07
 ---
 
-With the public cloud version of Bitwarden, we automatically handle backing up your data for you. However, when self-hosting Bitwarden you must implement your own backup procedures in order to keep your data safe.
+When self-hosting Bitwarden, you are responsible for implementing your own backup procedures in order to keep data safe.
 
-Bitwarden's Docker containers use volume mapping to keep all important data persisted on the host machine. You can find this data in the `./bwdata` directory relative to your Bitwarden installation. The Docker containers themselves are to be considered ephemeral and do not persist data or state.
+## About Hosted Data
 
-You should back up and keep the entire `./bwdata` directory safe. In the event of data loss you will need all or parts of data contained in this directory to restore your installation.
+Bitwarden's Docker containers use volume mapping to persist all important data on the host machine, meaning stopping your containers will not delete any data. Docker containers, on the other hand, are to be considered ephemeral and do not persist data or state.
 
-Some particularly important parts of the `./bwdata` directory are:
+All Bitwarden data is stored on the host machine in the `./bwdata` directory, relative to the location in which you installed Bitwarden. For more information, see [Install and Deploy](https://bitwarden.com/help/article/install-on-premise/#install-bitwarden).
 
-- `./bwdata/mssql/data` - database data
-- `./bwdata/core/attachments` - vault item attachments
-- `./bwdata/env` - environment variables, including database and certificate passwords
+## Backup Hosted Data
 
-## Nightly database backups
+It's recommended that you backup and keep safe the entire `./bwdata` directory. In the event of data loss, you will need all or parts of the data contained in this directory to restore your instance.
 
-Bitwarden will automatically take nightly backups of the `mssql` container database. These database backups are kept in the `./bwdata/mssql/backups` directory. Nightly database backups are kept in this directory for 30 days. In the event of data loss, you can restore one of these daily backups. 
+Particularly important pieces of `./bwdata` to backup regularly include:
 
-### Restoring a nightly backup
+- `./bwdata/env` - Instance's environment variables, including database and certificate passwords.
+- `./bwdata/core/attachments` - Instance's Vault item attachments.
+- `./bwdata/mssql/data` - Instance's database data.
 
-1. First log into `bitwarden-mssql` container. In order to log into the container you will first need to figure out the container ID.
+  Bitwarden will automatically take nightly backups of the `mssql` database container, when running.
 
-       docker ps
+### Nightly Database Backups
 
-2. Note the container ID, and execute an interactive bash shell on the `bitwarden-mssql` container.
+Bitwarden will automatically take nightly backups of the `mssql` container database. These backups are kept in the `./bwdata/mssql/backups` directory for 30 days.
 
-       docker exec -it bitwarden-mssql /bin/bash
+In the event of data loss, you can use `./bwdata/mssql/backups` to restore a nightly backup.
 
-3. Take note of the backup file you wish to restore in the nightly backups directory. The backups directory is mapped from a host volume at `./bwdata/mssql/backups` to `/etc/bitwarden/mssql/backups` within the `bitwarden-mssql` container.
+### Restore a Nightly Backup
 
-       ls /etc/bitwarden/mssql/backups
+In the event of data loss, complete the following steps to restore a nightly backup.
 
-    For this example, the backup we will be using is named `vault_FULL_20200302_235901.BAK`, which is a backup of the vault database on March 2, 2020 at 11:53pm. The full path of the backup in the container would be `/etc/bitwarden/mssql/backups/vault_FULL_20200302_235901.BAK`
+1. Retrieve your database password from the `globalSettings__sqlServer__connectionString=...Password=` value found in `global.override.env`.
+2. Identify the Container ID of the `mssql` container using the `docker ps` command.
+3. Run the following commmand to open a bash session for your `mssql` docker container:
 
-4. Execute `sqlcmd` with the required authentication. Please note that you will want to get the database sa password from the `./bwdata/env/global.override.env` file on your host.
+   ```
+   docker exec -it bitwarden-mssql /bin/bash
+   ```
 
-       /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P ${SA_PASSWORD}
+   Your command prompt should now match the identified Container ID of the `bitwarden-mssql` container.
+4. In the container, locate the backup file you wish to restore.
 
-5. Execute the SQL command `RESTORE DATABASE` with your backup to restore the nightly backup, followed by a `GO` command.
+   {% callout info %}The backup directory in the container is volume-mapped from the host directory. `./bwdata/mssql/backups` on the host machine maps to `etc/bitwarden/mssql/backups` in the container.
+   {% endcallout %}
+
+   For example, a file `/etc/bitwarden/mssql/backups/vault_FULL_20201208_003243.BAK` is a backup taken on December 08, 2020 at 12:32am.
+
+5. Start the `sqlcmd` Utility with the following command:
+
+   ```
+   /opt/mssql-tools/bin/sqlcmd -S localhost -U <sa> -P <sa-password>
+   ```
+
+   where `<sa>` and `<sa-password>` match the `User=` and `Password=` values found in `global.override.env`.
+6. Execute the SQL command `RESTORE DATABASE` with your backup to restore the nightly backup, followed by a `GO` command.
 
        RESTORE DATABASE vault FROM DISK = '/etc/bitwarden/mssql/backups/vault_FULL_20200302_235901.BAK' WITH REPLACE
        GO
-
-Your Bitwarden database should now be restored.

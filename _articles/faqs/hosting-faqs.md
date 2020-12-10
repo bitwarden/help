@@ -6,213 +6,76 @@ featured: true
 popular: true
 hidden: false
 tags: []
+order: 11
 ---
 
-## Bitwarden Server service/user account and optional systemd service configuration)
+This article contains Frequently Asked Questions (FAQs) regarding **Self-hosting**.
 
-{% callout info %}
-You will want to configure the Bitwarden Server to use a `bitwarden` service account. $USER=bitwarden You will want to have your installation owned by the bitwarden service account, and you should be logged in as bitwarden.
+## General
 
-After those are verified, you will want to make sure the UID and GID in the /bwdata/env/uid.env file are set to your bitwarden service account id numbers in Linux. When using the bitwarden service account you will also need to follow these steps:
+#### Q: What platforms can I host on?
 
-1. Make sure the docker group has been created.  sudo groupadd docker
-2. Add the bitwarden account to the docker group  sudo usermod -aG docker $USER
-3. Create the bitwarden service file (may want to store it with your bitwarden installation)  sudo vi bitwarden.service     [Unit]  Description=Bitwarden  Requires=docker.service  After=docker.service     [Service]  Type=oneshot  User=bitwarden  Group=bitwarden  ExecStart={INSTALL_DIR}/bitwarden.sh start  RemainAfterExit=true  ExecStop= {INSTALL_DIR}/bitwarden.sh stop     [Install]  WantedBy=multi-user.target
- 4. Copy the bitwarden service file to systemd.  sudo cp bitwarden.service /etc/systemd/system/bitwarden.service
-5. Set permissions on bitwarden service file under systemd.  sudo chmod 644 /etc/systemd/system/bitwarden.service
-6. Optional (reload for testing)  systemctl daemon-reload
-7. Add service to start with system boot.  sudo systemctl enable bitwarden.service
-{% endcallout %}
+**A:** Bitwarden is a cross-platform application that is deployed using Docker Linux containers. This means that Bitwarden can be hosted on Linux, macOS, and Windows machines.
 
-### Certificate Setup for Private CA, on-premises or self-hosted
+You can read more about Docker and container technologies at [Docker's Website](https://www.docker.com/why-docker){:target="_blank"}.
 
-When configuring your server you will need to have three files, private key, server cert, and the CA cert then you will configure their path in the config.yml file in the Bitwarden installation directory.
+#### Q: How should I achieve High Availability?
 
-The path that is defined in the `config.yml` is actually the location inside the NGINX container. The directory on the host is mapped to the container so you will actually want to make sure your correct certificate related files are under the `./bwdata/ssl/` directory.
+**A:** High availability can be achieved by either configuring multiple instances of the containers into a Docker Swarm or Kubernetes environment, and/or by pointing the database connection string that the containers reference to any MSSQL database or cluster. Then you would probably want to load balance the NGINX containers or however you choose to handle the front-end.
 
-You should only ever need to work with the files under `./bwdata/ssl/`, you do not want to work with files directly inside any container. It should line up like this (bitwarden.domain.local is only an example):
+#### Q: How do I backup and restore my self-hosted instance?
+
+**A:** Bitwarden takes automated nightly backups of the `bitwarden-mssql` database container in order to protect your stored credentials. For help with manual backups, or help restoring a backup, see [Backup your Hosted Data]({% link _articles/hosting/backup-on-premise.md %}).
+
+#### Q: What are my installation id and installation key used for?
+
+**A:** Installation ids keys are used when installing Bitwarden on-premise in order to:
+
+- Register your installation and contain email so that we can contact you for important security updates.
+- Authenticate to push relay servers for push notifications to Bitwarden client applications.
+- Validate licensing of paid features.
+
+Retrieve an installation id and key from [https://bitwarden.com/host](https://bitwarden.com/host){:target="_blank"}.
+
+**You should not share your installation id or installation key across multiple Bitwarden installations.** They should be treated as secrets.
+
+#### Q: How do I change the name of my server?
+
+**A:** Configure the `url:` in the `./bwdata/config.yml` with your new server name and the run the `./bitwarden.sh` rebuild command to rebuild `bwdata` assets.
+
+Check that your server name or FQDN has been proliferated to all `globalSettings_baseServiceUri__*` variables in `./bwdata/env/global.override.env`, and that your certificate contains a Subject Alternative Name (SAN) with the new server FQDN
+
+If you are using Let's Encrypt certificate, you'll need to [Manually Update Your Certificate](https://bitwarden.com/help/article/certificates/#manually-update-a-lets-encrypt-certificate){:target="\_blank"}.
+
+## SMTP Configuration
+
+#### Q: How do I set up an SMTP Mail Server?
+
+**A:** Connect your self-hosted instance to an existing SMTP Mail Server by editing all `globalSettings__mail__smtp__*` values in `./bwdata/env/global.overide.env`. For more information, see [Configure Environment Variables]({% link _articles/hosting/environment-variables.md %}).
+
+If you don't yet have an existing SMTP Mail Server from which you can relay emails, consider services like [Mailgun](https://www.mailgun.com/){:target="\_blank"} or [SparkPost](https://www.sparkpost.com){:target="\_blank"}, or use Gmail an SMTP Mail Server.
+
+#### Q: How do I use Gmail as an SMTP Mail Server?
+
+**A:** Configure the following variables in `./bwdata/env/global.override.env`:
 
 ```
-{ ./bwdata/config.yml }
-ssl_certificate_path: /etc/ssl/bitwarden.domain.local/certificate.crt
-ssl_key_path: /etc/ssl/bitwarden.domain.local/private.key
-ssl_ca_path: /etc/ssl/bitwarden.domain.local/ca.crt
-```
-
-```
-{ ./bwdata/ssl/bitwarden.domain.local }
-ca.crt
-certificate.crt
-private.key`
-```
-Please make sure all of your CA certificates are all included in the CA certificate chain file if you have a Root CA and Intermediate CA certificate.
-
-### Certificate Setup for Public CA, On-premises and self-hosted
-
-You will need to create a private key for the Bitwarden server. Then you can generate a CSR. You can use OpenSSL to accomplish this. Once you have generated the CSR then you can provide it to the Certificate Authority you are using to provide your server/site certificate. After you generate your key and certs, place them in the ./bwdata/ssl directory. Then you will need to map them in ./bwdata/config.yml. When configuring your server, you will need to have three files, private key, server cert, and the ca-cert then you will configure their path in the config.yml file in the Bitwarden installation directory. The path that is defined in the config.yml is actually the location inside the NGINX container. The directory on the host is mapped to the container so you will actually want to make sure your correct certificate related files are under the ./bwdata/ssl/ directory. You should only ever need to work with the files under ./bwdata/ssl/, you do not want to work with files directly inside any container. It should line up like this (bitwarden.domain.local is only an example):
-
-```
-{ ./bwdata/config.yml }
-ssl_certificate_path: /etc/ssl/bitwarden.domain.local/certificate.crt
-ssl_key_path: /etc/ssl/bitwarden.domain.local/private.key
-ssl_ca_path: /etc/ssl/bitwarden.domain.local/ca.crt
-```
-```
-{ ./bwdata/ssl/bitwarden.domain.local }
-ca.crt
-certificate.crt
-private.key
-```
-Please make sure all of your CA certificates are all included in the CA certificate chain file if you have a Root CA and Intermediate CA certificate.
-
-### Change Server Name
-
-In order to change the server name of your Bitwarden Server, you will need to configure the `url` in the `./bwdata/config.yml` with the new server name and the run the ./bitwarden.sh rebuild command. Next you will want to make sure the new name or FQDN has been set on all the `globalSettings__baseServiceUri__` variables in the `./bwdata/env/global.override.env` file. You will also need to make sure your certificate contains a Subject Alternative Name (SAN) with the new server FQDN.
-
-If you are using a Let's Encrypt certificate, you can create a new one with the new server name by using these steps:
-```
-./bitwarden.sh stop
-mv ./bwdata/letsencrypt ./bwadata/letsencrypt_backup
-mkdir ./bwdata/letsencrypt
-chown -R bitwarden:bitwarden ./bwdata/letsencrypt
-chmod -R 740 ./bwdata/letsencrypt
-docker pull certbot/certbot
-docker run -i --rm --name certbot -p 443:443 -p 80:80 -v <Full Path from / >/bwdata/letsencrypt:/etc/letsencrypt/ certbot/certbot certonly --logs-dir /etc/letsencrypt/logs
-Select 1, then follow instructions
-openssl dhparam -out ./bwdata/letsencrypt/live/<your.domain.com>/dhparam.pem 2048
-./bitwarden.sh rebuild
-./bitwarden.sh start
-```
-
-### Gmail self-hosted config
-
-You can configure your Bitwarden Server to send email using your Gmail account by configuring these variable in the ./bwdata/env/global.override.env file. (Please note, with ssl=false it will default to use TLS)
-```
-globalSettings__mail__replyToEmail=no-reply@bitwarden.domain.com
+globalSettings__mail__replyToEmail=no-reply@your.domain
 globalSettings__mail__smtp__host=smtp.gmail.com
 globalSettings__mail__smtp__port=587
 globalSettings__mail__smtp__ssl=false
-globalSettings__mail__smtp__username=Gmail-username
-globalSettings__mail__smtp__password=Gmail-password
-```
-If you are using Two-Step Authentication with your Gmail account then you will need to generate an app-specific password for use with Bitwarden. You can generate an app-specific password by signing in to your Google and following their instructions. Once you have the app-specific password, enter it into Bitwarden's SMTP configuration in the ./bwdata/env/global.override.env file.
-
-### High Availability
-
-High availability can be achieved by either configuring multiple instances of the containers into a Docker Swarm, Kubernetes, etc. environment and/or you can point the database connection string that the containers reference to any MSSQL database or cluster. Then you would probably want to load balance the NGINX containers or however you choose to handle the front-end.
-
-### Let's Encrypt Manual Update - issue or domain and server name change
-
-```
-./bitwarden.sh stop
-mv ./bwdata/letsencrypt ./bwadata/letsencrypt_backup
-mkdir ./bwdata/letsencrypt
-chown -R bitwarden:bitwarden ./bwdata/letsencrypt
-chmod -R 740 ./bwdata/letsencrypt
-docker pull certbot/certbot
-docker run -i --rm --name certbot -p 443:443 -p 80:80 -v <Full Path from / >/bwdata/letsencrypt:/etc/letsencrypt/ certbot/certbot certonly --logs-dir /etc/letsencrypt/logs
-Select 1, then follow instructions
-openssl dhparam -out ./bwdata/letsencrypt/live/<your.domain.com>/dhparam.pem 2048
-./bitwarden.sh rebuild
-./bitwarden.sh start
-```
-### Migrate cloud to on-premise
-
- In order to migrate your data from a Bitwarden Cloud account to a self-hosted Bitwarden Server, you will want to follow the on-premise installation instructions:
-<https://help.bitwarden.com/article/install-on-premise/>
-
-Once you have completed the installation, you will need to download your Enterprise Organization license (this is written for someone doing a clean installation, you will only need to download the license from your existing Organization:  <https://help.bitwarden.com/article/licensing-on-premise/#organization-account-sharing>
-
-After the server is running and the Organization has been created and licensed, you will need to export your data from our servers and import it to your server:  <https://help.bitwarden.com/article/export-your-data/>
-
-Once you have completed the import, which will include the Collections, Items and their associations, you will need to set up the groups and users (there are several options so please check the relative links):  <https://help.bitwarden.com/organizations/>
-
-Please take note of the backup procedure:  https://help.bitwarden.com/article/backup-on-premise/
-
-## Restore Bitwarden Server Detailed and Restore From Backup
-
-Do you have a full backup of the entire Bitwarden Server directory (bwdata)? If so you can simply copy that back to the server and run the normal start command.
-
-If you need to restore from a SQL backup then you will want to first log into the mssql container.
-​
-In order to log into the container you will first need to figure out the CONTAINER ID.
-
-`docker ps`
-
-Note the CONTAINER ID for the bitwarden/mssql container and then log in by running:
-
-`docker exec -it {CONTAINER ID} /bin/bash`
-
-Once you are in the container, you will want to find the name of the latest backup file under /etc/bitwarden/mssql/backups/ and note the name of the BAK file. Now you can make a new backup file just in case. To do this you will simply run ./backup-db.sh found on the root "/" of the container
-
-Now you will need to log into the mssql instance.
-
-​`/opt/mssql-tools/bin/sqlcmd -S localhost -U sa`
-Password: (Please note, you will want to get the database sa password from the /bwdata/env/global.override.env file on your host.)
-
-```
-1> use master
-2> GO
-1> alter database vault set offline with rollback immediate
-2> GO
-1> restore database vault from disk='/etc/bitwarden/mssql/backups/vault_FULL_{Backup File Name}.BAK' with replace
-2> GO
-​1> alter database vault set online
-2> GO
-1> exit
+globalSettings__mail__smtp__username=<valid-gmail-username>
+globalSettings__mail__smtp__password=<valid-gmail-password>
 ```
 
-You can now exit the container and then you will not need to restart the Bitwarden Server as normal.
+Whether you're a Workspace Admin or personal user of Gmail, you'll need to you'll need to enable SMTP relay from within Google. For more information, see [Google's Documentation](https://support.google.com/a/answer/176600?hl=en){:target="\_blank"}.
 
-### Custom Server Ports
+If you're using Two-step Authentication for your Gmail account, you'll need to generate an app-specific password for use with Bitwarden and update the `globalSettings__mail__smtp__password=` field in `./bwdata/env/global.override.env`.
 
-To use custom ports instead of 80 and 443, you will need to set the new ports in the config.yml and then run the rebuild command (./bitwarden.sh rebuild). Next you will want to make sure the custom https port has been set on all the globalSettings__baseServiceUri__ variables in the ./bwdata/env/global.override.env file.
+## Advanced Configuration
 
-### SMTP Config with Mail Service Options
+#### How do I use custom server ports?
 
-- Have you already configured an SMTP server in your Bitwarden's ./bwdata/env/global.override.env file? You will want to check the post-install steps which cover SMTP configuration:
-<https://help.bitwarden.com/article/install-on-premise/#post-install-environment-configuration>
+**A**: To use custom ports, instead of 80 and 443, edit the `http_port=` and `https_port=` values in `./bwdata/config.yml` and run `./bitwarden.sh rebuild` to rebuild your server assets.
 
-If you edit the ./bwdata/env/global.override.env file on your server, you will want to set the globalSettings__mail__smtp__ variables.
-
-- Do you currently have a mail server or a mail service you currently use which can relay email from your Bitwarden server? If you don't then you may want to consider a service such as Mailgun (<https://www.mailgun.com/>) or SparkPost (<https://www.sparkpost.com/>) which allows for many relayed emails for free per month.
-
-### Trust a private CA issued or Self-signed certificate for Bitwarden Client
-
-When using a self-signed certificate, you will need to add the certificate to your OS's Trusted Root Certification Authorities Store. Are you running the Directory Connector on Windows or Linux? If you are using Windows then you can simply run certmgr.msc and then import the certificate into the correct store/folder. If you are using Linux then you will want to add the certificate to these directories:
-```
-/usr/local/share/ca-certificates/
-/usr/share/ca-certificates/
-```
-
-Then run these commands:
-```
-sudo dpkg-reconfigure ca-certificates
-sudo update-ca-certificates
-```
-
-Once you have trusted the certificate then you will need to close the client/app and relaunch it.
-
-The CLI and BWDC CLI are written in Node.js, a private CA certificate or self-signed certificate, if being used, will need to be trusted using one of the following environment variables:
-
-Linux:
-export `NODE_EXTRA_CA_CERTS=/path/to/cert/ca.crt`
-
-Windows:
-`NODE_EXTRA_CA_CERTS | C:\path\to\cert\ca.crt`
-
-### Q: When does an Organization Invitation expire?
-
-**A:** 5 days (If self-hosting it can be configured with `globalSettings__organizationInviteExpirationHours=120`)
-
-### Q: When does an Offline Vault session expire?
-
-**A:** 90 days for mobile apps, other clients are 30 days.
-
-### Q: How long does an application Remember Me for 2FA?
-
-**A:** 30 days
-
-### Q: How long are Event Logs stored?
-
-**A:** A retention policy is not configurable at this time.
+Check that the custom port values have been proliferated to `` and `` in `./bwdata/env/global.override.env`.

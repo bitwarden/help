@@ -1,19 +1,43 @@
 ---
 layout: article
-title: Change your client application's environment
+title: Connect Clients to your Instance
 categories: [hosting]
 featured: false
 popular: false
 tags: [hosting, environment]
+order: 10
 ---
 
-By default, client applications such as the browser extensions and mobile apps all talk to the Bitwarden cloud servers. If you are hosting your own bitwarden installation you will want to change your client applications to talk to your instance instead of the Bitwarden cloud servers.
+By default, Bitwarden client applications (Browser Extensions, Mobile Apps, etc.) will connect to Bitwarden-hosted servers. Client applications can be configured to connect to your self-hosted Bitwarden instance.
 
-## Change Client Application Environment
+### Browser Extensions, Desktop Apps, and Mobile Apps
 
-1. If you are currently logged in to your client application, log out.
-2. On the home screen of the client application, select the {% icon fa-cog %} **Settings** icon in the top left corner.
-3. Under the **Self-hosted Environment** section, enter your installation's **Server URL**. For example, if your installation domain was bitwarden.example.com, you would enter https://bitwarden.example.com for the **Server URL**.
-4. Save the environment settings and return to the home screen.
+Complete the following steps to connect your client application to your self-hosted instance:
 
-You have now configured your client application to point to your self-hosted environment.
+1. Log out of the client application.
+2. On the Login screen of the client application, select the {% icon fa-cog %} **Settings** icon in the top corner.
+3. In the **Server URL** field, enter the domain name for your instance with `https://` (for example, `https://my.bitwarden.server.com`).
+
+   Users with unique setups may elect to specify the URL of each service independently in the **Custom Environment** section.
+4. Select the **Save** button.
+
+### CLI
+
+Logout using `bw logout`, and run the following command to connect the Bitwarden CLI to your self-hosted instance:
+
+```
+bw config server <server-url>
+```
+
+where `<server-url` is the domain name for your instance. You can read the currently configured value by not specifying a `<server-url>`.
+
+Users with unique setups may elect to specify the URL of each service independently using:
+
+```
+bw config --web-vault <url>
+bw config --api <url>
+bw config --identity <url>
+bw config --icons <url>
+bw config --notifications <url>
+bw config --events <url>
+```
