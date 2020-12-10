@@ -76,6 +76,40 @@ If you're using Two-step Authentication for your Gmail account, you'll need to g
 
 #### How do I use custom server ports?
 
-**A**: To use custom ports, instead of 80 and 443, edit the `http_port=` and `https_port=` values in `./bwdata/config.yml` and run `./bitwarden.sh rebuild` to rebuild your server assets.
+**A:** To use custom ports, instead of 80 and 443, edit the `http_port=` and `https_port=` values in `./bwdata/config.yml` and run `./bitwarden.sh rebuild` to rebuild your server assets.
 
-Check that the custom port values have been proliferated to `` and `` in `./bwdata/env/global.override.env`.
+Check that the custom port values have been proliferated to `./bwdata/env/global.override.env`.
+
+#### Q: How do I add Bitwarden to system boot?
+
+**A:** Complete the following steps:
+
+1. Create a Bitwarden service file:
+
+   ```
+   sudo vi bitwarden.service [Unit] Description=Bitwarden Requires=docker.service
+   After=docker.service [Service] Type=oneshot User=bitwarden Group=bitwarden
+   ExecStart=<your-install-directory>/bitwarden.sh start RemainAfterExit=true
+   ExecStop=<your-install0durectory>/bitwarden.sh stop [Install]
+   WantedBy=multi-user.target
+   ```
+2. Copy the Bitwarden service file to systemd:
+
+   ```
+   sudo cp bitwarden.service /etc/systemmd/system/bitwarden.service
+   ```
+3. Set permission on the Bitwarden service file under systemd:
+
+   ```
+   sudo chmod 644 /etc/systemd/system/bitwarden.service
+   ```
+4. Optionally, reload for testing:
+
+   ```
+   systemctl daemon-reload
+   ```
+5. Enable `bitwarden.service` in the system boot:
+
+   ```
+   sudo systemctl enable bitwarden.service
+   ```
