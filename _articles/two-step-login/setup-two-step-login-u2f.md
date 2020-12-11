@@ -13,7 +13,7 @@ Two-step Login using [FIDO U2F](https://www.yubico.com/solutions/fido-u2f/){:tar
 Any FIDO U2F certified device can be used, however we recommend a [YubiKey](https://www.yubico.com/products/yubikey-hardware/){:target="_blank"}.
 
 {% callout info %}
-**FIDO U2F cannot be used on all Bitwarden applications.** Enable another Two-step Login method in order to access your vault on unsupport applications.
+**FIDO U2F cannot be used on all Bitwarden applications.** Enable another Two-step Login method in order to access your vault on unsupported applications.
 
 Supported applications:
 
