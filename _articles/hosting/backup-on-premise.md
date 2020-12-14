@@ -63,7 +63,7 @@ In the event of data loss, complete the following steps to restore a nightly bac
    where `<sa>` and `<sa-password>` match the `User=` and `Password=` values found in `global.override.env`.
 6. Once in the `sqlcmd` Utility, you have 2 options for backup:
 
-   1. **Offline Backup** (*Preferred*)
+   1. **Offline Restore** (*Preferred*)
 
       Run the following SQL commands:
       ```
@@ -78,7 +78,7 @@ In the event of data loss, complete the following steps to restore a nightly bac
       1> exit
       ```
       Restart your Bitwarden instance to finish restoring.
-   2. **Online Backup**
+   2. **Online Restore**
 
       Execute the following SQL commands:
       ```
