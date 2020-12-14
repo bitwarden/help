@@ -59,13 +59,13 @@ The following is a summary of the Installation Procedure in this article. Links 
 
 ### Configure your Domain
 
-By default, Bitwarden will be served through ports 80 (`http`) and 443 (`https`) on the localhost machine. Open these ports so that Bitwarden can be accessed from within and/or outside of the network. You may opt to choose different ports during installation.
+By default, Bitwarden will be served through ports 80 (`http`) and 443 (`https`) on the host machine. Open these ports so that Bitwarden can be accessed from within and/or outside of the network. You may opt to choose different ports during installation.
 
-If you are serving Bitwarden to the outside world, you will need to configure a domain name with DNS records that point to your host machine (ex. `bitwarden.example.com`).
+Bitwarden recommends configuring a domain name with DNS records that point to your host machine (for example, `bitwarden.example.com`), especially if you are serving Bitwarden over the internet.
 
 ### Install Docker and Docker Compose
 
-Bitwarden will be deployed and run on your machine using an array of [Docker containers](https://docs.docker.com/get-started/){:target="_blank"}. Bitwarden can be run with Docker Community (free) and Enterprise editions. Evaluate which edition is best for your installation.
+Bitwarden will be deployed and run on your machine using an array of [Docker containers](https://docs.docker.com/get-started/){:target="_blank"}. Bitwarden can be run with any Docker Edition or plan. Evaluate which edition is best for your installation.
 
 Deployment of containers is orchestrated using [Docker Compose](https://docs.docker.com/compose/){:target="_blank"}. Some Docker installations, including Windows and macOS, come with Docker Compose already installed.
 
@@ -74,9 +74,9 @@ Deployment of containers is orchestrated using [Docker Compose](https://docs.doc
 - [Install Docker Engine](https://docs.docker.com/engine/installation/){:target="_blank"}
 - [Install Docker Compose](https://docs.docker.com/compose/install/){:target="_blank"}
 
-### Docker Post-Installation
+### Docker Post-Installation (*Linux Only*)
 
-Bitwarden recommends configuring your server with a dedicated `bitwarden` service account, from which to install and run Bitwarden. Doing so will isolate your bitwarden instance from other applications running on your server.
+Bitwarden recommends configuring your Linux server with a dedicated `bitwarden` service account, from which to install and run Bitwarden. Doing so will isolate your bitwarden instance from other applications running on your server.
 
  **These steps are Bitwarden-recommended best practices, but are not required.** For more information, see Docker's [Post-installation steps for Linux](https://docs.docker.com/engine/install/linux-postinstall/){:target="\_blank"} documentation.
 
@@ -113,9 +113,9 @@ Bitwarden recommends configuring your server with a dedicated `bitwarden` servic
 
 ### Install Bitwarden
 
-Bitwarden provides a shell script for easy installation on Linux and macOS (Bash), or Windows (PowerShell).
+Bitwarden provides a shell script for easy installation on Linux and macOS (Bash), or Windows (PowerShell). Complete the following steps to install Bitwarden using the shell script:
 
-If you've completed the [Docker Post-Installation](#docker-post-installation) steps, complete the following steps as the `bitwarden` user from the `/opt/bitwarden` directory:
+(*Linux Only*) If you've completed the [Docker Post-Installation](#docker-post-installation) steps, do so as the `bitwarden` user from the `/opt/bitwarden` directory.
 
 1. Download the Bitwarden installation script (`bitwarden.sh`) to your machine:
 
@@ -241,7 +241,7 @@ Verify that all containers are running correctly:
 docker ps
 ```
 
-{% image hosting/docker-ps.png %}
+{% image hosting/docker-healthy.png %}
 
 Congratulations! Bitwarden is now up and running at `https://your.domain.com`. Visit the web vault in your web browser to confirm that it's working.
 
