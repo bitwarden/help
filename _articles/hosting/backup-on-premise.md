@@ -61,7 +61,28 @@ In the event of data loss, complete the following steps to restore a nightly bac
    ```
 
    where `<sa>` and `<sa-password>` match the `User=` and `Password=` values found in `global.override.env`.
-6. Execute the SQL command `RESTORE DATABASE` with your backup to restore the nightly backup, followed by a `GO` command.
+6. Once in the `sqlcmd` Utility, you have 2 options for backup:
 
-       RESTORE DATABASE vault FROM DISK = '/etc/bitwarden/mssql/backups/vault_FULL_20200302_235901.BAK' WITH REPLACE
-       GO
+   1. **Offline Backup** (*Preferred*)
+
+      Run the following SQL commands:
+      ```
+      1> use master
+      2> GO
+      1> alter database vault set offline with rollback immediate
+      2> GO
+      1> restore database vault from disk='/etc/bitwarden/mssql/backups/vault_FULL_{Backup File Name}.BAK' with replace
+      2> GO
+      ​1> alter database vault set online
+      2> GO
+      1> exit
+      ```
+      Restart your Bitwarden instance to finish restoring.
+   2. **Online Backup**
+
+      Execute the following SQL commands:
+      ```
+      1> RESTORE DATABASE vault FROM DISK = '/etc/bitwarden/mssql/backups/vault_FULL_20200302_235901.BAK' WITH REPLACE
+      2> GO
+      ```
+      Restart your Bitwarden instance to finish restoring.
