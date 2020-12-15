@@ -1,15 +1,22 @@
 ---
 layout: article
-title: Updating your self-hosted installation
+title: Update your Instance
 categories: [hosting]
 featured: false
 popular: false
 tags: [hosting, update]
+order: 06
 ---
 
-It is very important to keep your Bitwarden installation up to date. Updates may include fixes that are important for the security of your Bitwarden installation. Additionally, newer versions of client applications such as the browser extension and/or mobile apps may not support older versions of your self-hosted Bitwarden server.
+**It is critically important to keep your Self-hosted Bitwarden instance up to date.**
 
-We have made updating your Bitwarden installation very simple. Use the same Bitwarden Bash (macOS and Linux) or PowerShell (Windows) script that you obtained while installing Bitwarden to your server to update your Bitwarden installation. Run the following sequence of commands:
+Updates may include fixes that are important for the security of your Bitwarden instance. Additionally, newer versions of client applications may not support older versions of your self-hosted instance.
+
+{% callout warning %}
+We highly recommend backing up your data before updating your self-hosted instance. For more information, see [Backup your Hosted Data]({% link _articles/hosting/backup-on-premise.md %}).
+{% endcallout %}
+
+Update your Bitwarden instance using the same Bash (Linux or macOS) or Powershell (Windows) script (`bitwarden.sh`) used to install Bitwarden. Run the following sequence of commands:
 
 {% icon fa-linux %} {% icon fa-apple %} Bash
 
@@ -24,5 +31,5 @@ We have made updating your Bitwarden installation very simple. Use the same Bitw
 Your Bitwarden installation should now be fully up to date and running.
 
 {% callout success %}
-Create a cronjob or scheduled task to run these update commands weekly, or even nightly. This will automatically keep your installation up to date.
+We recommend creating a cronjob or scheduled task to run these update commands weekly, or even nightly. This will automatically keep your instance up to date.
 {% endcallout %}
