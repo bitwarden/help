@@ -77,7 +77,7 @@ Complete the following steps to install Bitwarden manually:
 
    - `server_name` with your configured domain name.
    - In the `Content-Security-Policy` header, replace `bitwarden.example.com` with your configured domain name.
-   - Add HTTPS redirects? (Where?)
+   - Add HTTPS redirects
 8. Generate your own random password strings for the following values in `./env/global.override.env`:
 
    - `sqlServer__connectionString=...Password=RANDOM_DATABASE_PASSWORD`
