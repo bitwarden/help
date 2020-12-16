@@ -54,6 +54,12 @@ The following assumes that **YubiKey** is your [highest-priority enabled method]
 
    {% image two-step/yubikey/using-yubi.png %}
 
+   **If you're using a non-NFC YubiKey on a Mobile Device:**
+     1. Plug your YubiKey into the device.
+     2. Tap **Cancel** to end the NFC prompt.
+     3. Tap the text input field, denoted by a gray underline.
+     4. Tap or press your YubiKey button to insert your code.
+
 2. Select or tap **Continue** to finish logging in.
 
 You will not be required to complete your secondary Two-step Login step to **Unlock** your Vault once logged in. For help configuring Log Out vs. Lock behavior, see [Vault Timeout Options]({% link _articles/account/vault-timeout.md %}).

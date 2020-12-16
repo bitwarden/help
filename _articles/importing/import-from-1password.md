@@ -1,10 +1,11 @@
 ---
 layout: article
 title: Import Data from 1Password
-categories: [getting-started]
+categories: [import-export]
 featured: true
 popular: false
 tags: [import, 1password]
+order: 03
 ---
 
 Use this article for help exporting data from 1Passwords and importing into Bitwarden. 1Password data exports are available as `.1pif` or `.csv` files, depending on which client version and operating system you are using.
@@ -42,5 +43,9 @@ Complete the following steps to import data to your Bitwarden personal Vault (fo
    - 1Password 6 and 7 Mac (csv)
 5. Select the **Browse...** button and add the file exported from 1Password.
 6. Select the **Import Data** button to complete your import.
+
+{% callout warning %}
+Importing data multiple times will create duplicates.
+{% endcallout %}
 
 Congratulations! You have just transferred your data from 1Password into Bitwarden.

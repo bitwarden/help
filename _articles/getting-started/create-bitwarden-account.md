@@ -5,6 +5,7 @@ categories: [getting-started]
 featured: true
 popular: true
 tags: [getting started, create account]
+order: 01
 ---
 ## Welcome to Bitwarden
 
@@ -22,9 +23,11 @@ Fill out all fields (*Master Password Hint* is optional) and click **Submit** wh
 
 ## Verify Your Email
 
-Once you've created your account, prompt Bitwarden to send you a verification email by logging in to your [Web Vault](https://vault.bitwarden.com/).
+Once you've created your account, prompt Bitwarden to send you a verification email by logging in to your [Web Vault](https://vault.bitwarden.com/) and selecting the **Verify Email** button located at near the top right.
 
 ## Congratulations!
 
 For help getting going with Bitwarden, we recommend:
+- [Getting Started with Android]({% link _articles/getting-started/getting-started-android.md %})
+- [Getting Started with iOS]({% link _articles/getting-started/getting-started-ios.md %})
 - [Bitwarden 101 Video Series - Getting Started](https://bitwarden.com/help/article/getting-started-videos/)

@@ -25,6 +25,10 @@ collections:
   categories:
     output: true
     permalink: /:path/
+    order:
+      - getting-started.md
+      - import-export.md
+      - two-step-login.md
   articles:
     output: true
     permalink: /article/:name/
