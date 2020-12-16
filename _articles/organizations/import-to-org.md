@@ -17,7 +17,7 @@ Bitwarden supports a large array of import formats, including those used by the 
 - [Import from Firefox]({% link _articles/importing/import-from-firefox.md %})
 - [Import from Google Chrome]({% link _articles/importing/import-from-chrome.md %})
 
-For a full list of supported formats, see [Supported Formats](https://bitwarden.com/help/article/import-data/#supported-formats).
+For a full list of supported formats, see [Supported Formats](https://bitwarden.com/help/article/import-to-org/#supported-formats).
 
 {% callout info %}
 If you're importing from one Bitwarden Vault to another Bitwarden Vault, or if your format is not listed, [Condition a Bitwarden .csv or .json]({% link _articles/importing/condition-bitwarden-import.md %}).
