@@ -82,23 +82,36 @@ Check that the custom port values have been proliferated to `./bwdata/env/global
 
 #### Q: How do I add Bitwarden to system boot?
 
-**A:** Complete the following steps:
+**A:** Before adding Bitwarden to system boot, complete [Docker Post-Installation](https://bitwarden.com/help/hosting-faqs/#docker-post-installation) to setup a dedicated `bitwarden` service account.
+
+Then, complete the following steps:
 
 1. Create a Bitwarden service file:
 
    ```
-   sudo vi bitwarden.service [Unit] Description=Bitwarden Requires=docker.service
-   After=docker.service [Service] Type=oneshot User=bitwarden Group=bitwarden
+   sudo vi bitwarden.service
+
+   [Unit]
+   Description=Bitwarden
+   Requires=docker.service
+   After=docker.service
+
+   [Service]
+   Type=oneshot
+   User=bitwarden
+   Group=bitwarden
    ExecStart=<your-install-directory>/bitwarden.sh start RemainAfterExit=true
-   ExecStop=<your-install0durectory>/bitwarden.sh stop [Install]
+   ExecStop=<your-install0durectory>/bitwarden.sh stop
+
+   [Install]
    WantedBy=multi-user.target
    ```
 2. Copy the Bitwarden service file to systemd:
 
    ```
-   sudo cp bitwarden.service /etc/systemmd/system/bitwarden.service
+   sudo cp bitwarden.service /etc/systemd/system/bitwarden.service
    ```
-3. Set permission on the Bitwarden service file under systemd:
+3. Set permissions on the Bitwarden service file under systemd:
 
    ```
    sudo chmod 644 /etc/systemd/system/bitwarden.service
@@ -108,7 +121,7 @@ Check that the custom port values have been proliferated to `./bwdata/env/global
    ```
    systemctl daemon-reload
    ```
-5. Enable `bitwarden.service` in the system boot:
+5. Add the service to start with system boot:
 
    ```
    sudo systemctl enable bitwarden.service
