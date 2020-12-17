@@ -348,17 +348,28 @@ bw export myPassword321 --organizationid 7063feab-4b10-472e-b64c-785e2b870b92
 
 ### Generate
 
-The `generate` command allows you to generate strong passwords and passphrases.
+The `generate` command allows you to generate strong passwords and passphrases with the following options:
 
 ```
 bw generate [--lowercase --uppercase --number --special --length --passphrase --separator --words]
 ```
-```
-bw generate
-bw generate -u -l --length 18
-bw generate -ulns --length 25
-bw generate -p --words 5 --separator _
-```
+
+By default, `bw generate` will generate the equivalent of passing `bw generate -uln --length 14`.
+
+#### Generate Passwords
+
+By default, `generate` will generate passwords. When generating passwords, you may use the following options:
+- `-u` (include uppercase)
+- `-l` (include lowercase)
+- `-n` (include numbers)
+- `-s` (include special characters)
+- `--length <length>` (length of the password, with a min. of 5)
+
+#### Generate Passphrases
+
+To generate passphrases, specify `bw generate -p`. When generating a passphrase, you may use the following options:
+- `--words <words>` (number of words, with a min. of 3)
+- `--separator <separator>` (separator character)
 
 ### Encode
 

@@ -1,0 +1,91 @@
+---
+layout: article
+title: Get Started with Android
+categories: [getting-started]
+featured: false
+popular: false
+hidden: false
+tags: [tutorial, android]
+order: 02
+---
+
+Bitwarden for Android lets you take your password manager on the go. Download Bitwarden from the Google Play Store, or by opening [get.bitwarden.com](https://get.bitwarden.com) on your device. For help creating your Bitwarden account, see [Create Your Bitwarden Account](https://bitwarden.com/help/article/create-bitwarden-account/).
+
+When you login to Bitwarden on your Android device, you'll land on the {% icon fa-lock %} **My Vault** tab:
+
+{% image getting-started/bitwarden-android.png %}
+
+## Explore Your Vault
+From the {% icon fa-lock %} **My Vault** tab, you can browse all items in your Bitwarden Vault.
+
+When you **Favorite** an item, it'll appear at the top of your Vault for easy access. Items are also sorted into **Types** (*Login*, *Card*, *Identity*, or *Secure Note*) and **Folders**. If you're a member of an Organization, **Collections** will also appear in your Android Vault.
+
+## Get Organized with Favorites and Folders
+
+Organizing your Vault into **Favorites** and **Folders** makes navigating your Vault a breeze:
+
+1. Tap the item you want to edit.
+2. Tap the {% icon fa-pencil %} Pencil icon in the bottom-right corner of your screen.
+3. Tap **Folder** to select a folder for this item, or toggle the **Favorite** switch to add it to your Favorites.
+3. Tap **Save** in the top-right corner of your screen.
+
+## Create New Items
+
+You can create new Logins, Cards, Identities, and Secure Notes directly from any Android device.
+
+1. In your Bitwarden Android app, tap the {% icon fa-plus %} Add icon in the bottom-right corner.
+2. Choose which **Type** of item to create (for example, *Login*).
+3. Enter all the information for the item (for example, *Username* and *Password*).
+4. For Logins, enter the website the login is used for in the **URI** field (for example, [www.amazon.com](##create-items)).
+5. Tap **Folder** or toggle the **Favorite** switch to sort the item in your Vault.
+6. When you're finished, tap **Save** in the top-right corner of your screen.
+
+Go back and edit this item at any time by opening it and tapping the {% icon fa-pencil %} Pencil icon.
+
+Send an item to the **Trash** by opening it, tapping the menu ( {% icon fa-ellipsis-v %} ), and tapping **Delete**. Items in the Trash will remain there for 30 days before being permanently deleted.
+
+## Setup Auto-Fill
+
+Setup Auto-fill to automatically enter logins from your Android device to a Web Browser (like Chrome) or other app.
+
+1. In your Bitwarden Android app, tap the {% icon fa-cog %} **Settings** tab located at the bottom of your screen.
+
+   Depending on which version of Android you're using, a number of Auto-fill options could be listed.
+2. Tap your available Auto-fill option, and toggle it on. A green `Enabled` message will indicate that Auto-fill is active.
+
+   Once toggled, you might be required to change some Android-native settings, depending on your available or enabled Auto-fill options. For more information, see [Auto-fill logins on Android]({% link _articles/features/auto-fill-android.md %}).
+
+## Unlock with Biometrics
+
+Unlocking Bitwarden with biometrics allows for seamless access to your Vault. If you haven't setup [fingerprint unlock](https://support.google.com/nexus/answer/6285273?hl=en) or [face unlock](https://support.google.com/pixelphone/answer/9517039?hl=en) on your Android device, you'll need to do that first from the Android {% icon fa-cog %} **Settings** app.
+
+1. In your Bitwarden Android app, tap the {% icon fa-cog %} **Settings** tab located at the bottom of your screen.
+2. Depending on what your device has available, tap:
+   - **Unlock with Fingerprint**
+   - **Unlock with Face ID**
+3. You'll be asked to verify with your fingerprint or face depending on your selection. A green `Enabled` label will indicate that an option is active.
+
+Once Enabled, you'll be able to open your Bitwarden app or Auto-fill logins using just your biometric method of choice.
+
+## Login Using Auto-fill
+
+Once you've setup [Auto-fill](#setup-auto-fill) and [Biometrics](#unlock-with-biometrics), logging into an app or website using Bitwarden is simple.
+
+1. Tap the Email/Username or Password input box in the app or website.
+2. Depending on which auto-fill option your device uses, tap the available overlay:
+
+   {% image /getting-started/autofill-android-2.png %}
+3. You'll be prompted for your Face ID or Fingerprint. If you aren't using [Biometrics](#unlock-with-biometrics), enter your Master Password.
+4. If you've connected a login to this website or app using the [URI field](#create-items), that login will appear in this window. If you haven't, tap {% icon fa-search %} **Search** to find it.
+
+   Tap the login to automatically your email/username and password into the boxes, and sign in!
+
+## Bitwarden 101: Getting Started with Android
+
+See the video and presentation below for tips on getting started with Bitwarden on Android.
+
+<iframe width="800" height="450" src="https://www.youtube.com/embed/qyFeEZMZpEY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRa_zqS3RMgD_KR8PKkyeEurq9yUuHfMrnRBnkIarn_T88jgZ7zEoIYLwbpdLc1uCZrxOUAkn_isZqZ/embed?start=false&loop=false&delayms=3000" frameborder="0" width="800" height="498" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+[Download slideshow](https://drive.google.com/open?id=1RvkGbgP4MnJnRhHkmXwmmnVNsYNR_ZvcS65UURexBak){:target="_blank"}

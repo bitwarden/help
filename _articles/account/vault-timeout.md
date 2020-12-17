@@ -9,6 +9,12 @@ tags: [account, vault, timeout, 2FA, two-step]
 
 Vault Timeout behavior will determine how your Vault will behave after a customizable period of inactivity. Timeout is configured individually from and for each Bitwarden client application that you use (Mobile, Web, Desktop, Browser Extension, etc.).
 
+{% callout warning %}
+Regardless of Vault Timeout settings, **closing the Browser or Browser Tab will end your Web Vault or Browser Extension session**, meaning you'll be required to log in to access your Vault.
+
+If you're using a Browser Extension, you can bypass this by enabling the **Unlock with PIN** option and unchecking the **Lock with master password on browser restart** checkbox.
+{% endcallout %}
+
 ## Options
 
 You can configure the following options from the **Settings** menu of any Bitwarden client application:

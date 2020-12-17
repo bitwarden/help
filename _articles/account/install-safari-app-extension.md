@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Installing the Bitwarden Safari App Extension
-categories: [getting-started]
+categories: [features]
 featured: false
 popular: false
 tags: [browser, safari]

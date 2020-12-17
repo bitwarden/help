@@ -1,13 +1,16 @@
 ---
 layout: article
 title: Export Vault Data
-categories: [account-management]
+categories: [import-export]
 featured: false
 popular: false
 tags: [export, accounts, csv]
+order: 06
 ---
 
-Bitwarden allows you to export your personal Vault data from any client application, or an Organization Vault from the Web Vault or CLI. Exports can be downloaded as `.json` or `.csv` files, however Bitwarden recommends using `.json` for a more complete option for standard backup procedures as `.csv` exports will lack some non-critical information.
+Bitwarden allows you to export your personal Vault data from any client application, or an Organization Vault from the Web Vault or CLI.
+
+Exports can be downloaded as `.json` or `.csv` files, however Bitwarden recommends using `.json` for a more complete option for standard backup procedures as `.csv` exports will not export Cards or Identities. For information on the format of Bitwarden `.csv` and `.json` exports, see [Condition a Bitwarden .csv or .json]({% link _articles/importing/condition-bitwarden-import.md %}).
 
 Vault Exports currently do not include file attachments.
 
