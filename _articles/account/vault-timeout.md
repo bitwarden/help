@@ -34,6 +34,11 @@ Configuring this option will dictate what Bitwarden will do once the Vault Timeo
   Locking your Vault will maintain Vault data on the device. You will only be prompted to enter your Master Password to decrypt your Vault, however no [Two-step Login]({% link _articles/two-step-login/setup-two-step-login.md %}) method will be required to unlock your Vault.
 
   Bitwarden client applications don't need to be online to unlock.
+
+{% callout warning %}
+Due to the storage and reference of your decryption keys, using the Browser refresh button on the Web Vault will cause it to lock.
+{% endcallout %}
+
 - **Log Out**.
 
   Logging Out of your Vault completely removes all Vault data from your device, and will therefore require you to re-authenticate to access your Vault. You will be required to enter your Email Address, Master Password, and any enabled [Two-step Login]({% link _articles/two-step-login/setup-two-step-login.md %}) method in order to access your Vault.
