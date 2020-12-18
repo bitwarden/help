@@ -36,7 +36,7 @@ Configuring this option will dictate what Bitwarden will do once the Vault Timeo
   Bitwarden client applications don't need to be online to unlock.
 
 {% callout warning %}
-Due to the storage and reference of your decryption keys, using the Browser refresh button on the Web Vault will cause it to lock.
+Due to the storage and reference of your decryption keys within the Web Vault, using the Browser refresh button on the Web Vault will cause it to lock.
 {% endcallout %}
 
 - **Log Out**.
