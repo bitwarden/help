@@ -89,7 +89,7 @@ In the following table, "premium features" (included for **Teams Organizations**
 |Max no. of users|2|Unlimited|Unlimited|
 |Max no. of Collections|2|Unlimited|Unlimited|
 |*Two-step login|via authenticator apps or email|via authenticator apps, email, Yubikey, U2F, and Duo|via authenticator apps, email, Yubikey, U2F, and Duo|
-|*Encrypted file storage|-|1 GB|1 GB per user + 1 GB shared|
+|*Encrypted file storage|-|1 GB per user + 1 GB shared|1 GB per user + 1 GB shared|
 |*Bitwarden Authenticator (TOTP)|-|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
 |*Vault Health Reports|-|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
 |*Priority Support|-|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
