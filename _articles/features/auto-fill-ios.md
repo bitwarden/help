@@ -50,3 +50,5 @@ The App Extension feature is now enabled.
 5. This will launch the Bitwarden application.
 6. Select the appropriate login from the list or search Bitwarden for the correct login.
 7. Your username and password will be auto-filled.
+
+{% callout info %}Please make sure iCloud Keychain is getting disabled during these process to avoid any interference with Bitwarden's autofill capabilities. You can verify it by going to your Settings app > tap on Apple ID > iCloud > Keychain > Off{% endcallout %}
