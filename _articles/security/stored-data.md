@@ -9,7 +9,7 @@ redirect_from:
   - /article/what-information-is-encrypted/
 ---
 
-Bitwarden takes privacy and transparency seriously. This article what data is stored by Bitwarden.
+Bitwarden takes privacy and transparency seriously. This article describes what data is stored by Bitwarden.
 
 ## Vault Data
 
