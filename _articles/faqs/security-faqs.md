@@ -76,9 +76,9 @@ For more information, please visit our [Security and Compliance](https://bitward
 
 ### Questions Regarding Specific Client Apps
 
-#### Q: What data is Bitwarden collecting from the iOS app?
+#### Q: What data is Bitwarden collecting client applications?
 
-**A:** Bitwarden uses Administrative Data to provide the Bitwarden Service to you. As reported by the iOS App Store **App Privacy** section, Bitwarden solicits the following information on account creation:
+**A:** Bitwarden uses Administrative Data to provide the Bitwarden Service to you. As indicated by some  **App Privacy** reports, Bitwarden solicits the following information on account creation:
 
 - Your Name (*optional*).
 - Your Email Address (used for Email Verification, Account Administration, and communication between you and Bitwarden).
