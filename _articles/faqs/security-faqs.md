@@ -93,7 +93,7 @@ Additionally, a **Bitwarden-generated** device-specific GUID (sometimes referred
 
 Extensions are safe to use if they are developed correctly. Due to the nature of how browser extensions work there is always a chance for a bug to arise. We take extreme care and caution when we are developing our extensions and add-ons, we keep our eyes and ears out for anything going on in the industry, and we conduct security audits to keep many eyes on everything.
 
-### Q: What is the Browser Extension asking permission for?
+#### Q: What is the Browser Extension asking permission for?
 
 **A:** On installation, the Browser Extension will ask permission to access your clipboard in order to use the scheduled clipboard clear function (accessed in the **Options** menu).
 
