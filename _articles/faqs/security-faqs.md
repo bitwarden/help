@@ -6,7 +6,7 @@ featured: false
 popular: false
 hidden: false
 tags: []
-order: 07
+order: 08
 redirect_from:
   - /article/why-should-i-trust-bitwarden/
   - /article/what-happens-if-bitwarden-is-hacked/
@@ -36,7 +36,7 @@ If for some reason Bitwarden were to get hacked and data be leaked despite this,
 
 **A:** No.
 
-Your data is fully encrypted and/or hashed before ever leaving **your** local device, so no one from the Bitwarden team can ever see, read, or reverse engineer to get to your real data. Bitwarden servers only store encrypted and hashed data. For more information about how your data is encrypted, see [Data Encryption]({% link _articles/security/what-encryption-is-used.md %}).
+Your data is fully encrypted and/or hashed before ever leaving **your** local device, so no one from the Bitwarden team can ever see, read, or reverse engineer to get to your real data. Bitwarden servers only store encrypted and hashed data. For more information about how your data is encrypted, see [Encryption]({% link _articles/security/what-encryption-is-used.md %}).
 
 ### Q: Is my master password stored locally?
 
