@@ -20,7 +20,7 @@ Bitwarden supports a large array of import formats, including those used by the 
 For a full list of supported formats, see [Supported Formats](https://bitwarden.com/help/article/import-to-org/#supported-formats).
 
 {% callout info %}
-If you're importing from one Bitwarden Vault to another Bitwarden Vault, or if your format is not listed, [Condition a Bitwarden .csv or .json]({% link _articles/importing/condition-bitwarden-import.md %}).
+If you're importing from one Bitwarden Vault to another Bitwarden Vault, or if your format is not listed, [Condition a Bitwarden .csv or .json]({% link _articles/importing/condition-bitwarden-import.md#for-your-organization %}).
 {% endcallout %}
 
 ## Import to your Organization
@@ -30,8 +30,6 @@ To import data to an Organization Vault:
 1. Log in to your [Web Vault](https://vault.bitwarden.com){:target="\_blank"} and open your Organization.
 2. In your Organization, open the **Tools** tab and select **Import Data** from the left menu.
 3. Select the format of your file to import from the dropdown menu.
-4. Select the **Browse...** button and add your file.
-5. Select the **Import Data** button to complete your import.
 4. Select the **Browse...** button and add your file.
 5. Select the **Import Data** button to complete your import.
 
@@ -50,10 +48,6 @@ An item in your `.CSV` exceeds the size limit allowed for items stored in the Bi
 ## Supported Formats
 
 The following formats are supported out-of-the-box:
-
-{% callout info %}
-If you're importing from one Bitwarden Vault to another Bitwarden Vault, or if your format is not listed, [Condition a Bitwarden .csv or .json]({% link _articles/importing/condition-bitwarden-import.md %}).
-{% endcallout %}
 
 - [1Password (1pif)]({% link _articles/importing/import-from-1password.md %})
 - [1Password 6 &amp; 7 Windows (.sv)]({% link _articles/importing/import-from-1password.md %})
