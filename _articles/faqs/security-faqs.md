@@ -76,6 +76,15 @@ For more information, please visit our [Security and Compliance](https://bitward
 
 ### Questions Regarding Specific Client Apps
 
+#### Q: What data is Bitwarden collecting from the iOS app?
+
+**A:** Bitwarden uses Administrative Data to provide the Bitwarden Service to you. As reported by the iOS App Store **App Privacy** section, Bitwarden solicits the following information on account creation:
+
+- Your Name (*optional*).
+- Your Email Address (used for Email Verification, Account Administration, and communication between you and Bitwarden).
+
+Additionally, a **Bitwarden-generated** device-specific GUID (sometimes referred to as a *Device ID*) is assigned to your device. This GUID is used to alert you when a new device logs into your Vault.
+
 #### Q: Are Electron apps safe?
 
 **A:** An often shared article suggests a flaw with Electron apps, however the referenced attack requires a user to have a compromised machine, which of course would allow a malicious attacker to compromise data on that machine. As long as you have no reason to believe the device you are using has been compromised, your data is safe.
