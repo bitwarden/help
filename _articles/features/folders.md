@@ -31,7 +31,7 @@ In this example I have the following folders:
 
 This would produce a folder structure that looks like this in the web vault (and similarly in other Bitwarden applications):
 
-{% image subfolders.png %}
+{% image /manage-items/subfolders.png %}
 
 There is no limit on the depth that you can go with nested folders, though the application interface may begin to "break" if you go too deep.
 
