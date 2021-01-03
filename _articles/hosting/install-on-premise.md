@@ -85,27 +85,32 @@ Bitwarden recommends configuring your Linux server with a dedicated `bitwarden` 
    ```
    sudo adduser bitwarden
    ```
-2. Create a docker group:
+2. Set password for bitwarden user (strong password):
+
+   ```
+   sudo passwd bitwarden
+   ```
+3. Create a docker group (if it doesn’t already exist):
 
    ```
    sudo groupadd docker
   ```
-3. Add the bitwarden user to the docker group:
+4. Add the bitwarden user to the docker group:
 
    ```
    sudo usermod -aG docker bitwarden
    ```
-4. Create a bitwarden directory:
+5. Create a bitwarden directory:
 
    ```
    sudo mkdir /opt/bitwarden
    ```
-5. Grant full permissions for the `/opt/bitwarden` directory:
+6. Set permissions for the `/opt/bitwarden` directory:
 
    ```
    sudo chmod -R 700 /opt/bitwarden
    ```
-6. Grant the bitwarden user ownership of the `/opt/bitwarden` directory:
+7. Set the bitwarden user ownership of the `/opt/bitwarden` directory:
 
    ```
    sudo chown -R bitwarden:bitwarden /opt/bitwarden
@@ -122,7 +127,7 @@ Bitwarden provides a shell script for easy installation on Linux and macOS (Bash
     {% icon fa-linux %} {% icon fa-apple %} Bash
 
        curl -Lso bitwarden.sh https://go.btwrdn.co/bw-sh \
-           && chmod +x bitwarden.sh
+           && chmod 700 bitwarden.sh
 
     {% icon fa-windows %} PowerShell
 
