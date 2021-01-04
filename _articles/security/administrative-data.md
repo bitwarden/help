@@ -8,7 +8,7 @@ tags: []
 order: 02
 ---
 
-Bitwarden collects personal information in connection with your account creation, usage of the Bitwarden Service and support, and payments for the Bitwarden Service. Bitwarden uses Administrative Data to provide the Bitwarden Service to you. We retain Administrative Data for as long as you are a customer of Bitwarden and as required by law. If you terminate your relationship with Bitwarden, we will delete your Personal Information in accordance with our data retention policies.
+Users provide personal information in connection with your account creation, usage of the Bitwarden Service and support, and payments for the Bitwarden Service. Bitwarden uses Administrative Data to provide the Bitwarden Service to you. We retain Administrative Data for as long as you are a customer of Bitwarden and as required by law. If you terminate your relationship with Bitwarden, we will delete your Personal Information in accordance with our data retention policies.
 
 {% callout success %}
 We encourage you to review our [Privacy Policy](https://bitwarden.com/privacy){:target="\_blank"} for more information.

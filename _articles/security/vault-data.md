@@ -18,7 +18,7 @@ Vault data can only be decrypted using a key derived from your master password. 
 We encourage you to review our [Privacy Policy](https://bitwarden.com/privacy){:target="\_blank"} for more information.
 {% endcallout %}
 
-Vault data includes:
+Vault data that is encrypted includes, but is not limited to:
 
 - Names of Folders, Collections, Items, & Attachments
 - All Login information (including usernames, passwords, URIs, TOTPs, etc.)

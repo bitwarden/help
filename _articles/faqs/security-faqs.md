@@ -78,7 +78,7 @@ For more information, please visit our [Security and Compliance](https://bitward
 
 #### Q: What data does Bitwarden use from client applications?
 
-**A:** Bitwarden uses Administrative Data to provide the Bitwarden Service to you. As indicated by some  **App Privacy** reports, Bitwarden solicits the following information on account creation:
+**A:** Bitwarden uses Administrative Data to provide the Bitwarden Service to you. As indicated by some  **App Privacy** reports, users provide the following information on account creation:
 
 - Your Name (*optional*).
 - Your Email Address (used for Email Verification, Account Administration, and communication between you and Bitwarden).
