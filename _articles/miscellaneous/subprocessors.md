@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Bitwarden's Subprocessors
+title: Bitwarden Subprocessors
 categories: [security]
 featured: false
 popular: false
