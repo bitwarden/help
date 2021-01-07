@@ -21,7 +21,7 @@ Bitwarden believes source code transparency is an absolute requirement for secur
 
 ## Release Announcements
 
-## 11/12/2020: SSO Enhancements
+## 2020-11-12: SSO Enhancements
 The latest release of Bitwarden adds SSO-related enhancements to all client applications, including:
 - **New Enterprise Policies:** The Single Organization and Single Sign-On Authentication polices are now available for use by Enterprise Organizations (see [here](https://bitwarden.com/help/article/policies/) for details).
 - **API Key for CLI:** Authenticate into the Bitwarden CLI using an API Key newly available from your Web Vault (see [here](https://bitwarden.com/help/article/personal-api-key/) for details).
@@ -29,5 +29,5 @@ The latest release of Bitwarden adds SSO-related enhancements to all client appl
 - **GDPR Acknowledgement:** From now on, new users of Bitwarden will be asked to acknowledge a Privacy Policy on registration.
 - **Android 11 Inline Auto-fill**: For devices using Android 11+, enabling the Auto-fill Service will display suggestions inline for IMEs that also support [this feature](https://developer.android.com/guide/topics/text/ime-autofill#workflow) (see [here](https://github.com/bitwarden/mobile/pull/1145) for details).
 
-## 09/30/2020: Login with SSO
+## 2020-9-30: Login with SSO
 The latest release of Bitwarden adds much-anticipated **Login with SSO** functionality for all client applications, and the Business Portal for Web Vaults. Read this [blog post](https://bitwarden.com/blog/post/bitwarden-launches-sso-authentication/) for more information about Login with SSO, and refer to our [documentation](https://bitwarden.com/help/login-with-sso).
