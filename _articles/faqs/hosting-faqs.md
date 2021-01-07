@@ -100,8 +100,9 @@ Then, complete the following steps:
    Type=oneshot
    User=bitwarden
    Group=bitwarden
-   ExecStart=<your-install-directory>/bitwarden.sh start RemainAfterExit=true
-   ExecStop=<your-install0durectory>/bitwarden.sh stop
+   ExecStart=<your-install-directory>/bitwarden.sh start
+   ExecStop=<your-install-directory>/bitwarden.sh stop
+   RemainAfterExit=true
 
    [Install]
    WantedBy=multi-user.target
