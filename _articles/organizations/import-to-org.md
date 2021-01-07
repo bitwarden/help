@@ -20,7 +20,7 @@ Bitwarden supports a large array of import formats, including those used by the 
 For a full list of supported formats, see [Supported Formats](#supported-formats).
 
 {% callout info %}
-If you're importing from one Bitwarden Vault to another Bitwarden Vault, or if your format is not listed, [Condition a Bitwarden .csv or .json](https://bitwarden.com/help/article/condition-bitwarden-import/).
+If you're importing from one Bitwarden Vault to another Bitwarden Vault, or if your format is not listed, [Condition a Bitwarden .csv or .json](https://bitwarden.com/help/article/condition-bitwarden-import/#for-your-organization).
 {% endcallout %}
 
 ## Import to your Organization
