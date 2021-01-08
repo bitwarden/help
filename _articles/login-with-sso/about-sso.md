@@ -24,11 +24,11 @@ Administrators can configure Login with SSO in the Business Portal. For more inf
 
 ## Enterprise Free Trial
 
-Login with SSO is available for all customers on the current Enterprise plan (for more information, see [here](https://bitwarden.com/help/article/2020-plan-updates/)). Customers are encouraged to participate in a 7 Day Free Trial of the current Enterprise Plan in order to test Login with SSO. For more information, see:
-- [Start an Enterprise Free Trial](https://bitwarden.com/help/article/enterprise-free-trial/)
-- [About Bitwarden Plans](https://bitwarden.com/help/article/about-bitwarden-plans/)
+Login with SSO is available for all customers on the current Enterprise plan (for more information, see [About Bitwarden Plans]({% link _articles/plans-and-pricing/about-bitwarden-plans.md %}). If you're new to Bitwarden, we'd love to help you through the process of setting up an account and starting your 7 Day Free Trial Enterprise Organization with our dedicated signup page:
 
-If you are self-hosting Bitwarden, you will need to generate a new license file after starting your 7 Day Free Trial. We recommend using a separate Bitwarden instance for testing Login with SSO. For more information, see [Licensing Paid Features](https://bitwarden.com/help/article/licensing-on-premise).
+<a role="button" class="btn btn-primary" href="https://vault.bitwarden.com/#/register?org=enterprise">Start your Enterprise Free Trial</a>
+
+If you're an experienced Bitwarden user, refer to the [this article]({% link _articles/plans-and-pricing/enterprise-free-trial.md %}) for help. If you're self-hosting Bitwarden, you will need to generate a new license file after starting your 7 Day Free Trial. We recommend using a separate Bitwarden instance for testing Login with SSO. For more information, see [Licensing Paid Features](https://bitwarden.com/help/article/licensing-on-premise).
 
 ## Requirements
 

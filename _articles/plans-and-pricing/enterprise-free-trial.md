@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Start a Free Trial of Bitwarden Enterprise
+title: Start an Enterprise Trial with your Bitwarden Account
 categories: [plans-and-pricing]
 featured: false
 popular: false
@@ -8,9 +8,17 @@ tags: [account, enterprise, free trial, organization]
 order: 04
 ---
 
-Paid Organizations, including Enterprise, have a 7 Day Free Trial built in. To learn what is included in Bitwarden Enterprise, see [Bitwarden Plans and Pricing](https://bitwarden.com/pricing/business) or [About Bitwarden Plans](https://bitwarden.com/help/article/about-bitwarden-plans/#enterprise-organizations).
+## New to Bitwarden?
 
-Complete the following steps to start your 7 Day Free Trial of Bitwarden Enterprise:
+If you're new to Bitwarden, we'd love to help you through the process of setting up an account and starting your 7 Day Free Trial Enterprise Organization with our dedicated signup page:
+
+<a role="button" class="btn btn-primary" href="https://vault.bitwarden.com/#/register?org=enterprise">Start your Enterprise Free Trial</a>
+
+Or, to learn more about the Bitwarden Enterprise offering, see [Bitwarden Plans and Pricing](https://bitwarden.com/pricing/business) or [About Bitwarden Plans](https://bitwarden.com/help/article/about-bitwarden-plans/#enterprise-organizations).
+
+## Already a User?
+
+If you already have a Bitwarden account, complete the following steps to start your 7 Day Free Trial of Bitwarden Enterprise:
 
 1. Log in to your [Web Vault](https://vault.bitwarden.com){:target="\_blank"}.
 2. Select the **New Organization** button.
