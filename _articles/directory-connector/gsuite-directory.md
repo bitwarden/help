@@ -1,69 +1,73 @@
 ---
 layout: article
-title: Configuring directory sync with G Suite (Google)
+title: Sync with G Suite
 categories: [directory-connector]
 featured: true
 popular: false
 hidden: false
 tags: []
+order: 08
 ---
 
-This article will cover how to connect the Bitwarden Directory Connector application to your G Suite directory.
+This article will help you get started using Directory Connector to sync users and groups from your G Suite Directory to your Bitwarden Organization.
 
-## Requirements
+## GCP Setup
 
-- Read through the following article: [Syncing users and groups with a directory]({% link _articles/directory-connector/directory-sync.md %})
-- Install Bitwarden Directory Connector
-- Using Directory Connector, log into your Bitwarden account and select your enterprise organization
+Complete the following processes from the Google Cloud Portal Console before configuring Directory Connector. Directory Connector will require information obtained from these processes to function properly.
 
-## Create a Google Cloud Project
+### Create a Cloud Project
 
-{% callout info %}
-If you already have a Google Cloud project available, you can skip this step and re-use it here.
+Complete the following steps to create a Google Cloud project to use to connect Directory Connector to your G Suite directory. If you already have a Google Cloud project available, skip to [Enable Admin SDK](#enable-admin-sdk):
+
+1. In the [GCP Console](https://console.cloud.google.com/home){:target="\_blank"}, select the **Create Project** button.
+2. Enter a Bitwarden-specific name for the project (e.g. `bitwarden-dc-project`) and select the **Create** button.
+
+### Enable Admin SDK
+
+Complete the following steps to enable the G Suite Admin SDK API, to which Directory Connector will make requests:
+
+1. In the [GCP Console](https://console.cloud.google.com/home){:target="\_blank"}, select the created or pre-existing Project.
+2. From the left-hand navigation, select **APIs &amp; Services** &rarr; **Library**.
+3. In the search box, enter `Admin SDK` and open the **Admin SDK API** service.
+4. Select the **Enable** button.
+
+### Create Service Account
+
+Complete the following steps to create a service account to use when making API calls:
+
+1. In the [GCP Console](https://console.cloud.google.com/home){:target="\_blank"}, select the created or pre-existing Project.
+2. From the left-hand navigation, select **APIs &amp; Services** &rarr; **Credentials**.
+3. Select the **Create Credentials** button, and select **Service account** from the dropdown.
+4. Fill in the **Service account details** section, and select the **Create** button.
+5. In the **Grant this service account access to project** section, select **Project &rarr; Owner** from the **Role** dropdown and select the **Continue** button.
+6. Select the **Done** button.
+
+### Obtain Service Account Credentials
+
+Complete the following steps to obtain the appropriate permissions for the created service account:
+
+1. In the [GCP Console](https://console.cloud.google.com/home){:target="\_blank"}, select the created or pre-existing Project.
+2. From the left-hand navigation, select **IAM &amp; Admin** &rarr; **Service Accounts**.
+3. Select the created service account.
+4. On the Service Account Details page, select the **Add Key** button and select **Create new key** from the dropdown.
+5. Select the Key type: **JSON** and select the **Create** button to download a JSON-formatted key to your local machine.
+
+{% callout success %}
+Some (typically, older) G Suite accounts may be required to manually enable Domain-wide Delegation. To do so:
+
+1. Select the **Show Domain-wide Delegation** dropdown.
+2. Check the **Enable G Suite Domain-wide Delegation** box.
+3. Enter a **Product name for the consent screen**.
 {% endcallout %}
 
-1. Go to <https://console.cloud.google.com/home>
-2. Click the **Create** project button
-   {% image directory-connector/gsuite/create-project.png %}
-3. Enter a project name and click **Create**
-   {% image directory-connector/gsuite/new-project.png %}
-4. Refresh the page and you should now see your project
+### Configure G Suite Security
 
-## Enable the Admin SDK API for Your Project
+Complete the following steps to
 
-1. Go to <https://console.cloud.google.com>.
-2. Make sure the appropriate project is selected. You should be on the **Dashboard** page for your project.
-3. Open the navigation menu and navigate to **APIs &amp; Services** &rarr; **Library**.
-4. Search for and select the **Admin SDK** service.
-   {% image directory-connector/gsuite/admin-sdk.png %}
-5. Click the **Enable** button near the top.
-   {% image directory-connector/gsuite/admin-sdk-enable.png %}
+1. In the [GCP Console](https://console.cloud.google.com/home){:target="\_blank"}, select the created or pre-existing Project.
+2. From the left-hand navigation, select **Security** &rarr; **Settings**.
 
-## Create & Configure a Service Account
 
-1. Go to <https://console.cloud.google.com>
-2. Make sure the appropriate project is selected. You should be on the **Dashboard** page for your project.
-3. Open the navigation menu and navigate to **APIs &amp; Services** &rarr; **Credentials**.
-4. Click the **Create credentials** button and select **Service account key**.
-   {% image directory-connector/gsuite/create-credentials.png %}
-5. Select **New service account** from the **Service account** dropdown menu.
-6. Name the service account **Bitwarden Directory Connector**. For the role, select **Project** and then **Owner**. Ensure that **JSON** is the selected **Key type**. Upon clicking **Create**, a JSON file will be downloaded; this is important for later so keep a note of where you have downloaded it.
-   {% image directory-connector/gsuite/create-service-account.png %}
-7. You should now see your newly created service account listed. Click on **Manage service accounts** (on the right-hand side).
-   {% image directory-connector/gsuite/click-manage-service-accounts.png %}
-8. Select the options button next to your service account, and select **Edit**.
-   {% image directory-connector/gsuite/edit-service-account.png %}
-9. Check the box "Enable G Suite Domain-wide Delegation", enter anything for "Product name for the consent screen" and click **Save**.
-   {% callout info %}"Enable G Suite Domain-wide Delegation" is only required on some older G Suite accounts. Newer G Suite accounts will automatically have domain-wide delegation enabled for all service accounts. If you do not see the "Enable G Suite Domain-wide Delegation" checkbox option available for your service account, you can assume it is already enabled.{% endcallout %}
-   {% image directory-connector/gsuite/tick-gsuite.png %}
-1.  Click **View Client ID** and you'll see the Client ID on screen. You will need the Client ID to configure security within G Suite. Highlight the Client ID and copy it to your clipboard.
-   {% image directory-connector/gsuite/view-client-id.png %}
-   {% image directory-connector/gsuite/copy-client-id.png %}
-
-## Configure G Suite Security
-
-1. Go to <https://admin.google.com>
-2. Open the navigation menu and navigate to **Security** &rarr; **Settings**.
 3. Select the **API reference** option and make sure **Enable API access** is checked.
    {% image directory-connector/gsuite/enable-api-access.png %}
 4. Back in the list of options, select the **Advanced settings** options and then the **Manage API client access** link.
@@ -75,18 +79,104 @@ If you already have a Google Cloud project available, you can skip this step and
 7. You should now see your service account listed as an authorized client of G Suite.
    {% image directory-connector/gsuite/authorized-client-list.png %}
 
-## Configure Directory Connector
+## Connect to your Directory
 
-1. Launch the Directory Connector desktop application.
-2. Go to the **Settings** tab.
-3. Select **G Suite Directory** as the directory type.
+Complete the following steps to configure Directory Connector to use your G Suite directory:
+
+1. Open the Directory Connector [Desktop Application]({% link _articles/directory-connector/directory-sync-desktop.md %}).
+2. Navigate to the **Settings** tab.
+3. From the **Type** dropdown, select **G Suite (Google)**.
+
+   The available fields in this section will change according to your selected Type.
 4. Enter the **Domain** of your G Suite account.
-5. Enter the email address of an **Admin User** that has full access to the G Suite directory (such as your own).
-6. If you have one, enter the **Customer Id** of your directory (most users won't need to enter a Customer Id).
-7. Select the **JSON Key File** that was downloaded whenever you created your service account in the steps above. The **Client Email** and **Private Key** will be automatically extracted from this key file for you.
+5. Enter the email address of an **Admin User** with full access to your G Suite Directory.
+6. If you have one, enter the **Customer ID** of your directory. Many users will not have or be required to enter a Customer ID.
+7. Select the **Choose File** button and select the [downloaded JSON key](#obtain-service-account-credentials).
+8. In the **Account** section, select Organization to connect to your directory from the dropdown.
 
-Congrats! You are done configuring G Suite with the Bitwarden Directory Connector.
+## Configure Sync Options
 
-## Testing
+Complete the following steps to configure the setting used when syncing using Directory Connector:
 
-Test your configuration by running a sync test. You should see your G Suite groups and/or users printed to the screen.
+1. Open the Directory Connector [Desktop Application]({% link _articles/directory-connector/directory-sync-desktop.md %}).
+2. Navigate to the **Settings** tab.
+3. In the **Sync** section, confiture the following options as desired:
+
+|Option|Description|
+|------|-----------|
+|Interval|Time between automatic sync checks (in minutes).|
+|Remove disabled users during sync|Check this box to remove users from the Bitwarden Organization that have been disabled in your directory.|
+|Overwrite existing organization users based on current sync settings|Check this box to always perform a full sync and remove any users from the Bitwarden Organization if they are not in the synced user set.|
+|Sync users|Check this box to sync users to your Organization.<br><br> Checking this box will allow you to specify a **User Filter**.|
+|User Filter|See [Specify Sync Filters](#specify-sync-filters).|
+|Sync groups|Check this box to sync groups to your Organization.<br><br>Checking this box will allow you to specify a **Group Filter**.|
+|Group Filter|See [Specify Sync Filters](#specify-sync-filters).|
+
+### Specify Sync Filters
+
+Use comma-separated lists to include or exclude from a sync based on User Email or Group:
+
+#### User Filters
+
+The following filtering syntaxes should be used in the **User Filter** field:
+
+The Admin SDK API provides limited filtering capabilities for users with a `query` parameter. Learn more [here](https://developers.google.com/admin-sdk/directory/v1/guides/search-users){:target="\_blank"}.
+
+##### Include/Exclude Users by Email
+
+To include or exclude specific users from a sync based on email address:
+```
+include:joe@example.com,bill@example.com,tom@example.com
+```
+```
+exclude:joe@example.com,bill@example,tom@example.com
+```
+
+##### Concatenate with `query`
+
+To concatenate a user filter with the `query` parameter, use a pipe (`|`):
+```
+include:john@example.com,bill@example.com|orgName=Engineering orgTitle:Manager
+```
+```
+exclude:john@example.com,bill@example.com|orgName=Engineering orgTitle:Manager
+```
+
+##### Use only `query`
+
+To use only the `query` parameter, prefix the query with a pipe (`|`):
+```
+|orgName=Engineering orgTitle:Manager
+```
+
+#### Group Filters
+
+To include or exclude groups from a sync based on Group Name:
+```
+include:Group A,Group B
+```
+```
+exclude:Group A,Group B
+```
+
+## Test a Sync
+
+To test whether Directory Connector will successfully connect to your directory and return the desired users and groups, navigate to the **Dashboard** tab and select the **Test Now** button. If successful, users and groups will be printed to the Directory Connector window according to the specified [Sync Options](#configure-sync-options) and [Filters](#specify-sync-filters):
+
+{% image /directory-connector/okta/dc-okta-test.png Test sync results %}
+
+## Start Automatic Sync
+
+Once [Sync Options](#configure-sync-options) and [Filters](#specify-sync-filters) are configured and tested, you can begin syncing. Complete the following steps to start automatic syncing with Directory Connector:
+
+{% callout success %}
+Before starting your sync, navigate to the **More** tab and select the **Clear Sync Cache** button to prevent potential conflicts with prior sync operations. For more information, see [Clear Sync Cache]({% link _articles/directory-connector/clear-sync-cache.md %}).
+{% endcallout %}
+
+1. Open the Directory Connector [Desktop Application]({% link _articles/directory-connector/directory-sync-desktop.md %}).
+2. Navigate to the **Dashboard** tab.
+3. In the **Sync** section, select the **Start sync** button.
+
+   You may alternatively select the **Sync now** button to execute a one-time manual sync.
+
+Directory Connector will begin polling your directory based on the configured [Sync Options](#configure-sync-options) and [Filters](#specify-sync-filters). If you exit or close the application, automatic sync will stop. If you wish to have Directory Connector running the background, you should minimize the application or hide it to the system tray.
