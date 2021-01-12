@@ -112,7 +112,7 @@ To use only the `filter` parameter, prefix the query with a pipe (`|`):
 ```
 ## Test Connection
 
-To test whether Directory Connector can successfully connect to your directory, navigate to the **Dasboard** tab and select the **Test Now** button. If successful, users will be printed to the Directory Connector window:
+To test whether Directory Connector will successfully connect to your directory and return the desired users and groups, navigate to the **Dashboard** tab and select the **Test Now** button. If successful, users and groups will be printed to the Directory Connector window according to specified [Sync Options](#configure-sync-options) and [Filters](#specify-sync-filters):
 
 {% image /directory-connector/okta/dc-okta-test.png Test sync results%}
 
@@ -130,4 +130,6 @@ Before starting your sync, navigate to the **More** tab and select the **Clear S
 
    You may alternatively select the **Sync Now** button to execute a one-time manual sync.
 
-Directory Connector will begin polling your directory based on the configured [Sync Options](#configured-sync-options) and [Filters](#specify-sync-filters). If you exit or close the application, automatic sync will stop. If you wish to have Directory Connector running in the background, you should minimize the application or hide it to the system tray.
+Directory Connector will begin polling your directory based on the configured [Sync Options](#configured-sync-options) and [Filters](#specify-sync-filters).
+
+If you exit or close the application, automatic sync will stop. To keep Directory Connector running in the background, minimize the application or hide it to the system tray.

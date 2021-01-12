@@ -8,7 +8,7 @@ tags: []
 order: 02
 ---
 
-You can download the latest version of the Bitwarden Directory Connector application from our [GitHub releases page](https://github.com/bitwarden/directory-connector/releases){:target="_blank"} or by using one of the following official links:
+Download the latest version of the Directory Connector Desktop App from our [GitHub releases page](https://github.com/bitwarden/directory-connector/releases){:target="_blank"} or by using one of the following official links:
 
 - [{% icon fa-windows %} Windows Installer (.exe)](https://vault.bitwarden.com/download/?app=connector&platform=windows)
 - [{% icon fa-windows %} Windows Portable (.exe)](https://vault.bitwarden.com/download/?app=connector&platform=windows&variant=portable)
@@ -36,15 +36,17 @@ If you're using a self-hosted version of Bitwarden, you must change the Server U
 
 ## Using Directory Connector
 
-The following sections will walk you through typical actions taken with the Desktop App:
+The following sections will walk you through typical actions taken with the Desktop App.
+
+In all cases, log in with a Bitwarden user account that is an Admin or Owner for the relevant Organization(s). For more information, see [User Types and Access Control]({% link _articles/organizations/user-types-access-control.md %}).
 
 ### Connect to a Bitwarden Organization
 
-Complete the following steps to specify which Bitwarden Organization Directory Connector should sync to:
+Complete the following steps to specify which Bitwarden Organization to sync to:
 
 1. Open the Directory Connector application.
-2. Log in with a Bitwarden user account that is an **Admin** or **Owner**. For more information, see [User Types and Access Control]({% link _articles/organizations/user-types-access-control.md %}).
-3. Navigate to the **Settings** tab and select your organization from the **Account** section.
+2. Navigate to the **Settings** tab.
+3. In the **Account** section, select your Organization from the dropdown.
 
 ### Configure Sync Options
 
@@ -62,7 +64,7 @@ Complete the following steps to configure options for your sync:
 
 ### Perform a Sync Test
 
-Perform a sync test to check that all configured settings are in-place and working as expected. Sync tests will query the directory server and print the results to the screen. The printed results will be what is uploaded and synced to your Bitwarden Organization whenever a real sync is performed.
+Perform a sync test to check that all configured settings are in-place and working as expected. Sync tests will query the directory server and print the results to the Directory Connector **Dashboard**.
 
 1. Open the Directory Connector application.
 2. Navigate to the **Dashboard** tab.
@@ -94,10 +96,6 @@ Before starting your sync, navigate to the **More** tab and select the **Clear S
 2. Navigate to the **Dashboard** tab.
 3. In the **Sync** section, select the **Start Sync** button.
 
-Directory Connector will begin polling your directory based on the **Interval** specified in your **Sync** settings. Refer to one of the following articles for help configuring Sync options:
+Directory Connector will begin polling your directory based on the **Interval** specified in your **Sync Options**.
 
-   - [Sync with Active Directory or LDAP]({% link _articles/directory-connector/ldap-directory.md %})
-   - [Sync with Azure Active Directory]({% link _articles/directory-connector/azure-active-directory.md %})
-   - [Sync with G Suite (Google)]({% link _articles/directory-connector/gsuite-directory.md %})
-   - [Sync with Okta]({% link _articles/directory-connector/okta-directory.md %})
-   - [Sync with OneLogin]({% link _articles/directory-connector/onelogin-directory.md %})
+If you exit or close the application, automatic sync will stop. To keep Directory Connector running in the background, minimize the application or hide it to the system tray.

@@ -8,7 +8,7 @@ tags: []
 order: 03
 ---
 
-The Directory Connector CLI is suited toward work in environments where a desktop GUI is unavailable, or if you want to programmatically script directory sync operations using tools provided by the operating system (cron job, scheduled task, etc), and can be used cross-platform on Windows, macOS, and Linux distributions.
+The Directory Connector CLI is suited toward work in environments where a desktop GUI is unavailable, or if you want to programmatically script directory sync operations using tools provided by the operating system (cron job, scheduled task, etc.). The Directory Connector CLI can be used cross-platform on Windows, macOS, and Linux distributions.
 
 ## Getting Started
 
@@ -19,7 +19,7 @@ Complete the following steps to get started with the Bitwarden Directory Connect
    - [{% icon fa-apple %} macOS CLI](https://vault.bitwarden.com/download/?app=connector&platform=macos&variant=cli-zip)
    - [{% icon fa-linux %} Linux CLI](https://vault.bitwarden.com/download/?app=connector&platform=linux&variant=cli-zip)
 
-2. Extract the `.zip` and move the contents (`bwdc` and `keytar.node`) to `/usr/local/bin` or another directory in your `$PATH`. `keytar.node` **must** be in the same directory as the primary `bwdc` executable.
+2. Extract the `.zip` and move the contents (`bwdc` and `keytar.node`) to `/usr/local/bin` or another directory in your `$PATH`. Please note, `keytar.node` **must** be in the same directory as the primary `bwdc` executable.
 
    **Linux Only:** If not already installed, install `libsecret` with your package manager of choice:
    ```
@@ -27,13 +27,13 @@ Complete the following steps to get started with the Bitwarden Directory Connect
    brew install libsecret
    ```
    **Windows Only:** Windows users can [add `bwdc.exe` to the current user's `PATH`](https://www.howtogeek.com/118594/how-to-edit-your-system-path-for-easy-command-line-access/){:target="_blank"}.
-3. Verify that the `bwdc` command works in your terminal by running the following command:
+3. Verify that the `bwdc` command works in your terminal by running the following:
 
    ```
    bwdc --help
    ```
-4. Configure the Directory connection using the `bwdc config <setting> <value>` command (see [command reference](#config)).
-5. Configure Sync Options by editing your `data.json` file (see [here](#configure-sync-options)). Use the `bwdc data-file` command to obtain the absolute path of your `data.json` file.
+4. Connect Directory Connector to your Directory using the `bwdc config <setting> <value>` command (see [command reference](#config)).
+5. Configure Sync Options by editing your `data.json` file (to learn more, see [Directory Connector Data]({% link _articles/directory-connector/directory-sync-shared.md %})). Use the `bwdc data-file` command to obtain the absolute path of your `data.json` file.
 
    Available **Sync Options** depend on the directory type in use, so refer to one of the following articles for a list of options available to you:
    - [Sync with Active Directory or LDAP]({% link _articles/directory-connector/ldap-directory.md %})
@@ -48,7 +48,7 @@ Complete the following steps to get started with the Bitwarden Directory Connect
 
 ### login
 
-Use the `login` command to login to Directory Connector with your Bitwarden Account. You must be an Admin for your Organization to use Directory Connector (for more information, see [User Types and Access Controls]({% link _articles/organizations/user-types-access-control.md %})).
+Use the `login` command to login to Directory Connector with your Bitwarden Account. You must be an Admin or Owner for your Organization to use Directory Connector (for more information, see [User Types and Access Controls]({% link _articles/organizations/user-types-access-control.md %})).
 ```
 bwdc login [options] [email] [password]
 ```

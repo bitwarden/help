@@ -8,7 +8,7 @@ tags: [active directory, ldap, ad]
 order: 06
 ---
 
-This article will help you get started using Directory Connector to sync users and groups from your LDAP or Active Directory service to your Bitwarden Organization. Bitwarden provides built-in connectors for the most popular LDAP directory servers, includeing:
+This article will help you get started using Directory Connector to sync users and groups from your LDAP or Active Directory service to your Bitwarden Organization. Bitwarden provides built-in connectors for the most popular LDAP directory servers, including:
 
 - Microsoft Active Directory
 - Apache Directory Server (ApacheDS)
@@ -131,4 +131,6 @@ Before starting your sync, navigate to the **More** tab and select the **Clear S
 
    You may alternatively select the **Sync Now** button to execute a one-time manual sync.
 
-Directory Connector will begin polling your directory based on the configured [Sync Options](#configure-sync-options) and [Filters](#specify-sync-filters). If you exit or close the application, automatic sync will stop. If you wish to Directory Connector running in the background, you should minimize the application or hide it to the system tray.
+Directory Connector will begin polling your directory based on the configured [Sync Options](#configure-sync-options) and [Filters](#specify-sync-filters).
+
+If you exit or close the application, automatic sync will stop. To keep Directory Connector running in the background, minimize the application or hide it to the system tray.

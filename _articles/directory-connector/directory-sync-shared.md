@@ -14,18 +14,33 @@ The Directory Connector [Desktop Application]({% link _articles/directory-connec
 Though not required, it may be helpful to use the Desktop Application first to setup and configure all of your settings before using the Directory Connector CLI.
 {% endcallout %}
 
-The location of data shared between the clients (`data.json`) depends on which platform is in use:
+## Database File
+
+The Directory Connector database file (`data.json`) contains objects you may directly edit in order to:
+- Set the connection to your Directory
+- Configure Sync Options
+
+It is not possible to setup the *entirety* of Directory Connector from `data.json`. Authentication values, like keys or secrets, must be set from either the [Desktop Application]({% link _articles/directory-connector/directory-sync-desktop.md %}) or [CLI]({% link _articles/directory-connector/directory-sync-cli.md %}).
+
+[{% icon fa-download %} Download a sample database file]({{site.baseurl}}/files/bitwarden_org_export.json)
+
+{% callout warning %}
+Avoid opening or modifying `data.json` while the Directory Connector Desktop Application or CLI executable is running.
+{% endcallout %}
+
+### Location
+
+The location of `data.json` depends on which platform is in use:
 
 - Windows : `%AppData%\Bitwarden Directory Connector`
   - Portable: `.\bitwarden-connector-appdata`
 - macOS: `~/Library/Application Support/Bitwarden Directory Connector`
 - Linux: `~/.config/Bitwarden Directory Connector`
 
-Run the `data-file` command with the [CLI tool]({% link _articles/directory-connector/directory-sync-cli.md %}) to discover the absolute path to the `data.json` database file on your system.
-
-{% callout warning %}
-Avoid opening or modifying the `data.json` database file while the Directory Connector Desktop Application or CLI executable is running.
+{% callout success %}
+Using the Directory Connector [CLI]({% link _articles/directory-connector/directory-sync-cli.md %}), run the `data-file` command to discover the absolute path to the `data.json`.
 {% endcallout %}
+
 
 ## Secret Storage
 

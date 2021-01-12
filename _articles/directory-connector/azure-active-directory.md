@@ -169,4 +169,6 @@ Before starting your sync, navigate to the **More** tab and select the **Clear S
 
    You may alternatively select the **Sync Now** button to execute a one-time manual sync.
 
-Directory Connector will begin polling your directory based on the configured [Sync Options](#configure-sync-options) and [Filters](#specify-sync-filters). If you exit or close the application, automatic sync will stop. If you wish to have Directory Connector running in the background, you should minimize the application or hide it to the system tray.
+Directory Connector will begin polling your directory based on the configured [Sync Options](#configure-sync-options) and [Filters](#specify-sync-filters).
+
+If you exit or close the application, automatic sync will stop. To keep Directory Connector running in the background, minimize the application or hide it to the system tray.

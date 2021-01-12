@@ -1,0 +1,71 @@
+{
+	"installedVersion": "2.8.2",
+	"mainWindowSize": {
+		"width": 738,
+		"height": 551,
+		"isMaximized": false,
+		"displayBounds": {
+			"x": 1440,
+			"y": 0,
+			"width": 1920,
+			"height": 1080
+		},
+		"x": 2601,
+		"y": 23
+	},
+	"appId": "random-app-id-string",
+	"rememberEmail": true,
+	"rememberedEmail": "owner@bitwarden.com",
+	"directoryType": 0, <---Indicates which directoryConfig_x to use for sync
+	"directoryConfig_0": {  <---Config for LDAP/AD
+		"ssl": false,
+		"startTls": false,
+		"sslAllowUnauthorized": false,
+		"port": 389,
+		"currentUser": false,
+		"ad": true,
+		"pagedSearch": true,
+		"password": "[STORED SECURELY]", <---Must be set from a BWDC Application
+		"rootPath": "dc=ldap,dc=company,dc=org",
+		"hostname": "ldap.company.org",
+		"username": "cn=bitwarden,cn=Users,dc=ldap,dc=company,dc=org"
+	},
+	"directoryConfig_2": {
+		"privateKey": null
+	},
+	"directoryConfig_1": { <---Config for Azure AD
+		"key": "[STORED SECURELY]", <---Must be set from a BWDC Application
+		"tenant": "fschillingerivgmail.onmicrosoft.com",
+		"applicationId": "f191cc29-cbfb-4718-b345-35003925d4de"
+	},
+	"directoryConfig_3": { <---Config for Okta
+		"token": "[STORED SECURELY]", <---Must be set from a BWDC Application
+		"orgUrl": "https://bitwardentest.okta.com"
+	},
+	"directoryConfig_4": { <---Config for OneLogin
+		"region": "us",
+		"clientSecret": "[STORED SECURELY]", <---Must be set from a BWDC Application
+		"clientId": "b95a813897406535fa8ca56bd8e60662ecc8947c945e65d075f62f49fefef9e0"
+	},
+	"syncConfig": { <---Sync Options
+		"users": true,
+		"groups": false,
+		"interval": 5,
+		"removeDisabled": false,
+		"overwriteExisting": false,
+		"useEmailPrefixSuffix": false,
+		"creationDateAttribute": "whenCreated",
+		"revisionDateAttribute": "whenChanged",
+		"emailPrefixAttribute": "sAMAccountName",
+		"memberAttribute": "member",
+		"userObjectClass": "person",
+		"groupObjectClass": "group",
+		"userEmailAttribute": "mail",
+		"groupNameAttribute": "name",
+		"groupPath": "",
+		"userPath": "",
+		"groupFilter": "",
+		"userFilter": "(ou=Test OU)"
+	},
+	"organizationId": "dbfbc821-03eb-44a7-84a1-ac54013cbc2e" <---Your Organization
+}

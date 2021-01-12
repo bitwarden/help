@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Sync with G Suite
+title: Sync with Google Workspace
 categories: [directory-connector]
 featured: true
 popular: false
@@ -9,22 +9,22 @@ tags: []
 order: 08
 ---
 
-This article will help you get started using Directory Connector to sync users and groups from your G Suite Directory to your Bitwarden Organization.
+This article will help you get started using Directory Connector to sync users and groups from your Google Workspace (formerly "G Suite") Directory to your Bitwarden Organization.
 
-## GCP Setup
+## Google Workspace Setup
 
-Complete the following processes from the Google Cloud Portal Console before configuring Directory Connector. Directory Connector will require information obtained from these processes to function properly.
+To setup directory sync with Google Workspace (formerly "G Suite"), you will need access to the **Google Workspace Admin Portal** and **Google Cloud Platform Console**. Directory Connector will require information obtained from these processes to function properly.
 
 ### Create a Cloud Project
 
-Complete the following steps to create a Google Cloud project to use to connect Directory Connector to your G Suite directory. If you already have a Google Cloud project available, skip to [Enable Admin SDK](#enable-admin-sdk):
+Complete the following steps to create a Google Cloud project to use to connect Directory Connector to your directory. If you already have a Google Cloud project available, skip to [Enable Admin SDK](#enable-admin-sdk):
 
 1. In the [GCP Console](https://console.cloud.google.com/home){:target="\_blank"}, select the **Create Project** button.
 2. Enter a Bitwarden-specific name for the project (e.g. `bitwarden-dc-project`) and select the **Create** button.
 
 ### Enable Admin SDK
 
-Complete the following steps to enable the G Suite Admin SDK API, to which Directory Connector will make requests:
+Complete the following steps to enable the Admin SDK API, to which Directory Connector will make requests:
 
 1. In the [GCP Console](https://console.cloud.google.com/home){:target="\_blank"}, select the created or pre-existing Project.
 2. From the left-hand navigation, select **APIs &amp; Services** &rarr; **Library**.
@@ -51,33 +51,28 @@ Complete the following steps to obtain the appropriate permissions for the creat
 3. Select the created service account.
 4. On the Service Account Details page, select the **Add Key** button and select **Create new key** from the dropdown.
 5. Select the Key type: **JSON** and select the **Create** button to download a JSON-formatted key to your local machine.
+6. Back on the details page of your service account, select the **Show Domain-wide Delegation** dropdown.
+7. Check the **Enable G Suite Domain-wide Delegation** box.
+8. Enter a **Product name for the consent screen**.
+9. Select **Save**.
 
-{% callout success %}
-Some (typically, older) G Suite accounts may be required to manually enable Domain-wide Delegation. To do so:
+### Allow Read-access to Google Workspace
 
-1. Select the **Show Domain-wide Delegation** dropdown.
-2. Check the **Enable G Suite Domain-wide Delegation** box.
-3. Enter a **Product name for the consent screen**.
-{% endcallout %}
+Complete the following steps to authorize the client to read your directory:
 
-### Configure G Suite Security
+1. Open the [Google Admin Portal](https://admin.google.com/u/5/ac/home){:target="\_blank"}.
+2. From the left-hand navigation, select **Security** &rarr; **API Controls**.
+3. Select the **Manage Domain Wide Delegation** button.
+4. Select the **Add new** button.
+5. In the Client ID field, paste the created **Client ID**.
 
-Complete the following steps to
+   To retrieve the created Client ID, open the [GCP Console](https://console.cloud.google.com/home){:target="\_blank"} and navigate to **API &amp; Services** &rarr; **Credentials**.
+6. In the OAuth scopes field, paste the following value to grant only read-access:
 
-1. In the [GCP Console](https://console.cloud.google.com/home){:target="\_blank"}, select the created or pre-existing Project.
-2. From the left-hand navigation, select **Security** &rarr; **Settings**.
-
-
-3. Select the **API reference** option and make sure **Enable API access** is checked.
-   {% image directory-connector/gsuite/enable-api-access.png %}
-4. Back in the list of options, select the **Advanced settings** options and then the **Manage API client access** link.
-   {% image directory-connector/gsuite/manage-api-access.png %}
-5. For **Client Name**, paste the **Client ID** of the service account that you created in the previous steps. For **API Scopes**, paste the following values to grant read-only access to users and groups:
-   <pre>https://www.googleapis.com/auth/admin.directory.user.readonly,https://www.googleapis.com/auth/admin.directory.group.readonly,https://www.googleapis.com/auth/admin.directory.group.member.readonly</pre>
-6. Click the **Authorize** button to save.
-   {% image directory-connector/gsuite/authorize-client.png %}
-7. You should now see your service account listed as an authorized client of G Suite.
-   {% image directory-connector/gsuite/authorized-client-list.png %}
+   ```
+   https://www.googleapis.com/auth/admin.directory.user.readonly,https://www.googleapis.com/auth/admin.directory.group.readonly,https://www.googleapis.com/auth/admin.directory.group.member.readonly
+   ```
+7. Select the **Authorize** button.
 
 ## Connect to your Directory
 
@@ -179,4 +174,6 @@ Before starting your sync, navigate to the **More** tab and select the **Clear S
 
    You may alternatively select the **Sync now** button to execute a one-time manual sync.
 
-Directory Connector will begin polling your directory based on the configured [Sync Options](#configure-sync-options) and [Filters](#specify-sync-filters). If you exit or close the application, automatic sync will stop. If you wish to have Directory Connector running the background, you should minimize the application or hide it to the system tray.
+Directory Connector will begin polling your directory based on the configured [Sync Options](#configure-sync-options) and [Filters](#specify-sync-filters).
+
+If you exit or close the application, automatic sync will stop. To keep Directory Connector running in the background, minimize the application or hide it to the system tray.
