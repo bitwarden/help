@@ -62,6 +62,10 @@ Complete the following steps to configure options for your sync:
    - [Sync with Okta]({% link _articles/directory-connector/okta-directory.md %})
    - [Sync with OneLogin]({% link _articles/directory-connector/onelogin-directory.md %})
 
+{% callout success %}
+When you're finished configuring, navigate to the **More** tab and select the **Clear Sync Cache** button to prevent potential conflicts with prior sync operations. For more information, see [Clear Sync Cache]({% link _articles/directory-connector/clear-sync-cache.md %}).
+{% endcallout %}
+
 ### Perform a Sync Test
 
 Perform a sync test to check that all configured settings are in-place and working as expected. Sync tests will query the directory server and print the results to the Directory Connector **Dashboard**.
@@ -74,10 +78,6 @@ Perform a sync test to check that all configured settings are in-place and worki
 
 Complete the following steps to run a one-time manual sync between your directory and your Bitwarden Organization:
 
-{% callout success %}
-Before starting your sync, navigate to the **More** tab and select the **Clear Sync Cache** button to prevent potential conflicts with prior sync operations. For more information, see [Clear Sync Cache]({% link _articles/directory-connector/clear-sync-cache.md %}).
-{% endcallout %}
-
 1. Open the Directory Connector application.
 2. Navigate to the **Dashboard** tab.
 3. In the **Sync** section, select the the **Sync Now** button.
@@ -87,10 +87,6 @@ Your synced users and groups will be immediately available in your Bitwarden Org
 ### Start Automatic Sync
 
 Complete the following steps to start automatic sync polling with Directory Connector:
-
-{% callout success %}
-Before starting your sync, navigate to the **More** tab and select the **Clear Sync Cache** button to prevent potential conflicts with prior sync operations. For more information, see [Clear Sync Cache]({% link _articles/directory-connector/clear-sync-cache.md %}).
-{% endcallout %}
 
 1. Open the Directory Connector application.
 2. Navigate to the **Dashboard** tab.

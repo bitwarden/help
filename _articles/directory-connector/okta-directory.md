@@ -36,6 +36,10 @@ Complete the following steps to configure Directory Connector to use your Okta D
 
 ## Configure Sync Options
 
+{% callout success %}
+When you're finished configuring, navigate to the **More** tab and select the **Clear Sync Cache** button to prevent potential conflicts with prior sync operations. For more information, see [Clear Sync Cache]({% link _articles/directory-connector/clear-sync-cache.md %}).
+{% endcallout %}
+
 Complete the following steps to configure the settings used when syncing using Directory Connector:
 
 1. Open the Directory Connector [Desktop Application]({% link _articles/directory-connector/directory-sync-desktop.md %}).
@@ -119,10 +123,6 @@ To test whether Directory Connector will successfully connect to your directory 
 ## Start Automatic Sync
 
 Once [Sync Options](#configured-sync-options) and [Filters](#specify-sync-filters) are configured as desired, you can begin syncing. Complete the following steps to start automatic sync with Directory Connector:
-
-{% callout success %}
-Before starting your sync, navigate to the **More** tab and select the **Clear Sync Cache** button to prevent potential conflicts with prior sync operations. For more information, see [Clear Sync Cache]({% link _articles/directory-connector/clear-sync-cache.md %}).
-{% endcallout %}
 
 1. Open the Directory Connector [Desktop Application]({% link _articles/directory-connector/directory-sync-desktop.md %}).
 2. Navigate to the **Dashboard** tab.

@@ -46,6 +46,10 @@ Complete the following steps to configure Directory Connector to use your LDAP o
 
 ## Configure Sync Options
 
+{% callout success %}
+When you're finished configuring, navigate to the **More** tab and select the **Clear Sync Cache** button to prevent potential conflicts with prior sync operations. For more information, see [Clear Sync Cache]({% link _articles/directory-connector/clear-sync-cache.md %}).
+{% endcallout %}
+
 Complete the following steps to configure the settings used when syncing using Directory Connector:
 
 {% callout info %}
@@ -120,10 +124,6 @@ To test whether Directory Connector will successfully connect to your Directory 
 ## Start Automatic Sync
 
 Once [Sync Options](#configure-sync-options) and [Filters](#specify-sync-filters) are configured and tested, you can begin syncing. Complete the following steps to start automatic syncing with Directory Connector:
-
-{% callout success %}
-Before starting your sync, navigate to the **More** tab and select the **Clear Sync Cache** button to prevent potential conflicts with prior sync operations. For more information, see [Clear Sync Cache]({% link _articles/directory-connector/clear-sync-cache.md %}).
-{% endcallout %}
 
 1. Open the Directory Connector [Desktop Application]({% link _articles/directory-connector/directory-sync-desktop.md %}).
 2. Navigate to the **Dashboard** tab.
