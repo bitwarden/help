@@ -1,197 +1,24 @@
 ---
 layout: article
-title: Configuring user and group sync filters
+title: Sync Options and Filters
 categories: [directory-connector]
 featured: false
 popular: false
 hidden: false
 tags: []
+order: 05
 ---
 
-You can configure the Bitwarden Directory Connector application to use filters to limit the users and/or groups that are processed for syncing to your Bitwarden organization.
+When configuring the Directory Connector application, you can use a variety of Sync Options and Filters to customize your sync operation and limit the users and/or groups that are processed to your Bitwarden Organization.
 
-The syntax for filtering is different for each directory server type and is covered in detail below.
+Available Sync Options and Filter syntaxes are different for each directory server type. Refer to the **Configure Sync Options** and **Specify Sync Filters** sections of one of the following articles for help:
 
-## Active Directory and Other LDAP Directories
+- [Sync with Active Directory or LDAP]({% link _articles/directory-connector/ldap-directory.md %})
+- [Sync with Azure Active Directory]({% link _articles/directory-connector/azure-active-directory.md %})
+- [Sync with G Suite (Google)]({% link _articles/directory-connector/gsuite-directory.md %})
+- [Sync with Okta]({% link _articles/directory-connector/okta-directory.md %})
+- [Sync with OneLogin]({% link _articles/directory-connector/onelogin-directory.md %})
 
-The group and user filters can be in the form of any LDAP compatible search filter. Additionally, Active Directory provides a few more advanced options as well as a few limitations when writing search filters as opposed to other more standard LDAP directories. You can read more about writing LDAP search filters here: <https://msdn.microsoft.com/en-us/library/windows/desktop/aa746475(v=vs.85).aspx>
-
-### Examples
-
-Search for all entries that have objectClass=user AND cn that contains the word 'Marketing'.
-
-```
-(&(objectClass=user)(cn=*Marketing*))
-```
-
-{% callout info %}
-Active Directory does not implement extensible matching, the following examples won't work with it.
+{% callout success%}
+If you're using the Directory Connector CLI, see [Directory Connector File Storage]({% link _articles/directory-connector/directory-sync-shared.md %}) for help editing your `data.json` configuration file.
 {% endcallout %}
-
-Find entries with an OU component of their DN which is either 'Miami' or 'Orlando'.
-
-```
-(|(ou:dn:=Miami)(ou:dn:=Orlando))
-```
-
-To exclude entities which match an expression, use '!'. Find all Chicago entries except those with a Wrigleyville OU component.
-
-```
-(&(ou:dn:=Chicago)(!(ou:dn:=Wrigleyville)))
-```
-
-{% callout info %}
-The following examples are written for Active Directory. In order to use them for something such as OpenLDAP the attributes will need to be changed.
-{% endcallout %}
-
-Users in the 'Heroes' group
-
-```
-(&(objectCategory=Person)(sAMAccountName=*)(memberOf=cn=Heroes,ou=users,dc=company,dc=com))
-```
-
-Users that are a member of the 'Heroes' group, either directly or via nesting
-
-```
-(&(objectCategory=Person)(sAMAccountName=*)(memberOf:1.2.840.113556.1.4.1941:=cn=Heroes,ou=users,dc=company,dc=com))
-```
-
-## Azure Active Directory
-
-The Microsoft Graph API does not provide a way to filter groups and users directly, however, you can use our custom filtering syntax that allows you to exclude or include a comma separated list of group names, user emails, or users based on their group membership.
-
-### Examples
-
-#### Groups
-
-{% callout info %}
-If you are filtering groups your user filter will only apply to users from the groups returned.
-{% endcallout %}
-
-```
-include:Group A,Sales People,My Other Group
-```
-
-```
-exclude:Group C,Developers,Some Other Group
-```
-
-#### Users
-
-You can include/exclude users directly by using `include` or `exclude` keywords like below:
-
-```
-include:joe@example.com,bill@example.com,tom@example.com
-```
-
-```
-exclude:joe@example.com
-```
-
-Alternatively, you can filter users based on their Azure AD group membership by using `includeGroup` or `excludeGroup` keywords. You must obtain the Azure AD group ID and include it with the keyword. You can get the group's ID in the [Azure Portal](https://portal.azure.com) or through [Azure AD PowerShell](https://docs.microsoft.com/en-us/powershell/module/azuread/get-azureadgroup?view=azureadps-2.0).
-
-```
-includeGroup:97b9ff2a-7d4f-463d-a925-efb1677fd40d,b389c339-8c13-4c1a-8ac1-4fde56d9f70f
-```
-
-```
-excludeGroup:97b9ff2a-7d4f-463d-a925-efb1677fd40d
-```
-
-## G Suite
-
-### Groups
-
-The G Suite APIs do not provide a way to filter groups directly, however, you can use our custom filtering syntax that allows you to exclude or include a comma separated list of group names.
-
-{% callout info %}
-If you are filtering groups your user filter will only apply to users from the groups returned.
-{% endcallout %}
-
-#### Examples
-
-```
-include:Group A,Sales People,My Other Group
-```
-
-```
-exclude:Group C,Developers,Some Other Group
-```
-
-### Users
-
-We provide the same custom filtering syntax that allows you to exclude or include a comma separated list of user emails.
-
-Additionally, the G Suite APIs provide limited filtering capabilities for users that are exposed to you. Read more about filtering with the `query` parameter here: <https://developers.google.com/admin-sdk/directory/v1/guides/search-users>
-
-You can combine both of these filtering options by concatenating the two strings with a pipe (`|`);
-
-#### Examples
-
-Only the include/exclude filter:
-
-```
-include:joe@example.com,bill@example.com,tom@example.com
-```
-
-An include/exclude filter + a G Suite `query` search:
-
-```
-exclude:john@example.com,bill@example.com|orgName=Engineering orgTitle:Manager
-```
-
-Only the G Suite `query` search (notice the `|` prefix that is required):
-
-```
-|orgName=Engineering orgTitle:Manager
-```
-
-## Okta
-
-We provide a custom filtering syntax that allows you to exclude or include a comma separated list of group names or user emails.
-
-Additionally, the Okta APIs provide limited filtering capabilities for users and groups. Read more about filtering with the `filter` parameter here: <https://developer.okta.com/docs/api/resources/groups#filters> and <https://developer.okta.com/docs/api/resources/users#list-users-with-a-filter>
-
-You can combine both of these filtering options by concatenating the two strings with a pipe (`|`);
-
-### Examples
-
-#### Groups
-
-Only the include/exclude filter:
-
-```
-include:Group A,Group B
-```
-
-An include/exclude filter + an Okta `filter`:
-
-```
-exclude:Group A|type eq "APP_GROUP"
-```
-
-Only the Okta `filter` search (notice the `|` prefix that is required):
-
-```
-|type eq "BUILT_IN"
-```
-
-#### Users
-
-Only the include/exclude filter:
-
-```
-include:joe@example.com,bill@example.com,tom@example.com
-```
-
-An include/exclude filter + an Okta `filter`:
-
-```
-exclude:john@example.com,bill@example.com|profile.firstName eq "John"
-```
-
-Only the Okta `filter` search (notice the `|` prefix that is required):
-
-```
-|profile.lastName eq "Smith"
-```

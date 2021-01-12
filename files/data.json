@@ -1,0 +1,71 @@
+{
+	"installedVersion": "2.8.2",
+	"mainWindowSize": {
+		"width": 738,
+		"height": 551,
+		"isMaximized": false,
+		"displayBounds": {
+			"x": 1440,
+			"y": 0,
+			"width": 1920,
+			"height": 1080
+		},
+		"x": 2601,
+		"y": 23
+	},
+	"appId": "app-id-string",
+	"rememberEmail": true,
+	"rememberedEmail": "owner@bitwarden.com",
+	"directoryType": 0, <---Indicates which directoryConfig_x to use for sync
+	"directoryConfig_0": {  <---Config for LDAP/AD
+		"ssl": false,
+		"startTls": false,
+		"sslAllowUnauthorized": false,
+		"port": 389,
+		"currentUser": false,
+		"ad": true,
+		"pagedSearch": true,
+		"password": "[STORED SECURELY]", <---Must be set from a BWDC Application
+		"rootPath": "dc=ldap,dc=company,dc=org",
+		"hostname": "ldap.company.org",
+		"username": "cn=bitwarden,cn=Users,dc=ldap,dc=company,dc=org"
+	},
+	"directoryConfig_2": {
+		"privateKey": null
+	},
+	"directoryConfig_1": { <---Config for Azure AD
+		"key": "[STORED SECURELY]", <---Must be set from a BWDC Application
+		"tenant": "bwdc@test.onmicrosoft.com",
+		"applicationId": "application-id-string"
+	},
+	"directoryConfig_3": { <---Config for Okta
+		"token": "[STORED SECURELY]", <---Must be set from a BWDC Application
+		"orgUrl": "https://bitwardentest.okta.com"
+	},
+	"directoryConfig_4": { <---Config for OneLogin
+		"region": "us",
+		"clientSecret": "[STORED SECURELY]", <---Must be set from a BWDC Application
+		"clientId": "client-id-string"
+	},
+	"syncConfig": { <---Sync Options
+		"users": true,
+		"groups": false,
+		"interval": 5,
+		"removeDisabled": false,
+		"overwriteExisting": false,
+		"useEmailPrefixSuffix": false,
+		"creationDateAttribute": "whenCreated",
+		"revisionDateAttribute": "whenChanged",
+		"emailPrefixAttribute": "sAMAccountName",
+		"memberAttribute": "member",
+		"userObjectClass": "person",
+		"groupObjectClass": "group",
+		"userEmailAttribute": "mail",
+		"groupNameAttribute": "name",
+		"groupPath": "",
+		"userPath": "",
+		"groupFilter": "",
+		"userFilter": "(ou=Test OU)"
+	},
+	"organizationId": "organization-id-string" <---Your Organization ID
+}
