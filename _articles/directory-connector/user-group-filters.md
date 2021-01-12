@@ -11,7 +11,7 @@ order: 06
 
 When configuring the Directory Connector application, you can use a variety of Sync Options and Filters to customize your sync operation and limit the users and/or groups that are processed to your Bitwarden Organization.
 
-Available Sync Options and Filter syntaxes are different for each directory server type. Refer to the **Configure Sync Option** and **Specify Sync Filters** sections of one of the following articles for help:
+Available Sync Options and Filter syntaxes are different for each directory server type. Refer to the **Configure Sync Options** and **Specify Sync Filters** sections of one of the following articles for help:
 
 - [Sync with Active Directory or LDAP]({% link _articles/directory-connector/ldap-directory.md %})
 - [Sync with Azure Active Directory]({% link _articles/directory-connector/azure-active-directory.md %})
