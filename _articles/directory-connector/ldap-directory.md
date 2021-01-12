@@ -113,7 +113,7 @@ To filter a sync for all entries that have `objectClass=user` and `cn` (common n
 
 ## Test a Sync
 
-To test whether Directoryu Connector will successfully connect to your Directory and return the desired users and groups, navigate to teh **Dashbaord** tab and select the **Test Now** button. If successful, users and groups will be printed to the Directory Connector window according the specified [Sync Options](#configure-sync-options) and [Filters](#specify-sync-filters):
+To test whether Directory Connector will successfully connect to your Directory and return the desired users and groups, navigate to teh **Dashbaord** tab and select the **Test Now** button. If successful, users and groups will be printed to the Directory Connector window according the specified [Sync Options](#configure-sync-options) and [Filters](#specify-sync-filters):
 
 {% image /directory-connector/okta/dc-okta-test.png Test sync results %}
 
