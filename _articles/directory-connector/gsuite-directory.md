@@ -52,7 +52,7 @@ Complete the following steps to obtain the appropriate permissions for the creat
 4. On the Service Account Details page, select the **Add Key** button and select **Create new key** from the dropdown.
 5. Select the Key type: **JSON** and select the **Create** button to download a JSON-formatted key to your local machine.
 6. Back on the details page of your service account, select the **Show Domain-wide Delegation** dropdown.
-7. Check the **Enable G Suite Domain-wide Delegation** box.
+7. Check the **Enable Domain-wide Delegation** box.
 8. Enter a **Product name for the consent screen**.
 9. Select **Save**.
 
@@ -76,15 +76,15 @@ Complete the following steps to authorize the client to read your directory:
 
 ## Connect to your Directory
 
-Complete the following steps to configure Directory Connector to use your G Suite directory:
+Complete the following steps to configure Directory Connector to use your Google directory:
 
 1. Open the Directory Connector [Desktop Application]({% link _articles/directory-connector/directory-sync-desktop.md %}).
 2. Navigate to the **Settings** tab.
 3. From the **Type** dropdown, select **G Suite (Google)**.
 
    The available fields in this section will change according to your selected Type.
-4. Enter the **Domain** of your G Suite account.
-5. Enter the email address of an **Admin User** with full access to your G Suite Directory.
+4. Enter the **Domain** of your Google account.
+5. Enter the email address of an **Admin User** with full access to your Google Directory.
 6. If you have one, enter the **Customer ID** of your directory. Many users will not have or be required to enter a Customer ID.
 7. Select the **Choose File** button and select the [downloaded JSON key](#obtain-service-account-credentials).
 8. In the **Account** section, select Organization to connect to your directory from the dropdown.
