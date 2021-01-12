@@ -13,7 +13,7 @@
 		"x": 2601,
 		"y": 23
 	},
-	"appId": "random-app-id-string",
+	"appId": "app-id-string",
 	"rememberEmail": true,
 	"rememberedEmail": "owner@bitwarden.com",
 	"directoryType": 0, <---Indicates which directoryConfig_x to use for sync
@@ -35,8 +35,8 @@
 	},
 	"directoryConfig_1": { <---Config for Azure AD
 		"key": "[STORED SECURELY]", <---Must be set from a BWDC Application
-		"tenant": "fschillingerivgmail.onmicrosoft.com",
-		"applicationId": "f191cc29-cbfb-4718-b345-35003925d4de"
+		"tenant": "bwdc@test.onmicrosoft.com",
+		"applicationId": "application-id-string"
 	},
 	"directoryConfig_3": { <---Config for Okta
 		"token": "[STORED SECURELY]", <---Must be set from a BWDC Application
@@ -45,7 +45,7 @@
 	"directoryConfig_4": { <---Config for OneLogin
 		"region": "us",
 		"clientSecret": "[STORED SECURELY]", <---Must be set from a BWDC Application
-		"clientId": "b95a813897406535fa8ca56bd8e60662ecc8947c945e65d075f62f49fefef9e0"
+		"clientId": "client-id-string"
 	},
 	"syncConfig": { <---Sync Options
 		"users": true,
@@ -67,5 +67,5 @@
 		"groupFilter": "",
 		"userFilter": "(ou=Test OU)"
 	},
-	"organizationId": "dbfbc821-03eb-44a7-84a1-ac54013cbc2e" <---Your Organization
+	"organizationId": "organization-id-string" <---Your Organization ID
 }
