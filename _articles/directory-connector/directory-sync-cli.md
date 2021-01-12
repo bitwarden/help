@@ -33,7 +33,7 @@ Complete the following steps to get started with the Bitwarden Directory Connect
    bwdc --help
    ```
 4. Connect Directory Connector to your Directory using the `bwdc config <setting> <value>` command (see [command reference](#config)).
-5. Configure Sync Options by editing your `data.json` file (to learn more, see [Directory Connector Data]({% link _articles/directory-connector/directory-sync-shared.md %})). Use the `bwdc data-file` command to obtain the absolute path of your `data.json` file.
+5. Configure Sync Options by editing your `data.json` file (to learn more, see [Directory Connector File Storage]({% link _articles/directory-connector/directory-sync-shared.md %})). Use the `bwdc data-file` command to obtain the absolute path of your `data.json` file.
 
    Available **Sync Options** depend on the directory type in use, so refer to one of the following articles for a list of options available to you:
    - [Sync with Active Directory or LDAP]({% link _articles/directory-connector/ldap-directory.md %})
@@ -135,12 +135,12 @@ Options include:
 
 ### data-file
 
-The `data-file` command returns an absolute path to the `data.json` database file used by the Directory Connector CLI:
+The `data-file` command returns an absolute path to the `data.json` configuration file used by the Directory Connector CLI:
 ```
 bwdc data-file
 ```
 
-Configuration settings can be modified for the Directory Connector CLI by editing the `data.json` database file directly in your favorite text editor.
+Configuration settings can be modified for the Directory Connector CLI by editing the `data.json` configuration file directly in your favorite text editor.
 
 ### clear-cache
 

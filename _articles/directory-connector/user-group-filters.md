@@ -20,5 +20,5 @@ Available Sync Options and Filter syntaxes are different for each directory serv
 - [Sync with OneLogin]({% link _articles/directory-connector/onelogin-directory.md %})
 
 {% callout success%}
-If you're using the Directory Connector CLI, see [Directory Connector Data]({% link _articles/directory-connector/directory-sync-shared.md %}) for help editing your `data.json` configuration file.
+If you're using the Directory Connector CLI, see [Directory Connector File Storage]({% link _articles/directory-connector/directory-sync-shared.md %}) for help editing your `data.json` configuration file.
 {% endcallout %}

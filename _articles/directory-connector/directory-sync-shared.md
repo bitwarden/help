@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Directory Connector Data
+title: Directory Connector File Storage
 categories: [directory-connector]
 featured: true
 popular: false
@@ -14,15 +14,15 @@ The Directory Connector [Desktop Application]({% link _articles/directory-connec
 Though not required, it may be helpful to use the Desktop Application first to setup and configure all of your settings before using the Directory Connector CLI.
 {% endcallout %}
 
-## Database File
+## Config File
 
-The Directory Connector database file (`data.json`) contains objects you may directly edit in order to:
+The Directory Connector configuration file (`data.json`) contains objects you may directly edit in order to:
 - Set the connection to your Directory
 - Configure Sync Options
 
 It is not possible to setup the *entirety* of Directory Connector from `data.json`. Authentication values, like keys or secrets, must be set from either the [Desktop Application]({% link _articles/directory-connector/directory-sync-desktop.md %}) or [CLI]({% link _articles/directory-connector/directory-sync-cli.md %}).
 
-[{% icon fa-download %} Download a sample database file]({{site.baseurl}}/files/data.json)
+[{% icon fa-download %} Download a sample configuration file]({{site.baseurl}}/files/data.json)
 
 {% callout warning %}
 Avoid opening or modifying `data.json` while the Directory Connector Desktop Application or CLI executable is running.
@@ -57,7 +57,7 @@ If a secure storage environment is not available, you can configure the Director
 BITWARDENCLI_CONNECTOR_PLAINTEXT_SECRETS=true
 ```
 
-With plaintext storage enabled, you can then configure all settings directly, in plaintext, from the `data.json` database file.
+With plaintext storage enabled, you can then configure all settings directly, in plaintext, from the `data.json` configuration file.
 
 {% callout info %}
 Plaintext storage of secrets is not compatible with the Directory Connector desktop application. You should only use the Directory Connector CLI with plaintext storage of secrets.
