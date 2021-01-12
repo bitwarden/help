@@ -22,7 +22,7 @@ The Directory Connector database file (`data.json`) contains objects you may dir
 
 It is not possible to setup the *entirety* of Directory Connector from `data.json`. Authentication values, like keys or secrets, must be set from either the [Desktop Application]({% link _articles/directory-connector/directory-sync-desktop.md %}) or [CLI]({% link _articles/directory-connector/directory-sync-cli.md %}).
 
-[{% icon fa-download %} Download a sample database file]({{site.baseurl}}/files/bitwarden_org_export.json)
+[{% icon fa-download %} Download a sample database file]({{site.baseurl}}/files/data.json)
 
 {% callout warning %}
 Avoid opening or modifying `data.json` while the Directory Connector Desktop Application or CLI executable is running.
