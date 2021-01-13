@@ -14,8 +14,8 @@ Use this article for help exporting data from LastPass and importing into Bitwar
 
 Complete the following steps to export data from the [LastPass Web Vault](https://lastpass.com/){:target="\_blank"}:
 
-1. Select **More Options...** from the left sidebar.
-2. Select the **Advanced** dropdown option, and select **Export**.
+1. Select the **Advanced Options** option on the left sidebar. 
+2. Select **Export** from the menu.
 3. Enter your Master Password to validate the export attempt.
 
    Your Vault data will be decrypted and printed to the screen in a `.csv` format.
