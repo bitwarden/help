@@ -98,3 +98,11 @@ Extensions are safe to use if they are developed correctly. Due to the nature of
 **A:** On installation, the Browser Extension will ask permission to access your clipboard in order to use the scheduled clipboard clear function (accessed in the **Options** menu).
 
 When this **optional feature** is enabled, clipboard clear will clear any Bitwarden entries made by or filled on a configurable interval. Access to the clipboard allows Bitwarden to do this *without* removing a clipboard item not associated from the Bitwarden application by checking the last-copied item again the last-copied item from your Vault. Please note, this feature is **off by default**.
+
+#### Q: Is Bitwarden FIPS Compliant?
+
+**A:** Bitwarden uses [FIPS compliant libraries and cryptography](https://bitwarden.com/help/article/what-encryption-is-used/#invoked-crypto-libraries), however the Bitwarden platform has not performed any FIPs certifications. Most FIPS installations of Bitwarden leverage the self-hosting option to make evaluations (i.e. Cybersecurity Maturity Model Certification) easier.
+
+#### Q: Can I restrict access to Bitwarden to certain devices?
+
+**A:** Using self-hosting, you can use custom firewall and NGINX configurations as well as VPN/VLAN access control to determine the device types and/or network layer access for your Bitwarden instance. You may also use other tools such as device-level certificates to control specific device access to the Bitwarden instance as well.
