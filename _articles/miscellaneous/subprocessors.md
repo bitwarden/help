@@ -1,11 +1,11 @@
 ---
 layout: article
-title: Bitwarden Subprocessors
+title: Bitwarden's Subprocessors
 categories: [security]
 featured: false
 popular: false
 tags: []
-order: 07
+order: 08
 ---
 
 Reference the table below for a list of Bitwarden's subprocessors.

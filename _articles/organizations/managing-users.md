@@ -9,7 +9,7 @@ order: 09
 ---
 This article will guide you through the process of inviting or removing users from your Organization.
 
-Teams and Enterprise Organizations can sync Bitwarden to an existing user directory to automatically add or remove new users using the **Bitwarden Directory Connector**. For more information, see [Syncing users and groups with a directory](https://bitwarden.com/help/article/directory-sync/).
+Teams and Enterprise Organizations can sync Bitwarden to an existing user directory to automatically add or remove new users using the **Bitwarden Directory Connector**. For more information, see [About Directory Connector]({% link _articles/directory-connector/directory-sync.md %}}).
 
 {% callout info %}
 **Free** Organizations and **Families** Organizations have a maximum number of users; 2 and 6 respectively.

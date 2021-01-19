@@ -26,7 +26,7 @@ Complete the following steps to install Bitwarden manually:
 1. Download a stubbed version of Bitwarden's dependencies (`docker-stub.zip`) from the [releases pages on GitHub](https://github.com/bitwarden/server/releases){:target="_blank"}. For example:
 
    ```
-   curl -L https://bitwarden.com/bitwarden/server/releases/download/v<version_number>/docker-stub.zip \
+   curl -L https://github.com/bitwarden/server/releases/download/v<version_number>/docker-stub.zip \
     -o docker-stub.zip
    ```
 

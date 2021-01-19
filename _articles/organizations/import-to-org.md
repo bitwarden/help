@@ -8,9 +8,11 @@ tags: [organizations, import]
 order: 08
 ---
 
-Bitwarden provides a data import tool for easy migration from any password management solution to your Organization Vault. You may also import data directly to your personal Vault, for more information see [Import Data to your Vault]({% link _articles/importing/import-data.md %}).
+Bitwarden provides a data import tool for easy migration from any password management solution to your Organization Vault.
 
-Bitwarden supports a large array of import formats, including those used by the most popular password management solutions:
+You can also use the data import tool to import from one Bitwarden Vault to another, or to import a backup [Encrypted Export]({% link _articles/importing/encrypted-export.md %}).
+
+Bitwarden supports a large array of formats for import, including those used by the most popular password management solutions:
 
 - [Import from LastPass]({% link _articles/importing/import-from-lastpass.md %})
 - [Import from 1Password]({% link _articles/importing/import-from-1password.md %})
@@ -18,10 +20,6 @@ Bitwarden supports a large array of import formats, including those used by the 
 - [Import from Google Chrome]({% link _articles/importing/import-from-chrome.md %})
 
 For a full list of supported formats, see [Supported Formats](#supported-formats).
-
-{% callout info %}
-If you're importing from one Bitwarden Vault to another Bitwarden Vault, or if your format is not listed, [Condition a Bitwarden .csv or .json](https://bitwarden.com/help/article/condition-bitwarden-import/#for-your-organization).
-{% endcallout %}
 
 ## Import to your Organization
 
@@ -46,6 +44,10 @@ If you get the following error:
 An item in your `.CSV` exceeds the size limit allowed for items stored in the Bitwarden Vault. Remove the offending item from your file for import, or reduce its size. You can open the `.CSV` in a text editor or spreadsheet program for easy editing, and locate the offending item at `index[X]` as referenced in the error message.
 
 ## Supported Formats
+
+{% callout info %}
+If your format is not listed below, manually [condition a Bitwarden .csv or .json]({% link _articles/importing/condition-bitwarden-import.md %}).
+{% endcallout %}
 
 The following formats are supported out-of-the-box:
 

@@ -24,9 +24,32 @@ Options include:
 |Manager|All of the above,<br>+ Assign Users to Collections<br>+ Assign User Groups to Collections<br>+ Create or delete new Collections|
 |Admin|All of the above,<br>+ Assign Users to User Groups<br>+ Create or delete User Groups<br>+ Invite and confirm new Users<br>+ Manage Enterprise Policies<br>+ View Event Logs<br>+ Export Organization Vault data<br><br>**Admin Users automatically have access to all Collections.**|
 |Owner|All of the above,<br>+ Manage Billing, Subscription, and Integrations<br><br>**Owner Users automatically have access to all Collections.**|
+|Custom|Allows for granular control of user permissions on a user-by-user basis. For more information, see [Custom Role](#custom-role).|
 
 {% callout warning %}
 **Only an Owner** can create a new Owner or assign Owner to an existing user. For failover purposes, Bitwarden recommends creating multiple Owner users.
+{% endcallout %}
+
+### Custom Role
+
+Selecting the **Custom** role for a user allows for granular control of user permissions on a user-by-user basis. A user with the Custom role can have a customizable selection of Manager and Admin capabilities, including:
+
+- Manage Assigned collections
+- Access Business Portal
+- Access Event Logs
+- Access Import/Export
+- Access Reports
+- Manage All Collections
+- Manage Groups
+- Manage SSO
+- Manage Policies
+- Manage Users
+
+{% callout success %}
+As an example, the Custom role allows for the creation of a user that can fully manage a User-Group-Collection relationship, without the ability to see anything in a Collection to which they are not assigned. This scenario would involve selecting only the following boxes for this Custom user:
+- Manage Assigned Collections
+- Manage Groups
+- Manage Users
 {% endcallout %}
 
 ## Access Control

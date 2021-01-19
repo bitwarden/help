@@ -333,7 +333,9 @@ bw import bitwardencsv ./file.csv
 
 ### Export
 
-The `export` command allows you to export your *unencrypted* vault data to a CSV or JSON formatted file on disk.
+The `export` command allows you to export your Vault data as plaintext `.json` or `.csv` files, or as a `.json` [Encrypted Export]({% link _articles/importing/encrypted-export.md %}).
+
+Valid format values are `csv`, `json`, and `encrypted_json`.
 
 ```
 bw export [password] [--output <filePath>] [--format <format>] [--organizationid <orgId>]

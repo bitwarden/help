@@ -6,7 +6,7 @@ featured: false
 popular: false
 hidden: false
 tags: []
-order: 08
+order: 09
 redirect_from:
   - /article/why-should-i-trust-bitwarden/
   - /article/what-happens-if-bitwarden-is-hacked/

@@ -13,6 +13,8 @@ This article will guide you through the steps required to configure Login with S
 **Configuration will vary provider-to-provider.** Refer to the following Provider Samples as you configure Login with SSO:
 
 - [ADFS Sample]({% link _articles/login-with-sso/saml-adfs.md%})
+- [Auth0 Sample]({% link _articles/login-with-sso/saml-auth0.md %}) 
+- [AWS Sample]({% link _articles/login-with-sso/saml-aws.md %})
 - [Azure Sample]({% link _articles/login-with-sso/saml-azure.md %})
 - [Duo Sample]({% link _articles/login-with-sso/saml-duo.md %})
 - [Google Sample]({% link _articles/login-with-sso/saml-google.md %})
