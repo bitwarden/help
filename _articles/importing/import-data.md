@@ -8,9 +8,11 @@ tags: [import]
 order: 01
 ---
 
-Bitwarden provides a data import tool for easy migration from any password management solution to your personal Vault. You may also import data directly to an Organization Vault, for information see [Import Data to an Organization]({% link _articles/organizations/import-to-org.md %}).
+Bitwarden provides a data import tool for easy migration from any password management solution to your personal Vault or Organization Vault (see [Import Data to an Organization]({% link _articles/organizations/import-to-org.md %})).
 
-Bitwarden supports a large array of import formats, including those used by the most popular password management solutions:
+You can also use the data import tool to import from one Bitwarden Vault to another, or to import a backup [Encrypted Export]({% link _articles/importing/encrypted-export.md %}).
+
+Bitwarden supports a large array of formats for import, including those used by the most popular password management solutions:
 
 - [Import from LastPass]({% link _articles/importing/import-from-lastpass.md %})
 - [Import from 1Password]({% link _articles/importing/import-from-1password.md %})
@@ -18,10 +20,6 @@ Bitwarden supports a large array of import formats, including those used by the 
 - [Import from Google Chrome]({% link _articles/importing/import-from-chrome.md %})
 
 For a full list of supported formats, see [Supported Formats](#supported-formats).
-
-{% callout info %}
-If you're importing from one Bitwarden Vault to another Bitwarden Vault, or if your format is not listed, [Condition a Bitwarden .csv or .json]({% link _articles/importing/condition-bitwarden-import.md %}).
-{% endcallout %}
 
 ## Import to your Personal Vault
 
@@ -31,6 +29,8 @@ To import your data into a personal Vault:
 2. Select **Tools** from the top navigation bar.
 3. Select **Import Data** from the left Tools menu.
 4. Select the format of your file to import from the dropdown menu.
+
+   {% callout success%}If you're importing an [Encrypted Export]({% link _articles/importing/encrypted-export.md %}), select `.json` as you would if it were plaintext. A handler will determine that the file is encrypted and decrypt using your [account encryption key](https://bitwarden.com/help/article//change-your-master-password/#rotating-your-accounts-encryption-key).{% endcallout %}
 5. Select the **Browse** button and add your file.
 6. Select the **Import Data** button to complete your import.
 
@@ -51,7 +51,7 @@ An item in your `.csv` exceeds the size limited allowed for items stored in the 
 The following formats are supported out-of-the-box:
 
 {% callout info %}
-If you're importing from one Bitwarden Vault to another Bitwarden Vault, or if your format is not listed, [Condition a Bitwarden .csv or .json]({% link _articles/importing/condition-bitwarden-import.md %}).
+If your format is not listed below, manually [condition a Bitwarden .csv or .json]({% link _articles/importing/condition-bitwarden-import.md %}).
 {% endcallout %}
 
 - [1Password (1pif)]({% link _articles/importing/import-from-1password.md %})

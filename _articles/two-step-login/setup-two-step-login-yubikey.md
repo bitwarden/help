@@ -64,9 +64,24 @@ The following assumes that **YubiKey** is your [highest-priority enabled method]
 
 You will not be required to complete your secondary Two-step Login step to **Unlock** your Vault once logged in. For help configuring Log Out vs. Lock behavior, see [Vault Timeout Options]({% link _articles/account/vault-timeout.md %}).
 
-### Troubleshooting Android
+## NFC Troubleshooting
 
-If you do not know where your NFC receiver is located, you may need to move it around some, trying different areas. Once Bitwarden detects the YubiKey it will automatically validate and log you in. If a YubiKey NEO or YubiKey 5 NFC continues to not work on your Android device, check the following:
+If your YubiKey's NFC functionality isn't working properly:
+
+##### Check that NFC is enabled:
+1. Download [YubiKey Manager](https://www.yubico.com/products/services-software/download/yubikey-manager/){:target="\_blank"}.
+2. Plug the YubiKey into your device.
+3. Select the **Interfaces** tab, and check that all boxes in the NFC section are checked.
+
+##### Check that NFC is configured properly:
+1. Download the [YubiKey Personalization Tool](https://www.yubico.com/products/services-software/download/yubikey-personalization-tools/){:target="\_blank"}.
+2. Plug the YubiKey into your device.
+3. Select the **Tools** tab.
+4. Select the **NDEF Programming** button.
+5. Select the the configuration slot you would like the YubiKey to use over NFC.
+6. Select the **Program** button.
+
+##### (Android-only) Check the following:
 
 - That you checked the **One of my keys supports NFC** checkbox during setup.
 - That your Android device supports [NFC](https://en.wikipedia.org/wiki/List_of_NFC-enabled_mobile_devices){:target="_blank"} and is [known to work properly](https://forum.yubico.com/viewtopic1c5f.html?f=26&t=1302){:target="_blank"} with YubiKey NEO or YubiKey 5 NFC.

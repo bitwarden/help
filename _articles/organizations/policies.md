@@ -72,7 +72,7 @@ Enabling the **Password Generator** policy will enforce a configurable set of mi
 {% callout warning %}
 Existing non-compliant passwords **will not** be changed when this policy is enabled, nor will the items be removed from the Organization. When changing or generating a password after this policy is enabled, configured policy rules will be enforced.
 
-A banner will appear to users on the Password Generator screen indicating that a policy will affect their generator settings.
+A banner is displayed to users on the Password Generator screen indicating that a policy will affect their generator settings.
 {% endcallout %}
 
 ### Single Organization
@@ -91,4 +91,16 @@ Enabling the **Single Sign-On Authentication** policy will require non-Owner/non
 
 {% callout info %}
 The **Single Organization** policy must be enabled before activating this policy.
+
+As a result, you must disable the **Single Sign-On Authentication** policy before you can disable the **Single Ownership** policy.
+{% endcallout %}
+
+### Personal Ownership
+
+Enabling the **Personal Ownership** policy will require non-Owner/non-Admin users to save Vault Items to an Organization by disabling personal ownership of Vault items for organization users.
+
+A banner is displayed to users on the Add Item screen indicating that a policy will affect their membership options.
+
+{% callout info %}
+Vault Items that were created prior to the implementation of this policy or prior to joining the Organization will remain in the user's personal Vault.
 {% endcallout %}

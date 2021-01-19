@@ -59,3 +59,33 @@ If you do not see the option to enable Windows Hello within the Desktop preferen
 Once Biometric Unlock is enabled, a new button will be presented on the Unlock screen. Selecting this button (for example, **Unlock with Windows Hello**) will initiate unlock. You may at any time choose to unlock your Vault with your Master Password instead.
 
 {% image /biometrics/hello-unlock.png Unlock with Windows Hello %}
+
+## Browser Extensions
+
+Biometric Unlock is supported for **Firefox** and **Chromium-based** (i.e. Chrome, Edge) Bitwarden Browser Extensions by integration with a native Bitwarden Desktop App. Through the Desktop App's access to Biometric APIs, Browser Extensions support Biometric Unlock:
+- For **Windows**, via [Windows Hello](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/windows-hello){:target="\_blank"} using PIN, Facial Recognition, or [other hardware that meets Windows Hello biometric requirements](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/windows-hello-biometric-requirements){:target="\_blank"}.
+- For **macOS**, via [Touch ID](https://support.apple.com/en-us/HT207054){:target="\_blank"}.
+
+{% callout info %}
+The Bitwarden Desktop Application must be installed, logged in, and running in order to use Biometric Unlock in a Browser Extension. Additionally, you will need to [enable Biometric Unlock in the desktop app](#enable-biometric-unlock-in-desktop) before proceeding.
+{% endcallout %}
+
+### Enable Biometric Unlock for Browser Extensions
+
+Complete the following steps to enable Biometric Unlock in your Browser Extension:
+
+1. In the Desktop App, navigate to **Settings** (on Windows, **File** &rarr; **Settings**) (on macOS, **Bitwarden** &rarr; **Preferences**).
+2. Check the **Enable Browser Integration** checkbox.
+3. In the Browser Extension, open the **Settings** tab.
+4. Check the **Unlock with biometrics** checkbox.
+
+   To validate a secure channel, a `Desktop sync verification` dialog box will appear in your Browser Extension and a `Verify browser connection` dialog box will appear in your Desktop Application.
+5. Validate that the displayed [account fingerprint]({% link _articles/features/fingerprint-phrase.md %}) matches in both locations. If they match, select the **Approve** button and input your Biometric authentication method.
+
+   You will be required to re-validate each time either the Desktop App or Browser Extension is restarted.
+
+Once Biometric Unlock is enabled, a new button will be presented on the Unlock screen. Selecting the **Unlock biometrics** button will initiate unlock via the Desktop App.
+
+{% callout warning %}
+If you attempt to use Biometric Unlock when the Desktop App is closed, you will be prompted to open the Desktop App and redo the fingerprint validation handshake described in this section.
+{% endcallout %}
