@@ -15,7 +15,7 @@ Emergency Access enables users to designate and manage trusted emergency contact
 
 Emergency Access uses public key exchange and encryption/decryption to allow users to give a [trusted emergency contact](#trusted-emergency-contacts) permission to [access Vault data](#user-access) in a Zero Knowledge/Zero Trust environment:
 
-1. A Bitwarden user (the *grantor*) [invites another Bitwarden user](#invite-a-trusted-emergency-contact) to become a trusted emergency contact (the *grantee*). The invitation specifies a [user access level](#user-access) and includes a request for the grantee's public key.
+1. A Bitwarden user (the *grantor*) [invites another Bitwarden user](#invite-a-trusted-emergency-contact) to become a trusted emergency contact (the *grantee*). The invitation (valid for only 5 days) specifies a [user access level](#user-access) and includes a request for the grantee's public key.
 2. Grantee is notified of invitation via email and [accepts the invitation](#accept-an-invitation) to become a trusted emergency contact. On acceptance, the grantee's public key is stored with the invite.
 3. Grantor is notified of acceptance via email and [confirms the grantee](#confirm-an-accepted-invitation) as their trusted emergency contact. On confirmation, the grantor's Master Key is encrypted using the grantee's public key and stored once encrypted. Grantee is notified of confirmation.
 4. An emergency occurs, resulting in grantee requiring access to grantor's Vault. Grantee [submits a request for emergency access](#initiate-emergency-access).
@@ -57,6 +57,10 @@ As a grantor, complete the following steps to invite a trusted emergency contact
    - Set a **User Access** level for the trusted emergency contact ([View-only or Takeover](#user-access)).
    - Set a **Wait Time** for Vault access. Wait Time dictates how long your trusted emergency contact must wait to access your Vault after initiating an emergency access request.
 5. Select the **Save** button to send the invitation.
+
+{% callout info %}
+Emergency Contact invitations are only valid for 5 days.
+{% endcallout %}
 
 ### Accept an Invitation
 
