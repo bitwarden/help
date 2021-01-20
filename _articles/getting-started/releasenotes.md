@@ -21,6 +21,12 @@ Bitwarden believes source code transparency is an absolute requirement for secur
 
 ## Release Announcements
 
+{% callout info %}
+**Dates on this page represent Cloud Server and Web releases.** Bitwarden incrementally updates each client application (Desktop, Browser Extension, Mobile, etc.) following the initial release date to ensure feature efficacy and stability.
+
+As a result, client applications should expect listed features following the initial release.
+{% endcallout %}
+
 ## 2021-01-19
 For the first major release of 2021, the Bitwarden team combined multiple major enhancements to address the critical needs of all users, including:
 - **Emergency Access**: Bitwarden's new Emergency Access feature enables users to designate and manage trusted emergency contacts, who may request access to their Vault in a Zero Knowledge/Zero Trust environment (see [here]({% link _articles/security/emergency-access.md %}) for details).
