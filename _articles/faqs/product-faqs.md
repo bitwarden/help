@@ -97,7 +97,7 @@ To use an existing identity provider for authentication, you’ll need to subscr
 
 ### Q: Does Bitwarden have a way for me to let someone into my account if I am unable to log in?
 
-**A:** This is what we call Emergency Access feature, and it is one of our most requested according to our community. We have added this feature to our product road map and intend to bring it into the platform soon.
+**A:** You can use the Emergency Access feature to establish trusted contacts who may access your Vault in case of emergency. For more information, see [Emergency Access]({% link _articles/security/emergency-access.md%}).
 
 ### Q: How can I enable Auto-fill On Page Load?
 
