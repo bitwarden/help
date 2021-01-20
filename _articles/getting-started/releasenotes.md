@@ -39,3 +39,13 @@ The latest release of Bitwarden adds SSO-related enhancements to all client appl
 
 ## 2020-9-30
 The latest release of Bitwarden adds much-anticipated **Login with SSO** functionality for all client applications, and the Business Portal for Web Vaults. Read this [blog post](https://bitwarden.com/blog/post/bitwarden-launches-sso-authentication/) for more information about Login with SSO, and refer to our [documentation](https://bitwarden.com/help/login-with-sso).
+
+## Early 2020 releases
+
+The following items were released between March and September of 2020.
+
+- [Enterprise Policies](https://bitwarden.com/help/article/policies/)
+- [Vault Timeout Options](https://bitwarden.com/help/article/vault-timeout/)
+- [Trash functionality](https://bitwarden.com/help/article/managing-items/#deleting-an-item)
+- [Password View Permissions - "Hide Passwords"](https://bitwarden.com/help/article/user-types-access-control/#granular-access-control)
+- [Touch ID / Windows Hello for Desktop Applications](https://bitwarden.com/help/article/biometrics/#desktop-applications)
