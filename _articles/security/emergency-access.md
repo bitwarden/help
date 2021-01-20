@@ -23,7 +23,7 @@ Emergency Access uses public key exchange and encryption/decryption to allow use
 2. Grantee is notified of invitation via email and [accepts the invitation](#accept-an-invitation) to become a trusted emergency contact. On acceptance, the grantee's public key is stored with the invite.
 3. Grantor is notified of acceptance via email and [confirms the grantee](#confirm-an-accepted-invitation) as their trusted emergency contact. On confirmation, the grantor's Master Key is encrypted using the grantee's public key and stored once encrypted. Grantee is notified of confirmation.
 4. An emergency occurs, resulting in grantee requiring access to grantor's Vault. Grantee [submits a request for emergency access](#initiate-emergency-access).
-5. Grantor is notification of request via email. The grantor may [manually approve the request](#manually-approve-emergency-access) at any time, otherwise the request is bound by a grantor-specified wait time. When the request is approved or the wait time lapses, the public-key-encrypted Master Key is delivered to grantee for decryption with grantee's private key.
+5. Grantor is notified of request via email. The grantor may [manually approve the request](#manually-approve-emergency-access) at any time, otherwise the request is bound by a grantor-specified wait time. When the request is approved or the wait time lapses, the public-key-encrypted Master Key is delivered to grantee for decryption with grantee's private key.
 
 4. Depending on the specified [user access level](#user-access), the grantee will either:
    - Obtain view/read access to items in the grantor's Vault (**View**).
