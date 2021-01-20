@@ -11,6 +11,10 @@ order: 06
 
 Emergency Access enables users to designate and manage trusted emergency contacts, who may request access to their Vault with a configurable level of permissions.
 
+{% callout info %}
+Emergency Access is available for Premium users, including members of Paid Organizations (Families, Teams, or Enterprise).
+{% endcallout %}
+
 ## How it Works
 
 Emergency Access uses public key exchange and encryption/decryption to allow users to give a [trusted emergency contact](#trusted-emergency-contacts) permission to [access Vault data](#user-access) in a Zero Knowledge/Zero Trust environment:
@@ -38,6 +42,8 @@ Trusted emergency contacts can be granted one of the following user access level
 
   {% callout success %}As a grantor, you may revoke access to a grantee with **View** access at any time.{% endcallout %}
 - **Takeover**: When an emergency access request is granted, this user can create a Master Password for permanent read/write access to your Vault (this will **replace** your previous Master Password).
+
+   Takeover disables any [Two-step Login Methods]({% link _articles/two-step-login/setup-two-step-login.md %}) enabled for the account, but **will not** sidestep SSO if the [Single Sign-On Authentication policy](https://bitwarden.com/help/article/policies/#single-sign-on-authentication) is enabled by a grantor's Organization.
 
 ## Using Emergency Access
 
