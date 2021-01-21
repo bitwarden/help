@@ -109,6 +109,16 @@ If you do not want to enable autofill when a page loads and still want the abili
 
 **A:** Yes! For more information, see [Encrypted Exports]({% link _articles/importing/encrypted-export.md %}).
 
+Alternatively, we recommend using something like PeaZip to create an encrypted archive of the file after exporting a plaintext file from Bitwarden.
+
+You can learn more about PeaZip here:
+- <http://www.peazip.org/>
+- <https://github.com/giorgiotani/PeaZip >
+
+{% callout warning %}
+Disclaimer: Please note that PeaZip is a third party program and is not supported by Bitwarden. These links were shared with you as an option for you to use at your own risk.
+{% endcallout %}
+
 ### Q: Can I download Bitwarden on F-Droid? I cannot find it.
 
 **A:** Yes, by adding our official private repo which removes all non-approved libraries: ​<https://mobileapp.bitwarden.com/fdroid/>
