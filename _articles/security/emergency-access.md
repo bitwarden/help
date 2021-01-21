@@ -116,7 +116,7 @@ As a grantor, you may manually approve an emergency access request as an alterna
 5. From the gear dropdown, select **Approve**.
 6. In the confirmation dialog box, select **Approve**.
 
-### Access Grantee's Vault
+### Access Grantor's Vault
 
 As the grantee, complete the following steps to access the grantor's Vault once your request has been approved (manually or through lapsed wait time):
 
