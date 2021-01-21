@@ -99,6 +99,12 @@ Extensions are safe to use if they are developed correctly. Due to the nature of
 
 When this **optional feature** is enabled, clipboard clear will clear any Bitwarden entries made by or filled on a configurable interval. Access to the clipboard allows Bitwarden to do this *without* removing a clipboard item not associated from the Bitwarden application by checking the last-copied item again the last-copied item from your Vault. Please note, this feature is **off by default**.
 
+#### Q: Why does the Browser Extension need `nativeMessaging` permission?
+
+**A:** Upon the release of [Biometric Unlock for Browser Extensions](https://bitwarden.com/help/article/biometrics/#browser-extensions), you may notice that the Bitwarden Browser Extension is flagged by your browser for requiring a new permission. In some cases, browsers will disable the Browser Extension and users will be required to re-enable them.
+
+Bitwarden uses `nativeMessaging` permission to facilitate the integration between Browser Extension and Desktop Application that enables Biometric Unlock.
+
 #### Q: Is Bitwarden FIPS Compliant?
 
 **A:** Bitwarden uses [FIPS compliant libraries and cryptography](https://bitwarden.com/help/article/what-encryption-is-used/#invoked-crypto-libraries), however the Bitwarden platform has not performed any FIPs certifications. Most FIPS installations of Bitwarden leverage the self-hosting option to make evaluations (i.e. Cybersecurity Maturity Model Certification) easier.
