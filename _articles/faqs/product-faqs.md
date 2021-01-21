@@ -107,17 +107,7 @@ If you do not want to enable autofill when a page loads and still want the abili
 
 ### Q: Does Bitwarden have an Encrypted Export File?
 
-**A:** Currently Bitwarden doesn’t have a native encrypted export, but it is on our roadmap for 2020.
-
-Alternatively, we recommend using something like PeaZip to create an encrypted archive of the file after you have exported your data from Bitwarden.
-
-You can learn more about PeaZip here:
-- <http://www.peazip.org/>
-- <https://github.com/giorgiotani/PeaZip >
-
-{% callout warning %}
-Disclaimer: Please note that PeaZip is a third party program and is not supported by Bitwarden. These links were shared with you as an option for you to use at your own risk.
-{% endcallout %}
+**A:** Yes! For more information, see [Encrypted Exports]({% link _articles/importing/encrypted-export.md %}).
 
 ### Q: Can I download Bitwarden on F-Droid? I cannot find it.
 
