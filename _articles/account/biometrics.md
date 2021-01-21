@@ -62,13 +62,17 @@ Once Biometric Unlock is enabled, a new button will be presented on the Unlock s
 
 ## Browser Extensions
 
+{% callout warning %}
+Upon release of Biometric Unlock for Browser Extensions, you may notice that the Browser Extension is flagged by your browser for requiring a new permission. In some cases, browsers will disable the Browser Extension and users will be required to re-enable them.
+
+The required permission to `nativeMessaging` is used to facilitate the integration between Browser Extension and Desktop Application that enabled Biometric Unlock, as described in this section.
+{% endcallout%}
+
 Biometric Unlock is supported for **Firefox** and **Chromium-based** (i.e. Chrome, Edge) Bitwarden Browser Extensions by integration with a native Bitwarden Desktop App. Through the Desktop App's access to Biometric APIs, Browser Extensions support Biometric Unlock:
 - For **Windows**, via [Windows Hello](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/windows-hello){:target="\_blank"} using PIN, Facial Recognition, or [other hardware that meets Windows Hello biometric requirements](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/windows-hello-biometric-requirements){:target="\_blank"}.
 - For **macOS**, via [Touch ID](https://support.apple.com/en-us/HT207054){:target="\_blank"}.
 
-{% callout info %}
 The Bitwarden Desktop Application must be installed, logged in, and running in order to use Biometric Unlock in a Browser Extension. Additionally, you will need to [enable Biometric Unlock in the desktop app](#enable-biometric-unlock-in-desktop) before proceeding.
-{% endcallout %}
 
 ### Enable Biometric Unlock for Browser Extensions
 
