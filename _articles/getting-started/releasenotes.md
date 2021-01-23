@@ -33,7 +33,7 @@ For the first major release of 2021, the Bitwarden team combined multiple major 
 - **Encrypted Exports**: Personal users and Organizations can now export Vault data in an encrypted `.json` file (see [here]({% link _articles/importing/encrypted-export.md %}) for details).
 - **New Role**: A Custom role is now available to allow for granular control over user permissions (see [here](https://bitwarden.com/help/article/user-types-access-control/#custom-role) for details).
 - **New Enterprise Policy**: The Personal Ownership policy is now available for use by Enterprise Organization (see [here](https://bitwarden.com/help/article/policies/#personal-ownership) for details).
-- **Biometric Unlock for Browser Extensions**: Using an integration with a native Desktop application, you can now use Biometric input to unlock Firefox and Chromium-based Browser Extensions (see [here](https://bitwarden.com/help/article/biometrics/#enable-biometric-unlock-for-browser-extensions) for details).
+- **Biometric Unlock for Browser Extensions**: Using an integration with a native Desktop application, you can now use Biometric input to unlock Firefox and Chromium-based Browser Extensions (see [here](https://bitwarden.com/help/article/biometrics/#browser-extensions) for details).
 
 ## 2020-11-12
 The latest release of Bitwarden adds SSO-related enhancements to all client applications, including:
