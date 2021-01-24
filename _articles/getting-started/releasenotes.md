@@ -22,6 +22,10 @@ Bitwarden believes source code transparency is an absolute requirement for secur
 ## Release Announcements
 
 {% callout info %}
+**Browser extensions are getting biometrics** in our 2021-01-19 release! New permission requests are normal (see [here](https://bitwarden.com/help/article/biometrics/#browser-extensions) for details).
+{% endcallout %}
+
+{% callout info %}
 **Dates on this page represent Cloud Server and Web releases.** Bitwarden incrementally updates each client application (Desktop, Browser Extension, Mobile, etc.) following the initial release date to ensure feature efficacy and stability.
 
 As a result, client applications should expect listed features following the initial release.
