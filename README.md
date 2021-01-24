@@ -18,7 +18,23 @@ Run the following commands:
 - `npm install`
 - `npm run build:watch`
 
-You can now access the help center at `http://localhost:4009`.
+You can now access the help center at `http://localhost:4009`. As soon as you save any changes, Jekyll will compile them and automatically reload the page in your browser.
+
+## Docker
+
+Alternatively, you can build and test the site without installing Node.js, Ruby etc. on your machine.
+
+Assuming you have Docker installed, you can run this setup command:
+```
+docker run --rm -t -i -v $(PWD):/srv/jekyll jekyll/jekyll:4 npm install
+```
+
+Then run this command to build and serve the site:
+```
+docker run --rm -t -i -v $(PWD):/srv/jekyll \
+  -p 4009:4009 -p 35729:35729 jekyll/jekyll:4 \
+  npm run build:watch
+```
 
 # Ruby Gems
 
