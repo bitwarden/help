@@ -63,9 +63,11 @@ Once Biometric Unlock is enabled, a new button will be presented on the Unlock s
 ## Browser Extensions
 
 {% callout warning %}
-Upon release of Biometric Unlock for Browser Extensions, you may notice that the Browser Extension is flagged by your browser for requiring a new permission. In some cases, browsers will disable the Browser Extension and users will be required to re-enable them.
+Version 1.48.0 of the browser extension enables Unlock with Biometrics, if you have at least version 2021-01-19 of the desktop app.
 
-The required permission to `nativeMessaging` is used to facilitate the integration between Browser Extension and Desktop Application that enabled Biometric Unlock, as described in this section.
+Note that when your browser updates to this version, you may be asked to accept a new permission called "communicate with cooperating native applications" (in Chromium-based browsers), or "exchange messages with programs other than Firefox." If you don't accept this permission, the extension will remain disabled.
+
+This permission, also known as `nativeMessaging`, is safe to accept and enables the browser extension to communicate with the Bitwarden desktop app, which is required to enabled Unlock with Biometrics, as described in this section.
 {% endcallout%}
 
 Biometric Unlock is supported for **Firefox** and **Chromium-based** (i.e. Chrome, Edge) Bitwarden Browser Extensions by integration with a native Bitwarden Desktop App. Through the Desktop App's access to Biometric APIs, Browser Extensions support Biometric Unlock:
