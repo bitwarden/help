@@ -22,7 +22,13 @@ Bitwarden believes source code transparency is an absolute requirement for secur
 ## Release Announcements
 
 {% callout info %}
-**Browser extensions are getting biometrics** in our 2021-01-19 release! New permission requests are normal (see [here](https://bitwarden.com/help/article/biometrics/#browser-extensions) for details).
+**Unlock with Biometrics now works in browser extensions.**
+
+This is available from v1.48.0 of the browser extension, if you have at least version 2021-01-19 of the desktop app.
+
+Note that when your browser updates to this version, you may be asked to accept a new permission called "communicate with cooperating native applications," or "exchange messages with programs other than Firefox." This permission is safe to accept, and enables the browser extension to communicate with the Bitwarden desktop app, which is required to enabled Unlock with Biometrics.
+
+See the [documentation](https://bitwarden.com/help/article/biometrics/#browser-extensions) for more details on how to enable this feature.
 {% endcallout %}
 
 {% callout info %}
