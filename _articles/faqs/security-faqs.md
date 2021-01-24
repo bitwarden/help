@@ -101,9 +101,12 @@ When this **optional feature** is enabled, clipboard clear will clear any Bitwar
 
 #### Q: Why does the Browser Extension need `nativeMessaging` permission?
 
-**A:** Upon the release of [Biometric Unlock for Browser Extensions](https://bitwarden.com/help/article/biometrics/#browser-extensions), you may notice that the Bitwarden Browser Extension is flagged by your browser for requiring a new permission. In some cases, browsers will disable the Browser Extension and users will be required to re-enable them.
+**A:**
+Version 1.48.0 of the browser extension enables [Biometric Unlock for Browser Extensions](https://bitwarden.com/help/article/biometrics/#browser-extensions).
 
-Bitwarden uses `nativeMessaging` permission to facilitate the integration between Browser Extension and Desktop Application that enables Biometric Unlock.
+This permission, also known as `nativeMessaging`, is safe to accept and allows the browser extension to communicate with the Bitwarden desktop app, which is required to enabled Unlock with Biometrics.
+
+Note that when your browser updates to this version, you may be asked to accept a new permission called "communicate with cooperating native applications" (in Chromium-based browsers), or "exchange messages with programs other than Firefox." If you don't accept this permission, the extension will remain disabled.
 
 #### Q: Is Bitwarden FIPS Compliant?
 
