@@ -62,19 +62,27 @@ Once Biometric Unlock is enabled, a new button will be presented on the Unlock s
 
 ## Browser Extensions
 
-{% callout warning %}
-Version 1.48.0 of the browser extension enables Unlock with Biometrics, if you have at least version 2021-01-19 of the desktop app.
-
-Note that when your browser updates to this version, you may be asked to accept a new permission called "communicate with cooperating native applications" (in Chromium-based browsers), or "exchange messages with programs other than Firefox." If you don't accept this permission, the extension will remain disabled.
-
-This permission, also known as `nativeMessaging`, is safe to accept and enables the browser extension to communicate with the Bitwarden desktop app, which is required to enabled Unlock with Biometrics, as described in this section.
-{% endcallout%}
-
-Biometric Unlock is supported for **Firefox** and **Chromium-based** (i.e. Chrome, Edge) Bitwarden Browser Extensions by integration with a native Bitwarden Desktop App. Through the Desktop App's access to Biometric APIs, Browser Extensions support Biometric Unlock:
+Biometric Unlock is supported for **Chromium-based** (e.g. Chrome, Edge) Bitwarden Browser Extensions by integration with a native Bitwarden Desktop App (the Desktop App must also be running the latest version). Through the Desktop App's access to Biometric APIs, Browser Extensions support Biometric Unlock:
 - For **Windows**, via [Windows Hello](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/windows-hello){:target="\_blank"} using PIN, Facial Recognition, or [other hardware that meets Windows Hello biometric requirements](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/windows-hello-biometric-requirements){:target="\_blank"}.
 - For **macOS**, via [Touch ID](https://support.apple.com/en-us/HT207054){:target="\_blank"}.
 
+{% callout note %}
+**Biometric Unlock is currently not available for:**
+
+- Firefox Browser Extensions (keep tabs on the required up-stream enhancement to make `nativeMessaging` optional [here](https://bugzilla.mozilla.org/show_bug.cgi?id=1630415){:target="\_blank"}).
+- Microsoft App Store Desktop Apps (a side-loaded Windows Desktop App, available at [bitwarden.com/download](https://bitwarden.com/download){:target="\_blank"} will work fine).
+- Side-loaded MacOS Desktop Apps (an App Store Desktop app will work fine).
+
+In the cases of FireFox and the Microsoft App Store, this is due to native messaging limitations (see [Native Messaging Permissions](#native-messaging-permissions)). In all cases, Bitwarden team is investigating and will provide updates as things progress.
+{% endcallout %}
+
 The Bitwarden Desktop Application must be installed, logged in, and running in order to use Biometric Unlock in a Browser Extension. Additionally, you will need to [enable Biometric Unlock in the desktop app](#enable-biometric-unlock-in-desktop) before proceeding.
+
+### Native Messaging Permissions
+
+When your Chromium-based Browser Extension updates to the version that supports Biometric Unlock (v1.48.0), you may be asked to accept a new permission for Bitwarden to `Communicate with cooperating native applications`. This permission is safe, but **optional**, and will enable the Browser Extension to communicate with the Bitwarden Desktop App, which is required to enable Biometric Unlock, as described above.
+
+Declining this permission will allow you to use v1.48.0 as normal, without Biometric Unlock functionality.
 
 ### Enable Biometric Unlock for Browser Extensions
 
