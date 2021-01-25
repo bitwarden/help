@@ -29,4 +29,8 @@ Your secret keys will remain stored in Vault items in the **Authenticator Key (T
 **Encrypted File Storage**
 
 Files will **not** be deleted from your Vault, however you will not be able to upload or download.
+
+**Emergency Access**
+
+Trusted emergency contacts will still be able to request and obtain access to your Vault. As a grantor, however, you will not be able to add new or edit existing trusted emergency contacts.
 {% endcallout %}
