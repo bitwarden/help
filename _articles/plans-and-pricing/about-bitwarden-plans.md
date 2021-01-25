@@ -24,7 +24,7 @@ We believe everyone should have access to password security tools. The core feat
 
 ### Premium Individual
 
-Upgrade your individual Bitwarden account to unlock premium password security and management features, including advanced 2FA options, the Bitwarden Authenticator (TOTP), encrypted file storage, and more. Upgrade **[now](https://vault.bitwarden.com/#/?premium=purchase)**.
+Upgrade your individual Bitwarden account to unlock premium password security and management features, including advanced 2FA options, the Bitwarden Authenticator (TOTP), encrypted file storage, emergency access and more. Upgrade **[now](https://vault.bitwarden.com/#/?premium=purchase)**.
 
 {% callout info %}
 Premium does not include secure data sharing. In order to access sharing features, you will need a subscription to an Organization ([Free](#free-organizations), [Families](#families-organizations), [Teams](#teams-organizations), or [Enterprise](#enterprise-organizations)). Paid Organizations ([Families](#families-organizations), [Teams](#teams-organizations), or [Enterprise](#enterprise-organizations)) include premium features for all users enrolled in that Organization.

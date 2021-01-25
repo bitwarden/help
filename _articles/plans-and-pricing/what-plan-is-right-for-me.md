@@ -45,6 +45,7 @@ As a Bitwarden Solo-Practicioner, will you be a Bitwarden Black Belt using Premi
 - Advanced 2FA options, like Yubikey, U2F, and Duo
 - 1 GB of encrypted file storage
 - Bitwarden Authenticator (TOTP)
+- Emergency Access
 - Vault Health Reports
 
 |If your answer is "Absolutely"...|If your answer is "Not yet"...|
