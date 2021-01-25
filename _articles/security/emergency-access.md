@@ -13,6 +13,8 @@ Emergency Access enables users to designate and manage trusted emergency contact
 
 {% callout info %}
 Emergency Access is available for Premium users, including members of Paid Organizations (Families, Teams, or Enterprise).
+
+**If your premium features are cancelled or lapses due to failed payment method,** trusted emergency contacts will still be able to request and obtain access to your Vault. As a grantor, however, you will not be able to add new or edit existing trusted emergency contacts.
 {% endcallout %}
 
 ## How it Works
