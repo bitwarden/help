@@ -12,7 +12,7 @@ This article defines the certificate options available to Self-hosted instances 
 
 ## Generate a Certificate with Let's Encrypt
 
-[Let's Encrypt](https://letsencrypt.org.how-it-works/){:target="_blank"} is a Certificate Authority (CA) that issues trusted SSL certificates free of charge for any domain. The Bitwarden installation script offers the option to generate a trusted SSL certificate for your domain using Let's Encrypt and [Certbot](https://certbot.eff.org){:target="_blank"}.
+[Let's Encrypt](https://letsencrypt.org/how-it-works/){:target="_blank"} is a Certificate Authority (CA) that issues trusted SSL certificates free of charge for any domain. The Bitwarden installation script offers the option to generate a trusted SSL certificate for your domain using Let's Encrypt and [Certbot](https://certbot.eff.org){:target="_blank"}.
 
 Certificate renewal checks occur each time Bitwarden is restarted. Using Let's Encyrpt will require you to enter an email address for certificate expiration reminders.
 
