@@ -12,9 +12,9 @@ order: 06
 Emergency Access enables users to designate and manage trusted emergency contacts, who may request access to their Vault with a configurable level of permissions.
 
 {% callout info %}
-Emergency Access is available for Premium users, including members of Paid Organizations (Families, Teams, or Enterprise).
+Emergency Access is available for Premium users, including members of Paid Organizations (Families, Teams, or Enterprise), but anyone with a Bitwarden account can be designated *as* a trusted emergency contact.
 
-**If your premium features are cancelled or lapses due to failed payment method,** trusted emergency contacts will still be able to request and obtain access to your Vault. As a grantor, however, you will not be able to add new or edit existing trusted emergency contacts.
+**If your premium features are cancelled or lapses due to failed payment method,** your trusted emergency contacts will still be able to request and obtain access to your Vault. As a grantor, however, you will not be able to add new or edit existing trusted emergency contacts.
 {% endcallout %}
 
 ## How it Works
@@ -33,7 +33,7 @@ Emergency Access uses public key exchange and encryption/decryption to allow use
 
 ### Trusted Emergency Contacts
 
-Emergency Access relies on public key exchange within Bitwarden, therefore trusted emergency contacts must be existing Bitwarden users, or will be prompted to create a Bitwarden account before they can accept an invitation.
+Emergency Access relies on public key exchange within Bitwarden, therefore trusted emergency contacts must be existing Bitwarden users, or will be prompted to create a Bitwarden account before they can accept an invitation. A Bitwarden user does not need to have Premium to be designated a trusted emergency contact.
 
 There is no limit to the number of trusted emergency contacts a user can have.
 
@@ -61,7 +61,7 @@ As a grantor, complete the following steps to invite a trusted emergency contact
 4. Select the {% icon fa-plus %} **Add emergency contact** button. In the Invite Emergency Contact window:
 
    {% image /features/emergency-access/ea-invite.png Add emergency contact%}
-   - Enter the **Email** of your trusted emergency contact. Trusted emergency contacts must have Bitwarden accounts of their own.
+   - Enter the **Email** of your trusted emergency contact. Trusted emergency contacts must have Bitwarden accounts of their own, but don't need to have Premium.
    - Set a **User Access** level for the trusted emergency contact ([View-only or Takeover](#user-access)).
    - Set a **Wait Time** for Vault access. Wait Time dictates how long your trusted emergency contact must wait to access your Vault after initiating an emergency access request.
 5. Select the **Save** button to send the invitation.
