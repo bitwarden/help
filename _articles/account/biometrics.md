@@ -69,7 +69,8 @@ Biometric Unlock is supported for **Chromium-based** (e.g. Chrome, Edge) Bitward
 {% callout note %}
 **Biometric Unlock is currently not available for:**
 
-- Firefox Browser Extensions (keep tabs on the required up-stream enhancement to make `nativeMessaging` optional [here](https://bugzilla.mozilla.org/show_bug.cgi?id=1630415){:target="\_blank"}).
+- Firefox Browser Extensions (keep an eye on the required up-stream enhancement to make `nativeMessaging` optional [here](https://bugzilla.mozilla.org/show_bug.cgi?id=1630415){:target="\_blank"}).
+- Safari Browser Extensions.
 - Microsoft App Store Desktop Apps (a side-loaded Windows Desktop App, available at [bitwarden.com/download](https://bitwarden.com/download){:target="\_blank"} will work fine).
 - Side-loaded MacOS Desktop Apps (an App Store Desktop app will work fine).
 
