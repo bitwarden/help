@@ -12,7 +12,7 @@ order: 06
 Emergency Access enables users to designate and manage trusted emergency contacts, who may request access to their Vault with a configurable level of permissions.
 
 {% callout info %}
-Establishing Emergency Access to a Vault is available for Premium users, including members of Paid Organizations (Families, Teams, or Enterprise), but anyone with a Bitwarden account can be designated *as* a trusted emergency contact (i.e. your trusted emergency contacts to not need to have Premium).
+Establishing Emergency Access to a Vault is available for Premium users, including members of Paid Organizations (Families, Teams, or Enterprise), but anyone with a Bitwarden account can be designated *as* a trusted emergency contact (i.e. your trusted emergency contacts do not need to have Premium).
 
 **If your premium features are cancelled or lapses due to failed payment method,** your trusted emergency contacts will still be able to request and obtain access to your Vault. As a grantor, however, you will not be able to add new or edit existing trusted emergency contacts.
 {% endcallout %}
