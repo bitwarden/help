@@ -33,7 +33,7 @@ Emergency Access uses public key exchange and encryption/decryption to allow use
 
 ### Trusted Emergency Contacts
 
-Emergency Access relies on public key exchange within Bitwarden, therefore trusted emergency contacts must be existing Bitwarden users, or will be prompted to create a Bitwarden account before they can accept an invitation. A Bitwarden user does not need to have Premium to be designated a trusted emergency contact.
+Emergency Access relies on public key exchange within Bitwarden, therefore trusted emergency contacts must be existing Bitwarden users, or will be prompted to create a Bitwarden account before they can accept an invitation. Trusted emergency contacts do not need to have Premium to be designated as such.
 
 There is no limit to the number of trusted emergency contacts a user can have.
 
