@@ -1,48 +1,63 @@
 ---
 layout: article
-title: Syncing your Vault
-categories: [miscellaneous]
+title: Sync your Vault
+categories: [account-management]
 featured: false
 popular: false
 tags: [vault, sync, automatic, FAQ]
+order: 03
 ---
 
-## What is vault syncing?
+Adding, editing, or deleting Vault items from any Bitwarden client application will automatically push changes to your Bitwarden server, whether Cloud-hosted or self-hosted.
 
-Vault syncing is purely downloading the latest content from your Bitwarden vault onto your device for access.
+In order to pull those changes down to another Bitwarden client application, your Vault will need to Sync.
 
-In some cases, this happens automatically. On iOS and Android apps, Bitwarden leverages push notifications to kick-off a **personal** vault synchronization.
+## Automatic Sync
 
-**Organization Vaults** synchronize to devices every 30 minutes, or upon manual sync.
+Your personal [Web Vault](https://vault.bitwarden.com){:target="\_blank"} will always remain in-sync. Organization Vaults will automatically sync across users and client applications every 30 minutes.
 
-## When does my vault sync?
+Bitwarden client applications (Desktop Applications, Browser Extensions, Mobile Apps, and CLI) will sync automatically on login, and with regularity when unlocked. You can also [Manually Sync](#manual-sync) your Vault to pull changes to a client application immediately.
 
-### Mobile APPS
+{% callout success %}
+When you install Bitwarden on a new device, simply log in to your existing account to automatically pull down your most up-to-date Vault data.
+{% endcallout %}
 
-The Bitwarden mobile apps sync **personal** vaults automatically.
-Organization vaults are synchronized once every 30 minutes, or on-demand by navigating to:
-**Settings > Sync > Sync Vault now**
+## Manual Sync
 
-{% callout info %}Self-hosted users can enable Push notifications powered by the Bitwarden cloud.{% endcallout %}
+To manually sync your Vault from a Bitwarden client application:
 
-You can also sync your vault on-demand with the pull down gesture. Navigate to **Settings > Sync > Enable sync on refresh** to enable sync on refresh.
+### Sync Browser Extensions
 
-### Browser extensions
+Select the {% icon fa-cogs %} **Settings** tab, select the **Sync** option and select the **Sync Vault Now** button.
 
-The Bitwarden browser extensions sync **personal** vaults automatically.
-Organization vaults are synchronized once every 30 minutes, or on-demand by navigating to:
-**Settings > Sync > Sync Vault now**
+### Sync Mobile Apps
 
-### Desktop applications
+Open the {% icon fa-cogs %} **Settings** tab, tap the **Sync** option and tap **Sync Vault Now**.
 
-The Bitwarden desktop apps sync **personal** vaults automatically.
-Organization vaults are synchronized once every 30 minutes, or on-demand by navigating to: **File > Sync Vault**
+Toggle the **Enable sync on refresh** option to allow your Vault to be synced using a pulldown gesture on the {% icon fa-lock %} **My Vault** tab.
 
-### Command-line interface
+### Sync Desktop Apps
 
-The Bitwarden CLI client syncs **personal** vaults automatically.
-Organization vaults are synchronized once every 30 minutes, or on-demand by running the command: ```bw sync```
+Select **File** &rarr; **Sync Vault** from the menu bar.
 
-## Common issues
+### Sync the CLI
 
-- Sync failure can occur if your device’s time is not correct. Syncing (and all of Bitwarden services) require TLS/SSL, which will fail to connect to a host with invalid timestamps.
+Use the `sync` command to manually sync your Vault:
+
+```
+bw sync
+```
+
+For more information, see [The Bitwarden command-line tool (CLI)]({% link _articles/miscellaneous/cli.md %}).
+
+## Troubleshooting
+
+If Vault Sync is not working properly, investigate the following:
+
+#### Mismatched Timestamp
+
+Sync failure may occur if your device's time is not correct. Bitwarden uses TLS/SSL, which will fail to connect a client application to the server if timestamps are mismatched.
+
+#### VPN or Ad Blocker Interference
+
+In some cases, VPN or Ad Blocker browser extensions may interfere with the connection between client application and server. This issue is typically observed with Bitwarden Browser Extensions.

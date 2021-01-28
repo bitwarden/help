@@ -11,7 +11,7 @@ order: 07
 Encrypted Exports provide a secure long-term storage option for Vault data backups. Vault data is encrypted using your account's Encryption Key.
 
 {% callout warning %}
-[Rotating your account's encryption key](https://bitwarden.com/help/article/change-your-master-password/#rotating-your-accounts-encryption-key) will render an Encrypted Export impossible to decrypt. **If you rotate your encryption key, replace the old backup with one that uses the new encryption key.**
+[Rotating your account's encryption key]({% link _articles/account/account-encryption-key.md %}) will render an Encrypted Export impossible to decrypt. **If you rotate your encryption key, replace the old backup with one that uses the new encryption key.**
 {% endcallout %}
 
 An Encrypted Export of the following plaintext login item:

@@ -38,7 +38,7 @@ Security often involves a tradeoff between protection and convenience, so ultima
 
 Since your Password Manager stores all your logins, we highly recommend that you secure it with Two-step Login. Doing so protects *all* your logins by preventing a malicious actor from accessing your Vault, even if they discover your Master Password.
 
-Enabling Two-step Login will require you to complete a secondary step each time you **Log In**, in addition to entering your Master Password.
+Enabling Two-step Login will require you to complete a secondary step each time you **Log In**, in addition to entering your Master Password. You won't need to complete your secondary step to Unlock your Vault.
 
 {% image two-step/field-guide/two-step-login-bitwarden.png Two-step Login to access Bitwarden %}
 
