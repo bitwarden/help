@@ -91,16 +91,15 @@ Complete the following steps to enable Biometric Unlock in your Browser Extensio
 
 1. In the Desktop App, navigate to **Settings** (on Windows, **File** &rarr; **Settings**) (on macOS, **Bitwarden** &rarr; **Preferences**).
 2. Check the **Enable Browser Integration** checkbox.
+
+   Optionally, enable the **Require verification for browser integration** option to require [account fingerprint]({% link _articles/features/fingerprint-phrase.md %}) verification when activating the integration between Browser Extension and Desktop App.
 3. In the Browser Extension, open the **Settings** tab.
-4. Check the **Unlock with biometrics** checkbox.
+4. Check the **Unlock with biometrics** checkbox to activate the integration. You will be prompted by your Desktop App to input your biometric authentication method to complete the setup.
 
-   To validate a secure channel, a `Desktop sync verification` dialog box will appear in your Browser Extension and a `Verify browser connection` dialog box will appear in your Desktop Application.
-5. Validate that the displayed [account fingerprint]({% link _articles/features/fingerprint-phrase.md %}) matches in both locations. If they match, select the **Approve** button and input your Biometric authentication method.
-
-   You will be required to re-validate each time either the Desktop App or Browser Extension is restarted.
+   If you've opted to **Require verification for browser integration**, a `Desktop sync verification` dialog box will appear in your Browser Extension and a `Verify browser connection` dialog box will appear in your Desktop Application. Validate that the displayed [account fingerprint]({% link _articles/features/fingerprint-phrase.md %}) matches in both locations. If they match, select the **Approve** button and input your Biometric authentication method.
 
 Once Biometric Unlock is enabled, a new button will be presented on the Unlock screen. Selecting the **Unlock biometrics** button will initiate unlock via the Desktop App.
 
 {% callout warning %}
-If you attempt to use Biometric Unlock when the Desktop App is closed, you will be prompted to open the Desktop App and redo the fingerprint validation handshake described in this section.
+If you attempt to use Biometric Unlock when the Desktop App is closed, you will be prompted to open the Desktop App. If you've opted to **Require verification for browser integration**, you'll also be prompted to recomplete fingerprint verification.
 {% endcallout %}
