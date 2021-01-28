@@ -71,7 +71,7 @@ For the purpose of this tutorial, we'll focus on the Web Vault.
 Create the first account by starting at <https://vault.bitwarden.com>. Pick a strong master password and write it down in a safe place.
 
 {% callout warning %}
-The Bitwarden security model does not support master password recovery. You can read more in the help article [I forgot my master password]({% link _articles/account/forgot-master-password.md %})
+The Bitwarden security model does not support master password recovery. You can read more in the help article regarding [I Forgot my Master Password]({% link _articles/account/master-password.md %}).
 {% endcallout %}
 
 {% image organizations/orgstart/1-create-account-user-1.png Create account for user 1 %}

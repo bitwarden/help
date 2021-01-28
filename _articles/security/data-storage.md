@@ -5,7 +5,7 @@ categories: [security]
 featured: true
 popular: false
 tags: [cloud]
-order: 04
+order: 06
 redirect_from:
   - /article/where-is-data-stored-cloud/
   - /article/where-is-data-stored-computer/
