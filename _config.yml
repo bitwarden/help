@@ -27,8 +27,15 @@ collections:
     permalink: /:path/
     order:
       - getting-started.md
+      - account-management.md
       - import-export.md
       - two-step-login.md
+      - hosting.md
+      - organizations.md
+      - directory-connector.md
+      - login-with-sso.md
+      - security.md
+      - plans-and-pricing.md
   articles:
     output: true
     permalink: /article/:name/
