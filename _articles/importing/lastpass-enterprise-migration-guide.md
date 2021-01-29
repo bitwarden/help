@@ -1,14 +1,13 @@
 ---
 layout: article
-title: Confidential - LastPass Enterprise Migration Guide
+title:  LastPass Enterprise Migration Guide
 featured: false
 popular: false
 hidden: true
 tags: [import, lastpass]
 order: 99
 ---
-
-## Making migration easy
+## Bitwarden exclusive content: Making migration easy
 
 Securing your Organization with Bitwarden is straightforward and secure.
 
