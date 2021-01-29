@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Auto-fill logins using the browser extension
-categories: [features]
+categories: [miscellaneous]
 featured: false
 popular: false
 tags: [browser, auto-fill, autofill]

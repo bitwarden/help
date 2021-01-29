@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Auto-fill logins on Android
-categories: [features]
+categories: [miscellaneous]
 featured: false
 popular: false
 tags: [android, autofill, auto-fill]
@@ -31,7 +31,7 @@ The Autofill Service is context-sensitive and will appear whenever you encounter
 
 ### Inline Autofill
 
-When enabled on an Android 11 or greater device with a supported keyboard, Inline Autofill changes the autofill presentation from a pop-up to a list embedded  within the keyboard. 
+When enabled on an Android 11 or greater device with a supported keyboard, Inline Autofill changes the autofill presentation from a pop-up to a list embedded  within the keyboard.
 
 1. Open the Bitwarden Android app.
 2. Tap the **{% icon fa-cog %} Settings** page.
@@ -119,4 +119,3 @@ Android has many web browsers. It can be hard to keep up with them all. We have 
 
 If auto-fill does not work on your browser, please report it at <https://github.com/bitwarden/mobile/issues> so that we can add support.
 {% endcallout %}
-

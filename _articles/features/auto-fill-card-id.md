@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Autofill Identities and Cards
-categories: [features]
+categories: [miscellaneous]
 featured: true
 popular: false
 tags: [browser, autofill, auto-fill, identity, card, form fill]
