@@ -1,12 +1,12 @@
 ---
 layout: article
 title: Billing FAQs
-categories: [faqs, plans-and-pricing]
+categories: [plans-and-pricing]
 featured: true
 popular: false
 hidden: false
 tags: []
-order: 07
+order: 09
 ---
 
 This article contains Frequently Asked Questions (FAQs) regarding **Plans and Pricing**.

@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Login with SSO FAQs
-categories: [faqs, login-with-sso]
+categories: [login-with-sso]
 featured: true
 popular: false
 hidden: false

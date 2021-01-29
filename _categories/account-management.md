@@ -1,5 +1,5 @@
 ---
 layout: category
-title: Account Management
+title: Your Vault
 featured: true
 ---

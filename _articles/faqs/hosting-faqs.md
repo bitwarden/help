@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Hosting FAQs
-categories: [faqs, hosting]
+categories: [hosting]
 featured: true
 popular: true
 hidden: false

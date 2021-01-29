@@ -11,6 +11,8 @@ This article will guide you through the process of inviting or removing users fr
 
 Teams and Enterprise Organizations can sync Bitwarden to an existing user directory to automatically add or remove new users using the **Bitwarden Directory Connector**. For more information, see [About Directory Connector]({% link _articles/directory-connector/directory-sync.md %}}).
 
+Invitations to an Organization will expire after 5 days, at which point the user will need to be re-invited. If you're self-hosting Bitwarden, you can configure the invitation expiration period. For more information, see [Configure Environment Variables]({% link _articles/hosting/environment-variables.md %}).
+
 {% callout info %}
 **Free** Organizations and **Families** Organizations have a maximum number of users; 2 and 6 respectively.
 
@@ -43,6 +45,8 @@ Once users have accepted the invitation, you will need to [Confirm Invited Users
 Invited users will receive an email from Bitwarden asking them to join the Organization. Clicking the **Join Organization Now** button in the email invitation will open a screen prompting users to **Log In** or **Create Account**.
 
 {% image organizations/user-accept-updated.png %}
+
+If the user does not answer this invitation, it will expire after 5 days.
 
 ### Confirm Invited Users
 

@@ -1,28 +1,33 @@
 ---
 layout: article
-title: What is my account's fingerprint phrase?
-categories: [features]
+title: Account Fingerprint Phrase
+categories: [security]
 featured: false
 popular: false
 tags: [fingerprint]
+order: 05
 ---
 
-Every Bitwarden user account has a public "fingerprint phrase" associated with it. Your account's fingerprint phrase is permanent and composed of five random english words that appear in a specific order.
-
-**Example of a fingerprint phrase**
+Each Bitwarden account has a public "fingerprint phrase" associated with it. Your account's fingerprint phrase is permanent and composed of five random english words that appear in a specific order, for example:
 
 ```
 alligator-transfer-laziness-macaroni-blue
 ```
 
-The fingerprint phrase is an important security feature that assists in uniquely and securely identifying a Bitwarden user account when important encryption-related operations are performed (such as sharing). For example, when adding a new user to an organization you should ask the user to verify their fingerprint phrase via email, over the phone, in person, etc. By verifying the fingerprint phrase with the user outside of Bitwarden, you ensure that end-to-end encryption is securely initiated and that the Bitwarden server you are communicating with (and your connection) has not been maliciously tampered with. If you trust the server you are communicating with (and the connection that you are using), you can choose to ignore fingerprint phrase verification.
+## What is my fingerprint phrase used for?
 
-## Where do I find my fingerprint phrase?
+Your fingerprint phrase is an important security feature that assists in uniquely and securely identifying a Bitwarden user account when important encryption-related operations are performed (such as sharing).
 
-You can find your account's fingerprint phrase using Bitwarden applications in the following locations:
+Some Bitwarden procedures (e.g. adding a new user to an Organization, enabling Biometric Unlock for Browser Extensions) may ask you to verify that the fingerprint phrase matches your own or another user's.
 
-- Web vault: Settings &rarr; My Account
-- Desktop apps: Account &rarr; Fingerprint Phrase
-- Browser extensions: Settings &rarr; Account &rarr; Fingerprint Phrase
-- Mobile: Settings &rarr; Account &rarr; Fingerprint Phrase
-- CLI: `bw get fingerprint me`
+Validating fingerprint phrases ensures that end-to-end encryption is securely initiated and that the Bitwarden server you are communicating with (and your connection) has not been maliciously tampered with.
+
+## Where can I find my fingerprint phrase?
+
+You can find your account's fingerprint phrase from any Bitwarden client application:
+
+- **Web Vault**: Settings &rarr; My Account
+- **Desktop Apps**: Account &rarr; Fingerprint Phrase
+- **Browser Extensions**: Settings &rarr; Account &rarr; Fingerprint Phrase
+- **Mobile Apps**: Settings &rarr; Account &rarr; Fingerprint Phrase
+- **CLI**: Using the command `bw get fingerprint me`
