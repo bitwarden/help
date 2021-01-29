@@ -1,60 +1,69 @@
 ---
 layout: article
-title: Using custom fields
-categories: [features]
+title: Custom Fields
+categories: [account-management]
 featured: false
 popular: false
 tags: [fields, autofill, custom fields]
+order: 07
 ---
 
-Custom fields allow you to store additional, well structured data fields within your vault entries. These fields could be security questions, PINs, or anything else. Custom fields have a name, a value, and a type (text, hidden, and boolean).
+Custom fields, available for any [Vault item type]({% link _articles/account/managing-items.md %}), allow you to store additional well-structured data fields for a Vault item. Custom fields are saved as `Name:Value` pairs, and can be one of three types:
 
-## Using Custom Fields to Auto-fill
+- **Text**: Field value stores a freeform input (text, numbers, etc.)
+- **Hidden**: Field value stores freeform input that is hidden from view (particularly useful for Organizations using the [Hide Password access control](https://bitwarden.com/help/article/user-types-access-control/#granular-access-control)).
+- **Boolean**: Field value stores a boolean value (true/false).
 
-Custom field names are an important identifier. Depending on the name you give your custom field, Bitwarden will attempt to auto-fill the custom field's value for you. If you intend to auto-fill custom fields you should name your field based on an identifier from the webpage form. These names are searched for using the following criteria:
+## Auto-fill Custom Fields
 
-- HTML form element's **id** attribute
-- then the HTML form element's **name** attribute
-- then the HTML form element's corresponding **label** value
-- then the HTML form element's **aria-label** attribute
-- then the HTML form element's **placeholder** attribute
+The **Name** specified for a custom field is critical to successfully setting up auto-fill for custom fields. When naming the custom field, you should use one of the following HTML form element attributes/values:
 
-If one of these matches is found, Bitwarden will auto-fill the custom field's value for you.
+1. HTML form element's `id` attribute.
+2. HTML form element's `name` attribute.
+3. HTML form element's corresponding `label` value.
+4. HTML form element's `aria-label` attribute.
+5. HTML form element's `placeholder` attribute.
 
-### Here is an example of how to configure a Custom Field using the id attribute:
+Bitwarden will search the matched-URI webpage for those HTML form element attributes/values **in the above priority-order**. If a custom field's name matches one of those attributes/values, auto-fill will be available into that HTML form element.
 
-1. Right-click the field you want to fill and select "Inspect". The HTML element will appear highlighted in the console window.
-2. Find the element id. You are looking for what comes after id=" ". Copy what is in between the " ".
-    <img width="80%" src="../../images/features/custom-fields/custom_field.gif">
-3. Open the website, login in to your vault and edit it.
-4. Select the corresponding type (text, hidden or boolean) and then press the blue "+" icon.
-    <img width="60%" src="../../images/features/custom-fields/types.png">
-5. In the "Name" field paste the element ID.
-6. In the "Value" field enter your info you want auto-filled.
-7. Save the entry.  
+### Name to Attribute Matching
 
-## Special name prefixes for auto-filling
+Field Name to attribute/value matches is **exact** and **case-insensitive** comparison. For example, if your custom field has the name `PIN`:
 
-When Bitwarden searches a webpage's form elements to match with your custom field's name, an exact, case-insensitive comparison is done. For example, if your custom field has the name "PIN", the following form element's values (from the id, name, label, etc) will match for auto-filling: "pin", "PIN", and "Pin". However, values such as "pin2" or "mypin" will not match.
+- **Auto-fill offered** for `pin`, `PiN`, `PIN`, etc.
+- **Auto-fill not offered** for `pin2` or `mypin`
 
-There are two special name prefixes that can give you even more control over how your custom field is auto-filled:
+### Field Name Prefixing
 
-**CSV**
+There are two cases in which you can exercise more control over [name to attribute mapping](#name-to-attribute-mapping) by using prefixes.
 
-Prefixing your custom field's name with `csv=` allows you to specify multiple names to search for and compare when an auto-fill is performed.
+#### csv
 
-Example:
+Prefixing your custom field's name with `csv=` allows you to specify multiple names to search for and compare to when auto-fill is performed. For example:
 
-`csv=pin,pin2,mypin` will match all of the examples above.
+`csv=pin,pin2,mypin` will offer auto-fill for all the above examples.
 
-**Regular Expressions**
+#### regex
 
-Prefixing your custom field's name with `regex=` allows you to perform [regular expression](https://regexone.com/){:target="_blank"} comparisons when an auto-fill is performed.
+Prefixing your custom field's name with `regex=` allows you to perform [regular expression comparisons](https://regexone.com/){:target="_blank"} when auto-fill is performed. For example:
 
-Example:
+`regex=pin` will offer auto-fill for all the above examples.
 
-`regex=pin` will match all of the examples above.
+`regex=^first.*name` will offer auto-fill for `firstName`, `First_name`, and `First Name`
 
-Example:
+### Example Auto-fill Configuration
 
-`regex=^first.*name` will match "firstName", "First_name", and "First Name".
+Follow this procedure to correctly configure a custom field for auto-fill. This example uses Google Chrome for its Developer Tools.
+
+{% image /features/custom-fields/custom_field.gif %}
+
+1. On the webpage that matches the Login item's URI, right-click the field you want to auto-fill to and select **Inspect**.
+
+   The HTML element will open and be highlighted in the Developer Console.
+2. Find and copy the element `id` (find `id="xxx"`, where `xxx` is the element's `id` value).
+3. In the relevant Vault item's **Custom Fields** section, choose the appropriate field type and select the {% icon fa-plus %} **New Custom Field** button:
+
+   {% image /features/custom-fields/types.png %}
+4. Paste the copied element `id` in the **Name** field.
+5. Specify the desired information to be auto-filled (in the above example, a PIN) in the **Value** field.
+6. Save the Vault item.
