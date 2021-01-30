@@ -106,7 +106,7 @@ Manual boarding is done via the Web Vault. More information on manual user board
 
 ### Automated onboarding
 
-Automated user boarding is also available when leveraging Bitwarden Directory Connector - a standalone application available in a [Desktop app](https://bitwarden.com/help/article/directory-sync-desktop/) and a [CLI tool](https://bitwarden.com/help/article/directory-sync-cli/) -  synchronizing user and group information to the Bitwarden Organization. These users are automatically invited to join the Organization.
+Automated user boarding is also available when leveraging Bitwarden Directory Connector - a standalone application available in a [Desktop app](https://bitwarden.com/help/article/directory-sync-desktop/) and a [CLI tool](https://bitwarden.com/help/article/directory-sync-cli/) -  synchronizing user and group information to the Bitwarden Organization. These users are automatically invited to join the Organization, and can be confirmed manually or automatically using the [Bitwarden CLI tool](https://bitwarden.com/help/article/cli/#confirm).
 
 - Learn more about how syncing works [here.](https://bitwarden.com/help/article/directory-sync/)
 - Discover how to configure user and group filters for Directory Connector [here.](https://bitwarden.com/help/article/user-group-filters/)
@@ -144,12 +144,12 @@ For more information on filtering and synchronization of Users with the Bitwarde
 
 ### Permissions
 
-Bitwarden Collection permissions are assigned on the assignment of the Group or User to a particular collection. This means that each Group or User can be configured with permissions for the same Collection.
+Bitwarden Collection permissions are assigned on the assignment of the Group or User to a particular Collection. This means that each Group or User can be configured with permissions for the same Collection.
 
 Collection permissions are easily configured with options for Read Only and Hide Passwords.
 
 Read Only prevents users from adding new items to that Collection, as well as preventing the editing or deleting of existing items.
-Hide Passwords prevents the users from seeing the Password field, TOTP field, and any custom field for an item that is listed as hidden. This permission is best used for collections of items that are able to be auto-filled in a browser, since copying and pasting of credentials is disabled when this is configured.
+Hide Passwords prevents the users from seeing the Password field, TOTP field, and any custom field for an item that is listed as hidden. This permission is best used for Collections of items that are able to be auto-filled in a browser, since copying and pasting of credentials is disabled when this is configured.
 
 Bitwarden uses an union of permissions to determine final access permissions for a User and a Collection Item.
 
@@ -157,13 +157,13 @@ Bitwarden uses an union of permissions to determine final access permissions for
 
 - User A is part of the Tier 1 Support group, which has access to the Support Collection, with read-only permission.
 - User A is also a member of the Support Management group, which has access to the  Support Collection, with read-write access.
-- In this scenario, User A will be able to read-write to the collection.
+- In this scenario, User A will be able to read-write to the Collection.
 
 More information on permissions can be found on our help site [here.](https://bitwarden.com/help/article/user-types-access-control/#access-control)
 
 ## Migration support
 
-The Bitwarden Customer Success team is available 24/7 with priority support for Enterprise and Teams Organizations. If you need assistance or have questions, please do not hesitate to contact us here: [bitwarden.com/contact](https://bitwarden.com/contact)
+The Bitwarden Customer Success team is available 24/7 with priority support for Enterprise and Teams Organizations. If you need assistance or have questions, please do not hesitate to contact us here: [bitwarden.com/contact](https://bitwarden.com/contact).
 
 ## Terms and equivalent references
 
@@ -179,7 +179,7 @@ The Bitwarden Customer Success team is available 24/7 with priority support for 
 ### Collections for Organizational Vaults
 
 - Collections are used by Bitwarden Organizations to group secure items that need to be shared with the same user(s) or user group(s).
-- Most often exported shared folders become collections, however, you can
+- Most often exported shared folders become Collections, however, you can organize Collections in a number of ways.
 
 ### User
 
@@ -191,15 +191,15 @@ The Bitwarden Customer Success team is available 24/7 with priority support for 
 
 ### Read Only
 
-- A permission that prevents users from adding new data to items within a collection. Users can see / access all data within items but cannot add new items or modify existing data. This permission is set on a User or Group assignment to a collection.
+- A permission that prevents users from adding new data to items within a Collection. Users can see / access all data within items but cannot add new items or modify existing data. This permission is set on a User or Group assignment to a Collection.
 
 ### Hide Password
 
-- Permission to prevent users from seeing any part of a secure item within a collection.
+- Permission to prevent users from seeing any part of a secure item within a Collection.
 
 ### User Type
 
-- Users within Bitwarden can be granted a user-type. Users onboarded via Directory Connector are defaulted to “Users” that can only access items that they are assigned directly and do not have access to reconfigure sharing or permissions.
+- Users within Bitwarden can be granted a "user-type". Users onboarded via Directory Connector are defaulted to “Users” that can only access items that they are assigned directly and do not have access to reconfigure sharing or permissions.
 
 ### Vault
 
