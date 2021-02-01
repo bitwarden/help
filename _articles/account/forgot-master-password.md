@@ -8,7 +8,7 @@ tags: [master password, account]
 order: 02
 ---
 
-As described in the [About Your Master Password](#about-your-master-password) article, Bitwarden has no knowledge of, way to retrieve, or way to reset your Master Password. If you've already lost your Master Password, there is unfortunately no way for the team to recover the account or the data therein. You will need to delete your account and start a new one.
+As described in the [Your Master Password]({% link _articles/account/master-password.md %}) article, Bitwarden has no knowledge of, way to retrieve, or way to reset your Master Password. If you've already lost your Master Password, there is unfortunately no way for the team to recover the account or the data therein. You will need to delete your account and start a new one.
 
 {% callout success %}
 If you're using any Bitwarden client applications (Mobile Apps, Browser Extensions, etc.) you should check whether any of these sessions are still logged in prior to deleting your account. If a client application is still logged in, [Export Vault Data]({% link _articles/account/export-your-data.md %}) to a file for import into a new account.
