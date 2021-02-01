@@ -29,7 +29,7 @@ This action is permanent and cannot be undone.
 
 ### Without Logging In
 
-In the event that you have lost your Master Password, omplete the following steps to delete your account:
+In the event that you have lost your Master Password, complete the following steps to delete your account:
 
 1. Navigate to [vault.bitwarden.com/#/recover-delete](https://vault.bitwarden.com/#/recover-delete).
 2. Enter the **Email Address** associated with your account.

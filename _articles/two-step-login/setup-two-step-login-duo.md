@@ -31,7 +31,7 @@ Complete the following steps to enable Two-step Login using Duo:
 {% callout warning %}
 **Losing access to your Duo-enabled device can permanently lock you out of your Vault,** unless you write down and keep your Two-step Login Recovery Code in a safe place.
 
-[Get your Recovery Code]({% link _articles/two-step-login/lost-two-step-device.md %}) from the **Two-step Login** screen before enabling any method.
+[Get your Recovery Code]({% link _articles/two-step-login/two-step-recovery-code.md %}) from the **Two-step Login** screen before enabling any method.
 {% endcallout %}
 
 1. Log in to your [Web Vault](https://vault.bitwarden.com){:target="\_blank"}.
