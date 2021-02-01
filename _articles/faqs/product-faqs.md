@@ -6,7 +6,7 @@ featured: true
 popular: true
 hidden: false
 tags: []
-order: 15
+order: 16
 redirect_from:
   - /article/change-your-email/
 ---

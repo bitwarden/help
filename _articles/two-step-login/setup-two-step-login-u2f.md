@@ -28,7 +28,7 @@ Complete the following steps to enable Two-step Login using FIDO U2F:
 {% callout warning %}
 **Losing access to your FIDO U2F device can permanently lock you out of your Vault,** unless you write down and keep your Two-step Login Recovery Code in a safe place.
 
-[Get Your Recovery Code]({% link _articles/two-step-login/lost-two-step-device.md %}) from the **Two-step Login** screen before enabling any method.
+[Get Your Recovery Code]({% link _articles/two-step-login/two-step-recovery-code.md %}) from the **Two-step Login** screen before enabling any method.
 {% endcallout %}
 
 1. Log in to the [Web Vault](https://vault.bitwarden.com){:target="\_blank"}.
