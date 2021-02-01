@@ -1,38 +1,48 @@
 ---
 layout: article
-title: Organizing your vault with folders
-categories: [features]
+title: Folders
+categories: [account-management]
 featured: false
 popular: false
 tags: [categories, folders, sub-folders]
+order: 06
 ---
 
-Folders are a great way to categorize items in your Bitwarden vault.
+Folders are structures used to organize your Personal Vault by gathering together Logins, Cards, Identities, and Secure Notes. Using Folders is a great way to make all Vault items easy to find.
 
-{% callout info %}
-An Organization's collection are different than folders. Collections are a way to organize items and control user access within an organization's vault while folders are a way for individual users to organize items within their own personal vault. An individual user may wish to further organize the items being shared with them in their own vault into a personalized folder structure that makes sense just for them.
+{% callout success %}
+Items added to a Folder will still appear in your Vault when {% icon fa-th %} **All Items** is selected from the Filter menu, and deleting a Folder **will not** delete the items in that Folder.
 {% endcallout %}
 
-## Nested folders (sub-folders)
+## Create a Folder
 
-Nested folders work by using a naming convention with the forward slash character (`/`) as a delimiter. For example, if I have folders with the names "Work" and "Work/Email", "Email" will be nested as a sub-folder underneath the "Work" folder.
+Folders can be created from the [Web Vault](https://vault.bitwarden.com){:target="\_blank"} or any Bitwarden client application.
+- From the [Web Vault](https://vault.bitwarden.com){:target="\_blank"} or Desktop Application, select the {% icon fa-plus %} **Add** icon in your **Folders** list.
 
-### Nested folders example
+  Once created, you can rename a folder at any time using the hover-over {% icon fa-pencil %} **Pencil** icon.
+- From a Mobile App or Browser Extension, open the {% icon fa-cogs %} **Settings** menu, tap/select the **Folders** option, and tap/select the {% icon fa-plus %} **Add** icon.
 
-In this example I have the following folders:
+  Once created, you can rename a folder at any time from the same menu by tapping/selecting an existing folder.
+- From the CLI, use the command `bw create folder <foldername>`.
 
-- Personal
-- Personal/Email
-- Personal/Email/Sub
-- Social
-- Work
-- Work/Clients
-- Work/Email
+{% image /manage-items/folder-add-all.png Add a folder%}
 
-This would produce a folder structure that looks like this in the web vault (and similarly in other Bitwarden applications):
+{% callout info %}
+If you're a member of an Organization, **Collections** will be shown below your Folders in the Filters menu.
 
-{% image /manage-items/subfolders.png %}
+There are similarities between Folders and Collections. **Folders are only for your Personal Vault and unique to you**, where Collections are shared between members of Organizations.
+{% endcallout %}
 
-There is no limit on the depth that you can go with nested folders, though the application interface may begin to "break" if you go too deep.
+## Create Nested Folders
 
-If a folder's name contains the forward slash delimiter, yet no "parent" folder exists, its name will be displayed in its entirety. In the example shown above, a folder named "Finance/Banking" would not produce a nested structure. You would need to create a "Finance" folder as well if nesting is desired.
+Folders can be "nested" in order to logically organize them within your Vault. There's no limit to the depth with which you can nest Folders, but creating too many levels may interfere with your Vault's interface.
+
+{% callout info %}
+Searching inside a "parent" Folder will not include items in Folders nested inside it as potential search results. For more information, see [Search your Vault]({% link _articles/features/searching-vault.md %}).
+{% endcallout %}
+
+{% image /manage-items/subfolders.png Nested folders %}
+
+To create a nested Folder, give a new Folder a **Name** that includes the "parent" Folder following by a forward slash (`/`) delimiter, for example `Personal/Email`.
+
+If there is no Folder with the corresponding "parent" name, the Folder won't nest and its title will be displayed in-full.

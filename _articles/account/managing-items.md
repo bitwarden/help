@@ -1,80 +1,93 @@
 ---
 layout: article
-title: Managing Items
+title: Vault Items
 categories: [account-management]
 featured: false
 popular: false
 tags: [account, items, import, delete, trash, clone]
+order: 03
 ---
 
-## About Managing Items
+Bitwarden can store 4 types of items in your Vault:
 
-Managing the items in your vault is key to making sure that you secure, have access to, and can share the correct information with friends, family, teams, and colleagues.
+- [Logins](#logins)
+- [Cards](#cards)
+- [Identities](#identities)
+- [Secure Notes](#secure-notes)
 
-## Adding items
+Effectively managing the items in your Vault is key to making sure that you secure and have seamless access to your information, and can safely share information with friends, family, teams, and colleagues.
 
-Adding items to your Bitwarden vault can be done manually or via import.
+## Add a Vault Item
 
-To manually add an item, once you’re in your vault - simply click or touch the “+” icon or “Add item” button.
+You can add items to your Vault from the Bitwarden [Web Vault](https://vault.bitwarden.com){:target="\_blank"} or any client application. Look for a {% icon fa-plus %} **Add** icon to add an item to your Vault. There are 4 types of items you can add to your Vault.
 
-You’ll then be asked to provide details about the item.
+All item types can be given:
+- A **Name** that makes them easily identifiable to you inside your Vault.
+- **Notes** related to the item in a freeform text input.
+- **Custom Fields** for inputs like security questions or PINs (for more information, see [Custom Fields]({% link _articles/features/custom-fields.md %})).
 
-{% image /manage-items/add-item.png %}
+{% callout success %}
+You can also import items into your Vault from a variety of password management solutions. For more information, see [Import Data to your Vault]({% link _articles/importing/import-data.md %}).
+{% endcallout %}
 
-The type of item can be:
-- Login: A username/password combination usually, with support for custom fields, notes, and TOTP generation for premium and enterprise accounts.
-- Card: Saves payment card data that can be automatically filled.
-- Identity: Personal/Business information such as name and addresses, date of birth, and even notes.
-- Secure Note: Freeform text that will be stored completely encrypted in your vault.
+### Logins
 
-## Importing items
+Refer to the following screenshot for help understanding all the values available for Login items:
 
-If you’re coming from another password manager or **just happen** to have your usernames and passwords in a spreadsheet, you can import them into Bitwarden
+{% image /manage-items/login-item.png Add a Login%}
 
-You can find more details about importing items and supported import formats [here.](https://bitwarden.com/help/article/import-data/)
+### Cards
 
-### Import FAQs
+Refer to the following screenshot for help understanding all the values available for Card items:
 
-### **Q:Why is my import file invalid?**
-**A:** Check to make sure the file has content. Most of the time the exported file does not contain any data.
-### **Q:Why do I have duplicate entries?**
-**A:** The Bitwarden import tool does not perform duplicate entry detection on import. If you run an import on an existing vault, or import multiple times, your data may be duplicated.
-### **Q:How do I clean up duplicates?**
-**A:** We recommend exporting the data from your vault into a CSV/JSON file and performing a vault purge to delete your data.
-  {% callout warning %} Performing a vault purge is permanent and cannot be undone. Once the vault has been emptied and the CSV/JSON file has been pruned of any duplicates, simply re-import your data.{% endcallout %}
+{% image /manage-items/card-item.png Add a Card%}
 
-## Troubleshooting Import Errors
+### Identities
 
-<u>Ciphers[<b>X</b>].Login: The field <b>yyyy</b> exceeds the maximum encrypted value length of <b>zzzz</b> characters.</u>
+Refer to the following screenshot for help understanding all the values available for Identity items:
 
-This error occurs whenever an item in your exported file has a large amount of data associated with it, which exceeds the limits allowed for items stored in your Bitwarden vault. You will need to correct this data by removing it, or reducing its size so that the Bitwarden importer will succeed.
+{% image /manage-items/identity-item.png Add an Identity %}
 
-You can open the exported file in a text editor or spreadsheet program (such as Excel) to locate it. The offending item can be found at index **X** (as referenced in the error message) in the file. Once you have located the offending item, remove it or update its data, then resave and try the import operation with Bitwarden again.
+### Secure Notes
 
-## Cloning an item
+Refer to the following screenshot for help understanding all the values available for Secure Note items:
 
-If you wish to recreate an item (either to share with an organization or to simply make a copy of an item, you can now do so - provided you are the owner of the item - with a one-click operation. This copies the item completely and maintains all data.
+{% image /manage-items/note-item.png Add a Note%}
 
-Simply select clone under the item’s action menu:
+### Folders and Favorites
 
-{% image /manage-items/item-clone.png %}
+Items in your personal Vault can be organized into Folders, or marked as Favorites. For more information, see [Folders]({% link _articles/features/folders.md %}) and [Favorites]({% link _articles/features/favorites.md %}).
 
-{% callout info %}Note - when cloning an item in an organization vault, the user must view the vault from the organization, not the user’s personal vault {% endcallout %}
+## Delete a Vault Item
 
-## Deleting an item
+You can delete any Vault items directly from the [Web Vault](https://vault.bitwarden.com){:target="\_blank"} or from any client application:
 
-Deleting an item can also be performed in the item’s action menu.
+- In the [Web Vault](https://vault.bitwarden.com){:target="\_blank"}, select **Delete** from the hover-over {% icon fa-cog %} **Gear** dropdown.
+- On Mobile Applications, open the item and tap **Delete** in the {% icon fa-ellipsis-v %} **Menu**.
+- On Desktop Applications and Browser Extensions, open the item and select the {% icon fa-trash %} **Delete** icon.
 
-{% image /manage-items/item-delete.png %}
+Before an item is deleted, you will be prompted to confirm deletion. Once confirmed, the item will be placed into the Trash.
 
-Once the delete button is selected, you will be prompted to confirm the deletion.
+### Items in the Trash
 
-{% image /manage-items/item-trash-confirm.png %}
+Deleted items are sent to the Trash, where they remain for 30 days after deletion. Once 30 days have lapsed, the item will be permanently deleted and not recoverable.
 
-Once confirmed, the item will be placed into the trash.
+In the Trash, you can **Restore** an item to your Vault or **Permanently Delete** it prior to the 30-day waiting period:
 
-## Items in the trash
+{% image /manage-items/item-trash-restore-delete.png The Trash%}
 
-Once an item has been deleted and is in the trash, it will remain there for 30 days. You can alternatively navigate to the trash view in your vault and restore, or permanently delete the item immediately.
+## Share a Vault Item
 
-{% image /manage-items/item-trash-restore-delete.png %}
+If you're a member of an Organization, you can share a Vault item with the other members of your Organization. For more information, see [Share Items to a Collection]({% link _articles/organizations/share-to-a-collection.md %}).
+
+## Clone a Vault Item
+
+You can clone any Vault item that you have **Ownership** of, if you wish to create a duplicate of the item.
+
+- In the [Web Vault](https://vault.bitwarden.com){:target="\_blank"}, select **Clone** from the hover-over {% icon fa-cog %} **Gear** dropdown.
+- On Mobile Applications, open the item and tap **Clone** in the {% icon fa-ellipsis-v %} **Menu**.
+- On Desktop Applications and Browser Extensions, open the item and select the {% icon fa-copy %} **Clone Item** option.
+
+{% callout info %}
+To clone an item within an Organization, you must clone it from the Organization Vault view, not the Personal Vault view.
+{% endcallout %}

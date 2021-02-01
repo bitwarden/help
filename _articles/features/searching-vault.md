@@ -1,71 +1,78 @@
 ---
 layout: article
-title: Searching the vault
-categories: [features]
+title: Search your Vault
+categories: [account-management]
 featured: false
 popular: false
 tags: [search, lunr]
+order: 05
 ---
 
-Bitwarden indexes your vault using a [full-text search](https://en.wikipedia.org/wiki/Full-text_search){:target="_blank"} programming library called [Lunr](https://lunrjs.com/){:target="_blank"}. Lunr provides the ability to invoke high-performance search queries against your vault to quickly find what you need with great accuracy.
+Bitwarden Vaults can be easily searched to quickly surface relevant Vault items. [Basic search](#basic-search) queries can be made in any Bitwarden client application, and advanced [full-text search](#full-text-search) queries can be made in Web Vaults, Desktop Apps, and Browser Extensions.
 
-## Applications that use full-text search
+The potential results available to any search operation is dependent on what is currently opened through the Filter menu or Navigation, for example:
 
-The following Bitwarden applications provide full-text searching capabilities and are applicable to the information this article:
+- If {% icon fa-th %} **All Items** is selected, entered search queries will use all possible Vault items as potential results.
+- If the **Login** Type is selected, entered search queries will use all Login items as potential results.
+- If **My Folder** is selected, entered search queries will use all items in that Folder as potential results (not including items in a nested Folder).
 
-- Web vault
-- Desktop applications
-- Browser extensions
+The placeholder text in the search box will transform to indicate the current search location:
 
-This article **does not** apply to the following Bitwarden applications, which provide only basic search capabilities:
+{% image /manage-items/search.png Search a Folder%}
 
-- CLI
-- Mobile apps
+## Basic Search
 
-## Indexed Fields
+Basic search is available in all Bitwarden client applications. Entering a basic search query (e.g. `Github` or `myusername`) will search for the entered string in the following Vault item fields:
 
-The following fields from items in your vault are indexed and are searchable:
+- Item Name
+- For Login, Username
+- For Login, URI
+- For Card, Brand or last four digits
+- For Identity, Name
 
-- `shortid` - First 8 characters of the item's id.
-- `organizationid` - Id of the item's organization (if it belongs to one).
-- `name`
-- `subtitle` - Login username, card brand + last four, and identity name.
-- `notes`
-- `fields` - Name and value. Only "text" type field values are included.
-- `attachments` - File name
-- `login.username`
-- `login.uris` - Only the URI's [hostname](https://developer.mozilla.org/en-US/docs/Web/API/HTMLHyperlinkElementUtils/hostname){:target="_blank"} value.
+For your convenience, basic search automatically includes leading and trailing [wildcards](#wildcards-and-advanced-search-parameters). For example, searching for `mail` will return Vault items with the name `gmail` as well as `email`.
 
-## Wildcard Searches
+## Full-text Search
 
-The asterisk character (`*`) provides the ability to perform wildcard searches in your vault. Examples:
+[Full-text search](https://en.wikipedia.org/wiki/Full-text_search){:target="_blank"}, implemented in your Vault using a programming library called [Lunr](https://lunrjs.com/){:target="_blank"}, provides ways to invoke high-performance queries for Vault items. **Full-text search is available in Web Vaults, Desktop Applications, and Browser Extensions.**
 
-- `*bitwarden`
-- `bitwarden*`
-- `*bitwarden*`
-- `*bit*war*den*`
+### Construct a Full-text Search
 
-{% callout info %}
-The following fields automatically include leading and trailing wildcards while performing normal search queries:
+To invoke full-text search, start your search query with a "greater than" (`>`) character.
 
-- `name`
-- `subtitle`
-- `login.uris`
+When constructing a full-text search, an indexed field name should immediately follow the "greater than" (`>`) character. The following fields of Vault items are indexed and searchable:
 
-It is not necessary to provide wildcards if you are searching for information in these fields.
+- `shortid`: First 8 characters of the item's ID.
+- `organizationid`: ID of the item's Organization (if it belongs to one).
+- `name`: Item's designated name.
+- `subtitle`: Depending on Item Type; Login Username, Card Brand or last four digits, or Identity Name.
+- `notes`: Item's notes.
+- `fields`: Name or Value. **Only `Text` type field values are included.**
+- `attachments`: Name of the attached file.
+- `login.username`: Login item's username.
+- `login.uris`: Login item's URI [hostname](https://developer.mozilla.org/en-US/docs/Web/API/HTMLHyperlinkElementUtils/hostname){:target="_blank"} value.
+
+Once a field is specified, search for a value in that field using a colon (`:`) delimiter, for example:
+
+- `>login.username:jsmith` will search for Login items with `jsmith` specified as the **Username**.
+- `>name:Turbo Tax` will search for any Vault items with `Turbo Tax` specified as the **Name**.
+- `>fields:Security Question` will search for any Vault items with a custom text field with the **Name** `Security Question`.
+
+### Wildcards and Advanced Search Parameters
+
+When constructing a full-text search, you can apply the asterisk (`*`) as a wildcard character for specified search values, for example:
+
+- `>organizationid:*` will search for all Vault items that belong to an Organization.
+- `>login.username:*@gmail.com` will search for any Login item **Username** that ends in `@gmail.com`.
+
+{% callout success %}
+[Lunr](https://lunrjs.com/){:target="_blank"} provides a variety of advanced query options beyond wildcards, including:
+- **Term Presence** using a `+` (*must contain*) or `-` (*must not contain*) prefix.
+
+   For example, if you have multiple Gmail accounts, searching `>name:Gmail -Work` **would** return a Vault item with the name `Personal Gmail` but **would not** return a Vault item with the name `Work Gmail`.
+- **Fuzzy Matching** using a tilde (`~`) prefix combined with an edit distance integer.
+
+   For example, searching `>name:email~1` would return both Vault items with the name `email` **and** Vault items with the name `gmail`.
+
+Learn more about writing advanced search queries using [Lunr's Searching Guide](https://lunrjs.com/guides/searching.html){:target="_blank"}.
 {% endcallout %}
-
-## Advanced Searches
-
-Starting your search query with a greater than character (`>`) enables the full power of [Lunr search queries](https://lunrjs.com/guides/searching.html){:target="_blank"}.
-
-### Advanced Search Examples
-
-- `>bitwarden*` - Search all fields for a term that starts with "bitwarden".
-- `>notes:something` - Search the notes field for the term "something".
-- `>login.username:jsmith` - Search the username field on items of type login for the term "jsmith".
-- `>+organizationid:*` - Search for all items that belong to an organization.
-- `>-organizationid:*` - Search for all items that *do not* belong to an organization (items that you own).
-- `>+foo bar -baz` - Search for items that must contain "foo", might contain "bar" and must not contain "baz".
-
-Learn more about writing advanced search queries using [Lunr's searching guide](https://lunrjs.com/guides/searching.html){:target="_blank"}.

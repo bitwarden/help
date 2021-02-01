@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Bitwarden Safari App Extension
-categories: [features]
+categories: [miscellaneous]
 featured: false
 popular: false
 tags: [browser, safari]

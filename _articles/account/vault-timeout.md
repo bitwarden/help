@@ -5,6 +5,7 @@ categories: [account-management]
 featured: false
 popular: false
 tags: [account, vault, timeout, 2FA, two-step]
+order: 13
 ---
 
 Vault Timeout behavior will determine how your Vault will behave after a customizable period of inactivity. Timeout is configured individually from and for each Bitwarden client application that you use (Mobile, Web, Desktop, Browser Extension, etc.).

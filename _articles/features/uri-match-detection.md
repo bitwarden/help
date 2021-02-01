@@ -1,100 +1,94 @@
 ---
 layout: article
-title: Match detection for URIs
-categories: [features]
+title: URIs for Vault Items
+categories: [account-management]
 featured: false
 popular: false
 tags: [uri, match detection, autofill]
+order: 09
 ---
 
-A login item stored in your vault can have one or more [URI](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier){:target="_blank"} values associated with it. URIs can relate your login to a website address (URL), server IP address, mobile app package ID, and more. URIs are important values for a login since they determine how the auto-fill functions in Bitwarden will behave.
+Any Login item in your Vault can be created with or edited to include one or more URI (Uniform Resource Identifier). A URI can be a website address (i.e. a URL), a Server IP Address, a Mobile App Package ID, and more.
 
-## URI schemes
+{% image uri.png Login item URI fields in the Web Vault %}
 
-A well-formed URI also has a "scheme" at the beginning of it. The most common scheme that many of us are familiar with is the `http://` scheme used for a website address.
-
-The scheme can also have special meaning in Bitwarden:
-
-- **`http://`** or **`https://`** tells Bitwarden that this is a website address. Example: `https://www.google.com`
-- **`androidapp://`** tells Bitwarden that this is an android application package ID (or package name). Example: `androidapp://com.twitter.android`. Android apps typically follow [reverse domain name notation](https://en.wikipedia.org/wiki/Reverse_domain_name_notation){:target="_blank"}.
-
-{% callout info %}
-If a URI omits the scheme, `http://` is assumed.
+{% callout success %}
+Assigning URIs to Login items is **required if you want to leverage auto-fill** functionality in the various Bitwarden client applications.
 {% endcallout %}
 
-## Match detection options
+## URI Schemes
 
-Each URI for a login item also has an associated "match detection" value. The match detection value determines whether or not Bitwarden will offer the login as an available option when performing an auto-fill.
+Well-formed URIs should include a scheme at the beginning, for example the `https://` scheme to securely reference a website address. If no scheme is specified, `http://` is assumed.
 
-While editing a login you can adjust the match detection value for a given URI by selecting the {% icon fa-cog %} **Options** button next to the URI's value.
-
-The following match detection options are available:
-
-{% callout info %}
-**Base domain** is the default URI match detection value for all URIs. You can adjust this default value under **Settings** &rarr; **Options**.
+{% callout success %}
+Most Bitwarden client applications allow you to {% icon fa-share-square %} **Launch** an website or app directly from your Vault. Without a scheme, this functionality will not work properly.
 {% endcallout %}
 
-**Base domain**
+Schemes include:
 
-The base domain is defined as the second-level domain plus the top-level domain of the given URI. A URI with a value of `https://www.google.com` would have a base domain value of `google.com`.
+- `http://` or `https://` reference website addresses (e.g. `https://github.com`)
+- `androidapp://` references an Android Application Package ID or Name (e.g. `androidapp://com.twitter.android`)
 
-Example:
+## Match Detection Options
 
-- URI base domain value: `https://www.google.com`
-- Matches: `http://google.com`, `https://accounts.google.com`, `https://sub.accounts.google.com`, `https://accounts.google.com/page.html`
-- Not matches: `https://google.net`, `https://yahoo.com`
+Each URI assigned to a Login item has an associated **Match Detection** option. This option determines when and whether Bitwarden will offer the Login as an available option for auto-fill.
 
-**Host**
+### Default match detection
 
-The [host](https://developer.mozilla.org/en-US/docs/Web/API/HTMLHyperlinkElementUtils/host){:target="_blank"} is defined as the hostname plus an *optional* port of the given URI. A URI with a value of `https://sub.domain.com:4000` would have a host value of `sub.domain.com:4000`.
+Bitwarden Browser Extensions and Mobile Apps can select a **Default match detection** option from the options below (Base domain, Host, Starts with, Regular expression, Exact, or Never) by navigating to {% icon fa-cogs %}**Settings** &rarr; **Options** &rarr; **Default URI Match Detection**. Setting a default option will not preclude you from specifying a match detection option on an item-by-item basis as well.
 
-Example:
+By default, Bitwarden will use **Base domain** matching as the default option.
 
-- URI host value: `https://sub.domain.com:4000`
-- Matches: `http://sub.domain.com:4000`, `http://sub.domain.com:4000/page.html`
-- Not matches: `https://domain.com`, `https://sub.domain.com`, `https://sub2.domain.com`, `https://sub.domain.com:5000`, `http://sub2.sub.domain.com:4000`
 
-**Starts with**
+#### Base domain
 
-The "starts with" option requires that the current website/application URI must *start with* the value defined in the URI. A URI with a value of `https://sub.domain.com/path/page.html?query=123` starts with
-`https://sub.domain.com/path/`.
+Selecting **Base domain** will prompt Bitwarden to offer auto-fill when the top-level domain and second-level domain of a Login's URI value match the detected resource.
 
-Example:
+For example, if the URI value `https://google.com` uses base domain match detection:
 
-- URI starts with value: `https://sub.domain.com/path/`
-- Matches: `https://sub.domain.com/path/`, `https://sub.domain.com/path/page.html`
-- Not matches: `https://sub.domain.com/path` (notice the missing trailing slash), `https://sub.domain.com`, `https://sub.domain.com:4000/path/page.html` (has a port)
+- **Auto-fill offered** for `http://google.com` & `https://accounts.google.com`
+- **Auto-fill not offered** for `https://google.net` & `http://yahoo.com`
 
-**Regular expression**
+#### Host
 
-{% callout warning %}
-Regular expressions are an advanced option and can be quite dangerous if used incorrectly. You should not use this option if you do not know exactly what you are doing.
+Selecting **Host** will prompt Bitwarden to offer auto-fill when the hostname and (*if specified*) port of the Login's URI value matches the detected resource.
+
+For example, if the URI value `https://sub.domain.com:4000` uses host match detection:
+
+- **Auto-fill offered** for `http://sub.domain.com:4000` & `https://sub.domain.com:4000/page.html`
+- **Auto-fill not offered** for `https://domain.com`, `https://sub.domain.com`,  `https://sub2.sub.domain.com:4000`, or `https://sub.domain.com:5000`
+
+#### Starts with
+
+Selecting **Starts with** will prompt Bitwarden to offer auto-fill when the detected resource starts with the Login URI value, regardless of what follows it.
+
+For example, if the URI value `https://sub.domain.com/path/` uses starts with match detection:
+
+- **Auto-fill offered** for `https://sub.domain.com/path/` & `https://sub.domain.com/path/page.html`
+- **Auto-fill not offered** for `https://sub.domain.com`, `https://sub.domain.com:4000/path/page.html` (interrupted with a port), or `https://sub.domain/com/path` (absent trailing slash)
+
+#### Regular expression
+
+{% callout note %}
+Regular expressions are an advanced option and can be quite dangerous if used incorrectly. You should not use this option if you do not know exactly what you're doing.
 {% endcallout %}
 
-The regular expression option allows you to write any simple or complex [regular expression](https://en.wikipedia.org/wiki/Regular_expression){:target="_blank"} to match the current website/application URI. All regular expressions are case *insensitive*.
+Selecting **Regular expression** will prompt Bitwarden to offer auto-fill when the detected resources matches a specified [regular expression](https://en.wikipedia.org/wiki/Regular_expression){:target="_blank"}. Regular expressions are always *case insensitive*.
 
-Example:
+For example, if the URI vault `^https://.*google.com$` uses regular expression match detection:
 
-- URI regex value: `^https://.*google.com$`
-- Matches: `https://google.com`, `https://sub.google.com`, `https://sub.sub2.google.com`, `https://malicious-site.com?q=google.com`
-- Not matches: `http://google.com` (not https), `https://yahoo.com`
+- **Auto-fill offered** for `https://google.com`, `https://sub.google.com`, `https://malicious-site.com?q=google.com`
+- **Auto-fill not offered** for `http://google.com` or `https://yahoo.com`
 
-**Exact**
+#### Exact
 
-The "exact" option requires that the current website/application URI *exactly* match the value defined in the URI.
+Selecting **Exact** will prompt Bitwarden to offer auto-fill when the Login URI value matches the detected resource exactly.
 
-Example:
+For example, if the URI value `https://www.google.com/page.html` uses exact match detection:
 
-- URI exact value: `https://www.google.com/page.html`
-- Matches: `https://www.google.com/page.html`
-- Not matches: `http://www.google.com/page.html` (not https), `https://www.google.com/page.html?query=123`, `https://www.google.com`
+- **Auto-fill offered** for `https://www.google.com/page.html`
+- **Auto-fill not offered** for `http://www.google.com/page.html`, `https://www.google.com/page.html?query=123`, or `https://www.google.com`
 
-**Never**
+#### Never
 
-A URI with match detection set to "Never" will *never* be offered for auto-fill.
-
-Example:
-
-- URI never value: `https://www.google.com`
-- Matches: none
-- Not matches: `https://www.google.com`, `https://google.com`, `https://sub.google.com/page.html`
+Selecting **Never** will prompt Bitwarden to never offer auto-fill for the Login item.

@@ -1,12 +1,12 @@
 ---
 layout: article
 title: Security FAQs
-categories: [security, faqs]
+categories: [security]
 featured: false
 popular: false
 hidden: false
 tags: []
-order: 09
+order: 11
 redirect_from:
   - /article/why-should-i-trust-bitwarden/
   - /article/what-happens-if-bitwarden-is-hacked/

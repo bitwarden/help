@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Organizations FAQs
-categories: [organizations, faqs]
+categories: [organizations]
 featured: true
 popular: false
 tags: []
@@ -50,6 +50,10 @@ Paid Organizations (Families, Teams, or Enterprise) automatically include premiu
 2. Delete the item from the Organization Vault by selecting **Delete** from the same gear dropdown.
 
 Alternatively, you can unshare items by moving them to a different Collection with higher Access Control restrictions.
+
+#### Q: How do I hide a password from my Organization's users?
+
+**A:** Use the **Hide Passwords** option in the **Access Control** section when adding new users or editing existing ones in order to hide a given Collection's passwords and hidden fields from them. For more information, see [Access Control](https://bitwarden.com/help/article/user-types-access-control/#access-control).
 
 #### Q: Does an item I share with the Organization stay after I leave?
 

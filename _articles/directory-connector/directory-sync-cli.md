@@ -63,6 +63,10 @@ Options include:
 
 For example:
 
+{% callout warning %}
+Contrary to the following example, it's generally not recommended to enter your password inline, as this will save it to the history of the shell. Leaving the password out of the initial command will cause Bitwarden to prompt for it, which will not save it.
+{% endcallout %}
+
 ```
 bwdc login bwuser@gmail.com mystrongpassword --method 0 --code 204678
 ```

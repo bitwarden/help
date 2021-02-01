@@ -1,11 +1,11 @@
 ---
 layout: article
 title: Unlock with Biometrics
-categories: [getting-started]
+categories: [account-management]
 featured: false
 popular: false
 tags: [unlock, face id, touch id, hello, windows, mac, ios, android]
-order: 06
+order: 10
 ---
 
 Bitwarden can be configured to accept biometrics as a method to unlock your Vault. Biometrics can **only be used to unlock** your Vault, you will still be required to log in to your Vault with your Master Password and any enabled [Two-step Login method]({% link _articles/two-step-login/setup-two-step-login.md %}).
@@ -97,7 +97,7 @@ Complete the following steps to enable Biometric Unlock in your Browser Extensio
 4. Check the **Unlock with biometrics** checkbox to activate the integration. You will be prompted by your Desktop App to input your biometric authentication method to complete the setup.
 
    If you've opted to **Require verification for browser integration**, a `Desktop sync verification` dialog box will appear in your Browser Extension and a `Verify browser connection` dialog box will appear in your Desktop Application. Validate that the displayed [account fingerprint]({% link _articles/features/fingerprint-phrase.md %}) matches in both locations. If they match, select the **Approve** button and input your Biometric authentication method.
-   
+
    {% callout success %}In either case, you'll need to redo this "activation" step each time the Desktop App or Browser Extension is restarted.{% endcallout %}
 
 Once Biometric Unlock is enabled, a new button will be presented on the Unlock screen. Selecting the **Unlock biometrics** button will initiate unlock via the Desktop App.
