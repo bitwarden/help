@@ -16,6 +16,10 @@ If you're using any Bitwarden client applications (Mobile Apps, Browser Extensio
 
 Complete the following steps to delete your account:
 
+{% callout warning%}
+This action is permanent and cannot be undone.
+{% endcallout %}
+
 1. Navigate to [vault.bitwarden.com/#/recover-delete](https://vault.bitwarden.com/#/recover-delete).
 2. Enter the **Email Address** associated with your account.
 3. In your email inbox, open the email and verify that you want to delete this Bitwarden account.
