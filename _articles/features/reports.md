@@ -5,7 +5,7 @@ categories: [account-management]
 featured: false
 popular: false
 tags: [account, report, breach, reused, unsecured, weak]
-order: 13
+order: 14
 ---
 
 Vault Health Reports can be used to evaluate the security of your Bitwarden Personal or Organization Vault.

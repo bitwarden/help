@@ -5,7 +5,7 @@ categories: [account-management]
 featured: false
 popular: false
 tags: [account, items, import, delete, trash, clone]
-order: 02
+order: 03
 ---
 
 Bitwarden can store 4 types of items in your Vault:

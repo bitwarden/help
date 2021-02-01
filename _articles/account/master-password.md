@@ -8,7 +8,6 @@ tags: [master password, account]
 order: 01
 redirect_from:
   - /article/change-your-master-password/
-  - article/forgot-master-password/
 ---
 
 ## About Your Master Password

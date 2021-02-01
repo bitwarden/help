@@ -5,7 +5,7 @@ categories: [account-management]
 featured: false
 popular: false
 tags: [attachments, storage, files]
-order: 11
+order: 12
 ---
 
 Files can be attached to Vault items from any Bitwarden client application. An individual file attachment must be 100MB or smaller. By default, users have access to 1GB of encrypted storage for file attachments. Additional storage can be purchased in 1GB increments.
