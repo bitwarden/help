@@ -28,6 +28,7 @@ collections:
     order:
       - getting-started.md
       - account-management.md
+      - send.md
       - import-export.md
       - two-step-login.md
       - hosting.md
@@ -36,6 +37,7 @@ collections:
       - login-with-sso.md
       - security.md
       - plans-and-pricing.md
+      - miscellaneous.md
   articles:
     output: true
     permalink: /article/:name/
