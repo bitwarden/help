@@ -6,7 +6,7 @@ featured: false
 popular: false
 hidden: false
 tags: [tutorial]
-order: 04
+order: 05
 ---
 
 With the Bitwarden free account, and a free Organization for up to 2 users, you can experience secure sharing in no time!
@@ -48,7 +48,7 @@ For more, please see [About Organizations](https://bitwarden.com/help/article/ab
 
 Yes. Organizations are for sharing items across multiple users. Premium membership gives your individual user account additional premium features including:
 
-- 1GB encrypted file storage
+- 1GB encrypted file attachments
 - Two-step login with YubiKey, FIDO U2F, & Duo
 - Password hygiene & vault health reports
 - TOTP authenticator key storage & code gen.

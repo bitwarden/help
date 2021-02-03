@@ -37,6 +37,12 @@ Emergency Access relies on public key exchange within Bitwarden, therefore trust
 
 There is no limit to the number of trusted emergency contacts a user can have.
 
+{% callout note %}
+A user's status as a trusted emergency contact is tied to a unique Bitwarden account ID, meaning that if a grantee [changes their email address]({% link _articles/faqs/product-faqs.md %}) there is no reconfiguration required to maintain their emergency access.
+
+If a grantee creates a **new Bitwarden account** and [deletes]({% link _articles/account/delete-your-account.md %}) the old account which had been specified as a trusted emergency contact, they will automatically be removed from the grantor's list and must be [re-invited](#invite-a-trusted-emergency-contact).
+{% endcallout %}
+
 ### User Access
 
 Trusted emergency contacts can be granted one of the following user access levels:

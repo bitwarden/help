@@ -26,7 +26,7 @@ You will **not** be locked out of your Vault, however you will not be able to us
 
 Your secret keys will remain stored in Vault items in the **Authenticator Key (TOTP)** field, however Bitwarden will not generate TOTP codes.
 
-**Encrypted File Storage**
+**Encrypted File Attachments**
 
 Files will **not** be deleted from your Vault, however you will not be able to upload or download.
 

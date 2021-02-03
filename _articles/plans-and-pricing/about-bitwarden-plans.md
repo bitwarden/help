@@ -24,7 +24,7 @@ We believe everyone should have access to password security tools. The core feat
 
 ### Premium Individual
 
-Upgrade your individual Bitwarden account to unlock premium password security and management features, including advanced 2FA options, the Bitwarden Authenticator (TOTP), encrypted file storage, emergency access and more. Upgrade **[now](https://vault.bitwarden.com/#/?premium=purchase)**.
+Upgrade your individual Bitwarden account to unlock premium password security and management features, including advanced 2FA options, the Bitwarden Authenticator (TOTP), encrypted file attachments, emergency access and more. Upgrade **[now](https://vault.bitwarden.com/#/?premium=purchase)**.
 
 {% callout info %}
 Premium does not include secure data sharing. In order to access sharing features, you will need a subscription to an Organization ([Free](#free-organizations), [Families](#families-organizations), [Teams](#teams-organizations), or [Enterprise](#enterprise-organizations)). Paid Organizations ([Families](#families-organizations), [Teams](#teams-organizations), or [Enterprise](#enterprise-organizations)) include premium features for all users enrolled in that Organization.
@@ -48,7 +48,7 @@ In the following table, "premium features" (included for **Premium Individual** 
 |Cloud or Self-hosting|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
 |*Encrypted Export|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
 |*Two-step login|via authenticator apps or email|via authenticator apps, email, Yubikey, U2F, and Duo|via authenticator apps, email, Yubikey, U2F, and Duo|
-|*Encrypted file storage|-|1 GB|1 GB per user + 1 GB shared|
+|*Encrypted file attachments|-|1 GB|1 GB per user + 1 GB shared|
 |*Bitwarden Authenticator (TOTP)|-|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
 |*Vault Health Reports|-|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
 |*Emergency Access|-|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
@@ -92,7 +92,7 @@ In the following table, "premium features" (included for **Teams Organizations**
 |Max no. of Collections|2|Unlimited|Unlimited|
 |*Encrypted Export|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
 |*Two-step login|via authenticator apps or email|via authenticator apps, email, Yubikey, U2F, and Duo|via authenticator apps, email, Yubikey, U2F, and Duo|
-|*Encrypted file storage|-|1 GB per user + 1 GB shared|1 GB per user + 1 GB shared|
+|*Encrypted file attachments|-|1 GB per user + 1 GB shared|1 GB per user + 1 GB shared|
 |*Bitwarden Authenticator (TOTP)|-|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
 *Personal Emergency Access|-|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
 |*Vault Health Reports|-|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|

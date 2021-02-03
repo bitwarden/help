@@ -43,7 +43,7 @@ Will you be a Bitwarden Solo-Practitioner, or will you securely share data betwe
 As a Bitwarden Solo-Practicioner, will you be a Bitwarden Black Belt using Premium features like:
 
 - Advanced 2FA options, like Yubikey, U2F, and Duo
-- 1 GB of encrypted file storage
+- 1 GB of encrypted file attachments
 - Bitwarden Authenticator (TOTP)
 - Emergency Access
 - Vault Health Reports
