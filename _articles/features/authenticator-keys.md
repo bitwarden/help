@@ -64,3 +64,15 @@ For example:
 `otpauth://totp/Test:me?secret=JBSWY3DPEHPK3PXP&algorithm=sha256&digits=8&period=60`
 
 Learn more about using `otpauth://` URIs [here](https://github.com/google/google-authenticator/wiki/Key-Uri-Format).
+
+## Steam Guard TOTPs
+
+The Bitwarden Authenticator (TOTP) can be used as an alternative means of TOTP generation for Steam using a `steam://` prefix followed by your secret key (`shared_secret`):
+
+{% image steam-totp.png Steam TOTP generation%}
+
+Generated `steam://` TOTPs are by default alphanumeric and 5 digits, as opposed to traditional 6-digit numeric TOTPs.
+
+{% callout warning %}
+To use this functionality, you'll need to manually extract your Steam account's `shared_secret` using a third-party tool. There are tools like [SteamTimeIdler](https://github.com/SteamTimeIdler/stidler/wiki/Getting-your-%27shared_secret%27-code-for-use-with-Auto-Restarter-on-Mobile-Authentication#getting-shared-secret-from-ios-windows){:target="\_blank"} and [Steam Desktop Authenticator](https://github.com/Jessecar96/SteamDesktopAuthenticator){:target="\_blank"} that can help you accomplish this, however such **extraction tools are not officially supported by Bitwarden or Steam**. Use these tools at your own risk.
+{% endcallout%}

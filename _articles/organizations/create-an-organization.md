@@ -44,7 +44,7 @@ Complete the following steps to create an Organization:
    {% endcallout %}
 6. If you selected a Paid Organization, enter the following information:
    - For **Teams** or **Enterprise**, enter the number of **User Seats** you need. You can add additional seats later if required.
-   - For **Families**, **Teams**, or **Enterprise**, enter the amount of **Additional Storage (GB)** you need. You plan comes with 1 GB of shared encrypted file storage, and you can add additional storage later if needed.
+   - For **Families**, **Teams**, or **Enterprise**, enter the amount of **Additional Storage (GB)** you need. You plan comes with 1 GB of shared encrypted file attachments, and you can add additional storage space later if needed.
    - For **Teams** or **Enterprise**, select whether you'd like to be billed **Annually** or **Monthly**. Families Organizations may only be billed annually.
    - For any Paid Organization, enter your **Payment Information**
 7. Click **Submit** to start using your new Organization.

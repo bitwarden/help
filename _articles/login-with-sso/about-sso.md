@@ -22,6 +22,10 @@ Administrators can configure Login with SSO in the Business Portal. For more inf
 
 {% image /sso/sso-button-lg.png Enterprise Single Sign-On button %}
 
+### Requiring SSO for Users
+
+Using the **Single Sign-On Authentication** policy, Enterprise Organizations can require non-Owner/non-Admin users to log in to Bitwarden with Enterprise Single Sign-On. For more information about setting up this policy, see [Policies]({% link _articles/organizations/policies.md %}).
+
 ## Enterprise Free Trial
 
 Login with SSO is available for all customers on the current Enterprise plan (for more information, see [About Bitwarden Plans]({% link _articles/plans-and-pricing/about-bitwarden-plans.md %}). If you're new to Bitwarden, we'd love to help you through the process of setting up an account and starting your 7 Day Free Trial Enterprise Organization with our dedicated signup page:

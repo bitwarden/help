@@ -51,7 +51,7 @@ Bitwarden Teams Plan has a robust set of password management features.
   |Password Strength Checker | <i class="fa fa-check" aria-hidden="true"></i>          | <i class="fa fa-check" aria-hidden="true"></i>                                                      | <i class="fa fa-check" aria-hidden="true"></i>                        | <i class="fa fa-check" aria-hidden="true"></i>                               |  <i class="fa fa-check" aria-hidden="true"></i>
   |Password Sharing | <i class="fa fa-check" aria-hidden="true"></i>          | <i class="fa fa-check" aria-hidden="true"></i>                                                      | <i class="fa fa-check" aria-hidden="true"></i>                        | <i class="fa fa-check" aria-hidden="true"></i>                               |  <i class="fa fa-check" aria-hidden="true"></i>
 |Multi-Device Sync| <i class="fa fa-check" aria-hidden="true"></i>          | <i class="fa fa-check" aria-hidden="true"></i>                                                      | <i class="fa fa-check" aria-hidden="true"></i>                        | <i class="fa fa-check" aria-hidden="true"></i>                               |  <i class="fa fa-check" aria-hidden="true"></i>
-|Encrypted File Storage| 1GB          | 1GB                                                      | —                       | —                              |  1GB+ Personal, 1GB+ for Org Items
+|Encrypted File Attachments| 1GB          | 1GB                                                      | —                       | —                              |  1GB+ Personal, 1GB+ for Org Items
 |Built-in TOTP| <i class="fa fa-check" aria-hidden="true"></i>          | <i class="fa fa-check" aria-hidden="true"></i>                                                      | —                       | —                              |  <i class="fa fa-check" aria-hidden="true"></i>|
 
 ## Security and Administration Features
@@ -92,8 +92,3 @@ Cloud-Hosted               | <i class="fa fa-check" aria-hidden="true"></i>     
     |Windows and Mac               | <i class="fa fa-check" aria-hidden="true"></i>          | <i class="fa fa-check" aria-hidden="true"></i>                                                      | <i class="fa fa-check" aria-hidden="true"></i>                        | <i class="fa fa-check" aria-hidden="true"></i>                               |  <i class="fa fa-check" aria-hidden="true"></i>
     |Linux               | <i class="fa fa-check" aria-hidden="true"></i>          | <i class="fa fa-check" aria-hidden="true"></i>                                                      | <i class="fa fa-check" aria-hidden="true"></i>                        | —                               |  <i class="fa fa-check" aria-hidden="true"></i>
      |Command Line Interface               | <i class="fa fa-check" aria-hidden="true"></i>          | <i class="fa fa-check" aria-hidden="true"></i>                                                      | —                        | —                               |  <i class="fa fa-check" aria-hidden="true"></i> |
-
-
-
-
-

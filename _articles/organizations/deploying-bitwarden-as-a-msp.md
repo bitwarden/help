@@ -6,7 +6,7 @@ featured: false
 popular: false
 hidden: false
 tags: [tutorial]
-order: 05
+order: 06
 ---
 If you are looking for information about the Bitwarden Partner Program, look no further. Bitwarden supports a reseller and managed service provider (MSP) model. You can get started right away (no formal agreement needs to be signed).
 

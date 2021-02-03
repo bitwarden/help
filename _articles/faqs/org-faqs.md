@@ -21,7 +21,7 @@ For more high-level information about **Organizations**, refer to the following 
 
 **A:** Organizations unlock access to secure sharing between users who are members of that Organization.
 
-Premium Individual plans unlock premium password security and management features, including advanced 2FA options, the Bitwarden Authenticator (TOTP), encrypted file storage, and more. Premium Individual does not include secure data sharing.
+Premium Individual plans unlock premium password security and management features, including advanced 2FA options, the Bitwarden Authenticator (TOTP), encrypted file attachments, and more. Premium Individual does not include secure data sharing.
 
 Paid Organizations (Families, Teams, or Enterprise) automatically include premium features (advanced 2FA options, Bitwarden Authenticator, etc.) for every user enrolled in the Organization.
 

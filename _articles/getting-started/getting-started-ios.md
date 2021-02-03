@@ -83,7 +83,7 @@ Once you've setup [Auto-fill](#setup-auto-fill) and [Biometrics](#unlock-with-bi
 
 ## Bitwarden 101: Get Started with iOS
 
-Use this following Video or Slideshow for help getting started using Bitwarden for iOS:
+Use the following video or slideshow for help getting started using Bitwarden for iOS:
 
 <iframe width="800" height="450" src="https://www.youtube.com/embed/LrhMmNTmOno" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br>
