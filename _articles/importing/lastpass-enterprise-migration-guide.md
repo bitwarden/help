@@ -96,6 +96,12 @@ For instructions on shaping a Bitwarden specific import file, please refer to th
 Importing multiple times will create duplicate records in your Bitwarden Vault.
 {%endcallout%}
 
+### Individual user data import
+
+Bitwarden supports a variety import formats from other password management platforms. Individual users can import their data into their Bitwarden Vault on their own, and does not require Administrative assistance.
+
+For more on importing individual data, check out our helpful article [here.](https://bitwarden.com/help/import-export/)
+
 ## Onboarding users
 
 Bitwarden supports both manual and automated user invitation and boarding. Best practice is to manually board any necessary Administrative users during configuration and initial deployment, ensuring all Organization configurations including Enterprise Policies, Login with SSO, and Directory Connector are ready prior to automating the User invitation and boarding process.
