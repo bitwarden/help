@@ -18,3 +18,10 @@ This article contains Frequently Asked Questions (FAQs) regarding **Two-step Log
 #### Q: Is FIDO U2F supported on my iOS or Android App?
 
 **A:** At this time, due to platform/OS limitations, FIDO U2F is **only supported for Web Vaults and Browser Extensions**, however we are currently investigating ways to implement this. In the meantime, we recommend enabling another [Two-step Login Method]({% link _articles/two-step-login/setup-two-step-login.md %}) for use with unsupported client applications.
+
+
+#### Q: Why is Bitwarden not asking for my enabled Two-step Login method?
+
+**A:** If any [method]({% link _articles/two-step-login/setup-two-step-login.md %}) is enabled, Two-step Login is required to **Log In** to your Vault. Two-step Login **is not required to Unlock** your Vault. If Bitwarden isn't asking for your Two-step Login method, you're likely already logged in and only unlocking your Vault.
+
+For more information on the difference between Logging In and Unlocking, see [Vault Timeout Action](https://bitwarden.com/help/article/vault-timeout/#vault-timeout-action).

@@ -11,7 +11,7 @@ order: 08
 Your Two-step Login Recovery Code is a 32 character alpha-numeric code that, when used, will deactivate all Two-step Login methods from your account. Recovery Codes are designed for scenarios where you have lost your Two-step Login Device.
 
 {% callout success %}
-Without your Recovery Code, losing access to your device or method will permanently lock you out of your Vault. Bitwarden highly recommends downloading your Recovery Code from the Two-step Login screen **before enabling any method**.
+Without your Recovery Code, losing access to your device or method will permanently lock you out of your Vault. Bitwarden highly recommends downloading your Recovery Code from the Two-step Login screen **immediately after enabling any method**.
 {% endcallout %}
 
 ## Get Your Recovery Code
