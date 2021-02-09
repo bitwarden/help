@@ -12,7 +12,7 @@ redirect_from:
 
 This article will guide you through the process of creating a Collection. For more information about Collections, see [About Collections](https://bitwarden.com/help/article/about-collections/).
 
-## Create A Collection
+## Create a Collection
 
 Complete the following steps to create a collection:
 
@@ -43,8 +43,24 @@ If there is no Collection with the corresponding "parent" name or if you don't h
 
 {% image organizations/collection-nested-create.png Create a nested Collection %}
 
+## Delete a Collection
+
+Complete the following steps to delete a collection:
+
+1. Login to your [Web Vault](https://vault.bitwarden.com){:target="\_blank"} and open your Organization.
+2. In your Organization, open the **Manage** tab and select **Collections** from the left menu.
+3. On the **Collections** screen, hover over the Collection you want to delete and select the gear dropdown.
+4. From the gear dropdown, select **Delete**:
+
+   {% image /organizations/collection-delete.png Delete a Collection %}
+
+Deleting a Collection **will not** delete the Vault items in that Collection. When a Collection is deleted, Vault items will be moved to the {% icon fa-cube %} **Unassigned** filter in the Organization Vault view.
+
+
+
+
 ### Next Steps
 
-Now that you've created a Collection, we recommend that you:
+Once you've created a Collection, we recommend that you:
 - [Share Items to a Collection](https://bitwarden.com/help/article/share-to-a-collection/)
 - [Import Items to an Organization](https://bitwarden.com/help/article/import-to-org/)

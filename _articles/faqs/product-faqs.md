@@ -155,7 +155,7 @@ You can see more about Bitwarden for iOS here: <https://bitwarden.com/help/artic
 
 ### Q: Do I need premium and families?
 
-**A:** The legacy Families plan does not include premium for its users. Users would need to upgrade to premium individually, or the family organization owner could upgrade the organizatoin.
+**A:** The legacy Families plan does not include premium for its users. Users would need to upgrade to premium individually, or the family organization owner could upgrade the organization.
 
 Currently, the Families plan introduced in September 2020, supports premium features for up to 6 users.
 

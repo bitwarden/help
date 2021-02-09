@@ -80,7 +80,7 @@ However, only Enterprise Organizations include:
 - Enterprise Policies
 - Self-host option
 
-|If your answer is "Just the first few"...|If your answer is "I need all of them"...|
+|If your answer is "Almost all of them"...|If your answer is "I need all of them"...|
 |------------------------------------------------|------------------------------------------------|
 |...we recommend a Teams Organization.<br><br>[**Create your Teams Organization.**](https://bitwarden.com/help/article/upgrade-from-individual-to-org/)|...we recommend an Enterprise Organization.<br><br>[**Create your Enterprise Organization.**](https://bitwarden.com/help/article/upgrade-from-individual-to-org/)|
 

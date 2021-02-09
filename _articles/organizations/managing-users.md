@@ -71,4 +71,8 @@ Complete the following steps to remove a user from your Organization:
 
 {% image organizations/org-people-options-updated-overlay.png Remove a user %}
 
-Once a user is removed they can no longer access any shared items or Collections.
+Removing a user from an Organization **does not** delete their Bitwarden account. When a user is removed they can no longer access the Organization or any shared items and Collections, however they will still be able to login to Bitwarden using the established credentials and access to any Personal Vault items.
+
+{% callout success %}
+If you're an Organization Owner or Admin removing a user with a `@yourcompany.com` email address, you can delete the Bitwarden account as long as you have access to the `@yourcompany.com` email inbox. For more information, see [Delete an Account Without Logging In](https://bitwarden.com/help/article/delete-your-account/#without-logging-in).
+{% endcallout %}
