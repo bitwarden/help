@@ -28,7 +28,7 @@ Upgrading from Classic 2019 to the current Families Organizations plan will incr
 
 We've also reduced the price of a Families Organization to $40/year (*compared to $52/year for a Families Organization and Premium Features for all users*).
 
-### Comparison Table
+### Families Comparison Table
 
 |Features|Classic 2019|Current (2020-)|
 |--------|------------|---------------|
