@@ -48,7 +48,7 @@ If a grantee creates a **new Bitwarden account** and [deletes]({% link _articles
 Trusted emergency contacts can be granted one of the following user access levels:
 - **View**: When an emergency access request is granted, this user is granted view/read access to all items in your personal Vault. As the grantor, you may revoke access to a grantee with **View** access at any time.
 
-- **Takeover**: When an emergency access request is granted, this user can create a Master Password for permanent read/write access to your Vault (this will **replace** your previous Master Password). Takeover [Two-step Login Methods]({% link _articles/two-step-login/setup-two-step-login.md %}).
+- **Takeover**: When an emergency access request is granted, this user can create a Master Password for permanent read/write access to your Vault (this will **replace** your previous Master Password). Takeover disables any [Two-step Login Methods]({% link _articles/two-step-login/setup-two-step-login.md %}) enabled for the account.
 
 **When the grantor is a member of an Organization**, they will be automatically removed from any Organization(s) for which they are not an [Owner]({% link _articles/organizations/user-types-access-control.md %}). Owners will not be removed from or lose permissions to their Organization(s), however a [Master Password Policy](https://bitwarden.com/help/article/policies/#master-password) will be enforced on takeover if enabled. Policies that are not usually enforced on Owners (e.g. [Two-step Login](https://bitwarden.com/help/article/policies/#two-step-login)) will not be enforced on takeover.
 
