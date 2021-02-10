@@ -5,7 +5,7 @@ categories: [getting-started]
 featured: false
 popular: false
 hidden: false
-tags: [tutorial, browser extensions]
+tags: [tutorial, getting started, mobile, android, ios]
 order: 03
 redirect_from:
   - /article/getting-started-android/

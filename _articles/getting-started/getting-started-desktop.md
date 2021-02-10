@@ -5,7 +5,7 @@ categories: [getting-started]
 featured: false
 popular: false
 hidden: false
-tags: [tutorial, browser extensions]
+tags: [tutorial, getting started, desktop, windows, mac, linux]
 order: 04
 ---
 
