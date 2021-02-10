@@ -1,10 +1,16 @@
 {% assign sorted_articles = site.articles | sort: 'order' %}
 
 <nav class="bd-links collapse" id="bd-docs-nav" aria-label="Main navigation">
-    <div class="bd-toc-item d-none d-sm-none d-md-block">
-        <a class="bd-toc-link" href="/help/">
-            Help Center
-        </a>
+    <div class="bd-toc-search">
+      <form class="search-header" action="{{site.baseurl}}/search/" id="search" method="get">
+          <div class="input-group input-group-lg">
+              <input type="search" class="form-control" placeholder="Search..." id="search-box" name="q">
+              <button class="btn btn-light" type="submit" onclick="gaEvent('Search')">
+                  <i class="fa fa-search"></i>
+                  <span class="sr-only">Search</span>
+              </button>
+          </div>
+      </form>
     </div>
     <div class="bd-toc-item">
         <a class="bd-toc-link" href="{{site.baseurl}}/article/releasenotes">
