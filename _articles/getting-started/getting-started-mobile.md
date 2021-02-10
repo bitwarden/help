@@ -20,10 +20,10 @@ Bitwarden's Mobile App is available for iOS and Android. For help getting starte
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
-    <a class="nav-link active" id="andtab" data-bs-toggle="tab" href="#android" role="tab" aria-controls="android" aria-selected="true">Android</a>
+    <a class="nav-link active" id="andtab" data-bs-toggle="tab" href="#android" role="tab" aria-controls="android" aria-selected="true"><i class="fa fa-android"></i> Android</a>
   </li>
   <li class="nav-item" role="presentation">
-    <a class="nav-link" id="iostab" data-bs-toggle="tab" href="#ios" role="tab" aria-controls="ios" aria-selected="false">iOS</a>
+    <a class="nav-link" id="iostab" data-bs-toggle="tab" href="#ios" role="tab" aria-controls="ios" aria-selected="false"><i class="fa fa-apple"></i> iOS</a>
   </li>
 </ul>
 
@@ -38,14 +38,25 @@ When you **Favorite** an item, it'll appear at the top of your Vault for easy ac
 
 ## Get Organized with Favorites and Folders
 
-Organizing your Vault into **Favorites** and **Folders** makes navigating your Vault a breeze:
+Organizing your Vault into **Favorites** and **Folders** makes navigating your Vault a breeze.
+
+**To add a Folder:**
+
+1. Select the {% icon fa-cogs %} **Settings** tab.
+2. Select the **Folders** option.
+3. Select the {% icon fa-plus %} **Add** icon.
+4. Give your new folder a name and select **Save**.
+
+**To add a Vault item to a Folder or your Favorites:**
 
 1. Tap the item you want to edit.
 2. Tap the {% icon fa-pencil %} Pencil icon in the bottom-right corner of your screen.
 3. Tap **Folder** to select a folder for this item, or toggle the **Favorite** switch to add it to your Favorites.
 3. Tap **Save** in the top-right corner of your screen.
 
-## Create New Items
+For more information, see [Folders]({% link _articles/features/folders.md %}) and [Favorites]({% link _articles/features/favorites.md %}).
+
+## Create New Logins
 
 You can create new Logins, Cards, Identities, and Secure Notes directly from any Android device.
 
@@ -115,14 +126,25 @@ When you **Favorite** an item, it'll appear at the top of your Vault for easy ac
 
 ## Get Organized with Favorites and Folders
 
-Organizing your Vault into **Favorites** and **Folders** makes navigating your Vault a breeze:
+Organizing your Vault into **Favorites** and **Folders** makes navigating your Vault a breeze.
+
+**To add a Folder:**
+
+1. Select the {% icon fa-cogs %} **Settings** tab.
+2. Select the **Folders** option.
+3. Select the {% icon fa-plus %} **Add** icon.
+4. Give your new folder a name and select **Save**.
+
+**To add a Vault item to a Folder or your Favorites:**
 
 1. Tap the item you want to edit.
 2. Tap **Edit** in the top-right corner of your screen.
 3. Tap **Folder** to select a folder for this item, or toggle the **Favorite** switch to add it to your Favorites.
 3. Tap **Save** in the top-right corner of your screen.
 
-## Create New Items
+For more information, see [Folders]({% link _articles/features/folders.md %}) and [Favorites]({% link _articles/features/favorites.md %}).
+
+## Create New Logins
 
 You can create new Logins, Cards, Identities, and Secure Notes directly from any iOS device.
 
