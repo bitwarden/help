@@ -75,10 +75,17 @@ Regular expressions are an advanced option and can be quite dangerous if used in
 
 Selecting **Regular expression** will prompt Bitwarden to offer auto-fill when the detected resources matches a specified [regular expression](https://en.wikipedia.org/wiki/Regular_expression){:target="_blank"}. Regular expressions are always *case insensitive*.
 
-For example, if the URI vault `^https://.*google\.com$` uses regular expression match detection:
+Bad example, if the URI vault `^https://.*google\.com$` uses regular expression match detection:
 
 - **Auto-fill offered** for `https://google.com`, `https://sub.google.com`, `https://malicious-site.com?q=google.com`
 - **Auto-fill not offered** for `http://google.com` or `https://yahoo.com`
+
+This probably matches more than what is indented. Consider avoiding the `.` which matches any character entierly for this security sensitive use of regular expressions.
+
+Good example, if the URI vault `^https://[a-z]+\.wikipedia\.org/w/index\.php` uses regular expression match detection:
+
+- **Auto-fill offered** for `https://en.wikipedia.org/w/index.php?title=Special:UserLogin&returnto=Bitwarden`, `https://pl.wikipedia.org/w/index.php?title=Specjalna:Zaloguj&returnto=Bitwarden`, `https://en.wikipedia.org/w/index.php`
+- **Auto-fill not offered** for `https://en.wikipedia.org/wiki/Bitwarden`, `https://malicious-site.com`
 
 #### Exact
 
