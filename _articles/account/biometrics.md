@@ -1,98 +1,107 @@
 ---
 layout: article
-title: Unlocking with biometrics
-categories: [account-management, organizations]
+title: Unlock with Biometrics
+categories: [account-management]
 featured: false
 popular: false
 tags: [unlock, face id, touch id, hello, windows, mac, ios, android]
+order: 11
 ---
 
-## Unlocking
+Bitwarden can be configured to accept biometrics as a method to unlock your Vault. Biometrics can **only be used to unlock** your Vault, you will still be required to log in to your Vault with your Master Password and any enabled [Two-step Login method]({% link _articles/two-step-login/setup-two-step-login.md %}).
 
-After logging into your Bitwarden account using your Master Password and any two-step login (if enabled) - you can leverage your device’s biometrics capabilities to unlock your vault faster.
+Biometric features are part of the built-in security in your device and/or operating system. Bitwarden leverages native APIs to perform this validation, and as such **does not receive any biometrics information** from the device.
 
-These biometric features are part of the built-in security in your device and/or operating system.
+## Mobile Applications
 
-Bitwarden is leveraging native APIs to perform this validation, and as such does not receive any biometrics information from the device.
+Biometric Unlock is supported for both the Android (Google Play or FDroid) and iOS Mobile Applications:
+- For **Android**, via [fingerprint unlock](https://support.google.com/nexus/answer/6285273?hl=en){:target="\_blank"} or [face unlock](https://support.google.com/pixelphone/answer/9517039?hl=en){:target="\_blank"}.
+- For **iOS**, via [Touch ID](https://support.apple.com/en-us/HT201371){:target="\_blank"} and [Face ID](https://support.apple.com/en-us/HT208109){:target="\_blank"}.
 
-## Windows
+### Enable Biometric Unlock in Mobile
 
-### Supported unlocking options:
-- Hello (includes below options)
-  - PIN
-  - Facial Recognition
-  - [Other Windows Hello supported hardware](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/windows-hello-biometric-requirements)
+Complete the following steps to enable Biometric Unlock in your Mobile App:
 
-&rarr; [Enabling up Windows Hello](https://support.microsoft.com/en-us/help/4028017/windows-learn-about-windows-hello-and-set-it-up)
+{% callout info %}
+Your Biometric method of choice must be enabled on your device or operating system **before** it can be enabled in Bitwarden.
+{% endcallout %}
 
-### Supported clients
+1. Open your **Settings** tab.
+2. In the Security section, your available Biometrics options will be listed. Tap the Biometric method you would like to enable:
 
-- Desktop
+{% image /biometrics/ios_faceid.jpeg Enable Face ID in iOS%}
 
-## macOS
+A green `Enabled` status will appear when activated. Once Biometric Unlock is enabled, your device will automatically prompt for your biometric data when unlocking the app.
 
-### Supported unlocking options
+## Desktop Applications
 
-- Touch ID
+Biometric Unlock is supported for both the Windows and macOS Desktop Applications:
+- For **Windows**, via [Windows Hello](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/windows-hello){:target="\_blank"} using PIN, Facial Recognition, or [other hardware that meets Windows Hello biometric requirements](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/windows-hello-biometric-requirements){:target="\_blank"}.
+- For **macOS**, via [Touch ID](https://support.apple.com/en-us/HT207054){:target="\_blank"}.
 
-&rarr; [Enabling Touch ID on macOS](https://support.apple.com/en-us/HT207054)
+### Enable Biometric Unlock in Desktop
 
-### Supported clients
+Complete the following steps to enable Biometric Unlock in your Desktop App:
 
-- Desktop
+{% callout info %}
+Your Biometric method of choice must be enabled on your device or operating system **before** it can be enabled in Bitwarden.
+{% endcallout %}
 
-## Android
+1. Open your **Settings** (on Windows, **File** &rarr; **Settings**) (on macOS, **Bitwarden** &rarr; **Preferences**).
+2. In the Security section, your available Biometrics options will be listed as checkbox items. Check the Biometric method you would like to enable:
 
-### Supported unlocking options
+   {% image /biometrics/windows.png Configuring Hello in Windows %}
 
-- Fingerprint unlock
-- Face Unlock
+{% callout info %}
+If you do not see the option to enable Windows Hello within the Desktop preferences, you may need to install the [Microsoft Visual C++ Redistributable](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads).
+{% endcallout %}
 
-&rarr; [Enabling fingerprint unlock](https://support.google.com/nexus/answer/6285273?hl=en)
+Once Biometric Unlock is enabled, a new button will be presented on the Unlock screen. Selecting this button (for example, **Unlock with Windows Hello**) will initiate unlock. You may at any time choose to unlock your Vault with your Master Password instead.
 
-&rarr; [Enabling face unlock](https://support.google.com/pixelphone/answer/9517039?hl=en)
+{% image /biometrics/hello-unlock.png Unlock with Windows Hello %}
 
-### Supported clients
+## Browser Extensions
 
-- Bitwarden on Google Play
-- Bitwarden on FDroid
+Biometric Unlock is supported for **Chromium-based** (e.g. Chrome, Edge) Bitwarden Browser Extensions by integration with a native Bitwarden Desktop App (the Desktop App must also be running the latest version). Through the Desktop App's access to Biometric APIs, Browser Extensions support Biometric Unlock:
+- For **Windows**, via [Windows Hello](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/windows-hello){:target="\_blank"} using PIN, Facial Recognition, or [other hardware that meets Windows Hello biometric requirements](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/windows-hello-biometric-requirements){:target="\_blank"}.
+- For **macOS**, via [Touch ID](https://support.apple.com/en-us/HT207054){:target="\_blank"}.
 
-## iOS
+{% callout note %}
+**Biometric Unlock is currently not available for:**
 
-### Supported unlocking options
-- Touch ID
-- Face ID
+- Firefox Browser Extensions (keep an eye on the required up-stream enhancement to make `nativeMessaging` optional [here](https://bugzilla.mozilla.org/show_bug.cgi?id=1630415){:target="\_blank"}).
+- Safari Browser Extensions.
+- Microsoft App Store Desktop Apps (a side-loaded Windows Desktop App, available at [bitwarden.com/download](https://bitwarden.com/download){:target="\_blank"} will work fine).
+- Side-loaded MacOS Desktop Apps (an App Store Desktop app will work fine).
 
-&rarr; [Enabling Touch ID on iOS](https://support.apple.com/en-us/HT201371)
+In the cases of FireFox and the Microsoft App Store, this is due to native messaging limitations (see [Native Messaging Permissions](#native-messaging-permissions)). In all cases, Bitwarden team is investigating and will provide updates as things progress.
+{% endcallout %}
 
-&rarr; [Enabling Face ID on iOS](https://support.apple.com/en-us/HT208109)
+The Bitwarden Desktop Application must be installed, logged in, and running in order to use Biometric Unlock in a Browser Extension. Additionally, you will need to [enable Biometric Unlock in the desktop app](#enable-biometric-unlock-in-desktop) before proceeding.
 
-### Supported clients
+### Native Messaging Permissions
 
-- Bitwarden on the App Store
+When your Chromium-based Browser Extension updates to the version that supports Biometric Unlock (v1.48.0), you may be asked to accept a new permission for Bitwarden to `Communicate with cooperating native applications`. This permission is safe, but **optional**, and will enable the Browser Extension to communicate with the Bitwarden Desktop App, which is required to enable Biometric Unlock, as described above.
 
-## Enabling Biometrics in Bitwarden
+Declining this permission will allow you to use v1.48.0 as normal, without Biometric Unlock functionality.
 
-### Mobile Apps
+### Enable Biometric Unlock for Browser Extensions
 
-To enable this in Bitwarden, simply navigate to settings and under the Security section, click enable Face ID, Touch ID, Face Unlock or Fingerprint unlock. The option presented will be based on your device and what biometric security features are available.
+Complete the following steps to enable Biometric Unlock in your Browser Extension:
 
-{% image /biometrics/ios.png Configuring Face ID and Touch ID in iOS%}
+1. In the Desktop App, navigate to **Settings** (on Windows, **File** &rarr; **Settings**) (on macOS, **Bitwarden** &rarr; **Preferences**).
+2. Check the **Enable Browser Integration** checkbox.
 
-### Desktop Apps
+   Optionally, enable the **Require verification for browser integration** option to require [account fingerprint]({% link _articles/features/fingerprint-phrase.md %}) verification when activating the integration between Browser Extension and Desktop App.
+3. In the Browser Extension, open the **Settings** tab.
+4. Check the **Unlock with biometrics** checkbox to activate the integration. You will be prompted by your Desktop App to input your biometric authentication method to complete the setup.
 
-Enabling the desktop client is performed in much the same way. Navigate to the settings tab and you’ll see the option to enable Windows Hello or Touch ID for unlocking your vault.
+   If you've opted to **Require verification for browser integration**, a `Desktop sync verification` dialog box will appear in your Browser Extension and a `Verify browser connection` dialog box will appear in your Desktop Application. Validate that the displayed [account fingerprint]({% link _articles/features/fingerprint-phrase.md %}) matches in both locations. If they match, select the **Approve** button and input your Biometric authentication method.
 
-When biometrics are configured and your vault is locked, you will have a new button presented in the desktop application, either “Unlock with Windows Hello”, or “Unlock with Touch ID”. Clicking this button will initiate the unlocking sequence. Alternatively, you can still opt to unlock with your Master Password if you would like.
+   {% callout success %}In either case, you'll need to redo this "activation" step each time the Desktop App or Browser Extension is restarted.{% endcallout %}
 
-{% image /biometrics/macos.png Configuring Touch ID in macOS %}
+Once Biometric Unlock is enabled, a new button will be presented on the Unlock screen. Selecting the **Unlock biometrics** button will initiate unlock via the Desktop App.
 
-{% image /biometrics/touchid-unlock.png Prompt to unlock with Touch ID in macOS %}
-
-{% image /biometrics/windows.png Configuring Hello in Windows %}
-
-{% image /biometrics/hello-unlock.png Prompt to unlock with Windows Hello %}
-
-### Browser Extensions
-
-Biometrics are not currently supported on our Browser extensions. However, we understand that it is incredibly important and this functionality is on our near-term roadmap.
+{% callout warning %}
+If you attempt to use Biometric Unlock when the Desktop App is closed, you will be prompted to open the Desktop App. If you've opted to **Require verification for browser integration**, you'll also be prompted to recomplete fingerprint verification.
+{% endcallout %}

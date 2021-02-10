@@ -1,40 +1,78 @@
 ---
 layout: article
-title: Authenticator key (TOTP) storage and use
-categories: [features]
+title: Bitwarden Authenticator (TOTP)
+categories: [account-management]
 featured: true
 popular: false
 tags: [autofill, auto-fill, totp, 2fa, two-step login, two factor authentication, authenticator]
+order: 12
 ---
 
-{% note %}Authenticator key (TOTP) storage is available to all accounts. TOTP code generation requires a premium membership or paid organization account.{% endnote %}
+The Bitwarden Authenticator is an alternative solution to dedicated authentication apps like Authy, which you can use to verify your identity for websites and apps that use Two-step Login. The Bitwarden Authenticator generates 6-digit [Time-based One-time Passwords](https://en.wikipedia.org/wiki/Time-based_One-time_Password_algorithm) (TOTPs) using SHA-1 and rotates them every 30 seconds.
 
-Each website that supports [Time-based One-time Password](https://en.wikipedia.org/wiki/Time-based_One-time_Password_algorithm) (TOTP) or [Two-factor Authentication](https://en.wikipedia.org/wiki/Multi-factor_authentication) (2FA) with an "Authenticator" handles configuration slightly differently. You will need to start the setup from each individual website or service that you are accessing (e.g. google.com, github.com). The option to configure this will commonly be found under the "Security" options of your account.
+{% callout info %}Authenticator key (TOTP) storage is available to all accounts. TOTP code generation requires Premium or membership to a Paid Organization (Families, Teams, or Enterprise).{% endcallout %}
 
-The Bitwarden [Android](https://play.google.com/store/apps/details?id=com.x8bit.bitwarden) and [iOS](https://apps.apple.com/us/app/bitwarden-password-manager/id1137397744) applications can make adding your TOTP key's easy by scanning a [QR code](https://en.wikipedia.org/wiki/QR_code) to populate the field automatically.
+If you're new to using TOTPs for Two-step Login, refer to the [Field Guide to Two-step Login](https://bitwarden.com/help/article/bitwarden-field-guide-two-step-login/#securing-important-websites) for more information.
 
-## Web Vault & Other Applications
+## Generate TOTP Codes
 
-Create or edit a login item you wish to store your TOTP key with. In the field labeled "**Authenticator Key (TOTP)**", input the secret key that you are provided with and select save.
+Each website that supports TOTPs or [Two-factor Authentication](https://en.wikipedia.org/wiki/Multi-factor_authentication) (2FA) with an authenticator handles configuration differently. Start the setup from each individual website or service that you are accessing (e.g. google.com, github.com).
 
-## Mobile Applications
+In Bitwarden, you can generate TOTPs using two methods:
 
-Create or edit a login item you wish to store your TOTP key with. In the field labeled "**Authenticator Key (TOTP)**", select the "camera" icon. Scan the QR code you have been presented with and the field will be automatically populated. You can then save the changes.
+- From a Bitwarden mobile app by [**Scanning a QR Code**](#scan-a-qr-code)
+- From any Bitwarden app by [**Manually Entering a Secret**](#manually-enter-a-secret)
 
-## Using Generated Codes
+### Scan a QR Code
 
-The Bitwarden mobile applications and browser extension have the ability to automatically copy a TOTP code to your device clipboard after auto-fill. Auto-fill any item that has a TOTP key stored and submit the information. The service you are logging into will ask for a verification code. Use the paste function of your device to input the code and submit it.
+Complete the following steps to setup the Bitwarden Authenticator from the iOS or Android app:
 
-{% tip %}This feature can be toggled off under Settings &rarr; Options &rarr; Disable Automatic TOTP Copy.{% endtip %}
+1. **Edit** the Vault item for which you want to generate TOTPs.
+2. Tap the {% icon fa-camera %} camera icon in the **Authenticator Key (TOTP)** field.
+3. Scan the QR code and tap **Save** to begin generating TOTPs.
 
-{% warning %} TOTP codes will not automatically copy to the system clipboard when "Enable Auto-fill On Page Load" is enabled in the browser extension.{% endwarning %}
+Once setup, Bitwarden Authenticator will continuously generate 6-digit TOTPs rotated every 30 seconds, which you can use as a secondary step for Two-step Login to connected websites or apps.
+
+### Manually Enter a Secret
+
+Setup the Bitwarden Authenticator from any Bitwarden app by copying the secret key (*typically available as an alternative to a QR Code*) from the website or app and pasting it into the **Authenticator Key (TOTP)** field for the corresponding Vault item.
+
+Once setup, Bitwarden Authenticator will continuously generate 6-digit TOTPs rotated every 30 seconds, which you can use as a secondary step for Two-step Login to connected websites or apps.
+
+## Use Generated Codes
+
+Bitwarden Mobile applications and Browser Extensions will automatically copy the TOTP code to your device's clipboard after Auto-fill, unless the **Enable Auto-fill on Page Load** option is active. Paste from your clipboard immediately after successful Auto-fill to use your TOTP.
+
+{% callout success %}This feature can be toggled off under **Settings** &rarr; **Options** &rarr; **Disable Automatic TOTP Copy**.{% endcallout %}
+
+All Bitwarden applications display your rotating TOTP code inside the Vault item, which can be copied and pasted just like a Username or Password.
+
+{% image two-step/totpcode.png Copy a TOTP code %}
 
 ## Support for More Parameters
 
-Some services will use different parameters for their TOTP codes. Bitwarden will generate 6-digit codes using SHA-1 and rotate them every 30 seconds by default. Bitwarden can suport parameters digits (1-10), algorithm (SHA-1, SHA-256, and SHA-512), period (> 0) and secret (base32 key). 
+By default, Bitwarden will generate 6-digit TOTPs using SHA-1 and rotate them every 30 seconds, however some websites or services will expect different parameters. Parameters can be customized in Bitwarden by manually editing the `otpauth://totp/` URI for your Vault item.
 
-Example:
+|Parameter|Description|Values|Sample Query|
+|---------|-----------|------|------------|
+|Algorithm|Cryptographic algorithm used to generate TOTPs.|-sha1<br>-sha256<br>-sha512|`algorithm=sha256`|
+|Digits|Number of digits in the generated TOTP.|1-10|`digits=8`|
+|Period|Number of seconds with which to rotate the TOTP.|Must be > 0|`period=60`|
+
+For example:
 
 `otpauth://totp/Test:me?secret=JBSWY3DPEHPK3PXP&algorithm=sha256&digits=8&period=60`
 
-Learn more about using otpauth:// uri's here: <https://github.com/google/google-authenticator/wiki/Key-Uri-Format>
+Learn more about using `otpauth://` URIs [here](https://github.com/google/google-authenticator/wiki/Key-Uri-Format).
+
+## Steam Guard TOTPs
+
+The Bitwarden Authenticator (TOTP) can be used as an alternative means of TOTP generation for Steam using a `steam://` prefix followed by your secret key (`shared_secret`):
+
+{% image steam-totp.png Steam TOTP generation%}
+
+Generated `steam://` TOTPs are by default alphanumeric and 5 digits, as opposed to traditional 6-digit numeric TOTPs.
+
+{% callout warning %}
+To use this functionality, you'll need to manually extract your Steam account's `shared_secret` using a third-party tool. There are tools like [SteamTimeIdler](https://github.com/SteamTimeIdler/stidler/wiki/Getting-your-%27shared_secret%27-code-for-use-with-Auto-Restarter-on-Mobile-Authentication#getting-shared-secret-from-ios-windows){:target="\_blank"} and [Steam Desktop Authenticator](https://github.com/Jessecar96/SteamDesktopAuthenticator){:target="\_blank"} that can help you accomplish this, however such **extraction tools are not officially supported by Bitwarden or Steam**. Use these tools at your own risk.
+{% endcallout%}

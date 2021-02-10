@@ -7,108 +7,89 @@ popular: false
 tags: [cli, command, script, bash, shell, powershell, terminal]
 ---
 
-Bitwarden provides a powerful, full-featured command-line interface (CLI) tool to access and manage your Bitwarden vault. All features that you find in other Bitwarden client applications (desktop, browser extension, etc) are also available through the CLI. The CLI can be used cross-platform on Windows, macOS, and Linux distributions.
+Bitwarden provides a powerful, full-featured command-line interface (CLI) tool for accessing and managing your Bitwarden vault. All features that you find in other Bitwarden client applications (Desktop, Browser Extension, etc.) are also available through the CLI.
+
+The CLI can be used cross-platform on Windows, macOS, and Linux distributions.
 
 {% image cli.png %}
 
-## Table of Contents
-
-- [Quick Start](#quick-start)
-- [Download &amp; Install](#download--install)
-    - [Native executable](#native-executable)
-    - [NPM](#npm)
-    - [Other Package Managers](#other-package-managers)
-- [Session Management](#session-management)
-    - [Environment Variable](#environment-variable)
-    - [`--session <key>` Option](#--session-key-option)
-    - [Locking](#locking)
-    - [Login != Unlock](#login--unlock)
-- [Explore the CLI](#explore-the-cli)
-- [Managing Your Vault](#managing-your-vault)
-    - [Sync](#sync)
-    - [List](#list)
-    - [Get](#get)
-    - [Create](#create)
-    - [Edit](#edit)
-    - [Delete](#delete)
-        - [`--permanent` Option](#--permanent-option)
-    - [Restore](#restore)
-    - [Share](#share)
-- [Other Useful Commands](#other-useful-commands)
-    - [Confirm](#confirm)
-    - [Import](#import)
-    - [Export](#export)
-    - [Generate](#generate)
-    - [Encode](#encode)
-    - [Config](#config)
-    - [Update](#update)
-    - [Status](#status)
-    - [Version](#version)
-- [Working with JSON](#working-with-json)
-- [Self-signed Certificates](#self-signed-certificates)
-- [Shell Completion](#shell-completion)
-    - [ZSH](#zsh)
-- [Source Code](#source-code)
-- [Appendix](#appendix)
-    - [Templates](#templates)
-    - [Enums](#enums)
-
 ## Quick Start
 
-1. [Download and install](#download--install) the CLI for your platform.
-2. Move `bw` to `/usr/local/bin` or another directory in your `$PATH`. Windows users can [add `bw.exe` to the current user's `PATH`](https://www.howtogeek.com/118594/how-to-edit-your-system-path-for-easy-command-line-access/){:target="_blank"}. If you installed the CLI with [NPM](https://www.npmjs.com/package/@bitwarden/cli){:target="_blank"} (or another package manager) you can skip this step since `bw` should automatically be added to your path.
-3. Verify the `bw` command works in your terminal.
+1. [Download and install](#download-and-install) the CLI for your platform.
+2. Move `bw` to `/usr/local/bin` or another directory in your `$PATH`. Windows users can [add `bw.exe` to the current user's `PATH`](https://www.howtogeek.com/118594/how-to-edit-your-system-path-for-easy-command-line-access/){:target="_blank"}.
+
+   **If you installed the CLI with [NPM](https://www.npmjs.com/package/@bitwarden/cli){:target="_blank"} or another package manager you can skip this step as `bw` will automatically be added to your path.**
+3. Verify the `bw` command works in your terminal:
 
        bw --help
 
-## Download &amp; Install
+## Download and Install
 
-You can install the Bitwarden CLI multiple different ways:
+You can install the Bitwarden CLI in a few different ways:
 
 ### Native executable
 
-Natively packaged versions of the CLI for each platform have no dependencies.
+Natively packaged versions of the CLI are available for each platform and have no dependencies:
 
 - {% icon fa-windows fa-lg fa-fw %} [Windows x64](https://vault.bitwarden.com/download/?app=cli&platform=windows)
 - {% icon fa-apple fa-lg fa-fw %} [macOS x64](https://vault.bitwarden.com/download/?app=cli&platform=macos)
 - {% icon fa-linux fa-lg fa-fw %} [Linux x64](https://vault.bitwarden.com/download/?app=cli&platform=linux)
 
 In UNIX systems you might get a `Permission denied` message. If you do, in order to grant permissions you can run
-```bash
-chmod +x </path/to/bw>
+```
+bash chmod +x </path/to/bw>
 ```
 
 ### NPM
 
 If you already have the Node.js runtime installed on your system, you can install the CLI using [NPM](https://www.npmjs.com/package/@bitwarden/cli){:target="_blank"}. NPM makes it easy to keep your installation updated and should be the preferred installation method if you are already using Node.js.
-
-    npm install -g @bitwarden/cli
+```
+npm install -g @bitwarden/cli
+```
 
 ### Other Package Managers
 
 - [Chocolatey](https://chocolatey.org/packages/bitwarden-cli){:target="_blank"}
-    
-       choco install bitwarden-cli
+  ```
+  choco install bitwarden-cli
+  ```
 - [Homebrew](https://formulae.brew.sh/formula/bitwarden-cli){:target="_blank"}
-    
-       brew install bitwarden-cli
+  ```
+  brew install bitwarden-cli
+  ```
 - [Snap](https://snapcraft.io/bw){:target="_blank"}
-    
-       sudo snap install bw
+  ```
+  sudo snap install bw
+  ```
 
 ## Session Management
 
-You can log into your Bitwarden user account by using the `login` command:
+### Logging In
 
-    bw login [email] [password]
+There are a few ways to log into your Bitwarden user account from the command line, all using the `login` command:
+```
+bw login [email] [password]
+```
+where `email` is your account Email Address and `password` is your Master Password.
+```
+bw login [email] [password] --method <method> --code <code>
+```
+where `<method>` is your Two-step Login method (see [Enums](#enums)), and `<code>` is your Two-step Login code.
+```
+bw login --apikey
+```
+where `--apikey` will prompt you to enter your personal `client_id` and `client_secret`. For more information, see [Personal API Key for CLI Authentication](https://bitwarden.com/help/article/personal-api-key/).
+```
+bw login --sso
+```
+where `--sso` starts the SSO Authentication flow from a browser.
+You can also pass the `--raw` option to *only receive the session key* from stdout.
 
-After successfully logging into the CLI a *session key* will be returned. This session key is necessary to perform any commands that require your vault to be unlocked (`list`, `get`, `edit`, etc). You can pass the `--raw` option to `login` to receive *only the session key* from stdout.
-
-    bw login [email] [password] --raw
-
-You should pass the session key to CLI commands by setting the `BW_SESSION` environment variable or by using the `--session <key>` option:
+After successfully logging into the CLI a *session key* will be returned. This session key is necessary to perform any commands that require your vault to be unlocked (`list`, `get`, `edit`, etc.).
 
 ### Environment Variable
+
+Pass the session key to CLI commands by setting the `BW_SESSION` environment variable or by using the `--session <key>` option:
 
 {% icon fa-linux %} {% icon fa-apple %} Bash
 
@@ -124,9 +105,15 @@ You should pass the session key to CLI commands by setting the `BW_SESSION` envi
 
     bw list items --session 5PBYGU+5yt3RHcCjoeJKx/wByU34vokGRZjXpSH7Ylo8w==
 
-{% note %}
+{% callout info %}
 It is possible to persist your session key to your environment (for example, exporting it in `.bashrc`), however, we do not recommend doing this. Your active session key is the encryption key used to unlock all data associated with your Bitwarden vault and is not well-suited for persisting on an unprotected disk.
-{% endnote %}
+{% endcallout %}
+
+### `--apikey` Variables
+
+The Bitwarden CLI will look for non-empty environment variables `BW_CLIENTID` or `BW_CLIENTSECRET`. Save these environment variables with your `client_id` and `client_secret` to prevent Bitwarden from prompting you every time.
+
+You will still need to enter your Master Password to decrypt your Vault.
 
 ### Locking
 
@@ -202,12 +189,12 @@ You can retrieve an object by its globally using `id` property (usually a GUID),
 
 If you are getting an attachment, you must also specify the `--itemid <id>` option of the item that the attachment belongs to.
 
-    bw get attachment b857igwl1dzrs2 --output ./photo.jpg \ 
+    bw get attachment b857igwl1dzrs2 --output ./photo.jpg \
         --itemid 99ee88d2-6046-4ea7-92c2-acac464b1412
     bw get attachment photo.jpg --raw \
         --itemid 99ee88d2-6046-4ea7-92c2-acac464b1412
 
-### Create
+### Create Items, attachments, and folders
 
 The `create` command allows you to create new objects in your vault.
 
@@ -216,14 +203,14 @@ The `create` command allows you to create new objects in your vault.
 The process for creating an object may look something like this:
 
 1. Get the JSON template(s) for the object you are trying to create:
-    
+
        bw get template folder
 2. Edit the JSON template with the values you want to use for that object.
 3. Base 64 encode the JSON string. You can [use the `encode` command](#encode) included with the CLI and pipe in the JSON string from stdin:
-    
+
        echo '{"name":"My Folder"}' | bw encode
 4. Create the item:
-    
+
        bw create folder eyJuYW1lIjoiTXkgRm9sZGVyIn0=
 
 The `create` command can also receive encoded JSON as stdin. A complete example, using `jq` to update a template's JSON (see more about [working with JSON](#working-with-json) below), may look something like this:
@@ -233,9 +220,24 @@ The `create` command can also receive encoded JSON as stdin. A complete example,
 Upon success, the newly created object will be returned.
 
 To create a new attachment for an item, specify the `--file` path on disk as well as the `--itemid`.
-
+```
     bw create attachment --file ./path/to/myfile.csv \
         --itemid 16b15b89-65b3-4639-ad2a-95052a6d8f66
+```
+
+### Creating Collections
+
+PowerShell:
+
+```
+bw get template org-collection | jq ('.organizationId="""00000000-0000-0000-0000-00000000""" | .name="""TestCollection"""') | bw encode | bw create org-collection --organizationid 00000000-0000-0000-0000-00000000
+```
+
+Bash:
+
+```
+bw get template org-collection | jq ('.organizationId="00000000-0000-0000-0000-00000000" | .name="TestCollection"') | bw encode | bw create org-collection --organizationid 00000000-0000-0000-0000-00000000
+```
 
 ### Edit
 
@@ -322,7 +324,7 @@ bw confirm org-member <id> --organizationid <orgId>
 The `import` command allows you to import data from a previous Bitwarden export or another [supported password management application]({% link _articles/importing/import-data.md %}).
 
 ```
-bw import [<format> <input>] [--formats] 
+bw import [<format> <input>] [--formats]
 ```
 ```
 bw import --formats
@@ -331,13 +333,16 @@ bw import bitwardencsv ./file.csv
 
 ### Export
 
-The `export` command allows you to export your *unencrypted* vault data to a CSV or JSON formatted file on disk.
+The `export` command allows you to export your Vault data as plaintext `.json` or `.csv` files, or as a `.json` [Encrypted Export]({% link _articles/importing/encrypted-export.md %}). You can pass the `--raw` option to receive your export on stdout instead of a file.
+
+Valid format values are `csv`, `json`, and `encrypted_json`.
 
 ```
 bw export [password] [--output <filePath>] [--format <format>] [--organizationid <orgId>]
 ```
 ```
 bw export
+bw --raw export
 bw export --format csv
 bw export myPassword321 --output ./backups/
 bw export myPassword321 --output ./my_backup.json --format json
@@ -346,17 +351,28 @@ bw export myPassword321 --organizationid 7063feab-4b10-472e-b64c-785e2b870b92
 
 ### Generate
 
-The `generate` command allows you to generate strong passwords and passphrases.
+The `generate` command allows you to generate strong passwords and passphrases with the following options:
 
 ```
 bw generate [--lowercase --uppercase --number --special --length --passphrase --separator --words]
 ```
-```
-bw generate
-bw generate -u -l --length 18
-bw generate -ulns --length 25
-bw generate -p --words 5 --separator _
-```
+
+By default, `bw generate` will generate the equivalent of passing `bw generate -uln --length 14`.
+
+#### Generate Passwords
+
+By default, `generate` will generate passwords. When generating passwords, you may use the following options:
+- `-u` (include uppercase)
+- `-l` (include lowercase)
+- `-n` (include numbers)
+- `-s` (include special characters)
+- `--length <length>` (length of the password, with a min. of 5)
+
+#### Generate Passphrases
+
+To generate passphrases, specify `bw generate -p`. When generating a passphrase, you may use the following options:
+- `--words <words>` (number of words, with a min. of 3)
+- `--separator <separator>` (separator character)
 
 ### Encode
 
@@ -392,9 +408,9 @@ The `update` command allows you to check if your CLI is up to date. The CLI will
 
 A URL to download a new version of the CLI executable will be returned to you.
 
-{% note %}
+{% callout info %}
 If you have installed the CLI through a package managers (such as NPM), you should use the update commands available for that tool. For example, `npm install -g @bitwarden/cli` will update you to the latest version of the CLI on NPM.
-{% endnote %}
+{% endcallout %}
 
 ### Status
 
@@ -537,9 +553,9 @@ Some templates are meant to be used as sub-objects to another template's propert
 | Email         | 1     |
 | Yubikey       | 3     |
 
-{% note %}
+{% callout info %}
 Other two-step login methods such as FIDO U2F and Duo are not supported by the CLI.
-{% endnote %}
+{% endcallout %}
 
 **Item Types**
 

@@ -1,56 +1,60 @@
 ---
 layout: article
-title: Import your data from LastPass
-categories: [getting-started]
+title: Import Data from LastPass
+categories: [import-export]
 featured: true
 popular: true
 tags: [import, lastpass]
+order: 02
 ---
 
-Importing your data from LastPass into Bitwarden is easy. 
+Use this article for help exporting data from LastPass and importing into Bitwarden.
 
-## Export your sites from the LastPass.com web vault
+## Export from LastPass
 
-1. Log into your LastPass account at www.lastpass.com and navigate to **More Options** (at the very bottom of the left sidebar menu) &rarr; **Advanced** &rarr; **Export**.<br />
-   {% image lastpass-options.png %}
-2. This will take you to a page that then asks you to enter your LastPass master password for verification. Enter your LastPass master password.<br />
-   {% image lastpass-password.png %}
-3. Your data will be decrypted and shown on screen in [CSV][csv] format.
-4. Highlight all of the data on the page and copy it to your clipboard.
-   - Highlight all of the data with your mouse (or simply press <code>Ctrl + A</code>), then right click with your mouse and select **Copy**.<br />
-   {% image lastpass-copy.png %}
+Complete the following steps to export data from the [LastPass Web Vault](https://lastpass.com/){:target="\_blank"}:
 
-{% warning %}
-There are known bugs (for years now) with the LastPass exporter regarding special characters such as the ampersand (<code>&amp;</code>), the greater than sign (<code>&gt;</code>), and the less than sign (<code>&lt;</code>). The LastPass exporter may change (HTML encode) these and possibly other special characters in your passwords to their respective HTML encoded values (ex. <code>&amp;amp;</code>, <code>&amp;gt;</code>, and <code>&amp;lt;</code>). If this LastPass bug affects your exported data you should use a text editor (such as Notepad) to find and replace all of these values before importing into Bitwarden. For example, you may want to do a find and replace for <code>&amp;amp;</code> &rarr; <code>&amp;</code> and <code>&amp;lt;</code> &rarr; <code>&lt;</code>).
+1. Select the **Advanced Options** option on the left sidebar. 
+2. Select **Export** from the menu.
+3. Enter your Master Password to validate the export attempt.
 
-Alternatively, you can use the [LastPass Pocket application](https://lastpass.com/misc_download2.php){:target="_blank"} to export your CSV data. The LastPass Pocket application does not appear to be affected by these bugs.
-{% endwarning %}
+   Your Vault data will be decrypted and printed to the screen in a `.csv` format.
 
-## Import your data into Bitwarden
+   {% image lastpass-copy.png LastPass Export %}
+4. Highlight the printed text, and copy and paste it into a new `export.csv` file.
 
-1. Go to the [Bitwarden web vault][bitwarden-vault] and log in.
-2. Navigate to **Tools** &rarr; **Import Data**.
-3. Select **LastPass (csv)** as the file format and paste the [CSV][csv] content into the textbox that you copied to your clipboard in step 4 above.
-   - Click into the textbox with your mouse, then right click with your mouse and select **Paste**.
-4. Click the **Import Data** button.
+{% callout warning %}
+**Some users have reported a bug** which changes special characters in your passwords (`&`, `<`, `>`, etc.) to their HTML-encoded values (for example, `&amp;`) in the printed export.
 
-Congratulations! You have just transferred all of your data from LastPass into Bitwarden.
+If you observe this bug in your exported data, use a text editor to find and replace all altered values before importing into Bitwarden.
 
-## Importing form fills (optional)
+Alternatively, use the [LastPass Pocket application](https://lastpass.com/misc_download2.php){:target="_blank"} to export your CSV data. The LastPass Pocket application does not appear to be affected by these bugs.
+{% endcallout %}
 
-LastPass does not include form fills with the standard export from the LastPass web vault. If you want to import form fill information into Bitwarden you can export the form fill CSV data from the LastPass browser extension.
+### Export with Form Fills
 
-{% note %}
-You can only export form fill data from the LastPass browser extension.
-{% endnote %}
+**Exports from the Web Vault will not include form fills.** To export form fill data from LastPass, you must do so from the Browser Extension:
 
-1. Click the LastPass icon from the browser toolbar to open the LastPass popup interface.
-2. Navigate to **More options** &rarr; **Advanced** &rarr; **Export** &rarr; **Form Fills**.
-3. This will take you to a page that then asks you to enter your LastPass master password for verification. Enter your LastPass master password.
-4. Your data will be decrypted and shown on screen in [CSV][csv] format.
-5. Highlight all of the data on the page and copy it to your clipboard.
-   - Highlight all of the data with your mouse (or simply press <code>Ctrl + A</code>), then right click with your mouse and select **Copy**.
-6. Follow the same import steps in [Import your data into Bitwarden](#import-your-data-into-bitwarden).
+1. In the Browser Extension, navigate to **Account Options** &rarr; **Advanced** &rarr; **Export** &rarr; **Form Fills**.
+2. Enter your Master Password to validate the export attempt.
 
-[csv]: https://en.wikipedia.org/wiki/Comma-separated_values
-[bitwarden-vault]: https://vault.bitwarden.com
+   Your Vault data will be decrypted and printed to the screen in a  `.csv` format.
+   {% image lastpass-copy.png LastPass Export %}
+4. Highlight the printed text, and copy and paste it into a new `export.csv` file.
+
+## Import to Bitwarden
+
+Complete the following steps to import data to your Bitwarden personal Vault (for help importing to an Organization Vault, see [Import Items to an Organization]({% link _articles/organizations/import-to-org.md %})):
+
+1. Log in to the [Web Vault](https://vault.bitwarden.com){:target="\_blank"}.
+2. Select **Tools** from the top navigation bar.
+3. Select **Import Data** from the left Tools menu.
+4. Select **LastPass (csv)** from the format dropdown.
+5. Select the **Browse...** button and add the file exported from LastPass.
+6. Select the **Import Data** button to complete your import.
+
+{% callout warning %}
+Importing data multiple times will create duplicates.
+{% endcallout %}
+
+Congratulations! You have just transferred your data from LastPass into Bitwarden.

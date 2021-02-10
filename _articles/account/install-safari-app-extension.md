@@ -1,20 +1,28 @@
 ---
 layout: article
-title: Installing the Bitwarden Safari App Extension
-categories: [getting-started]
+title: Bitwarden Safari App Extension
+categories: [miscellaneous]
 featured: false
 popular: false
 tags: [browser, safari]
 ---
 
-The new Safari App Extension is now packaged with the Bitwarden Desktop App. This is the recommended development path from Apple for Safari App Extensions.
+## Get the Extension
 
+Bitwarden's Safari App Extension is packaged with the Bitwarden Desktop App available on the App Store, as recommended by from Apple regarding Safari App Extensions.
 
-Download the Bitwarden Safari App Extension (within the Bitwarden Desktop App)
-[https://vault.bitwarden.com/download/?app=desktop&platform=macos](https://vault.bitwarden.com/download/?app=desktop&platform=macos)
+{% callout warning %}
+Due to changes by Apple, Safari now limits Safari App Extension use to only those obtained through Mac App Store downloads. As of Q1 2021, users will not be able to use a Bitwarden Safari App Extension obtained through a `.dmg` installation from [bitwarden.com/download](https://bitwarden.com/download){:target="\_blank"} or any other non-App Store source.
 
-You can also use the App Store version of the Bitwarden Desktop App.
-
-Be sure to run the desktop application once. If the extension still does not appear, it may just need to be enabled. In Safari, check under Preferences > Extensions.
+To read community conversation on the topic, refer to the following Apple Developer Forum threads ([Thread #1](https://developer.apple.com/forums/thread/659029){:target="\_blank"}, [Thread #2](https://developer.apple.com/forums/thread/667859){:target="\_blank"}).
+{% endcallout %}
 
 For developer detail on Safari App Extensions, click [here](https://developer.apple.com/documentation/safariservices/safari_app_extensions).
+
+## Enable the Extension
+
+Before enabling the Safari App Extension, run the Desktop Application at least one. In Safari:
+
+1. Open the **Preferences** window.
+2. Navigate to the **Extensions** page.
+3. Check the **Bitwarden** checkbox, and select **Turn on** in the confirmation dialog.

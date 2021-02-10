@@ -1,21 +1,27 @@
 ---
 layout: article
-title: I forgot my master password
+title: I Forgot my Master Password
 categories: [account-management]
 featured: true
 popular: false
 tags: [master password, account]
+order: 02
 ---
 
-Unlike most services that you use on the internet, due to the way Bitwarden works there is no way to reset your master password in the event that you forget it. This is because your Bitwarden master password is used for more than just authentication (logging in). Your vault's data is also securely encrypted with your master password, therefore it is impossible to unlock or recover your vault without it.
+As described in the [Your Master Password]({% link _articles/account/master-password.md %}) article, Bitwarden has no knowledge of, way to retrieve, or way to reset your Master Password. If you've already lost your Master Password, there is unfortunately no way for the team to recover the account or the data therein. You will need to delete your account and start a new one.
 
-If you have forgotten your master password unfortunately there is no way to fully recover the account. The only option to gain access to the account again is to delete the account so that you can register again and start over. Deleting the account will also delete all of your vault data associated with the account.
+{% callout success %}
+If you're using any Bitwarden client applications (Mobile Apps, Browser Extensions, etc.) you should check whether any of these sessions are still logged in prior to deleting your account. If a client application is still logged in, you should manually catalogue your Vault items to preserve your data.
+{% endcallout %}
 
-## Deleting the account
+Complete the following steps to delete your account:
 
-1. Navigate to <https://vault.bitwarden.com/#/recover-delete>
-2. Enter your account's email address
-3. Go to your email inbox and click the verification link that was sent to you
-4. Confirm the delete
+{% callout warning%}
+This action is permanent and cannot be undone.
+{% endcallout %}
 
-You can now register a new account using the same email address.
+1. Navigate to [vault.bitwarden.com/#/recover-delete](https://vault.bitwarden.com/#/recover-delete).
+2. Enter the **Email Address** associated with your account.
+3. In your email inbox, open the email and verify that you want to delete this Bitwarden account.
+
+Once deleted, you're free to create a new Bitwarden account with that email address. If you delete a Bitwarden account that has a Premium subscription associated with it, [Contact Us](https://bitwarden.com/contact/){:target="\_blank"} and we'll reapply your existing subscription to the new account.

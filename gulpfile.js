@@ -4,7 +4,7 @@ const merge = require('merge-stream');
 
 const paths = {};
 paths.dist = './_site/';
-paths.sass = './_sass/';
+paths.sass = './_scss/';
 paths.libDir = './lib/';
 paths.npmDir = './node_modules/';
 paths.cssDir = './css/';
@@ -21,12 +21,8 @@ function cleanDist() {
 function lib() {
     var libs = [
         {
-            src: paths.npmDir + 'bootstrap-sass/assets/javascripts/bootstrap.min.js',
+            src: paths.npmDir + 'bootstrap/dist/js/bootstrap.min.js',
             dest: paths.libDir + 'bootstrap/js'
-        },
-        {
-            src: paths.npmDir + 'bootstrap-sass/assets/fonts/bootstrap/*',
-            dest: paths.libDir + 'bootstrap/fonts'
         },
         {
             src: [

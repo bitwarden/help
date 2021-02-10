@@ -8,14 +8,18 @@
     "build:prod:sub": "gulp build && cross-env JEKYLL_ENV=production jekyll build --config _config.yml,_config-sub.yml"
   },
   "devDependencies": {
-    "bootstrap-sass": "3.4.1",
+    "bootstrap": "^4.5.3",
+    "browser-sync": "^2.26.13",
     "cross-env": "^5.2.0",
     "del": "^3.0.0",
     "fluidbox": "2.0.5",
     "font-awesome": "4.7.0",
-    "gulp": "^4.0.0",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^2.6.5",
     "jquery": "^3.5.1",
     "lunr": "0.7.1",
-    "merge-stream": "1.0.1"
+    "merge-stream": "1.0.1",
+    "popper.js": "^1.16.1"
   }
 }

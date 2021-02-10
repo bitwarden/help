@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Autofill Identities and Cards
-categories: [features]
+categories: [miscellaneous]
 featured: true
 popular: false
 tags: [browser, autofill, auto-fill, identity, card, form fill]
@@ -9,7 +9,7 @@ tags: [browser, autofill, auto-fill, identity, card, form fill]
 
 Bitwarden can autofill more than just your usernames and passwords! It can make online purchases and account creations a breeze. If you're unfamiliar with what these item types are, refer to our [Managing Items][managing-items-doc] article.
 
-{% note %}The ability to autofill identities and cards is only available with the Bitwarden web browser extension at this time. Unfortunately, mobile platforms such as Android and iOS do not support these types of autofill functions.{% endnote %}
+{% callout info %}The ability to autofill identities and cards is only available with the Bitwarden web browser extension at this time. Unfortunately, mobile platforms such as Android and iOS do not support these types of autofill functions.{% endcallout %}
 
 ## Autofill an Identity
 
@@ -25,7 +25,7 @@ Bitwarden can autofill more than just your usernames and passwords! It can make 
 
 Identities and Cards can be hidden from view of the **Tab** section if your prefer them not be shown when opening the browser extension.
 
-{% note %}Hiding these items will disable their ability to be auto-filled.{% endnote %}
+{% callout info %}Hiding these items will disable their ability to be auto-filled.{% endcallout %}
 
 1. Open the Browser Extension
 2. Select the **Settings** tab.

@@ -1,10 +1,11 @@
 ---
 layout: article
-title: Who are Bitwarden's Subprocessors?
-categories: [miscellaneous]
+title: Bitwarden's Subprocessors
+categories: [security]
 featured: false
 popular: false
 tags: []
+order: 10
 ---
 
 Reference the table below for a list of Bitwarden's subprocessors.

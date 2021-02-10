@@ -1,35 +1,60 @@
 ---
 layout: article
-title: Import your data from Google Chrome
-categories: [getting-started]
+title: Import Data from Google Chrome
+categories: [import-export]
 featured: true
 popular: false
-tags: [import, chrome, opera, vivaldi]
+tags: [import, chrome, opera, vivaldi, edge]
+order: 04
 ---
 
-Importing your data from Google Chrome into Bitwarden is easy. 
+Use this article for help exporting data from Google Chrome and importing into Bitwarden.
 
-{% note %}
-You can only export passwords from the Chrome desktop application. It is not possible to export from the Chrome mobile app.
+{% callout info %}
+The steps in this article can also be used with the following browsers:
+- Opera
+- Microsoft Edge (Chromium)
+- Brave
+- Vivaldi
+{% endcallout %}
 
-The process is exactly the same for Opera and Vivaldi browser users.
-{% endnote %}
+## Export from Chrome
 
-## Export your Chrome passwords
+### From a Desktop
 
-1. Open Chrome and enter `chrome://settings/passwords` into the address bar and press enter. This will open a page with all your **Saved Passwords** for Chrome.
-2. Locate the **Export passwords** option at the top of the **Saved Passwords** list. It is hidden under the options icon (`...`) next to the **Saved Passwords** heading.
-3. Click the **Export passwords** option in the options menu. You may be prompted to enter your computer's password for authorization.
-4. You'll then be prompted to save your passwords to a [CSV][csv] file on your computer. Save this file to your desktop as `chrome_passwords.csv` (or whatever name you want to call it).
+Complete the following steps to export passwords from Chrome on your Desktop:
 
-## Import your passwords into Bitwarden
+1. Using the address bar, navigate to `chrome://settings/passwords`.
+2. Select the {% icon fa-ellipsis-v %} menu button in the Saved Passwords section, and select **Export passwords...** from the dropdown.
 
-1. Go to the [Bitwarden web vault][bitwarden-vault] and log in.
-2. Navigate to **Tools** &rarr; **Import Data**.
-3. Select **Chrome (csv)** as the file format and select your `chrome_passwords.csv` file from the desktop that you created in step 7 above.
-4. Click the **Import Data** button.
+   You may be prompted to enter your computer's password for authorization.
+3. Specify a location to save your export to, and select **comma-separated values** from the **Format:** field.
+4. Select **Save** to finish exporting from Chrome.
 
-Congratulations! You have just transferred all of your data from Google Chrome into Bitwarden.
+### From a Mobile Device
 
-[csv]: https://en.wikipedia.org/wiki/Comma-separated_values
-[bitwarden-vault]: https://vault.bitwarden.com
+Complete the following steps to export passwords from Chrome on your Mobile Device:
+
+1. Tap the {% icon fa-ellipsis-h %} menu button and tap **Settings**.
+2. Tap **Passwords**.
+3. Tap **Export Passwords**.
+
+   You may be prompted to enter your device PIN or a biometric for authorization.
+4. Specify a location to save your export to.
+
+## Import to Bitwarden
+
+Complete the following steps to import data to your Bitwarden personal Vault (for help importing to an Organization Vault, see [Import Items to an Organization]({% link _articles/organizations/import-to-org.md %})):
+
+1. Log in to the [Web Vault](https://vault.bitwarden.com){:target="\_blank"}.
+2. Select **Tools** from the top navigation bar.
+3. Select **Import Data** from the left Tools menu.
+4. Select **Chrome (csv)** from the format dropdown.
+5. Select the **Browse...** button and add the file exported from Chrome.
+6. Select the **Import Data** button to complete your import.
+
+{% callout warning %}
+Importing data multiple times will create duplicates.
+{% endcallout %}
+
+Congratulations! You have just transferred your data from Chrome into Bitwarden.

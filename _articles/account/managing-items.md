@@ -1,82 +1,93 @@
 ---
 layout: article
-title: Managing Items
+title: Vault Items
 categories: [account-management]
 featured: false
 popular: false
 tags: [account, items, import, delete, trash, clone]
+order: 03
 ---
 
-## Table of Contents
-- [About Managing Items](#about-managing-items)
-- [Adding items](#adding-items)
-- [Importing items](#importing-items)
-- [Troubleshooting Imports](#troubleshooting-imports)
-- [Import FAQs](#import-faqs)
-- [Cloning an item](#cloning-an-item)
-- [Deleting an item](#deleting-an-item)
-- [Items in the trash](#items-in-the-trash)
+Bitwarden can store 4 types of items in your Vault:
 
-## About Managing Items
+- [Logins](#logins)
+- [Cards](#cards)
+- [Identities](#identities)
+- [Secure Notes](#secure-notes)
 
-Managing the items in your vault is key to making sure that you secure, have access to, and can share the correct information with friends, family, teams, and colleagues.
+Effectively managing the items in your Vault is key to making sure that you secure and have seamless access to your information, and can safely share information with friends, family, teams, and colleagues.
 
-## Adding items
+## Add a Vault Item
 
-Adding items to your Bitwarden vault can be done manually or via import.
+You can add items to your Vault from the Bitwarden [Web Vault](https://vault.bitwarden.com){:target="\_blank"} or any client application. Look for a {% icon fa-plus %} **Add** icon to add an item to your Vault. There are 4 types of items you can add to your Vault.
 
-To manually add an item, once you’re in your vault - simply click or touch the “+” icon or “Add item” button.
+All item types can be given:
+- A **Name** that makes them easily identifiable to you inside your Vault.
+- **Notes** related to the item in a freeform text input.
+- **Custom Fields** for inputs like security questions or PINs (for more information, see [Custom Fields]({% link _articles/features/custom-fields.md %})).
 
-You’ll then be asked to provide details about the item.
+{% callout success %}
+You can also import items into your Vault from a variety of password management solutions. For more information, see [Import Data to your Vault]({% link _articles/importing/import-data.md %}).
+{% endcallout %}
 
-{% image /manage-items/add-item.png %}
+### Logins
 
-The type of item can be:
-- Login: A username/password combination usually, with support for custom fields, notes, and TOTP generation for premium and enterprise accounts.
-- Card: Saves payment card data that can be automatically filled.
-- Identity: Personal/Business information such as name and addresses, date of birth, and even notes.
-- Secure Note: Freeform text that will be stored completely encrypted in your vault.
+Refer to the following screenshot for help understanding all the values available for Login items:
 
-## Importing items
+{% image /manage-items/login-item.png Add a Login%}
 
-If you’re coming from another password manager or **just happen** to have your usernames and passwords in a spreadsheet, you can import them into Bitwarden
+### Cards
 
-You can find more details about importing items and supported import formats [here.](https://bitwarden.com/help/article/import-data/)
+Refer to the following screenshot for help understanding all the values available for Card items:
 
-### Import FAQs
+{% image /manage-items/card-item.png Add a Card%}
 
-- Why is my import file invalid?
-  - Check to make sure the file has content. Most of the time the exported file does not contain any data.
-- Why do I have duplicate entries?
-  - The Bitwarden import tool does not perform duplicate entry detection on import. If you run an import on an existing vault, or import multiple times, your data may be duplicated.
-- How do I clean up duplicates?
-  - We recommend exporting the data from your vault into a CSV/JSON file and performing a vault purge to delete your data.
-  {% warning %} Performing a vault purge is permanent and cannot be undone. Once the vault has been emptied and the CSV/JSON file has been pruned of any duplicates, simply re-import your data.{% endwarning %}
+### Identities
 
-## Cloning an item
+Refer to the following screenshot for help understanding all the values available for Identity items:
 
-If you wish to recreate an item (either to share with an organization or to simply make a copy of an item, you can now do so - provided you are the owner of the item - with a one-click operation. This copies the item completely and maintains all data.
+{% image /manage-items/identity-item.png Add an Identity %}
 
-Simply select clone under the item’s action menu:
+### Secure Notes
 
-{% image /manage-items/item-clone.png %}
+Refer to the following screenshot for help understanding all the values available for Secure Note items:
 
-{%note%}Note - when cloning an item in an organization vault, the user must view the vault from the organization, not the user’s personal vault {%endnote%}
+{% image /manage-items/note-item.png Add a Note%}
 
-## Deleting an item
+### Folders and Favorites
 
-Deleting an item can also be performed in the item’s action menu.
+Items in your personal Vault can be organized into Folders, or marked as Favorites. For more information, see [Folders]({% link _articles/features/folders.md %}) and [Favorites]({% link _articles/features/favorites.md %}).
 
-{% image /manage-items/item-delete.png %}
+## Delete a Vault Item
 
-Once the delete button is selected, you will be prompted to confirm the deletion.
+You can delete any Vault items directly from the [Web Vault](https://vault.bitwarden.com){:target="\_blank"} or from any client application:
 
-{% image /manage-items/item-trash-confirm.png %}
+- In the [Web Vault](https://vault.bitwarden.com){:target="\_blank"}, select **Delete** from the hover-over {% icon fa-cog %} **Gear** dropdown.
+- On Mobile Applications, open the item and tap **Delete** in the {% icon fa-ellipsis-v %} **Menu**.
+- On Desktop Applications and Browser Extensions, open the item and select the {% icon fa-trash %} **Delete** icon.
 
-Once confirmed, the item will be placed into the trash.
+Before an item is deleted, you will be prompted to confirm deletion. Once confirmed, the item will be placed into the Trash.
 
-## Items in the trash
+### Items in the Trash
 
-Once an item has been deleted and is in the trash, it will remain there for 30 days. You can alternatively navigate to the trash view in your vault and restore, or permanently delete the item immediately.
+Deleted items are sent to the Trash, where they remain for 30 days after deletion. Once 30 days have lapsed, the item will be permanently deleted and not recoverable.
 
-{% image /manage-items/item-trash-restore-delete.png %}
+In the Trash, you can **Restore** an item to your Vault or **Permanently Delete** it prior to the 30-day waiting period:
+
+{% image /manage-items/item-trash-restore-delete.png The Trash%}
+
+## Share a Vault Item
+
+If you're a member of an Organization, you can share a Vault item with the other members of your Organization. For more information, see [Share Items to a Collection]({% link _articles/organizations/share-to-a-collection.md %}).
+
+## Clone a Vault Item
+
+You can clone any Vault item that you have **Ownership** of, if you wish to create a duplicate of the item.
+
+- In the [Web Vault](https://vault.bitwarden.com){:target="\_blank"}, select **Clone** from the hover-over {% icon fa-cog %} **Gear** dropdown.
+- On Mobile Applications, open the item and tap **Clone** in the {% icon fa-ellipsis-v %} **Menu**.
+- On Desktop Applications and Browser Extensions, open the item and select the {% icon fa-copy %} **Clone Item** option.
+
+{% callout info %}
+To clone an item within an Organization, you must clone it from the Organization Vault view, not the Personal Vault view.
+{% endcallout %}

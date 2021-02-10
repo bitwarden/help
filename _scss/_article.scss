@@ -1,0 +1,119 @@
+.article-header {
+    border-bottom: 1px solid $border-color;
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    font-weight: normal;
+
+    i {
+        margin-right: 10px;
+    }
+}
+
+.article-breadcrumb {
+    align-items: center;
+
+    .badge {
+        margin-left: 0.25rem;
+    }
+}
+
+.article-card.card {
+    margin-bottom: 1.5rem;
+
+    .card-body {
+        >*:first-child,
+        >*:nth-child(2) {
+            margin-top: 0;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin-top: 25px;
+        }
+    }
+
+    .header-link {
+        color: $text-muted;
+        font-size: $h3-font-size;
+        text-decoration: none;
+        opacity: 0;
+        margin-left: 5px;
+    }
+
+    h2:hover > .header-link,
+    h3:hover > .header-link {
+        opacity: .5;
+        -webkit-transition: color .16s linear;
+        transition: color .16s linear;
+
+        &:hover,
+        &:focus {
+            opacity: 1;
+        }
+    }
+
+    ol {
+        counter-reset: li;
+        list-style: none;
+        padding-left: 0;
+
+        > li {
+            padding: 0.5rem 0 0.5rem 2.5rem;
+            position: relative;
+            margin-bottom: 0.5rem;
+
+            &:before {
+                content: counter(li);
+                counter-increment: li;
+                color: $gray-600;
+                font-size: 1.25rem;
+                font-weight: bold;
+                border-right: 1px solid $border-color;
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 1.5rem;
+                padding: 0 10px 0 0;
+            }
+        }
+    }
+
+    .bd-toc {
+        margin-bottom: 25px;
+
+        strong {
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+            padding: 0;
+        }
+
+        .toc-entry {
+            a {
+                color: $link-color;
+                padding: .125rem 0;
+
+                &:hover {
+                    color: $link-hover-color;
+                    text-decoration: underline;
+                }
+            }
+
+            &.toc-h3 {
+                padding-left: 1rem;
+            }
+        }
+    }
+}
+
+.search-results {
+    small.text-muted {
+        margin-left: 0.5rem;
+    }
+}

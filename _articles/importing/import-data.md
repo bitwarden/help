@@ -1,23 +1,68 @@
 ---
 layout: article
-title: Import your data from another application
-categories: [getting-started]
+title: Import Data to your Vault
+categories: [import-export]
 featured: true
 popular: true
 tags: [import]
+order: 01
 ---
 
-You can very easily import your data from an array of different password manager applications. Bitwarden supports importing data into your individual account from the following sources:
+Bitwarden provides a data import tool for easy migration from any password management solution to your personal Vault or Organization Vault (see [Import Data to an Organization]({% link _articles/organizations/import-to-org.md %})).
 
-- Bitwarden (json)
-- Bitwarden (csv)
+You can also use the data import tool to import from one Bitwarden Vault to another, or to import a backup [Encrypted Export]({% link _articles/importing/encrypted-export.md %}).
+
+Bitwarden supports a large array of formats for import, including those used by the most popular password management solutions:
+
+- [Import from LastPass]({% link _articles/importing/import-from-lastpass.md %})
+- [Import from 1Password]({% link _articles/importing/import-from-1password.md %})
+- [Import from Firefox]({% link _articles/importing/import-from-firefox.md %})
+- [Import from Google Chrome]({% link _articles/importing/import-from-chrome.md %})
+
+For a full list of supported formats, see [Supported Formats](#supported-formats).
+
+## Import to your Personal Vault
+
+To import your data into a personal Vault:
+
+1. Log in to the [Web Vault](https://vault.bitwarden.com){:target="\_blank"}.
+2. Select **Tools** from the top navigation bar.
+3. Select **Import Data** from the left Tools menu.
+4. Select the format of your file to import from the dropdown menu.
+
+   {% callout success%}If you're importing an [Encrypted Export]({% link _articles/importing/encrypted-export.md %}), select `.json` as you would if it were plaintext. A handler will determine that the file is encrypted and decrypt using your [account encryption key](https://bitwarden.com/help/article//change-your-master-password/#rotating-your-accounts-encryption-key).{% endcallout %}
+5. Select the **Browse** button and add your file.
+6. Select the **Import Data** button to complete your import.
+
+{% callout warning %}
+Importing data multiple times will create duplicates.
+{% endcallout %}
+
+## Troubleshooting Import Errors
+
+If you get the following error:
+
+`Ciphers[X].Login: The field yyyy exceeds the maximum encrypted value length of zzzz characters.`
+
+An item in your `.csv` exceeds the size limited allowed for items stored in the Bitwarden Vault. Remove the offending item from your file for import, or reduce its size. You can open the `.csv` in a text editor or spreadsheet program for easy editing, and locate the offending item at `index[X]` as referenced in the error message.
+
+## Supported Formats
+
+The following formats are supported out-of-the-box:
+
+{% callout info %}
+If your format is not listed below, manually [condition a Bitwarden .csv or .json]({% link _articles/importing/condition-bitwarden-import.md %}).
+{% endcallout %}
+
 - [1Password (1pif)]({% link _articles/importing/import-from-1password.md %})
-- [1Password 6 &amp; 7 Windows (csv)]({% link _articles/importing/import-from-1password.md %})
+- [1Password 6 &amp; 7 Windows (.sv)]({% link _articles/importing/import-from-1password.md %})
+- [1Password 6 &amp; 7 Mac (csv)]({% link _articles/importing/import-from-1password.md %})
 - Ascendo DataVault (csv)
 - Avast Passwords (csv)
 - Avira (json)
 - BlackBerry Password Keeper (csv)
 - Blur (csv)
+- [Brave (csv)]({% link _articles/importing/import-from-chrome.md %})
 - [Chrome (csv)]({% link _articles/importing/import-from-chrome.md %})
 - Clipperz (html)
 - Codebook (csv)
@@ -37,6 +82,7 @@ You can very easily import your data from an array of different password manager
 - Meldium (csv)
 - mSecure (csv)
 - Myki (csv)
+- [Microsoft Edge (Chromium) (csv)]({% link _articles/importing/import-from-chrome.md %})
 - [Opera (csv)]({% link _articles/importing/import-from-chrome.md %})
 - Padlock (csv)
 - Passbolt (csv)
@@ -58,64 +104,5 @@ You can very easily import your data from an array of different password manager
 - True Key (csv)
 - Universal Password Manager (csv)
 - [Vivaldi (csv)]({% link _articles/importing/import-from-chrome.md %})
+- Yoti (csv)
 - Zoho Vault (csv)
-
-**Personal Accounts**
-
-To import your data, log into the web vault at <https://vault.bitwarden.com> and navigate to **Tools** &rarr; **Import Data**. Instructions for importing from each source are available after selecting the desired file format from the dropdown menu.
-
-**Organization Accounts**
-
-You can also import data directly into an organization account for sharing. To import your data, log into the web vault at <https://vault.bitwarden.com> and navigate to your organization admin area. Then navigate to **Tools** &rarr; **Import Data**. Instructions for importing from each source are available after selecting the desired file format from the dropdown menu.
-
-## Generic CSV Format (individual account)
-
-You can manually condition a [CSV](https://en.wikipedia.org/wiki/Comma-separated_values) file for your individual account import using the generic Bitwarden format. Create a UTF-8 encoded plaintext file with the following format:
-
-```
-folder,favorite,type,name,notes,fields,login_uri,login_username,login_password,login_totp
-```
-
-The above header must be the first line in the file. An example file may look like the following:
-
-```
-folder,favorite,type,name,notes,fields,login_uri,login_username,login_password,login_totp
-Social,1,login,Twitter,,,twitter.com,me@example.com,password123,
-,,login,EVGA,,,https://www.evga.com/support/login.asp,hello@bitwarden.com,fakepassword,TOTPSEED123
-,,login,My Bank,Bank PIN is 1234,"PIN: 1234",https://www.wellsfargo.com/home.jhtml,john.smith,password123456,
-,,note,My Note,"This is a secure note.",,,,,
-```
-
-[{% icon fa-download %} Download example]({{site.baseurl}}/files/bitwarden_export.csv)
-
-When importing from this format, select the **Bitwarden (csv)** file format option from the dropdown menu.
-
-## Generic CSV Format (organization account)
-
-You can manually condition a [CSV](https://en.wikipedia.org/wiki/Comma-separated_values) file for your organization account import using the generic Bitwarden format. The format is almost the same as the individual account format above, however, organizations have "collections" instead of a "folder" and no "favorite". Create a UTF-8 encoded plaintext file with the following format:
-
-```
-collections,type,name,notes,fields,login_uri,login_username,login_password,login_totp
-```
-
-The above header must be the first line in the file. An example file may look like the following:
-
-```
-collections,type,name,notes,fields,login_uri,login_username,login_password,login_totp
-"Social,Marketing",login,Twitter,,,twitter.com,me@example.com,password123,
-"Finance",login,My Bank,Bank PIN is 1234,"PIN: 1234",https://www.wellsfargo.com/home.jhtml,john.smith,password123456,
-,login,EVGA,,,https://www.evga.com/support/login.asp,hello@bitwarden.com,fakepassword,TOTPSEED123
-,note,My Note,"This is a secure note.",,,,,
-```
-
-[{% icon fa-download %} Download example]({{site.baseurl}}/files/bitwarden_export_org.csv)
-
-When importing from this format, select the **Bitwarden (csv)** file format option from the dropdown menu.
-
-## Troubleshooting Import Errors
-
-<u>Ciphers[<b>X</b>].Login: The field <b>yyyy</b> exceeds the maximum encrypted value length of <b>zzzz</b> characters.</u>
-
-This error occurs whenever an item in your exported file has a large amount of data associated with it, which exceeds the limits allowed for items stored in your Bitwarden vault. You will need to correct this data by removing it, or reducing its size so that the Bitwarden importer will succeed.
-
-You can open the exported file in a text editor or spreadsheet program (such as Excel) to locate it. The offending item can be found at index **X** (as referenced in the error message) in the file. Once you have located the offending item, remove it or update its data, then resave and try the import operation with Bitwarden again.

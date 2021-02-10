@@ -1,0 +1,19 @@
+<header class="search-header pt-3 pb-4">
+    <div class="container">
+        <form action="{{site.baseurl}}/search/" method="get">
+            <div class="input-group input-group-lg">
+                <input type="search" class="form-control" placeholder="Search the help center..." id="search-box" name="q">
+                <button class="btn btn-light" type="submit" onclick="gaEvent('Search')">
+                    <i class="fa fa-search"></i>
+                    <span class="sr-only">Search</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</header>
+<nav class="search-navbar navbar navbar-light bg-light">
+    <a class="search-sidebar-toggle d-block d-md-none py-2 px-3" type="button" data-toggle="collapse" data-target="#bd-docs-nav" aria-controls="menu" aria-expanded="false" aria-label="Toggle sidebar">
+        Contents
+        <i class="fa fa-chevron-down ml-1"></i>
+    </a>
+</nav>

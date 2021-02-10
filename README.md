@@ -20,6 +20,21 @@ Run the following commands:
 
 You can now access the help center at `http://localhost:4009`.
 
+# Ruby Gems
+
+## Jekyll Redirect From
+
+To use [jekyll-redirect-from](https://github.com/jekyll/jekyll-redirect-from) add `redirect_from` to the YAML front-matter of your page or post. For example:
+
+```
+---
+title: 10 Tips to Choosing a Password Manager for Your Team
+layout: post
+author: Gary Orenstein
+redirect_from: /blog/10-tips-choosing-password-manager-for-teams/
+---
+```
+
 # Contribute
 
 Article contributions are welcome! Please commit any pull requests against the `master` branch.

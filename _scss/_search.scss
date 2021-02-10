@@ -1,0 +1,38 @@
+.search-header {
+    background: $primary;
+    color: #fff;
+
+    .input-group {
+        .form-control {
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+
+        .btn.btn-light {
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+    }
+}
+
+.search-navbar {
+    padding: 0;
+}
+
+.search-sidebar-toggle {
+    align-items: center;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+
+    &:hover {
+        background: $gray-300;
+        text-decoration: none;
+    }
+
+    &[aria-expanded="true"] {
+        .fa-chevron-down {
+            transform: rotate(180deg);
+        }
+    }
+}

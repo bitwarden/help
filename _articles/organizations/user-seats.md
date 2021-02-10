@@ -1,26 +1,31 @@
 ---
 layout: article
-title: User Seat Management for your Organization
+title: Add or Remove User Seats
 categories: [organizations]
 featured: true
 popular: false
 tags: []
+order: 10
 ---
+
+This article will guide you through the process of adding or removing user seats from your Bitwarden Teams or Enterprise Organization.
 
 ## Add User Seats
 
-You can add user seats at any time by logging into the **Web Vault** (https://vault.bitwarden.com) and going to **Settings** &rarr; **Organizations** &rarr; {YOUR ORG NAME} &rarr; {% icon fa-cog %} **Settings** sub-tab &rarr; **Subscription**. There you can locate the **User Seats** section and select the **Add Seats** button.
+Complete the following steps to add user seats to your Organization:
 
-{% note %}
-The cost will be automatically prorated and debited based on the billing cycle.
-{% endnote %}
+1. Login to your [Web Vault](https://vault.bitwarden.com){:target="\_blank"} and open your Organization.
+2. In your Organization, open the **Settings** tab and select **Subscription** from the left menu.
+3. In the **User Seats** section, select the **Add Seats** button.
 
-{% image organizations/user-seats.png %}
+Adding user seats will result in adjustments to your billing totals and immediately charge your payment method on file. The first charge will be prorated for the remainder of the current billing cycle.
 
 ## Remove User Seats
 
-You can remove user seats at any time by logging into the **Web Vault** (https://vault.bitwarden.com) and going to **Settings** &rarr; **Organizations** &rarr; {YOUR ORG NAME} &rarr; {% icon fa-cog %} **Settings** sub-tab &rarr; **Subscription**. There you can locate the **User Seats** section and select the **Remove Seats** button.
+Complete the following steps to remove user seats from your Organization:
 
-{% note %}
-A credit for any unused time will be automatically issued to the account balance.
-{% endnote %}
+1. Login to your [Web Vault](https://vault.bitwarden.com){:target="\_blank"} and open your Organization.
+2. In your Organization, open the **Settings** tab and select **Subscription** from the left menu.
+3. In the **User Seats** section, select the **Remove Seats** button.
+
+Removing user seats will result in adjustments to your billing totals that will be prorated as credits toward your next billing charge.

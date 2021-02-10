@@ -5,108 +5,102 @@ categories: [organizations]
 featured: true
 popular: false
 hidden: false
-tags: [organizations, policies, access control, enterprise]
+tags: [organizations, enterprise, policies]
+order: 14
 ---
-## Table of contents
-
-- [What are Organizations?](#what-are-organizations)
-- [What are Enterprise Policies?](#what-are-enterprise-policies)
-- [Available Policies](#available-policies)
-  * [Two-Step Login](#two-step-login)
-    + [Setting the Policy](#setting-the-policy)
-  * [Password Generator](#password-generator)
-    + [Generator Options](#generator-options)
-    + [Setting the Policy](#setting-the-policy-1)
-  * [Master Password](#master-password)
-    + [Setting the Policy](#setting-the-policy-2)
-
-## What are Organizations?
-
-A Bitwarden organization is an entity that relates users together that want to share items. An organization could be a family, team, company, or any other type of group that desires to share items in Bitwarden.
-
-An individual user account can create and/or belong to many different organizations, allowing you to manage your items from a single account.
-
-You can create a new Bitwarden organization from the web vault or request that an admin of an existing organization send you an invite.
 
 ## What are Enterprise Policies?
 
-Bitwarden client applications have many settings for users to customize their environments. When users are members of an Enterprise Organization such as a company, the Company may want all users to maintain certain settings such as two-factor authentication and password parameters.
+Enterprise Polices enable Enterprise Organizations to enforce security rules for all users, for example mandating use of Two-step Login.
 
-Enterprise Policies allow owners or administrators of an organization to set and enforce parameters for all members of their organization.
+Enterprise Policies can be set by users with the User Type **Admin** or **Owner**.
+
+{% callout warning %}
+Bitwarden highly recommends setting Enterprise Policies prior to inviting users to your Organization. Some Policies will remove non-compliant users on enabling, and some are not retroactively enforceable.
+{% endcallout %}
+
+## Setting Enterprise Policies
+
+Policies can be set in two locations:
+
+- In your Organization, open the **Manage** tab and select **Policies** from the left menu.
+- Navigate to the Business Portal, and select the **Policies** button. For more information, see [About the Business Portal](https://bitwarden.com/help/article/about-business-portal/).
 
 ## Available Policies
 
-Bitwarden currently supports the following Organization Policies
-- Two-step Login
-- Password Generator
-- Master Password
+### Two-Step Login
 
-{% image policies/policies-enable.png %}
+Enabling the **Two-step Login** policy will require non-Owner/non-Admin users to use any two-step login method to access their Vaults.
 
-## Two-Step Login
+{% callout warning %}
+**Users in the Organization who do not have two-step login enabled will be removed from the Organization when you enable this policy.**
 
-When this policy is set, members will need to have two-step login configured on their user account in order to join the organization.
+Users who are removed as a result of this policy will be notified via email, and must be re-invited to the Organization.
+- Existing users will not be able to accept the invitation until two-step login is enabled for their Vault.
+- New users will be automatically setup with email-based two-step login, but can change this at any time.
+{% endcallout %}
 
-{% image policies/policies-two-step.png %}
+### Master Password
 
-### Setting the Policy
+Enabling the **Master Password** policy will enforce a configurable set of minimum requirements for users' Master Password strength. Organizations can enforce:
+- Minimum Master Password complexity
+- Minimum Master Password length
+- Types of characters required
 
-Ideally, this policy is set before any users are invited to join an organization. The following events will occur when an Organization enabled the two-step policy for the first time:
+Password complexity is calculated on a scale from 0 (Weak) to 4 (Strong). Bitwarden calculates password complexity using [the zxcvbn library](https://github.com/dropbox/zxcvbn).
 
-- The administrator will receive a warning that Organization members, in confirmed status, who don’t have two-step for their account will be removed from the organization and will receive an email notifying them about the change.
-- If the administrator proceeds to enable the two-step login policy Confirmed members of the organization who do not have two-step login enabled will lose access to the organization. 
-- Members who lose access to an organization will receive an email informing them of such. 
- - Once the user enables two-step login on their account they can then be re-join to the organization through a new invite.
- - Newly invited members will not be able to accept their invitation to the organization until they enabled two-step login on their user account. 
-- If a newly invited member currently has a Bitwarden account using the invited email address, they will be notified and must enable two-step login before accepting their invitation.
- - If a newly invited member does not have an account, they will default to using email-based two-step login but will be able to change this configuration at any time.
-- If a member of the organization later disables two-step login on their account, they will be removed from the organization.
+{% callout warning %}
+Existing non-compliant users **will not** have their Master Passwords changed when this policy is enabled, nor will they be removed from the Organization. The next time this group of users changes their Master Password, this policy will be enforced.
+{% endcallout %}
 
-## Password Generator
+### Password Generator
 
-When this policy is set, administrators can choose and permanently set the parameters within the Bitwarden Password Generator.
+Enabling the **Password Generator** policy will enforce a configurable set of minimum requirements for any user-generated passwords. Organizations can enforce:
+- Password , Passphrase, or User Preference
 
-The Bitwarden Password Generator offers options for password and passphrase generation.
+**For Passwords:**
+- Minimum Password Length
+- Minimum Number (0-9) count
+- Minimum Special Character (!@#$%^&*) count
+- Types of characters required
 
-### Generator Options
-
-**Default type**
-- User defined
-- Password
-- Passphrase
-
-**Password options:**
-- Length
-- Minimum Numbers
-- Minimum Special
-- Uppercase letters
-- Lowercase letters
-- Numbers
-- Symbols/Special
-
-**Passphrase Options:**
+**For Passphrases:**
 - Minimum number of words
-- Capitalization
-- Include Number
+- Whether to capitalize
+- Whether to include numbers
 
-{% image policies/policies-password-generator.png %}
+{% callout warning %}
+Existing non-compliant passwords **will not** be changed when this policy is enabled, nor will the items be removed from the Organization. When changing or generating a password after this policy is enabled, configured policy rules will be enforced.
 
-### Setting the Policy
+A banner is displayed to users on the Password Generator screen indicating that a policy will affect their generator settings.
+{% endcallout %}
 
-Ideally, this policy is set before any users are invited to join an organization.
+### Single Organization
 
-If the policy is set after users have joined the organization, prior generated passwords that may be outside the enforced parameters of the policy will remain in place. Any new passwords using the Password Generator will conform with the policy.
+Enabling the **Single Organization** policy will restrict non-Owner/non-Admin members of your Organization from being able to join other Organizations, or from creating other Organizations.
 
-If the user is affected by the policy, we will show a banner on the Bitwarden Password Generator informing them as such.
+{% callout warning %}
+**Users in the Organization who are members of multiple Organizations will be removed from the Organization when you enable this policy.**
 
-## Master Password
+Users who are removed as a result of this policy will be notified via email, and must be re-invited to the Organization. Users will not be able to be confirmed to the Organization until they have removed themselves from all other Organizations.
+{% endcallout %}
 
-When this policy is set, organization administrators can choose and permanently set the complexity required for a user’s Master Password. Password complexity is calculated using the [zxcvbn](https://github.com/dropbox/zxcvbn) library on a scale from 0 to 4, with 4 being the most complex.
+### Single Sign-On Authentication
 
-{% image policies/policies-master-password.png %}
+Enabling the **Single Sign-On Authentication** policy will require non-Owner/non-Admin users to log in with Enterprise Single Sign-On. For more information, see [Access Your Vault using SSO](https://bitwarden.com/help/article/sso-access-your-vault/).
 
-### Setting the Policy
+{% callout info %}
+The **Single Organization** policy must be enabled before activating this policy.
 
-Ideally, this policy is set before any users are invited to join an organization.
+As a result, you must disable the **Single Sign-On Authentication** policy before you can disable the **Single Ownership** policy.
+{% endcallout %}
 
-If users have already joined an organization or already have a Bitwarden account, their master password - regardless of complexity - will remain in place unless it is changed, at which point it will need to conform with the policy.
+### Personal Ownership
+
+Enabling the **Personal Ownership** policy will require non-Owner/non-Admin users to save Vault Items to an Organization by disabling personal ownership of Vault items for organization users.
+
+A banner is displayed to users on the Add Item screen indicating that a policy will affect their membership options.
+
+{% callout info %}
+Vault Items that were created prior to the implementation of this policy or prior to joining the Organization will remain in the user's personal Vault.
+{% endcallout %}
