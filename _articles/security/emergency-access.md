@@ -25,7 +25,7 @@ Emergency Access uses public key exchange and encryption/decryption to allow use
 2. Grantee is notified of invitation via email and [accepts the invitation](#accept-an-invitation) to become a trusted emergency contact. On acceptance, the grantee's public key is stored with the invite.
 3. Grantor is notified of acceptance via email and [confirms the grantee](#confirm-an-accepted-invitation) as their trusted emergency contact. On confirmation, the grantor's Master Key is encrypted using the grantee's public key and stored once encrypted. Grantee is notified of confirmation.
 4. An emergency occurs, resulting in grantee requiring access to grantor's Vault. Grantee [submits a request for emergency access](#initiate-emergency-access).
-5. Grantor is notified of request via email. The grantor may [manually approve the request](#manually-approve-emergency-access) at any time, otherwise the request is bound by a grantor-specified wait time. When the request is approved or the wait time lapses, the public-key-encrypted Master Key is delivered to grantee for decryption with grantee's private key.
+5. Grantor is notified of request via email. The grantor may [manually approve the request](#approve-or-reject-emergency-access) at any time, otherwise the request is bound by a grantor-specified wait time. When the request is approved or the wait time lapses, the public-key-encrypted Master Key is delivered to grantee for decryption with grantee's private key.
 
 4. Depending on the specified [user access level](#user-access), the grantee will either:
    - Obtain view/read access to items in the grantor's Vault (**View**).
@@ -35,18 +35,20 @@ Emergency Access uses public key exchange and encryption/decryption to allow use
 
 Emergency Access relies on public key exchange within Bitwarden, therefore trusted emergency contacts must be existing Bitwarden users, or will be prompted to create a Bitwarden account before they can accept an invitation. Trusted emergency contacts do not need to have Premium to be designated as such.
 
+A user's status as a trusted emergency contact is tied to a unique Bitwarden account ID, meaning that if a grantee [changes their email address]({% link _articles/faqs/product-faqs.md %}) there is no reconfiguration required to maintain their emergency access. If a grantee creates a **new Bitwarden account** and [deletes]({% link _articles/account/delete-your-account.md %}) the old account which had been specified as a trusted emergency contact, they will automatically be removed from the grantor's list and must be [re-invited](#invite-a-trusted-emergency-contact).
+
 There is no limit to the number of trusted emergency contacts a user can have.
 
-{% callout note %}
-A user's status as a trusted emergency contact is tied to a unique Bitwarden account ID, meaning that if a grantee [changes their email address]({% link _articles/faqs/product-faqs.md %}) there is no reconfiguration required to maintain their emergency access.
-
-If a grantee creates a **new Bitwarden account** and [deletes]({% link _articles/account/delete-your-account.md %}) the old account which had been specified as a trusted emergency contact, they will automatically be removed from the grantor's list and must be [re-invited](#invite-a-trusted-emergency-contact).
+{% callout success %}
+As a grantor, you can [reject](#approve-or-reject-emergency-access) an emergency access request at any time before the configured wait time lapses.
 {% endcallout %}
 
 ### User Access
 
 Trusted emergency contacts can be granted one of the following user access levels:
-- **View**: When an emergency access request is granted, this user is granted view/read access to all items in your personal Vault. As the grantor, you may revoke access to a grantee with **View** access at any time.
+- **View**: When an emergency access request is granted, this user is granted view/read access to all items in your personal Vault.
+
+   {% callout success %}As the grantor, you may revoke access to a grantee with **View** access at any time.{% endcallout %}
 
 - **Takeover**: When an emergency access request is granted, this user can create a Master Password for permanent read/write access to your Vault (this will **replace** your previous Master Password). Takeover disables any [Two-step Login Methods]({% link _articles/two-step-login/setup-two-step-login.md %}) enabled for the account.
 
@@ -110,18 +112,17 @@ As a grantee, complete the following steps to initiate an emergency access reque
 5. In the Request Access window, select the **Request Access** button.
 
    {% image /features/emergency-access/ea-request.png Request Access%}
-   You will be provided access to the grantor's Vault after the configured Wait Time, or when the grantor [manually approves](#manually-approve-emergency-access) the emergency access request.
+   You will be provided access to the grantor's Vault after the configured Wait Time, or when the grantor [manually approves](#approve-or-reject-emergency-access) the emergency access request.
 
-### Manually Approve Emergency Access
+### Approve or Reject Emergency Access
 
-As a grantor, you may manually approve an emergency access request as an alternative to the configured Wait Time. Complete the following steps to manually approve emergency access:
+As a grantor, you may manually approve or reject an emergency access request before the configured wait time lapses. Complete the following steps to approve or reject emergency access:
 
 1. Log in to the [Web Vault](https://vault.bitwarden.com){:target="\_blank"}.
 2. Select **Settings** from the top navigation bar.
 3. Select **Emergency Access** from the left-hand Settings menu.
 4. Hovering over the user with the `Emergency Access Initiated` status card, select the gear icon.
-5. From the gear dropdown, select **Approve**.
-6. In the confirmation dialog box, select **Approve**.
+5. From the gear dropdown, select **Approve** or **Reject**.
 
 ### Access Grantor's Vault
 
