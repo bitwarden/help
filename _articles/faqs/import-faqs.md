@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Import &amp; Export FAQs
+title: Import & Export FAQs
 categories: [import-export]
 featured: true
 popular: false
