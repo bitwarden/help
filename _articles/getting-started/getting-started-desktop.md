@@ -35,7 +35,9 @@ Bitwarden's Desktop App is available for Windows, macOS, and Linux. For help get
 <div class="tab-content" id="clientsContent">
   <div class="tab-pane show active" id="windows" role="tabpanel" aria-labelledby="wintab">
 {% capture winfo %}
-## Get Organized with Favorites and Folders
+## Bitwarden on Windows
+
+### Get Organized with Favorites and Folders
 
 Organizing your Vault into **Favorites** and **Folders** makes filtering your Vault a breeze.
 
@@ -53,7 +55,7 @@ Organizing your Vault into **Favorites** and **Folders** makes filtering your Va
 
 For more information, see [Folders]({% link _articles/features/folders.md %}) and [Favorites]({% link _articles/features/favorites.md %}).
 
-## Create New Logins
+### Create New Logins
 
 You can create new Logins, Cards, Identities, and Secure Notes directly from your Desktop App.
 
@@ -66,7 +68,7 @@ You can create new Logins, Cards, Identities, and Secure Notes directly from you
 
 You can go back and edit this item at any time using the {% icon fa-pencil %} **Edit** icon in the Item Information panel.
 
-## Unlock with Biometrics
+### Unlock with Biometrics
 
 Biometric Unlock allows for seamless access to your Windows Desktop App using [Windows Hello](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/windows-hello){:target="\_blank"} with PIN, Facial Recognition, or [other hardware that meets Windows Hello biometric requirements](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/windows-hello-biometric-requirements){:target="\_blank"}.
 
@@ -85,7 +87,7 @@ Once enabled, a new button will be presented on the Unlock screen. Selecting **U
 
 {% image /biometrics/hello-unlock.png Unlock with Windows Hello %}
 
-## Start Bitwarden Automatically
+### Start Bitwarden Automatically
 
 Starting Bitwarden automatically when you login to your desktop can help make sure your credentials are always at your fingertips.
 
@@ -99,8 +101,9 @@ Next time you login to your desktop, the Bitwarden App will automatically open.
   </div>
   <div class="tab-pane" id="macos" role="tabpanel" aria-labelledby="mactab">
 {% capture minfo %}
+## Bitwarden on macOS
 
-## Get Organized with Favorites and Folders
+### Get Organized with Favorites and Folders
 
 Organizing your Vault into **Favorites** and **Folders** makes filtering your Vault a breeze.
 
@@ -118,7 +121,7 @@ Organizing your Vault into **Favorites** and **Folders** makes filtering your Va
 
 For more information, see [Folders]({% link _articles/features/folders.md %}) and [Favorites]({% link _articles/features/favorites.md %}).
 
-## Create New Logins
+### Create New Logins
 
 You can create new Logins, Cards, Identities, and Secure Notes directly from your Desktop App.
 
@@ -131,7 +134,7 @@ You can create new Logins, Cards, Identities, and Secure Notes directly from you
 
 You can go back and edit this item at any time using the {% icon fa-pencil %} **Edit** icon in the Item Information panel.
 
-## Unlock with Biometrics
+### Unlock with Biometrics
 
 Biometric Unlock allows for seamless access to your macOS Desktop App using native [Touch ID](https://support.apple.com/en-us/HT207054){:target="\_blank"} technology.
 
@@ -150,7 +153,7 @@ Once enabled, a new button will be presented on the Unlock screen. Selecting **U
 
 {% image /getting-started/macos-bio2.png Unlock with Touch ID %}
 
-## Start Bitwarden Automatically
+### Start Bitwarden Automatically
 
 Starting Bitwarden automatically when you login to your desktop can help make sure your credentials are always at your fingertips.
 
@@ -164,7 +167,9 @@ Next time you login to your desktop, the Bitwarden App will automatically open.
   </div>
   <div class="tab-pane" id="linux" role="tabpanel" aria-labelledby="lintab">
 {% capture linfo %}
-## Get Organized with Favorites and Folders
+## Bitwarden on Linux
+
+### Get Organized with Favorites and Folders
 
 Organizing your Vault into **Favorites** and **Folders** makes filtering your Vault a breeze.
 
@@ -182,7 +187,7 @@ Organizing your Vault into **Favorites** and **Folders** makes filtering your Va
 
 For more information, see [Folders]({% link _articles/features/folders.md %}) and [Favorites]({% link _articles/features/favorites.md %}).
 
-## Create New Logins
+### Create New Logins
 
 You can create new Logins, Cards, Identities, and Secure Notes directly from your Desktop App.
 
@@ -195,7 +200,7 @@ You can create new Logins, Cards, Identities, and Secure Notes directly from you
 
 You can go back and edit this item at any time using the {% icon fa-pencil %} **Edit** icon in the Item Information panel.
 
-## Start Bitwarden Automatically
+### Start Bitwarden Automatically
 
 Starting Bitwarden automatically when you login to your desktop can help make sure your credentials are always at your fingertips.
 

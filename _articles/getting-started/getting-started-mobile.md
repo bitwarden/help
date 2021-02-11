@@ -30,13 +30,15 @@ Bitwarden's Mobile App is available for iOS and Android. For help getting starte
 <div class="tab-content" id="clientsContent">
   <div class="tab-pane show active" id="android" role="tabpanel" aria-labelledby="andtab">
 {% capture and_gs %}
-## Explore your Vault
+## Bitwarden on Android
+
+### Explore your Vault
 
 When you log in to Bitwarden on your Android device, you'll land on the {% icon fa-lock %} **My Vault** tab. From this tab, you can browse all items in your Bitwarden Vault.
 
 When you **Favorite** an item, it'll appear at the top of your Vault for easy access. Items are also sorted into **Types** (*Login*, *Card*, *Identity*, or *Secure Note*) and **Folders**. If you're a member of an Organization, **Collections** will also appear here.
 
-## Get Organized with Favorites and Folders
+### Get Organized with Favorites and Folders
 
 Organizing your Vault into **Favorites** and **Folders** makes navigating your Vault a breeze.
 
@@ -56,7 +58,7 @@ Organizing your Vault into **Favorites** and **Folders** makes navigating your V
 
 For more information, see [Folders]({% link _articles/features/folders.md %}) and [Favorites]({% link _articles/features/favorites.md %}).
 
-## Create New Logins
+### Create New Logins
 
 You can create new Logins, Cards, Identities, and Secure Notes directly from any Android device.
 
@@ -71,7 +73,7 @@ Go back and edit this item at any time by opening it and tapping the {% icon fa-
 
 Send an item to the **Trash** by opening it, tapping the menu ( {% icon fa-ellipsis-v %} ), and tapping **Delete**. Items in the Trash will remain there for 30 days before being permanently deleted.
 
-## Setup Auto-Fill
+### Setup Auto-Fill
 
 Setup Auto-fill to automatically enter logins from your Android device to a Web Browser (like Chrome) or other app.
 
@@ -82,7 +84,7 @@ Setup Auto-fill to automatically enter logins from your Android device to a Web 
 
    Once toggled, you might be required to change some Android-native settings, depending on your available or enabled Auto-fill options. For more information, see [Auto-fill logins on Android]({% link _articles/features/auto-fill-android.md %}).
 
-## Unlock with Biometrics
+### Unlock with Biometrics
 
 Unlocking Bitwarden with biometrics allows for seamless access to your Vault. If you haven't setup [fingerprint unlock](https://support.google.com/nexus/answer/6285273?hl=en) or [face unlock](https://support.google.com/pixelphone/answer/9517039?hl=en) on your Android device, you'll need to do that first from the Android {% icon fa-cog %} **Settings** app.
 
@@ -94,7 +96,7 @@ Unlocking Bitwarden with biometrics allows for seamless access to your Vault. If
 
 Once Enabled, you'll be able to open your Bitwarden app or Auto-fill logins using just your biometric method of choice.
 
-## Login Using Auto-fill
+### Login Using Auto-fill
 
 Once you've setup [Auto-fill](#setup-auto-fill) and [Biometrics](#unlock-with-biometrics), logging into an app or website using Bitwarden is simple.
 
@@ -107,7 +109,7 @@ Once you've setup [Auto-fill](#setup-auto-fill) and [Biometrics](#unlock-with-bi
 
    Tap the login to automatically your email/username and password into the boxes, and sign in.
 
-## Bitwarden 101: Get Started with Android
+### Bitwarden 101: Get Started with Android
 
 Use the following Bitwarden 101 video if you want us to walk you through using Bitwarden on Android. You can also [download the slideshow](https://drive.google.com/open?id=1RvkGbgP4MnJnRhHkmXwmmnVNsYNR_ZvcS65UURexBak){:target="_blank"} to use later.
 
@@ -118,13 +120,15 @@ Use the following Bitwarden 101 video if you want us to walk you through using B
   </div>
   <div class="tab-pane" id="ios" role="tabpanel" aria-labelledby="iostab">
 {% capture ios_gs %}
-## Explore your Vault
+## Bitwarden on iOS
+
+### Explore your Vault
 
 When you log in to Bitwarden on your iOS device, you'll land on the {% icon fa-lock %} **My Vault** tab. From this tab, you can browse all items in your Bitwarden Vault.
 
 When you **Favorite** an item, it'll appear at the top of your Vault for easy access. Items are also sorted into **Types** (*Login*, *Card*, *Identity*, or *Secure Note*) and **Folders**. If you're a member of an Organization, **Collections** will also appear here.
 
-## Get Organized with Favorites and Folders
+### Get Organized with Favorites and Folders
 
 Organizing your Vault into **Favorites** and **Folders** makes navigating your Vault a breeze.
 
@@ -144,7 +148,7 @@ Organizing your Vault into **Favorites** and **Folders** makes navigating your V
 
 For more information, see [Folders]({% link _articles/features/folders.md %}) and [Favorites]({% link _articles/features/favorites.md %}).
 
-## Create New Logins
+### Create New Logins
 
 You can create new Logins, Cards, Identities, and Secure Notes directly from any iOS device.
 
@@ -159,7 +163,7 @@ Go back and edit this item at any time by opening it and tapping **Edit**.
 
 Send an item to the **Trash** by opening it, tapping the menu ( {% icon fa-ellipsis-v %} ), and tapping **Delete**. Items in the Trash will remain there for 30 days before being permanently deleted.
 
-## Setup Auto-fill
+### Setup Auto-fill
 
 Setup Auto-fill to automatically enter logins from your iOS device to a Web Browser (like Safari) or other app.
 
@@ -171,7 +175,7 @@ Setup Auto-fill to automatically enter logins from your iOS device to a Web Brow
 
 When you create new logins, make sure you enter a website in the [URI field](#create-items) to surface them for Auto-fill.
 
-## Unlock with Biometrics
+### Unlock with Biometrics
 
 Unlocking Bitwarden with biometrics allows for seamless access to your Vault. If you haven't setup Touch ID or Face ID on your iOS device, you'll need to do that first from the iOS {% icon fa-cog %} **Settings** app.
 
@@ -183,7 +187,7 @@ Unlocking Bitwarden with biometrics allows for seamless access to your Vault. If
 
 Once Enabled, you'll be able to open your Bitwarden app or Auto-fill logins using just your biometric method of choice.
 
-## Login using Auto-fill
+### Login using Auto-fill
 
 Once you've setup [Auto-fill](#setup-auto-fill) and [Biometrics](#unlock-with-biometrics), logging into an app or website using Bitwarden is simple.
 
@@ -196,7 +200,7 @@ Once you've setup [Auto-fill](#setup-auto-fill) and [Biometrics](#unlock-with-bi
 
    Tap the login to automatically your email/username and password into the boxes, and sign in.
 
-## Bitwarden 101: Get Started with iOS
+### Bitwarden 101: Get Started with iOS
 
 Use the following Bitwarden 101 video if you want us to walk you through using Bitwarden on iOS. You can also [download the slideshow](https://docs.google.com/presentation/d/1ODMT96657H61qhYm1y-Evz2gzStM8zGx_ewKRtTX7u8){:target="_blank"} to use later.
 
