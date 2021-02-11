@@ -6,7 +6,7 @@ featured: false
 popular: false
 hidden: false
 tags: [tutorial]
-order: 05
+order: 06
 ---
 
 With the Bitwarden free account, and a free Organization for up to 2 users, you can experience secure sharing in no time!
