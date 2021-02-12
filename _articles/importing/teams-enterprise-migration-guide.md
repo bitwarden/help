@@ -7,7 +7,7 @@ hidden: false
 tags: [import, teams, enterprise, onboarding, security]
 order: 98
 ---
-## Bitwarden exclusive content: Making migration easy
+## Bitwarden: Making migration easy
 
 Securing your Organization with Bitwarden is straightforward and secure.
 
