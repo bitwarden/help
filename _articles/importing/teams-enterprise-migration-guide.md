@@ -1,6 +1,7 @@
 ---
 layout: article
 title:  Teams and Enterprise Organization Migration Guide
+categories: [import-export]
 featured: false
 popular: false
 hidden: false
