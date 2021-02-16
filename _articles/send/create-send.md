@@ -45,16 +45,21 @@ Complete the following steps to create a new Send from the [Web Vault](https://v
 
      |Text Sends|File Sends|
      |----------|----------|
-     |To send text, type or paste the desired text into the input box.<br><br>Checking the **When accessing the Send, hide the text by default** option will require recipients to manually  **Toggle visibility** when they open a Send. For more information, see [INSERT LINK](#).|To send a file, select the **Browse...** button and attach the file to send.<br><br>The maximum file size per Send is 100 MB.|
+     |To send text, type or paste the desired text into the input box.<br><br>Checking the **When accessing the Send, hide the text by default** option will require recipients to manually  **Toggle visibility** when they open a Send.|To send a file, select the **Browse...** button and attach the file to send.<br><br>The maximum file size per Send is 100 MB.|
 4. Still on the **Create New Send** dialog, configure the following **Options** as desired:
-   - **Deletion Date**: The Send will be permanently deleted on the specified date and time.
-   - **Expiration Date**: The Send will expire on the specified date and time.
-   - **Maximum Access Count**: The Send will expire after the specified access count is reached.
-   - **Password**:
-   - **Notes**:
-   - **Disable this Send so that no one can access it**:
+   - **Deletion Date**: The Send will be permanently deleted on the specified date and time (see [Send Ephemerality]({% link _articles/send/terminate-send.md %}) for details).
+   - **Expiration Date**: The Send will expire on the specified date and time (see [Send Ephemerality]({% link _articles/send/terminate-send.md %}) for details).
+   - **Maximum Access Count**: The Send will expire after the specified access count is reached (see [Send Ephemerality]({% link _articles/send/terminate-send.md %}) for details).
+   - **Password**: Optionally require a password for users to access this Send.
+   - **Notes**: Enter any private notes for this Send, which will only be visible to you.
+   - **Disable this Send so that no one can access it**: Check this box to prevent this Send from be accessible through the generated link.
 5. Select the **Save** button.
-6. ??
+6. Once your Send is created, use the hover-over {% icon fa-cog %} gear dropdown and select the {% icon fa-copy %} **Copy Send Link** button to copy the generated link to your clipboard:
+
+   {% image /send/send-from-webvault.png %}
+
+   You can then paste it in an email or text 
+
 {% endcapture %}
 {{ web_vault | markdownify}}
   </div>

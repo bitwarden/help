@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Terminate a Send
+title: Send Ephemerality
 categories: [send]
 featured: true
 popular: false
