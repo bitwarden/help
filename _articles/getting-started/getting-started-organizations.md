@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Getting Started with Bitwarden Organizations
+title: Get Started with Organizations
 categories: [getting-started]
 featured: false
 popular: false
