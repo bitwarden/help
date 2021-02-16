@@ -8,4 +8,5 @@ _site/
 *.tmp
 /lib
 /.jekyll-cache
+/.vscode
 .DS_Store
