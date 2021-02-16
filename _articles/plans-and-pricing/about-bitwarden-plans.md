@@ -46,12 +46,12 @@ In the following table, "premium features" (included for **Premium Individual** 
 |Storage sync across devices|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
 |Secure Password Generator|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
 |Cloud or Self-hosting|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
-|*Encrypted Export|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
-|*Two-step login|via authenticator apps or email|via authenticator apps, email, Yubikey, U2F, and Duo|via authenticator apps, email, Yubikey, U2F, and Duo|
-|*Encrypted file attachments|-|1 GB|1 GB per user + 1 GB shared|
-|*Bitwarden Authenticator (TOTP)|-|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
-|*Vault Health Reports|-|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
-|*Emergency Access|-|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
+|[Encrypted Export]({% link _articles/importing/encrypted-export.md %})|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
+|*[Two-step login]({% link _articles/two-step-login/setup-two-step-login.md %})|via authenticator apps or email|via authenticator apps, email, Yubikey, U2F, and Duo|via authenticator apps, email, Yubikey, U2F, and Duo|
+|*[Encrypted file attachments]({% link _articles/features/attachments.md %})|-|1 GB|1 GB per user + 1 GB shared|
+|*[Bitwarden Authenticator]({% link _articles/features/authenticator-keys.md %}) (TOTP)|-|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
+|*[Vault Health Reports]({% link _articles/features/reports.md %})|-|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
+|*[Emergency Access]({% link _articles/security/emergency-access.md %})|-|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
 |*Priority Support|-|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
 |Data sharing|-|-|Unlimited|
 |Cost to you|Free|$10 /year, billed annually|$40 /year, billed annually|
@@ -90,21 +90,21 @@ In the following table, "premium features" (included for **Teams Organizations**
 |Base no. of users|2|1|1|
 |Max no. of users|2|Unlimited|Unlimited|
 |Max no. of Collections|2|Unlimited|Unlimited|
-|*Encrypted Export|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
-|*Two-step login|via authenticator apps or email|via authenticator apps, email, Yubikey, U2F, and Duo|via authenticator apps, email, Yubikey, U2F, and Duo|
-|*Encrypted file attachments|-|1 GB per user + 1 GB shared|1 GB per user + 1 GB shared|
-|*Bitwarden Authenticator (TOTP)|-|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
-*Personal Emergency Access|-|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
-|*Vault Health Reports|-|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
+|[Encrypted Export]({% link _articles/importing/encrypted-export.md %})|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
+|*[Two-step login]({% link _articles/two-step-login/setup-two-step-login.md %})|via authenticator apps or email|via authenticator apps, email, Yubikey, U2F, and Duo|via authenticator apps, email, Yubikey, U2F, and Duo|
+|*[Encrypted file attachments]({% link _articles/features/attachments.md %})|-|1 GB per user + 1 GB shared|1 GB per user + 1 GB shared|
+|*[Bitwarden Authenticator]({% link _articles/features/authenticator-keys.md %}) (TOTP)|-|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
+|*[Personal Emergency Access]({% link _articles/security/emergency-access.md %})|-|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
+|*[Vault Health Reports]({% link _articles/features/reports.md %})|-|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
 |*Priority Support|-|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
-|Event Logs|-|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
-|User Groups|-|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
-|API access|-|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
-|Directory Connector|-|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
-|Login with SSO|-|-|<i class="fa fa-check" aria-hidden="true"></i>|
-|Enterprise Policies|-|-|<i class="fa fa-check" aria-hidden="true"></i>|
-|Custom Management Role|-|-|<i class="fa fa-check" aria-hidden="true"></i>|
-|Self-host option|-|-|<i class="fa fa-check" aria-hidden="true"></i>|
+|[Event Logs]({% link _articles/organizations/event-logs.md %})|-|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
+|[User Groups]({% link _articles/organizations/about-groups.md %})|-|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
+|[API access]({% link _articles/organizations/public-api.md %})|-|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
+|[Directory Connector]({% link _articles/directory-connector/directory-sync.md %})|-|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
+|[Login with SSO]({% link _articles/login-with-sso/about-sso.md %})|-|-|<i class="fa fa-check" aria-hidden="true"></i>|
+|[Enterprise Policies]({% link _articles/organizations/policies.md %})|-|-|<i class="fa fa-check" aria-hidden="true"></i>|
+|[Custom Management Role]({% link _articles/organizations/user-types-access-control.md %})|-|-|<i class="fa fa-check" aria-hidden="true"></i>|
+|[Self-host option]({% link _articles/hosting/install-on-premise.md %})|-|-|<i class="fa fa-check" aria-hidden="true"></i>|
 |Cost to you|Free|$3 Per User Per Month, billed annually<br>or<br>$4 Per User Per Month, billed monthly|$5 Per User Per Month, billed annually<br>or<br>$6 Per User Per Month, billed monthly|
 
 ### Next Steps

@@ -63,6 +63,7 @@ Once a field is specified, search for a value in that field using a colon (`:`) 
 When constructing a full-text search, you can apply the asterisk (`*`) as a wildcard character for specified search values, for example:
 
 - `>organizationid:*` will search for all Vault items that belong to an Organization.
+- `>organizationid:-` will search for all Vault items that do not belong to an Organization.
 - `>login.username:*@gmail.com` will search for any Login item **Username** that ends in `@gmail.com`.
 
 {% callout success %}
