@@ -27,8 +27,6 @@ Complete the following steps to export data from the [LastPass Web Vault](https:
 **Some users have reported a bug** which changes special characters in your passwords (`&`, `<`, `>`, etc.) to their HTML-encoded values (for example, `&amp;`) in the printed export.
 
 If you observe this bug in your exported data, use a text editor to find and replace all altered values before importing into Bitwarden.
-
-Alternatively, use the [LastPass Pocket application](https://lastpass.com/misc_download2.php){:target="_blank"} to export your CSV data. The LastPass Pocket application does not appear to be affected by these bugs.
 {% endcallout %}
 
 ### Export with Form Fills
