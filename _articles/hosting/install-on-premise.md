@@ -10,12 +10,16 @@ order: 01
 
 This article will walk you through the procedure to install and deploy Bitwarden to your own server. Bitwarden can be installed and deployed on Linux, macOS, and Windows machines.
 
-## System Requirements
+## System Specifications
 
-- Processor: x64, 2 GHz dual core
-- Memory: 4 GB RAM (system memory)
-- Storage: 25 GB
-- Docker: Engine 19+ and Compose 1.24+
+Use the following table to check the **Minimum** and **Recommended** specifications when deploying Bitwarden to your own server:
+
+|    |Minimum|Recommended|
+|----|-------|-----------|
+|Processor|x64, 1.4GHz|x64, 2GHz dual core|
+|Memory|2GB RAM|4GB RAM|
+|Storage|10GB|25GB|
+|Docker Version|Engine 19+ and Compose 1.24+|Engine 19+ and Compose 1.24+|
 
 If you are looking for a quality provider with affordable prices, we recommend:
 

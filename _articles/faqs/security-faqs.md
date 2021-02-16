@@ -85,11 +85,11 @@ For more information, please visit our [Security and Compliance](https://bitward
 
 Additionally, a **Bitwarden-generated** device-specific GUID (sometimes referred to as a *Device ID*) is assigned to your device. This GUID is used to alert you when a new device logs into your Vault.
 
-#### Q: Are Electron apps safe?
+#### Q: Can you explain Electron App Security?
 
 **A:** An often shared article suggests a flaw with Electron apps, however the referenced attack requires a user to have a compromised machine, which of course would allow a malicious attacker to compromise data on that machine. As long as you have no reason to believe the device you are using has been compromised, your data is safe.
 
-#### Q: Are Browser Extensions safe?
+#### Q: How does Bitwarden secure Browser extensions?
 
 Extensions are safe to use if they are developed correctly. Due to the nature of how browser extensions work there is always a chance for a bug to arise. We take extreme care and caution when we are developing our extensions and add-ons, we keep our eyes and ears out for anything going on in the industry, and we conduct security audits to keep many eyes on everything.
 
