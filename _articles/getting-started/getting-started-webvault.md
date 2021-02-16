@@ -63,13 +63,13 @@ Now that a new Login item is saved in your Vault, you can beef up its security b
    Typically, you can find this in a **Your Account**, **Security**, **Sign in Settings**, or **Login Settings** section.
 4. Most websites will require you to enter your **Current password** first. Tab back over to your Bitwarden Vault and click the {% icon fa-copy %} **Copy** icon next to the **Password** field. Then, tab back over to the website and paste it in the **Current password** field.
 
-   You might have the old password memorized, but it's a good idea to get in the habit of copying and pasting your password since this is primarily how you'll be logging in to websites once your password is strong.
+   You might have the old password memorized, but it's a good idea to get in the habit of copying and pasting your password since this is primarily how you'll be logging in to websites once your password is replaced with a stronger one.
 5. Tab back over to your Bitwarden Vault and click the {% icon fa-refresh %} **Generate** icon next to the **Password** field. You'll be asked whether you want to overwrite the current password, so click **Yes** to proceed.
 
-   This will replace your **Password** value with a randomly generated strong password. Moving from a password like `Fido1234` to `X@Ln@x9J@&u@5n##B` exponentially hinders a would-be hacker's ability to break into your account.
+   This will replace your **Password** value with a randomly generated strong password. Moving from a password like `Fido1234` to `X@Ln@x9J@&u@5n##B` can stop would-be hacker in their tracks.
 6. Copy your new password with the same {% icon fa-copy %} **Copy** icon you used earlier, and hit the **Save** button.
 
-   {% callout success %}Don't worry {% endcallout %}
+   {% callout success %}Don't worry about overwriting your existing password! If something goes wrong, Bitwarden maintains a **Password History** for every Login item:<br><br>{% image /getting-started/pwhistory.png %}{% endcallout %}
 7. Tab back over to the other website, and paste your strong password in the **New Password** and **Confirm new password** fields.
 8. Once you **Save** the password change, you're finished!
 
@@ -96,12 +96,36 @@ There are many [available methods]({% link _articles/two-step-login/setup-two-st
 5. On your mobile device, open Authy and tap the {% icon fa-plus %} **Add Account** button.
 6. Scan the QR code located in your Web Vault using Authy. Once scanned, Authy will display a 6-digit verification code.
 7. Enter the 6-digit verification code in the dialog box in your Web Vault, and select the **Enable** button.
+8. Select the **Close** button to return to the Two-step Login screen, and select the **View Recovery Code** button.
 
+   Your Two-step Login Recovery code can be used in the event that you lose your mobile device. **This is a critical step to ensure you don't ever get locked out of your Vault**, so don't skip it!
+9. Enter your Master Password and select the **Continue** button to get your Recovery Code.
 
+   {% image /getting-started/recoverycode.png Example Recovery Code %}
 
+Save your Recovery Code in the way that makes the most sense for you. Believe it or not, printing your Recovery Code and keeping it somewhere safe is one of the best ways to make that the code isn't vulnerable to theft or inadvertent deletion.
 
 ## Signup for Premium
 
-Once you're signed up (Vault HEalth Reports + Emergency Access)
+Congratulations on mastering the basics of Bitwarden! We want everyone to be safe online, so we're proud to offer everything you've learned about here for free.
 
-## Start your first Organization
+For personal users, we offer a premium subscription for **$10 / year** that unlocks advanced Vault capabilities including:
+
+- Advanced Two-step Login options, like [Duo]({% link _articles/two-step-login/setup-two-step-login-duo.md %}) and [YubiKey Security Keys]({% link _articles/two-step-login/setup-two-step-login-yubikey.md %})
+- Storage space for [Encrypted File Attachments]({% link _articles/features/attachments.md %})
+- A built-in [Temporary One-time Password (TOTP) Authenticator]({% link _articles/features/authenticator-keys.md %})
+- [Emergency Access]({% link _articles/security/emergency-access.md %}) to your Vault by trusted emergency contacts
+- [Vault Health Reports]({% link _articles/features/reports.md %}) that report on password and security hygiene
+
+To start a premium subscription:
+
+1. In your Bitwarden Web Vault, navigate to the **Settings** tab from the top navigation bar.
+2. From the left-side Settings menu, select **Go Premium**.
+
+## Start an Organization
+
+Do you need to share passwords or other Vault items with your friends, family, team, or entire business?
+
+Bitwarden Organizations let you do just that. We recommend trying out to functionality of password-sharing Organizations by starting a **free** 2-person Organization. To learn how, see [Get Started with an Organization]({% link _articles/getting-started/getting-started-organizations.md %}).
+
+Once you've tested an Organization, check out our [Bitwarden Plans and Pricing](https://bitwarden.com/pricing/business/) page to learn about the different Paid Organizations you might consider.
