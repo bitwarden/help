@@ -12,3 +12,34 @@
         }
     }
 }
+
+.landing-table {
+  border: none;
+  table-layout: fixed;
+}
+
+.landing-table-row {
+  border: none;
+}
+
+.landing-table-datum {
+  border: none;
+  background-color: #fff;
+  padding-bottom: 0.5rem;
+
+  img {
+    display: inline-block;
+    width: 100%;
+    &:hover {
+      background-color: #F2F2F2;
+      border-radius: 1rem;
+    }
+  }
+}
+
+.landing-table-datum-caption {
+  border: none;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 0.5rem;
+}

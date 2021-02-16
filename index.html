@@ -6,50 +6,73 @@ title: Help Center
 
 <div class="container-fluid main-container">
     <div class="row">
-        <div class="col-md-8">
+        <div class="col">
             <div class="card card-popular mb-3">
                 <h4 class="card-header">
-                    <i class="fa fa-star-o"></i> Popular Articles
+                    <i class="fa fa-star-o"></i> Welcome to the Help Center!
                 </h4>
                 <div class="card-body">
-                    <ul class="fa-ul">
-                        {% for article in sorted_articles %}
-                        {% if article.popular == true and article.hidden != true %}
-                        <li>
-                            <i class="fa-li fa fa-file-text-o"></i>
-                            <a href="{{site.baseurl}}{{article.url}}">{{article.title}}</a>
-                        </li>
-                        {% endif %}
-                        {% endfor %}
-                    </ul>
+                    <p class="card-text">We're happy you're here to learn about Bitwarden!</p>
+                    <p class="card-text"><b>Popular Topics: </b> <a href="{{site.baserul}}/article/emergency-access">Emergency Access</a> &nbsp;&nbsp;&nbsp;&nbsp;<a href="{{site.baserul}}/article/encrypted-exports">Encrypted Exports</a> &nbsp;&nbsp;&nbsp;&nbsp;<a href="{{site.baserul}}/article/policies">Enterprise Policies</a></p>
                 </div>
             </div>
-
-            {% for category in site.categories %}
-            {% if category.hidden != true %}
+            <div class="card mb-3">
+              <h4 class="card-header">
+                  <i class="fa fa-home"></i> Get Started with Bitwarden
+              </h4>
+              <div class="card-body">
+                <table class="landing-table">
+                  <tr class="landing-table-row">
+                    <td class="landing-table-datum"><a href="https://bitwarden.com/help/article/getting-started-webvault"><img src="images/landing/vault-final.png"></a></td>
+                    <td class="landing-table-datum"><a href="https://bitwarden.com/help/article/getting-started-browserext"><img src="images/landing/extension.png"></a></td>
+                    <td class="landing-table-datum"><a href="https://bitwarden.com/help/getting-started-mobile"><img src="images/landing/mobile.png"></a></td>
+                    <td class="landing-table-datum"><a href="https://bitwarden.com/help/getting-started-desktop"><img src="images/landing/desktop.png"></a></td>
+                    <td class="landing-table-datum"><a href="https://bitwarden.com/help/article/cli"><img src="images/landing/cli.png"></a></td>
+                  </tr>
+                  <tr class="landing-table-row">
+                    <td class="landing-table-datum-caption"><a href="https://bitwarden.com/help/article/getting-started-webvault">Web Vault</a></td>
+                    <td class="landing-table-datum-caption"><a href="https://bitwarden.com/help/article/getting-started-browserext">Browser</a></td>
+                    <td class="landing-table-datum-caption"><a href="https://bitwarden.com/help/getting-started-mobile">Mobile</a></td>
+                    <td class="landing-table-datum-caption"><a href="https://bitwarden.com/help/getting-started-desktop">Desktop</a></td>
+                    <td class="landing-table-datum-caption"><a href="https://bitwarden.com/help/article/cli">CLI</a></td>
+                  </tr>
+                </table>
+              </div>
+          </div>
             <div class="card mb-3">
                 <h4 class="card-header">
-                    <i class="fa fa-folder-open-o"></i> {{category.title}}
+                    <i class="fa fa-building"></i> Bitwarden for your Business
                 </h4>
                 <div class="card-body">
-                    <ul class="fa-ul">
-                        {% for article in sorted_articles %}
-                        {% assign catFilename = category.path | filename %}
-                        {% if article.categories contains catFilename and article.hidden != true %}
-                        <li>
-                            <i class="fa-li fa fa-file-text-o"></i>
-                            <a href="{{site.baseurl}}{{article.url}}">{{article.title}}</a>
-                        </li>
-                        {% endif %}
-                        {% endfor %}
-                    </ul>
+                    <table class="landing-table">
+                      <tr class="landing-table-row">
+                        <td class="landing-table-datum"><a href="https://bitwarden.com/help/article/about-organizations"><img src="images/landing/organizations.png"></a></td>
+                        <td class="landing-table-datum"><a href="https://bitwarden.com/help/article/directory-sync"><img src="images/landing/directory-sync.png"></a></td>
+                        <td class="landing-table-datum"><a href="https://bitwarden.com/help/article/about-sso"><img src="images/landing/sso.png"></a></td>
+                        <td class="landing-table-datum"><a href="https://bitwarden.com/help/article/install-on-premise"><img src="images/landing/selfhost.png"></a></td>
+                        <td class="landing-table-datum"><a href="https://bitwarden.com/help/article/what-encryption-is-used/"><img src="images/landing/security.png"></a></td>
+                      </tr>
+                      <tr class="landing-table-row">
+                        <td class="landing-table-datum-caption"><a href="https://bitwarden.com/help/article/about-organizations">Organizations</a></td>
+                        <td class="landing-table-datum-caption"><a href="https://bitwarden.com/help/article/directory-sync">Directory Sync</a></td>
+                        <td class="landing-table-datum-caption"><a href="https://bitwarden.com/help/article/about-sso">Login with SSO</a></td>
+                        <td class="landing-table-datum-caption"><a href="https://bitwarden.com/help/article/install-on-premise">Self Host</a></td>
+                        <td class="landing-table-datum-caption"><a href="https://bitwarden.com/help/article/what-encryption-is-used">Security</a></td>
+                      </tr>
+                    </table>
                 </div>
             </div>
-            {% endif %}
-            {% endfor %}
         </div>
-        <div class="col-md-4">
-            {% include contact.html %}
-        </div>
+    </div>
+    <div class="row">
+      <div class="col-md">
+        {% include contact.html %}
+      </div>
+      <div class="col-md">
+        {% include connect.html %}
+      </div>
+      <div class="col-md">
+        {% include videos.html %}
+      </div>
     </div>
 </div>
