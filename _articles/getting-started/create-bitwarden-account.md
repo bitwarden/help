@@ -28,6 +28,6 @@ Once you've created your account, prompt Bitwarden to send you a verification em
 ## Congratulations!
 
 For help getting going with Bitwarden, we recommend:
-- [Getting Started with Android]({% link _articles/getting-started/getting-started-android.md %})
-- [Getting Started with iOS]({% link _articles/getting-started/getting-started-ios.md %})
+- [Getting Started with the Browser Extension]({% link _articles/getting-started/getting-started-browserext.md %})
+- [Getting Started with the Mobile Apps]({% link _articles/getting-started/getting-started-mobile.md %})
 - [Bitwarden 101 Video Series - Getting Started](https://bitwarden.com/help/article/getting-started-videos/)
