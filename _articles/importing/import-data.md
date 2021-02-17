@@ -42,9 +42,15 @@ Importing data multiple times will create duplicates.
 
 If you get the following error:
 
-`Ciphers[X].Login: The field yyyy exceeds the maximum encrypted value length of zzzz characters.`
+```
+Ciphers[X].Login: The field yyyy exceeds the maximum encrypted value length of zzzz characters.
+```
 
-An item in your `.csv` exceeds the size limited allowed for items stored in the Bitwarden Vault. Remove the offending item from your file for import, or reduce its size. You can open the `.csv` in a text editor or spreadsheet program for easy editing, and locate the offending item at `index[X]` as referenced in the error message.
+An item in your `.csv` exceeds the character limit allowed for items stored in the Bitwarden Vault. Remove the offending item from your file for import, or reduce its size. Open the `.csv` in a text editor or spreadsheet program for easy editing, and locate the offending item at `index[X]` as referenced in the error message.
+
+{% callout info %}
+Depending on the program you use to edit your `.csv`, the index value `[X]` may not map perfectly to a Row or Line number. Typically in spreadsheet programs, add 2 (i.e. `index[23]` = Row **25**). In other cases, it may be useful to focus on `Notes` items, as these items are usually those that trigger the error.
+{% endcallout %}
 
 ## Supported Formats
 
