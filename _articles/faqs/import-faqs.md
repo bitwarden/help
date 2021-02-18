@@ -33,6 +33,11 @@ Once exported from iCloud, Mac Keychain, or Safari, see [Import Data to your Vau
 
 **A:** To import items directly to Collections, format your import as a Bitwarden `.csv` (for more information, see [Condition a Bitwarden .csv or .json]({% link _articles/importing/condition-bitwarden-import.md %})) and specify Collections to import each item to within the file.
 
+#### Q: How do I import file attachments to Bitwarden?
+
+**A:** File Attachments must be manually migrated to your Bitwarden Vault, as they are currently not included in bulk import operations.
+
+Please note that storage of File Attachments is available only for Premium users, including members of Paid Organizations (Families, Teams, or Enterprise). 
 
 #### Q: Why did importing create duplicate Vault items?
 

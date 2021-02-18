@@ -29,7 +29,7 @@ Complete the following steps to create a collection:
 
 ## Create Nested Collections
 
-Collections be "nested" in order to logically organize them within your Vault. There's no limit to the depth with which you can nest Collections, but creating too many levels may interfere with your Vault's interface.
+Collections can be "nested" in order to logically organize them within your Vault. There's no limit to the depth with which you can nest Collections, but creating too many levels may interfere with your Vault's interface.
 
 {% callout info %}
 Nested Collections are designed for in-Vault display purposes only. Nested Collections will not not inherit access or permissions from their "parent" Collection.

@@ -46,7 +46,7 @@ When you change your email address, you should immediately logout of all Bitward
 
 **A:** You can use [Encrypted Exports]({% link _articles/importing/encrypted-export.md %}) to make secure long-term backups of your Vault data that are encrypted with your [Account Encryption Key]({% link _articles/account/account-encryption-key.md %}).
 
-Alternatively, we you can use something like PeaZip to create an encrypted archive of the file after exporting a plaintext file from Bitwarden.
+Alternatively, you can use something like PeaZip to create an encrypted archive of the file after exporting a plaintext file from Bitwarden.
 
 You can learn more about PeaZip here:
 - <http://www.peazip.org/>

@@ -14,37 +14,41 @@ Use this article for help exporting data from LastPass and importing into Bitwar
 
 Complete the following steps to export data from the [LastPass Web Vault](https://lastpass.com/){:target="\_blank"}:
 
-1. Select the **Advanced Options** option on the left sidebar. 
-2. Select **Export** from the menu.
+1. Select the {% icon fa-rocket %} **Advanced Options** option on the left sidebar:
+
+   {% image /importing/lastpassadvancedoptions.png Export from Web Vault %}
+2. From the Manage Your Vault section, select the **Export** option.
 3. Enter your Master Password to validate the export attempt.
 
-   Your Vault data will be decrypted and printed to the screen in a `.csv` format.
+   Depending on your browser, your Vault data will either be automatically saved as a `.csv` or printed to the screen in a `.csv` format:
 
    {% image lastpass-copy.png LastPass Export %}
-4. Highlight the printed text, and copy and paste it into a new `export.csv` file.
+4. If your Vault data was printed to the screen, highlight the text and copy and paste it into a new `export.csv` file.
 
 {% callout warning %}
 **Some users have reported a bug** which changes special characters in your passwords (`&`, `<`, `>`, etc.) to their HTML-encoded values (for example, `&amp;`) in the printed export.
 
 If you observe this bug in your exported data, use a text editor to find and replace all altered values before importing into Bitwarden.
-
-Alternatively, use the [LastPass Pocket application](https://lastpass.com/misc_download2.php){:target="_blank"} to export your CSV data. The LastPass Pocket application does not appear to be affected by these bugs.
 {% endcallout %}
 
 ### Export with Form Fills
 
 **Exports from the Web Vault will not include form fills.** To export form fill data from LastPass, you must do so from the Browser Extension:
 
-1. In the Browser Extension, navigate to **Account Options** &rarr; **Advanced** &rarr; **Export** &rarr; **Form Fills**.
+1. In the Browser Extension, navigate to **Account Options** &rarr; **Advanced** &rarr; **Export** &rarr; **Form Fills**:
+
+   {% image /importing/lp-be.png Export from Browser Extension %}
 2. Enter your Master Password to validate the export attempt.
 
-   Your Vault data will be decrypted and printed to the screen in a  `.csv` format.
+   Depending on your browser, your Vault data will either be automatically saved as a `.csv` or printed to the screen in a `.csv` format:
    {% image lastpass-copy.png LastPass Export %}
-4. Highlight the printed text, and copy and paste it into a new `export.csv` file.
+4. If your Vault data was printed to the screen, highlight the text and copy and paste it into a new `export.csv` file.
 
 ## Import to Bitwarden
 
-Complete the following steps to import data to your Bitwarden personal Vault (for help importing to an Organization Vault, see [Import Items to an Organization]({% link _articles/organizations/import-to-org.md %})):
+Complete the following steps to import data to your Bitwarden personal Vault. For help importing to an Organization Vault, see [Import Items to an Organization]({% link _articles/organizations/import-to-org.md %}).
+
+If you want to store File Attachments in your Bitwarden Vault, please be aware that these are currently not included in Bitwarden import operations and will need to be uploaded to your Vault manually. For more information, see [File Attachments]({% link _articles/features/attachments.md %}).
 
 1. Log in to the [Web Vault](https://vault.bitwarden.com){:target="\_blank"}.
 2. Select **Tools** from the top navigation bar.
