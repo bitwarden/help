@@ -12,7 +12,7 @@ Sends can be created and edited from the [Web Vault](https://vault.bitwarden.com
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
-    <a class="nav-link active" id="wvtab" href="#webvault" role="tab" aria-controls="webvault" aria-selected="true">Web Vault</a>
+    <a class="nav-link" id="wvtab" href="#webvault" role="tab" aria-controls="webvault" aria-selected="true">Web Vault</a>
   </li>
   <li class="nav-item" role="presentation">
     <a class="nav-link" id="betab" href="#browserextension" role="tab" aria-controls="browserextension" aria-selected="false">Browser Extensions</a>
@@ -21,14 +21,14 @@ Sends can be created and edited from the [Web Vault](https://vault.bitwarden.com
     <a class="nav-link" id="desktab" href="#desktop" role="tab" aria-controls="desktop" aria-selected="false">Desktop Apps</a>
   </li>
   <li class="nav-item" role="presentation">
-    <a class="nav-link" id="mobtab" href="#mobile" role="tab" aria-controls="mobile" aria-selected="false">Mobile Apps</a>
+    <a class="nav-link active" id="mobtab" href="#mobile" role="tab" aria-controls="mobile" aria-selected="false">Mobile Apps</a>
   </li>
   <li class="nav-item" role="presentation">
     <a class="nav-link" id="clitab" href="#cli" role="tab" aria-controls="cli" aria-selected="false">CLI</a>
   </li>
 </ul>
 <div class="tab-content" id="clientsContent">
-  <div class="tab-pane show active" id="webvault" role="tabpanel" aria-labelledby="wvtab">
+  <div class="tab-pane" id="webvault" role="tabpanel" aria-labelledby="wvtab">
 {% capture web_vault %}
 ### Send from the Web Vault
 
@@ -58,7 +58,7 @@ Complete the following steps to create a new Send from the [Web Vault](https://v
 
    {% image /send/send-from-webvault.png %}
 
-   You can then paste it in an email or text 
+   You can then paste it in an email or text
 
 {% endcapture %}
 {{ web_vault | markdownify}}
@@ -79,9 +79,11 @@ Complete the following steps to create a new Send from a Bitwarden Desktop App:
 {% endcapture %}
 {{ desktop_info | markdownify}}
   </div>
-  <div class="tab-pane" id="mobile" role="tabpanel" aria-labelledby="mobtab">
+  <div class="tab-pane show active" id="mobile" role="tabpanel" aria-labelledby="mobtab">
 {% capture mobile_info %}
 ### Send from a Mobile App
+
+{% image /send/send-mobile.png %}
 
 Complete the following steps to create a new Send from a Bitwarden Mobile App:
 {% endcapture %}
