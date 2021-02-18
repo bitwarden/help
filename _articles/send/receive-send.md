@@ -13,21 +13,17 @@ Unlike traditional Bitwarden Vault items, a Send can be received and opened by a
 - `https://vault.bitwarden.com/#/send/yawoill8rk6VM6zCATXv2A/9WN8wD-hzsDJjfnXLeNc2Q`
 - `https://your.selfhosted.domain.com/#/send/yawoill8rk6VM6zCATXv2A/9WN8wD-hzsDJjfnXLeNc2Q`
 
-A Bitwarden Send link can be opened in any modern web browser:
+These links can be opened in any modern web browser, and will open a simple no-navigation web page, for example:
 
-{% image /send/send-variety.png A variety of received Sends %}
+{% image /send/received-send.png A received Send%}
 
-When opened, a Send is a simple no-navigation web page that allows a recipient to interact with the Send data, for example:
+Depending on the [options configured]({% link _articles/send/create-send.md %}) by the Send's creator, the recipient of a Send may be required to:
 
-- Enter the password required to access a Send.
-- Toggle visibility on a hidden-text Send.
-- Read or copy a Send's text.
-- Download a Send's attached file.
+- Enter a Password to access the contents of the Send.
+- Manually toggle visibility on a hidden-text Send.
 
-## Terminated Sends
+When a Send has [been deleted, expired, or disabled]({% link _articles/send/terminate-send.md %}), recipients who attempt to use the generated Send link will be shown a screen that reports the Send does not exist or is no longer available:
 
-When a Send has expired or been deleted, recipients will be shown a screen that reports that the Send `does not exist or is no longer available`:
+{% image /send/send-unavailable.png A deleted, expired, or disabled Send %}
 
-{% image /send/send-unavailable.png A deleted or expired Send %}
-
-For more information when a Send terminates or how to automate termination, see [Terminate a Send]({% link _articles/send/terminate-send.md %}).
+## Receiving Sends in the CLI
