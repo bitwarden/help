@@ -22,24 +22,40 @@
   border: none;
 }
 
-.landing-table-datum {
-  border: none;
-  background-color: #fff;
-  padding-bottom: 0.5rem;
+.icon-wrapper {
+	display: block;
 
-  img {
-    display: inline-block;
-    width: 100%;
-    &:hover {
-      background-color: #F2F2F2;
-      border-radius: 1rem;
-    }
-  }
-}
+	@include media-breakpoint-up(md) {
+		display: flex;
+	}
 
-.landing-table-datum-caption {
-  border: none;
-  text-align: center;
-  font-weight: bold;
-  padding-top: 0.5rem;
+	.icon-link {
+		border: none;
+		background-color: #fff;
+		padding-bottom: 0.5rem;
+		display: flex;
+		align-items: center;
+		
+		@include media-breakpoint-down(sm) {
+			p {
+				margin-bottom: 0;
+				margin-left: 2rem;
+			}
+		}
+	
+		@include media-breakpoint-up(md) {
+			display: block;
+		}
+		
+		img {
+			display: inline-block;
+			width: 100%;
+			max-width: 200px;
+	
+			&:hover {
+				background-color: #F2F2F2;
+				border-radius: 1rem;
+			}
+		}
+	}
 }
