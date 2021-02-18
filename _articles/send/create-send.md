@@ -49,9 +49,9 @@ Complete the following steps to create a new Send from the [Web Vault](https://v
      |**File** | Select the **Choose File** button and browse the file to send. The maximum file size per Send is 100 MB.|
 
 4. Still on the **Create New Send** dialog, configure the following **Options** as desired:
-   - **Deletion Date**: The Send will be permanently deleted on the specified date and time (see [Send Ephemerality]({% link _articles/send/terminate-send.md %}) for details).
-   - **Expiration Date**: The Send will expire on the specified date and time (see [Send Ephemerality]({% link _articles/send/terminate-send.md %}) for details).
-   - **Maximum Access Count**: The Send will expire after the specified access count is reached (see [Send Ephemerality]({% link _articles/send/terminate-send.md %}) for details).
+   - **Deletion Date**: The Send will be permanently deleted on the specified date and time (see [Send Ephemerality]({% link _articles/send/send-impermanence.md %}) for details).
+   - **Expiration Date**: The Send will expire on the specified date and time (see [Send Ephemerality]({% link _articles/send/send-impermanence.md %}) for details).
+   - **Maximum Access Count**: The Send will expire after the specified access count is reached (see [Send Ephemerality]({% link _articles/send/send-impermanence.md %}) for details).
    - **Password**: Optionally require a password for users to access this Send.
    - **Notes**: Enter any private notes for this Send, which will only be visible to you.
    - **Disable this Send so that no one can access it**: Check this box to prevent this Send from be accessible through the generated link.
@@ -73,7 +73,7 @@ Complete the following steps to create a new Send from a Bitwarden Browser Exten
 
 1. Tap the {% icon fa-paper-plane %} **Send** tab located at the bottom of your screen.
 
-   This view will list all Sends that haven't reached their [deletion date]({% link _articles/send/terminate-send.md %}). Like the {% icon fa-lock %} **My Vault** view, you can filter through your Sends by tapping one of the available **Types**.
+   This view will list all Sends that haven't reached their [deletion date]({% link _articles/send/send-impermanence.md %}). Like the {% icon fa-lock %} **My Vault** view, you can filter through your Sends by tapping one of the available **Types**.
 2. To start creating a new Send, tap the {% icon fa-plus %} **Add** icon:
 
    {% image /send/send-browserext.png Send View in a Browser Extension %}
@@ -85,11 +85,11 @@ Complete the following steps to create a new Send from a Bitwarden Browser Exten
      |**Text** | Type or paste the desired text into the input box. Toggle the **When accessing the Send, hide the text by default** option to require recipients to [toggle visibility]({% link _articles/send/send-privacy.md %}) when they open a Send.|
      |**File** | Select the **Choose File** button and browse the file to send. The maximum file size per Send is 100 MB.|
 
-4. (*Required*) Set a **Deletion Date** for the Send. The Send will be [permanently deleted]({% link _articles/send/terminate-send.md %}) on the specified date and time. Deleted Sends will not be accessible to any old or new recipients, and will be removed from your Send view.
+4. (*Required*) Set a **Deletion Date** for the Send. The Send will be [permanently deleted]({% link _articles/send/send-impermanence.md %}) on the specified date and time. Deleted Sends will not be accessible to any old or new recipients, and will be removed from your Send view.
 5. (*Optional*) Configure the following options as desired:
 
-    - **Expiration Date**: The Send will [expire]({% link _articles/send/terminate-send.md %}) on the specified date and time.
-    - **Maximum Access Count**: The Send will [expire]({% link _articles/send/terminate-send.md %}) after the specified access count is reached.
+    - **Expiration Date**: The Send will [expire]({% link _articles/send/send-impermanence.md %}) on the specified date and time.
+    - **Maximum Access Count**: The Send will [expire]({% link _articles/send/send-impermanence.md %}) after the specified access count is reached.
     - **Password**: Optionally require a [password for users to access]({% link _articles/send/send-privacy.md %}) this Send.
     - **Notes**: Enter any private notes for this Send, which will only be visible to you.
     - **Disable this Send so that no one can access it**: Toggle this option to prevent this Send from be accessible through the generated link.
@@ -117,7 +117,7 @@ Complete the following steps to Send from Bitwarden on your Android or iOS devic
 
 1. Tap the {% icon fa-paper-plane %} **Send** tab located at the bottom of your screen.
 
-   This view will list all Sends that haven't reached their [deletion date]({% link _articles/send/terminate-send.md %}). Like the {% icon fa-lock %} **My Vault** view, you can filter through your Sends by tapping one of the available **Types**.
+   This view will list all Sends that haven't reached their [deletion date]({% link _articles/send/send-impermanence.md %}). Like the {% icon fa-lock %} **My Vault** view, you can filter through your Sends by tapping one of the available **Types**.
 2. To start creating a new Send, tap the {% icon fa-plus %} **Add** icon:
 
    {% image /send/send-mobile.png Send View on iOS and Android%}
@@ -130,11 +130,11 @@ Complete the following steps to Send from Bitwarden on your Android or iOS devic
      |**Text** | Type or paste the desired text into the input box. Toggle the **When accessing the Send, hide the text by default** option to require recipients to [toggle visibility]({% link _articles/send/send-privacy.md %}) when they open a Send.|
      |**File** | Tap the **Choose File** button and browse the file to send. The maximum file size per Send is 100 MB.|
 
-4. (*Required*) Set a **Deletion Date** for the Send. The Send will be [permanently deleted]({% link _articles/send/terminate-send.md %}) on the specified date and time. Deleted Sends will not be accessible to any old or new recipients, and will be removed from your Send view.
+4. (*Required*) Set a **Deletion Date** for the Send. The Send will be [permanently deleted]({% link _articles/send/send-impermanence.md %}) on the specified date and time. Deleted Sends will not be accessible to any old or new recipients, and will be removed from your Send view.
 5. (*Optional*) Configure the following options as desired:
 
-   - **Expiration Date**: The Send will [expire]({% link _articles/send/terminate-send.md %}) on the specified date and time.
-   - **Maximum Access Count**: The Send will [expire]({% link _articles/send/terminate-send.md %}) after the specified access count is reached.
+   - **Expiration Date**: The Send will [expire]({% link _articles/send/send-impermanence.md %}) on the specified date and time.
+   - **Maximum Access Count**: The Send will [expire]({% link _articles/send/send-impermanence.md %}) after the specified access count is reached.
    - **Password**: Optionally require a [password for users to access]({% link _articles/send/send-privacy.md %}) this Send.
    - **Notes**: Enter any private notes for this Send, which will only be visible to you.
    - **Disable this Send so that no one can access it**: Toggle this option to prevent this Send from be accessible through the generated link.

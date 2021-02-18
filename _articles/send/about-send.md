@@ -14,7 +14,7 @@ Bitwarden Send is a secure, traceable way to transmit sensitive information to *
 
 - **End-to-end Encrypted**: The data in a Send is encrypted on creation, and only decrypted when a recipient opens the received link. No Send data is transmitted when sharing a link, even if you're using an unencrypted channel. In this way, Bitwarden maintains end-to-end encryption for every Send to prevent intermediary services from accessing your sensitive data.
 
-- **As Ephemeral as required**: With options to automate a Deletion Date, Expiration Date, and Maximum Access Count, every Send can be configured to be available for only as long as you need it to be. Ephemeral file sharing ensures, for example, that a recipient can't pass Send data along to an unintended audience. For more information, see [Terminate a Send]({% link _articles/send/terminate-send.md %}).
+- **As Ephemeral as required**: With options to automate a Deletion Date, Expiration Date, and Maximum Access Count, every Send can be configured to be available for only as long as you need it to be. Ephemeral file sharing ensures, for example, that a recipient can't pass Send data along to an unintended audience. For more information, see [Terminate a Send]({% link _articles/send/send-impermanence.md %}).
 
 - **Password Protected** (*Optionally*): For an added layer of security, you can configure any Send to require a password to open.
 

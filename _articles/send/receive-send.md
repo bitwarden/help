@@ -22,8 +22,6 @@ Depending on the [options configured]({% link _articles/send/create-send.md %}) 
 - Enter a Password to access the contents of the Send.
 - Manually toggle visibility on a hidden-text Send.
 
-When a Send has [been deleted, expired, or disabled]({% link _articles/send/terminate-send.md %}), recipients who attempt to use the generated Send link will be shown a screen that reports the Send does not exist or is no longer available:
+When a Send has [been deleted, expired, or disabled]({% link _articles/send/send-impermanence.md %}), recipients who attempt to use the generated Send link will be shown a screen that reports the Send does not exist or is no longer available:
 
 {% image /send/send-unavailable.png A deleted, expired, or disabled Send %}
-
-## Receiving Sends in the CLI
