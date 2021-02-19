@@ -39,7 +39,7 @@
 		@include media-breakpoint-down(sm) {
 			p {
 				margin-bottom: 0;
-				margin-left: 2rem;
+				margin-left: 1rem;
 			}
 		}
 	
@@ -55,6 +55,10 @@
 			&:hover {
 				background-color: #F2F2F2;
 				border-radius: 1rem;
+			}
+	
+			@include media-breakpoint-down(sm) {
+				width: 50%;
 			}
 		}
 	}
