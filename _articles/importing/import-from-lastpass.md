@@ -63,7 +63,9 @@ Importing data multiple times will create duplicates.
 
 Congratulations! You have just transferred your data from LastPass into Bitwarden.
 
-## Length-related Import Errors
+## Import Troubleshooting
+
+### Character Limit Error
 
 The following error messages, typically received when attempting to import a `.csv`, indicate that a field in your import file exceeds the allowed **encrypted** character limit for that field type:
 
@@ -85,3 +87,31 @@ To solve this issue:
 
    {% callout success %}If you've having trouble locating the offending item using the data provided in the error, it may help to focus first on notes as these are frequently the cause of this error.{% endcallout %}
 3. Remove the offending item from your import file, or reduce the character count. When reducing the character count, remember that limits are placed on **encrypted** counts, not pre-encryption counts.  As a rule of thumb, character counts will grow between 30-50% when Bitwarden attempts to encrypt a field on import.
+
+### Maximum Collections Error
+
+When importing Lastpass `.csv` exports to a [Free Organization]({% link _articles/plans-and-pricing/about-bitwarden-plans.md %}), you may observe the following error:
+
+{% image /importing/lpcollectionserror.png Free Organization Max Collections Error%}
+
+This error occurs when the Lastpass export contains 3 or more `grouping` values. The values in the `grouping` field are interpreted by Bitwarden as [Collections]({% link _articles/organizations/about-collections.md %}), however [Free Organizations]({% link _articles/plans-and-pricing/about-bitwarden-plans.md %}) are limited to only two Collections. The following `.csv`, for example, would cause this error:
+
+```
+url,username,password,totp,extra,name,grouping,fav
+https://www.facebook.com/login.php,login,password,,,Facebook,Social,0
+https://twitter.com/login,login,password,,,Twitter,Social,0
+https://asana.com/,login,password,,,Asana,Productivity Tools,0
+https://github.com/login,login,password,,,Github,Productivity Tools,0
+https://www.paypal.com/login,login,password,,,Paypal,Finance,0
+https://www.bankofamerica.com/,login,password,,,Bankofamerica,Finance,0
+```
+
+**To solve this issue**, delete the `grouping` column and the `grouping` datum for each item, including the trailing comma, for example edit:
+
+```
+https://github.com/login,login,password,,,Github,Productivity Tools,0
+```
+down to:
+```
+https://github.com/login,test,test,,,Github,0`
+```
