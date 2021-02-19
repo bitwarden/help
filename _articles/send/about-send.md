@@ -12,7 +12,7 @@ order: 01
 
 Bitwarden Send is a secure way to transmit sensitive information to **anyone**. A Send, which can contain plaintext or file attachments up to 100 MB, generates a unique and secure link which can be shared with anyone (including those who *do not* have Bitwarden accounts) via text, email, or whatever communication channel you prefer. Every send operation is:
 
-- **End-to-end Encrypted**: Data in a Send is encrypted on creation, and only decrypted when a recipient opens the received link. The generated link doesn't contain any data related to the Send's contents, so it's safe to share over intermediary communications services without exposing information to anyone but the recipient.
+- **End-to-end Encrypted**: Data in a Send is encrypted on creation, and only decrypted when a recipient opens the received link. The generated link doesn't contain any data related to the Send's contents, so it's safe to share over intermediary communications services without exposing information to any those intermediary services.
 
 - **Customizably Ephemeral**: Sends are designed to be ephemeral, so every Send that you creates requires a Deletion Date that will trigger automatic deletion from all systems. With additional options to automate a Expiration Date and Maximum Access Count, every Send can be configured to be available to recipients for only as long as you need it to be.
 

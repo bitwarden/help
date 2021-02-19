@@ -7,9 +7,10 @@ popular: false
 tags: []
 order: 05
 ---
-
-Currently, there are two methods by which you can protect the privacy of your sends.
+Send privacy options help to cut down on exposure of the contents of a Send to unintended recipients.
 
 ## Passwords
+
+For any Send, you may configure a Password that recipients will be required to enter in order to access it's contents. 
 
 ## Hidden-Text

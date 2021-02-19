@@ -104,3 +104,7 @@ A banner is displayed to users on the Add Item screen indicating that a policy w
 {% callout info %}
 Vault Items that were created prior to the implementation of this policy or prior to joining the Organization will remain in the user's personal Vault.
 {% endcallout %}
+
+### Disable Send
+
+Enabling the **Disable Send** policy will require 

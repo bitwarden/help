@@ -19,3 +19,7 @@ order: 06
 |{% icon fa-clock-o %}|This Send has reached it's specified Expiration Date. For more information, see [Send Deletion]({% link _articles/send/send-impermanence.md %}).|
 |{% icon fa-ban %}|This Send has reached it's specified Maximum Access Count. For more information, see [Send Deletion]({% link _articles/send/send-impermanence.md %}).|
 |{% icon fa-trash %}|This Send has reached it's specified Deletion Date and is **Pending Deletion**. For more information, see [Send Deletion]({% link _articles/send/send-impermanence.md %}).|
+
+#### Q: Can I prevent members of my Organization from using Send?
+
+**A:** 
