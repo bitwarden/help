@@ -38,19 +38,28 @@ To import your data into a personal Vault:
 Importing data multiple times will create duplicates.
 {% endcallout %}
 
-## Troubleshooting Import Errors
+## Length-related Import Errors
 
-If you get the following error:
+The following error messages, typically received when attempting to import a `.csv`, indicate that a field in your import file exceeds the allowed **encrypted** character limit for that field type:
 
-```
-Ciphers[X].Login: The field yyyy exceeds the maximum encrypted value length of zzzz characters.
-```
+{% image /importing/ciphererrors.png Cipher errors in the Web Vault%}
 
-An item in your `.csv` exceeds the character limit allowed for items stored in the Bitwarden Vault. Remove the offending item from your file for import, or reduce its size. Open the `.csv` in a text editor or spreadsheet program for easy editing, and locate the offending item at `index[X]` as referenced in the error message.
+These error messages contain 3 pieces of pertinent data:
+- `Ciphers[X]` indicates the index number where the offending item is located.
+- `The field <field>` indicates the field name which is causing the offense.
+- `length of <limit> characters` indicates the character limit allowed for that field.
 
-{% callout info %}
-Depending on the program you use to edit your `.csv`, the index value `[X]` may not map perfectly to a Row or Line number. Typically in spreadsheet programs, add 2 (i.e. `index[23]` = Row **25**). In other cases, it may be useful to focus on `Notes` items, as these items are usually those that trigger the error.
-{% endcallout %}
+   {% callout note %}On import to Bitwarden, the character count of any given field is increased due to encryption, meaning that an 8000-character `note` field in your `.csv` will scale to 10,000+ characters when it comes into contact with Bitwarden, triggering this error. As a rule of thumb, character counts will grow between 30-50% when encrypted.{% endcallout %}
+
+To solve this issue:
+
+1. Open the `.csv` file you're attempting to import in a text editor or spreadsheet program.
+2. Locate the offending item at `index[X]`. The value of `X` references a `.csv` index number, so depending on the program you use to edit your file it may not map perfectly to a spreadsheet Row or Line number.
+
+    In many cases, you'll need to adjust for `.csv` header rows, which are not counted in many spreadsheet programs. It can also help to use field name (`yyyy`) and perceived character length as context clues.
+
+   {% callout success %}If you've having trouble locating the offending item using the data provided in the error, it may help to focus first on notes as these are frequently the cause of this error.{% endcallout %}
+3. Remove the offending item from your import file, or reduce the character count. When reducing the character count, remember that limits are placed on **encrypted** counts, not pre-encryption counts.  As a rule of thumb, character counts will grow between 30-50% when Bitwarden attempts to encrypt a field on import.
 
 ## Supported Formats
 

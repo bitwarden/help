@@ -62,3 +62,56 @@ Importing data multiple times will create duplicates.
 {% endcallout %}
 
 Congratulations! You have just transferred your data from LastPass into Bitwarden.
+
+## Import Troubleshooting
+
+### Character Limit Error
+
+The following error messages, typically received when attempting to import a `.csv`, indicate that a field in your import file exceeds the allowed **encrypted** character limit for that field type:
+
+{% image /importing/ciphererrors.png Cipher errors in the Web Vault%}
+
+These error messages contain 3 pieces of pertinent data:
+- `Ciphers[X]` indicates the index number where the offending item is located.
+- `The field <field>` indicates the field name which is causing the offense.
+- `length of <limit> characters` indicates the character limit allowed for that field.
+
+   {% callout note %}On import to Bitwarden, the character count of any given field is increased due to encryption, meaning that an 8000-character `note` field in your `.csv` will scale to 10,000+ characters when it comes into contact with Bitwarden, triggering this error. As a rule of thumb, character counts will grow between 30-50% when encrypted.{% endcallout %}
+
+To solve this issue:
+
+1. Open the `.csv` file you're attempting to import in a text editor or spreadsheet program.
+2. Locate the offending item at `index[X]`. The value of `X` references a `.csv` index number, so depending on the program you use to edit your file it may not map perfectly to a spreadsheet Row or Line number.
+
+    In many cases, you'll need to adjust for `.csv` header rows, which are not counted in many spreadsheet programs. It can also help to use field name (`yyyy`) and perceived character length as context clues.
+
+   {% callout success %}If you've having trouble locating the offending item using the data provided in the error, it may help to focus first on notes as these are frequently the cause of this error.{% endcallout %}
+3. Remove the offending item from your import file, or reduce the character count. When reducing the character count, remember that limits are placed on **encrypted** counts, not pre-encryption counts.  As a rule of thumb, character counts will grow between 30-50% when Bitwarden attempts to encrypt a field on import.
+
+### Maximum Collections Error
+
+When importing Lastpass `.csv` exports to a [Free Organization]({% link _articles/plans-and-pricing/about-bitwarden-plans.md %}), you may observe the following error:
+
+{% image /importing/lpcollectionserror.png Free Organization Max Collections Error%}
+
+This error occurs when the Lastpass export contains 3 or more `grouping` values. The values in the `grouping` field are interpreted by Bitwarden as [Collections]({% link _articles/organizations/about-collections.md %}), however [Free Organizations]({% link _articles/plans-and-pricing/about-bitwarden-plans.md %}) are limited to only two Collections. The following `.csv`, for example, would cause this error:
+
+```
+url,username,password,totp,extra,name,grouping,fav
+https://www.facebook.com/login.php,login,password,,,Facebook,Social,0
+https://twitter.com/login,login,password,,,Twitter,Social,0
+https://asana.com/,login,password,,,Asana,Productivity Tools,0
+https://github.com/login,login,password,,,Github,Productivity Tools,0
+https://www.paypal.com/login,login,password,,,Paypal,Finance,0
+https://www.bankofamerica.com/,login,password,,,Bankofamerica,Finance,0
+```
+
+**To solve this issue**, delete the `grouping` column and the `grouping` datum for each item, including the trailing comma, for example edit:
+
+```
+https://github.com/login,login,password,,,Github,Productivity Tools,0
+```
+down to:
+```
+https://github.com/login,test,test,,,Github,0`
+```
