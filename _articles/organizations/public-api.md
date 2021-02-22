@@ -65,7 +65,7 @@ This request will result in the following response:
 }
 ```
 
-In this response, `3600` represents the expiration value (in seconds), meaning this token is valid for 6 minutes after being issued. Making an API call with an expired token will return a `401 Unauthorized` [response code](#response-codes).
+In this response, `3600` represents the expiration value (in seconds), meaning this token is valid for 60 minutes after being issued. Making an API call with an expired token will return a `401 Unauthorized` [response code](#response-codes).
 
 ## Content Types
 
