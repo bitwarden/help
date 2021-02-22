@@ -105,7 +105,7 @@ Importing multiple times will create duplicate records in your Bitwarden Vault.
 
 ### Individual user data import
 
-Bitwarden supports a variety import formats from other password management platforms. Individual users can import their data into their Bitwarden Vault on their own, and does not require Administrative assistance.
+Bitwarden supports a variety of import formats from other password management platforms. Individual users can import their data into their Bitwarden Vault on their own, and do not require Administrative assistance.
 
 For more on importing individual data, check out our helpful article [here.](https://bitwarden.com/help/import-export/)
 
