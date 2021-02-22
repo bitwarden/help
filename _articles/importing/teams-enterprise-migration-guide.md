@@ -23,7 +23,7 @@ If you need assistance during your migration, our [Customer Success team is here
 
 ## Scope
 
-This document will describe the best practices for migrating secure data from your current password manage(s) to a Bitwarden Teams or Enterprise Organization, building an infrastructure for security based on simple and scalable methods.
+This document will describe the best practices for migrating secure data from your current password manager(s) to a Bitwarden Teams or Enterprise Organization, building an infrastructure for security based on simple and scalable methods.
 
 Password management is crucial for organizational security and operational efficiency. Providing insight into the best methods to perform migration and configuration is designed to minimize the trial-and-error approach that is often needed when exchanging enterprise tools.
 
