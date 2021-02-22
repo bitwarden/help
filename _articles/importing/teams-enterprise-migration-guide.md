@@ -115,7 +115,7 @@ Bitwarden supports both manual and automated user invitation and boarding. Best 
 
 ### Manual onboarding
 
-Manual boarding is done via the Web Vault. More information on manual user boarding can be found in this [helpful article](https://bitwarden.com/help/article/managing-users/)
+Manual onboarding is done via the Web Vault. More information on manual user onboarding can be found in this [helpful article](https://bitwarden.com/help/article/managing-users/)
 
 ### Automated onboarding
 
