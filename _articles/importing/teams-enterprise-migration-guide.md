@@ -111,7 +111,7 @@ For more on importing individual data, check out our helpful article [here.](htt
 
 ## Onboarding users
 
-Bitwarden supports both manual and automated user invitation and boarding. Best practice is to manually board any necessary Administrative users during configuration and initial deployment, ensuring all Organization configurations including Enterprise Policies, Login with SSO, and Directory Connector are ready prior to automating the User invitation and boarding process.
+Bitwarden supports both manual and automated user invitation and onboarding. Best practice is to manually onboard any necessary Administrative users during configuration and initial deployment, ensuring all Organization configurations including Enterprise Policies, Login with SSO, and Directory Connector are ready prior to automating the User invitation and onboarding process.
 
 ### Manual onboarding
 
