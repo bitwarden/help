@@ -5,10 +5,20 @@
             color: #fff;
         }
     }
-
+    .card-header {
+      @include media-breakpoint-down(sm) {
+        font-size: 1rem;
+    }
+  }
+}
     .card-body {
         ul {
             margin-bottom: 0;
+        }
+
+        p {
+          @include media-breakpoint-down(sm) {
+            font-size: 0.75rem;
         }
     }
 }
@@ -35,28 +45,28 @@
 		padding-bottom: 0.5rem;
 		display: flex;
 		align-items: center;
-		
+
 		@include media-breakpoint-down(sm) {
 			p {
 				margin-bottom: 0;
 				margin-left: 1rem;
 			}
 		}
-	
+
 		@include media-breakpoint-up(md) {
 			display: block;
 		}
-		
+
 		img {
 			display: inline-block;
 			width: 100%;
 			max-width: 200px;
-	
+
 			&:hover {
 				background-color: #F2F2F2;
 				border-radius: 1rem;
 			}
-	
+
 			@include media-breakpoint-down(sm) {
 				width: 50%;
 			}
