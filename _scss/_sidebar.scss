@@ -85,6 +85,22 @@
     }
 }
 
+.search-header {
+    background-color: $light;
+    padding: 0.5rem;
+
+    .btn {
+      border: solid;
+      border-color: #ccd2d7;
+      border-width: thin;
+      background-color: #fff;
+
+      &:hover {
+        background-color: #F2F2F2;
+      }
+    }
+  }
+
 .bd-sidebar .nav {
     > li > a {
         border-left: 2px solid transparent;

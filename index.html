@@ -6,50 +6,88 @@ title: Help Center
 
 <div class="container-fluid main-container">
     <div class="row">
-        <div class="col-md-8">
+        <div class="col">
             <div class="card card-popular mb-3">
                 <h4 class="card-header">
-                    <i class="fa fa-star-o"></i> Popular Articles
+                    <i class="fa fa-star-o"></i> Welcome to the Help Center!
                 </h4>
                 <div class="card-body">
-                    <ul class="fa-ul">
-                        {% for article in sorted_articles %}
-                        {% if article.popular == true and article.hidden != true %}
-                        <li>
-                            <i class="fa-li fa fa-file-text-o"></i>
-                            <a href="{{site.baseurl}}{{article.url}}">{{article.title}}</a>
-                        </li>
-                        {% endif %}
-                        {% endfor %}
-                    </ul>
+                    <p class="card-text">To start learning about Bitwarden, check out our <b>Get Started with Bitwarden</b> guides or the most important things to know about <b>Bitwarden for your Business</b>.</p>
                 </div>
             </div>
-
-            {% for category in site.categories %}
-            {% if category.hidden != true %}
+            <div class="card mb-3">
+              <h4 class="card-header">
+                  <i class="fa fa-home"></i> Get Started with Bitwarden
+              </h4>
+              <div class="card-body">
+								<div class="icon-wrapper text-center align-items-center justify-content-around">
+									<a class="icon-link" href="{{site.baseurl}}/article/getting-started-webvault">
+										<img src="images/landing/vault-final.png">
+										<p class="font-weight-bold">Web Vault</p>
+									</a>
+									<a class="icon-link" href="{{site.baseurl}}/article/getting-started-browserext">
+										<img src="images/landing/extension.png">
+										<p class="font-weight-bold">Browser</p>
+									</a>
+									<a class="icon-link" href="{{site.baseurl}}/article/getting-started-mobile">
+										<img src="images/landing/mobile.png">
+										<p class="font-weight-bold">Mobile</p>
+									</a>
+									<a class="icon-link" href="{{site.baseurl}}/article/getting-started-desktop">
+										<img src="images/landing/desktop.png">
+										<p class="font-weight-bold">Desktop</p>
+									</a>
+									<a class="icon-link" href="{{site.baseurl}}/article/cli">
+										<img src="images/landing/cli.png">
+										<p class="font-weight-bold">CLI</p>
+									</a>
+								</div>
+              </div>
+          	</div>
             <div class="card mb-3">
                 <h4 class="card-header">
-                    <i class="fa fa-folder-open-o"></i> {{category.title}}
+                    <i class="fa fa-building"></i> Bitwarden for your Business
                 </h4>
                 <div class="card-body">
-                    <ul class="fa-ul">
-                        {% for article in sorted_articles %}
-                        {% assign catFilename = category.path | filename %}
-                        {% if article.categories contains catFilename and article.hidden != true %}
-                        <li>
-                            <i class="fa-li fa fa-file-text-o"></i>
-                            <a href="{{site.baseurl}}{{article.url}}">{{article.title}}</a>
-                        </li>
-                        {% endif %}
-                        {% endfor %}
-                    </ul>
+									<div class="icon-wrapper text-center align-items-center justify-content-around">
+										<a class="icon-link" href="{{site.baseurl}}/article/about-organizations">
+											<img src="images/landing/organizations.png">
+											<p class="font-weight-bold">Organizations</p>
+										</a>
+										<a class="icon-link" href="{{site.baseurl}}/article/directory-sync">
+											<img src="images/landing/directory-sync.png">
+											<p class="font-weight-bold">Directory Sync</p>
+										</a>
+										<a class="icon-link" href="{{site.baseurl}}/article/about-sso">
+											<img src="images/landing/sso.png">
+											<p class="font-weight-bold">Login with SSO</p>
+										</a>
+										<a class="icon-link" href="{{site.baseurl}}/article/install-on-premise">
+											<img src="images/landing/selfhost.png">
+											<p class="font-weight-bold">Self Host</p>
+										</a>
+										<a class="icon-link" href="{{site.baseurl}}/article/what-encryption-is-used">
+											<img src="images/landing/security.png">
+											<p class="font-weight-bold">Security</p>
+										</a>
+									</div>
                 </div>
             </div>
-            {% endif %}
-            {% endfor %}
         </div>
-        <div class="col-md-4">
-            {% include contact.html %}
-        </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        {% include videos.html %}
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        {% include contact.html %}
+      </div>
+    </div>
+    <div class="row">
+        <div class="col">
+          {% include connect.html %}
+      </div>
     </div>
 </div>

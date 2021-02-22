@@ -5,8 +5,8 @@ categories: [getting-started]
 featured: false
 popular: false
 hidden: false
-tags: [tutorial, browser extensions]
-order: 04
+tags: [tutorial, getting started, browser extensions]
+order: 03
 ---
 
 Bitwarden Browser Extensions integrate password management directly into your favorite browser. Download a Bitwarden Browser Extension from your browser's marketplace or app store, or from the [Bitwarden Downloads](https://bitwarden.com/download){:target="\_blank"} page. Browser Extensions are available for:
@@ -34,7 +34,16 @@ When you **Favorite** an item, it'll appear at the top of your Vault for easy ac
 
 ### Get Organized with Favorites and Folders
 
-Organizing your Vault into **Favorites** and **Folders** makes navigating your Vault a breeze:
+Organizing your Vault into **Favorites** and **Folders** makes navigating your Vault a breeze.
+
+**To add a Folder:**
+
+1. Select the {% icon fa-cogs %} **Settings** tab.
+2. Select the **Folders** option.
+3. Select the {% icon fa-plus %} **Add** icon.
+4. Give your new folder a name and select **Save**.
+
+**To add a Vault item to a Folder or your Favorites:**
 
 1. Select the item you want to edit.
 2. Select **Edit** in the top-right corner of the Browser Extension.
