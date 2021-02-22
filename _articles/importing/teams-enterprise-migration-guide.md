@@ -27,7 +27,7 @@ This document will describe the best practices for migrating secure data from yo
 
 Password management is crucial for organizational security and operational efficiency. Providing insight into the best methods to perform migration and configuration is designed to minimize the trial-and-error approach that is often needed when exchanging enterprise tools.
 
-The below steps are listed in the recommended order for ease of use and smooth boarding for users.
+The below steps are listed in the recommended order for ease of use and smooth onboarding for users.
 
 ## Exporting data
 
