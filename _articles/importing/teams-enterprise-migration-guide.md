@@ -119,7 +119,7 @@ Manual onboarding is done via the Web Vault. More information on manual user onb
 
 ### Automated onboarding
 
-Automated user boarding is also available when leveraging Bitwarden Directory Connector - a standalone application available in a [Desktop app](https://bitwarden.com/help/article/directory-sync-desktop/) and a [CLI tool](https://bitwarden.com/help/article/directory-sync-cli/) -  synchronizing user and group information to the Bitwarden Organization. These users are automatically invited to join the Organization, and can be confirmed manually or automatically using the [Bitwarden CLI tool](https://bitwarden.com/help/article/cli/#confirm).
+Automated user onboarding is also available when leveraging Bitwarden Directory Connector - a standalone application available in a [Desktop app](https://bitwarden.com/help/article/directory-sync-desktop/) and a [CLI tool](https://bitwarden.com/help/article/directory-sync-cli/) -  synchronizing user and group information to the Bitwarden Organization. These users are automatically invited to join the Organization, and can be confirmed manually or automatically using the [Bitwarden CLI tool](https://bitwarden.com/help/article/cli/#confirm).
 
 - Learn more about how syncing works [here.](https://bitwarden.com/help/article/directory-sync/)
 - Discover how to configure user and group filters for Directory Connector [here.](https://bitwarden.com/help/article/user-group-filters/)
