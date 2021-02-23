@@ -17,7 +17,7 @@ When migrating from the Cloud to an on-premises instance:
 1. [Install and Deploy]({% link _articles/hosting/install-on-premise.md %}) Bitwarden to your on-premises server.
 2. [Download your Enterprise Organization License](https://bitwarden.com/help/article/licensing-on-premise/#organization-license) from the Cloud Web Vault and use it to [Create an Organization]({% link _articles/organizations/create-an-organization.md %}) in your on-premises instance.
 3. [Export your Data]({% link _articles/account/export-your-data.md %}) from the Cloud Web Vault.
-4. [Import your Data]({% link _articles/importing/import-data.md %}) to your on-premisesinstance to automatically create Collections, Vault items, and their associations.
+4. [Import your Data]({% link _articles/importing/import-data.md %}) to your on-premises instance to automatically create Collections, Vault items, and their associations.
 5. [Create User Groups]({% link _articles/organizations/create-groups.md %}) manually in your on-premises instance.
 6. Start [Inviting Users to your Organization]({% link _articles/organizations/managing-users.md %}).
 
