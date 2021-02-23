@@ -65,7 +65,7 @@ Selecting **Starts with** will prompt Bitwarden to offer auto-fill when the dete
 For example, if the URI value `https://sub.domain.com/path/` uses starts with match detection:
 
 - **Auto-fill offered** for `https://sub.domain.com/path/` & `https://sub.domain.com/path/page.html`
-- **Auto-fill not offered** for `https://sub.domain.com`, `https://sub.domain.com:4000/path/page.html` (interrupted with a port), or `https://sub.domain/com/path` (absent trailing slash)
+- **Auto-fill not offered** for `https://sub.domain.com`, `https://sub.domain.com:4000/path/page.html` (interrupted with a port), or `https://sub.domain.com/path` (absent trailing slash)
 
 #### Regular expression
 
