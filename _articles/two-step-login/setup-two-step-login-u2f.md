@@ -10,7 +10,7 @@ order: 07
 
 Two-step Login using [FIDO U2F](https://www.yubico.com/solutions/fido-u2f/){:target="_blank"} is available for Premium users, including members of Paid Organizations (Families, Teams, or Enterprise).
 
-Any FIDO U2F certified device can be used, however we recommend a [YubiKey](https://www.yubico.com/products/yubikey-hardware/){:target="_blank"}.
+Any FIDO U2F certified device can be used, including YubiKeys, SoloKeys, Google Titan, Nitrokeys, and more.
 
 {% callout info %}
 **FIDO U2F cannot be used on all Bitwarden applications.** Enable another Two-step Login method in order to access your vault on unsupported applications.

@@ -32,7 +32,7 @@ The following variables are among those that already exist in `global.override.e
 |globalSettings__mail__smtp__ssl=| (Boolean) Whether your SMTP Server uses an encryption protocol:<br>`true` = SSL<br>`false` = TLS|
 |globalSettings__mail__smtp__username=|A valid username for the `smtp__host`.|
 |globalSettings__mail__smtp__password=|A valid password for the `smtp__host`.|
-|globalSettings__disableUserRegistration=|Specify `true` to disable new users from being added to the instance.|
+|globalSettings__disableUserRegistration=|Specify `true` to disable new users signing up for an account on this instance via the Registration page.|
 |globalSettings__hibpApiKey=|Your HaveIBeenPwned (HIBP) API Key, available [here](https://haveibeenpwned.com/API/Key).|
 |adminSettings__admins=|Email addresses which may access the [System Administrator Portal]({% link _articles/hosting/admin-portal.md%}).|
 
