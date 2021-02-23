@@ -22,6 +22,12 @@ This article contains Frequently Asked Questions (FAQs) regarding **Two-step Log
 
 #### Q: Why is Bitwarden not asking for my enabled Two-step Login method?
 
-**A:** If any [method]({% link _articles/two-step-login/setup-two-step-login.md %}) is enabled, Two-step Login is required to **Log In** to your Vault. Two-step Login **is not required to Unlock** your Vault. If Bitwarden isn't asking for your Two-step Login method, you're likely already logged in and only unlocking your Vault.
+**A:** In most cases, one of two things is happening:
 
-For more information on the difference between Logging In and Unlocking, see [Vault Timeout Action](https://bitwarden.com/help/article/vault-timeout/#vault-timeout-action).
+1. You may be already logged in to Bitwarden and only unlocking your Vault. Two-step Login is required to **Log In** but not to **Unlock** your Vault. For more information on the difference between Logging In and Unlocking, see [Vault Timeout Action](https://bitwarden.com/help/article/vault-timeout/#vault-timeout-action).
+
+2. You may have previously checked the **Remember me** checkbox on a device when accessing your Vault using Two-step Login.
+
+   {% image /two-step/twostep-remember.png Remember me option %}
+
+   If you used the **Remember me** option, you will need to **Deauthorize Sessions** from your Web Vault (**Settings** &rarr; **My Account**) for that device to continue asking for your Two-step Login method.

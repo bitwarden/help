@@ -28,7 +28,7 @@ Bitwarden complies with EU-U.S. Privacy Shield Frameworks. In addition, Bitwarde
 
 ### HIPAA
 
-Bitwarden is HIPPA compliant.
+Bitwarden is HIPAA compliant.
 
 ## Third Party Security Audits
 
