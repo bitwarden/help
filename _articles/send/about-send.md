@@ -10,26 +10,25 @@ order: 01
 
 ## What is Send?
 
-Bitwarden Send is a secure way to transmit sensitive information to **anyone**. A Send, which can contain plaintext or file attachments up to 100 MB, generates a unique and secure link which can be shared with anyone (including those who *do not* have Bitwarden accounts) via text, email, or whatever communication channel you prefer. Every send operation is:
+Bitwarden Send is a secure way to transmit sensitive information to **anyone**, including plaintext or file attachments up to 100 MB. Every Send is assigned a randomly generated and secure link, which can be shared with anyone (including those who *do not* have Bitwarden accounts) via text, email, or whatever communication channel you prefer. Every Send is:
 
-- **End-to-end Encrypted**: Data in a Send is encrypted on creation, and only decrypted when a recipient opens the received link. The generated link doesn't contain any data related to the Send's contents, so it's safe to share over intermediary communications services without exposing information to any those intermediary services.
+- **End-to-end Encrypted**: Data in a Send is encrypted on creation, and only decrypted when a recipient opens the received link. The contents of a Send are stored **only encrypted** in Bitwarden systems, and the generated link doesn't contain any data related to the Send's contents, so it's safe to share over intermediary communications services without exposing information to Bitwarden or any used intermediary services.
 
-- **Customizably Ephemeral**: Sends are designed to be ephemeral, so every Send that you creates requires a Deletion Date that will trigger automatic deletion from all systems. With additional options to automate a Expiration Date and Maximum Access Count, every Send can be configured to be available to recipients for only as long as you need it to be.
+- **Dynamically Ephemeral**: Sends are designed for ephemeral sharing, so every Send has a maximum lifespan of 31 days. Alternatively, you can set your own Deletion Date for a Send using pre-set options or a custom timestamp. In either case, the Send and its contents will be completely purged from Bitwarden systems when its lifespan is terminated. Using additional options like Expiration Date and Maximum Access Count, you can ensure that access to recipients is terminated according to your needs.
 
-- **Customizably Private**: To enhance the privacy of your shared information, you can configure any Send with a password that will be required for any recipient to access the contained data. For text Sends, you can also require users to toggle visibility to prevent exposure to unintentional onlookers.
+- **Customizably Private**: Protect the contents of your Send by optionally configuring a password for access so that no unintended recipients can see the contained information. For text Sends, you can also optionally require users to toggle visibility to prevent exposure to unintentional onlookers.
 
 ## The Send View
 
-Sends are created, edited, configured, and deleted from the **Send** view in any Bitwarden application. The **Send** view can be accessed from the global application navigation, for example in the Web Vault:
+Sends are created, edited, managed, and deleted from the **Send** view in any Bitwarden application. The **Send** view can be accessed from the global application navigation, for example in the Web Vault:
 
 {% image /send/send-webvault.png Send in the Web Vault %}
 
-Once you've [created a Send]({% link _articles/send/create-send.md %}), share it by copying the generated **Send Link** and passing it along to intended recipients via text, email, or whatever communication channel you prefer. Recipients will be able to [access a Send]({% link _articles/send/receive-send.md %}) in any modern web browser.
+## Using Send
 
-### Next Steps
+Using Bitwarden Send is a simple two-step process:
 
-Now that you've learned the basics of Bitwarden Send, we recommend that you:
+1. [Create your Send]({% link _articles/send/create-send.md %}) to-spec, leveraging Lifespan Options and Privacy Options to fit your needs.
+2. Share the Send link with the intended recipients, using whatever communication channel you prefer. If necessary, share information with your recipients on what it means to [Receive a Send]({% link _articles/send/receive-send.md %}).
 
-- [Create a Send]({% link _articles/send/create-send.md %}) from any Bitwarden application.
-- Learn about [Send Impermanence Options]({% link _articles/send/send-impermanence.md %}), including Deletion and Expiration.
-- Learn how to [make a Send private]({% link _articles/send/send-privacy.md %}).
+As the Sender of a Send, we recommend that you keep track of your Send's lifespan by noting the configured **Deletion Date**, **Expiration Date**, **Maximum Access Count**. To make that as easy as possible, Sends in your Send view will display [a suite of status icons](https://bitwarden.com/help/article/send-faqs/#q-what-do-the-icons-next-to-my-sends-indicate).

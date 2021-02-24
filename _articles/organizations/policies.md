@@ -72,7 +72,7 @@ Enabling the **Password Generator** policy will enforce a configurable set of mi
 {% callout warning %}
 Existing non-compliant passwords **will not** be changed when this policy is enabled, nor will the items be removed from the Organization. When changing or generating a password after this policy is enabled, configured policy rules will be enforced.
 
-A banner is displayed to users on the Password Generator screen indicating that a policy will affect their generator settings.
+A banner is displayed to users on the Password Generator screen to indicate that a policy will affect their generator settings.
 {% endcallout %}
 
 ### Single Organization
@@ -99,7 +99,7 @@ As a result, you must disable the **Single Sign-On Authentication** policy befor
 
 Enabling the **Personal Ownership** policy will require non-Owner/non-Admin users to save Vault Items to an Organization by disabling personal ownership of Vault items for organization users.
 
-A banner is displayed to users on the Add Item screen indicating that a policy will affect their membership options.
+A banner is displayed to users on the Add Item screen to indicate that a policy will affect their membership options.
 
 {% callout info %}
 Vault Items that were created prior to the implementation of this policy or prior to joining the Organization will remain in the user's personal Vault.
@@ -107,4 +107,6 @@ Vault Items that were created prior to the implementation of this policy or prio
 
 ### Disable Send
 
-Enabling the **Disable Send** policy will require 
+Enabling the **Disable Send** policy will prevent non-Owner/non-Admin `?` users from creating or editing a Send using [Bitwarden Send]({% link _articles/send/about-send.md %}). Users subject to this policy will still be able to delete existing Sends that have not yet reached their [Deletion Date]({% link _articles/send/send-lifespan.md %}).
+
+A banner is displayed to users in the Send view and on opening any existing Send to indicate that a policy restricting them to only deleting Sends.
