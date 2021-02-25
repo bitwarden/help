@@ -46,3 +46,14 @@ Searching inside a "parent" Folder will not include items in Folders nested insi
 To create a nested Folder, give a new Folder a **Name** that includes the "parent" Folder following by a forward slash (`/`) delimiter, for example `Personal/Email`.
 
 If there is no Folder with the corresponding "parent" name, the Folder won't nest and its title will be displayed in-full.
+
+## Add Items to a Folder
+
+Once you've created a Folder in your Vault, there are a few ways to add items to it:
+
+- From the **Add Item** or **Edit Item** screen on any Bitwarden application, select your new folder from the **Folder** dropdown and **Save** your item:
+
+   {% image manage-items/add-to-folder.png Add item to a Folder%}
+- From the **My Vault** view, select the Vault items you want to move and use the top-level {% icon fa-cog %} gear dropdown to select the {% icon fa-share %} **Move Selected** button. On the Move Selected dialog box, choose the Folder you want to move the item(s) to:
+
+   {% image manage-items/add-to-folder-move.png Move item to a Folder %}
