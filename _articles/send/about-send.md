@@ -28,7 +28,7 @@ Sends are created, edited, managed, and deleted from the **Send** view in any Bi
 
 Using Bitwarden Send is a simple two-step process:
 
-1. [Create your Send]({% link _articles/send/create-send.md %}) to-spec, leveraging Lifespan Options and Privacy Options to fit your needs.
+1. [Create your Send]({% link _articles/send/create-send.md %}) to-spec by setting [lifespan options]({% link _articles/send/send-lifespan.md %}) and [privacy options]({% link _articles/send/send-privacy.md %}) to fit your needs.
 2. Share the Send link with the intended recipients, using whatever communication channel you prefer. If necessary, share information with your recipients on what it means to [Receive a Send]({% link _articles/send/receive-send.md %}).
 
-As the Sender of a Send, we recommend that you keep track of your Send's lifespan by noting the configured **Deletion Date**, **Expiration Date**, **Maximum Access Count**. To make that as easy as possible, Sends in your Send view will display [a suite of status icons](https://bitwarden.com/help/article/send-faqs/#q-what-do-the-icons-next-to-my-sends-indicate).
+As the Sender, we recommend that you keep track of your Send's [configured lifespan]({% link _articles/send/send-lifespan.md %}). To make that as easy as possible, Sends in your Send view will display [a set of status icons](https://bitwarden.com/help/article/send-faqs/#q-what-do-the-icons-next-to-my-sends-indicate) whenever lifespan event (e.g expiration) has occurred.

@@ -17,7 +17,7 @@ These links can be opened in any modern web browser, and will open a simple no-n
 
 {% image /send/received-send.png A received Send%}
 
-Depending on the [options configured]({% link _articles/send/create-send.md %}) by the Send's Sender, the recipient of a Send may be required to:
+Depending on the [options configured]({% link _articles/send/create-send.md %}) by the Sender, the recipient of a Send may be required to:
 
 - Enter a Password to access the contents of the Send.
 - Manually toggle visibility on a hidden-text Send.

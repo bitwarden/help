@@ -12,7 +12,7 @@ Unlike traditional Bitwarden Vault items and File Attachments, Sends are ephemer
 
 **Optionally**, you can configure additional limitations on recipient access using the [Expiration Date](#expiration-date) and/or [Maximum Access Count](#maximum-access-count) options.
 
-You can also manually [delete](#manually-delete-a-send) or [disable](#manually-disable-a-send) a Send at any time.
+You can also manually [disable or delete](#manually-disable-or-delete) a Send at any time.
 
 ## Deletion Date
 
@@ -64,13 +64,13 @@ When A Send reaches its specified Maximum Access Count:
 The **Current Access Count** ticker counts the number of times the link has been accessed. It **does not** count the number of times the contents of a File Send are downloaded or the number of times the contents of a Text Send are copied.
 {% endcallout %}
 
-## Manually Delete a Send
+## Manually Disable or Delete
 
-Manually delete a Send from any Bitwarden application:
+Manually disable or delete a Send from any Bitwarden application:
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
-    <a class="nav-link active" id="wvtab" href="#webvault" role="tab" aria-controls="webvault" aria-selected="true">Web Vault</a>
+    <a class="nav-link" id="wvtab" href="#webvault" role="tab" aria-controls="webvault" aria-selected="true">Web Vault</a>
   </li>
   <li class="nav-item" role="presentation">
     <a class="nav-link" id="betab" href="#browserextension" role="tab" aria-controls="browserextension" aria-selected="false">Browser Extensions</a>
@@ -82,14 +82,26 @@ Manually delete a Send from any Bitwarden application:
     <a class="nav-link" id="mobtab" href="#mobile" role="tab" aria-controls="mobile" aria-selected="false">Mobile Apps</a>
   </li>
   <li class="nav-item" role="presentation">
-    <a class="nav-link" id="clitab" href="#cli" role="tab" aria-controls="cli" aria-selected="false">CLI</a>
+    <a class="nav-link active" id="clitab" href="#cli" role="tab" aria-controls="cli" aria-selected="false">CLI</a>
   </li>
 </ul>
 <div class="tab-content" id="clientsContent">
-  <div class="tab-pane show active" id="webvault" role="tabpanel" aria-labelledby="wvtab">
+  <div class="tab-pane" id="webvault" role="tabpanel" aria-labelledby="wvtab">
 {% capture web_vault %}
 
-### From the Web Vault
+#### Disable from the Web Vault
+
+To disable a Send from the Web Vault, open the **Edit Send** view and check the **Disable this Send so that no one can access it** checkbox. You can uncheck this box at any time to re-enable access to the Send.
+
+{% image /send/send-disable-wv.png Disable from the Web Vault %}
+
+When a Send is disabled:
+
+- For recipients of the Send (i.e. anyone with the generated link), navigating to the Send link will show a screen reporting that the Send does not exist or is no longer available.
+
+- For the Sender, a {% icon fa-warning %} **Disabled** icon will appear next to the Send. The Send will remain accessible to its Sender in the Send view until the specified **Deletion Date** is reached.
+
+#### Delete from the Web Vault
 
 To delete a Send from the Web Vault, use the hover-over {% icon fa-cog %} gear dropdown to select the {% icon fa-trash %} **Delete** button:
 
@@ -101,7 +113,19 @@ To delete a Send from the Web Vault, use the hover-over {% icon fa-cog %} gear d
   <div class="tab-pane" id="browserextension" role="tabpanel" aria-labelledby="betab">
 {% capture browser_extension %}
 
-### From Browser Extensions
+#### Disable from Browser Extensions
+
+To disable a Send from a Browser Extension, open the **Edit Send** view and check the **Disable this Send so that no one can access it** checkbox. You can uncheck this box at any time to re-enable access to the Send.
+
+{% image /send/send-disable-be.png Disable from a Browser Extension %}
+
+When a Send is disabled:
+
+- For recipients of the Send (i.e. anyone with the generated link), navigating to the Send link will show a screen reporting that the Send does not exist or is no longer available.
+
+- For the Sender, a {% icon fa-warning %} **Disabled** icon will appear next to the Send. The Send will remain accessible to its Sender in the Send view until the specified **Deletion Date** is reached.
+
+#### Delete from Browser Extensions
 
 To delete a Send from a Browser Extension, select the {% icon fa-trash %} **Trash** icon next to the Send you want to delete:
 
@@ -113,9 +137,21 @@ To delete a Send from a Browser Extension, select the {% icon fa-trash %} **Tras
   <div class="tab-pane" id="desktop" role="tabpanel" aria-labelledby="desktab">
 {% capture desktop_info %}
 
-### From Desktop Apps
+#### Disable from Desktop Apps
 
-To delete a Send from a Desktop App, open the Send from the center column and select the  {% icon fa-trash %} **Delete** button:
+To disable a Send from a Desktop App, open the **Edit Send** view and check the **Disable this Send so that no one can access it** checkbox. You can uncheck this box at any time to re-enable access to the Send.
+
+`Image Placeholder.`
+
+When a Send is disabled:
+
+- For recipients of the Send (i.e. anyone with the generated link), navigating to the Send link will show a screen reporting that the Send does not exist or is no longer available.
+
+- For the Sender, a {% icon fa-warning %} **Disabled** icon will appear next to the Send. The Send will remain accessible to its Sender in the Send view until the specified **Deletion Date** is reached.
+
+#### Delete from Desktop Apps
+
+To delete a Send from a Desktop App, open the **Edit Send** view and select the  {% icon fa-trash %} **Delete** button:
 
 `Image Placeholder.`
 
@@ -125,7 +161,19 @@ To delete a Send from a Desktop App, open the Send from the center column and se
   <div class="tab-pane" id="mobile" role="tabpanel" aria-labelledby="mobtab">
 {% capture mobile_info %}
 
-### From Mobile Apps
+#### Disable from Mobile Apps
+
+To disable a Send from a Mobile App, open the **Edit Send** view and toggle the **Disable this Send so that no one can access it** option. You can toggle this option off at any time to re-enable access to the Send.
+
+{% image /send/send-disable-mobile.png %}
+
+When a Send is disabled:
+
+- For recipients of the Send (i.e. anyone with the generated link), navigating to the Send link will show a screen reporting that the Send does not exist or is no longer available.
+
+- For the Sender, a {% icon fa-warning %} **Disabled** icon will appear next to the Send. The Send will remain accessible to its Sender in the Send view until the specified **Deletion Date** is reached.
+
+#### Delete from Mobile Apps
 
 To delete a Send from a Mobile App, tap the menu icon ( {% icon fa-ellipsis-v %} or {% icon fa-ellipsis-h %} ) and tap the **Delete** option:
 
@@ -134,10 +182,14 @@ To delete a Send from a Mobile App, tap the menu icon ( {% icon fa-ellipsis-v %}
 {% endcapture %}
 {{ mobile_info | markdownify}}
   </div>
-  <div class="tab-pane" id="cli" role="tabpanel" aria-labelledby="cliab">
+  <div class="tab-pane show active" id="cli" role="tabpanel" aria-labelledby="cliab">
 {% capture cli_info %}
 
-### From the CLI
+#### Disable from the CLI
+
+To disable a Send from the CLI, use the `edit` command
+
+#### Delete from the CLI
 
 To delete a Send from the CLI, use the `delete` command paired with the unique ID of the Send you want to delete:
 
@@ -145,15 +197,9 @@ To delete a Send from the CLI, use the `delete` command paired with the unique I
 bw send delete <id>
 ```
 
+We recommend using the article [Send for CLI]({% link _articles/send/send-cli.md %}) for complete information on using Send from the CLI.
+
 {% endcapture %}
 {{ cli_info | markdownify}}
   </div>
 </div>
-
-## Manually Disable a Send
-
-You can manually disable a Send from any Bitwarden application by opening the Send and checking the toggling the **Disable this Send so that no one can access it** option, located at the bottom of the Edit Send view.
-
-When you manually disable a Send, recipients (i.e. anyone with the generated link) that navigate to the Send link will show a screen reporting that the Send does not exist or is no longer available.
-
-You can toggle this option off at any time to continue allowing recipients to access the Send.
