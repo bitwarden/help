@@ -14,13 +14,13 @@ Sends can be created and edited from the [Web Vault](https://vault.bitwarden.com
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
-    <a class="nav-link" id="wvtab" href="#webvault" role="tab" aria-controls="webvault" aria-selected="true">Web Vault</a>
+    <a class="nav-link active" id="wvtab" href="#webvault" role="tab" aria-controls="webvault" aria-selected="true">Web Vault</a>
   </li>
   <li class="nav-item" role="presentation">
     <a class="nav-link" id="betab" href="#browserextension" role="tab" aria-controls="browserextension" aria-selected="false">Browser Extensions</a>
   </li>
   <li class="nav-item" role="presentation">
-    <a class="nav-link active" id="desktab" href="#desktop" role="tab" aria-controls="desktop" aria-selected="false">Desktop Apps</a>
+    <a class="nav-link" id="desktab" href="#desktop" role="tab" aria-controls="desktop" aria-selected="false">Desktop Apps</a>
   </li>
   <li class="nav-item" role="presentation">
     <a class="nav-link" id="mobtab" href="#mobile" role="tab" aria-controls="mobile" aria-selected="false">Mobile Apps</a>
@@ -30,7 +30,7 @@ Sends can be created and edited from the [Web Vault](https://vault.bitwarden.com
   </li>
 </ul>
 <div class="tab-content" id="clientsContent">
-  <div class="tab-pane" id="webvault" role="tabpanel" aria-labelledby="wvtab">
+  <div class="tab-pane show active" id="webvault" role="tabpanel" aria-labelledby="wvtab">
 {% capture web_vault %}
 ### Send from the Web Vault
 
@@ -116,7 +116,7 @@ Once copied, share your Send link with intended recipients however you prefer. S
 {% endcapture %}
 {{ browser_extension | markdownify}}
   </div>
-  <div class="tab-pane show active" id="desktop" role="tabpanel" aria-labelledby="desktab">
+  <div class="tab-pane" id="desktop" role="tabpanel" aria-labelledby="desktab">
 {% capture desktop_info %}
 ### Send from a Desktop App
 
