@@ -46,4 +46,4 @@ The following variables do not already exist in `global.override.env`, and can b
 |globalSettings__mail__smtp__sslOverride=|Specify `true` to use SSL (not TLS) on port 25.|
 |globalSettings__mail__smtp__startTls=|Specify `true` to force STARTTLS (Opportunistic TLS).|
 |globalSettings__organizationInviteExpirationHours=|Specify the number of hours after which an Organization Invite will expire (`120` by default).|
-|globalSettings__yubico__validationUrls__0=|Primary URL for self-hosted Yubico Validation Server. For example, `globalSettings__yubico__validationUrls__0=https://your.url.com/wsapi/2.0/verify`.<br><br>Add additional Validation Server URLs by creating incremented environment variables, for example `globalSettings__yubico__validationUrls__1=`, `globalSettings__yubico__validationUrls__2=`.|
+|globalSettings__yubico__validationUrls__0=|Primary URL for self-hosted Yubico Validation Server. For example: `=https://your.url.com/wsapi/2.0/verify`.<br><br>Add additional Validation Server URLs by creating incremented environment variables, for example `globalSettings__yubico__validationUrls__1=`, `globalSettings__yubico__validationUrls__2=`.|
