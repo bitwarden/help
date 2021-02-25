@@ -1,5 +1,5 @@
 ---
 layout: category
-title: Send
+title: Bitwarden Send
 featured: true
 ---
