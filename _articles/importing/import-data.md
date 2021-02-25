@@ -25,7 +25,7 @@ For a full list of supported formats, see [Supported Formats](#supported-formats
 
 To import your data into a personal Vault:
 
-1. Log in to the [Web Vault](https://vault.bitwarden.com){:target="\_blank"}.
+1. Log in to the [Web Vault](https://vault.bitwarden.com){:target="\_blank"}. Not already signed up? [Select a Bitwarden plan to get started.](https://bitwarden.com/pricing/business/)
 2. Select **Tools** from the top navigation bar.
 3. Select **Import Data** from the left Tools menu.
 4. Select the format of your file to import from the dropdown menu.
@@ -121,3 +121,7 @@ If your format is not listed below, manually [condition a Bitwarden .csv or .jso
 - [Vivaldi (csv)]({% link _articles/importing/import-from-chrome.md %})
 - Yoti (csv)
 - Zoho Vault (csv)
+
+#### Ready to get started?
+
+<a role="button" class="btn btn-primary" href="https://vault.bitwarden.com/#/register">Create Your Free Account</a>
