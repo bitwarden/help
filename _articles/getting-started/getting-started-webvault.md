@@ -126,6 +126,6 @@ To start a premium subscription:
 
 Do you need to share passwords or other Vault items with your friends, family, team, or entire business?
 
-Bitwarden Organizations let you do just that. We recommend trying out to functionality of password-sharing Organizations by starting a **free** 2-person Organization. To learn how, see [Get Started with an Organization]({% link _articles/getting-started/getting-started-organizations.md %}).
+Bitwarden Organizations let you do just that. We recommend trying out the functionality of password-sharing Organizations by starting a **free** 2-person Organization. To learn how, see [Get Started with an Organization]({% link _articles/getting-started/getting-started-organizations.md %}).
 
 Once you've tested an Organization, check out our [Bitwarden Plans and Pricing](https://bitwarden.com/pricing/business/) page to learn about the different Paid Organizations you might consider.
