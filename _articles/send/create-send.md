@@ -205,11 +205,21 @@ Share your Send link with intended recipients however you prefer. Sends are end-
 {% capture cli_info %}
 ### Send from the CLI
 
-To create a Send from the Bitwarden CLI, use the
+The following are sample commands to help you get started Sending from the CLI.
 
+To create a simple text Send with a [deletion date]({{site.baseurl}}/articles/send-lifespan/#deletion-date) set to 14 days from creation:
 
+```
+bw send -n "My Text Send" -d 14 "My first secret message."
+```
 
+To create a simple file Send with a [deletion date]({{site.baseurl}}/articles/send-lifespan/#deletion-date) set to 14 days from creation:
 
+```
+bw send -n "My File Send" - d 14 -f /Users/myaccount/Documents/my_file.pdf
+```
+
+The Bitwarden CLI is a fully-featured and powerful tool. We recommend reading the [Send from CLI]({% link _articles/send/send-cli.md %}) article to learn more.
 
 {% endcapture %}
 {{ cli_info | markdownify}}
