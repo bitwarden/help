@@ -54,7 +54,7 @@ Your Bitwarden client applications require the following versions:
 ### Self-Hosting Requirements
 If you are self-hosting Bitwarden, your installation must be on v1.37+.
 
-For information on updating your self-hosted instance, see [Updating your Self-Hosted Installation](https://bitwarden.com/help/updating-on-premise).
+For information on updating your self-hosted instance, see [Updating your Self-Hosted Installation](https://bitwarden.com/help/article/updating-on-premise/).
 
 ## Workflow Diagram
 The following diagram is an overview of the workflow used by Bitwarden to authenticate using SSO:
