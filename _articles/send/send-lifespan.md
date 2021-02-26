@@ -187,17 +187,23 @@ To delete a Send from a Mobile App, tap the menu icon ( {% icon fa-ellipsis-v %}
 
 #### Disable from the CLI
 
-To disable a Send from the CLI, use the `edit` command
+To disable a Send from the CLI, you'll need to use the `edit` command to change the `"disabled":false` key-value pair to `"disabled":true`, for example:
+
+```
+bw send get <id> | jq '.disabled=false' | bw encode | bw send edit
+```
+
+We recommend reading the [Send from CLI]({% link _articles/send/send-cli.md %}) article for complete information on using Send from the CLI.
 
 #### Delete from the CLI
 
-To delete a Send from the CLI, use the `delete` command paired with the unique ID of the Send you want to delete:
+To delete a Send from the CLI, use the `delete` command with the Send's unique `id` as an argument:
 
 ```
 bw send delete <id>
 ```
 
-We recommend using the article [Send for CLI]({% link _articles/send/send-cli.md %}) for complete information on using Send from the CLI.
+We recommend reading the [Send from CLI]({% link _articles/send/send-cli.md %}) article for complete information on using Send from the CLI.
 
 {% endcapture %}
 {{ cli_info | markdownify}}

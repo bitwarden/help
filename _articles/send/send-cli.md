@@ -103,7 +103,7 @@ A typical workflow might look something like:
 For example:
 
 ```
-bw send get <accessId> | jq '.name="New Name" | .password=null' | bw encode | bw send edit
+bw send get <id> | jq '.name="New Name" | .password=null' | bw encode | bw send edit
 ```
 
 ### list
