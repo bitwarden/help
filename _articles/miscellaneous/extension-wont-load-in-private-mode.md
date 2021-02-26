@@ -9,13 +9,16 @@ tags: [firefox, extension, private window, private mode, private browsing]
 
 The Bitwarden browser extension does not completely function in Firefox's private browsing mode. This is a known issue specific only to Firefox. You will see a message indicating so when you try to open the Bitwarden popup window in a private window. We have discussed the problem with Mozilla, however, they seem unable to fix it so that extensions like Bitwarden can function entirely in private mode.
 
-As a workaround, if you are looking to auto-fill a login while in a private window you can use the right-click context menu:
+There are currently 3 workarounds for auto-filling a login while in Firefox's private browsing mode:
 
-1. Navigate to the website's login page while browsing in a private window.
-2. Right click the page. A context menu will appear.
-3. Select **Bitwarden** &rarr; **Auto-fill** and then pick your login.
+(1) Use the right-click context menu:
+  1. Navigate to the website's login page while browsing in a private window.
+  2. Right click the page. A context menu will appear.
+  3. Select **Bitwarden** &rarr; **Auto-fill** and then pick your login.
 
-Alternatively, you can also copy/paste your login credentials by accessing your vault in the popup from a regular, non-private browsing window.
+(2) Copy/paste your login credentials by accessing your vault in the popup from a regular, non-private browsing window.
+
+(3) Use the keyboard shortcut for auto-filling a login (CTRL + SHIFT + L by default on Windows, CMD + SHIFT + L by default on Mac)
 
 ## References
 
