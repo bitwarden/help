@@ -62,9 +62,11 @@ We also reload the application's renderer process after 10 seconds of inactivity
 
 For more information, please visit our [Security and Compliance](https://bitwarden.com/compliance) page.
 
-### Q: What third-party scripts, libraries, and services are used?
+### Q: What third-party services, libraries or trackers are used?
 
-**A:** Currently, we load third-party payment scripts from Stripe and PayPal on payment pages in the Web Vault. In the mobile app, the Firebase script is used for push notifications. The HockeyApp is used for crash reporting. Please note, Firebase and HockeyApp are removed completely from the F-Droid build if you are interested in using that option. Turning off push notifications on a Bitwarden server will disable using the push relay server if you want to self-host.
+**A:** In the Mobile app, Firebase is used only for push notifications related to [sync]({% link _articles/miscellaneous/vault-sync.md %}). Microsoft Visual Studio App Center is used for crash reporting on a range of mobile devices. In the Web Vault, Stripe and PayPal scripts are used for payment processing only on payment pages. 
+
+Firebase and HockeyApp are removed completely from the F-Droid build. Additionally, Turning off push notifications on a self-hosted Bitwarden server will disable using the push relay server.
 
 ### Q: How do I require Two-step Login for my Organization?
 
