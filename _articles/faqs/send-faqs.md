@@ -8,13 +8,13 @@ tags: []
 order: 07
 ---
 
-### Q: Why
+### Q: Why are Sends missing from my Send view?
 
-**A:** Because
+**A:** By design, Sends are ephemeral. Each created Send has a **maximum lifespan of 31 days**, configurable when your [create a Send]({% link _articles/send/create-send.md %}) or at any time by editing it. When a Send's [Deletion Date]({{site.baseurl}}/article/send-lifespan/#deletion-date) is reached, it will be purged from Bitwarden systems and inaccessible to both the Sender and any recipients.
 
 ### Q: What do the icons next to my Sends indicate?
 
-**A:** Here's a table that illustrates each icon's meaning:
+**A:** Icons in the Send view are intended to help you understand the configured [lifespan]({% link _articles/send/send-lifespan.md %}) and [privacy]({% link _articles/send/send-privacy.md %}) options:
 
 |Icon|Meaning|
 |----|-------|

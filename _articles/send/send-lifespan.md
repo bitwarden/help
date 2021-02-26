@@ -141,7 +141,7 @@ To delete a Send from a Browser Extension, select the {% icon fa-trash %} **Tras
 
 To disable a Send from a Desktop App, open the **Edit Send** view and check the **Disable this Send so that no one can access it** checkbox. You can uncheck this box at any time to re-enable access to the Send.
 
-`Image Placeholder.`
+{% image /send/send-desktop-disable.png Disable from a Desktop App%}
 
 When a Send is disabled:
 
@@ -153,7 +153,7 @@ When a Send is disabled:
 
 To delete a Send from a Desktop App, open the **Edit Send** view and select the  {% icon fa-trash %} **Delete** button:
 
-`Image Placeholder.`
+{% image /send/send-desktop-delete.png Delete from a Desktop App %}
 
 {% endcapture %}
 {{ desktop_info | markdownify}}
@@ -165,7 +165,7 @@ To delete a Send from a Desktop App, open the **Edit Send** view and select the 
 
 To disable a Send from a Mobile App, open the **Edit Send** view and toggle the **Disable this Send so that no one can access it** option. You can toggle this option off at any time to re-enable access to the Send.
 
-{% image /send/send-disable-mobile.png %}
+{% image /send/send-disable-mobile.png Disable from a Mobile App %}
 
 When a Send is disabled:
 
@@ -177,7 +177,7 @@ When a Send is disabled:
 
 To delete a Send from a Mobile App, tap the menu icon ( {% icon fa-ellipsis-v %} or {% icon fa-ellipsis-h %} ) and tap the **Delete** option:
 
-{% image /send/send-delete-mob.png Delete from a Browser Extension %}
+{% image /send/send-delete-mob.png Delete from a Mobile App %}
 
 {% endcapture %}
 {{ mobile_info | markdownify}}

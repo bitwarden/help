@@ -127,7 +127,7 @@ Complete the following steps to create a new Send from a Bitwarden Desktop App:
    The center column will list all Sends that haven't reached their [deletion date]({% link _articles/send/send-lifespan.md %}). Like the {% icon fa-lock %} **My Vault** view, you can filter your Sends by selecting one of the available **Types** from the left-most column.
 2. To start creating a new Send, select the {% icon fa-plus %} **Add** icon in at the bottom of the center column.
 
-    `Image Placeholder.`
+    {% image /send/send-desktop-add.png Send view in a Desktop App %}
 3. In the right-most column, specify the following to create the contents of your Send:
 
    - **Name**: Specify an identifiable, meaningful name for this Send.
@@ -151,7 +151,7 @@ Complete the following steps to create a new Send from a Bitwarden Desktop App:
 
 Once your Send is created, select the {% icon fa-copy %} **Copy Link** button to copy the generated link to your clipboard:
 
-`Image Placeholder.`
+{% image /send/send-desktop-share.png Copy a Send link %}
 
 Once copied, share your Send link with intended recipients however you prefer. Sends are end-to-end encrypted, so you don't need to worry about exposing any Send data to whatever intermediary communications services you use.
 
