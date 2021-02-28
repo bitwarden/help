@@ -21,7 +21,7 @@ For developer detail on Safari App Extensions, click [here](https://developer.ap
 
 ## Enable the Extension
 
-Before enabling the Safari App Extension, run the Desktop Application at least one. In Safari:
+Before enabling the Safari App Extension, run the Desktop Application at least once. In Safari:
 
 1. Open the **Preferences** window.
 2. Navigate to the **Extensions** page.
