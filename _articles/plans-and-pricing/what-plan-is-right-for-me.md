@@ -43,7 +43,7 @@ Will you be a Bitwarden Solo-Practitioner, or will you securely share data betwe
 As a Bitwarden Solo-Practicioner, will you be a Bitwarden Black Belt using Premium features like:
 
 - Advanced 2FA options, like Yubikey, U2F, and Duo
-- 1 GB of encrypted file storage
+- 1 GB of encrypted file attachments
 - Bitwarden Authenticator (TOTP)
 - Emergency Access
 - Vault Health Reports
@@ -80,7 +80,7 @@ However, only Enterprise Organizations include:
 - Enterprise Policies
 - Self-host option
 
-|If your answer is "Just the first few"...|If your answer is "I need all of them"...|
+|If your answer is "Almost all of them"...|If your answer is "I need all of them"...|
 |------------------------------------------------|------------------------------------------------|
 |...we recommend a Teams Organization.<br><br>[**Create your Teams Organization.**](https://bitwarden.com/help/article/upgrade-from-individual-to-org/)|...we recommend an Enterprise Organization.<br><br>[**Create your Enterprise Organization.**](https://bitwarden.com/help/article/upgrade-from-individual-to-org/)|
 

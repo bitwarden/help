@@ -82,7 +82,7 @@ Check that the custom port values have been proliferated to `./bwdata/env/global
 
 #### Q: How do I add Bitwarden to system boot?
 
-**A:** Before adding Bitwarden to system boot, complete [Docker Post-Installation](https://bitwarden.com/help/hosting-faqs/#docker-post-installation) to setup a dedicated `bitwarden` service account.
+**A:** Before adding Bitwarden to system boot, complete [Docker Post-Installation](https://bitwarden.com/help/article/install-on-premise/#docker-post-installation-linux-only) to setup a dedicated `bitwarden` service account.
 
 Then, complete the following steps:
 

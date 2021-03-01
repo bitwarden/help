@@ -92,13 +92,13 @@ $(function () {
     // $('#bd-docs-nav').toggleClass('show', $(window).width() > 1024);
 });
 
-  // navigable in-article tabs
-  var triggerTabList = [].slice.call(document.querySelectorAll('#myTab a'))
-triggerTabList.forEach(function (triggerEl) {
-  var tabTrigger = new bootstrap.Tab(triggerEl)
+    // navigable in-article tabs
+    var triggerTabList = [].slice.call(document.querySelectorAll('#myTab a'))
+  triggerTabList.forEach(function (triggerEl) {
+    var tabTrigger = new bootstrap.Tab(triggerEl)
 
-  triggerEl.addEventListener('click', function (event) {
-    event.preventDefault()
-    tabTrigger.show()
+    triggerEl.addEventListener('click', function (event) {
+      event.preventDefault()
+      tabTrigger.show()
+    });
   });
-});

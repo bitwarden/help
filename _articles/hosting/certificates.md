@@ -98,7 +98,7 @@ Your self-signed certificate (`.crt`) and private key (`private.key`) can be ret
 
 #### Windows
 
-To trust a self-signed certificate on Windows, run `certmgr.msc` and import your certificate into the right store or folder.
+To trust a self-signed certificate on Windows, run `certmgr.msc` and import your certificate into the Trusted Root Certification Authorities.
 
 #### Linux
 

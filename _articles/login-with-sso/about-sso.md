@@ -22,6 +22,10 @@ Administrators can configure Login with SSO in the Business Portal. For more inf
 
 {% image /sso/sso-button-lg.png Enterprise Single Sign-On button %}
 
+### Requiring SSO for Users
+
+Using the **Single Sign-On Authentication** policy, Enterprise Organizations can require non-Owner/non-Admin users to log in to Bitwarden with Enterprise Single Sign-On. For more information about setting up this policy, see [Policies]({% link _articles/organizations/policies.md %}).
+
 ## Enterprise Free Trial
 
 Login with SSO is available for all customers on the current Enterprise plan (for more information, see [About Bitwarden Plans]({% link _articles/plans-and-pricing/about-bitwarden-plans.md %}). If you're new to Bitwarden, we'd love to help you through the process of setting up an account and starting your 7 Day Free Trial Enterprise Organization with our dedicated signup page:
@@ -50,7 +54,7 @@ Your Bitwarden client applications require the following versions:
 ### Self-Hosting Requirements
 If you are self-hosting Bitwarden, your installation must be on v1.37+.
 
-For information on updating your self-hosted instance, see [Updating your Self-Hosted Installation](https://bitwarden.com/help/updating-on-premise).
+For information on updating your self-hosted instance, see [Updating your Self-Hosted Installation](https://bitwarden.com/help/article/updating-on-premise/).
 
 ## Workflow Diagram
 The following diagram is an overview of the workflow used by Bitwarden to authenticate using SSO:

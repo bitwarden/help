@@ -41,9 +41,11 @@ Once setup, Bitwarden Authenticator will continuously generate 6-digit TOTPs rot
 
 ## Use Generated Codes
 
-Bitwarden Mobile applications and Browser Extensions will automatically copy the TOTP code to your device's clipboard after Auto-fill, unless the **Enable Auto-fill on Page Load** option is active. Paste from your clipboard immediately after successful Auto-fill to use your TOTP.
+Bitwarden Mobile applications and Browser Extensions will automatically copy the TOTP code to your device's clipboard after Auto-fill, unless the **Enable Auto-fill on Page Load** option is active. Paste from your clipboard immediately after successful Auto-fill to use your TOTP or (if you're using a Browser Extension) use the context menu:
 
-{% callout success %}This feature can be toggled off under **Settings** &rarr; **Options** &rarr; **Disable Automatic TOTP Copy**.{% endcallout %}
+{% image /two-step/be-totpcopy.png Browser Extension Context Menu %}
+
+{% callout success %}Automatic TOTP copying can be toggled off under **Settings** &rarr; **Options** &rarr; **Disable Automatic TOTP Copy**.{% endcallout %}
 
 All Bitwarden applications display your rotating TOTP code inside the Vault item, which can be copied and pasted just like a Username or Password.
 
@@ -64,3 +66,15 @@ For example:
 `otpauth://totp/Test:me?secret=JBSWY3DPEHPK3PXP&algorithm=sha256&digits=8&period=60`
 
 Learn more about using `otpauth://` URIs [here](https://github.com/google/google-authenticator/wiki/Key-Uri-Format).
+
+## Steam Guard TOTPs
+
+The Bitwarden Authenticator (TOTP) can be used as an alternative means of TOTP generation for Steam using a `steam://` prefix followed by your secret key:
+
+{% image steam-totp.png Steam TOTP generation%}
+
+Generated `steam://` TOTPs are by default alphanumeric and 5 digits, as opposed to traditional 6-digit numeric TOTPs.
+
+{% callout warning %}
+To use this functionality, you'll need to manually extract your Steam account's secret using a third-party tool. There are tools like [SteamTimeIdler](https://github.com/SteamTimeIdler/stidler/wiki/Getting-your-%27shared_secret%27-code-for-use-with-Auto-Restarter-on-Mobile-Authentication#getting-shared-secret-from-ios-windows){:target="\_blank"} and [Steam Desktop Authenticator](https://github.com/Jessecar96/SteamDesktopAuthenticator){:target="\_blank"} that can help you accomplish this, however such **extraction tools are not officially supported by Bitwarden or Steam**. Use these tools at your own risk.
+{% endcallout%}

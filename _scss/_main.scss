@@ -1,14 +1,70 @@
 .main-container {
-    .card-popular {
-        .card-header {
-            background: $secondary;
-            color: #fff;
-        }
-    }
+	.card-popular {
+		.card-header {
+				background: $secondary;
+				color: #fff;
+		}
+	}
+	.card-header {
+		@include media-breakpoint-down(sm) {
+			font-size: 1rem;
+		}
+	}
+}
 
-    .card-body {
-        ul {
-            margin-bottom: 0;
-        }
-    }
+.card-body {
+	ul {
+			margin-bottom: 0;
+	}
+}
+
+.landing-table {
+  border: none;
+  table-layout: fixed;
+}
+
+.landing-table-row {
+  border: none;
+}
+
+.icon-wrapper {
+	display: block;
+
+	@include media-breakpoint-up(md) {
+		display: flex;
+	}
+
+	.icon-link {
+		border: none;
+		background-color: #fff;
+		padding-bottom: 0.5rem;
+		display: flex;
+		align-items: center;
+
+		@include media-breakpoint-down(sm) {
+			p {
+				margin-bottom: 0;
+				margin-left: 1rem;
+			}
+		}
+
+		@include media-breakpoint-up(md) {
+			display: block;
+		}
+
+		img {
+			display: inline-block;
+			width: 100%;
+			max-width: 200px;
+
+			&:hover {
+				background-color: #F2F2F2;
+				border-radius: 1rem;
+			}
+
+			@include media-breakpoint-down(sm) {
+				width: 50%;
+			}
+		}
+	}
 }
