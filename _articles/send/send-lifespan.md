@@ -8,7 +8,7 @@ tags: []
 order: 04
 ---
 
-Unlike traditional Bitwarden Vault items and File Attachments, Sends are ephemeral and have a **default lifespan of 7 days**. The lifespan of a Send is entirely configurable using the [Deletion Date](#deletion-date) option, each having a maximum allowed lifespan of 31 days. When a Send has reached its Deletion Date, it will be purged from Bitwarden systems and inaccessible to both its Sender and recipients.
+Unlike traditional Bitwarden Vault items and File Attachments, Sends are ephemeral and have a **default lifespan of 7 days**. The lifespan of a Send is entirely configurable using the [Deletion Date](#deletion-date) option, each having a maximum allowed lifespan of 30 days. When a Send has reached its Deletion Date, it will be purged from Bitwarden systems and inaccessible to both its Sender and recipients.
 
 **Optionally**, you can configure additional limitations on recipient access using the [Expiration Date](#expiration-date) and/or [Maximum Access Count](#maximum-access-count) options.
 
@@ -18,7 +18,7 @@ You can also manually [disable or delete](#manually-disable-or-delete) a Send at
 
 By default, a Send will have a Deletion Date set to 7 days from creation. Using the **Deletion Date** option, you may change this to a range of pre-specified options (e.g. *1 hour*, *1 day*, *30 days*) or specify a custom timestamp (`MM/DD/YYYY HH:MM AM/PM` or `YYYY-MM-DD HH:MM` ([ISO 8601](https://en.wikipedia.org/wiki/ISO_8601){:target="\_blank"})).
 
-Deletion Date has a **maximum allowed value of 31 days from creation**.
+Deletion Date has a **maximum allowed value of 30 days from creation**.
 
 ### Deletion Behavior
 
@@ -26,15 +26,13 @@ When a Send reaches its configured Deletion Date:
 
 - For recipients of the Send (i.e. anyone with the generated link), navigating to the Send link will show a screen reporting that the Send does not exist or is no longer available.
 
-- For the Sender, a {% icon fa-trash %} **Pending Deletion** icon will appear next to the Send. The Send will pend deletion for `xxxx`, after which it will be permanently deleted from Bitwarden systems and from the Sender's Send view.
+- For the Sender, a {% icon fa-trash %} **Pending Deletion** icon will appear next to the Send. The Send will pend deletion for a few minutes, after which it will be permanently deleted from Bitwarden systems and from the Sender's Send view.
 
   {% callout note %}There is no "soft delete" or Trash Can for Sends, meaning that once the pending deletion window has closed you will not be able to access the contents of a Send.{% endcallout %}
 
 ## Expiration Date
 
 By default, Expiration Date will be set to Never. Using the **Expiration Date** option, you may change this to a range of pre-specified options (e.g. *1 hour*, *1 day*, *7 days*) or specify a custom timestamp (`MM/DD/YYYY HH:MM AM/PM` or `YYYY-MM-DD HH:MM` ([ISO 8601](https://en.wikipedia.org/wiki/ISO_8601){:target="\_blank"})).
-
-Expiration Date must be `xxx`.
 
 ### Expiration Behavior
 
@@ -197,7 +195,7 @@ We recommend reading the [Send from CLI]({% link _articles/send/send-cli.md %}) 
 
 #### Delete from the CLI
 
-To delete a Send from the CLI, use the `delete` command with the Send's unique `id` as an argument:
+To delete a Send from the CLI, use the `delete` command with the Send's exact unique `id` as an argument:
 
 ```
 bw send delete <id>

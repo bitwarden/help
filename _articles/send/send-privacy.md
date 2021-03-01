@@ -9,7 +9,7 @@ order: 05
 ---
 Protect the contents of your Send by optionally configuring a [password for access](#passwords) so that no unintended recipients can see the contained information. For text Sends, you can also optionally require recipients to [toggle visibility](#hide-text) to prevent exposure to unintentional onlookers.
 
-The **Password** and **Hide Text** options are configurable from the Create New Send view, or from the Edit Send views at any time prior to the Send's [deletion]({% link _articles/send/send-lifespan.md %}).
+The **Password** and **Hide Text** options are configurable from the Create New Send view, or from the Edit Send views at any time prior to the Send's [deletion]({{site.baseurl}}/article/send-lifespan/#deletion-behavior).
 
 ## Passwords
 

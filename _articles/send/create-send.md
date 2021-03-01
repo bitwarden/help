@@ -8,7 +8,7 @@ tags: [bitwarden send, send, ephemeral sharing]
 order: 02
 ---
 
-Creating file Sends is available for Premium users, including members of a Paid Organization (Families, Teams, or Enterprise). Free users can still create text Sends.
+Creation of file Sends is available for Premium users, including members of a Paid Organization (Families, Teams, or Enterprise). Free users may still create text Sends.
 
 Sends can be created and edited from the [Web Vault](https://vault.bitwarden.com){:target="\_blank"} or any Bitwarden client application. Choose the Bitwarden application you want to Send from to get started:
 
@@ -55,7 +55,7 @@ Complete the following steps to create a new Send from the Bitwarden [Web Vault]
 
 4. Select the {% icon fa-chevron-down %} **Options** menu to configure the following options as desired:
 
-   |**Deletion Date**|The Send will be permanently [deleted]({{site.baseurl}}/article/send-lifespan/#deletion-behavior) on the specified date and time. By default, 7 days from creation. The **maximum allowed value** is 31 days from creation.|
+   |**Deletion Date**|The Send will be permanently [deleted]({{site.baseurl}}/article/send-lifespan/#deletion-behavior) on the specified date and time. By default, 7 days from creation. The **maximum allowed value** is 30 days from creation.|
    |**Expiration Date**|The Send will [expire]({{site.baseurl}}/article/send-lifespan/#expiration-behavior) on the specified date and time. By default, **Never**.|
    |**Maximum Access Count**|The Send will be [disabled]({{site.baseurl}}/article/send-lifespan/#maximum-access-count-behavior) after the specified access count is reached. By default, unspecified.|
    |**Password**|[Require a password]({{site.baseurl}}/article/send-privacy/#passwords) to be entered by recipients of this Send in order to gain access.|
@@ -98,7 +98,7 @@ Complete the following steps to create a new Send from a Bitwarden Browser Exten
 
 4. Select the {% icon fa-chevron-down %} **Options** menu to configure the following options as desired:
 
-   |**Deletion Date**|The Send will be permanently [deleted]({{site.baseurl}}/article/send-lifespan/#deletion-behavior) on the specified date and time. By default, 7 days from creation. The **maximum allowed value** is 31 days from creation.|
+   |**Deletion Date**|The Send will be permanently [deleted]({{site.baseurl}}/article/send-lifespan/#deletion-behavior) on the specified date and time. By default, 7 days from creation. The **maximum allowed value** is 30 days from creation.|
    |**Expiration Date**|The Send will [expire]({{site.baseurl}}/article/send-lifespan/#expiration-behavior) on the specified date and time. By default, **Never**.|
    |**Maximum Access Count**|The Send will be [disabled]({{site.baseurl}}/article/send-lifespan/#maximum-access-count-behavior) after the specified access count is reached. By default, unspecified.|
    |**Password**|[Require a password]({{site.baseurl}}/article/send-privacy/#passwords) to be entered by recipients of this Send in order to gain access.|
@@ -140,7 +140,7 @@ Complete the following steps to create a new Send from a Bitwarden Desktop App:
 
 4. Select the {% icon fa-chevron-down %} **Options** menu to configure the following options as desired:
 
-   |**Deletion Date**|The Send will be permanently [deleted]({{site.baseurl}}/article/send-lifespan/#deletion-behavior) on the specified date and time. By default, 7 days from creation. The **maximum allowed value** is 31 days from creation.|
+   |**Deletion Date**|The Send will be permanently [deleted]({{site.baseurl}}/article/send-lifespan/#deletion-behavior) on the specified date and time. By default, 7 days from creation. The **maximum allowed value** is 30 days from creation.|
    |**Expiration Date**|The Send will [expire]({{site.baseurl}}/article/send-lifespan/#expiration-behavior) on the specified date and time. By default, **Never**.|
    |**Maximum Access Count**|The Send will be [disabled]({{site.baseurl}}/article/send-lifespan/#maximum-access-count-behavior) after the specified access count is reached. By default, unspecified.|
    |**Password**|[Require a password]({{site.baseurl}}/article/send-privacy/#passwords) to be entered by recipients of this Send in order to gain access.|
@@ -184,7 +184,7 @@ Complete the following steps to create a new Send from Bitwarden Mobile App:
 
 4. Tap the {% icon fa-chevron-down %} **Options** menu to configure the following options as desired:
 
-   |**Deletion Date**|The Send will be permanently [deleted]({{site.baseurl}}/article/send-lifespan/#deletion-behavior) on the specified date and time. By default, 7 days from creation. The **maximum allowed value** is 31 days from creation.|
+   |**Deletion Date**|The Send will be permanently [deleted]({{site.baseurl}}/article/send-lifespan/#deletion-behavior) on the specified date and time. By default, 7 days from creation. The **maximum allowed value** is 30 days from creation.|
    |**Expiration Date**|The Send will [expire]({{site.baseurl}}/article/send-lifespan/#expiration-behavior) on the specified date and time. By default, **Never**.|
    |**Maximum Access Count**|The Send will be [disabled]({{site.baseurl}}/article/send-lifespan/#maximum-access-count-behavior) after the specified access count is reached. By default, unspecified.|
    |**Password**|[Require a password]({{site.baseurl}}/article/send-privacy/#passwords) to be entered by recipients of this Send in order to gain access.|
