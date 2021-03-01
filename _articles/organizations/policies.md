@@ -99,7 +99,7 @@ As a result, you must disable the **Single Sign-On Authentication** policy befor
 
 Enabling the **Personal Ownership** policy will require non-Owner/non-Admin users to save Vault Items to an Organization by disabling personal ownership of Vault items for organization users.
 
-A banner is displayed to users on the Add Item screen indicating that a policy will affect their membership options.
+A banner is displayed to users on the Add Item screen indicating that a policy will affect their ownership options.
 
 {% callout info %}
 Vault Items that were created prior to the implementation of this policy or prior to joining the Organization will remain in the user's personal Vault.

@@ -62,9 +62,13 @@ We also reload the application's renderer process after 10 seconds of inactivity
 
 For more information, please visit our [Security and Compliance](https://bitwarden.com/compliance) page.
 
-### Q: What third-party scripts, libraries, and services are used?
+### Q: What third-party services, libraries or identifiers are used?
 
-**A:** Currently, we load third-party payment scripts from Stripe and PayPal on payment pages in the Web Vault. In the mobile app, the Firebase script is used for push notifications. The HockeyApp is used for crash reporting. Please note, Firebase and HockeyApp are removed completely from the F-Droid build if you are interested in using that option. Turning off push notifications on a Bitwarden server will disable using the push relay server if you want to self-host.
+**A:** In the Mobile apps, Firebase Cloud Messaging (often mistaken for a tracker) is used only for push notifications related to [sync]({% link _articles/miscellaneous/vault-sync.md %}) and performs absolutely no tracking functions. Microsoft Visual Studio App Center is used for crash reporting on a range of mobile devices. In the Web Vault, Stripe and PayPal scripts are used for payment processing only on payment pages.
+
+For those who prefer to exclude all 3rd party communication, Firebase and HockeyApp are removed completely from the F-Droid build. Additionally, Turning off push notifications on a self-hosted Bitwarden server will disable using the push relay server.
+
+Bitwarden takes user security and privacy seriously. Bitwarden maintains secure, end-to-end encryption with zero knowledge of your encryption key. As a company focused on open source, we invite anyone to review our library implementations at any time on [GitHub](https://github.com/bitwarden).
 
 ### Q: How do I require Two-step Login for my Organization?
 
@@ -85,11 +89,11 @@ For more information, please visit our [Security and Compliance](https://bitward
 
 Additionally, a **Bitwarden-generated** device-specific GUID (sometimes referred to as a *Device ID*) is assigned to your device. This GUID is used to alert you when a new device logs into your Vault.
 
-#### Q: Are Electron apps safe?
+#### Q: Can you explain Electron App Security?
 
 **A:** An often shared article suggests a flaw with Electron apps, however the referenced attack requires a user to have a compromised machine, which of course would allow a malicious attacker to compromise data on that machine. As long as you have no reason to believe the device you are using has been compromised, your data is safe.
 
-#### Q: Are Browser Extensions safe?
+#### Q: How does Bitwarden secure Browser extensions?
 
 Extensions are safe to use if they are developed correctly. Due to the nature of how browser extensions work there is always a chance for a bug to arise. We take extreme care and caution when we are developing our extensions and add-ons, we keep our eyes and ears out for anything going on in the industry, and we conduct security audits to keep many eyes on everything.
 

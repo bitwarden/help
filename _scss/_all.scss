@@ -5,10 +5,6 @@ html {
     -moz-osx-font-smoothing: grayscale;
 }
 
-body {
-    padding-top: $navbar-height;
-}
-
 :target::before {
     content: '';
     display: block;

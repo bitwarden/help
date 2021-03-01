@@ -9,7 +9,7 @@ module Jekyll
         if %w(info warning success).include?(type)
           @type = type
         else
-          puts "#{type} callout not supported. Defaulting to info"
+          puts "{% callout #{type} %} not supported. Defaulting to 'info'"
           @type = "info"
         end
 

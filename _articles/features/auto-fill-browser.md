@@ -65,7 +65,7 @@ Some browsers, including **Safari** and legacy **Edge** do not currently support
 
 Auto-fill on Page Load is an **experimental and opt-in** feature offered by Bitwarden Browser Extensions. When enabled, Bitwarden will auto-fill login information when a web page corresponding to a Login item's URI value loads.
 
-If there are multiple Login items with the detected URI, the last-used login will be used for the auto-full operation.
+If there are multiple Login items with the detected URI, the last-used login will be used for the auto-fill operation.
 
 To enable this feature, navigate to **Settings** &rarr; **Options** in your Browser Extension, and select the **Enable Auto-fill On Page Load** option.
 

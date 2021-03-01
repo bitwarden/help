@@ -44,7 +44,7 @@ When explaining navigation within Bitwarden use `&rarr;` to make &rarr;. e.g., G
 
 Use Heading 2 `##` for Section titles.
 
-Use heading 3 `###` for sub-section titles
+Use heading 3 `###` for sub-section titles.
 
 ### Images
 
@@ -54,6 +54,6 @@ Use default settings in programs. i.e., No colorful themes, standard fonts, etc.
 
 Exclude items that date the image.
 
-Exclude personal or company information 
+Exclude personal or company information.
 
 Screenshots will be `.png` format.

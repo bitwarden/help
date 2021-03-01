@@ -40,7 +40,7 @@ Bitwarden Browser Extensions and Mobile Apps can select a **Default match detect
 By default, Bitwarden will use **Base domain** matching as the default option.
 
 
-#### Base domain
+### Base domain
 
 Selecting **Base domain** will prompt Bitwarden to offer auto-fill when the top-level domain and second-level domain of a Login's URI value match the detected resource.
 
@@ -49,7 +49,7 @@ For example, if the URI value `https://google.com` uses base domain match detect
 - **Auto-fill offered** for `http://google.com` & `https://accounts.google.com`
 - **Auto-fill not offered** for `https://google.net` & `http://yahoo.com`
 
-#### Host
+### Host
 
 Selecting **Host** will prompt Bitwarden to offer auto-fill when the hostname and (*if specified*) port of the Login's URI value matches the detected resource.
 
@@ -58,16 +58,16 @@ For example, if the URI value `https://sub.domain.com:4000` uses host match dete
 - **Auto-fill offered** for `http://sub.domain.com:4000` & `https://sub.domain.com:4000/page.html`
 - **Auto-fill not offered** for `https://domain.com`, `https://sub.domain.com`,  `https://sub2.sub.domain.com:4000`, or `https://sub.domain.com:5000`
 
-#### Starts with
+### Starts with
 
 Selecting **Starts with** will prompt Bitwarden to offer auto-fill when the detected resource starts with the Login URI value, regardless of what follows it.
 
 For example, if the URI value `https://sub.domain.com/path/` uses starts with match detection:
 
 - **Auto-fill offered** for `https://sub.domain.com/path/` & `https://sub.domain.com/path/page.html`
-- **Auto-fill not offered** for `https://sub.domain.com`, `https://sub.domain.com:4000/path/page.html` (interrupted with a port), or `https://sub.domain/com/path` (absent trailing slash)
+- **Auto-fill not offered** for `https://sub.domain.com`, `https://sub.domain.com:4000/path/page.html` (interrupted with a port), or `https://sub.domain.com/path` (absent trailing slash)
 
-#### Regular expression
+### Regular expression
 
 {% callout note %}
 Regular expressions are an advanced option and can be quite dangerous if used incorrectly. You should not use this option if you do not know exactly what you're doing.
@@ -87,7 +87,8 @@ Good example, if the URI vault `^https://[a-z]+\.wikipedia\.org/w/index\.php` us
 - **Auto-fill offered** for `https://en.wikipedia.org/w/index.php?title=Special:UserLogin&returnto=Bitwarden`, `https://pl.wikipedia.org/w/index.php?title=Specjalna:Zaloguj&returnto=Bitwarden`, `https://en.wikipedia.org/w/index.php`
 - **Auto-fill not offered** for `https://en.wikipedia.org/wiki/Bitwarden`, `https://malicious-site.com`
 
-#### Exact
+
+### Exact
 
 Selecting **Exact** will prompt Bitwarden to offer auto-fill when the Login URI value matches the detected resource exactly.
 
@@ -96,6 +97,6 @@ For example, if the URI value `https://www.google.com/page.html` uses exact matc
 - **Auto-fill offered** for `https://www.google.com/page.html`
 - **Auto-fill not offered** for `http://www.google.com/page.html`, `https://www.google.com/page.html?query=123`, or `https://www.google.com`
 
-#### Never
+### Never
 
 Selecting **Never** will prompt Bitwarden to never offer auto-fill for the Login item.
