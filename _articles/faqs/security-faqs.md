@@ -62,11 +62,13 @@ We also reload the application's renderer process after 10 seconds of inactivity
 
 For more information, please visit our [Security and Compliance](https://bitwarden.com/compliance) page.
 
-### Q: What third-party services, libraries or trackers are used?
+### Q: What third-party services, libraries or identifiers are used?
 
-**A:** In the Mobile app, Firebase is used only for push notifications related to [sync]({% link _articles/miscellaneous/vault-sync.md %}). Microsoft Visual Studio App Center is used for crash reporting on a range of mobile devices. In the Web Vault, Stripe and PayPal scripts are used for payment processing only on payment pages. 
+**A:** In the Mobile apps, Firebase Cloud Messaging (often mistaken for a tracker) is used only for push notifications related to [sync]({% link _articles/miscellaneous/vault-sync.md %}) and performs absolutely no tracking functions. Microsoft Visual Studio App Center is used for crash reporting on a range of mobile devices. In the Web Vault, Stripe and PayPal scripts are used for payment processing only on payment pages.
 
-Firebase and HockeyApp are removed completely from the F-Droid build. Additionally, Turning off push notifications on a self-hosted Bitwarden server will disable using the push relay server.
+For those who prefer to exclude all 3rd party communication, Firebase and HockeyApp are removed completely from the F-Droid build. Additionally, Turning off push notifications on a self-hosted Bitwarden server will disable using the push relay server.
+
+Bitwarden takes user security and privacy seriously. Bitwarden maintains secure, end-to-end encryption with zero knowledge of your encryption key. As a company focused on open source, we invite anyone to review our library implementations at any time on [GitHub](https://github.com/bitwarden).
 
 ### Q: How do I require Two-step Login for my Organization?
 
