@@ -48,7 +48,7 @@ We also reload the application's renderer process after 10 seconds of inactivity
 
 ### Q: What do I do if I don't recognize a new device logging in?
 
-**A:** If the IP address of a new device doesn't match any known IP addresses (home network, work network, mobile network, etc.), change your master password and make sure Two-step Login is enabled for your account. You should also Deactivate All Sessions from the **Settings** page of your Web Vault to force logout on all devices. If you think your Vault items might be compromised, you should change your passwords.
+**A:** If the IP address of a new device doesn't match any known IP addresses (home network, work network, mobile network, etc.), change your master password and make sure Two-step Login is enabled for your account. You should also Deauthorize Sessions from the **Settings** page of your Web Vault to force logout on all devices. If you think your Vault items might be compromised, you should change your passwords.
 
 ### Q: What is Bitwarden compliant with? What certifications do you have?
 

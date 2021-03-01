@@ -39,6 +39,10 @@ Paid Organizations (Families, Teams, or Enterprise) automatically include premiu
 
 **A:** For a full list of what's included in Bitwarden Event Logs, see [Event Logs](https://bitwarden.com/help/article/event-logs/).
 
+#### Q: Can I prevent users from self-registering into my Organization?
+
+**A:** If you're self-hosting, [configure the environment variable]({% link _articles/hosting/environment-variables.md %}) `globalSettings__disableUserRegistration=` to `false` to prevent users from signing up for an account via the Registration page. Once configured, Organization Admins or Owners must invite users to signup for an account on the self-hosted instance.
+
 ## Sharing with an Organization
 
 #### Q: How do I "unshare" an item from my Organization?
