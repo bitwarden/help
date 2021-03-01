@@ -8,9 +8,9 @@ tags: []
 order: 06
 ---
 
-Bitwarden Send is available as a set of fully-featured CLI commands.
+Bitwarden Send is available as a set of fully-featured CLI commands. This article documents the breadth of `bw send` commands, however Send **is not a separate tool** from the Bitwarden Command-line Interface (CLI). Therefore, many of the commands, options, and concepts in the [CLI documentation]({% link _articles/miscellaneous/cli.md %}) are relevant here.
 
-{% image /send/send-cli.png %}
+{% image /send/send-cli.png Send's --help text %}
 
 ## send
 
@@ -37,7 +37,7 @@ will create a file Send object with the specified file at the specified `path` a
 **Options:**
 
 - Use `-n <name>` or `--name <name>` to specify a name for the Send. If none is specified, name will default to the `id` for text Sends and file name for file Sends. For multi-word names, use quotations `"<name>"`.
-- Use `-d <days>` or `--deleteInDays <days>` to specify a [deletion date]({% link _articles/send/send-lifespan.md %}) for the Send.
+- Use `-d <days>` or `--deleteInDays <days>` to specify a [deletion date]({{site.baseurl}}/article/send-lifespan/#deletion-date) for the Send.
 - Use `--hidden` to specify that a text Send require recipients to [toggle visibility]({{site.baseurl}}/article/send-privacy/#hide-text).
 - Use `--notes <notes>` to add private notes to the Send. For multi-word notes, use quotations `"<notes>"`.
 - Use `--fullObject` to output the full Send object as JSON rather than only the Send link (pair this option with the `--pretty` option for formatted JSON).
@@ -50,7 +50,7 @@ bw send -n "My First Send" -d 7 --hidden "The contents of my first Send."
 
 ### create
 
-The `create` command creates a Send. `create` allows more advanced configuration than using only `bw send` as documented [above](#send) and takes encoded JSON for its argument:
+The `create` command creates a Send. `create` allows more advanced configuration than using only `bw send` and takes encoded JSON for its argument:
 
 ```
 bw send create [options] <encodedJson>
@@ -77,6 +77,10 @@ bw send template send.text | jq ".name=\"My First Send\" | .text.text=\"Secrets 
 Notice in the 2nd example that the jq invokation must be wrapped in double quotes (`" "`) and use escapes (`\`) for each filter due to a nested `date` variable that configures a `.deletionDate` in the Send.
 {% endcallout %}
 
+**Options:**
+
+-
+
 ### get
 
 The `get` command will retrieve a Send owned by you and output it as a JSON object. `get` takes an exact `id` value or any string for its argument. If you use a string, `get` will search your Sends for one with a value that matches:
@@ -84,6 +88,12 @@ The `get` command will retrieve a Send owned by you and output it as a JSON obje
 ```
 bw send get [options] <id / string>
 ```
+
+**Options:**
+
+- Use `--text` to output only the text contents of a text Send.
+- Use `--file` to output only the file of a file Send. Pair `--file` with `--output` to specify a directory, or with `--raw` to output to stdout.
+- Use `--output <output>` to specify the output directory for the `--file` option.
 
 ### edit
 
@@ -95,7 +105,7 @@ bw send edit <encodedJson>
 
 A typical workflow might look something like:
 
-1. Use the `get` command (see [details](#get)) to retrieve the desired Send according to its `<accessId>`.
+1. Use the `get` command (see [details](#get)) to retrieve the desired Send according to its `<id>`.
 2. Use a [command-line JSON processor like jq](https://stedolan.github.io/jq/){:target="\_blank"} to manipulate the retrieved Send as required.
 3. Use the `encode` command (see [details]({{site.baseurl}}/article/cli/#encode)) to encode the manipulated JSON.
 4. Use the `edit` command to write the edits to the Send.
@@ -105,6 +115,14 @@ For example:
 ```
 bw send get <id> | jq '.name="New Name" | .password=null' | bw encode | bw send edit
 ```
+
+**Options:**
+
+- Use `--itemid <itemid>` to overwrite the id value provided of the Send with a new one.
+
+{% callout note %}
+You can't `edit` a file Send's file. To do this, you'll need to delete the Send and re-create it with the appropriate file.
+{% endcallout %}
 
 ### list
 
@@ -162,4 +180,8 @@ bw send receive [options] <url>
 
 **Options:**
 
-- Use `--password <password>` to provide the password needed to access [password-protected]({{site.baseurl}}/article/send-privacy/#passwords) Sends
+- Use `--password <password>` to provide the password needed to access [password-protected]({{site.baseurl}}/article/send-privacy/#passwords) Sends as a string.
+- Use `--passwordenv <passwordenv>` to specify the password needed to access [password-protected]({{site.baseurl}}/article/send-privacy/#passwords) Sends as a stored environment variable.
+- Use `--passwordfile <passwordfile>` to specify the password needed to access [password-protected]({{site.baseurl}}/article/send-privacy/#passwords) Sends as a file with the password as its first line.
+- Use `--obj` to output the full Send object as JSON rather than only the Send link (pair this option with the `--pretty` option for formatted JSON).
+- Use `--ouput <output>` to specify the output directory for the contents of a file Send.
