@@ -83,6 +83,10 @@ The Bitwarden Desktop Application must be installed, logged in, and running in o
 
 When your Chromium-based Browser Extension updates to the version that supports Biometric Unlock (v1.48.0), you may be asked to accept a new permission for Bitwarden to `Communicate with cooperating native applications`. This permission is safe, but **optional**, and will enable the Browser Extension to communicate with the Bitwarden Desktop App, which is required to enable Biometric Unlock, as described above.
 
+{% callout success %}
+Some browsers may additionally require you to **Allow access to file URLs** for Browser Extension Biometrics to function properly.
+{% endcallout %}
+
 Declining this permission will allow you to use v1.48.0 as normal, without Biometric Unlock functionality.
 
 ### Enable Biometric Unlock for Browser Extensions
