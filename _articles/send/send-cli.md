@@ -20,7 +20,7 @@ The `send` command is the master command used to access all Send-related subcomm
 bw send [options] [command] <data>
 ```
 
-The `send` command can **also** can also be used as a shortcut to quickly `create` a Send, for example:
+The `send` command can **also** be used as a shortcut to quickly `create` a Send, for example:
 
 ```
 bw send "Fastest Send in the West."
@@ -37,7 +37,7 @@ will create a file Send object with the specified file at the specified `path` a
 **Options:**
 
 - Use `-n <name>` or `--name <name>` to specify a name for the Send. If none is specified, name will default to the `id` for text Sends and file name for file Sends. For multi-word names, use quotations `"<name>"`.
-- Use `-d <days>` or `--deleteInDays <days>` to specify a [deletion date]({{site.baseurl}}/article/send-lifespan/#deletion-date) for the Send.
+- Use `-d <days>` or `--deleteInDays <days>` to specify a [deletion date]({{site.baseurl}}/article/send-lifespan/#deletion-date) for the Send (defaults to 7 days if unspecified).
 - Use `--hidden` to specify that a text Send require recipients to [toggle visibility]({{site.baseurl}}/article/send-privacy/#hide-text).
 - Use `--notes <notes>` to add private notes to the Send. For multi-word notes, use quotations `"<notes>"`.
 - Use `--fullObject` to output the full Send object as JSON rather than only the Send link (pair this option with the `--pretty` option for formatted JSON).
@@ -79,7 +79,11 @@ Notice in the 2nd example that the jq invokation must be wrapped in double quote
 
 **Options:**
 
--
+- Use `--file <path>` to specify the file to Send (this can also be specified in encoded JSON).
+- Use `--text <text>` to specify the text to Send (this can also be specified in encoded JSON).
+- Use `--hidden` to specify that a text Send require recipients to [toggle visibility]({{site.baseurl}}/article/send-privacy/#hide-text).
+- Use `--password <password>` to specify the password needed to access [password-protected]({{site.baseurl}}/article/send-privacy/#passwords).
+- Use `--fullObject` to output the full Send object as JSON rather than only the Send link (pair this option with the `--pretty` option for formatted JSON).
 
 ### get
 

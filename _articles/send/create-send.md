@@ -14,19 +14,19 @@ Sends can be created and edited from the [Web Vault](https://vault.bitwarden.com
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
-    <a class="nav-link active" id="wvtab" href="#webvault" role="tab" aria-controls="webvault" aria-selected="true">Web Vault</a>
+    <a class="nav-link active" id="wvtab" data-target="#webvault" role="tab" aria-controls="webvault" aria-selected="true">Web Vault</a>
   </li>
   <li class="nav-item" role="presentation">
-    <a class="nav-link" id="betab" href="#browserextension" role="tab" aria-controls="browserextension" aria-selected="false">Browser Extensions</a>
+    <a class="nav-link" id="betab" data-target="#browserextension" role="tab" aria-controls="browserextension" aria-selected="false">Browser Extension</a>
   </li>
   <li class="nav-item" role="presentation">
-    <a class="nav-link" id="desktab" href="#desktop" role="tab" aria-controls="desktop" aria-selected="false">Desktop Apps</a>
+    <a class="nav-link" id="desktab" data-target="#desktop" role="tab" aria-controls="desktop" aria-selected="false">Desktop</a>
   </li>
   <li class="nav-item" role="presentation">
-    <a class="nav-link" id="mobtab" href="#mobile" role="tab" aria-controls="mobile" aria-selected="false">Mobile Apps</a>
+    <a class="nav-link" id="mobtab" data-target="#mobile" role="tab" aria-controls="mobile" aria-selected="false">Mobile</a>
   </li>
   <li class="nav-item" role="presentation">
-    <a class="nav-link" id="clitab" href="#cli" role="tab" aria-controls="cli" aria-selected="false">CLI</a>
+    <a class="nav-link" id="clitab" data-target="#cli" role="tab" aria-controls="cli" aria-selected="false">CLI</a>
   </li>
 </ul>
 <div class="tab-content" id="clientsContent">
@@ -60,7 +60,9 @@ Complete the following steps to create a new Send from the Bitwarden [Web Vault]
    |**Maximum Access Count**|The Send will be [disabled]({{site.baseurl}}/article/send-lifespan/#maximum-access-count-behavior) after the specified access count is reached. By default, unspecified.|
    |**Password**|[Require a password]({{site.baseurl}}/article/send-privacy/#passwords) to be entered by recipients of this Send in order to gain access.|
    |**Notes**|Enter private notes for this Send, which will only be visible to the Sender.|
-   **Disable this send so that no one can access it**|Check this box to prevent this Send from being accessibly to any recipients. You will still be able to interact this Send from your Send view.|
+   **Disable this send so that no one can access it**|Check this box to prevent this Send from being accessible to any recipients. You will still be able to interact this Send from your Send view.|
+
+   {% callout success%}The rest of this article covers copying a Send link to your clipboard, but you can do that automatically by checking the **Copy the link to share this Send to my clipboard upon save** option before you click **Save**.{% endcallout %}
 
    Once you're happy with the configuration of your Send, select the **Save** button to finish.
 
@@ -103,7 +105,9 @@ Complete the following steps to create a new Send from a Bitwarden Browser Exten
    |**Maximum Access Count**|The Send will be [disabled]({{site.baseurl}}/article/send-lifespan/#maximum-access-count-behavior) after the specified access count is reached. By default, unspecified.|
    |**Password**|[Require a password]({{site.baseurl}}/article/send-privacy/#passwords) to be entered by recipients of this Send in order to gain access.|
    |**Notes**|Enter private notes for this Send, which will only be visible to the Sender.|
-   |**Disable this send so that no one can access it**|Check this box to prevent this Send from being accessibly to any recipients. You will still be able to interact this Send from your Send view.|
+   |**Disable this send so that no one can access it**|Check this box to prevent this Send from being accessible to any recipients. You will still be able to interact this Send from your Send view.|
+
+   {% callout success%}The rest of this article covers copying a Send link to your clipboard, but you can do that automatically by checking the **Copy the link to share this Send to my clipboard upon save** option before you click **Save**.{% endcallout %}
 
    Once you're happy with the configuration of your Send, select the **Save** button to finish.
 
@@ -145,7 +149,9 @@ Complete the following steps to create a new Send from a Bitwarden Desktop App:
    |**Maximum Access Count**|The Send will be [disabled]({{site.baseurl}}/article/send-lifespan/#maximum-access-count-behavior) after the specified access count is reached. By default, unspecified.|
    |**Password**|[Require a password]({{site.baseurl}}/article/send-privacy/#passwords) to be entered by recipients of this Send in order to gain access.|
    |**Notes**|Enter private notes for this Send, which will only be visible to the Sender.|
-   |**Disable this send so that no one can access it**|Check this box to prevent this Send from being accessibly to any recipients. You will still be able to interact this Send from your Send view.|
+   |**Disable this send so that no one can access it**|Check this box to prevent this Send from being accessible to any recipients. You will still be able to interact this Send from your Send view.|
+
+   {% callout success%}The rest of this article covers copying a Send link to your clipboard, but you can do that automatically by checking the **Copy the link to share this Send to my clipboard upon save** option before you click **Save**.{% endcallout %}
 
    Once you're happy with the configuration of your Send, select the **Save** button to finish.
 
@@ -189,7 +195,9 @@ Complete the following steps to create a new Send from Bitwarden Mobile App:
    |**Maximum Access Count**|The Send will be [disabled]({{site.baseurl}}/article/send-lifespan/#maximum-access-count-behavior) after the specified access count is reached. By default, unspecified.|
    |**Password**|[Require a password]({{site.baseurl}}/article/send-privacy/#passwords) to be entered by recipients of this Send in order to gain access.|
    |**Notes**|Enter private notes for this Send, which will only be visible to the Sender.|
-   |**Disable this send so that no one can access it**|Check this box to prevent this Send from being accessibly to any recipients. You will still be able to interact this Send from your Send view.|
+   |**Disable this send so that no one can access it**|Check this box to prevent this Send from being accessible to any recipients. You will still be able to interact this Send from your Send view.|
+
+   {% callout success%}The rest of this article covers copying a Send link to your clipboard, but you can do that automatically by toggling the **Copy the link to share this Send to my clipboard upon save** option before you tap **Save**.{% endcallout %}
 
    Once you're happy with the configuration of your Send, tap the **Save** button to finish.
 
@@ -205,7 +213,7 @@ Share your Send link with intended recipients however you prefer. Sends are end-
 {% capture cli_info %}
 ### Send from the CLI
 
-The following are sample commands to help you get started Sending from the CLI.
+The following are sample commands to help you get started using Send from the CLI.
 
 To create a simple text Send with a [deletion date]({{site.baseurl}}/articles/send-lifespan/#deletion-date) set to 14 days from creation:
 
