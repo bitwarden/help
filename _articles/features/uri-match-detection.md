@@ -82,7 +82,7 @@ If the URI value `^https://.*google\.com$` uses regular expression match detecti
 - **Auto-fill offered** for `https://google.com`, `https://sub.google.com`, `https://malicious-site.com?q=google.com`
 - **Auto-fill not offered** for `http://google.com` or `https://yahoo.com`
 
-This probably matches more than what is indented. Consider avoiding the `.` which matches any character entierly for this security sensitive use of regular expressions.
+This probably matches more than what is intended. Consider avoiding periods (`.`), which unless escaped (`\`) match on any character.
 
 #### Safe example
 
