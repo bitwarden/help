@@ -85,7 +85,7 @@ To solve this issue:
 
     In many cases, you'll need to adjust for `.csv` header rows, which are not counted in many spreadsheet programs. It can also help to use field name (`yyyy`) and perceived character length as context clues.
 
-   {% callout success %}If you've having trouble locating the offending item using the data provided in the error, it may help to focus first on notes as these are frequently the cause of this error.{% endcallout %}
+   {% callout success %}If you're having trouble locating the offending item using the data provided in the error, it may help to focus first on notes as these are frequently the cause of this error.{% endcallout %}
 3. Remove the offending item from your import file, or reduce the character count. When reducing the character count, remember that limits are placed on **encrypted** counts, not pre-encryption counts.  As a rule of thumb, character counts will grow between 30-50% when Bitwarden attempts to encrypt a field on import.
 
 ### Maximum Collections Error
