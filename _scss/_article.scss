@@ -11,6 +11,14 @@
     }
 }
 
+.article-breadcrumb {
+    align-items: center;
+
+    .badge {
+        margin-left: 0.25rem;
+    }
+}
+
 .article-card.card {
     margin-bottom: 1.5rem;
 
