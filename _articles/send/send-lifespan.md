@@ -4,7 +4,7 @@ title: Send Lifespan
 categories: [send]
 featured: true
 popular: false
-tags: []
+tags: [bitwarden send, send, ephemeral sharing, deletion, expiration, access count]
 order: 04
 ---
 

@@ -4,7 +4,7 @@ title: About Send
 categories: [send]
 featured: true
 popular: false
-tags: []
+tags: [bitwarden send, send, about send, ephemeral sharing]
 order: 01
 ---
 

@@ -4,7 +4,7 @@ title: Receive a Send
 categories: [send]
 featured: true
 popular: false
-tags: []
+tags: [bitwarden send, send, receive, receive a send]
 order: 03
 ---
 

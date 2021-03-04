@@ -4,7 +4,7 @@ title: Send from CLI
 categories: [send]
 featured: true
 popular: false
-tags: []
+tags: [bitwarden send, send, cli]
 order: 06
 ---
 
@@ -93,6 +93,8 @@ The `get` command will retrieve a Send owned by you and output it as a JSON obje
 bw send get [options] <id / string>
 ```
 
+If you create a Send in another Bitwarden application while this session is still active, use the `bw sync` command to pull recent sends. For more information, refer to our [CLI documentation]({% link _articles/miscellaneous/cli.md %}).
+
 **Options:**
 
 - Use `--text` to output only the text contents of a text Send.
@@ -135,6 +137,8 @@ The `list` command will list all Sends owned by you and output them as JSON:
 ```
 bw send list [options]
 ```
+
+If you create a Send in another Bitwarden application while this session is still active, use the `bw sync` command to pull recent sends. For more information, refer to our [CLI documentation]({% link _articles/miscellaneous/cli.md %}).
 
 **Options:**
 

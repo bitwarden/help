@@ -4,18 +4,30 @@ title: Send Privacy
 categories: [send]
 featured: true
 popular: false
-tags: []
+tags: [bitwarden send, send, passwords, hidden text]
 order: 05
 ---
 Protect the contents of your Send by optionally configuring a [password for access](#passwords) so that no unintended recipients can see the contained information. For text Sends, you can also optionally require recipients to [toggle visibility](#hide-text) to prevent exposure to unintentional onlookers.
 
 The **Password** and **Hide Text** options are configurable from the Create New Send view, or from the Edit Send views at any time prior to the Send's [deletion]({{site.baseurl}}/article/send-lifespan/#deletion-behavior).
 
-## Passwords
+## Send Passwords
 
 For any Send, you may configure a password that recipients will be required to enter in order to access its contents. Password-protecting a Send is a good way to ensure the contents of a Send aren't exposed to unintended recipients:
 
 {% image /send/send-pw-protected.png Receiving a password-protected Send%}
+
+Once you password-protect a Send, you won't be able to view the configured password again, however you can [change](#change-send-passwords) or [remove](#remove-send-password) at any time:
+
+### Change Send Passwords
+
+You can change a Send's password at any time from the **Edit Send** view. Changing a Send's password **will not** require you to enter the previous password. When changing a Send's password, the **Password** field will change to **New Password**:
+
+{% image /send/send-new-pw.png %}
+
+### Remove Send Passwords
+
+You can remove a Send's password at any time using the {% icon fa-undo %} **Remove Password** menu option. Removing a Send's password **will not** require you to enter the previous password.
 
 ## Hide Text
 

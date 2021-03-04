@@ -4,7 +4,7 @@ title: Create a Send
 categories: [send]
 featured: true
 popular: false
-tags: [bitwarden send, send, ephemeral sharing]
+tags: [bitwarden send, send, create a send, how to, ephemeral sharing]
 order: 02
 ---
 
@@ -197,7 +197,7 @@ Complete the following steps to create a new Send from Bitwarden Mobile App:
    |**Notes**|Enter private notes for this Send, which will only be visible to the Sender.|
    |**Disable this send so that no one can access it**|Check this box to prevent this Send from being accessible to any recipients. You will still be able to interact this Send from your Send view.|
 
-   {% callout success%}The rest of this article covers copying a Send link to your clipboard, but you can do that automatically by toggling the **Copy the link to share this Send to my clipboard upon save** option before you tap **Save**.{% endcallout %}
+   {% callout success%}Toggling the **Share upon save** option before you tap **Save** will open the share menu on your device so you can quickly share your Send link.{% endcallout %}
 
    Once you're happy with the configuration of your Send, tap the **Save** button to finish.
 
