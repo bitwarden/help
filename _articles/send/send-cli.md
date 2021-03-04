@@ -82,7 +82,7 @@ Notice in the 2nd example that the jq invokation must be wrapped in double quote
 - Use `--file <path>` to specify the file to Send (this can also be specified in encoded JSON).
 - Use `--text <text>` to specify the text to Send (this can also be specified in encoded JSON).
 - Use `--hidden` to specify that a text Send require recipients to [toggle visibility]({{site.baseurl}}/article/send-privacy/#hide-text).
-- Use `--password <password>` to specify the password needed to access [password-protected]({{site.baseurl}}/article/send-privacy/#passwords).
+- Use `--password <password>` to specify the password needed to access [password-protected]({{site.baseurl}}/article/send-privacy/#send-passwords).
 - Use `--fullObject` to output the full Send object as JSON rather than only the Send link (pair this option with the `--pretty` option for formatted JSON).
 
 ### get
@@ -188,8 +188,8 @@ bw send receive [options] <url>
 
 **Options:**
 
-- Use `--password <password>` to provide the password needed to access [password-protected]({{site.baseurl}}/article/send-privacy/#passwords) Sends as a string.
-- Use `--passwordenv <passwordenv>` to specify the password needed to access [password-protected]({{site.baseurl}}/article/send-privacy/#passwords) Sends as a stored environment variable.
-- Use `--passwordfile <passwordfile>` to specify the password needed to access [password-protected]({{site.baseurl}}/article/send-privacy/#passwords) Sends as a file with the password as its first line.
+- Use `--password <password>` to provide the password needed to access [password-protected]({{site.baseurl}}/article/send-privacy/#send-passwords) Sends as a string.
+- Use `--passwordenv <passwordenv>` to specify the password needed to access [password-protected]({{site.baseurl}}/article/send-privacy/#send-passwords) Sends as a stored environment variable.
+- Use `--passwordfile <passwordfile>` to specify the password needed to access [password-protected]({{site.baseurl}}/article/send-privacy/#send-passwords) Sends as a file with the password as its first line.
 - Use `--obj` to output the full Send object as JSON rather than only the Send link (pair this option with the `--pretty` option for formatted JSON).
 - Use `--ouput <output>` to specify the output directory for the contents of a file Send.

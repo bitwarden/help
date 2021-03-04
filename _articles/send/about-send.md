@@ -16,7 +16,7 @@ Bitwarden Send is a secure and ephemeral way to transmit sensitive information t
 
 - **Dynamically Ephemeral**: Sends are designed for ephemeral sharing, so every [Send that you create]({% link _articles/send/create-send.md %}) will have a specified [lifespan]({% link _articles/send/send-lifespan.md %}) (*max 30 days*) that can be configured using pre-set options or a custom timestamp for down-to-the-minute specification. When its deletion date is reached, the Send and its contents will be completely purged from Bitwarden systems. Using additional options like [Expiration Date]({{site.baseurl}}/article/send-lifespan/#expiration-date) and [Maximum Access Count]({{site.baseurl}}/article/send-lifespan/#maximum-access-count), you can ensure that access to recipients is terminated according to your needs.
 
-- **Customizably Private**: Protect the contents of your Send by optionally [configuring a password]({{site.baseurl}}/article/send-privacy/#passwords) for access so that no unintended recipients can see the contained information. For text Sends, you can also optionally [require users to toggle visibility]({{site.baseurl}}/article/send-privacy/#hide-text) to prevent exposure to unintentional onlookers.
+- **Customizably Private**: Protect the contents of your Send by optionally [configuring a password]({{site.baseurl}}/article/send-privacy/#send-passwords) for access so that no unintended recipients can see the contained information. For text Sends, you can also optionally [require users to toggle visibility]({{site.baseurl}}/article/send-privacy/#hide-text) to prevent exposure to unintentional onlookers.
 
 ## The Send View
 

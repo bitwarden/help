@@ -42,10 +42,10 @@ You can change your Master Password at any time from the [Web Vault](https://vau
 5. Enter and Confirm your **New Master Password**.
 6. Select the **Change Master Password** button.
 
-Completing these steps will log you out of your current session, requiring you to log back in with you new Master Password. Currently logged-in client applications (Mobile Apps, Browser Extensions, etc.) may remain active for up to an hour, however they will eventually also require you to log back in with your new Master Password.
+Completing these steps will log you out of your current session, requiring you to log back in with your new Master Password. Currently logged-in client applications (Mobile Apps, Browser Extensions, etc.) may remain active for up to an hour, however they will eventually also require you to log back in with your new Master Password.
 
 {% callout warning %}
-Opting to **rotate account's encryption key** is a potentially dangerous operation. Read the article on [Account Encryption Keys]({% link _articles/account/account-encryption-key.md %}) before doing so to fully understand the ramifications and required follow-up procedures.
+The option on this page to **rotate account's encryption key** is a potentially dangerous operation. Read the article on [Account Encryption Keys]({% link _articles/account/account-encryption-key.md %}) before doing so to fully understand the ramifications and required follow-up procedures.
 {% endcallout %}
 
 ## I Forgot My Master Password

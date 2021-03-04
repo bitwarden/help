@@ -8,14 +8,13 @@ tags: [account, items, import, delete, trash, clone]
 order: 03
 ---
 
-Bitwarden can store 4 types of items in your Vault:
+Effectively managing the items in your Vault is key to making sure that you secure and have seamless access to your information, and can safely share information with friends, family, teams, and colleagues.
 
+Bitwarden can store 4 types of items in your Vault:
 - [Logins](#logins)
 - [Cards](#cards)
 - [Identities](#identities)
 - [Secure Notes](#secure-notes)
-
-Effectively managing the items in your Vault is key to making sure that you secure and have seamless access to your information, and can safely share information with friends, family, teams, and colleagues.
 
 ## Add a Vault Item
 

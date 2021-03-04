@@ -26,7 +26,7 @@ Directory Connector configuration will vary based on the directory type in use. 
 - [Sync with OneLogin]({% link _articles/directory-connector/onelogin-directory.md %})
 
 {% callout info %}
-If you're using a self-hosted version of Bitwarden, you must change the Server URL used by the Directory Connector application:
+**If you're using a self-hosted version of Bitwarden**, you must change the Server URL used by the Directory Connector application:
 
 1. Log out of Directory Connector.
 2. On the Login screen, select the **Settings** button.

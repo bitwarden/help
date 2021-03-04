@@ -8,7 +8,7 @@ tags: [attachments, storage, files]
 order: 13
 ---
 
-Files can be attached to Vault items from any Bitwarden client application. An individual file attachment must be 100MB or smaller. By default, users have access to 1GB of encrypted storage for file attachments. Additional storage can be purchased in 1GB increments.
+Files can be attached to Vault items from any Bitwarden application. An individual file attachment must be 100MB or smaller. By default, paid users have access to 1GB of encrypted storage for file attachments. Additional storage can be purchased in 1GB increments.
 
 {% callout info %}
 File Attachments are available for Premium users, including members of Paid Organizations (Families, Teams, or Enterprise).
@@ -16,34 +16,107 @@ File Attachments are available for Premium users, including members of Paid Orga
 
 ## Attach a File
 
-Complete the following steps to attach a file to a Vault item:
+To attach a file to a Vault item from a Bitwarden application:
 
-### From the Web Vault
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" id="tab" role="presentation">
+    <a class="nav-link active" id="wvtab" data-bs-toggle="tab" data-target="#wv" role="tab" aria-controls="wv" aria-selected="true">Web Vault</a>
+  </li>
+  <li class="nav-item" id="tab" role="presentation">
+    <a class="nav-link" id="betab" data-bs-toggle="tab" data-target="#be" role="tab" aria-controls="be" aria-selected="true">Browser Extension</a>
+  </li>
+  <li class="nav-item" id="tab" role="presentation">
+    <a class="nav-link" id="mobtab" data-bs-toggle="tab" data-target="#mob" role="tab" aria-controls="mob" aria-selected="false">Mobile</a>
+  </li>
+  <li class="nav-item" id="tab" role="presentation">
+    <a class="nav-link" id="desktab" data-bs-toggle="tab" data-target="#desk" role="tab" aria-controls="desk" aria-selected="false">Desktop</a>
+  </li>
+  <li class="nav-item" id="tab" role="presentation">
+    <a class="nav-link" id="clitab" data-bs-toggle="tab" data-target="#cli" role="tab" aria-controls="cli" aria-selected="false">CLI</a>
+  </li>
+</ul>
 
-1. Hover-over the item you'd like to attach a file to, and select the {% icon fa-cog %} **Gear** icon.
-2. Select **Attachments** from the dropdown.
+<div class="tab-content" id="clientsContent">
+  <div class="tab-pane show active" id="wv" role="tabpanel" aria-labelledby="wvtab">
+{% capture be_sync %}
+### Attach from Web Vault
+
+Complete the following steps to attach a file to a Vault item from the Web Vault:
+
+1. Hover-over the Vault item you'd like to attach a file to, and select the {% icon fa-cog %} **Gear** icon.
+2. Select {% icon fa-paperclip %} **Attachments** from the dropdown.
 3. In the Attachments dialog box, **Browse...** for your file.
 4. Select the **Save** button to finish attaching a file.
 
-Once an item has files attached, selecting **Attachments** from the {% icon fa-cog %} **Gear** dropdown will also display a list of files attached to that Vault item.
+Once a Vault item has a file attached to it, selecting {% icon fa-paperclip %} **Attachments** from the {% icon fa-cog %} **Gear** dropdown will also display a list of attached files.
 
-### From Browser Extensions and Desktop Apps
+{% endcapture %}
+{{ be_sync | markdownify }}
+  </div>
+  <div class="tab-pane" id="be" role="tabpanel" aria-labelledby="betab">
+{% capture be_sync %}
+### Attach from Browser Extensions
+
+Complete the following steps to attach a file to a Vault item from a Bitwarden Browser Extension:
 
 1. Open the item you'd like to attach a file to, and select the **Edit** button.
-2. Select **Attachments**.
+2. Select {% icon fa-paperclip %} **Attachments**.
 3. On the Attachments page/dialog, **Browse...** for your file.
 4. Select the **Save** button to finish attaching a file.
 
-Once an item has files attached, selecting **Attachments** from the **Edit** menu will also display a list of files attached to that Vault item.
+Once a Vault item has a file attached to it, selecting {% icon fa-paperclip %} **Attachments** from will also display a list of attached files.
 
-### From Mobile Apps
+{% endcapture %}
+{{ be_sync | markdownify }}
+  </div>
+  <div class="tab-pane" id="mob" role="tabpanel" aria-labelledby="mobtab">
+{% capture mob_sync%}
+### Attach from Mobile Apps
+
+Complete the following steps to attach a file to a Vault item from a Bitwarden Mobile App:
 
 1. Open the item you'd like to attach a file to, and select the {% icon fa-ellipsis-v%} **Menu** button.
-2. Select **Attachments**.
+2. Select {% icon fa-paperclip %} **Attachments**.
 3. On the Attachments page, select the **Choose File** button and browse for your file.
 4. Select the **Save** button to finish attaching a file.
 
-Once an item has files attached, selecting **Attachments** from the {% icon fa-ellipsis-v%} **Menu** will also display a list of files attached to that Vault item.
+Once a Vault item has a file attached to it, selecting {% icon fa-paperclip %} **Attachments** from the {% icon fa-ellipsis-v%} **Menu** dropdown will also display a list of attached files.
+
+{% endcapture %}
+{{ mob_sync | markdownify }}
+  </div>
+  <div class="tab-pane" id="desk" role="tabpanel" aria-labelledby="desktab">
+{% capture desk_sync%}
+### Attach from Desktop Apps
+
+Complete the following steps to attach a file to a Vault item from a Bitwarden Desktop App:
+
+1. Open the item you'd like to attach a file to, and select the **Edit** button.
+2. Select {% icon fa-paperclip %} **Attachments**.
+3. On the Attachments page/dialog, **Browse...** for your file.
+4. Select the **Save** button to finish attaching a file.
+
+Once a Vault item has a file attached to it, selecting {% icon fa-paperclip %} **Attachments** from will also display a list of attached files.
+
+{% endcapture %}
+{{ desk_sync | markdownify }}
+  </div>
+  <div class="tab-pane" id="cli" role="tabpanel" aria-labelledby="clitab">
+{% capture cli_sync%}
+### Attach from the CLI
+
+Use `bw create attachment` to attach a file to an existing Vault item, for exaple:
+
+```
+bw create attachment --file /path/to/myfile.ext --itemid <itemid>
+```
+
+For more information, refer to our [CLI documentation]({% link _articles/miscellaneous/cli.md %}).
+
+{% endcapture %}
+{{ cli_sync | markdownify }}
+  </div>
+</div>
 
 ## View an Attachment
 

@@ -58,7 +58,7 @@ Complete the following steps to create a new Send from the Bitwarden [Web Vault]
    |**Deletion Date**|The Send will be permanently [deleted]({{site.baseurl}}/article/send-lifespan/#deletion-behavior) on the specified date and time. By default, 7 days from creation. The **maximum allowed value** is 30 days from creation.|
    |**Expiration Date**|The Send will [expire]({{site.baseurl}}/article/send-lifespan/#expiration-behavior) on the specified date and time. By default, **Never**.|
    |**Maximum Access Count**|The Send will be [disabled]({{site.baseurl}}/article/send-lifespan/#maximum-access-count-behavior) after the specified access count is reached. By default, unspecified.|
-   |**Password**|[Require a password]({{site.baseurl}}/article/send-privacy/#passwords) to be entered by recipients of this Send in order to gain access.|
+   |**Password**|[Require a password]({{site.baseurl}}/article/send-privacy/#send-passwords) to be entered by recipients of this Send in order to gain access.|
    |**Notes**|Enter private notes for this Send, which will only be visible to the Sender.|
    **Disable this send so that no one can access it**|Check this box to prevent this Send from being accessible to any recipients. You will still be able to interact this Send from your Send view.|
 
@@ -103,7 +103,7 @@ Complete the following steps to create a new Send from a Bitwarden Browser Exten
    |**Deletion Date**|The Send will be permanently [deleted]({{site.baseurl}}/article/send-lifespan/#deletion-behavior) on the specified date and time. By default, 7 days from creation. The **maximum allowed value** is 30 days from creation.|
    |**Expiration Date**|The Send will [expire]({{site.baseurl}}/article/send-lifespan/#expiration-behavior) on the specified date and time. By default, **Never**.|
    |**Maximum Access Count**|The Send will be [disabled]({{site.baseurl}}/article/send-lifespan/#maximum-access-count-behavior) after the specified access count is reached. By default, unspecified.|
-   |**Password**|[Require a password]({{site.baseurl}}/article/send-privacy/#passwords) to be entered by recipients of this Send in order to gain access.|
+   |**Password**|[Require a password]({{site.baseurl}}/article/send-privacy/#send-passwords) to be entered by recipients of this Send in order to gain access.|
    |**Notes**|Enter private notes for this Send, which will only be visible to the Sender.|
    |**Disable this send so that no one can access it**|Check this box to prevent this Send from being accessible to any recipients. You will still be able to interact this Send from your Send view.|
 
@@ -147,7 +147,7 @@ Complete the following steps to create a new Send from a Bitwarden Desktop App:
    |**Deletion Date**|The Send will be permanently [deleted]({{site.baseurl}}/article/send-lifespan/#deletion-behavior) on the specified date and time. By default, 7 days from creation. The **maximum allowed value** is 30 days from creation.|
    |**Expiration Date**|The Send will [expire]({{site.baseurl}}/article/send-lifespan/#expiration-behavior) on the specified date and time. By default, **Never**.|
    |**Maximum Access Count**|The Send will be [disabled]({{site.baseurl}}/article/send-lifespan/#maximum-access-count-behavior) after the specified access count is reached. By default, unspecified.|
-   |**Password**|[Require a password]({{site.baseurl}}/article/send-privacy/#passwords) to be entered by recipients of this Send in order to gain access.|
+   |**Password**|[Require a password]({{site.baseurl}}/article/send-privacy/#send-passwords) to be entered by recipients of this Send in order to gain access.|
    |**Notes**|Enter private notes for this Send, which will only be visible to the Sender.|
    |**Disable this send so that no one can access it**|Check this box to prevent this Send from being accessible to any recipients. You will still be able to interact this Send from your Send view.|
 
@@ -193,7 +193,7 @@ Complete the following steps to create a new Send from Bitwarden Mobile App:
    |**Deletion Date**|The Send will be permanently [deleted]({{site.baseurl}}/article/send-lifespan/#deletion-behavior) on the specified date and time. By default, 7 days from creation. The **maximum allowed value** is 30 days from creation.|
    |**Expiration Date**|The Send will [expire]({{site.baseurl}}/article/send-lifespan/#expiration-behavior) on the specified date and time. By default, **Never**.|
    |**Maximum Access Count**|The Send will be [disabled]({{site.baseurl}}/article/send-lifespan/#maximum-access-count-behavior) after the specified access count is reached. By default, unspecified.|
-   |**Password**|[Require a password]({{site.baseurl}}/article/send-privacy/#passwords) to be entered by recipients of this Send in order to gain access.|
+   |**Password**|[Require a password]({{site.baseurl}}/article/send-privacy/#send-passwords) to be entered by recipients of this Send in order to gain access.|
    |**Notes**|Enter private notes for this Send, which will only be visible to the Sender.|
    |**Disable this send so that no one can access it**|Check this box to prevent this Send from being accessible to any recipients. You will still be able to interact this Send from your Send view.|
 
