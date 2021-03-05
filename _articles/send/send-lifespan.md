@@ -16,7 +16,7 @@ You can also manually [disable or delete](#manually-disable-or-delete) a Send at
 
 ## Deletion Date
 
-By default, a Send will have a Deletion Date set to 7 days from creation. Using the **Deletion Date** option, you may change this to a range of pre-specified options (e.g. *1 hour*, *1 day*, *30 days*) or specify a custom timestamp (`MM/DD/YYYY HH:MM AM/PM` or `YYYY-MM-DD HH:MM` ([ISO 8601](https://en.wikipedia.org/wiki/ISO_8601){:target="\_blank"})).
+By default, a Send will have a Deletion Date set to 7 days from creation. Using the **Deletion Date** option, you may change this to a range of pre-specified options (e.g. *1 hour*, *1 day*, *30 days*) or specify a **Custom** timestamp using the date picker (or in the text input in the format `MM/DD/YYYY HH:MM AM/PM`).
 
 Deletion Date has a **maximum allowed value of 30 days from creation**.
 
@@ -32,7 +32,7 @@ When a Send reaches its configured Deletion Date:
 
 ## Expiration Date
 
-By default, Expiration Date will be set to Never. Using the **Expiration Date** option, you may change this to a range of pre-specified options (e.g. *1 hour*, *1 day*, *7 days*) or specify a custom timestamp (`MM/DD/YYYY HH:MM AM/PM` or `YYYY-MM-DD HH:MM` ([ISO 8601](https://en.wikipedia.org/wiki/ISO_8601){:target="\_blank"})).
+By default, Expiration Date will be set to Never. Using the **Expiration Date** option, you may change this to a range of pre-specified options (e.g. *1 hour*, *1 day*, *7 days*) or specify a **Custom** timestamp using the date picker (or in the text input in the format `MM/DD/YYYY HH:MM AM/PM`).
 
 ### Expiration Behavior
 

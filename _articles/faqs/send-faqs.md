@@ -10,7 +10,13 @@ order: 07
 
 ### Q: Why can't I create a file Send?
 
-**A:** Use of text Sends is available to all Bitwarden users, however creation of file Sends is only available for Premium users, including members of a Paid Organization (Families, Teams, or Enterprise). 
+**A:** Use of text Sends is available to all Bitwarden users, however creation of file Sends is only available for Premium users, including members of a Paid Organization (Families, Teams, or Enterprise).
+
+### Q: Why can't I create a file Send from a Firefox Browser Extension?
+
+**A:** In order to browse for a file on the Create Send view in a Firefox Browser Extension, open the extension in the sidebar or pop out a new window using the popout {% icon fa-external-link fa-rotate-270 %} button:
+
+{% image /send/send-ff-popout.png The popout icon %}
 
 ### Q: Why are Sends missing from my Send view?
 
@@ -22,7 +28,7 @@ order: 07
 
 |Icon|Meaning|
 |----|-------|
-|{% icon fa-key %}|This Send is [protected by a password]({{site.baseurl}}/article/send-privacy/#passwords).|
+|{% icon fa-key %}|This Send is [protected by a password]({{site.baseurl}}/article/send-privacy/#send-passwords).|
 |{% icon fa-warning %}|This Send has been [manually disabled]({{site.baseurl}}/article/send-lifespan/#manually-disable-or-delete).|
 |{% icon fa-clock-o %}|This Send has reached it's specified [Expiration Date]({{site.baseurl}}/article/send-lifespan/#expiration-date).|
 |{% icon fa-ban %}|This Send has reached it's specified [Maximum Access Count]({{site.baseurl}}/article/send-lifespan/#maximum-access-count).|
