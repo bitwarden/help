@@ -7,7 +7,9 @@ popular: false
 tags: []
 ---
 
-Bitwarden Browser Extensions can be configured to exclude (i.e. explicitly not offer to save passwords for) specific domains.
+Bitwarden Browser Extensions can be configured to exclude (i.e. explicitly not offer to save passwords for) specific domains. When a domain is in the **Excluded Domains** list, Bitwarden won't issue the popup offering to remember an entered password:
+
+{% image /be-offer.png Browser Extension popup offer %}
 
 To configure excluded domains, open the {% icon fa-cogs %} **Settings** tab and select the **Excluded Domains** option:
 
