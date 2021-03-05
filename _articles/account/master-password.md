@@ -10,7 +10,7 @@ redirect_from:
   - /article/change-your-master-password/
 ---
 
-## About Your Master Password
+## About your Master Password
 
 Your Master Password is the primary method for accessing your Vault. It's critically important that your Master Password is:
 
@@ -31,35 +31,40 @@ If you're worried about forgetting your Master Password, the team at Bitwarden h
 
 {% endcallout %}
 
-## Changing Your Master Password
+## Change your Master Password
 
-You can change your Master Password at any time from the [Web Vault](https://vault.bitwarden.com){:target="\_blank"}, **provided you know you current Master Password** (if you don't, see [I Forgot My Master Password](#i-forgot-my-master-password)).
+Provided you **know your current Master Password**, change your Master Password at any time from the [Web Vault](https://vault.bitwarden.com){:target="\_blank"}:
 
-1. Log in to your [Web Vault](https://vault.bitwarden.com){:target="\_blank"}.
-2. Select the **Settings** tab from the top navigation.
-3. On the **My Account** page, scroll down and locate the **Change Master Password** section.
-4. Enter your **Current Master Password**.
-5. Enter and Confirm your **New Master Password**.
-6. Select the **Change Master Password** button.
-
-Completing these steps will log you out of your current session, requiring you to log back in with your new Master Password. Currently logged-in client applications (Mobile Apps, Browser Extensions, etc.) may remain active for up to an hour, however they will eventually also require you to log back in with your new Master Password.
-
-{% callout warning %}
-The option on this page to **rotate account's encryption key** is a potentially dangerous operation. Read the article on [Account Encryption Keys]({% link _articles/account/account-encryption-key.md %}) before doing so to fully understand the ramifications and required follow-up procedures.
+{% callout success %}
+If you don't know your Master Password, see [I Forgot my Master Password]({% link _articles/account/forgot-master-password.md %}).
 {% endcallout %}
 
-## I Forgot My Master Password
+1. In your Web Vault, Select the **Settings** tab from the top navigation.
+2. On the **My Account** page, scroll down to the **Change Master Password** section.
+3. Enter your **Current Master Password**.
+4. Enter and Confirm your **New Master Password**.
 
-As described in the [About Your Master Password](#about-your-master-password) section, Bitwarden has no knowledge of, way to retrieve, or way to reset your Master Password. If you've already lost your Master Password, there is unfortunately no way for the team to recover the account or the data therein. You will need to delete your account and start a new one.
+   {% callout warning %}Don't check the **rotate account's encryption key** box unless you fully understand the ramifications and required follow-up procedures. Learn more [here]({% link _articles/account/account-encryption-key.md %}).{% endcallout %}
+5. Select the **Change Master Password** button.
+
+Changing your Master Password will log you out of your current Web Vault session, requiring you to log back in with your new Master Password.
+
+Other logged-in client applications (Mobile Apps, Browser Extensions, etc.) may remain active for up to an hour, however they will eventually also require you to log back in with your new Master Password.
+
+## I forgot my Master Password
+
+As described in the [About Your Master Password](#about-your-master-password) section, Bitwarden has no knowledge of, way to retrieve, or way to reset your Master Password.
+
+If you've already lost your Master Password, there is unfortunately no way for the team to recover the account or the data therein. You will need to delete your account and start a new one.
 
 {% callout success %}
 If you're using any Bitwarden client applications (Mobile Apps, Browser Extensions, etc.) you should check whether any of these sessions are still logged in prior to deleting your account. If a client application is still logged in, you should manually catalogue your Vault items to preserve your data.
 {% endcallout %}
 
-Complete the following steps to delete your account:
+To delete your account:
 
 1. Navigate to [vault.bitwarden.com/#/recover-delete](https://vault.bitwarden.com/#/recover-delete).
-2. Enter the **Email Address** associated with your account.
+2. Enter the **Email Address** associated with your account and select **Submit**.
 3. In your email inbox, open the email and verify that you want to delete this Bitwarden account.
 
 Once deleted, you're free to create a new Bitwarden account with that email address. If you delete a Bitwarden account that has a Premium subscription associated with it, [Contact Us](https://bitwarden.com/contact/){:target="\_blank"} and we'll reapply your existing subscription to the new account.

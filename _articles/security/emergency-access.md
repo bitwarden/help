@@ -46,7 +46,7 @@ As a grantor, you can [reject](#approve-or-reject-emergency-access) an emergency
 ### User Access
 
 Trusted emergency contacts can be granted one of the following user access levels:
-- **View**: When an emergency access request is granted, this user is granted view/read access to all items in your personal Vault. Users with View access won't be able to access [attachments]({% link _articles/features/attachments.md %}) or password history, and will only be able to see [TOTPs]({% link _articles/features/authenticator-keys.md %}) if they have a premium subscription.
+- **View**: When an emergency access request is granted, this user is granted view/read access to all items in your personal Vault.
 
    {% callout success %}As the grantor, you may revoke access to a grantee with **View** access at any time.{% endcallout %}
 

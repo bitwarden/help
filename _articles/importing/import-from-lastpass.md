@@ -65,28 +65,23 @@ Congratulations! You have just transferred your data from LastPass into Bitwarde
 
 ## Import Troubleshooting
 
-### Character Limit Error
+### Length-related Import Errors
 
-The following error messages, typically received when attempting to import a `.csv`, indicate that a field in your import file exceeds the allowed **encrypted** character limit for that field type:
+The following error messages, typically received when attempting to import a `.csv`, indicate that an item in your import file has a specified value that exceeds the allowed **encrypted** character limit for its field type:
 
-{% image /importing/ciphererrors.png Cipher errors in the Web Vault%}
+{% image /importing/ciphererror_2021.png Cipher errors in the Web Vault%}
 
-These error messages contain 3 pieces of pertinent data:
-- `Ciphers[X]` indicates the index number where the offending item is located.
-- `The field <field>` indicates the field name which is causing the offense.
-- `length of <limit> characters` indicates the character limit allowed for that field.
+To solve this issue, open the `.csv` file in a text editor or spreadsheet program and **remove** or **reduce the character count** of the offending item. Bitwarden won't import your `.csv` file until it is free of offenses. The contents of the error messages contain several pieces of pertinent data to help you identify the offending item. For example, in the above example:
 
-   {% callout note %}On import to Bitwarden, the character count of any given field is increased due to encryption, meaning that an 8000-character `note` field in your `.csv` will scale to 10,000+ characters when it comes into contact with Bitwarden, triggering this error. As a rule of thumb, character counts will grow between 30-50% when encrypted.{% endcallout %}
+- `[1]` identifies the index number where the offending item is located, adjusted to match row numbering in *most* spreadsheet programs.
+- `[Login]` identifies the Vault item `type` of the offending item.
+- `"Facebook"` identifies the `name` of the offending item.
+- `Notes` indicates the field (column) where the character limit is exceeded.
+- `10000` indicates the character limit allowed for that field (column).
 
-To solve this issue:
+   {% callout success %}On import to Bitwarden, the character count of any given field is increased due to encryption, meaning that an 8000-character `Notes` field in your `.csv` will scale to 10,000+ characters when it comes into contact with Bitwarden, triggering this error. As a rule of thumb, character counts will grow between 30-50% when encrypted.{% endcallout %}
 
-1. Open the `.csv` file you're attempting to import in a text editor or spreadsheet program.
-2. Locate the offending item at `index[X]`. The value of `X` references a `.csv` index number, so depending on the program you use to edit your file it may not map perfectly to a spreadsheet Row or Line number.
-
-    In many cases, you'll need to adjust for `.csv` header rows, which are not counted in many spreadsheet programs. It can also help to use field name (`yyyy`) and perceived character length as context clues.
-
-   {% callout success %}If you've having trouble locating the offending item using the data provided in the error, it may help to focus first on notes as these are frequently the cause of this error.{% endcallout %}
-3. Remove the offending item from your import file, or reduce the character count. When reducing the character count, remember that limits are placed on **encrypted** counts, not pre-encryption counts.  As a rule of thumb, character counts will grow between 30-50% when Bitwarden attempts to encrypt a field on import.
+If you continue to have trouble locating the offending item using the data provided in the error, it may help to focus first on notes as these are frequently the cause of this error.
 
 ### Maximum Collections Error
 
