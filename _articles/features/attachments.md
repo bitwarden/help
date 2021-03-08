@@ -55,7 +55,7 @@ Once a Vault item has a file attached to it, selecting {% icon fa-paperclip %} *
   </div>
   <div class="tab-pane" id="be" role="tabpanel" aria-labelledby="betab">
 {% capture be_sync %}
-### Attach from Browser Extensions
+### Attach from a Browser Extension
 
 Complete the following steps to attach a file to a Vault item from a Bitwarden Browser Extension:
 
@@ -71,7 +71,7 @@ Once a Vault item has a file attached to it, selecting {% icon fa-paperclip %} *
   </div>
   <div class="tab-pane" id="mob" role="tabpanel" aria-labelledby="mobtab">
 {% capture mob_sync%}
-### Attach from Mobile Apps
+### Attach from Mobile
 
 Complete the following steps to attach a file to a Vault item from a Bitwarden Mobile App:
 
@@ -87,7 +87,7 @@ Once a Vault item has a file attached to it, selecting {% icon fa-paperclip %} *
   </div>
   <div class="tab-pane" id="desk" role="tabpanel" aria-labelledby="desktab">
 {% capture desk_sync%}
-### Attach from Desktop Apps
+### Attach from Desktop
 
 Complete the following steps to attach a file to a Vault item from a Bitwarden Desktop App:
 

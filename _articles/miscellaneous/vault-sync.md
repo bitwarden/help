@@ -31,10 +31,10 @@ To manually sync your Vault from a Bitwarden client application:
     <a class="nav-link active" id="betab" data-bs-toggle="tab" data-target="#be" role="tab" aria-controls="be" aria-selected="true">Browser Extensions</a>
   </li>
   <li class="nav-item" id="tab" role="presentation">
-    <a class="nav-link" id="mobtab" data-bs-toggle="tab" data-target="#mob" role="tab" aria-controls="mob" aria-selected="false">Mobile Apps</a>
+    <a class="nav-link" id="mobtab" data-bs-toggle="tab" data-target="#mob" role="tab" aria-controls="mob" aria-selected="false">Mobile</a>
   </li>
   <li class="nav-item" id="tab" role="presentation">
-    <a class="nav-link" id="desktab" data-bs-toggle="tab" data-target="#desk" role="tab" aria-controls="desk" aria-selected="false">Desktop Apps</a>
+    <a class="nav-link" id="desktab" data-bs-toggle="tab" data-target="#desk" role="tab" aria-controls="desk" aria-selected="false">Desktop</a>
   </li>
   <li class="nav-item" id="tab" role="presentation">
     <a class="nav-link" id="clitab" data-bs-toggle="tab" data-target="#cli" role="tab" aria-controls="cli" aria-selected="false">CLI</a>
