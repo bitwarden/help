@@ -21,7 +21,7 @@ When your first log in to your Web Vault, you'll land on the **My Vault** view. 
 
 In the above screenshot, your **My Vault** view is showing {% icon fa-th %} **All Items**. The **Filters** column on the left-hand side of the Vault can help you use **Favorites** and **Folders** organized Vault so that you can quickly find whatever you're looking for.
 
-Let's start by setting up a new Folder and adding a new Login Vault item to it:
+Let's start by setting up a new Folder and adding a new Login item to it:
 
 #### Create a Folder
 
@@ -54,7 +54,7 @@ To add a new Login item:
 
 Now that a new Login item is saved in your Vault, you can beef up its security by replacing the existing password with a stronger one:
 
-1. In your Bitwarden Vault open, click on the item you want to secure to view its information.
+1. In your Bitwarden Vault, click on the item you want to secure to view its information.
 2. In a new tab or window, open the corresponding website and login to your account.
 
    {% callout success %}If you entered something in the **URI 1** field, click the {% icon fa-share %} **Launch** icon to open it directly from your Vault!{% endcallout %}
@@ -66,7 +66,7 @@ Now that a new Login item is saved in your Vault, you can beef up its security b
    You might have the old password memorized, but it's a good idea to get in the habit of copying and pasting your password since this is primarily how you'll be logging in to websites once your password is replaced with a stronger one.
 5. Tab back over to your Bitwarden Vault and click the {% icon fa-refresh %} **Generate** icon next to the **Password** field. You'll be asked whether you want to overwrite the current password, so click **Yes** to proceed.
 
-   This will replace your **Password** value with a randomly generated strong password. Moving from a password like `Fido1234` to `X@Ln@x9J@&u@5n##B` can stop would-be hacker in their tracks.
+   This will replace your **Password** value with a randomly generated strong password. Moving from a password like `Fido1234` to `X@Ln@x9J@&u@5n##B` can stop a would-be hacker in their tracks.
 6. Copy your new password with the same {% icon fa-copy %} **Copy** icon you used earlier, and hit the **Save** button.
 
    {% callout success %}Don't worry about overwriting your existing password! If something goes wrong, Bitwarden maintains a **Password History** for every Login item:<br><br>{% image /getting-started/pwhistory.png %}{% endcallout %}

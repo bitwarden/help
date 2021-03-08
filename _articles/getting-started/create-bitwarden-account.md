@@ -15,11 +15,9 @@ We're thrilled to be a part of your secure password management journey. To creat
 
 ## Create Account Screen
 
-Once you've clicked the link, the following screen will appear:
+Once you've clicked the link, the following screen will appear. Fill out all fields (*Master Password Hint* is optional) and click **Submit** when you're finished.
 
 {% image /getting-started/create-account-screen-overlay.png Create Account screen%}
-
-Fill out all fields (*Master Password Hint* is optional) and click **Submit** when you're finished.
 
 ## Verify Your Email
 
