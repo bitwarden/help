@@ -11,7 +11,7 @@ order: 09
 
 This article contains Frequently Asked Questions (FAQs) regarding **Plans and Pricing**.
 
-For help selecting the right Bitwarden plan for you, refer to [What Plan is Right for Me?](https://bitwarden.com/help/article/what-plan-is-right-for-me/)
+For help selecting the right Bitwarden plan for you, refer to [What Plan is Right for Me?]({% link _articles/plans-and-pricing/what-plan-is-right-for-me.md %}) and [About Bitwarden Plans]({% link _articles/plans-and-pricing/about-bitwarden-plans.md %}).
 
 ## Account Management
 

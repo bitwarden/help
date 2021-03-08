@@ -113,6 +113,7 @@ To enable Unlock with Biometrics for your Browser Extension:
    {% callout note %}Optionally, check the **Require verification for browser integration** option to require [account fingerprint]({% link _articles/features/fingerprint-phrase.md %}) verification when you activate the integration.{% endcallout %}
 3. In your Browser, navigate to the Extensions manager (e.g. `chrome://extensions` or `brave://extensions`), open Bitwarden, and toggle the **Allow access to file URLs** option.
 
+
    Not all browsers will require this to be toggled on, so feel free to skip this step and circle back to it only if the remaining procedure doesn't work.
 4. In your Browser Extension, open the {% icon fa-cogs %} **Settings** tab.
 5. Scroll down to the Security section and check the **Unlock with biometrics** box.

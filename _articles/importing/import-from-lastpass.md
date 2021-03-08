@@ -108,5 +108,5 @@ https://github.com/login,login,password,,,Github,Productivity Tools,0
 ```
 down to:
 ```
-https://github.com/login,test,test,,,Github,0`
+https://github.com/login,login,password,,,Github,0
 ```

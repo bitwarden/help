@@ -19,7 +19,7 @@ When your first log in to your Web Vault, you'll land on the **My Vault** view. 
 
 ## First Steps
 
-In the above screenshot, your **My Vault** view is showing {% icon fa-th %} **All Items**. The **Filters** column on the left-hand side of the Vault can help you use **Favorites** and **Folders** organized Vault so that you can quickly find whatever you're looking for.
+In the above screenshot, your **My Vault** view is showing {% icon fa-th %} **All Items**. The **Filters** column on the left-hand side of the Vault can help you use **Favorites** and **Folders** to organize your Vault so that you can quickly find whatever you're looking for.
 
 Let's start by setting up a new Folder and adding a new Login item to it:
 
