@@ -69,7 +69,7 @@ Map to the following files on the host:
 ```
 ./bwdata/ssl/your.domain/certificate.crt
 ./bwdata/ssl/your.domain/private.key
-./bwdata/ssl/your.domain/ca/crt
+./bwdata/ssl/your.domain/ca.crt
 ```
 
 **You should only ever need to work with files in `./bwdata/ssl/`. Working with files directly in the NGINX container is not recommended.**
@@ -86,13 +86,30 @@ Map to the following files on the host:
 You can create your own `dhparam.pem` file using OpenSSL with `openssl dhparam -out ./dhparam.pem 2048`.
 {% endcallout %}
 
-## Generate a Self-signed Certificate
+## Using a Self-signed Certificate
 
 You may alternatively opt to use a self-signed certificate, however this is only recommended for testing.
 
 Self-signed certificates will not be trusted by Bitwarden client applications by default. You will be required to manually install this certificate to the trusted store of each device you plan to use Bitwarden with.
 
-Your self-signed certificate (`.crt`) and private key (`private.key`) can be retrieved from the `./bwdata/ssl/self/your.domain` directory.
+Generate a self-signed certificate:
+   ```
+   mkdir ./bwdata/ssl/bitwarden.example.com
+   openssl req -x509 -newkey rsa:4096 -sha256 -nodes -days 365 \
+     -keyout ./ssl/bitwarden.example.com/private.key \
+     -out ./ssl/bitwarden.example.com/certificate.crt \
+     -reqexts SAN -extensions SAN \
+     -config <(cat /usr/lib/ssl/openssl.cnf <(printf '[SAN]\nsubjectAltName=DNS:bitwarden.example.com\nbasicConstraints=CA:true')) \
+     -subj "/C=US/ST=New York/L=New York/O=Company Name/OU=Bitwarden/CN=bitwarden.example.com"
+   ```
+
+Your self-signed certificate (`.crt`) and private key (`private.key`) can be placed in the `./bwdata/ssl/self/your.domain` directory and configured in the `./bwdata/config.yml`:
+    ```
+    ssl_certificate_path: /etc/ssl/bitwarden.example.com/certificate.crt
+
+    ssl_key_path: /etc/ssl/bitwarden.example.com/private.key
+
+    ```
 
 ### Trust a Self-signed Certificate
 
@@ -119,5 +136,5 @@ sudo update-ca-certificates
 ## Use no Certificate
 
 {% callout warning %}
-If you opt to use no certificate, you **must front your installation with a proxy that serves Bitwarden over SSL**. This is becacuse Bitwarden requires HTTPS; trying to use Bitwarden without the HTTPS protocol will trigger errors.
+If you opt to use no certificate, you **must front your installation with a proxy that serves Bitwarden over SSL**. This is because Bitwarden requires HTTPS; trying to use Bitwarden without the HTTPS protocol will trigger errors.
 {% endcallout %}
