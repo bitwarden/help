@@ -13,21 +13,21 @@ This article contains Frequently Asked Questions (FAQs) regarding **Self-hosting
 
 ## General
 
-#### Q: What platforms can I host on?
+### Q: What platforms can I host on?
 
 **A:** Bitwarden is a cross-platform application that is deployed using Docker Linux containers. This means that Bitwarden can be hosted on Linux, macOS, and Windows machines.
 
 You can read more about Docker and container technologies at [Docker's Website](https://www.docker.com/why-docker){:target="_blank"}.
 
-#### Q: How should I achieve High Availability?
+### Q: How should I achieve High Availability?
 
 **A:** High availability can be achieved by either configuring multiple instances of the containers into a Docker Swarm or Kubernetes environment, and/or by pointing the database connection string that the containers reference to any MSSQL database or cluster. Then you would probably want to load balance the NGINX containers or however you choose to handle the front-end.
 
-#### Q: How do I backup and restore my self-hosted instance?
+### Q: How do I backup and restore my self-hosted instance?
 
 **A:** Bitwarden takes automated nightly backups of the `bitwarden-mssql` database container in order to protect your stored credentials. For help with manual backups, or help restoring a backup, see [Backup your Hosted Data]({% link _articles/hosting/backup-on-premise.md %}).
 
-#### Q: What are my installation id and installation key used for?
+### Q: What are my installation id and installation key used for?
 
 **A:** Installation ids keys are used when installing Bitwarden on-premises in order to:
 
@@ -39,7 +39,7 @@ Retrieve an installation id and key from [https://bitwarden.com/host](https://bi
 
 **You should not share your installation id or installation key across multiple Bitwarden installations.** They should be treated as secrets.
 
-#### Q: How do I change the name of my server?
+### Q: How do I change the name of my server?
 
 **A:** Configure the `url:` in the `./bwdata/config.yml` with your new server name and the run the `./bitwarden.sh` rebuild command to rebuild `bwdata` assets.
 
@@ -49,13 +49,13 @@ If you are using Let's Encrypt certificate, you'll need to [Manually Update Your
 
 ## SMTP Configuration
 
-#### Q: How do I set up an SMTP Mail Server?
+### Q: How do I set up an SMTP Mail Server?
 
 **A:** Connect your self-hosted instance to an existing SMTP Mail Server by editing all `globalSettings__mail__smtp__*` values in `./bwdata/env/global.overide.env`. For more information, see [Configure Environment Variables]({% link _articles/hosting/environment-variables.md %}).
 
 If you don't yet have an existing SMTP Mail Server from which you can relay emails, consider services like [Mailgun](https://www.mailgun.com/){:target="\_blank"} or [SparkPost](https://www.sparkpost.com){:target="\_blank"}, or use Gmail an SMTP Mail Server.
 
-#### Q: How do I use Gmail as an SMTP Mail Server?
+### Q: How do I use Gmail as an SMTP Mail Server?
 
 **A:** Configure the following variables in `./bwdata/env/global.override.env`:
 
@@ -80,7 +80,7 @@ If you're using Two-step Authentication for your Gmail account, you'll need to g
 
 Check that the custom port values have been proliferated to `./bwdata/env/global.override.env`.
 
-#### Q: How do I add Bitwarden to system boot?
+### Q: How do I add Bitwarden to system boot?
 
 **A:** Before adding Bitwarden to system boot, complete [Docker Post-Installation](https://bitwarden.com/help/article/install-on-premise/#docker-post-installation-linux-only) to setup a dedicated `bitwarden` service account.
 
