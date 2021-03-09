@@ -106,7 +106,6 @@ Generate a self-signed certificate:
 Your self-signed certificate (`.crt`) and private key (`private.key`) can be placed in the `./bwdata/ssl/self/your.domain` directory and configured in the `./bwdata/config.yml`:
     ```
     ssl_certificate_path: /etc/ssl/bitwarden.example.com/certificate.crt
-
     ssl_key_path: /etc/ssl/bitwarden.example.com/private.key
 
     ```
