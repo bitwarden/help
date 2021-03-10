@@ -31,7 +31,7 @@ Importing data to Bitwarden **can only be done from the** [**Web Vault**](https:
 
  1. In the Web Vault, select **Tools** from the top navigation bar.
  2. Select **Import Data** from the left-hand Tools menu.
- 3. From the format dropdown, choose a **File Format** (`.json`, `.csv`, or `.json (Encrypted)`).
+ 3. From the format dropdown, choose a **File Format** (see [What file formats does Bitwarden support for import?]({{site.baseurl}}/article/send-faqs/#q-what-file-formats-does-bitwarden-support-for-import)).
 
  5. Select the **Choose File** button and add the file to import.
 
