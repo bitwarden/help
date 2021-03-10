@@ -15,7 +15,7 @@ Two-step Login using email is available for free to all Bitwarden users.
 Complete the following steps to enable Two-step Login using email:
 
 {% callout warning %}
-**Losing access to your Two-step Login linked email can permanently lock you out of your Vault,** unless you write down and keep your Two-step Login Recovery Code in a safe place.
+**Losing access to your Two-step Login linked email can permanently lock you out of your Vault,** unless you write down and keep your Two-step Login Recovery Code in a safe place or have an alternate Two-step Login method enabled and available.
 
 [Get your Recovery Code]({% link _articles/two-step-login/two-step-recovery-code.md %}) from the **Two-step Login** screen immediately after enabling any method.
 {% endcallout %}

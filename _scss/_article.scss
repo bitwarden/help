@@ -117,3 +117,36 @@
         margin-left: 0.5rem;
     }
 }
+
+.nav-tabs {
+  border-bottom-width: 1px;
+  border-color: $border-color;
+
+  .nav-link {
+    font-weight: bold;
+
+    &.active {
+      background-color: #fafafa;
+      border-width: 4px 4px 0px 4px;
+    }
+  }
+}
+
+.tab-content {
+  .tab-pane {
+    padding: 0.1rem 1rem 1rem 1rem;
+    border-style: solid;
+    border-width: 0px 1px 4px 4px;
+    border-color: $border-color;
+    border-radius: 0px $border-radius $border-radius $border-radius;
+    background-color: #fafafa;
+
+    pre {
+      background-color: white;
+    }
+
+    .callout {
+      background-color: white;
+    }
+  }
+}

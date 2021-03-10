@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Lost Two-step Device
+title: Lost Secondary Device
 categories: [two-step-login]
 featured: false
 popular: false
@@ -8,24 +8,38 @@ tags: [two-step login, 2fa, two factor authentication, account]
 order: 09
 ---
 
-If you lose access to the device or method that you use for Two-step Login, you can recover your account using a Two-step Login **Recovery Code**. If you have your Recovery Code, see [Two-step Recovery Code]({% link _articles/two-step-login/two-step-recovery-code.md %}) to learn how to use it to recover your account.
+Losing access to your secondary device(s) (e.g. a Mobile device with an installed Authenticator, a Security Key, or a linked Email inbox) has the potential to lock you out of your Bitwarden Vault.
 
-## I Don't Have a Recovery Code
+What to do when you've lost access to your secondary device(s) depends on whether you've saved your [Two-step Login Recovery Code]({% link _articles/two-step-login/two-step-recovery-code.md %}). If you're unsure, remember that Recovery Codes need to be actively saved (i.e. Bitwarden won't save it anywhere *for you*) and look something like this:
 
-If you've lost your Two-step Login Device and don't have a Recovery Code, there is unfortunately no way for the team to recover the account or the data therein. You will need to delete your account and start a new one.
+{% image /two-step/recoverycode.png Sample Recovery Code %}
+
+## Have a Recovery Code?
+
+Excellent! If you have have your Recovery Code saved somewhere, you can use it to disable all Two-step Login methods from outside your Vault. Learn more [here]({{site.baseurl}}/article/two-step-recovery-code/#use-your-recovery-code).
 
 {% callout success %}
-If you're using any Bitwarden client applications (Mobile Apps, Browser Extensions, etc.) you should check whether any of these sessions are still logged in prior to deleting your account. If a client application is still logged in, [Export Vault Data]({% link _articles/account/export-your-data.md %}) to a file for import into a new account.
+Recovery Codes **won't disable Duo for Organizations**. You can tell that a Duo prompt is Organization-wide by the **(Organization)** header, as in the following screenshot:
+
+{% image /two-step/duo/duo-orgs.png Duo (Organization)%}
+
+If you're locked out of your Vault by a **Duo (Organization)** prompt, reach out to the Duo Administrator at your company for help bypassing the prompt.
 {% endcallout %}
 
-Complete the following steps to delete your account:
+## Don't have a Recovery Code?
 
-{% callout warning%}
-This action is permanent and cannot be undone.
+If you don't have your Recovery Code saved somewhere outside of your Vault, there is unfortunately no way for the team to recover the account or data therein. You'll need to delete your account and start a new one.
+
+{% callout success %}
+Before proceeding to delete your account, **check if you're currently logged in to any Bitwarden client applications** (Mobile Apps, Browser Extensions, etc.). If you are, [export your vault data]({% link _articles/account/export-your-data.md %}) to preserve your data.
 {% endcallout %}
+
+To delete your account:
 
 1. Navigate to [vault.bitwarden.com/#/recover-delete](https://vault.bitwarden.com/#/recover-delete).
 2. Enter the **Email Address** associated with your account.
 3. In your email inbox, open the email and verify that you want to delete this Bitwarden account.
 
-Once deleted, you're free to create a new Bitwarden account with that email address. If you delete a Bitwarden account that has a Premium subscription associated with it, [Contact Us](https://bitwarden.com/contact/){:target="\_blank"} and we'll reapply your existing subscription to the new account.
+Once deleted, you're free to create a new Bitwarden account with that email address.
+
+If you delete a Bitwarden account that has a Premium subscription associated with it, [Contact Us](https://bitwarden.com/contact/){:target="\_blank"} and we'll reapply your existing subscription to the new account. If you were able to successfully export your Vault data prior to deletion, you can easily [import it into the new account]({% link _articles/importing/import-data.md %}).

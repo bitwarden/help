@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Two-step Recovery Code
+title: Recovery Codes
 categories: [two-step-login]
 featured: false
 popular: false
@@ -8,32 +8,41 @@ tags: [two-step login, 2fa, two factor authentication, account]
 order: 08
 ---
 
-Your Two-step Login Recovery Code is a 32 character alpha-numeric code that, when used, will deactivate all Two-step Login methods from your account. Recovery Codes are designed for scenarios where you have lost your Two-step Login Device.
+If you enable any [Two-step Login methods]({% link _articles/two-step-login/setup-two-step-login.md %}), it's important to understand that losing access to your secondary device(s) (e.g. a Mobile device with an installed Authenticator, a Security Key, or a linked Email inbox) has the potential to lock you out of your Bitwarden Vault.
+
+To protect against this, Bitwarden generates a **Recovery Code** that can be used with your Master Password to disable any enabled Two-step Login methods from outside your Vault.
 
 {% callout success %}
-Without your Recovery Code, losing access to your device or method will permanently lock you out of your Vault. Bitwarden highly recommends downloading your Recovery Code from the Two-step Login screen **immediately after enabling any method**.
+You should [get your Recovery Code](#get-your-recovery-code) **immediately** after enabling any Two-step Login method.
 {% endcallout %}
 
-## Get Your Recovery Code
+## Get your Recovery Code
 
-Complete the following steps to retrieve your Recovery Code:
+To get your Recovery Code from your [Web Vault](https://vault.bitwarden.com){:target="\_blank"}:
 
-1. Log in to your [Web Vault](https://vault.bitwarden.com/){:target="\_blank"}.
-2. Select **Settings** from the top navigation bar.
-3. Select **Two-step Login** from the left-side menu.
-4. Select the **View Recovery Code** button at the top of the screen.
+1. Select **Settings** from the top navigation bar.
+2. Select **Two-step Login** from the left-side Settings menu.
+3. Select the **View Recovery Code** button near the top of the screen. You'll be prompted to enter your Master Password, which will open a Recovery Code panel:
 
-   You will be prompted to enter your Master Password in order to retrieve your Recovery Code.
-5. Print your Recovery Code and put it somewhere safe.
+   {% image /two-step/recoverycode.png Sample Recovery Code %}
 
-## Use your Recovery Code
+Save your Recovery Code in the way that makes the most sense for you. Believe it or not, printing your code and keeping it somewhere safe is one of the best ways to ensure that the code isn't vulnerable to theft or inadvertent deletion.
 
-Using your Recovery will deactivate all Two-step Login methods from your account. You will be required to enter all of the following to use your Recovery Code:
+### Use your Recovery Code
 
-- Email Address
-- Master Password
-- Recovery Code
+To use your Recovery Code, navigate to [https://vault.bitwarden.com/#/recover-2fa/](https://vault.bitwarden.com/#/recover-2fa/) (or, if you're self-hosting, [https://your.domain.com/#/recover-2fa/](#use-your-recovery-code)).
 
-To use your Two-step Login Recovery Code, navigate to [https://vault.bitwarden.com/#/recover-2fa](https://vault.bitwarden.com/#/recover-2fa){:target="\_blank"} or, for self-hosted installations navigate to [https://your.vault.domain.com/#/recover-2fa](#).
+Using your Recovery Code is like a normal log in procedure, requiring your Email Address and Master Password, but will also take your Recovery Code. On successful authentication of all three, you'll be logged in to your Vault and **all Two-step Login methods will be disabled**.
 
-Once you use your Recovery Code, you will be required to manually re-activate any Two-step Login methods. Using your Recovery code will also **reset your Recovery Code**. We recommend re-printing your code and to replace the previous one before re-activating any Two-step Login methods.
+Once used, you'll need to:
+
+- Re-enable any Two-step Login methods you want to use in the future.
+- [Get your Recovery Code](#get-your-recovery-code) again, as it'll be reset upon use.
+
+{% callout info %}
+Recovery Codes **won't disable Duo for Organizations**. You can tell that a Duo prompt is Organization-wide by the **(Organization)** header, as in the following screenshot:
+
+{% image /two-step/duo/duo-orgs.png Duo (Organization)%}
+
+If you're locked out of your Vault by a **Duo (Organization)** prompt, reach out to the Duo Administrator at your company for help bypassing the prompt.
+{% endcallout %}
