@@ -8,7 +8,7 @@ tags: [bitwarden send, send, about send, ephemeral sharing]
 order: 01
 ---
 
-## What is Send?
+## What is Send? 
 
 Bitwarden Send is a secure and ephemeral way to transmit sensitive information to **anyone**. Sends can include plaintext or file attachments up to 100 MB. Every Send is assigned a randomly generated and secure link, which can be [shared with anyone]({% link _articles/send/receive-send.md %}) (including those who *do not* have Bitwarden accounts) via text, email, or whatever communication channel you prefer. Every Send is:
 
