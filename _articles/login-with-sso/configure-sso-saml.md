@@ -13,7 +13,7 @@ This article will guide you through the steps required to configure Login with S
 **Configuration will vary provider-to-provider.** Refer to the following Provider Samples as you configure Login with SSO:
 
 - [ADFS Sample]({% link _articles/login-with-sso/saml-adfs.md%})
-- [Auth0 Sample]({% link _articles/login-with-sso/saml-auth0.md %}) 
+- [Auth0 Sample]({% link _articles/login-with-sso/saml-auth0.md %})
 - [AWS Sample]({% link _articles/login-with-sso/saml-aws.md %})
 - [Azure Sample]({% link _articles/login-with-sso/saml-azure.md %})
 - [Duo Sample]({% link _articles/login-with-sso/saml-duo.md %})
@@ -33,7 +33,9 @@ Or, refer to the [Field Mappings Reference](#field-mappings-reference) on this p
 Complete the following steps to enable Login with SSO for SAML 2.0 authentication:
 
 1. In the Web Vault, navigate to your Organization and open the **Settings** tab.
-2. In the **Identifier** field, enter a unique identifier for your Organization.
+2. In the **Identifier** field, enter a unique identifier for your Organization:
+
+   {% image /sso/org-id.png Enter an Identifier %}
 
    Don't forget to **Save** your identifier. Users will be required to enter this **Identifier** upon login.
 

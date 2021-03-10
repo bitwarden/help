@@ -22,7 +22,9 @@ This article will guide you through the steps required to configure Login with S
 Complete the following steps to enable Login with SSO for OIDC authentication:
 
 1. In the Web Vault, navigate to your Organization and open the **Settings** tab.
-2. In the **Identifier** field, enter a unique identifier for your Organization.
+2. In the **Identifier** field, enter a unique identifier for your Organization:
+
+   {% image /sso/org-id.png Enter an Identifier %}
 
    Don't forget to **Save** your identifier. Users will be required to enter this **Identifier** upon login.
 
