@@ -8,10 +8,10 @@ tags: [bitwarden send, send, receive, receive a send]
 order: 03
 ---
 
-Unlike traditional Bitwarden Vault items, a Send can be received and opened by anyone with the Send link (including those who *do not* have Bitwarden accounts). Send links are randomly generated, and will look something like the following:
+Unlike traditional Bitwarden Vault items, a Send can be received and opened by anyone with the Send link (including those who *do not* have Bitwarden accounts). Send links are randomly generated, and will look something like this:
 
-- `https://vault.bitwarden.com/#/send/yawoill8rk6VM6zCATXv2A/9WN8wD-hzsDJjfnXLeNc2Q`
-- `https://your.selfhosted.domain.com/#/send/yawoill8rk6VM6zCATXv2A/9WN8wD-hzsDJjfnXLeNc2Q`
+- `https://send.bitwarden.com/#...`, which will automatically resolve to `https://vault.bitwarden/com/#/send/...`
+- `https://your.selfhosted.domain.com/#/send/....` if you're self-hosting
 
 These links can be opened in any modern web browser, and will open a simple no-navigation web page, for example:
 
