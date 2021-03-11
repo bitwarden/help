@@ -1,27 +1,23 @@
 ---
 layout: article
-title: Bitwarden Safari App Extension
+title: Safari Web Extension
 categories: [miscellaneous]
 featured: false
 popular: false
 tags: [browser, safari]
 ---
 
-## Get the Extension
+Bitwarden's Safari Web Extension is a port of the prior *App Extension* designed for use with [Safari 14](https://developer.apple.com/documentation/safariservices/safari_web_extensions/converting_a_safari_app_extension_to_a_safari_web_extension?language=objc){:target="\_blank"}.    The Safari Web Extension is packaged with the Bitwarden Desktop App available on the App Store.
 
-Bitwarden's Safari App Extension is packaged with the Bitwarden Desktop App available on the App Store, as recommended by from Apple regarding Safari App Extensions.
-
-{% callout warning %}
-Due to changes by Apple, Safari now limits Safari App Extension use to only those obtained through Mac App Store downloads. As of Q1 2021, users will not be able to use a Bitwarden Safari App Extension obtained through a `.dmg` installation from [bitwarden.com/download](https://bitwarden.com/download){:target="\_blank"} or any other non-App Store source.
-
-To read community conversation on the topic, refer to the following Apple Developer Forum threads ([Thread #1](https://developer.apple.com/forums/thread/659029){:target="\_blank"}, [Thread #2](https://developer.apple.com/forums/thread/667859){:target="\_blank"}).
+{% callout info %}
+Due to changes by Apple, Safari limits Web Extension use to **only those obtained through Mac App Store downloads**. As of the [2021-03-11 Release]({% link _articles/getting-started/releasenotes.md %}), users will not be able to use a Bitwarden Safari Extension obtained through a `.dmg` installation from [bitwarden.com/download](https://bitwarden.com/download){:target="\_blank"} or any other non-App Store source.
 {% endcallout %}
 
-For developer detail on Safari App Extensions, click [here](https://developer.apple.com/documentation/safariservices/safari_app_extensions).
+The Safari Web Extension has full feature parity to the prior App Extension. For developer detail on the difference between Safari Web Extensions and App Extensions, click [here](https://developer.apple.com/documentation/safariservices/safari_web_extensions/converting_a_safari_app_extension_to_a_safari_web_extension?language=objc).
 
 ## Enable the Extension
 
-Before enabling the Safari App Extension, run the Desktop Application at least once. In Safari:
+Before enabling the Safari Web Extension, run the Desktop Application at least once. In Safari:
 
 1. Open the **Preferences** window.
 2. Navigate to the **Extensions** page.

@@ -33,6 +33,7 @@ Bitwarden is proud to announce the release of Bitwarden Send, and end-to-end enc
 - **FIDO U2F Support for Edge**: Two-step Login via FIDO U2F is now available for the Web Vault and Browser Extensions in Microsoft Edge (see [here]({% link _articles/two-step-login/setup-two-step-login-u2f.md %}) for details).
 - **Domain Exclusion in Browser Extensions**: Bitwarden Browser Extensions can now be configured with domains to explicitly not offer to remember passwords for (see [here]({% link _articles/miscellaneous/exclude-domains.md %}) for details).
 - **Improved Import Error Messages**: We've had lots of folks migrating to Bitwarden recently, so we cleaned up an import error message to help you reconcile issues faster (see [here]({{site.baseurl}}/article/import-data/#length-related-import-errors) for details).
+- **Safari Web Extension Port**: Our Safari App Extension has officially been ported to a Web Extension for use with Safari 14+. Due to changes to Safari, Web Extension use is now limited to only those obtained through Mac App Store downloads (see [here]({% link _articles/account/install-safari-app-extension.md %}) for details).
 
 ## 2021-01-19 Post-Release Update
 
