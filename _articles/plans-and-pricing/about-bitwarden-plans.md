@@ -30,9 +30,13 @@ Upgrade your individual Bitwarden account to unlock premium password security an
 Premium does not include secure data sharing. In order to access sharing features, you will need a subscription to an Organization ([Free](#free-organizations), [Families](#families-organizations), [Teams](#teams-organizations), or [Enterprise](#enterprise-organizations)). Paid Organizations ([Families](#families-organizations), [Teams](#teams-organizations), or [Enterprise](#enterprise-organizations)) include premium features for all users enrolled in that Organization.
 {% endcallout %}
 
+*Premium Individual subscriptions are billed annually.*
+
 ### Families Organizations
 
 Start a Families Organization to share private data between you and 5 friends or family members. Families Organizations include all premium features for all 6 users and unlimited secure data sharing within the Families Organization.
+
+*Families Organizations subscriptions are billed annually.*
 
 ### Compare the Plans
 
@@ -68,13 +72,13 @@ Start a Free Organization to store and securely share data with one other user. 
 
 Start a Teams Organization to securely share data with your coworkers, department, or entire company. Teams Organizations include all premium features for all enrolled users, unlimited secure data sharing within the Teams Organization, and a suite of operational tools like Event Logging and an API for Organization Management.
 
-Unlike Families Organizations and Free Organizations, Teams can have an unlimited number of users (*priced Per User Per Month*).
+Unlike Families Organizations and Free Organizations, Teams can have an unlimited number of users (priced Per User). Teams Organizations subscriptions can be billed annually or monthly (see [Compare the Plans](#compare-the-plans-1)).
 
 ### Enterprise Organizations
 
 Start an Enterprise Organization to secure your business secrets. Enterprise Organizations include all premium features for for all enrolled users, all operational tools included in **Teams Organizations**, and enterprise-only tools like SSO Authentication, Enterprise Policy enforcement, and a Self-host option.
 
-Unlike Families Organizations and Free Organizations, Enterprises can have an unlimited number of users (*priced Per User Per Month*).
+Unlike Families Organizations and Free Organizations, Enterprises can have an unlimited number of users (priced Per User). Enterprise Organizations subscriptions can be billed annually or monthly (see [Compare the Plans](#compare-the-plans-1)).
 
 ### Compare the Plans
 
