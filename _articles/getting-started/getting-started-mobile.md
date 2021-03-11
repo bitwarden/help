@@ -20,10 +20,10 @@ Bitwarden's Mobile App is available for iOS and Android. For help getting starte
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
-    <a class="nav-link active" id="andtab" data-bs-toggle="tab" href="#android" role="tab" aria-controls="android" aria-selected="true"><i class="fa fa-android"></i> Android</a>
+    <a class="nav-link active" id="andtab" data-bs-toggle="tab" data-target="#android" role="tab" aria-controls="android" aria-selected="true"><i class="fa fa-android"></i> Android</a>
   </li>
   <li class="nav-item" role="presentation">
-    <a class="nav-link" id="iostab" data-bs-toggle="tab" href="#ios" role="tab" aria-controls="ios" aria-selected="false"><i class="fa fa-apple"></i> iOS</a>
+    <a class="nav-link" id="iostab" data-bs-toggle="tab" data-target="#ios" role="tab" aria-controls="ios" aria-selected="false"><i class="fa fa-apple"></i> iOS</a>
   </li>
 </ul>
 
