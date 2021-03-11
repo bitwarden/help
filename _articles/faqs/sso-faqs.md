@@ -26,7 +26,7 @@ For more high-level information about **Login with SSO**, refer to the following
 
 ### Q: Can I still log in with my Master Password if my Organization has SSO enabled?
 
-  **A:** Currently, yes. In the near future, we will enable an Enterprise Policy to allow Organizations to enforce authentication mechanism for their users.
+  **A:** By default, yes, you can use your email address and Master Password to login to Bitwarden. However, if your Organization enables both the [Single Organization](https://bitwarden.com/help/article/policies/#single-organization) and [Single Sign-On Authentication](https://bitwarden.com/help/article/policies/#single-sign-on-authentication) policies, all non-administrator users will be required to login with SSO.
 
 ### Q: How does Login with SSO work for new users ("just-in-time")?
 
