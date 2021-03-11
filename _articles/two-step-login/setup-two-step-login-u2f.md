@@ -17,8 +17,8 @@ Any FIDO U2F certified device can be used, including YubiKeys, SoloKeys, Google 
 
 Supported applications:
 
-- Web Vault on a computer with a U2F-enabled Browser (Chrome, Opera, Vivaldi, or [Firefox with FIDO U2F enabled](https://www.yubico.com/2017/11/how-to-navigate-fido-u2f-in-firefox-quantum/){:target="_blank"}).
-- Browser Extensions for a U2F-enabled Browser (Chrome, Opera, Vivaldi, or [Firefox with FIDO U2F enabled](https://www.yubico.com/2017/11/how-to-navigate-fido-u2f-in-firefox-quantum/){:target="_blank"}).
+- Web Vault on a computer with a U2F-enabled Browser (Chrome, Opera, Vivaldi, Edge, or [Firefox with FIDO U2F enabled](https://www.yubico.com/2017/11/how-to-navigate-fido-u2f-in-firefox-quantum/){:target="_blank"}).
+- Browser Extensions for a U2F-enabled Browser (Chrome, Opera, Vivaldi, Edge, or [Firefox with FIDO U2F enabled](https://www.yubico.com/2017/11/how-to-navigate-fido-u2f-in-firefox-quantum/){:target="_blank"}).
 {% endcallout %}
 
 ## Setup FIDO U2F

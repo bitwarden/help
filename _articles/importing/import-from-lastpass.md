@@ -12,7 +12,28 @@ Use this article for help exporting data from LastPass and importing into Bitwar
 
 ## Export from LastPass
 
-Complete the following steps to export data from the [LastPass Web Vault](https://lastpass.com/){:target="\_blank"}:
+You can export your data from LastPass from their Web Vault or from a LastPass Browser Extension:
+
+{% callout info %}
+A previous version of this article stated that you [needed to use the Browser Extension](https://support.logmeininc.com/lastpass/help/how-do-i-nbsp-export-my-lastpass-form-fill-profiles){:target="\_blank"} to export **Form Fills** (e.g. Addresses and Payment Cards), however testing by Bitwarden's Customer Success team found that using either LastPass application to download a standard **LastPass CSV** will include Form Fills in your export.
+{% endcallout %}
+
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a class="nav-link active" id="webtab" data-bs-toggle="tab" data-target="#web" role="tab" aria-controls="browsertab" aria-selected="true">LastPass Web Vault</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="browsertab" data-bs-toggle="tab" data-target="#browser" role="tab" aria-controls="browsertab" aria-selected="false">LastPass Browser Extension</a>
+  </li>
+</ul>
+
+<div class="tab-content" id="clientsContent">
+  <div class="tab-pane show active" id="web" role="tabpanel" aria-labelledby="webtab">
+{% capture and_gs %}
+
+#### From the LastPass Web Vault
+
+To export your data from the LastPass Web Vault:
 
 1. Select the {% icon fa-rocket %} **Advanced Options** option on the left sidebar:
 
@@ -31,11 +52,17 @@ Complete the following steps to export data from the [LastPass Web Vault](https:
 If you observe this bug in your exported data, use a text editor to find and replace all altered values before importing into Bitwarden.
 {% endcallout %}
 
-### Export with Form Fills
+{% endcapture %}
+{{ and_gs | markdownify }}
+  </div>
+  <div class="tab-pane" id="browser" role="tabpanel" aria-labelledby="browsertab">
+{% capture ios_gs %}
 
-**Exports from the Web Vault will not include form fills.** To export form fill data from LastPass, you must do so from the Browser Extension:
+#### From a LastPass Browser Extension
 
-1. In the Browser Extension, navigate to **Account Options** &rarr; **Advanced** &rarr; **Export** &rarr; **Form Fills**:
+To export your data from a LastPass Browser Extension:
+
+1. In the Browser Extension, navigate to **Account Options** &rarr; **Advanced** &rarr; **Export** &rarr; **LastPass CSV File**:
 
    {% image /importing/lp-be.png Export from Browser Extension %}
 2. Enter your Master Password to validate the export attempt.
@@ -44,49 +71,46 @@ If you observe this bug in your exported data, use a text editor to find and rep
    {% image lastpass-copy.png LastPass Export %}
 4. If your Vault data was printed to the screen, highlight the text and copy and paste it into a new `export.csv` file.
 
+
+{% endcapture %}
+{{ ios_gs | markdownify }}
+  </div>
+</div>
+
 ## Import to Bitwarden
 
-Complete the following steps to import data to your Bitwarden personal Vault. For help importing to an Organization Vault, see [Import Items to an Organization]({% link _articles/organizations/import-to-org.md %}).
+Importing data to Bitwarden **can only be done from the** [**Web Vault**](https://vault.bitwarden.com){:target="\_blank"}. To import your data:
 
-If you want to store File Attachments in your Bitwarden Vault, please be aware that these are currently not included in Bitwarden import operations and will need to be uploaded to your Vault manually. For more information, see [File Attachments]({% link _articles/features/attachments.md %}).
+ 1. In the Web Vault, select **Tools** from the top navigation bar.
+ 2. Select **Import Data** from the left-hand Tools menu.
+ 3. From the format dropdown, choose **LastPass (csv)** from the File Format dropdown.
 
-1. Log in to the [Web Vault](https://vault.bitwarden.com){:target="\_blank"}.
-2. Select **Tools** from the top navigation bar.
-3. Select **Import Data** from the left Tools menu.
-4. Select **LastPass (csv)** from the format dropdown.
-5. Select the **Browse...** button and add the file exported from LastPass.
-6. Select the **Import Data** button to complete your import.
+ 5. Select the **Choose File** button and add the file to import.
 
-{% callout warning %}
-Importing data multiple times will create duplicates.
-{% endcallout %}
+    {% callout warning %}Import to Bitwarden can't check whether items in the file to import are duplicative of items in your Vault. This means that **importing multiple files will create duplicative** Vault items if an item is already in the Vault and in the file to import.{% endcallout %}
+ 6. Select the **Import Data** button to complete your import.
 
-Congratulations! You have just transferred your data from LastPass into Bitwarden.
+ Currently, file attachments are not included in Bitwarden import operations and will need to be uploaded to your Vault manually. For more information, see [File Attachments]({% link _articles/features/attachments.md %}).
 
 ## Import Troubleshooting
 
-### Character Limit Error
+### Length-related Import Errors
 
-The following error messages, typically received when attempting to import a `.csv`, indicate that a field in your import file exceeds the allowed **encrypted** character limit for that field type:
+The following error messages, typically received when attempting to import a `.csv`, indicate that an item in your import file has a specified value that exceeds the allowed **encrypted** character limit for its field type:
 
-{% image /importing/ciphererrors.png Cipher errors in the Web Vault%}
+{% image /importing/ciphererror_2021.png Cipher errors in the Web Vault%}
 
-These error messages contain 3 pieces of pertinent data:
-- `Ciphers[X]` indicates the index number where the offending item is located.
-- `The field <field>` indicates the field name which is causing the offense.
-- `length of <limit> characters` indicates the character limit allowed for that field.
+To solve this issue, open the `.csv` file in a text editor or spreadsheet program and **remove** or **reduce the character count** of the offending item. Bitwarden won't import your `.csv` file until it is free of offenses. The contents of the error messages contain several pieces of pertinent data to help you identify the offending item. For example, in the above example:
 
-   {% callout note %}On import to Bitwarden, the character count of any given field is increased due to encryption, meaning that an 8000-character `note` field in your `.csv` will scale to 10,000+ characters when it comes into contact with Bitwarden, triggering this error. As a rule of thumb, character counts will grow between 30-50% when encrypted.{% endcallout %}
+- `[1]` identifies the index number where the offending item is located, adjusted to match row numbering in *most* spreadsheet programs.
+- `[Login]` identifies the Vault item `type` of the offending item.
+- `"Facebook"` identifies the `name` of the offending item.
+- `Notes` indicates the field (column) where the character limit is exceeded.
+- `10000` indicates the character limit allowed for that field (column).
 
-To solve this issue:
+   {% callout success %}On import to Bitwarden, the character count of any given field is increased due to encryption, meaning that an 8000-character `Notes` field in your `.csv` will scale to 10,000+ characters when it comes into contact with Bitwarden, triggering this error. As a rule of thumb, character counts will grow between 30-50% when encrypted.{% endcallout %}
 
-1. Open the `.csv` file you're attempting to import in a text editor or spreadsheet program.
-2. Locate the offending item at `index[X]`. The value of `X` references a `.csv` index number, so depending on the program you use to edit your file it may not map perfectly to a spreadsheet Row or Line number.
-
-    In many cases, you'll need to adjust for `.csv` header rows, which are not counted in many spreadsheet programs. It can also help to use field name (`yyyy`) and perceived character length as context clues.
-
-   {% callout success %}If you're having trouble locating the offending item using the data provided in the error, it may help to focus first on notes as these are frequently the cause of this error.{% endcallout %}
-3. Remove the offending item from your import file, or reduce the character count. When reducing the character count, remember that limits are placed on **encrypted** counts, not pre-encryption counts.  As a rule of thumb, character counts will grow between 30-50% when Bitwarden attempts to encrypt a field on import.
+If you continue to have trouble locating the offending item using the data provided in the error, it may help to focus first on notes as these are frequently the cause of this error.
 
 ### Maximum Collections Error
 
@@ -113,5 +137,5 @@ https://github.com/login,login,password,,,Github,Productivity Tools,0
 ```
 down to:
 ```
-https://github.com/login,test,test,,,Github,0
+https://github.com/login,login,password,,,Github,0
 ```

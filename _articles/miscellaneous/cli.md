@@ -311,6 +311,28 @@ echo '["974053d0-3b33-4b98-886e-fecf5c8dba96"]' | bw encode | \
 
 The CLI comes with several other commands that you may find useful.
 
+### send / receive
+
+The Bitwarden CLI features full support for [Bitwarden Send]({% link _articles/send/about-send.md %}). This section will include some small sample send and receive operations, however it's highly recommended that you **refer to the dedicated article** on [Send from CLI]({% link _articles/send/send-cli.md %}).
+
+Simple Text Send:
+
+```
+bw send -n "My First Send" -d 7 --hidden "The contents of my first text Send."
+```
+
+Simple File Send:
+
+```
+bw send -n "A Sensitive File" -d 14 -f /Users/my_account/Documents/sensitive_file.pdf
+```
+
+Receive a Send:
+
+```
+bw receive --password passwordforaccess https://vault.bitwarden.com/#/send/yawoill8rk6VM6zCATXv2A/9WN8wD-hzsDJjfnXLeNc2Q
+```
+
 ### Confirm
 
 The `confirm` command allows you to confirm invited members of your organization that have already accepted their invitation.

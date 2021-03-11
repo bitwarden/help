@@ -8,120 +8,52 @@ tags: [import]
 order: 01
 ---
 
-Bitwarden provides a data import tool for easy migration from any password management solution to your personal Vault or Organization Vault (see [Import Data to an Organization]({% link _articles/organizations/import-to-org.md %})).
+Bitwarden provides a data import tool for easy migration from any password management solution to your personal Vault or Organization Vault. You can also use the data import tool to import from one Bitwarden Vault to another, or to import a Bitwarden [Encrypted Export]({% link _articles/importing/encrypted-export.md %}).
 
-You can also use the data import tool to import from one Bitwarden Vault to another, or to import a backup [Encrypted Export]({% link _articles/importing/encrypted-export.md %}).
-
-Bitwarden supports a large array of formats for import, including those used by the most popular password management solutions:
+For a full list of supported import formats, see [What file formats does Bitwarden support for import?]({{site.baseurl}}/article/send-faqs/#q-what-file-formats-does-bitwarden-support-for-import), or use one of these articles for importing from the most popular solutions:
 
 - [Import from LastPass]({% link _articles/importing/import-from-lastpass.md %})
 - [Import from 1Password]({% link _articles/importing/import-from-1password.md %})
 - [Import from Firefox]({% link _articles/importing/import-from-firefox.md %})
 - [Import from Google Chrome]({% link _articles/importing/import-from-chrome.md %})
 
-For a full list of supported formats, see [Supported Formats](#supported-formats).
-
 ## Import to your Personal Vault
 
-To import your data into a personal Vault:
+Importing data to Bitwarden **can only be done from the** [**Web Vault**](https://vault.bitwarden.com){:target="\_blank"}.
 
-1. Log in to the [Web Vault](https://vault.bitwarden.com){:target="\_blank"}. Not already signed up? [Select a Bitwarden plan to get started.](https://bitwarden.com/pricing/business/)
-2. Select **Tools** from the top navigation bar.
-3. Select **Import Data** from the left Tools menu.
-4. Select the format of your file to import from the dropdown menu.
+{% callout success %}
+**Not already signed up?** Choose from one of [Bitwarden's plans](https://bitwarden.com/pricing/business/){:target="\_blank"} and get started today:
 
-   {% callout success%}If you're importing an [Encrypted Export]({% link _articles/importing/encrypted-export.md %}), select `.json` as you would if it were plaintext. A handler will determine that the file is encrypted and decrypt using your [account encryption key](https://bitwarden.com/help/article//change-your-master-password/#rotating-your-accounts-encryption-key).{% endcallout %}
-5. Select the **Browse** button and add your file.
-6. Select the **Import Data** button to complete your import.
-
-{% callout warning %}
-Importing data multiple times will create duplicates.
+<a role="button" class="btn btn-primary" href="https://vault.bitwarden.com/#/register" target="blank">Create Your Free Account</a>
 {% endcallout %}
 
-## Length-related Import Errors
+ To import your data:
 
-The following error messages, typically received when attempting to import a `.csv`, indicate that a field in your import file exceeds the allowed **encrypted** character limit for that field type:
+ 1. In the Web Vault, select **Tools** from the top navigation bar.
+ 2. Select **Import Data** from the left-hand Tools menu.
+ 3. From the format dropdown, choose a **File Format** (see [What file formats does Bitwarden support for import?]({{site.baseurl}}/article/send-faqs/#q-what-file-formats-does-bitwarden-support-for-import)).
 
-{% image /importing/ciphererrors.png Cipher errors in the Web Vault%}
+ 5. Select the **Choose File** button and add the file to import.
 
-These error messages contain 3 pieces of pertinent data:
-- `Ciphers[X]` indicates the index number where the offending item is located.
-- `The field <field>` indicates the field name which is causing the offense.
-- `length of <limit> characters` indicates the character limit allowed for that field.
+    {% callout warning %}Import to Bitwarden can't check whether items in the file to import are duplicative of items in your Vault. This means that **importing multiple files will create duplicative** Vault items if an item is already in the Vault and in the file to import.{% endcallout %}
+ 6. Select the **Import Data** button to complete your import.
 
-   {% callout note %}On import to Bitwarden, the character count of any given field is increased due to encryption, meaning that an 8000-character `note` field in your `.csv` will scale to 10,000+ characters when it comes into contact with Bitwarden, triggering this error. As a rule of thumb, character counts will grow between 30-50% when encrypted.{% endcallout %}
+## Troubleshooting
 
-To solve this issue:
+### Length-related Import Errors
 
-1. Open the `.csv` file you're attempting to import in a text editor or spreadsheet program.
-2. Locate the offending item at `index[X]`. The value of `X` references a `.csv` index number, so depending on the program you use to edit your file it may not map perfectly to a spreadsheet Row or Line number.
+The following error messages, typically received when attempting to import a `.csv`, indicate that an item in your import file has a specified value that exceeds the allowed **encrypted** character limit for its field type:
 
-    In many cases, you'll need to adjust for `.csv` header rows, which are not counted in many spreadsheet programs. It can also help to use field name (`yyyy`) and perceived character length as context clues.
+{% image /importing/ciphererror_2021.png Cipher errors in the Web Vault%}
 
-   {% callout success %}If you've having trouble locating the offending item using the data provided in the error, it may help to focus first on notes as these are frequently the cause of this error.{% endcallout %}
-3. Remove the offending item from your import file, or reduce the character count. When reducing the character count, remember that limits are placed on **encrypted** counts, not pre-encryption counts.  As a rule of thumb, character counts will grow between 30-50% when Bitwarden attempts to encrypt a field on import.
+To solve this issue, open the `.csv` file in a text editor or spreadsheet program and **remove** or **reduce the character count** of the offending item. Bitwarden won't import your `.csv` file until it is free of offenses. The contents of the error messages contain several pieces of pertinent data to help you identify the offending item. For example, in the above example:
 
-## Supported Formats
+- `[1]` identifies the index number where the offending item is located, adjusted to match row numbering in *most* spreadsheet programs.
+- `[Login]` identifies the Vault item `type` of the offending item.
+- `"Facebook"` identifies the `name` of the offending item.
+- `Notes` indicates the field (column) where the character limit is exceeded.
+- `10000` indicates the character limit allowed for that field (column).
 
-The following formats are supported out-of-the-box:
+   {% callout success %}On import to Bitwarden, the character count of any given field is increased due to encryption, meaning that an 8000-character `Notes` field in your `.csv` will scale to 10,000+ characters when it comes into contact with Bitwarden, triggering this error. As a rule of thumb, character counts will grow between 30-50% when encrypted.{% endcallout %}
 
-{% callout info %}
-If your format is not listed below, manually [condition a Bitwarden .csv or .json]({% link _articles/importing/condition-bitwarden-import.md %}).
-{% endcallout %}
-
-- [1Password (1pif)]({% link _articles/importing/import-from-1password.md %})
-- [1Password 6 &amp; 7 Windows (.sv)]({% link _articles/importing/import-from-1password.md %})
-- [1Password 6 &amp; 7 Mac (csv)]({% link _articles/importing/import-from-1password.md %})
-- Ascendo DataVault (csv)
-- Avast Passwords (csv)
-- Avira (json)
-- BlackBerry Password Keeper (csv)
-- Blur (csv)
-- [Brave (csv)]({% link _articles/importing/import-from-chrome.md %})
-- [Chrome (csv)]({% link _articles/importing/import-from-chrome.md %})
-- Clipperz (html)
-- Codebook (csv)
-- Dashlane (json)
-- Encryptr (csv)
-- Enpass (csv)
-- Enpass (json)
-- [Firefox (csv)]({% link _articles/importing/import-from-firefox.md %})
-- F-Secure KEY (fsk)
-- GNOME Passwords and Keys/Seahorse (json)
-- Kaspersky Password Manager (txt)
-- KeePass 2 (xml)
-- KeePassX (csv)
-- Keeper (csv)
-- [LastPass (csv)]({% link _articles/importing/import-from-lastpass.md %})
-- LogMeOnce (csv)
-- Meldium (csv)
-- mSecure (csv)
-- Myki (csv)
-- [Microsoft Edge (Chromium) (csv)]({% link _articles/importing/import-from-chrome.md %})
-- [Opera (csv)]({% link _articles/importing/import-from-chrome.md %})
-- Padlock (csv)
-- Passbolt (csv)
-- PassKeep (csv)
-- Passman (json)
-- Passpack (csv)
-- Password Agent (csv)
-- Password Boss (json)
-- Password Dragon (xml)
-- Password Safe (xml)
-- PasswordWallet (txt)
-- RememBear (csv)
-- RoboForm (csv)
-- SafeInCloud (xml)
-- SaferPass (csv)
-- SecureSafe (csv)
-- SplashID (csv)
-- Sticky Password (xml)
-- True Key (csv)
-- Universal Password Manager (csv)
-- [Vivaldi (csv)]({% link _articles/importing/import-from-chrome.md %})
-- Yoti (csv)
-- Zoho Vault (csv)
-
-#### Ready to get started?
-
-<a role="button" class="btn btn-primary" href="https://vault.bitwarden.com/#/register">Create Your Free Account</a>
+If you continue to have trouble locating the offending item using the data provided in the error, it may help to focus first on notes as these are frequently the cause of this error.

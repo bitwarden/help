@@ -8,11 +8,11 @@ tags: [export, accounts, csv]
 order: 06
 ---
 
-Bitwarden allows you to export your personal Vault data from any client application, or an Organization Vault from the Web Vault or CLI. Exports can be downloaded as plaintext `.json` or `.csv` files, or as a `.json` [Encrypted Export]({% link _articles/importing/encrypted-export.md %}).
+You can export your personal Vault data from any client application, or export an Organization Vault from the Web Vault or CLI. Exports can be downloaded as plaintext `.json` or `.csv` files, or as a `.json` [encrypted export]({% link _articles/importing/encrypted-export.md %}).
 
-Bitwarden recommends using `.json` for a more complete option for standard backup procedures as `.csv` exports will not export Cards or Identities. For information on the format of Bitwarden `.csv` and `.json` exports, see [Condition a Bitwarden .csv or .json]({% link _articles/importing/condition-bitwarden-import.md %}).
+We recommend using `.json` for a more complete export, as `.csv` files won't currently export Cards or Identities. For complete information on the format of Bitwarden `.csv` and `.json` files, see [Condition a Bitwarden .csv or .json]({% link _articles/importing/condition-bitwarden-import.md %}).
 
-Vault Exports **will not include** File Attachments or Items in the Trash.
+Vault Exports **will not include** [file attachments]({% link _articles/features/attachments.md %}) or Items in the Trash.
 
 {% callout warning %}
 Unless you're using an [Encrypted Export]({% link _articles/importing/encrypted-export.md %}), do not store or send the exported file over insecure channels, like email, and delete the file immediately after use.
@@ -20,74 +20,153 @@ Unless you're using an [Encrypted Export]({% link _articles/importing/encrypted-
 
 ## Export a Personal Vault
 
-Export your Personal Vault data from any client application:
+Export your personal Vault data from any client application:
 
-### From the Web Vault
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a class="nav-link active" id="wvtab" data-target="#webvault" role="tab" aria-controls="webvault" aria-selected="true">Web Vault</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="betab" data-target="#browserextension" role="tab" aria-controls="browserextension" aria-selected="false">Browser Extension</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="desktab" data-target="#desktop" role="tab" aria-controls="desktop" aria-selected="false">Desktop</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="mobtab" data-target="#mobile" role="tab" aria-controls="mobile" aria-selected="false">Mobile</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="clitab" data-target="#cli" role="tab" aria-controls="cli" aria-selected="false">CLI</a>
+  </li>
+</ul>
+<div class="tab-content" id="clientsContent">
+  <div class="tab-pane show active" id="webvault" role="tabpanel" aria-labelledby="wvtab">
+{% capture web_vault %}
+
+#### Export from the Web Vault
+
+To export your personal Vault data from the Web Vault:
 
 1. Select **Tools** from the top navigation bar.
-3. Select **Export Vault** from the left-hand Tools menu.
-4. On the Export Vault page:
-   - Select a **File Format** (`.json`, `.csv`, or `.json (Encrypted)`).
-   - Enter your **Master Password**.
-5. Select the **Export Vault** button to download your Vault Export. You will be prompted to specify a location for download.
+2. Select **Export Vault** from the left-hand Tools menu.
+3. On the Vault Export page, choose a **File Format** (`.json`, `.csv`, or `.json (Encrypted)`).
+4. Enter your **Master Password** and select the **Export Vault** button.
 
-### From the Mobile App
+{% endcapture %}
+{{ web_vault | markdownify}}
+  </div>
+  <div class="tab-pane" id="browserextension" role="tabpanel" aria-labelledby="betab">
+{% capture browser_extension %}
 
-1. Tap the **Settings** tab.
-2. Scroll down to the **Tools** section, and tap **Export Vault**.
-3. On the Export Vault page:
-   - Select a **File Format** (`.json`, `.csv`, or `.json (Encrypted)`).
-   - Enter your **Master Password**.
-4. Select the **Export Vault** button to download your Vault Export. You will be prompted to specify a location for download.
+#### Export from a Browser Extension
 
-### From the Browser Extension
+To export your personal Vault data from a Browser Extension:
 
-1. Open the **Settings** tab.
-2. Scroll down to the **Tools** section, and select **Export Vault**.
-4. On the Export Vault page:
-   - Select a **File Format** (`.json`, `.csv`, or `.json (Encrypted)`).
-   - Enter your **Master Password**.
-5. Select the **Export Vault** button to download your Vault Export. You will be prompted to specify a location for download.
+1. Open the {% icon fa-cogs %} **Settings** tab.
+2. Scroll down to the **Tools** section and select the **Export Vault** option.
+3. On the Export Vault view, choose a **File Format** (`.json`, `.csv`, or `.json (Encrypted)`).
+4. Enter your **Master Password** and select **Submit**.
 
-### From the Desktop App
+{% endcapture %}
+{{ browser_extension | markdownify}}
+  </div>
+  <div class="tab-pane" id="desktop" role="tabpanel" aria-labelledby="desktab">
+{% capture desktop_info %}
 
-1. Navigate to **File** &rarr; **Export Vault**.
-2. In the Export Vault window:
-   - Select a **File Format** (`.json`, `.csv`, or `.json (Encrypted)`).
-   - Enter your **Master Password**.
-3. Select the **Submit** button to download your Vault Export. You will be prompted to specify a location for download.
+#### Export from Desktop
 
-### From the CLI
+To export your personal Vault data from a Desktop app:
 
-Use the `bw export` command to export your Vault data. By default, `bw export` will create a `.csv` export in the current working directory.
+1. From the menu bar, navigate to **File** &rarr; **Export Vault**.
+2. In the Export Vault window, choose a **File Format** (`.json`, `.csv`, or `.json (Encryped)`).
+3. Enter your **Master Password** and select the {% icon fa-download %} **Download** button.
 
-You may pass the following options with the `bw export` command:
-- `--output <filePath>` to specify a saving location of your choice.
-- `--format <format>` to specify the file format as `csv` (*default*), `json`, or `encrypted_json`.
+{% endcapture %}
+{{ desktop_info | markdownify}}
+  </div>
+  <div class="tab-pane" id="mobile" role="tabpanel" aria-labelledby="mobtab">
+{% capture mobile_info %}
+
+#### Export from Mobile
+
+To export your personal Vault data from a Mobile app:
+
+1. Tap the {% icon fa-cogs %} **Settings** tab.
+2. Scroll down to the **Tools** section and tap the **Export Vault** option.
+3. On the Export Vault view, choose a **File Format** (`.json`, `.csv`, or `.json (Encrypted)`).
+4. Enter your **Master Password** and tap the **Export Vault** button.
+
+{% endcapture %}
+{{ mobile_info | markdownify}}
+  </div>
+  <div class="tab-pane" id="cli" role="tabpanel" aria-labelledby="cliab">
+{% capture cli_info %}
+
+#### Export from the CLI
+
+To export your personal Vault from the CLI, use the `export` command. By default, `export` will export your Vault as a `.csv` and save the file to the working directory, however this behavior can be altered using options:
+
+```
+bw export my-master-password --output /users/me/documents/ --format json
+```
+
+For more detail, see our [CLI documentation]({% link _articles/miscellaneous/cli.md %}).
+
+{% endcapture %}
+{{ cli_info | markdownify}}
+  </div>
+</div>
 
 ## Export an Organization Vault
 
-Admins and Owners may export their Organization Vault from the Web Vault or CLI:
+Organization [Admins and Owners]({% link _articles/organizations/user-types-access-control.md %}) can export their Organization Vault (i.e. all items [shared in Collections]({% link _articles/organizations/share-to-a-collection.md %})) from the Web Vault or CLI:
 
-### From the Web Vault
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a class="nav-link active" id="orgwvtab" data-target="#orgwebvault" role="tab" aria-controls="orgwebvault" aria-selected="true">Web Vault</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="orgclitab" data-target="#orgcli" role="tab" aria-controls="orgcli" aria-selected="false">CLI</a>
+  </li>
+</ul>
+<div class="tab-content" id="clientsContent">
+  <div class="tab-pane show active" id="orgwebvault" role="tabpanel" aria-labelledby="orgwvtab">
+{% capture org_web_vault %}
 
-1. Open your Organization and select the **Tools** tab.
+#### Export Org from the Web Vault
+
+To export your Organization Vault data from the Web Vault:
+
+1. Open your Organization and select the **Tools** tab:
 
    {% image organizations/org-export.png Export Organization Vault %}
 2. Select **Export Vault** from the left-hand Tools menu.
-4. On the Export Vault page:
-   - Select a **File Format** (`.json`, `.csv`, or `.json (Encrypted)`).
-   - Enter your **Master Password**.
-5. Select the **Export Vault** button to download your Vault Export. You will be prompted to specify a location for download.
+4. On the Vault Export page, choose a **File Format** (`.json`, `.csv`, or `.json (Encrypted)`).
+4. Enter your **Master Password** and select the **Export Vault** button.
 
-### From the CLI
+{% endcapture %}
+{{ org_web_vault | markdownify}}
+  </div>
+  <div class="tab-pane" id="orgcli" role="tabpanel" aria-labelledby="orgclitab">
+{% capture org_cli_info %}
 
-From the Bitwarden CLI application, use the `bw export` command with the `--organizationid <orgId>` option to export your Organization Vault.
+#### Export Org from the CLI
 
-{% callout info %}
-Retrieve your `<orgId>` value using the command: `bw list organizations`.
+To export your Organization Vault from the CLI, use the `export` command with the `--organizationid` option.
+
+By default, `export` will export your Vault as a `.csv` and save the file to the working directory, however this behavior can be altered using options:
+
+```
+bw export my-master-password --organizationid 7063feab-4b10-472e-b64c-785e2b870b92 --output /users/me/documents/ --format json
+```
+
+{% callout success %}
+If you don't know your `organizationid` value off-hand, you can access it at the command-line using `bw list organizations`.
 {% endcallout %}
 
-By default, `bw export` will create a `.csv` export in the current working directory, however you may pass the following options with the command:
-- `--output <filePath>` to specify a saving location of your choice.
-- `--format <format>` to specify the file format as `csv` (*default*), `json`, or `encrypted_json`.
+For more detail, see our [CLI documentation]({% link _articles/miscellaneous/cli.md %}).
+
+{% endcapture %}
+{{ org_cli_info | markdownify}}
+  </div>
+</div>
