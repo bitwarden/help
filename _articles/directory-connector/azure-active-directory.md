@@ -151,10 +151,12 @@ excludeadministrativeunit:not-bitwarden
 
 ## Test a Sync
 
-To test whether Directory Connector will successfully connect to your directory and return the desired users and groups, navigate to the **Dashboard** tab and select the **Test Now** button. If successful, users and groups will be printed to the Directory Connector window according to specified [Sync Options](#configure-sync-options) and [Filters](#specify-sync-filters):
+To test whether Directory Connector will successfully connect to your directory and return the desired users and groups, navigate to the **Dashboard** tab and select the **Test Now** button. If successful, users and groups will be printed to the Directory Connector window according to specified [Sync Options](#configure-sync-options) and [Filters](#specify-sync-filters).
+
+It may take up to 15 minutes for permissions for your application to properly propagate. In the meantime, you may receive `Insufficient privileges to complete the operation` errors.
 
 {% callout info %}
-It may take up to 15 minutes for permissions for your application to properly propagate. In the meantime, you may receive `Insufficient privileges to complete the operation` errors.
+If you get the error message `Resource <user id> does not exist or one of its queried reference-property objects are not present`, you'll need to permanently delete or restore the user(s) with `<user id>`. **Please note**, this was fixed in a recent version of Directory Connector. Update your application if you're still experiencing this error.
 {% endcallout %}
 
 {% image /directory-connector/okta/dc-okta-test.png Test sync results %}
