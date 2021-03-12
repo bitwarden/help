@@ -29,7 +29,7 @@ To be notified of Release Announcements, subscribe to the [Bitwarden Status RSS 
 
 Bitwarden is proud to announce the release of Bitwarden Send, and end-to-end encrypted solution for ephemeral sharing. This release includes:
 
-- **Bitwarden Send**: Bitwarden Send is end-to-end encrypted solution for ephemeral sharing. There's lot of material about Send on our website and Help Center, but you can start [here]({% link _articles/send/about-send.md %}).
+- **Bitwarden Send**: Bitwarden Send is end-to-end encrypted solution for ephemeral sharing. There's lot of material about Send on our website and Help Center, but you can start [here](https://bitwarden.com/products/send){:target="\_blank"} or [here]({% link _articles/send/about-send.md %}).
 - **FIDO U2F Support for Edge**: Two-step Login via FIDO U2F is now available for the Web Vault and Browser Extensions in Microsoft Edge (see [here]({% link _articles/two-step-login/setup-two-step-login-u2f.md %}) for details).
 - **Domain Exclusion in Browser Extensions**: Bitwarden Browser Extensions can now be configured with domains to explicitly not offer to remember passwords for (see [here]({% link _articles/miscellaneous/exclude-domains.md %}) for details).
 - **Improved Import Error Messages**: We've had lots of folks migrating to Bitwarden recently, so we cleaned up an import error message to help you reconcile issues faster (see [here]({{site.baseurl}}/article/import-data/#length-related-import-errors) for details).

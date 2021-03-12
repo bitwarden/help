@@ -34,6 +34,16 @@ order: 08
 |{% icon fa-ban %}|This Send has reached it's specified [Maximum Access Count]({{site.baseurl}}/article/send-lifespan/#maximum-access-count).|
 |{% icon fa-trash %}|This Send has reached it's specified [Deletion Date]({{site.baseurl}}/article/send-lifespan/#deletion-date) and is **Pending Deletion**.|
 
-### Q: Can I prevent members of my Organization from using Send?
+### Q: Why is Send disabled for my Organization?
 
-**A:** Enterprise Organizations can prevent their members from creating or editing Sends using the [Disable Send Policy]({{site.baseurl}}/article/policies/#disable-send).
+**A:** Bitwarden Enterprise Organizations include a [Disable Send policy]({{site.baseurl}}/article/policies/#disable-send), which Admins and Owners can use to toggle on/off Send functionality within their Organization. Contact your Admin or Owner to discuss your Organization's policies.
+
+During the initial rollout of Send in March 2021, Organizations that already had the [Personal Ownership policy]({{site.baseurl}}/article/policies/#personal-ownership) enabled will find that the Disable Send policy was enabled for their Organizations. This was to allow for customers with this security profile to opt-in to Send on their own schedule.
+
+If you do want to use Bitwarden Send as an end-to-end encrypted solution for ephemeral sharing within your Organization, all you need to do is turn the Disable Send policy off from the [Business Portal]({% link _articles/organizations/about-business-portal.md %}) or from your Organization's **Manage** &rarr; **Policies** page.
+
+Learn more about Send [here](https://bitwarden.com/products/send).
+
+### Q: Can I disable Send for my Organization?
+
+**A:** Enterprise Organizations can disable Send at any time using the [Disable Send policy]({{site.baseurl}}/article/policies/#disable-send). Admins and Owners can implement this policy from the [Business Portal]({% link _articles/organizations/about-business-portal.md %}) or from your Organization's **Manage** &rarr; **Policies** page. Enabling the policy will prevent Organization members from creating or editing any Sends.
