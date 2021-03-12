@@ -80,7 +80,7 @@ To create a new shared item:
 3. The Ownership of the item is automatically set to the Organization when you use this method, so all you need to do is select one or more **Collections** to share this item into. You must select *at least* one Collection.
 4. Select the **Save** button to finishing creating the shared item.
 
-Creating a shared item **will set ownership to the Organization**. This means that anyone with permission can alter the item or delete it, which would remove it from your Vault as well. You can tell that an item is shared when it has the {% icon fa-share-alt %} **Shared** icon next to its name:
+Creating a shared item or sharing an item **will set ownership to the Organization**. This means that anyone with permission can alter the item or delete it, which would remove it from your Vault as well. You can tell that an item is shared when it has the {% icon fa-share-alt %} **Shared** icon next to its name:
 
 {% image /organizations/collection-shared-item.png Shared Item icon %}
 
