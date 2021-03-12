@@ -8,7 +8,7 @@ tags: [bitwarden send, send, ephemeral sharing, deletion, expiration, access cou
 order: 04
 ---
 
-Unlike traditional Bitwarden Vault items and File Attachments, Sends are ephemeral and have a **default lifespan of 7 days**. The lifespan of a Send is entirely configurable using the [Deletion Date](#deletion-date) option, each having a maximum allowed lifespan of 30 days. When a Send has reached its Deletion Date, it will be purged from Bitwarden systems and inaccessible to both its Sender and recipients.
+Unlike traditional Bitwarden Vault items and File Attachments, Sends are ephemeral and have a **default lifespan of 7 days**. The lifespan of a Send is entirely configurable using the [Deletion Date](#deletion-date) option, each having a maximum allowed lifespan of 31 days. When a Send has reached its Deletion Date, it will be purged from Bitwarden systems and inaccessible to both its Sender and recipients.
 
 **Optionally**, you can configure additional limitations on recipient access using the [Expiration Date](#expiration-date) and/or [Maximum Access Count](#maximum-access-count) options.
 
@@ -16,9 +16,9 @@ You can also manually [disable or delete](#manually-disable-or-delete) a Send at
 
 ## Deletion Date
 
-By default, a Send will have a Deletion Date set to 7 days from creation. Using the **Deletion Date** option, you may change this to a range of pre-specified options (e.g. *1 hour*, *1 day*, *30 days*) or specify a **Custom** timestamp using the date picker (or in the text input in the format `MM/DD/YYYY HH:MM AM/PM`).
+By default, a Send will have a Deletion Date set to 7 days from creation. Using the **Deletion Date** option, you may change this to a range of pre-specified options (e.g. *1 hour*, *1 day*, *31 days*) or specify a **Custom** timestamp using the date picker (or in the text input in the format `MM/DD/YYYY HH:MM AM/PM`).
 
-Deletion Date has a **maximum allowed value of 30 days from creation**.
+Deletion Date has a **maximum allowed value of 31 days from creation**.
 
 ### Deletion Behavior
 
