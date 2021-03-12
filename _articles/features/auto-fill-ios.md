@@ -11,7 +11,7 @@ You can use the Bitwarden iOS app to add new and auto-fill existing logins on th
 
 ### Enabling Auto-fill in Settings
 
-1. Tap **{% icon fa-cog %} Settings** on your iOS device.
+1. Tap the iOS **{% icon fa-cog %} Settings** app on your device.
 2. Tap **Passwords**
 3. Tap **AutoFill Passwords**.
 4. Turn on Auto-fill.
@@ -32,7 +32,7 @@ The Auto-fill Setting is now enabled.
 ### Enabling App Extension in Settings
 
 1. Open the Bitwarden iOS app.
-2. Tap the **{% icon fa-cog %} Settings** page.
+2. Tap the **{% icon fa-cogs %} Settings** page.
 3. Tap **App Extension**.
 4. Tap the **Enable App Extension** button.
 5. Locate **Bitwarden** from the list and enable it by tapping it.

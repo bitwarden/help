@@ -122,20 +122,20 @@ This error occurs when the Lastpass export contains 3 or more `grouping` values.
 
 ```
 url,username,password,totp,extra,name,grouping,fav
-https://www.facebook.com/login.php,login,password,,,Facebook,Social,0
-https://twitter.com/login,login,password,,,Twitter,Social,0
+https://www.facebook.com/login.php,username,password,,,Facebook,Social,0
+https://twitter.com/login,username,password,,,Twitter,Social,0
 https://asana.com/,login,password,,,Asana,Productivity Tools,0
-https://github.com/login,login,password,,,Github,Productivity Tools,0
-https://www.paypal.com/login,login,password,,,Paypal,Finance,0
-https://www.bankofamerica.com/,login,password,,,Bankofamerica,Finance,0
+https://github.com/login,username,password,,,Github,Productivity Tools,0
+https://www.paypal.com/login,username,password,,,Paypal,Finance,0
+https://www.bankofamerica.com/,username,password,,,Bankofamerica,Finance,0
 ```
 
 **To solve this issue**, delete the `grouping` column and the `grouping` datum for each item, including the trailing comma, for example edit:
 
 ```
-https://github.com/login,login,password,,,Github,Productivity Tools,0
+https://github.com/login,username,password,,,Github,Productivity Tools,0
 ```
 down to:
 ```
-https://github.com/login,login,password,,,Github,0
+https://github.com/login,username,password,,,Github,0
 ```

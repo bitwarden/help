@@ -23,13 +23,13 @@ Bitwarden's Desktop App is available for Windows, macOS, and Linux. For help get
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
-    <a class="nav-link active" id="wintab" data-bs-toggle="tab" href="#windows" role="tab" aria-controls="windows" aria-selected="true"><i class="fa fa-windows"></i> Windows</a>
+    <a class="nav-link active" id="wintab" data-bs-toggle="tab" data-target="#windows" role="tab" aria-controls="windows" aria-selected="true"><i class="fa fa-windows"></i> Windows</a>
   </li>
   <li class="nav-item" role="presentation">
-    <a class="nav-link" id="mactab" data-bs-toggle="tab" href="#macos" role="tab" aria-controls="macos" aria-selected="false"><i class="fa fa-apple"></i> macOS</a>
+    <a class="nav-link" id="mactab" data-bs-toggle="tab" data-target="#macos" role="tab" aria-controls="macos" aria-selected="false"><i class="fa fa-apple"></i> macOS</a>
   </li>
   <li class="nav-item" role="presentation">
-    <a class="nav-link" id="lintab" data-bs-toggle="tab" href="#linux" role="tab" aria-controls="linux" aria-selected="false"><i class="fa fa-linux"></i> Linux</a>
+    <a class="nav-link" id="lintab" data-bs-toggle="tab" data-target="#linux" role="tab" aria-controls="linux" aria-selected="false"><i class="fa fa-linux"></i> Linux</a>
   </li>
 </ul>
 <div class="tab-content" id="clientsContent">
