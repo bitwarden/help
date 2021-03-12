@@ -55,7 +55,7 @@ Complete the following steps to create a new Send from the Bitwarden [Web Vault]
 
 4. Select the {% icon fa-chevron-down %} **Options** menu to configure the following options as desired:
 
-   |**Deletion Date**|The Send will be permanently [deleted]({{site.baseurl}}/article/send-lifespan/#deletion-behavior) on the specified date and time. By default, 7 days from creation. The **maximum allowed value** is 30 days from creation.|
+   |**Deletion Date**|The Send will be permanently [deleted]({{site.baseurl}}/article/send-lifespan/#deletion-behavior) on the specified date and time. By default, 7 days from creation. The **maximum allowed value** is 31 days from creation.|
    |**Expiration Date**|The Send will [expire]({{site.baseurl}}/article/send-lifespan/#expiration-behavior) on the specified date and time. By default, **Never**.|
    |**Maximum Access Count**|The Send will be [disabled]({{site.baseurl}}/article/send-lifespan/#maximum-access-count-behavior) after the specified access count is reached. By default, unspecified.|
    |**Password**|[Require a password]({{site.baseurl}}/article/send-privacy/#send-passwords) to be entered by recipients of this Send in order to gain access.|
@@ -100,7 +100,7 @@ Complete the following steps to create a new Send from a Bitwarden Browser Exten
 
 4. Select the {% icon fa-chevron-down %} **Options** menu to configure the following options as desired:
 
-   |**Deletion Date**|The Send will be permanently [deleted]({{site.baseurl}}/article/send-lifespan/#deletion-behavior) on the specified date and time. By default, 7 days from creation. The **maximum allowed value** is 30 days from creation.|
+   |**Deletion Date**|The Send will be permanently [deleted]({{site.baseurl}}/article/send-lifespan/#deletion-behavior) on the specified date and time. By default, 7 days from creation. The **maximum allowed value** is 31 days from creation.|
    |**Expiration Date**|The Send will [expire]({{site.baseurl}}/article/send-lifespan/#expiration-behavior) on the specified date and time. By default, **Never**.|
    |**Maximum Access Count**|The Send will be [disabled]({{site.baseurl}}/article/send-lifespan/#maximum-access-count-behavior) after the specified access count is reached. By default, unspecified.|
    |**Password**|[Require a password]({{site.baseurl}}/article/send-privacy/#send-passwords) to be entered by recipients of this Send in order to gain access.|
@@ -144,7 +144,7 @@ Complete the following steps to create a new Send from a Bitwarden Desktop App:
 
 4. Select the {% icon fa-chevron-down %} **Options** menu to configure the following options as desired:
 
-   |**Deletion Date**|The Send will be permanently [deleted]({{site.baseurl}}/article/send-lifespan/#deletion-behavior) on the specified date and time. By default, 7 days from creation. The **maximum allowed value** is 30 days from creation.|
+   |**Deletion Date**|The Send will be permanently [deleted]({{site.baseurl}}/article/send-lifespan/#deletion-behavior) on the specified date and time. By default, 7 days from creation. The **maximum allowed value** is 31 days from creation.|
    |**Expiration Date**|The Send will [expire]({{site.baseurl}}/article/send-lifespan/#expiration-behavior) on the specified date and time. By default, **Never**.|
    |**Maximum Access Count**|The Send will be [disabled]({{site.baseurl}}/article/send-lifespan/#maximum-access-count-behavior) after the specified access count is reached. By default, unspecified.|
    |**Password**|[Require a password]({{site.baseurl}}/article/send-privacy/#send-passwords) to be entered by recipients of this Send in order to gain access.|
@@ -190,7 +190,7 @@ Complete the following steps to create a new Send from Bitwarden Mobile App:
 
 4. Tap the {% icon fa-chevron-down %} **Options** menu to configure the following options as desired:
 
-   |**Deletion Date**|The Send will be permanently [deleted]({{site.baseurl}}/article/send-lifespan/#deletion-behavior) on the specified date and time. By default, 7 days from creation. The **maximum allowed value** is 30 days from creation.|
+   |**Deletion Date**|The Send will be permanently [deleted]({{site.baseurl}}/article/send-lifespan/#deletion-behavior) on the specified date and time. By default, 7 days from creation. The **maximum allowed value** is 31 days from creation.|
    |**Expiration Date**|The Send will [expire]({{site.baseurl}}/article/send-lifespan/#expiration-behavior) on the specified date and time. By default, **Never**.|
    |**Maximum Access Count**|The Send will be [disabled]({{site.baseurl}}/article/send-lifespan/#maximum-access-count-behavior) after the specified access count is reached. By default, unspecified.|
    |**Password**|[Require a password]({{site.baseurl}}/article/send-privacy/#send-passwords) to be entered by recipients of this Send in order to gain access.|
