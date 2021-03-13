@@ -167,7 +167,7 @@ Bitwarden provides a shell script for easy installation on Linux and macOS (Bash
      Retrieve an installation key using a valid email at [https://bitwarden.com/host](https://bitwarden.com/host). For more information, see [What are my installation id and installation key used for?](https://bitwarden.com/help/article/hosting-faqs/#general).
    - **Do you have a SSL certificate to use? (y/n):**
 
-     If you already have your own SSL certificate, specify `y` and place the necessary files in the `.bwdata/ssl/your.domain` directory. You will be asked whether is is a trusted SSL certificate (y/n). For more information, see [Certificate Options]({% link _articles/hosting/certificates.md %}).
+     If you already have your own SSL certificate, specify `y` and place the necessary files in the `.bwdata/ssl/your.domain` directory. You will be asked whether it is a trusted SSL certificate (y/n). For more information, see [Certificate Options]({% link _articles/hosting/certificates.md %}).
 
      Alternatively, specify `n` and use the **self-signed SSL certificate?** option, which is only recommended for testing purposes.
    - **Do you want to generate a self-signed SSL certificate? (y/n):**
