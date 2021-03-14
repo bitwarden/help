@@ -10,7 +10,7 @@ order: 01
 
 Bitwarden provides a data import tool for easy migration from any password management solution to your personal Vault or Organization Vault. You can also use the data import tool to import from one Bitwarden Vault to another, or to import a Bitwarden [Encrypted Export]({% link _articles/importing/encrypted-export.md %}).
 
-For a full list of supported import formats, see [What file formats does Bitwarden support for import?]({{site.baseurl}}/article/send-faqs/#q-what-file-formats-does-bitwarden-support-for-import), or use one of these articles for importing from the most popular solutions:
+For a full list of supported import formats, see [What file formats does Bitwarden support for import?]({{site.baseurl}}/article/import-faqs/#q-what-file-formats-does-bitwarden-support-for-import), or use one of these articles for importing from the most popular solutions:
 
 - [Import from LastPass]({% link _articles/importing/import-from-lastpass.md %})
 - [Import from 1Password]({% link _articles/importing/import-from-1password.md %})
