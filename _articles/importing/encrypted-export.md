@@ -129,7 +129,7 @@ To create an encrypted export of your personal Vault data from a Mobile app:
 To create an encrypted export of your personal Vault data from the CLI, use the `export` command with the specified option `--format encrypted_json`, for example:
 
 ```
-bw export my-master-password --output /users/me/documents/ --format json_encrypted
+bw export my-master-password --output /users/me/documents/ --format encrypted_json
 ```
 
 For more detail, see our [CLI documentation]({% link _articles/miscellaneous/cli.md %}).
