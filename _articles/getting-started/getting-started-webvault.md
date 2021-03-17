@@ -69,7 +69,7 @@ Now that a new Login item is saved in your Vault, you can beef up its security b
    This will replace your **Password** value with a randomly generated strong password. Moving from a password like `Fido1234` to `X@Ln@x9J@&u@5n##B` can stop a would-be hacker in their tracks.
 6. Copy your new password with the same {% icon fa-copy %} **Copy** icon you used earlier, and hit the **Save** button.
 
-   {% callout success %}Don't worry about overwriting your existing password! If something goes wrong, Bitwarden maintains a **Password History** for every Login item:<br><br>{% image /getting-started/pwhistory.png %}{% endcallout %}
+   {% callout success %}Don't worry about overwriting your existing password! If something goes wrong, Bitwarden maintains a **Password History** of the last 5 passwords for every Login item:<br><br>{% image /getting-started/pwhistory.png %}{% endcallout %}
 7. Tab back over to the other website, and paste your strong password in the **New Password** and **Confirm new password** fields.
 8. Once you **Save** the password change, you're finished!
 
