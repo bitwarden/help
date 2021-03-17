@@ -68,7 +68,7 @@ globalSettings__mail__smtp__username=<valid-gmail-username>
 globalSettings__mail__smtp__password=<valid-gmail-password>
 ```
 
-Whether you're a Workspace Admin or personal user of Gmail, you'll need to you'll need to enable SMTP relay from within Google. For more information, see [Google's Documentation](https://support.google.com/a/answer/176600?hl=en){:target="\_blank"}.
+Whether you're a Workspace Admin or personal user of Gmail, you'll need to enable SMTP relay from within Google. For more information, see [Google's Documentation](https://support.google.com/a/answer/176600?hl=en){:target="\_blank"}.
 
 If you're using Two-step Authentication for your Gmail account, you'll need to generate an app-specific password for use with Bitwarden and update the `globalSettings__mail__smtp__password=` field in `./bwdata/env/global.override.env`.
 
