@@ -57,6 +57,8 @@ The following assumes that **YubiKey** is your [highest-priority enabled method]
    **If you're using a non-NFC YubiKey on a Mobile Device:**
      1. Plug your YubiKey into the device.
      2. Tap **Cancel** to end the NFC prompt.
+
+        {% image two-step/yubikey/nonfc.png %}
      3. Tap the text input field, denoted by a gray underline.
      4. Tap or press your YubiKey button to insert your code.
 
