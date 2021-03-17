@@ -26,7 +26,6 @@ Export your personal Vault data from any client application:
 Exporting data from your Personal Vault **will not** export any data from Organizations that you belong to. To export Organization Data, follow the instructions to [export an Organization Vault.](#export-an-organization-vault)
 {% endcallout %}
 
-
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
     <a class="nav-link active" id="wvtab" data-target="#webvault" role="tab" aria-controls="webvault" aria-selected="true">Web Vault</a>
