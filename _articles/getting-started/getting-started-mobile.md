@@ -20,16 +20,15 @@ Bitwarden's Mobile App is available for iOS and Android. For help getting starte
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
-    <a class="nav-link active" id="andtab" data-bs-toggle="tab" data-target="#android" role="tab" aria-controls="android" aria-selected="true"><i class="fa fa-android"></i> Android</a>
+    <a class="nav-link active" id="andtab" data-bs-toggle="tab" href="#android" role="tab" aria-controls="android" aria-selected="true"><i class="fa fa-android"></i> Android</a>
   </li>
   <li class="nav-item" role="presentation">
-    <a class="nav-link" id="iostab" data-bs-toggle="tab" data-target="#ios" role="tab" aria-controls="ios" aria-selected="false"><i class="fa fa-apple"></i> iOS</a>
+    <a class="nav-link" id="iostab" data-bs-toggle="tab" href="#ios" role="tab" aria-controls="ios" aria-selected="false"><i class="fa fa-apple"></i> iOS</a>
   </li>
 </ul>
 
 <div class="tab-content" id="clientsContent">
-  <div class="tab-pane show active" id="android" role="tabpanel" aria-labelledby="andtab">
-{% capture and_gs %}
+  <div class="tab-pane show active" id="android" role="tabpanel" aria-labelledby="andtab" markdown="1">
 ## Bitwarden on Android
 
 ### Explore your Vault
@@ -82,7 +81,7 @@ Setup Auto-fill to automatically enter logins from your Android device to a Web 
    Depending on which version of Android you're using, a number of Auto-fill options could be listed.
 2. Tap your available Auto-fill option, and toggle it on. A green `Enabled` message will indicate that Auto-fill is active.
 
-   Once toggled, you might be required to change some Android-native settings, depending on your available or enabled Auto-fill options. For more information, see [Auto-fill logins on Android]({% link _articles/features/auto-fill-android.md %}).
+   Once toggled, you might be required to change some Android-native settings, depending on your available or enabled Auto-fill options. For more information, see [Auto-fill logins on Android]({{site.baseurl}}/article/auto-fill/#android).
 
 ### Unlock with Biometrics
 
@@ -115,11 +114,8 @@ Use the following Bitwarden 101 video if you want us to walk you through using B
 
 <iframe width="800" height="450" src="https://www.youtube.com/embed/qyFeEZMZpEY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-{% endcapture %}
-{{ and_gs | markdownify }}
   </div>
-  <div class="tab-pane" id="ios" role="tabpanel" aria-labelledby="iostab">
-{% capture ios_gs %}
+  <div class="tab-pane" id="ios" role="tabpanel" aria-labelledby="iostab" markdown="1">
 ## Bitwarden on iOS
 
 ### Explore your Vault
@@ -206,7 +202,5 @@ Use the following Bitwarden 101 video if you want us to walk you through using B
 
 <iframe width="800" height="450" src="https://www.youtube.com/embed/LrhMmNTmOno" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-{% endcapture %}
-{{ ios_gs | markdownify }}
   </div>
 </div>
