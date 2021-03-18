@@ -91,7 +91,7 @@ You can add multiple Collection IDs at the same time by using a comma to separat
 
 **A:** There are two services that need to be enabled on Android to cover all Auto-fill scenarios, AUTO-FILL SERVICE and AUTO-FILL ACCESSIBILITY SERVICE. These services can be enabled from within the Bitwarden App under Settings.
 
-When configured, you should see "Enabled" in green text. Double-check under the AUTO-FILL ACCESSIBILITY SERVICE that the Permission shows "Granted" in green text as well.     https://help.bitwarden.com/article/auto-fill-android/
+When configured, you should see "Enabled" in green text. Double-check under the AUTO-FILL ACCESSIBILITY SERVICE that the Permission shows "Granted" in green text as well.     https://help.bitwarden.com/article/auto-fill/#android
 
 One last thing you will want to check is the battery optimization settings on your phone and make sure it is turned off for Bitwarden. Often, Android Battery Optimization will turn off services to save battery and in turn kill the auto-fill services.
 
@@ -125,7 +125,7 @@ To use an existing identity provider for authentication, you’ll need to subscr
 
 **A:** In order to perform an autofill when a website or page loads, you will want to go to Settings > Options and select  "Enable Auto-fill On Page Load".
 
-If you do not want to enable autofill when a page loads and still want the ability to autofill easily and quickly then you may want to try using the keyboard shortcuts or one of the other autofill methods shown here:  <https://help.bitwarden.com/article/auto-fill-browser/>
+If you do not want to enable autofill when a page loads and still want the ability to autofill easily and quickly then you may want to try using the keyboard shortcuts or one of the other autofill methods shown [here]({{site.baseurl}}article/auto-fill/#browser-extension)
 
 ### Q: Can I download Bitwarden on F-Droid? I cannot find it.
 
