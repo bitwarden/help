@@ -201,6 +201,12 @@ Auto-fill on iOS comes in two flavors:
 - **Keyboard Auto-fill**: (*Recommended*) Use this option to make Bitwarden auto-fill accessible in any iOS app (including Web Browsers) through a keyboard button.
 - **Browser App Extension**: Use this option to make Bitwarden auto-fill accessible *only* in Web Browser apps, like Safari, through the Share menu.
 
+{% callout success %}
+It is currently not possible to use auto-fill on iOS if the [Vault Timeout Action]({{site.baseurl}}/article/vault-timeout/#vault-timeout-action) for the device is set to **Log Out** and your *only* enabled [Two-step Login Method]({{site.baseurl}}/article/setup-two-step-login) requires NFC (e.g. an NFC YubiKey), as iOS will not allow NFC inputs to interrupt auto-fill workflows.
+
+Either change your Vault Timeout Action to **Unlock**, or enable another Two-step Login Method.
+{% endcallout %}
+
 ### Keyboard Auto-fill
 
 To enable keyboard auto-fill on iOS:
