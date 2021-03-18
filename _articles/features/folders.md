@@ -5,7 +5,7 @@ categories: [account-management]
 featured: false
 popular: false
 tags: [categories, folders, sub-folders]
-order: 06
+order: 05
 ---
 
 Folders are structures used to organize your Personal Vault by gathering together Logins, Cards, Identities, and Secure Notes. Using Folders is a great way to make all Vault items easy to find.

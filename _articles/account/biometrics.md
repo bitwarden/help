@@ -5,7 +5,7 @@ categories: [account-management]
 featured: false
 popular: false
 tags: [unlock, face id, touch id, hello, windows, mac, ios, android]
-order: 11
+order: 14
 ---
 
 Bitwarden can be configured to accept biometrics as a method to unlock your Vault.
@@ -22,13 +22,13 @@ Unlock with Biometrics can be enabled for Bitwarden on Mobile, Desktop, and Brow
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
-    <a class="nav-link active" id="mobtab" data-target="#mobile" role="tab" aria-controls="mobile" aria-selected="false">Mobile</a>
+    <a class="nav-link active" id="mobtab" href="#mobile" role="tab" aria-controls="mobile" aria-selected="false">Mobile</a>
   </li>
   <li class="nav-item" role="presentation">
-    <a class="nav-link" id="desktab" data-target="#desktop" role="tab" aria-controls="desktop" aria-selected="false">Desktop</a>
+    <a class="nav-link" id="desktab" href="#desktop" role="tab" aria-controls="desktop" aria-selected="false">Desktop</a>
   </li>
   <li class="nav-item" role="presentation">
-    <a class="nav-link" id="betab" data-target="#browserextension" role="tab" aria-controls="browserextension" aria-selected="false">Browser Extension</a>
+    <a class="nav-link" id="betab" href="#browserextension" role="tab" aria-controls="browserextension" aria-selected="false">Browser Extension</a>
   </li>
 </ul>
 <div class="tab-content" id="clientsContent">

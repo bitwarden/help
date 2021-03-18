@@ -1,37 +1,34 @@
 ---
 layout: article
-title: Autofill Identities and Cards
-categories: [miscellaneous]
+title: Auto-fill Cards & Identities
+categories: [account-management]
+order: 08
 featured: true
 popular: false
 tags: [browser, autofill, auto-fill, identity, card, form fill]
 ---
 
-Bitwarden can autofill more than just your usernames and passwords! It can make online purchases and account creations a breeze. If you're unfamiliar with what these item types are, refer to our [Managing Items][managing-items-doc] article.
+Bitwarden can do more than just [auto-fill your usernames and passwords]({% link _articles/features/auto-fill.md %})! **Bitwarden Browser Extensions** can auto-fill [Cards]({{site.baseurl}}/article/managing-items/#cards) and [Identities]({{site.baseurl}}/article/managing-items/#identities) to simplify online purchases, account creation, and more using the [unique Tab view]({% link _articles/features/auto-fill.md %}).
 
-{% callout info %}The ability to autofill identities and cards is only available with the Bitwarden web browser extension at this time. Unfortunately, mobile platforms such as Android and iOS do not support these types of autofill functions.{% endcallout %}
+{% callout info %}Currently, Autofill for Cards & Identities is only available for Browser Extensions. Mobile platforms including Android and iOS do not currently support this type of auto-fill function.{% endcallout %}
 
-## Autofill an Identity
+## Autofill Cards & Identities
 
-1. From a page that you wish to autofill, open the browser extension and find your Identity under the **Identities** section. {% image features/auto-fill-card-id/id_fill1.png %}
-2. Click on the Identity. The Bitwarden browser extension will find any relevant fields that match the data in your identity and fill them. {% image features/auto-fill-card-id/id_fill2.png %}
+To auto-fill Cards and Identities:
 
-## Autofill a Card
+1. Open the Browser Extension or, if your Browser Extension is already open, navigate to the {% icon fa-folder %} **Tab** view.
 
-1. From a page that you wish to autofill, open the browser extension and find your Card under the **Cards** section. {% image features/auto-fill-card-id/card_fill1.png %}
-2. Click on the Card. The Bitwarden browser extension will find any relevant fields that match the data in your card and fill them. {% image features/auto-fill-card-id/card_fill2.png %}
+   Unless you've [hidden Cards and/or Identities from this view](#hide-cards--identities), all your Cards and Identities will be listed here alongside any [matched Login items]({% link _articles/features/uri-match-detection.md %}).
+2. Select the Card or Identity you want to auto-fill:
 
-## Hide Identities and Cards
+   {% image features/auto-fill-card-id/autofill-cardsidentities.png Auto-fill an Identity %}
 
-Identities and Cards can be hidden from view of the **Tab** section if your prefer them not be shown when opening the browser extension.
+The Browser Extension will find any fields on the web page that map to Card or Identity information, and auto-fill them.
 
-{% callout info %}Hiding these items will disable their ability to be auto-filled.{% endcallout %}
+## Hide Cards & Identities
 
-1. Open the Browser Extension
-2. Select the **Settings** tab.
-3. Scroll down to the **Other** section.
-4. Select **Options**.
-5. Select **Don't Show Cards on Tab Page**.
-6. Select **Don't Show Identities on Tab Page**.
+If you don't want Cards & Identities to be available for auto-fill, you can disable from being displayed in the {% icon fa-folder %} **Tab** view:
 
-[managing-items-doc]: https://bitwarden.com/help/article/managing-items/#adding-items
+1. In your Browser Extension, open the {% icon fa-cogs %} **Settings** tab.
+2. Scroll down to the Other section, and select **Options**.
+3. Scroll down and check the **Don't Show Cards on Tab Page** and/or **Don't Show Identities on Tab Page** boxes.
