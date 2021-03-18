@@ -80,7 +80,7 @@ When a Vault item has a corresponding URI, the Bitwarden icon will overlay a not
 
 Simply clicking on the Vault item inside the Browser Extension will auto-fill login information to the detected input fields.
 
-There are a few other methods of auto-filling login information from your Browser Extension, including context menus and keyboard shortcuts. To learn about them, see [Browser Extension Auto-fill Options]({% link _articles/features/auto-fill-browser.md %}).
+There are a few other methods of auto-filling login information from your Browser Extension, including context menus and keyboard shortcuts. To learn about them, see [Browser Extension Auto-fill Options]({{site.baseurl}}/article/auto-fill/#browser-extension).
 
 ## Unlock with PIN / Biometrics
 
