@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Browser Extension Auto-fill Options
+title: Auto-fill Logins in Browser Extensions
 categories: [miscellaneous]
 featured: false
 popular: false

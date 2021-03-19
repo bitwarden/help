@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Auto-fill logins on iOS
+title: Auto-fill Logins on iOS
 categories: [miscellaneous]
 featured: true
 popular: false
