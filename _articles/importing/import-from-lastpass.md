@@ -74,7 +74,7 @@ Importing data to Bitwarden **can only be done from the** [**Web Vault**](https:
  2. Select **Import Data** from the left-hand Tools menu.
  3. From the format dropdown, choose **LastPass (csv)** from the File Format dropdown.
 
- 5. Select the **Choose File** button and add the file to import.
+ 5. Paste the contents of your `.csv` directory into the text input box, or select the **Choose File** button and add the file to import.
 
     {% callout warning %}Import to Bitwarden can't check whether items in the file to import are duplicative of items in your Vault. This means that **importing multiple files will create duplicative** Vault items if an item is already in the Vault and in the file to import.{% endcallout %}
  6. Select the **Import Data** button to complete your import.
