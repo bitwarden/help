@@ -33,6 +33,16 @@ If you're a member of an Organization, **Collections** will be shown below your 
 There are similarities between Folders and Collections. **Folders are only for your Personal Vault and unique to you**, where Collections are shared between members of Organizations.
 {% endcallout %}
 
+## Delete a folder
+
+You can delete folders from the [Web Vault](https://vault.bitwarden.com){:target="\_blank"} or any Bitwarden client application:
+
+- From the Web Vault or Desktop Application, hover over the folder to delete and select the displayed pencil icon. From the popup, select the {% icon fa-trash %} **Delete**.
+ 
+- From a Browser Extension or Mobile App, open the {% icon fa-cogs %} **Settings** tab and tap/select the **Folders** option. From the list, tap/select the folder to delete.  
+   
+   On Browser Extensions, simply select the {% icon fa-trash %} **Delete Folder** button. On Mobile, and tap the menu ( {% icon fa-ellipsis-v %} / {% icon fa-ellipsis-h %} ) and tap **Delete**.
+
 ## Create Nested Folders
 
 Folders can be "nested" in order to logically organize them within your Vault. There's no limit to the depth with which you can nest Folders, but creating too many levels may interfere with your Vault's interface.
