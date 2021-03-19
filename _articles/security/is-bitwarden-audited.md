@@ -16,7 +16,7 @@ For our privacy policy, visit [bitwarden.com/privacy](https://bitwarden.com/priv
 
 ### GDPR
 
-Bitwarden is GDPR compliane. We use applicable, approved information transfer mechanisms where required, such as EU Standard Contractual Clauses (SCCs), or the EU - U.S. Privacy Shield.
+Bitwarden is GDPR compliant. We use applicable, approved information transfer mechanisms where required, such as EU Standard Contractual Clauses (SCCs), or the EU - U.S. Privacy Shield.
 
 ### CCPA
 
