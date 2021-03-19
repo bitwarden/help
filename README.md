@@ -37,4 +37,4 @@ redirect_from: /blog/10-tips-choosing-password-manager-for-teams/
 
 # Contribute
 
-Article contributions are welcome! Please commit any pull requests against the `master` branch.
+Article contributions are welcome! Please commit any pull requests against the `master` branch. Please see [`CONTRIBUTING.md`](CONTRIBUTING.md) for more info.
