@@ -40,9 +40,7 @@ Setting up Duo in Bitwarden is slightly different depending on whether you're en
 </ul>
 
 <div class="tab-content" id="clientsContent">
-  <div class="tab-pane show active" id="personal" role="tabpanel" aria-labelledby="pertab">
-{% capture and_gs %}
-
+  <div class="tab-pane show active" id="personal" role="tabpanel" aria-labelledby="pertab" markdown="1">
 #### Setup for your Personal Vault
 
 {% callout warning %}
@@ -69,13 +67,8 @@ To enable Two-step Login using Duo for your Personal Vault:
 A green `Enabled` message should appear to indicate that Duo has been enabled for your Vault. You can double-check by selecting the **Close** button and seeing that the **Duo** option has a green checkmark ( {% icon fa-check %} ) on it.
 
 Once enabled, make sure you get your [Recovery Code]({% link _articles/two-step-login/two-step-recovery-code.md %}). You should also log out of all Bitwarden client apps (mobile, browser extension, etc.) to immediately trigger the Two-step Login requirement. If you don't, you will be automatically logged out of these apps eventually.
-
-{% endcapture %}
-{{ and_gs | markdownify }}
   </div>
-  <div class="tab-pane" id="organization" role="tabpanel" aria-labelledby="orgtab">
-{% capture ios_gs %}
-
+  <div class="tab-pane" id="organization" role="tabpanel" aria-labelledby="orgtab" markdown="1">
 #### Setup for your Organization
 
 {% callout warning %}
@@ -100,9 +93,6 @@ You must be an [Organization Owner]({% link _articles/organizations/user-types-a
 6. Select the **Enable** button.
 
 A green `Enabled` message should appear to indicate that Duo has been enabled for your Vault. You can double-check by selecting the **Close** button and seeing that the **Duo** option has a green checkmark ( {% icon fa-check %} ) on it.
-
-{% endcapture %}
-{{ ios_gs | markdownify }}
   </div>
 </div>
 

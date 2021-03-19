@@ -44,9 +44,7 @@ Exporting data from your Personal Vault **will not** export any data from Organi
   </li>
 </ul>
 <div class="tab-content" id="clientsContent">
-  <div class="tab-pane show active" id="webvault" role="tabpanel" aria-labelledby="wvtab">
-{% capture web_vault %}
-
+  <div class="tab-pane show active" id="webvault" role="tabpanel" aria-labelledby="wvtab" markdown="1">
 #### Export from the Web Vault
 
 To export your personal Vault data from the Web Vault:
@@ -55,13 +53,8 @@ To export your personal Vault data from the Web Vault:
 2. Select **Export Vault** from the left-hand Tools menu.
 3. On the Vault Export page, choose a **File Format** (`.json`, `.csv`, or `.json (Encrypted)`).
 4. Enter your **Master Password** and select the **Export Vault** button.
-
-{% endcapture %}
-{{ web_vault | markdownify}}
   </div>
-  <div class="tab-pane" id="browserextension" role="tabpanel" aria-labelledby="betab">
-{% capture browser_extension %}
-
+  <div class="tab-pane" id="browserextension" role="tabpanel" aria-labelledby="betab" markdown="1">
 #### Export from a Browser Extension
 
 To export your personal Vault data from a Browser Extension:
@@ -70,13 +63,8 @@ To export your personal Vault data from a Browser Extension:
 2. Scroll down to the **Tools** section and select the **Export Vault** option.
 3. On the Export Vault view, choose a **File Format** (`.json`, `.csv`, or `.json (Encrypted)`).
 4. Enter your **Master Password** and select **Submit**.
-
-{% endcapture %}
-{{ browser_extension | markdownify}}
   </div>
-  <div class="tab-pane" id="desktop" role="tabpanel" aria-labelledby="desktab">
-{% capture desktop_info %}
-
+  <div class="tab-pane" id="desktop" role="tabpanel" aria-labelledby="desktab" markdown="1">
 #### Export from Desktop
 
 To export your personal Vault data from a Desktop app:
@@ -84,13 +72,8 @@ To export your personal Vault data from a Desktop app:
 1. From the menu bar, navigate to **File** &rarr; **Export Vault**.
 2. In the Export Vault window, choose a **File Format** (`.json`, `.csv`, or `.json (Encryped)`).
 3. Enter your **Master Password** and select the {% icon fa-download %} **Download** button.
-
-{% endcapture %}
-{{ desktop_info | markdownify}}
   </div>
-  <div class="tab-pane" id="mobile" role="tabpanel" aria-labelledby="mobtab">
-{% capture mobile_info %}
-
+  <div class="tab-pane" id="mobile" role="tabpanel" aria-labelledby="mobtab" markdown="1">
 #### Export from Mobile
 
 To export your personal Vault data from a Mobile app:
@@ -99,13 +82,8 @@ To export your personal Vault data from a Mobile app:
 2. Scroll down to the **Tools** section and tap the **Export Vault** option.
 3. On the Export Vault view, choose a **File Format** (`.json`, `.csv`, or `.json (Encrypted)`).
 4. Enter your **Master Password** and tap the **Export Vault** button.
-
-{% endcapture %}
-{{ mobile_info | markdownify}}
   </div>
-  <div class="tab-pane" id="cli" role="tabpanel" aria-labelledby="cliab">
-{% capture cli_info %}
-
+  <div class="tab-pane" id="cli" role="tabpanel" aria-labelledby="cliab" markdown="1">
 #### Export from the CLI
 
 To export your personal Vault from the CLI, use the `export` command. By default, `export` will export your Vault as a `.csv` and save the file to the working directory, however this behavior can be altered using options:
@@ -115,9 +93,6 @@ bw export my-master-password --output /users/me/documents/ --format json
 ```
 
 For more detail, see our [CLI documentation]({% link _articles/miscellaneous/cli.md %}).
-
-{% endcapture %}
-{{ cli_info | markdownify}}
   </div>
 </div>
 
@@ -134,9 +109,7 @@ Organization [Admins and Owners]({% link _articles/organizations/user-types-acce
   </li>
 </ul>
 <div class="tab-content" id="clientsContent">
-  <div class="tab-pane show active" id="orgwebvault" role="tabpanel" aria-labelledby="orgwvtab">
-{% capture org_web_vault %}
-
+  <div class="tab-pane show active" id="orgwebvault" role="tabpanel" aria-labelledby="orgwvtab" markdown="1">
 #### Export Org from the Web Vault
 
 To export your Organization Vault data from the Web Vault:
@@ -147,13 +120,8 @@ To export your Organization Vault data from the Web Vault:
 2. Select **Export Vault** from the left-hand Tools menu.
 4. On the Vault Export page, choose a **File Format** (`.json`, `.csv`, or `.json (Encrypted)`).
 4. Enter your **Master Password** and select the **Export Vault** button.
-
-{% endcapture %}
-{{ org_web_vault | markdownify}}
   </div>
-  <div class="tab-pane" id="orgcli" role="tabpanel" aria-labelledby="orgclitab">
-{% capture org_cli_info %}
-
+  <div class="tab-pane" id="orgcli" role="tabpanel" aria-labelledby="orgclitab" markdown="1">
 #### Export Org from the CLI
 
 To export your Organization Vault from the CLI, use the `export` command with the `--organizationid` option.
@@ -169,8 +137,5 @@ If you don't know your `organizationid` value off-hand, you can access it at the
 {% endcallout %}
 
 For more detail, see our [CLI documentation]({% link _articles/miscellaneous/cli.md %}).
-
-{% endcapture %}
-{{ org_cli_info | markdownify}}
   </div>
 </div>

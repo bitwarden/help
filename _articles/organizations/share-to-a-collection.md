@@ -48,9 +48,7 @@ Organization members can create new items directly for any assigned Collection(s
   </li>
 </ul>
 <div class="tab-content" id="clientsContent">
-  <div class="tab-pane show active" id="personal" role="tabpanel" aria-labelledby="pertab">
-{% capture personal %}
-
+  <div class="tab-pane show active" id="personal" role="tabpanel" aria-labelledby="pertab" markdown="1">
 #### From the My Vault view
 
 To create a new shared item:
@@ -64,13 +62,8 @@ To create a new shared item:
 Creating a shared item **will set ownership to the Organization**. This means that anyone with permission can alter the item or delete it, which would remove it from your Vault as well. You can tell that an item is shared when it has the {% icon fa-share-alt %} **Shared** icon next to its name:
 
 {% image /organizations/collection-shared-item.png Shared Item icon %}
-
-{% endcapture %}
-{{ personal | markdownify }}
   </div>
-  <div class="tab-pane" id="organization" role="tabpanel" aria-labelledby="orgtab">
-{% capture organization %}
-
+  <div class="tab-pane" id="organization" role="tabpanel" aria-labelledby="orgtab" markdown="1">
 #### From the Organization view
 
 To create a new shared item:
@@ -83,8 +76,5 @@ To create a new shared item:
 Creating a shared item or sharing an item **will set ownership to the Organization**. This means that anyone with permission can alter the item or delete it, which would remove it from your Vault as well. You can tell that an item is shared when it has the {% icon fa-share-alt %} **Shared** icon next to its name:
 
 {% image /organizations/collection-shared-item.png Shared Item icon %}
-
-{% endcapture %}
-{{ organization | markdownify }}
   </div>
 </div>
