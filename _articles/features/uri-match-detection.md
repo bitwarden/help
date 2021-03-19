@@ -73,7 +73,7 @@ For example, if the URI value `https://sub.domain.com/path/` uses starts with ma
 
 ### Regular expression
 
-{% callout note %}
+{% callout info %}
 Regular expressions are an advanced option and can be quite dangerous if used incorrectly. You should not use this option if you do not know exactly what you're doing.
 {% endcallout %}
 

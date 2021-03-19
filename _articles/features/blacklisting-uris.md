@@ -8,7 +8,7 @@ order: 06
 tags: [android, autofill, auto-fill]
 ---
 
-{% callout note %}
+{% callout info %}
 Blacklisting URIs is currently only available for the Bitwarden Android app.
 {% endcallout %}
 

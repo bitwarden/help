@@ -28,7 +28,7 @@ When a Send reaches its configured Deletion Date:
 
 - For the Sender, a {% icon fa-trash %} **Pending Deletion** icon will appear next to the Send. The Send will pend deletion for a few minutes, after which it will be permanently deleted from Bitwarden systems and from the Sender's Send view.
 
-  {% callout note %}There is no "soft delete" or Trash Can for Sends, meaning that once the pending deletion window has closed you will not be able to access the contents of a Send.{% endcallout %}
+  {% callout info %}There is no "soft delete" or Trash Can for Sends, meaning that once the pending deletion window has closed you will not be able to access the contents of a Send.{% endcallout %}
 
 ## Expiration Date
 
