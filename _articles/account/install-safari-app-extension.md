@@ -11,6 +11,8 @@ Bitwarden's Safari Web Extension is a port of the prior *App Extension* designed
 
 {% callout info %}
 Due to changes by Apple, Safari limits Web Extension use to **only those obtained through Mac App Store downloads**. As of the [2021-03-11 Release]({% link _articles/getting-started/releasenotes.md %}), users will not be able to use a Bitwarden Safari Extension obtained through a `.dmg` installation from [bitwarden.com/download](https://bitwarden.com/download){:target="\_blank"} or any other non-App Store source.
+
+**If you're using a Safari version prior to 14**, you can continue using a `.dmg` installation, which can be downloaded from [bitwarden.com/download](https://bitwarden.com/download){:target="\_blank"}. Keeping the `.dmg` outside of the Applications folder should allow you to simultaneously use both an older Safari Extension and the latest Desktop App.
 {% endcallout %}
 
 The Safari Web Extension has full feature parity to the prior App Extension. For developer detail on the difference between Safari Web Extensions and App Extensions, click [here](https://developer.apple.com/documentation/safariservices/safari_web_extensions/converting_a_safari_app_extension_to_a_safari_web_extension?language=objc).

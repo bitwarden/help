@@ -1,14 +1,15 @@
 ---
 layout: article
-title: Browser Extension Auto-fill Options
-categories: [miscellaneous]
+title: Auto-fill Logins in Browser Extensions
+categories: [auto-fill]
 featured: false
 popular: false
+order: 01
 tags: [browser, auto-fill, autofill]
 ---
 
 {% callout success %}
-Most auto-fill functionality relies on the attribution of URIs to Login items. If you're unfamiliar with using URIs, see [URIs for Vault Items]({% link _articles/features/uri-match-detection.md %}).
+Most auto-fill functionality relies on the attribution of URIs to Login items. If you're unfamiliar with using URIs, see [Using URIs]({% link _articles/features/uri-match-detection.md %}).
 {% endcallout %}
 
 Bitwarden Browser Extensions have a unique **Tab** view, which automatically detects the URI (e.g. `myturbotax.intuit.com`) of the page displayed in the open tab and surfaces any Vault items with corresponding URIs.
@@ -37,7 +38,7 @@ Without opening your Browser Extension, you can right-click on the username or p
 
 Bitwarden Browser Extensions provide a set of keyboard shortcuts (a.k.a *hot keys*) to auto-fill login information. Your Vault must be unlocked for these options to be available.
 
-To auto-fill login information, use the following **default** shortcuts:
+To auto-fill login information, use the following **default** shortcuts. If there are multiple Login items with the detected URI, the last-used login will be used for the auto-fill operation. You can cycle through multiple Logins by repeatedly using the keyboard shortcut:
 
 - On Windows: `Ctrl + Shift + L`
 - On macOS: `Cmd + Shift + L`

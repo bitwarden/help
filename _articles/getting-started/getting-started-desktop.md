@@ -138,7 +138,7 @@ You can go back and edit this item at any time using the {% icon fa-pencil %} **
 
 Biometric Unlock allows for seamless access to your macOS Desktop App using native [Touch ID](https://support.apple.com/en-us/HT207054){:target="\_blank"} technology.
 
-{% callout note %}
+{% callout info %}
 Touch ID must be enabled on your computer **before** it can be enabled in Bitwarden. See Apple's [Touch ID Documentation](https://support.apple.com/en-us/HT207054){:target="\_blank"} for help.
 {% endcallout %}
 

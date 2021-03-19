@@ -1,54 +1,74 @@
 ---
 layout: article
-title: Auto-fill logins on iOS
-categories: [miscellaneous]
+title: Auto-fill Logins on iOS
+categories: [auto-fill]
 featured: true
 popular: false
+order: 03
 tags: [iOS, Auto-fill, autofill]
 ---
 
-You can use the Bitwarden iOS app to add new and auto-fill existing logins on the web and in other apps. There are two settings which need to be enabled on iOS to cover all Auto-fill scenarios, Password Auto-fill and App Extension. These settings can be enabled from within the Bitwarden App under **{% icon fa-cog %} Settings**.
+Bitwarden makes your passwords available for auto-fill so that you can seamlessly log in to websites and apps while also maintaining strong and secure passwords. Auto-fill cuts the copying and pasting out of your login routine by detecting Vault items that match the service you're logging in to.
 
-### Enabling Auto-fill in Settings
+{% callout success %}
+*Most* auto-fill scenarios rely on the attribution of URIs to Login items. If you're unfamiliar with using URIs, brush up using our [Using URIs]({% link _articles/features/uri-match-detection.md %}) article.
+{% endcallout %}
 
-1. Tap the iOS **{% icon fa-cog %} Settings** app on your device.
-2. Tap **Passwords**
+## Auto-fill on iOS
+
+Auto-fill on iOS comes in two flavors:
+
+- **Keyboard Auto-fill**: (*Recommended*) Use this option to make Bitwarden auto-fill accessible in any iOS app (including Web Browsers) through a keyboard button.
+- **Browser App Extension**: Use this option to make Bitwarden auto-fill accessible *only* in Web Browser apps, like Safari, through the Share menu.
+
+{% callout success %}
+It is currently not possible to use auto-fill on iOS if the [Vault Timeout Action]({{site.baseurl}}/article/vault-timeout/#vault-timeout-action) for the device is set to **Log Out** and your *only* enabled [Two-step Login Method]({{site.baseurl}}/article/setup-two-step-login) requires NFC (e.g. an NFC YubiKey), as iOS will not allow NFC inputs to interrupt auto-fill workflows.
+
+Either change your Vault Timeout Action to **Unlock**, or enable another Two-step Login Method.
+{% endcallout %}
+
+### Keyboard Auto-fill
+
+To enable keyboard auto-fill on iOS:
+
+1. Open the iOS {% icon fa-cog %} **Settings** app on your device.
+2. Tap **Passwords**.
 3. Tap **AutoFill Passwords**.
-4. Turn on Auto-fill.
-5. Locate **Bitwarden** from the list and enable it.
-6. It's considered good practice to disable any other Auto-fill services.
+4. Toggle AutoFill Passwords on and tap **Bitwarden** in the Allow Filling From list:
 
-The Auto-fill Setting is now enabled.
+   {% image features/auto-fill-ios/autofill-ios-enable.png iOS AutoFill Screen %}
 
-## Testing the Auto-fill Feature
+   {% callout success %}We highly recommend disabling any other Auto-fill service (like Keychain) in the Allow Filling From list before proceeding.{% endcallout %}
 
-1. Open an app that has not been signed in to.
-2. View the login page for the app and focus the username or password field. Your keyboard will appear with "Passwords" at the top of the keyboard.
-3. Tap Passwords.
-4. This will launch the Bitwarden application.
-5. Select the appropriate login from the list or search Bitwarden for the correct login.
-6. Your username and password will be auto-filled.
+   **Let's test auto-fill to make sure it's working properly:**
+6. Open an app or website that you're not currently signed in to.
+7. Tap the username or password field on the login screen. A keyboard will slide up with a matching Login (`my_username`), or with a {% icon fa-key %} **Passwords** button:
 
-### Enabling App Extension in Settings
+   {% image features/auto-fill-ios/autofill-ios.jpeg AutoFill on iOS %}
 
-1. Open the Bitwarden iOS app.
-2. Tap the **{% icon fa-cogs %} Settings** page.
-3. Tap **App Extension**.
-4. Tap the **Enable App Extension** button.
-5. Locate **Bitwarden** from the list and enable it by tapping it.
-6. You will now see "Extension Activated!" in green.
-7. Tap back.
+   If a [matching Login]({% link _articles/features/uri-match-detection.md %}) is displayed, tap it to auto-fill. If the {% icon fa-key %} **Passwords** button is displayed, tap it to browse your Vault for the Login item to use.
 
-The App Extension feature is now enabled.
+   {% callout success %}If the {% icon fa-key %} **Passwords** button is displayed, it's probably because there isn't an item in your Vault with a [matching URI]({% link _articles/features/uri-match-detection.md %}).{% endcallout %}
 
-## Testing the App Extension Feature
+### Browser App Extension Auto-fill
 
-1. Open the browser of your choice.
-2. View the login page for the website you'd like to enter.
-3. Tap the <img src="../../images/features/auto-fill-ios/ios_share_icon.png" style="margin-top:0px"> share icon.
-4. Scroll down until you see **Bitwarden** and tap on it.
-5. This will launch the Bitwarden application.
-6. Select the appropriate login from the list or search Bitwarden for the correct login.
-7. Your username and password will be auto-filled.
+To enable Browser App Extension auto-fill on iOS:
 
-{% callout info %}Please make sure iCloud Keychain is getting disabled during these process to avoid any interference with Bitwarden's autofill capabilities. You can verify it by going to your Settings app > tap on Apple ID > iCloud > Keychain > Off{% endcallout %}
+1. Open your Bitwarden app and tap {% icon fa-cogs %} **Settings**.
+2. Tap the **App Extension** option in the Auto-fill section.
+3. Tap the **Enable App Extension** button.
+4. From the share menu that slides up, tap **Bitwarden**.
+
+   A green `Extension Activated!` message will indicate success.
+
+   **Let's test the App Extension to make sure it's working properly:**
+5. Open your device's web browser and navigate to a website that you're not currently signed in to.
+6. Tap the <img src="../../images/features/auto-fill-ios/ios_share_icon.png" style="margin-top:0px"> **Share** icon.
+7. Scroll down and tap the **Bitwarden** option:
+
+   {% image features/auto-fill-ios/extension.png Bitwarden in the Share menu %}
+
+   {% callout info %}If you have [Unlock with Biometrics]({% link _articles/account/biometrics.md %}) enabled, the first time you tap this option you will be prompted to verify your Master Password.{% endcallout %}
+8. A Bitwarden screen will slide up on your device and will list [matching Login items]({% link _articles/features/uri-match-detection.md %}) for the website. Tap the item to auto-fill.
+
+   {% callout success %}If there are no Login items listed, it's probably because there isn't an item in your Vault with a [matching URI]({% link _articles/features/uri-match-detection.md %}).{% endcallout %}

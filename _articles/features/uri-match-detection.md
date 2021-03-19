@@ -1,11 +1,11 @@
 ---
 layout: article
-title: URIs for Vault Items
-categories: [account-management]
+title: Using URIs
+categories: [auto-fill]
 featured: false
 popular: false
 tags: [uri, match detection, autofill]
-order: 09
+order: 05
 ---
 
 Any Login item in your Vault can be created with or edited to include one or more URI (Uniform Resource Identifier). A URI can be a website address (i.e. a URL), a Server IP Address, a Mobile App Package ID, and more.
@@ -28,6 +28,10 @@ Schemes include:
 
 - `http://` or `https://` reference website addresses (e.g. `https://github.com`)
 - `androidapp://` references an Android Application Package ID or Name (e.g. `androidapp://com.twitter.android`)
+
+{% callout success %}
+An easy way to obtain the proper URI for an Android app is to **use a web browser** to visit the App's page in the Google Play store. The URI for the app will appear in the URL as an `?id=` query parameter (e.g. `https://play.google.com/store/apps/details?id=com.twitter.android`). [Learn more]({{site.baseurl}}/article/blacklisting-uris/#android-app-uris).
+{% endcallout %}
 
 ## Match Detection Options
 
@@ -69,7 +73,7 @@ For example, if the URI value `https://sub.domain.com/path/` uses starts with ma
 
 ### Regular expression
 
-{% callout note %}
+{% callout info %}
 Regular expressions are an advanced option and can be quite dangerous if used incorrectly. You should not use this option if you do not know exactly what you're doing.
 {% endcallout %}
 

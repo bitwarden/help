@@ -126,7 +126,7 @@ bw send get <id> | jq '.name="New Name" | .password=null' | bw encode | bw send 
 
 - Use `--itemid <itemid>` to overwrite the id value provided of the Send with a new one.
 
-{% callout note %}
+{% callout info %}
 You can't `edit` a file Send's file. To do this, you'll need to delete the Send and re-create it with the appropriate file.
 {% endcallout %}
 

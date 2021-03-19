@@ -31,6 +31,10 @@ Complete the following steps to export passwords from Chrome on your Desktop:
 3. Specify a location to save your export to, and select **comma-separated values** from the **Format:** field.
 4. Select **Save** to finish exporting from Chrome.
 
+{% callout success %}
+After you [import to Bitwarden](#import-to-bitwarden), make sure that you delete this exported file from your computer to ensure this information is secure in the event that your computer is compromised.
+{% endcallout %}
+
 ### From a Mobile Device
 
 Complete the following steps to export passwords from Chrome on your Mobile Device:
@@ -41,6 +45,10 @@ Complete the following steps to export passwords from Chrome on your Mobile Devi
 
    You may be prompted to enter your device PIN or a biometric for authorization.
 4. Specify a location to save your export to.
+
+{% callout success %}
+After you [import to Bitwarden](#import-to-bitwarden), make sure that you delete this exported file from your computer to ensure this information is secure in the event that your computer is compromised.
+{% endcallout %}
 
 ## Import to Bitwarden
 

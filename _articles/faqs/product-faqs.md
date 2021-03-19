@@ -87,14 +87,6 @@ You can add multiple Collection IDs at the same time by using a comma to separat
 
 **A:** Yes! You can download directly from GitHub <https://github.com/bitwarden/mobile/releases> or via F-Droid by adding our repo <https://mobileapp.bitwarden.com/fdroid/>
 
-### Q: How do I enable Autofill in Android?
-
-**A:** There are two services that need to be enabled on Android to cover all Auto-fill scenarios, AUTO-FILL SERVICE and AUTO-FILL ACCESSIBILITY SERVICE. These services can be enabled from within the Bitwarden App under Settings.
-
-When configured, you should see "Enabled" in green text. Double-check under the AUTO-FILL ACCESSIBILITY SERVICE that the Permission shows "Granted" in green text as well.     https://help.bitwarden.com/article/auto-fill-android/
-
-One last thing you will want to check is the battery optimization settings on your phone and make sure it is turned off for Bitwarden. Often, Android Battery Optimization will turn off services to save battery and in turn kill the auto-fill services.
-
 ### Q: Can I use Directory connector to sign into Bitwarden?
 
 **A:** The Directory Connector tool provides the functions to automatically provision and deprovision users, groups, and group associations from your user directory (LDAP, Active Directory, G Suite, Azure AD, or Okta).
@@ -120,13 +112,6 @@ To use an existing identity provider for authentication, you’ll need to subscr
 3. Locate Auto-fill
 4. Tap on Auto-fill with Google and turn it off.
 
-
-### Q: How can I enable Auto-fill On Page Load?
-
-**A:** In order to perform an autofill when a website or page loads, you will want to go to Settings > Options and select  "Enable Auto-fill On Page Load".
-
-If you do not want to enable autofill when a page loads and still want the ability to autofill easily and quickly then you may want to try using the keyboard shortcuts or one of the other autofill methods shown here:  <https://help.bitwarden.com/article/auto-fill-browser/>
-
 ### Q: Can I download Bitwarden on F-Droid? I cannot find it.
 
 **A:** Yes, by adding our official private repo which removes all non-approved libraries: ​<https://mobileapp.bitwarden.com/fdroid/>
@@ -135,7 +120,7 @@ Unfortunately,  F-Droid can not compile our app from source as it is based on Xa
 
 ### Q: How can I see the history of a password that has been changed?
 
-The ability to view the password history of a Login Item is available. You can open the item in question and select the "1" next to Password History near the bottom of the window.
+The ability to view the history of the last 5 passwords for a Login Item is available. You can open the item in question and select the "1" next to Password History near the bottom of the window.
 
 {% callout warning %}
 Clicking on the number will expose the historical password values in plain text immediately.
@@ -144,14 +129,6 @@ Clicking on the number will expose the historical password values in plain text 
 ### Q: Can I see the history of the passwords I have generated?
 
 **A:** You can view the history of the Password Generator but please note that is a separate history per app/client. This information is not synchronized between devices.
-
-### Q: How do I enable iOS AutoFill?
-
-**A:** Make sure Bitwarden is set to your AutoFill app by going to your iOS Settings > Passwords & Accounts > AutoFill Passwords > Bitwarden​.
-
-While testing Bitwarden, it is best to only have Bitwarden enabled to avoid any conflicts. You can always set the Keychain or any other app back as an active option at any time if you choose to do so. Once you have that set, you can go to an app or site to log in and when you select the username or password field, the keyboard will display and the Passwords option will be selectable at the top of the keyboard.  ​
-
-You can see more about Bitwarden for iOS here: <https://bitwarden.com/help/article/getting-started-ios/>
 
 ### Q: Do I need premium and families?
 

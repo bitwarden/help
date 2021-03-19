@@ -22,7 +22,7 @@ You can configure the following options from the **Settings** menu of any Bitwar
 
 ### Vault Timeout (time-constraint)
 
-Configuring this option will dictate how long Bitwarden will be inactive before timing-out.
+Configuring this option will dictate how long Bitwarden will can inactive before timing-out. "Inactivity" is determined by the time since interacting with Bitwarden, not system idle time.
 
 Each client application will have unique options (e.g. On System Idle, or On App Restart), however all applications include standard time-based options (e.g. 1 minute, 15 minutes, 1 hour).
 

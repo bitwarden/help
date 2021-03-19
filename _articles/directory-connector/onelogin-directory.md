@@ -61,7 +61,7 @@ Complete the following steps to configure the settings used when syncing using D
 
 Use comma-separated lists to include or exclude from a sync based on User Email or Group:
 
-{% callout note %}
+{% callout info %}
 Directory Connector will create Bitwarden groups based on OneLogin Roles, not OneLogin Groups.
 {% endcallout %}
 
