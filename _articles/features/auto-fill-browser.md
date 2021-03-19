@@ -37,7 +37,7 @@ Without opening your Browser Extension, you can right-click on the username or p
 
 Bitwarden Browser Extensions provide a set of keyboard shortcuts (a.k.a *hot keys*) to auto-fill login information. Your Vault must be unlocked for these options to be available.
 
-To auto-fill login information, use the following **default** shortcuts:
+To auto-fill login information, use the following **default** shortcuts. If there are multiple Login items with the detected URI, the last-used login will be used for the auto-fill operation. You can cycle through multiple Logins by repeatedly using the keyboard shortcut:
 
 - On Windows: `Ctrl + Shift + L`
 - On macOS: `Cmd + Shift + L`
