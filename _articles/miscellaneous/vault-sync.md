@@ -28,13 +28,13 @@ To manually sync your Vault from a Bitwarden client application:
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" id="tab" role="presentation">
-    <a class="nav-link active" id="betab" data-toggle="tab" href="#be" role="tab" aria-controls="be" aria-selected="true">Browser Extensions</a>
+    <a class="nav-link active" id="betab" data-toggle="tab" href="#browser-extension" role="tab" aria-controls="browser-extension" aria-selected="true">Browser Extensions</a>
   </li>
   <li class="nav-item" id="tab" role="presentation">
-    <a class="nav-link" id="mobtab" data-bs-toggle="tab" href="#mob" role="tab" aria-controls="mob" aria-selected="false">Mobile</a>
+    <a class="nav-link" id="mobtab" data-bs-toggle="tab" href="#mobile" role="tab" aria-controls="mobile" aria-selected="false">Mobile</a>
   </li>
   <li class="nav-item" id="tab" role="presentation">
-    <a class="nav-link" id="desktab" data-bs-toggle="tab" href="#desk" role="tab" aria-controls="desk" aria-selected="false">Desktop</a>
+    <a class="nav-link" id="desktab" data-bs-toggle="tab" href="#desktop" role="tab" aria-controls="desktop" aria-selected="false">Desktop</a>
   </li>
   <li class="nav-item" id="tab" role="presentation">
     <a class="nav-link" id="clitab" data-bs-toggle="tab" href="#cli" role="tab" aria-controls="cli" aria-selected="false">CLI</a>
@@ -42,13 +42,13 @@ To manually sync your Vault from a Bitwarden client application:
 </ul>
 
 <div class="tab-content" id="clientsContent">
-  <div class="tab-pane show active" id="be" role="tabpanel" aria-labelledby="betab" markdown="1">
+  <div class="tab-pane show active" id="browser-extension" role="tabpanel" aria-labelledby="betab" markdown="1">
 ### Sync Browser Extensions
 
 Select the {% icon fa-cogs %} **Settings** tab, select the **Sync** option and select the **Sync Vault Now** button.
 
   </div>
-  <div class="tab-pane" id="#mob" role="tabpanel" aria-labelledby="mobtab" markdown="1">
+  <div class="tab-pane" id="mobile" role="tabpanel" aria-labelledby="mobtab" markdown="1">
 ### Sync Mobile Apps
 
 Open the {% icon fa-cogs %} **Settings** tab, tap the **Sync** option and tap **Sync Vault Now**.
@@ -56,7 +56,7 @@ Open the {% icon fa-cogs %} **Settings** tab, tap the **Sync** option and tap **
 Toggle the **Enable sync on refresh** option to allow your Vault to be synced using a pulldown gesture on the {% icon fa-lock %} **My Vault** tab.
 
   </div>
-  <div class="tab-pane" id="desk" role="tabpanel" aria-labelledby="desktab" markdown="1">
+  <div class="tab-pane" id="desktop" role="tabpanel" aria-labelledby="desktab" markdown="1">
 ### Sync Desktop Apps
 
 Select **File** &rarr; **Sync Vault** from the menu bar.

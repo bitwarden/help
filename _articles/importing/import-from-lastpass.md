@@ -20,17 +20,15 @@ A previous version of this article stated that you [needed to use the Browser Ex
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
-    <a class="nav-link active" id="webtab" data-bs-toggle="tab" data-target="#web" role="tab" aria-controls="browsertab" aria-selected="true">LastPass Web Vault</a>
+    <a class="nav-link active" id="webtab" data-bs-toggle="tab" href="#web" role="tab" aria-controls="browsertab" aria-selected="true">LastPass Web Vault</a>
   </li>
   <li class="nav-item" role="presentation">
-    <a class="nav-link" id="browsertab" data-bs-toggle="tab" data-target="#browser" role="tab" aria-controls="browsertab" aria-selected="false">LastPass Browser Extension</a>
+    <a class="nav-link" id="browsertab" data-bs-toggle="tab" href="#browser-extension" role="tab" aria-controls="browsertab" aria-selected="false">LastPass Browser Extension</a>
   </li>
 </ul>
 
 <div class="tab-content" id="clientsContent">
-  <div class="tab-pane show active" id="web" role="tabpanel" aria-labelledby="webtab">
-{% capture and_gs %}
-
+  <div class="tab-pane show active" id="web" role="tabpanel" aria-labelledby="webtab" markdown="1">
 #### From the LastPass Web Vault
 
 To export your data from the LastPass Web Vault:
@@ -51,13 +49,8 @@ To export your data from the LastPass Web Vault:
 
 If you observe this bug in your exported data, use a text editor to find and replace all altered values before importing into Bitwarden.
 {% endcallout %}
-
-{% endcapture %}
-{{ and_gs | markdownify }}
   </div>
-  <div class="tab-pane" id="browser" role="tabpanel" aria-labelledby="browsertab">
-{% capture ios_gs %}
-
+  <div class="tab-pane" id="browser-extension" role="tabpanel" aria-labelledby="browsertab" markdown="1">
 #### From a LastPass Browser Extension
 
 To export your data from a LastPass Browser Extension:
@@ -70,10 +63,6 @@ To export your data from a LastPass Browser Extension:
    Depending on your browser, your Vault data will either be automatically saved as a `.csv` or printed to the screen in a `.csv` format:
    {% image lastpass-copy.png LastPass Export %}
 4. If your Vault data was printed to the screen, highlight the text and copy and paste it into a new `export.csv` file.
-
-
-{% endcapture %}
-{{ ios_gs | markdownify }}
   </div>
 </div>
 

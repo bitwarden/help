@@ -23,18 +23,17 @@ Bitwarden's Desktop App is available for Windows, macOS, and Linux. For help get
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
-    <a class="nav-link active" id="wintab" data-bs-toggle="tab" data-target="#windows" role="tab" aria-controls="windows" aria-selected="true"><i class="fa fa-windows"></i> Windows</a>
+    <a class="nav-link active" id="wintab" data-bs-toggle="tab" href="#windows" role="tab" aria-controls="windows" aria-selected="true"><i class="fa fa-windows"></i> Windows</a>
   </li>
   <li class="nav-item" role="presentation">
-    <a class="nav-link" id="mactab" data-bs-toggle="tab" data-target="#macos" role="tab" aria-controls="macos" aria-selected="false"><i class="fa fa-apple"></i> macOS</a>
+    <a class="nav-link" id="mactab" data-bs-toggle="tab" href="#mac" role="tab" aria-controls="mac" aria-selected="false"><i class="fa fa-apple"></i> macOS</a>
   </li>
   <li class="nav-item" role="presentation">
-    <a class="nav-link" id="lintab" data-bs-toggle="tab" data-target="#linux" role="tab" aria-controls="linux" aria-selected="false"><i class="fa fa-linux"></i> Linux</a>
+    <a class="nav-link" id="lintab" data-bs-toggle="tab" href="#linux" role="tab" aria-controls="linux" aria-selected="false"><i class="fa fa-linux"></i> Linux</a>
   </li>
 </ul>
 <div class="tab-content" id="clientsContent">
-  <div class="tab-pane show active" id="windows" role="tabpanel" aria-labelledby="wintab">
-{% capture winfo %}
+  <div class="tab-pane show active" id="windows" role="tabpanel" aria-labelledby="wintab" markdown="1">
 ## Bitwarden on Windows
 
 ### Get Organized with Favorites and Folders
@@ -96,11 +95,8 @@ Starting Bitwarden automatically when you login to your desktop can help make su
 
 Next time you login to your desktop, the Bitwarden App will automatically open.
 
-{% endcapture %}
-{{ winfo | markdownify }}
   </div>
-  <div class="tab-pane" id="macos" role="tabpanel" aria-labelledby="mactab">
-{% capture minfo %}
+  <div class="tab-pane" id="mac" role="tabpanel" aria-labelledby="mactab" markdown="1">
 ## Bitwarden on macOS
 
 ### Get Organized with Favorites and Folders
@@ -162,11 +158,8 @@ Starting Bitwarden automatically when you login to your desktop can help make su
 
 Next time you login to your desktop, the Bitwarden App will automatically open.
 
-{% endcapture %}
-{{ minfo | markdownify }}
   </div>
-  <div class="tab-pane" id="linux" role="tabpanel" aria-labelledby="lintab">
-{% capture linfo %}
+  <div class="tab-pane" id="linux" role="tabpanel" aria-labelledby="lintab" markdown="1">
 ## Bitwarden on Linux
 
 ### Get Organized with Favorites and Folders
@@ -209,7 +202,5 @@ Starting Bitwarden automatically when you login to your desktop can help make su
 
 Next time you login to your desktop, the Bitwarden App will automatically open.
 
-{% endcapture %}
-{{ linfo | markdownify }}
   </div>
 </div>

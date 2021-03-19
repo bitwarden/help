@@ -20,25 +20,24 @@ To attach a file to a Vault item from a Bitwarden application:
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" id="tab" role="presentation">
-    <a class="nav-link active" id="wvtab" data-bs-toggle="tab" data-target="#wv" role="tab" aria-controls="wv" aria-selected="true">Web Vault</a>
+    <a class="nav-link active" id="wvtab" data-bs-toggle="tab" href="#web" role="tab" aria-controls="web" aria-selected="true">Web Vault</a>
   </li>
   <li class="nav-item" id="tab" role="presentation">
-    <a class="nav-link" id="betab" data-bs-toggle="tab" data-target="#be" role="tab" aria-controls="be" aria-selected="true">Browser Extension</a>
+    <a class="nav-link" id="betab" data-bs-toggle="tab" href="#browser-extension" role="tab" aria-controls="browser-extension" aria-selected="true">Browser Extension</a>
   </li>
   <li class="nav-item" id="tab" role="presentation">
-    <a class="nav-link" id="mobtab" data-bs-toggle="tab" data-target="#mob" role="tab" aria-controls="mob" aria-selected="false">Mobile</a>
+    <a class="nav-link" id="mobtab" data-bs-toggle="tab" href="#mobile" role="tab" aria-controls="mobile" aria-selected="false">Mobile</a>
   </li>
   <li class="nav-item" id="tab" role="presentation">
-    <a class="nav-link" id="desktab" data-bs-toggle="tab" data-target="#desk" role="tab" aria-controls="desk" aria-selected="false">Desktop</a>
+    <a class="nav-link" id="desktab" data-bs-toggle="tab" href="#desktop" role="tab" aria-controls="desktop" aria-selected="false">Desktop</a>
   </li>
   <li class="nav-item" id="tab" role="presentation">
-    <a class="nav-link" id="clitab" data-bs-toggle="tab" data-target="#cli" role="tab" aria-controls="cli" aria-selected="false">CLI</a>
+    <a class="nav-link" id="clitab" data-bs-toggle="tab" href="#cli" role="tab" aria-controls="cli" aria-selected="false">CLI</a>
   </li>
 </ul>
 
 <div class="tab-content" id="clientsContent">
-  <div class="tab-pane show active" id="wv" role="tabpanel" aria-labelledby="wvtab">
-{% capture be_sync %}
+  <div class="tab-pane show active" id="web" role="tabpanel" aria-labelledby="wvtab" markdown="1">
 ### Attach from Web Vault
 
 Complete the following steps to attach a file to a Vault item from the Web Vault:
@@ -49,12 +48,8 @@ Complete the following steps to attach a file to a Vault item from the Web Vault
 4. Select the **Save** button to finish attaching a file.
 
 Once a Vault item has a file attached to it, selecting {% icon fa-paperclip %} **Attachments** from the {% icon fa-cog %} **Gear** dropdown will also display a list of attached files.
-
-{% endcapture %}
-{{ be_sync | markdownify }}
   </div>
-  <div class="tab-pane" id="be" role="tabpanel" aria-labelledby="betab">
-{% capture be_sync %}
+  <div class="tab-pane" id="browser-extension" role="tabpanel" aria-labelledby="betab" markdown="1">
 ### Attach from a Browser Extension
 
 Complete the following steps to attach a file to a Vault item from a Bitwarden Browser Extension:
@@ -65,12 +60,8 @@ Complete the following steps to attach a file to a Vault item from a Bitwarden B
 4. Select the **Save** button to finish attaching a file.
 
 Once a Vault item has a file attached to it, selecting {% icon fa-paperclip %} **Attachments** from will also display a list of attached files.
-
-{% endcapture %}
-{{ be_sync | markdownify }}
   </div>
-  <div class="tab-pane" id="mob" role="tabpanel" aria-labelledby="mobtab">
-{% capture mob_sync%}
+  <div class="tab-pane" id="mobile" role="tabpanel" aria-labelledby="mobtab" markdown="1">
 ### Attach from Mobile
 
 Complete the following steps to attach a file to a Vault item from a Bitwarden Mobile App:
@@ -81,12 +72,8 @@ Complete the following steps to attach a file to a Vault item from a Bitwarden M
 4. Select the **Save** button to finish attaching a file.
 
 Once a Vault item has a file attached to it, selecting {% icon fa-paperclip %} **Attachments** from the {% icon fa-ellipsis-v%} **Menu** dropdown will also display a list of attached files.
-
-{% endcapture %}
-{{ mob_sync | markdownify }}
   </div>
-  <div class="tab-pane" id="desk" role="tabpanel" aria-labelledby="desktab">
-{% capture desk_sync%}
+  <div class="tab-pane" id="desktop" role="tabpanel" aria-labelledby="desktab" markdown="1">
 ### Attach from Desktop
 
 Complete the following steps to attach a file to a Vault item from a Bitwarden Desktop App:
@@ -97,12 +84,8 @@ Complete the following steps to attach a file to a Vault item from a Bitwarden D
 4. Select the **Save** button to finish attaching a file.
 
 Once a Vault item has a file attached to it, selecting {% icon fa-paperclip %} **Attachments** from will also display a list of attached files.
-
-{% endcapture %}
-{{ desk_sync | markdownify }}
   </div>
-  <div class="tab-pane" id="cli" role="tabpanel" aria-labelledby="clitab">
-{% capture cli_sync%}
+  <div class="tab-pane" id="cli" role="tabpanel" aria-labelledby="clitab" markdown="1">
 ### Attach from the CLI
 
 Use `bw create attachment` to attach a file to an existing Vault item, for exaple:
@@ -112,9 +95,6 @@ bw create attachment --file /path/to/myfile.ext --itemid <itemid>
 ```
 
 For more information, refer to our [CLI documentation]({% link _articles/miscellaneous/cli.md %}).
-
-{% endcapture %}
-{{ cli_sync | markdownify }}
   </div>
 </div>
 

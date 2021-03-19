@@ -70,10 +70,10 @@ Manually disable or delete a Send from any Bitwarden application:
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
-    <a class="nav-link active" id="wvtab" data-target="#webvault" role="tab" aria-controls="webvault" aria-selected="true">Web Vault</a>
+    <a class="nav-link active" id="wvtab" data-target="#web" role="tab" aria-controls="web" aria-selected="true">Web Vault</a>
   </li>
   <li class="nav-item" role="presentation">
-    <a class="nav-link" id="betab" data-target="#browserextension" role="tab" aria-controls="browserextension" aria-selected="false">Browser Extension</a>
+    <a class="nav-link" id="betab" data-target="#browser-extension" role="tab" aria-controls="browser-extension" aria-selected="false">Browser Extension</a>
   </li>
   <li class="nav-item" role="presentation">
     <a class="nav-link" id="desktab" data-target="#desktop" role="tab" aria-controls="desktop" aria-selected="false">Desktop</a>
@@ -86,9 +86,7 @@ Manually disable or delete a Send from any Bitwarden application:
   </li>
 </ul>
 <div class="tab-content" id="clientsContent">
-  <div class="tab-pane show active" id="webvault" role="tabpanel" aria-labelledby="wvtab">
-{% capture web_vault %}
-
+  <div class="tab-pane show active" id="web" role="tabpanel" aria-labelledby="wvtab" markdown="1">
 #### Disable from the Web Vault
 
 To disable a Send from the Web Vault, open the **Edit Send** view and check the **Disable this Send so that no one can access it** checkbox. You can uncheck this box at any time to re-enable access to the Send.
@@ -106,13 +104,8 @@ When a Send is disabled:
 To delete a Send from the Web Vault, use the hover-over {% icon fa-cog %} gear dropdown to select the {% icon fa-trash %} **Delete** button:
 
 {% image /send/send-delete.png Delete from the Web Vault %}
-
-{% endcapture %}
-{{ web_vault | markdownify}}
   </div>
-  <div class="tab-pane" id="browserextension" role="tabpanel" aria-labelledby="betab">
-{% capture browser_extension %}
-
+  <div class="tab-pane" id="browser-extension" role="tabpanel" aria-labelledby="betab" markdown="1">
 #### Disable from Browser Extensions
 
 To disable a Send from a Browser Extension, open the **Edit Send** view and check the **Disable this Send so that no one can access it** checkbox. You can uncheck this box at any time to re-enable access to the Send.
@@ -130,13 +123,8 @@ When a Send is disabled:
 To delete a Send from a Browser Extension, select the {% icon fa-trash %} **Trash** icon next to the Send you want to delete:
 
 {% image /send/send-delete-be.png Delete from a Browser Extension %}
-
-{% endcapture %}
-{{ browser_extension | markdownify}}
   </div>
-  <div class="tab-pane" id="desktop" role="tabpanel" aria-labelledby="desktab">
-{% capture desktop_info %}
-
+  <div class="tab-pane" id="desktop" role="tabpanel" aria-labelledby="desktab" markdown="1">
 #### Disable from Desktop Apps
 
 To disable a Send from a Desktop App, open the **Edit Send** view and check the **Disable this Send so that no one can access it** checkbox. You can uncheck this box at any time to re-enable access to the Send.
@@ -154,13 +142,8 @@ When a Send is disabled:
 To delete a Send from a Desktop App, open the **Edit Send** view and select the  {% icon fa-trash %} **Delete** button:
 
 {% image /send/send-desktop-delete.png Delete from a Desktop App %}
-
-{% endcapture %}
-{{ desktop_info | markdownify}}
   </div>
-  <div class="tab-pane" id="mobile" role="tabpanel" aria-labelledby="mobtab">
-{% capture mobile_info %}
-
+  <div class="tab-pane" id="mobile" role="tabpanel" aria-labelledby="mobtab" markdown="1">
 #### Disable from Mobile Apps
 
 To disable a Send from a Mobile App, open the **Edit Send** view and toggle the **Disable this Send so that no one can access it** option. You can toggle this option off at any time to re-enable access to the Send.
@@ -178,13 +161,8 @@ When a Send is disabled:
 To delete a Send from a Mobile App, tap the menu icon ( {% icon fa-ellipsis-v %} or {% icon fa-ellipsis-h %} ) and tap the **Delete** option:
 
 {% image /send/send-delete-mob.png Delete from a Mobile App %}
-
-{% endcapture %}
-{{ mobile_info | markdownify}}
   </div>
-  <div class="tab-pane" id="cli" role="tabpanel" aria-labelledby="cliab">
-{% capture cli_info %}
-
+  <div class="tab-pane" id="cli" role="tabpanel" aria-labelledby="cliab" markdown="1">
 #### Disable from the CLI
 
 To disable a Send from the CLI, you'll need to use the `edit` command to change the `"disabled":false` key-value pair to `"disabled":true`, for example:
@@ -204,8 +182,5 @@ bw send delete <id>
 ```
 
 We recommend reading the [Send from CLI]({% link _articles/send/send-cli.md %}) article for complete information on using Send from the CLI.
-
-{% endcapture %}
-{{ cli_info | markdownify}}
   </div>
 </div>

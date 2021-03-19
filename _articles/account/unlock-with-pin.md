@@ -16,22 +16,19 @@ PINs can **only be used to unlock** your Vault, you will still be required to us
 
 Unlock with PIN can be enabled for Bitwarden Browser Extensions, Desktop, and Mobile:
 
-
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
-    <a class="nav-link active" id="betab" data-target="#browserextension" role="tab" aria-controls="browserextension" aria-selected="false">Browser Extension</a>
+    <a class="nav-link active" id="betab" href="#browser-extension" role="tab" aria-controls="browser-extension" aria-selected="false">Browser Extension</a>
   </li>
   <li class="nav-item" role="presentation">
-    <a class="nav-link" id="desktab" data-target="#desktop" role="tab" aria-controls="desktop" aria-selected="false">Desktop</a>
+    <a class="nav-link" id="desktab" href="#desktop" role="tab" aria-controls="desktop" aria-selected="false">Desktop</a>
   </li>
   <li class="nav-item" role="presentation">
-    <a class="nav-link" id="mobtab" data-target="#mobile" role="tab" aria-controls="mobile" aria-selected="false">Mobile</a>
+    <a class="nav-link" id="mobtab" href="#mobile" role="tab" aria-controls="mobile" aria-selected="false">Mobile</a>
   </li>
 </ul>
 <div class="tab-content" id="clientsContent">
-  <div class="tab-pane show active" id="browserextension" role="tabpanel" aria-labelledby="betab">
-{% capture browser_extension %}
-
+  <div class="tab-pane show active" id="browser-extension" role="tabpanel" aria-labelledby="betab" markdown="1">
 #### Enable for Browser Extension
 
 To enable Unlock with PIN for your Browser Extension:
@@ -43,12 +40,8 @@ To enable Unlock with PIN for your Browser Extension:
    {% callout success %}The pre-checked option **Lock with master password on browser restart** will require you to enter your Master Password instead of the PIN when your browser restarts. If you want the ability to unlock with a PIN even when the browser restarts, uncheck the option.{% endcallout %}
 
 Your Unlock with PIN settings will persist **until you log out**. When you log out of your Browser Extension, you'll need to re-enable Unlock with PIN.
-{% endcapture %}
-{{ browser_extension | markdownify}}
   </div>
-  <div class="tab-pane" id="desktop" role="tabpanel" aria-labelledby="desktab">
-{% capture desktop_info %}
-
+  <div class="tab-pane" id="desktop" role="tabpanel" aria-labelledby="desktab" markdown="1">
 #### Enable for Desktop
 
 To enable Unlock with PIN for your Desktop app:
@@ -60,12 +53,8 @@ To enable Unlock with PIN for your Desktop app:
    {% callout success %}The pre-checked option **Lock with master password on restart** will require you to enter your Master Password instea of the PIN when the app restarts. If you want the ability to unlock with a PIN when the app restarts, uncheck this option.{% endcallout %}
 
 Your Unlock with PIN settings will persist **until you log out**. When you log out of your Desktop App, you'll need to re-enable Unlock with PIN.
-{% endcapture %}
-{{ desktop_info | markdownify}}
   </div>
-  <div class="tab-pane" id="mobile" role="tabpanel" aria-labelledby="mobtab">
-{% capture mobile_info %}
-
+  <div class="tab-pane" id="mobile" role="tabpanel" aria-labelledby="mobtab" markdown="1">
 #### Enable for Mobile
 
 To enable Unlock with PIN for your Mobile app:
@@ -77,8 +66,6 @@ To enable Unlock with PIN for your Mobile app:
    {% callout success %}A dialog box will appear asking whether you want to require unlocking with your master password when the application is restarted. Tap **Yes** to require your Master Password instead of PIN when the app restarts. Tap **No** for the ability to unlock with the PIN when the app restarts.{% endcallout %}
 
 Your Unlock with PIN settings will persist **until you log out**. When you log out of your Mobile App, you'll need to re-enable Unlock with PIN.
-{% endcapture %}
-{{ mobile_info | markdownify}}
   </div>
 </div>
 

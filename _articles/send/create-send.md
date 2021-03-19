@@ -14,24 +14,23 @@ Sends can be created and edited from the [Web Vault](https://vault.bitwarden.com
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
-    <a class="nav-link active" id="wvtab" data-target="#webvault" role="tab" aria-controls="webvault" aria-selected="true">Web Vault</a>
+    <a class="nav-link active" id="wvtab" href="#web" role="tab" aria-controls="web" aria-selected="true">Web Vault</a>
   </li>
   <li class="nav-item" role="presentation">
-    <a class="nav-link" id="betab" data-target="#browserextension" role="tab" aria-controls="browserextension" aria-selected="false">Browser Extension</a>
+    <a class="nav-link" id="betab" href="#browser-extension" role="tab" aria-controls="browser-extension" aria-selected="false">Browser Extension</a>
   </li>
   <li class="nav-item" role="presentation">
-    <a class="nav-link" id="desktab" data-target="#desktop" role="tab" aria-controls="desktop" aria-selected="false">Desktop</a>
+    <a class="nav-link" id="desktab" href="#desktop" role="tab" aria-controls="desktop" aria-selected="false">Desktop</a>
   </li>
   <li class="nav-item" role="presentation">
-    <a class="nav-link" id="mobtab" data-target="#mobile" role="tab" aria-controls="mobile" aria-selected="false">Mobile</a>
+    <a class="nav-link" id="mobtab" href="#mobile" role="tab" aria-controls="mobile" aria-selected="false">Mobile</a>
   </li>
   <li class="nav-item" role="presentation">
-    <a class="nav-link" id="clitab" data-target="#cli" role="tab" aria-controls="cli" aria-selected="false">CLI</a>
+    <a class="nav-link" id="clitab" href="#cli" role="tab" aria-controls="cli" aria-selected="false">CLI</a>
   </li>
 </ul>
 <div class="tab-content" id="clientsContent">
-  <div class="tab-pane show active" id="webvault" role="tabpanel" aria-labelledby="wvtab">
-{% capture web_vault %}
+  <div class="tab-pane show active" id="web" role="tabpanel" aria-labelledby="wvtab" markdown="1">
 ### Send from the Web Vault
 
 Complete the following steps to create a new Send from the Bitwarden [Web Vault](https://vault.bitwarden.com){:target="\_blank"}:
@@ -71,12 +70,8 @@ Once your Send is created, use the hover-over {% icon fa-cog %} gear dropdown an
 {% image /send/send-from-webvault.png Copy a Send link %}
 
 Once copied, share your Send link with intended recipients however you prefer. Sends are end-to-end encrypted, so you don't need to worry about exposing any Send data to whatever intermediary communications services you use.
-
-{% endcapture %}
-{{ web_vault | markdownify}}
   </div>
-  <div class="tab-pane" id="browserextension" role="tabpanel" aria-labelledby="betab">
-{% capture browser_extension %}
+  <div class="tab-pane" id="browser-extension" role="tabpanel" aria-labelledby="betab" markdown="1">
 ### Send from a Browser Extension
 
 Complete the following steps to create a new Send from a Bitwarden Browser Extension:
@@ -116,12 +111,8 @@ Once your Send is created, select the {% icon fa-copy %} **Copy Link** icon to c
 {% image /send/send-be-share.png Copy a Send link %}
 
 Once copied, share your Send link with intended recipients however you prefer. Sends are end-to-end encrypted, so you don't need to worry about exposing any Send data to whatever intermediary communications services you use.
-
-{% endcapture %}
-{{ browser_extension | markdownify}}
   </div>
-  <div class="tab-pane" id="desktop" role="tabpanel" aria-labelledby="desktab">
-{% capture desktop_info %}
+  <div class="tab-pane" id="desktop" role="tabpanel" aria-labelledby="desktab" markdown="1">
 ### Send from a Desktop App
 
 Complete the following steps to create a new Send from a Bitwarden Desktop App:
@@ -160,12 +151,8 @@ Once your Send is created, select the {% icon fa-copy %} **Copy Link** button to
 {% image /send/send-desktop-share.png Copy a Send link %}
 
 Once copied, share your Send link with intended recipients however you prefer. Sends are end-to-end encrypted, so you don't need to worry about exposing any Send data to whatever intermediary communications services you use.
-
-{% endcapture %}
-{{ desktop_info | markdownify}}
   </div>
-  <div class="tab-pane" id="mobile" role="tabpanel" aria-labelledby="mobtab">
-{% capture mobile_info %}
+  <div class="tab-pane" id="mobile" role="tabpanel" aria-labelledby="mobtab" markdown="1">
 ### Send from a Mobile App
 
 Complete the following steps to create a new Send from Bitwarden Mobile App:
@@ -206,11 +193,8 @@ Once your Send is created, tap the menu icon ( {% icon fa-ellipsis-v %} or {% ic
 {% image /send/send-share-mob.png Copy a Send link %}
 
 Share your Send link with intended recipients however you prefer. Sends are end-to-end encrypted, so you don't need to worry about exposing any Send data to whatever intermediary communications services you use.
-{% endcapture %}
-{{ mobile_info | markdownify}}
   </div>
-  <div class="tab-pane" id="cli" role="tabpanel" aria-labelledby="cliab">
-{% capture cli_info %}
+  <div class="tab-pane" id="cli" role="tabpanel" aria-labelledby="cliab" markdown="1">
 ### Send from the CLI
 
 The following are sample commands to help you get started using Send from the CLI.
@@ -228,8 +212,5 @@ bw send -n "My File Send" - d 14 -f /Users/myaccount/Documents/my_file.pdf
 ```
 
 The Bitwarden CLI is a fully-featured and powerful tool. We recommend reading the [Send from CLI]({% link _articles/send/send-cli.md %}) article to learn more.
-
-{% endcapture %}
-{{ cli_info | markdownify}}
   </div>
 </div>

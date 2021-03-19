@@ -28,13 +28,11 @@ Unlock with Biometrics can be enabled for Bitwarden on Mobile, Desktop, and Brow
     <a class="nav-link" id="desktab" href="#desktop" role="tab" aria-controls="desktop" aria-selected="false">Desktop</a>
   </li>
   <li class="nav-item" role="presentation">
-    <a class="nav-link" id="betab" href="#browserextension" role="tab" aria-controls="browserextension" aria-selected="false">Browser Extension</a>
+    <a class="nav-link" id="betab" href="#browser-extension" role="tab" aria-controls="browser-extension" aria-selected="false">Browser Extension</a>
   </li>
 </ul>
 <div class="tab-content" id="clientsContent">
-  <div class="tab-pane show active" id="mobile" role="tabpanel" aria-labelledby="mobtab">
-{% capture mobile_info %}
-
+  <div class="tab-pane show active" id="mobile" role="tabpanel" aria-labelledby="mobtab" markdown="1">
 #### Enable for Mobile
 
 Unlock with Biometrics is supported for Android (Google Play or FDroid) via [fingerprint unlock](https://support.google.com/nexus/answer/6285273?hl=en){:target="\_blank"} or [face unlock](https://support.google.com/pixelphone/answer/9517039?hl=en){:target="\_blank"}, and for iOS via [Touch ID](https://support.apple.com/en-us/HT201371){:target="\_blank"} and [Face ID](https://support.apple.com/en-us/HT208109){:target="\_blank"}.
@@ -48,13 +46,8 @@ To enable Unlock with Biometrics for your Mobile device:
  {% image /biometrics/ios_faceid.jpeg Enable Face ID in iOS%}
 
 Tapping the option should prompt you to input your biometric (i.e. face or thumb-print). A green `Enabled` status indicator (pictured above) will indicate when Unlock with Biometrics is successfully enabled.
-
-{% endcapture %}
-{{ mobile_info | markdownify}}
   </div>
-  <div class="tab-pane" id="desktop" role="tabpanel" aria-labelledby="desktab">
-{% capture desktop_info %}
-
+  <div class="tab-pane" id="desktop" role="tabpanel" aria-labelledby="desktab" markdown="1">
 #### Enable for Desktop
 
 Unlock with Biometrics is supported for Windows via [Windows Hello](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/windows-hello){:target="\_blank"} using PIN, Facial Recognition, or [other hardware that meets Windows Hello biometric requirements](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/windows-hello-biometric-requirements){:target="\_blank"} and for macOS via [Touch ID](https://support.apple.com/en-us/HT207054){:target="\_blank"}.
@@ -72,13 +65,8 @@ To enable Unlock with Biometrics for your Desktop app:
 Once enabled, a new button will be presented on the Unlock screen:
 
 {% image /biometrics/hello-unlock.png Unlock with Windows Hello %}
-
-{% endcapture %}
-{{ desktop_info | markdownify}}
   </div>
-  <div class="tab-pane" id="browserextension" role="tabpanel" aria-labelledby="betab">
-{% capture browser_extension %}
-
+  <div class="tab-pane" id="browser-extension" role="tabpanel" aria-labelledby="betab" markdown="1">
 #### About Biometrics in Browser Extensions
 
 Unlock with Biometrics is supported for Extensions through an integration with the Bitwarden Desktop app. In practical terms, this means:
@@ -125,9 +113,6 @@ To enable Unlock with Biometrics for your Browser Extension:
 Once enabled, a new button will be presented on the Unlock screen:
 
 {% image /biometrics/be-bio-unlock.png Unlock with Biometrics %}
-
-{% endcapture %}
-{{ browser_extension | markdownify}}
   </div>
 </div>
 
