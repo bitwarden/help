@@ -38,7 +38,7 @@ There are similarities between Folders and Collections. **Folders are only for y
 You can delete folders from the [Web Vault](https://vault.bitwarden.com){:target="\_blank"} or any Bitwarden client application:
 
 - From the Web Vault or Desktop Application, hover over the folder to delete and select the displayed pencil icon. From the popup, select the {% icon fa-trash %} **Delete**.
-- 
+ 
 - From a Browser Extension or Mobile App, open the {% icon fa-cogs %} **Settings** tab and tap/select the **Folders** option. From the list, tap/select the folder to delete.  
    
    On Browser Extensions, simply select the {% icon fa-trash %} **Delete Folder** button. On Mobile, and tap the menu ( {% icon fa-ellipsis-v %} / {% icon fa-ellipsis-h %} ) and tap **Delete**.
