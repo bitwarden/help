@@ -38,7 +38,9 @@ To enable keyboard auto-fill on iOS:
 
    {% image features/auto-fill-ios/autofill-ios-enable.png iOS AutoFill Screen %}
 
-   We recommend disabling any other Auto-fill service in the Allow Filling From list, but that's not required. **In either case, let's test auto-fill to make sure it's working properly:**
+   {% callout success %}We highly recommend disabling any other Auto-fill service (like Keychain) in the Allow Filling From list before proceeding.{% endcallout %}
+
+   **Let's test auto-fill to make sure it's working properly:**
 6. Open an app or website that you're not currently signed in to.
 7. Tap the username or password field on the login screen. A keyboard will slide up with a matching Login (`my_username`), or with a {% icon fa-key %} **Passwords** button:
 
