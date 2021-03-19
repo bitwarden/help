@@ -16,6 +16,7 @@ For a full list of supported import formats, see [What file formats does Bitward
 - [Import from 1Password]({% link _articles/importing/import-from-1password.md %})
 - [Import from Firefox]({% link _articles/importing/import-from-firefox.md %})
 - [Import from Google Chrome]({% link _articles/importing/import-from-chrome.md %})
+- [Import from Password Safe]({% link _articles/importing/import-from-passwordsafe.md %})
 
 ## Import to your Personal Vault
 
