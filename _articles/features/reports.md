@@ -60,7 +60,7 @@ Once identified, you should use Bitwarden's Password Generator to create a stron
 
 ### Unsecured Websites Report
 
-The **Unsecured Websites Report** identifies Login items that use unsecured (`http://`) schemes in URIs. It's much safer to use `https://` to encrypt communications with TLS/SSL. To learn more, see [URIs for Vault Items]({% link _articles/features/uri-match-detection.md %}).
+The **Unsecured Websites Report** identifies Login items that use unsecured (`http://`) schemes in URIs. It's much safer to use `https://` to encrypt communications with TLS/SSL. To learn more, see [Using URIs]({% link _articles/features/uri-match-detection.md %}).
 
 Once identified, you should change offending URIs from `http://` to  `https://`.
 

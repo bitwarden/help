@@ -58,7 +58,7 @@ Any time you log in to a website that doesn't already have a Login item saved fo
 
 {% image /getting-started/browserext/browserext-add.png %}
 
-Selecting **Yes, Save Now** will automatically add a Login item to your Vault with the entered username, password, and URI. If you're unfamiliar with using URIs, see [URIs for Vault Items]({% link _articles/features/uri-match-detection.md %}).
+Selecting **Yes, Save Now** will automatically add a Login item to your Vault with the entered username, password, and URI. If you're unfamiliar with using URIs, see [Using URIs]({% link _articles/features/uri-match-detection.md %}).
 
 {% callout success %}
 You can disable this banner by selecting the **Disable Add Login Notification** option from the **Options** menu in your Browser Extension.
@@ -66,7 +66,7 @@ You can disable this banner by selecting the **Disable Add Login Notification** 
 
 ## Launch a Website
 
-You can launch a website directly from the Bitwarden Browser Extension by selecting the {% icon fa-share-square %} **Launch** button in any Vault item with a valid URI. If you're unfamiliar with using URIs, see [URIs for Vault Items]({% link _articles/features/uri-match-detection.md %}).
+You can launch a website directly from the Bitwarden Browser Extension by selecting the {% icon fa-share-square %} **Launch** button in any Vault item with a valid URI. If you're unfamiliar with using URIs, see [Using URIs]({% link _articles/features/uri-match-detection.md %}).
 
 {% image /getting-started/browserext/browserext-launch.png %}
 

@@ -1,7 +1,8 @@
 ---
 layout: article
 title: Troubleshooting Android Auto-fill
-categories: [miscellaneous]
+categories: [auto-fill]
+order: 06
 featured: false
 popular: false
 tags: [android, autofill, auto-fill]

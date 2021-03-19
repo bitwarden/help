@@ -1,11 +1,11 @@
 ---
 layout: article
-title: URIs for Vault Items
-categories: [account-management]
+title: Using URIs
+categories: [auto-fill]
 featured: false
 popular: false
 tags: [uri, match detection, autofill]
-order: 09
+order: 05
 ---
 
 Any Login item in your Vault can be created with or edited to include one or more URI (Uniform Resource Identifier). A URI can be a website address (i.e. a URL), a Server IP Address, a Mobile App Package ID, and more.

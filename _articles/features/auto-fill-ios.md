@@ -1,16 +1,17 @@
 ---
 layout: article
 title: Auto-fill Logins on iOS
-categories: [miscellaneous]
+categories: [auto-fill]
 featured: true
 popular: false
+order: 03
 tags: [iOS, Auto-fill, autofill]
 ---
 
 Bitwarden makes your passwords available for auto-fill so that you can seamlessly log in to websites and apps while also maintaining strong and secure passwords. Auto-fill cuts the copying and pasting out of your login routine by detecting Vault items that match the service you're logging in to.
 
 {% callout success %}
-*Most* auto-fill scenarios rely on the attribution of URIs to Login items. If you're unfamiliar with using URIs, brush up using our [URIs for Vault Items]({% link _articles/features/uri-match-detection.md %}) article.
+*Most* auto-fill scenarios rely on the attribution of URIs to Login items. If you're unfamiliar with using URIs, brush up using our [Using URIs]({% link _articles/features/uri-match-detection.md %}) article.
 {% endcallout %}
 
 ## Auto-fill on iOS

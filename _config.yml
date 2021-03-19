@@ -30,6 +30,7 @@ collections:
       - account-management.md
       - send.md
       - import-export.md
+      - auto-fill.md
       - two-step-login.md
       - hosting.md
       - organizations.md
