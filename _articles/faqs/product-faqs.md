@@ -135,7 +135,7 @@ Unfortunately,  F-Droid can not compile our app from source as it is based on Xa
 
 ### Q: How can I see the history of a password that has been changed?
 
-The ability to view the password history of a Login Item is available. You can open the item in question and select the "1" next to Password History near the bottom of the window.
+The ability to view the history of the last 5 passwords for a Login Item is available. You can open the item in question and select the "1" next to Password History near the bottom of the window.
 
 {% callout warning %}
 Clicking on the number will expose the historical password values in plain text immediately.
