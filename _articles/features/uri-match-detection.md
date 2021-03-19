@@ -29,6 +29,10 @@ Schemes include:
 - `http://` or `https://` reference website addresses (e.g. `https://github.com`)
 - `androidapp://` references an Android Application Package ID or Name (e.g. `androidapp://com.twitter.android`)
 
+{% callout success %}
+An easy way to obtain the proper URI for an Android app is to **use a web browser** to visit the App's page in the Google Play store. The URI for the app will appear in the URL as an `?id=` query parameter (e.g. `https://play.google.com/store/apps/details?id=com.twitter.android`). [Learn more]({{site.baseurl}}/article/blacklisting-uris/#android-app-uris).
+{% endcallout %}
+
 ## Match Detection Options
 
 Each URI assigned to a Login item has an associated **Match Detection** option. This option determines when and whether Bitwarden will offer the Login as an available option for auto-fill.
