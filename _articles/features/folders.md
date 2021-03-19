@@ -32,6 +32,13 @@ If you're a member of an Organization, **Collections** will be shown below your 
 
 There are similarities between Folders and Collections. **Folders are only for your Personal Vault and unique to you**, where Collections are shared between members of Organizations.
 {% endcallout %}
+## Delete a folder
+
+You can delete folders from the [Web Vault](https://vault.bitwarden.com){:target="\_blank"} or any Bitwarden client application.
+
+- To delete a folder from the Web Vault or Desktop Application, hover over the pencil icon and click it. Then select the red trash/bin icon.
+
+- From a Browser Extension or Mobile App, open the {% icon fa-cogs %} **Settings** menu, tap/select the **Folders** option. Choose the folder which you want to delete and click **Delete Folder**. (On Mobile, 'Delete' option is in the three dot menu to the top-right.)
 
 ## Create Nested Folders
 
