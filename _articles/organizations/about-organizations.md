@@ -40,7 +40,7 @@ Teams Organizations allow unlimited users (*billed Per User Per Month*) to secur
 ### Enterprise Organizations
 Enterprise Organizations allow unlimited users (*billed Per User Per Month*) to securely share in unlimited Collections and add enterprise-only features like Login with SSO to Bitwarden's suite of operational tools. For more information about what features are included in an Enterprise Organization, see [About Bitwarden Plans](https://bitwarden.com/help/article/about-bitwarden-plans/#enterprise-organizations).
 
-## Organizations vs. Premium
+## Organizations compared to Premium
 
 **Organizations unlock access to secure sharing** between users who are members of that Organization.
 
