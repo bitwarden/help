@@ -57,7 +57,7 @@ To enable Unlock with PIN for your Desktop app:
 2. Scroll down to the Security section and check the **Unlock with PIN** checkbox.
 3. Enter the desired PIN code in the input box. Your PIN can be any combination of characters (a-z, 0-9, $, #, etc.).
 
-   {% callout success %}The pre-checked option **Lock with master password on restart** will require you to enter your Master Password instea of the PIN when the app restarts. If you want the ability to unlock with a PIN when the app restarts, uncheck this option.{% endcallout %}
+   {% callout success %}The pre-checked option **Lock with master password on restart** will require you to enter your Master Password instead of the PIN when the app restarts. If you want the ability to unlock with a PIN when the app restarts, uncheck this option.{% endcallout %}
 
 Your Unlock with PIN settings will persist **until you log out**. When you log out of your Desktop App, you'll need to re-enable Unlock with PIN.
 {% endcapture %}
@@ -81,6 +81,10 @@ Your Unlock with PIN settings will persist **until you log out**. When you log o
 {{ mobile_info | markdownify}}
   </div>
 </div>
+
+{% callout info %}
+When using the **Lock with master password on restart** PIN option, the Bitwarden application may not fully purge sensitive data from application memory when entering a locked state. If you are concerned about your device's local memory being compromised, you should not use this option.
+{% endcallout %}
 
 ## Understanding Unlock vs. Log In
 
