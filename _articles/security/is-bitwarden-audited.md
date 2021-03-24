@@ -50,7 +50,7 @@ Bitwarden completed a thorough security audit and cryptographic analysis by secu
 
 ### Codebase on GitHub
 
-Bitwarden is focused on open source software with the entirety of the codebase available on GitHub.com. For more information, please see [github.com/bitwarden](github.com/bitwarden){:target="\_blank"}.
+Bitwarden is focused on open source software with the entirety of the codebase available on GitHub.com. For more information, please see [github.com/bitwarden](https://github.com/bitwarden){:target="\_blank"}.
 
 ### Open Source at Bitwarden
 
