@@ -24,7 +24,7 @@ Auto-fill on iOS comes in two flavors:
 {% callout success %}
 It is currently not possible to use auto-fill on iOS if the [Vault Timeout Action]({{site.baseurl}}/article/vault-timeout/#vault-timeout-action) for the device is set to **Log Out** and your *only* enabled [Two-step Login Method]({{site.baseurl}}/article/setup-two-step-login) requires NFC (e.g. an NFC YubiKey), as iOS will not allow NFC inputs to interrupt auto-fill workflows.
 
-Either change your Vault Timeout Action to **Unlock**, or enable another Two-step Login Method.
+Either change your Vault Timeout Action to **Lock**, or enable another Two-step Login Method.
 {% endcallout %}
 
 ### Keyboard Auto-fill
