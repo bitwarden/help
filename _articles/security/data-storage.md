@@ -18,7 +18,7 @@ Bitwarden **always** encrypts and/or hashes your data on your local device befor
 
 ## On Bitwarden Servers
 
-Bitwarden processes and stores all data securely in the [Microsoft Azure Cloud](https://en.wikipedia.org/wiki/Microsoft_Azure){:target="\_blank"} in the US using services that are managed by the team at Microsoft. Since Bitwarden only uses service offerings provided by Azure, there is no server infrastructure to manage and maintain. All uptime, scalability, and security updates and guarantees and backed by Microsoft and their cloud infrastructure. Review the [Microsoft Azure Compliance Offerings](https://azure.microsoft.com/en-us/resources/microsoft-azure-compliance-offerings/) documentation for more detail.
+Bitwarden processes and stores all data securely in the [Microsoft Azure Cloud](https://en.wikipedia.org/wiki/Microsoft_Azure){:target="\_blank"} in the US using services that are managed by the team at Microsoft. Since Bitwarden only uses service offerings provided by Azure, there is no server infrastructure to manage and maintain. All uptime, scalability, security updates, and guarantees are backed by Microsoft and their cloud infrastructure. Review the [Microsoft Azure Compliance Offerings](https://azure.microsoft.com/en-us/resources/microsoft-azure-compliance-offerings/) documentation for more detail.
 
 Don't trust Bitwarden Servers? You don't have to. Open source is beautiful. You can easily host the entire Bitwarden stack yourself. You control your data. Learn more [here]({% link _articles/hosting/install-on-premise.md %}).
 ## On your Local Machine
