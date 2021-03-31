@@ -214,7 +214,7 @@ An **email address is required for account provisioning**, which can be passed a
 	
 A unique user identifier is also highly recommended. If absent, Email will be used in its place to link the user.
 
-Attributes and claims are matched in the listed order for each value with noted fallbacks:
+Attributes/Claims are listed in order of preference for matching, including Fallbacks where applicable:
 
 |Value|Claim/Attribute|Fallback Claim/Attribute|
 |-----|---------------|------------------------|
