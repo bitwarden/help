@@ -77,9 +77,9 @@ Logging in authenticates you with the Bitwarden servers and syncs your vault. Th
  * SSO
 
 {% callout info %}
-In addition to logging in and syncing the Email and Password login option also *unlocks* your vault. See [Login != Unlock](#login--unlock).
+In addition to logging in and syncing, the Email and Password login option also *unlocks* your vault. See [Login != Unlock](#login--unlock).
 
-API key and SSO login methods require the use of the `bw unlock` command to decrypt your vault and generate a session key. The Email and password login method does not have this extra step because you have already provided the password necessary for unlocking.
+API key and SSO login methods require the subsequent use of the `bw unlock` command to decrypt your vault and generate a session key. The Email and password login method does not have this extra step because you have already provided the password necessary for unlocking.
 {% endcallout %}
 
 For all login methods, You can also pass the `--raw` option to *only receive the session key* from stdout.
@@ -108,7 +108,7 @@ where `--sso` starts the SSO Authentication flow from a browser.
 
 ### Two-step login
 
-Regardless of login method above, if two-step login is enable on your account, you will be prompted for the code. You can also pass in a current two-step one time password as an option.
+Regardless of login method above, if two-step login is enabled on your account, you will be prompted for the code. You can also pass in a current two-step one time password as an option.
 ```
 bw login [email] [password] --method <method> --code <code>
 ```
@@ -116,7 +116,7 @@ where `<method>` is your Two-step Login method (see [Enums](#enums)), and `<code
 
 ## Session Management
 
-After successfully logging in *and* unlocking the CLI a *session key* will be returned. This session key is necessary to perform any commands that require your vault to be unlocked (`list`, `get`, `edit`, etc.).
+After successfully logging in *and* unlocking the CLI, a *session key* will be returned. This session key is necessary to perform any commands that require your vault to be unlocked (`list`, `get`, `edit`, etc.).
 
 ### Environment Variable
 
@@ -160,7 +160,7 @@ If your active session key is unavailable (for example, you accidentally lost it
 
 ### Login != Unlock
 
-The `login` and `unlock` commands are different. All `login` commands perform authentication against the external Bitwarden server (requiring additional two-step login prompts, if configured). `unlock` performs local authentication only (against a persisted hash) and therefore would work even without an active internet connection or if the external Bitwarden server is not available. You cannot unlock your vault if you have not already logged in first.
+The `login` and `unlock` commands are different. All `login` commands perform authentication against the external Bitwarden server (requiring additional two-step login prompts, if enabled). `unlock` performs local authentication only (against a persisted hash) and therefore would work even without an active internet connection or if the external Bitwarden server is not available. **You cannot unlock your vault if you have not already logged in first.**
 
 Most users should prefer locking and unlocking their vault rather than logging out and logging in. This is the same process and workflow that all other Bitwarden client applications follow. A typical use case would be that a user logs into the CLI application only once and then only performs `unlock` commands thereafter.
 
