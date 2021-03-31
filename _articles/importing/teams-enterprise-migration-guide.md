@@ -6,7 +6,7 @@ featured: false
 popular: false
 hidden: false
 tags: [import, teams, enterprise, onboarding, security]
-order: 98
+order: 11
 ---
 ## Bitwarden: Making migration easy
 
