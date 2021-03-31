@@ -93,10 +93,10 @@ Check this checkbox if you receive `URI Too Long (HTTP 414)` errors, truncated U
 
 An **email address is required** for account provisioning which can be passed as any of the listed attributes or claims as noted below. A unique user identifier is also highly recommended, otherwise Email will be used in its place for linking the user.
 
-Attributes and claims are matched in the listed order for each value with noted fallbacks
+Attributes and claims are matched in the listed order for each value with noted fallbacks:
 
-|-|-|-|
-|**Value**|**Claim / Attribute**|**Fallback Claim / Attribute(s)**|
+|Value|Claim/Attribute|Fallback Claim/Attribute|
+|-----|---------------|------------------------|
 |Unique ID|Configured Custom User ID Claims<br>NameID (when not Transient)<br>urn:oid:0.9.2342.19200300.100.1.1<br>Sub<br>UID<br>UPN<br>EPPN|
 |Email|Configured Custom Email Claims<br>Email<br>http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress<br>urn:oid:0.9.2342.19200300.100.1.3<br>Mail<br>EmailAddress|Preferred_Username<br>Urn:oid:0.9.2342.19200300.100.1.1<br>UID|
 |Name|Configured Custom Name Claims<br>Name<br>http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name<br>urn:oid:2.16.840.1.113730.3.1.241<br>urn:oid:2.5.4.3<br>DisplayName<br>CN|First Name + “ “ + Last Name (see below)|
