@@ -91,7 +91,9 @@ Check this checkbox if you receive `URI Too Long (HTTP 414)` errors, truncated U
 
 ## OIDC Attributes & Claims
 
-An **email address is required** for account provisioning which can be passed as any of the listed attributes or claims as noted below. A unique user identifier is also highly recommended, otherwise Email will be used in its place for linking the user.
+An **email address is required for account provisioning**, which can be passed as any of the attributes or claims in the below table. 
+
+A unique user identifier is also highly recommended. If absent, Email will be used in its place to link the user.
 
 Attributes and claims are matched in the listed order for each value with noted fallbacks:
 
