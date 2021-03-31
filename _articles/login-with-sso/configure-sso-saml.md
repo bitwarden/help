@@ -210,7 +210,9 @@ Use the following tables to identify how certain fields in Bitwarden correspond 
 
 ## SAML Attributes & Claims
 
-An **email address is required** for account provisioning which can be passed as any of the listed attributes or claims as noted below. A unique user identifier is also highly recommended, otherwise Email will be used in its place for linking the user.
+An **email address is required for account provisioning**, which can be passed as any of the attributes or claims in the below table. 
+	
+A unique user identifier is also highly recommended. If absent, Email will be used in its place to link the user.
 
 Attributes and claims are matched in the listed order for each value with noted fallbacks:
 
@@ -221,4 +223,3 @@ Attributes and claims are matched in the listed order for each value with noted 
 |Name|Name<br>http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name<br>urn:oid:2.16.840.1.113730.3.1.241<br>urn:oid:2.5.4.3<br>DisplayName<br>CN|First Name + “ “ + Last Name (see below)|
 |First Name|urn:oid:2.5.4.42<br>GivenName<br>FirstName<br>FN<br>FName<br>Nickname|
 |Last Name|urn:oid:2.5.4.4<br>SN<br>Surname<br>LastName|
-
