@@ -21,7 +21,7 @@ Depending on the version of Android your device is running, there are a few diff
 |Option|Requires version...|Requires you to also enable...|
 |------|-------------------|-------------------------|
 |Autofill Service|Android 8+|-|
-|Inline Autofill|Android 11+|Autofill Service, IME that supports Inline|
+|Inline Autofill|Android 11+|Autofill Service, IME (Input Method Editor) that supports Inline|
 |Draw-Over|Android 6+|Accessibility|
 |Accessibility|All Android Versions|-|
 
@@ -48,7 +48,7 @@ You'll be prompted to confirm you trust Bitwarden. Tapping **OK** will let Bitwa
 Before you can enable Inline Autofill, enable **Autofill Service**.
 {% endcallout %}
 
-Inline Autofill (*requires Android 11+, a compatible IME, and **Autofill Service** to be enabled*) moves the Auto-fill Service overlay into the keyboard:
+Inline Autofill (*requires Android 11+, a compatible IME (Input Method Editor), and **Autofill Service** to be enabled*) moves the Auto-fill Service overlay into the keyboard:
 
 {% image features/auto-fill-android/inline.png Inline Autofill in GBoard %}
 
