@@ -88,3 +88,19 @@ Method used by the IdP to respond to Bitwarden authentication requests. Options 
 
 #### Get Claims From User Info Endpoint
 Check this checkbox if you receive `URI Too Long (HTTP 414)` errors, truncated URLs, or failures during SSO.
+
+## OIDC Attributes & Claims
+
+An **email address is required for account provisioning**, which can be passed as any of the attributes or claims in the below table. 
+
+A unique user identifier is also highly recommended. If absent, Email will be used in its place to link the user.
+
+Attributes/Claims are listed in order of preference for matching, including Fallbacks where applicable:
+
+|Value|Claim/Attribute|Fallback Claim/Attribute|
+|-----|---------------|------------------------|
+|Unique ID|Configured Custom User ID Claims<br>NameID (when not Transient)<br>urn:oid:0.9.2342.19200300.100.1.1<br>Sub<br>UID<br>UPN<br>EPPN|
+|Email|Configured Custom Email Claims<br>Email<br>http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress<br>urn:oid:0.9.2342.19200300.100.1.3<br>Mail<br>EmailAddress|Preferred_Username<br>Urn:oid:0.9.2342.19200300.100.1.1<br>UID|
+|Name|Configured Custom Name Claims<br>Name<br>http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name<br>urn:oid:2.16.840.1.113730.3.1.241<br>urn:oid:2.5.4.3<br>DisplayName<br>CN|First Name + “ “ + Last Name (see below)|
+|First Name|urn:oid:2.5.4.42<br>GivenName<br>FirstName<br>FN<br>FName<br>Nickname|
+|Last Name|urn:oid:2.5.4.4<br>SN<br>Surname<br>LastName|
