@@ -23,6 +23,13 @@ The CLI can be used cross-platform on Windows, macOS, and Linux distributions.
 
        bw --help
 
+{% callout info %}
+Subcommands also have help menus which explain their unique functionality and options, for example:
+```
+bw login --help
+```
+ {% endcallout %}
+
 ## Download and Install
 
 You can install the Bitwarden CLI in a few different ways:
@@ -62,30 +69,54 @@ npm install -g @bitwarden/cli
   sudo snap install bw
   ```
 
-## Session Management
+## Logging In
 
-### Logging In
+Logging in authenticates you with the Bitwarden servers and syncs your vault. There are a few ways to log into your Bitwarden user account from the command line, all using the `login` command:
+ * Email and password
+ * API key
+ * SSO
 
-There are a few ways to log into your Bitwarden user account from the command line, all using the `login` command:
+{% callout info %}
+In addition to logging in and syncing the Email and Password login option also *unlocks* your vault. See [Login != Unlock](#login--unlock).
+
+API key and SSO login methods require the use of the `bw unlock` command to decrypt your vault and generate a session key. The Email and password login method does not have this extra step because you have already provided the password necessary for unlocking.
+{% endcallout %}
+
+For all login methods, You can also pass the `--raw` option to *only receive the session key* from stdout.
+
+### Email and Password
+```
+bw login
+```
+will initiate a login and prompt you for your email and password.
 ```
 bw login [email] [password]
 ```
 where `email` is your account Email Address and `password` is your Master Password.
-```
-bw login [email] [password] --method <method> --code <code>
-```
-where `<method>` is your Two-step Login method (see [Enums](#enums)), and `<code>` is your Two-step Login code.
+
+### API key
 ```
 bw login --apikey
 ```
-where `--apikey` will prompt you to enter your personal `client_id` and `client_secret`. For more information, see [Personal API Key for CLI Authentication](https://bitwarden.com/help/article/personal-api-key/).
+where `--apikey` will prompt you to enter your personal `client_id` and `client_secret`. For more information, see [Personal API Key for CLI Authentication](https://bitwarden.com/help/article/personal-api-key/) and [`--apikey variables`](#--apikey-variables).
+
+### SSO
 ```
 bw login --sso
 ```
 where `--sso` starts the SSO Authentication flow from a browser.
-You can also pass the `--raw` option to *only receive the session key* from stdout.
 
-After successfully logging into the CLI a *session key* will be returned. This session key is necessary to perform any commands that require your vault to be unlocked (`list`, `get`, `edit`, etc.).
+### Two-step login
+
+Regardless of login method above, if two-step login is enable on your account, you will be prompted for the code. You can also pass in a current two-step one time password as an option.
+```
+bw login [email] [password] --method <method> --code <code>
+```
+where `<method>` is your Two-step Login method (see [Enums](#enums)), and `<code>` is your Two-step Login code.
+
+## Session Management
+
+After successfully logging in *and* unlocking the CLI a *session key* will be returned. This session key is necessary to perform any commands that require your vault to be unlocked (`list`, `get`, `edit`, etc.).
 
 ### Environment Variable
 
@@ -129,7 +160,7 @@ If your active session key is unavailable (for example, you accidentally lost it
 
 ### Login != Unlock
 
-The `login` and `unlock` commands are different. `login` requires your email address and master password and performs authentication against the external Bitwarden server (requiring additional two-step login prompts, if configured). `unlock` performs local authentication only (against a persisted hash) and therefore would work even without an active internet connection or if the external Bitwarden server is not available. You cannot unlock your vault if you have not already logged in first.
+The `login` and `unlock` commands are different. All `login` commands perform authentication against the external Bitwarden server (requiring additional two-step login prompts, if configured). `unlock` performs local authentication only (against a persisted hash) and therefore would work even without an active internet connection or if the external Bitwarden server is not available. You cannot unlock your vault if you have not already logged in first.
 
 Most users should prefer locking and unlocking their vault rather than logging out and logging in. This is the same process and workflow that all other Bitwarden client applications follow. A typical use case would be that a user logs into the CLI application only once and then only performs `unlock` commands thereafter.
 
