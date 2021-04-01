@@ -71,7 +71,7 @@ You can create new Logins, Cards, Identities, and Secure Notes directly from any
 
 Go back and edit this item at any time by opening it and tapping the {% icon fa-pencil %} Pencil icon.
 
-Send an item to the **Trash** by opening it, tapping the menu ( {% icon fa-ellipsis-v %} ), and tapping **Delete**. Items in the Trash will remain there for 30 days before being permanently deleted.
+Send an item to the **Trash** by opening it, tapping the menu ( {% icon fa-ellipsis-v %} ), and tapping **Delete**.
 
 ### Setup Auto-Fill
 
@@ -161,7 +161,7 @@ You can create new Logins, Cards, Identities, and Secure Notes directly from any
 
 Go back and edit this item at any time by opening it and tapping **Edit**.
 
-Send an item to the **Trash** by opening it, tapping the menu ( {% icon fa-ellipsis-v %} ), and tapping **Delete**. Items in the Trash will remain there for 30 days before being permanently deleted.
+Send an item to the **Trash** by opening it, tapping the menu ( {% icon fa-ellipsis-v %} ), and tapping **Delete**.
 
 ### Setup Auto-fill
 

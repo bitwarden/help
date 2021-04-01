@@ -69,9 +69,7 @@ Before an item is deleted, you will be prompted to confirm deletion. Once confir
 
 ### Items in the Trash
 
-Deleted items are sent to the Trash, where they remain for 30 days after deletion. Once 30 days have lapsed, the item will be permanently deleted and not recoverable.
-
-In the Trash, you can **Restore** an item to your Vault or **Permanently Delete** it prior to the 30-day waiting period:
+Deleted items are sent to the Trash, from where you can **Restore** an item to your Vault or **Permanently Delete** it.
 
 {% image /manage-items/item-trash-restore-delete.png The Trash%}
 
