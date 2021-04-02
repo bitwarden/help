@@ -6,16 +6,8 @@ featured: true
 popular: true
 hidden: false
 tags: []
-order: 09
+order: 10
 ---
-
-### Q: Can Bitwarden auto-fill a basic/native authentication prompt?
-
-**A:** Login prompts like the one pictured below, called "basic" or "native" authentication prompts, will be automatically auto-filled by the Bitwarden Browser Extension **if there is only 1 Login item with a** [**matching URI**]({{site.baseurl}}/article/uri-match-detection).
-
-{% image autofill/basic-auth-prompt.png %}
-
-You can also use the Browser Extension's {% icon fa-share-square %} **Launch** button to automatically open and log in to a basic auth-protected resource.
 
 ### Q: Can I auto-fill on a split login-workflow?
 
