@@ -11,7 +11,7 @@ tags: [browser, auto-fill, autofill]
 {% callout success %}
 Most auto-fill functionality relies on the attribution of URIs to Login items. If you're unfamiliar with using URIs, see [Using URIs]({% link _articles/features/uri-match-detection.md %}).
 
-Additionally, **basic authentication prompts** work a little differently than regular auto-fills. See our [breakout article on Basic Auth Prompts]({{site.baseurl}}/article/basic-auth-autofill)
+Additionally, **basic authentication prompts** work a little differently than regular auto-fills. See our breakout article on [Basic Auth Prompts]({{site.baseurl}}/article/basic-auth-autofill)
 {% endcallout %}
 
 Bitwarden Browser Extensions have a unique **Tab** view, which automatically detects the URI (e.g. `myturbotax.intuit.com`) of the page displayed in the open tab and surfaces any Vault items with corresponding URIs.
