@@ -40,7 +40,7 @@ Bitwarden has completed SOC Type 2 and SOC 3 compliance. For more information, s
 
 Bitwarden completed a thorough security assessment and penetration test by auditing firm [Insight Risk Consulting](https://www.insightriskconsulting.com/){:target="\_blank"}. For more information, please see the blog post [Bitwarden 2020 Security Audit is Complete](https://bitwarden.com/blog/post/bitwarden-network-security-assessment-2020/){:target="\_blank"}.
 
-[Read the report](https://cdn.bitwarden.net/misc/Bitwarden%20Security%20Assessment%20Report.pdf).
+[Read the report](https://cdn.bitwarden.com/misc/Bitwarden%20Network%20Security%20Assessment%20Report%20-%202020.pdf).
 
 ### 2018 Security Assessment
 
