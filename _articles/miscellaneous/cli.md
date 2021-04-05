@@ -1,604 +1,734 @@
 ---
 layout: article
-title: The Bitwarden command-line tool (CLI)
+title: Bitwarden CLI
 categories: [miscellaneous]
 featured: false
 popular: false
 tags: [cli, command, script, bash, shell, powershell, terminal]
 ---
 
-Bitwarden provides a powerful, full-featured command-line interface (CLI) tool for accessing and managing your Bitwarden vault. Many features that you find in other Bitwarden client applications (Desktop, Browser Extension, etc.) are also available through the CLI.
-
-The CLI can be used cross-platform on Windows, macOS, and Linux distributions.
+The Bitwarden command-line interface (CLI) is a powerful, fully-featured tool for accessing and managing your Vault. Most features that you find in other Bitwarden client applications (Desktop, Browser Extension, etc.) are available from the CLI.
 
 {% image cli.png %}
 
-## Quick Start
+The Bitwarden CLI is self-documented. From the command line, learn about the available commands using:
 
-1. [Download and install](#download-and-install) the CLI for your platform.
-2. Move `bw` to `/usr/local/bin` or another directory in your `$PATH`. Windows users can [add `bw.exe` to the current user's `PATH`](https://www.howtogeek.com/118594/how-to-edit-your-system-path-for-easy-command-line-access/){:target="_blank"}.
-
-   **If you installed the CLI with [NPM](https://www.npmjs.com/package/@bitwarden/cli){:target="_blank"} or another package manager you can skip this step as `bw` will automatically be added to your path.**
-3. Verify the `bw` command works in your terminal:
-
-       bw --help
-
-{% callout info %}
-Subcommands also have help menus which explain their unique functionality and options, for example:
 ```
-bw login --help
+bw --help
 ```
- {% endcallout %}
+Or, pass `--help` as an option on any `bw` command to see available options and examples:
+
+```
+bw list --help
+
+bw share --help
+```
+
+Most information you'll need can be accessed using `--help`, however this article replicates all that information and goes into greater depth on some topics.
 
 ## Download and Install
 
-You can install the Bitwarden CLI in a few different ways:
+The CLI can be used cross-platform on Windows, macOS, and Linux distributions. To download and install the Bitwarden CLI:
 
-### Native executable
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" id="tab" role="presentation">
+    <a class="nav-link active" id="exectab" data-bs-toggle="tab" data-target="#executable" role="tab" aria-controls="executable" aria-selected="true">Native Executable</a>
+  </li>
+  <li class="nav-item" id="tab" role="presentation">
+    <a class="nav-link" id="npmtab" data-bs-toggle="tab" data-target="#npm" role="tab" aria-controls="npm" aria-selected="false">NPM</a>
+  </li>
+  <li class="nav-item" id="tab" role="presentation">
+    <a class="nav-link" id="chocotab" data-bs-toggle="tab" data-target="#chocolatey" role="tab" aria-controls="chocolatey" aria-selected="false">Chocolatey</a>
+  </li>
+  <li class="nav-item" id="tab" role="presentation">
+    <a class="nav-link" id="brewtab" data-bs-toggle="tab" data-target="#homebrew" role="tab" aria-controls="homebrew" aria-selected="false">Homebrew</a>
+  </li>
+  <li class="nav-item" id="tab" role="presentation">
+    <a class="nav-link" id="snaptab" data-bs-toggle="tab" data-target="#snap" role="tab" aria-controls="snap" aria-selected="false">Snap</a>
+  </li>
+</ul>
 
-Natively packaged versions of the CLI are available for each platform and have no dependencies:
+<div class="tab-content" id="clientsContent">
+  <div class="tab-pane show active" id="executable" role="tabpanel" aria-labelledby="betab">
+{% capture executable %}
+### Native Executable
+
+Natively packaged versions of the CLI are available for each platform and have no dependencies. Download using one of these links:
 
 - {% icon fa-windows fa-lg fa-fw %} [Windows x64](https://vault.bitwarden.com/download/?app=cli&platform=windows)
 - {% icon fa-apple fa-lg fa-fw %} [macOS x64](https://vault.bitwarden.com/download/?app=cli&platform=macos)
 - {% icon fa-linux fa-lg fa-fw %} [Linux x64](https://vault.bitwarden.com/download/?app=cli&platform=linux)
 
-In UNIX systems you might get a `Permission denied` message. If you do, in order to grant permissions you can run
-```
-bash chmod +x </path/to/bw>
-```
+{% callout success %}
+In UNIX systems you might get a `Permission denied` message. If you do, grant permission by running:
 
+```
+bash chmod +x </path/to/executable>
+```
+{% endcallout %}
+{% endcapture %}
+{{ executable | markdownify }}
+  </div>
+  <div class="tab-pane" id="npm" role="tabpanel" aria-labelledby="npmtab">
+{% capture npm %}
 ### NPM
 
-If you already have the Node.js runtime installed on your system, you can install the CLI using [NPM](https://www.npmjs.com/package/@bitwarden/cli){:target="_blank"}. NPM makes it easy to keep your installation updated and should be the preferred installation method if you are already using Node.js.
+If you have Node.js installed on your system, you can install the CLI using NPM. Installing with NPM is the simplest way to keep your installation up-to-date and should be the **preferred method for those already comfortable with NPM**:
+
 ```
 npm install -g @bitwarden/cli
 ```
 
-### Other Package Managers
+[View the package on npmjs.org](https://www.npmjs.com/package/@bitwarden/cli){:target="_blank"}.
+{% endcapture %}
+{{ npm | markdownify }}
+  </div>
+  <div class="tab-pane" id="chocolatey" role="tabpanel" aria-labelledby="chocotab">
+{% capture chocolatey %}
+### Chocolatey
 
-- [Chocolatey](https://chocolatey.org/packages/bitwarden-cli){:target="_blank"}
-  ```
-  choco install bitwarden-cli
-  ```
-- [Homebrew](https://formulae.brew.sh/formula/bitwarden-cli){:target="_blank"}
-  ```
-  brew install bitwarden-cli
-  ```
-- [Snap](https://snapcraft.io/bw){:target="_blank"}
-  ```
-  sudo snap install bw
-  ```
+To install with Chocolatey:
 
-## Logging In
+```
+choco install bitwarden-cli
+```
 
-Logging in authenticates you with the Bitwarden servers and syncs your vault. There are a few ways to log into your Bitwarden user account from the command line, all using the `login` command:
- * Email and password
- * API key
- * SSO
+[View the package on community.chocolatey.org](https://chocolatey.org/packages/bitwarden-cli){:target="_blank"}.
+{% endcapture %}
+{{ chocolatey | markdownify }}
+  </div>
+  <div class="tab-pane" id="homebrew" role="tabpanel" aria-labelledby="brewtab">
+{% capture homebrew %}
+### Homebrew
 
-{% callout info %}
-In addition to logging in and syncing, the Email and Password login option also *unlocks* your vault. See [Login != Unlock](#login--unlock).
+To install with Homebrew:
 
-API key and SSO login methods require the subsequent use of the `bw unlock` command to decrypt your vault and generate a session key. The Email and password login method does not have this extra step because you have already provided the password necessary for unlocking.
-{% endcallout %}
+```
+brew install bitwarden-cli
+```
 
-For all login methods, You can also pass the `--raw` option to *only receive the session key* from stdout.
+[View the package on formulae.brew](https://formulae.brew.sh/formula/bitwarden-cli){:target="_blank"}.
+{% endcapture %}
+{{ homebrew | markdownify }}
+  </div>
+  <div class="tab-pane" id="snap" role="tabpanel" aria-labelledby="snaptab">
+{% capture snap %}
+### Snap
 
-### Email and Password
+To install with Snap:
+
+```
+sudo snap install bw
+```
+
+[View the package on snapcraft.io](https://snapcraft.io/bw){:target="_blank"}.
+{% endcapture %}
+{{ snap | markdownify }}
+  </div>
+</div>
+
+## Log In
+
+Logging in to the Bitwarden CLI authenticates you with the [configured](#config) Bitwarden server and syncs your Vault. To log in to Bitwarden, use the `login` command with one of the following login workflow options:
+
+ - [Using email and password](#using-email-and-password)
+ - [Using an API key](#using-an-api-key)
+ - [Using SSO](#using-sso)
+
+### Using email and password
+
+Logging in with email and password authenticates you with Bitwarden servers, syncs your Vault, **and unlocks your Vault**. This is the only method that automatically unlocks your Vault. To log in with email and password use:
+
 ```
 bw login
 ```
-will initiate a login and prompt you for your email and password.
-```
-bw login [email] [password]
-```
-where `email` is your account Email Address and `password` is your Master Password.
 
-### API key
-```
-bw login --apikey
-```
-where `--apikey` will prompt you to enter your personal `client_id` and `client_secret`. For more information, see [Personal API Key for CLI Authentication](https://bitwarden.com/help/article/personal-api-key/) and [`--apikey variables`](#--apikey-variables).
+This command will initiate a prompt for your **Email address**, **Master password**, and (if [enabled]({{site.baseurl}}/article/setup-two-step-login/)) a **Two-step login code**.
 
-### SSO
-```
-bw login --sso
-```
-where `--sso` starts the SSO Authentication flow from a browser.
+{% callout info %}
+You *can* string this together into a single command as in the following example, however this is not recommended for security reasons.
 
-### Two-step login
-
-Regardless of login method above, if two-step login is enabled on your account, you will be prompted for the code. You can also pass in a current two-step one time password as an option.
 ```
 bw login [email] [password] --method <method> --code <code>
 ```
-where `<method>` is your Two-step Login method (see [Enums](#enums)), and `<code>` is your Two-step Login code.
+
+See [Appendices &rarr; Enums](#enums) for `<method>` values.
+{% endcallout %}
+
+### Using an API key
+
+Logging in with a [Personal API Key]({{site.baseurl}}/article/personal-api-key/) authenticates you with Bitwarden servers, syncs your Vault, but **does not unlock your Vault**. After logging in with an API key, you will be required to unlock your Vault using your Master Password. To log in in with an API key use:
+
+```
+bw login --apikey
+```
+This command will initiate a prompt for your personal `client_id` and `client_secret`.
+
+{% callout success %}
+When logging in with an API key, the CLI will first look for non-empty environment variables `BW_CLIENTID` and `BW_CLIENTSECRET` before initiating a prompt for `client_id` and `client_secret`.
+
+If you don't want to be prompted for the `client_id` and `client_secret` every time, you can save these values to `BW_CLIENTID` and `BW_CLIENTSECRET` respectively.
+{% endcallout %}
+
+### Using SSO
+
+Logging in with [SSO]({{site.baseurl}}/article/about-sso/) authenticates you with Bitwarden servers, syncs your Vault, but **does not unlock your Vault**. After logging in with SSO, you will be required to unlock your Vault using your Master Password. To log in with SSO use:
+
+```
+bw login --sso
+```
+
+This command will initiate the SSO authentication flow in your web browser.
+
+### Two-step login
+
+The CLI currently supports [two-step login]({{site.baseurl}}/article/setup-two-step-login/) via [authenticator]({{site.baseurl}}/article/setup-two-step-login-authenticator/), [email]({{site.baseurl}}/article/setup-two-step-login-email/), or [Yubikey]({{site.baseurl}}/article/setup-two-step-login-yubikey/). If you have one of these methods enabled, you will be required to enter your two-step login code to log in. If you have multiple methods enabled, you will be prompted first to select which method to use.
+
+{% callout info %}
+You *can* pass your two-step login method and code as options, as in the following example.
+
+```
+bw login [email] [password] --method <method> --code <code>
+```
+
+See [Appendices &rarr; Enums](#enums) for `<method>` values.
+{% endcallout %}
 
 ## Session Management
 
-After successfully logging in *and* unlocking the CLI, a *session key* will be returned. This session key is necessary to perform any commands that require your vault to be unlocked (`list`, `get`, `edit`, etc.).
+Logging in [using email and password](#using-email-and-password) is the only method which automatically **unlocks** your Vault. All other options will subsequently prompt you to unlock your Vault using your Master Password.
 
-### Environment Variable
+In the CLI, unlocking your Vault generates a **session key** which acts as the decryption key used to interact with data in your Vault. The [session key must be used](#using-a-session-key) to perform any command that touches Vault data (e.g. `list`, `get`, `edit`). You can generate a new session key at any time using:
 
-Pass the session key to CLI commands by setting the `BW_SESSION` environment variable or by using the `--session <key>` option:
+```
+bw unlock
+```
 
-{% icon fa-linux %} {% icon fa-apple %} Bash
+This command will prompt your for your Master Password and generate a new session key.
 
-    export BW_SESSION="5PBYGU+5yt3RHcCjoeJKx/wByU34vokGRZjXpSH7Ylo8w=="
-    bw list items
+You can also **lock** (i.e. destroy any active session key) using:
 
-{% icon fa-windows %} PowerShell
+```
+bw lock
+```
 
-    $env:BW_SESSION="5PBYGU+5yt3RHcCjoeJKx/wByU34vokGRZjXpSH7Ylo8w=="
-    bw list items
+### Using a Session Key
 
-### `--session <key>` Option
+The typical way to use a session key is to set a `BW_SESSION` environment variable with the session key's value. When you log in and unlock your Vault using any one of the [above methods](#log-in), the CLI will return both a `export BW_SESSION` (Bash) and `env:BW_SESSION` (PowerShell) command, including your session key, that can be easily copied and pasted to save the required environment variable.
 
-    bw list items --session 5PBYGU+5yt3RHcCjoeJKx/wByU34vokGRZjXpSH7Ylo8w==
+When you set the `BW_SESSION` environment variable, `bw` commands will reference that variable and can be run cleanly, for example:
+
+```
+export BW_SESSION="5PBYGU+5yt3RHcCjoeJKx/wByU34vokGRZjXpSH7Ylo8w=="
+
+bw list items
+```
+
+The `BW_SESSION` environment variable is only tied to the active terminal session, so closing your terminal window is equivalent to locking your Vault.
+
+Alternatively, if you don't set the environment variable, you can pass the session key as an option with each `bw` command:
+
+```
+bw list items --session "5PBYGU+5yt3RHcCjoeJKx/wByU34vokGRZjXpSH7Ylo8w=="
+```
 
 {% callout info %}
-It is possible to persist your session key to your environment (for example, exporting it in `.bashrc`), however, we do not recommend doing this. Your active session key is the encryption key used to unlock all data associated with your Bitwarden vault and is not well-suited for persisting on an unprotected disk.
+It is *possible* to persist your session key to your environment (for example, exporting it in `.bashrc`), however, **we do not recommend doing so**. Considering their use, session keys are not well-suited to persisting on an unprotected disk.
 {% endcallout %}
 
-### `--apikey` Variables
+## Core Commands
 
-The Bitwarden CLI will look for non-empty environment variables `BW_CLIENTID` or `BW_CLIENTSECRET`. Save these environment variables with your `client_id` and `client_secret` to prevent Bitwarden from prompting you every time.
+### create
 
-You will still need to enter your Master Password to decrypt your Vault.
-
-### Locking
-
-If you do not pass the session key to commands that require it you will receive an error message that your vault is *locked*. You can unlock your vault and/or receive a new session key by using the `unlock` command:
-
-    bw unlock [password]
-
-Additionally, you can manually lock your vault and destroy any active session keys by using the `lock` command:
-
-    bw lock
-
-If your active session key is unavailable (for example, you accidentally lost it or closed your active terminal window), your vault is already considered locked and therefore using the `lock` command is unnecessary.
-
-### Login != Unlock
-
-The `login` and `unlock` commands are different. All `login` commands perform authentication against the external Bitwarden server (requiring additional two-step login prompts, if enabled). `unlock` performs local authentication only (against a persisted hash) and therefore would work even without an active internet connection or if the external Bitwarden server is not available. **You cannot unlock your vault if you have not already logged in first.**
-
-Most users should prefer locking and unlocking their vault rather than logging out and logging in. This is the same process and workflow that all other Bitwarden client applications follow. A typical use case would be that a user logs into the CLI application only once and then only performs `unlock` commands thereafter.
-
-## Explore the CLI
-
-The Bitwarden CLI is self-documented with `--help` content and examples for every command. You should start exploring the CLI by using the global `--help` option:
-
-    bw --help
-
-This option will list all available commands that you can use with the CLI.
-
-Additionally, you can use the `--help` option on a specific command to learn more about it:
-
-    bw list --help
-    bw create --help
-
-## Managing Your Vault
-
-### Sync
-
-The `sync` command downloads your encrypted vault from the Bitwarden server. If you have changed something in your Bitwarden vault on another client device (for example, the browser extension) you may need to use the `sync` command before you will see those changes in the CLI:
-
-    bw sync
-
-It's important to note that the `sync` command is only a *pull* operation. It does not push data to the server since that is already done for you each time you make a change to your vault (`create`, `edit`, `delete`).
-
-You can use the `--last` option to get an [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601){:target="_blank"} timestamp of the last time a `sync` has been performed:
-
-    bw sync --last
-
-### List
-
-The `list` command allows you to retrieve an array of objects from your vault.
-
-    bw list (items|folders|collections|organizations|org-collections|org-members) [options]
-
-You can *search* the list of returned objects by using the `--search` option. You can also *filter* the list by using the `--folderid`, `--collectionid`, or `--organizationid` options. Combining search and filter options performs a logical AND operation.
-
-    bw list items --search github --folderid 9742101e-68b8-4a07-b5b1-9578b5f88e6f
-
-Special syntax is available for filters that allows you to specify `null` and `notnull` as valid values. Combining multiple filters together performs a logical OR operation.
-
-    bw list items --folderid null --organizationid notnull
-
-### Get
-
-The `get` command allows you to retrieve a single object from your vault.
-
-    bw get (item|username|password|uri|totp|exposed|attachment|folder|collection|organization|org-collection|template|fingerprint) <id> [options]
-
-You can retrieve an object by its globally using `id` property (usually a GUID), or you can provide a search term. The search term must be specific enough to only return a single result or the CLI will return an error.
-
-    bw get item 99ee88d2-6046-4ea7-92c2-acac464b1412
-    bw get password https://google.com
-    bw get totp google
-    bw get exposed yahoo.com
-
-If you are getting an attachment, you must also specify the `--itemid <id>` option of the item that the attachment belongs to.
-
-    bw get attachment b857igwl1dzrs2 --output ./photo.jpg \
-        --itemid 99ee88d2-6046-4ea7-92c2-acac464b1412
-    bw get attachment photo.jpg --raw \
-        --itemid 99ee88d2-6046-4ea7-92c2-acac464b1412
-
-### Create Items, attachments, and folders
-
-The `create` command allows you to create new objects in your vault.
-
-    bw create (item|attachment|folder|org-collection) [encodedJson] [options]
-
-The process for creating an object may look something like this:
-
-1. Get the JSON template(s) for the object you are trying to create:
-
-       bw get template folder
-2. Edit the JSON template with the values you want to use for that object.
-3. Base 64 encode the JSON string. You can [use the `encode` command](#encode) included with the CLI and pipe in the JSON string from stdin:
-
-       echo '{"name":"My Folder"}' | bw encode
-4. Create the item:
-
-       bw create folder eyJuYW1lIjoiTXkgRm9sZGVyIn0=
-
-The `create` command can also receive encoded JSON as stdin. A complete example, using `jq` to update a template's JSON (see more about [working with JSON](#working-with-json) below), may look something like this:
-
-    bw get template folder | jq '.name = "My Folder"' | bw encode | bw create folder
-
-Upon success, the newly created object will be returned.
-
-To create a new attachment for an item, specify the `--file` path on disk as well as the `--itemid`.
-```
-    bw create attachment --file ./path/to/myfile.csv \
-        --itemid 16b15b89-65b3-4639-ad2a-95052a6d8f66
-```
-
-### Creating Collections
-
-PowerShell:
+The `create` command creates a new object (`item`, `attachment`, etc.) in your Vault:
 
 ```
-bw get template org-collection | jq ('.organizationId="""00000000-0000-0000-0000-00000000""" | .name="""TestCollection"""') | bw encode | bw create org-collection --organizationid 00000000-0000-0000-0000-00000000
+bw create (item|attachment|folder|org-collection) <encodedJson> [options]
 ```
 
-Bash:
+The `create` command takes encoded JSON. A typical workflow for creating an object might look something like:
+
+1. Use the `get template` command (see [details](#get-template)) to output the appropriate JSON template for the object type.
+2. Use a [command-line JSON processor like jq](https://stedolan.github.io/jq/){:target="\_blank"} to manipulate the outputted template as required.
+3. Use the `encode` command (see [details](#encode)) to encode the manipulated JSON.
+4. Use the `create` command to create an object from the encoded JSON.
+
+For example:
 
 ```
-bw get template org-collection | jq ('.organizationId="00000000-0000-0000-0000-00000000" | .name="TestCollection"') | bw encode | bw create org-collection --organizationid 00000000-0000-0000-0000-00000000
+bw get template folder | jq '.name="My First Folder"' | bw encode | bw create folder
 ```
 
-### Edit
+or
 
-The `edit` command allows you to edit an item in your vault. It works similarly to the `create` command with the added requirement of an object id. The `edit` command will perform a *replace* operation on the object. Upon success, the updated object will be returned.
+```
+bw get template item | jq ".name=\"My Login Item\" | .login=$(bw get template item.login | jq '.username="jdoe" | .password="myp@ssword123"')" | bw encode | bw create item
+```
 
+Upon successful creation, the newly created object will be returned as JSON.
+
+#### create attachment
+
+The `create attachment` command attaches a file to an **existing** item.
+
+Unlike other `create` operations, you don't need to use a JSON processor or `encode` to create an attachment. Instead, use the `--file` option to specify the file to attach and the `--itemid` option to specify the item to attach it to. For example:
+
+```
+bw create attachment --file ./path/to/file --itemid 16b15b89-65b3-4639-ad2a-95052a6d8f66
+```
+
+{% callout success %}
+If you don't know the exact `itemid` you want to use, use `bw get item <search-term>` to return the item (see [details](#get)), including its `id`.
+{% endcallout %}
+
+### get
+
+The `get` command retrieves a single object (`item`, `username`, `password`, etc.) from your Vault:
+
+```
+bw get (item|username|password|uri|totp|exposed|attachment|folder|collection|organization|org-collection|template|fingerprint) <id> [options]
+```
+
+The `get` command takes an item `id` or string for its argument. If you use a string (i.e. anything other than an exact `id`), `get` will search your Vault objects for one with a value that matches. For example, the following command would return a Github password:
+
+```
+bw get password Github
+```
+
+{% callout note %}
+The `get` command can **only return one result**, so you should use specific search terms. If multiple results are found, the CLI will return an error.
+{% endcallout %}
+
+#### get attachment
+
+The `get attachment` command downloads a file attachment:
+
+```
+bw get attachment <filename> --itemid <id>
+```
+
+The `get attachment` command takes a `filename` and **exact** `id`. By default, `get attachment` will download the attachment to the current working directory. You can use the `--output` option to specify a different output directory, for example:
+
+```
+bw get attachment photo.png --itemid 99ee88d2-6046-4ea7-92c2-acac464b1412 --output /Users/myaccount/Pictures/
+```
+
+{% callout info %}
+When using `--output`, the path **must** end a forward slash (`/`) to specify a directory or a filename (`/Users/myaccount/Pictures/photo.png`).
+{% endcallout %}
+
+#### get template
+
+The `get template` command returns the expected JSON formatting for an object (`item`, `item.field`, `item.login`, etc.):
+
+```
+bw get template (item|item.field|item.login|item.login.uri|item.card|item.identity|item.securenote|folder|collection|item-collections|org-collection)
+```
+
+While you *can* use `get template` to output the format to your screen, the most common use-case is to pipe the output into a `bw create` operation, using a [command-line JSON processor like jq](https://stedolan.github.io/jq/){:target="\_blank"} and `bw encode` to manipulate the values retrieved from the template, for example:
+
+```
+bw get template folder | jq '.name="My First Folder"' | bw encode | bw create folder
+```
+
+{% callout info %}
+Any `item.xxx` template should be used as a sub-object to an `item` template, for example:
+
+```
+bw get template item | jq ".name=\"My Login Item\" | .login=$(bw get template item.login | jq '.username="jdoe" | .password="myp@ssword123"')" | bw encode | bw create item
+```
+{% endcallout %}
+
+### edit
+
+The `edit` command edits an object (`item`, `item-collections`, etc.) in your Vault:
 ```
 bw edit (item|item-collections|folder|org-collection) <id> [encodedJson] [options]
 ```
+
+The `edit` command takes an **exact** `id` (the object to edit) and encoded JSON (edits to be made). A typical workflow might look something like:
+
+1. Use the `get` command (see [details](#get)) to output the object to edit.
+2. Use a [command-line JSON processor like jq](https://stedolan.github.io/jq/){:target="\_blank"} to manipulate the outputted object as required.
+3. Use the `encode` command (see [details](#encode)) to encode the manipulated JSON.
+4. Use the `edit` command (including the object `id`) to edit the object.
+
+For example:
+
 ```
-bw edit folder dadc91e0-dcda-4bc2-8cd6-52100027c782 eyJuYW1lIjoiV2hhdCBGb2xkZXIifQ==
-bw get folder dadc91e0-dcda-4bc2-8cd6-52100027c782 | jq '.name = "Updated Folder"' | \
-    bw encode | bw edit folder dadc91e0-dcda-4bc2-8cd6-52100027c782
-echo '["86544cd3-7e07-42bb-ba3c-e7f59852acaa","ae8c6c9e-26de-442c-b63b-3e28ef61d72d"]' | \
-    bw encode | bw edit item-collections db71c8d6-3e69-4593-a6de-505e94966290
+bw get item 7ac9cae8-5067-4faf-b6ab-acfd00e2c328 | jq '.login.password="newp@ssw0rd"' | bw encode | bw edit item 7ac9cae8-5067-4faf-b6ab-acfd00e2c328
 ```
 
-### Delete
+The `edit` command will perform a **replace** operation on the object. Upon success, the updated object will be returned as JSON.
 
-The `delete` command allows you to delete an object from your vault. By default this command will
-only "soft delete" the item (sending it to your trash bin). To permanently delete an item you must
-use the `-p, --permanent` option. When calling the `delete` command for an item already in the trash
-the command will be ignored/return an error.
+### list
+
+The `list` command retrieves an array of objects (`items`, `folders`, `collections`, etc.) from your Vault:
+
+```
+bw list (items|folders|collections|organizations|org-collections|org-members) [options]
+```
+
+Options for the `list` command are **filters** used to dictate what will be returned, including `--url <url>`, `--folderid <folderid>`, `--collectionid <collectionid>`, `--organizationid <organizationid>` and `--trash`. Any filter will accept `null` or `notnull`. Combining multiple filters in one command will perform a logical OR operation, for example:
+
+```
+bw list items --folderid null --collectionid null
+```
+
+This command will return items that are *not* in a folder *or* Collection.
+
+Additionally, you can **search** for specific objects using `--search <search-term>`. Combining filter and search in one command will perform a logical AND operation, for example:
+
+```
+bw list items --search github --folderid 9742101e-68b8-4a07-b5b1-9578b5f88e6f
+```
+
+This command will search for items with the string `github` in the specified folder.
+
+### delete
+
+The `delete` command deletes an object from your Vault. `delete` takes **only an exact** `id` for its argument.
 
 ```
 bw delete (item|attachment|folder|org-collection) <id> [options]
 ```
-```
-bw delete folder dadc91e0-dcda-4bc2-8cd6-52100027c782
-bw delete attachment b857igwl1d --itemid 310d5ffd-e9a2-4451-af87-ea054dce0f78
-```
 
-#### `--permanent` Option
-
-By default when using the `delete` command for an `item` it will simply be moved to the trash (soft deleted). In order to permanently delete that item you must also pass the `-p, --permanent` option. When calling the `delete` command for an item already in the trash the command will be ignored/return an error.
+By default, `delete` will "soft delete" an item (i.e. send it to the [Trash]({{site.baseurl}}/article/managing-items/#items-in-the-trash)). You can permanently delete an item using the `-p, --permanent` option.
 
 ```
 bw delete item 7063feab-4b10-472e-b64c-785e2b870b92 --permanent
 ```
 
-### Restore
+{% callout warning %}
+While items that are "soft deleted" using `delete` can be recovered using the `restore` command (see [details](#restore)), items that are deleted using `delete --permanent` **are completely removed and irrecoverable.**
+{% endcallout %}
 
-The `restore` command allows you to restore a previously deleted object from your trash.
+### restore
+
+The `restore` command restores a deleted object from your Trash. `restore` takes **only an exact** `id` for its argument.
 
 ```
 bw restore (item) <id> [options]
 ```
+
+For example:
+
 ```
 bw restore item 7063feab-4b10-472e-b64c-785e2b870b92
 ```
 
-### Share
+### send
 
-The `share` command allows you to transfer an item from your personal vault to an organization's vault for sharing. Upon success, the updated item will be returned.
+The `send` command creates a [Bitwarden Send]({{site.baseurl}}/article/about-send) object for ephemeral sharing. This section will detail simple `send` operations, however Send is a highly flexible tool and we recommend referring to the dedicated article on [Send from CLI]({{site.baseurl}}/article/send-cli).
 
-```
-bw share <id> <organizationId> [encodedJson]
-```
-
-`encodedJson` contains a Base 64 encoded JSON array of collection ids for the organization being shared to. At least one collection ID must be provided.
-
-```
-bw share 4af958ce-96a7-45d9-beed-1e70fabaa27a 6d82949b-b44d-468a-adae-3f3bacb0ea32 \
-    WyI5NzQwNTNkMC0zYjMzLTRiOTgtODg2ZS1mZWNmNWM4ZGJhOTYiXQ==
-echo 'WyI5NzQwNTNkMC0zYjMzLTRiOTgtODg2ZS1mZWNmNWM4ZGJhOTYiXQ==' | \
-    bw share 4af958ce-96a7-45d9-beed-1e70fabaa27a 6d82949b-b44d-468a-adae-3f3bacb0ea32
-echo '["974053d0-3b33-4b98-886e-fecf5c8dba96"]' | bw encode | \
-    bw share 4af958ce-96a7-45d9-beed-1e70fabaa27a 6d82949b-b44d-468a-adae-3f3bacb0ea32
-```
-
-## Other Useful Commands
-
-The CLI comes with several other commands that you may find useful.
-
-### send / receive
-
-The Bitwarden CLI features full support for [Bitwarden Send]({% link _articles/send/about-send.md %}). This section will include some small sample send and receive operations, however it's highly recommended that you **refer to the dedicated article** on [Send from CLI]({% link _articles/send/send-cli.md %}).
-
-Simple Text Send:
+To create a simple text Send:
 
 ```
 bw send -n "My First Send" -d 7 --hidden "The contents of my first text Send."
 ```
 
-Simple File Send:
+To create a simple file Send:
 
 ```
 bw send -n "A Sensitive File" -d 14 -f /Users/my_account/Documents/sensitive_file.pdf
 ```
 
-Receive a Send:
+### receive
+
+The `receive` command accesses a [Bitwarden Send]({{site.baseurl}}/article/about-send) object. To receive a Send object:
 
 ```
 bw receive --password passwordforaccess https://vault.bitwarden.com/#/send/yawoill8rk6VM6zCATXv2A/9WN8wD-hzsDJjfnXLeNc2Q
 ```
 
-### Confirm
+## Organizations Commands
 
-The `confirm` command allows you to confirm invited members of your organization that have already accepted their invitation.
+### Organization IDs
 
-```
-bw confirm org-member <id> --organizationid <orgId>
-```
+Accessing an Organization from the CLI frequently requires knowledge of an ID for your Organization, as well as IDs for individual [members]({{site.baseurl}}/article/managing-users/) and [Collections]({{site.baseurl}}/article/about-collections/).
 
-### Import
-
-The `import` command allows you to import data from a previous Bitwarden export or another [supported password management application]({% link _articles/importing/import-data.md %}).
+Retrieve this information directly from the CLI using `bw list`, for example:
 
 ```
-bw import [<format> <input>] [--formats]
-```
-```
-bw import --formats
-bw import bitwardencsv ./file.csv
+bw list organizations
+bw list org-members --organizationid 4016326f-98b6-42ff-b9fc-ac63014988f5
+bw list org-collections --organizationid 4016326f-98b6-42ff-b9fc-ac63014988f5
 ```
 
-### Export
-
-The `export` command allows you to export your Vault data as plaintext `.json` or `.csv` files, or as a `.json` [Encrypted Export]({% link _articles/importing/encrypted-export.md %}). You can pass the `--raw` option to receive your export on stdout instead of a file.
-
-Valid format values are `csv`, `json`, and `encrypted_json`.
-
-```
-bw export [password] [--output <filePath>] [--format <format>] [--organizationid <orgId>]
-```
-```
-bw export
-bw --raw export
-bw export --format csv
-bw export myPassword321 --output ./backups/
-bw export myPassword321 --output ./my_backup.json --format json
-bw export myPassword321 --organizationid 7063feab-4b10-472e-b64c-785e2b870b92
-```
-
-### Generate
-
-The `generate` command allows you to generate strong passwords and passphrases with the following options:
-
-```
-bw generate [--lowercase --uppercase --number --special --length --passphrase --separator --words]
-```
-
-By default, `bw generate` will generate the equivalent of passing `bw generate -uln --length 14`.
-
-#### Generate Passwords
-
-By default, `generate` will generate passwords. When generating passwords, you may use the following options:
-- `-u` (include uppercase)
-- `-l` (include lowercase)
-- `-n` (include numbers)
-- `-s` (include special characters)
-- `--length <length>` (length of the password, with a min. of 5)
-
-#### Generate Passphrases
-
-To generate passphrases, specify `bw generate -p`. When generating a passphrase, you may use the following options:
-- `--words <words>` (number of words, with a min. of 3)
-- `--separator <separator>` (separator character)
-
-### Encode
-
-The `encode` command Base 64 encodes stdin. This command is helpful when performing `create` and `edit` operations.
-
-```
-<jsonString> | bw encode
-```
-```
-echo '{"name":"My Folder"}' | bw encode
-bw get template folder | jq '.name = "My Folder"' | bw encode | bw create folder
-```
-
-### Config
-
-The `config` command allow you to specify settings for the CLI to use.
-
-    bw config <setting> [value]
-
-For example, if you are using a self hosted Bitwarden server you will need to change the endpoint that the CLI communicates with.
-
-    bw config server https://bitwarden.example.com
-
-You can read the value of a configured setting by not specifying a value.
-
-    bw config server
-
-### Update
-
-The `update` command allows you to check if your CLI is up to date. The CLI will not automatically update. You must download new versions of the CLI manually.
-
-    bw update
-
-A URL to download a new version of the CLI executable will be returned to you.
-
-{% callout info %}
-If you have installed the CLI through a package managers (such as NPM), you should use the update commands available for that tool. For example, `npm install -g @bitwarden/cli` will update you to the latest version of the CLI on NPM.
+{% callout success %}
+You can `bw list` both `collections` and `org-collections`. `bw list collections` will list *all* Collections, agnostic of which Organization they belong to. `bw list org-collections` will list *only* Collections that belong to the Organization specified using `--organizationid`.
 {% endcallout %}
 
-### Status
+### share
 
-The `status` command shows the server URL, last synced time in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601){:target="_blank"} format, user email and ID, and the vault status.
+The `share` command transfers a Vault item [to an Organization]({{site.baseurl}}/article/share-to-a-collection/):
+
+```
+bw share <itemid> <organizationid> [encodedJson]
+```
+
+The `share` command requires you to `encode` a Collection ID, and takes an **exact** `id` (the object to share) and an **exact** `organizationid` (the Organization to share the object to). For example:
+
+```
+echo '["bq209461-4129-4b8d-b760-acd401474va2"]' | bw encode | bw share ed42f44c-f81f-48de-a123-ad01013132ca dfghbc921-04eb-43a7-84b1-ac74013bqb2e
+```
+
+Upon success, the updated item will be returned.
+
+### confirm
+
+The `confirm` command confirms [invited members]({{site.baseurl}}/article/managing-users/#confirm-invited-users) to your Organization who have accepted their invitation:
+
+```
+bw confirm org-member <id> --organizationid <orgid>
+```
+
+The `confirm` command takes an **exact** member `id` and an **exact** `organizationID`, for example:
+
+```
+bw confirm org-member 7063feab-4b10-472e-b64c-785e2b870b92 --organizationid 310d5ffd-e9a2-4451-af87-ea054dce0f78
+```
+
+## Other Commands
+
+### config
+
+The `config` command specifies settings for the Bitwarden CLI to use:
+
+```
+bw config <setting> [value]
+```
+
+A primary use of `bw config` is to [connect your CLI to a self-hosted]({{site.baseurl}}/article/change-client-environment/#cli) Bitwarden server:
+
+```
+bw config server https://your.bw.domain.com
+```
+
+{% callout success %}
+You can read the currently connected server by passing `bw config server` without a value.
+{% endcallout %}
+
+Users with unique setups may elect to specify the URL of each service independently using:
+
+```
+bw config --web-vault <url>
+bw config --api <url>
+bw config --identity <url>
+bw config --icons <url>
+bw config --notifications <url>
+bw config --events <url>
+```
+
+### sync
+
+The `sync` command downloads your encrypted vault from the Bitwarden server. This command is most useful when you've changed something in your Bitwarden Vault on another client application (e.g. Web Vault, Browser Extension, Mobile App) since [logging in](#log-in) on the CLI.
+
+```
+bw sync
+```
+
+You can pass the `--last` option to return only the timestamp ([ISO 8601](https://en.wikipedia.org/wiki/ISO_8601){:target="_blank"}) of the last time a sync was performed.
+
+{% callout success %}
+It's important to know that `sync` **only performs a pull** from the server. Data is automatically pushed to the server any time you make a change to your Vault (e.g. `create`, `edit`, `delete`).
+{% endcallout %}
+
+### encode
+
+The `encode` command Base 64 encodes stdin. This command is typically used in combination with a [command-line JSON processor like jq](https://stedolan.github.io/jq/){:target="\_blank"} when performing `create` and `edit` operations, for example:
+
+```
+bw get template folder | jq '.name="My First Folder"' | bw encode | bw create folder
+
+bw get item 7ac9cae8-5067-4faf-b6ab-acfd00e2c328 | jq '.login.password="newp@ssw0rd"' | bw encode | bw edit item 7ac9cae8-5067-4faf-b6ab-acfd00e2c328
+```
+
+### import
+
+The `import` command imports data from a prior Bitwarden export or other [supported password management application]({% link _articles/importing/import-data.md %}):
+
+```
+bw import <format> <path>
+```
+
+For example:
+
+```
+bw import lastpasscsv /Users/myaccount/Documents/mydata.csv
+```
+
+{% callout success %}
+Bitwarden supports lots of formats for import, too many to list here! Use `bw import --formats` to return the list in your CLI, or [see here]({{site.baseurl}}/article/import-faqs/#q-what-file-formats-does-bitwarden-support-for-import).
+{% endcallout %}
+
+### export
+
+The `export` command exports Vault data as a `.json` or `.csv`, or [encrypted .json]({% link _articles/importing/encrypted-export.md %}) file:
+
+```
+bw export [password] [--output <filePath>] [--format <format>] [--organizationid <orgid>]
+```
+
+The `export` command always requires your Master Password, even with an active [session key](#using-a-session-key).
+
+By default, the `export` command will generate a `.csv` (equivalent to specifying `--format csv`) to the current working directory, however you can specify:
+
+- `--format json` to export a `.json` file.
+- `--format encrypted_json` to export an [encrypted .json]({% link _articles/importing/encrypted-export.md %}) file.
+- `--output <path>` to export to a specific location.
+- `--raw` to return the export to stdout instead of to a file.
+
+#### export an Organization Vault
+
+Using the `export` command with the `--organizationid` option, you can export an Organization Vault:
+
+```
+bw export myp@ssw0rd --organizationid 7063feab-4b10-472e-b64c-785e2b870b92 --format json --output /Users/myaccount/Downloads/
+```
+
+### generate
+
+The `generate` command generates a strong password or [passphrase](#generate-a-passphrase):
+
+```
+bw generate [--lowercase --uppercase --number --special --length <length> --passphrase --separator <separator> --words <words>]
+```
+
+By default, the `generate` command will generate a 14-character password with uppercase characters, lowercase characters, and numbers. This is the equivalent of passing:
+
+```
+bw generate -uln --length 14
+```
+
+You can generate more complex passwords using the options available to the command, including:
+
+- `--uppercase, -u` (include uppercase)
+- `--lowercase, -l` (include lowercase)
+- `--number, -n` (include numbers)
+- `--special, -s` (include special characters)
+- `--length <length>` (length of the password, min. of 5)
+
+#### generate a passphrase
+
+Using the `generate` command with the `--passphrase` option, you can generate a passphrase instead of a password:
+
+```
+bw generate --passphrase --words <words> --separator <separator>
+```
+
+By default, `bw generate --passphrase` will generate a 3-word passphrase separated by a dash (`-`). This is the equivalent of passing:
+
+```
+bw generate --passphrase --words 3 --separator -
+```
+
+You can generate a complex passphrase using the options available to the command, including:
+
+- `--words <words>` (number of words)
+- `--separator <separator>` (separator character)
+
+### update
+
+The `update` command checks whether your Bitwarden CLI is running the most recent version. `update` **does not automatically update the CLI for you.**
+
+```
+bw update
+```
+
+If a new version is detected, you'll need to download the new version of the CLI using the printed URL for the executable, or using the tools available for the package manager you used to [download the CLI](#download-and-install) (e.g. `npm install -g @bitwarden/cli`).
+
+### status
+
+The `status` command returns status information about the Bitwarden CLI, including [configured](#config) server URL, timestamp for the last sync ([ISO 8601](https://en.wikipedia.org/wiki/ISO_8601){:target="_blank"}), user email and ID, and the Vault status.
 
 ```
 bw status
 ```
 
-The vault status is one of:
- - `"unauthenticated"` when you're not logged in
- - `"locked"` when the vault is locked
- - `"unlocked"` when the vault is unlocked
+Status will return information as a JSON object, for example:
 
-Example output when the vault is locked:
 ```
 {
   "serverUrl": "https://bitwarden.example.com",
   "lastSync": "2020-06-16T06:33:51.419Z",
   "userEmail": "user@example.com",
   "userId": "00000000-0000-0000-0000-000000000000",
-  "status": "locked"
+  "status": "unlocked"
 }
 ```
 
-Example output when you are not logged in:
-```
-{
-  "serverUrl": "https://bitwarden.example.com",
-  "lastSync": null,
-  "userEmail": null,
-  "userId": null,
-  "status": "unauthenticated"
-}
-```
+`status` may be one of the following:
 
-### Version
+- `"unlocked"`, indicating you are logged in and your Vault is unlocked (i.e. a `BW_SESSION` key environment variable is saved with an active [session key](#using-a-session-key)).
+- `"locked"`, indicating you are logged in but your Vault is locked (i.e. **no** `BW_SESSION` key environment variable is saved with an active [session key](#using-a-session-key))
+- `"unauthenticated"`, indicating you aren't logged in.
 
-The `--version` option allows you to check which version the CLI you are currently using.
+{% callout success %}
+When `"status": "unauthenticated"`, `lastSync`, `userEmail`, and `userID` will always return `null`.
+{% endcallout %}
 
-```
-bw --version
-```
+## Appendices
 
-## Working with JSON
+### Global Options
 
-Commands in the CLI will either return a JSON string or a simple string such as a URL, GUID, or message. When you need to parse or manipulate JSON input/output with the CLI we recommend using the [`jq` command-line tool](https://stedolan.github.io/jq/){:target="_blank"}.
+The following options are available globally:
 
-    # Get a login item's password
-    bw get item google | jq '.login.password'
+|Option|Description|
+|------|-----------|
+|`--pretty`|Format output. JSON is tabbed with two spaces.|
+|`--raw`|Return raw output instead of a descriptive message.|
+|`--response`|Return a JSON formatted version of response output.|
+|`--quiet`|Don't return anything to stdout.|
+|`--nointeraction`|Do not prompt for interactive user input.|
+|`--session <session>`|Pass session key instead of reading from an environment variable.|
+|`-v, --version`|Output the Bitwarden CLI version number.|
+|`-h, --help`|Display help text for the command.|
 
-    # Create a new folder from a template
-    bw get template folder | jq '.name = "My Folder"' | bw encode | bw create folder
+### ZSH Shell Completion
 
-    # Update an existing folder's name
-    bw get folder dadc91e0-dcda-4bc2-8cd6-52100027c782 | jq '.name = "Updated Folder"' | \
-        bw encode | bw edit folder dadc91e0-dcda-4bc2-8cd6-52100027c782
+The Bitwarden CLI includes support for ZSH shell completion. To setup shell completion, use one of the following methods:
 
-## Self-signed Certificates
+1. **Vanilla ZSH**: Add the following line to your `.zshrc` file:
+
+   ```
+   eval "$(bw completion --shell zsh); compdef _bw bw;"
+   ```
+2. **Vanilla (vendor-completions)**: Run the following command:
+
+   ```
+   bw completion --shell zsh | sudo tee /usr/share/zsh/vendor-completions/_bw
+   ```
+3. [**zinit**](https://github.com/zdharma/zinit): Run the following commands:
+
+   ```
+   bw completion --shell zsh > ~/.local/share/zsh/completions/_bw
+   zinit creinstall ~/.local/share/zsh/completions
+   ```
+
+### Using Self-signed Certificates
 
 If your self-hosted Bitwarden server exposes as self-signed TLS certificate, specify the Node.js environment variable [`NODE_EXTRA_CA_CERTS`](https://nodejs.org/api/cli.html#cli_node_extra_ca_certs_file):
 
 {% icon fa-linux %} {% icon fa-apple %} Bash
 
-    export NODE_EXTRA_CA_CERTS="absolute/path/to/your/certificates.pem"
+```
+export NODE_EXTRA_CA_CERTS="absolute/path/to/your/certificates.pem"
+```  
 
 {% icon fa-windows %} PowerShell
 
-    $env:NODE_EXTRA_CA_CERTS="absolute/path/to/your/certificates.pem"
-
-
-## Shell Completion
-
-Bitwarden CLI comes with support for shell completion. It can generate shell completion scripts that you can use to enable completion for `bw` in your shell.
-
-### ZSH
-
-You can enable `bw` completion for ZSH using various methods. A few of them are mentioned below:
-
-**vanilla (.zshrc)**:
-
-Add the following line in your `.zshrc` file:
-
 ```
-eval "$(bw completion --shell zsh); compdef _bw bw;"
+$env:NODE_EXTRA_CA_CERTS="absolute/path/to/your/certificates.pem"
 ```
-
-**vanilla (vendor-completions)**:
-
-Run the following command:
-
-```
-bw completion --shell zsh | sudo tee /usr/share/zsh/vendor-completions/_bw
-```
-
-[**zinit**](https://github.com/zdharma/zinit):
-
-Run the following commands:
-
-```
-bw completion --shell zsh > ~/.local/share/zsh/completions/_bw
-zinit creinstall ~/.local/share/zsh/completions
-```
-
-## Source Code
-
-As with everything here at Bitwarden, the CLI is fully open source and hosted on GitHub at <https://github.com/bitwarden/cli>.
-
-## Appendix
-
-### Templates
-
-You can use the `get` command to retrieve templates for various types of *request* objects and sub-objects. Templates are useful when needing to get the "base" JSON object to work with while using the `create` command. A template's JSON properties are sometimes populated with example data that you should change.
-
-- `item`
-- `item.field`
-- `item.login`
-- `item.login.uri`
-- `item.card`
-- `item.identity`
-- `item.securenote`
-- `folder`
-- `collection`
-- `item-collections`
-- `org-collection`
-
-```
-bw get template item
-```
-
-Some templates are meant to be used as sub-objects to another template's properties. For example, the `item.login` template is to be used with the `item` template's `login` property.
 
 ### Enums
 
-**Two Step Login Methods**
+The following tables enumerate values required in documented scenarios:
+
+#### Two-step Login Methods
+
+Used to specify which [Two-step Login method]({{site.baseurl}}/article/setup-two-step-login/) to use when [logging in](#log-in):
 
 | Name          | Value |
 |---------------|-------|
@@ -607,10 +737,12 @@ Some templates are meant to be used as sub-objects to another template's propert
 | Yubikey       | 3     |
 
 {% callout info %}
-Other two-step login methods such as FIDO U2F and Duo are not supported by the CLI.
+FIDO U2F and Duo are not supported by the CLI.
 {% endcallout %}
 
-**Item Types**
+#### Item Types
+
+Used with the `create` command to specify a [Vault item type]({{site.baseurl}}/article/managing-items/):
 
 | Name        | Value |
 |-------------|-------|
@@ -619,7 +751,9 @@ Other two-step login methods such as FIDO U2F and Duo are not supported by the C
 | Card        | 3     |
 | Identity    | 4     |
 
-**Login URI Match Types**
+#### Login URI Match Types
+
+Used with the `create` and `edit` commands to specify [URI match detection]({{site.baseurl}}/article/uri-match-detection/) behavior:
 
 | Name               | Value |
 |--------------------|-------|
@@ -630,7 +764,9 @@ Other two-step login methods such as FIDO U2F and Duo are not supported by the C
 | Regular Expression | 4     |
 | Never              | 5     |
 
-**Field Types**
+#### Field Types
+
+Used with the `create` and `edit` commands to configure [custom fields]({{site.baseurl}}/article/custom-fields/):
 
 | Name    | Value |
 |---------|-------|
@@ -638,13 +774,9 @@ Other two-step login methods such as FIDO U2F and Duo are not supported by the C
 | Hidden  | 1     |
 | Boolean | 2     |
 
-**Secure Note Types**
+#### Organization User Types
 
-| Name    | Value |
-|---------|-------|
-| Generic | 0     |
-
-**Organization User Types**
+Indicates a [user's type]({{site.baseurl}}/article/user-types-access-control/):
 
 | Name    | Value |
 |---------|-------|
@@ -653,7 +785,9 @@ Other two-step login methods such as FIDO U2F and Duo are not supported by the C
 | User    | 2     |
 | Manager | 3     |
 
-**Organization User Status Types**
+#### Organization User Statuses
+
+Indicates a user's [status within the Organization]({{site.baseurl}}/article/managing-users/):
 
 | Name      | Value |
 |-----------|-------|
