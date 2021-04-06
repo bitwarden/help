@@ -8,8 +8,46 @@ hidden: true
 tags: []
 order: 01
 ---
-
 Read the full paper bellow or download the PDF [here](https://bitwarden.com//images/resources/security-white-paper-download.pdf).
+
+- [Overview of Bitwarden Security and Compliance Program](#overview-of-bitwarden-security-and-compliance-program)
+- [Bitwarden Security Principles](#bitwarden-security-principles)
+  * [User Data Protection](#user-data-protection)
+    + [Master Password](#master-password)
+    + [Overview of the Master Password Hashing, Key Derivation, and Encryption Process](#overview-of-the-master-password-hashing-key-derivation-and-encryption-process)
+    + [User Account Creation](#user-account-creation)
+    + [User Login, User Authentication, Access to User Vault Data](#user-login---user-authentication---access-to-user-vault-data)
+    + [Additional User Data Protection when enabling Two-step login](#additional-user-data-protection-when-enabling-two-step-login)
+    + [Changing User Password](#changing-user-password)
+    + [Rotating Your Accounts Encryption Key](#rotating-your-accounts-encryption-key)
+    + [Data Protection in Transit](#data-protection-in-transit)
+    + [Data Protection at Rest](#data-protection-at-rest)
+  * [How Vault Items Are Secured](#how-vault-items-are-secured)
+    + [Vault Health Reports](#vault-health-reports)
+  * [Importing Passwords and Other Secrets into Bitwarden](#importing-passwords-and-other-secrets-into-bitwarden)
+  * [Sharing Data between Users](#sharing-data-between-users)
+    + [Access Controls and Managing Bitwarden Collections](#access-controls-and-managing-bitwarden-collections)
+    + [Event Logs](#event-logs)
+    + [SIEM Integration and External Systems](#siem-integration-and-external-systems)
+  * [Account Protection and Avoiding Lockout](#account-protection-and-avoiding-lockout)
+  * [Bitwarden Cloud Platform and Web Application Security](#bitwarden-cloud-platform-and-web-application-security)
+    + [Bitwarden Architecture Overview](#bitwarden-architecture-overview)
+    + [Security Updates and Patching](#security-updates-and-patching)
+    + [Bitwarden Access Controls](#bitwarden-access-controls)
+    + [Software Lifecycle and Change Management](#software-lifecycle-and-change-management)
+    + [Control of Production Systems](#control-of-production-systems)
+    + [Bitwarden Platform Key Management Procedures](#bitwarden-platform-key-management-procedures)
+    + [Data Types and Data Retention](#data-types-and-data-retention)
+    + [Logging, Monitoring, and Alert Notification](#logging--monitoring--and-alert-notification)
+    + [Business Continuity / Disaster Recovery](#business-continuity---disaster-recovery)
+    + [Threat Prevention and Response](#threat-prevention-and-response)
+    + [Auditability and Compliance](#auditability-and-compliance)
+    + [HTTP Security Headers](#http-security-headers)
+  * [Threat Model and Attack Surface Analysis Overview](#threat-model-and-attack-surface-analysis-overview)
+    + [Bitwarden Clients](#bitwarden-clients)
+    + [HTTPS TLS and Web Browser Crypto End-to-End Encryption](#https-tls-and-web-browser-crypto-end-to-end-encryption)
+    + [Code Assessments](#code-assessments)
+- [Conclusion](#conclusion)
 
 ## Overview of Bitwarden Security and Compliance Program
 With remote work on the rise and internet usage higher than ever before, the demand to create and maintain dozens (if not hundreds) of online accounts with logins and passwords is staggering. 
