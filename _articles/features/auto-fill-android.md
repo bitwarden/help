@@ -12,6 +12,8 @@ Bitwarden makes your passwords available for auto-fill so that you can seamlessl
 
 {% callout success %}
 *Most* auto-fill scenarios rely on the attribution of URIs to Login items. If you're unfamiliar with using URIs, brush up using our [Using URIs]({% link _articles/features/uri-match-detection.md %}) article.
+
+Please note that custom fields are not currently supported in Mobile auto-fill.
 {% endcallout %}
 
 ## Auto-fill on Android
