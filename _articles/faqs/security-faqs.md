@@ -30,7 +30,7 @@ Still don't trust us? You don't have to. Open source is beautiful. You can easil
 
 **A:** Bitwarden takes extreme measures to ensure that its websites, applications, and cloud servers are secure. Bitwarden uses Microsoft Azure managed services to manage server infrastructure and security, rather than doing so directly.
 
-If for some reason Bitwarden were to get hacked and data be leaked despite this, your information is still protected due to [strong encryption and one-way salted hashing]({% link _articles/security/what-encryption-is-used.md %}) measures taken on your Vault data and master password.
+If for some reason Bitwarden were to get hacked and your data was exposed, your information is still protected due to [strong encryption and one-way salted hashing]({% link _articles/security/what-encryption-is-used.md %}) measures taken on your Vault data and master password.
 
 ### Q: Can Bitwarden see my passwords?
 
