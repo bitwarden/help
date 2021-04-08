@@ -74,7 +74,7 @@ bw send template send.text | jq ".name=\"My First Send\" | .text.text=\"Secrets 
 ```
 
 {% callout success %}
-Notice in the 2nd example that the jq invokation must be wrapped in double quotes (`" "`) and use escapes (`\`) for each filter due to a nested `date` variable that configures a `.deletionDate` in the Send.
+Notice in the 2nd example that the jq invocation must be wrapped in double quotes (`" "`) and use escapes (`\`) for each filter due to a nested `date` variable that configures a `.deletionDate` in the Send.
 {% endcallout %}
 
 **Options:**
