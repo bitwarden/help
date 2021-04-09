@@ -41,7 +41,7 @@ Bitwarden is planning a feature in mid-2021 to enable Enterprises to reset their
 {% endcallout %} 
 
 {% callout note %}
-Bitwarden has an Emergency Access feature which can allow a designated user to view or take over your Personal Vault. While not intended as a password-reset feature, some Bitwarden users have found this to be a helpful option. Setting an Emergency Access designee is part of our Premium Account which is also included with any of our Family, Teams, or Enterprise plans. See our [help note on Emergency] Access(https://bitwarden.com/help/article/emergency-access/).
+Bitwarden has an Emergency Access feature which can allow a designated user to view or take over your Personal Vault. While not intended as a password-reset feature, some Bitwarden users have found this to be a helpful option. Setting an Emergency Access designee is part of our Premium Account which is also included with any of our Family, Teams, or Enterprise plans. See our [help note on Emergency Access](https://bitwarden.com/help/article/emergency-access/).
 {% endcallout %}
 
 ### A wide range of cross-platform client applications
