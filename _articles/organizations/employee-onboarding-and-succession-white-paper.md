@@ -302,13 +302,6 @@ We often note that password management is people management, and Bitwarden wants
 
 To get started today with a free Enterprise or Teams trail, visit [bitwarden.com/pricing/business/](https://bitwarden.com/pricing/business/).
 
-## Frequently Asked Questions
-- If employees already have a Bitwarden account, can we just attach it to the company Organization so that they do not need another Bitwarden account?
-
-- When employees leave, can we simply detach their account from the company Organization so that they do not have access to company credentials anymore, and they do not lose their personal credentials?
-
-- Can we prevent employees from duplicating credentials from the company Organization to their Personal Vault
-
 
 
 
