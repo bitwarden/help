@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Bitwarden Proof-of-Concept Project Guide
+title: Bitwarden Proof-of-Concept Project Checklist
 categories: [getting-started]
 featured: false
 popular: false
