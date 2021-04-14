@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Employee Onboarding and Succession with Bitwarden White Paper
+title: WHITE PAPER Employee Onboarding and Succession with Bitwarden
 categories: [organizations]
 featured: true
 popular: false

@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Bitwarden Security and Compliance Program
+title: WHITE PAPER Bitwarden Security and Compliance Program
 categories: [security]
 featured: false
 popular: false
