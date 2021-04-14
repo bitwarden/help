@@ -55,7 +55,7 @@ Exported data from LastPass will contain data from both your Personal vault, as 
 
 Shared or company-level data is stored in a Bitwarden Organization. The best practice is to create this Organization first and import it directly, instead of importing the data into an individual account and then sharing it with the organization secondarily.
 
-For more on creating a Bitwarden Organization, visit [this article.](https://bitwarden.com/help/article/create-an-organization/)
+For more on creating a Bitwarden Organization, visit [this article.](https://bitwarden.com/help/article/about-organizations/)
 
 Self-hosted instances will need to create an Organization on the Bitwarden cloud instance to generate their [license key](https://bitwarden.com/host/) and can then proceed with [installing and configuring a Bitwarden Server instance.](https://bitwarden.com/help/article/install-on-premise/)
 

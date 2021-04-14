@@ -1,6 +1,6 @@
 ---
 layout: article
-title: About Collections
+title: Collections
 categories: [organizations]
 featured: true
 popular: false
@@ -8,38 +8,57 @@ tags: [collections, access control, best practices]
 order: 02
 redirect_from:
   - /article/collections/
+  - /article/create-collections/
 ---
 
 ## What are Collections?
 
-Collections are structures used by Organizations to gather together Logins, Notes, Cards, and Identities for sharing, similar to the Folders you might use in your Personal Vault. Organizations control access to shared items by assigning users to Collections. Unlike Folders, items in the Organization Vault *must* be placed in one or more Collections.
+Collections gather together Logins, Notes, Cards, and Identities for [secure sharing]({{site.baseurl}}/article/share-to-a-collection/) within an Organization. Think of Collections as Organization-equivalents to the [Folders]({{site.baseurl}}/article/folders/) used to organize a Personal Vault, with a few key differences:
 
-Users with the User Type **Manager** or higher can create Collections, manage items in each Collection, and manage the users with access to each Collection. For more information, see [User Types and Access Control](https://bitwarden.com/help/article/user-types-access-control/).
+- Organizations control access to shared items by assigning users or [Groups]({{site.baseurl}}/article/about-groups/) to Collections.
+- Shared items **must** be included in at least one Collection.
 
-Create a Collection by navigating to your Organization, opening the **Manage** tab, and selecting the **New Collection** button. For help creating a Collection, see [Create a Collection](https://bitwarden.com/help/article/create-collections/).
+### Using Collections
 
-{% image organizations/collection-list-overlay.png Select New Collection %}
-
-## Collections Best Practices
-
-Collections are designed to associate related Logins, Notes, Cards, and Identities. You can organize your Collections however best fits your needs, but some common methodologies include:
-- Collections by Department (*i.e. users from your Marketing Team are assigned to a **Marketing** Collection*)
-- Collections by Function (*i.e. users from your Marketing Team are assigned to a **Social Media** Collection*)
+For many Organizations, using Collections means adding a set of Vault items and individually assigning users to that Collection. Some common methods for constructing scaleable Collections include **Collections by Department** (i.e. users from your Marketing Team are assigned to a **Marketing** Collection), or **Collections by Function** (i.e. users from your Marketing Team are assigned to a **Social Media** Collection):
 
 {% image /organizations/collections-graphic-1.png Using Collections %}
 
-For Teams and Enterprise Organizations, using **Groups** alongside Collections provides a deeper level of access control and scalability to sharing resources. When you create a Group, you can gather users from common departments and assign access to Collections at the Group-level instead of the individual-level. For more information, see [About Groups](https://bitwarden.com/help/article/about-groups/).
-
-A common Collection-Group methodology is to create **Groups by Department** and **Collections by Function**, for example:
+Teams and Enterprise Organizations can also designate access to Collections based on user [Groups]({{site.baseurl}}/article/about-groups/), rather than individual users. Group-Collection associations provide a deeper level of access control and scalability to sharing resources. One common Group-Collection methodology is to create **Groups by Department** and **Collections by Function**, for example:
 
 {% image /organizations/collections-graphic-2.png Using Collections with Groups%}
 
-Other common methodologies include:
-- Collections by Vendor or System (*i.e. users in an **Engineering** Group are assigned to a **AWS Credentials** Collection*)
-- Groups by Locality (*i.e. users are assigned to a **US Employees** Group or **UK Employees** Group*)
+Other common methodologies include **Collections by Vendor or System** (i.e. users in an **Engineering** Group are assigned to a **AWS Credentials** Collection) and **Groups by Locality** (i.e. users are assigned to a **US Employees** Group or **UK Employees** Group).
 
-### Next Steps
+## Create a Collection
 
-To get started using Collections, we recommend that you:
-- [Create a Collection](https://bitwarden.com/help/article/create-collections)
-- [Share Items to a Collection](https://bitwarden.com/help/article/share-to-a-collection/)
+Users with the [Manager role (or higher)]({{site.baseurl}}/article/user-types-access-control/) can create and manage Collections. To create a Collection:
+
+1. Log in to your [Web Vault](https://vault.bitwarden.com){:target="\_blank"} and open your Organization.
+2. Open the **Manage** tab and select the {% icon fa-plus %} **New Collection** button:
+
+   {% image organizations/collection-list-overlay.png Select New Collection %}
+3. Give your Collection a **Name** and, if you're a Teams or Enterprise Organization, assign **Group Access** to any existing [Group]({{site.baseurl}}/article/about-groups/).
+
+   {% callout success %}The **External Id** field is only relevant if you're using [Directory Connector]({{site.baseurl}}/article/directory-sync/).{% endcallout %}
+4. Select **Save** to finish creating your Collection.
+
+### Nested Collections
+
+Collections can be "nested" to logically organize them within your Vault:
+
+{% image organizations/collection-nested.png Nested Collection %}
+
+Nested Collections are **for display-purposes only**. They will not inherit items, access, or permissions from their "parent" Collection.
+
+To create a nested Collection, follow the [steps above](#create-a-collection), but give your Collections a **Name** that includes the "parent" name followed by a forward slash (`/`) delimiter, for example `Collection 1/Collection 1a`. If the "parent" Collection doesn't exist, the title will be displayed in-full.
+
+## Edit or Delete a Collection
+
+You may find that you need to add or remove users from a Collection, or delete it entirely. Both of these can be done from the **Manage** &rarr; **Collections** view by hovering over the desired Collection and selecting the {% icon fa-cog %} gear dropdown:
+
+{% image /organizations/collection-delete.png Change a Collection %}
+
+{% callout info %}
+Deleting a Collection **will not** delete the Vault items included in it. When a Collection is deleted, Vault items will be moved to the {% icon fa-cube %} **Unassigned** filter, accessible from the Organization Vault.
+{% endcallout %}

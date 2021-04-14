@@ -44,7 +44,7 @@ If you already have a Bitwarden account, complete the following steps to start y
 Now that you've created your trial Enterprise Organization, we recommend that you:
 
 - [Add Users to your Organization](https://bitwarden.com/help/article/managing-users/)
-- [Create a Collection](https://bitwarden.com/help/article/create-collections/)
+- [Create a Collection](https://bitwarden.com/help/article/about-collections/#create-a-collection)
 - Use the [Business Portal](https://bitwarden.com/help/article/about-business-portal) to:
   - Set up [Login with SSO](https://bitwarden.com/help/article/getting-started-with-sso)
   - Create [Enterprise Policies](https://bitwarden.com/help/article/policies)

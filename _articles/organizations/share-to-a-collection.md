@@ -1,16 +1,16 @@
 ---
 layout: article
-title: Share a Vault Item
+title: Sharing
 categories: [organizations]
 featured: false
 popular: false
 hidden: false
 tags: [sharing, how to]
-order: 07
+order: 04
 ---
 
 {% callout info %}
-In order to share items you need to be a member of an Organization. Learn more about [Organizations]({% link _articles/organizations/about-organizations.md %}) or learn how to [start your own two-person Organization]({% link _articles/organizations/create-an-organization.md %}).
+In order to share items you need to be a member of an Organization. Learn more about [Organizations]({% link _articles/organizations/about-organizations.md %}) or learn how to [start your own two-person Organization]({{site.baseurl}}/article/getting-started-organizations/).
 {% endcallout %}
 
 Sharing items with Bitwarden means putting them into a Collection, a structure used to gather together together Logins, Notes, Cards, and Identities for access by multiple users. There are a few different ways you can share an item to a Collection:

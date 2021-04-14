@@ -65,5 +65,5 @@ Complete the following steps to cancel your Premium Individual subscription:
 Now that you've created your Organization, we recommend that you:
 
 - [Invite Users to Your Organization](https://bitwarden.com/help/article/managing-users)
-- [Create a Collection](https://bitwarden.com/help/article/create-collections/)
+- [Create a Collection](https://bitwarden.com/help/article/about-collections/#create-a-collection)
 - [Share Items to a Collection](https://bitwarden.com/help/article/share-to-a-collection/)
