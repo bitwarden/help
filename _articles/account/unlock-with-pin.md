@@ -95,7 +95,7 @@ In order to understand why unlocking and logging in aren't the same, it's import
 1. Logging in will always require your Master Password, because your Master Password is the source of the key needed to decrypt your Vault data. Additionally, because decryption is an operation that needs to be protected, this stage is where [any enabled Two-step Login methods]({% link _articles/two-step-login/setup-two-step-login.md %}) would be required.
 2.  Logging in will always require you to be connected to the internet (or, if you're self-hosting, connected to the server), because you need access to the encrypted Vault in order to decrypt it.
 
-**Unlocking** can only be done when you're already logged in. In other words, only when your Vault data is already decrypted to your device. Because your Vault is already decrypted:
+**Unlocking** can only be done when you're already logged in. In other words, only when your Vault data is already stored (encrypted) on your device. Because your Vault is already downloaded and your decryption key stored in memory:
 
 1. You don't need the decryption key derived from your Master Password, so you're free to use other access methods, like [PIN codes]({% link _articles/account/unlock-with-pin.md %}) and [biometrics]({% link _articles/account/biometrics.md %}).
 2. You don't need to be connected to the internet (or, if you're self-hosting, connected to the server).
