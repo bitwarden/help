@@ -28,6 +28,12 @@ To get your Recovery Code from your [Web Vault](https://vault.bitwarden.com){:ta
 
 Save your Recovery Code in the way that makes the most sense for you. Believe it or not, printing your code and keeping it somewhere safe is one of the best ways to ensure that the code isn't vulnerable to theft or inadvertent deletion.
 
+{% callout info %}
+**When does a recovery code change?**
+
+Neither disabling and re-enabling Two-step Login nor changing your Master Password will change your recovery code. Your recovery code will only change [when you use it](#use-you-recovery-code). On using your recovery code, immediately get a new one and save it in the way that makes the most sense for you.
+{% endcallout %}
+
 ### Use your Recovery Code
 
 To use your Recovery Code, navigate to [https://vault.bitwarden.com/#/recover-2fa/](https://vault.bitwarden.com/#/recover-2fa/) (or, if you're self-hosting, [https://your.domain.com/#/recover-2fa/](#use-your-recovery-code)).
