@@ -8,6 +8,8 @@ hidden: true
 tags: [onboarding]
 order: 10
 ---
+Read the full paper bellow or download the PDF [here](https://bitwarden.com/images/resources/WHITE-PAPER-employee-onboarding-and-succession.pdf).
+
 ## Password management that fits your business
 Getting new employees up and running quickly drives productivity. Saying farewell securely drives assurance.
 
