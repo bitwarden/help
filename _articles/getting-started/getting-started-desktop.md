@@ -76,6 +76,8 @@ Biometric Unlock allows for seamless access to your Windows Desktop App using [W
 Windows Hello must be enabled on your computer **before** it can be enabled in Bitwarden.
 {% endcallout %}
 
+{% callout success%}Windows Users may need to install the [Microsoft Visual C++ Redistributable](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads){:target="\_blank"} before Windows Hello can be turned on in Desktop Preferences.{% endcallout %}
+
 1. In your Desktop App, select **File** &rarr; **Settings**.
 2. In the Security section, an **Unlock with Windows Hello** option will appear if Windows Hello is supported and enabled on your computer:
 
