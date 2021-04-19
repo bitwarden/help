@@ -60,7 +60,8 @@ Complete the following steps to create a new Send from the Bitwarden [Web Vault]
    |**Maximum Access Count**|The Send will be [disabled]({{site.baseurl}}/article/send-lifespan/#maximum-access-count-behavior) after the specified access count is reached. By default, unspecified.|
    |**Password**|[Require a password]({{site.baseurl}}/article/send-privacy/#send-passwords) to be entered by recipients of this Send in order to gain access.|
    |**Notes**|Enter private notes for this Send, which will only be visible to the Sender.|
-   **Disable this send so that no one can access it**|Check this box to prevent this Send from being accessible to any recipients. You will still be able to interact this Send from your Send view.|
+   |**Hide my email address from recipients**|[Hide your email]({{site.baseurl}}/article/send-privacy/#hide-email) from Send recipients.|
+   |**Disable this send so that no one can access it**|Check this box to prevent this Send from being accessible to any recipients. You will still be able to interact this Send from your Send view.|
 
    {% callout success%}The rest of this article covers copying a Send link to your clipboard, but you can do that automatically by checking the **Copy the link to share this Send to my clipboard upon save** option before you click **Save**.{% endcallout %}
 
@@ -105,6 +106,7 @@ Complete the following steps to create a new Send from a Bitwarden Browser Exten
    |**Maximum Access Count**|The Send will be [disabled]({{site.baseurl}}/article/send-lifespan/#maximum-access-count-behavior) after the specified access count is reached. By default, unspecified.|
    |**Password**|[Require a password]({{site.baseurl}}/article/send-privacy/#send-passwords) to be entered by recipients of this Send in order to gain access.|
    |**Notes**|Enter private notes for this Send, which will only be visible to the Sender.|
+   |**Hide my email address from recipients**|[Hide your email]({{site.baseurl}}/article/send-privacy/#hide-email) from Send recipients.|
    |**Disable this send so that no one can access it**|Check this box to prevent this Send from being accessible to any recipients. You will still be able to interact this Send from your Send view.|
 
    {% callout success%}The rest of this article covers copying a Send link to your clipboard, but you can do that automatically by checking the **Copy the link to share this Send to my clipboard upon save** option before you click **Save**.{% endcallout %}
@@ -149,6 +151,7 @@ Complete the following steps to create a new Send from a Bitwarden Desktop App:
    |**Maximum Access Count**|The Send will be [disabled]({{site.baseurl}}/article/send-lifespan/#maximum-access-count-behavior) after the specified access count is reached. By default, unspecified.|
    |**Password**|[Require a password]({{site.baseurl}}/article/send-privacy/#send-passwords) to be entered by recipients of this Send in order to gain access.|
    |**Notes**|Enter private notes for this Send, which will only be visible to the Sender.|
+   |**Hide my email address from recipients**|[Hide your email]({{site.baseurl}}/article/send-privacy/#hide-email) from Send recipients.|
    |**Disable this send so that no one can access it**|Check this box to prevent this Send from being accessible to any recipients. You will still be able to interact this Send from your Send view.|
 
    {% callout success%}The rest of this article covers copying a Send link to your clipboard, but you can do that automatically by checking the **Copy the link to share this Send to my clipboard upon save** option before you click **Save**.{% endcallout %}
@@ -195,6 +198,7 @@ Complete the following steps to create a new Send from Bitwarden Mobile App:
    |**Maximum Access Count**|The Send will be [disabled]({{site.baseurl}}/article/send-lifespan/#maximum-access-count-behavior) after the specified access count is reached. By default, unspecified.|
    |**Password**|[Require a password]({{site.baseurl}}/article/send-privacy/#send-passwords) to be entered by recipients of this Send in order to gain access.|
    |**Notes**|Enter private notes for this Send, which will only be visible to the Sender.|
+   |**Hide my email address from recipients**|[Hide your email]({{site.baseurl}}/article/send-privacy/#hide-email) from Send recipients.|
    |**Disable this send so that no one can access it**|Check this box to prevent this Send from being accessible to any recipients. You will still be able to interact this Send from your Send view.|
 
    {% callout success%}Toggling the **Share upon save** option before you tap **Save** will open the share menu on your device so you can quickly share your Send link.{% endcallout %}
