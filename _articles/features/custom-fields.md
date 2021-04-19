@@ -14,6 +14,14 @@ Custom fields, available for any [Vault item type]({% link _articles/account/man
 - **Hidden**: Field value stores freeform input that is hidden from view (particularly useful for Organizations using the [Hide Password access control](https://bitwarden.com/help/article/user-types-access-control/#granular-access-control)).
 - **Boolean**: Field value stores a boolean value (true/false).
 
+## Custom Fields for Keys
+
+In addition to common web service inputs like PINs and Security Questions, Custom Fields can be used to store values **up to 5000 characters in length**, for example RSA 4096-bit SSH keys.
+
+{% callout success %}
+Character limits for custom field values are imposed on the **post-encryption character count**. For example, a 3383-character RSA-2096 Private SSH key would grow to about 4400-characters when it's encrypted and stored in your Vault.  
+{% endcallout %}  
+
 ## Auto-fill Custom Fields
 
 The **Name** specified for a custom field is critical to successfully setting up auto-fill for custom fields. When naming the custom field, you should use one of the following HTML form element attributes/values:
@@ -24,11 +32,11 @@ The **Name** specified for a custom field is critical to successfully setting up
 4. HTML form element's `aria-label` attribute.
 5. HTML form element's `placeholder` attribute.
 
-Bitwarden will search the matched-URI webpage for those HTML form element attributes/values **in the above priority-order**. If a custom field's name matches one of those attributes/values, auto-fill will be available into that HTML form element.
+Bitwarden will search the matched-URI webpage for those HTML form element attributes/values **in the above priority-order**. If a custom field's name matches one of those attributes/values, its value can be auto-filled into the HTML form element.
 
 ### Name to Attribute Matching
 
-Field Name to attribute/value matches is **exact** and **case-insensitive** comparison. For example, if your custom field has the name `PIN`:
+Field Name to attribute/value matches is an **exact** and **case-insensitive** comparison. For example, if your custom field has the name `PIN`:
 
 - **Auto-fill offered** for `pin`, `PiN`, `PIN`, etc.
 - **Auto-fill not offered** for `pin2` or `mypin`
