@@ -70,7 +70,7 @@ The **Inactive 2FA Report** identifies Login items where:
 - Two-factor Authentication (2FA) via TOTP is available from the service
 - You have not stored a TOTP Authenticator Key
 
-Two-factor Authentication (2FA) is an important security step that helps secure your accounts. If any website offers it, you should always enable 2FA. Offending items are identified by cross-referencing URI-data with data from [https://twofactorauth.org/](https://twofactorauth.org/){:target="_blank"}.
+Two-factor Authentication (2FA) is an important security step that helps secure your accounts. If any website offers it, you should always enable 2FA. Offending items are identified by cross-referencing URI-data with data from [https://2fa.directory/](https://2fa.directory/){:target="_blank"}.
 
 Once identified, setup 2FA using the `Instructions` hyperlink for each offending item:
 
