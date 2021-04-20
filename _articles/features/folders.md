@@ -8,7 +8,7 @@ tags: [categories, folders, sub-folders]
 order: 06
 ---
 
-Folders are structures used to organize your Personal Vault by gathering together Logins, Cards, Identities, and Secure Notes. Using Folders is a great way to make all Vault items easy to find.
+Folders are structures used to organize your Personal Vault by gathering together Logins, Cards, Identities, and Secure Notes. Using Folders is a great way to make all Vault items easy to find. Any Vault item can be added to a Folder, including [shared items]({{site.baseurl}}/article/share-to-a-collection/).
 
 {% callout success %}
 Items added to a Folder will still appear in your Vault when {% icon fa-th %} **All Items** is selected from the Filter menu, and deleting a Folder **will not** delete the items in that Folder.
@@ -30,7 +30,7 @@ Folders can be created from the [Web Vault](https://vault.bitwarden.com){:target
 {% callout info %}
 If you're a member of an Organization, **Collections** will be shown below your Folders in the Filters menu.
 
-There are similarities between Folders and Collections. **Folders are only for your Personal Vault and unique to you**, where Collections are shared between members of Organizations.
+There are similarities between Folders and Collections. **Folders organize your Personal Vault** (but can include [shared items]({{site.baseurl}}/article/share-to-a-collection/)) and are unique to you, where Collections are shared between members of Organizations.
 {% endcallout %}
 
 ## Delete a folder
@@ -38,9 +38,9 @@ There are similarities between Folders and Collections. **Folders are only for y
 You can delete folders from the [Web Vault](https://vault.bitwarden.com){:target="\_blank"} or any Bitwarden client application:
 
 - From the Web Vault or Desktop Application, hover over the folder to delete and select the displayed pencil icon. From the popup, select the {% icon fa-trash %} **Delete**.
- 
+
 - From a Browser Extension or Mobile App, open the {% icon fa-cogs %} **Settings** tab and tap/select the **Folders** option. From the list, tap/select the folder to delete.  
-   
+
    On Browser Extensions, simply select the {% icon fa-trash %} **Delete Folder** button. On Mobile, and tap the menu ( {% icon fa-ellipsis-v %} / {% icon fa-ellipsis-h %} ) and tap **Delete**.
 
 ## Create Nested Folders
@@ -67,3 +67,7 @@ Once you've created a Folder in your Vault, there are a few ways to add items to
 - From the **My Vault** view, select the Vault items you want to move and use the top-level {% icon fa-cog %} gear dropdown to select the {% icon fa-share %} **Move Selected** button. On the Move Selected dialog box, choose the Folder you want to move the item(s) to:
 
    {% image manage-items/add-to-folder-move.png Move item to a Folder %}
+
+{% callout success %}
+Items [shared from an Organization]({{site.baseurl}}/article/share-to-a-collection/) can be added to your personal Folders, and doing so will only impact how the item appears in your Personal Vault (i.e. adding an item to a Folder won't give anyone access to that Folder, or change whether it's in a Folder in their Vaults).
+{% endcallout %}
