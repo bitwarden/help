@@ -33,7 +33,7 @@ We've also reduced the price of a Families Organization to $40/year (*compared t
 |Features|Classic 2019|Current (2020-)|
 |--------|------------|---------------|
 |No. of users|5|6|
-|For all members of the Organization:<br><br>- Advanced 2FA Options (e.g. Duo, YubiKey, U2F)<br>- Encrypted file attachments<br>- Bitwarden Authenticator (TOTP)<br>- Vault Health Reports<br>- Emergency Access|-|<i class="fa fa-check" aria-hidden="true"></i>|
+|For all members of the Organization:<br><br>- Advanced 2FA Options (e.g. Duo, YubiKey, FIDO)<br>- Encrypted file attachments<br>- Bitwarden Authenticator (TOTP)<br>- Vault Health Reports<br>- Emergency Access|-|<i class="fa fa-check" aria-hidden="true"></i>|
 |Cost|$52 / year (incl. separate purchase of Premium Features)|$40 / year|
 
 ## Teams Organizations
@@ -56,7 +56,7 @@ There is no longer a minimum number of users required for a Teams Organization (
 |Base no. of users|5|1|
 |Max no. of users|Unlimited|Unlimited|
 |For Organization items:<br><br>-Encrypted file attachements<br>-Bitwarden Authenticator (TOTP)<br>-Vealth Health Reports|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
-|For members of the Organization:<br><br>- Advanced 2FA Options (e.g. Duo, YubiKey, U2F)<br>- Encrypted file attachments<br>- Bitwarden Authenticator (TOTP)<br>- Vault Health Reports<br>- Emergency Access|-|<i class="fa fa-check" aria-hidden="true"></i>|
+|For members of the Organization:<br><br>- Advanced 2FA Options (e.g. Duo, YubiKey, FIDO)<br>- Encrypted file attachments<br>- Bitwarden Authenticator (TOTP)<br>- Vault Health Reports<br>- Emergency Access|-|<i class="fa fa-check" aria-hidden="true"></i>|
 |Event Logs|-|<i class="fa fa-check" aria-hidden="true"></i>|
 |User Groups|-|<i class="fa fa-check" aria-hidden="true"></i>|
 |API Access|-|<i class="fa fa-check" aria-hidden="true"></i>|
