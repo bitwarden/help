@@ -33,7 +33,7 @@ Complete the following steps to install Bitwarden manually:
 2. Create a new directory named `bwdata` and extract the `docker-stub.zip` archive to it:
 
    ```
-   unzip docker-sub.zip -d bwdata
+   unzip docker-stub.zip -d bwdata
    ```
 
    The created directory matches what the `./docker/docker-compose.yml` file's mapped volumes expect, however you are free to change the location of these mappings on the host machine if desired.
