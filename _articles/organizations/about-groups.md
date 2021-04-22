@@ -1,6 +1,6 @@
 ---
 layout: article
-title: About Groups
+title: Groups
 categories: [organizations]
 featured: true
 popular: false
@@ -8,39 +8,59 @@ tags: [groups, access control]
 order: 03
 redirect_from:
   - /article/groups/
+  - /article/create-groups/
 ---
 
 ## What are Groups?
 
-Groups are structures used by Organizations to together individual users, and provide a scalable way to assign access (including assigning Collections) by configuring Access Controls at the Group-level instead of at the individual-level.
+Groups are relate together individual users, and provide a scalable way to assign permissions, including access to [Collections]({{site.baseurl}}/article/about-collections) and other [access controls]({{site.baseurl}}/article/user-types-access-control/#access-control). When [onboarding new users]({{site.baseurl}}/article/managing-users/), add them to a Group to have them automatically inherit that Group's configured permissions.
 
 {% callout info %}
-Groups are currently available to Teams Organizations and Enterprise Organizations.
+Groups are available to [Teams and Enterprise Organizations]({{site.baseurl}}/article/about-organizations/#types-of-organizations).
 {% endcallout %}
 
-When onboarding new users, add them to a Group to have them automatically inherit that Group's Access Controls configuration.
+### Using Groups
 
-Users with the User Type **Admin** or higher can create Groups, assign users to each Group, and construct Group-Collection associations. For more information, see [User Types and Access Control](https://bitwarden.com/help/article/user-types-access-control/).
+Teams and Enterprise Organizations can designate access to [Collections]({{site.baseurl}}/article/about-collections/) based on user Groups, rather than individual users. Group-Collection associations provide a deep level of access control and scalability to sharing resources. One common Group-Collection methodology is to create **Groups by Department** and **Collections by Function**, for example:
 
-Create a Group by navigating to your Organization, opening the **Manage** tab, and selecting the **New Group** button. For help creating a Group, see [Create a Group](https://bitwarden.com/help/article/create-groups/).
+{% image /organizations/collections-graphic-2.png Using Collections with Groups%}
 
-{% image /organizations/groups-newgroup.png Select New Group %}
+Other common methodologies include **Collections by Vendor or System** (i.e. users in an **Engineering** Group are assigned to a **AWS Credentials** Collection) and **Groups by Locality** (i.e. users are assigned to a **US Employees** Group or **UK Employees** Group).
 
-## Groups Best Practices
+## Create a Group
 
-For Teams and Enterprise Organizations, using **Groups** alongside Collections provides a deeper level of access control and scalability to sharing resources. When you create a Group, you can gather users from common departments and assign access to Collections at the Group-level instead of the individual-level.
+Users with the [Admin role (or higher)]({{site.baseurl}}/article/user-types-access-control/#user-types) can create and manage Groups. To create a Group:
 
-A common Group-Collection methodology is to create **Groups by Department** and **Collections by Function**, for example:
+1. Log in to your [Web Vault](https://vault.bitwarden.com){:target="\_blank"} and open your Organization.
+2. Open the **Manage** tab and select **Groups** from the left-hand menu.
+3. On the Groups screen, select the {% icon fa-plus %} **New Group** button.
 
-{% image /organizations/collections-graphic-2.png Using Groups %}
+   {% image /organizations/groups-newgroup.png New Group %}
+4. Give your Group a **Name** and assign the desired [Access Control]({{site.baseurl}}/article/user-types-access-control/#access-control).
 
-Other common methodologies include:
-- Collections by Vendor or System (*i.e. users in an **Engineering** Group are assigned to a **AWS Credentials** Collection*)
-- Groups by Locality (*i.e. users are assigned to a **US Employees** Group or **UK Employees** Group*)
+   Access Controls can designate that users can access all items (i.e. all Collections) or only specific Collections, as well as whether [Passwords are hidden or Logins are read-only]({{site.baseurl}}/article/user-types-access-control/#granular-access-control).
 
-### Next Steps
+   {% callout success %}The **External Id** field is only relevant if you're using [Directory Connector]({{site.baseurl}}/article/directory-sync/).{% endcallout %}
+5. Select **Save** to finish creating your Group.
 
-To get started using Groups, we recommend that you:
+### Assign Users to Group(s)
 
-- [Create a Group](https://bitwarden.com/help/article/create-groups/)
-- [Learn about User Types and Access Controls](https://bitwarden.com/help/article/user-types-access-control/)
+Once your Groups are created and configured, add users to them:
+
+1. In your Organization Vault open the **Manage** tab and select **People** from the left-hand menu.
+2. Hover over the user you want to add and use the {% icon fa-cog %} gear dropdown to select **Groups**:
+
+   {% image /organizations/org-people-options-updated-overlay.png %}
+3. Select the Group(s) to add this user to and **Save** your selection.
+
+{% callout success %}
+You can check which users belong to a Group from the **Manage** &rarr; **Groups** screen by using the {% icon fa-cog %} gear dropdown to select **Users**.
+{% endcallout %}
+
+### Edit Collections Assignments
+
+If you want to change the [Collections]({{site.baseurl}}/article/about-collections/) or [access controls]({{site.baseurl}}/article/user-types-access-control/#access-control) assigned to a Group:
+
+1. In your Organization Vault, open the **Manage** tab and select **Groups** from the left-hand menu.
+2. Select the group you want to edit.
+3. Configure the Access Control settings as you did when the Group was [initially created](#create-a-group).

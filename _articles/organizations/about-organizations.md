@@ -1,6 +1,6 @@
 ---
 layout: article
-title: About Organizations
+title: Organizations
 categories: [organizations]
 featured: true
 popular: true
@@ -8,50 +8,56 @@ tags: [organizations]
 order: 01
 redirect_from:
   - /article/what-is-an-organization/
+  - /article/create-an-organization/
 ---
 
 ## What are Organizations?
 
-Organizations relate Bitwarden users together for secure sharing of Logins, Notes, Cards, and Identities. Creating an Organization opens an Organization Vault that exists alongside your Personal Vault. To share items in your Organization Vault, you can invite users to join your Organization.
+Organizations relate Bitwarden users and Vault items together for [secure sharing]({{site.baseurl}}/article/share-to-a-collection/) of Logins, Notes, Cards, and Identities. Organizations have a unique Vault, where [administrators]({{site.baseurl}}/article/user-types-access-control/) can manage the Organization's items, users, and settings:
 
-Organization Vaults are organized into Collections, much like how Personal Vaults can be organized into Folders. Unlike your Personal Vault, items in the Organization Vault *must* be placed in a Collection and will be accessible by *anyone* who is allowed access to that Collection.
+{% image /organizations/org-vault-admin.png Organization Vault %}
 
-You can create an Organization by selecting the **New Organization** button. For help creating your Organization, see [Create an Organization](https://bitwarden.com/help/article/create-an-organization/).
+Members of an Organization will find shared items ({% icon fa-share-alt %}) in their **My Vault** view alongside personal items, as well as filters for assigned [Collections]({{site.baseurl}}/article/about-collections/), which group Organization items similarly to how [Folders]({{site.baseurl}}/article/folders/) organize personal items:
 
-{%image /organizations/new-org-button-overlay.png Select New Organization %}
+{% image /organizations/shared-items.png Access shared items %}
 
-Once you've created your Organization, invite users to start sharing. Invited users can open the Organization Vault at any time from the top-right **Organizations** card, or quickly access their assigned Collections from the left **Filters** card. For help inviting users to your Organization, see [Add or Remove Users](https://bitwarden.com/help/article/managing-users/).
+### Types of Organizations
 
-{% image /organizations/org-use-overlay.png Access shared items %}
+Bitwarden offers a variety of types of Organizations to meet your business's or family's needs. For feature-by-feature breakdowns of each Organization type, see [About Bitwarden Plans](https://bitwarden.com/help/article/about-bitwarden-plans/).
 
-## Types of Organizations
+|Type|Description|
+|----|-----------|
+|Free Organizations|Free Organizations allow 2 users to securely share in up to 2 [Collections]({{site.baseurl}}/article/about-collections/).|
+|Families Organizations|Families Organizations allow 6 users to securely share in unlimited [Collections]({{site.baseurl}}/article/about-collections/).|
+|Teams Organizations|Teams Organizations allow unlimited users (*billed Per User Per Month*) to securely share in unlimited [Collections]({{site.baseurl}}/article/about-collections/) and offer a suite of operational tools like [Event Logs]({{site.baseurl}}/article/event-logs/).|
+|Enterprise Organizations|Enterprise Organizations allow unlimited users (*billed Per User Per Month*) to securely share in unlimited [Collections]({{site.baseurl}}/article/about-collections/) and add enterprise-only features like [Login with SSO]({{site.baseurl}}/article/about-sso/) and [Policies]({{site.baseurl}}/article/policies/) to Bitwarden's suite of operational tools.|
 
-There are a few different types of Organizations available. When you create your Organization, you will be prompted to select one of the following options:
+### Comparing Organizations with Premium
 
-### Free Organizations
-Free Organizations allow two users to securely share in up to two Collections. For more information about what features are included in a Free Organization, see [About Bitwarden Plans](https://bitwarden.com/help/article/about-bitwarden-plans/#free-organizations).
+The key thing to know is that **Organizations unlock access to secure sharing** between users. [Premium Individual plans]({{site.baseurl}}/article/about-bitwarden-plans/#premium-individual) unlock premium password security and management features, including advanced 2FA options, the Bitwarden Authenticator (TOTP), encrypted file attachments, and more, but Premium Individual **does not include secure data sharing.**
 
-### Families Organizations
-Families Organizations allow 6 users to securely share in unlimited Collections. For more information about what features are included in a Families Organization, see [About Bitwarden Plans](https://bitwarden.com/help/article/about-bitwarden-plans/#families-organizations).
+Paid Organizations (Families, Teams, or Enterprise) automatically include those premium features (advanced 2FA options, Bitwarden Authenticator (TOTP), etc.) for **every** user enrolled in the Organization.
 
-### Teams Organizations
-Teams Organizations allow unlimited users (*billed Per User Per Month*) to securely share in unlimited Collections and offer a suite of operational tools like Event Logs. For more information about what features are included in a Teams Organization, see [About Bitwarden Plans](https://bitwarden.com/help/article/about-bitwarden-plans/#teams-organizations).
+## Create an Organization
 
-### Enterprise Organizations
-Enterprise Organizations allow unlimited users (*billed Per User Per Month*) to securely share in unlimited Collections and add enterprise-only features like Login with SSO to Bitwarden's suite of operational tools. For more information about what features are included in an Enterprise Organization, see [About Bitwarden Plans](https://bitwarden.com/help/article/about-bitwarden-plans/#enterprise-organizations).
+Organizations are created and managed from the [Web Vault](https://vault.bitwarden.com){:target="\_blank"}. If you're new to Bitwarden, [create an account](https://vault.bitwarden.com/#/register){:target="\_blank"} before you start your Organization, then proceed with these instructions:
 
-## Organizations compared to Premium
+1. Select the **New Organization** button in your Web Vault:
 
-**Organizations unlock access to secure sharing** between users who are members of that Organization.
+   {%image /organizations/new-org-button-overlay.png Select New Organization %}
+2. Enter an **Organization Name** and a **Billing Email** we can reach you at.
 
-Premium Individual plans unlock premium password security and management features, including advanced 2FA options, the Bitwarden Authenticator (TOTP), encrypted file attachments, and more. **Premium Individual does not include secure data sharing.**
+   Checking the **This account is owned by a business** checkbox will filter your options down to those suitable for businesses, and prompt your for a **Business name** so we know who to thank!
+3. **Choose your Plan**. Bitwarden offers Organizations suited to any need. Check out the [feature-by-feature breakdown]({{site.baseurl}}/article/about-bitwarden-plans/#compare-the-plans-1) to figure out which is best for you.
 
-**Paid Organizations** (Families, Teams, or Enterprise) automatically include premium features (advanced 2FA options, Bitwarden Authenticator (TOTP), etc.) for every user enrolled in the Organization.
+   {% callout success %}All paid Organization (Families, Teams, or Enterprise) include premium features for all enrolled users!{% endcallout %}
+4. If you chose a **Free Organization**, you're all set! If you chose one of our paid Organizations,
 
-### Next Steps
+   - **Families/Teams/Enterprise:** Your plan comes with 1GB of encrypted [storage for attachments]({{site.baseurl}}/article/attachments/). Add **Additional Storage (GB)** for $0.33 per GB per month.
+   - **Teams/Enterprise:** Specify the number of **User Seats** you need for your Organization. You can always add more seats later.
+   - **Teams/Enterprise:** Choose whether you'd like to be billed **Annually** or **Monthly**. Families Organizations can only be billed annually.
+5. Once you're happy with your Organization, enter your **Payment Information** and select **Submit**.
 
-To get started with a new Organization, we recommend that you:
+   {% callout success %}New Families, Teams, and Enterprise Organization have a 7 day free trial built in! We won't charge you until your trial is over, and you can cancel your subscription at any time from the Organization **Settings** tab.{% endcallout %}
 
-- [Create an Organization](https://bitwarden.com/help/article/create-an-organization/)
-- [Invite Users to Your Organization](https://bitwarden.com/help/article/managing-users/)
-- [Learn About Collections](https://bitwarden.com/help/article/about-collections/)
+Once you've created your Organization, create a [collection]({{site.baseurl}}/article/about-collections/), [invite users]({{site.baseurl}}/article/managing-users/), and [start sharing]({{site.baseurl}}/article/share-to-a-collection).

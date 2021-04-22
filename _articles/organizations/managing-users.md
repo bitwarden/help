@@ -1,68 +1,100 @@
 ---
 layout: article
-title: Add or Remove Users
+title: User Management
 categories: [organizations]
 featured: true
 popular: false
 tags: []
-order: 09
+order: 05
 ---
-This article will guide you through the process of inviting or removing users from your Organization.
 
-Teams and Enterprise Organizations can sync Bitwarden to an existing user directory to automatically add or remove new users using the **Bitwarden Directory Connector**. For more information, see [About Directory Connector]({% link _articles/directory-connector/directory-sync.md %}}).
+## Manage User Seats
 
-Invitations to an Organization will expire after 5 days, at which point the user will need to be re-invited. If you're self-hosting Bitwarden, you can configure the invitation expiration period. For more information, see [Configure Environment Variables]({% link _articles/hosting/environment-variables.md %}).
+Bitwarden [Teams and Enterprise Organizations]({{site.baseurl}}/article/about-organizations/#types-of-organizations) allow you to add or remove user seats on-the-fly to best fit your business's needs. Only the [Organization Owner]({{site.baseurl}}/article/user-types-access-control/#user-types) can add and remove seats, as this directly affects your billing.
 
 {% callout info %}
-**Free** Organizations and **Families** Organizations have a maximum number of users; 2 and 6 respectively.
-
-**Teams** Organizations and **Enterprise** Organizations must ensure that there are available users seats for their account before inviting users. For more information, see [Add or Remove User Seats for your Organization](https://bitwarden.com/help/article/user-seats/).
+If you have a [Free or Families Organization]({{site.baseurl}}/article/about-organizations/#types-of-organizations), your user seats are pre-loaded and fixed at 2 and 6, respectively. Proceed to [Onboard Users](#onboard-users).
 {% endcallout %}
 
-## Invite Users
+### Add Seats
 
-{% callout warning %}
-**For Enterprise Organizations**, Bitwarden recommends configuring Enterprise Policies prior to inviting users to ensure compliance on-entrance to your Organization. For more information, see [Enterprise Policies](https://bitwarden.com/help/article/policies/).
+To add seats to your Organization:
+
+1. Log in to your [Web Vault](https://vault.bitwarden.com){:target="\_blank"} and open your Organization.
+2. Open the **Settings** tab and select **Subscription** from the left-hand menu.
+3. Select the **Add Seats** button.
+
+Adding user seats will adjust your future billing totals and immediately charge your payment method on file. That immediate charge will be pro-rated such that you'll only pay for the remainder of the billing cycle (month/year).
+
+### Remove Seats
+
+To remove seats from your Organization:
+
+1. Log in to your [Web Vault](https://vault.bitwarden.com){:target="\_blank"} and open your Organization.
+2. Open the **Settings** tab and select **Subscription** from the left-hand menu.
+3. Select the **Add Seats** button.
+
+Removing user seats will adjust your future billing totals. The next charge will be pro-rated such that you are credited back for time not used by the already-paid-for seat.
+
+## Onboard Users
+
+To ensure the security of your Organization, Bitwarden applies a 3-step process for onboarding a new member, [Invite](#invite) &rarr; [Accept](#accept) &rarr; [Confirm](#confirm).
+
+{% callout success %}
+Teams and Enterprise Organizations can sync Bitwarden to an existing user directory to automatically add or remove new users using the [**Bitwarden Directory Connector**]({{site.baseurl}}/article/directory-sync).
 {% endcallout %}
 
-Complete the following steps to invite users to your Organization:
+### Invite
 
-1. Login to your [Web Vault](https://vault.bitwarden.com){:target="\_blank"} and open your Organization.
-2. In your Organization, open the **Manage** tab and select **People** from the left menu.
-3. On the **People** screen, select the **Invite User** button.
+{% callout success %}
+**For Enterprise Organizations**, we recommend configuring [Enterprise Policies]({{site.baseurl}}/article/policies) prior to inviting users to ensure compliance on-entrance to your Organization.
+{% endcallout %}
 
-   {% image /organizations/org-people-invite.png Select Invite User %}
-4. On the **Invite User** panel:
+To invite users to your Organization:
+
+1. Log in to your [Web Vault](https://vault.bitwarden.com){:target="\_blank"} and open your Organization.
+2. Open the **Manage** tab and select **People** from the left-hand menu.
+3. Select the {% icon fa-plus %} **Invite User** button:
+
+   {% image /organizations/org-people-invite.png Invite User %}
+4. On the Invite User panel:
+
    - Enter the **Email** address where new users should receive invites. You can add up to 20 users at a time by comma-separating email addresses.
-   - Select the **User Type** to be applied to new users. User Type will determine what permissions these users will have at an Organizational level. For more information, see [User Types and Access Control](https://bitwarden.com/help/article/user-types-access-control/).
-   - Select the **Access Control** to be applied to new users. Access Control will determine which Collections these users will have access to, and what level of access within those Collections. For more information, see [User Types and Access Control](https://bitwarden.com/help/article/user-types-access-control/).
+   - Select the **User Type** to be applied to new users. [User Type]({{site.baseurl}}/article/user-types-access-control/#user-type) will determine what permissions these users will have at an Organizational level.
+   - Select the **Access Control** to be applied to new users. [Access Control]({{site.baseurl}}/article/user-types-access-control/#access-control) will determine which Collections these users will have access to, and what level of access within those Collections.  
 5. Click **Save** to invite the designated users to your Organization.
 
-Once users have accepted the invitation, you will need to [Confirm Invited Users](#confirm-invited-users).
+### Accept
 
-### Invited Users
+Invited users will receive an email from Bitwarden inviting them to join the Organization. Clicking the link in the email will open a Bitwarden Client invitation window. **Log In** with an existing Bitwarden or **Create Account** to accept the invitation:
 
-Invited users will receive an email from Bitwarden asking them to join the Organization. Clicking the **Join Organization Now** button in the email invitation will open a screen prompting users to **Log In** or **Create Account**.
+{% image organizations/user-accept-updated.png Invitation Window %}
 
-{% image organizations/user-accept-updated.png %}
+{% callout warning %}
+Invitations will expire after 5 days, at which point the user will need to be [re-invited](#invite). If you're self-hosting Bitwarden, you can configure the invitation expiration period [using an environment variable]({{site.baseurl}}/article/environment-variables/).
+{% endcallout %}
 
-If the user does not answer this invitation, it will expire after 5 days.
+### Confirm
 
-### Confirm Invited Users
+To confirm accepted invitations into your Organization:
 
-Once a user has accepted the invitation to join the Organization, you'll need to **Confirm** their acceptance.
 
-On the **People** screen for your Organization, users who have accepted invitations will have an `Accepted` status indicator next to their email address. Users who are invited but have not yet accepted will have an `Invited` status indicator next to their email address.
+1. Log in to your [Web Vault](https://vault.bitwarden.com){:target="\_blank"} and open your Organization.
+2. Open the **Manage** tab and select **People** from the left-hand menu.
+3. Hover over the `Accepted` user and select the {% icon fa-cog %} gear dropdown:
 
-Confirm an `Accepted` user by hovering over the user, selecting the gear dropdown, and selecting **Confirm** from the dropdown menu.
+   {% image organizations/org-people-options-overlay.png Confirm an Accepted user %}
+3. Select {% icon fa-check %} **Confirm**.
+4. Verify that the [fingerprint phrase]({{site.baseurl}}/article/fingerprint-phrase) on your screen matches the one your new member can find in **Settings** &rarr; **My Account**:
 
-{% image organizations/org-people-options-overlay.png Confirm an Accepted user %}
+   {% image fingerprint-phrase.png Sample Fingerprint Phrase %}
 
-Selecting **Confirm** will open a panel asking you to verify the user's fingerprint phrase. For added security, ask the user to verify the fingerprint phrase before confirming them into your Organization. Once confirmed, the user will have access to all assigned Collections within the Organization.
+Each fingerprint phrase is unique to its account, and ensures a final layer of oversight in securely adding users. If they match, select **Submit**.
 
-## Remove A User
+## Offboard Users
 
-Complete the following steps to remove a user from your Organization:
+To remove users from your Organization:
+
 
 1. Login to your [Web Vault](https://vault.bitwarden.com){:target="\_blank"} and open your Organization.
 2. In your Organization, open the **Manage** tab and select **People** from the left menu.

@@ -5,7 +5,7 @@ categories: [organizations]
 featured: true
 popular: false
 tags: [user types, access control]
-order: 11
+order: 06
 ---
 
 Users in Bitwarden Organizations can be granted a variety of User Types and Access Controls in order to manage their permissions.

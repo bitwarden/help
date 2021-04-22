@@ -40,7 +40,7 @@ Specifically, this means that if a user forgets their main Bitwarden password, t
 
 {% callout note %}
 Bitwarden is planning a feature in mid-2021 to enable Enterprises to reset their Organization user passwords. This will not impact individual personal accounts that are not connected to an Enterprise organization with this upcoming feature enabled.
-{% endcallout %} 
+{% endcallout %}
 
 {% callout note %}
 Bitwarden has an Emergency Access feature which can allow a designated user to view or take over your Personal Vault. While not intended as a password-reset feature, some Bitwarden users have found this to be a helpful option. Setting an Emergency Access designee is part of our Premium Account which is also included with any of our Family, Teams, or Enterprise plans. See our [help note on Emergency Access](https://bitwarden.com/help/article/emergency-access/).
@@ -64,7 +64,7 @@ A Personal Vault is the account owners own responsibility. They can set up Emerg
 
 A Personal Vault is just that, personal. It is not intended for permanent sharing. That is the domain of Bitwarden Organizations in our next section.
 
-{% image ../images/onboarding-succession/bitwarden-individual-personal-vault.png The Bitwarden Individual Personal Vault can be accessed by its owner from any Bitwarden Client. %} 
+{% image ../images/onboarding-succession/bitwarden-individual-personal-vault.png The Bitwarden Individual Personal Vault can be accessed by its owner from any Bitwarden Client. %}
 
 ### Starting or joining an Organization
 Any Bitwarden user can start an Organization using the web vault.
@@ -73,9 +73,9 @@ Any Bitwarden user can start an Organization using the web vault.
 
 {% image ../images/onboarding-succession/settings-organization-new.png Launching a new Organization from the web vault %}
 
-The person that launches the Organization will be the Owner with full control of the Organization and its members. At the same time every Bitwarden user receives a Personal Vault. The Organization owner does not have the ability to see any other individual Personal Vault by design. 
+The person that launches the Organization will be the Owner with full control of the Organization and its members. At the same time every Bitwarden user receives a Personal Vault. The Organization owner does not have the ability to see any other individual Personal Vault by design.
 
-In this case, employees can be guaranteed that the Personal Vault remains their own. An Organization owner cannot access it due to the encryption model in place within Bitwarden, where individual users maintain the key to decrypt their Personal Vault. 
+In this case, employees can be guaranteed that the Personal Vault remains their own. An Organization owner cannot access it due to the encryption model in place within Bitwarden, where individual users maintain the key to decrypt their Personal Vault.
 
 {% callout note %}
 There is an enterprise policy for the Organization owner to disable the Personal Vault, highlighting the balance between a more centralized compared to a dynamic approach.
@@ -113,11 +113,11 @@ Groups help administer user permissions one level up from individual users. You 
 
 ### A comprehensive role based access control approach
 
-Bitwarden takes an enterprise friendly approach to sharing at scale. Users can be added to the Organization in different roles, belong to different Groups, and have those Groups assigned to various Collections. Bitwarden also enables a custom role for more granular permissions regarding administrative tasks. Please see this article for more detail on [User Types and Access Control](https://bitwarden.com/help/article/user-types-access-control/) 
+Bitwarden takes an enterprise friendly approach to sharing at scale. Users can be added to the Organization in different roles, belong to different Groups, and have those Groups assigned to various Collections. Bitwarden also enables a custom role for more granular permissions regarding administrative tasks. Please see this article for more detail on [User Types and Access Control](https://bitwarden.com/help/article/user-types-access-control/)
 
 ## Offboarding Users
 
-Let’s explore the standard sequence to offboard an employee. 
+Let’s explore the standard sequence to offboard an employee.
 
 {% callout note %}
 At Bitwarden, we see sharing of credentials as a vital aspect to get work done efficiently and securely. We also recognize that once a credential is shared, it is technically possible for the recipient to keep that credential.
@@ -147,7 +147,7 @@ When an employee such as the person above is removed from the Organization the f
 - Once removed from the Organization, any online client such as the mobile app, desktop app, or web extension will no longer show that Organization or any Organizational Collections
 
 **Collection 1**
-- Will no longer be visible 
+- Will no longer be visible
 
 **Collection 2**
 - Will no longer be visible. Ownership of the Collection remains with the Organization Admins and Owners. This employee will no longer have access to Collection 2
@@ -190,7 +190,7 @@ The Directory Connector, Login with SSO, and Web Vault Administration all work i
 
 #### Directory Connector - **Synchronization** - Teams and Enterprise plans
 - LDAP Groups synced to Bitwarden Groups
-- Users within groups get invitations 
+- Users within groups get invitations
 
 #### Directory Connector - **Invitations** - Teams and Enterprise plans
 - Users receive an invitation to join the Organization
@@ -224,7 +224,7 @@ When using  Bitwarden and Login with SSO and logging in:
 * Decryption of the Vault Contents still requires the users individual key and a password specifically for encryption and decryption
     * This security model ensures that customers can choose their own Identity Provider and have
 		* the ability to provision users automatically
-        * full access to the entirety of the Bitwarden client suite 
+        * full access to the entirety of the Bitwarden client suite
 		* the ability to decrypt vault contents while offline
 		* the option to configure access with or without SSO
 		* the option to retain a personal vault
@@ -234,7 +234,7 @@ Using Login with SSO, new Bitwarden users can log in to their Bitwarden Vault us
 
 Since users go through a validated authentication process, they will be in the **Accepted** status within the Organization management settings.
 
-If a user is removed from the company’s Identity Provider, the user will no longer be able to authenticate with that path. 
+If a user is removed from the company’s Identity Provider, the user will no longer be able to authenticate with that path.
 ### The Bitwarden Web Vault for Organization Administration
 
 Every Bitwarden Teams and Enterprise Organization comes with the ability to manage
@@ -275,7 +275,7 @@ Bitwarden includes events associated with
 For more information, please see [Event Logs](https://bitwarden.com/help/article/event-logs/) on the Bitwarden help site.
 
 ### Option to self-host Bitwarden
-In keeping with the Bitwarden approach to offer password management across all clients, providing an option 
+In keeping with the Bitwarden approach to offer password management across all clients, providing an option
 to self-host addresses an even wider range of use cases for Enterprises.
 
 There are many reasons for companies to choose to self-host. Specifically when it comes to onboarding, offboarding, and enhanced features, here are some of the reasons companies choose to do so
@@ -293,7 +293,7 @@ There are many reasons for companies to choose to self-host. Specifically when i
 
 In addition to these benefits, customers appreciate the ability to tightly integrate Bitwarden into their existing systems. Bitwarden features
 
-A robust public [API](https://bitwarden.com/help/api/) 
+A robust public [API](https://bitwarden.com/help/api/)
 A fully featured command line interface ([CLI](https://bitwarden.com/help/article/cli/))
 
 Together, these options deliver even more customization to fit with existing workflows.
@@ -303,10 +303,3 @@ Together, these options deliver even more customization to fit with existing wor
 We often note that password management is people management, and Bitwarden wants to fit the workflows suited to your organization. By offering a wide range of options, shared via our open source approach, customers can rest assured that they can meet their own individual needs.
 
 To get started today with a free Enterprise or Teams trail, visit [bitwarden.com/pricing/business/](https://bitwarden.com/pricing/business/).
-
-
-
-
-
-
-
