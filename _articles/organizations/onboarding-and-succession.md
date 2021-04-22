@@ -7,6 +7,8 @@ popular: false
 hidden: true
 tags: [onboarding]
 order: 10
+redirect_from:
+  - /article/employee-onboarding-and-succession-white-paper/
 ---
 
 ## Password Management to fit your Business
