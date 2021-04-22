@@ -8,8 +8,6 @@ tags: []
 order: 05
 ---
 
-??
-
 ## Manage User Seats
 
 Bitwarden [Teams and Enterprise Organizations]({{site.baseurl}}/article/about-organizations/#types-of-organizations) allow you to add or remove user seats on-the-fly to best fit your business's needs. Only the [Organization Owner]({{site.baseurl}}/article/user-types-access-control/#user-types) can add and remove seats, as this directly affects your billing.
