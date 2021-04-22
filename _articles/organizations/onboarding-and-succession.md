@@ -20,7 +20,7 @@ This guide covers the Bitwarden approach to onboarding and succession planning f
 The Bitwarden vision is to imagine a world where no one gets hacked. We carry this forward in our mission to help individuals and companies manage their sensitive information easily and securely. Bitwarden believes that:
 
 - Basic password management for individuals can and should be **free**. We provide just that, a [basic free account for individuals]({{site.baseurl}}/article/about-bitwarden-plans/#free-individual).
-- Individuals and Families should take an active role in their security using [TOTPs, Emergency Access, and other complimentary security features]({{site.baseurl}}/article/about-bitwarden-plans/#premium-individual).
+- Individuals and Families should take an active role in their security using [TOTPs, Emergency Access, and other supporting security features]({{site.baseurl}}/article/about-bitwarden-plans/#premium-individual).
 - Organizations can greatly improve their security profile through [Organizational password management and secure sharing]({{site.baseurl}}/article/about-bitwarden-plans/#bitwarden-for-your-business).
 
 {% callout success %}
@@ -29,7 +29,7 @@ For Bitwarden, [different plans]({{site.baseurl}}/article/about-bitwarden-plans/
 
 A key aspect of Bitwarden is that, unlike many software applications, everything in every a Vault is [end-to-end encrypted]({{site.baseurl}}/article/what-encryption-is-used/). To maintain this security model, every person using Bitwarden must have a unique account with a unique [Master Password]({{site.baseurl}}/article/master-password). Master Passwords should be **strong** and **memorable**.
 
-Each user is in charge of their Master Password. Bitwarden is a Zero knowledge/Zero Trust solution, meaning that the team at Bitwarden, as well as Bitwarden systems themselves, have no knowledge of, way to retrieve, or way to reset any Master Password.
+Each user is in charge of their Master Password. Bitwarden is a Zero-knowledge encryption solution, meaning that the team at Bitwarden, as well as Bitwarden systems themselves, have no knowledge of, way to retrieve, or way to reset any Master Password.
 
 {% callout success %}
 Bitwarden is planning a feature in mid-2021 to enable Enterprises to reset their Organization user passwords. This will not impact individual personal accounts that are not connected to an Enterprise organization with this upcoming feature enabled.
@@ -43,11 +43,11 @@ Security everywhere means security anywhere, so the best password managers provi
 
 ### Users' Personal Vaults
 
-Anyone who creates a Bitwarden account will have their own Personal Vault. Accessible from any client application, Personal Vaults are unique to each user and only they hold the key to access it, their Email Address and Master Password. Personal accounts, and the personal [Vault items]({{site.baseurl}}/article/managing-items/) stored therein, are the account owners responsibility. Organization [Owners, Admins, and Managers]({{site.baseurl}}/article/user-types-access-control) can't see any other user's Personal Vault by design, guaranteeing someone's personal data remains their own.
+Anyone who creates a Bitwarden account will have their own Personal Vault. Accessible from any client application, Personal Vaults are unique to each user and only that user holds the key to access it, using a combination of their Email Address and Master Password. Personal accounts, and the personal [Vault items]({{site.baseurl}}/article/managing-items/) stored therein, are the account owners responsibility. Organization [Owners, Admins, and Managers]({{site.baseurl}}/article/user-types-access-control) cannot see any other user's Personal Vault by design, guaranteeing someone's personal data remains their own.
 
 {% image ../images/onboarding-succession/bitwarden-individual-personal-vault.png Personal Vaults %}
 
-Families, Teams, and Enterprise Organizations automatically provide members individually with premium features, like [Emergency Access]({{site.baseurl}}/article/emergency-access/) and [encrypted Attachment storage]({{site.baseurl}}/article/attachments/), which they can choose to take advantage of. A Personal Vault is just that, **Personal**, but Personal Vaults don't enable sharing, [Organization do](#bitwarden-organizations).
+Families, Teams, and Enterprise Organizations automatically provide members individually with premium features, like [Emergency Access]({{site.baseurl}}/article/emergency-access/) and [encrypted Attachment storage]({{site.baseurl}}/article/attachments/), which they can choose to use. A Personal Vault is just that, **Personal**, but Personal Vaults do not enable sharing, [Organization do](#bitwarden-organizations).
 
 {% callout success %}
 **Why provide Personal Vaults by default?**
@@ -73,7 +73,7 @@ Once created, you'll land in your Organization Vault, which is the central hub f
 
 ### Collections
 
-Bitwarden Organizations are designed to manage users and data in a scalable and secure fashion. Managing users and data on an individual basis is highly inefficient for large businesses and opens up both to accidental mismanagement. To solve this, Organizations provide Collections and [Groups](#groups).
+Bitwarden Organizations manage users and data in a scalable and secure fashion. Managing users and data on an individual basis is inefficient for large businesses and can leave room for error. To solve this, Organizations provide Collections and [Groups](#groups).
 
 **Collections** gather together Logins, Notes, Cards, and Identities for [secure sharing]({{site.baseurl}}/article/share-to-a-collection/) within an Organization:
 
@@ -94,7 +94,7 @@ In the simplest cases, users can be added to your Organization directly from the
 Once users are fully onboarded to your Organization, you can assign access to your Organization's Vault data by assigning them to [Collections](#collections). Teams and Enterprise Organizations can assign users to [Groups](#groups) for scalable permissions assignment, and construct Group-Collection associations instead of assigning access on the individual level.
 
 {% callout success %}
-For the largest Organizations, [Directory Connector](#directory-connector) is the best way to onboard and offboard users in a scaleable fashion.
+For large Organizations, [Directory Connector](#directory-connector) is the best way to onboard and offboard users at scale.
 {% endcallout %}
 
 #### Groups
@@ -150,7 +150,7 @@ At Bitwarden, we often say that password management is people management, and we
 
 ### Directory Connector
 
-For companies with large user-bases that operate using directory services (LDAP, AD, Okta, etc.), Directory Connector can synchronize users and groups from the directory to the Bitwarden Organization. Directory Connector is a stand-alone application that can be run anywhere with access to your directories and to Bitwarden.
+For companies with large user-bases that operate using directory services (LDAP, AD, Okta, and others), Directory Connector can synchronize users and groups from the directory to the Bitwarden Organization. Directory Connector is a stand-alone application that can be run anywhere with access to your directories and to Bitwarden.
 
 {% image onboarding-succession/bitwarden-directory-connector.png Directory Connector %}
 
@@ -201,6 +201,10 @@ Bitwarden Organizations include access to [Event Logs]({{site.baseurl}}/article/
 - Organization Configuration Changes
 - Much, much more
 
+{% callout success%}
+In addition to these benefits, customers appreciate the ability to tightly integrate Bitwarden into their existing systems. Bitwarden offers a robust public [API](https://bitwarden.com/help/api/) and a fully-featured command line interface ([CLI](https://bitwarden.com/help/article/cli/)) for further integration into existing Organization workflows.
+{% endcallout %}
+
 ### Self-hosting
 
 In keeping with the Bitwarden approach to offer password management anywhere and everywhere, Bitwarden provides an option
@@ -211,10 +215,6 @@ to self-host to address an even wider range of use cases for Enterprises. There 
 - **Advanced proxy settings:** Administrators can choose to enable or disable certain types of devices from accessing the Bitwarden Server.
 - **Use an existing database cluster:** Connect to an existing Microsoft SQL Server database. Additional databases will be supported in the future.
 - **Increase storage for file attachments and Bitwarden Send:** File attachments for Bitwarden items or Bitwarden Send are retained on user-provided storage.
-
-{% callout success%}
-In addition to these benefits, customers appreciate the ability to tightly integrate Bitwarden into their existing systems. Bitwarden offers a robust public [API](https://bitwarden.com/help/api/) and a fully-featured command line interface ([CLI](https://bitwarden.com/help/article/cli/)) for further integration into existing Organization workflows.
-{% endcallout %}
 
 ## Put the Pieces Together
 
@@ -233,7 +233,7 @@ Directory Connector, Login with SSO, Enterprise Policies, and your Vault work we
 
 #### Q: If an employee already has a Bitwarden account, can we attach it to the Organization so they don't need another Bitwarden account?
 
-**A:** Yes! You can.
+**A:** Yes! You can. Some customers recommend that prior to attaching users to the Organization, that those users have a Bitwarden Vault attached to their company email. This choice is company-specific and either approach works.
 
 #### Q: When an employee leaves, can we detach their account from the Organization so that they don't have access to company credentials anymore and they do not lose their personal credentials?
 
