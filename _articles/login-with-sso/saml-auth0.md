@@ -108,7 +108,7 @@ Unless you've configured [custom rules](#configure-auth0-rules), your Service Pr
 |Want Assertions Signed|Whether Bitwarden wants SAML assertions signed. By default, Auth0 will sign SAML assertions, so check this box unless you've configured a [custom signing rule](#configure-auth0-rules).|
 |Validate Certificates|Check this box when using trusted and valid certificates from your IdP through a trusted CA. Self-signed certificates may fail unless proper trust chains are configured within the Bitwarden Login with SSO docker image.|
 
-When you're done with the Identity Provider Configuration section, **Save** your work.
+When you're done with the Service Provider Configuration section, **Save** your work.
 
 ### Identity Provider Configuration
 
