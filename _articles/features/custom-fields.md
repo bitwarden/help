@@ -14,13 +14,15 @@ Custom fields, available for any [Vault item type]({% link _articles/account/man
 - **Hidden**: Field value stores freeform input that is hidden from view (particularly useful for Organizations using the [Hide Password access control](https://bitwarden.com/help/article/user-types-access-control/#granular-access-control)).
 - **Boolean**: Field value stores a boolean value (true/false).
 
+{% comment %}
 ## Custom Fields for Keys
 
 In addition to common web service inputs like PINs and Security Questions, Custom Fields can be used to store values **up to 5000 characters in length**, for example RSA 4096-bit SSH keys.
 
 {% callout success %}
 Character limits for custom field values are imposed on the **post-encryption character count**. For example, a 3383-character RSA-2096 Private SSH key would grow to about 4400-characters when it's encrypted and stored in your Vault.  
-{% endcallout %}  
+{% endcallout %}
+{% endcomment %}
 
 ## Auto-fill Custom Fields
 
