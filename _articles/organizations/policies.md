@@ -110,3 +110,11 @@ Vault Items that were created prior to the implementation of this policy or prio
 Enabling the **Disable Send** policy will prevent non-Owner/non-Admin users from creating or editing a Send using [Bitwarden Send]({% link _articles/send/about-send.md %}). Users subject to this policy will still be able to delete existing Sends that have not yet reached their [Deletion Date]({% link _articles/send/send-lifespan.md %}).
 
 A banner is displayed to users in the Send view and on opening any existing Send to indicate that a policy is restricting them to only deleting Sends.
+
+### Send Options
+
+Enabling the **Send Options** policy will allow Owners and Admins to specify options for creating and editing Sends. Owners and Admins are exempt from this policy's enforcement. Options include:
+
+|Option|Description|
+|------|-----------|
+|Do not allow users to hide their email address|Enabling this option disables the [Hide Email option]({{site.baseurl}}/article/send-privacy/#hide-email), meaning that all [received Sends]({{site.baseurl}}/article/receive-send) will include whom they are sent from.|

@@ -31,6 +31,10 @@ You can remove a Send's password at any time using the {% icon fa-undo %} **Remo
 
 ## Hide Email
 
+{% callout success %}
+For Enterprise Organizations, the availability of this option can be set using an [Enterprise Policy]({{site.baseurl}}/articles/policies/#send-options).
+{% endcallout %}
+
 By default, Send objects will display the email address of the Sender to recipients:
 
 {% image send/send-email-visible.png Sender Email Visible %}
