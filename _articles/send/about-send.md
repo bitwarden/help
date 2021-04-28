@@ -10,7 +10,7 @@ order: 01
 
 ## What is Send?
 
-Bitwarden Send is a secure and ephemeral way to transmit sensitive information to **anyone**. Sends can include plaintext or file attachments up to 100 MB. Every Send is assigned a randomly generated and secure link, which can be [shared with anyone]({% link _articles/send/receive-send.md %}) (including those who *do not* have Bitwarden accounts) via text, email, or whatever communication channel you prefer. Every Send is:
+Bitwarden Send is a secure and ephemeral way to transmit sensitive information to **anyone**. Sends can include plaintext or file attachments up to 500 MB. Every Send is assigned a randomly generated and secure link, which can be [shared with anyone]({% link _articles/send/receive-send.md %}) (including those who *do not* have Bitwarden accounts) via text, email, or whatever communication channel you prefer. Every Send is:
 
 - **End-to-end Encrypted**: Data in a Send is [encrypted]({{site.baseurl}}/article/send-encryption/#send-encryption) on creation, and only [decrypted]({{site.baseurl}}/article/send-encryption/#send-decryption) when a recipient opens the Send link. The contents of a Send are stored **encrypted** in Bitwarden systems, just like a traditional Vault item. The link generated for each send doesn't contain any data related to the Send's contents, so it's safe to share over intermediary communications services without exposing information to Bitwarden or any used intermediary services.
 
