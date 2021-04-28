@@ -10,13 +10,13 @@ order: 01
 
 ## What is Send?
 
-Bitwarden Send is a secure and ephemeral way to transmit sensitive information to **anyone**. Sends can include plaintext or file attachments up to 100 MB. Every Send is assigned a randomly generated and secure link, which can be [shared with anyone]({% link _articles/send/receive-send.md %}) (including those who *do not* have Bitwarden accounts) via text, email, or whatever communication channel you prefer. Every Send is:
+Bitwarden Send is a secure and ephemeral way to transmit sensitive information to **anyone**. Sends can include plaintext or file attachments up to 500 MB. Every Send is assigned a randomly generated and secure link, which can be [shared with anyone]({% link _articles/send/receive-send.md %}) (including those who *do not* have Bitwarden accounts) via text, email, or whatever communication channel you prefer. Every Send is:
 
 - **End-to-end Encrypted**: Data in a Send is [encrypted]({{site.baseurl}}/article/send-encryption/#send-encryption) on creation, and only [decrypted]({{site.baseurl}}/article/send-encryption/#send-decryption) when a recipient opens the Send link. The contents of a Send are stored **encrypted** in Bitwarden systems, just like a traditional Vault item. The link generated for each send doesn't contain any data related to the Send's contents, so it's safe to share over intermediary communications services without exposing information to Bitwarden or any used intermediary services.
 
 - **Dynamically Ephemeral**: Sends are designed for ephemeral sharing, so every [Send that you create]({% link _articles/send/create-send.md %}) will have a specified [lifespan]({% link _articles/send/send-lifespan.md %}) (*max 31 days*) that can be configured using pre-set options or a custom timestamp for down-to-the-minute specification. When its deletion date is reached, the Send and its contents will be completely purged from Bitwarden systems. Using additional options like [Expiration Date]({{site.baseurl}}/article/send-lifespan/#expiration-date) and [Maximum Access Count]({{site.baseurl}}/article/send-lifespan/#maximum-access-count), you can ensure that access to recipients is terminated according to your needs.
 
-- **Customizably Private**: Protect the contents of your Send by optionally [configuring a password]({{site.baseurl}}/article/send-privacy/#send-passwords) for access so that no unintended recipients can see the contained information. For text Sends, you can also optionally [require users to toggle visibility]({{site.baseurl}}/article/send-privacy/#hide-text) to prevent exposure to unintentional onlookers.
+- **Customizably Private**: Protect the contents of your Send by optionally [configuring a password]({{site.baseurl}}/article/send-privacy/#send-passwords) for access or [hiding your email address from recipients]({{site.baseurl}}/article/send-privacy/#hide-email). For text Sends, you can also optionally [require users to toggle visibility]({{site.baseurl}}/article/send-privacy/#hide-text) to prevent exposure to unintentional onlookers.
 
 ## The Send View
 

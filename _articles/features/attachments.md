@@ -8,7 +8,7 @@ tags: [attachments, storage, files]
 order: 13
 ---
 
-Files can be attached to Vault items from any Bitwarden application. An individual file attachment must be 100MB or smaller. By default, paid users have access to 1GB of encrypted storage for file attachments. Additional storage can be purchased in 1GB increments.
+Files can be attached to Vault items from any Bitwarden application. An individual file attachment must be 500 MB or smaller. By default, paid users have access to 1GB of encrypted storage for file attachments. Additional storage can be purchased in 1GB increments.
 
 {% callout info %}
 File Attachments are available for Premium users, including members of Paid Organizations (Families, Teams, or Enterprise).
