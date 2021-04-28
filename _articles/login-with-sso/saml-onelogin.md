@@ -91,18 +91,15 @@ The Business Portal separates configuration into two sections:
 
 ### Service Provider Configuration
 
-Your Service Provider configuration should already be complete, with three possible exceptions:
-
-1. Set the **Name ID Format** to whatever you selected for the OneLogin **SAML nameID Format** field [during App Configuration](#configuration).
-2. Set the **Minimum Incoming Signing Algorithm** to whatever you selected for the **SAML Signature Algorithm** [during App Configuration](#configuration).
-3. Check the **Want Assertions Signed** box if you set the **SAML signature element** in OneLogin to **Assertion** or **Both** [during App Configuration](#configuration).  
-
-You can also further configure SAML request behavior using other fields in this section:
+Configure the following fields according to the choices selected in the OneLogin Portal [during app creation](#create-a-onelogin-app):
 
 |Field|Description|
 |-----|-----------|
+|Name ID Format|Set this field to whatever you selected for the OneLogin **SAML nameID Format** field [during App Configuration](#configuration).|
 |Outbound Signing Algorithm|Algorithm used to sign SAML requests, by default `sha-256`.|
 |Signing Behavior|Whether/when SAML requests will be signed. By default, OneLogin will not require requests to be signed.|
+|Minimum Incoming Signing Algorithm|Set this field to whatever you selected for the **SAML Signature Algorithm** [during App Configuration](#configuration)|
+|Want Assertions Signed|Check this box if you set the **SAML signature element** in OneLogin to **Assertion** or **Both** [during App Configuration](#configuration).|
 |Validate Certificates|Check this box when using trusted and valid certificates from your IdP through a trusted CA. Self-signed certificates may fail unless proper trust chains are configured within the Bitwarden Login with SSO docker image.|
 
 When you're done with the Service Provider configuration section, **Save** your work.
