@@ -24,7 +24,7 @@ If you change the domain name of your Bitwarden server, you will need to manuall
 
 ```
 ./bitwarden.sh stop
-mv ./bwdata/letsencrypt ./bwadata/letsencrypt_backup
+mv ./bwdata/letsencrypt ./bwdata/letsencrypt_backup
 mkdir ./bwdata/letsencrypt
 chown -R bitwarden:bitwarden ./bwdata/letsencrypt
 chmod -R 740 ./bwdata/letsencrypt
