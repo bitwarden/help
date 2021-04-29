@@ -96,10 +96,9 @@ Declining this permission will allow you to use the Browser Extension as normal,
 
 ##### Supportability
 
-Unlock with Biometrics is supported for Extensions on **Chromium-based** browsers (Chrome, Edge, Opera, Brave, etc.). Unlock with Biometrics is **currently not supported for**:
+Unlock with Biometrics is supported for Extensions on **Firefox** and **Chromium-based** browsers (Chrome, Edge, Opera, Brave, etc.). Unlock with Biometrics is **currently not supported for**:
 
 - Safari
-- Firefox (there's a required up-stream enhancement to make `nativeMessaging` optional, documented [here](https://bugzilla.mozilla.org/show_bug.cgi?id=1630415){:target="\_blank"}).
 - Microsoft App Store Desktop Apps (a side-loaded Windows Desktop App, available at [bitwarden.com/download](https://bitwarden.com/download){:target="\_blank"} will work fine).
 - Side-loaded MacOS Desktop Apps (an App Store Desktop app will work fine).
 
