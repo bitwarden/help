@@ -31,32 +31,12 @@ The following is a summary of the Installation Procedure in this article. Links 
 
 1. [**Configure your Domain**](#configure-your-domain). Set DNS records for a domain name pointing to your machine, and open ports 80 and 443 on the machine.
 2. [**Install Docker and Docker Compose**](#install-docker-and-docker-compose) on your machine, and complete the optional [**Docker Post-Installation**](#docker-post-installation).
-3. Retrieve an installation id and key from [https://bitwarden.com/host](https://bitwarden.com/host){:target="_blank"} for use in installation.
+3. Retrieve an installation id and key from [**https://bitwarden.com/host**](https://bitwarden.com/host){:target="_blank"} for use in installation.
 
    For more information, see [What are my installation id and installation key used for?](https://bitwarden.com/help/article/hosting-faqs/#general).
-4. [**Install Bitwarden**](#install-bitwarden) on your machine using the following sets of commands:
-
-    {% icon fa-linux %} {% icon fa-apple %} Bash
-
-       curl -Lso bitwarden.sh https://go.btwrdn.co/bw-sh \
-           && chmod +x bitwarden.sh
-       ./bitwarden.sh install
-
-    {% icon fa-windows %} PowerShell
-
-       Invoke-RestMethod -OutFile bitwarden.ps1 `
-           -Uri https://go.btwrdn.co/bw-ps
-       .\bitwarden.ps1 -install
+4. [**Install Bitwarden**](#install-bitwarden) on your machine.
 5. [**Configure your Environment**](#configure-your-environment) by adjusting settings in `./bwdata/env/global.override.env`.
-6. [**Start your instance**](#start-bitwarden) using the following commands:
-
-    {% icon fa-linux %} {% icon fa-apple %} Bash
-
-       ./bitwarden.sh start
-
-    {% icon fa-windows %} PowerShell
-
-       .\bitwarden.ps1 -start
+6. [**Start your instance**](#start-bitwarden).
 6. Test your installation by opening your configured domain in a Web Browser.
 
 ## Installation Procedure
