@@ -83,22 +83,22 @@ Once enabled, a new button will be presented on the Unlock screen:
 
 Unlock with Biometrics is supported for Extensions through an integration with the Bitwarden Desktop app. In practical terms, this means:
 
-1. A Bitwarden Desktop app must be installed, logged in, and running in order to use Unlock with Biometrics for a Browser Extension. Additionally, you will need to enable Unlock with Biometrics in **Desktop** before proceeding.
+1. **For all Browser Extensions**, you will need to enable Unlock with Biometrics in Desktop before proceeding. **For all except Safari**, the Bitwarden Desktop app must be logged in and running in order to use Unlock with Biometrics for a Browser Extension.
 2. Browser Extensions support the same biometrics options as Desktop; for Windows via [Windows Hello](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/windows-hello){:target="\_blank"} using PIN, Facial Recognition, or [other hardware that meets Windows Hello biometric requirements](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/windows-hello-biometric-requirements){:target="\_blank"} and for macOS via [Touch ID](https://support.apple.com/en-us/HT207054){:target="\_blank"}.
 
 Two things to bear in mind before enabling the integration are **Permissions** and **Supportability**, documented below:
 
 ##### Permissions
 
-To facilitate this integration, your browser will ask you to accept a new permission for Bitwarden to `communicate with cooperating native applications`. This permission is safe, but **optional**, and will enable the integration that is required to enable Unlock with Biometrics.
+To facilitate this integration, browser extensions **except Safari** will ask you to accept a new permission for Bitwarden to `communicate with cooperating native applications`. This permission is safe, but **optional**, and will enable the integration that is required to enable Unlock with Biometrics.
 
 Declining this permission will allow you to use the Browser Extension as normal, without Unlock with Biometrics functionality.
 
 ##### Supportability
 
-Unlock with Biometrics is supported for Extensions on **Chromium-based** browsers (Chrome, Edge, Opera, Brave, etc.). Unlock with Biometrics is **currently not supported for**:
+Unlock with Biometrics is supported for Extensions on **Chromium-based** browsers (Chrome, Edge, Opera, Brave, etc.), Firefox 87+, and Safari 14+. Unlock with Biometrics is **currently not supported for**:
 
-- Firefox (there's a required up-stream enhancement to make `nativeMessaging` optional, documented [here](https://bugzilla.mozilla.org/show_bug.cgi?id=1630415){:target="\_blank"}).
+- Firefox ESR (Firefox v87+ will work).
 - Microsoft App Store Desktop Apps (a side-loaded Windows Desktop App, available at [bitwarden.com/download](https://bitwarden.com/download){:target="\_blank"} will work fine).
 - Side-loaded MacOS Desktop Apps (an App Store Desktop app will work fine).
 
@@ -110,6 +110,7 @@ To enable Unlock with Biometrics for your Browser Extension:
 2. Scroll down to the Options section, and check the **Enable Browser Integration** box.
 
    {% callout info %}Optionally, check the **Require verification for browser integration** option to require [account fingerprint]({% link _articles/features/fingerprint-phrase.md %}) verification when you activate the integration.{% endcallout %}
+   {% callout success %}**If you're using Safari**, you can stop here. Safari does not require steps 3-5 for Unlock with Biometrics to be enabled.{% endcallout %}
 3. In your Browser, navigate to the Extensions manager (e.g. `chrome://extensions` or `brave://extensions`), open Bitwarden, and toggle the **Allow access to file URLs** option.
 
 

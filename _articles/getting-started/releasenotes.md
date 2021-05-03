@@ -34,7 +34,7 @@ The Bitwarden team is pleased to release a set of features and updates continuin
 - **Custom Fields for Keys**: Custom Field values have been upgraded to support up to 5000 characters, allowing storage of keys like RSA 4096-bit SSH keys (see [here]({{site.baseurl}}/article/custom-fields/#custom-fields-for-keys) for details).
 - **File Size Increases**: You can now create File Attachments or File Sends that are up to 500 MB each. Due to device restrictions, the old 100 MB limit is still in place for Mobile Apps.
 - **Disable Browser Extension Counter**: Disable the Browser Extension badge counter using a new toggle in the {% icon fa-cogs %} **Settings** &rarr; **Options** menu (see [here]({{site.baseurl}}/article/auto-fill-browser/) for details).
-- **Biometrics for Safari**: The Safari Web Extension now includes support for Unlock with Biometrics (see [here]({{site.baseurl}}/article/biometrics/) for details).
+- **Biometrics for Safari**: The Safari Web Extension now includes support for Unlock with Biometrics for Safari 14+ (see [here]({{site.baseurl}}/article/biometrics/) for details).
 - **Search Internationalization**: Vaults can now be searched against 1 character, improving the experience for languages with 1-character words like Simplified and Traditional Chinese.
 - **Sorted Weak Passwords Report**: The Weak Passwords Report is now sorted by the severity of the password's weakness (see [here]({{site.baseurl}}/article/reports/#weak-passwords-report) for details)
 
