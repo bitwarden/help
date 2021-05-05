@@ -123,7 +123,7 @@ Identity Provider Configuration will often require you to refer back to the Okta
 |Entity ID|Enter your **Identity Provider Issuer**, retrieved from the Okta [Sign On Settings](#get-idp-values) screen.|
 |Binding Type|Set to **Redirect**. Okta currently does not support HTTP POST.|
 |Single Sign On Service URL|Enter your **Identity Provider Single Sign-On URL**, retrieved from the Okta [Sign On Settings](#get-idp-values) screen.|
-|Single Log Out Service URL|Login with SSO currently **does not** support SLO. This options is planned for future development, however you may pre-configure it if you wish.|
+|Single Log Out Service URL|Login with SSO currently **does not** support SLO. This option is planned for future development, however you may pre-configure it if you wish.|
 |Artifact Resolution Service URL|For Okta implementations, you can leave this field blank.|
 |X509 Public Certificate|Paste the [downloaded Certificate](#get-idp-values), removing `-----BEGIN CERTIFICATE-----` and `-----END CERTIFICATE-----`.<br><br>Extra spaces, carriage returns, and other extraneous characters **will cause certifiation validation to fail**.|
 |Outbound Signing Algorithm|Select the Signature Algorithm selected [during Okta app configuration](#advanced-settings). If you didn't change the Signature Algorithm, leave the default (`rsa-sha256`).|
