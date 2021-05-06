@@ -12,7 +12,7 @@ redirect_from:
 
 Two-step Login using FIDO2 WebAuthn authenticators is available for Premium users, including members of Paid Organizations (Families, Teams, or Enterprise).
 
-Any FIDO2 WebAuthn Certified authenticator can be used, including YubiKeys, SoloKeys, Nitrokeys, Windows Hello, and more.
+Any FIDO2 WebAuthn Certified authenticator can be used, including Security Keys like YubiKeys, SoloKeys, and Nitrokeys, as well as native biometrics options like Windows Hello and Touch ID.
 
 {% callout success %}
 Existing FIDO U2F security keys will still be usable and will be marked **(Migrated from FIDO)** on the Two-step Login &rarr; Manage FIDO2 WebAuthn dialog.
