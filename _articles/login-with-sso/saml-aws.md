@@ -119,13 +119,15 @@ Identity Provider Configuration will often require you to refer back to the AWS 
 |Disable Outbound Logout Requests|Login with SSO currently **does not** support SLO. This option is planned for future development.|
 |Want Authentication Requests Signed|Whether AWS SSO expects SAML requests to be signed.|
 
+When you're done with the Identity Provider Configuration section, **Save** your work.
+
 ## Test the Configuration
 
 Once your configuration is complete, test it by navigating to [https://vault.bitwarden.com](https://vault.bitwarden.com){:target="\_blank"} and selecting the **Enterprise Single Sign-On** button:
 
 {% image /sso/sso-button-lg.png Enterprise Single Sign-On button %}
 
-Enter the [configured Organiztion Identifier](#) and select **Log In**. If your implementation is successfully configured, you'll be redirected to the AWS SSO login screen:
+Enter the [configured Organiztion Identifier]({{site.baseurl}}/article/configure-sso-saml/#step-1-enabling-login-with-sso) and select **Log In**. If your implementation is successfully configured, you'll be redirected to the AWS SSO login screen:
 
 {% image sso/cheatsheets/saml-aws/aws-login.png AWS login screen %}
 
