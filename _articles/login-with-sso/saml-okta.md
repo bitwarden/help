@@ -11,7 +11,7 @@ order:
 
 This article contains **Okta-specific** help for configuring Login with SSO via SAML 2.0. For help configuring Login with SSO for another IdP, refer to [SAML 2.0 Configuration]({{site.baseurl}}/article/configure-sso-saml/).
 
-Configuration involves working simulataneously within the Bitwarden [Business Portal]({{site.baseurl}}/article/about-business-portal/) and the Okta Admin Portal. As you proceed, we recommend having both readily available and completing steps in the order they're documented.
+Configuration involves working simultaneously within the Bitwarden [Business Portal]({{site.baseurl}}/article/about-business-portal/) and the Okta Admin Portal. As you proceed, we recommend having both readily available and completing steps in the order they're documented.
 
 ## Open the Business Portal
 
@@ -110,7 +110,7 @@ Configure the following fields according to the choices selected in the Okta Adm
 |Signing Behavior|Whether/when SAML requests will be signed.|
 |Minimum Incoming Signing Algorithm|Set this to the Signature Algorithm [specified in Okta](#advanced-settings).|
 |Want Assertions Signed|Check this box if you set the Assertion Signature field to **Signed** [in Okta](#advanced-settings).|
-|Validate Certificates|Check this box when using trusted and valid certificates from your IdP through a trusted CA. Self-signed certificates may fail unless proper trust chaines are configure within the BItwarden Login with SSO docker image.|
+|Validate Certificates|Check this box when using trusted and valid certificates from your IdP through a trusted CA. Self-signed certificates may fail unless proper trust chains are configure within the Bitwarden Login with SSO docker image.|
 
 When you're done with the Service Provider Configuration section, **Save** your work.
 
@@ -131,13 +131,15 @@ Identity Provider Configuration will often require you to refer back to the Okta
 |Disable Outbound Logout Requests|Login with SSO currently **does not** support SLO. This option is planned for future development.|
 |Want Authentication Requests Signed|Whether Okta expects SAML requests to be signed.|
 
+When you're done with the Identity Provider Configuration section, **Save** your work.
+
 ## Test the configuration
 
 Once your configuration is complete, test it by navigating to [https://vault.bitwarden.com](https://vault.bitwarden.com){:target="\_blank"} and selecting the **Enterprise Single Sign-On** button:
 
 {% image /sso/sso-button-lg.png Enterprise Single Sign-On button %}
 
-Enter the [configured Organization Identifier](#) and select **Log In**. If your implementation is successfully configured, you'll be redirected to the Okta login screen:
+Enter the [configured Organization Identifier]({{site.baseurl}}/article/configure-sso-saml/#step-1-enabling-login-with-sso) and select **Log In**. If your implementation is successfully configured, you'll be redirected to the Okta login screen:
 
 {% image sso/cheatsheets/saml-okta/okta-login.png Log in with Okta %}
 
