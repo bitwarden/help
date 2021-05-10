@@ -25,7 +25,7 @@ Bitwarden believes source code transparency is an absolute requirement for secur
 
 To be notified of Release Announcements, subscribe to the [Bitwarden Status RSS Feed](https://status.bitwarden.com/){:target="\_blank"}.
 
-## 2021-05
+## 2021-05-11
 
 The Bitwarden team is pleased to release a set of features and updates continuing our mission of making password management easy and accessible for individuals and businesses:
 
