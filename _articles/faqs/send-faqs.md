@@ -12,6 +12,8 @@ order: 09
 
 **A:** Use of text Sends is available to all Bitwarden users, however creation of file Sends is only available for Premium users, including members of a Paid Organization (Families, Teams, or Enterprise).
 
+Additionally, creation of file Sends requires your Email Address to be verified.
+
 ### Q: Why can't I create a file Send from Firefox or Safari Browser Extension?
 
 **A:** You can! But in order to browse for a file on the Create Send view in a Firefox Browser Extension, you'll need to open the extension in the sidebar or pop out a new window using the popout {% icon fa-external-link fa-rotate-270 %} button:

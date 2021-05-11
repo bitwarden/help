@@ -8,7 +8,7 @@ tags: [attachments, storage, files]
 order: 13
 ---
 
-Files can be attached to Vault items from any Bitwarden application. An individual file attachment must be 100MB or smaller. By default, paid users have access to 1GB of encrypted storage for file attachments. Additional storage can be purchased in 1GB increments.
+Files can be attached to Vault items from any Bitwarden application. An individual file attachment must be 500 MB (100 MB if uploading from Mobile) or smaller. By default, paid users have access to 1GB of encrypted storage for file attachments. Additional storage can be purchased in 1GB increments.
 
 {% callout info %}
 File Attachments are available for Premium users, including members of Paid Organizations (Families, Teams, or Enterprise).
@@ -117,6 +117,12 @@ For more information, refer to our [CLI documentation]({% link _articles/miscell
 {{ cli_sync | markdownify }}
   </div>
 </div>
+
+{% callout warning %}
+**A note on Attachments created after May 11, 2021**:
+
+As a result of an Attachment upgrade, Attachments uploaded on the newest clients cannot be opened on older client versions. If you find you're unable to access a recently-created Attachment, upgrade your client to the newest version (**Hint:** The Cloud Web Vault is *always* on the newest version.)
+{% endcallout %}
 
 ## View an Attachment
 

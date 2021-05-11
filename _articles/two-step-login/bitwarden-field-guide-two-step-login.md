@@ -49,9 +49,9 @@ Enabling Two-step Login will require you to complete a secondary step each time 
 
 **For Premium users**, Bitwarden offers several advanced Two-step Login methods:
 
-- Duo Security with Duo Push, SMS, phone call, and U2F security keys
+- Duo Security with Duo Push, SMS, phone call, and security keys
 - YubiKey (any 4/5 series device or YubiKey NEO/NFC)
-- FIDO U2F (any FIDO U2F certified key)
+- FIDO (any FIDO2 WebAuthn certified key)
 
 To learn more about your options, and for help setting up any method, see [Two-step Login Methods]({% link _articles/two-step-login/setup-two-step-login.md %}).
 

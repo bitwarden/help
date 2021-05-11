@@ -18,7 +18,7 @@ If we cannot process your payment method, or if you have cancelled your subscrip
 
 **Two-step Login**
 
-You will **not** be locked out of your Vault, however you will not be able to use advanced Two-step Login options like Yubikey, U2F, or Duo for authentication.
+You will **not** be locked out of your Vault, however you will not be able to use advanced Two-step Login options like Yubikey, FIDO2, or Duo for authentication.
 - If you have a core Two-step Login option enabled (authenticator app or email), you will be prompted to use the enabled option.
 - If you do not have another Two-step Login option enabled, you will authenticate into your Vault without Two-step Login.
 

@@ -54,7 +54,7 @@ Once identified, you should create a unique password for offending accounts or s
 
 ### Weak Passwords Report
 
-The **Weak Passwords Report** identifies weak passwords that can easily be guessed by hackers and automated tools that are used to crack passwords. The Bitwarden Password Generator can help you create stronger passwords.
+The **Weak Passwords Report** identifies weak passwords that can easily be guessed by hackers and automated tools that are used to crack passwords, sorted by severity of the weakness. The Bitwarden Password Generator can help you create stronger passwords.
 
 Once identified, you should use Bitwarden's Password Generator to create a strong password for offending accounts or services.
 

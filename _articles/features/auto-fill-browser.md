@@ -16,11 +16,17 @@ Additionally, **basic authentication prompts** work a little differently than re
 
 Bitwarden Browser Extensions have a unique **Tab** view, which automatically detects the URI (e.g. `myturbotax.intuit.com`) of the page displayed in the open tab and surfaces any Vault items with corresponding URIs.
 
-When a Vault item has a corresponding URI, the Bitwarden icon will overlay a notification bubble reporting the number of Vault items for that web page (*pictured below*).
+When a Vault item has a corresponding URI, the Bitwarden icon will overlay a badge counter reporting the number of Vault items for that web page (*pictured below*).
 
-{% image /getting-started/browserext/browserext-tab.png %}
+{% image /getting-started/browserext/browserext-tab.png Badge Counter %}
 
-Simply clicking on the Vault item inside the Browser Extension will auto-fill login information to the detected input fields.
+{% callout success %}
+If you want, you can disable the badge counter using a toggle in the {% icon fa-cogs %} **Settings** &rarr; **Options** menu:
+
+{% image autofill/disable-counter-badge.png Disable Badge Counter %}
+{% endcallout %}
+
+Simply clicking on the Vault item inside the Browser Extension **Tab** view will auto-fill login information to the detected input fields.
 
 There are a few alternative auto-fill options for Browser Extensions. In all cases (except [manually](#manually-auto-fill)):
 - The Browser Extension must be unlocked for the auto-fill functionality to operate.

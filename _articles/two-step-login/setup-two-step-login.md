@@ -31,9 +31,9 @@ For Premium users (including members of Paid Organizations), Bitwarden offers se
 
 |Method|Setup Instructions|
 |------|------------------|
-|via Duo Security with Duo Push, SMS, phone call, and U2F security keys|Click [**here**]({% link _articles/two-step-login/setup-two-step-login-duo.md %}).|
+|via Duo Security with Duo Push, SMS, phone call, and security keys|Click [**here**]({% link _articles/two-step-login/setup-two-step-login-duo.md %}).|
 |via YubiKey (any 4/5 series device or YubiKey NEO/NFC)|Click [**here**]({% link _articles/two-step-login/setup-two-step-login-yubikey.md %}).|
-|via FIDO U2F (any FIDO U2F certified key)|Click [**here**]({% link _articles/two-step-login/setup-two-step-login-u2f.md %}).|
+|via FIDO2 WebAuthn (any FIDO2 WebAuthn Certified authenticator)|Click [**here**]({% link _articles/two-step-login/setup-two-step-login-fido.md %}).|
 
 ## Two-step Login for Teams and Enterprise
 
@@ -41,14 +41,14 @@ While all of the above methods can be enabled on an individual-by-individual bas
 
 |Method|Setup Instructions|
 |------|------------------|
-|via Duo Security with Duo Push, SMS, phone call, and U2F security keys|Click [**here**]({% link _articles/two-step-login/setup-two-step-login-duo.md %}).|
+|via Duo Security with Duo Push, SMS, phone call, and security keys|Click [**here**]({% link _articles/two-step-login/setup-two-step-login-duo.md %}).|
 
 ## Using Multiple Methods
 
 You can choose to enable multiple Two-step Login methods. When you log in to a Vault with multiple enabled methods, Bitwarden will first prompt you for the highest-priority method according to the following order of preference:
 
 1. Duo (Organizations)
-2. FIDO U2F
+2. FIDO2 WebAuthn
 3. YubiKey
 4. Duo (Individual)
 5. Authenticator App

@@ -47,7 +47,7 @@ Complete the following steps to create a new Send from the Bitwarden [Web Vault]
    - **What type of Send is this?**: Specify whether this Send will be **Text** or a **File**:
 
      |**Text**|Type or paste the desired text into the input box. Toggle the **When accessing the Send, hide the text by default** option to require recipients to [toggle visibility]({{site.baseurl}}/article/send-privacy/#hide-text) when they open a Send.|
-     |**File**|Select the **Choose File** button and browse for the file to send. The maximum file size per Send is 100 MB. (**Requires Premium**)|
+     |**File**|Select the **Choose File** button and browse for the file to send. The maximum file size per Send is 500 MB (100 MB on Mobile). (**Requires Premium** & Verified Email)|
 
    - **Name**: Specify an identifiable, meaningful name for this Send.
 
@@ -60,7 +60,8 @@ Complete the following steps to create a new Send from the Bitwarden [Web Vault]
    |**Maximum Access Count**|The Send will be [disabled]({{site.baseurl}}/article/send-lifespan/#maximum-access-count-behavior) after the specified access count is reached. By default, unspecified.|
    |**Password**|[Require a password]({{site.baseurl}}/article/send-privacy/#send-passwords) to be entered by recipients of this Send in order to gain access.|
    |**Notes**|Enter private notes for this Send, which will only be visible to the Sender.|
-   **Disable this send so that no one can access it**|Check this box to prevent this Send from being accessible to any recipients. You will still be able to interact this Send from your Send view.|
+   |**Hide my email address from recipients**|[Hide your email]({{site.baseurl}}/article/send-privacy/#hide-email) from Send recipients.|
+   |**Disable this send so that no one can access it**|Check this box to prevent this Send from being accessible to any recipients. You will still be able to interact this Send from your Send view.|
 
    {% callout success%}The rest of this article covers copying a Send link to your clipboard, but you can do that automatically by checking the **Copy the link to share this Send to my clipboard upon save** option before you click **Save**.{% endcallout %}
 
@@ -94,7 +95,7 @@ Complete the following steps to create a new Send from a Bitwarden Browser Exten
    - **Type**: Specify whether this Send will be **Text** or a **File**:
 
      |**Text** | Type or paste the desired text into the input box. Toggle the **When accessing the Send, hide the text by default** option to require recipients to [toggle visibility]({{site.baseurl}}/article/send-privacy/#hide-text) when they open a Send.|
-     |**File** | Select the **Choose File** button and browse for the file to send. The maximum file size per Send is 100 MB. (**Requires Premium**)<br><br>If you're using **Firefox or Safari**, you'll need to popout ({% icon fa-external-link fa-rotate-270 %}) the Browser Extension in order to browse for the file to send.|
+     |**File** | Select the **Choose File** button and browse for the file to send. The maximum file size per Send is 500 MB (100 MB on Mobile). (**Requires Premium** & Verified Email)<br><br>If you're using **Firefox or Safari**, you'll need to popout ({% icon fa-external-link fa-rotate-270 %}) the Browser Extension in order to browse for the file to send.|
 
     By default, a Send will be scheduled for deletion 7 days from its creation. You may configure this and other options using the {% icon fa-chevron-down %} **Options** menu (see Step 4), otherwise select **Save** to finish creating your Send.
 
@@ -105,6 +106,7 @@ Complete the following steps to create a new Send from a Bitwarden Browser Exten
    |**Maximum Access Count**|The Send will be [disabled]({{site.baseurl}}/article/send-lifespan/#maximum-access-count-behavior) after the specified access count is reached. By default, unspecified.|
    |**Password**|[Require a password]({{site.baseurl}}/article/send-privacy/#send-passwords) to be entered by recipients of this Send in order to gain access.|
    |**Notes**|Enter private notes for this Send, which will only be visible to the Sender.|
+   |**Hide my email address from recipients**|[Hide your email]({{site.baseurl}}/article/send-privacy/#hide-email) from Send recipients.|
    |**Disable this send so that no one can access it**|Check this box to prevent this Send from being accessible to any recipients. You will still be able to interact this Send from your Send view.|
 
    {% callout success%}The rest of this article covers copying a Send link to your clipboard, but you can do that automatically by checking the **Copy the link to share this Send to my clipboard upon save** option before you click **Save**.{% endcallout %}
@@ -138,7 +140,7 @@ Complete the following steps to create a new Send from a Bitwarden Desktop App:
    - **Type**: Specify whether this Send will be **Text** or a **File**:
 
      | **Text** | Type or paste the desired text into the input box. Toggle the **When accessing the send, hide text by default** option to require recipients to [toggle visibility]({% link _articles/send/send-privacy.md %}) when they open a Send.|
-     | **File** | Select the **Choose File** button and browse for the file to send. The maximum file size per Send is 100 MB. (**Requires Premium**)|
+     | **File** | Select the **Choose File** button and browse for the file to send. The maximum file size per Send is 500 MB (100 MB on Mobile). (**Requires Premium** & Verified Email)|
 
      By default, a Send will be scheduled for deletion 7 days from its creation. You may configure this and other options using the {% icon fa-chevron-down %} **Options** menu (see Step 4), otherwise select **Save** to finish creating your Send.
 
@@ -149,6 +151,7 @@ Complete the following steps to create a new Send from a Bitwarden Desktop App:
    |**Maximum Access Count**|The Send will be [disabled]({{site.baseurl}}/article/send-lifespan/#maximum-access-count-behavior) after the specified access count is reached. By default, unspecified.|
    |**Password**|[Require a password]({{site.baseurl}}/article/send-privacy/#send-passwords) to be entered by recipients of this Send in order to gain access.|
    |**Notes**|Enter private notes for this Send, which will only be visible to the Sender.|
+   |**Hide my email address from recipients**|[Hide your email]({{site.baseurl}}/article/send-privacy/#hide-email) from Send recipients.|
    |**Disable this send so that no one can access it**|Check this box to prevent this Send from being accessible to any recipients. You will still be able to interact this Send from your Send view.|
 
    {% callout success%}The rest of this article covers copying a Send link to your clipboard, but you can do that automatically by checking the **Copy the link to share this Send to my clipboard upon save** option before you click **Save**.{% endcallout %}
@@ -182,7 +185,7 @@ Complete the following steps to create a new Send from Bitwarden Mobile App:
    - **Type**: Specify whether this Send will be **Text** or a **File**:
 
      |**Text** | Type or paste the desired text into the input box. Toggle the **When accessing the Send, hide the text by default** option to require recipients to [toggle visibility]({% link _articles/send/send-privacy.md %}) when they open a Send.|
-     |**File** | Tap the **Choose File** button and browse for the file to send. The maximum file size per Send is 100 MB. (**Requires Premium**)|
+     |**File** | Tap the **Choose File** button and browse for the file to send. The maximum file size per Send is 100 MB (500 MB on other clients). (**Requires Premium** & Verified Email)|
 
    - **Name**: Specify an identifiable, meaningful name for this Send.
 
@@ -195,6 +198,7 @@ Complete the following steps to create a new Send from Bitwarden Mobile App:
    |**Maximum Access Count**|The Send will be [disabled]({{site.baseurl}}/article/send-lifespan/#maximum-access-count-behavior) after the specified access count is reached. By default, unspecified.|
    |**Password**|[Require a password]({{site.baseurl}}/article/send-privacy/#send-passwords) to be entered by recipients of this Send in order to gain access.|
    |**Notes**|Enter private notes for this Send, which will only be visible to the Sender.|
+   |**Hide my email address from recipients**|[Hide your email]({{site.baseurl}}/article/send-privacy/#hide-email) from Send recipients.|
    |**Disable this send so that no one can access it**|Check this box to prevent this Send from being accessible to any recipients. You will still be able to interact this Send from your Send view.|
 
    {% callout success%}Toggling the **Share upon save** option before you tap **Save** will open the share menu on your device so you can quickly share your Send link.{% endcallout %}

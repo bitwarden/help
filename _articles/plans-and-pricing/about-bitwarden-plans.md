@@ -51,7 +51,8 @@ In the following table, "premium features" (included for **Premium Individual** 
 |Secure Password Generator|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
 |Cloud or Self-hosting|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
 |[Encrypted Export]({% link _articles/importing/encrypted-export.md %})|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
-|*[Two-step login]({% link _articles/two-step-login/setup-two-step-login.md %})|via authenticator apps or email|via authenticator apps, email, Yubikey, U2F, and Duo|via authenticator apps, email, Yubikey, U2F, and Duo (does not include [Duo for Organizations]({% link _articles/two-step-login/setup-two-step-login-duo.md %}))|
+|[Bitwarden Send]({{site.baseurl}}/article/about-send/)|Text Sharing|Text + File Sharing|Text + File Sharing|
+|*[Two-step login]({% link _articles/two-step-login/setup-two-step-login.md %})|via authenticator apps or email|via authenticator apps, email, Yubikey, FIDO2, and Duo|via authenticator apps, email, Yubikey, FIDO2, and Duo (does not include [Duo for Organizations]({% link _articles/two-step-login/setup-two-step-login-duo.md %}))|
 |*[Encrypted file attachments]({% link _articles/features/attachments.md %})|-|1 GB|1 GB per user + 1 GB shared|
 |*[Bitwarden Authenticator]({% link _articles/features/authenticator-keys.md %}) (TOTP)|-|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
 |*[Vault Health Reports]({% link _articles/features/reports.md %})|-|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
@@ -95,7 +96,8 @@ In the following table, "premium features" (included for **Teams Organizations**
 |Max no. of users|2|Unlimited|Unlimited|
 |Max no. of Collections|2|Unlimited|Unlimited|
 |[Encrypted Export]({% link _articles/importing/encrypted-export.md %})|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
-|*[Two-step login]({% link _articles/two-step-login/setup-two-step-login.md %})|via authenticator apps or email|via authenticator apps, email, Yubikey, U2F, and Duo|via authenticator apps, email, Yubikey, U2F, and Duo|
+|[Bitwarden Send]({{site.baseurl}}/article/about-send/)|Text Sharing|Text + File Sharing|Text + File Sharing|
+|*[Two-step login]({% link _articles/two-step-login/setup-two-step-login.md %})|via authenticator apps or email|via authenticator apps, email, Yubikey, FIDO2, and Duo|via authenticator apps, email, Yubikey, FIDO2, and Duo|
 |[Duo for Organizations]({% link _articles/two-step-login/setup-two-step-login-duo.md %})|-|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
 |*[Encrypted file attachments]({% link _articles/features/attachments.md %})|-|1 GB per user + 1 GB shared|1 GB per user + 1 GB shared|
 |*[Bitwarden Authenticator]({% link _articles/features/authenticator-keys.md %}) (TOTP)|-|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|

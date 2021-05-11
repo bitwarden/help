@@ -84,6 +84,12 @@ Setup Auto-fill to automatically enter logins from your Android device to a Web 
 
    Once toggled, you might be required to change some Android-native settings, depending on your available or enabled Auto-fill options. For more information, see [Auto-fill logins on Android]({% link _articles/features/auto-fill-android.md %}).
 
+### Launch from Mobile Apps
+
+You can launch a website directly from the Bitwarden Mobile App by selecting the {% icon fa-share-square %} **Launch** button in any Vault item with a valid URI. If you're unfamiliar with using URIs, see [Using URIs]({% link _articles/features/uri-match-detection.md %}).
+
+{% image /getting-started/mobile-launch.png %}
+
 ### Unlock with Biometrics
 
 Unlocking Bitwarden with biometrics allows for seamless access to your Vault. If you haven't setup [fingerprint unlock](https://support.google.com/nexus/answer/6285273?hl=en) or [face unlock](https://support.google.com/pixelphone/answer/9517039?hl=en) on your Android device, you'll need to do that first from the Android {% icon fa-cog %} **Settings** app.
@@ -174,6 +180,12 @@ Setup Auto-fill to automatically enter logins from your iOS device to a Web Brow
 5. From the **Allow Filling From** list, select **Bitwarden**. A check-mark ( {% icon fa-check %} ) indicates that Bitwarden is selected.
 
 When you create new logins, make sure you enter a website in the [URI field](#create-items) to surface them for Auto-fill.
+
+### Launch from Mobile Apps
+
+You can launch a website directly from the Bitwarden Mobile App by selecting the {% icon fa-share-square %} **Launch** button in any Vault item with a valid URI. If you're unfamiliar with using URIs, see [Using URIs]({% link _articles/features/uri-match-detection.md %}).
+
+{% image /getting-started/mobile-launch.png %}
 
 ### Unlock with Biometrics
 
