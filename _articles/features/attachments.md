@@ -118,6 +118,12 @@ For more information, refer to our [CLI documentation]({% link _articles/miscell
   </div>
 </div>
 
+{% callout warning %}
+**A note on Attachments created after May 11, 2021**:
+
+As a result of an Attachment upgrade, Attachments uploaded on the newest clients cannot be opened on older client versions. If you find you're unable to access a recently-created Attachment, upgrade your client to the newest version (**Hint:** The Cloud Web Vault is *always* on the newest version.)
+{% endcallout %}
+
 ## View an Attachment
 
 Viewing an attachment mimics the same procedure used to attach a file. Refer to one of the above sections for help.
