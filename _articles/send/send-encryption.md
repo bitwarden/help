@@ -34,4 +34,4 @@ When you access a Send link:
 5. Bitwarden servers return the encrypted Send to the Web Vault client.
 6. The Web Vault client locally decrypts the Send using the encryption key.
 
-   {% callout success %}If your send is [password-protected]({{site.baseurl}}/article/send-privacy/#send-passwords), decryption of the Send will be **blocked by authentication**, however this should not be confused with the password being used for decryption.{% endcallout %}
+   {% callout success %}If your send is [password-protected]({{site.baseurl}}/article/send-privacy/#send-passwords), decryption of the Send will be **blocked by authentication**. The server validates the password and only returns the Send if the password is correct. This should not be confused with the password being used for decryption.{% endcallout %}
