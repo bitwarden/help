@@ -737,7 +737,7 @@ Used to specify which [Two-step Login method]({{site.baseurl}}/article/setup-two
 | Yubikey       | 3     |
 
 {% callout info %}
-FIDO and Duo are not supported by the CLI.
+FIDO2 and Duo are not supported by the CLI.
 {% endcallout %}
 
 #### Item Types
