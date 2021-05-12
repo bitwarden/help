@@ -38,7 +38,7 @@ If for some reason Bitwarden were to get hacked and your data was exposed, your 
 
 Your data is fully encrypted and/or hashed before ever leaving **your** local device, so no one from the Bitwarden team can ever see, read, or reverse engineer to get to your real data. Bitwarden servers only store encrypted and hashed data. For more information about how your data is encrypted, see [Encryption]({% link _articles/security/what-encryption-is-used.md %}).
 
-### Q: Is my master password stored locally?
+### Q: Is my Bitwarden master password stored locally?
 
 **A:** No.
 
@@ -46,7 +46,7 @@ We do not keep the master password stored locally or in memory. Your encryption 
 
 We also reload the application's renderer process after 10 seconds of inactivity on the lock screen to make sure any managed memory addresses which have not yet been garbage collected are purged. We do our best to ensure that any data that may be in memory for the application to function is only held in memory for as long as you need it and that memory is cleaned up whenever the application is locked. We consider the application to be completely safe while in a locked state.
 
-### Q: What do I do if I don't recognize a new device logging in?
+### Q: What do I do if I don't recognize a new device logging into Bitwarden?
 
 **A:** If the IP address of a new device doesn't match any known IP addresses (home network, work network, mobile network, etc.), change your master password and make sure Two-step Login is enabled for your account. You should also Deauthorize Sessions from the **Settings** page of your Web Vault to force logout on all devices. If you think your Vault items might be compromised, you should change your passwords.
 
@@ -62,7 +62,7 @@ We also reload the application's renderer process after 10 seconds of inactivity
 
 For more information, please visit our [Security and Compliance](https://bitwarden.com/compliance) page.
 
-### Q: What third-party services, libraries or identifiers are used?
+### Q: What third-party services, libraries or identifiers are used in my Bitwarden account?
 
 **A:** In the Mobile apps, Firebase Cloud Messaging (often mistaken for a tracker) is used only for push notifications related to [sync]({% link _articles/miscellaneous/vault-sync.md %}) and performs absolutely no tracking functions. Microsoft Visual Studio App Center is used for crash reporting on a range of mobile devices. In the Web Vault, Stripe and PayPal scripts are used for payment processing only on payment pages.
 
@@ -70,7 +70,7 @@ For those who prefer to exclude all 3rd party communication, Firebase and Hockey
 
 Bitwarden takes user security and privacy seriously. Bitwarden maintains secure, end-to-end encryption with zero knowledge of your encryption key. As a company focused on open source, we invite anyone to review our library implementations at any time on [GitHub](https://github.com/bitwarden).
 
-### Q: How do I require Two-step Login for my Organization?
+### Q: How do I require Two-step Login for my Bitwarden Organization?
 
 **A:** Use an [Enterprise Policy]({% link _articles/organizations/policies.md %}), included with an Enterprise Organization subscription. You can also enable Duo MFA integration to enforce 2FA/MFA for your Organization. For more information, see [Two-step Login via Duo]({% link _articles/two-step-login/setup-two-step-login-duo.md %}).
 
