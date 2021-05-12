@@ -121,7 +121,9 @@ For more information, refer to our [CLI documentation]({% link _articles/miscell
 {% callout warning %}
 **A note on Attachments created after May 11, 2021**:
 
-As a result of an Attachment upgrade, Attachments uploaded on the newest clients cannot be opened on older client versions. If you find you're unable to access a recently-created Attachment, upgrade your client to the newest version (**Hint:** The Cloud Web Vault is *always* on the newest version.)
+As a result of an Attachment upgrade, Attachments uploaded on the newest clients cannot be opened on older client versions. If you find you're unable to access a recently-created Attachment, upgrade your client to the newest version. (**Hint:** The Cloud Web Vault is *always* on the newest version.)
+
+**Frozen or legacy client versions**, including the Safari 13 (or earlier) macOS Desktop App & App Extension, will not support accessing these attachments.
 {% endcallout %}
 
 ## View an Attachment
