@@ -12,7 +12,7 @@ Deleting a Bitwarden account or Organization permanently deletes the account or 
 
 Deleting an account or Organization does not automatically cancel a subscription. If you're leaving Bitwarden, you should cancel your subscription from the **Settings** &rarr; **Premium Membership** or **Organization Settings** &rarr; **Subscription** page first.
 
-If you're locked out of your Vault and deleting your account so that you can create a new one, [Contact Us](https://bitwarden.com/contact/){:target="\_blank"} and we can help transfer your subcription to the new account.
+If you're locked out of your Vault and deleting your account so that you can create a new one, [Contact Us](https://bitwarden.com/contact/){:target="\_blank"} and we can help transfer your subscription to the new account.
 
 {% callout warning %}
 This action is permanent and cannot be undone.
