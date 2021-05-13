@@ -13,7 +13,7 @@ Any Login item in your Vault can be created with or edited to include one or mor
 {% image uri.png Login item URI fields in the Web Vault %}
 
 {% callout success %}
-Assigning URIs to Login items is **required if you want to leverage auto-fill** functionality in the various Bitwarden client applications.
+Assigning URIs to Login items is **required if you want to use auto-fill** functionality in the various Bitwarden client applications.
 {% endcallout %}
 
 ## URI Schemes
@@ -21,7 +21,7 @@ Assigning URIs to Login items is **required if you want to leverage auto-fill** 
 Well-formed URIs should include a scheme at the beginning, for example the `https://` scheme to securely reference a website address. If no scheme is specified, `http://` is assumed.
 
 {% callout success %}
-Most Bitwarden client applications allow you to {% icon fa-share-square %} **Launch** an website or app directly from your Vault. Without a scheme, this functionality will not work properly.
+Most Bitwarden client applications allow you to {% icon fa-share-square %} **Launch** an website or app directly from your Vault. Without a scheme, Launch won't work properly.
 {% endcallout %}
 
 Schemes include:
@@ -39,10 +39,9 @@ Each URI assigned to a Login item has an associated **Match Detection** option. 
 
 ### Default match detection
 
-Bitwarden Browser Extensions and Mobile Apps can select a **Default match detection** option from the options below (Base domain, Host, Starts with, Regular expression, Exact, or Never) by navigating to {% icon fa-cogs %}**Settings** &rarr; **Options** &rarr; **Default URI Match Detection**. Setting a default option will not preclude you from specifying a match detection option on an item-by-item basis as well.
+Bitwarden Browser Extensions and Mobile Apps can select a **Default match detection** behavior from the options listed below by navigating to {% icon fa-cogs %}**Settings** &rarr; **Options** &rarr; **Default URI Match Detection**. You can also set match detection behavior on an item-by-item basis, which will override the global default.
 
 By default, Bitwarden will use **Base domain** matching as the default option.
-
 
 ### Base domain
 
@@ -50,8 +49,12 @@ Selecting **Base domain** will prompt Bitwarden to offer auto-fill when the top-
 
 For example, if the URI value `https://google.com` uses base domain match detection:
 
-- **Auto-fill offered** for `http://google.com` & `https://accounts.google.com`
-- **Auto-fill not offered** for `https://google.net` & `http://yahoo.com`
+|URL|Auto-fill?|
+|---|----------|
+|http://google.com |<i class="fa fa-check" aria-hidden="true"></i>|
+|https://accounts.google.com |<i class="fa fa-check" aria-hidden="true"></i>|
+|https://google.net |<i class="fa fa-times" aria-hidden="true"></i>|
+|http://yahoo.com |<i class="fa fa-times" aria-hidden="true"></i>|
 
 ### Host
 
@@ -59,8 +62,14 @@ Selecting **Host** will prompt Bitwarden to offer auto-fill when the hostname an
 
 For example, if the URI value `https://sub.domain.com:4000` uses host match detection:
 
-- **Auto-fill offered** for `http://sub.domain.com:4000` & `https://sub.domain.com:4000/page.html`
-- **Auto-fill not offered** for `https://domain.com`, `https://sub.domain.com`,  `https://sub2.sub.domain.com:4000`, or `https://sub.domain.com:5000`
+|URL|Auto-fill?|
+|---|----------|
+|http://sub.domain.com:4000 |<i class="fa fa-check" aria-hidden="true"></i>|
+|https://sub.domain.com:4000/page.html |<i class="fa fa-check" aria-hidden="true"></i>|
+|https://domain.com |<i class="fa fa-times" aria-hidden="true"></i>|
+|https://sub.domain.com |<i class="fa fa-times" aria-hidden="true"></i>|
+|https://sub2.sub.domain.com:4000 |<i class="fa fa-times" aria-hidden="true"></i>|
+|https://sub.domain.com:5000 |<i class="fa fa-times" aria-hidden="true"></i>|
 
 ### Starts with
 
@@ -68,8 +77,13 @@ Selecting **Starts with** will prompt Bitwarden to offer auto-fill when the dete
 
 For example, if the URI value `https://sub.domain.com/path/` uses starts with match detection:
 
-- **Auto-fill offered** for `https://sub.domain.com/path/` & `https://sub.domain.com/path/page.html`
-- **Auto-fill not offered** for `https://sub.domain.com`, `https://sub.domain.com:4000/path/page.html` (interrupted with a port), or `https://sub.domain.com/path` (absent trailing slash)
+|URL|Auto-fill?|
+|---|----------|
+|https://sub.domain.com/path/ |<i class="fa fa-check" aria-hidden="true"></i>|
+|https://sub.domain.com/path/page.html |<i class="fa fa-check" aria-hidden="true"></i>|
+|https://sub.domain.com |<i class="fa fa-times" aria-hidden="true"></i>|
+|https://sub.domain.com:4000/path/page.html (interrupted with a port |<i class="fa fa-times" aria-hidden="true"></i>|
+|https://sub.domain.com/path (absent trailing slash) |<i class="fa fa-times" aria-hidden="true"></i>|
 
 ### Regular expression
 
@@ -83,8 +97,13 @@ Selecting **Regular expression** will prompt Bitwarden to offer auto-fill when t
 
 If the URI value `^https://.*google\.com$` uses regular expression match detection:
 
-- **Auto-fill offered** for `https://google.com`, `https://sub.google.com`, `https://malicious-site.com?q=google.com`
-- **Auto-fill not offered** for `http://google.com` or `https://yahoo.com`
+|URL|Auto-fill?|
+|---|----------|
+|https://google.com |<i class="fa fa-check" aria-hidden="true"></i>|
+|https://sub.google.com |<i class="fa fa-check" aria-hidden="true"></i>|
+|https://malicious-site.com?q=google.com |<i class="fa fa-check" aria-hidden="true"></i>|
+|http://google.com |<i class="fa fa-times" aria-hidden="true"></i>|
+|https://yahoo.com |<i class="fa fa-times" aria-hidden="true"></i>|
 
 This probably matches more than what is intended. Consider avoiding periods (`.`), which unless escaped (`\`) match on any character.
 
@@ -92,9 +111,13 @@ This probably matches more than what is intended. Consider avoiding periods (`.`
 
 If the URI value `^https://[a-z]+\.wikipedia\.org/w/index\.php` uses regular expression match detection:
 
-- **Auto-fill offered** for `https://en.wikipedia.org/w/index.php?title=Special:UserLogin&returnto=Bitwarden`, `https://pl.wikipedia.org/w/index.php?title=Specjalna:Zaloguj&returnto=Bitwarden`, `https://en.wikipedia.org/w/index.php`
-- **Auto-fill not offered** for `https://en.wikipedia.org/wiki/Bitwarden`, `https://malicious-site.com`
-
+|URL|Auto-fill?|
+|---|----------|
+|https://en.wikipedia.org/w/index.php?title=Special:UserLogin&returnto=Bitwarden |<i class="fa fa-check" aria-hidden="true"></i>|
+|https://pl.wikipedia.org/w/index.php?title=Specjalna:Zaloguj&returnto=Bitwarden |<i class="fa fa-check" aria-hidden="true"></i>|
+|https://en.wikipedia.org/w/index.php |<i class="fa fa-check" aria-hidden="true"></i>|
+|https://malicious-site.com |<i class="fa fa-times" aria-hidden="true"></i>|
+|https://en.wikipedia.org/wiki/Bitwarden |<i class="fa fa-times" aria-hidden="true"></i>|
 
 ### Exact
 
@@ -102,8 +125,12 @@ Selecting **Exact** will prompt Bitwarden to offer auto-fill when the Login URI 
 
 For example, if the URI value `https://www.google.com/page.html` uses exact match detection:
 
-- **Auto-fill offered** for `https://www.google.com/page.html`
-- **Auto-fill not offered** for `http://www.google.com/page.html`, `https://www.google.com/page.html?query=123`, or `https://www.google.com`
+|URL|Auto-fill?|
+|---|----------|
+|https://www.google.com/page.html |<i class="fa fa-check" aria-hidden="true"></i>|
+|http://www.google.com/page.html |<i class="fa fa-times" aria-hidden="true"></i>|
+|https://www.google.com/page.html?query=123 |<i class="fa fa-times" aria-hidden="true"></i>|
+|https://www.google.com |<i class="fa fa-times" aria-hidden="true"></i>|
 
 ### Never
 
