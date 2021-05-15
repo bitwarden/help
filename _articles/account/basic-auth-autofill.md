@@ -15,7 +15,13 @@ Auto-filling on basic auth prompts will, by default, use the [Host]({{site.baseu
 
 If more than one Login item with a matching URI is found, the Browser Extension will not be able to auto-fill your credentials and you will need to manually copy/paste your username and password to log in.
 
+If a single Login item is present for a matching URI the credentials will be autofilled in the background and no authentication prompt will be shown.
+
 {% image autofill/basic-auth-prompt.png Basic Auth Prompt %}
+
+The below animation shows the authentication flow in Google Chrome for autofilled basic auth credentials.
+
+{% image autofill/saving-basic-auth.gif Basic Auth Autofill flow %}
 
 {% callout note %}
 Due to the way basic auth prompts are designed, auto-filling must be non-interactive. This means you cannot auto-fill on a basic auth prompt using the {% icon fa-folder %} **Tab** view, context-menu, or keyboard shortcuts.
