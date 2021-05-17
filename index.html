@@ -1,6 +1,7 @@
 ---
 layout: default
-title: Help Center
+title: Bitwarden Help Center
+description: Bitwarden Help is a place to find answers for all your questions about Bitwarden apps, browser extensions, and CLI. 
 ---
 {% assign sorted_articles = site.articles | sort: 'order' %}
 
@@ -16,78 +17,78 @@ title: Help Center
                 </div>
             </div>
             <div class="card mb-3">
-              <h4 class="card-header">
-                  <i class="fa fa-home"></i> Get Started with Bitwarden
-              </h4>
-              <div class="card-body">
-								<div class="icon-wrapper text-center align-items-center justify-content-around">
-									<a class="icon-link" href="{{site.baseurl}}/article/getting-started-webvault">
-										<img src="images/landing/vault-final.png">
-										<p class="font-weight-bold">Web Vault</p>
-									</a>
-									<a class="icon-link" href="{{site.baseurl}}/article/getting-started-browserext">
-										<img src="images/landing/extension.png">
-										<p class="font-weight-bold">Browser</p>
-									</a>
-									<a class="icon-link" href="{{site.baseurl}}/article/getting-started-mobile">
-										<img src="images/landing/mobile.png">
-										<p class="font-weight-bold">Mobile</p>
-									</a>
-									<a class="icon-link" href="{{site.baseurl}}/article/getting-started-desktop">
-										<img src="images/landing/desktop.png">
-										<p class="font-weight-bold">Desktop</p>
-									</a>
-									<a class="icon-link" href="{{site.baseurl}}/article/cli">
-										<img src="images/landing/cli.png">
-										<p class="font-weight-bold">CLI</p>
-									</a>
-								</div>
-              </div>
-          	</div>
+				<h4 class="card-header">
+					<i class="fa fa-home"></i> Get Started with Bitwarden
+				</h4>
+				<div class="card-body">
+					<div class="icon-wrapper text-center align-items-center justify-content-around">
+						<a class="icon-link" href="{{site.baseurl}}/article/getting-started-webvault">
+							<img src="images/landing/vault-final.png">
+							<p class="font-weight-bold">Web Vault</p>
+						</a>
+						<a class="icon-link" href="{{site.baseurl}}/article/getting-started-browserext">
+							<img src="images/landing/extension.png">
+							<p class="font-weight-bold">Browser</p>
+						</a>
+						<a class="icon-link" href="{{site.baseurl}}/article/getting-started-mobile">
+							<img src="images/landing/mobile.png">
+							<p class="font-weight-bold">Mobile</p>
+						</a>
+						<a class="icon-link" href="{{site.baseurl}}/article/getting-started-desktop">
+							<img src="images/landing/desktop.png">
+							<p class="font-weight-bold">Desktop</p>
+						</a>
+						<a class="icon-link" href="{{site.baseurl}}/article/cli">
+							<img src="images/landing/cli.png">
+							<p class="font-weight-bold">CLI</p>
+						</a>
+					</div>
+				</div>
+			</div>
             <div class="card mb-3">
                 <h4 class="card-header">
                     <i class="fa fa-building"></i> Bitwarden for your Business
                 </h4>
                 <div class="card-body">
-									<div class="icon-wrapper text-center align-items-center justify-content-around">
-										<a class="icon-link" href="{{site.baseurl}}/article/getting-started-organizations">
-											<img src="images/landing/organizations.png">
-											<p class="font-weight-bold">Get Started with Organizations</p>
-										</a>
-										<a class="icon-link" href="{{site.baseurl}}/article/proof-of-concept">
-											<img src="images/landing/poc-guide.png">
-											<p class="font-weight-bold">Proof-of-Concept Checklist</p>
-										</a>
-										<a class="icon-link" href="{{site.baseurl}}/article/onboarding-and-succession">
-											<img src="images/landing/directory-sync.png">
-											<p class="font-weight-bold">Onboarding & Succession</p>
-										</a>
-										<a class="icon-link" href="{{site.baseurl}}/article/bitwarden-security-white-paper">
-											<img src="images/landing/security.png">
-											<p class="font-weight-bold">Security & Compliance</p>
-										</a>
-										<a class="icon-link" href="{{site.baseurl}}/article/deploying-bitwarden-as-a-msp">
-											<img src="images/landing/msp.png">
-											<p class="font-weight-bold">Bitwarden for MSPs</p>
-										</a>
-									</div>
+					<div class="icon-wrapper text-center align-items-center justify-content-around">
+						<a class="icon-link" href="{{site.baseurl}}/article/getting-started-organizations">
+							<img src="images/landing/organizations.png">
+							<p class="font-weight-bold">Get Started with Organizations</p>
+						</a>
+						<a class="icon-link" href="{{site.baseurl}}/article/proof-of-concept">
+							<img src="images/landing/poc-guide.png">
+							<p class="font-weight-bold">Proof-of-Concept Checklist</p>
+						</a>
+						<a class="icon-link" href="{{site.baseurl}}/article/onboarding-and-succession">
+							<img src="images/landing/directory-sync.png">
+							<p class="font-weight-bold">Onboarding & Succession</p>
+						</a>
+						<a class="icon-link" href="{{site.baseurl}}/article/bitwarden-security-white-paper">
+							<img src="images/landing/security.png">
+							<p class="font-weight-bold">Security & Compliance</p>
+						</a>
+						<a class="icon-link" href="{{site.baseurl}}/article/deploying-bitwarden-as-a-msp">
+							<img src="images/landing/msp.png">
+							<p class="font-weight-bold">Bitwarden for MSPs</p>
+						</a>
+					</div>
                 </div>
             </div>
         </div>
     </div>
     <div class="row">
-      <div class="col">
-        {% include videos.html %}
-      </div>
+		<div class="col">
+			{% include videos.html %}
+		</div>
     </div>
     <div class="row">
-      <div class="col">
-        {% include contact.html %}
-      </div>
+		<div class="col">
+			{% include contact.html %}
+		</div>
     </div>
     <div class="row">
         <div class="col">
-          {% include connect.html %}
-      </div>
+			{% include connect.html %}
+		</div>
     </div>
 </div>
