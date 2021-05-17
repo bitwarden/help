@@ -133,11 +133,11 @@ Once your configuration is complete, test it by navigating to [https://vault.bit
 
 {% image /sso/sso-button-lg.png Enterprise Single Sign-On button %}
 
-Enter the [configured Organiztion Identifier]({{site.baseurl}}/article/configure-sso-saml/#step-1-enabling-login-with-sso) and select **Log In**. If your implementation is successfully configured, you'll be redirected to the Microsoft login screen:
+Enter the [configured Organization Identifier]({{site.baseurl}}/article/configure-sso-saml/#step-1-enabling-login-with-sso) and select **Log In**. If your implementation is successfully configured, you'll be redirected to the Microsoft login screen:
 
 {% image sso/cheatsheets/saml-azure/az-login.png Azure login screen %}
 
-After you authenticate with your Auth0 credentials, enter your Bitwarden Master Password to decrypt your Vault!
+After you authenticate with your Azure credentials, enter your Bitwarden Master Password to decrypt your Vault!
 
 {% comment %}
 {% image sso/cheatsheets/saml-azure/saml-azure.png %}
