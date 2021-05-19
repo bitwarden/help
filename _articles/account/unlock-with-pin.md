@@ -43,6 +43,9 @@ To enable Unlock with PIN for your Browser Extension:
    {% callout success %}The pre-checked option **Lock with master password on browser restart** will require you to enter your Master Password instead of the PIN when your browser restarts. If you want the ability to unlock with a PIN even when the browser restarts, uncheck the option.{% endcallout %}
 
 Your Unlock with PIN settings will persist **until you log out**. When you log out of your Browser Extension, you'll need to re-enable Unlock with PIN.
+
+To change your PIN, disable and re-enable Unlock with PIN. You will be prompted to enter a new PIN.
+
 {% endcapture %}
 {{ browser_extension | markdownify}}
   </div>
@@ -60,6 +63,9 @@ To enable Unlock with PIN for your Desktop app:
    {% callout success %}The pre-checked option **Lock with master password on restart** will require you to enter your Master Password instead of the PIN when the app restarts. If you want the ability to unlock with a PIN when the app restarts, uncheck this option.{% endcallout %}
 
 Your Unlock with PIN settings will persist **until you log out**. When you log out of your Desktop App, you'll need to re-enable Unlock with PIN.
+
+To change your PIN, disable and re-enable Unlock with PIN. You will be prompted to enter a new PIN.
+
 {% endcapture %}
 {{ desktop_info | markdownify}}
   </div>
@@ -77,6 +83,9 @@ To enable Unlock with PIN for your Mobile app:
    {% callout success %}A dialog box will appear asking whether you want to require unlocking with your master password when the application is restarted. Tap **Yes** to require your Master Password instead of PIN when the app restarts. Tap **No** for the ability to unlock with the PIN when the app restarts.{% endcallout %}
 
 Your Unlock with PIN settings will persist **until you log out**. When you log out of your Mobile App, you'll need to re-enable Unlock with PIN.
+
+To change your PIN, disable and re-enable Unlock with PIN. You will be prompted to enter a new PIN.
+
 {% endcapture %}
 {{ mobile_info | markdownify}}
   </div>
