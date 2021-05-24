@@ -67,4 +67,8 @@ The following assumes that **FIDO2 WebAuthn** is your [highest-priority enabled 
 
    {% image two-step/u2f/fido2.png %}
 
+{% callout success %}
+Check the **Remember Me** box to remember your device for 30 days. Remembering your device will mean you won't be required to complete your Two-step Login step.
+{% endcallout %}
+
 You will not be required to complete your secondary Two-step Login setup to **Unlock** your Vault once logged in. For help configuring Log Out vs. Lock behavior, see [Vault Timeout Options]({% link _articles/account/vault-timeout.md %}).

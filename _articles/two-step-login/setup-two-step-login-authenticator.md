@@ -46,9 +46,9 @@ The following assumes that **Authenticator** is your [highest-priority enabled m
 1. Log in to your Bitwarden Vault on any app and enter your Email Address and Master Password.
 
    You will be prompted to **Enter the 6 digit verification code from your authenticator app**.
-2. Open your authenticator app and find the 6 digit verification code for your Bitwarden Vault. Enter this code on the Vault login screen.
+2. Open your authenticator app and find the 6 digit verification code for your Bitwarden Vault. Enter this code on the Vault login screen. Typically, verification codes will change every 30 seconds.
 
-   Typically, verification codes will change every 30 seconds.
+   {% callout success %}Check the **Remember Me** box to remember your device for 30 days. Remembering your device will mean you won't be required to complete your Two-step Login step.{% endcallout %}
 3. Select **Continue** to finish logging in.
 
 You will not be required to complete your secondary Two-step Login step to **Unlock** your Vault once logged in. For help configuring Log Out vs. Lock behavior, see [Vault Timeout Options]({% link _articles/account/vault-timeout.md %}).
