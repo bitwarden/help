@@ -95,7 +95,6 @@ Each fingerprint phrase is unique to its account, and ensures a final layer of o
 
 To remove users from your Organization:
 
-
 1. Login to your [Web Vault](https://vault.bitwarden.com){:target="\_blank"} and open your Organization.
 2. In your Organization, open the **Manage** tab and select **People** from the left menu.
 3. On the **People** screen, hover over the user you want to remove and select the gear dropdown.
@@ -103,8 +102,11 @@ To remove users from your Organization:
 
 {% image organizations/org-people-options-updated-overlay.png Remove a user %}
 
-Removing a user from an Organization **does not** delete their Bitwarden account. When a user is removed they can no longer access the Organization or any shared items and Collections, however they will still be able to login to Bitwarden using the established credentials and access to any Personal Vault items.
+### Deleting User Accounts
 
-{% callout success %}
-If you're an Organization Owner or Admin removing a user with a `@yourcompany.com` email address, you can delete the Bitwarden account as long as you have access to the `@yourcompany.com` email inbox. For more information, see [Delete an Account Without Logging In](https://bitwarden.com/help/article/delete-your-account/#without-logging-in).
-{% endcallout %}
+**Removing a user from your Organization does not delete their Bitwarden account.** When a user is removed they can no longer access the Organization or any shared items and Collections, however they will still be able to login to Bitwarden using their existing Master Password and access any Personal Vault items.
+
+Depending on the particulars of your implementation, you may be able to use one of the following methods to delete a Bitwarden user account that belongs to an offboarded user:
+
+1. If you're self-hosting Bitwarden, an authorized admin can delete the account from the [System Administrator Portal]({{site.baseurl}}/article/admin-portal/).
+2. If the account has an `@yourcompany.com` email address that your company controls, you can use the [delete without logging in](https://vault.bitwarden.com/#/recover-delete){:target="\_blank"} tool and confirm deletion within the `@yourcompany.com` inbox. For more information, see [Delete an Account Without Logging In](https://bitwarden.com/help/article/delete-your-account/#without-logging-in).
