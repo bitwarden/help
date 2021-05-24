@@ -46,4 +46,4 @@ Importing data to Bitwarden **can only be done from the** [**Web Vault**](https:
 6. Select the **Import Data** button to complete your import.
 7. After successful import, delete the import source file from your computer. This will protect you in the event your computer is compromised.
 
-Congratulations! You have just transferred your data from 1Password into Bitwarden.
+Currently, file attachments are not included in Bitwarden import operations and will need to be uploaded to your Vault manually. For more information, see [File Attachments]({{site.baseurl}}/article/attachments/#attach-a-file).

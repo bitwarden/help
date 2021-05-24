@@ -91,7 +91,7 @@ Importing data to Bitwarden **can only be done from the** [**Web Vault**](https:
  5. Select the **Import Data** button to complete your import.
  6. After successful import, delete the source `.csv` file from your computer. This will protect you in the event your computer is compromised.
 
- Currently, file attachments are not included in Bitwarden import operations and will need to be uploaded to your Vault manually. For more information, see [File Attachments]({% link _articles/features/attachments.md %}).
+ Currently, file attachments are not included in Bitwarden import operations and will need to be uploaded to your Vault manually. For more information, see [File Attachments]({{site.baseurl}}/article/attachments/#attach-a-file).
 
 ## Import Troubleshooting
 
