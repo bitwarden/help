@@ -18,26 +18,27 @@ For a full list of supported import formats, see [What file formats does Bitward
 - [Import from Google Chrome]({% link _articles/importing/import-from-chrome.md %})
 - [Import from Password Safe]({% link _articles/importing/import-from-passwordsafe.md %})
 
-## Import to your Personal Vault
-
-Importing data to Bitwarden **can only be done from the** [**Web Vault**](https://vault.bitwarden.com){:target="\_blank"}.
-
 {% callout success %}
 **Not already signed up?** Choose from one of [Bitwarden's plans](https://bitwarden.com/pricing/business/){:target="\_blank"} and get started today:
 
 <a role="button" class="btn btn-primary" href="https://vault.bitwarden.com/#/register" target="blank">Create Your Free Account</a>
 {% endcallout %}
 
- To import your data:
+## Import to your Personal Vault
+
+Importing data to Bitwarden **can only be done from the** [**Web Vault**](https://vault.bitwarden.com){:target="\_blank"}. To import your data:
 
  1. In the Web Vault, select **Tools** from the top navigation bar.
  2. Select **Import Data** from the left-hand Tools menu.
  3. From the format dropdown, choose a **File Format** (see [What file formats does Bitwarden support for import?]({{site.baseurl}}/article/import-faqs/#q-what-file-formats-does-bitwarden-support-for-import)).
 
- 5. Select the **Choose File** button and add the file to import.
+ 5. Select the **Choose File** button and add the file to import or **copy/paste** the contents of your file into the input box.
 
     {% callout warning %}Import to Bitwarden can't check whether items in the file to import are duplicative of items in your Vault. This means that **importing multiple files will create duplicative** Vault items if an item is already in the Vault and in the file to import.{% endcallout %}
  6. Select the **Import Data** button to complete your import.
+ 7. After successful import, delete the import source file from your computer. This will protect you in the event your computer is compromised.
+
+Currently, file attachments are not included in Bitwarden import operations and will need to be uploaded to your Vault manually. For more information, see [File Attachments]({{site.baseurl}}/article/attachments/#attach-a-file).
 
 ## Troubleshooting
 

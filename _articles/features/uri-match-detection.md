@@ -35,7 +35,9 @@ An easy way to obtain the proper URI for an Android app is to **use a web browse
 
 ## Match Detection Options
 
-Each URI assigned to a Login item has an associated **Match Detection** option. This option determines when and whether Bitwarden will offer the Login as an available option for auto-fill.
+Each URI assigned to a Login item has an associated **Match Detection** option. This option determines when and whether Bitwarden will offer the Login as an available option for auto-fill, typically determined by matching against specific component pieces. The following graphic breaks down component pieces of a URI:
+
+{% image autofill/urlgraphic.png %}
 
 ### Default match detection
 

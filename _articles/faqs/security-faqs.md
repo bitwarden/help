@@ -78,6 +78,10 @@ Bitwarden takes user security and privacy seriously. Bitwarden maintains secure,
 
 **A:** See [Certificate Options]({% link _articles/hosting/certificates.md %}) for a complete list and instructions.
 
+### Q: How does Bitwarden vet code changes?
+
+**A:** Confidence in the security of our systems is of utmost important to Bitwarden. All proposed code changes are reviewed by one or more non-author members of the team before they can be merged into any codebase. All code goes through multiple test and QA environments prior to production. Bitwarden has implemented a SOC2 report to audit and validate our internal procedures. As mentioned in the report, our team is subject to rigorous background check and thorough interview processes. Bitwarden, being an open-source product, also welcomes peer-review of our code at any point. The team at Bitwarden strives to do everything we can to keep our users comfortable, and keeping their data secure. 
+
 ### Questions Regarding Specific Client Apps
 
 ### Q: What data does Bitwarden use from client applications?

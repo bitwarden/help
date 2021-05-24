@@ -129,4 +129,6 @@ The following assumes that **Duo** is your [highest-priority enabled method](htt
    - Approving the **Duo Push** request from your registered device.
    - Finding the 6 digit verification code in your **Duo Mobile** app or **SMS** messages, and enter the code on the Vault login screen.
 
+   {% callout success %}Check the **Remember Me** box to remember your device for 30 days. Remembering your device will mean you won't be required to complete your Two-step Login step.{% endcallout %}
+
 You will not be required to complete your secondary Two-step Login step to **Unlock** your Vault once logged in. For help configuring Log Out vs. Lock behavior, see [Vault Timeout Options]({% link _articles/account/vault-timeout.md %}).

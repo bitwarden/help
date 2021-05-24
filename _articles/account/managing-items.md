@@ -8,64 +8,150 @@ tags: [account, items, import, delete, trash, clone]
 order: 03
 ---
 
-Effectively managing the items in your Vault is key to making sure that you secure and have seamless access to your information, and can safely share information with friends, family, teams, and colleagues.
+Effectively managing the items in your Vault is key to making sure that you secure and have seamless access to your information, and can safely share information with friends, family, teams, and colleagues. There are 4 types of items you can store in your Vault; Logins, Cards, Identities, and Secure Notes:
 
-Bitwarden can store 4 types of items in your Vault:
-- [Logins](#logins)
-- [Cards](#cards)
-- [Identities](#identities)
-- [Secure Notes](#secure-notes)
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" id="tab" role="presentation">
+    <a class="nav-link active" id="logintab" data-bs-toggle="tab" data-target="#logins" role="tab" aria-controls="logins" aria-selected="true">Logins</a>
+  </li>
+  <li class="nav-item" id="tab" role="presentation">
+    <a class="nav-link" id="cardtab" data-bs-toggle="tab" data-target="#cards" role="tab" aria-controls="cards" aria-selected="false">Cards</a>
+  </li>
+  <li class="nav-item" id="tab" role="presentation">
+    <a class="nav-link" id="identitytab" data-bs-toggle="tab" data-target="#identity" role="tab" aria-controls="identity" aria-selected="false">Identities</a>
+  </li>
+  <li class="nav-item" id="tab" role="presentation">
+    <a class="nav-link" id="notetab" data-bs-toggle="tab" data-target="#notes" role="tab" aria-controls="notes" aria-selected="false">Secure Notes</a>
+  </li>
+</ul>
 
-## Add a Vault Item
-
-You can add items to your Vault from the Bitwarden [Web Vault](https://vault.bitwarden.com){:target="\_blank"} or any client application. Look for a {% icon fa-plus %} **Add** icon to add an item to your Vault. There are 4 types of items you can add to your Vault.
-
-All item types can be given:
-- A **Name** that makes them easily identifiable to you inside your Vault.
-- **Notes** related to the item in a freeform text input.
-- **Custom Fields** for inputs like security questions or PINs (for more information, see [Custom Fields]({% link _articles/features/custom-fields.md %})).
-
-{% callout success %}
-You can also import items into your Vault from a variety of password management solutions. For more information, see [Import Data to your Vault]({% link _articles/importing/import-data.md %}).
-{% endcallout %}
-
+<div class="tab-content" id="clientsContent">
+  <div class="tab-pane show active" id="logins" role="tabpanel" aria-labelledby="logintab">
+{% capture logins %}
 ### Logins
 
-Refer to the following screenshot for help understanding all the values available for Login items:
+Login items are most often used to store username and password combinations, and support [TOTP seeds]({{site.baseurl}}/article/authenticator-keys/) for Premium users. Whatever plan you're on, we recommend giving every Login a [URI for easy auto-fill]({{site.baseurl}}/article/uri-match-detection):
 
-{% image /manage-items/login-item.png Add a Login%}
+{% image /manage-items/login-item.png Login Vault Item %}
 
+{% endcapture %}
+{{ logins | markdownify }}
+  </div>
+  <div class="tab-pane" id="cards" role="tabpanel" aria-labelledby="cardtab">
+{% capture cards %}
 ### Cards
 
-Refer to the following screenshot for help understanding all the values available for Card items:
+Card items can be used to store credit or debit card information:
 
-{% image /manage-items/card-item.png Add a Card%}
+{% image /manage-items/card-item.png Card Vault Item %}
 
+{% endcapture %}
+{{ cards | markdownify }}
+  </div>
+  <div class="tab-pane" id="identity" role="tabpanel" aria-labelledby="identitytab">
+{% capture identities %}
 ### Identities
 
-Refer to the following screenshot for help understanding all the values available for Identity items:
+Identities can be used to store billing info, mailing info, or anything else you might need to have access to when filling out online forms:
 
-{% image /manage-items/identity-item.png Add an Identity %}
+{% image /manage-items/identity-item.png Identity Vault Item %}
 
+{% endcapture %}
+{{ identities | markdownify }}
+  </div>
+  <div class="tab-pane" id="notes" role="tabpanel" aria-labelledby="notetab">
+{% capture notes %}
 ### Secure Notes
 
-Refer to the following screenshot for help understanding all the values available for Secure Note items:
+Secure Notes can be used to store encrypted freeform text for anything you want protected:
 
-{% image /manage-items/note-item.png Add a Note%}
+{% image /manage-items/note-item.png Secure Note Vault Item %}
+
+{% endcapture %}
+{{ notes | markdownify }}
+  </div>
+</div>
+
+{% callout success %}
+You can import items into your Vault from a variety of password management solutions. For more information, see [Import Data to your Vault]({% link _articles/importing/import-data.md %}).
+{% endcallout %}
+
+## Manage Vault Items
+
+You can add, edit, and delete Vault items from any Bitwarden client application:
+
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" id="tab" role="presentation">
+  <a class="nav-link active" id="wvtab" data-bs-toggle="tab" data-target="#wv" role="tab" aria-controls="wv" aria-selected="true">Web Vault</a>
+  </li>
+  <li class="nav-item" id="tab" role="presentation">
+    <a class="nav-link" id="betab" data-bs-toggle="tab" data-target="#be" role="tab" aria-controls="be" aria-selected="false">Browser Extensions</a>
+  </li>
+  <li class="nav-item" id="tab" role="presentation">
+    <a class="nav-link" id="mobtab" data-bs-toggle="tab" data-target="#mob" role="tab" aria-controls="mob" aria-selected="false">Mobile</a>
+  </li>
+  <li class="nav-item" id="tab" role="presentation">
+    <a class="nav-link" id="desktab" data-bs-toggle="tab" data-target="#desk" role="tab" aria-controls="desk" aria-selected="false">Desktop</a>
+  </li>
+  <li class="nav-item" id="tab" role="presentation">
+    <a class="nav-link" id="clitab" data-bs-toggle="tab" data-target="#cli" role="tab" aria-controls="cli" aria-selected="false">CLI</a>
+  </li>
+</ul>
+
+<div class="tab-content" id="clientsContent">
+  <div class="tab-pane show active" id="wv" role="tabpanel" aria-labelledby="wvtab">
+{% capture wv %}
+### Web Vault
+
+{% image /manage-items/manage-webvault.png Manage an Item %}
+
+{% endcapture %}
+{{ wv | markdownify }}
+  </div>
+  <div class="tab-pane" id="be" role="tabpanel" aria-labelledby="betab">
+{% capture be_sync %}
+### Browser Extensions
+
+{% image /manage-items/manage-be.png Manage an Item %}
+
+{% endcapture %}
+{{ be_sync | markdownify }}
+  </div>
+  <div class="tab-pane" id="mob" role="tabpanel" aria-labelledby="mobtab">
+{% capture mob_sync%}
+### Mobile Apps
+
+{% image /manage-items/manage-mobile-1.png Add or Open an Item %}
+
+{% image /manage-items/manage-mobile-2.png Manage an Item %}
+
+
+{% endcapture %}
+{{ mob_sync | markdownify }}
+  </div>
+  <div class="tab-pane" id="desk" role="tabpanel" aria-labelledby="desktab">
+{% capture desk_sync%}
+### Desktop Apps
+
+{% image /manage-items/manage-desktop.png Manage an Item %}
+
+{% endcapture %}
+{{ desk_sync | markdownify }}
+  </div>
+  <div class="tab-pane" id="cli" role="tabpanel" aria-labelledby="clitab">
+{% capture cli_sync%}
+### CLI
+
+For more information, refer to our [CLI documentation]({% link _articles/miscellaneous/cli.md %}).
+
+{% endcapture %}
+{{ cli_sync | markdownify }}
+  </div>
+</div>
 
 ### Folders and Favorites
 
-Items in your personal Vault can be organized into Folders, or marked as Favorites. For more information, see [Folders]({% link _articles/features/folders.md %}) and [Favorites]({% link _articles/features/favorites.md %}).
-
-## Delete a Vault Item
-
-You can delete any Vault items directly from the [Web Vault](https://vault.bitwarden.com){:target="\_blank"} or from any client application:
-
-- In the [Web Vault](https://vault.bitwarden.com){:target="\_blank"}, select **Delete** from the hover-over {% icon fa-cog %} **Gear** dropdown.
-- On Mobile Applications, open the item and tap **Delete** in the {% icon fa-ellipsis-v %} **Menu**.
-- On Desktop Applications and Browser Extensions, open the item and select the {% icon fa-trash %} **Delete** icon.
-
-Before an item is deleted, you will be prompted to confirm deletion. Once confirmed, the item will be placed into the Trash.
+Items in your Vault can be organized into Folders, or marked as Favorites. For more information, see [Folders]({% link _articles/features/folders.md %}) and [Favorites]({% link _articles/features/favorites.md %}).
 
 ### Items in the Trash
 
@@ -73,13 +159,13 @@ Deleted items are sent to the Trash, where they remain for 30 days after deletio
 
 In the Trash, you can **Restore** an item to your Vault or **Permanently Delete** it prior to the 30-day waiting period:
 
-{% image /manage-items/item-trash-restore-delete.png The Trash%}
+{% image /manage-items/item-trash-restore-delete.png The Trash %}
 
-## Share a Vault Item
+## Share Vault Items
 
-If you're a member of an Organization, you can share a Vault item with the other members of your Organization. For more information, see [Share Items to a Collection]({% link _articles/organizations/share-to-a-collection.md %}).
+If you're a member of an [Organization]({{site.baseurl}}/article/about-organizations/), you can share Vault items with other members of your Organization. Learn more about [Organizations]({{site.baseurl}}/article/about-organizations/), [Collections]({{site.baseurl}}/article/about-collections), and [Sharing]({{site.baseurl}}/article/share-to-a-collection/).
 
-## Clone a Vault Item
+## Clone Vault Items
 
 You can clone any Vault item that you have **Ownership** of, if you wish to create a duplicate of the item.
 
