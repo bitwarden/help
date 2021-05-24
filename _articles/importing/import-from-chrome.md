@@ -10,19 +10,30 @@ order: 04
 
 Use this article for help exporting data from Google Chrome and importing into Bitwarden.
 
-{% callout info %}
-The steps in this article can also be used with the following browsers:
-- Opera
-- Microsoft Edge (Chromium)
-- Brave
-- Vivaldi
+{% callout success %}
+The steps in this article can also be used with any Chromium-based browser, including Opera, Microsoft Edge (Chromium), Brave, and Vivaldi.
 {% endcallout %}
 
 ## Export from Chrome
 
-### From a Desktop
+You can export Google Chrome data from a Desktop browser or a Mobile browser:
 
-Complete the following steps to export passwords from Chrome on your Desktop:
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a class="nav-link active" id="desktab" data-bs-toggle="tab" data-target="#desk" role="tab" aria-controls="desk" aria-selected="true">Chrome on Desktop</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="mobiletab" data-bs-toggle="tab" data-target="#mobile" role="tab" aria-controls="mobile" aria-selected="false">Chrome on Mobile</a>
+  </li>
+</ul>
+
+<div class="tab-content" id="clientsContent">
+  <div class="tab-pane show active" id="desk" role="tabpanel" aria-labelledby="desktab">
+{% capture desktop %}
+
+### Chrome on Desktop
+
+To export passwords from Chrome on your Desktop:
 
 1. Using the address bar, navigate to `chrome://settings/passwords`.
 2. Select the {% icon fa-ellipsis-v %} menu button in the Saved Passwords section, and select **Export passwords...** from the dropdown.
@@ -31,13 +42,15 @@ Complete the following steps to export passwords from Chrome on your Desktop:
 3. Specify a location to save your export to, and select **comma-separated values** from the **Format:** field.
 4. Select **Save** to finish exporting from Chrome.
 
-{% callout success %}
-After you [import to Bitwarden](#import-to-bitwarden), make sure that you delete this exported file from your computer to ensure this information is secure in the event that your computer is compromised.
-{% endcallout %}
+{% endcapture %}
+{{ desktop | markdownify }}
+  </div>
+  <div class="tab-pane" id="mobile" role="tabpanel" aria-labelledby="mobiletab">
+{% capture mobile %}
 
-### From a Mobile Device
+### Chrome on Mobile
 
-Complete the following steps to export passwords from Chrome on your Mobile Device:
+To export passwords from Chrome on your Mobile Device:
 
 1. Tap the {% icon fa-ellipsis-h %} menu button and tap **Settings**.
 2. Tap **Passwords**.
@@ -46,23 +59,23 @@ Complete the following steps to export passwords from Chrome on your Mobile Devi
    You may be prompted to enter your device PIN or a biometric for authorization.
 4. Specify a location to save your export to.
 
-{% callout success %}
-After you [import to Bitwarden](#import-to-bitwarden), make sure that you delete this exported file from your computer to ensure this information is secure in the event that your computer is compromised.
-{% endcallout %}
+{% endcapture %}
+{{ mobile | markdownify }}
+  </div>
+</div>
 
 ## Import to Bitwarden
 
-Complete the following steps to import data to your Bitwarden personal Vault (for help importing to an Organization Vault, see [Import Items to an Organization]({% link _articles/organizations/import-to-org.md %})):
+Importing data to Bitwarden **can only be done from the** [**Web Vault**](https://vault.bitwarden.com){:target="\_blank"}. To import your data:
 
-1. Log in to the [Web Vault](https://vault.bitwarden.com){:target="\_blank"}.
-2. Select **Tools** from the top navigation bar.
-3. Select **Import Data** from the left Tools menu.
-4. Select **Chrome (csv)** from the format dropdown.
-5. Select the **Browse...** button and add the file exported from Chrome.
-6. Select the **Import Data** button to complete your import.
+ 1. In the Web Vault, select **Tools** from the top navigation bar.
+ 2. Select **Import Data** from the left-hand Tools menu.
+ 3. From the format dropdown, choose a **Chrome (csv)** (see [What file formats does Bitwarden support for import?]({{site.baseurl}}/article/import-faqs/#q-what-file-formats-does-bitwarden-support-for-import)).
 
-{% callout warning %}
-Importing data multiple times will create duplicates.
-{% endcallout %}
+ 5. Select the **Choose File** button and add the file to import or **copy/paste** the contents of your file into the input box.
+
+    {% callout warning %}Import to Bitwarden can't check whether items in the file to import are duplicative of items in your Vault. This means that **importing multiple files will create duplicative** Vault items if an item is already in the Vault and in the file to import.{% endcallout %}
+ 6. Select the **Import Data** button to complete your import.
+ 7. After successful import, delete the import source file from your computer. This will protect you in the event your computer is compromised.
 
 Congratulations! You have just transferred your data from Chrome into Bitwarden.
