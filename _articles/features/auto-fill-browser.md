@@ -51,7 +51,6 @@ To auto-fill login information, use the following **default** shortcuts. If ther
 - On Windows: `Ctrl + Shift + L`
 - On macOS: `Cmd + Shift + L`
 - On Linux: `Ctrl + Shift + L`
-- Safari: `Cmd + \` or `Cmd + 8` or `Cmd + Shift + P`
 
 {% callout success %}
 If a login uses the [Bitwarden Authenticator]({% link _articles/features/authenticator-keys.md %}) for TOTPs, using the `Cmd/Ctrl + Shift + L` will automatically copy your TOTP to your clipboard after auto-filling. All you have to do is `Cmd/Ctrl + V` to paste!
