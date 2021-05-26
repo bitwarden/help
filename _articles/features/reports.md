@@ -85,7 +85,7 @@ A “breach” is defined by HIBP as "an incident where data is inadvertantly ex
 {% callout info %}
 If you are self-hosting Bitwarden, in order to run the **Data Breach Report** report in your instance you will need to buy an HIBP subscription key that will authorize you to make calls to the API, obtained [here](https://haveibeenpwned.com/API/Key){:target="_blank"}.
 
-Once you have the key, open your `./bwdata/env/golbal.override.env` and REPLACE the placeholders value for `globalSettnigs_hibpApiKey=` with your purchased API key:
+Once you have the key, open your `./bwdata/env/global.override.env` and REPLACE the placeholders value for `globalSettings__hibpApiKey` with your purchased API key:
 
 ```
 globalSettings__hibpApiKey=REPLACE
