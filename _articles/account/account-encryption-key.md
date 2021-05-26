@@ -26,9 +26,9 @@ When you rotate an encryption key, you **must immediately** log out of any logge
 
 **Making changes in a session with a "stale" encryption key will cause data corruption that will make your data unrecoverable.**
 
-#### Re-download any Encrypted Exports
+#### Re-create any Encrypted Exports
 
-If you're using [Encrypted Exports]({% link _articles/importing/encrypted-export.md %}) to store long-term secure backups, you should immediately re-download the encrypted export of your Vault data using the new encryption key.
+If you're using [Encrypted Exports]({% link _articles/importing/encrypted-export.md %}) to store long-term secure backups, you should immediately re-create the encrypted export of your Vault data using the new encryption key.
 
 Encrypted Exports use your encryption key to encrypt **and decrypt** your Vault data, meaning that a rotated encryption key will not be able to decrypt an export created with the "stale" (prior-to-rotation) key.
 

@@ -45,6 +45,8 @@ The following assumes that **Email** is your [highest-priority enabled method](h
 
    You will be prompted to **Enter the 6 digit verification code that was emailed to your configured email**.
 2. Check your inbox for the 6 digit verification code. Enter this code on the Vault login screen.
+
+   {% callout success %}Check the **Remember Me** box to remember your device for 30 days. Remembering your device will mean you won't be required to complete your Two-step Login step.{% endcallout %}
 3. Select **Continue** to finish logging in.
 
 You will not be required to complete your secondary Two-step Login step to **Unlock** your Vault once logged in. For help configuring Log Out vs. Lock behavior, see [Vault Timeout Options]({% link _articles/account/vault-timeout.md %}).

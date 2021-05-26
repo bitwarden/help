@@ -12,9 +12,27 @@ Use this article for help exporting data from Firefox and importing into Bitward
 
 ## Export from Firefox
 
-### From Latest Version of Firefox
+Exporting from Firefox can look a little different depending on which version you're using, or if you're using a Firefox-based browser like Tor Browser or Waterfox:
 
-Complete the following steps to export your logins from the latest version of Firefox:
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a class="nav-link active" id="latesttab" data-bs-toggle="tab" data-target="#latest" role="tab" aria-controls="latest" aria-selected="true">Latest Version</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="oldertab" data-bs-toggle="tab" data-target="#older" role="tab" aria-controls="older" aria-selected="false">Older Versions</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="basedtab" data-bs-toggle="tab" data-target="#based" role="tab" aria-controls="based" aria-selected="false">Firefox-based</a>
+  </li>
+</ul>
+
+<div class="tab-content" id="clientsContent">
+  <div class="tab-pane show active" id="latest" role="tabpanel" aria-labelledby="latesttab">
+{% capture latest %}
+
+### Export from Latest Version
+
+To export logins from the latest version of Firefox:
 
 1. Using the address bar, navigate to `about:logins`
 2. Select the {% icon fa-ellipsis-h %} menu button from the top right and select **Export Logins...** from the dropdown.
@@ -23,7 +41,13 @@ Complete the following steps to export your logins from the latest version of Fi
 
    Firefox will export your logins as a `.csv`.
 
-### From Older Versions of Firefox
+{% endcapture %}
+{{ latest | markdownify }}
+  </div>
+  <div class="tab-pane" id="older" role="tabpanel" aria-labelledby="oldertab">
+{% capture older %}
+
+### Export from Older Versions
 
 Some older versions of Firefox do not support native export. Complete the following steps to export using an FF Password Exporter.
 
@@ -34,9 +58,15 @@ Some older versions of Firefox do not support native export. Complete the follow
 3. Select the **Export Passwords** button.
 4. Choose `.csv` for the file format, and save the file to your device.
 
-### From Firefox-based Browsers
+{% endcapture %}
+{{ older | markdownify }}
+  </div>
+  <div class="tab-pane" id="based" role="tabpanel" aria-labelledby="basedtab">
+{% capture based %}
 
-Some Firefox-based browsers offer login export in a different location than vanilla Firefox. If exporting [From Latest Version of Firefox](#from-latest-version-of-firefox) doesn't work, try the following:
+### Export from Firefox-based Browsers
+
+Some Firefox-based browsers offer login export in a different location than vanilla Firefox. If the steps to import from the **Latest Version** don't work, try the following:
 
 1. Using the address bar, navigate to `about:preferences#privacy`.
 2. Click the **Saved Logins** button.
@@ -46,19 +76,23 @@ Some Firefox-based browsers offer login export in a different location than vani
 
    Most Firefox-based browsers will export your logins as a `.csv`.
 
+{% endcapture %}
+{{ based | markdownify }}
+  </div>
+</div>
+
 ## Import to Bitwarden
 
-Complete the following steps to import data to your Bitwarden personal Vault (for help importing to an Organization Vault, see [Import Items to an Organization]({% link _articles/organizations/import-to-org.md %})):
+Importing data to Bitwarden **can only be done from the** [**Web Vault**](https://vault.bitwarden.com){:target="\_blank"}. To import your data:
 
-1. Log in to the [Web Vault](https://vault.bitwarden.com){:target="\_blank"}.
-2. Select **Tools** from the top navigation bar.
-3. Select **Import Data** from the left Tools menu.
-4. Select **Firefox (csv)** from the format dropdown.
-5. Select the **Browse...** button and add the file exported from Firefox.
-6. Select the **Import Data** button to complete your import.
+ 1. In the Web Vault, select **Tools** from the top navigation bar.
+ 2. Select **Import Data** from the left-hand Tools menu.
+ 3. From the format dropdown, choose **Firefox (csv)**.
 
-{% callout warning %}
-Importing data multiple times will create duplicates.
-{% endcallout %}
+ 5. Select the **Choose File** button and add the file to import or **copy/paste** the contents of your file into the input box.
 
-Congratulations! You have just transferred your data from Firefox into Bitwarden.
+    {% callout warning %}Import to Bitwarden can't check whether items in the file to import are duplicative of items in your Vault. This means that **importing multiple files will create duplicative** Vault items if an item is already in the Vault and in the file to import.{% endcallout %}
+ 6. Select the **Import Data** button to complete your import.
+ 7. After successful import, delete the import source file from your computer. This will protect you in the event your computer is compromised.
+
+Currently, file attachments are not included in Bitwarden import operations and will need to be uploaded to your Vault manually. For more information, see [File Attachments]({{site.baseurl}}/article/attachments/#attach-a-file).

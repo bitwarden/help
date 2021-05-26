@@ -25,16 +25,16 @@ This article contains Frequently Asked Questions (FAQs) about general Vault Mana
 
 ### Q: How do I change my email address?
 
-**A:** You can change the email address attached to your account from the [Web Vault](https://vault.bitwarden.com){:target="\_blank"}:
+**A:** To change the email address attached to your account:
 
-1. In the Web Vault, select **Settings** from the top navigation bar.
+1. Open the [Web Vault](https://vault.bitwarden.com){:target="\_blank"}, select **Settings** from the top navigation bar.
 2. On the **My Account** page, find the **Change Email** section.
 3. Enter your current **Master Password** to prove you have the authority to take this action, and specify the **New Email** you'd like to change to.
 4. Select the **Change Email** button.
 
-   Bitwarden will email a verification code to the specified email address. Check your inbox for the code and enter it into the **Code** text input displayed in your Web Vault to finalize the change.
+   Bitwarden will email a verification code to the specified email address. Check your inbox for the code and enter it into the **Code** text input displayed in your Web Vault to finalize the change. If you don't receive the verification code, check your Spam folder. You can also whitelist `no-reply@bitwarden.com` to help ensure delivery in the future.
 
-   {% callout success %}If you don't receive the verification code from Bitwarden, check your Spam folder. You can also whitelist `no-reply@bitwarden.com` to help ensure delivery in the future.{% endcallout %}
+   {% callout success %}**If you have a paid subscription,** also [Contact Us](https://bitwarden.com/contact){:target="\_blank"} to let us know about the change so that we change your billing information.{% endcallout %}
 
 When you change your email address, you should immediately logout of all Bitwarden client applications you use, and log back in with the new credentials. Sessions using a "stale" email address will eventually be logged out eventually.
 

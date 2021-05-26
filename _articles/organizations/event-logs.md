@@ -10,26 +10,21 @@ order: 13
 
 ## What are Event Logs?
 
-Event Logs are timestamped records of everything that occurs within your Organization. Event Logs are accessible to users with the type **Admin** or **Owner** from the **Manage** tab of your Organization.
+Event Logs are timestamped records of everything that occurs within your Organization. Event Logs are accessible to [Admins and Owners]({{site.baseurl}}/article/event-logs/) from the **Manage** tab of your Organization Vault:
 
-{% image /organizations/event-logs-updated.png %}
+{% image /organizations/event-logs-updated.png Event Logs %}
 
-Events Logs are also accessible using Bitwarden's API for Organization Management. For more information, see [RESTful API for Organization Management](https://bitwarden.com/help/article/public-api/).
+Events Logs are also accessible from the `/events` endpoint of the [Bitwarden Public API](https://bitwarden.com/help/article/public-api/).
 
-## Events List
+## Events
 
-Event Logs record roughly 40 different types of events. In the Web Vault, the action catalogued by each event is described in plain text under the **Event** column.
+Event Logs record roughly 40 different types of events. The Event Logs screen captures a **Timestamp** for the event, client app information including application type and IP (accessed by hoving over the {% icon fa-globe %} globe icon), the **User** connected to the event, and an **Event** description.
 
-Each type of event is associated with `type` code (`1000`, `1001`, etc.) that identifies the action captured by the event. Event `type` codes are important to understand when accessing Event Logs via API. For more information, see [RESTful API for Organization Management](https://bitwarden.com/help/article/public-api/).
+{% callout info %}
+Each **Event** is associated with type code (`1000`, `1001`, etc.) that identifies the action captured by the event. Type codes are used by the [Bitwarden Public API](https://bitwarden.com/help/article/public-api/) to identify the action documented by an event.
+{% endcallout %}
 
-All Event types are documented below, with their corresponding `type` codes:
-
-{% comment %}
-Sources:
-https://github.com/bitwarden/server/blob/master/src/Core/Enums/EventType.cs
-https://github.com/bitwarden/web/blob/master/src/app/services/event.service.ts
-https://github.com/bitwarden/web/blob/master/src/locales/en/messages.json
-{% endcomment %}
+All Event types are listed below, with their corresponding type codes:
 
 ### User Events
 - Logged In. (`1000`)
@@ -81,9 +76,16 @@ https://github.com/bitwarden/web/blob/master/src/locales/en/messages.json
 - Purged organization vault. (`1601`)
 - Updated a Policy. (`1700`)
 
+{% comment %}
+Sources:
+https://github.com/bitwarden/server/blob/master/src/Core/Enums/EventType.cs
+https://github.com/bitwarden/web/blob/master/src/app/services/event.service.ts
+https://github.com/bitwarden/web/blob/master/src/locales/en/messages.json
+{% endcomment %}
+
 ## API Responses
 
-Accessing Event Logs via API will return a response like the following. For more information, see [RESTful API for Organization Management](https://bitwarden.com/help/article/public-api/).
+Accessing Event Logs from the `/events` endpoint of the [Bitwarden Public API](https://bitwarden.com/help/article/public-api/) will return a JSON response like the following:
 
 ```
 {
