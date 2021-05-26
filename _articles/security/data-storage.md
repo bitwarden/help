@@ -29,7 +29,7 @@ Data that is stored on your computer/device is also encrypted and only decrypted
 
 - Windows
   - Standard Installation: `%AppData%\Bitwarden`
-  - Microsoft Store Installation: `%AppData%\Local\Packages\8bitSolutionsLLC.bitwardendesktop_h4e712dmw3xyy\LocalCache\Roaming\Bitwarden`
+  - Microsoft Store Installation: `%LocalAppData%\Packages\8bitSolutionsLLC.bitwardendesktop_h4e712dmw3xyy\LocalCache\Roaming\Bitwarden`
   - Portable: `.\bitwarden-appdata`
 - macOS
   - Standard Installations: `~/Library/Application Support/Bitwarden`
