@@ -78,7 +78,7 @@ Bitwarden recommends configuring your Linux server with a dedicated `bitwarden` 
 
    ```
    sudo groupadd docker
-  ```
+   ```
 4. Add the bitwarden user to the docker group:
 
    ```
