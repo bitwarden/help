@@ -30,7 +30,7 @@ If you are looking for a quality provider with affordable prices, we recommend:
 The following is a summary of the Installation Procedure in this article. Links in this section will jump to detailed **Installation Procedure** sections:
 
 1. [**Configure your Domain**](#configure-your-domain). Set DNS records for a domain name pointing to your machine, and open ports 80 and 443 on the machine.
-2. [**Install Docker and Docker Compose**](#install-docker-and-docker-compose) on your machine, and complete the optional [**Docker Post-Installation**](#docker-post-installation).
+2. [**Install Docker and Docker Compose**](#install-docker-and-docker-compose) on your machine, and complete the optional [**Docker Post-Installation**](#docker-post-installation-linux-only).
 3. Retrieve an installation id and key from [**https://bitwarden.com/host**](https://bitwarden.com/host){:target="_blank"} for use in installation.
 
    For more information, see [What are my installation id and installation key used for?](https://bitwarden.com/help/article/hosting-faqs/#general).
