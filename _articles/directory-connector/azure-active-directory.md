@@ -32,10 +32,14 @@ Complete the following steps to grant the created app registration the required 
 2. Select the **Add a permission** button.
 3. When prompted to Select an API, select **Microsoft Graph**.
 4. Set the following **Delegated permissions**:
+   - AdministrativeUnit > AdministrativeUnit.Read.All (Read administrative units)
+   - Directory > Directory.Read.All (Read directory data)
    - User > User.ReadBasic.All (Read all users' basic profiles)
    - User > User.Read.All (Read all users' full profiles)
    - Group > Group.Read.All (Read all groups)
 5. Set the following **Application Permissions**:
+   - AdministrativeUnit > AdministrativeUnit.Read.All (Read all administrative units)
+   - Directory > Directory.Read.All (Read directory data)
    - User > User.Read.All (Read all users' full profiles)
    - Group > Group.Read.All (Read all groups)
 6. Back on the API Permissions page, select the **Grant admin consent for...** button.
@@ -141,12 +145,12 @@ exclude:Group A,Group B
 
 ##### Group by Administrative Unit (AU)
 
-You can include or exclude groups from a sync based on their tagged [Azure Active Directory Administrative Units (AUs)](https://docs.microsoft.com/en-us/azure/active-directory/roles/administrative-units){:target="\_blank"} by using the `includeadministrativeunit` and `excludeadministrativeunit` keywords. `includeadministrativeunit` and `excludeadministrativeunit` use the name of the Administrative Unit:
+You can include or exclude groups from a sync based on their tagged [Azure Active Directory Administrative Units (AUs)](https://docs.microsoft.com/en-us/azure/active-directory/roles/administrative-units){:target="\_blank"} by using the `includeadministrativeunit` and `excludeadministrativeunit` keywords. `includeadministrativeunit` and `excludeadministrativeunit` use the Object ID of the Administrative Unit:
 ```
-includeadministrativeunit:bitwarden
+includeadministrativeunit:9d05a51c-f173-4087-9741-a7543b0fd3ba
 ```
 ```
-excludeadministrativeunit:not-bitwarden
+excludeadministrativeunit:9d05a51c-f173-4087-9741-a7543b0fd3bz
 ```
 
 ## Test a Sync
