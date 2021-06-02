@@ -161,6 +161,12 @@ In the Trash, you can **Restore** an item to your Vault or **Permanently Delete*
 
 {% image /manage-items/item-trash-restore-delete.png The Trash %}
 
+### Protect Individual Items
+
+For any given Vault item, you can activate the **Master password re-prompt** option from the Add/Edit screen to require verification of your Master Password to access the Hidden fields of that item (e.g. Password, Credit Card Number):
+
+{% image /manage-items/reprompt.gif Master Password Reprompt %}
+
 ## Share Vault Items
 
 If you're a member of an [Organization]({{site.baseurl}}/article/about-organizations/), you can share Vault items with other members of your Organization. Learn more about [Organizations]({{site.baseurl}}/article/about-organizations/), [Collections]({{site.baseurl}}/article/about-collections), and [Sharing]({{site.baseurl}}/article/share-to-a-collection/).
