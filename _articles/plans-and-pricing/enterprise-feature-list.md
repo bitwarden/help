@@ -4,9 +4,9 @@ title: Bitwarden for Enterprise - Feature List
 categories: [plans-and-pricing]
 featured: false
 popular: false
-hidden: true
-tags: [project guide, poc]
-order: 
+hidden: false
+tags: [enterprise, plans, organization]
+order: 04
 ---
 
 |ENTERPRISE FEATURES  |DESCRIPTION|
