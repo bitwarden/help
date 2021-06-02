@@ -23,6 +23,10 @@ In Bitwarden, you can generate TOTPs using two methods:
 - From a Bitwarden mobile app by [**Scanning a QR Code**](#scan-a-qr-code)
 - From any Bitwarden app by [**Manually Entering a Secret**](#manually-enter-a-secret)
 
+{% callout success %}
+TOTPs rely on *time-based* code generation. If your device has an incorrect time compared to the server, it'll generate password that don't work.
+{% endcallout %}
+
 ### Scan a QR Code
 
 Complete the following steps to setup the Bitwarden Authenticator from the iOS or Android app:

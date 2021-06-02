@@ -359,6 +359,12 @@ For example:
 bw get item 7ac9cae8-5067-4faf-b6ab-acfd00e2c328 | jq '.login.password="newp@ssw0rd"' | bw encode | bw edit item 7ac9cae8-5067-4faf-b6ab-acfd00e2c328
 ```
 
+Or, to edit a Collection:
+
+```
+bw get collection ee9f9dc2-ec29-4b7f-9afb-aac8010631a1 | jq '.name="My Collection"' | bw encode | bw edit item-collections ee9f9dc2-ec29-4b7f-9afb-aac8010631a1
+```
+
 The `edit` command will perform a **replace** operation on the object. Upon success, the updated object will be returned as JSON.
 
 ### list
