@@ -21,3 +21,11 @@ order: 10
 2. Tap **General**.
 3. Tap **Keyboards**.
 4. In the All Keyboards section, toggle **Shortcuts** on.
+
+### Q: How do I disable Google Auto-fill in my Android Device?
+
+**A:** To disable Google Auto-fill on your Android device:
+
+1. Open Settings in your Android device.
+2. Scroll down and tap on Google.
+3. Tap on Auto-fill with Google and toggle it off.

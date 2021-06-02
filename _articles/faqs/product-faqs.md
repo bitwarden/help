@@ -17,7 +17,7 @@ This article contains Frequently Asked Questions (FAQs) about general Vault Mana
 
 ### Q: What do I do if I forgot my Master Password?
 
-**A:** As a Zero Trust solution, Bitwarden and its systems have no knowledge of, way to retrieve, or way to reset your Master Password. If you've already lost your Master Password, there is unfortunately no way for the team to recover the account. For help understanding what to do next, or what to do proactively to protect yourself from such a scenario, refer to the article on [Your Master Password]({% link _articles/account/master-password.md %}).
+**A:** As a zero knowledge solution, Bitwarden and its systems have no knowledge of, way to retrieve, or way to reset your Master Password. If you've already lost your Master Password, there is unfortunately no way for the team to recover the account. For help understanding what to do next, or what to do proactively to protect yourself from such a scenario, refer to the article on [Your Master Password]({% link _articles/account/master-password.md %}).
 
 ### Q: Is there a way for someone to access my Vault items in case of emergency?
 
@@ -73,111 +73,24 @@ You may need to make an exception for Bitwarden or configure your whitelist to k
 
 ## Other Questions
 
-### Q: How do I change a collection via the CLI?
+### Q: Can I install Bitwarden without Google Play, for instance on F-Droid?
 
-**A:** In order to change a Collection, you will use a dedicated command (bw edit item-collections).
+**A:** Yes! You can download directly from GitHub <https://github.com/bitwarden/mobile/releases> or via F-Droid by adding our repo <https://mobileapp.bitwarden.com/fdroid/>, which removes all non-approved libraries.
 
-For example:
-```
-$ echo '["a17a5b7f-66b8-4980-91a1-aaac005df696"]' | bw encode | bw edit item-collections ee9f9dc2-ec29-4b7f-9afb-aac8010631a1
-```
-You can add multiple Collection IDs at the same time by using a comma to separate them.
+Unfortunately, F-Droid can not compile our app from source as it is based on Xamarin and it is not supported by F-Droid's current compiler methods, so we must use a separate repo.
 
-### Q: Can I install Bitwarden without Google Play?
+### Q: I need an old password! Can I view the history of a password that I changed in Bitwarden?
 
-**A:** Yes! You can download directly from GitHub <https://github.com/bitwarden/mobile/releases> or via F-Droid by adding our repo <https://mobileapp.bitwarden.com/fdroid/>
-
-### Q: Can I use Directory connector to sign into Bitwarden?
-
-**A:** The Directory Connector tool provides the functions to automatically provision and deprovision users, groups, and group associations from your user directory (LDAP, Active Directory, G Suite, Azure AD, or Okta).
-
-To use an existing identity provider for authentication, you’ll need to subscribe to our enterprise plan and configure it.
-
-### Q: How can I disable Firefox Autofill?
-
-1. Navigate to `about:preferences#privacy` in Firefox.
-2. Scroll down and uncheck **Autofill logins and passwords**.
-
-**On Android**
-1. Open Firefox
-2. Tap on the three dot menu.
-3. Tap on Settings.
-4. Locate **Logins and passwords**.
-5. Tap on **Autofill** and turn it off.
-
-### Q: How can I disable Google Auto-fill in my Android Device?
-
-1. Open Settings in your Android device.
-2. Scroll down and tap on Google.
-3. Locate Auto-fill
-4. Tap on Auto-fill with Google and turn it off.
-
-### Q: Can I download Bitwarden on F-Droid? I cannot find it.
-
-**A:** Yes, by adding our official private repo which removes all non-approved libraries: ​<https://mobileapp.bitwarden.com/fdroid/>
-
-Unfortunately,  F-Droid can not compile our app from source as it is based on Xamarin and it is not supported by F-Droid's current compiler methods, so we must use a separate repo.
-
-### Q: How can I see the history of a password that has been changed?
-
-The ability to view the history of the last 5 passwords for a Login Item is available. You can open the item in question and select the "1" next to Password History near the bottom of the window.
+**A:** Yes! You can view the last 5 passwords for any Login Item. Open the item in question and select the "1" next to Password History near the bottom of the window.
 
 {% callout warning %}
 Clicking on the number will expose the historical password values in plain text immediately.
 {% endcallout %}
 
-### Q: Can I see the history of the passwords I have generated?
+### Q: I forgot to save a generated password! Can I view the history of generated passwords?
 
-**A:** You can view the history of the Password Generator but please note that is a separate history per app/client. This information is not synchronized between devices.
+**A:** Yes, you can view the history of the Password Generator from that client application's generator screen. **Please note** this history is separate per app/client and is not synchronized between devices.
 
-### Q: Do I need premium and families?
+### What happens when I purge my Vault?
 
-**A:** The legacy Families plan does not include premium for its users. Users would need to upgrade to premium individually, or the family organization owner could upgrade the organization.
-
-Currently, the Families plan introduced in September 2020, supports premium features for up to 6 users.
-
-
-### Q: What is TOTP and how can I use it?
-
-**A:** Time-based One-time Password (TOTP) - <https://en.wikipedia.org/wiki/Time-based_One-time_Password_algorithm>
-
-Each website that supports TOTP or 2FA with an "Authenticator" calls it differently and each handles the procedure of setting up a little differently. You will need to start the set up from each individual web site that you are accessing. (e.g. google.com, amazon.com).
-
-1. You will want to edit any item that you wish to use TOTP with.
-2. Populate the "Authenticator Key (TOTP)" field with the seed key you are provided with.  *You can also use the Bitwarden mobile application to directly scan QR codes and it will populate automatically.
-3. Save the changes.
-
-Now, Bitwarden will store and generate the timed code that you will be asked for when logging into services with TOTP 2FA enabled. Here is a handy website that you can use to test this feature: <https://totp.danhersam.com/>
-
-Whenever you auto-fill a website that has TOTP attached, the code will automatically be copied to your device's system clipboard. Now you can quickly paste the code into the field when challenged.
-
-### Q: Why are my TOTP codes incorrect/not working?
-
-**A:** TOTP codes are ***time based*** and use device time for generation. A device with the wrong time will generate incorrect codes. Please check your device's system time and try your TOTP code again.
-
-### Q: How do I use the web browser extension?
-
-**A:** Using the Bitwarden Web Browser Extension is a good way to add your passwords to your vault. Anytime it detects a password field on a website that it doesn't have in its database, it will ask to save.
-
-For updating, anytime there is a password field detected, when you enter a password if it doesn't detect the same password as what it has in its database then it will ask you to update it. You will see a banner at the top of the web page that will prompt you to save or update.
-
-Please see this helpful article regarding interacting with a web page to fill your Login Item information:
-- <https://help.bitwarden.com/article/auto-fill-browser/>
-
-Bitwarden Web Browser Extension video on YouTube:
-- <https://youtu.be/dBPfr7Jiddw>
-
-More helpful videos from the Bitwarden Community on YouTube:
-
-- <https://youtu.be/L1BNrVrvWw4>
-- <https://youtu.be/TREdS8iq6Qg>
-- <https://youtu.be/uF6tzGYaIxg>
-
-### Q: I am asked for my master password even though I have PIN unlock enabled on iOS / Android
-
-**A:** When you enable PIN unlock, you are prompted if you’d like to use your Master Password after an application restarted (closed). If you select yes, if the app is closed or backgrounded, you will be prompted for your Master Password instead of the PIN.
-
-To reset this:
-- Disable PIN Unlock
-- Enable PIN Unlock
-- Select ‘No’ when prompted about using the Master Password after application restart.
+**A:** When you purge a **Personal Vault**, all Vault items and Folders will be deleted. When you purge an **Organization Vault**, all shared (i.e. owned by the Organization) Vault items will be deleted however existing users, Collections, and Groups will remain in place.
