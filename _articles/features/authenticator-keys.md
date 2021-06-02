@@ -24,7 +24,7 @@ In Bitwarden, you can generate TOTPs using two methods:
 - From any Bitwarden app by [**Manually Entering a Secret**](#manually-enter-a-secret)
 
 {% callout success %}
-TOTPs rely on *time-based* code generation. If your device has an incorrect time compared to the server, it'll generate password that don't work.
+TOTPs rely on *time-based* code generation. If your device has an incorrect time compared to the server, it'll generate codes that don't work.
 {% endcallout %}
 
 ### Scan a QR Code
