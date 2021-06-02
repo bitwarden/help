@@ -67,5 +67,5 @@
 		"groupFilter": "",
 		"userFilter": "(ou=Test OU)"
 	},
-	"organizationId": "organization-id-string" <---Your Organization ID
+	"organizationId": "organization-id-string" <---Your Organization GUID
 }
