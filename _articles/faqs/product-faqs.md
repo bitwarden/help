@@ -90,3 +90,7 @@ Clicking on the number will expose the historical password values in plain text 
 ### Q: I forgot to save a generated password! Can I view the history of generated passwords?
 
 **A:** Yes, you can view the history of the Password Generator from that client application's generator screen. **Please note** this history is separate per app/client and is not synchronized between devices.
+
+### What happens when I purge my Vault?
+
+**A:** When you purge a **Personal Vault**, all Vault items and Folders will be deleted. When you purge an **Organization Vault**, all shared (i.e. owned by the Organization) Vault items will be deleted however existing users, Collections, and Groups will remain in place.
