@@ -79,7 +79,7 @@ To export your data from a LastPass Browser Extension:
 
 ## Import to Bitwarden
 
-Importing data to Bitwarden **can only be done from the** [**Web Vault**](https://vault.bitwarden.com){:target="\_blank"}. To import your data:
+Importing data to Bitwarden **can only be done from the** [**Web Vault**](https://vault.bitwarden.com){:target="\_blank"} or [CLI]({{site.baseurl}}/article/cli/#import). To import your data:
 
  1. In the Web Vault, select **Tools** from the top navigation bar.
  2. Select **Import Data** from the left-hand Tools menu.

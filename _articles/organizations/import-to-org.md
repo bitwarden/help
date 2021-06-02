@@ -23,7 +23,7 @@ For a full list of supported import formats, see [What file formats does Bitward
 
 ## Import to your Organization
 
-Importing data to Bitwarden **can only be done from the** [**Web Vault**](https://vault.bitwarden.com){:target="\_blank".}.  To import data to an Organization Vault:
+Importing data to Bitwarden **can only be done from the** [**Web Vault**](https://vault.bitwarden.com){:target="\_blank".} or [CLI]({{site.baseurl}}/article/cli/#import). To import data to an Organization Vault:
 
 1. Open your Organization and navigate to the **Tools** tab:
 
