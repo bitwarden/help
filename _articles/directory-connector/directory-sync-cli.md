@@ -135,7 +135,9 @@ Options include:
 - `okta.token <token>`
 - `onelogin.secret <secret>`
 
+{% callout success %}
 `ldap.password`, `azure.key`, `gsuite.key`, `okta.token`, and `onelogin.secret` can **only** be modified from the CLI using `bwdc config`, or from the [Desktop Application]({% link _articles/directory-connector/directory-sync-desktop.md %}).
+{% endcallout %}
 
 ### data-file
 

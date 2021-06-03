@@ -36,9 +36,7 @@ Directory Connector configuration will vary based on the directory type in use. 
 
 ## Using Directory Connector
 
-The following sections will walk you through typical actions taken with the Desktop App.
-
-In all cases, log in with a Bitwarden user account that is an Admin or Owner for the relevant Organization(s). For more information, see [User Types and Access Control]({% link _articles/organizations/user-types-access-control.md %}).
+The following sections will walk you through typical actions taken with the Desktop App. To log in to Directory Connector, use your [Organization API Key]({{site.baseurl}}/article/public-api/#authentication) **Client ID** and **Client Secret**.
 
 ### Connect to a Bitwarden Organization
 
