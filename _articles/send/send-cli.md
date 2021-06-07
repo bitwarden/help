@@ -68,13 +68,17 @@ For example:
 ```
 bw send template send.text | jq '.name="My First Send" | .text.text="Secrets I want to share."' | bw encode | bw send create
 ```
-or
+
 ```
-bw send template send.text | jq ".name=\"My First Send\" | .text.text=\"Secrets I want to share.\" | .password=\"mypassword\" | .deletionDate=\"$(date -uv+14d + "%Y-%m-%dT%H:%M:%SZ")\"" | bw encode | bw send create
+bw send template send.file | jq '.name="My File Send" | .type=1 | .file.fileName="paperwork.png" | .password="p@ssw0rd"' | bw encode | bw send create
+```
+
+```
+bw send template send.text | jq ".name=\"My Send\" | .text.text=\"Secrets I want to share.\" | .password=\"mypassword\" | .deletionDate=\"$(date -uv+14d + "%Y-%m-%dT%H:%M:%SZ")\"" | bw encode | bw send create
 ```
 
 {% callout success %}
-Notice in the 2nd example that the jq invocation must be wrapped in double quotes (`" "`) and use escapes (`\`) for each filter due to a nested `date` variable that configures a `.deletionDate` in the Send.
+Notice in the final example that the jq invocation must be wrapped in double quotes (`" "`) and use escapes (`\`) for each filter due to a nested `date` variable that configures a `.deletionDate` in the Send.
 {% endcallout %}
 
 **Options:**
