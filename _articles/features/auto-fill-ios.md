@@ -48,9 +48,9 @@ To enable keyboard auto-fill on iOS:
 
    {% image features/auto-fill-ios/autofill-ios.jpeg AutoFill on iOS %}
 
-   If a [matching Login]({% link _articles/features/uri-match-detection.md %}) is displayed, tap it to auto-fill. If the {% icon fa-key %} **Passwords** button is displayed, tap it to browse your Vault for the Login item to use.
+   If a [matching Login]({% link _articles/features/uri-match-detection.md %}) is displayed, tap it to auto-fill. If the {% icon fa-key %} **Passwords** button is displayed, tap it to browse your Vault for the Login item to use. In cases where the {% icon fa-key %} **Passwords** button is displayed, it's probably because there isn't an item in your Vault with a [matching URI]({% link _articles/features/uri-match-detection.md %}).
 
-   {% callout success %}If the {% icon fa-key %} **Passwords** button is displayed, it's probably because there isn't an item in your Vault with a [matching URI]({% link _articles/features/uri-match-detection.md %}).{% endcallout %}
+   {% callout info %}Are you getting a `Biometric unlock disabled pending verification of master password` message? [Learn what to do]({{site.baseurl}}/article/autofill-faqs/#q-what-do-i-do-about-biometric-unlock-disabled-pending-verification-of-master-password).{% endcallout%}
 
 ### Browser App Extension Auto-fill
 
