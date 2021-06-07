@@ -12,7 +12,7 @@ The Directory Connector CLI is suited toward work in environments where a deskto
 
 ## Getting Started
 
-Complete the following steps to get started with the Bitwarden Directory Connector CLI:
+To get started using the Bitwarden Directory Connector CLI:
 
 1. Download the CLI from one of the following links:
    - [{% icon fa-windows %} Windows CLI](https://vault.bitwarden.com/download/?app=connector&platform=windows&variant=cli-zip)
@@ -48,28 +48,32 @@ Complete the following steps to get started with the Bitwarden Directory Connect
 
 ### login
 
-Use the `login` command to login to Directory Connector with your Bitwarden Account. You must be an Admin or Owner for your Organization to use Directory Connector (for more information, see [User Types and Access Controls]({% link _articles/organizations/user-types-access-control.md %})).
-```
-bwdc login [options] [email] [password]
-```
+Use the `login` command to login to Directory Connector with your [Organization API Key]({{site.baseurl}}/article/public-api/#authentication).  If you don't have the API Key, reach out to an [Organization Owner]({{site.baseurl}}/article/user-types-access-control/). There are a few ways to use the `login` command:
 
-Options include:
-- `--method`: Use this options to specify the [Two-step Login method]({% link _articles/two-step-login/setup-two-step-login.md %}) to use.
-   - `0` = Authenticator App
-   - `1` = Email
-   - `3` =  YubiKey
-- `--code`: Use this option to specify the [Two-step Login]({% link _articles/two-step-login/setup-two-step-login.md %}) code for the specified `method`.
-- `--sso`: Use this option to [Login with SSO]({% link _articles/login-with-sso/about-sso.md %}). Selecting this option will open the SSO Login Flow in your Web Browser. For more information, see [Access your Vault Using SSO]({% link _articles/login-with-sso/sso-access-your-vault.md %}).
+- By itself:
 
-For example:
+  ```
+  bwdc login
+  ```
 
-{% callout warning %}
-Contrary to the following example, it's generally not recommended to enter your password inline, as this will save it to the history of the shell. Leaving the password out of the initial command will cause Bitwarden to prompt for it, which will not save it.
-{% endcallout %}
+  Passing `bwdc login` by itself will prompt you to subsequently enter `client_id` and `client_secret`.
+- With parameters:
 
-```
-bwdc login bwuser@gmail.com mystrongpassword --method 0 --code 204678
-```
+  ```
+  bwdc login organization.b5351047-89b6-820f-ad21016b6222 yUMB4trbqV1bavhEHGqbuGpz4AlHm9
+  ```
+- With saved environment variables:
+
+  ```
+  BW_CLIENTID="organization.b5351047-89b6-820f-ad21016b6222"
+  BW_CLIENTSECRET="yUMB4trbqV1bavhEHGqbuGpz4AlHm9"
+
+  bwdc login
+  ```
+
+  Saving the environment variables `BW_CLIENTID` and `BW_CLIENTSECRET` allows you to login to Directory Connector using only `bwdc login`, which will check for those variables and use them if present.
+
+  If these environment variables aren't present, you will be prompted to enter your `client_id` and `client_secret`.
 
 ### logout
 
