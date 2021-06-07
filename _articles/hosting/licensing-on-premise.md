@@ -44,3 +44,9 @@ For Owners of a Families or Enterprise Organization, complete the following step
 5. Start a new Organization in your self-hosted instance by selecting the {% icon fa-plus %} **Add Organization** button.
 
    You will be prompted to upload a license file. Select the **Browse** button and add your downloaded license file.
+
+{% callout success %}
+When your license expires and your Organization renews, you have 2 months to apply the updated license file to your self-hosted Organization. To apply the update your license, download the new license file (**Steps 1-3**) from the cloud-hosted Bitwarden Organization Vault. Once downloaded, open your self-hosted Web Vault and update the license from the Organization **Settings** &rarr; **Subscription** page:
+
+{% image hosting/update-license.png Update a self-hosting license %}
+{% endcallout %}
