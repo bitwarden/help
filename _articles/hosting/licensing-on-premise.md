@@ -31,7 +31,7 @@ For individual users, complete the following steps to retrieve and apply a licen
 
 ## Organization License
 
-For Owners of a Families or Enterprise Organization, complete the following steps to retrieve and apply a license to your self-hosted instance:
+For Owners of an Organization, complete the following steps to retrieve and apply a license to your self-hosted instance:
 
 1. Log in to your [Web Vault](https://vault.bitwarden.com){:target="\_blank"} and open your Organization.
 2. In your Organization, open the **Settings** tab and select **Subscription** from the left menu.
