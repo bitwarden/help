@@ -167,7 +167,7 @@ Directory Connector will:
 
 ### Login with SSO
 
-Bitwarden Enterprise Organizations can integrate with you existing Identity Provider (IdP) using SAML 2.0 or OIDC to allow members of your Organization to login to Bitwarden using SSO. Login with SSO separates user authentication from Vault decryption:
+Bitwarden Enterprise Organizations can integrate with your existing Identity Provider (IdP) using SAML 2.0 or OIDC to allow members of your Organization to login to Bitwarden using SSO. Login with SSO separates user authentication from Vault decryption:
 
 **Authentication** is completed to your chosen IdP and retains any two-factor authentication processes connected to that IdP. **Decryption** of Vault data requires the user's individual key, through the Master Password. Using Login with SSO, new Bitwarden users can authenticate into their Bitwarden Vault using their regular SSO credentials and perform decryption of this Vault with their newly created master password. Users that removed from your IdP will no longer be able to authenticate with that path.
 
