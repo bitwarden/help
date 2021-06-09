@@ -14,7 +14,7 @@ Event Logs are timestamped records of everything that occurs within your Organiz
 
 {% image /organizations/event-logs-updated.png Event Logs %}
 
-Events Logs are also accessible from the `/events` endpoint of the [Bitwarden Public API](https://bitwarden.com/help/article/public-api/).
+Events Logs are [exportable](#export-events) and accessible from the `/events` endpoint of the [Bitwarden Public API](https://bitwarden.com/help/article/public-api/).
 
 ## Events
 
@@ -86,6 +86,13 @@ https://github.com/bitwarden/web/blob/master/src/app/services/event.service.ts
 https://github.com/bitwarden/web/blob/master/src/locales/en/messages.json
 {% endcomment %}
 
+## Export Events
+
+Exporting event logs will create a `.csv` of all events within the specified date range:
+
+{% image /organizations/event-logs-export.png Export Event Logs %}
+
+
 ## API Responses
 
 Accessing Event Logs from the `/events` endpoint of the [Bitwarden Public API](https://bitwarden.com/help/article/public-api/) will return a JSON response like the following:
@@ -114,7 +121,7 @@ Accessing Event Logs from the `/events` endpoint of the [Bitwarden Public API](h
 
 ## SIEM and External Systems Integrations
 
-When exporting data from Bitwarden into other systems, a combination of data from the API and CLI may be used to gather data. For example, using Bitwarden RESTful APIs gather data around the structure of the organization:
+When exporting data from Bitwarden into other systems, a combination of data from the Exports, API and CLI may be used to gather data. For example, using Bitwarden RESTful APIs gather data around the structure of the organization:
 
 - GET /public/members returns the Members, Ids, and assigned groupIds
 - GET /public/groups returns all the Groups, Ids, assigned Collections, and their permissions
