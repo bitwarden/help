@@ -28,7 +28,7 @@ Complete the following steps to view any Vault Health Reports for your **Organiz
 2. In your Organization, open the **Tools** tab.
 
    {% image /features/reports/tools-section.png Organization Reports %}
-3. Select a reports from the **Reports** section of the left menu.
+3. Select a report from the **Reports** section of the left menu.
 
 ## Available Reports
 
