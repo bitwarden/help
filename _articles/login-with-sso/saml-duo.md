@@ -76,7 +76,7 @@ Once you've finished configuring these fields, **Save** your changes.
 
 ## Back to the Business Portal
 
-At this point, you’ve configured everything you need within the context of the OneLogin Portal. Jump back over to the Bitwarden Business Portal to complete configuration.
+At this point, you’ve configured everything you need within the context of the DUO Portal. Jump back over to the Bitwarden Business Portal to complete configuration.
 
 The Business Portal separates configuration into two sections:
 
