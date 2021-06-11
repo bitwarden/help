@@ -38,7 +38,7 @@ For Self-hosted, `https://your.domain.com/identity/connect/token`.
 
 The API uses bearer access tokens to authenticate with protected API endpoints. Bitwarden uses an [OAuth2 Client Credentials](https://www.oauth.com/oauth2-servers/access-tokens/client-credentials/){:target="_blank"} application request flow to grant bearer access tokens from the endpoint. Authentication requests take `client_id` and `client_secret` as required parameters.
 
-The API Key `client_id` and `client_secret` can be obtained by an **Owner** from the Web Vault by navigating to the **Settings** tab &rarr; **My Organization** and scrolling down to the **API Key** section:
+The API Key `client_id` and `client_secret` can be obtained by an **Owner** from the Web Vault by navigating to Organization **Settings** &rarr; **My Organization** and scrolling down to the **API Key** section:
 
 {% image organizations/org-api-key.png Get Organization API Key %}
 

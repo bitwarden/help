@@ -25,6 +25,18 @@ Bitwarden believes source code transparency is an absolute requirement for secur
 
 To be notified of Release Announcements, subscribe to the [Bitwarden Status RSS Feed](https://status.bitwarden.com/){:target="\_blank"}.
 
+## 2021-06-28
+
+The Bitwarden team is happy to announce the rollout of Admin Password Reset, the latest feature purpose built to help enterprises seeking to ensure password security at scale. This release includes:
+
+- **Admin Password Reset**: Enterprise Organizations can enroll in Admin Password Reset to allow designated administrators to reset the Master Password of Organization users (see [here]({{site.baseurl}}/article/admin-reset/) for details).
+- **Master Password Reprompt**: Use the new Master Password re-prompt option to require verification of your Master Password to view the sensitive fields of individual Vault items (see [here]({{site.baseurl}}/article/managing-items/#protect-individual-items) for details).
+- **Directory Connector API Key Authentication**: Starting with this release, users of Directory Connector will need to use the [Organization API Key]({{site.baseurl}}/article/public-api/#authentication) to login.
+- **Bulk User Management**: Organization Owners and Admins can now re-send invitations, confirm accepted users, and remove users from an Organization in-bulk (see [here]({{site.baseurl}}/article/managing-users/#onboard-users) for details).
+- **Event Log Export**: Export event logs directly from the Web Vault (see [here]({{site.baseurl}}/article/event-logs/#export-events) for details).
+- **Autofill On Page Load Enhancements**: The Browser Extension's Auto-fill on page load feature has been upgraded to more flexibly fit users' unique needs (see [here]({{site.baseurl}}/article/auto-fill-browser/#on-page-load) for details).
+- **More CLI Options**: We've added a few new CLI options, including easy retrieval of Vault item notes (`bw get notes <id>`) and the ability to set maximum access count for Sends (`bw send create --maxAccessCount <#>`).
+
 ## 2021-05-11
 
 The Bitwarden team is pleased to release a set of features and updates continuing our mission of making password management easy and accessible for individuals and businesses:
