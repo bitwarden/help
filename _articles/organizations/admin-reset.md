@@ -18,7 +18,7 @@ Admin Password Reset allows [designated administrators](#permissions) to recover
 
 Individual users must be enrolled (either through [self-enrollment](#self-enroll-in-password-reset) or using the [automatic enrollment policy option](#automatic-enrollment)) to be eligible for password reset, as enrollment triggers the key exchange that makes Admin Password Reset secure.
 
-**Admin Password Reset does not bypass Two-step Login or Login with SSO**. If a [Two-step Login method]({{site.baseurl}}/article/setup-two-step-login/)) is enabled for the account or if your Organization [requires SSO Authentication]({{site.baseurl}}/article/policies/#single-sign-on-authentication), you will still be required to use that method to access your Vault after password reset.
+**Admin Password Reset does not bypass Two-step Login or Login with SSO**. If a [Two-step Login method]({{site.baseurl}}/article/setup-two-step-login/) is enabled for the account or if your Organization [requires SSO Authentication]({{site.baseurl}}/article/policies/#single-sign-on-authentication), you will still be required to use that method to access your Vault after password reset.
 
 ### Encryption
 
