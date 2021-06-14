@@ -59,7 +59,7 @@ Admin Password Reset can be executed by [Owners, Admins, and permitted Custom us
 
 ## Activate Admin Password Reset
 
-To activate Master Password Reset for your Enterprise Organization, navigate to the [Business Portal]({{site.baseurl}}/article/about-business-portal/) and enable the [Master Password Reset Policy]({{site.baseurl}}/article/policies/#master-password-reset). Users will need to [self-enroll](#self-enroll-in-password-reset) or [be auto-enrolled](automatic-enrollment) in Password Reset before their Master Password can be reset.
+To activate Master Password Reset for your Enterprise Organization, navigate to the [Business Portal]({{site.baseurl}}/article/about-business-portal/) and enable the [Master Password Reset Policy]({{site.baseurl}}/article/policies/#master-password-reset). Users will need to [self-enroll](#self-enroll-in-password-reset) or [be auto-enrolled](#automatic-enrollment) in Password Reset before their Master Password can be reset.
 
 ### Automatic Enrollment
 
