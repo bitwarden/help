@@ -73,11 +73,3 @@ order: 04
 |Temporary password sharing and generation| [https://bitwarden.com/help/article/authenticator-keys/](https://bitwarden.com/help/article/authenticator-keys/) |
 |Auto clear clipboard after copying a password| [https://bitwarden.com/help/article/security-faqs/](https://bitwarden.com/help/article/security-faqs/) |
 |Duplicate password detection| [https://bitwarden.com/help/article/reports/](https://bitwarden.com/help/article/reports/)| 
-
-
-
-
-
-
-
-

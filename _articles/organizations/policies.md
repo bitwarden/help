@@ -118,3 +118,15 @@ Enabling the **Send Options** policy will allow Owners and Admins to specify opt
 |Option|Description|
 |------|-----------|
 |Do not allow users to hide their email address|Enabling this option disables the [Hide Email option]({{site.baseurl}}/article/send-privacy/#hide-email), meaning that all [received Sends]({{site.baseurl}}/article/receive-send) will include whom they are sent from.|
+
+### Master Password Reset
+
+Enabling the **Master Password Reset** policy will allow Owners and Admins to use [Password Reset]({{site.baseurl}}/article/admin-reset/) to reset the master password of enrolled users. By default, users will need to [self-enroll in Password Reset]({{site.baseurl}}/article/admin-reset/#self-enroll-in-password-reset), however the [Automatic Enrollment](#automatic-enrollment) option can be used to automatically enroll invited users:
+
+#### Automatic Enrollment
+
+Enabling the **Automatic Enrollment** option will automatically enroll new users in Password Reset when their [invitation to the Organization is accepted]({{site.baseurl}}/article/managing-users/#accept).
+
+{% callout info %}
+Users already in the Organization will not be retroactively enrolled in Password Reset, and will be required to [self-enroll]({{site.baseurl}}/article/admin-reset/#self-enroll-in-password-reset).
+{% endcallout %}

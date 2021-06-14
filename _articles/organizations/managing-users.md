@@ -64,28 +64,29 @@ To invite users to your Organization:
    - Select the **Access Control** to be applied to new users. [Access Control]({{site.baseurl}}/article/user-types-access-control/#access-control) will determine which Collections these users will have access to, and what level of access within those Collections.  
 5. Click **Save** to invite the designated users to your Organization.
 
+{% callout info %}
+**Invitations expire after 5 days**, at which point the user will need to be re-invited. Re-invite users in bulk by selecting each user and using the {% icon fa-cog %} gear dropdown to **Resend Invitations**:
+
+{% image /organizations/org-people-reinvite.png Bulk Reinvite %}
+
+If you're self-hosting Bitwarden, you can configure the invitation expiration period [using an environment variable]({{site.baseurl}}/article/environment-variables/).
+{% endcallout %}  
 ### Accept
 
 Invited users will receive an email from Bitwarden inviting them to join the Organization. Clicking the link in the email will open a Bitwarden Client invitation window. **Log In** with an existing Bitwarden or **Create Account** to accept the invitation:
 
 {% image organizations/user-accept-updated.png Invitation Window %}
 
-{% callout warning %}
-Invitations will expire after 5 days, at which point the user will need to be [re-invited](#invite). If you're self-hosting Bitwarden, you can configure the invitation expiration period [using an environment variable]({{site.baseurl}}/article/environment-variables/).
-{% endcallout %}
-
 ### Confirm
 
 To confirm accepted invitations into your Organization:
 
-
 1. Log in to your [Web Vault](https://vault.bitwarden.com){:target="\_blank"} and open your Organization.
 2. Open the **Manage** tab and select **People** from the left-hand menu.
-3. Hover over the `Accepted` user and select the {% icon fa-cog %} gear dropdown:
+3. Select any `Accepted` users and use the {% icon fa-cog %} gear dropdown to {% icon fa-check %} **Confirm Selected**:
 
    {% image organizations/org-people-options-overlay.png Confirm an Accepted user %}
-3. Select {% icon fa-check %} **Confirm**.
-4. Verify that the [fingerprint phrase]({{site.baseurl}}/article/fingerprint-phrase) on your screen matches the one your new member can find in **Settings** &rarr; **My Account**:
+3. Verify that the [fingerprint phrase]({{site.baseurl}}/article/fingerprint-phrase) on your screen matches the one your new member can find in **Settings** &rarr; **My Account**:
 
    {% image fingerprint-phrase.png Sample Fingerprint Phrase %}
 
@@ -97,10 +98,9 @@ To remove users from your Organization:
 
 1. Login to your [Web Vault](https://vault.bitwarden.com){:target="\_blank"} and open your Organization.
 2. In your Organization, open the **Manage** tab and select **People** from the left menu.
-3. On the **People** screen, hover over the user you want to remove and select the gear dropdown.
-4. From the gear dropdown, select the **Remove** option.
+3. Select the users you want to remove from the Organization and use the {% icon fa-cog %} gear dropdown to {% icon fa-times %} **Remove**:
 
-{% image organizations/org-people-options-updated-overlay.png Remove a user %}
+{% image organizations/org-people-bulkremove.png Remove Users %}
 
 ### Deleting User Accounts
 
