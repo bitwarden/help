@@ -41,7 +41,7 @@ When an Admin Password Reset action is taken:
 3. The user's encryption key and Master Password hash are replaced with a *new* encryption key and *new* Master Password hash, seeded from a new Master Password.
 4. The user's new encryption key is encrypted with the Organization's public key, replacing the previous **Password Reset Key** with a new one.
 
-**At no point** will anyone, including the Admin or Owner who executes the reset, be able to see the old Master Password.
+**At no point** will anyone, including the administrator who executes the reset, be able to see the old Master Password.
 
 ### Permissions
 
