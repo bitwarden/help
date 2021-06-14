@@ -31,7 +31,7 @@ For individual users, complete the following steps to retrieve and apply a licen
 
 ## Organization License
 
-For Owners of a Families or Enterprise Organization, complete the following steps to retrieve and apply a license to your self-hosted instance:
+For Owners of an Organization, complete the following steps to retrieve and apply a license to your self-hosted instance:
 
 1. Log in to your [Web Vault](https://vault.bitwarden.com){:target="\_blank"} and open your Organization.
 2. In your Organization, open the **Settings** tab and select **Subscription** from the left menu.
@@ -44,3 +44,13 @@ For Owners of a Families or Enterprise Organization, complete the following step
 5. Start a new Organization in your self-hosted instance by selecting the {% icon fa-plus %} **Add Organization** button.
 
    You will be prompted to upload a license file. Select the **Browse** button and add your downloaded license file.
+
+### Update a renewed Organization License
+
+When your license expires and your Organization renews, you have 2 months to apply the updated license file to your self-hosted Organization. To apply the update your license, download the new license file (**Steps 1-3 above**) from the cloud-hosted Bitwarden Organization Vault.
+
+Once downloaded, open your self-hosted Web Vault and update the license from the Organization **Settings** &rarr; **Subscription** page:
+
+{% image hosting/update-license.png Update a self-hosting license %}
+
+If you receive a `version not supported` error message, you'll need to update your server before proceeding. Make a backup or copy of the `bwdata` directory, then follow [these instructions]({{site.baseurl}}/article/updating-on-premise/). 

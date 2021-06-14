@@ -92,7 +92,6 @@ Exporting event logs will create a `.csv` of all events within the specified dat
 
 {% image /organizations/event-logs-export.png Export Event Logs %}
 
-
 ## API Responses
 
 Accessing Event Logs from the `/events` endpoint of the [Bitwarden Public API](https://bitwarden.com/help/article/public-api/) will return a JSON response like the following:

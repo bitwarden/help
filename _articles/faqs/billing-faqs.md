@@ -48,6 +48,12 @@ You can add or remove seats from your Organization at any time. The cost will be
 
 For more information, see [Hosting](https://bitwarden.com/help/hosting).
 
+### Q: If I have a Families Organization, do I need Premium?
+
+**A:** The current Families plan (introduced Sep. 2020) automatically provides premium features for all 6 members of the Organization, so no!
+
+Legacy Families plans do not automatically provide premium features, so users would need to upgrade to premium individually or the Families Organization Owner could upgrade the organization.
+
 ## Payment Options
 
 ### Q: What payment options do you accept for customers based in the United States?

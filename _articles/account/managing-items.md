@@ -167,6 +167,7 @@ For any given Vault item, you can activate the **Master password re-prompt** opt
 
 {% image /manage-items/reprompt.gif Master Password Reprompt %}
 
+
 ## Share Vault Items
 
 If you're a member of an [Organization]({{site.baseurl}}/article/about-organizations/), you can share Vault items with other members of your Organization. Learn more about [Organizations]({{site.baseurl}}/article/about-organizations/), [Collections]({{site.baseurl}}/article/about-collections), and [Sharing]({{site.baseurl}}/article/share-to-a-collection/).

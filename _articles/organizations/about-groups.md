@@ -13,7 +13,7 @@ redirect_from:
 
 ## What are Groups?
 
-Groups are relate together individual users, and provide a scalable way to assign permissions, including access to [Collections]({{site.baseurl}}/article/about-collections) and other [access controls]({{site.baseurl}}/article/user-types-access-control/#access-control). When [onboarding new users]({{site.baseurl}}/article/managing-users/), add them to a Group to have them automatically inherit that Group's configured permissions.
+Groups relate together individual users, and provide a scalable way to assign permissions, including access to [Collections]({{site.baseurl}}/article/about-collections) and other [access controls]({{site.baseurl}}/article/user-types-access-control/#access-control). When [onboarding new users]({{site.baseurl}}/article/managing-users/), add them to a Group to have them automatically inherit that Group's configured permissions.
 
 {% callout info %}
 Groups are available to [Teams and Enterprise Organizations]({{site.baseurl}}/article/about-organizations/#types-of-organizations).

@@ -18,7 +18,10 @@ Each unique Bitwarden account has an encryption key derived from your Master Pas
 **Rotating your encryption key is a potentially dangerous operation.** Please read this section thoroughly to understand the full ramifications of doing so.
 {% endcallout %}
 
-Rotating your account’s encryption key generates a new encryption key that is used to re-encrypt all Vault data. After rotating, you should quickly take the following actions to prevent data loss or corruption:
+Rotating your account’s encryption key generates a new encryption key that is used to re-encrypt all Vault data. You should consider rotating your encryption key if your account has been compromised such in a way that someone has obtained your encryption key.
+
+
+After rotating, you should quickly take the following actions to prevent data loss or corruption:
 
 #### Log out of Client Applications
 

@@ -82,6 +82,16 @@ Bitwarden takes user security and privacy seriously. Bitwarden maintains secure,
 
 **A:** Confidence in the security of our systems is of utmost important to Bitwarden. All proposed code changes are reviewed by one or more non-author members of the team before they can be merged into any codebase. All code goes through multiple test and QA environments prior to production. Bitwarden has implemented a SOC2 report to audit and validate our internal procedures. As mentioned in the report, our team is subject to rigorous background check and thorough interview processes. Bitwarden, being an open-source product, also welcomes peer-review of our code at any point. The team at Bitwarden strives to do everything we can to keep our users comfortable, and keeping their data secure. 
 
+### Q: How long does Bitwarden cache session information?
+
+**A:** Great question! The answer depends on the particular piece of information and client application:
+
+- Offline Vault sessions will expire after 30 days.
+  - **Except** for mobile client applications, which will expire after 90 days.
+- [Two-step Login]({{site.baseurl}}/article/setup-two-step-login) **Remember Me** selections will expire after 30 days.
+- Directory Connector [sync cache]({{site.baseurl}}/article/clear-sync-cache/) will be cleared after 30 days.
+- Organization invites will expire after 5 days. Self-hosted customers can configure this [using an environment variable]({{site.baseurl}}/article/environment-variables/#optional-variables).
+
 ### Questions Regarding Specific Client Apps
 
 ### Q: What data does Bitwarden use from client applications?
