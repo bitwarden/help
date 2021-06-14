@@ -92,6 +92,15 @@ Exporting event logs will create a `.csv` of all events within the specified dat
 
 {% image /organizations/event-logs-export.png Export Event Logs %}
 
+For example:
+
+```
+message,appIcon,appName,userId,userName,userEmail,date,ip,type
+Logged in.,fa-globe,Web Vault - Chrome,1234abcd-56de-78ef-91gh-abcdef123456,Alice,alice@bitwarden.com,2021-06-14T14:22:23.331751Z,111.11.111.111,User_LoggedIn
+Invited user zyxw9876.,fa-globe,Unknown,1234abcd-56de-78ef-91gh-abcdef123456,Alice,alice@bitwarden.com,2021-06-14T14:14:44.7566667Z,111.11.111.111,OrganizationUser_Invited
+Edited organization settings.,fa-globe,Web Vault - Chrome,9876dcba-65ed-87fe-19hg-654321fedcba,Bob,bob@bitwarden.com,2021-06-07T17:57:08.1866667Z,222.22.222.222,Organization_Updated
+```
+
 ## API Responses
 
 Accessing Event Logs from the `/events` endpoint of the [Bitwarden Public API](https://bitwarden.com/help/article/public-api/) will return a JSON response like the following:
