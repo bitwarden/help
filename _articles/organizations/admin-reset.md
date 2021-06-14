@@ -63,7 +63,7 @@ To activate Master Password Reset for your Enterprise Organization, navigate to 
 
 ### Automatic Enrollment
 
-Enabling the Automatic Enrollment policy option will automatically enroll new users in Admin Password Reset when their [invitation to the Organization is accepted]({{site.baseurl}}/article/managing-users/#accept). Users already in the Organization will not be retroactively enrolled in Admin Password Reset, and will be required to [self-enroll](#enroll-in-password-reset).
+Enabling the Automatic Enrollment policy option will automatically enroll new users in Admin Password Reset when their [invitation to the Organization is accepted]({{site.baseurl}}/article/managing-users/#accept). Users already in the Organization will not be retroactively enrolled in Admin Password Reset, and will be required to [self-enroll](#self-enroll-in-password-reset).
 
 {% callout success %}
 If you're automatically enrolling Organization members in Admin Password Reset, we **highly recommend notifying them of this feature**. Many Bitwarden Organization users store personal credentials in their Personal Vault, and should be made aware that Admin Password Reset could allow an administrator to access their Personal Vault.
