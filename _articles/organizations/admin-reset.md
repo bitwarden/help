@@ -88,7 +88,7 @@ Manually changing your Master Password or [rotating your encryption key]({{site.
 ## Reset a Master Password
 
 {% callout info %}
-You must be a [Owner, Admin, or permitted Custom user](#permissions) to reset a Master Password. Check the [Permissions](#permissions) section to see whose Master Password you are allowed to reset.
+You must be a [Owner, Admin, or permitted Custom user](#permissions) to reset a Master Password. Check the [Permissions](#permissions) section of this article to see whose Master Password you are allowed to reset.
 {% endcallout %}
 
 To reset a Master Password for a member of your Enterprise Organization:
