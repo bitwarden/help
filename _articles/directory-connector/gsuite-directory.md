@@ -106,6 +106,7 @@ Complete the following steps to configure the setting used when syncing using Di
 |Interval|Time between automatic sync checks (in minutes).|
 |Remove disabled users during sync|Check this box to remove users from the Bitwarden Organization that have been disabled in your directory.|
 |Overwrite existing organization users based on current sync settings|Check this box to always perform a full sync and remove any users from the Bitwarden Organization if they are not in the synced user set.|
+|More than 2000 users or groups are expected to sync.|Check this box if you expect to sync 2000+ users or groups. If you don't check this box, Directory Connector will limit a sync at 2000 users or groups.|
 |Sync users|Check this box to sync users to your Organization.<br><br> Checking this box will allow you to specify a **User Filter**.|
 |User Filter|See [Specify Sync Filters](#specify-sync-filters).|
 |Sync groups|Check this box to sync groups to your Organization.<br><br>Checking this box will allow you to specify a **Group Filter**.|

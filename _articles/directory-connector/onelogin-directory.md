@@ -50,6 +50,7 @@ Complete the following steps to configure the settings used when syncing using D
 |Interval|Time between automatic sync checks (in minutes).|
 |Remove disabled users during sync|Check this box to remove users from the Bitwarden Organization that have been disabled in your directory.|
 |Overwrite existing organization users based on current sync settings|Check this box to always perform a full sync and remove any users from the Bitwarden Organization if they are not in the synced user set.<br><br>**Recommended for OneLogin directories.**|
+|More than 2000 users or groups are expected to sync.|Check this box if you expect to sync 2000+ users or groups. If you don't check this box, Directory Connector will limit a sync at 2000 users or groups.|
 |If a user has no email address, combine a username prefix with a suffix value to form an email|Check this box to form valid email options for users that do not have an email address. **Users without real or formed email addresses will be skipped by Directory Connector.**<br><br>Formed Email = `username` + **Email Suffix**|
 |Email Suffix|A string (`@example.com`) used to create a suffix for formed email addresses.|
 |Sync users|Check this box to sync users to your Organization.<br><br>Checking this box will allow you to specify **User Filters**.|

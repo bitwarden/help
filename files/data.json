@@ -1,23 +1,24 @@
 {
-	"installedVersion": "2.8.2",
-	"mainWindowSize": {
-		"width": 738,
-		"height": 551,
-		"isMaximized": false,
-		"displayBounds": {
-			"x": 1440,
-			"y": 0,
-			"width": 1920,
-			"height": 1080
-		},
-		"x": 2601,
-		"y": 23
-	},
+	"installedVersion": "2.9.2",
 	"appId": "app-id-string",
 	"rememberEmail": true,
-	"rememberedEmail": "owner@bitwarden.com",
-	"directoryType": 0, <---Indicates which directoryConfig_x to use for sync
-	"directoryConfig_0": {  <---Config for LDAP/AD
+	"rememberedEmail": "username@email.com",
+	"mainWindowSize": {
+		"width": 1122,
+		"height": 733,
+		"isMaximized": false,
+		"displayBounds": {
+			"x": 0,
+			"y": 0,
+			"width": 1440,
+			"height": 900
+		},
+		"x": 89,
+		"y": 62
+	},
+	"organizationId": "your-organization-id",
+	"directoryType": 1,
+	"directoryConfig_0": {
 		"ssl": false,
 		"startTls": false,
 		"sslAllowUnauthorized": false,
@@ -25,31 +26,24 @@
 		"currentUser": false,
 		"ad": true,
 		"pagedSearch": true,
-		"password": "[STORED SECURELY]", <---Must be set from a BWDC Application
-		"rootPath": "dc=ldap,dc=company,dc=org",
-		"hostname": "ldap.company.org",
-		"username": "cn=bitwarden,cn=Users,dc=ldap,dc=company,dc=org"
+		"password": null
 	},
 	"directoryConfig_2": {
 		"privateKey": null
 	},
-	"directoryConfig_1": { <---Config for Azure AD
-		"key": "[STORED SECURELY]", <---Must be set from a BWDC Application
-		"tenant": "bwdc@test.onmicrosoft.com",
-		"applicationId": "application-id-string"
+	"directoryConfig_1": {
+		"key": null
 	},
-	"directoryConfig_3": { <---Config for Okta
-		"token": "[STORED SECURELY]", <---Must be set from a BWDC Application
-		"orgUrl": "https://bitwardentest.okta.com"
+	"directoryConfig_3": {
+		"token": null
 	},
-	"directoryConfig_4": { <---Config for OneLogin
+	"directoryConfig_4": {
 		"region": "us",
-		"clientSecret": "[STORED SECURELY]", <---Must be set from a BWDC Application
-		"clientId": "client-id-string"
+		"clientSecret": null
 	},
-	"syncConfig": { <---Sync Options
+	"syncConfig": {
 		"users": true,
-		"groups": false,
+		"groups": true,
 		"interval": 5,
 		"removeDisabled": false,
 		"overwriteExisting": false,
@@ -62,10 +56,16 @@
 		"groupObjectClass": "group",
 		"userEmailAttribute": "mail",
 		"groupNameAttribute": "name",
-		"groupPath": "",
-		"userPath": "",
-		"groupFilter": "",
-		"userFilter": "(ou=Test OU)"
+		"groupPath": "CN=Users",
+		"userPath": "CN=Users",
+		"largeImport": true
 	},
-	"organizationId": "organization-id-string" <---Your Organization GUID
+	"accessToken": "bearer-access-token",
+	"userEmail": "username@email.com",
+	"userId": "user-identifier",
+	"kdf": 0,
+	"kdfIterations": 100000,
+	"clientId": "organization-api-clientid",
+	"entityId": "organization-id-string",
+	"entityType": "organization"
 }
