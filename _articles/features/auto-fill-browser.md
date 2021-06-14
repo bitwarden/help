@@ -71,9 +71,9 @@ Some browsers, including **Safari** and legacy **Edge** do not currently support
 
 ## On Page Load
 
-Auto-fill on Page Load is an **experimental and opt-in** feature offered by Bitwarden Browser Extensions. Auto-fill on page load will auto-fill login information when a web page corresponding to a Login item's URI value loads. When enabled, you can set the default behavior (i.e. on for all Vault items or off for Vault items).
+Auto-fill on Page Load is an **experimental and opt-in** feature offered by Bitwarden Browser Extensions. Auto-fill on page load will auto-fill login information when a web page corresponding to a Login item's URI value loads. Once enabled, you can set the default behavior (i.e. on for all Vault items or off for Vault items).
 
-To enable this feature, navigate to **Settings** &rarr; **Options** in your Browser Extension, select the **Enable Auto-fill On Page Load** option, and choose your default behavior. Once enabled and the default behavior is set, you can specify auto-fill on page load behavior for each individual Vault item:
+To enable this feature, navigate to **Settings** &rarr; **Options** in your Browser Extension, select the **Enable Auto-fill On Page Load** option, and choose your default behavior. Once enabled and the default behavior is set, you can additionally specify auto-fill on page load behavior for each individual Vault item:
 
 {% image autofill/onpageloadfull.png %}
 
