@@ -78,7 +78,7 @@ To enable Unlock with PIN for your Mobile app:
 
 1. Open the {% icon fa-cogs %} **Settings** tab.
 2. Scroll down to the Security section and tap the **Unlock with PIN Code** option.
-3. Enter the the desired PIN code in the input box. Your PIN can be any combination of characters (a-z, 0-9, $, #, etc.).
+3. Enter the the desired PIN code in the input box. Your PIN can be any combination of numbers (0-9).
 
    {% callout success %}A dialog box will appear asking whether you want to require unlocking with your master password when the application is restarted. Tap **Yes** to require your Master Password instead of PIN when the app restarts. Tap **No** for the ability to unlock with the PIN when the app restarts.{% endcallout %}
 
