@@ -71,6 +71,12 @@ To export your personal Vault data from a Browser Extension:
 3. On the Export Vault view, choose a **File Format** (`.json`, `.csv`, or `.json (Encrypted)`).
 4. Enter your **Master Password** and select **Submit**.
 
+{% callout info %}
+If you're exporting from the Vivaldi Browser Extension, you may need to popout the Browser Extension for export to work properly:
+
+{% image importing/browserextension-popout.png Popout a Browser Extension %}
+{% endcallout %}
+
 {% endcapture %}
 {{ browser_extension | markdownify}}
   </div>
