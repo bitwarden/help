@@ -13,7 +13,7 @@ order: 15
 - Ctrl/CMD `+` Shift `+` Y  `→` Activate extension
 - Ctrl/CMD `+` Shift `+` L  `→` Autofill, press again to cycle through matching logins
 - Ctrl/CMD `+` Shift `+` 9  `→` Generate a password and copy it to the clipboard
-- Ctrl/CMD `+` Shift `+` N  `→` Lock Extension:
+- Ctrl/CMD `+` Shift `+` N  `→` Lock extension
 
 {%callout success%}
 You can change browser extension shortcuts on most Chrome-based browsers by visiting a url, such as:
