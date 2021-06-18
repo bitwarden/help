@@ -68,7 +68,7 @@ Prepare to onboard users by ensuring your Organization has the correct [number o
 
 ### Pricing for Partners
 
-Whether you’re reselling or using Bitwarden on behalf of clients, Bitwarden offers a transparent pricing model. Price is based on per user per month, and is not dependent on the deployment method (cloud, private cloud, or self-host). Volume discounts start at 500 seats.
+Whether you’re reselling or using Bitwarden on behalf of clients, Bitwarden offers a transparent pricing model. Price is based on per user per month, and is not dependent on the deployment method (cloud, private cloud, or self-host). Volume discounts start at 250 seats.
 
 ### Invoicing
 
