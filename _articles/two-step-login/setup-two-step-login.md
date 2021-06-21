@@ -14,7 +14,7 @@ There are lots of different methods for Two-step Login, ranging from dedicated A
 
 ## Two-step Login for Individuals
 
-The following Two-step Login methods can be enabled on an individual-by-indivual basis from the [Web Vault's](https://vault.bitwarden.com/){:target="\_blank"} **Settings** menu.
+The following Two-step Login methods can be enabled on an individual-by-individual basis from the [Web Vault's](https://vault.bitwarden.com/){:target="\_blank"} **Settings** menu.
 
 ### Free Methods
 
