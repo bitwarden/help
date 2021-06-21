@@ -42,6 +42,9 @@ The following variables do not already exist in `global.override.env`, and can b
 
 |Variable|Description|
 |--------|-----------|
+|globalSettings__logDirectory=|Specifies the directory to save log files to. By default, `globalSettings__logDirectory=bwdata/logs`.|
+|globalSettings__logRollBySizeLimit=|Specify the size limit in bytes to use for rolling log files (e.g. `globalSettings__logRollBySizeLimit=1073741824`).|
+|globalSettings__syslog__destination=|Specify a Syslog server or endpoint to send log files to (e.g. `globalSettings__syslog__destination=udp://example.com:514`).|
 |globalSettings__mail__smtp__trustServer=|Specify `true` to explicitly trust the certificate presented by the SMTP Server (**not recommended for production**).|
 |globalSettings__mail__smtp__sslOverride=|Specify `true` to use SSL (not TLS) on port 25.|
 |globalSettings__mail__smtp__startTls=|Specify `true` to force STARTTLS (Opportunistic TLS).|
