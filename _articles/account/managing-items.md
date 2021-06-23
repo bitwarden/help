@@ -163,10 +163,13 @@ In the Trash, you can **Restore** an item to your Vault or **Permanently Delete*
 
 ### Protect Individual Items
 
-For any given Vault item, you can activate the **Master password re-prompt** option from the Add/Edit screen to require verification of your Master Password to access the Hidden fields of that item (e.g. Password, Credit Card Number):
+For any given Vault item, you can activate the **Master password re-prompt** option from the Add/Edit screen to require verification of your Master Password to access or auto-fill the Hidden fields of that item (e.g. Password, Credit Card Number):
+
+{% callout warning %}
+Master password re-prompt **is not** an encryption mechanism. This feature is an interface-only guardrail that a sophisticated user may find ways to work around. We recommend **never** leaving your Vault unlocked when unattended or on a shared workstation.
+{% endcallout %}
 
 {% image /manage-items/reprompt.gif Master Password Reprompt %}
-
 
 ## Share Vault Items
 
