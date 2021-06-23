@@ -109,6 +109,6 @@ To reset a Master Password for a member of your Enterprise Organization:
 
 ### After a Password Reset
 
-When your Master Password is reset, you will receive an email from Bitwarden to inform you of this. On receiving this email, contact your Organization administrator to obtain your new Master Password through a secure channel, like [Bitwarden Send]({{site.baseurl}}/article/create-send/).
+When your Master Password is reset, you will receive an email from Bitwarden to inform you of this. On receiving this email, contact your Organization administrator to obtain your new Master Password through a secure channel like [Bitwarden Send]({{site.baseurl}}/article/create-send/).
 
 Once you have regained access to your Vault using the new Master Password, you should immediately change your Master Password to something **strong** and **memorable**. Changing your Master Password after a reset will help to protect your privacy.

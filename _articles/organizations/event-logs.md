@@ -129,7 +129,7 @@ Accessing Event Logs from the `/events` endpoint of the [Bitwarden Public API](h
 
 ## SIEM and External Systems Integrations
 
-When exporting data from Bitwarden into other systems, a combination of data from the Exports, API and CLI may be used to gather data. For example, using Bitwarden RESTful APIs gather data around the structure of the organization:
+When exporting data from Bitwarden into other systems, a combination of data from the Exports, API and CLI may be used to gather data. For example, using Bitwarden RESTful APIs to gather data around the structure of the organization:
 
 - GET /public/members returns the Members, Ids, and assigned groupIds
 - GET /public/groups returns all the Groups, Ids, assigned Collections, and their permissions

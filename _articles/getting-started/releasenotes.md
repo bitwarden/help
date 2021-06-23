@@ -27,7 +27,7 @@ To be notified of Release Announcements, subscribe to the [Bitwarden Status RSS 
 
 ## 2021-06-28
 
-The Bitwarden team is happy to announce the rollout of Admin Password Reset, the latest feature purpose built to help enterprises seeking to ensure password security at scale. This release includes:
+The Bitwarden team is happy to announce the rollout of Admin Password Reset, the latest feature purpose-built to help enterprises seeking to ensure password security at scale. This release includes:
 
 - **Admin Password Reset**: Enterprise Organizations can enroll in Admin Password Reset to allow designated administrators to reset the Master Password of Organization users (see [here]({{site.baseurl}}/article/admin-reset/) for details).
 - **Master Password Reprompt**: Use the new Master Password re-prompt option to require verification of your Master Password to view the sensitive fields of individual Vault items (see [here]({{site.baseurl}}/article/managing-items/#protect-individual-items) for details).
