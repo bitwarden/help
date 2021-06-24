@@ -46,9 +46,9 @@ As a grantor, you can [reject](#approve-or-reject-emergency-access) an emergency
 ### User Access
 
 Trusted emergency contacts can be granted one of the following user access levels:
-- **View**: When an emergency access request is granted, this user is granted view/read access to all items in your personal Vault.
+- **View**: When an emergency access request is granted, this user is granted view/read access to all items in your personal Vault, including passwords of Login items.
 
-   {% callout success %}As the grantor, you may revoke access to a grantee with **View** access at any time.{% endcallout %}
+   {% callout success %}As the grantor, you may [revoke access](#revoking-access) to a grantee with **View** access at any time.{% endcallout %}
 
 - **Takeover**: When an emergency access request is granted, this user can create a Master Password for permanent read/write access to your Vault (this will **replace** your previous Master Password). Takeover disables any [Two-step Login Methods]({% link _articles/two-step-login/setup-two-step-login.md %}) enabled for the account.
 
@@ -135,3 +135,20 @@ As the grantee, complete the following steps to access the grantor's Vault once 
 5. Select the option from the dropdown that corresponds with your [assigned access](#user-access):
    - **View** - Selecting this option will display the grantor's Vault items on this screen.
    - **Takeover** - Selecting this option will open the Takeover dialog box. Enter and confirm a new master password for the grantor's account. Once saved, log in to Bitwarden as normal, entering the the grantor's email address and the created Master Password.
+
+## Revoking Access
+
+The steps to take to regain exclusive access to your Vault after using Emergency Access depend on which [access level](#user-access) was granted:
+
+### Revoke View Access
+
+Trusted emergency contacts who are given **View** access will be able to view your Vault items once they are [approved](#approve-or-reject-emergency-access) and until their access is manually revoked. To manually revoke access, use the {% icon fa-cog %} **gear** dropdown to {% icon fa-times %} **Reject** access:
+
+{% image /features/emergency-access/ea-revoke.png Revoke Emergency Access %}
+
+### Revoke a Takeover
+
+Trusted emergency contacts who are given **Takeover** access will, once used, have created a new Master Password for your account. As a result, the only way to revoke access involves:
+
+1. Obtaining the new Master Password they created for your account and using it to log in the [Web Vault](https://vault.bitwarden.com){:target="\_blank"}.
+2. [Changing your Master Password]({{site.baseurl}}/article/master-password/#change-your-master-password) to one that they do not know.
