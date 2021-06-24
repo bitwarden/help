@@ -93,7 +93,7 @@ As the Organization Owner, invite a new member:
 1. In your Organization Vault, open the **Manage** tab and select the {% icon fa-plus %} **Invite User** button:
 
    {% image /organizations/org-people-invite.png %}
-2. Enter the **Email** of your second member, which should match the email they [signed up for Bitwarden](#sign-up-for-bitwarden-again) with. You can also choose the [User Type]({{site.baseurl}}/article/user-types-access-control/#user-types) and [Access Controls]({{site.baseurl}}/article/user-types-access-control/#access-control) assigned to this user.
+2. Enter the **Email** of your second member, which should match the email they [signed up for Bitwarden](#sign-up-for-bitwarden-again) with. You can also choose the [User Type]({{site.baseurl}}/article/user-types-access-control/#user-types) and [Access Controls]({{site.baseurl}}/article/user-types-access-control/#access-control) assigned to this user, including which [Collections](#get-to-know-collections) they can access.
 3. Select **Save** to send the invitation to the designated email address.
 
 Once your invitation is sent, inform your new member and help them [accept the invitation](#accept).
@@ -143,13 +143,15 @@ Shared items are **owned** by the Organization. This means that anyone with perm
 
 ## Share a Login
 
-The last step on the road to secure sharing is to share a Vault item. Any existing or new [Vault item]({{site.baseurl}}/article/managing-items/#add-a-vault-item) can be shared from your Organization Vault or Personal Vault. For this guide, we'll go over sharing a new Login from your Personal Vault:
+The last step on the road to secure sharing is to create a shared a Vault item. An existing [Vault item]({{site.baseurl}}/article/managing-items/#add-a-vault-item) can be shared after it's created, but for this guide, we'll focus on creating a **new** shared Login from your Personal Vault:
 
 1. On the {% icon fa-lock %} **My Vault** page, select the {% icon fa-plus %} **Add Item** button.
-2. Fill in all the relevant information for your new Login item (e.g. Username and Password).
+2. Fill in all the relevant information for your new Login item (e.g. Username and Password). The item can be anything you want both yourself and the other Organization user to have access to, for example a family streaming account.
 3. In the **Ownership** section at the bottom of the Add Item Panel, select your Organization to designate the item for sharing.
-4. Select one or more **Collections** to share this item into. You must select *at least* one Collection.
+4. Select one or more **Collections** to share this item into. Generally, users of two-person Organizations setup access for both users for all Collections. In larger or more complex Organizations, which Collection you share the item into will determine who can access it.
 5. Select the **Save** button to finishing creating the shared item.
+
+This new shared item will be accessible to both yourself and the other Organization user! As long as both users can access the Collection it's in, it will appear for both in the Organization Vault and in the **My Vault** view alongside other personal Vault items.
 
 ## Congratulations!
 
