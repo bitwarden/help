@@ -4,9 +4,9 @@ title: Deploying Bitwarden as an MSP
 categories: [organizations]
 featured: false
 popular: false
-hidden: true
+hidden: false
 tags: [MSPs, Organizations, Collections, Groups]
-order: 99
+order: 16
 ---
 
 Bitwarden supports a reseller and Managed Service Provider (MSP) model. You can get started right away, no formal agreement needs to be signed. If you are looking for information about the Bitwarden Partner Program, look no further.
