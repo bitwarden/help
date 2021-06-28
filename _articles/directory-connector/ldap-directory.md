@@ -65,6 +65,7 @@ If you are using Active Directory, many of these settings are predetermined for 
 |Interval|Time between automatic sync check (in minutes).|
 |Remove disabled users during sync|Check this box to remove users from the Bitwarden Organization that have been disabled in your Organization.|
 |Overwrite existing organization users based on current sync settings|Check this box to fully overwrite the user set on each sync, including removing users from your Organization when they're absent from the directory user set.<br><br>**If for any reason an empty sync is run when this options is enabled, Directory Connector will remove all users.** Always run a [Test Sync](#test-a-sync) prior to syncing after enabling this option.|
+|More than 2000 users or groups are expected to sync.|Check this box if you expect to sync 2000+ users or groups. If you don't check this box, Directory Connector will limit a sync at 2000 users or groups.|
 |Member Attribute|Name of the attribute used by the directory to define a group's membership (e.g. `uniqueMember`).|
 |Creation Data Attribute|Name of the attribute used by the directory to specify when an entry was created (e.g. `whenCreated`).|
 |Revision Date Attribute|Name of the attribute used by the directory to specify when an entry was last changed (e.g. `whenChanged`).|

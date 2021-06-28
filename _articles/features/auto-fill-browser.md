@@ -71,11 +71,24 @@ Some browsers, including **Safari** and legacy **Edge** do not currently support
 
 ## On Page Load
 
-Auto-fill on Page Load is an **experimental and opt-in** feature offered by Bitwarden Browser Extensions. When enabled, Bitwarden will auto-fill login information when a web page corresponding to a Login item's URI value loads.
+Auto-fill on Page Load is an **experimental and opt-in** feature offered by Bitwarden Browser Extensions. Auto-fill on page load will auto-fill login information when a web page corresponding to a Login item's URI value loads. Once enabled, you can set the default behavior (i.e. on for all Vault items or off for Vault items).
 
+To enable this feature, navigate to **Settings** &rarr; **Options** in your Browser Extension, select the **Enable Auto-fill On Page Load** option, and choose your default behavior. Once enabled and the default behavior is set, you can additionally specify auto-fill on page load behavior for each individual Vault item:
+
+{% image autofill/onpageloadfull.png %}
+
+Using this convention, you can setup your Browser extension to, for example:
+
+- Auto-fill on page load for a only select few items (i.e. **off by default** for all Vault items and **manually turned on** for select items).
+- Auto-fill on page for all but a select few items (i.e. **on by default** for all Vault items and **manually turned off** for select items).
+
+{% callout info %}
 If there are multiple Login items with the detected URI, the last-used login will be used for the auto-fill operation.
+{% endcallout %}
 
-To enable this feature, navigate to **Settings** &rarr; **Options** in your Browser Extension, and select the **Enable Auto-fill On Page Load** option.
+### TOTP Copy
+
+If you use [Bitwarden Authenticator]({{site.baseurl}}/article/authenticator-keys/), you can enable the **Copy TOTP to clipboard after auto-fill** option to automatically copy a TOTP code to the clipboard when a Login is autofilled.
 
 ## Manually Auto-fill
 

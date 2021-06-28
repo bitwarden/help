@@ -38,6 +38,7 @@ will create a file Send object with the specified file at the specified `path` a
 
 - Use `-n <name>` or `--name <name>` to specify a name for the Send. If none is specified, name will default to the `id` for text Sends and file name for file Sends. For multi-word names, use quotations `"<name>"`.
 - Use `-d <days>` or `--deleteInDays <days>` to specify a [deletion date]({{site.baseurl}}/article/send-lifespan/#deletion-date) for the Send (defaults to 7 days if unspecified).
+- Use `--maxAccessCount` or `-a` to specify the [maximum access count]({{site.baseurl}}/article/send-lifespan/#maximum-access-count) for the Send.
 - Use `--hidden` to specify that a text Send require recipients to [toggle visibility]({{site.baseurl}}/article/send-privacy/#hide-text).
 - Use `--notes <notes>` to add private notes to the Send. For multi-word notes, use quotations `"<notes>"`.
 - Use `--fullObject` to output the full Send object as JSON rather than only the Send link (pair this option with the `--pretty` option for formatted JSON).

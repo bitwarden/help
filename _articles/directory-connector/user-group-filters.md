@@ -22,3 +22,24 @@ Available Sync Options and Filter syntaxes are different for each directory serv
 {% callout success%}
 If you're using the Directory Connector CLI, see [Directory Connector File Storage]({% link _articles/directory-connector/directory-sync-shared.md %}) for help editing your `data.json` configuration file.
 {% endcallout %}
+
+## Large Syncs
+
+Regardless of which directory you're syncing from, enable the **More than 2000 users or groups are expected to sync.** option to signal to Directory Connector that you're expecting a large number of users or groups:
+
+{% image directory-connector/largesync.png Signal a Large Sync%}
+
+You may also enable this option directly in the Directory Connector [configuration file]({{site.baseurl}}/article/directory-sync-shared/#config-file) (`data.json`) by setting `"largeImport": true`:
+
+```
+"syncConfig": {
+  ...,
+  ...,
+  ...,
+  "largeImport": true
+  },"
+```
+
+{% callout info %}
+If you don't enable this option, Directory Connector will limit a sync to 2000 users or groups.
+{% endcallout %}

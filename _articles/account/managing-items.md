@@ -161,6 +161,23 @@ In the Trash, you can **Restore** an item to your Vault or **Permanently Delete*
 
 {% image /manage-items/item-trash-restore-delete.png The Trash %}
 
+### Protect Individual Items
+
+For any given Vault item, you can activate the **Master password re-prompt** option from the Add/Edit screen to require verification of your Master Password to access or auto-fill the Hidden fields of that item (e.g. Password, Credit Card Number):
+
+{% callout info %}
+**Master password re-prompt** will temporarily not be available for mobile apps, as we are releasing mobile updates in the near future. Please be aware of the following:
+
+- The Android/iOS app **will not re-prompt** for your master password when viewing, editing, or auto-filling a reprompt-enabled Vault item.
+- Editing a reprompt-enabled Vault item on Android/iOS **will disable** your re-prompt settings for that item.
+{% endcallout %}
+
+{% callout warning %}
+Master password re-prompt **is not** an encryption mechanism. This feature is an interface-only guardrail that a sophisticated user may find ways to work around. We recommend **never** leaving your Vault unlocked when unattended or on a shared workstation.
+{% endcallout %}
+
+{% image /manage-items/reprompt.gif Master Password Reprompt %}
+
 ## Share Vault Items
 
 If you're a member of an [Organization]({{site.baseurl}}/article/about-organizations/), you can share Vault items with other members of your Organization. Learn more about [Organizations]({{site.baseurl}}/article/about-organizations/), [Collections]({{site.baseurl}}/article/about-collections), and [Sharing]({{site.baseurl}}/article/share-to-a-collection/).

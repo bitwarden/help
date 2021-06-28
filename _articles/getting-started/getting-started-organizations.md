@@ -112,18 +112,18 @@ Invitations expire after 5 days. Make sure you accept the invitation within that
 
 ### Confirm
 
-As the Organization Owner, confirm an accepted invitation to complete the loop:
+Confirm accepted Organization to complete the loop:
 
-1. In your Organization Vault, open the **Manage** tab and select **People**.
-2. Hover over the `Accepted` user and select the {% icon fa-cog %} gear dropdown:
+1. Log in to your [Web Vault](https://vault.bitwarden.com){:target="\_blank"} and open your Organization.
+2. Open the **Manage** tab and select **People** from the left-hand menu.
+3. Select any `Accepted` users and use the {% icon fa-cog %} gear dropdown to {% icon fa-check %} **Confirm Selected**:
 
    {% image organizations/org-people-options-overlay.png Confirm an Accepted user %}
-3. Select {% icon fa-check %} **Confirm**.
-4. Verify that the [fingerprint phrase]({{site.baseurl}}/article/fingerprint-phrase) on your screen matches the one your new member can find in **Settings** &rarr; **My Account**:
+3. Verify that the [fingerprint phrase]({{site.baseurl}}/article/fingerprint-phrase) on your screen matches the one your new member can find in **Settings** &rarr; **My Account**:
 
    {% image fingerprint-phrase.png Sample Fingerprint Phrase %}
 
-   Each fingerprint phrase is unique to its account, and ensures a final layer of oversight in securely adding users. If they match, select **Submit**.
+Each fingerprint phrase is unique to its account, and ensures a final layer of oversight in securely adding users. If they match, select **Submit**.
 
 ## Get to know your Vault
 

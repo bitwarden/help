@@ -317,6 +317,20 @@ bw get attachment photo.png --itemid 99ee88d2-6046-4ea7-92c2-acac464b1412 --outp
 When using `--output`, the path **must** end a forward slash (`/`) to specify a directory or a filename (`/Users/myaccount/Pictures/photo.png`).
 {% endcallout %}
 
+#### get notes
+
+The `get notes` command retrieves the note for any Vault item:
+
+```
+bw get notes <id>
+```
+
+`get notes` takes an exact item `id` or string. If you use a string (i.e. anything other than an exact `id`), `getnotes` will search your Vault objects for one with a value that matches. For example, the following command would return a Github note:
+
+```
+bw get notes Github
+```
+
 #### get template
 
 The `get template` command returns the expected JSON formatting for an object (`item`, `item.field`, `item.login`, etc.):

@@ -25,6 +25,22 @@ Bitwarden believes source code transparency is an absolute requirement for secur
 
 To be notified of Release Announcements, subscribe to the [Bitwarden Status RSS Feed](https://status.bitwarden.com/){:target="\_blank"}.
 
+## 2021-06-29
+
+The Bitwarden team is happy to announce the rollout of Admin Password Reset, the latest feature purpose-built to help enterprises seeking to ensure password security at scale. This release includes:
+
+- **Admin Password Reset**: Enterprise Organizations can enroll in Admin Password Reset to allow designated administrators to reset the Master Password of Organization users (see [here]({{site.baseurl}}/article/admin-reset/) for details).
+- **Master Password Re-prompt**: Use the new Master Password re-prompt option to require verification of your Master Password to view the sensitive fields of individual Vault items (see [here]({{site.baseurl}}/article/managing-items/#protect-individual-items) for details).
+
+   {% callout info %}**Master Password Re-prompt** will temporarily not be available for mobile apps, as we are releasing mobile updates in the near future. Please be aware of the following:<br><br>- The Android/iOS app **will not re-prompt** for your master password when viewing, editing, or auto-filling a reprompt-enabled Vault item.<br>- Editing a reprompt-enabled Vault item on Android/iOS **will disable** your re-prompt settings for that item.{% endcallout %}
+- **Bulk User Management**: Organization Owners and Admins can now re-send invitations, confirm accepted users, and remove users from an Organization in-bulk (see [here]({{site.baseurl}}/article/managing-users/#onboard-users) for details).
+- **Event Log Export**: Export event logs directly from the Web Vault (see [here]({{site.baseurl}}/article/event-logs/#export-events) for details).
+- **Directory Connector API Key Authentication**: Starting with this release, users of Directory Connector will need to use the [Organization API Key]({{site.baseurl}}/article/public-api/#authentication) to login.
+- **Directory Connector Sync Limit Increase**: Directory Connector can now sync an unlimited number of users or groups, where previously the limit was set at 2000 of either. To sync more than 2000 users or groups, toggle the new Sync Option (see [here]({{site.baseurl}}/article/user-group-filters/#large-syncs) for details).
+- **Autofill On Page Load Enhancements**: The Browser Extension's Auto-fill on page load feature has been upgraded to more flexibly fit users' unique needs (see [here]({{site.baseurl}}/article/auto-fill-browser/#on-page-load) for details).
+- **More CLI Options**: We've added a few new CLI options, including easy retrieval of Vault item notes (`bw get notes <id>`) and the ability to set maximum access count for Sends (`bw send create --maxAccessCount <#>`).
+- **Web Developer Autofill Exclusion**: Web Development contributors can now prevent the Browser Extension from auto-filling a given form element by adding a `data-bwignore` attribute (e.g. `data-bwignore="true"`) to an `<input>` element.
+
 ## 2021-05-11
 
 The Bitwarden team is pleased to release a set of features and updates continuing our mission of making password management easy and accessible for individuals and businesses:
