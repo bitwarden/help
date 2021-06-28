@@ -8,9 +8,9 @@ tags: [hosting, docker, install, deploy]
 order: 05
 ---
 
-Some features of Bitwarden are not configured by the `bitwarden.sh` installer. Configure these settings by editing the environment file, located at `./bwdata/env/global.override.env`.
+Some features of Bitwarden are not configured by the `bitwarden.sh` installer. Configure these settings by editing the environment file, located at `./bwdata/env/global.override.env`. `global.override.env` comes pre-baked with configurable variables (see [Included Variables](#included-variables)), however there are additional variables which can be manually added (see [Optional Variables](#optional-variables)).
 
-`global.override.env` comes pre-baked with configurable variables (see [Included Variables](#included-variables)), however there are additional variables which can be manually added (see [Optional Variables](#optional-variables)).
+**Whenever you make changes to** `global.override.env`**, perform a** `./bitwarden.sh rebuild` **to apply your changes.**
 
 {% callout info %}
 This article will not define every environment variable, instead focusing on those used or configured by most installations.
