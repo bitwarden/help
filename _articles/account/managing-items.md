@@ -166,7 +166,7 @@ In the Trash, you can **Restore** an item to your Vault or **Permanently Delete*
 For any given Vault item, you can activate the **Master password re-prompt** option from the Add/Edit screen to require verification of your Master Password to access or auto-fill the Hidden fields of that item (e.g. Password, Credit Card Number):
 
 {% callout info %}
-**Master Password Re-prompt** will temporarily not be available for mobile apps, as we are releasing mobile updates at a future date. Please be aware of the following:
+**Master password re-prompt** will temporarily not be available for mobile apps, as we are releasing mobile updates at a future date. Please be aware of the following:
 
 - The Android/iOS app **will not re-prompt** for your master password when viewing, editing, or auto-filling a reprompt-enabled Vault item.
 - Editing a reprompt-enabled Vault item on Android/iOS **will disable** your re-prompt settings for that item.
