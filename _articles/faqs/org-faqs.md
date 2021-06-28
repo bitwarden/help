@@ -43,6 +43,15 @@ Paid Organizations (Families, Teams, or Enterprise) automatically include premiu
 
 **A:** If you're self-hosting, [configure the environment variable]({% link _articles/hosting/environment-variables.md %}) `globalSettings__disableUserRegistration=` to `true` to prevent users from signing up for an account via the Registration page. Once configured, Organization Admins or Owners must invite users to signup for an account on the self-hosted instance.
 
+### Q: My users don't have permission to update desktop apps on their workstations. Can I turn off automatic updates for Bitwarden?
+
+**A:** Yes! Add the environment variable `ELECTRON_NO_UPDATER=1` to your desktop app template to prevent automatic update procedures from trying and failing on your end-user workstations. [Learn how to set environment variables for desktop apps.](https://www.twilio.com/blog/2017/01/how-to-set-environment-variables.html){:target="\_blank"}
+
+{% callout warning %}
+Like with any software, running old versions may present a security risk.
+{% endcallout %}
+
+
 ## Sharing with an Organization
 
 ### Q: How do I "unshare" an item from my Organization?
