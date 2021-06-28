@@ -175,4 +175,14 @@ Check the version of the Directory Connector CLI using the `--version` global op
 
 ## Troubleshooting
 
+### libsecret Missing
+
 If you receive an error message referring to the libsecret shared object `Error: libsecret-1.so.0: cannot open shared object file: No such file or directory`, you may need to install libsecret which is required to store things securely on the host.
+
+### dbus Errors
+
+If you receive an error message referring to the dbus when using `bwdc config`, for example `Failed to execute child process "dbus-launch" (No such file or directory)` or `Cannot autolaunch D-Bus without X11`, assign the following environment variable to allow plaintext storage of secrets in `data.json`:
+
+```
+export BITWARDENCLI_CONNECTOR_PLAINTEXT_SECRETS=true
+```
