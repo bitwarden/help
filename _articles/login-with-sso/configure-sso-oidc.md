@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Configure Login with SSO (OIDC)
+title: OIDC Configuration
 categories: [login-with-sso]
 featured: false
 popular: false
@@ -8,90 +8,73 @@ tags: [sso, oidc, openid, idp, identity]
 order: 04
 ---
 
-This article will guide you through the steps required to configure Login with SSO for OpenID Connect (OIDC) authentication.
+## Step 1: Set an Organization Identifier
 
-{% callout info %}
-**Configuration will vary provider-to-provider.** Refer to the following Provider Samples as you configure Login with SSO:
+Users who [authenticate their identity using SSO]({{site.baseurl}}/article/sso-access-your-vault) will be required to enter an **Organization Identifier** that indicates the Organization (and therefore, the SSO integration) to authenticate against. To set a unique Organization Identifier:
 
-- [Okta Sample]({% link _articles/login-with-sso/oidc-okta.md %})
-
-{% endcallout %}
-
-## Step 1: Enabling Login with SSO
-
-Complete the following steps to enable Login with SSO for OIDC authentication:
-
-1. In the Web Vault, navigate to your Organization and open the **Settings** tab.
-2. In the **Identifier** field, enter a unique identifier for your Organization:
+1. Log in to your [Web Vault](https://vault.bitwarden.com){:target="\_blank"} and open your Organization.
+2. Open the **Settings** tab and enter a unique **Identifier** for your Organization.
 
    {% image /sso/org-id.png Enter an Identifier %}
+3. **Save** your changes before exiting this page.
 
-   Don't forget to **Save** your identifier. Users will be required to enter this **Identifier** upon login.
+{% callout success %}
+You'll need to share this value with users once the configuration is ready to be used.
+{% endcallout %}
 
-3. Navigate to the **Business Portal**.
+## Step 2: Enable Login with SSO
 
-   {% image /organizations/business-portal-button-overlay.png Business Portal button %}
+Once you have your Organization Identifier, you can proceed to enabling and configuring your integration. To enable Login with SSO:
 
-4. Select the **Single Sign-On** button.
-5. Check the **Enabled** checkbox.
-6. From the **Type** dropdown menu, select the **OpenID Connect** option.
+1. From your Organization Vault, navigate to the **Business Portal**:
 
-After selecting **OpenID Connect**, this page will display a list of configuration fields you will need to configure.
+   {% image /organizations/business-portal-button-overlay.png Business Portal %}
 
-Keep this page on-hand, as you will need the values of **Callback Path** and **Signed Out Callback Path** to complete [Step 2](#step-2-configure-your-idp).
+2. From the Business Portal menu bar, check that the correct Organization is listed and select the **Single Sign-On** button:
 
-## Step 2: Configure Your IdP
+{% image sso/sso-bp-1.png Business Portal Menu%}
+3. Check the **Enabled** checkbox.
+4. From the **Type** dropdown menu, select the **OpenID Connect** option. If you intend to use SAML instead, switch over the the [SAML Configuration Guide]({{site.baseurl}}/article/configure-sso-saml/).
 
-Before you can complete your configuration settings, you must configure your IdP to receive requests from and send responses to Bitwarden.
+## Step 3: Configuration
 
-{% comment %}
-PLACEHOLDER TO ADD PROVIDER SCREENSHOTS Configuration can vary provider-to-provider. Refer to the following samples for assistance:
+From this point on, **implementation will vary provider-to-provider**. Jump to one of our specific **Implementation Guides** for help completing the Configuration process:
 
-- [{% icon fa-download %} Okta OIDC Sample]({{site.baseurl}}/files/bitwarden_export.csv)
-{% endcomment %}
+|Provider|Guide|
+|--------|-----|
+|Azure|[Azure Implementation Guide]({{site.baseurl}}/article/oidc-azure/)|
+|Okta|[Okta Implementation Guide]({{site.baseurl}}/article/oidc-okta/)|
 
-When you've successfully set your IdP, return to the Bitwarden Business Portal to complete your OIDC configuration.
+### Configuration Reference Materials
 
-## Step 3: OpenID Connect Configuration
+The following sections will define fields configured in the [Bitwarden Business Portal]({{site.baseurl}}/article/about-business-portal), agnostic of which IdP you're integrating with.
 
-Fields in this section should come from the configured values in [Step 2: Configure your IdP](#step-2-configure-your-idp).
+{% callout success %}
+**Unless you're comfortable with OpenID Connect**, we recommend using one of the [above Implementation Guides](#step-3-configuration) instead of the following generic material.
+{% endcallout %}
 
-Required fields will be marked. Failing to provide a value for a required field will cause your configuration to be rejected.
-
-{% image /sso/sso-oidc.png OpenID Connect Configuration screen %}
-
-#### Callback Path
-The URL for Bitwarden authentication automatic redirect. This value will be automatically generated. For all Cloud-hosted instances, `https://sso.bitwarden.com/oidc-signin`. For self-hosted instances, domain is based on your configured Server URL.
-
-#### Signed Out Callback Path
-The URL for Bitwarden sign-out automatic redirect. This value will be automatically generated. For all Cloud-hosted instances, `https://sso.bitwarden.com/oidc-signedout`. For self-hosted instances, domain is based on your configured Server URL.
-
-#### Authority (*Required*)
-Your Identity Provider URL or the Authority that Bitwarden will perform authentication against.
-
-#### Client ID (*Required*)
-The Client identifier used for Bitwarden, as configured in your Identity Provider.
-
-#### Client Secret (*Required*)
-*May be required depending on your IdP's configuration, needs, or requirements*
-
-A secret used  in conjunction with **Client ID** to exchange for an authentication token.
-
-#### Metadata Address (*Required if Authority is not a valid URL*)
-
-Identity Provider information which Bitwarden will perform authentication against (*e.g.* Okta Metadata URI).
-
-#### OIDC Redirect Behavior
-Method used by the IdP to respond to Bitwarden authentication requests. Options include:
-- Form POST
-- Redirect GET
+|Field|Description|
+|-----|-----------|
+|Callback Path|(**Automatically generated**) The URL for authentication automatic redirect. For Cloud-hosted customers, this is always `https://sso.bitwarden.com/oidc-signin`. For self-hosted instances, this is determined by your [configured server URL]({{site.baseurl}}/article/install-on-premise/#configure-your-domain), for example `https://your.domain.com/sso/oidc-signin`.|
+|Signed Out Callback Path|(**Automatically generated**) The URL for sign-out automatic redirect. For Cloud-hosted customers, this is always `https://sso.bitwarden.com/oidc-signedout`. For self-hosted instances, this is determined by your [configured server URL]({{site.baseurl}}/article/install-on-premise/#configure-your-domain), for example `https://your.domain.com/sso/oidc-signedout`.|
+|Authority|(**Required**) The URL of your Authorization Server ("Authority"), which Bitwarden will perform authentication against. For example, `https://your.domain.okta.com/oauth2/default` or `https://login.microsoft.com/<TENANT_ID>/v2.0`.|
+|Client ID|(**Required**) An identifier for the OIDC Client. This value is typically specific to a constructed IdP App Integration, for example an [Azure App Registration]({{site.baseurl}}/article/oidc-azure/) or [Okta Web App]({{site.baseurl}}/article/oidc-okta/).|
+|Client Secret|(**Required**) The client secret used in conjunction with the Client ID to exchange for an access token. This value is typically specific to a constructed IdP App Integration, for example an [Azure App Registration]({{site.baseurl}}/article/oidc-azure/) or [Okta Web App]({{site.baseurl}}/article/oidc-okta/).|
+|Metadata Address|(**Required if Authority is not valid**) A Metadata URL where Bitwarden can access Authorization Server metadata as a JSON object. For example, `https://your.domain.okta.com/oauth2/default/.well-known/oauth-authorization-server`.|
+|OIDC Redirect Behavior|Method used by the IdP to response to authentication requests from Bitwarden. Options include **Form POST** and **Redirect GET**.|
+|Get Claims From User Info Endpoint| |
+|Additional/Custom Scopes| |
+|Additional/Custom User ID Claim Types| |
+|Additional/Custom Email Claim Types| |
+|Additional/Custom Name Claim Types| |
+|Requested Authentication Context Class Reference Values| |
 
 #### Get Claims From User Info Endpoint
 Check this checkbox if you receive `URI Too Long (HTTP 414)` errors, truncated URLs, or failures during SSO.
 
 ## OIDC Attributes & Claims
 
-An **email address is required for account provisioning**, which can be passed as any of the attributes or claims in the below table. 
+An **email address is required for account provisioning**, which can be passed as any of the attributes or claims in the below table.
 
 A unique user identifier is also highly recommended. If absent, Email will be used in its place to link the user.
 
