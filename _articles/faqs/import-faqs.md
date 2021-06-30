@@ -87,6 +87,7 @@ If your format is not listed below, manually [condition a Bitwarden .csv or .jso
   - mSecure (csv)
   - Myki (csv)
   - [Microsoft Edge (Chromium) (csv)]({% link _articles/importing/import-from-chrome.md %})
+  - Nordpass (csv)
   - [Opera (csv)]({% link _articles/importing/import-from-chrome.md %})
   - Padlock (csv)
   - Passbolt (csv)
