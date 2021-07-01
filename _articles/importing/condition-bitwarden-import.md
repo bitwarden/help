@@ -23,12 +23,12 @@ Bitwarden `.csv` files will only handle Logins and Secure Notes. If you need to 
 Create a UTF-8 encoded plaintext file with the following header as the first line in the file:
 
 ```
-folder,favorite,type,name,notes,fields,login_uri,login_username,login_password,login_totp
+folder,favorite,type,name,notes,fields,reprompt,login_uri,login_username,login_password,login_totp
 ```
 For example:
 ```
-folder,favorite,type,name,notes,fields,login_uri,login_username,login_password,login_totp
-Social,1,login,Twitter,,,twitter.com,me@example.com,password123,
+folder,favorite,type,name,notes,fields,reprompt,login_uri,login_username,login_password,login_totp
+Social,1,login,Twitter,,,0,twitter.com,me@example.com,password123,
 ,,login,EVGA,,,https://www.evga.com/support/login.asp,hello@bitwarden.com,fakepassword,TOTPSEED123
 ,,login,My Bank,Bank PIN is 1234,"PIN: 1234",https://www.wellsfargo.com/home.jhtml,john.smith,password123456,
 ,,note,My Note,"This is a secure note.",,,,,
@@ -43,13 +43,13 @@ When importing this file, select **Bitwarden (csv)** as your file format.
 Create a UTF-8 encoded plaintext file with the following header as the first line in the file:
 
 ```
-collections,type,name,notes,fields,login_uri,login_username,login_password,login_totp
+collections,type,name,notes,fields,reprompt,login_uri,login_username,login_password,login_totp
 ```
 For example,
 ```
-collections,type,name,notes,fields,login_uri,login_username,login_password,login_totp
-"Social,Marketing",login,Twitter,,,twitter.com,me@example.com,password123,
-"Finance",login,My Bank,Bank PIN is 1234,"PIN: 1234",https://www.wellsfargo.com/home.jhtml,john.smith,password123456,
+collections,type,name,notes,fields,reprompt,login_uri,login_username,login_password,login_totp
+"Social,Marketing",login,Twitter,,,0,twitter.com,me@example.com,password123,
+"Finance",login,My Bank,Bank PIN is 1234,"PIN: 1234",0,https://www.wellsfargo.com/home.jhtml,john.smith,password123456,
 ,login,EVGA,,,https://www.evga.com/support/login.asp,hello@bitwarden.com,fakepassword,TOTPSEED123
 ,note,My Note,"This is a secure note.",,,,,
 ```
@@ -62,7 +62,7 @@ When importing this file, select **Bitwarden (csv)** as your file format.
 You may not have data for all the values shown in the above formats, however most are optional. In order for the Bitwarden `.csv` importer to function properly, you are only required to have the following values for any given object:
 
 ```
-folder,favorite,type,name,notes,fields,login_uri,login_username,login_password,login_totp
+folder,favorite,type,name,notes,fields,reprompt,login_uri,login_username,login_password,login_totp
 ,,login,Login Name,,,,,,
 ,,note,Secure Note Name,,,,,,
 ```
@@ -88,6 +88,7 @@ Create a UTF-8 encoded plaintext file in the following format:
     "organizationId": null,
     "folderId": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
     "type": 1,
+    "reprompt": 0,
     "name": "My Gmail Login",
     "notes": "This is my gmail login for import.",
     "favorite": false,
@@ -142,6 +143,7 @@ Create a UTF-8 encoded plaintext file in the following format:
     "organizationId": "yyyyyyyy-yyyy-yyyy-yyyy-yyyyyyyyyyyy",
     "folderId": "zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz",
     "type": 1,
+    "reprompt": 1,
     "name": "Our Shared Login",
     "notes": "A login for sharing",
     "favorite": false,
