@@ -65,11 +65,12 @@ At this point, you've configured everything you need within the context of the A
 |Metadata Address|For Azure implementations as documented, you can leave this field blank.|
 |OIDC Redirect Behavior|Select either **Form POST** or **Redirect GET**.|
 |Get Claims From User Info Endpoint|Enable this option if you receive URL too long errors (HTTP 414), truncated URLS, and/or failures during SSO.|
-|Additional/Custom Scopes|Define custom scopes to be added to the request (comma-delimited).|
-|Additional/Custom User ID Claim Types|Define custom claim type keys for user identification (comma-delimited).|
-|Additional/Custom Email Claim Types|Define custom claim type keys for users' email addresses (comma-delimited).|
-|Additional/Custom Name Claim Types|Define custom claim type keys for users' full names or display names (comma-delimited).|
-|Requested Authentication Context Class Reference values|Define Authentication Context Class Reference identifiers.|
+|Additional/Custom Scopes|Define custom scopes to be added to the request (comma-delimited). |
+|Additional/Custom User ID Claim Types|Define custom claim type keys for user identification (comma-delimited). When defined, custom claim types are searched for before falling back on standard types.|
+|Additional/Custom Email Claim Types|Define custom claim type keys for users' email addresses (comma-delimited). When defined, custom claim types are searched for before falling back on standard types.|
+|Additional/Custom Name Claim Types|Define custom claim type keys for users' full names or display names (comma-delimited). When defined, custom claim types are searched for before falling back on standard types.|
+|Requested Authentication Context Class Reference values|Define Authentication Context Class Reference identifiers (`acr_values`) (space-delimited). List `acr_values` in preference-order.|
+|Expected "acr" Claim Value in Response|Define the `acr` Claim Value for Bitwarden to expect and validate in the response.|
 
 When you're done configuring these fields, **Save** your work.
 

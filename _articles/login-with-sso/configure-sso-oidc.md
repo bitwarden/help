@@ -47,7 +47,7 @@ From this point on, **implementation will vary provider-to-provider**. Jump to o
 
 ### Configuration Reference Materials
 
-The following sections will define fields configured in the [Bitwarden Business Portal]({{site.baseurl}}/article/about-business-portal), agnostic of which IdP you're integrating with.
+The following sections will define fields configured in the [Bitwarden Business Portal]({{site.baseurl}}/article/about-business-portal), agnostic of which IdP you're integrating with. Fields that must be configured will be marked (**Required**).
 
 {% callout success %}
 **Unless you're comfortable with OpenID Connect**, we recommend using one of the [above Implementation Guides](#step-3-configuration) instead of the following generic material.
@@ -61,18 +61,16 @@ The following sections will define fields configured in the [Bitwarden Business 
 |Client ID|(**Required**) An identifier for the OIDC Client. This value is typically specific to a constructed IdP App Integration, for example an [Azure App Registration]({{site.baseurl}}/article/oidc-azure/) or [Okta Web App]({{site.baseurl}}/article/oidc-okta/).|
 |Client Secret|(**Required**) The client secret used in conjunction with the Client ID to exchange for an access token. This value is typically specific to a constructed IdP App Integration, for example an [Azure App Registration]({{site.baseurl}}/article/oidc-azure/) or [Okta Web App]({{site.baseurl}}/article/oidc-okta/).|
 |Metadata Address|(**Required if Authority is not valid**) A Metadata URL where Bitwarden can access Authorization Server metadata as a JSON object. For example, `https://your.domain.okta.com/oauth2/default/.well-known/oauth-authorization-server`.|
-|OIDC Redirect Behavior|Method used by the IdP to response to authentication requests from Bitwarden. Options include **Form POST** and **Redirect GET**.|
-|Get Claims From User Info Endpoint| |
-|Additional/Custom Scopes| |
-|Additional/Custom User ID Claim Types| |
-|Additional/Custom Email Claim Types| |
-|Additional/Custom Name Claim Types| |
-|Requested Authentication Context Class Reference Values| |
+|OIDC Redirect Behavior|(**Required**) Method used by the IdP to response to authentication requests from Bitwarden. Options include **Form POST** and **Redirect GET**.|
+|Get Claims From User Info Endpoint|Enable this option if you receive URL too long errors (HTTP 414), truncated URLS, and/or failures during SSO.|
+|Additional/Custom Scopes|Define custom scopes to be added to the request (comma-delimited). |
+|Additional/Custom User ID Claim Types|Define custom claim type keys for user identification (comma-delimited). When defined, custom claim types are searched for before falling back on standard types.|
+|Additional/Custom Email Claim Types|Define custom claim type keys for users' email addresses (comma-delimited). When defined, custom claim types are searched for before falling back on standard types.|
+|Additional/Custom Name Claim Types|Define custom claim type keys for users' full names or display names (comma-delimited). When defined, custom claim types are searched for before falling back on standard types.|
+|Requested Authentication Context Class Reference values|Define Authentication Context Class Reference identifiers (`acr_values`) (space-delimited). List `acr_values` in preference-order.|
+|Expected "acr" Claim Value in Response|Define the `acr` Claim Value for Bitwarden to expect and validate in the response.|
 
-#### Get Claims From User Info Endpoint
-Check this checkbox if you receive `URI Too Long (HTTP 414)` errors, truncated URLs, or failures during SSO.
-
-## OIDC Attributes & Claims
+###s OIDC Attributes & Claims
 
 An **email address is required for account provisioning**, which can be passed as any of the attributes or claims in the below table.
 
