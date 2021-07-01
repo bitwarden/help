@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Keycloak SAML Implementation
-categories: []
+categories: [login-with-sso]
 featured: false
 popular: false
 hidden: true
