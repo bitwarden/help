@@ -4,7 +4,7 @@ title: Connect to an External MSSQL Database
 categories: [hosting]
 featured: false
 popular: false
-tags: []
+tags: [hosting, database, mssql]
 order: 12
 ---
 
