@@ -44,7 +44,7 @@ Your data is fully encrypted and/or hashed before ever leaving **your** local de
 
 We do not keep the master password stored locally or in memory. Your encryption key (derived from the master password) is kept in memory only while the app is unlocked, which is required to decrypt data in your vault. When the vault is locked, this data is purged from memory.
 
-We also reload the application's renderer process after 10 seconds of inactivity on the lock screen to make sure any managed memory addresses which have not yet been garbage collected are purged. We do our best to ensure that any data that may be in memory for the application to function is only held in memory for as long as you need it and that memory is cleaned up whenever the application is locked. We consider the application to be completely safe while in a locked state.
+We also reload the application's renderer process after 10 seconds of inactivity on the lock screen to make sure any managed memory addresses which have not yet been garbage collected are purged. We do our best to ensure that any data that may be in memory for the application to function is only held in memory for as long as you need it and that memory is cleaned up whenever the application is locked. We consider the application's encrypted data to be completely safe while the application is in a locked state.
 
 ### Q: What do I do if I don't recognize a new device logging into Bitwarden?
 

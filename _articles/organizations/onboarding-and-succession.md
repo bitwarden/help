@@ -11,6 +11,10 @@ redirect_from:
   - /article/employee-onboarding-and-succession-white-paper/
 ---
 
+{% callout success %}
+Read the full paper below or [download the PDF](https://bitwarden.com/images/resources/GUIDE-enterprise-password-management-throughout-employee-lifecycle.pdf).
+{% endcallout %}
+
 ## Password Management to fit your Business
 
 Getting new employees up and running quickly drives productivity. Likewise, saying farewell properly drives assurance in the security of your business's systems and accounts. Whether your business leans towards consolidation and centralization, or prefers a flexible and dynamic environment, Bitwarden fits your needs.
