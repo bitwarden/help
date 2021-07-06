@@ -70,7 +70,7 @@ The following sections will define fields configured in the [Bitwarden Business 
 |Requested Authentication Context Class Reference values|Define Authentication Context Class Reference identifiers (`acr_values`) (space-delimited). List `acr_values` in preference-order.|
 |Expected "acr" Claim Value in Response|Define the `acr` Claim Value for Bitwarden to expect and validate in the response.|
 
-###s OIDC Attributes & Claims
+### OIDC Attributes & Claims
 
 An **email address is required for account provisioning**, which can be passed as any of the attributes or claims in the below table.
 
