@@ -69,7 +69,11 @@ To enable Unlock with Biometrics for your Desktop app:
 
    {% image /biometrics/windows.png Unlock with Windows Hello %}
 
-Once enabled, a new button will be presented on the Unlock screen:
+Once enabled, the Desktop app will automatically prompt for your biometric method to unlock your Vault. You can turn off automatic-prompting from the same menu using the **Do not prompt...** option:
+
+{% image /biometrics/auto-off.png Unlock with Windows Hello %}
+
+Regardless of your auto-prompt selection, a new button will be presented on the Unlock screen for unlocking your Vault:
 
 {% image /biometrics/hello-unlock.png Unlock with Windows Hello %}
 
@@ -126,6 +130,10 @@ To enable Unlock with Biometrics for your Browser Extension:
 Once enabled, a new button will be presented on the Unlock screen:
 
 {% image /biometrics/be-bio-unlock.png Unlock with Biometrics %}
+
+{% callout success %}
+Your Desktop app needs to be **Logged In** but does not need to be **Unlocked** to unlock a Browser Extension with biometrics.
+{% endcallout %}
 
 {% endcapture %}
 {{ browser_extension | markdownify}}
