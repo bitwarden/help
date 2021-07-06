@@ -72,7 +72,7 @@ To centrally configure the  Desktop app for deployment, first complete the follo
 
 #### Browser Extensions
 
-While it is possible to deploy Bitwarden Browser Extensions using an endpoint management solution like [Jamf](https://www.jamf.com/){:target="\_blank"}, it is currently **not possible** to alter the configuration in this way.
+While it is possible to deploy Bitwarden Browser Extensions using an endpoint management solution like [Jamf](https://www.jamf.com/){:target="\_blank"} or Microsoft Endpoint Manager (formerly SCCM), it is currently **not possible** to alter the configuration in this way.
 
 Instruct your end-users to follow [these steps]({{site.baseurl}}/article/change-client-environment/#browser-extensions-desktop-apps-and-mobile-apps) to connect a Browser Extension to your self-hosted server.
 
