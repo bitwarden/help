@@ -163,7 +163,7 @@ In the Trash, you can **Restore** an item to your Vault or **Permanently Delete*
 
 ### Protect Individual Items
 
-For any given Vault item, you can activate the **Master password re-prompt** option from the Add/Edit screen to require verification of your Master Password to access or auto-fill the Hidden fields of that item (e.g. Password, Credit Card Number):
+For any given Vault item, you can activate the **Master password re-prompt** option from the Add/Edit screen to require verification of your Master Password to access or auto-fill sensitive Vault items:
 
 {% callout info %}
 **Master password re-prompt** will temporarily not be available for mobile apps, as we are releasing mobile updates in the near future. Please be aware of the following:
