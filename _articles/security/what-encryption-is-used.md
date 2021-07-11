@@ -19,6 +19,8 @@ Vault data can only be decrypted using the key derived from your master password
 
 {% callout success %}
 We encourage you to visit our [Interactive Cryptography Page](https://bitwarden.com/help/crypto.html){:target="\_blank"} to see for yourself how Bitwarden encrypts your data.
+
+If you'd like to learn more about how these encryption keys are used to protect your Vault, you can also check out our [Security Whitepaper](https://bitwarden.com/images/resources/security-white-paper-download.pdf).
 {% endcallout %}
 
 ## AES-CBC
