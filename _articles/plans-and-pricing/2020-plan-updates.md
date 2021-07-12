@@ -77,6 +77,7 @@ As before, there is no limit to the number of users in your Enterprise Organizat
 |--------|------------|---------------|
 |Pre-existing Enterprise functionality, including:<br><br>-Premium features for all users<br>-Event Logs<br>-User Groups<br>-API access<br>-Directory Connector<br>-Enterprise Policies|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
 |Login with SSO|-|<i class="fa fa-check" aria-hidden="true"></i>|
+|[Admin Password Reset]({{site.baseurl}}/article/admin-reset/)|-|<i class="fa fa-check" aria-hidden="true"></i>|
 |Cost|$3 Per User Per Month, billed annually|$5 Per User Per Month, billed annually|
 
 {% callout info %}
