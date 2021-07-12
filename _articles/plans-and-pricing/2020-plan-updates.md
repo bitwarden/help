@@ -65,7 +65,7 @@ There is no longer a minimum number of users required for a Teams Organization (
 
 ## Enterprise Organizations
 
-Upgrading from Classic 2019 to the current Enterprise plan unlocks the highly anticipated Login with SSO feature-set, simplifying access for enterprise users by fully integrating with your existing Identity Management solution.
+Upgrading from Classic 2019 to the current Enterprise plan unlocks the highly anticipated Login with SSO feature-set, simplifying access for enterprise users by fully integrating with your existing Identity Management solution. It also unlocks [Admin Password Reset]({{site.baseurl}}/article/admin-reset/), allowing designated administrators to recover Enterprise Organization user accounts and restore access in the event that an employee forgets their Master Password. 
 
 As before, all members of your Enterprise Organization will automatically get all premium features, including advanced 2FA options, the Bitwarden Authenticator (TOTP), encrypted file attachments, and more.
 
