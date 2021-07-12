@@ -36,6 +36,7 @@ The following is a summary of the Installation Procedure in this article. Links 
    For more information, see [What are my installation id and installation key used for?](https://bitwarden.com/help/article/hosting-faqs/#general).
 4. [**Install Bitwarden**](#install-bitwarden) on your machine.
 5. [**Configure your Environment**](#configure-your-environment) by adjusting settings in `./bwdata/env/global.override.env`.
+   {% callout success %}At a minimum, configure the `globalSettings__mail__smtp...` variables to setup an email server for inviting and verifying users.{% endcallout %}
 6. [**Start your instance**](#start-bitwarden).
 6. Test your installation by opening your configured domain in a Web Browser.
 
@@ -178,7 +179,7 @@ Edit `config.yml` as necessary, and apply changes using one of the following com
 
 Some features of Bitwarden are not configured by the `bitwarden.sh` installer. Configure these settings by editing the environment file, located at `./bwdata/env/global.override.env`.
 
-At a minimum, you should replace the values for:
+**At a minimum, you should replace the values for:**
 
 ```
 ...
@@ -191,7 +192,7 @@ globalSettings__mail__smtp__password=<placeholder>
 adminSettings__admins=
 ```
 
-Replacing `globalSettings__mail__smtp...=` placeholders will configure the SMTP Mail Server settings that will be used to verify new users or send invitations.
+Replacing `globalSettings__mail__smtp...=` placeholders will configure the SMTP Mail Server settings that will be used to verify new users and send invitations.
 
 Adding an email address to `adminSettings__admins=` will provision access to the Admin Portal.
 
