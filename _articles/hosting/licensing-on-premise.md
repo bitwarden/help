@@ -8,7 +8,7 @@ tags: [hosting, licensing]
 order: 08
 ---
 
-Self-hosting Bitwarden is free, however some features must be unlocked in your self-hosted instance with a registered license file. A license file can be obtained from the Bitwarden-hosted [Web Vault](https://vault.bitwarden.com){:target="\_blank"} by either an account with a Premium Individual subscription or by the Owner of a Families or Enterprise Organization.
+Self-hosting Bitwarden is free, however some features must be unlocked in your self-hosted instance with a registered license file. A license file can be obtained from the Bitwarden-hosted [Web Vault](https://vault.bitwarden.com){:target="\_blank"} by either an account with a Premium Individual subscription or by the Owner of an Organization.
 
 {% callout info %}
 The procedures in this article assume that you have already started a paid subscription to Bitwarden. If you haven't, refer to [About Bitwarden Plans]({% link _articles/plans-and-pricing/about-bitwarden-plans.md %}) and [What Plan is Right for Me?]({% link _articles/plans-and-pricing/what-plan-is-right-for-me.md %}).
@@ -16,34 +16,46 @@ The procedures in this article assume that you have already started a paid subsc
 
 ## Individual License
 
-For individual users, complete the following steps to retrieve and apply a license to your self-hosted instance:
+To retrieve your license from your Cloud account and apply it to your self-hosted server:
 
-1. In the Bitwarden-hosted [Web Vault](https://vault.bitwarden.com){:target="\_blank"}, select **Settings** from the top navigation bar.
+#### Retrieve your License
+
+1. In the Cloud [Web Vault](https://vault.bitwarden.com){:target="\_blank"}, select **Settings** from the top navigation.
 2. Select **Premium Membership** from the left menu.
 3. Select the **Download License** button.
-4. Log in in to your self-hosted Web Vault with an email address that matches the Bitwarden-hosted account from which you downloaded the license.
 
-   If you haven't already, verify your email address before proceeding. You will need to have configured SMTP environment variables to do so, for more information see [Configure Environment Variables]({% link _articles/hosting/environment-variables.md %}).
-5. Select the **Settings** tab from the top navigation.
-6. Select **Go Premium** from the left menu.
-7. In the License File section, select the **Browse...** button and add your downloaded license file.
-8. Select the **Submit** button to finish applying your Premium License.
+#### Apply your License
+
+1. Log in to your self-hosted Web Vault with an email address that matches the Cloud-hosted account from which you downloaded the license.
+
+   {% callout success %}If you haven't already, verify your email address before proceeding. You will need to have [configured SMTP-related environment variables]({{site.baseurl}}/article/environment-variables) to do so.{% endcallout %}
+2. Select the **Settings** tab from the top navigation.
+3. Select **Go Premium** from the left menu.
+4. In the License File section, select the **Browse...** button and add the downloaded license file.
+5. Select the **Submit** button to apply your Premium License.
 
 ## Organization License
 
-For Owners of an Organization, complete the following steps to retrieve and apply a license to your self-hosted instance:
+To retrieve your Organization license from your Cloud Organization and apply it to you self-hosted server:
 
-1. Log in to your [Web Vault](https://vault.bitwarden.com){:target="\_blank"} and open your Organization.
-2. In your Organization, open the **Settings** tab and select **Subscription** from the left menu.
-3. On the **Subscription** screen, select the **Download License** button.
+{% callout info %}
+You must be an [Organization Owner]({{site.baseurl}}/article/user-types-access-control) to both retrieve and apply a license.
+{% endcallout %}
 
-   You will be prompted to enter an installation id. Enter the installation id that was used to install your self-hosted instance and select **Submit**.
+#### Retrieve your License
 
-   You can retrieve your installation id from `./bwdata/env/global.override.env` or, for more information, see [Install and Deploy]({% link _articles/hosting/install-on-premise.md %}).
-4. Log in in to your self-hosted Web Vault.
-5. Start a new Organization in your self-hosted instance by selecting the {% icon fa-plus %} **Add Organization** button.
+1. In the Cloud [Web Vault](https://vault.bitwarden.com){:target="\_blank"}, open your Organization.
+2. Select the Organization **Settings** tab and select **Subscription** from the left menu.
+3. Select the **Download License** button.
+4. When prompted, enter the installation id that was used to install your self-hosted server and select **Submit**.
 
-   You will be prompted to upload a license file. Select the **Browse** button and add your downloaded license file.
+   If you don't know the installation id off-hand, you can retrieve it from `./bwdata/env/global.override.env`.
+
+#### Apply your License
+
+1. Log in to your self-hosted Web Vault with an email address that matches the Cloud-hosted account from which you downloaded the license.
+2. Start a new Organization by selecting the {% icon fa-plus %} **Add Organization** button.
+3. When prompted, upload the Organization license file and select **Submit**.
 
 ### Update a renewed Organization License
 
