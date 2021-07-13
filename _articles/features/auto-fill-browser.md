@@ -86,10 +86,17 @@ Using this convention, you can setup your Browser extension to, for example:
 If there are multiple Login items with the detected URI, the last-used login will be used for the auto-fill operation.
 {% endcallout %}
 
-### TOTP Copy
-
-If you use [Bitwarden Authenticator]({{site.baseurl}}/article/authenticator-keys/), you can enable the **Copy TOTP to clipboard after auto-fill** option to automatically copy a TOTP code to the clipboard when a Login is autofilled.
-
 ## Manually Auto-fill
 
 You can auto-fill items manually that don't have saved URIs by opening them in the {% icon fa-lock %} **My Vault** view, and selecting the **Auto-fill** button.
+
+## TOTP Copy
+
+If you use [Bitwarden Authenticator]({{site.baseurl}}/article/authenticator-keys/), Bitwarden will automatically copy a Login item's TOTP code to the clipboard when the Login item is autofilled by any of the above methods.
+
+{% callout success %}
+You can disable this option and set a custom interval with which to clear your clipboard from the Browser Extension's {% icon fa-cogs %} **Settings** tab: 
+
+{% image autofill/clipboard.png Clipboard Settings %}
+
+{% endcallout %}

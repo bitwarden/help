@@ -8,9 +8,9 @@ tags: [hosting, update]
 order: 06
 ---
 
-**It is critically important to keep your Self-hosted Bitwarden instance up to date.**
+**It is critically important to keep your Self-hosted Bitwarden instance up to date.** Updates may include fixes that are important for the security of your Bitwarden instance, including patches to any vulnerabilities. Data stored in your Bitwarden Vault, including passwords, should be considered critical data and therefore protected with up-to-date software. 
 
-Updates may include fixes that are important for the security of your Bitwarden instance. Additionally, newer versions of client applications may not support older versions of your self-hosted instance.
+ Additionally, newer versions of client applications may not support older versions of your self-hosted instance.
 
 {% callout warning %}
 We highly recommend backing up your data before updating your self-hosted instance. For more information, see [Backup your Hosted Data]({% link _articles/hosting/backup-on-premise.md %}).
