@@ -67,6 +67,8 @@ If you're migrating an Organization to a self-hosted server, continue with the f
 To migrate from a self-hosted server to the Cloud:
 
 1. Create a full backup of the `./bwdata` directory of your self-hosted Bitwarden server. In particular, you will need access to `./bwdata/core/attachments` to manually upload [file attachments]({{site.baseurl}}/article/attachments/) to the Cloud (**Step 5**).
+
+   {% callout success %} If users are exporting their Personal Vaults over a period of time, you may need to re-sync the items from your `./bwdata/core/attachments` directory to your backup location and upload any new items in the event that they change during the cut-over period.{% endcallout %}
 2. In your self-hosted Web Vault, [export your personal Vault data]({{site.baseurl}}/article/export-your-data/#export-a-personal-vault) or [export your Organization Vault data]({{site.baseurl}}/article/export-your-data/#export-an-organization-vault). If you're migrating an Organization, encourage your end-users to export their Personal Vaults as well.
 3. Open the Cloud Web Vault. Most users will have previously created Cloud accounts for billing purposes, so log in to that account. If you were previously a free user without a Cloud account for billing, create an account now.
 
@@ -90,20 +92,21 @@ If you're migrating an Organization to the Cloud, continue with the following st
   <div class="tab-pane" id="browserextension" role="tabpanel" aria-labelledby="betab">
 {% capture browser_extension %}
 
-#### Migrate from one host to another
+### Migrate from one host to another
 
 To migrate from one self-hosted Bitwarden server to another:
 
-1. Make a full copy of the `./bwdata` directory of the *old* server. This copy will be used to recreate your configuration, database, attachments, etc. on the new server.
-2. [Install and deploy]({{site.baseurl}}/article/install-on-premise/) Bitwarden to your new server.
-3. Once the new Bitwarden server is set up, replace the newly-created `./bwdata` directory with the copy from the old server.
-4. Print the new Bitwarden server's UID by running `id -u bitwarden`.
-5. Open the file `./bwdata/env/uid.env` and check that the listed values match what was printed in the previous step. If they do not match, replace *both* values with the result of `id -u bitwarden`.
-6. If you specified a different server domain during **Step 2**, edit the following:
+1. Stop your existing Bitwarden server by running `./bitwarden.sh stop`. When you run this command, Bitwarden will go down for anyone currently using it.
+2. Make a full copy of the `./bwdata` directory of the *old* server. This copy will be used to recreate your configuration, database, attachments, etc. on the new server.
+3. [Install and deploy]({{site.baseurl}}/article/install-on-premise/) Bitwarden to your new server.
+4. Once the new Bitwarden server is set up, replace the newly-created `./bwdata` directory with the copy from the old server.
+5. Print the new Bitwarden server's UID by running `id -u bitwarden`.
+6. Open the file `./bwdata/env/uid.env` and check that the listed values match what was printed in the previous step. If they do not match, replace *both* values with the result of `id -u bitwarden`.
+7. If you specified a different server domain during **Step 2**, edit the following:
    - In `./bwdata/config.yml`, change the `url:` value to the new domain.
    - In `./bwdata/env/global.override.env`, change `globalSettings__baseServiceUri__vault=` to the new domain.
-7. Run `./bitwarden.sh rebuild` to apply changes to `config.yml` and `global.override.env`.
-8. Start your Bitwarden server with `./bitwarden.sh start`.
+8. Run `./bitwarden.sh rebuild` to apply changes to `config.yml` and `global.override.env`.
+9. Start your Bitwarden server with `./bitwarden.sh start`.
 
 {% endcapture %}
 {{ browser_extension | markdownify}}
