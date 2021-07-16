@@ -17,9 +17,11 @@ Before deleting your account:
 
 **First**, use the [Get master password hint](https://vault.bitwarden.com/#/hint){:target="\_blank"} link if you have a hint setup. Hints will be emailed to the email address associated with your account. If you don't have a hint setup, you'll get an email reporting this.
 
-**Second**, if you have a designated Trusted Emergency Contact established using [Emergency Access]({{site.baseurl}}/article/emergency-access/), get in contact with them to regain Read or Takeover access to your account.
+**Second**, if you're having issues logging in with a Bitwarden client application, try logging in using another type of client, or on another device.
 
-**Third**, if you're using any Bitwarden client applications (Mobile Apps, Browser Extensions, etc.), you should check whether any of these sessions are still logged in prior to deleting your account. If a client application is still logged in, you should manually catalogue your Vault items to preserve your data.
+**Third**, if you have a designated Trusted Emergency Contact established using [Emergency Access]({{site.baseurl}}/article/emergency-access/), get in contact with them to regain Read or Takeover access to your account.
+
+**Lastly**, if you're using any Bitwarden client applications (Mobile Apps, Browser Extensions, etc.), you should check whether any of these sessions are still logged in prior to deleting your account. If a client application is still logged in, you should manually catalogue your Vault items to preserve your data.
 {% endcallout %}
 
 If you weren't able to gain access to your Vault, complete the following steps to delete your account:
