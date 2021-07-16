@@ -19,9 +19,11 @@ order: 04
 |Web Vault | Fully encrypted web application at vault.bitwarden.com |
 |Streamlined UI design |   |
 |**Administrative features and capabilities**| | 
+|Admin Password Reset | Provides designated administrators the ability to reset passwords on end-user accounts if an employee loses or forgets their Bitwarden password <br> [https://bitwarden.com/help/article/admin-reset/](https://bitwarden.com/help/article/admin-reset/)|
 |Directory Connector | Synchronize with your existing directory. Provision, de-provision users, groups, group associations|
 |User type access controls| Custom role, granular controls (hide passwords, read only), password inheritance and custodianship, LDAP group permissions, Personal and Company Vaults |
 |User management |Add/remove seats, onboard/offboard users (flags and assistance) |
+|Enterprise Policies |Enables Enterprise Organizations to enforce security rules for all users, for example mandating use of Two-step Login. [https://bitwarden.com/help/article/policies/](https://bitwarden.com/help/article/policies/) |
 |**Security**| |
 |Secure storage for Logins, Notes, Cards, and Identities| Bitwarden Vault items |
 |Secure password generator |Generate secure, random passwords <br> [https://bitwarden.com/password-generator/](https://bitwarden.com/password-generator/) |
