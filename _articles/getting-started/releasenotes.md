@@ -21,7 +21,7 @@ Bitwarden believes source code transparency is an absolute requirement for secur
 
 ## Release Announcements
 
-**Dates on this page represent Cloud Server and Web releases.** Bitwarden incrementally updates each client application (Desktop, Browser Extension, Mobile, etc.) following the initial release date to ensure feature efficacy and stability. As a result, client applications should expect listed features following the initial release.
+**Dates on this page represent Cloud Server and Web releases.** Bitwarden incrementally updates each client application (Desktop, Browser Extension, Mobile, etc.) and for self-hosted servers following the initial release date to ensure feature efficacy and stability. As a result, client applications and self-hosted servers should expect listed features following the initial release.
 
 To be notified of Release Announcements, subscribe to the [Bitwarden Status RSS Feed](https://status.bitwarden.com/){:target="\_blank"}.
 
