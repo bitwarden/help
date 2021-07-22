@@ -8,7 +8,7 @@ hidden: true
 tags: [sso, saml, adfs]
 order:
 ---
-This article contains **AD FS-specific** help for configuring Login with SSO via SAML 2.0. For help configuring Login with SSO for another IdP, refer to [SAML 2.0 Configuration]({{site.baseurl}}/article/configure-sso-saml/).
+This article contains **Active Directory Federation Services (AD FS)-specific** help for configuring Login with SSO via SAML 2.0. For help configuring Login with SSO for another IdP, refer to [SAML 2.0 Configuration]({{site.baseurl}}/article/configure-sso-saml/).
 
 Configuration involves working simultaneously within the Bitwarden [Business Portal]({{site.baseurl}}/article/about-business-portal/) and the AD FS Server Manager. As you proceed, we recommend having both readily available and completing steps in the order they're documented.
 
@@ -22,7 +22,7 @@ You don't need to edit anything on this screen yet, but keep it open for easy re
 
 ## Create a Relying Party Trust
 
-In the AD FS Server Manager, select **Tools** &rarr; **AD FS Management** &rarr; **Actions** &rarr; **Add Relying Party Trust**. In the Wizard, make the following selections:
+In the AD FS Server Manager, select **Tools** &rarr; **AD FS Management** &rarr; **Action** &rarr; **Add Relying Party Trust**. In the Wizard, make the following selections:
 
 1. On the Welcome screen, select **Claims Aware**.
 2. On the Select Data Source screen, select **Enter data about the relying party manually**.
