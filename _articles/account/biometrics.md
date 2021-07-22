@@ -110,7 +110,7 @@ Unlock with Biometrics is supported for Extensions on **Chromium-based** browser
 
 To enable Unlock with Biometrics for your Browser Extension:
 
-{% callout success %}Biometrics must be enabled in your Desktop App before proceeding. Additionally, **if you're using Safari**, you can skip straight to **Step 4**.{% endcallout %}
+{% callout success %}Biometrics (Windows Hello or Touch Id) must be enabled in your Desktop App before proceeding. If you don't see the Windows Hello option in your Desktop application, please see the troubleshooting tips in the Desktop article. Additionally, **if you're using Safari**, you can skip straight to **Step 4**.{% endcallout %}
 
 1. In your Bitwarden Desktop app, navigate to Settings (on Windows, **File** &rarr; **Settings**) (on macOS, **Bitwarden** &rarr; **Preferences**).
 2. Scroll down to the Options section, and check the **Enable Browser Integration** box.
