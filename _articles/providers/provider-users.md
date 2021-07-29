@@ -21,7 +21,7 @@ To invite users to your Provider:
 2. Open the {% icon fa-sliders %} **Manage** tab and select **People** from the left-hand menu.
 3. Select the {% icon fa-plus %} **Invite User** button:
 
-   {% image /providers/provider-adduser.png %}
+   {% image /providers/provider-adduser.png Invite Provider Users %}
 4. On the Invite User panel:
 
    - Enter the **Email** address where new users should receive their invites. You can add up to 20 users at a time by comma-separating email addresses.
@@ -31,14 +31,14 @@ To invite users to your Provider:
 {% callout info %}
 **Invitations expire after 5 days**, at which point the user will need to be re-invited. Re-invite users in bulk by selecting each user and using the {% icon fa-cog %} gear dropdown to **Resend Invitations**:
 
-{% image /providers/provider-resend-invite.png %}
+{% image /providers/provider-resend-invite.png Resend Invitations %}
 {% endcallout %}
 
 ### Accept
 
 Invited users will receive an email from Bitwaden inviting them to join the Provider. Clicking the link in the email will open a Bitwarden invitations window. **Log In** with an existing Bitwarden account or **Create Account** to accept the invitation:
 
-{% image /providers/provider-accept-invite.png %}
+{% image /providers/provider-accept-invite.png Email Invitation %}
 
 ### Confirm
 
@@ -48,7 +48,7 @@ To confirm accepted invitations to your Provider:
 2. Open the {% icon fa-sliders %} **Manage** tab and select **People** from the left-hand menu.
 3. Select any `Accepted` users and use the {% icon fa-cog %} gear dropdown to {% icon fa-check %} **Confirm Selected**:
 
-   {% image /providers/provider-confirm.png %}
+   {% image /providers/provider-confirm.png Confirm Provider Users %}
 4. On the panel that appears, verify that the [fingerprint phrases]({{site.baseurl}}/article/fingerprint-phrase) for new users match those they can find in their **Settings** &rarr; **My Account** screen.
 
    Each fingerprint phrase is unique to its account, and ensures a final layer of overishgt in securely adding users. If they match, select **Confirm**.
@@ -61,7 +61,7 @@ To remove users from your Provider:
 2. Open the {% icon fa-sliders %} **Manage** tab and select **People** from the left-hand menu.
 3. Select the users you want to remove from the Provider and use the {% icon fa-cog %} gear dropdown to {% icon fa-times %} **Remove**:
 
-   {% image /providers/provider-removeuser.png %}
+   {% image /providers/provider-removeuser.png Remove Provider Users %}
 
 ## Provider User Types
 
