@@ -10,10 +10,10 @@ order: 05
 
 ## Manage User Seats
 
-Bitwarden [Teams and Enterprise Organizations]({{site.baseurl}}/article/about-organizations/#types-of-organizations) allow you to add or remove user seats on-the-fly to best fit your business's needs. Only the [Organization Owner]({{site.baseurl}}/article/user-types-access-control/#user-types) can add and remove seats, as this directly affects your billing.
+Bitwarden [Teams and Enterprise Organizations]({{site.baseurl}}/article/about-organizations/#types-of-organizations) allow you to add or remove user seats on-the-fly to best fit your business's needs. Only an [Organization Owner]({{site.baseurl}}/article/user-types-access-control/#user-types) or [Provider Service User]({{site.baseurl}}/article/provider-users/#provider-user-types) can add and remove seats, as this directly affects billing.
 
 {% callout info %}
-If you have a [Free or Families Organization]({{site.baseurl}}/article/about-organizations/#types-of-organizations), your user seats are pre-loaded and fixed at 2 and 6, respectively. Proceed to [Onboard Users](#onboard-users).
+If you have a [Free or Families Organization]({{site.baseurl}}/article/about-organizations/#types-of-organizations), your user seats are pre-loaded and fixed at 2 and 6, respectively.
 {% endcallout %}
 
 ### Add Seats
