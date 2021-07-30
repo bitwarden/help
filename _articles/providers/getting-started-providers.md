@@ -37,7 +37,7 @@ Selecting the **Setup Provider Now** button will prompt you to log in to Bitward
 
 As the creator of the Provider, you'll be automatically given [Provider Admin]({{site.baseurl}}/provider-users/#provider-user-types) status, allowing you to fully manage all aspects of the Provider and all [Client Organizations](#client-organizations).
 
-Now, begin adding your employees as [Service Users]({{site.baseurl}}/article/provider-users/#provider-user-types), which will allow them to create and fully adminster all Client Organizations but not manage the Provider itself:
+Now, begin adding your employees as [Service Users]({{site.baseurl}}/article/provider-users/#provider-user-types), which will allow them to fully administer all Client Organizations but create new ones or manage the Provider itself:
 
 1. **Invite Users**. From the Provider Portal {% icon fa-sliders %} **Manage** tab, invite users as Service Users (or invite additional Provider Admins):
 
@@ -65,7 +65,7 @@ Members of a Client Organization (i.e. your customer's end-users) will find shar
 
 ### Create a Client Organization
 
-To create a new Client Organization, navigate to the {% icon fa-bank %} **Clients** tab of the Provider Portal and select the {% icon fa-plus %} **New client organization** button:
+To create a new Client Organization, you must be a [Provider Admin]({{site.baseurl}}/article/provider-users/#provider-user-types). Navigate to the {% icon fa-bank %} **Clients** tab of the Provider Portal and select the {% icon fa-plus %} **New client organization** button:
 
 {% image providers/provider-add-client.png Create a Client Organization %}
 
