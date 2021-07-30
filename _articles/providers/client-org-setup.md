@@ -17,7 +17,7 @@ This article will walk you through the [creation of a Client Organization](#crea
 **Already have an Organization setup for your customer?** You can [add an existing Organization to the Provider Portal]({{site.baseurl}}/article/providers-faqs/#q-can-i-add-an-existing-organizations-to-my-provider).
 {% endcallout %}
 
-To create a Client Organization:
+To create a Client Organization you must be a [Provider Admin]({{site.baseurl}}/article/provider-users/#provider-user-types):
 
 1. Navigate to the Provider Portal and select the {% icon fa-plus %} **New client organization** button:
 

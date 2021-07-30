@@ -21,11 +21,11 @@ Providers are Vault-administration entities that allow Managed Service Providers
 
 [Service Users]({{site.baseurl}}/article/provider-users/#user-types) are Provider-specific users that can fully administer Organizations on behalf of their customers. With full access to each Client Organization from the **Provider Portal**, Providers can seamlessly protect and support customers while allowing them to focus on critical day-to-day operations.
 
-The Provider Portal's {% icon fa-bank %} **Clients** tab provides access to each Client Organization registered with the Provider as well as the ability to create new Organizations:
+The Provider Portal's {% icon fa-bank %} **Clients** tab provides access to each Client Organization registered with the Provider as well as providing [Provider Admins]({{site.baseurl}}/article/provider-users/#user-types) the ability to create new Organizations:
 
 {% image providers/provider.png Provider Portal %}
 
-[Provider Admins]({{site.baseurl}}/article/provider-users/#user-types) can also use the {% icon fa-sliders %} **Manage** and {% icon fa-cogs %} **Settings** tabs to administer the Provider itself, including adding new Service Users.
+Provider Admins can also use the {% icon fa-sliders %} **Manage** and {% icon fa-cogs %} **Settings** tabs to administer the Provider itself, including adding new Service Users.
 
 {% callout info %}
 Unlike Organizations, a Provider does not include a Vault of its own, however Providers may create their own [Client Organization](#client-organizations) to securely store and share credentials used by employees.
