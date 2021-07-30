@@ -38,6 +38,10 @@ The key thing to know is that **Organizations unlock access to secure sharing** 
 
 Paid Organizations (Families, Teams, or Enterprise) automatically include those premium features (advanced 2FA options, Bitwarden Authenticator (TOTP), etc.) for **every** user enrolled in the Organization.
 
+### Comparing Organizations with Providers
+
+[Providers]({{site.baseurl}}/article/providers) are Vault-administration entities that allow businesses like Managed Service Providers (MSPs) to quickly create and administer **multiple Bitwarden Organizations** on behalf of business customers.
+
 ## Create an Organization
 
 Organizations are created and managed from the [Web Vault](https://vault.bitwarden.com){:target="\_blank"}. If you're new to Bitwarden, [create an account](https://vault.bitwarden.com/#/register){:target="\_blank"} before you start your Organization, then proceed with these instructions:
