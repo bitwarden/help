@@ -23,6 +23,7 @@ Selecting the **Add existing organization** button prompts you to select the Org
 
 Once added, the Organization will appear in the {% icon fa-bank %} **Clients** list alongside all other Client Organizations.
 
+{% comment %}
 ### Q: How does pricing for Providers work?
 
 **A:**
@@ -38,3 +39,4 @@ Bitwarden will invoice based on Organization Seats for yearly subscriptions and 
 ### Value-Added Services
 
 Partners have complete flexibility for how they want to structure additional services for Clients. Some examples of services are organization consulting and implementation, onboarding training, Collections management, Support, and Reporting. If you’d like to see an example of how to structure an invoice for your client, [contact us](https://bitwarden.com/contact/).
+{% endcomment %}
