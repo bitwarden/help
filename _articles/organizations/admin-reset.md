@@ -89,14 +89,18 @@ Manually changing your Master Password or [rotating your encryption key]({{site.
 
 ## Reset a Master Password
 
+There are two methods to reset a user's Master Password, by [issuing a temporary password](#reset-with-temporary-password) or by [directly emailing a Password Reset link](#reset-with-email).
+
 {% callout info %}
 You must be a [Owner, Admin, or permitted Custom user](#permissions) to reset a Master Password. Check the [Permissions](#permissions) section of this article to see whose Master Password you are allowed to reset.
 {% endcallout %}
 
-To reset a Master Password for a member of your Enterprise Organization:
+### Reset with Temporary Password
+
+To reset a Master Password by issuing a temporary password:
 
 1. In your [Web Vault](https://vault.bitwarden.com){:target="\_blank"}, open your Organization.
-2. Open the **Manage** tab and navigate to the **People** section.
+2. Open the {% icon fa-sliders %} **Manage** tab and navigate to the **People** section.
 3. Hover over the user whose Master Password you want to reset, select the {% icon fa-cog %} gear dropdown, and choose {% icon fa-key %} **Reset Password**:
 
    {% image /organizations/pwreset-reset.png Reset Password %}
@@ -109,11 +113,11 @@ To reset a Master Password for a member of your Enterprise Organization:
 
 5. Select **Save** to execute the Password Reset. Doing so will log the user out of their current sessions.  Active sessions on some client applications, like Mobile Apps, may remain active for up to one hour.
 
-### After a Password Reset
+#### After a Temporary Password Reset
 
-When your Master Password is reset, you will receive an email from Bitwarden to inform you of this. On receiving this email, contact your Organization administrator to obtain your new Master Password through a secure channel like [Bitwarden Send]({{site.baseurl}}/article/create-send/).
+When your Master Password is reset via temporary password, you will receive an email from Bitwarden to inform you of this. On receiving this email, contact your Organization administrator to obtain your new Master Password through a secure channel like [Bitwarden Send]({{site.baseurl}}/article/create-send/).
 
-When the user regains access to their Vault using the reset Master Password, they will be prompted to create their own new Master Password:
+When you regain access to your Vault, you will be prompted to create your own **new** Master Password:
 
 `Image Placeholder`
 
@@ -122,3 +126,15 @@ When the user regains access to their Vault using the reset Master Password, the
 - To protect their privacy by ensuring nobody else knows their Master Password
 - To reduce the likelihood of subsequent reset by encouraging them to choose a Master Password that is memorable to them
 {% endcallout %}
+
+### Reset with Email
+
+To reset a Master Password by issuing a Password Reset Email:
+
+1. In your [Web Vault](https://vault.bitwarden.com){:target="\_blank"}, open your Organization.
+2. Open the {% icon fa-sliders %} **Manage** tab and navigate to the **People** section.
+3. Hover over the user whose Master Password you want to reset, select the {% icon fa-cog %} gear dropdown, and choose `PLACEHOLDER`:
+
+   `IAMGE PLACEHOLDER`
+
+The user will receive an email inviting them to reset their Master Password. This link will expire upon initial use or an hour after being issued.  
