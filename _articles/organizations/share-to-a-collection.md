@@ -10,14 +10,14 @@ order: 04
 ---
 
 {% callout info %}
-In order to share items you need to be a member of an Organization. Learn more about [Organizations]({% link _articles/organizations/about-organizations.md %}) or learn how to [start your own two-person Organization]({{site.baseurl}}/article/getting-started-organizations/).
+In order to share items you need to be a member of an Organization or administering Provider. Learn more about [Organizations]({% link _articles/organizations/about-organizations.md %}) or learn how to [start your own two-person Organization]({{site.baseurl}}/article/getting-started-organizations/).
 {% endcallout %}
 
 Sharing items with Bitwarden means putting them into a Collection, a structure used to gather together Logins, Notes, Cards, and Identities for access by multiple users. There are a few different ways you can share an item to a Collection:
 
 ## Share an Existing Item
 
-Organization members can share items to any assigned Collection(s) unless they're given [**Read Only** access]({% link _articles/organizations/user-types-access-control.md %}) to that Collection. Items can only be shared **from the Web Vault**. To share an existing item:
+Organization and [Provider]({{site.baseurl}}/article/providers/) members can share items to any assigned Collection(s) unless they're given [**Read Only** access]({% link _articles/organizations/user-types-access-control.md %}) to that Collection. Items can only be shared **from the Web Vault**. To share an existing item:
 
 1. Hover over the item you want to share and select the {% icon fa-cog %} gear dropdown:
 
@@ -37,7 +37,7 @@ Sharing an item **will transfer ownership to the Organization**. This means that
 
 ## Create a Shared Item
 
-Organization members can create new items directly for any assigned Collection(s) unless they're given [**Read Only** access](https://bitwarden.com/help/article/user-types-access-control/) to that Collection. Shared items can only be created **from the Web Vault**, either in your My Vault view or in the Organization view:
+Organization and [Provider]({{site.baseurl}}/article/providers/) members can create new items directly for any assigned Collection(s) unless they're given [**Read Only** access](https://bitwarden.com/help/article/user-types-access-control/) to that Collection. Shared items can only be created **from the Web Vault**, either in your My Vault view or in the Organization view:
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">

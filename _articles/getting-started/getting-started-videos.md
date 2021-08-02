@@ -4,6 +4,7 @@ title: Bitwarden 101 Video Series - Getting Started
 categories: [getting-started]
 featured: true
 popular: false
+hidden: true
 tags: [getting started, videos, bitwarden 101]
 order: 08
 ---

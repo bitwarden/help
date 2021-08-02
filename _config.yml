@@ -34,6 +34,7 @@ collections:
       - two-step-login.md
       - hosting.md
       - organizations.md
+      - providers.md
       - directory-connector.md
       - login-with-sso.md
       - security.md
