@@ -22,22 +22,22 @@ To create a Client Organization you must be a [Provider Admin]({{site.baseurl}}/
 1. Navigate to the Provider Portal and select the {% icon fa-plus %} **New client organization** button:
 
    {% image providers/provider-add-client.png Create a Client Organization %}
-2. On the New Client Organization screen, enter an **Organization Name** and **Billing Email**.
+2. On the New Client Organization screen, enter an **Organization Name**, **Billing Email**, and **Client Owner Email**.
 
-   Checking the **This account is owned by a business** checkbox will filter your options down to those suitable for business, and prompt you for a **Business name** so we know who to thank!
-3. From the **Choose Your Plan** list, select the [type of Organization]({{site.baseurl}}/article/about-organizations/#types-of-organizations) to create. [Learn more]({{site.baseurl}}/article/about-bitwarden-plans/#bitwarden-for-your-business) about the differences between Organization types.
+   {% callout info %}An invitation will automatically be sent to the **Client Owner Email** to join the Organization as an [Owner]({{site.baseurl}}/article/user-types-access-control).{% endcallout %}
+3. From the **Choose Your Plan** list, select the [type of Organization]({{site.baseurl}}/article/about-bitwarden-plans/#compare-the-plans-1) to create.
 
-   {% callout success %}All paid Organizations (Families, Teams, or Enterprise) include premium features for all enrolled users.{% endcallout %}
-4. If you chose a **Free Organization**, you're all set! If you chose one of our paid Organizations:
+   {% callout success %}Teams and Enterprise Organizations include premium features for all enrolled users.{% endcallout %}
+4. Set the following options for the Organization:
 
-   - **Families/Teams/Enterprise**: Your plan comes with 1GB of encrypted [storage for attachments]({{site.baseurl}}/article/attachments/). Add **Additional Storage (GB)** for $0.33 per GB per month.
-   - **Teams/Enterprise**: Specify the number of **User Seats** you need for the Client Organization. You can always add more seats later.
-   - **Teams/Enterprise**: CHoose whether you'd like to be billed for this Organization **Annually** or **Monthly**. Families Organizations can only be billed annually.
+   - **User Seats**: Specify the number of User Seats you need for the Client Organization. You can always add more seats later.
+   - **Additional Storage (GB)**: Organizations come with 1GB of encrypted [storage for attachments]({{site.baseurl}}/article/attachments/). Add additional storage for $0.33 per GB per month.
+   - **Billing Cadence**: Choose whether you'd like to be billed for this Organization Annually or Monthly.
 
 5. Once you're happy with the Organization, enter your **Payment Information** and select **Submit**.
 5. Select **Submit** to finishing creating the Organization.
 
-Once created, navigating to the Client Organization from the Provider Portal will bring you to the Organization Vault, from which you can fully complete initial setup and engage in [ongoing administration]({{site.baseurl}}/article/manage-client-orgs/):
+Once created, navigating to the Client Organization from the Provider Portal will bring you to the Organization Vault, from which you can fully complete [initial setup](#initial-setup-procedure) and engage in [ongoing administration]({{site.baseurl}}/article/manage-client-orgs/):
 
 {% image providers/client-org-manage.png Client Organization Vault %}
 
