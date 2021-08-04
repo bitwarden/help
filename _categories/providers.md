@@ -1,5 +1,5 @@
 ---
 layout: category
-title: Providers
+title: Provider Portal
 featured: true
 ---

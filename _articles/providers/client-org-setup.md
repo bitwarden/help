@@ -6,7 +6,7 @@ featured: false
 popular: false
 hidden: false
 tags: []
-order: 03
+order: 04
 ---
 
 This article will walk you through the [creation of a Client Organization](#create-a-client-organization) and outline a typical [setup procedure](#initial-setup-procedure) for getting started administering a customer's Organization.
@@ -47,7 +47,7 @@ With your newly-created Client Organization, you're ready to start building the 
 
 1. **Create Collections**. A good first step is to [create a set of Collections]({{site.baseurl}}/article/about-collections/#create-a-collection), which provide an organizing structure for the Vault items you'll add to the Vault in the next step.
 
-    Common Collections patterns include **Collections by Department** (i.e. users in the client's Marketing Team are assigned to a **Marketing** Collection) or **Collections by Function** (i.e. users from the client's Marketing Team are assigned to a **Social Media** Colletion):
+    Common Collections patterns include **Collections by Department** (i.e. users in the client's Marketing Team are assigned to a **Marketing** Collection) or **Collections by Function** (i.e. users from the client's Marketing Team are assigned to a **Social Media** Collection):
 
     {% image organizations/collections-graphic-1.png %}  
 2. **Populate the Organization Vault**. Once the structure of how you'll store Vault items is in place, you can begin populating the Organization with your client's Logins, Notes, Cards, and Identities.
@@ -62,6 +62,6 @@ With your newly-created Client Organization, you're ready to start building the 
    One common Group-Collection pattern is to create **Groups by Department** and **Collections by Function**, for example:
 
    {% image organizations/collections-graphic-2.png %}
-6. **Start Inviting Users**. Now that the infrastructure for securely and scalably sharing credentials is in place for you client, you can begin [inviting users to the Organization]({{site.baseurl}}/article/managing-users/#onboard-users). To ensure the security of the Organization, Bitwarden applies a 3-step process for onboarding new users, Invite &rarr; Accept &rarr; Confirm.
+6. **Start Inviting Users**. Now that the infrastructure for securely and scalably sharing credentials is in place for your client, you can begin [inviting users to the Organization]({{site.baseurl}}/article/managing-users/#onboard-users). To ensure the security of the Organization, Bitwarden applies a 3-step process for onboarding new users, Invite &rarr; Accept &rarr; Confirm.
 
    {% callout success %}**If your customer uses directory service** (Active Directory, an LDAP, Okta, etc.), use [Directory Connector]({{site.baseurl}}/article/directory-sync/) to automatically sync Organization users from the source directory and automatically issue invitations.{% endcallout %}

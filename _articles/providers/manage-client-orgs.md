@@ -6,10 +6,14 @@ featured: false
 popular: false
 hidden: false
 tags: []
-order: 04
+order: 06
 ---
 
-This article will touch on some of the major ongoing administrative tasks that [Provider]({{site.baseurl}}/article/providers/) Service Users might engage in on behalf of their customers' Client Organizations, and provide resources for futher information.
+To access a [Client Organization]({{site.baseurl}}/article/providers/#client-organizations) as a [Service User]({{site.baseurl}}/article/provider-users/#provider-user-types), select **Provider** from the top navigation and select your Provider from the Providers list. In the Provider Portal, select the Client Organization to administer from the {% icon fa-bank %} **Clients** tab:
+
+{% image providers/provider.png Provider Portal %}
+
+Once in the Organization Vault you can fully administer the Client Organization, including the following important tasks:
 
 |Task|Description|Resources|
 |----|-----------|---------|
