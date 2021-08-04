@@ -87,15 +87,17 @@ Once enrolled, you can **Withdraw** from Password Reset from the same dropdown u
 
 Manually changing your Master Password or [rotating your encryption key]({{site.baseurl}}/article/account-encryption-key/) **will not** withdraw you from Admin Password Reset.
 
+
 ## Reset a Master Password
-
-There are two methods to reset a user's Master Password, by [issuing a temporary password](#reset-with-temporary-password) or by [directly emailing a Password Reset link](#reset-with-email).
-
+{% comment %}
 {% callout info %}
 You must be a [Owner, Admin, or permitted Custom user](#permissions) to reset a Master Password. Check the [Permissions](#permissions) section of this article to see whose Master Password you are allowed to reset.
 {% endcallout %}
 
+There are two methods to reset a user's Master Password, by [issuing a temporary password](#reset-with-temporary-password) or by [directly emailing a Password Reset link](#reset-with-email).
+
 ### Reset with Temporary Password
+{% endcomment %}
 
 To reset a Master Password by issuing a temporary password:
 
@@ -113,13 +115,13 @@ To reset a Master Password by issuing a temporary password:
 
 5. Select **Save** to execute the Password Reset. Doing so will log the user out of their current sessions.  Active sessions on some client applications, like Mobile Apps, may remain active for up to one hour.
 
-#### After a Temporary Password Reset
+### After a Temporary Password Reset
 
 When your Master Password is reset via temporary password, you will receive an email from Bitwarden to inform you of this. On receiving this email, contact your Organization administrator to obtain your new Master Password through a secure channel like [Bitwarden Send]({{site.baseurl}}/article/create-send/).
 
 When you regain access to your Vault, you will be prompted to create your own **new** Master Password:
 
-`Image Placeholder`
+{% image organizations/pwreset-temporary.png %}
 
 {% callout success %}
 **Why require this?** Users must create their own new Master Password after a reset for a few reasons:
@@ -127,6 +129,7 @@ When you regain access to your Vault, you will be prompted to create your own **
 - To reduce the likelihood of subsequent reset by encouraging them to choose a Master Password that is memorable to them
 {% endcallout %}
 
+{% comment %}
 ### Reset with Email
 
 To reset a Master Password by issuing a Password Reset Email:
@@ -138,3 +141,4 @@ To reset a Master Password by issuing a Password Reset Email:
    `IAMGE PLACEHOLDER`
 
 The user will receive an email inviting them to reset their Master Password. This link will expire upon initial use or an hour after being issued.  
+{% endcomment %}
