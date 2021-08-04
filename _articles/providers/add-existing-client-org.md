@@ -20,3 +20,10 @@ Selecting the **Add existing organization** button prompts you to select the Org
 {% image /providers/add-existing-client-2.png %}
 
 Once added, the Organization will appear in the {% icon fa-bank %} **Clients** list alongside all other Client Organizations.
+
+{% callout success %}
+**Once you've added the existing Organization to the Provider**, you (the Provider Admin and Organization Owner) can be removed from the Organization. Doing so will free up the User Seat previously taken up by your account. As a member of the Provider, you will retain all permission over the Client Organization:
+
+1. Organizations may not be Owner-less, so [add a backup Owner to the Organization]({{site.baseurl}}/article/managing-users/#invite). 
+2. Once the new Owner is Invited, Accepted, and Confirmed, ask them to [remove you from the Organization]({{site.baseurl}}/article/managing-users/#offboard-users).
+{% endcallout %}
