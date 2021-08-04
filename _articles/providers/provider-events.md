@@ -6,7 +6,7 @@ featured: false
 popular: false
 hidden: false
 tags: []
-order: 05
+order: 07
 ---
 
 ## What are Event Logs?
@@ -21,7 +21,7 @@ Selecting the **Export** button will create a `.csv` of all events within the sp
 
 ### Events
 
-Event Logs record several different types of events for Provuders. The Event Logs screen captures a **Timestamp** for the event, client app information including the application ype and IP (accessed by hovering over the {% icon fa-globe %} globe icon), the **User** connected to the event, and an **Event** description. Provider Events include:
+Event Logs record several different types of events for Providers. The Event Logs screen captures a **Timestamp** for the event, client app information including the application ype and IP (accessed by hovering over the {% icon fa-globe %} globe icon), the **User** connected to the event, and an **Event** description. Provider Events include:
 
 - Invited user *user-identifier*
 - Confirmed user *user-identifier*

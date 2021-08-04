@@ -1,12 +1,12 @@
 ---
 layout: article
-title: Providers
+title: Providers Overview
 categories: [providers]
 featured: false
 popular: false
 hidden: false
 tags: []
-order: 01
+order: 02
 ---
 
 {% callout success %}
@@ -17,7 +17,7 @@ Interested in becoming a Provider? Sign up for the Provider Program using the re
 
 ## What are Providers?
 
-Providers are Vault-administration entities that allow Managed Service Providers (MSPs), Resellers, and other businesses to create and manage [Client Organizations](#client-organizations) for individual business customers.
+Providers are administration entities that allow Managed Service Providers (MSPs), Resellers, and other businesses to create and manage [Client Organizations](#client-organizations) for individual business customers.
 
 [Service Users]({{site.baseurl}}/article/provider-users/#user-types) are Provider-specific users that can fully administer Organizations on behalf of their customers. With full access to each Client Organization from the **Provider Portal**, Providers can seamlessly protect and support customers while allowing them to focus on critical day-to-day operations.
 

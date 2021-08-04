@@ -1,12 +1,12 @@
 ---
 layout: article
-title: Get Started with Providers
-categories: [getting-started]
+title: Get Started with Provider Portal
+categories: [providers]
 featured: false
 popular: false
 hidden: false
 tags: []
-order: 07
+order: 01
 ---
 
 {% callout success %}
@@ -17,7 +17,7 @@ Interested in becoming a Provider? Sign up for the Provider Program using the re
 
 ## Why Bitwarden Providers?
 
-Managed Service Providers (MSPs), Resellers, and other businesses often need a way to quickly create and easily administer Bitwarden Organizations on behalf of business customers. **Providers** are Vault-administration entities that allow those businesses to create and manage [Client Organizations](#client-organization).
+Managed Service Providers (MSPs), Resellers, and other businesses often need a way to quickly create and easily administer Bitwarden Organizations on behalf of business customers. **Providers** are administration entities that allow those businesses to create and manage [Client Organizations](#client-organization).
 
 [Service Users](#add-service-users) are Provider-specific users that can fully administer Organizations on behalf of their customers. With full access to each Client Organization from the **Provider Portal**, Providers can seamlessly protect and support customers while allowing them to focus on critical day-to-day operations:
 
@@ -75,7 +75,7 @@ With your newly-created Client Organization, start building the perfect solution
 
 1. **Create Collections**. A good first step is to [create a set of Collections]({{site.baseurl}}/article/about-collections/#create-a-collection), which provide an organizing structure for the Vault items you'll add to the Vault in the next step.
 
-    Common Collections patterns include **Collections by Department** (i.e. users in the client's Marketing Team are assigned to a **Marketing** Collection) or **Collections by Function** (i.e. users from the client's Marketing Team are assigned to a **Social Media** Colletion):
+    Common Collections patterns include **Collections by Department** (i.e. users in the client's Marketing Team are assigned to a **Marketing** Collection) or **Collections by Function** (i.e. users from the client's Marketing Team are assigned to a **Social Media** Collection):
 
     {% image organizations/collections-graphic-1.png %}  
 2. **Populate the Organization Vault**. Once the structure of how you'll store Vault items is in place, you can begin populating the Organization with your client's Logins, Notes, Cards, and Identities.
@@ -99,6 +99,6 @@ With the infrastructure for securely and scalably sharing credentials in place, 
 
    {% image organizations/org-people-invite.png %}
 
-2. **For larger customers** who leverage a directory service (Active Direcory, LDAP, Okta, etc.), use [Directory Connector]({{site.baseurl}}/article/directory-sync) to sync Organization users from the source directory and automatically issue invitations.
+2. **For larger customers** who leverage a directory service (Active Directory, LDAP, Okta, etc.), use [Directory Connector]({{site.baseurl}}/article/directory-sync) to sync Organization users from the source directory and automatically issue invitations.
 
 Regardless of whether you've invited users from the Organization Vault or using Directory Connector, the same 3-step process (Invite &rarr; Accept &rarr; Confirm) that you followed when [onboarding Provider users](#onboard-users) will apply here as well.

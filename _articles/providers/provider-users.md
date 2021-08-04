@@ -6,7 +6,7 @@ featured: false
 popular: false
 hidden: false
 tags: []
-order: 02
+order: 03
 ---
 
 ## Onboard Provider Users
@@ -51,7 +51,7 @@ To confirm accepted invitations to your Provider:
    {% image /providers/provider-confirm.png Confirm Provider Users %}
 4. On the panel that appears, verify that the [fingerprint phrases]({{site.baseurl}}/article/fingerprint-phrase) for new users match those they can find in their **Settings** &rarr; **My Account** screen.
 
-   Each fingerprint phrase is unique to its account, and ensures a final layer of overishgt in securely adding users. If they match, select **Confirm**.
+   Each fingerprint phrase is unique to its account, and ensures a final layer of oversight in securely adding users. If they match, select **Confirm**.
 
 ## Offboard Users
 
