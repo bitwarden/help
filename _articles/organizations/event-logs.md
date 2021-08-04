@@ -10,7 +10,7 @@ order: 13
 
 ## What are Event Logs?
 
-Event Logs are timestamped records of everything that occurs within your Organization. Event Logs are accessible to [Admins and Owners]({{site.baseurl}}/article/event-logs/) from the **Manage** tab of your Organization Vault:
+Event Logs are timestamped records of events that occur within your Organization. Event Logs are accessible to [Admins and Owners]({{site.baseurl}}/article/event-logs/) from the **Manage** tab of your Organization Vault:
 
 {% image /organizations/event-logs-updated.png Event Logs %}
 

@@ -21,7 +21,7 @@ Bitwarden believes source code transparency is an absolute requirement for secur
 
 ## Release Announcements
 
-**Dates on this page represent Cloud Server and Web releases.** Bitwarden incrementally updates each client application (Desktop, Browser Extension, Mobile, etc.) following the initial release date to ensure feature efficacy and stability. As a result, client applications should expect listed features following the initial release.
+**Dates on this page represent Cloud Server and Web releases.** Bitwarden incrementally updates each client application (Desktop, Browser Extension, Mobile, etc.) and for self-hosted servers following the initial release date to ensure feature efficacy and stability. As a result, client applications and self-hosted servers should expect listed features following the initial release.
 
 To be notified of Release Announcements, subscribe to the [Bitwarden Status RSS Feed](https://status.bitwarden.com/){:target="\_blank"}.
 
@@ -30,9 +30,7 @@ To be notified of Release Announcements, subscribe to the [Bitwarden Status RSS 
 The Bitwarden team is happy to announce the rollout of Admin Password Reset, the latest feature purpose-built to help enterprises seeking to ensure password security at scale. This release includes:
 
 - **Admin Password Reset**: Enterprise Organizations can enroll in Admin Password Reset to allow designated administrators to reset the Master Password of Organization users (see [here]({{site.baseurl}}/article/admin-reset/) for details).
-- **Master Password Re-prompt**: Use the new Master Password re-prompt option to require verification of your Master Password to view sensitive Vault items as designated by the user (see [here]({{site.baseurl}}/article/managing-items/#protect-individual-items) for details).
-
-   {% callout info %}**Master Password Re-prompt** will temporarily not be available for mobile apps, as we are releasing mobile updates in the near future. Please be aware of the following:<br><br>- The Android/iOS app **will not re-prompt** for your master password when viewing, editing, or auto-filling a reprompt-enabled Vault item.<br>- Editing a reprompt-enabled Vault item on Android/iOS **will disable** your re-prompt settings for that item.{% endcallout %}
+- **Master Password Re-prompt**: Use the new Master Password re-prompt option to require verification of your Master Password to access sensitive Vault items as designated by the user (see [here]({{site.baseurl}}/article/managing-items/#protect-individual-items) for details).
 - **Bulk User Management**: Organization Owners and Admins can now re-send invitations, confirm accepted users, and remove users from an Organization in-bulk (see [here]({{site.baseurl}}/article/managing-users/#onboard-users) for details).
 - **Event Log Export**: Export event logs directly from the Web Vault (see [here]({{site.baseurl}}/article/event-logs/#export-events) for details).
 - **Directory Connector API Key Authentication**: Starting with this release, users of Directory Connector will need to use the [Organization API Key]({{site.baseurl}}/article/public-api/#authentication) to login.
