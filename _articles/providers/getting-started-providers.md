@@ -65,7 +65,7 @@ Members of a Client Organization (i.e. your customer's end-users) will find shar
 
 ### Create a Client Organization
 
-To create a new Client Organization, you must be a [Provider Admin]({{site.baseurl}}/article/provider-users/#provider-user-types). Navigate to the {% icon fa-bank %} **Clients** tab of the Provider Portal and select the {% icon fa-plus %} **New client organization** button:
+To create a new Client Organization, you must be a [Provider Admin]({{site.baseurl}}/article/provider-users/#provider-user-types). Navigate to the {% icon fa-bank %} **Clients** tab of the Provider Portal and select the {% icon fa-plus %} **New Client Organization** button:
 
 {% image providers/provider-add-client.png Create a Client Organization %}
 

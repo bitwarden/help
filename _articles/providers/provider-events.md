@@ -21,12 +21,13 @@ Selecting the **Export** button will create a `.csv` of all events within the sp
 
 ### Events
 
-Event Logs record several different types of events for Providers. The Event Logs screen captures a **Timestamp** for the event, client app information including the application ype and IP (accessed by hovering over the {% icon fa-globe %} globe icon), the **User** connected to the event, and an **Event** description. Provider Events include:
+Event Logs record several different types of events for Providers. The Event Logs screen captures a **Timestamp** for the event, client app information including the application type and IP (accessed by hovering over the {% icon fa-globe %} globe icon), the **User** connected to the event, and an **Event** description. Provider Events include:
 
 - Invited user *user-identifier*
 - Confirmed user *user-identifier*
 - Edited user *user-identifier*
 - Removed user *user-identifier*
+- Accessed *organization-identifier* organization vault.
 - Created organization *organization-identifier* (triggered when [a new Organization is created within Provider]({{site.baseurl}}/article/client-org-setup/#create-a-client-organization))
 - Added organization *organization-identifier* (triggered when [an existing Organization is added to Provider]({{site.baseurl}}/article/providers-faqs/#q-can-i-add-an-existing-organizations-to-my-provider))
 - Removed organization *organization-identifier*
