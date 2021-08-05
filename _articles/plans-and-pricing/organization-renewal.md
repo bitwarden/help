@@ -16,9 +16,9 @@ As your renewal date approaches, Bitwarden recommends that you validate the paym
 {% callout warning %}
 If we cannot process your payment method, or if you have cancelled your subscription, your Organization will be disabled. For **self-hosted customers**, there is a 2 month grace period between expiration of your [license]({{site.baseurl}}/article/licensing-on-premise/#organization-license) and disabling of your Organization. In either case, a disabled Organization will result in the following:
 
-**Shared Vault Items**
+**Organization-owned Vault Items**
 
-[Owners]({{site.baseurl}}/article/user-types-access-control/) will retain access to [shared Vault items]({{site.baseurl}}/article/share-to-a-collection), however all other users will lose access to these items. Shared Vault items and existing [Collections]({{site.baseurl}}/article/about-collections/) **will not be deleted**.
+[Owners]({{site.baseurl}}/article/user-types-access-control/) will retain access to [shared Vault items]({{site.baseurl}}/article/sharing), however all other users will lose access to these items. Organization Vault items and existing [Collections]({{site.baseurl}}/article/about-collections/) **will not be deleted**.
 
 **Organization Users**
 

@@ -21,7 +21,7 @@ Or, pass `--help` as an option on any `bw` command to see available options and 
 ```
 bw list --help
 
-bw share --help
+bw move --help
 ```
 
 Most information you'll need can be accessed using `--help`, however this article replicates all that information and goes into greater depth on some topics.
@@ -479,18 +479,22 @@ bw list org-collections --organizationid 4016326f-98b6-42ff-b9fc-ac63014988f5
 You can `bw list` both `collections` and `org-collections`. `bw list collections` will list *all* Collections, agnostic of which Organization they belong to. `bw list org-collections` will list *only* Collections that belong to the Organization specified using `--organizationid`.
 {% endcallout %}
 
-### share
+### move
 
-The `share` command transfers a Vault item [to an Organization]({{site.baseurl}}/article/share-to-a-collection/):
+{% callout info %}
+**August 2021**: The `share` command has been changed to `move`. [Find out more]({{site.baseurl}}/article/release-notes).
+{% endcallout %}
 
-```
-bw share <itemid> <organizationid> [encodedJson]
-```
-
-The `share` command requires you to `encode` a Collection ID, and takes an **exact** `id` (the object to share) and an **exact** `organizationid` (the Organization to share the object to). For example:
+The `move` command transfers a Vault item [to an Organization]({{site.baseurl}}/article/sharing/):
 
 ```
-echo '["bq209461-4129-4b8d-b760-acd401474va2"]' | bw encode | bw share ed42f44c-f81f-48de-a123-ad01013132ca dfghbc921-04eb-43a7-84b1-ac74013bqb2e
+bw move <itemid> <organizationid> [encodedJson]
+```
+
+The `move` command requires you to `encode` a Collection ID, and takes an **exact** `id` (the object to share) and an **exact** `organizationid` (the Organization to share the object to). For example:
+
+```
+echo '["bq209461-4129-4b8d-b760-acd401474va2"]' | bw encode | bw move ed42f44c-f81f-48de-a123-ad01013132ca dfghbc921-04eb-43a7-84b1-ac74013bqb2e
 ```
 
 Upon success, the updated item will be returned.

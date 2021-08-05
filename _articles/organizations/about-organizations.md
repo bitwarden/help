@@ -13,13 +13,13 @@ redirect_from:
 
 ## What are Organizations?
 
-Organizations relate Bitwarden users and Vault items together for [secure sharing]({{site.baseurl}}/article/share-to-a-collection/) of Logins, Notes, Cards, and Identities. Organizations have a unique Vault, where [administrators]({{site.baseurl}}/article/user-types-access-control/) can manage the Organization's items, users, and settings:
+Organizations relate Bitwarden users and Vault items together for [secure sharing]({{site.baseurl}}/article/sharing/) of Logins, Notes, Cards, and Identities. Organizations have a unique Vault, where [administrators]({{site.baseurl}}/article/user-types-access-control/) can manage the Organization's items, users, and settings:
 
 {% image /organizations/org-vault-admin.png Organization Vault %}
 
-Members of an Organization will find shared items ({% icon fa-share-alt %}) in their **My Vault** view alongside personal items, as well as filters for assigned [Collections]({{site.baseurl}}/article/about-collections/), which group Organization items similarly to how [Folders]({{site.baseurl}}/article/folders/) organize personal items:
+Members of an Organization will find shared items ({% icon fa-cube%}) in their **My Vault** view alongside personal items, as well as filters for assigned [Collections]({{site.baseurl}}/article/about-collections/), which group Organization items similarly to how [Folders]({{site.baseurl}}/article/folders/) organize personal items:
 
-{% image /organizations/shared-items.png Access shared items %}
+{% image /organizations/personal-vault-org-enabled.png Access shared items %}
 
 ### Types of Organizations
 
@@ -34,7 +34,7 @@ Bitwarden offers a variety of types of Organizations to meet your business's or 
 
 ### Comparing Organizations with Premium
 
-The key thing to know is that **Organizations unlock access to secure sharing** between users. [Premium Individual plans]({{site.baseurl}}/article/about-bitwarden-plans/#premium-individual) unlock premium password security and management features, including advanced 2FA options, the Bitwarden Authenticator (TOTP), encrypted file attachments, and more, but Premium Individual **does not include secure data sharing.**
+The key thing to know is that Organizations enable **secure sharing from Organizations to users**. [Premium Individual plans]({{site.baseurl}}/article/about-bitwarden-plans/#premium-individual) unlock premium password security and management features, including advanced 2FA options, the Bitwarden Authenticator (TOTP), encrypted file attachments, and more, but Premium Individual **does not include secure data sharing.**
 
 Paid Organizations (Families, Teams, or Enterprise) automatically include those premium features (advanced 2FA options, Bitwarden Authenticator (TOTP), etc.) for **every** user enrolled in the Organization.
 
@@ -60,4 +60,4 @@ Organizations are created and managed from the [Web Vault](https://vault.bitward
 
    {% callout success %}New Families, Teams, and Enterprise Organization have a 7 day free trial built in! We won't charge you until your trial is over, and you can cancel your subscription at any time from the Organization **Settings** tab.{% endcallout %}
 
-Once you've created your Organization, create a [collection]({{site.baseurl}}/article/about-collections/), [invite users]({{site.baseurl}}/article/managing-users/), and [start sharing]({{site.baseurl}}/article/share-to-a-collection).
+Once you've created your Organization, create a [collection]({{site.baseurl}}/article/about-collections/), [invite users]({{site.baseurl}}/article/managing-users/), and [start sharing]({{site.baseurl}}/article/sharing).

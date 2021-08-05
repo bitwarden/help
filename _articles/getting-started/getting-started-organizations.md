@@ -13,25 +13,25 @@ order: 06
 
 Password managers like Bitwarden make it easy to store and access unique and secure passwords across all of your devices, keeping your online accounts safer than ever! Using Bitwarden, you won't need to dangerously repeat simple passwords or leave them exposed in unencrypted formats like spreadsheets, documents, or sticky notes.
 
-**Bitwarden Organizations** add a layer of collaboration and sharing to password management for your family, team, or enterprise, allowing you to securely share common information like office wifi passwords, online credentials, or shared company credit cards. Secure sharing through Organizations is **safe** and **easy**.
+**Bitwarden Organizations** add a layer of collaboration and sharing to password management for your family, team, or enterprise, allowing you to securely share common information like office wifi passwords, online credentials, or shared company credit cards. Secure sharing of Organization-owned credentials is **safe** and **easy**.
 
 This article will help you get started with a **free 2-person Organization** so you can experience secure sharing in no time.
 
 ### What are Organizations?
 
-Bitwarden Organizations relate users and Vault items together for [secure sharing]({{site.baseurl}}/article/share-to-a-collection/) of Logins, Notes, Cards, and Identities. Organizations could be a family, team, company or any group of people that needs to securely share data. Organizations have a unique Vault, where [administrators]({{site.baseurl}}/article/user-types-access-control/) can manage the Organization's items, users, and settings:
+Bitwarden Organizations relate users and Vault items together for [secure sharing]({{site.baseurl}}/article/sharing/) of Logins, Notes, Cards, and Identities owned by the Organization. Organizations could be a family, team, company or any group of people that needs to securely share data. Organizations have a unique Vault, where [administrators]({{site.baseurl}}/article/user-types-access-control/) can manage the Organization's items, users, and settings:
 
 {% image /organizations/org-vault-admin.png Organization Vault %}
 
 #### Comparing Organizations with Premium
 
-The key thing to know is that **Organizations unlock access to secure sharing** between users. [Premium Individual plans]({{site.baseurl}}/article/about-bitwarden-plans/#premium-individual) unlock premium password security and management features, including advanced 2FA options, the Bitwarden Authenticator (TOTP), encrypted file attachments, and more, but Premium Individual **does not include secure data sharing.**
+The key thing to know is that Organizations enable **secure sharing from Organizations to users**. [Premium Individual plans]({{site.baseurl}}/article/about-bitwarden-plans/#premium-individual) unlock premium password security and management features, including advanced 2FA options, the Bitwarden Authenticator (TOTP), encrypted file attachments, and more, but Premium Individual **does not include secure data sharing.**
 
 Paid Organizations (Families, Teams, or Enterprise) automatically include those premium features (advanced 2FA options, Bitwarden Authenticator (TOTP), etc.) for **every** user enrolled in the Organization.
 
 ## Setup Bitwarden Accounts
 
-Free Bitwarden Organizations allow for 2 users to securely share data. You might use a free Organization to share with friend or partner, or to test Organizations before [upgrading to a different plan]({{site.baseurl}}/article/about-bitwarden-plans/).
+Free Bitwarden Organizations allow for 2 users to securely share Organization-owned credentials. You might use a free Organization to share with friend or partner, or to test Organizations before [upgrading to a different plan]({{site.baseurl}}/article/about-bitwarden-plans/).
 
 Bitwarden provides applications on lots of devices, including Browser Extensions, Mobile Apps, Desktop Apps, and a CLI, but for the purposes of this guide we'll focus on the [Web Vault](https://vault.bitwarden.com){:target="\_blank"}. **The Web Vault provides the richest Bitwarden experience** for administering your Organization.
 
@@ -49,7 +49,7 @@ Once your account is created, log in to your [Web Vault](https://vault.bitwarden
 
 ### Sign up for Bitwarden again
 
-In order to use your free 2-person Organization for secure sharing, you'll need to have 2 Bitwarden accounts to share between. Once your first Bitwarden account is setup, follow the same procedure (or help your friend or partner to do so) to setup the other account.
+In order to use your free 2-person Organization for secure sharing, you'll need to have 2 Bitwarden accounts. Once your first Bitwarden account is setup, follow the same procedure (or help your friend or partner to do so) to setup the other account.
 
 {% callout success %}
 Bitwarden Organizations have a deep level of [user-level access controls]({{site.baseurl}}/article/user-types-access-control/). Whichever user you proceed to [setup your Organization](#setup-your-organization) with will be the **Owner**.
@@ -74,7 +74,7 @@ Once created, you'll land in your Organization Vault, which is the central hub f
 
 ### Get to know Collections
 
-Collections are an important part of a Bitwarden Organization; they represent the logical grouping of shared Vault items that [belong to your Organization](#shared-items). Your Organization comes pre-loaded with a **Default Collection** and an **Unassigned** tag. With a free Organization, you can create up to 2 Collections using the **Manage** tab:
+Collections are an important part of a Bitwarden Organization; they represent the logical grouping of Organization-owned Vault items that [belong to your Organization](#shared-items). Your Organization comes pre-loaded with a **Default Collection** and an **Unassigned** tag. With a free Organization, you can create up to 2 Collections using the **Manage** tab:
 
 {% image /getting-started/collections.png Collections %}
 
@@ -131,27 +131,27 @@ Part of the magic of Bitwarden Organizations is that items that belong to you an
 
 {% image organizations/personal-vault-org-enabled.png Organization-enabled Vault %}
 
-[Collections](#get-to-know-collections) are a lot like [Folders]({{site.baseurl}}/article/folders/) in that they organize the shared items in your Vault. Like anything else in the **Filters** menu, selecting a Collection will filter listed Vault items down to only the ones in that Collection.
+[Collections](#get-to-know-collections) are a lot like [Folders]({{site.baseurl}}/article/folders/) in that they organize the Organization-owned items in your Vault. Like anything else in the **Filters** menu, selecting a Collection will filter listed Vault items down to only the ones in that Collection.
 
-### Shared Items
+### Items Shared from an Organization
 
-You probably don't have a [shared item](#share-a-login) yet, but when you do it will be displayed in your Vault with a {% icon fa-share-alt %} **Shared** icon:
+You probably don't have a [item shared from an organization](#share-a-login) yet, but when you do it will be displayed in your Vault with a {% icon fa-cube %} **Shared** icon:
 
 {% image /organizations/collection-shared-item.png Shared Item icon %}
 
 Shared items are **owned** by the Organization. This means that anyone with permission can alter the item or delete it, which would remove it from your Vault as well.
 
-## Share a Login
+## Move an Item to the Organization
 
-The last step on the road to secure sharing is to create a shared a Vault item. An existing [Vault item]({{site.baseurl}}/article/managing-items/#add-a-vault-item) can be shared after it's created, but for this guide, we'll focus on creating a **new** shared Login from your Personal Vault:
+The last step on the road to secure sharing is to create an item and move it to the Organization so it can be shared. An existing [Vault item]({{site.baseurl}}/article/managing-items/#add-a-vault-item) can be moved to the Organization after it's created, but for this guide, we'll focus on creating a **new** Login from your Personal Vault:
 
 1. On the {% icon fa-lock %} **My Vault** page, select the {% icon fa-plus %} **Add Item** button.
 2. Fill in all the relevant information for your new Login item (e.g. Username and Password). The item can be anything you want both yourself and the other Organization user to have access to, for example a family streaming account.
 3. In the **Ownership** section at the bottom of the Add Item Panel, select your Organization to designate the item for sharing.
-4. Select one or more **Collections** to share this item into. Generally, users of two-person Organizations setup access for both users for all Collections. In larger or more complex Organizations, which Collection you share the item into will determine who can access it.
-5. Select the **Save** button to finishing creating the shared item.
+4. Select one or more **Collections** to put this item into. Generally, users of two-person Organizations setup access for both users for all Collections. In larger or more complex Organizations, which Collection you put the item into will determine who can access it.
+5. Select the **Save** button to finishing creating the Organization-owned item.
 
-This new shared item will be accessible to both yourself and the other Organization user! As long as both users can access the Collection it's in, it will appear for both in the Organization Vault and in the **My Vault** view alongside other personal Vault items.
+This new item will be accessible to both yourself and the other Organization user! As long as both users can access the Collection it's in, it will appear for both in the Organization Vault and in the **My Vault** view alongside other personal Vault items.
 
 ## Congratulations!
 

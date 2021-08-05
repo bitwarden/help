@@ -15,7 +15,7 @@ This article details *one recommended* implementation to set partners and their 
 
 ## Bitwarden Organizations
 
-Bitwarden Organizations relate users and Vault items together for [secure sharing]({{site.baseurl}}/article/share-to-a-collection/) of Logins, Notes, Cards, and Identities. Organizations could be a family, team, company or any group of people that needs to securely share data. Organizations have a unique Vault, where [administrators]({{site.baseurl}}/article/user-types-access-control/) can manage the Organization's items, users, and settings:
+Bitwarden Organizations relate users and Vault items together for [secure sharing]({{site.baseurl}}/article/sharing/) of Logins, Notes, Cards, and Identities. Organizations could be a family, team, company or any group of people that needs to securely share data. Organizations have a unique Vault, where [administrators]({{site.baseurl}}/article/user-types-access-control/) can manage the Organization's items, users, and settings:
 
 {% image /organizations/org-vault-admin.png Organization Vault %}
 
@@ -35,7 +35,7 @@ Bitwarden Organizations are designed to manage users and data in a scalable and 
 
 #### Collections
 
-Collections gather together Logins, Notes, Cards, and Identities for [secure sharing]({{site.baseurl}}/article/share-to-a-collection) within an Organization. Some common methods for constructing scalable Collections include **Collections by Department** (i.e. users from the client's Marketing Team are assigned to a Marketing Collection), or **Collections by Function** (i.e. users from the client's Marketing Team are assigned to a Social Media Collection):
+Collections gather together Logins, Notes, Cards, and Identities for [secure sharing]({{site.baseurl}}/article/sharing) within an Organization. Some common methods for constructing scalable Collections include **Collections by Department** (i.e. users from the client's Marketing Team are assigned to a Marketing Collection), or **Collections by Function** (i.e. users from the client's Marketing Team are assigned to a Social Media Collection):
 
 {% image /organizations/collections-graphic-1.png Collections %}
 
@@ -51,7 +51,7 @@ Teams and Enterprise Organizations can also institute Groups, which relate toget
 
 ### Share Vault items
 
-With Collections now created, and a plan for connecting users to credentials using Groups, you can start adding data to the Organization. You can [import data directly to the Organization]({{site.baseurl}}/article/import-to-org/) or [manually add and share]({{site.baseurl}}/article/share-to-a-collection/) data.
+With Collections now created, and a plan for connecting users to credentials using Groups, you can start adding data to the Organization. You can [import data directly to the Organization]({{site.baseurl}}/article/import-to-org/) or [manually add and share]({{site.baseurl}}/article/sharing/) data.
 
 ### User Management
 

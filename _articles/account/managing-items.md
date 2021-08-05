@@ -171,9 +171,9 @@ Master password re-prompt **is not** an encryption mechanism. This feature is an
 
 {% image /manage-items/reprompt.gif Master Password Reprompt %}
 
-## Share Vault Items
+## Move Items to an Organization
 
-If you're a member of an [Organization]({{site.baseurl}}/article/about-organizations/), you can share Vault items with other members of your Organization. Learn more about [Organizations]({{site.baseurl}}/article/about-organizations/), [Collections]({{site.baseurl}}/article/about-collections), and [Sharing]({{site.baseurl}}/article/share-to-a-collection/).
+If you're a member of an [Organization]({{site.baseurl}}/article/about-organizations/), you can move Vault items to your Organization for sharing with other Organization members. Learn more about [Organizations]({{site.baseurl}}/article/about-organizations/), [Collections]({{site.baseurl}}/article/about-collections), and [Sharing]({{site.baseurl}}/article/sharing/).
 
 ## Clone Vault Items
 
