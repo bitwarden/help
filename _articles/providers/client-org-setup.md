@@ -19,7 +19,7 @@ This article will walk you through the [creation of a Client Organization](#crea
 
 To create a Client Organization you must be a [Provider Admin]({{site.baseurl}}/article/provider-users/#provider-user-types):
 
-1. Navigate to the Provider Portal and select the {% icon fa-plus %} **New client organization** button:
+1. Navigate to the Provider Portal and select the {% icon fa-plus %} **New Client Organization** button:
 
    {% image providers/provider-add-client.png Create a Client Organization %}
 2. On the New Client Organization screen, enter an **Organization Name**, **Billing Email**, and **Client Owner Email**.

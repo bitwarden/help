@@ -86,6 +86,12 @@ https://github.com/bitwarden/web/blob/master/src/app/services/event.service.ts
 https://github.com/bitwarden/web/blob/master/src/locales/en/messages.json
 {% endcomment %}
 
+### Provider Events
+
+When any of the above events is executed by a member of an [administering Provider]({{site.baseurl}}/article/providers/), the **User** column will record the name of the Provider. Additionally, a Provider-specific event will record whenever a member of an administering Provider accesses your Organization Vault:
+
+`IMAGE PLACEHOLDER`
+
 ## Export Events
 
 Exporting event logs will create a `.csv` of all events within the specified date range:
