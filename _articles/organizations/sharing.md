@@ -8,7 +8,7 @@ hidden: false
 tags: [sharing, how to]
 order: 04
 redirect_from:
-  - /article/sharing/
+  - /article/share-to-a-collection/
 ---
 
 {% callout info %}
