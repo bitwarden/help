@@ -19,7 +19,7 @@ For more high-level information about **Organizations**, refer to the following 
 
 ### Q: What's the difference between Organizations and Premium?
 
-**A:** Organizations unlock access to secure sharing between users who are members of that Organization.
+**A:** Organizations enable secure sharing from Organizations to Organization users.
 
 Premium Individual plans unlock premium password security and management features, including advanced 2FA options, the Bitwarden Authenticator (TOTP), encrypted file attachments, and more. Premium Individual does not include secure data sharing.
 
@@ -35,7 +35,7 @@ Paid Organizations (Families, Teams, or Enterprise) automatically include premiu
 
 **A:** Invited users will receive an email asking them to join the Organization. First, make sure they have accepted the invitation. If they have, a **Admin** or **Owner** should navigate to **Manage** &rarr; **People**, hover over that user, open the gear dropdown, and select **Confirm**.
 
-### Q: What events are auditing for my Organization?
+### Q: What events are audited for my Organization?
 
 **A:** For a full list of what's included in Bitwarden Event Logs, see [Event Logs](https://bitwarden.com/help/article/event-logs/).
 
@@ -68,6 +68,6 @@ Alternatively, you can unshare items by moving them to a different Collection wi
 
 **A:** Use the **Hide Passwords** option in the **Access Control** section when adding new users or editing existing ones in order to hide a given Collection's passwords and hidden fields from them. For more information, see [Access Control](https://bitwarden.com/help/article/user-types-access-control/#access-control).
 
-### Q: Does an item I share with the Organization stay after I leave?
+### Q: Does an item I move to the Organization stay after I leave?
 
 **A:** It does! When a user shares an item with an Organization, the Organization takes ownership of the item. Even if the user leaves the Organization or deletes their account, that item will remain in the Organization Vault.

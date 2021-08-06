@@ -129,7 +129,7 @@ For more detail, see our [CLI documentation]({% link _articles/miscellaneous/cli
 
 ## Export an Organization Vault
 
-Organization [Admins and Owners]({% link _articles/organizations/user-types-access-control.md %}) can export their Organization Vault (i.e. all items [shared in Collections]({% link _articles/organizations/share-to-a-collection.md %})) from the Web Vault or CLI:
+Organization [Admins and Owners]({% link _articles/organizations/user-types-access-control.md %}) can export their Organization Vault (i.e. all items owned by the Organization) from the Web Vault or CLI:
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">

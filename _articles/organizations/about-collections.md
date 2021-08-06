@@ -13,10 +13,10 @@ redirect_from:
 
 ## What are Collections?
 
-Collections gather together Logins, Notes, Cards, and Identities for [secure sharing]({{site.baseurl}}/article/share-to-a-collection/) within an Organization. Think of Collections as Organization-equivalents to the [Folders]({{site.baseurl}}/article/folders/) used to organize a Personal Vault, with a few key differences:
+Collections gather together Logins, Notes, Cards, and Identities for [secure sharing]({{site.baseurl}}/article/sharing/) from an Organization. Think of Collections as Organization-equivalents to the [Folders]({{site.baseurl}}/article/folders/) used to organize a Personal Vault, with a few key differences:
 
-- Organizations control access to shared items by assigning users or [Groups]({{site.baseurl}}/article/about-groups/) to Collections.
-- Shared items **must** be included in at least one Collection.
+- Organizations control access to Organization-owned items by assigning users or [Groups]({{site.baseurl}}/article/about-groups/) to Collections.
+- Organization-owned items **must** be included in at least one Collection.
 
 ### Using Collections
 
