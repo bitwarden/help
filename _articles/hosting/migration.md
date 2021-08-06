@@ -32,7 +32,7 @@ To migrate from the Cloud to a self-hosted server:
 1. [Install and deploy]({{site.baseurl}}/article/install-on-premise) Bitwarden to your server. At a high-level, this procedure involves:
 
    1. [Configuring a domain]({{site.baseurl}}/article/install-on-premise/#configure-your-domain) for Bitwarden.
-   2. Installing [Docker and Docker Compose]({{site.basaeurl}}/article/install-on-premise/#install-docker-and-docker-compose).
+   2. Installing [Docker and Docker Compose]({{site.baseurl}}/article/install-on-premise/#install-docker-and-docker-compose).
    3. Running the [installation shell script]({{site.baseurl}}/article/install-on-premise/#install-bitwarden).
    4. [Configuring your environment]({{site.baseurl}}/article/install-on-premise/#configure-your-environment) to setup the Admin Portal, an SMTP Server connection, and more.
 2. Start your server by running `./bitwarden.sh start`.
