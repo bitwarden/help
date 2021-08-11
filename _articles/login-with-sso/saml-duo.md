@@ -121,7 +121,7 @@ When you're done with the Identity Provider Configuration section, **Save** your
 
 Once your configuration is complete, test it by navigating to [https://vault.bitwarden.com](https://vault.bitwarden.com){:target="\_blank"} and selecting the **Enterprise Single Sign-On** button:
 
-{% image /sso/sso-button-lg.png Enterprise Single Sign-On button %}
+{% image sso/sso-button-lg.png Enterprise Single Sign-On button %}
 
 Enter the [configured Organiztion Identifier](#) and select **Log In**. If your implementation is successfully configured, you'll be redirected to your source IdP's login screen.
 

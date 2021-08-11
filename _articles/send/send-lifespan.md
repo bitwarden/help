@@ -46,7 +46,7 @@ When a Send reaches its specified Expiration Date:
 
 For all Sends, a **Current Access Count** ticker will track the number of times the Send link has been accessed:
 
-{% image /send/send-access-ticker.png Current Access Count ticker %}
+{% image send/send-access-ticker.png Current Access Count ticker %}
 
 For any Send, you may specify a **Maximum Access Count** that is a positive integer.
 
@@ -93,7 +93,7 @@ Manually disable or delete a Send from any Bitwarden application:
 
 To disable a Send from the Web Vault, open the **Edit Send** view and check the **Disable this Send so that no one can access it** checkbox. You can uncheck this box at any time to re-enable access to the Send.
 
-{% image /send/send-disable-wv.png Disable from the Web Vault %}
+{% image send/send-disable-wv.png Disable from the Web Vault %}
 
 When a Send is disabled:
 
@@ -105,7 +105,7 @@ When a Send is disabled:
 
 To delete a Send from the Web Vault, use the hover-over {% icon fa-cog %} gear dropdown to select the {% icon fa-trash %} **Delete** button:
 
-{% image /send/send-delete.png Delete from the Web Vault %}
+{% image send/send-delete.png Delete from the Web Vault %}
 
 {% endcapture %}
 {{ web_vault | markdownify}}
@@ -117,7 +117,7 @@ To delete a Send from the Web Vault, use the hover-over {% icon fa-cog %} gear d
 
 To disable a Send from a Browser Extension, open the **Edit Send** view and check the **Disable this Send so that no one can access it** checkbox. You can uncheck this box at any time to re-enable access to the Send.
 
-{% image /send/send-disable-be.png Disable from a Browser Extension %}
+{% image send/send-disable-be.png Disable from a Browser Extension %}
 
 When a Send is disabled:
 
@@ -129,7 +129,7 @@ When a Send is disabled:
 
 To delete a Send from a Browser Extension, select the {% icon fa-trash %} **Trash** icon next to the Send you want to delete:
 
-{% image /send/send-delete-be.png Delete from a Browser Extension %}
+{% image send/send-delete-be.png Delete from a Browser Extension %}
 
 {% endcapture %}
 {{ browser_extension | markdownify}}
@@ -141,7 +141,7 @@ To delete a Send from a Browser Extension, select the {% icon fa-trash %} **Tras
 
 To disable a Send from a Desktop App, open the **Edit Send** view and check the **Disable this Send so that no one can access it** checkbox. You can uncheck this box at any time to re-enable access to the Send.
 
-{% image /send/send-desktop-disable.png Disable from a Desktop App%}
+{% image send/send-desktop-disable.png Disable from a Desktop App%}
 
 When a Send is disabled:
 
@@ -153,7 +153,7 @@ When a Send is disabled:
 
 To delete a Send from a Desktop App, open the **Edit Send** view and select the  {% icon fa-trash %} **Delete** button:
 
-{% image /send/send-desktop-delete.png Delete from a Desktop App %}
+{% image send/send-desktop-delete.png Delete from a Desktop App %}
 
 {% endcapture %}
 {{ desktop_info | markdownify}}
@@ -165,7 +165,7 @@ To delete a Send from a Desktop App, open the **Edit Send** view and select the 
 
 To disable a Send from a Mobile App, open the **Edit Send** view and toggle the **Disable this Send so that no one can access it** option. You can toggle this option off at any time to re-enable access to the Send.
 
-{% image /send/send-disable-mobile.png Disable from a Mobile App %}
+{% image send/send-disable-mobile.png Disable from a Mobile App %}
 
 When a Send is disabled:
 
@@ -177,7 +177,7 @@ When a Send is disabled:
 
 To delete a Send from a Mobile App, tap the menu icon ( {% icon fa-ellipsis-v %} or {% icon fa-ellipsis-h %} ) and tap the **Delete** option:
 
-{% image /send/send-delete-mob.png Delete from a Mobile App %}
+{% image send/send-delete-mob.png Delete from a Mobile App %}
 
 {% endcapture %}
 {{ mobile_info | markdownify}}

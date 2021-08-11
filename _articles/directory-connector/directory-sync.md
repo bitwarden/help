@@ -18,7 +18,7 @@ Directory Connector will issue invitations to synced users, however it will not 
 Directory Connector functionality is available to **Teams** and **Enterprise** Organizations. To use Directory Connector, you must have access to your [Organization API Key]({{site.baseurl}}/article/public-api/#authentication) which can only be retrieved by an [Organization Owner]({{site.baseurl}}/article/user-types-access-control/) and securely shared using [Bitwarden Send]({{site.baseurl}}/article/about-send/).
 {% endcallout %}
 
-{% image /directory-connector/dc-diagram.png %}
+{% image directory-connector/dc-diagram.png %}
 
 A Directory Connector sync operation can be run on-demand or automatically on a configured interval. Directory Connector applications can be installed as an agent on the server that hosts your directory, an administrator's workstation, or any other desktop device that can access the source directory.
 

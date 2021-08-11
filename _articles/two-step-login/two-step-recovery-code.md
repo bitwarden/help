@@ -24,7 +24,7 @@ To get your Recovery Code from your [Web Vault](https://vault.bitwarden.com){:ta
 2. Select **Two-step Login** from the left-side Settings menu.
 3. Select the **View Recovery Code** button near the top of the screen. You'll be prompted to enter your Master Password, which will open a Recovery Code panel:
 
-   {% image /two-step/recoverycode.png Sample Recovery Code %}
+   {% image two-step/recoverycode.png Sample Recovery Code %}
 
 Save your Recovery Code in the way that makes the most sense for you. Believe it or not, printing your code and keeping it somewhere safe is one of the best ways to ensure that the code isn't vulnerable to theft or inadvertent deletion.
 
@@ -48,7 +48,7 @@ Once used, you'll need to:
 {% callout info %}
 Recovery Codes **won't disable Duo for Organizations**. You can tell that a Duo prompt is Organization-wide by the **(Organization)** header, as in the following screenshot:
 
-{% image /two-step/duo/duo-orgs.png Duo (Organization)%}
+{% image two-step/duo/duo-orgs.png Duo (Organization)%}
 
 If you're locked out of your Vault by a **Duo (Organization)** prompt, reach out to the Duo Administrator at your company for help bypassing the prompt.
 {% endcallout %}

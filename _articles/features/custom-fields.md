@@ -63,7 +63,7 @@ Prefixing your custom field's name with `regex=` allows you to perform [regular 
 
 Follow this procedure to correctly configure a custom field for auto-fill. This example uses Google Chrome for its Developer Tools.
 
-{% image /features/custom-fields/custom_field.gif %}
+{% image features/custom-fields/custom_field.gif %}
 
 1. On the webpage that matches the Login item's URI, right-click the field you want to auto-fill to and select **Inspect**.
 
@@ -71,9 +71,9 @@ Follow this procedure to correctly configure a custom field for auto-fill. This 
 2. Find and copy the element `id` (find `id="xxx"`, where `xxx` is the element's `id` value).
 3. In the relevant Vault item's **Custom Fields** section, choose the appropriate field type and select the {% icon fa-plus %} **New Custom Field** button:
 
-   {% image /features/custom-fields/types.png Select custom field type%}
+   {% image features/custom-fields/types.png Select custom field type%}
 4. Paste the copied element `id` in the **Name** field.
 5. Specify the desired information to be auto-filled (in the above example, a PIN) in the **Value** field.
 
-   {% image /features/custom-fields/custom-field-eg.png Custom field example %}
+   {% image features/custom-fields/custom-field-eg.png Custom field example %}
 6. Save the Vault item.

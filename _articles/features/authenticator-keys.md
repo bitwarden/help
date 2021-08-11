@@ -47,7 +47,7 @@ Once setup, Bitwarden Authenticator will continuously generate 6-digit TOTPs rot
 
 Bitwarden Mobile applications and Browser Extensions will automatically copy the TOTP code to your device's clipboard after Auto-fill, unless the **Enable Auto-fill on Page Load** option is active. Paste from your clipboard immediately after successful Auto-fill to use your TOTP or (if you're using a Browser Extension) use the context menu:
 
-{% image /two-step/be-totpcopy.png Browser Extension Context Menu %}
+{% image two-step/be-totpcopy.png Browser Extension Context Menu %}
 
 {% callout success %}Automatic TOTP copying can be toggled off under **Settings** &rarr; **Options** &rarr; **Disable Automatic TOTP Copy**.{% endcallout %}
 

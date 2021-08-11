@@ -11,13 +11,13 @@ order: 01
 
 We're thrilled to be a part of your secure password management journey. To create a Bitwarden account, click the **Get Started** button on our homepage, or click [**here**](https://vault.bitwarden.com/#/register).
 
-{% image /getting-started/get-started-homepage-overlay.png Bitwarden Homepage%}
+{% image getting-started/get-started-homepage-overlay.png Bitwarden Homepage%}
 
 ## Create Account Screen
 
 Once you've clicked the link, the following screen will appear. Fill out all fields (*Master Password Hint* is optional) and click **Submit** when you're finished.
 
-{% image /getting-started/create-account-screen-overlay.png Create Account screen%}
+{% image getting-started/create-account-screen-overlay.png Create Account screen%}
 
 ## Verify Your Email
 

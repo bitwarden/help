@@ -18,14 +18,14 @@ Complete the following steps to use Login with SSO to authenticate into your Bit
 1. Open your Bitwarden App or navigate to the Bitwarden Web Vault.
 2. Select the **Enterprise Single Sign-On** button.
 
-   {% image /sso/sso-button-lg.png Enterprise Single Sign-On button %}
+   {% image sso/sso-button-lg.png Enterprise Single Sign-On button %}
 
 3. Enter your **Organization Identifier** and select **Log In**.
 
    {% callout info %}We recommend bookmarking this page with your Organization Identifier included as a query string so that you don't have to enter it each time, for example `https://vault.bitwarden.com/#/sso?identifier=your-org-id` or `https://your.domain.com/#/sso?identifier=your-org-id`.
    {% endcallout %}
 
-   {% image /sso/org-id-input.png Organization Identifier field %}
+   {% image sso/org-id-input.png Organization Identifier field %}
 
    A browser window will open prompting you to enter your SSO credentials or other required authentication mechanisms.
 

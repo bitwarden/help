@@ -160,7 +160,7 @@ It may take up to 15 minutes for permissions for your application to properly pr
 If you get the error message `Resource <user id> does not exist or one of its queried reference-property objects are not present`, you'll need to permanently delete or restore the user(s) with `<user id>`. **Please note**, this was fixed in a recent version of Directory Connector. Update your application if you're still experiencing this error.
 {% endcallout %}
 
-{% image /directory-connector/okta/dc-okta-test.png Test sync results %}
+{% image directory-connector/okta/dc-okta-test.png Test sync results %}
 
 ## Start Automatic Sync
 

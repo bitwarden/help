@@ -17,7 +17,7 @@ This article details *one recommended* implementation to set partners and their 
 
 Bitwarden Organizations relate users and Vault items together for [secure sharing]({{site.baseurl}}/article/share-to-a-collection/) of Logins, Notes, Cards, and Identities. Organizations could be a family, team, company or any group of people that needs to securely share data. Organizations have a unique Vault, where [administrators]({{site.baseurl}}/article/user-types-access-control/) can manage the Organization's items, users, and settings:
 
-{% image /organizations/org-vault-admin.png Organization Vault %}
+{% image organizations/org-vault-admin.png Organization Vault %}
 
 An MSP should [create an Organization]({{site.baseurl}}/article/about-organizations/#create-an-organization) **for each client**, or the client can create one for themselves. There are a few [types of Organizations]({{site.baseurl}}/article/about-organizations/#types-of-organizations) you can choose from to best fit your client's needs. For the most robust set of business features, we recommend [Enterprise Plans]({{site.baseurl}}/article/about-bitwarden-plans/#enterprise-organizations).
 
@@ -37,7 +37,7 @@ Bitwarden Organizations are designed to manage users and data in a scalable and 
 
 Collections gather together Logins, Notes, Cards, and Identities for [secure sharing]({{site.baseurl}}/article/share-to-a-collection) within an Organization. Some common methods for constructing scalable Collections include **Collections by Department** (i.e. users from the client's Marketing Team are assigned to a Marketing Collection), or **Collections by Function** (i.e. users from the client's Marketing Team are assigned to a Social Media Collection):
 
-{% image /organizations/collections-graphic-1.png Collections %}
+{% image organizations/collections-graphic-1.png Collections %}
 
 [Learn how to create Collections]({{site.baseurl}}/article/about-collections/#create-a-collection).
 
@@ -45,7 +45,7 @@ Collections gather together Logins, Notes, Cards, and Identities for [secure sha
 
 Teams and Enterprise Organizations can also institute Groups, which relate together individual users to provide a scalable way to assign permissions, including access to [Collections]({{site.baseurl}}/article/about-collections) and other [access controls]({{site.baseurl}}/article/user-types-access-control/#access-control). One common Group-Collection methodology is to create **Groups by Department** and **Collections by Function**, for example:
 
-{% image /organizations/collections-graphic-2.png Groups %}
+{% image organizations/collections-graphic-2.png Groups %}
 
 [Learn how to create Groups]({{site.baseurl}}/article/about-groups/#create-a-group).
 
@@ -57,7 +57,7 @@ With Collections now created, and a plan for connecting users to credentials usi
 
 MSP teams can manage Organization users manually or using Directory Connector to sync users and Groups from existing directory services (LDAP, AD, etc.). For most MSP clients, Directory Connector is the recommended method:
 
-{% image /directory-connector/dc-diagram.png Directory Connector %}
+{% image directory-connector/dc-diagram.png Directory Connector %}
 
 Prepare to onboard users by ensuring your Organization has the correct [number of user seats]({{site.baseurl}}/article/managing-users/#manage-user-seats). Then, onboard users:
 

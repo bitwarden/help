@@ -27,7 +27,7 @@ Complete the following steps to view any Vault Health Reports for your **Organiz
 1. Log in to the [Web Vault](https://vault.bitwarden.com){:target-"\_blank"} and open your Organization.
 2. In your Organization, open the **Tools** tab.
 
-   {% image /features/reports/tools-section.png Organization Reports %}
+   {% image features/reports/tools-section.png Organization Reports %}
 3. Select a report from the **Reports** section of the left menu.
 
 ## Available Reports
@@ -74,7 +74,7 @@ Two-factor Authentication (2FA) is an important security step that helps secure 
 
 Once identified, setup 2FA using the `Instructions` hyperlink for each offending item:
 
-{% image /features/reports/inactive-2fa.png %}
+{% image features/reports/inactive-2fa.png %}
 
 ### Data Breach Report (*Personal Vaults only*)
 

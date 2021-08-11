@@ -24,22 +24,22 @@ Designate any Vault item as a **Favorite** when you initially create it, or at a
 
 On the Add Item or Edit Item screen, select the {% icon fa-star %} **Star** icon in the bottom-right corner and **Save** the item:
 
-{% image /favorites/favorite_webvault_cropped.gif %}
+{% image favorites/favorite_webvault_cropped.gif %}
 
 ### In Browser Extensions
 
 On the Add Item or Edit Item screen, check the **Favorite** checkbox and **Save** the item:
 
-{% image /favorites/favorite_extension_cropped.gif %}
+{% image favorites/favorite_extension_cropped.gif %}
 
 ### In Desktop Applications
 
 On the Add Item or Edit Item screen, check the **Favorite** checkbox and **Save** the item:
 
-{% image /favorites/favorite_desktop_cropped.gif %}
+{% image favorites/favorite_desktop_cropped.gif %}
 
 ### In Mobile Apps
 
 On the Add Item or Edit Item screen, toggle the **Favorite** switch and **Save** the item:
 
-{% image /favorites/favorite_mobile.gif %}
+{% image favorites/favorite_mobile.gif %}

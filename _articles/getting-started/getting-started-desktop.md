@@ -11,7 +11,7 @@ order: 05
 
 Bitwarden's Desktop App brings a full Vault experience straight out of your browser and into your desktop. Using a 3-column layout, the Bitwarden Desktop App is designed to help you quickly locate the Vault item you want to use or edit:
 
-{% image /getting-started/desktop-app2.png Bitwarden Desktop App%}
+{% image getting-started/desktop-app2.png Bitwarden Desktop App%}
 
 - The left-most column contains your **Vault Filters**. Vault items are sorted into Types (*Login*, *Card*, *Identity*, or *Secure Note*), Folders, and Collections if you're a member of an Organization.
 
@@ -81,13 +81,13 @@ Windows Hello must be enabled on your computer **before** it can be enabled in B
 1. In your Desktop App, select **File** &rarr; **Settings**.
 2. In the Security section, an **Unlock with Windows Hello** option will appear if Windows Hello is supported and enabled on your computer:
 
-   {% image /biometrics/windows.png Windows unlock options %}
+   {% image biometrics/windows.png Windows unlock options %}
 
    Check the **Unlock with Windows Hello** option to proceed. Your computer will prompt you to input your biometric.
 
 Once enabled, a new button will be presented on the Unlock screen. Selecting **Unlock with Windows Hello** will prompt you to input your biometric to initiate unlock.
 
-{% image /biometrics/hello-unlock.png Unlock with Windows Hello %}
+{% image biometrics/hello-unlock.png Unlock with Windows Hello %}
 
 ### Start Bitwarden Automatically
 
@@ -147,13 +147,13 @@ Touch ID must be enabled on your computer **before** it can be enabled in Bitwar
 1. From the macOS menu bar, select **Bitwarden** &rarr; **Preferences**.
 2. In the Security section, an **Unlock with Touch ID** option will appear if Touch ID is supported and enabled on your computer:
 
-   {% image /getting-started/macos-bio1.png macOS unlock options%}
+   {% image getting-started/macos-bio1.png macOS unlock options%}
 
    Check the **Unlock with Touch ID** checkbox to proceed. Your computer will prompt your to input your fingerprint to confirm.
 
 Once enabled, a new button will be presented on the Unlock screen. Selecting **Unlock with Touch ID** will prompt you to input your fingerprint and initiate unlock once authenticated.
 
-{% image /getting-started/macos-bio2.png Unlock with Touch ID %}
+{% image getting-started/macos-bio2.png Unlock with Touch ID %}
 
 ### Start Bitwarden Automatically
 

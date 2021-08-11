@@ -24,7 +24,7 @@ Bitwarden Browser Extensions integrate password management directly into your fa
 **The Safari Browser Extension is packaged with the Desktop Application**, available for download from the App Store. For more information, see [Safari App Extension]({% link _articles/account/install-safari-app-extension.md %}).
 {% endcallout %}
 
-{% image /getting-started/browserext/browserext-vault.png Bitwarden Browser Extension in Google Chrome %}
+{% image getting-started/browserext/browserext-vault.png Bitwarden Browser Extension in Google Chrome %}
 
 ## Explore your Vault
 
@@ -56,7 +56,7 @@ For more information, see [Folders]({% link _articles/features/folders.md %}) an
 
 Any time you log in to a website that doesn't already have a Login item saved for it, Bitwarden will offer to remember the login information for you:
 
-{% image /getting-started/browserext/browserext-add.png %}
+{% image getting-started/browserext/browserext-add.png %}
 
 Selecting **Yes, Save Now** will automatically add a Login item to your Vault with the entered username, password, and URI. If you're unfamiliar with using URIs, see [Using URIs]({% link _articles/features/uri-match-detection.md %}).
 
@@ -68,7 +68,7 @@ You can disable this banner by selecting the **Disable Add Login Notification** 
 
 You can launch a website directly from the Bitwarden Browser Extension by selecting the {% icon fa-share-square %} **Launch** button in any Vault item with a valid URI. If you're unfamiliar with using URIs, see [Using URIs]({% link _articles/features/uri-match-detection.md %}).
 
-{% image /getting-started/browserext/browserext-launch.png %}
+{% image getting-started/browserext/browserext-launch.png %}
 
 ## Auto-fill Login Information
 
@@ -76,7 +76,7 @@ Bitwarden Browser Extensions have a unique **Tab** view, which automatically det
 
 When a Vault item has a corresponding URI, the Bitwarden icon will overlay a notification bubble reporting the number of Vault items for that web page (*pictured below*).
 
-{% image /getting-started/browserext/browserext-tab.png %}
+{% image getting-started/browserext/browserext-tab.png %}
 
 Simply clicking on the Vault item inside the Browser Extension will auto-fill login information to the detected input fields.
 

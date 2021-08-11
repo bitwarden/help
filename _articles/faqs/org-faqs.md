@@ -59,7 +59,7 @@ Like with any software, running old versions may present a security risk.
 **A:** To unshare an item:
   1. Clone the item back to your Personal Vault by navigating to your Organization Vault and selecting **Clone** from the gear dropdown for the item you want to clone. Only users with User Type **Admin** or higher can only clone items into their Personal Vault by changing the **Ownership** setting.
 
-     {% image /organizations/clone-org-item.png %}
+     {% image organizations/clone-org-item.png %}
 2. Delete the item from the Organization Vault by selecting **Delete** from the same gear dropdown.
 
 Alternatively, you can unshare items by moving them to a different Collection with higher Access Control restrictions.
