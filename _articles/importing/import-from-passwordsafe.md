@@ -19,14 +19,14 @@ Complete the following steps to export data from the Password Safe Desktop App:
 2. Locate the **Export** option on the left-hand side and then choose **Passwords**.
 
 3. For the type please select `CSV` and enter a path to save the exported file. Leave the encoding at UTF-8.
-   {% image /importing/passwordsafeV8-export.png Export from Desktop App %}
+   {% image importing/passwordsafeV8-export.png Export from Desktop App %}
 
 4. Click on the big gray arrow on the right to proceed to the export settings screen
 
 5. Set the separating character to **Semicolon**
 6. Set the text qualifier to **`"`**(double quote)
 7. Check the checkbox to keep the column headers
-   {% image /importing/passwordsafeV8-exportsettings.png Export settings screen from Desktop App %}
+   {% image importing/passwordsafeV8-exportsettings.png Export settings screen from Desktop App %}
 
 8. Click **Finish** to start the export.
    {% callout warning %}Please note that Password Safe will export a `.csv` for **every** category you have and not just a single `.csv`.

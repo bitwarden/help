@@ -18,7 +18,7 @@ Bitwarden Browser Extensions have a unique **Tab** view, which automatically det
 
 When a Vault item has a corresponding URI, the Bitwarden icon will overlay a badge counter reporting the number of Vault items for that web page (*pictured below*).
 
-{% image /getting-started/browserext/browserext-tab.png Badge Counter %}
+{% image getting-started/browserext/browserext-tab.png Badge Counter %}
 
 {% callout success %}
 If you want, you can disable the badge counter using a toggle in the {% icon fa-cogs %} **Settings** &rarr; **Options** menu:
@@ -40,7 +40,7 @@ Currently unavailable in the Safari Browser Extension.
 
 Without opening your Browser Extension, you can right-click on the username or password input field and use the **Bitwarden** &rarr; **Auto-fill** option. Your Vault must be unlocked for this option to be available.
 
-{% image /getting-started/browserext/browserext-context.png %}
+{% image getting-started/browserext/browserext-context.png %}
 
 ## Using Keyboard Shortcuts
 

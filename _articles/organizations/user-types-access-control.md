@@ -55,7 +55,7 @@ As an example, the Custom role allows for the creation of a user that can fully 
 
 Access Control determines access to Collections, as well as permissions within each individual Collection:
 
-{% image /organizations/collection-access-control.png Configure Access Control options %}
+{% image organizations/collection-access-control.png Configure Access Control options %}
 
 {% callout info %}
 Recall that [Admins and Owners](#user-types) can automatically access all Collections. For these user types, configuring Access Control will determine **which Collections are readily accessible** in their Personal Vault and client applications (Browser Extension, Mobile, etc.). Admins and Owners will still be able to access "unassigned" Collections from the Organization Vault.

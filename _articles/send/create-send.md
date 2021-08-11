@@ -41,7 +41,7 @@ Complete the following steps to create a new Send from the Bitwarden [Web Vault]
    This view will list all Sends that haven't reached their [deletion date]({{site.baseurl}}/article/send-lifespan/#deletion-date). Like the **My Vault** view, you can filter your Sends by selecting one of the available **Types**.
 2. To start creating a new Send, select the {% icon fa-plus %} **Create New Send** button:
 
-   {% image /send/send-create-webvault.png Send View in the Web Vault %}
+   {% image send/send-create-webvault.png Send View in the Web Vault %}
 3. On the **Create New Send** dialog, specify the following to create the contents of your Send:
 
    - **What type of Send is this?**: Specify whether this Send will be **Text** or a **File**:
@@ -69,7 +69,7 @@ Complete the following steps to create a new Send from the Bitwarden [Web Vault]
 
 Once your Send is created, use the hover-over {% icon fa-cog %} gear dropdown and select the {% icon fa-copy %} **Copy Send link** button to copy the generated link to your clipboard:
 
-{% image /send/send-from-webvault.png Copy a Send link %}
+{% image send/send-from-webvault.png Copy a Send link %}
 
 Once copied, share your Send link with intended recipients however you prefer. Sends are end-to-end encrypted, so you don't need to worry about exposing any Send data to whatever intermediary communications services you use.
 
@@ -87,7 +87,7 @@ Complete the following steps to create a new Send from a Bitwarden Browser Exten
    This view will list all Sends that haven't reached their [deletion date]({{site.baseurl}}/article/send-lifespan/#deletion-date). Like the {% icon fa-lock %} **My Vault** view, you can filter your Sends by selecting one of the available **Types**.
 2. To start creating a new Send, select the {% icon fa-plus %} **Add** icon:
 
-   {% image /send/send-browserext.png Send View in a Browser Extension %}
+   {% image send/send-browserext.png Send View in a Browser Extension %}
 
 3. On the **Add Send** view, specify the following to create the contents of your Send:
 
@@ -115,7 +115,7 @@ Complete the following steps to create a new Send from a Bitwarden Browser Exten
 
 Once your Send is created, select the {% icon fa-copy %} **Copy Link** icon to copy the generated link to your clipboard:
 
-{% image /send/send-be-share.png Copy a Send link %}
+{% image send/send-be-share.png Copy a Send link %}
 
 Once copied, share your Send link with intended recipients however you prefer. Sends are end-to-end encrypted, so you don't need to worry about exposing any Send data to whatever intermediary communications services you use.
 
@@ -133,7 +133,7 @@ Complete the following steps to create a new Send from a Bitwarden Desktop App:
    The center column will list all Sends that haven't reached their [deletion date]({% link _articles/send/send-lifespan.md %}). Like the {% icon fa-lock %} **My Vault** view, you can filter your Sends by selecting one of the available **Types** from the left-most column.
 2. To start creating a new Send, select the {% icon fa-plus %} **Add** icon in at the bottom of the center column.
 
-    {% image /send/send-desktop-add.png Send view in a Desktop App %}
+    {% image send/send-desktop-add.png Send view in a Desktop App %}
 3. In the right-most column, specify the following to create the contents of your Send:
 
    - **Name**: Specify an identifiable, meaningful name for this Send.
@@ -160,7 +160,7 @@ Complete the following steps to create a new Send from a Bitwarden Desktop App:
 
 Once your Send is created, select the {% icon fa-copy %} **Copy Link** button to copy the generated link to your clipboard:
 
-{% image /send/send-desktop-share.png Copy a Send link %}
+{% image send/send-desktop-share.png Copy a Send link %}
 
 Once copied, share your Send link with intended recipients however you prefer. Sends are end-to-end encrypted, so you don't need to worry about exposing any Send data to whatever intermediary communications services you use.
 
@@ -178,7 +178,7 @@ Complete the following steps to create a new Send from Bitwarden Mobile App:
    This view will list all Sends that haven't reached their [deletion date]({% link _articles/send/send-lifespan.md %}). Like the {% icon fa-lock %} **My Vault** view, you can filter your Sends by tapping one of the available **Types**.
 2. To start creating a new Send, tap the {% icon fa-plus %} **Add** icon:
 
-   {% image /send/send-mobile.png Send View on iOS and Android%}
+   {% image send/send-mobile.png Send View on iOS and Android%}
 
 3. On the **Add Send** view, specify the following to create the contents of your Send:
 
@@ -207,7 +207,7 @@ Complete the following steps to create a new Send from Bitwarden Mobile App:
 
 Once your Send is created, tap the menu icon ( {% icon fa-ellipsis-v %} or {% icon fa-ellipsis-h %} ) and tap the **Share Link** option:
 
-{% image /send/send-share-mob.png Copy a Send link %}
+{% image send/send-share-mob.png Copy a Send link %}
 
 Share your Send link with intended recipients however you prefer. Sends are end-to-end encrypted, so you don't need to worry about exposing any Send data to whatever intermediary communications services you use.
 {% endcapture %}

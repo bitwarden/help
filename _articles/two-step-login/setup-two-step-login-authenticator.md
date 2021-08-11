@@ -31,7 +31,7 @@ Complete the following steps to enable Two-step Login using an authenticator app
 3. Select **Two-step Login** from the left-side menu.
 4. Locate the **Authenticator App** option and select the **Manage** button:
 
-   {% image /two-step/twostep-options-authoverlay.png Select the Manage button %}
+   {% image two-step/twostep-options-authoverlay.png Select the Manage button %}
    You will be prompted to enter your Master Password to continue.
 5. Scan the QR code with your authenticator app of choice.
 

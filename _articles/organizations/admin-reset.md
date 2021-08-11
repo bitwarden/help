@@ -73,7 +73,7 @@ If you're automatically enrolling Organization members in Admin Password Reset, 
 
 To enroll in Password Reset, navigate to **Settings** &rarr; **Organizations** in the [Web Vault](https://vault.bitwarden.com/){:target="\_blank"}:
 
-{% image /organizations/pwreset-enroll.png Enroll in Password Reset %}
+{% image organizations/pwreset-enroll.png Enroll in Password Reset %}
 
 Hover over the Organization you wish to enroll in Password Reset for, select the {% icon fa-cog %} gear dropdown, and choose **Enroll in Password Reset**. When you're enrolled in Password Reset, the Organization listing will display a {% icon fa-key %} key icon. You can enroll in Admin Password Reset for multiple Organizations, if you choose.
 
@@ -81,7 +81,7 @@ Hover over the Organization you wish to enroll in Password Reset for, select the
 
 Once enrolled, you can **Withdraw** from Password Reset from the same dropdown used to enroll:
 
-{% image /organizations/pwreset-withdraw.png Withdraw from Password Reset %}
+{% image organizations/pwreset-withdraw.png Withdraw from Password Reset %}
 
 Manually changing your Master Password or [rotating your encryption key]({{site.baseurl}}/article/account-encryption-key/) **will not** withdraw you from Admin Password Reset.
 
@@ -97,11 +97,11 @@ To reset a Master Password for a member of your Enterprise Organization:
 2. Open the **Manage** tab and navigate to the **People** section.
 3. Hover over the user whose Master Password you want to reset, select the {% icon fa-cog %} gear dropdown, and choose {% icon fa-key %} **Reset Password**:
 
-   {% image /organizations/pwreset-reset.png Reset Password %}
+   {% image organizations/pwreset-reset.png Reset Password %}
 
 4. On the Reset Password window, create a **New Password** for the user. If your Organization has enabled the [Master Password Policy]({{site.baseurl}}/article/policies/#master-password), you will need to create a password that meets the implemented requirements (e.g. min 8 characters, contains numbers):
 
-   {% image /organizations/pwreset-newpw.png Create a New Password %}
+   {% image organizations/pwreset-newpw.png Create a New Password %}
 
    Copy the new Master Password and contact the user to coordinate secure communication of it, for example using [Bitwarden Send]({{site.baseurl}}/article/create-send/).
 

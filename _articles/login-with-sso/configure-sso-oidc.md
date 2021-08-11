@@ -15,7 +15,7 @@ Users who [authenticate their identity using SSO]({{site.baseurl}}/article/sso-a
 1. Log in to your [Web Vault](https://vault.bitwarden.com){:target="\_blank"} and open your Organization.
 2. Open the **Settings** tab and enter a unique **Identifier** for your Organization.
 
-   {% image /sso/org-id.png Enter an Identifier %}
+   {% image sso/org-id.png Enter an Identifier %}
 3. **Save** your changes before exiting this page.
 
 {% callout success %}
@@ -28,7 +28,7 @@ Once you have your Organization Identifier, you can proceed to enabling and conf
 
 1. From your Organization Vault, navigate to the **Business Portal**:
 
-   {% image /organizations/business-portal-button-overlay.png Business Portal %}
+   {% image organizations/business-portal-button-overlay.png Business Portal %}
 
 2. From the Business Portal menu bar, check that the correct Organization is listed and select the **Single Sign-On** button:
 

@@ -22,11 +22,11 @@ Collections gather together Logins, Notes, Cards, and Identities for [secure sha
 
 For many Organizations, using Collections means adding a set of Vault items and individually assigning users to that Collection. Some common methods for constructing scaleable Collections include **Collections by Department** (i.e. users from your Marketing Team are assigned to a **Marketing** Collection), or **Collections by Function** (i.e. users from your Marketing Team are assigned to a **Social Media** Collection):
 
-{% image /organizations/collections-graphic-1.png Using Collections %}
+{% image organizations/collections-graphic-1.png Using Collections %}
 
 Teams and Enterprise Organizations can also designate access to Collections based on user [Groups]({{site.baseurl}}/article/about-groups/), rather than individual users. Group-Collection associations provide a deeper level of access control and scalability to sharing resources. One common Group-Collection methodology is to create **Groups by Department** and **Collections by Function**, for example:
 
-{% image /organizations/collections-graphic-2.png Using Collections with Groups%}
+{% image organizations/collections-graphic-2.png Using Collections with Groups%}
 
 Other common methodologies include **Collections by Vendor or System** (i.e. users in an **Engineering** Group are assigned to a **AWS Credentials** Collection) and **Groups by Locality** (i.e. users are assigned to a **US Employees** Group or **UK Employees** Group).
 
@@ -57,7 +57,7 @@ To create a nested Collection, follow the [steps above](#create-a-collection), b
 
 You may find that you need to add or remove users from a Collection, or delete it entirely. Both of these can be done from the **Manage** &rarr; **Collections** view by hovering over the desired Collection and selecting the {% icon fa-cog %} gear dropdown:
 
-{% image /organizations/collection-delete.png Change a Collection %}
+{% image organizations/collection-delete.png Change a Collection %}
 
 {% callout info %}
 Deleting a Collection **will not** delete the Vault items included in it. When a Collection is deleted, Vault items will be moved to the {% icon fa-cube %} **Unassigned** filter, accessible from the Organization Vault.

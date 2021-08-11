@@ -31,6 +31,6 @@ This article contains Frequently Asked Questions (FAQs) regarding **Two-step Log
 
 2. You may have previously checked the **Remember me** checkbox on a device when accessing your Vault using Two-step Login.
 
-   {% image /two-step/twostep-remember.png Remember me option %}
+   {% image two-step/twostep-remember.png Remember me option %}
 
    If you used the **Remember me** option, you will need to **Deauthorize Sessions** from your Web Vault (**Settings** &rarr; **My Account**) for that device to continue asking for your Two-step Login method.

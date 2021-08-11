@@ -37,7 +37,7 @@ To export your data from the LastPass Web Vault:
 
 1. Select the {% icon fa-rocket %} **Advanced Options** option on the left sidebar:
 
-   {% image /importing/lastpassadvancedoptions.png Export from Web Vault %}
+   {% image importing/lastpassadvancedoptions.png Export from Web Vault %}
 2. From the Manage Your Vault section, select the **Export** option.
 3. Enter your Master Password to validate the export attempt.
 
@@ -64,7 +64,7 @@ To export your data from a LastPass Browser Extension:
 
 1. In the Browser Extension, navigate to **Account Options** &rarr; **Advanced** &rarr; **Export** &rarr; **LastPass CSV File**:
 
-   {% image /importing/lp-be.png Export from Browser Extension %}
+   {% image importing/lp-be.png Export from Browser Extension %}
 2. Enter your Master Password to validate the export attempt.
 
    Depending on your browser, your Vault data will either be automatically saved as a `.csv` or printed to the screen in a `.csv` format:
@@ -99,7 +99,7 @@ Importing data to Bitwarden **can only be done from the** [**Web Vault**](https:
 
 The following error messages, typically received when attempting to import a `.csv`, indicate that an item in your import file has a specified value that exceeds the allowed **encrypted** character limit for its field type:
 
-{% image /importing/ciphererror_2021.png Cipher errors in the Web Vault%}
+{% image importing/ciphererror_2021.png Cipher errors in the Web Vault%}
 
 To solve this issue, open the `.csv` file in a text editor or spreadsheet program and **remove** or **reduce the character count** of the offending item. Bitwarden won't import your `.csv` file until it is free of offenses. The contents of the error messages contain several pieces of pertinent data to help you identify the offending item. For example, in the above example:
 
@@ -117,7 +117,7 @@ If you continue to have trouble locating the offending item using the data provi
 
 When importing Lastpass `.csv` exports to a [Free Organization]({% link _articles/plans-and-pricing/about-bitwarden-plans.md %}), you may observe the following error:
 
-{% image /importing/lpcollectionserror.png Free Organization Max Collections Error%}
+{% image importing/lpcollectionserror.png Free Organization Max Collections Error%}
 
 This error occurs when the Lastpass export contains 3 or more `grouping` values. The values in the `grouping` field are interpreted by Bitwarden as [Collections]({% link _articles/organizations/about-collections.md %}), however [Free Organizations]({% link _articles/plans-and-pricing/about-bitwarden-plans.md %}) are limited to only two Collections. The following `.csv`, for example, would cause this error:
 

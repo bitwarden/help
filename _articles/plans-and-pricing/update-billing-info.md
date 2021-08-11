@@ -20,7 +20,7 @@ Complete the following steps to update the billing information for your individu
 
 1. In the [Web Vault](https://vault.bitwarden.com), select **Settings** from the top navigation bar.
 
-   {% image /plans-and-pricing/billing-individual-overlay.png Select Billing %}
+   {% image plans-and-pricing/billing-individual-overlay.png Select Billing %}
 
 2. Select **Billing** from the left menu.
 
@@ -37,7 +37,7 @@ Complete the following steps to update the billing information for your Organiza
 
 1. In the [Web Vault](https://vault.bitwarden.com), select your Organization.
 
-   {% image /organizations/open-org-overlay.png Open your Organization %}
+   {% image organizations/open-org-overlay.png Open your Organization %}
 
 2. In your Organization, select the **Settings** tab.
 3. On the Settings screen, select **Billing** from the left menu.

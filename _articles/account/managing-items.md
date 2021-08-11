@@ -32,7 +32,7 @@ Effectively managing the items in your Vault is key to making sure that you secu
 
 Login items are most often used to store username and password combinations, and support [TOTP seeds]({{site.baseurl}}/article/authenticator-keys/) for Premium users. Whatever plan you're on, we recommend giving every Login a [URI for easy auto-fill]({{site.baseurl}}/article/uri-match-detection):
 
-{% image /manage-items/login-item.png Login Vault Item %}
+{% image manage-items/login-item.png Login Vault Item %}
 
 {% endcapture %}
 {{ logins | markdownify }}
@@ -43,7 +43,7 @@ Login items are most often used to store username and password combinations, and
 
 Card items can be used to store credit or debit card information:
 
-{% image /manage-items/card-item.png Card Vault Item %}
+{% image manage-items/card-item.png Card Vault Item %}
 
 {% endcapture %}
 {{ cards | markdownify }}
@@ -54,7 +54,7 @@ Card items can be used to store credit or debit card information:
 
 Identities can be used to store billing info, mailing info, or anything else you might need to have access to when filling out online forms:
 
-{% image /manage-items/identity-item.png Identity Vault Item %}
+{% image manage-items/identity-item.png Identity Vault Item %}
 
 {% endcapture %}
 {{ identities | markdownify }}
@@ -65,7 +65,7 @@ Identities can be used to store billing info, mailing info, or anything else you
 
 Secure Notes can be used to store encrypted freeform text for anything you want protected:
 
-{% image /manage-items/note-item.png Secure Note Vault Item %}
+{% image manage-items/note-item.png Secure Note Vault Item %}
 
 {% endcapture %}
 {{ notes | markdownify }}
@@ -103,7 +103,7 @@ You can add, edit, and delete Vault items from any Bitwarden client application:
 {% capture wv %}
 ### Web Vault
 
-{% image /manage-items/manage-webvault.png Manage an Item %}
+{% image manage-items/manage-webvault.png Manage an Item %}
 
 {% endcapture %}
 {{ wv | markdownify }}
@@ -112,7 +112,7 @@ You can add, edit, and delete Vault items from any Bitwarden client application:
 {% capture be_sync %}
 ### Browser Extensions
 
-{% image /manage-items/manage-be.png Manage an Item %}
+{% image manage-items/manage-be.png Manage an Item %}
 
 {% endcapture %}
 {{ be_sync | markdownify }}
@@ -121,9 +121,9 @@ You can add, edit, and delete Vault items from any Bitwarden client application:
 {% capture mob_sync%}
 ### Mobile Apps
 
-{% image /manage-items/manage-mobile-1.png Add or Open an Item %}
+{% image manage-items/manage-mobile-1.png Add or Open an Item %}
 
-{% image /manage-items/manage-mobile-2.png Manage an Item %}
+{% image manage-items/manage-mobile-2.png Manage an Item %}
 
 
 {% endcapture %}
@@ -133,7 +133,7 @@ You can add, edit, and delete Vault items from any Bitwarden client application:
 {% capture desk_sync%}
 ### Desktop Apps
 
-{% image /manage-items/manage-desktop.png Manage an Item %}
+{% image manage-items/manage-desktop.png Manage an Item %}
 
 {% endcapture %}
 {{ desk_sync | markdownify }}
@@ -159,7 +159,7 @@ Deleted items are sent to the Trash, where they remain for 30 days after deletio
 
 In the Trash, you can **Restore** an item to your Vault or **Permanently Delete** it prior to the 30-day waiting period:
 
-{% image /manage-items/item-trash-restore-delete.png The Trash %}
+{% image manage-items/item-trash-restore-delete.png The Trash %}
 
 ### Protect Individual Items
 
@@ -169,7 +169,7 @@ For any given Vault item, you can activate the **Master password re-prompt** opt
 Master password re-prompt **is not** an encryption mechanism. This feature is an interface-only guardrail that a sophisticated user may find ways to work around. We recommend **never** leaving your Vault unlocked when unattended or on a shared workstation.
 {% endcallout %}
 
-{% image /manage-items/reprompt.gif Master Password Reprompt %}
+{% image manage-items/reprompt.gif Master Password Reprompt %}
 
 ## Share Vault Items
 

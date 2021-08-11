@@ -162,7 +162,7 @@ When you're done with the Identity Provider Configuration section, **Save** your
 
 Once your configuration is complete, test it by navigating to [https://vault.bitwarden.com](https://vault.bitwarden.com){:target="\_blank"} and selecting the **Enterprise Single-On** button:
 
-{% image /sso/sso-button-lg.png Enterprise Single Sign-On button %}
+{% image sso/sso-button-lg.png Enterprise Single Sign-On button %}
 
 Enter the [configured Organization Identifier]({{site.baseurl}}/article/configure-sso-saml/#step-1-set-an-organization-identifier) and select **Log In**. If your implementation is successfully configured, you'll be redirected to the AD FS SSO login screen. After you authenticate with your AD FS credentials, enter your Bitwarden Master Password to decrypt your Vault!
 

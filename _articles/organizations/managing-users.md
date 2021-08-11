@@ -56,7 +56,7 @@ To invite users to your Organization:
 2. Open the **Manage** tab and select **People** from the left-hand menu.
 3. Select the {% icon fa-plus %} **Invite User** button:
 
-   {% image /organizations/org-people-invite.png Invite User %}
+   {% image organizations/org-people-invite.png Invite User %}
 4. On the Invite User panel:
 
    - Enter the **Email** address where new users should receive invites. You can add up to 20 users at a time by comma-separating email addresses.
@@ -67,7 +67,7 @@ To invite users to your Organization:
 {% callout info %}
 **Invitations expire after 5 days**, at which point the user will need to be re-invited. Re-invite users in bulk by selecting each user and using the {% icon fa-cog %} gear dropdown to **Resend Invitations**:
 
-{% image /organizations/org-people-reinvite.png Bulk Reinvite %}
+{% image organizations/org-people-reinvite.png Bulk Reinvite %}
 
 If you're self-hosting Bitwarden, you can configure the invitation expiration period [using an environment variable]({{site.baseurl}}/article/environment-variables/).
 {% endcallout %}  

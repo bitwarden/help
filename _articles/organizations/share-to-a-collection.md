@@ -21,7 +21,7 @@ Organization members can share items to any assigned Collection(s) unless they'r
 
 1. Hover over the item you want to share and select the {% icon fa-cog %} gear dropdown:
 
-   {% image /organizations/share-from-vault-overlay.png Select the gear dropdown %}
+   {% image organizations/share-from-vault-overlay.png Select the gear dropdown %}
 
 2. From the dropdown, select the {% icon fa-share-alt %} **Share** option.
 3. On the **Share** screen:
@@ -33,7 +33,7 @@ Organization members can share items to any assigned Collection(s) unless they'r
 
 Sharing an item **will transfer ownership to the Organization**. This means that anyone with permission can alter the item or delete it, which would remove it from your Vault as well. You can tell that an item is shared when it has the {% icon fa-share-alt %} **Shared** icon next to its name:
 
-{% image /organizations/collection-shared-item.png Shared Item icon %}
+{% image organizations/collection-shared-item.png Shared Item icon %}
 
 ## Create a Shared Item
 
@@ -63,7 +63,7 @@ To create a new shared item:
 
 Creating a shared item **will set ownership to the Organization**. This means that anyone with permission can alter the item or delete it, which would remove it from your Vault as well. You can tell that an item is shared when it has the {% icon fa-share-alt %} **Shared** icon next to its name:
 
-{% image /organizations/collection-shared-item.png Shared Item icon %}
+{% image organizations/collection-shared-item.png Shared Item icon %}
 
 {% endcapture %}
 {{ personal | markdownify }}
@@ -83,7 +83,7 @@ To create a new shared item:
 
 Creating a shared item or sharing an item **will set ownership to the Organization**. This means that anyone with permission can alter the item or delete it, which would remove it from your Vault as well. You can tell that an item is shared when it has the {% icon fa-share-alt %} **Shared** icon next to its name:
 
-{% image /organizations/collection-shared-item.png Shared Item icon %}
+{% image organizations/collection-shared-item.png Shared Item icon %}
 
 {% endcapture %}
 {{ organization | markdownify }}

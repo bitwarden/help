@@ -67,7 +67,7 @@ As a grantor, complete the following steps to invite a trusted emergency contact
 3. Select **Emergency Access** from the left-hand Settings menu.
 4. Select the {% icon fa-plus %} **Add emergency contact** button. In the Invite Emergency Contact window:
 
-   {% image /features/emergency-access/ea-invite.png Add emergency contact%}
+   {% image features/emergency-access/ea-invite.png Add emergency contact%}
    - Enter the **Email** of your trusted emergency contact. Trusted emergency contacts must have Bitwarden accounts of their own, but don't need to have Premium.
    - Set a **User Access** level for the trusted emergency contact ([View-only or Takeover](#user-access)).
    - Set a **Wait Time** for Vault access. Wait Time dictates how long your trusted emergency contact must wait to access your Vault after initiating an emergency access request.
@@ -83,7 +83,7 @@ As a grantee, complete the following steps to accept an invitation to become a t
 
 1. In the received email invitation, select the **Become emergency contact** button in the email to open an Emergency Access acceptance page in your Browser:
 
-   {% image /features/emergency-access/ea-invitation.png Emergency access invitation %}
+   {% image features/emergency-access/ea-invitation.png Emergency access invitation %}
 2. Log in to your Bitwarden account to accept the invitation. If you don't already have a Bitwarden account, you'll need to create one.
 
 ### Confirm an Accepted Invitation
@@ -97,7 +97,7 @@ As a grantor, complete the following steps to confirm an accepted invitation:
    In the **Trusted emergency contacts** section, the invited user should appear with an `Accepted` status card.
 4. Hovering over the user, select the gear icon and select **Confirm** from the dropdown menu.
 
-   {% image /features/emergency-access/ea-confirm.png %}
+   {% image features/emergency-access/ea-confirm.png %}
 
 To ensure the integrity of your encryption keys, verify the displayed fingerprint phrase with the grantee before completing confirmation.
 
@@ -111,7 +111,7 @@ As a grantee, complete the following steps to initiate an emergency access reque
 4. In the **Designated as emergency contact** section, select the grantor whose Vault you wish to access.
 5. In the Request Access window, select the **Request Access** button.
 
-   {% image /features/emergency-access/ea-request.png Request Access%}
+   {% image features/emergency-access/ea-request.png Request Access%}
    You will be provided access to the grantor's Vault after the configured Wait Time, or when the grantor [manually approves](#approve-or-reject-emergency-access) the emergency access request.
 
 ### Approve or Reject Emergency Access
@@ -144,7 +144,7 @@ The steps to take to regain exclusive access to your Vault after using Emergency
 
 Trusted emergency contacts who are given **View** access will be able to view your Vault items once they are [approved](#approve-or-reject-emergency-access) and until their access is manually revoked. To manually revoke access, use the {% icon fa-cog %} **gear** dropdown to {% icon fa-times %} **Reject** access:
 
-{% image /features/emergency-access/ea-revoke.png Revoke Emergency Access %}
+{% image features/emergency-access/ea-revoke.png Revoke Emergency Access %}
 
 ### Revoke a Takeover
 

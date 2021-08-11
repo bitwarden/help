@@ -13,7 +13,7 @@ order: 02
 
 Your Web Vault is accessible from any modern web browser by navigating to [vault.bitwarden.com](https://vault.bitwarden.com){:target=\_blank}.
 
-{% image /getting-started/webvault.png The Bitwarden Web Vault %}
+{% image getting-started/webvault.png The Bitwarden Web Vault %}
 
 When your first log in to your Web Vault, you'll land on the **My Vault** view. This space will list all your Vault items, including Logins, Cards, Identities, and Secure Notes. To learn about these different types of items, see [Vault Items]({% link _articles/account/managing-items.md %}).
 
@@ -44,7 +44,7 @@ To add a new Login item:
 
    For most Login items, this should be the URL a webpage (e.g. `https://twitter.com/login`). If you don't know what URL to use, navigate to the website's login screen and copy it from your address bar.
 
-   {% image /getting-started/gs-uri.png Finding a URI %}
+   {% image getting-started/gs-uri.png Finding a URI %}
 6. From the **Folder** dropdown menu, select the name of the Folder you want to add this item to (e.g. the `Social Media Logins` folder we created earlier).
 
    Select the {% icon fa-star-o %} **Favorite** icon in the bottom-right of this panel if you want to add this item to your Favorites. The icon will fill-in ({% icon fa-star-o %} &rarr; {% icon fa-star %}) when it's marked as a Favorite.
@@ -69,7 +69,7 @@ Now that a new Login item is saved in your Vault, you can beef up its security b
    This will replace your **Password** value with a randomly generated strong password. Moving from a password like `Fido1234` to `X@Ln@x9J@&u@5n##B` can stop a would-be hacker in their tracks.
 6. Copy your new password with the same {% icon fa-copy %} **Copy** icon you used earlier, and hit the **Save** button.
 
-   {% callout success %}Don't worry about overwriting your existing password! If something goes wrong, Bitwarden maintains a **Password History** of the last 5 passwords for every Login item:<br><br>{% image /getting-started/pwhistory.png %}{% endcallout %}
+   {% callout success %}Don't worry about overwriting your existing password! If something goes wrong, Bitwarden maintains a **Password History** of the last 5 passwords for every Login item:<br><br>{% image getting-started/pwhistory.png %}{% endcallout %}
 7. Tab back over to the other website, and paste your strong password in the **New Password** and **Confirm new password** fields.
 8. Once you **Save** the password change, you're finished!
 
@@ -90,7 +90,7 @@ There are many [available methods]({% link _articles/two-step-login/setup-two-st
 3. From the left-side Settings menu, select **Two-step Login**.
 4. Locate the **Authenticator App** option and select the **Manage** button:
 
-   {% image /two-step/twostep-options-authoverlay.png Select the Manage Button %}
+   {% image two-step/twostep-options-authoverlay.png Select the Manage Button %}
 
    You'll be prompted to enter your Bitwarden Master Password to continue.
 5. On your mobile device, open Authy and tap the {% icon fa-plus %} **Add Account** button.
@@ -101,7 +101,7 @@ There are many [available methods]({% link _articles/two-step-login/setup-two-st
    Your Two-step Login Recovery code can be used in the event that you lose your mobile device. **This is a critical step to ensure you don't ever get locked out of your Vault**, so don't skip it!
 9. Enter your Master Password and select the **Continue** button to get your Recovery Code.
 
-   {% image /getting-started/recoverycode.png Example Recovery Code %}
+   {% image getting-started/recoverycode.png Example Recovery Code %}
 
 Save your Recovery Code in the way that makes the most sense for you. Believe it or not, printing your Recovery Code and keeping it somewhere safe is one of the best ways to make that the code isn't vulnerable to theft or inadvertent deletion.
 

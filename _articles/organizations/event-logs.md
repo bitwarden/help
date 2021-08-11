@@ -12,7 +12,7 @@ order: 13
 
 Event Logs are timestamped records of events that occur within your Organization. Event Logs are accessible to [Admins and Owners]({{site.baseurl}}/article/event-logs/) from the **Manage** tab of your Organization Vault:
 
-{% image /organizations/event-logs-updated.png Event Logs %}
+{% image organizations/event-logs-updated.png Event Logs %}
 
 Events Logs are [exportable](#export-events) and accessible from the `/events` endpoint of the [Bitwarden Public API](https://bitwarden.com/help/article/public-api/).
 
@@ -90,7 +90,7 @@ https://github.com/bitwarden/web/blob/master/src/locales/en/messages.json
 
 Exporting event logs will create a `.csv` of all events within the specified date range:
 
-{% image /organizations/event-logs-export.png Export Event Logs %}
+{% image organizations/event-logs-export.png Export Event Logs %}
 
 For example:
 
