@@ -6,7 +6,7 @@ featured: false
 popular: false
 hidden: false
 tags: []
-order: 01
+order: 02
 ---
 
 {% callout success %}
@@ -17,9 +17,9 @@ Interested in becoming a Provider? Sign up for the Provider Program using the re
 
 ## Why Bitwarden Providers?
 
-Managed Service Providers (MSPs), Resellers, and other businesses often need a way to quickly create and easily administer Bitwarden Organizations on behalf of business customers. **Providers** are administration entities that allow those businesses to create and manage [Client Organizations](#client-organization).
+Managed Service Providers (MSPs), Resellers, and other businesses often need a way to quickly create and easily administer Bitwarden Organizations on behalf of business customers. **Providers** are administration entities that allow those businesses to create and manage [Client Organizations](#client-organization) through the **Provider Portal**.
 
-[Service Users](#add-service-users) are Provider-specific users that can fully administer Organizations on behalf of their customers. With full access to each Client Organization from the **Provider Portal**, Providers can seamlessly protect and support customers while allowing them to focus on critical day-to-day operations:
+The Provider Portal is an all-in-one management experience that enables Providers to manage customers’ Bitwarden Organizations at scale. The Provider Portal streamlines administration tasks by centralizing a dedicated space to access and support each client, or to create a new one:
 
 {% image providers/provider.png Provider Portal %}
 
@@ -35,7 +35,7 @@ Selecting the **Setup Provider Now** button will prompt you to log in to Bitward
 
 ### Onboard Users
 
-As the creator of the Provider, you'll be automatically given [Provider Admin]({{site.baseurl}}/provider-users/#provider-user-types) status, allowing you to fully manage all aspects of the Provider and all [Client Organizations](#client-organizations).
+As the creator of the Provider, you'll be automatically given [Provider Admin]({{site.baseurl}}/provider-users/#provider-user-types) status, allowing you to fully manage all aspects of the Provider and all [Client Organizations](#client-organizations). Bitwarden strongly recommends that you provision a second Provider Admin for failover purposes.
 
 Now, begin adding your employees as [Service Users]({{site.baseurl}}/article/provider-users/#provider-user-types), which will allow them to fully administer all Client Organizations but create new ones or manage the Provider itself:
 

@@ -1,12 +1,12 @@
 ---
 layout: article
-title: Providers Overview
+title: Provider Portal Overview
 categories: [providers]
 featured: false
 popular: false
 hidden: false
 tags: []
-order: 02
+order: 01
 ---
 
 {% callout success %}
@@ -17,13 +17,18 @@ Interested in becoming a Provider? Sign up for the Provider Program using the re
 
 ## What are Providers?
 
-Providers are administration entities that allow Managed Service Providers (MSPs), Resellers, and other businesses to create and manage [Client Organizations](#client-organizations) for individual business customers. Provider members can fully administer Client Organizations on behalf of their customers. With full access to each Client Organization from the **Provider Portal**, Providers can seamlessly protect and support customers while allowing them to focus on critical day-to-day operations.
+Providers are administration entities in Bitwarden that allow Managed Service Providers (MSPs), Resellers, and other businesses to create and fully manage multiple [Client Organizations](#client-organizations) on behalf of individual business customers. Client Organization management is easily accessible through the **Provider Portal**:
 
-The Provider Portal's {% icon fa-bank %} **Clients** tab provides access to each Client Organization registered with the Provider as well as providing [Provider Admins]({{site.baseurl}}/article/provider-users/#user-types) the ability to create new Organizations:
+### What is the Provider Portal
+
+The Provider Portal is an all-in-one management experience that enables Providers to manage customers' Bitwarden Organizations at scale. The Provider Portal streamlines administration tasks by centralizing a dedicated space to access and support each client, or to create a new one:
 
 {% image providers/provider.png Provider Portal %}
 
-Provider Admins can also use the {% icon fa-sliders %} **Manage** and {% icon fa-cogs %} **Settings** tabs to administer the Provider itself, including adding new Service Users.
+Providers are built with two distinct [user types]({{site.baseurl}}/provider-users/#user-types):
+
+- **Service Users** can fully administer [Client Organizations](#client-organizations).
+- **Provider Admins** can administer [Client Organizations](#client-organizations) and administer the Provider itself, including adding new Service Users to the team.
 
 ## Client Organizations
 

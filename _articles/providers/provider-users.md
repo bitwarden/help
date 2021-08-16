@@ -69,7 +69,7 @@ To remove users from your Provider:
 **Managing a Client Organization's users?** Organizations have a set of [User Types and Access Controls]({{site.baseurl}}/article/user-types-access-control/) that are distinct from Provider User Types.
 {% endcallout %}
 
-Bitwarden Provider Users can be granted one of two User Types to manage their access to the Provider. **Both User Types will be able to fully administer any Client Organization.**
+Bitwarden Provider Users can be granted one of two User Types to manage their access to the Provider. **Both User Types will be able to fully administer any Client Organization.** Bitwarden strongly recommends that you provision a second user with a Provider Admin role for failover purposes.
 
 You can set User Types when you [invite](#invite) Provider users, or at any time from the **Manage** &rarr; **People** screen in your Provider Portal. User Types include:
 
