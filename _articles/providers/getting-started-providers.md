@@ -10,9 +10,9 @@ order: 02
 ---
 
 {% callout success %}
-Interested in becoming a Provider? Sign up for the Provider Program using the registration link:
+Interested in becoming a Provider? Contact us to get started:
 
-<a role="button" class="btn btn-primary" href="#" target="blank">Register as a Provider</a>
+<a role="button" class="btn btn-primary" href="https://bitwarden.com/contact" target="blank">Contact Us</a>
 {% endcallout %}
 
 ## Why Bitwarden Providers?
@@ -25,7 +25,7 @@ The Provider Portal is an all-in-one management experience that enables Provider
 
 ### Start a Provider
 
-To become a Provider, sign up for the Provider Program [using the registration link](#). After you register, a member of the Bitwarden team will contact you and issue an invitation to start a Provider:
+[Contact Us](https://bitwarden.com/contact){:target="\_blank"} to sign up for the Provider Program. After you register, a member of the Bitwarden team will contact you and issue an invitation to start a Provider:
 
 {% image providers/provider-invitation.png Provider Invitation %}
 
