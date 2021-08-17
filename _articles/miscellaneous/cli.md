@@ -157,6 +157,10 @@ See [Appendices &rarr; Enums](#enums) for `<method>` values.
 
 ### Using an API key
 
+{% callout success %}
+**Getting prompted for additional authentication** or getting a `Your authentication request appears to be coming from a bot.` error? Use your API Key `client_secret` to answer the authentication challenge. [Learn more]({{site.baseurl}}/article/cli-auth-challenges/).
+{% endcallout %}
+
 Logging in with a [Personal API Key]({{site.baseurl}}/article/personal-api-key/) authenticates you with Bitwarden servers, syncs your Vault, but **does not unlock your Vault**. After logging in with an API key, you will be required to unlock your Vault using your Master Password. To log in with an API key use:
 
 ```

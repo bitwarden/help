@@ -125,7 +125,7 @@ Enabling the **Master Password Reset** policy will allow Owners and Admins to us
 
 #### Automatic Enrollment
 
-Enabling the **Automatic Enrollment** option will automatically enroll new users in Password Reset when their [invitation to the Organization is accepted]({{site.baseurl}}/article/managing-users/#accept). Automatically enrolled users will not be able to withdraw from Password Reset.
+Enabling the **Automatic Enrollment** option will automatically enroll new users in Password Reset when their [invitation to the Organization is accepted]({{site.baseurl}}/article/managing-users/#accept).
 
 {% callout info %}
 Users already in the Organization will not be retroactively enrolled in Password Reset, and will be required to [self-enroll]({{site.baseurl}}/article/admin-reset/#self-enroll-in-password-reset).
