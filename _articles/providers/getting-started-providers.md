@@ -59,9 +59,9 @@ Organizations relate Bitwarden users and Vault items together for [secure sharin
 
 {% image providers/client-org.png %}
 
-Members of a Client Organization (i.e. your customer's end-users) will find shared items ({% icon fa-share-alt %}) in their **My Vault** view alongside personal items, as well as filters for assigned [Collections]({{site.baseurl}}/article/about-collections/), which group Organization items similarly to how [Folders]({{site.baseurl}}/article/folders/) organize personal items:
+Members of a Client Organization (i.e. your customer's end-users) will find shared items ({% icon fa-cube %}) in their **My Vault** view alongside personal items, as well as filters for assigned [Collections]({{site.baseurl}}/article/about-collections/), which group Organization items similarly to how [Folders]({{site.baseurl}}/article/folders/) organize personal items:
 
-{% image /organizations/shared-items.png End-user Vault %}
+{% image organizations/personal-vault-org-enabled.png End-user Vault %}
 
 ### Create a Client Organization
 
