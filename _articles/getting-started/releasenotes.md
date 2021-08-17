@@ -25,7 +25,7 @@ Bitwarden believes source code transparency is an absolute requirement for secur
 
 To be notified of Release Announcements, subscribe to the [Bitwarden Status RSS Feed](https://status.bitwarden.com/){:target="\_blank"}.
 
-## 2021-08-17
+## 2021-08-18
 
 {% callout success %}
 Interested in becoming a Provider? Contact us to get started:
