@@ -36,7 +36,6 @@ Interested in becoming a Provider? Contact us to get started:
 The latest release of Bitwarden is focused on enabling Managed Service Providers (MSPs) to support their customers' password management needs:
 
 - **Provider Portal**: The Provider Portal allows Managed Service Providers (MSPs), Resellers, and other businesses to create and administer Organizations on behalf of customers. Using the Portal, Providers can seamlessly support credential management across multiple customers (see [here]({{site.baseurl}}/article/getting-started-providers/) for details).
-- **Admin Password Reset Improvements**: Admin Password Reset has been improved; the [Automatic Enrollment Policy Option]({{site.baseurl}}/article/policies/#master-password-reset) will now prevent users from withdrawing from Password Reset, and users will now be prompted to [create their own Master Password after a reset]({{site.baseurl}}/article/admin-reset/#after-a-temporary-password-reset).
 - **Share Verbiage Change**: We've updated the {% icon fa-share-alt %} **Share** button to {% icon fa-arrow-circle-o-right %} **Move to Organization** to make it cleared that shared items are owned by the Organization. Additionally, we've updated the "shared item" indicator ({% icon fa-share-alt %}) to match the Collections indicator ({% icon fa-cube %}).
 - **CLI `move` Command**: In keeping with the above item, the CLI `share` command has been changed to `move` (see [here]({{site.baseurl}}/article/cli/#move) for details).
 
