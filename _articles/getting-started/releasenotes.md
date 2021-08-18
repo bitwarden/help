@@ -28,7 +28,7 @@ To be notified of Release Announcements, subscribe to the [Bitwarden Status RSS 
 ## 2021-08-18
 
 {% callout success %}
-Interested in becoming a Provider? Contact us to get started:
+Interested in becoming a Provider? Contact us to get started for free:
 
 <a role="button" class="btn btn-primary" href="https://bitwarden.com/contact" target="blank">Contact Us</a>
 {% endcallout %}
