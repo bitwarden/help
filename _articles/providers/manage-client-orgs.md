@@ -21,7 +21,7 @@ Once in the Organization Vault you can fully administer the Client Organization,
 |Change User Permissions|When end-users change roles, change their permissions as appropriate.|[User Types and Access Control]({{site.baseurl}}/article/user-types-access-control/)|
 |Add and Remove User Seats|As the customers' business grows, manage the number of user seats for the Client Organization.|[Manage User Seats]({{site.baseurl}}/article/managing-users/#manage-user-seats)|
 |Reset Users' Master Passwords|If enabled, use Admin Password Reset to recover end-user accounts if they forget their Master Password.|[Admin Password Reset]({{site.baseurl}}/article/admin-reset)|
-|Create & Share Vault Items|Add and share new Vault items on-the-fly when users need access to new systems.|[Sharing]({{site.baseurl}}/article/share-to-a-collection/)|
+|Create & Share Vault Items|Add and share new Vault items on-the-fly when users need access to new systems.|[Sharing]({{site.baseurl}}/article/sharing/)|
 |Secure one-time Sharing|Use Bitwarden for secure one-time sharing of credentials, documents, and more.|[Create a Send]({{site.baseurl}}/article/create-send)|
 |Monitor Vault Health|Use Organization Vault Health Reports and Event Logs to keep an eye on the overall health of the Client Organization.|[Vault Health Reports]({{site.baseurl}}/article/reports/)<br><br>[Event Logs]({{site.baseurl}}/article/events/)|
 |Manage Billing|Make changes to the billing information for the Client Organization, if you ever need to.|[Update Billing Info]({{site.baseurl}}/article/update-billing-info/#update-billing-information-for-organizations)|

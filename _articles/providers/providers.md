@@ -42,7 +42,7 @@ Client Organizations are any [Organization]({{site.baseurl}}/article/about-organ
 Creating an independent Organization for this case will ensure users can be given the appropriate [user types and access controls]({{site.baseurl}}/article/user-types-access-control) over credentials.
 {% endcallout %}
 
-Organizations relate Bitwarden users and Vault items together for [secure sharing]({{site.baseurl}}/article/share-to-a-collection/) of Logins, Cards, Notes, and Identities. Organizations have a unique Vault, where Provider Service Users can manage the Organization's items, users, and settings:
+Organizations relate Bitwarden users and Vault items together for [secure sharing]({{site.baseurl}}/article/sharing/) of Logins, Cards, Notes, and Identities. Organizations have a unique Vault, where Provider Service Users can manage the Organization's items, users, and settings:
 
 {% image /providers/client-org.png Client Organization Vault %}
 

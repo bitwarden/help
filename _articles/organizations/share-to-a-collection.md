@@ -4,7 +4,7 @@ title: Sharing
 categories: [organizations]
 featured: false
 popular: false
-hidden: false
+hidden: true
 tags: [sharing, how to]
 order: 04
 ---

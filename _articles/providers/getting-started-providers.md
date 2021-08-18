@@ -57,7 +57,7 @@ With an assembled team of Service Users, you're ready to start setting up [Clien
 
 Client Organizations are any [Organization]({{site.baseurl}}/article/about-organizations/) that is attached to or administered by a Provider. To your customers, there's no difference between a "Client" Organization and a "regular" Organization except for who is conducting administration.
 
-Organizations relate Bitwarden users and Vault items together for [secure sharing]({{site.baseurl}}/article/share-to-a-collection/) of Logins, Cards, Notes, and Identities. Organizations have a unique Vault, where Provider Service Users can manage the Organization's items, users, and settings:
+Organizations relate Bitwarden users and Vault items together for [secure sharing]({{site.baseurl}}/article/sharing/) of Logins, Cards, Notes, and Identities. Organizations have a unique Vault, where Provider Service Users can manage the Organization's items, users, and settings:
 
 {% image providers/client-org.png %}
 
@@ -82,7 +82,7 @@ With your newly-created Client Organization, start building the perfect solution
     {% image organizations/collections-graphic-1.png %}  
 2. **Populate the Organization Vault**. Once the structure of how you'll store Vault items is in place, you can begin populating the Organization with your client's Logins, Notes, Cards, and Identities.
 
-   {% callout success %}You can [create shared items from scratch]({{site.baseurl}}/article/share-to-a-collection/#create-a-shared-item), but we recommend [importing a file that contains all their Vault items]({{site.baseurl}}/article/import-to-org/).{% endcallout %}
+   {% callout success %}You can [create shared items from scratch]({{site.baseurl}}/article/sharing/#create-a-shared-item), but we recommend [importing a file that contains all their Vault items]({{site.baseurl}}/article/import-to-org/).{% endcallout %}
 3. **Configure Enterprise Policies**. Before beginning the user management portion of setup, [configure Enterprise Policies]({{site.baseurl}}/article/policies/) in order to set rules-of-use for things like [Master Password complexity]({{site.baseurl}}/article/policies/#master-password), [use of Two-step Login]({{site.baseurl}}/article/policies/#two-step-login), and [Admin Password Reset]({{site.baseurl}}/article/admin-reset/).
 
    {% callout info %}Enterprise Policies are **only available to Enterprise Organizations**.{% endcallout %}

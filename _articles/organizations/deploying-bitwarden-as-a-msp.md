@@ -4,7 +4,7 @@ title: Deploying Bitwarden as an MSP
 categories: [organizations]
 featured: false
 popular: false
-hidden: false
+hidden: true
 tags: [MSPs, Organizations, Collections, Groups]
 order: 16
 ---
