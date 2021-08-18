@@ -92,7 +92,7 @@ Enabling the **Single Sign-On Authentication** policy will require non-Owner/non
 {% callout info %}
 The **Single Organization** policy must be enabled before activating this policy.
 
-As a result, you must disable the **Single Sign-On Authentication** policy before you can disable the **Single Ownership** policy.
+As a result, you must disable the **Single Sign-On Authentication** policy before you can disable the **Single Organization** policy.
 {% endcallout %}
 
 ### Personal Ownership
