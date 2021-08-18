@@ -13,10 +13,10 @@ redirect_from:
 
 ## What are Collections?
 
-Collections gather together Logins, Notes, Cards, and Identities for [secure sharing]({{site.baseurl}}/article/share-to-a-collection/) within an Organization. Think of Collections as Organization-equivalents to the [Folders]({{site.baseurl}}/article/folders/) used to organize a Personal Vault, with a few key differences:
+Collections gather together Logins, Notes, Cards, and Identities for [secure sharing]({{site.baseurl}}/article/sharing/) from an Organization. Think of Collections as Organization-equivalents to the [Folders]({{site.baseurl}}/article/folders/) used to organize a Personal Vault, with a few key differences:
 
-- Organizations control access to shared items by assigning users or [Groups]({{site.baseurl}}/article/about-groups/) to Collections.
-- Shared items **must** be included in at least one Collection.
+- Organizations control access to Organization-owned items by assigning users or [Groups]({{site.baseurl}}/article/about-groups/) to Collections.
+- Organization-owned items **must** be included in at least one Collection.
 
 ### Using Collections
 
@@ -32,7 +32,7 @@ Other common methodologies include **Collections by Vendor or System** (i.e. use
 
 ## Create a Collection
 
-Users with the [Manager role (or higher)]({{site.baseurl}}/article/user-types-access-control/) can create and manage Collections. To create a Collection:
+Organization [Managers (or higher)]({{site.baseurl}}/article/user-types-access-control/) and [Provider Users]({{site.baseurl}}/article/provider-users/provider-user-types) can create and manage Collections. To create a Collection:
 
 1. Log in to your [Web Vault](https://vault.bitwarden.com){:target="\_blank"} and open your Organization.
 2. Open the **Manage** tab and select the {% icon fa-plus %} **New Collection** button:

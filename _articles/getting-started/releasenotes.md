@@ -25,6 +25,20 @@ Bitwarden believes source code transparency is an absolute requirement for secur
 
 To be notified of Release Announcements, subscribe to the [Bitwarden Status RSS Feed](https://status.bitwarden.com/){:target="\_blank"}.
 
+## 2021-08-18
+
+{% callout success %}
+Interested in becoming a Provider? Contact us to get started for free:
+
+<a role="button" class="btn btn-primary" href="https://bitwarden.com/contact" target="blank">Contact Us</a>
+{% endcallout %}
+
+The latest release of Bitwarden is focused on enabling Managed Service Providers (MSPs) to support their customers' password management needs:
+
+- **Provider Portal**: The Provider Portal allows Managed Service Providers (MSPs), Resellers, and other businesses to create and administer Organizations on behalf of customers. Using the Portal, Providers can seamlessly support credential management across multiple customers (see [here]({{site.baseurl}}/article/getting-started-providers/) for details).
+- **Share Verbiage Change**: We've updated the {% icon fa-share-alt %} **Share** button to {% icon fa-arrow-circle-o-right %} **Move to Organization** to make it cleared that shared items are owned by the Organization. Additionally, we've updated the "shared item" indicator ({% icon fa-share-alt %}) to match the Collections indicator ({% icon fa-cube %}).
+- **CLI `move` Command**: In keeping with the above item, the CLI `share` command has been changed to `move` (see [here]({{site.baseurl}}/article/cli/#move) for details).
+
 ## 2021-06-29
 
 The Bitwarden team is happy to announce the rollout of Admin Password Reset, the latest feature purpose-built to help enterprises seeking to ensure password security at scale. This release includes:

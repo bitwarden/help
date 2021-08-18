@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Keyboard shortcuts
+title: Keyboard Shortcuts
 categories: [account-management]
 featured: false
 popular: false

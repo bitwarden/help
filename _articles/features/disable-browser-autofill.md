@@ -69,7 +69,7 @@ You should also find out which Logins Firefox has already saved by selecting the
 
 {% image features/firefox-delete.png Firefox Saved Logins %}
 
-If you haven't already saved these passwords in Bitwarden, [export them]({{site.baseurl/article/import-from-firefox}}) for future import to Bitwarden. Once exported, you should {% icon fa-trash %} **Remove** these passwords from Firefox.
+If you haven't already saved these passwords in Bitwarden, [export them]({{site.baseurl}}/article/import-from-firefox) for future import to Bitwarden. Once exported, you should {% icon fa-trash %} **Remove** these passwords from Firefox.
 
 {% endcapture %}
 {{ firefox | markdownify }}

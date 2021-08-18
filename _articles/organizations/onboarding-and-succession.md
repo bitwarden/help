@@ -81,7 +81,7 @@ Once created, you'll land in your Organization Vault, which is the central hub f
 
 Bitwarden Organizations manage users and data in a scalable and secure fashion. Managing users and data on an individual basis is inefficient for large businesses and can leave room for error. To solve this, Organizations provide Collections and [Groups](#groups).
 
-**Collections** gather together Logins, Notes, Cards, and Identities for [secure sharing]({{site.baseurl}}/article/share-to-a-collection/) within an Organization:
+**Collections** gather together Logins, Notes, Cards, and Identities for [secure sharing]({{site.baseurl}}/article/sharing/) within an Organization:
 
 {% image organizations/collections-graphic-1.png Using Collections %}
 
