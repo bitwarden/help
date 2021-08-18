@@ -15,11 +15,11 @@ redirect_from:
 
 Organizations relate Bitwarden users and Vault items together for [secure sharing]({{site.baseurl}}/article/sharing/) of Logins, Notes, Cards, and Identities. Organizations have a unique Vault, where [administrators]({{site.baseurl}}/article/user-types-access-control/) can manage the Organization's items, users, and settings:
 
-{% image /organizations/org-vault-admin.png Organization Vault %}
+{% image organizations/org-vault-admin.png Organization Vault %}
 
 Members of an Organization will find shared items ({% icon fa-cube%}) in their **My Vault** view alongside personal items, as well as filters for assigned [Collections]({{site.baseurl}}/article/about-collections/), which group Organization items similarly to how [Folders]({{site.baseurl}}/article/folders/) organize personal items:
 
-{% image /organizations/personal-vault-org-enabled.png Access shared items %}
+{% image organizations/personal-vault-org-enabled.png Access shared items %}
 
 ### Types of Organizations
 

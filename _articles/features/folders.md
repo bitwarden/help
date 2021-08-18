@@ -42,7 +42,7 @@ Folders can be created, renamed, and deleted from any Bitwarden client applicati
 
 To create a Folder, select the {% icon fa-plus %} **Add** icon in the Folders list:
 
-{% image /manage-items/folder-add-web.png Add a folder %}
+{% image manage-items/folder-add-web.png Add a folder %}
 
 Once created, you can **rename or delete** a folder at any time using the hover-over {% icon fa-pencil %} **Pencil** icon.
 
@@ -55,7 +55,7 @@ Once created, you can **rename or delete** a folder at any time using the hover-
 
 To create a Folder, select the {% icon fa-cogs %} **Settings** menu, select the **Folders** option, and tap/select the {% icon fa-plus %} **Add** icon:
 
-{% image /manage-items/folder-add-extension.gif Add a folder %}
+{% image manage-items/folder-add-extension.gif Add a folder %}
 
 Once created, you can **rename or delete** a folder at any time from the same menu by selecting an existing folder.
 
@@ -68,7 +68,7 @@ Once created, you can **rename or delete** a folder at any time from the same me
 
 To create a Folder, select the {% icon fa-plus %} **Add** icon in the Folders list:
 
-{% image /manage-items/folder-add-desk.png Add a folder %}
+{% image manage-items/folder-add-desk.png Add a folder %}
 
 Once created, you can **rename or delete** a folder at any time using the hover-over {% icon fa-pencil %} **Pencil** icon.
 
@@ -81,7 +81,7 @@ Once created, you can **rename or delete** a folder at any time using the hover-
 
 To create a Folder, tap the {% icon fa-cogs %} **Settings** menu, tap the **Folders** option, and tap/select the {% icon fa-plus %} **Add** icon:
 
-{% image /manage-items/folder-add-mob.jpeg Add a folder %}
+{% image manage-items/folder-add-mob.jpeg Add a folder %}
 
 Once created, you can **rename or delete** a folder at any time from the same menu by tapping an existing folder.
 
@@ -119,7 +119,7 @@ Folders can be "nested" in order to logically organize them within your Vault. T
 Searching inside a "parent" Folder will not include items in Folders nested inside it as potential search results. For more information, see [Search your Vault]({% link _articles/features/searching-vault.md %}).
 {% endcallout %}
 
-{% image /manage-items/subfolders.png Nested folders %}
+{% image manage-items/subfolders.png Nested folders %}
 
 To create a nested Folder, give a new Folder a **Name** that includes the "parent" Folder following by a forward slash (`/`) delimiter, for example `Personal/Email`.
 
@@ -169,7 +169,7 @@ From the Web Vault, you can either:
 
 Open the Vault item you want to move, select the **Folders** dropdown, and choose the folder to move the item to:
 
-{% image /manage-items/folder-move-be.png Move item to a folder %}
+{% image manage-items/folder-move-be.png Move item to a folder %}
 
 {% endcapture %}
 {{ browser_extension | markdownify}}
@@ -180,7 +180,7 @@ Open the Vault item you want to move, select the **Folders** dropdown, and choos
 
 Open the Vault item you want to move, select the **Folders** dropdown, and choose the folder to move the item to:
 
-{% image /manage-items/folder-move-desk.png Move item to a folder %}
+{% image manage-items/folder-move-desk.png Move item to a folder %}
 
 {% endcapture %}
 {{ desktop_info | markdownify}}
@@ -191,7 +191,7 @@ Open the Vault item you want to move, select the **Folders** dropdown, and choos
 
 Open the Vault item you want to move, tap the **Folders** dropdown, and choose the folder to move the item to:
 
-{% image /manage-items/folder-move-mob.jpeg Move item to a folder %}
+{% image manage-items/folder-move-mob.jpeg Move item to a folder %}
 
 {% endcapture %}
 {{ mobile_info | markdownify}}

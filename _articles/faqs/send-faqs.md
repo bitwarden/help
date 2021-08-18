@@ -18,7 +18,7 @@ Additionally, creation of file Sends requires your Email Address to be verified.
 
 **A:** You can! But in order to browse for a file on the Create Send view in a Firefox Browser Extension, you'll need to open the extension in the sidebar or pop out a new window using the popout {% icon fa-external-link fa-rotate-270 %} button:
 
-{% image /send/send-ff-popout.png The popout icon %}
+{% image send/send-ff-popout.png The popout icon %}
 
 ### Q: Why are Sends missing from my Send view?
 

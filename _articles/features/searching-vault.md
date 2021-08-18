@@ -18,7 +18,7 @@ The potential results available to any search operation is dependent on what is 
 
 The placeholder text in the search box will transform to indicate the current search location:
 
-{% image /manage-items/search.png Search a Folder%}
+{% image manage-items/search.png Search a Folder%}
 
 ## Basic Search
 

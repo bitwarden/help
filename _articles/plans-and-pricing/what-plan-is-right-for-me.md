@@ -22,7 +22,7 @@ This article will guide you through a few questions that can help you determine 
 
 Use this flowchart to guide you through your journey:
 
-{% image /plans-and-pricing/what-plan-flowchart-1.png What Plan is Right for Me? %}
+{% image plans-and-pricing/what-plan-flowchart-1.png What Plan is Right for Me? %}
 
 ## Do you want to start protecting your online accounts with Bitwarden?
 

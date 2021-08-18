@@ -56,7 +56,7 @@ To enable Two-step Login using Duo for your Personal Vault:
 1. Log in to your [Web Vault](https://vault.bitwarden.com){:target="\_blank"}.
 2. Select **Settings** from the top navigation bar.
 
-   {% image /two-step/wv-settingstab.png Select Settings %}
+   {% image two-step/wv-settingstab.png Select Settings %}
 3. Select **Two-step Login** from the left-side Settings menu.
 4. Locate the **Duo** option and select the **Manage** button.
 
@@ -89,11 +89,11 @@ You must be an [Organization Owner]({% link _articles/organizations/user-types-a
 1. Log in to your [Web Vault](https://vault.bitwarden.com){:target="\_blank"}.
 2. Open your Organization and select **Settings** from the Organization navigation.
 
-   {% image /two-step/wv-orgsettingstab.png Select Settings %}
+   {% image two-step/wv-orgsettingstab.png Select Settings %}
 3. Select **Two-step Login** from the left-side Settings menu.
 4. Locate the **Duo (Organization)** option and select the **Manage** button.
 
-   {% image /two-step/duo/enable-org.png Select Manage %}
+   {% image two-step/duo/enable-org.png Select Manage %}
 
    You will be prompted to enter your Master Password to continue.
 5. Enter the **Integration Key**, **Secret Key**, and **API Hostname** [retrieved from your Duo Admin Portal](#configure-duo).

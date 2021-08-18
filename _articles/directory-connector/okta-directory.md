@@ -119,7 +119,7 @@ To use only the `filter` parameter, prefix the query with a pipe (`|`):
 
 To test whether Directory Connector will successfully connect to your directory and return the desired users and groups, navigate to the **Dashboard** tab and select the **Test Now** button. If successful, users and groups will be printed to the Directory Connector window according to specified [Sync Options](#configure-sync-options) and [Filters](#specify-sync-filters):
 
-{% image /directory-connector/okta/dc-okta-test.png Test sync results%}
+{% image directory-connector/okta/dc-okta-test.png Test sync results%}
 
 ## Start Automatic Sync
 

@@ -27,7 +27,7 @@ Importing data to Bitwarden **can only be done from the** [**Web Vault**](https:
 
 1. Open your Organization and navigate to the **Tools** tab:
 
-   {% image /importing/org-tools.png Organization Tools %}
+   {% image importing/org-tools.png Organization Tools %}
 3. Select **Import Data** from the left-hand Tools menu.
 3. From the format dropdown, choose a **File Format** (see [What file formats does Bitwarden support for import?]({{site.baseurl}}/article/send-faqs/#q-what-file-formats-does-bitwarden-support-for-import)).
 4. Select the **Choose File** button and add the file to import.
@@ -41,7 +41,7 @@ Currently, file attachments are not included in Bitwarden import operations and 
 
 The following error messages, typically received when attempting to import a `.csv`, indicate that an item in your import file has a specified value that exceeds the allowed **encrypted** character limit for its field type:
 
-{% image /importing/ciphererror_2021.png Cipher errors in the Web Vault%}
+{% image importing/ciphererror_2021.png Cipher errors in the Web Vault%}
 
 To solve this issue, open the `.csv` file in a text editor or spreadsheet program and **remove** or **reduce the character count** of the offending item. Bitwarden won't import your `.csv` file until it is free of offenses. The contents of the error messages contain several pieces of pertinent data to help you identify the offending item. For example, in the above example:
 

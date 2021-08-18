@@ -14,7 +14,7 @@ redirect_from:
 
 Bitwarden's Mobile App lets you take your password manager on the go. Download Bitwarden from the App Store or Google Play Store, or by navigating to [get.bitwarden.com](https://get.bitwarden.com) on any device.
 
-{% image /getting-started/bitwarden-ios-trio.png Bitwarden on Android and iOS%}
+{% image getting-started/bitwarden-ios-trio.png Bitwarden on Android and iOS%}
 
 Bitwarden's Mobile App is available for iOS and Android. For help getting started, select which device you use:
 
@@ -88,7 +88,7 @@ Setup Auto-fill to automatically enter logins from your Android device to a Web 
 
 You can launch a website directly from the Bitwarden Mobile App by selecting the {% icon fa-share-square %} **Launch** button in any Vault item with a valid URI. If you're unfamiliar with using URIs, see [Using URIs]({% link _articles/features/uri-match-detection.md %}).
 
-{% image /getting-started/mobile-launch.png %}
+{% image getting-started/mobile-launch.png %}
 
 ### Unlock with Biometrics
 
@@ -109,7 +109,7 @@ Once you've setup [Auto-fill](#setup-auto-fill) and [Biometrics](#unlock-with-bi
 1. Tap the Email/Username or Password input box in the app or website.
 2. Depending on which auto-fill option your device uses, tap the available overlay:
 
-   {% image /getting-started/autofill-android-2.png Android Auto-fill varieties %}
+   {% image getting-started/autofill-android-2.png Android Auto-fill varieties %}
 3. You'll be prompted for your Face ID or Fingerprint. If you aren't using [Biometrics](#unlock-with-biometrics), enter your Master Password.
 4. If you've connected a login to this website or app using the [URI field](#create-items), that login will appear in this window. If you haven't, tap {% icon fa-search %} **Search** to find it.
 
@@ -185,7 +185,7 @@ When you create new logins, make sure you enter a website in the [URI field](#cr
 
 You can launch a website directly from the Bitwarden Mobile App by selecting the {% icon fa-share-square %} **Launch** button in any Vault item with a valid URI. If you're unfamiliar with using URIs, see [Using URIs]({% link _articles/features/uri-match-detection.md %}).
 
-{% image /getting-started/mobile-launch.png %}
+{% image getting-started/mobile-launch.png %}
 
 ### Unlock with Biometrics
 
@@ -206,7 +206,7 @@ Once you've setup [Auto-fill](#setup-auto-fill) and [Biometrics](#unlock-with-bi
 1. Tap the Email/Username or Password input box in the app or website.
 2. Above your keyboard, tap **Passwords**.
 
-   {% image /getting-started/autofill-ios.png %}
+   {% image getting-started/autofill-ios.png %}
 3. You'll be prompted for your Face ID or Touch ID. If you aren't using [Biometrics](#unlock-with-biometrics), enter your Master Password.
 4. If you've connected a login to this website or app using the [URI field](#create-items), that login will appear in this window. If you haven't, tap {% icon fa-search %} **Search** to find it.
 

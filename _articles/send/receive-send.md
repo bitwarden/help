@@ -15,7 +15,7 @@ Unlike traditional Bitwarden Vault items, a Send can be received and opened by a
 
 These links can be opened in any modern web browser, and will open a simple no-navigation web page, for example:
 
-{% image /send/received-send.png A received Send%}
+{% image send/received-send.png A received Send%}
 
 Depending on the [options configured]({% link _articles/send/create-send.md %}) by the Sender, the recipient of a Send may be required to:
 
@@ -45,4 +45,4 @@ Taking the above measures to ensure the trustworthiness of a hidden-email Send a
 
 When a Send has [been deleted, expired, or disabled]({% link _articles/send/send-lifespan.md %}), recipients who attempt to use the generated Send link will be shown a screen that reports the Send does not exist or is no longer available:
 
-{% image /send/send-unavailable.png A deleted, expired, or disabled Send %}
+{% image send/send-unavailable.png A deleted, expired, or disabled Send %}

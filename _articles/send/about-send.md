@@ -22,7 +22,7 @@ Bitwarden Send is a secure and ephemeral way to transmit sensitive information t
 
 Sends are created, edited, managed, and deleted from the **Send** view in any Bitwarden application. The **Send** view can be accessed from the global application navigation, for example in the Web Vault:
 
-{% image /send/send-webvault.png Send in the Web Vault %}
+{% image send/send-webvault.png Send in the Web Vault %}
 
 ## Using Send
 

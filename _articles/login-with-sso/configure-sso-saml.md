@@ -35,13 +35,13 @@ Complete the following steps to enable Login with SSO for SAML 2.0 authenticatio
 1. In the Web Vault, navigate to your Organization and open the **Settings** tab.
 2. In the **Identifier** field, enter a unique identifier for your Organization:
 
-   {% image /sso/org-id.png Enter an Identifier %}
+   {% image sso/org-id.png Enter an Identifier %}
 
    Don't forget to **Save** your identifier. Users will be required to enter this **Identifier** upon login.
 
 3. Navigate to the **Business Portal**.
 
-   {% image /organizations/business-portal-button-overlay.png Business Portal button %}
+   {% image organizations/business-portal-button-overlay.png Business Portal button %}
 
 4. Select the **Single Sign-On** button.
 4. Check the **Enabled** checkbox.
@@ -55,7 +55,7 @@ After selecting **SAML 2.0**, this page will display two sections of fields you 
 
 Fields in this section will be required when you [Configure your IdP](#step-3-configure-your-idp).
 
-{% image /sso/sso-saml-sp.png SAML Service Provider Configuration section %}
+{% image sso/sso-saml-sp.png SAML Service Provider Configuration section %}
 
 #### SP Entity ID
 
@@ -127,7 +127,7 @@ Fields in this section should come from the configured values in [Step 3: Config
 
 Required fields will be marked. Failing to provide a value for a required field will cause your configuration to be rejected.
 
-{% image /sso/sso-saml-ip.png %}
+{% image sso/sso-saml-ip.png %}
 
 #### Entity ID (*Required*)
 

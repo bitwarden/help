@@ -38,7 +38,7 @@ For help selecting the right Bitwarden plan for you, refer to [What Plan is Righ
 
 **A:** Login to your [Web Vault](https://vault.bitwarden.com) and open your Organization. In your Organization's **Settings** tab, select the **Subscription** from the left menu:
 
-{% image /organizations/org-subscription-screen-overlay-addseats.png Add or Remove seats %}
+{% image organizations/org-subscription-screen-overlay-addseats.png Add or Remove seats %}
 
 You can add or remove seats from your Organization at any time. The cost will be automatically pro-rated and debited or credited accordingly.
 

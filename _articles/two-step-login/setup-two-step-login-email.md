@@ -25,7 +25,7 @@ Complete the following steps to enable Two-step Login using email:
 3. Select **Two-step Login** from the left-side menu.
 4. Locate the **Email** option and select the **Manage** button:
 
-   {% image /two-step/twostep-options-emailoverlay.png Select the Manage button %}
+   {% image two-step/twostep-options-emailoverlay.png Select the Manage button %}
    You will be prompted to enter your Master Password to continue.
 5. Enter the email that you wish you receive verification codes and click the **Send Email** button.
 6. Check your inbox for the 6 digit verification code. Enter the code in the dialog box in your Web Vault and select the **Enable** button.

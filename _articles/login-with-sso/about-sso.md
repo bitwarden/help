@@ -20,7 +20,7 @@ Users of Bitwarden authenticate into their vaults using the **Enterprise Single 
 
 Administrators can configure Login with SSO in the Business Portal. For more information, see [About the Business Portal](https://bitwarden.com/help/article/about-business-portal/).
 
-{% image /sso/sso-button-lg.png Enterprise Single Sign-On button %}
+{% image sso/sso-button-lg.png Enterprise Single Sign-On button %}
 
 ### Requiring SSO for Users
 

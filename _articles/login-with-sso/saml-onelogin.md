@@ -125,7 +125,7 @@ Identity Provider Configuration will often require you to refer back to the OneL
 
 Once your configuration is complete, test it by navigating to [https://vault.bitwarden.com](https://vault.bitwarden.com){:target="\_blank"} and selecting the **Enterprise Single Sign-On** button:
 
-{% image /sso/sso-button-lg.png Enterprise Single Sign-On button %}
+{% image sso/sso-button-lg.png Enterprise Single Sign-On button %}
 
 Enter the [configured Organization Identifier](#) and select **Log In**. If your implementation is successfully configured, you'll be redirected to the OneLogin login screen:
 

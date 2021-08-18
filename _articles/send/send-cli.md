@@ -10,7 +10,7 @@ order: 06
 
 Bitwarden Send is available as a set of fully-featured CLI commands. This article documents the breadth of `bw send` commands, however Send **is not a separate tool** from the Bitwarden Command-line Interface (CLI). Therefore, many of the commands, options, and concepts in the [CLI documentation]({% link _articles/miscellaneous/cli.md %}) are relevant here.
 
-{% image /send/send-cli.png Send's --help text %}
+{% image send/send-cli.png Send's --help text %}
 
 ## send
 

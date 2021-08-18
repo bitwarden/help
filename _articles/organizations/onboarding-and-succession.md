@@ -71,11 +71,11 @@ Using the same tool in both areas helps that habit form faster and easier. Enter
 
 Anyone can start an Organization directly from the Web Vault:
 
-{% image /organizations/new-org-button-overlay.png Create New Organization %}
+{% image organizations/new-org-button-overlay.png Create New Organization %}
 
 Once created, you'll land in your Organization Vault, which is the central hub for all things sharing and Organization administration. Whoever launches the Organization will be the [Owner]({{site.baseurl}}/article/user-types-access-control), giving them full control to oversee the **Vault**, to **Manage** users, [Collections](#), [Groups](#), and [Policies](#), to use a suite of Bitwarden **Tools**, and to configure the Organization's **Settings**:
 
-{% image /getting-started/org-vault.png Organization Vault %}
+{% image getting-started/org-vault.png Organization Vault %}
 
 ### Collections
 
@@ -83,7 +83,7 @@ Bitwarden Organizations manage users and data in a scalable and secure fashion. 
 
 **Collections** gather together Logins, Notes, Cards, and Identities for [secure sharing]({{site.baseurl}}/article/sharing/) within an Organization:
 
-{% image /organizations/collections-graphic-1.png Using Collections %}
+{% image organizations/collections-graphic-1.png Using Collections %}
 
 ### Onboarding Users
 
@@ -107,7 +107,7 @@ For large Organizations, [Directory Connector](#directory-connector) is the best
 
 Groups relate together individual users, and provide a scaleable way to assign permissions including access to [Collections](#collections) and other [access controls](#comprehensive-role--based-access-controls). When onboarding new users, add them to a Group to have them automatically inherit that Groups's configured permissions:
 
-{% image /organizations/collections-graphic-2.png Using Collections with Groups %}
+{% image organizations/collections-graphic-2.png Using Collections with Groups %}
 
 
 #### Comprehensive Role-based Access Controls

@@ -12,7 +12,7 @@ Losing access to your secondary device(s) (e.g. a Mobile device with an installe
 
 What to do when you've lost access to your secondary device(s) depends on whether you've saved your [Two-step Login Recovery Code]({% link _articles/two-step-login/two-step-recovery-code.md %}). If you're unsure, remember that Recovery Codes need to be actively saved (i.e. Bitwarden won't save it anywhere *for you*) and look something like this:
 
-{% image /two-step/recoverycode.png Sample Recovery Code %}
+{% image two-step/recoverycode.png Sample Recovery Code %}
 
 ## Have a Recovery Code?
 
@@ -21,7 +21,7 @@ Excellent! If you have have your Recovery Code saved somewhere, you can use it t
 {% callout success %}
 Recovery Codes **won't disable Duo for Organizations**. You can tell that a Duo prompt is Organization-wide by the **(Organization)** header, as in the following screenshot:
 
-{% image /two-step/duo/duo-orgs.png Duo (Organization)%}
+{% image two-step/duo/duo-orgs.png Duo (Organization)%}
 
 If you're locked out of your Vault by a **Duo (Organization)** prompt, reach out to the Duo Administrator at your company for help bypassing the prompt.
 {% endcallout %}

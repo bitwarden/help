@@ -21,7 +21,7 @@ This article will help you get started with a **free 2-person Organization** so 
 
 Bitwarden Organizations relate users and Vault items together for [secure sharing]({{site.baseurl}}/article/sharing/) of Logins, Notes, Cards, and Identities owned by the Organization. Organizations could be a family, team, company or any group of people that needs to securely share data. Organizations have a unique Vault, where [administrators]({{site.baseurl}}/article/user-types-access-control/) can manage the Organization's items, users, and settings:
 
-{% image /organizations/org-vault-admin.png Organization Vault %}
+{% image organizations/org-vault-admin.png Organization Vault %}
 
 #### Comparing Organizations with Premium
 
@@ -45,7 +45,7 @@ Bitwarden provides applications on lots of devices, including Browser Extensions
 
 Once your account is created, log in to your [Web Vault](https://vault.bitwarden.com){:target="\_blank"} and verify your account's email address to unlock access to all features:
 
-{% image /getting-started/verify-email.png Send Verification Email %}
+{% image getting-started/verify-email.png Send Verification Email %}
 
 ### Sign up for Bitwarden again
 
@@ -70,13 +70,13 @@ To setup your Organization:
 
 Once created, you'll land in your Organization Vault, which is the central hub for all things sharing and Organization administration. As the [Organization Owner]({{site.baseurl}}/article/user-types-access-control/), you'll be able to see your **Vault**, to **Manage** users and [Collections](#get-to-know-collections), to use some Bitwarden **Tools**, and to configure your Organization's **Settings**:
 
-{% image /getting-started/org-vault.png Organization Vault %}
+{% image getting-started/org-vault.png Organization Vault %}
 
 ### Get to know Collections
 
 Collections are an important part of a Bitwarden Organization; they represent the logical grouping of Organization-owned Vault items that [belong to your Organization](#shared-items). Your Organization comes pre-loaded with a **Default Collection** and an **Unassigned** tag. With a free Organization, you can create up to 2 Collections using the **Manage** tab:
 
-{% image /getting-started/collections.png Collections %}
+{% image getting-started/collections.png Collections %}
 
 {% callout success %}
 In a lot of ways, Collections are like the [Folders]({{site.baseurl}}/article/folders/) you might use to organize your Personal Vault. A key difference is that items that [belong to your Organization](#shared-items) **must be included in at least 1 Collection**.
@@ -92,7 +92,7 @@ As the Organization Owner, invite a new member:
 
 1. In your Organization Vault, open the **Manage** tab and select the {% icon fa-plus %} **Invite User** button:
 
-   {% image /organizations/org-people-invite.png %}
+   {% image organizations/org-people-invite.png %}
 2. Enter the **Email** of your second member, which should match the email they [signed up for Bitwarden](#sign-up-for-bitwarden-again) with. You can also choose the [User Type]({{site.baseurl}}/article/user-types-access-control/#user-types) and [Access Controls]({{site.baseurl}}/article/user-types-access-control/#access-control) assigned to this user, including which [Collections](#get-to-know-collections) they can access.
 3. Select **Save** to send the invitation to the designated email address.
 
@@ -137,7 +137,7 @@ Part of the magic of Bitwarden Organizations is that items that belong to you an
 
 You probably don't have a [item shared from an organization](#share-a-login) yet, but when you do it will be displayed in your Vault with a {% icon fa-cube %} **Shared** icon:
 
-{% image /organizations/collection-shared-item.png Shared Item icon %}
+{% image organizations/collection-shared-item.png Shared Item icon %}
 
 Shared items are **owned** by the Organization. This means that anyone with permission can alter the item or delete it, which would remove it from your Vault as well.
 
