@@ -31,7 +31,10 @@ If you're locked out of your Vault by a **Duo (Organization)** prompt, reach out
 If you don't have your Recovery Code saved somewhere outside of your Vault, there is unfortunately no way for the team to recover the account or data therein. You'll need to delete your account and start a new one.
 
 {% callout success %}
-Before proceeding to delete your account, **check if you're currently logged in to any Bitwarden client applications** (Mobile Apps, Browser Extensions, etc.). If you are, [export your vault data]({% link _articles/account/export-your-data.md %}) to preserve your data.
+Before proceeding to delete your account, try the following:
+
+1. **If you're using Duo**, [generate a bypass code](https://duo.com/docs/administration-users#generating-a-bypass-code). For Duo for Organizations, your company's Duo administrator can generate a bypass code for you.
+2. **Check if you're currently logged in to any Bitwarden client applications** (Mobile Apps, Browser Extensions, etc.). If you are, [export your vault data]({% link _articles/account/export-your-data.md %}) to preserve your data.
 {% endcallout %}
 
 To delete your account:
