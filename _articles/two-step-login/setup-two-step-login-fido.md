@@ -20,7 +20,7 @@ Existing FIDO U2F security keys will still be usable and will be marked **(Migra
 
 FIDO2 WebAuthn cannot be used on all Bitwarden applications. Enable another Two-step Login method in order to access your vault on unsupported applications. Supported applications include:
 
-- **Web Vault** on a computer with a [FIDO2-supported Browser](https://fidoalliance.org/fido2/fido2-web-authentication-webauthn/){:target="\_blank"}.
+- **Web Vault** on a device with a [FIDO2-supported Browser](https://fidoalliance.org/fido2/fido2-web-authentication-webauthn/){:target="\_blank"}.
 - **Browser Extensions** for a [FIDO2-supported Browser](https://fidoalliance.org/fido2/fido2-web-authentication-webauthn/){:target="\_blank"}.
 - **Desktop Application** on Windows 10 and above.
 
@@ -44,7 +44,7 @@ Complete the following steps to enable Two-step Login using FIDO2 WebAuthn:
    You will be prompted to enter your Master Password to continue.
 
 5. Give your security key a friendly **Name**.
-6. Plug the security key into your computer's USB port and select **Read Key**.
+6. Plug the security key into your device's USB port and select **Read Key**.
 
    If your security key has a button, touch it.
 
@@ -63,7 +63,7 @@ The following assumes that **FIDO2 WebAuthn** is your [highest-priority enabled 
 
 1. Log in to your Bitwarden Vault (*Web Vault* or *Browser Extension*) and enter your Email Address and Master Password.
 
-   You will be prompted to insert your security key into your computer's USB port. If it has a button, touch it.
+   You will be prompted to insert your security key into your device's USB port. If it has a button, touch it.
 
    {% image two-step/u2f/fido2.png %}
 
