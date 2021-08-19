@@ -55,7 +55,6 @@ Select 1, then follow instructions
 .\bitwarden.ps1 -start
 ```
 
-
 ## Use an Existing SSL Certificate
 
 You may alternatively opt to use an existing SSL Certificate, which will require you to have the following files:
