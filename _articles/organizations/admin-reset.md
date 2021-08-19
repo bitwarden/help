@@ -73,7 +73,7 @@ If you're automatically enrolling Organization members in Admin Password Reset, 
 
 To enroll in Password Reset, navigate to **Settings** &rarr; **Organizations** in the [Web Vault](https://vault.bitwarden.com/){:target="\_blank"}:
 
-{% image organizations/pwreset-enroll.png Enroll in Password Reset %}
+{% image organizations/pwreset-enroll-gif.gif Enroll in Password Reset %}
 
 Hover over the Organization you wish to enroll in Password Reset for, select the {% icon fa-cog %} gear dropdown, and choose **Enroll in Password Reset**. When you're enrolled in Password Reset, the Organization listing will display a {% icon fa-key %} key icon. You can enroll in Admin Password Reset for multiple Organizations, if you choose.
 
