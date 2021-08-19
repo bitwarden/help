@@ -22,20 +22,7 @@ Using Let's Encrypt requires ports 80 and 443 to be open on your machine.
 
 If you change the domain name of your Bitwarden server, you will need to manually update your generated certificate. Run the following commands to create a backup, update your certificate, and rebuild Bitwarden:
 
-
-<ul class="nav nav-tabs" id="myTab" role="tablist">
-  <li class="nav-item" role="presentation">
-    <a class="nav-link active" id="bashtab" data-target="#bash" role="tab" aria-controls="bash" aria-selected="false">{% icon fa-linux %} {% icon fa-apple %} Bash</a>
-  </li>
-  <li class="nav-item" role="presentation">
-    <a class="nav-link" id="pstab" data-target="#powershell" role="tab" aria-controls="pwershell" aria-selected="false">{% icon fa-windows %} PowerShell</a>
-  </li>
-</ul>
-<div class="tab-content" id="clientsContent">
-  <div class="tab-pane show active" id="bash" role="tabpanel" aria-labelledby="bashtab">
-{% capture bash_info %}
-
-#### Bash
+ {% icon fa-linux %} {% icon fa-apple %} Bash
 
 ```
 ./bitwarden.sh stop
@@ -44,39 +31,30 @@ mkdir ./bwdata/letsencrypt
 chown -R bitwarden:bitwarden ./bwdata/letsencrypt
 chmod -R 740 ./bwdata/letsencrypt
 docker pull certbot/certbot
-docker run -i --rm --name certbot -p 443:443 -p 80:80 -v <Full Path from / >/bwdata/letsencrypt:/etc/letsencrypt/ certbot/certbot certonly --logs-dir /etc/letsencrypt/logs
+docker run -i --rm --name certbot -p 443:443 -p 80:80 -v <Full Path from / >/bwdata/letsencrypt:/etc/letsencrypt/ certbot/certbot certonly --email <user@email.com> --logs-dir /etc/letsencrypt/logs
 Select 1, then follow instructions
 openssl dhparam -out ./bwdata/letsencrypt/live/<your.domain.com>/dhparam.pem 2048
 ./bitwarden.sh rebuild
 ./bitwarden.sh start
 ```
 
-{% endcapture %}
-{{ bash_info | markdownify}}
-  </div>
-  <div class="tab-pane" id="powershell" role="tabpanel" aria-labelledby="pstab">
-{% capture powershell_info %}
+{% icon fa-windows %} PowerShell
 
-#### PowerShell
+   {% callout success %}You will need to install a build of OpenSSL for Windows.{% endcallout %}
 
-{% callout info %}
-Before proceeding, install OpenSSL.
-{% endcallout %}
+
 ```
-.\bitwarden.ps1 stop
+.\bitwarden.ps1 -stop
 mv .\bwdata\letsencrypt .\bwdata\letsencrypt_backup
 mkdir .\bwdata\letsencrypt
 docker pull certbot/certbot
-docker run -i --rm --name certbot -p 443:443 -p 80:80 -v <Full Path from \ >\bwdata\letsencrypt\:/etc/letsencrypt/ certbot/certbot certonly --email <USER@EMAIL.COM> --logs-dir /etc/letsencrypt/logs
+docker run -i --rm --name certbot -p 443:443 -p 80:80 -v <Full Path from \ >\bwdata\letsencrypt\:/etc/letsencrypt/ certbot/certbot certonly --email <user@email.com> --logs-dir /etc/letsencrypt/logs
+Select 1, then follow instructions
 <path/to/openssl.exe> dhparam -out .\bwdata\letsencrypt\live\<your.domain.com>\dhparam.pem 2048
 .\bitwarden.ps1 -rebuild
 .\bitwarden.ps1 -start
 ```
 
-{% endcapture %}
-{{ powershell_info | markdownify}}
-  </div>
-</div>
 
 ## Use an Existing SSL Certificate
 
