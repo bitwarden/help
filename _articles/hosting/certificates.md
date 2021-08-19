@@ -22,6 +22,21 @@ Using Let's Encrypt requires ports 80 and 443 to be open on your machine.
 
 If you change the domain name of your Bitwarden server, you will need to manually update your generated certificate. Run the following commands to create a backup, update your certificate, and rebuild Bitwarden:
 
+
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a class="nav-link active" id="bashtab" data-target="#bash" role="tab" aria-controls="bash" aria-selected="false">{% icon fa-linux %} {% icon fa-apple %} Bash</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="pstab" data-target="#powershell" role="tab" aria-controls="pwershell" aria-selected="false">{% icon fa-windows %} PowerShell</a>
+  </li>
+</ul>
+<div class="tab-content" id="clientsContent">
+  <div class="tab-pane show active" id="bash" role="tabpanel" aria-labelledby="bashtab">
+{% capture bash_info %}
+
+#### Bash
+
 ```
 ./bitwarden.sh stop
 mv ./bwdata/letsencrypt ./bwdata/letsencrypt_backup
@@ -35,6 +50,33 @@ openssl dhparam -out ./bwdata/letsencrypt/live/<your.domain.com>/dhparam.pem 204
 ./bitwarden.sh rebuild
 ./bitwarden.sh start
 ```
+
+{% endcapture %}
+{{ bash_info | markdownify}}
+  </div>
+  <div class="tab-pane" id="powershell" role="tabpanel" aria-labelledby="pstab">
+{% capture powershell_info %}
+
+#### PowerShell
+
+{% callout info %}
+Before proceeding, install OpenSSL.
+{% endcallout %}
+```
+.\bitwarden.ps1 stop
+mv .\bwdata\letsencrypt .\bwdata\letsencrypt_backup
+mkdir .\bwdata\letsencrypt
+docker pull certbot/certbot
+docker run -i --rm --name certbot -p 443:443 -p 80:80 -v <Full Path from \ >\bwdata\letsencrypt\:/etc/letsencrypt/ certbot/certbot certonly --email <USER@EMAIL.COM> --logs-dir /etc/letsencrypt/logs
+<path/to/openssl.exe> dhparam -out .\bwdata\letsencrypt\live\<your.domain.com>\dhparam.pem 2048
+.\bitwarden.ps1 -rebuild
+.\bitwarden.ps1 -start
+```
+
+{% endcapture %}
+{{ powershell_info | markdownify}}
+  </div>
+</div>
 
 ## Use an Existing SSL Certificate
 
