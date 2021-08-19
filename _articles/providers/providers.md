@@ -17,7 +17,7 @@ Interested in becoming a Provider? Contact us to get started for free:
 
 ## What are Providers?
 
-Providers are administration entities in Bitwarden that allow Managed Service Providers (MSPs), Resellers, and other businesses to create and fully manage multiple [Client Organizations](#client-organizations) on behalf of individual business customers. Client Organization management is easily accessible through the **Provider Portal**:
+Providers are administration entities in Bitwarden that allow Managed Service Providers (MSPs) and Resellers to create and fully manage multiple [Client Organizations](#client-organizations) on behalf of individual business customers. Client Organization management is easily accessible through the **Provider Portal**:
 
 ### What is the Provider Portal
 

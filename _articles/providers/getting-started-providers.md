@@ -19,7 +19,7 @@ Interested in becoming a Provider? Contact us to get started for free:
 
 ## Why Bitwarden Providers?
 
-Managed Service Providers (MSPs), Resellers, and other businesses often need a way to quickly create and easily administer Bitwarden Organizations on behalf of business customers. **Providers** are administration entities that allow those businesses to create and manage [Client Organizations](#client-organization) through the **Provider Portal**.
+Managed Service Providers (MSPs) and Resellers often need a way to quickly create and easily administer Bitwarden Organizations on behalf of business customers. **Providers** are administration entities that allow those businesses to create and manage [Client Organizations](#client-organization) through the **Provider Portal**.
 
 The Provider Portal is an all-in-one management experience that enables Providers to manage customers’ Bitwarden Organizations at scale. The Provider Portal streamlines administration tasks by centralizing a dedicated space to access and support each client, or to create a new one:
 
