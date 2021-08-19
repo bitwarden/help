@@ -53,7 +53,7 @@ Nested Collections are **for display-purposes only**. They will not inherit item
 
 To create a nested Collection, follow the [steps above](#create-a-collection), but give your Collections a **Name** that includes the "parent" name followed by a forward slash (`/`) delimiter, for example `Collection 1/Collection 1a`. If the "parent" Collection doesn't exist, the title will be displayed in-full.
 
-## Edit or Delete a Collection
+## Manage a Collection
 
 You may find that you need to add or remove users from a Collection, or delete it entirely. Both of these can be done from the **Manage** &rarr; **Collections** view by hovering over the desired Collection and selecting the {% icon fa-cog %} gear dropdown:
 
