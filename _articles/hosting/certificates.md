@@ -22,6 +22,8 @@ Using Let's Encrypt requires ports 80 and 443 to be open on your machine.
 
 If you change the domain name of your Bitwarden server, you will need to manually update your generated certificate. Run the following commands to create a backup, update your certificate, and rebuild Bitwarden:
 
+ {% icon fa-linux %} {% icon fa-apple %} Bash
+
 ```
 ./bitwarden.sh stop
 mv ./bwdata/letsencrypt ./bwdata/letsencrypt_backup
@@ -29,11 +31,28 @@ mkdir ./bwdata/letsencrypt
 chown -R bitwarden:bitwarden ./bwdata/letsencrypt
 chmod -R 740 ./bwdata/letsencrypt
 docker pull certbot/certbot
-docker run -i --rm --name certbot -p 443:443 -p 80:80 -v <Full Path from / >/bwdata/letsencrypt:/etc/letsencrypt/ certbot/certbot certonly --logs-dir /etc/letsencrypt/logs
+docker run -i --rm --name certbot -p 443:443 -p 80:80 -v <Full Path from / >/bwdata/letsencrypt:/etc/letsencrypt/ certbot/certbot certonly --email <user@email.com> --logs-dir /etc/letsencrypt/logs
 Select 1, then follow instructions
 openssl dhparam -out ./bwdata/letsencrypt/live/<your.domain.com>/dhparam.pem 2048
 ./bitwarden.sh rebuild
 ./bitwarden.sh start
+```
+
+{% icon fa-windows %} PowerShell
+
+   {% callout success %}You will need to install a build of OpenSSL for Windows.{% endcallout %}
+
+
+```
+.\bitwarden.ps1 -stop
+mv .\bwdata\letsencrypt .\bwdata\letsencrypt_backup
+mkdir .\bwdata\letsencrypt
+docker pull certbot/certbot
+docker run -i --rm --name certbot -p 443:443 -p 80:80 -v <Full Path from \ >\bwdata\letsencrypt\:/etc/letsencrypt/ certbot/certbot certonly --email <user@email.com> --logs-dir /etc/letsencrypt/logs
+Select 1, then follow instructions
+<path/to/openssl.exe> dhparam -out .\bwdata\letsencrypt\live\<your.domain.com>\dhparam.pem 2048
+.\bitwarden.ps1 -rebuild
+.\bitwarden.ps1 -start
 ```
 
 ## Use an Existing SSL Certificate
