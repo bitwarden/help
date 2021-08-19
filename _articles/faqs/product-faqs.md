@@ -23,6 +23,14 @@ This article contains Frequently Asked Questions (FAQs) about general Vault Mana
 
 **A:** There is! Users with a Premium subscription can proactively setup trusted emergency contacts who can access your Vault in case of emergency. For more information, see [Emergency Access]({% link _articles/security/emergency-access.md %}).
 
+### Q: How do I change my Master Password hint?
+
+**A:** To change your Master Password hint:
+
+1. Open the [Web Vault](https://vault.bitwarden.com){:target="\_blank"}, select **Settings** from the top navigation bar.
+2. On the **My Account** page, find the **Master Password Hint** input box.
+3. Enter a hint and select the **Save** button.
+
 ### Q: How do I change my email address?
 
 **A:** To change the email address attached to your account:

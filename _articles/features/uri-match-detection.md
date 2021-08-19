@@ -84,7 +84,7 @@ For example, if the URI value `https://sub.domain.com/path/` uses starts with ma
 |https://sub.domain.com/path/ |<i class="fa fa-check" aria-hidden="true"></i>|
 |https://sub.domain.com/path/page.html |<i class="fa fa-check" aria-hidden="true"></i>|
 |https://sub.domain.com |<i class="fa fa-times" aria-hidden="true"></i>|
-|https://sub.domain.com:4000/path/page.html (interrupted with a port |<i class="fa fa-times" aria-hidden="true"></i>|
+|https://sub.domain.com:4000/path/page.html (interrupted with a port) |<i class="fa fa-times" aria-hidden="true"></i>|
 |https://sub.domain.com/path (absent trailing slash) |<i class="fa fa-times" aria-hidden="true"></i>|
 
 ### Regular expression

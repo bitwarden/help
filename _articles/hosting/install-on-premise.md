@@ -46,6 +46,10 @@ The following is a summary of the Installation Procedure in this article. Links 
 
 By default, Bitwarden will be served through ports 80 (`http`) and 443 (`https`) on the host machine. Open these ports so that Bitwarden can be accessed from within and/or outside of the network. You may opt to choose different ports during installation.
 
+{% callout success %}
+**If you're using Windows Firewall**, Docker Desktop for Windows will not automatically add an exception for itself in Windows Firewall. Add exceptions for TCP ports 80 and 443 (or chosen alternative ports) to prevent some errors.
+{% endcallout %}
+
 Bitwarden recommends configuring a domain name with DNS records that point to your host machine (for example, `bitwarden.example.com`), especially if you are serving Bitwarden over the internet.
 
 ### Install Docker and Docker Compose
