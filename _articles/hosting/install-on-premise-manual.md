@@ -52,7 +52,7 @@ Complete the following steps to install Bitwarden manually:
 
    ```
    openssl pkcs12 -export -out ./identity/identity.pfx -inkey identity.key \
-         -in identity.crt -certfile identity.crt -passout pass:IDENTITY_CERT_PASSWORD
+         -in identity.crt -passout pass:IDENTITY_CERT_PASSWORD
    ```
 5. Edit the `globalSettings__identityServer__certificatePassword` value in `./env/global.override.env` with your configured password.
 6. Copy the created files to the `./bwdata/ssl` directory.
