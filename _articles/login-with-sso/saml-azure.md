@@ -36,7 +36,7 @@ On the Browse Azure AD Gallery screen, select the {% icon fa-plus %} **Create yo
 
 {% image sso/cheatsheets/saml-azure/az-newapp2.png Create your own application %}
 
-On the Create your own application screen, give the application a unique, Bitwarden-specific name and select the
+On the Create your own application screen, give the application a unique, Bitwarden-specific name and select the **Create** button.
 
 ### Enable Single Sign-on
 
