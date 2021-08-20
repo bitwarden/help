@@ -25,7 +25,7 @@ The Provider Portal is an all-in-one management experience that enables Provider
 
 {% image providers/provider.png Provider Portal %}
 
-Providers are built with two distinct [user types]({{site.baseurl}}/provider-users/#user-types):
+Providers are built with two distinct [user types]({{site.baseurl}}/artice/provider-users/#user-types):
 
 - **Service Users** can fully administer [Client Organizations](#client-organizations).
 - **Provider Admins** can administer [Client Organizations](#client-organizations) and administer the Provider itself, including adding new Service Users to the team.
