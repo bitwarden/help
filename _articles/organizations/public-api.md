@@ -10,6 +10,10 @@ order: 16
 
 The Bitwarden Public API provides Organizations a suite of tools for managing members, collections, groups, event logs, and policies.
 
+{% callout success %}
+For automating **management of Vault items**, we recommend using the [CLI]({{site.baseurl}}/article/cli/). Access to Vault items relies on Vault decryption, which must be done with a Username and Master Password rather than an [API Key](#authentication).
+{% endcallout %}
+
 The Public API is a RESTful API with predictable resource-oriented URLs, accepts JSON-encoded request bodies, returns JSON-encoded responses, and uses standard HTTP response codes, authentication, and verbs.
 
 The Public API is compatible with the OpenAPI Specification (OAS3) and publishes a compliant [`swagger.json`](https://bitwarden.com/help/api/specs/public/swagger.json) definition file. Explore the OpenAPI Specification using the Swagger UI:
