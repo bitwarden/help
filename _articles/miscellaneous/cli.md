@@ -488,7 +488,7 @@ You can `bw list` both `collections` and `org-collections`. `bw list collections
 ### move
 
 {% callout info %}
-**August 2021**: The `share` command has been changed to `move`. [Find out more]({{site.baseurl}}/article/release-notes).
+**August 2021**: The `share` command has been changed to `move`. [Find out more]({{site.baseurl}}/article/releasenotes/).
 {% endcallout %}
 
 The `move` command transfers a Vault item [to an Organization]({{site.baseurl}}/article/sharing/):
