@@ -9,7 +9,7 @@ order: 01
 ---
 ## Welcome to Bitwarden
 
-We're thrilled to be a part of your secure password management journey. To create a Bitwarden account, click the **Get Started** button on our homepage, or click [**here**](https://vault.bitwarden.com/#/register).
+We're thrilled to be a part of your secure password management journey. To create a Bitwarden account, click the **Get Started** button on our homepage, or click [**here**](https://vault.bitwarden.com/#/register){:target="\_blank"}.
 
 {% image getting-started/get-started-homepage-overlay.png Bitwarden Homepage%}
 
@@ -26,8 +26,8 @@ Once you've created your account, prompt Bitwarden to send you a verification em
 ## Congratulations!
 
 We recommend using any one of these resources to learn the ropes:
-- [Get Started with the Web Vault]({% link _articles/getting-started/getting-started-webvault.md %})
-- [Get Started with Browser Extensions]({% link _articles/getting-started/getting-started-browserext.md %})
-- [Get Started with the Mobile Apps]({% link _articles/getting-started/getting-started-mobile.md %})
-- [Get Started with Desktop Apps]({% link _articles/getting-started/getting-started-desktop.md %})
-- [Bitwarden 101 Video Series on Getting Started](https://bitwarden.com/help/article/getting-started-videos/)
+
+- [Get Started with the Web Vault]({{site.baseurl}}/article/getting-started-webvault/)
+- [Get Started with Browser Extensions]({{site.baseurl}}/article/getting-started-browserext/)
+- [Get Started with the Mobile Apps]({{site.baseurl}}/article/getting-started-mobile/)
+- [Get Started with Desktop Apps]({{site.baseurl}}/article/getting-started-desktop/)
