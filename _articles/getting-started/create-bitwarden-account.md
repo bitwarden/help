@@ -9,7 +9,7 @@ order: 01
 ---
 ## Welcome to Bitwarden
 
-We're thrilled to be a part of your secure password management journey. To create a Bitwarden account, click the **Get Started** button on our homepage, or click [**here**](https://vault.bitwarden.com/#/register).
+We're thrilled to be a part of your secure password management journey. To create a Bitwarden account, click the **Get Started** button on our homepage, or click [**here**](https://vault.bitwarden.com/#/register){:target="\_blank"}.
 
 {% image getting-started/get-started-homepage-overlay.png Bitwarden Homepage%}
 
