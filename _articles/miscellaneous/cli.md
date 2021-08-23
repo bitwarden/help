@@ -423,6 +423,8 @@ By default, `delete` will "soft delete" an item (i.e. send it to the [Trash]({{s
 bw delete item 7063feab-4b10-472e-b64c-785e2b870b92 --permanent
 ```
 
+To delete an `org-collection`, you'll also need to specify `--organizationid <organizationid>`. See [Organization IDs](#organization-ids).
+
 {% callout warning %}
 While items that are "soft deleted" using `delete` can be recovered using the `restore` command (see [details](#restore)), items that are deleted using `delete --permanent` **are completely removed and irrecoverable.**
 {% endcallout %}
