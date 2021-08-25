@@ -10,7 +10,13 @@ order: 01
 ---
 
 {% callout success %}
-Interested in becoming a Provider? Contact us to get started for free:
+Interested in becoming a Provider? To get started, we ask that:
+
+- Your business has an active Enterprise Organization.
+- Your business has a client ready to be onboarded under your Provider.
+
+<br>
+If you're not ready to start a Provider, the Bitwarden team is eager to support your Bitwarden journey as a reseller or customer.
 
 <a role="button" class="btn btn-primary" href="https://bitwarden.com/contact" target="blank">Contact Us</a>
 {% endcallout %}
