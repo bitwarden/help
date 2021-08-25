@@ -193,7 +193,7 @@ Enter the [configured Organization Identifier]({{site.baseurl}}/article/configur
 
 {% image sso/cheatsheets/saml-keycloak/keycloak-login.png Keycloak Login Screen %}
 
-After you authenticate with your Azure credentials, enter your Bitwarden Master Password to decrypt your Vault!
+After you authenticate with your Keycloak credentials, enter your Bitwarden Master Password to decrypt your Vault!
 
 {% comment %}
 
