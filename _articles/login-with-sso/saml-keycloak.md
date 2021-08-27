@@ -170,7 +170,7 @@ Identity Provider Configuration will often require you to refer back to the Keyc
 
 |Field|Description|
 |-----|-----------|
-|Entity ID|Enter the URL of the Keycloak realm on which the client was created, for example `https://<keycloak_domain>/auth/realms/master/`.|
+|Entity ID|Enter the URL of the Keycloak realm on which the client was created, for example `https://<keycloak_domain>/auth/realms/master`.|
 |Binding Type|Select **HTTP POST** or **Redirect**.|
 |Single Sign On Service URL|Enter your master SAML processing URL, for example `https://<keycloak_domain>/auth/realms/master/protocol/saml`.|
 |Single Log Out Service URL|Login with SSO currently **does not** support SLO. This option is planned for future development, however you may preconfigure it with your **Logout URL** if you wish.|
