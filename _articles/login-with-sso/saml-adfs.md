@@ -148,7 +148,7 @@ Identity Provider Configuration will often require you to refer back to the AD F
 |-----|-----------|
 |Entity ID|Enter the retrieved [Federation Service Identifier](#get-federation-service-identifier). Please note, this **may not use HTTPS**.|
 |Binding Type|By default, AD FS with use HTTP POST endpoint binding. Select **HTTP POST** unless you've [configured AD FS to use a different method](#endpoint-binding).|
-|Single Sign On Service URL|Enter the URL which users will use to login to AD FS.|
+|Single Sign On Service URL|Enter the SSO Service URL. This value can be retrieved from the **Service** &rarr; **Endpoints** tab in AD FS Manager and by default should begin with `http://` and end with `/adfs/services/ls`.|
 |Artifact Resolution Service URL|Only use this field if you have selected **Artifact** as the [endpoint binding method](#endpoint-binding) of your Relying Party Trust.|
 |X509 Public Certificate|Paste the downloaded certificate, removing `-----BEGIN CERTIFICATE-----` and `-----END CERTIFICATE-----`.<br><br>Extra spaces, carriage returns, and other extraneous characters **will cause certification to fail**.|
 |Outbound Signing Algorithm|By default, AD FS will sign with SHA-256. Select **SHA-256** from the dropdown unless you've [configured AD FS to use different algorithm](#hash-algorithm).|
