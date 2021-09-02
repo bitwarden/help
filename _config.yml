@@ -39,6 +39,7 @@ collections:
       - login-with-sso.md
       - security.md
       - plans-and-pricing.md
+      - business.md
       - miscellaneous.md
   articles:
     output: true
