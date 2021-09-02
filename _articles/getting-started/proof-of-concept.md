@@ -1,12 +1,12 @@
 ---
 layout: article
 title: Proof-of-Concept Project Checklist
-categories: [organizations]
+categories: [business]
 featured: false
 popular: false
-hidden: true
+hidden: false
 tags: [project guide, poc]
-order: 99
+order: 05
 redirect_from:
   - /article/bitwarden-proof-of-concept-project-guide/
 ---

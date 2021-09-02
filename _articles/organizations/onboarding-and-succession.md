@@ -1,10 +1,10 @@
 ---
 layout: article
 title: Onboarding and Succession
-categories: [organizations]
+categories: [business]
 featured: true
 popular: false
-hidden: true
+hidden: false
 tags: [onboarding]
 order: 10
 redirect_from:

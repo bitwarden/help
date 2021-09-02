@@ -1,12 +1,12 @@
 ---
 layout: article
-title: Bitwarden Security and Compliance Program
-categories: [security]
+title: Bitwarden Security Whitepaper
+categories: [business]
 featured: false
 popular: false
-hidden: true
+hidden: false
 tags: []
-order: 01
+order: 99
 ---
 {% callout success %}
 Read the full paper below or [download the PDF](https://bitwarden.com//images/resources/security-white-paper-download.pdf).

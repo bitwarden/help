@@ -1,19 +1,18 @@
 ---
 layout: article
-title: Why Choose Bitwarden for Your Team
-categories: [plans-and-pricing]
+title: Bitwarden for Teams Comparison Guide
+categories: [business]
 featured: false
 popular: false
 hidden: false
 tags: [organization, enterprise, teams, plans, subscription]
-order: 03
+order: 02
 ---
-Use a Bitwarden Teams Organization to securely share data with coworkers, department, or an entire company.
+Use a Bitwarden Teams [Organization]({{site.baseurl}}/article/about-organizaations) to securely share data with coworkers, department, or an entire company. With many choices out there, Bitwarden stands apart with a comprehensive Teams offering.
 
-## Why Bitwarden Stands Apart
-With many choices out there, Bitwarden stands apart with a comprehensive Teams offering.
+## Comparing Bitwarden Teams and Others
 
-## Notable Differences Between Bitwarden Teams and Others
+This table outlines the key differences between Bitwarden Teams Organizations and other password managers' Teams plans. Subsequent tables will go more in-depth on specific topics:
 
 |                  | <img src="../../images/plans-and-pricing/1p.png" alt="1P" width="64px" height="64px"> |<img src="../../images/plans-and-pricing/lp.png" alt="LP" width="64px" height="64px"> | <img src="../../images/plans-and-pricing/d.png" alt="1P" width="64px" height="64px"> | <img src="../../images/plans-and-pricing/k.png" alt="K" width="64px" height="64px"> | <img src="../../images/plans-and-pricing/bitwarden-logo-vertical-blue.png" alt="Bitwarden-logo" width="101.66px" height="64.33px">
 |---------------------------------|:--------------------------------:|:--------------------------------------------------------------------:|:-----------------------------------:|:-----------------------------------------------:|:-----------------------------------------------:|
@@ -24,23 +23,25 @@ With many choices out there, Bitwarden stands apart with a comprehensive Teams o
   |Priority Support | —          | —                                                      | —                        | —                               |  <i class="fa fa-check" aria-hidden="true"></i>
   |Languages Supported | 11          | 7                                                      | 7                        | 13                               |  40 |
 
-Break down the key differences between Bitwarden Teams Organization and other password managers’ Teams Plans with the following pricing and features charts:
+## More Comparisons
+
+The following pricing and features charts further break down the key differences between a Bitwarden Teams Organization and other password managers’ Teams Plans:
 
 - [Cost](#cost-per-user-per-month-billed-annually)
 - [Features](#password-management-features)
 - [Security](#security-and-administration-features)
 - [Download and Deployment](#download-and-deployment-options)
 
-## Cost Per User, Per Month, Billed Annually
+### Cost Per User, Per Month, Billed Annually
 
-Compared to others, Bitwarden Teams Plan has the most features for the best price.
+Compared to others, the Bitwarden Teams Plan has the most features for the best price:
 
 |                  | <img src="../../images/plans-and-pricing/1p.png" alt="1P" width="64px" height="64px"> |<img src="../../images/plans-and-pricing/lp.png" alt="LP" width="64px" height="64px"> | <img src="../../images/plans-and-pricing/d.png" alt="1P" width="64px" height="64px"> | <img src="../../images/plans-and-pricing/k.png" alt="K" width="64px" height="64px"> | <img src="../../images/plans-and-pricing/bitwarden-logo-vertical-blue.png" alt="Bitwarden-logo" width="101.66px" height="64.33px">                             |
 |---------------------------------|:--------------------------------:|:--------------------------------------------------------------------:|:-----------------------------------:|:-----------------------------------------------:|:-----------------------------------------------:|
 | Cost                    | $3.99          | $4                                                      | $5                        | $3.75                               |  $3|
 
-## Password Management Features
-Bitwarden Teams Plan has a robust set of password management features.
+### Password Management Features
+The Bitwarden Teams Plan has a robust set of password management features:
 
 |                  | <img src="../../images/plans-and-pricing/1p.png" alt="1P" width="64px" height="64px"> |<img src="../../images/plans-and-pricing/lp.png" alt="LP" width="64px" height="64px"> | <img src="../../images/plans-and-pricing/d.png" alt="1P" width="64px" height="64px"> | <img src="../../images/plans-and-pricing/k.png" alt="K" width="64px" height="64px"> | <img src="../../images/plans-and-pricing/bitwarden-logo-vertical-blue.png" alt="Bitwarden-logo" width="101.66px" height="64.33px">                                  |
 |---------------------------------|:--------------------------------:|:--------------------------------------------------------------------:|:-----------------------------------:|:-----------------------------------------------:|:-----------------------------------------------:|
@@ -54,9 +55,10 @@ Bitwarden Teams Plan has a robust set of password management features.
 |Encrypted File Attachments| 1GB          | 1GB                                                      | —                       | —                              |  1GB+ Personal, 1GB+ for Org Items
 |Built-in TOTP| <i class="fa fa-check" aria-hidden="true"></i>          | <i class="fa fa-check" aria-hidden="true"></i>                                                      | —                       | —                              |  <i class="fa fa-check" aria-hidden="true"></i>|
 
-## Security and Administration Features
+### Security and Administration Features
+
 Bitwarden’s solution, software, infrastructure, and security processes have been designed from the ground up
-with a multi-layered, defense-in-depth approach. Bitwarden software is open source, which means features and security can be vetted and improved upon by our passionate global community.
+with a multi-layered, defense-in-depth approach. Bitwarden software is open source, which means features and security can be vetted and improved upon by our passionate global community:
 
 |                  | <img src="../../images/plans-and-pricing/1p.png" alt="1P" width="64px" height="64px"> |<img src="../../images/plans-and-pricing/lp.png" alt="LP" width="64px" height="64px"> | <img src="../../images/plans-and-pricing/d.png" alt="1P" width="64px" height="64px"> | <img src="../../images/plans-and-pricing/k.png" alt="K" width="64px" height="64px"> | <img src="../../images/plans-and-pricing/bitwarden-logo-vertical-blue.png" alt="Bitwarden-logo" width="101.66px" height="64.33px">                                    |
 |---------------------------------|:--------------------------------:|:--------------------------------------------------------------------:|:-----------------------------------:|:-----------------------------------------------:|:-----------------------------------------------:|
@@ -73,8 +75,9 @@ End-to-End Encryption               | <i class="fa fa-check" aria-hidden="true">
 |Event & Audit Logs| —          | —                                                      | —                       | <i class="fa fa-check" aria-hidden="true"></i>                              |  <i class="fa fa-check" aria-hidden="true"></i>
 |API Access| —          | —                                                      | —                       | —                              |  <i class="fa fa-check" aria-hidden="true"></i>|
 
-## Download and Deployment Options
-Our secure cloud syncing features allow you to access your data from anywhere, on any device.
+### Download and Deployment Options
+
+Bitwarden's secure cloud syncing features allow you to access your data from anywhere, on any device:
 
 |                  | <img src="../../images/plans-and-pricing/1p.png" alt="1P" width="64px" height="64px"> |<img src="../../images/plans-and-pricing/lp.png" alt="LP" width="64px" height="64px"> | <img src="../../images/plans-and-pricing/d.png" alt="1P" width="64px" height="64px"> | <img src="../../images/plans-and-pricing/k.png" alt="K" width="64px" height="64px"> | <img src="../../images/plans-and-pricing/bitwarden-logo-vertical-blue.png" alt="Bitwarden-logo" width="101.66px" height="64.33px">                                  |
 |---------------------------------|:--------------------------------:|:--------------------------------------------------------------------:|:-----------------------------------:|:-----------------------------------------------:|:-----------------------------------------------:|
