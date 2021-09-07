@@ -10,6 +10,10 @@ order: 15
 
 ## Browser extension shortcuts
 
+{% callout info %}
+Note: Autofill for Microsoft Edge requires the latest Chromium-based version.
+{% endcallout %}
+
 You can change browser extension shortcuts on most Chrome-based browsers by visiting a url, such as
 `chrome://extensions/shortcuts`. Firefox shortcuts can be changed by [managing extension shortcuts](https://support.mozilla.org/en-US/kb/manage-extension-shortcuts-firefox). By default, the Browser Extension shortcuts are:
 
