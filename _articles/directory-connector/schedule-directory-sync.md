@@ -5,7 +5,7 @@ categories: [directory-connector]
 featured: true
 popular: false
 tags: [directory connector, directory sync, schedule, cronjob]
-order: 12
+order: 07
 ---
 
 For Organizations using the Directory Connector CLI, automatic syncs can be scheduled on defined intervals as an alternative to using the Desktop Applications **Interval** setting. This is particularly useful in headless environments, on in circumstances where a Desktop Application cannot be left running in the background.

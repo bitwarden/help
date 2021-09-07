@@ -6,7 +6,7 @@ featured: true
 popular: false
 hidden: false
 tags: []
-order: 11
+order: 12
 ---
 
 This article will help you get started using Directory Connector to sync users and groups from your OneLogin directory to your Bitwarden Organization.
