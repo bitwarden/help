@@ -35,6 +35,7 @@ All Event types are listed below, with their corresponding type codes:
 - Login attempted failed with incorrect password. (`1005`)
 - Login attempt failed with incorrect two-step login. (`1006`)
 - Exported Vault. (`1007`)
+- User updated a password issued through [Admin Password Reset]({{site.baseurl}}/article/admin-reset/). (`1008`)
 
 ### Item Events
 - Created item *item-identifier*. (`1100`)
@@ -54,6 +55,7 @@ All Event types are listed below, with their corresponding type codes:
 - Auto-filled item *item-identifier*. (`1114`)
 - Sent item *item-identifier* to trash. (`1115`)
 - Restored item *item-identifier*. (`1116`)
+- Viewed Card Number for item *item-identifier*. (`1117`)
 
 ### Collection Events
 - Created collection *collection-identifier*. (`1300`)
@@ -77,6 +79,7 @@ All Event types are listed below, with their corresponding type codes:
 - Master Password was reset for *user-identifier*. (`1508`)
 - Edited organization settings. (`1600`)
 - Purged organization vault. (`1601`)
+- Organization Vault access by a managing [Provider]({{site.baseurl}}/article/providers/). (`1603`)
 - Updated a Policy. (`1700`)
 
 {% comment %}
@@ -90,7 +93,7 @@ https://github.com/bitwarden/web/blob/master/src/locales/en/messages.json
 
 When any of the above events is executed by a member of an [administering Provider]({{site.baseurl}}/article/providers/), the **User** column will record the name of the Provider. Additionally, a Provider-specific event will record whenever a member of an administering Provider accesses your Organization Vault:
 
-`IMAGE PLACEHOLDER`
+{% image organizations/event-logs-provider.png Provider Access Event %}
 
 ## Export Events
 
