@@ -12,6 +12,12 @@ This article contains **Active Directory Federation Services (AD FS)-specific** 
 
 Configuration involves working simultaneously within the Bitwarden [Business Portal]({{site.baseurl}}/article/about-business-portal/) and the AD FS Server Manager. As you proceed, we recommend having both readily available and completing steps in the order they're documented.
 
+{% callout success %}
+**Already an SSO expert?** Skip the instructions in this article and download screenshots of sample configurations to compare against your own.
+
+[{% icon fa-download %} Download Sample]({{site.baseurl}}/files/saml-adfs-sample.zip)
+{% endcallout %}
+
 ## Open the Business Portal
 
 If you're coming straight from [SAML 2.0 Configuration]({{site.baseurl}}/article/configure-sso-saml/), you should already have an [Organization ID created]({{site.baseurl}}/article/configure-sso-saml/#step-1-enabling-login-with-sso) and the SSO Configuration screen open. If you don't, refer to that article to create an Organization ID and open your Business Portal to the SSO Configuration section:

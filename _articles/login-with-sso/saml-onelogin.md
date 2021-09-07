@@ -12,6 +12,12 @@ This article contains **OneLogin-specific** help for configuring Login with SSO 
 
 Configuration involves working simultaneously within the Bitwarden [Business Portal]({{site.baseurl}}/article/about-business-portal/) and the OneLogin Portal. As you proceed, we recommend having both readily available and completing steps in the order they're documented.
 
+{% callout success %}
+**Already an SSO expert?** Skip the instructions in this article and download screenshots of sample configurations to compare against your own.
+
+[{% icon fa-download %} Download Sample]({{site.baseurl}}/files/saml-onelogin-sample.zip)
+{% endcallout %}
+
 ## Open the Business Portal
 
 If you're coming straight from [SAML 2.0 Configuration]({{site.baseurl}}/article/sso-configure-saml/), you should already have an [Organization ID created](https://bitwarden.com/help/article/configure-sso-saml/#step-1-enabling-login-with-sso) and the SSO Configuration screen open. If you don't, open your [Business Portal]({{site.baseurl}}/article/about-business-portal/) and navigate to the SSO Configuration screen:

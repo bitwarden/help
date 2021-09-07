@@ -44,7 +44,7 @@ From this point on, **implementation will vary provider-to-provider**. Jump to o
 |AD FS|[AD FS Implementation Guide]({{site.baseurl}}/article/saml-adfs/)|
 |Auth0|[Auth0 Implementation Guide]({{site.baseurl}}/article/saml-auth0/)|
 |AWS|[AWS Implementation Guide]({{site.baseurl}}/article/saml-aws/)|
-|Azure|[AWS Implementation Guide]({{site.baseurl}}/article/saml-azure/)|
+|Azure|[Azure Implementation Guide]({{site.baseurl}}/article/saml-azure/)|
 |Duo|[Duo Implementation Guide]({{site.baseurl}}/article/saml-duo/)|
 |Google|[Google Implementation Guide]({{site.baseurl}}/article/saml-google/)|
 |JumpCloud|[JumpCloud Implementation Guide]({{site.baseurl}}/article/saml-jumpcloud/)|

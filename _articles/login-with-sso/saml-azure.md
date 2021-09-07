@@ -13,6 +13,12 @@ This article contains **Azure-specific** help for configuring Login with SSO via
 
 Configuration involves working simultaneously with the Bitwarden [Business Portal]({{site.baseurl}}/article/about-business-portal) and the Azure Portal. As you proceed, we recommend having both readily available and completing steps in the order they're documented.
 
+{% callout success %}
+**Already an SSO expert?** Skip the instructions in this article and download screenshots of sample configurations to compare against your own.
+
+[{% icon fa-download %} Download Sample]({{site.baseurl}}/files/saml-azure-sample.zip)
+{% endcallout %}
+
 ## Open the Business Portal
 
 If you're coming straight from [SAML 2.0 Configuration]({{site.baseurl}}/article/configure-sso-saml/), you should already have an [Organization ID created](https://bitwarden.com/help/article/configure-sso-saml/#step-1-enabling-login-with-sso) and the SSO Configuration screen open. If you don't, open your
