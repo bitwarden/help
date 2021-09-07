@@ -38,7 +38,7 @@ Once you have your Organization Identifier, you can proceed to enabling and conf
 
 ## Step 3: Configuration
 
-From this point on, **implementation will vary provider-to-provider**. Jump to one of our specific **Implementation Guides** for help completing the Configuration process:
+From this point on, **implementation will vary provider-to-provider**. Jump to one of our specific **Implementation Guides** for help completing the configuration process:
 
 |Provider|Guide|
 |--------|-----|

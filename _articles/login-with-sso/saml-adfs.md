@@ -12,6 +12,12 @@ This article contains **Active Directory Federation Services (AD FS)-specific** 
 
 Configuration involves working simultaneously within the Bitwarden [Business Portal]({{site.baseurl}}/article/about-business-portal/) and the AD FS Server Manager. As you proceed, we recommend having both readily available and completing steps in the order they're documented.
 
+{% callout success %}
+**Already an SSO expert?** Skip the instructions in this article and download screenshots of sample configurations to compare against your own.
+
+[{% icon fa-download %} Download Sample]({{site.baseurl}}/files/saml-adfs-sample.zip)
+{% endcallout %}
+
 ## Open the Business Portal
 
 If you're coming straight from [SAML 2.0 Configuration]({{site.baseurl}}/article/configure-sso-saml/), you should already have an [Organization ID created]({{site.baseurl}}/article/configure-sso-saml/#step-1-enabling-login-with-sso) and the SSO Configuration screen open. If you don't, refer to that article to create an Organization ID and open your Business Portal to the SSO Configuration section:
@@ -148,7 +154,7 @@ Identity Provider Configuration will often require you to refer back to the AD F
 |-----|-----------|
 |Entity ID|Enter the retrieved [Federation Service Identifier](#get-federation-service-identifier). Please note, this **may not use HTTPS**.|
 |Binding Type|By default, AD FS with use HTTP POST endpoint binding. Select **HTTP POST** unless you've [configured AD FS to use a different method](#endpoint-binding).|
-|Single Sign On Service URL|Enter the URL which users will use to login to AD FS.|
+|Single Sign On Service URL|Enter the SSO Service Endpoint. This value can be retrieved from the **Service** &rarr; **Endpoints** tab in AD FS Manager and by default should begin with `http://` and end with `/adfs/services/ls`.|
 |Artifact Resolution Service URL|Only use this field if you have selected **Artifact** as the [endpoint binding method](#endpoint-binding) of your Relying Party Trust.|
 |X509 Public Certificate|Paste the downloaded certificate, removing `-----BEGIN CERTIFICATE-----` and `-----END CERTIFICATE-----`.<br><br>Extra spaces, carriage returns, and other extraneous characters **will cause certification to fail**.|
 |Outbound Signing Algorithm|By default, AD FS will sign with SHA-256. Select **SHA-256** from the dropdown unless you've [configured AD FS to use different algorithm](#hash-algorithm).|

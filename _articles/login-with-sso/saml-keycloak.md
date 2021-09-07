@@ -12,6 +12,11 @@ This article contains **Keycloak-specific** help for configuring Login with SSO 
 
 Configuration involves working simultaneously with the Bitwarden [Business Portal]({{site.baseurl}}/article/about-business-portal) and the Keycloak Portal. As you proceed, we recommend having both readily available and completing steps in the order they're documented.
 
+{% callout success %}
+**Already an SSO expert?** Skip the instructions in this article and download screenshots of sample configurations to compare against your own.
+
+[{% icon fa-download %} Download Sample]({{site.baseurl}}/files/saml-keycloak-sample.zip)
+{% endcallout %}
 
 ## Open the Business Portal
 

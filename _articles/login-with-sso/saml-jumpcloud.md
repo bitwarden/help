@@ -1,7 +1,7 @@
 ---
 layout: article
 title: JumpCloud SAML Implementation
-categories: []
+categories: [login-with-sso]
 featured: false
 popular: false
 hidden: true
@@ -12,6 +12,12 @@ order:
 This article contains **JumpCloud-specific** help for configuring Login with SSO via SAML 2.0. For help configuring Login with SSO for another IdP, refer to [SAML 2.0 Configuration]({{site.baseurl}}/article/configure-sso-saml/).
 
 Configuration involves working simultaneously within the Bitwarden [Business Portal]({{site.baseurl}}/article/about-business-portal/) and the JumpCloud Portal. As you proceed, we recommend having both readily available and completing steps in the order they're documented.
+
+{% callout success %}
+**Already an SSO expert?** Skip the instructions in this article and download screenshots of sample configurations to compare against your own.
+
+[{% icon fa-download %} Download Sample]({{site.baseurl}}/files/saml-jumpcloud-sample.zip)
+{% endcallout %}
 
 ## Open the Business Portal
 
