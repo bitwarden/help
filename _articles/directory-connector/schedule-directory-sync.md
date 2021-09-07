@@ -48,7 +48,7 @@ As the permitted `bwdc` user:
 
 1. Edit the user's crontab file by entering `crontab -e` in the terminal, or as edit the crontab file as any user by entering `crontab -u <bwdc_username> -e`.
 2. Add a line to the crontab that includes:
-   - A [scheduling expression](#cron-job-scheduing-expressions) that will determine the time/recurrence interval on which to execute the desired command (e.g. `0 0 * * 2` to run every Tuesday at midnight).
+   - A [scheduling expression](#cron-job-scheduling-expressions) that will determine the time/recurrence interval on which to execute the desired command (e.g. `0 0 * * 2` to run every Tuesday at midnight).
    - The command to execute at the specified time/recurrence interval. In this case, execute the [previously created sync script](#setup-a-sync-script) (e.g. `bwdcSyncService.sh`):
 
 For example, to run the sync script every Monday at 12:00:
