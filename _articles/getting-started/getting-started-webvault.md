@@ -6,7 +6,7 @@ featured: false
 popular: false
 hidden: false
 tags: [tutorial, getting started, web vault]
-order: 02
+order: "02"
 ---
 
 **The Bitwarden Web Vault provides the richest Bitwarden experience** for personal users and Organizations. Lots of important functions, like setting up [Two-step Login]({% link _articles/two-step-login/setup-two-step-login.md %}) or administering an [Organization]({% link _articles/organizations/about-organizations.md %}), can only be done from the Web Vault.

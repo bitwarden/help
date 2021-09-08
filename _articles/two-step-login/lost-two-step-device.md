@@ -5,7 +5,7 @@ categories: [two-step-login]
 featured: false
 popular: false
 tags: [two-step login, 2fa, two factor authentication, account]
-order: 09
+order: "09"
 ---
 
 Losing access to your secondary device(s) (e.g. a Mobile device with an installed Authenticator, a Security Key, or a linked Email inbox) has the potential to lock you out of your Bitwarden Vault.

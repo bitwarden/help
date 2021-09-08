@@ -5,7 +5,7 @@ categories: [account-management]
 featured: false
 popular: false
 tags: [keyboard, shortcut, mouseless]
-order: 15
+order: "15"
 ---
 
 ## Browser extension shortcuts

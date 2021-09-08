@@ -6,7 +6,7 @@ featured: true
 popular: false
 hidden: false
 tags: [organizations, enterprise, policies]
-order: 14
+order: "14"
 ---
 
 ## What are Enterprise Policies?

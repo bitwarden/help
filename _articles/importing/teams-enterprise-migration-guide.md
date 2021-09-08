@@ -6,7 +6,7 @@ featured: false
 popular: false
 hidden: false
 tags: [import, teams, enterprise, onboarding, security]
-order: 04
+order: "04"
 ---
 
 Secure migration of your Organization with Bitwarden is straightforward and secure. Simply follow the steps in this guide to migrate data and users from your existing password manager:

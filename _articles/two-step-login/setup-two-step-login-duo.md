@@ -5,7 +5,7 @@ categories: [two-step-login]
 featured: false
 popular: false
 tags: [two-step login, 2fa, two factor authentication, account, duo, sms]
-order: 05
+order: "05"
 ---
 
 Two-step Login using Duo is unique among Bitwarden's [available Two-step Login methods]({% link _articles/two-step-login/setup-two-step-login.md %}) in that it can be enabled for a Personal Vault (like the other methods) or **enabled for an entire Organization** by [Teams and Enterprise Organizations]({% link _articles/organizations/about-organizations.md %}).

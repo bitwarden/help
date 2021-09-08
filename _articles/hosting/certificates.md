@@ -5,7 +5,7 @@ categories: [hosting]
 featured: false
 popular: false
 tags: [hosting, docker, install, deploy]
-order: 04
+order: "04"
 ---
 
 This article defines the certificate options available to Self-hosted instances of Bitwarden. You will select your certificate option during installation. For installation instructions, see [Install and Deploy On-premise]({% link _articles/hosting/install-on-premise.md %}).

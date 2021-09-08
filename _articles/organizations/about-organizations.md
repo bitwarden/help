@@ -5,7 +5,7 @@ categories: [organizations]
 featured: true
 popular: true
 tags: [organizations]
-order: 01
+order: "01"
 redirect_from:
   - /article/what-is-an-organization/
   - /article/create-an-organization/

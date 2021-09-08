@@ -4,7 +4,7 @@ title: Two-step Login via Authenticator
 categories: [two-step-login]
 featured: false
 popular: false
-order: 03
+order: "03"
 tags: [two-step login, 2fa, two factor authentication, account, google authenticator, authy]
 ---
 

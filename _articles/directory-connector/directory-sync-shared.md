@@ -5,7 +5,7 @@ categories: [directory-connector]
 featured: true
 popular: false
 tags: []
-order: 04
+order: "04"
 ---
 
 The Directory Connector [Desktop Application]({% link _articles/directory-connector/directory-sync-desktop.md %}) and [CLI]({% link _articles/directory-connector/directory-sync-cli.md %}) share the same database and configuration settings. You may install and use both applications, however **it is not recommended to use them simultaneously**.

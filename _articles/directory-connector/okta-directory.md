@@ -6,7 +6,7 @@ featured: true
 popular: false
 hidden: false
 tags: []
-order: 11
+order: "11"
 ---
 
 This article will help you get starting using Directory Connector to sync users and groups from your Okta directory to your Bitwarden Organization.

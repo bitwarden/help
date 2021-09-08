@@ -6,7 +6,7 @@ featured: true
 popular: false
 hidden: false
 tags: [sso, enterprise, security]
-order: 07
+order: "07"
 ---
 This article contains Frequently Asked Questions (FAQs) regarding **Login with SSO**.
 

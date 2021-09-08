@@ -5,7 +5,7 @@ categories: [organizations]
 featured: true
 popular: false
 tags: []
-order: 05
+order: "05"
 ---
 
 ## Manage User Seats

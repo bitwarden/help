@@ -6,7 +6,7 @@ featured: false
 popular: false
 hidden: false
 tags: [sharing, how to]
-order: 04
+order: "04"
 redirect_from:
   - /article/share-to-a-collection/
 ---

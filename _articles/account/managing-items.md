@@ -5,7 +5,7 @@ categories: [account-management]
 featured: false
 popular: false
 tags: [account, items, import, delete, trash, clone]
-order: 03
+order: "03"
 ---
 
 Effectively managing the items in your Vault is key to making sure that you secure and have seamless access to your information, and can safely share information with friends, family, teams, and colleagues. There are 4 types of items you can store in your Vault; Logins, Cards, Identities, and Secure Notes:

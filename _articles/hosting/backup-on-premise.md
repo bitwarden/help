@@ -5,7 +5,7 @@ categories: [hosting]
 featured: false
 popular: false
 tags: [hosting, docker, backup]
-order: 07
+order: "07"
 ---
 
 When self-hosting Bitwarden, you are responsible for implementing your own backup procedures in order to keep data safe.

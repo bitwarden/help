@@ -5,7 +5,7 @@ categories: [two-step-login]
 featured: false
 popular: false
 tags: [two-step login, 2fa, two factor authentication, account, yubikey, yubi, yubico]
-order: 06
+order: "06"
 ---
 
 Two-step Login using [YubiKey](https://www.yubico.com){:target="\_blank"} is available for Premium users, including members of Paid Organizations (Families, Teams, or Enterprise).

@@ -6,7 +6,7 @@ featured: false
 popular: false
 hidden: false
 tags: [organization, enterprise, teams, plans, subscription]
-order: 02
+order: "02"
 ---
 Use a Bitwarden Teams [Organization]({{site.baseurl}}/article/about-organizaations) to securely share data with coworkers, department, or an entire company. With many choices out there, Bitwarden stands apart with a comprehensive Teams offering.
 

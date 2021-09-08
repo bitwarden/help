@@ -5,7 +5,7 @@ categories: [login-with-sso]
 featured: false
 popular: false
 tags: [sso]
-order: 06
+order: "06"
 ---
 
 ## Before You Begin

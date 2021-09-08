@@ -6,7 +6,7 @@ featured: false
 popular: false
 hidden: false
 tags: [free, personal, organization, enterprise, teams, family, plans, subscription]
-order: 02
+order: "02"
 redirect_from:
   - /article/picking-bitwarden-for-personal-or-business/
 ---

@@ -5,7 +5,7 @@ categories: [plans-and-pricing]
 featured: false
 popular: false
 tags: [account, enterprise, free trial, organization]
-order: 04
+order: "04"
 ---
 
 ## New to Bitwarden?

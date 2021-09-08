@@ -6,7 +6,7 @@ featured: false
 popular: false
 hidden: false
 tags: [two-step login, 2fa, two factor authentication]
-order: 01
+order: "01"
 ---
 
 ## What is Two-Step Login?

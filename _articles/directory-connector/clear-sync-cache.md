@@ -5,7 +5,7 @@ categories: [directory-connector]
 featured: true
 popular: false
 tags: []
-order: 06
+order: "06"
 ---
 
 Directory Connector keeps a local cache while syncing changes to your Bitwarden Organization. This cache allows Directory Connector to **only send the deltas between the two directories** (before / after).

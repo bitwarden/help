@@ -5,7 +5,7 @@ categories: [directory-connector]
 featured: true
 popular: false
 tags: []
-order: 02
+order: "02"
 ---
 
 The Directory Connector Desktop App is a standalone desktop application that can be used to sync users, groups, and group associations from a selection of directory services.

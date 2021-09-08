@@ -5,7 +5,7 @@ categories: [send]
 featured: true
 popular: false
 tags: [bitwarden send, send, about send, ephemeral sharing]
-order: 07
+order: "07"
 ---
 
 ## Send Encryption

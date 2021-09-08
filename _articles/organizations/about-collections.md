@@ -5,7 +5,7 @@ categories: [organizations]
 featured: true
 popular: false
 tags: [collections, access control, best practices]
-order: 02
+order: "02"
 redirect_from:
   - /article/collections/
   - /article/create-collections/

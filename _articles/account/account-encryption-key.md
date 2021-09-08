@@ -5,7 +5,7 @@ categories: [security]
 featured: false
 popular: false
 tags: [encryption key, account]
-order: 04
+order: "04"
 redirect_from:
   - /article/update-encryption-key/
 ---

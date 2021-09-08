@@ -5,7 +5,7 @@ categories: [directory-connector]
 featured: true
 popular: false
 tags: [directory connector, directory sync, teams, enterprise]
-order: 01
+order: "01"
 ---
 
 ## What is Directory Connector?

@@ -5,7 +5,7 @@ categories: [security]
 featured: true
 popular: false
 tags: []
-order: 01
+order: "01"
 redirect_from:
   - /article/what-information-is-encrypted/
 ---

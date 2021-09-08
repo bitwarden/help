@@ -6,7 +6,7 @@ featured: false
 popular: false
 hidden: false
 tags: []
-order: 07
+order: "07"
 ---
 
 ## What are Event Logs?

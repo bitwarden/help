@@ -6,7 +6,7 @@ featured: false
 popular: false
 hidden: true
 tags: [free, personal, organization, enterprise, teams, family, plans, subscription]
-order: 08
+order: "08"
 ---
 In continuing our mission to empower individuals and organizations to store and share sensitive data easily and securely, we've recently made some upgrades to our offerings. **This article is for users who created their Bitwarden accounts prior to September 06, 2020 and want to understand the difference between Classic 2019 and current plans.**
 

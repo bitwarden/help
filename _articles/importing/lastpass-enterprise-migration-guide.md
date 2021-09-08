@@ -5,7 +5,7 @@ featured: false
 popular: false
 hidden: true
 tags: [import, lastpass]
-order: 99
+order: "99"
 ---
 ## Bitwarden exclusive content: Making migration easy
 

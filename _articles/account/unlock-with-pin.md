@@ -5,7 +5,7 @@ categories: [account-management]
 featured: false
 popular: false
 tags: [unlock, pin]
-order: 10
+order: "10"
 ---
 
 Bitwarden can be configured to accept a Personal Identification Number (PIN) as a method to unlock your Vault.

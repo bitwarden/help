@@ -6,7 +6,7 @@ featured: false
 popular: false
 hidden: false
 tags: [tutorial, getting started, browser extensions]
-order: 03
+order: "03"
 ---
 
 Bitwarden Browser Extensions integrate password management directly into your favorite browser. Download a Bitwarden Browser Extension from your browser's marketplace or app store, or from the [Bitwarden Downloads](https://bitwarden.com/download){:target="\_blank"} page. Browser Extensions are available for:

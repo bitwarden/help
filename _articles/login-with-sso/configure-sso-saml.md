@@ -5,7 +5,7 @@ categories: [login-with-sso]
 featured: false
 popular: false
 tags: [sso, saml, saml2.0, idp, identity]
-order: 03
+order: "03"
 ---
 
 ## Step 1: Set an Organization Identifier

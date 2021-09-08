@@ -6,7 +6,7 @@ featured: true
 popular: false
 hidden: false
 tags: [onboarding]
-order: 10
+order: "10"
 redirect_from:
   - /article/employee-onboarding-and-succession-white-paper/
 ---

@@ -5,7 +5,7 @@ categories: [import-export]
 featured: true
 popular: true
 tags: [import, lastpass]
-order: 02
+order: "02"
 ---
 
 Use this article for help exporting data from LastPass and importing into Bitwarden.

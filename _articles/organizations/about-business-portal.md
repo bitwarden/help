@@ -5,7 +5,7 @@ categories: [organizations]
 featured: false
 popular: false
 tags: [organizations, business portal, sso, policies]
-order: 12
+order: "12"
 ---
 ## What is the Business Portal?
 

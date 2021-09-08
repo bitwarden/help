@@ -5,7 +5,7 @@ categories: [account-management]
 featured: false
 popular: false
 tags: [unlock, face id, touch id, hello, windows, mac, ios, android]
-order: 11
+order: "11"
 ---
 
 Bitwarden can be configured to accept biometrics as a method to unlock your Vault.

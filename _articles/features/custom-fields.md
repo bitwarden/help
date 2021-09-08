@@ -5,7 +5,7 @@ categories: [account-management]
 featured: false
 popular: false
 tags: [fields, autofill, custom fields]
-order: 08
+order: "08"
 ---
 
 Custom fields, available for any [Vault item type]({% link _articles/account/managing-items.md %}), allow you to store additional well-structured data fields for a Vault item. Custom fields are saved as `Name:Value` pairs, and can be one of three types:

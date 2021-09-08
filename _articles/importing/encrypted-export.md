@@ -5,7 +5,7 @@ categories: [import-export]
 featured: true
 popular: false
 tags: [import]
-order: 08
+order: "08"
 ---
 
 Vault data can be [exported]({% link _articles/account/export-your-data.md %}) in an encrypted JSON file. These exports are encrypted using your [account's encryption key]({% link _articles/account/account-encryption-key.md %}), which are generated on account creation and unique to each Bitwarden user account.

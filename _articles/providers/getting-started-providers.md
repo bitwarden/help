@@ -6,7 +6,7 @@ featured: false
 popular: false
 hidden: false
 tags: []
-order: 02
+order: "02"
 redirect_from:
   - /article/deploying-bitwarden-as-a-msp/
 ---

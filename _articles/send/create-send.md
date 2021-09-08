@@ -5,7 +5,7 @@ categories: [send]
 featured: true
 popular: false
 tags: [bitwarden send, send, create a send, how to, ephemeral sharing]
-order: 02
+order: "02"
 ---
 
 Creation of file Sends is available for Premium users, including members of a Paid Organization (Families, Teams, or Enterprise). Free users may still create text Sends.

@@ -5,7 +5,7 @@ categories: [two-step-login]
 featured: false
 popular: false
 tags: [two-step login, 2fa, two factor authentication, account]
-order: 08
+order: "08"
 ---
 
 If you enable any [Two-step Login methods]({% link _articles/two-step-login/setup-two-step-login.md %}), it's important to understand that losing access to your secondary device(s) (e.g. a Mobile device with an installed Authenticator, a Security Key, or a linked Email inbox) has the potential to lock you out of your Bitwarden Vault.

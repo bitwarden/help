@@ -4,7 +4,7 @@ title: Two-step Login via Email
 categories: [two-step-login]
 featured: false
 popular: false
-order: 04
+order: "04"
 tags: [two-step login, 2fa, two factor authentication, account, email]
 ---
 

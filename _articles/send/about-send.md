@@ -5,7 +5,7 @@ categories: [send]
 featured: true
 popular: false
 tags: [bitwarden send, send, about send, ephemeral sharing]
-order: 01
+order: "01"
 ---
 
 ## What is Send?

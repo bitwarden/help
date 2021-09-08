@@ -6,7 +6,7 @@ featured: false
 popular: false
 hidden: false
 tags: [tutorial, getting started, mobile, android, ios]
-order: 04
+order: "04"
 redirect_from:
   - /article/getting-started-android/
   - /article/getting-started-ios/

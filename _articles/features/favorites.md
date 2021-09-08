@@ -5,7 +5,7 @@ categories: [account-management]
 featured: true
 popular: false
 tags: [favorites, features, tutorial]
-order: 07
+order: "07"
 ---
 
 Any item can be designated as a **Favorite** allow quick access to your most used items.

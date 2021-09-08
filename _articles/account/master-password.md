@@ -5,7 +5,7 @@ categories: [account-management]
 featured: true
 popular: false
 tags: [master password, account]
-order: 01
+order: "01"
 redirect_from:
   - /article/change-your-master-password/
 ---

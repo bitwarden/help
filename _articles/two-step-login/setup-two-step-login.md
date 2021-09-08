@@ -4,7 +4,7 @@ title: Two-step Login Methods
 categories: [two-step-login]
 featured: false
 popular: true
-order: 02
+order: "02"
 tags: [two-step login, 2fa, two factor authentication, account]
 ---
 

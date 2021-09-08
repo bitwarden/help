@@ -5,7 +5,7 @@ categories: [plans-and-pricing]
 featured: false
 popular: false
 tags: [account, billing, billing information, individual, organization, subscription]
-order: 05
+order: "05"
 ---
 
 Your billing information can only be updated from the [Bitwarden Web Vault](https://vault.bitwarden.com).

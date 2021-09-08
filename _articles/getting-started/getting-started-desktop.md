@@ -6,7 +6,7 @@ featured: false
 popular: false
 hidden: false
 tags: [tutorial, getting started, desktop, windows, mac, linux]
-order: 05
+order: "05"
 ---
 
 Bitwarden's Desktop App brings a full Vault experience straight out of your browser and into your desktop. Using a 3-column layout, the Bitwarden Desktop App is designed to help you quickly locate the Vault item you want to use or edit:

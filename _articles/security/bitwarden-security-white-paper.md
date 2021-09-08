@@ -6,7 +6,7 @@ featured: false
 popular: false
 hidden: false
 tags: []
-order: 99
+order: "99"
 ---
 {% callout success %}
 Read the full paper below or [download the PDF](https://bitwarden.com//images/resources/security-white-paper-download.pdf).

@@ -5,7 +5,7 @@ categories: [organizations]
 featured: true
 popular: false
 tags: [groups, access control]
-order: 03
+order: "03"
 redirect_from:
   - /article/groups/
   - /article/create-groups/

@@ -5,7 +5,7 @@ categories: [plans-and-pricing]
 featured: false
 popular: false
 tags: [free, personal, organization, enterprise, teams, family, plans, subscription]
-order: 01
+order: "01"
 redirect_from:
   - /article/choosing-the-right-subscription-plan/
 ---

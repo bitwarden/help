@@ -5,7 +5,7 @@ categories: [hosting]
 featured: false
 popular: false
 tags: [hosting, docker, install, deploy]
-order: 02
+order: "02"
 ---
 This article will walk you through the procedure to manually install and deploy Bitwarden to your own server. **Installation using the Bitwarden installation script is recommended for most users, for instructions see [Install and Deploy]({% link _articles/hosting/install-on-premise.md %})**.
 

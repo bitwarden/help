@@ -5,7 +5,7 @@ categories: [hosting]
 featured: false
 popular: false
 tags: [hosting, update]
-order: 06
+order: "06"
 ---
 
 {% callout success %}

@@ -5,7 +5,7 @@ categories: [login-with-sso]
 featured: false
 popular: false
 tags: []
-order: 05
+order: "05"
 ---
 
 Users with existing Bitwarden accounts will need to complete the following steps when their Organization applies Login with SSO:

@@ -6,7 +6,7 @@ featured: true
 popular: false
 hidden: false
 tags: []
-order: 09
+order: "09"
 ---
 
 This article contains Frequently Asked Questions (FAQs) regarding **Plans and Pricing**.

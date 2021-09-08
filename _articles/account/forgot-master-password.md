@@ -5,7 +5,7 @@ categories: [account-management]
 featured: true
 popular: false
 tags: [master password, account]
-order: 02
+order: "02"
 ---
 
 As described in the [Your Master Password]({% link _articles/account/master-password.md %}) article, Bitwarden has no knowledge of, way to retrieve, or way to reset your Master Password.

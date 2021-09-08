@@ -5,7 +5,7 @@ categories: [hosting]
 featured: false
 popular: false
 tags: [hosting, docker, install, deploy]
-order: 01
+order: "01"
 ---
 
 This article will walk you through the procedure to install and deploy Bitwarden to your own server. Bitwarden can be installed and deployed on Linux, macOS, and Windows machines.

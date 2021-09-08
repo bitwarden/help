@@ -5,7 +5,7 @@ categories: [hosting]
 featured: false
 popular: false
 tags: [hosting, database, mssql]
-order: 12
+order: "12"
 ---
 
 By default, self-hosted instances of Bitwarden will use a Microsoft SQL Server (MSSQL) database created as a normal part of [installation setup]({{site.baseurl}}/article/install-on-premise), however you configure Bitwarden to use an external MSSQL database.

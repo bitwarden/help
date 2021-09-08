@@ -5,7 +5,7 @@ categories: [send]
 featured: true
 popular: false
 tags: [bitwarden send, send, receive, receive a send]
-order: 03
+order: "03"
 ---
 
 Unlike traditional Bitwarden Vault items, a Send can be received and opened by anyone with the Send link (including those who *do not* have Bitwarden accounts). Send links are randomly generated, and will look something like this:

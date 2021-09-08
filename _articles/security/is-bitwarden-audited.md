@@ -5,7 +5,7 @@ categories: [security]
 featured: true
 popular: false
 tags: [audit]
-order: 07
+order: "07"
 ---
 
 Bitwarden is a global company with customers located all over the world. Our business is to help customers protect, store, and share their sensitive data. We prioritize protecting the personal data of our customers and their end-users as paramount to our company mission. Bitwarden complies with industry standards, and conducts regular audits shared transparently with our customers and users. Our open source approach puts us in a unique position, where our software is viewed and scrutinized by a globally engaged community.

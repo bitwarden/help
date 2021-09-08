@@ -5,7 +5,7 @@ categories: [login-with-sso]
 featured: false
 popular: false
 tags: [sso, oidc, openid, idp, identity]
-order: 04
+order: "04"
 ---
 
 ## Step 1: Set an Organization Identifier

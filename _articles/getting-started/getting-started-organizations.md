@@ -6,7 +6,7 @@ featured: false
 popular: false
 hidden: false
 tags: [tutorial]
-order: 06
+order: "06"
 ---
 
 ## Why Bitwarden Organizations?

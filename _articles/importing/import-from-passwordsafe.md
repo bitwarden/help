@@ -5,7 +5,7 @@ categories: [import-export]
 featured: true
 popular: false
 tags: [import, passwordsafe]
-order: 06
+order: "06"
 ---
 
 Use this article for help exporting data from Password Safe and importing into Bitwarden. Password Safe (V8) currently only supports exporting as `.csv` file. Older versions also supported `.xml`.

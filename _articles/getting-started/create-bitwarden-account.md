@@ -5,7 +5,7 @@ categories: [getting-started]
 featured: true
 popular: true
 tags: [getting started, create account]
-order: 01
+order: "01"
 ---
 ## Welcome to Bitwarden
 

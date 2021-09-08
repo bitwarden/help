@@ -6,7 +6,7 @@ featured: false
 popular: false
 hidden: false
 tags: [project guide, poc]
-order: 05
+order: "05"
 redirect_from:
   - /article/bitwarden-proof-of-concept-project-guide/
 ---

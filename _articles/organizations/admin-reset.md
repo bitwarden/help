@@ -5,7 +5,7 @@ categories: [organizations]
 featured: true
 popular: false
 tags: [master password, reset, administrator, owner]
-order: 15
+order: "15"
 ---
 
 {% callout info %}

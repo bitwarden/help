@@ -6,7 +6,7 @@ featured: false
 popular: false
 hidden: false
 tags: []
-order: 01
+order: "01"
 ---
 
 {% callout success %}

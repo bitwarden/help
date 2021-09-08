@@ -5,7 +5,7 @@ categories: [security]
 featured: false
 popular: false
 tags: [fingerprint]
-order: 05
+order: "05"
 ---
 
 Each Bitwarden account has a public "fingerprint phrase" associated with it. Your account's fingerprint phrase is permanent and composed of five random english words that appear in a specific order, for example:

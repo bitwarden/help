@@ -5,7 +5,7 @@ categories: [security]
 featured: true
 popular: false
 tags: [encryption]
-order: 03
+order: "03"
 redirect_from:
   - /article/password-salt-hash/
   - /article/how-is-data-securely-transmitted-and-stored/

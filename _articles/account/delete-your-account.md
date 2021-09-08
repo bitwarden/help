@@ -5,7 +5,7 @@ categories: [plans-and-pricing]
 featured: false
 popular: false
 tags: [account, delete]
-order: 08
+order: "08"
 ---
 
 Deleting a Bitwarden account or Organization permanently deletes the account or Organization and **all data that is associated with it**. Bitwarden does not "soft delete" any data.

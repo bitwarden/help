@@ -5,7 +5,7 @@ categories: [security]
 featured: true
 popular: false
 tags: []
-order: 02
+order: "02"
 ---
 
 Users provide personal information in connection with your account creation, usage of the Bitwarden Service and support, and payments for the Bitwarden Service. Bitwarden uses Administrative Data to provide the Bitwarden Service to you. We retain Administrative Data for as long as you are a customer of Bitwarden and as required by law. If you terminate your relationship with Bitwarden, we will delete your Personal Information in accordance with our data retention policies.

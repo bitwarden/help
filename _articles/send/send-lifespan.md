@@ -5,7 +5,7 @@ categories: [send]
 featured: true
 popular: false
 tags: [bitwarden send, send, ephemeral sharing, deletion, expiration, access count]
-order: 04
+order: "04"
 ---
 
 Unlike traditional Bitwarden Vault items and File Attachments, Sends are ephemeral and have a **default lifespan of 7 days**. The lifespan of a Send is entirely configurable using the [Deletion Date](#deletion-date) option, each having a maximum allowed lifespan of 31 days. When a Send has reached its Deletion Date, it will be purged from Bitwarden systems and inaccessible to both its Sender and recipients.

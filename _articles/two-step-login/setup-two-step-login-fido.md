@@ -5,7 +5,7 @@ categories: [two-step-login]
 featured: false
 popular: false
 tags: [two-step login, 2fa, two factor authentication, account, u2f, fido]
-order: 07
+order: "07"
 redirect_from:
   - /article/setup-two-step-login-u2f/
 ---

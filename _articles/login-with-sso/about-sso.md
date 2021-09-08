@@ -5,7 +5,7 @@ categories: [login-with-sso]
 featured: true
 popular: true
 tags: [saml, saml2.0, single sign-on, sso, oidc, openid, openid connect, idp, identity provider]
-order: 01
+order: "01"
 redirect_from:
   - /article/getting-started-with-sso/
 ---

@@ -6,7 +6,7 @@ featured: true
 popular: true
 hidden: false
 tags: []
-order: 13
+order: "13"
 ---
 
 This article contains Frequently Asked Questions (FAQs) regarding **Self-hosting**.

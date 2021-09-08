@@ -6,7 +6,7 @@ featured: false
 popular: false
 hidden: false
 tags: [enterprise, plans, organization]
-order: 03
+order: "03"
 ---
 
 This document describes and references the features available to Bitwarden Enterprise Organizations in several categories:

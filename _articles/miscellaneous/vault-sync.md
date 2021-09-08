@@ -5,7 +5,7 @@ categories: [account-management]
 featured: false
 popular: false
 tags: [vault, sync, automatic, FAQ]
-order: 04
+order: "04"
 ---
 
 Adding, editing, or deleting Vault items from any Bitwarden client application will automatically push changes to your Bitwarden server, whether Cloud-hosted or self-hosted.

@@ -6,7 +6,7 @@ featured: true
 popular: false
 hidden: false
 tags: []
-order: 10
+order: "10"
 ---
 
 This article contains Frequently Asked Questions (FAQs) regarding **Import &amp; Export**.
