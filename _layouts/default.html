@@ -8,17 +8,10 @@
 
     <title>{% if page.title %}{{page.title}} | {% endif %}Bitwarden Help &amp; Support</title>
 
-    <link rel="stylesheet" crossorigin="anonymous"
-          href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-          integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0= sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,300italic,400italic,600italic"
-          rel="stylesheet" type="text/css">
-
-    <link href="{{site.baseurl}}/css/styles.css?v={{'now' | date: "%s"}}"
-          rel="stylesheet" type="text/css">
-
-    <link href="{{site.baseurl}}/lib/fluidbox/css/fluidbox.min.css?v={{'now' | date: "%s"}}"
-          rel="stylesheet" type="text/css">
+    <link rel="stylesheet" crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0= sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,300italic,400italic,600italic" rel="stylesheet" type="text/css">
+    <link href="{{site.baseurl}}/css/styles.css?v={{'now' | date: "%s"}}" rel="stylesheet" type="text/css">
+    <link href="{{site.baseurl}}/lib/fluidbox/css/fluidbox.min.css?v={{'now' | date: "%s"}}" rel="stylesheet" type="text/css">
 
     {% for stylesheet in page.custom-stylesheet-list %}
     <link href="{{ stylesheet }}?v={{'now' | date: "%s"}}" rel="stylesheet">

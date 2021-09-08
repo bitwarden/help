@@ -43,7 +43,7 @@ collections:
       - miscellaneous.md
   articles:
     output: true
-    permalink: /article/:name/
+    permalink: /:name/
 
 plugins:
   - jekyll-redirect-from
