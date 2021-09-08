@@ -127,7 +127,7 @@ Alice is a **Manager** in your Organization, which is hosted on the Bitwarden Cl
 |**Client Applications**|Uses Bitwarden on Mobile and a Browser Extension personally and professionally, and the Web Vault for occasional Organization-related work.|
 |**Email & Master Password**|Logs in to Bitwarden using `alice@company.com` and `p@ssw0rD`.|
 |**Personal Items**|Stores assorted personal items, including Logins and Credit Cards, in her Personal Vault.|
-|**Permissions in the Organization**|As a [Manager]({{site.baseurl}}s/user-types-access-control/), Jane can manage many aspects of Collections.|
+|**Permissions in the Organization**|As a [Manager]({{site.baseurl}}/user-types-access-control/), Jane can manage many aspects of Collections.|
 |**Two-step Login**|Uses Organization-wide [Duo 2FA]({{site.baseurl}}/setup-two-step-login-duo).|
 |**Created Collections**|Created a Collection for her team, "Jane's Team Collection".|
 |**Shared Items**|Created and shared several Vault items that are owned by by the Organization and reside in her team's Collection.|

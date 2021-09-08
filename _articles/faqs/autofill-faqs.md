@@ -38,4 +38,4 @@ order: "10"
 2. Log out of your Bitwarden mobile app.
 3. Check that your device settings are [setup to use Bitwarden for autofill]({{site.baseurl}}/auto-fill-ios/#keyboard-auto-fill).
 4. Log back in to your Bitwarden mobile app.
-5. Re-enable [PIN Code]({{site.baseurl}}/unlock-with-pin/) verification if you want to use it as a backup for [biometrics]({{site.baseurl}}/unlock-with-biometrics/).
+5. Re-enable [PIN Code]({{site.baseurl}}/unlock-with-pin/) verification if you want to use it as a backup for [biometrics]({{site.baseurl}}/biometrics/).
