@@ -107,7 +107,7 @@ Vault Items that were created prior to the implementation of this policy or prio
 
 ### Disable Send
 
-Enabling the **Disable Send** policy will prevent non-Owner/non-Admin users from creating or editing a Send using [Bitwarden Send]({% link _articles/send/about-send.md %}). Users subject to this policy will still be able to delete existing Sends that have not yet reached their [Deletion Date]({% link _articles/send/send-lifespan.md %}).
+Enabling the **Disable Send** policy will prevent non-Owner/non-Admin users from creating or editing a Send using [Bitwarden Send]({{site.baseurl}}/about-send/). Users subject to this policy will still be able to delete existing Sends that have not yet reached their [Deletion Date]({{site.baseurl}}/send-lifespan/).
 
 A banner is displayed to users in the Send view and on opening any existing Send to indicate that a policy is restricting them to only deleting Sends.
 

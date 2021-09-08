@@ -33,10 +33,10 @@ To get started using the Bitwarden Directory Connector CLI:
    bwdc --help
    ```
 4. Connect Directory Connector to your Directory using the `bwdc config <setting> <value>` command (see [command reference](#config)).
-5. Configure Sync Options by editing your `data.json` file (to learn more, see [Directory Connector File Storage]({% link _articles/directory-connector/directory-sync-shared.md %})). Use the `bwdc data-file` command to obtain the absolute path of your `data.json` file.
+5. Configure Sync Options by editing your `data.json` file (to learn more, see [Directory Connector File Storage]({{site.baseurl}}/directory-sync-shared/)). Use the `bwdc data-file` command to obtain the absolute path of your `data.json` file.
 
    Available **Sync Options** depend on the directory type in use, so refer to one of the following articles for a list of options available to you:
-   - [Sync with Active Directory or LDAP]({% link _articles/directory-connector/ldap-directory.md %})
+   - [Sync with Active Directory or LDAP]({{site.baseurl}}/ldap-directory/)[Sync with Active Directory or LDAP]({{site.baseurl}}/ldap-directory/)[Sync with Active Directory or LDAP]({{site.baseurl}}/ldap-directory/)[Sync with Active Directory or LDAP]({{site.baseurl}}/ldap-directory/)[Sync with Active Directory or LDAP]({{site.baseurl}}/ldap-directory/)
    - [Sync with Azure Active Directory]({% link _articles/directory-connector/azure-active-directory.md %})
    - [Sync with G Suite (Google)]({% link _articles/directory-connector/gsuite-directory.md %})
    - [Sync with Okta]({% link _articles/directory-connector/okta-directory.md %})
@@ -140,7 +140,7 @@ Options include:
 - `onelogin.secret <secret>`
 
 {% callout success %}
-`ldap.password`, `azure.key`, `gsuite.key`, `okta.token`, and `onelogin.secret` can **only** be modified from the CLI using `bwdc config`, or from the [Desktop Application]({% link _articles/directory-connector/directory-sync-desktop.md %}).
+`ldap.password`, `azure.key`, `gsuite.key`, `okta.token`, and `onelogin.secret` can **only** be modified from the CLI using `bwdc config`, or from the [Desktop Application]({{site.baseurl}}/directory-sync-desktop/).
 {% endcallout %}
 
 ### data-file
@@ -154,7 +154,7 @@ Configuration settings can be modified for the Directory Connector CLI by editin
 
 ### clear-cache
 
-The `clear-cache` command allows you to clear cached data that the application stores while performing sync operations. For more information, see [Clear Sync Cache]({% link _articles/directory-connector/clear-sync-cache.md %}).
+The `clear-cache` command allows you to clear cached data that the application stores while performing sync operations. For more information, see [Clear Sync Cache]({{site.baseurl}}/clear-sync-cache/).
 
 ```
 bwdc clear-cache

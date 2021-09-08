@@ -115,11 +115,11 @@ If you continue to have trouble locating the offending item using the data provi
 
 ### Maximum Collections Error
 
-When importing Lastpass `.csv` exports to a [Free Organization]({% link _articles/plans-and-pricing/about-bitwarden-plans.md %}), you may observe the following error:
+When importing Lastpass `.csv` exports to a [Free Organization]({{site.baseurl}}/about-bitwarden-plans/), you may observe the following error:
 
 {% image importing/lpcollectionserror.png Free Organization Max Collections Error%}
 
-This error occurs when the Lastpass export contains 3 or more `grouping` values. The values in the `grouping` field are interpreted by Bitwarden as [Collections]({% link _articles/organizations/about-collections.md %}), however [Free Organizations]({% link _articles/plans-and-pricing/about-bitwarden-plans.md %}) are limited to only two Collections. The following `.csv`, for example, would cause this error:
+This error occurs when the Lastpass export contains 3 or more `grouping` values. The values in the `grouping` field are interpreted by Bitwarden as [Collections]({{site.baseurl}}/about-collections/), however [Free Organizations]({{site.baseurl}}/about-bitwarden-plans/) are limited to only two Collections. The following `.csv`, for example, would cause this error:
 
 ```
 url,username,password,totp,extra,name,grouping,fav

@@ -21,7 +21,7 @@ Bitwarden Browser Extensions integrate password management directly into your fa
 - Safari
 
 {% callout success %}
-**The Safari Browser Extension is packaged with the Desktop Application**, available for download from the App Store. For more information, see [Safari App Extension]({% link _articles/account/install-safari-app-extension.md %}).
+**The Safari Browser Extension is packaged with the Desktop Application**, available for download from the App Store. For more information, see [Safari App Extension]({{site.baseurl}}/install-safari-app-extension/).
 {% endcallout %}
 
 {% image getting-started/browserext/browserext-vault.png Bitwarden Browser Extension in Google Chrome %}
@@ -50,7 +50,7 @@ Organizing your Vault into **Favorites** and **Folders** makes navigating your V
 3. Select a **Folder** from the dropdown to add this item to a folder, or check the **Favorite** checkbox to add it to your Favorites.
 4. Select **Save** in the top-right corner of the Browser Extension.
 
-For more information, see [Folders]({% link _articles/features/folders.md %}) and [Favorites]({% link _articles/features/favorites.md %}).
+For more information, see [Folders]({{site.baseurl}}/folders/) and [Favorites]({{site.baseurl}}/favorites/).
 
 ## Add a Login
 
@@ -58,7 +58,7 @@ Any time you log in to a website that doesn't already have a Login item saved fo
 
 {% image getting-started/browserext/browserext-add.png %}
 
-Selecting **Yes, Save Now** will automatically add a Login item to your Vault with the entered username, password, and URI. If you're unfamiliar with using URIs, see [Using URIs]({% link _articles/features/uri-match-detection.md %}).
+Selecting **Yes, Save Now** will automatically add a Login item to your Vault with the entered username, password, and URI. If you're unfamiliar with using URIs, see [Using URIs]({{site.baseurl}}/uri-match-detection/).
 
 {% callout success %}
 You can disable this banner by selecting the **Disable Add Login Notification** option from the **Options** menu in your Browser Extension.
@@ -66,7 +66,7 @@ You can disable this banner by selecting the **Disable Add Login Notification** 
 
 ## Launch a Website
 
-You can launch a website directly from the Bitwarden Browser Extension by selecting the {% icon fa-share-square %} **Launch** button in any Vault item with a valid URI. If you're unfamiliar with using URIs, see [Using URIs]({% link _articles/features/uri-match-detection.md %}).
+You can launch a website directly from the Bitwarden Browser Extension by selecting the {% icon fa-share-square %} **Launch** button in any Vault item with a valid URI. If you're unfamiliar with using URIs, see [Using URIs]({{site.baseurl}}/uri-match-detection/).
 
 {% image getting-started/browserext/browserext-launch.png %}
 
@@ -80,7 +80,7 @@ When a Vault item has a corresponding URI, the Bitwarden icon will overlay a not
 
 Simply clicking on the Vault item inside the Browser Extension will auto-fill login information to the detected input fields.
 
-There are a few other methods of auto-filling login information from your Browser Extension, including context menus and keyboard shortcuts. To learn about them, see [Browser Extension Auto-fill Options]({% link _articles/features/auto-fill-browser.md %}).
+There are a few other methods of auto-filling login information from your Browser Extension, including context menus and keyboard shortcuts. To learn about them, see [Browser Extension Auto-fill Options]({{site.baseurl}}/auto-fill-browser/).
 
 ## Unlock with PIN / Biometrics
 
@@ -92,7 +92,7 @@ For lightening fast access to your credentials, setup a PIN or Biometrics to unl
 
    {% callout success%}**Optional:** The pre-check option **Lock with master password on browser restart** will require you to enter your Master Password instead of a PIN when your browser restarts. If you want to be able to unlock with a PIN when you browser restarts, uncheck this option.{% endcallout %}
 
-For more information, see [Unlock with PIN]({% link _articles/account/unlock-with-pin.md %}) or [Unlock with Biometrics]({% link _articles/account/biometrics.md %}).
+For more information, see [Unlock with PIN]({{site.baseurl}}/unlock-with-pin/) or [Unlock with Biometrics]({{site.baseurl}}/biometrics/).
 
 ## Pin an Extension
 

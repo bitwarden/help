@@ -9,7 +9,7 @@ tags: [browser, auto-fill, autofill]
 ---
 
 {% callout success %}
-Most auto-fill functionality relies on the attribution of URIs to Login items. If you're unfamiliar with using URIs, see [Using URIs]({% link _articles/features/uri-match-detection.md %}).
+Most auto-fill functionality relies on the attribution of URIs to Login items. If you're unfamiliar with using URIs, see [Using URIs]({{site.baseurl}}/uri-match-detection/).
 
 Additionally, **basic authentication prompts** work a little differently than regular auto-fills. See our breakout article on [Basic Auth Prompts]({{site.baseurl}}/basic-auth-autofill)
 {% endcallout %}
@@ -53,7 +53,7 @@ To auto-fill login information, use the following **default** shortcuts. If ther
 - On Linux: `Ctrl + Shift + L`
 
 {% callout success %}
-If a login uses the [Bitwarden Authenticator]({% link _articles/features/authenticator-keys.md %}) for TOTPs, using the `Cmd/Ctrl + Shift + L` will automatically copy your TOTP to your clipboard after auto-filling. All you have to do is `Cmd/Ctrl + V` to paste!
+If a login uses the [Bitwarden Authenticator]({{site.baseurl}}/authenticator-keys/) for TOTPs, using the `Cmd/Ctrl + Shift + L` will automatically copy your TOTP to your clipboard after auto-filling. All you have to do is `Cmd/Ctrl + V` to paste!
 {% endcallout %}
 
 If any given shortcut doesn't work, it's likely because another application on your device is already registered to use it. For example, the auto-fill shortcut on Windows is commonly claimed by the AMD Radeon Adrenaline software (AMD graphic drivers) and therefore cannot be used by Bitwarden. In these instances, you should free up the shortcut or configure Bitwarden to use a different shortcut.

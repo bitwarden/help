@@ -35,7 +35,7 @@ The following variables are among those that already exist in `global.override.e
 |globalSettings__mail__smtp__password=|A valid password for the `smtp__host`.|
 |globalSettings__disableUserRegistration=|Specify `true` to disable new users signing up for an account on this instance via the Registration page.|
 |globalSettings__hibpApiKey=|Your HaveIBeenPwned (HIBP) API Key, available [here](https://haveibeenpwned.com/API/Key).|
-|adminSettings__admins=|Email addresses which may access the [System Administrator Portal]({% link _articles/hosting/admin-portal.md%}).|
+|adminSettings__admins=|Email addresses which may access the [System Administrator Portal]({{site.baseurl}}/admin-portal/).|
 
 ## Optional Variables
 

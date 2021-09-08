@@ -73,7 +73,7 @@ Secure Notes can be used to store encrypted freeform text for anything you want 
 </div>
 
 {% callout success %}
-You can import items into your Vault from a variety of password management solutions. For more information, see [Import Data to your Vault]({% link _articles/importing/import-data.md %}).
+You can import items into your Vault from a variety of password management solutions. For more information, see [Import Data to your Vault]({{site.baseurl}}/import-data/).
 {% endcallout %}
 
 ## Manage Vault Items
@@ -142,7 +142,7 @@ You can add, edit, and delete Vault items from any Bitwarden client application:
 {% capture cli_sync%}
 ### CLI
 
-For more information, refer to our [CLI documentation]({% link _articles/miscellaneous/cli.md %}).
+For more information, refer to our [CLI documentation]({{site.baseurl}}/cli/).
 
 {% endcapture %}
 {{ cli_sync | markdownify }}
@@ -151,7 +151,7 @@ For more information, refer to our [CLI documentation]({% link _articles/miscell
 
 ### Folders and Favorites
 
-Items in your Vault can be organized into Folders, or marked as Favorites. For more information, see [Folders]({% link _articles/features/folders.md %}) and [Favorites]({% link _articles/features/favorites.md %}).
+Items in your Vault can be organized into Folders, or marked as Favorites. For more information, see [Folders]({{site.baseurl}}/folders/) and [Favorites]({{site.baseurl}}/favorites/).
 
 ### Items in the Trash
 

@@ -20,23 +20,23 @@ This article contains Frequently Asked Questions (FAQs) regarding **Security**.
 **A:** You can trust us for a few reasons:
 
 1. Bitwarden is **open source** software. All of our source code is hosted on [GitHub](https://github.com/bitwarden){:target="_blank"} and is free for anyone to review. Thousands of software developers follow Bitwarden's source code projects (and you should too!).
-2. Bitwarden [is **audited**]({% link _articles/security/is-bitwarden-audited.md %}) **by reputable third-party security firms** as well as independent security researchers.
+2. Bitwarden [is **audited**]({{site.baseurl}}/is-bitwarden-audited/) **by reputable third-party security firms** as well as independent security researchers.[is **audited**]({{site.baseurl}}/is-bitwarden-audited/)
 3. Bitwarden **does not store your passwords**. Bitwarden stores encrypted versions of your passwords [that only you can unlock]({% link _articles/security/what-encryption-is-used.md %}). Your sensitive information is encrypted locally on your personal device before ever being sent to our cloud servers.
 4. **Bitwarden has a reputation.** Bitwarden is used by millions of individuals and businesses. If we did anything questionable or risky, we'd be out of business!
 
-Still don't trust us? You don't have to. Open source is beautiful. You can easily host the entire Bitwarden stack yourself. You control your data. Learn more [here]({% link _articles/hosting/install-on-premise.md %}).
+Still don't trust us? You don't have to. Open source is beautiful. You can easily host the entire Bitwarden stack yourself. You control your data. Learn more [here]({{site.baseurl}}/install-on-premise/).
 
 ### Q: What happens if Bitwarden gets hacked?
 
 **A:** Bitwarden takes extreme measures to ensure that its websites, applications, and cloud servers are secure. Bitwarden uses Microsoft Azure managed services to manage server infrastructure and security, rather than doing so directly.
 
-If for some reason Bitwarden were to get hacked and your data was exposed, your information is still protected due to [strong encryption and one-way salted hashing]({% link _articles/security/what-encryption-is-used.md %}) measures taken on your Vault data and master password.
+If for some reason Bitwarden were to get hacked and your data was exposed, your information is still protected due to [strong encryption and one-way salted hashing]({{site.baseurl}}/what-encryption-is-used/) measures taken on your Vault data and master password.
 
 ### Q: Can Bitwarden see my passwords?
 
 **A:** No.
 
-Your data is fully encrypted and/or hashed before ever leaving **your** local device, so no one from the Bitwarden team can ever see, read, or reverse engineer to get to your real data. Bitwarden servers only store encrypted and hashed data. For more information about how your data is encrypted, see [Encryption]({% link _articles/security/what-encryption-is-used.md %}).
+Your data is fully encrypted and/or hashed before ever leaving **your** local device, so no one from the Bitwarden team can ever see, read, or reverse engineer to get to your real data. Bitwarden servers only store encrypted and hashed data. For more information about how your data is encrypted, see [Encryption]({{site.baseurl}}/what-encryption-is-used/).
 
 ### Q: Is my Bitwarden master password stored locally?
 
@@ -64,7 +64,7 @@ For more information, please visit our [Security and Compliance](https://bitward
 
 ### Q: What third-party services, libraries or identifiers are used in my Bitwarden account?
 
-**A:** In the Mobile apps, Firebase Cloud Messaging (often mistaken for a tracker) is used only for push notifications related to [sync]({% link _articles/miscellaneous/vault-sync.md %}) and performs absolutely no tracking functions. Microsoft Visual Studio App Center is used for crash reporting on a range of mobile devices. In the Web Vault, Stripe and PayPal scripts are used for payment processing only on payment pages.
+**A:** In the Mobile apps, Firebase Cloud Messaging (often mistaken for a tracker) is used only for push notifications related to [sync]({{site.baseurl}}/vault-sync/) and performs absolutely no tracking functions. Microsoft Visual Studio App Center is used for crash reporting on a range of mobile devices. In the Web Vault, Stripe and PayPal scripts are used for payment processing only on payment pages.
 
 For those who prefer to exclude all 3rd party communication, Firebase and HockeyApp are removed completely from the F-Droid build. Additionally, Turning off push notifications on a self-hosted Bitwarden server will disable using the push relay server.
 
@@ -72,11 +72,11 @@ Bitwarden takes user security and privacy seriously. Bitwarden maintains secure,
 
 ### Q: How do I require Two-step Login for my Bitwarden Organization?
 
-**A:** Use an [Enterprise Policy]({% link _articles/organizations/policies.md %}), included with an Enterprise Organization subscription. You can also enable Duo MFA integration to enforce 2FA/MFA for your Organization. For more information, see [Two-step Login via Duo]({% link _articles/two-step-login/setup-two-step-login-duo.md %}).
+**A:** Use an [Enterprise Policy]({{site.baseurl}}/policies/), included with an Enterprise Organization subscription. You can also enable Duo MFA integration to enforce 2FA/MFA for your Organization. For more information, see [Two-step Login via Duo]({{site.baseurl}}/setup-two-step-login-duo/).
 
 ### Q: What are the certificate options for a self-hosted instance of Bitwarden?
 
-**A:** See [Certificate Options]({% link _articles/hosting/certificates.md %}) for a complete list and instructions.
+**A:** See [Certificate Options]({{site.baseurl}}/certificates/) for a complete list and instructions.
 
 ### Q: How does Bitwarden vet code changes?
 

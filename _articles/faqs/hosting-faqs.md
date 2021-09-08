@@ -25,7 +25,7 @@ You can read more about Docker and container technologies at [Docker's Website](
 
 ### Q: How do I backup and restore my self-hosted instance?
 
-**A:** Bitwarden takes automated nightly backups of the `bitwarden-mssql` database container in order to protect your stored credentials. For help with manual backups, or help restoring a backup, see [Backup your Hosted Data]({% link _articles/hosting/backup-on-premise.md %}).
+**A:** Bitwarden takes automated nightly backups of the `bitwarden-mssql` database container in order to protect your stored credentials. For help with manual backups, or help restoring a backup, see [Backup your Hosted Data]({{site.baseurl}}/backup-on-premise/).
 
 ### Q: What are my installation id and installation key used for?
 
@@ -51,7 +51,7 @@ If you are using Let's Encrypt certificate, you'll need to [Manually Update Your
 
 ### Q: How do I set up an SMTP Mail Server?
 
-**A:** Connect your self-hosted instance to an existing SMTP Mail Server by editing all `globalSettings__mail__smtp__*` values in `./bwdata/env/global.overide.env`. For more information, see [Configure Environment Variables]({% link _articles/hosting/environment-variables.md %}).
+**A:** Connect your self-hosted instance to an existing SMTP Mail Server by editing all `globalSettings__mail__smtp__*` values in `./bwdata/env/global.overide.env`. For more information, see [Configure Environment Variables]({{site.baseurl}}/environment-variables/).
 
 If you don't yet have an existing SMTP Mail Server from which you can relay emails, consider services like [Mailgun](https://www.mailgun.com/){:target="\_blank"} or [SparkPost](https://www.sparkpost.com){:target="\_blank"}, or use Gmail an SMTP Mail Server.
 

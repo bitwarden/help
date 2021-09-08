@@ -11,7 +11,7 @@ order: "09"
 The Bitwarden System Administrator Portal can be used to:
 
 - Check currently installed and latest available versions.
-- View Environment Configuration settings (for more information, see [Configure Environment Variables]({% link _articles/hosting/environment-variables.md %})).
+- View Environment Configuration settings (for more information, see [Configure Environment Variables]({{site.baseurl}}/environment-variables/)).
 - View and delete registered users.
 - View and delete registered Organizations.
 
@@ -33,7 +33,7 @@ These email addresses **do not** need to be registered with an account on your B
 
 ### Configure SMTP Mail Server
 
-The System Adminstrator Portal uses email to provide secure links for authentication. Therefore, you will need to configure your installation's SMTP Mail Server settings prior to attempting to log in to the portal. For more information, see [Configure Environment Variables]({% link _articles/hosting/environment-variables.md %}).
+The System Adminstrator Portal uses email to provide secure links for authentication. Therefore, you will need to configure your installation's SMTP Mail Server settings prior to attempting to log in to the portal. For more information, see [Configure Environment Variables]({{site.baseurl}}/environment-variables/).
 
 ## Access the Admin Portal
 

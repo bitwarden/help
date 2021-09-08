@@ -13,7 +13,7 @@ redirect_from:
 
 Bitwarden uses [AES-CBC](#aes-cbc) 256-bit encryption for your Vault data, and [PBKDF2](#pbkdf2) SHA-256 to derive your encryption key.
 
-Bitwarden **always** encrypts and/or hashes your data on your local device before anything is sent to cloud servers for storage. **Bitwarden servers are only used for storing encrypted data.** For more information, see [Storage]({% link _articles/security/data-storage.md %}).
+Bitwarden **always** encrypts and/or hashes your data on your local device before anything is sent to cloud servers for storage. **Bitwarden servers are only used for storing encrypted data.** For more information, see [Storage]({{site.baseurl}}/data-storage/).
 
 Vault data can only be decrypted using the key derived from your master password. Bitwarden is a zero knowledge solution, meaning you are the only party with access to your key and the ability to decrypt your Vault data.
 

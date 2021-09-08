@@ -78,7 +78,7 @@ To import data to your Organization:
    {% callout warning %}Import to Bitwarden can't check whether items in the file to import are duplicative of items in your Vault. This means that **importing multiple files will create duplicative** Vault items if an item is already in the Vault and in the file to import.{% endcallout %}
 5. Select the **Import Data** button to complete your import.
 
-Currently, file attachments are not included in Bitwarden import operations and will need to be uploaded to your Vault manually. For more information, see [File Attachments]({% link _articles/features/attachments.md %}).
+Currently, file attachments are not included in Bitwarden import operations and will need to be uploaded to your Vault manually. For more information, see [File Attachments]({{site.baseurl}}/attachments/).
 
 {% callout success %}
 You should also recommend to employees that they export their personal data from your existing password manager and prepare it for import into Bitwarden. Learn more [here]({{site.baseurl}}/import-export/).

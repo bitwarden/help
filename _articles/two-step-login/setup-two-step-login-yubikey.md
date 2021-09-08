@@ -19,7 +19,7 @@ Complete the following steps to enable Two-step Login using Yubikey:
 {% callout warning %}
 **Losing access to your Yubikey can permanently lock you out of your Vault,** unless you write down and keep your Two-step Login Recovery Code in a safe place or have an alternate Two-step Login method enabled and available.
 
-[Get your Recovery Code]({% link _articles/two-step-login/two-step-recovery-code.md %}) from the **Two-step Login** screen immediately after enabling any method.
+[Get your Recovery Code]({{site.baseurl}}/two-step-recovery-code/) from the **Two-step Login** screen immediately after enabling any method.
 {% endcallout %}
 
 1. Log in to the [Web Vault](https://vault.bitwarden.com){:target="\_blank"}.
@@ -66,7 +66,7 @@ The following assumes that **YubiKey** is your [highest-priority enabled method]
 
 2. Select or tap **Continue** to finish logging in.
 
-You will not be required to complete your secondary Two-step Login step to **Unlock** your Vault once logged in. For help configuring Log Out vs. Lock behavior, see [Vault Timeout Options]({% link _articles/account/vault-timeout.md %}).
+You will not be required to complete your secondary Two-step Login step to **Unlock** your Vault once logged in. For help configuring Log Out vs. Lock behavior, see [Vault Timeout Options]({{site.baseurl}}/vault-timeout/).
 
 ## NFC Troubleshooting
 

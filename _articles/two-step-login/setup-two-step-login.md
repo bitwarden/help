@@ -8,7 +8,7 @@ order: "02"
 tags: [two-step login, 2fa, two factor authentication, account]
 ---
 
-Using Two-step Login (also called *Two-factor Authentication*, or *2FA*) to protect your Bitwarden Vault prevents a malicious actor from accessing your Vault even if they discover your Master Password by requiring authentication from a secondary device when you log in. If you're unfamiliar with the basics of 2FA, check out our [Field Guide]({% link _articles/two-step-login/bitwarden-field-guide-two-step-login.md %}).
+Using Two-step Login (also called *Two-factor Authentication*, or *2FA*) to protect your Bitwarden Vault prevents a malicious actor from accessing your Vault even if they discover your Master Password by requiring authentication from a secondary device when you log in. If you're unfamiliar with the basics of 2FA, check out our [Field Guide]({{site.baseurl}}/bitwarden-field-guide-two-step-login/).
 
 There are lots of different methods for Two-step Login, ranging from dedicated Authenticator Apps to Hardware Security Keys. Whatever you choose, Bitwarden highly recommends that you secure your Vault using Two-step Login. In fact, we think it's so important that we're happy to offer a few methods [for free](#free-methods).
 
@@ -22,7 +22,7 @@ Bitwarden offers several Two-step Login methods for free, including:
 
 |Method|Setup Instructions|
 |------|------------------|
-|via an Authenticator app (for example, [Authy](https://authy.com/){:target="_blank"} or [Google Authenticator](https://support.google.com/accounts/answer/1066447?hl=en){:target="_blank"})|Click [**here**]({% link _articles/two-step-login/setup-two-step-login-authenticator.md %}).|
+|via an Authenticator app (for example, [Authy](https://authy.com/){:target="_blank"} or [Google Authenticator](https://support.google.com/accounts/answer/1066447?hl=en){:target="_blank"})|Click [**here**]({{site.baseurl}}/setup-two-step-login-authenticator/).|[**here**]({{site.baseurl}}/setup-two-step-login-authenticator/)
 |via Email|Click [**here**]({% link _articles/two-step-login/setup-two-step-login-email.md %}).|
 
 ### Premium Methods
@@ -31,7 +31,7 @@ For Premium users (including members of Paid Organizations), Bitwarden offers se
 
 |Method|Setup Instructions|
 |------|------------------|
-|via Duo Security with Duo Push, SMS, phone call, and security keys|Click [**here**]({% link _articles/two-step-login/setup-two-step-login-duo.md %}).|
+|via Duo Security with Duo Push, SMS, phone call, and security keys|Click [**here**]({{site.baseurl}}/setup-two-step-login-duo/).|[**here**]({{site.baseurl}}/setup-two-step-login-duo/)[**here**]({{site.baseurl}}/setup-two-step-login-duo/)
 |via YubiKey (any 4/5 series device or YubiKey NEO/NFC)|Click [**here**]({% link _articles/two-step-login/setup-two-step-login-yubikey.md %}).|
 |via FIDO2 WebAuthn (any FIDO2 WebAuthn Certified authenticator)|Click [**here**]({% link _articles/two-step-login/setup-two-step-login-fido.md %}).|
 
@@ -41,7 +41,7 @@ While all of the above methods can be enabled on an individual-by-individual bas
 
 |Method|Setup Instructions|
 |------|------------------|
-|via Duo Security with Duo Push, SMS, phone call, and security keys|Click [**here**]({% link _articles/two-step-login/setup-two-step-login-duo.md %}).|
+|via Duo Security with Duo Push, SMS, phone call, and security keys|Click [**here**]({{site.baseurl}}/setup-two-step-login-duo/).|
 
 ## Using Multiple Methods
 

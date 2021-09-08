@@ -8,10 +8,10 @@ tags: [import]
 order: "08"
 ---
 
-Vault data can be [exported]({% link _articles/account/export-your-data.md %}) in an encrypted JSON file. These exports are encrypted using your [account's encryption key]({% link _articles/account/account-encryption-key.md %}), which are generated on account creation and unique to each Bitwarden user account.
+Vault data can be [exported]({{site.baseurl}}/export-your-data/) in an encrypted JSON file. These exports are encrypted using your [account's encryption key]({{site.baseurl}}/account-encryption-key/), which are generated on account creation and unique to each Bitwarden user account.
 
 {% callout warning %}
-[Rotating your account's encryption key]({% link _articles/account/account-encryption-key.md %}) will render an Encrypted Export impossible to decrypt. **If you rotate your account encryption key, replace any old files with new one that use the new encryption key.**
+[Rotating your account's encryption key]({{site.baseurl}}/account-encryption-key/) will render an Encrypted Export impossible to decrypt. **If you rotate your account encryption key, replace any old files with new one that use the new encryption key.**
 
 Account Encryption Keys are unique to each Bitwarden user account, so you won't be able to import an Encrypted Export into a different account.
 {% endcallout %}
@@ -42,7 +42,7 @@ Will look something like:
 
 ## Create an Encrypted Export
 
-Creating an Encrypted Export follows the [normal export procedure]({% link _articles/account/export-your-data.md %}):
+Creating an Encrypted Export follows the [normal export procedure]({{site.baseurl}}/export-your-data/):
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
@@ -132,7 +132,7 @@ To create an encrypted export of your personal Vault data from the CLI, use the 
 bw export my-master-password --output /users/me/documents/ --format encrypted_json
 ```
 
-For more detail, see our [CLI documentation]({% link _articles/miscellaneous/cli.md %}).
+For more detail, see our [CLI documentation]({{site.baseurl}}/cli/).
 
 {% endcapture %}
 {{ cli_info | markdownify}}
@@ -141,13 +141,13 @@ For more detail, see our [CLI documentation]({% link _articles/miscellaneous/cli
 
 ## Import an Encrypted Export
 
-Importing an Encrypted Export follows the [normal import procedure]({% link _articles/importing/import-data.md %}), which can **only be done from the** [**Web Vault**](https://vault.bitwarden.com){:target="\_blank"}:
+Importing an Encrypted Export follows the [normal import procedure]({{site.baseurl}}/import-data/), which can **only be done from the** [**Web Vault**](https://vault.bitwarden.com){:target="\_blank"}:
 
 1. In the Web Vault, select **Tools** from the top navigation bar.
 2. Select **Import Data** from the left-hand Tools menu.
 3. From the format dropdown, choose  **Bitwarden (json)**.
 
-   {% callout success %}There is no import option specifically for Encrypted Exports. A handler will determine that the `.json` file is encrypted and attempt to decrypt the file using your [account's encryption key]({% link _articles/account/account-encryption-key.md %}).{% endcallout %}
+   {% callout success %}There is no import option specifically for Encrypted Exports. A handler will determine that the `.json` file is encrypted and attempt to decrypt the file using your [account's encryption key]({{site.baseurl}}/account-encryption-key/).{% endcallout %}
 5. Select the **Choose File** button and add the file to import.
 
    {% callout warning %}Import to Bitwarden can't check whether items in the file to import are duplicative of items in your Vault. This means that **importing multiple files will create duplicative** Vault items if an item is already in the Vault and in the file to import.{% endcallout %}

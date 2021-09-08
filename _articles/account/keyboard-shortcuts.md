@@ -22,7 +22,7 @@ order: "15"
 - Ctrl/CMD `+` Shift `+` 9  `→` Generate a password and copy it to the clipboard
 - Ctrl/CMD `+` Shift `+` N  `→` Lock extension
 
-{% callout success %}If a login uses the [Bitwarden Authenticator]({% link _articles/features/authenticator-keys.md %}) for TOTPs, using the `Cmd/Ctrl + Shift + L` will automatically copy your TOTP to your clipboard after auto-filling. All you have to do is `Cmd/Ctrl + V` to paste!
+{% callout success %}If a login uses the [Bitwarden Authenticator]({{site.baseurl}}/authenticator-keys/) for TOTPs, using the `Cmd/Ctrl + Shift + L` will automatically copy your TOTP to your clipboard after auto-filling. All you have to do is `Cmd/Ctrl + V` to paste!
 {% endcallout %}
 
 ## Desktop application shortcuts

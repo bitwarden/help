@@ -577,7 +577,7 @@ bw get item 7ac9cae8-5067-4faf-b6ab-acfd00e2c328 | jq '.login.password="newp@ssw
 
 ### import
 
-The `import` command imports data from a prior Bitwarden export or other [supported password management application]({% link _articles/importing/import-data.md %}):
+The `import` command imports data from a prior Bitwarden export or other [supported password management application]({{site.baseurl}}/import-data/):
 
 ```
 bw import <format> <path>
@@ -595,7 +595,7 @@ Bitwarden supports lots of formats for import, too many to list here! Use `bw im
 
 ### export
 
-The `export` command exports Vault data as a `.json` or `.csv`, or [encrypted .json]({% link _articles/importing/encrypted-export.md %}) file:
+The `export` command exports Vault data as a `.json` or `.csv`, or [encrypted .json]({{site.baseurl}}/encrypted-export/) file:
 
 ```
 bw export [password] [--output <filePath>] [--format <format>] [--organizationid <orgid>]
@@ -606,7 +606,7 @@ The `export` command always requires your Master Password, even with an active [
 By default, the `export` command will generate a `.csv` (equivalent to specifying `--format csv`) to the current working directory, however you can specify:
 
 - `--format json` to export a `.json` file.
-- `--format encrypted_json` to export an [encrypted .json]({% link _articles/importing/encrypted-export.md %}) file.
+- `--format encrypted_json` to export an [encrypted .json]({{site.baseurl}}/encrypted-export/) file.
 - `--output <path>` to export to a specific location.
 - `--raw` to return the export to stdout instead of to a file.
 

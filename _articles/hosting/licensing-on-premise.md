@@ -11,7 +11,7 @@ order: "08"
 Self-hosting Bitwarden is free, however some features must be unlocked in your self-hosted instance with a registered license file. A license file can be obtained from the Bitwarden-hosted [Web Vault](https://vault.bitwarden.com){:target="\_blank"} by either an account with a Premium Individual subscription or by the Owner of an Organization.
 
 {% callout info %}
-The procedures in this article assume that you have already started a paid subscription to Bitwarden. If you haven't, refer to [About Bitwarden Plans]({% link _articles/plans-and-pricing/about-bitwarden-plans.md %}) and [What Plan is Right for Me?]({% link _articles/plans-and-pricing/what-plan-is-right-for-me.md %}).
+The procedures in this article assume that you have already started a paid subscription to Bitwarden. If you haven't, refer to [About Bitwarden Plans]({{site.baseurl}}/about-bitwarden-plans/) and [What Plan is Right for Me?]({{site.baseurl}}/what-plan-is-right-for-me/).
 {% endcallout %}
 
 ## Individual License

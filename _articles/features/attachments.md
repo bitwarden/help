@@ -111,7 +111,7 @@ Use `bw create attachment` to attach a file to an existing Vault item, for exapl
 bw create attachment --file /path/to/myfile.ext --itemid <itemid>
 ```
 
-For more information, refer to our [CLI documentation]({% link _articles/miscellaneous/cli.md %}).
+For more information, refer to our [CLI documentation]({{site.baseurl}}/cli/).
 
 {% endcapture %}
 {{ cli_sync | markdownify }}

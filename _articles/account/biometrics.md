@@ -10,7 +10,7 @@ order: "11"
 
 Bitwarden can be configured to accept biometrics as a method to unlock your Vault.
 
-Biometrics can **only be used to unlock** your Vault, you will still be required to use your Master Password and any enabled [Two-step Login method]({% link _articles/two-step-login/setup-two-step-login.md %}) when you **log in**. If you're not sure of the difference, scroll down to [Understanding Unlock vs. Log In](#understanding-unlock-vs-log-in).
+Biometrics can **only be used to unlock** your Vault, you will still be required to use your Master Password and any enabled [Two-step Login method]({{site.baseurl}}/setup-two-step-login/) when you **log in**. If you're not sure of the difference, scroll down to [Understanding Unlock vs. Log In](#understanding-unlock-vs-log-in).
 
 {% callout success %}
 Biometric features are part of the built-in security in your device and/or operating system. Bitwarden leverages native APIs to perform this validation, and therefore **Bitwarden does not receive any biometrics information** from the device.
@@ -115,7 +115,7 @@ To enable Unlock with Biometrics for your Browser Extension:
 1. In your Bitwarden Desktop app, navigate to Settings (on Windows, **File** &rarr; **Settings**) (on macOS, **Bitwarden** &rarr; **Preferences**).
 2. Scroll down to the Options section, and check the **Enable Browser Integration** box.
 
-   {% callout info %}Optionally, check the **Require verification for browser integration** option to require [account fingerprint]({% link _articles/features/fingerprint-phrase.md %}) verification when you activate the integration.{% endcallout %}
+   {% callout info %}Optionally, check the **Require verification for browser integration** option to require [account fingerprint]({{site.baseurl}}/fingerprint-phrase/) verification when you activate the integration.{% endcallout %}
 3. In your Browser, navigate to the Extensions manager (e.g. `chrome://extensions` or `brave://extensions`), open Bitwarden, and toggle the **Allow access to file URLs** option.
 
 
@@ -142,14 +142,14 @@ Your Desktop app needs to be **Logged In** but does not need to be **Unlocked** 
 
 ## Understanding Unlock vs. Log In
 
-In order to understand why unlocking and logging in aren't the same, it's important to remember that Bitwarden [never stores unencrypted data]({% link _articles/security/vault-data.md %}) on its servers. **When your Vault is neither unlocked nor logged in**, your Vault data only exists on the server in its [encrypted form]({% link _articles/security/what-encryption-is-used.md %}).
+In order to understand why unlocking and logging in aren't the same, it's important to remember that Bitwarden [never stores unencrypted data]({{site.baseurl}}/vault-data/) on its servers. **When your Vault is neither unlocked nor logged in**, your Vault data only exists on the server in its [encrypted form]({{site.baseurl}}/what-encryption-is-used/).
 
 **Logging in** to Bitwarden **decrypts** your Vault data to your device. In practice, that means two things:
 
-1. Logging in will always require your Master Password, because your Master Password is the source of the key needed to decrypt your Vault data. Additionally, because decryption is an operation that needs to be protected, this stage is where [any enabled Two-step Login methods]({% link _articles/two-step-login/setup-two-step-login.md %}) would be required.
+1. Logging in will always require your Master Password, because your Master Password is the source of the key needed to decrypt your Vault data. Additionally, because decryption is an operation that needs to be protected, this stage is where [any enabled Two-step Login methods]({{site.baseurl}}/setup-two-step-login/) would be required.
 2.  Logging in will always require you to be connected to the internet (or, if you're self-hosting, connected to the server), because you need access to the encrypted Vault in order to decrypt it.
 
 **Unlocking** can only be done when you're already logged in. In other words, only when your Vault data is already stored (encrypted) on your device. Because your Vault is already downloaded and your decryption key stored in memory:
 
-1. You don't need the decryption key derived from your Master Password, so you're free to use other access methods, like [PIN codes]({% link _articles/account/unlock-with-pin.md %}) and [biometrics]({% link _articles/account/biometrics.md %}).
+1. You don't need the decryption key derived from your Master Password, so you're free to use other access methods, like [PIN codes]({{site.baseurl}}/unlock-with-pin/) and [biometrics]({{site.baseurl}}/biometrics/).
 2. You don't need to be connected to the internet (or, if you're self-hosting, connected to the server).

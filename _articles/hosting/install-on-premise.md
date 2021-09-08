@@ -140,7 +140,7 @@ Bitwarden provides a shell script for easy installation on Linux and macOS (Bash
      Typically, this value should be the configured DNS record.
    - **Do you want to use Let's Encrypt to generate a free SSL certificate? (y/n):**
 
-     Specify `y` to generate a trusted SSL certificate using Let's Encrypt. You will be prompted to enter an email address for expiration reminders from Let's Encrypt. For more information, see [Certificate Options]({% link _articles/hosting/certificates.md %}).
+     Specify `y` to generate a trusted SSL certificate using Let's Encrypt. You will be prompted to enter an email address for expiration reminders from Let's Encrypt. For more information, see [Certificate Options]({{site.baseurl}}/certificates/).
 
      Alternatively, specify `n` and use the **Do you have a SSL certificate to use?** option.
 
@@ -152,12 +152,12 @@ Bitwarden provides a shell script for easy installation on Linux and macOS (Bash
      Retrieve an installation key using a valid email at [https://bitwarden.com/host](https://bitwarden.com/host). For more information, see [What are my installation id and installation key used for?](https://bitwarden.com/help/hosting-faqs/#general).
    - **Do you have a SSL certificate to use? (y/n):**
 
-     If you already have your own SSL certificate, specify `y` and place the necessary files in the `.bwdata/ssl/your.domain` directory. You will be asked whether it is a trusted SSL certificate (y/n). For more information, see [Certificate Options]({% link _articles/hosting/certificates.md %}).
+     If you already have your own SSL certificate, specify `y` and place the necessary files in the `.bwdata/ssl/your.domain` directory. You will be asked whether it is a trusted SSL certificate (y/n). For more information, see [Certificate Options]({{site.baseurl}}/certificates/).
 
      Alternatively, specify `n` and use the **self-signed SSL certificate?** option, which is only recommended for testing purposes.
    - **Do you want to generate a self-signed SSL certificate? (y/n):**
 
-     Specify `y` to have Bitwarden generate a self-signed certificate for you. This option is only recommended for testing. For more information, see [Certificate Options]({% link _articles/hosting/certificates.md %}).
+     Specify `y` to have Bitwarden generate a self-signed certificate for you. This option is only recommended for testing. For more information, see [Certificate Options]({{site.baseurl}}/certificates/).
 
      If you specify `n`, your instance will not use an SSL certificate and you will be required to front your installation with a HTTPS proxy, or else Bitwarden applications will not function properly.
 
@@ -210,7 +210,7 @@ After editing `global.override.env`, run one of the following commands to apply 
 
     .\bitwarden.ps1 -restart
 
-For more information about configuring Environment Variables, see [Configure Environment Variables]({% link _articles/hosting/environment-variables.md %}).
+For more information about configuring Environment Variables, see [Configure Environment Variables]({{site.baseurl}}/environment-variables/).
 
 ### Start Bitwarden
 

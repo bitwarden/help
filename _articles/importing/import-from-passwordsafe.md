@@ -35,7 +35,7 @@ Complete the following steps to export data from the Password Safe Desktop App:
 ## Prepare exported file before import
 Currently we do not offer a specific importer for this type of file.
 
-To prepare the exported file for import, please follow the instructions in this guide: [Condition a Bitwarden .csv or .json]({% link _articles/importing/condition-bitwarden-import.md %})
+To prepare the exported file for import, please follow the instructions in this guide: [Condition a Bitwarden .csv or .json]({{site.baseurl}}/condition-bitwarden-import/)
 
 ## Import to Bitwarden
 

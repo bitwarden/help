@@ -13,14 +13,14 @@ When configuring the Directory Connector application, you can use a variety of S
 
 Available Sync Options and Filter syntaxes are different for each directory server type. Refer to the **Configure Sync Options** and **Specify Sync Filters** sections of one of the following articles for help:
 
-- [Sync with Active Directory or LDAP]({% link _articles/directory-connector/ldap-directory.md %})
+- [Sync with Active Directory or LDAP]({{site.baseurl}}/ldap-directory/)[Sync with Active Directory or LDAP]({{site.baseurl}}/ldap-directory/)[Sync with Active Directory or LDAP]({{site.baseurl}}/ldap-directory/)[Sync with Active Directory or LDAP]({{site.baseurl}}/ldap-directory/)[Sync with Active Directory or LDAP]({{site.baseurl}}/ldap-directory/)
 - [Sync with Azure Active Directory]({% link _articles/directory-connector/azure-active-directory.md %})
 - [Sync with G Suite (Google)]({% link _articles/directory-connector/gsuite-directory.md %})
 - [Sync with Okta]({% link _articles/directory-connector/okta-directory.md %})
 - [Sync with OneLogin]({% link _articles/directory-connector/onelogin-directory.md %})
 
 {% callout success%}
-If you're using the Directory Connector CLI, see [Directory Connector File Storage]({% link _articles/directory-connector/directory-sync-shared.md %}) for help editing your `data.json` configuration file.
+If you're using the Directory Connector CLI, see [Directory Connector File Storage]({{site.baseurl}}/directory-sync-shared/) for help editing your `data.json` configuration file.
 {% endcallout %}
 
 ## Large Syncs

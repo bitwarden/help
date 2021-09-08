@@ -130,7 +130,7 @@ Complete the following steps to create a new Send from a Bitwarden Desktop App:
 
 1. Select the {% icon fa-paper-plane %} **Send** tab located at the bottom of the left-most column in your Desktop App.
 
-   The center column will list all Sends that haven't reached their [deletion date]({% link _articles/send/send-lifespan.md %}). Like the {% icon fa-lock %} **My Vault** view, you can filter your Sends by selecting one of the available **Types** from the left-most column.
+   The center column will list all Sends that haven't reached their [deletion date]({{site.baseurl}}/send-lifespan/). Like the {% icon fa-lock %} **My Vault** view, you can filter your Sends by selecting one of the available **Types** from the left-most column.
 2. To start creating a new Send, select the {% icon fa-plus %} **Add** icon in at the bottom of the center column.
 
     {% image send/send-desktop-add.png Send view in a Desktop App %}
@@ -139,7 +139,7 @@ Complete the following steps to create a new Send from a Bitwarden Desktop App:
    - **Name**: Specify an identifiable, meaningful name for this Send.
    - **Type**: Specify whether this Send will be **Text** or a **File**:
 
-     | **Text** | Type or paste the desired text into the input box. Toggle the **When accessing the send, hide text by default** option to require recipients to [toggle visibility]({% link _articles/send/send-privacy.md %}) when they open a Send.|
+     | **Text** | Type or paste the desired text into the input box. Toggle the **When accessing the send, hide text by default** option to require recipients to [toggle visibility]({{site.baseurl}}/send-privacy/) when they open a Send.|
      | **File** | Select the **Choose File** button and browse for the file to send. The maximum file size per Send is 500 MB (100 MB on Mobile). (**Requires Premium** & Verified Email)|
 
      By default, a Send will be scheduled for deletion 7 days from its creation. You may configure this and other options using the {% icon fa-chevron-down %} **Options** menu (see Step 4), otherwise select **Save** to finish creating your Send.
@@ -175,7 +175,7 @@ Complete the following steps to create a new Send from Bitwarden Mobile App:
 
 1. Tap the {% icon fa-paper-plane %} **Send** tab located at the bottom of your screen.
 
-   This view will list all Sends that haven't reached their [deletion date]({% link _articles/send/send-lifespan.md %}). Like the {% icon fa-lock %} **My Vault** view, you can filter your Sends by tapping one of the available **Types**.
+   This view will list all Sends that haven't reached their [deletion date]({{site.baseurl}}/send-lifespan/). Like the {% icon fa-lock %} **My Vault** view, you can filter your Sends by tapping one of the available **Types**.
 2. To start creating a new Send, tap the {% icon fa-plus %} **Add** icon:
 
    {% image send/send-mobile.png Send View on iOS and Android%}
@@ -184,7 +184,7 @@ Complete the following steps to create a new Send from Bitwarden Mobile App:
 
    - **Type**: Specify whether this Send will be **Text** or a **File**:
 
-     |**Text** | Type or paste the desired text into the input box. Toggle the **When accessing the Send, hide the text by default** option to require recipients to [toggle visibility]({% link _articles/send/send-privacy.md %}) when they open a Send.|
+     |**Text** | Type or paste the desired text into the input box. Toggle the **When accessing the Send, hide the text by default** option to require recipients to [toggle visibility]({{site.baseurl}}/send-privacy/) when they open a Send.|
      |**File** | Tap the **Choose File** button and browse for the file to send. The maximum file size per Send is 100 MB (500 MB on other clients). (**Requires Premium** & Verified Email)|
 
    - **Name**: Specify an identifiable, meaningful name for this Send.
@@ -231,7 +231,7 @@ To create a simple file Send with a [deletion date]({{site.baseurl}}s/send-lifes
 bw send -n "My File Send" - d 14 -f /Users/myaccount/Documents/my_file.pdf
 ```
 
-The Bitwarden CLI is a fully-featured and powerful tool. We recommend reading the [Send from CLI]({% link _articles/send/send-cli.md %}) article to learn more.
+The Bitwarden CLI is a fully-featured and powerful tool. We recommend reading the [Send from CLI]({{site.baseurl}}/send-cli/) article to learn more.
 
 {% endcapture %}
 {{ cli_info | markdownify}}

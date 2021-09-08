@@ -56,7 +56,7 @@ Organizing your Vault into **Favorites** and **Folders** makes navigating your V
 3. Tap **Folder** to select a folder for this item, or toggle the **Favorite** switch to add it to your Favorites.
 3. Tap **Save** in the top-right corner of your screen.
 
-For more information, see [Folders]({% link _articles/features/folders.md %}) and [Favorites]({% link _articles/features/favorites.md %}).
+For more information, see [Folders]({{site.baseurl}}/folders/) and [Favorites]({{site.baseurl}}/favorites/).
 
 ### Create New Logins
 
@@ -82,11 +82,11 @@ Setup Auto-fill to automatically enter logins from your Android device to a Web 
    Depending on which version of Android you're using, a number of Auto-fill options could be listed.
 2. Tap your available Auto-fill option, and toggle it on. A green `Enabled` message will indicate that Auto-fill is active.
 
-   Once toggled, you might be required to change some Android-native settings, depending on your available or enabled Auto-fill options. For more information, see [Auto-fill logins on Android]({% link _articles/features/auto-fill-android.md %}).
+   Once toggled, you might be required to change some Android-native settings, depending on your available or enabled Auto-fill options. For more information, see [Auto-fill logins on Android]({{site.baseurl}}/auto-fill-android/).
 
 ### Launch from Mobile Apps
 
-You can launch a website directly from the Bitwarden Mobile App by selecting the {% icon fa-share-square %} **Launch** button in any Vault item with a valid URI. If you're unfamiliar with using URIs, see [Using URIs]({% link _articles/features/uri-match-detection.md %}).
+You can launch a website directly from the Bitwarden Mobile App by selecting the {% icon fa-share-square %} **Launch** button in any Vault item with a valid URI. If you're unfamiliar with using URIs, see [Using URIs]({{site.baseurl}}/uri-match-detection/).
 
 {% image getting-started/mobile-launch.png %}
 
@@ -152,7 +152,7 @@ Organizing your Vault into **Favorites** and **Folders** makes navigating your V
 3. Tap **Folder** to select a folder for this item, or toggle the **Favorite** switch to add it to your Favorites.
 3. Tap **Save** in the top-right corner of your screen.
 
-For more information, see [Folders]({% link _articles/features/folders.md %}) and [Favorites]({% link _articles/features/favorites.md %}).
+For more information, see [Folders]({{site.baseurl}}/folders/) and [Favorites]({{site.baseurl}}/favorites/).
 
 ### Create New Logins
 
@@ -183,7 +183,7 @@ When you create new logins, make sure you enter a website in the [URI field](#cr
 
 ### Launch from Mobile Apps
 
-You can launch a website directly from the Bitwarden Mobile App by selecting the {% icon fa-share-square %} **Launch** button in any Vault item with a valid URI. If you're unfamiliar with using URIs, see [Using URIs]({% link _articles/features/uri-match-detection.md %}).
+You can launch a website directly from the Bitwarden Mobile App by selecting the {% icon fa-share-square %} **Launch** button in any Vault item with a valid URI. If you're unfamiliar with using URIs, see [Using URIs]({{site.baseurl}}/uri-match-detection/).
 
 {% image getting-started/mobile-launch.png %}
 

@@ -14,6 +14,6 @@ If you encounter sync errors, or if a particular directory change is not being s
 
 To clear the local cache:
 
-1. Open the Directory Connector [Desktop Application]({% link _articles/directory-connector/directory-sync-desktop.md %}).
+1. Open the Directory Connector [Desktop Application]({{site.baseurl}}/directory-sync-desktop/).
 2. Navigate to the **More** tab.
 3. In the **Other** section, select the **Clear Sync Cache** button.

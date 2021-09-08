@@ -53,9 +53,9 @@ Enabling Two-step Login will require you to complete a secondary step each time 
 - YubiKey (any 4/5 series device or YubiKey NEO/NFC)
 - FIDO (any FIDO2 WebAuthn certified key)
 
-To learn more about your options, and for help setting up any method, see [Two-step Login Methods]({% link _articles/two-step-login/setup-two-step-login.md %}).
+To learn more about your options, and for help setting up any method, see [Two-step Login Methods]({{site.baseurl}}/setup-two-step-login/).
 
-You can enable any number of methods you'd like, for more information see [Using Multiple Two-step Login Methods]({% link _articles/two-step-login/setup-two-step-login.md %}).
+You can enable any number of methods you'd like, for more information see [Using Multiple Two-step Login Methods]({{site.baseurl}}/setup-two-step-login/).
 
 ## Securing Important Websites
 
@@ -94,7 +94,7 @@ Bitwarden for iOS and Android can scan QR codes and generate 6-digit tokens just
 
 {% image two-step/field-guide/two-step-login-bitwarden-authenticator.png Two-step Login using Bitwarden %}
 
-For more help setting up and using the Bitwarden Authenticator, see [Bitwarden Authenticator]({% link _articles/features/authenticator-keys.md %}).
+For more help setting up and using the Bitwarden Authenticator, see [Bitwarden Authenticator]({{site.baseurl}}/authenticator-keys/).
 
 #### Why Use Bitwarden Authenticator?
 
@@ -119,9 +119,9 @@ Whichever path you choose, remember the basics:
 And now that you're a Two-step Login Expert, we recommend that you:
 
 - [Signup for a Bitwarden Account](https://vault.bitwarden.com/#/register)
-- [Setup Two-step Login]({% link _articles/two-step-login/setup-two-step-login.md %})
+- [Setup Two-step Login]({{site.baseurl}}/setup-two-step-login/)
 - [Get Premium for access to advanced Two-step Login methods](https://vault.bitwarden.com/#/?premium=purchase)
-- [Setup the Bitwarden Authenticator]({% link _articles/features/authenticator-keys.md %})
+- [Setup the Bitwarden Authenticator]({{site.baseurl}}/authenticator-keys/)[Setup the Bitwarden Authenticator]({{site.baseurl}}/authenticator-keys/)
 - [Customize your Vault Timeout behavior]({% link _articles/account/vault-timeout.md %})
 
 Here’s to many happy logins!

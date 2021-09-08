@@ -8,7 +8,7 @@ tags: [master password, account]
 order: "02"
 ---
 
-As described in the [Your Master Password]({% link _articles/account/master-password.md %}) article, Bitwarden has no knowledge of, way to retrieve, or way to reset your Master Password.
+As described in the [Your Master Password]({{site.baseurl}}/master-password/) article, Bitwarden has no knowledge of, way to retrieve, or way to reset your Master Password.
 
 If you've already lost your Master Password, there is unfortunately no way for anyone to recover the account or the data stored in your Personal Vault unless you're enrolled in [Organization Master Password Reset]({{site.baseurl}}/admin-reset/). You will need to delete your account and start a new one.
 

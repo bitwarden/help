@@ -35,11 +35,9 @@
                 {% include sidebar.html %}
             </div>
 
-            {% if page.url contains "article" %}
             <nav class="d-none d-xl-block col-xl-2 my-md-4 pb-md-4 bd-toc bd-toc-default" aria-label="Secondary navigation">
                 {% include toc.html %}
             </nav>
-            {% endif %}
 
             <main class="col-md-9 col-xl-8 pt-4 pb-5 pl-md-5 pr-md-5 bd-content" role="main">
                 {{content}}

@@ -42,7 +42,7 @@ If you're deleting the account because you lost your Master Password, you can no
 ## Delete an Organization
 
 {% callout info %}
-Only the **Owner** of an Organization has the authority to delete the Organization. For more information, see [User Types and Access Controls]({% link _articles/organizations/user-types-access-control.md %}).
+Only the **Owner** of an Organization has the authority to delete the Organization. For more information, see [User Types and Access Controls]({{site.baseurl}}/user-types-access-control/).
 {% endcallout %}
 
 1. In the [Web Vault](https://vault.bitwarden.com){:target="\_blank"}, open your Organization.

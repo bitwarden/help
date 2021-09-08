@@ -12,7 +12,7 @@ The Directory Connector Desktop App is a standalone desktop application that can
 
 {% image directory-connector/app.png Directory Connector Desktop App %}
 
-Directory Connector is also available as a [CLI Tool]({{site.baseurl}}/directory-sync-cli). The Desktop App and CLI [share a database and configurations]({% link _articles/directory-connector/directory-sync-shared.md %}), so you may choose to use both, however simultaneous use is not recommended.
+Directory Connector is also available as a [CLI Tool]({{site.baseurl}}/directory-sync-cli). The Desktop App and CLI [share a database and configurations]({{site.baseurl}}/directory-sync-shared/), so you may choose to use both, however simultaneous use is not recommended.
 
 ## Getting Started
 
@@ -33,7 +33,7 @@ To get started using the Directory Connector Desktop App:
 3. Log in to Directory Connector using your [Organization API Key]({{site.baseurl}}/public-api/#authentication). If you don't have the API Key, reach out to an [Organization Owner]({{site.baseurl}}/user-types-access-control/).
 4. On the {% icon fa-cogs %} **Settings** tab, connect to your directory and configure [sync options]({{site.baseurl}}/user-group-filters/). This procedure will vary based on the directory in use, so refer to one of the following articles for instruction:
 
-   - [Sync with Active Directory or LDAP]({% link _articles/directory-connector/ldap-directory.md %})
+   - [Sync with Active Directory or LDAP]({{site.baseurl}}/ldap-directory/)[Sync with Active Directory or LDAP]({{site.baseurl}}/ldap-directory/)[Sync with Active Directory or LDAP]({{site.baseurl}}/ldap-directory/)[Sync with Active Directory or LDAP]({{site.baseurl}}/ldap-directory/)[Sync with Active Directory or LDAP]({{site.baseurl}}/ldap-directory/)
    - [Sync with Azure Active Directory]({% link _articles/directory-connector/azure-active-directory.md %})
    - [Sync with G Suite (Google)]({% link _articles/directory-connector/gsuite-directory.md %})
    - [Sync with Okta]({% link _articles/directory-connector/okta-directory.md %})

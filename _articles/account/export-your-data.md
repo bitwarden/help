@@ -8,14 +8,14 @@ tags: [export, accounts, csv]
 order: "07"
 ---
 
-You can export your personal Vault data from any client application, or export an Organization Vault from the Web Vault or CLI. Exports can be downloaded as plaintext `.json` or `.csv` files, or as a `.json` [encrypted export]({% link _articles/importing/encrypted-export.md %}).
+You can export your personal Vault data from any client application, or export an Organization Vault from the Web Vault or CLI. Exports can be downloaded as plaintext `.json` or `.csv` files, or as a `.json` [encrypted export]({{site.baseurl}}/encrypted-export/).
 
-We recommend using `.json` for a more complete export, as `.csv` files won't currently export Cards or Identities. For complete information on the format of Bitwarden `.csv` and `.json` files, see [Condition a Bitwarden .csv or .json]({% link _articles/importing/condition-bitwarden-import.md %}).
+We recommend using `.json` for a more complete export, as `.csv` files won't currently export Cards or Identities. For complete information on the format of Bitwarden `.csv` and `.json` files, see [Condition a Bitwarden .csv or .json]({{site.baseurl}}/condition-bitwarden-import/).
 
-Vault Exports **will not include** [file attachments]({% link _articles/features/attachments.md %}) or Items in the Trash.
+Vault Exports **will not include** [file attachments]({{site.baseurl}}/attachments/) or Items in the Trash.
 
 {% callout warning %}
-Unless you're using an [Encrypted Export]({% link _articles/importing/encrypted-export.md %}), do not store or send the exported file over insecure channels, like email, and delete the file immediately after use.
+Unless you're using an [Encrypted Export]({{site.baseurl}}/encrypted-export/), do not store or send the exported file over insecure channels, like email, and delete the file immediately after use.
 {% endcallout %}
 
 ## Export a Personal Vault
@@ -120,7 +120,7 @@ To export your personal Vault from the CLI, use the `export` command. By default
 bw export my-master-password --output /users/me/documents/ --format json
 ```
 
-For more detail, see our [CLI documentation]({% link _articles/miscellaneous/cli.md %}).
+For more detail, see our [CLI documentation]({{site.baseurl}}/cli/).
 
 {% endcapture %}
 {{ cli_info | markdownify}}
@@ -129,7 +129,7 @@ For more detail, see our [CLI documentation]({% link _articles/miscellaneous/cli
 
 ## Export an Organization Vault
 
-Organization [Admins and Owners]({% link _articles/organizations/user-types-access-control.md %}) can export their Organization Vault (i.e. all items owned by the Organization) from the Web Vault or CLI:
+Organization [Admins and Owners]({{site.baseurl}}/user-types-access-control/) can export their Organization Vault (i.e. all items owned by the Organization) from the Web Vault or CLI:
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
@@ -174,7 +174,7 @@ bw export my-master-password --organizationid 7063feab-4b10-472e-b64c-785e2b870b
 If you don't know your `organizationid` value off-hand, you can access it at the command-line using `bw list organizations`.
 {% endcallout %}
 
-For more detail, see our [CLI documentation]({% link _articles/miscellaneous/cli.md %}).
+For more detail, see our [CLI documentation]({{site.baseurl}}/cli/).
 
 {% endcapture %}
 {{ org_cli_info | markdownify}}

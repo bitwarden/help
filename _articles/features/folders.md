@@ -116,7 +116,7 @@ There are similarities between Folders and Collections. **Folders organize your 
 Folders can be "nested" in order to logically organize them within your Vault. There's no limit to the depth with which you can nest Folders, but creating too many levels may interfere with your Vault's interface.
 
 {% callout info %}
-Searching inside a "parent" Folder will not include items in Folders nested inside it as potential search results. For more information, see [Search your Vault]({% link _articles/features/searching-vault.md %}).
+Searching inside a "parent" Folder will not include items in Folders nested inside it as potential search results. For more information, see [Search your Vault]({{site.baseurl}}/searching-vault/).
 {% endcallout %}
 
 {% image manage-items/subfolders.png Nested folders %}
