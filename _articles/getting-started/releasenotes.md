@@ -95,7 +95,7 @@ Bitwarden is proud to announce the release of Bitwarden Send, and end-to-end enc
 {% callout info %}
 Biometric Unlock for Browser Extensions is available for **only Chromium-based browsers** (e.g. Chrome, Edge) with v1.48.0 of the Browser Extension, provided you have the latest version (2021-01-19) of the Desktop App.
 
-When your Browser Extension updates to this version, you may be asked to accept a new permission for Bitwarden to `Communicate with cooperating native applications`. This permission is safe, but **optional**, and will enable the Browser Extension to communicate with the Bitwarden Desktop App, which is required to enable Biometric Unlock (see [here](https://bitwarden.com/help/biometrics/#browser-extensions) for details). Declining this permission will allow you to use v1.48.0 without Biometric Unlock functionality.
+When your Browser Extension updates to this version, you may be asked to accept a new permission for Bitwarden to `Communicate with cooperating native applications`. This permission is safe, but **optional**, and will enable the Browser Extension to communicate with the Bitwarden Desktop App, which is required to enable Biometric Unlock (see [here]({{site.baseurl}}/biometrics/#browser-extensions) for details). Declining this permission will allow you to use v1.48.0 without Biometric Unlock functionality.
 
 **Biometric Unlock is currently not available for:**
 - Firefox Browser Extensions below version 87.
@@ -109,27 +109,27 @@ The Bitwarden team is investigating these and will provide updates as things pro
 For the first major release of 2021, the Bitwarden team combined multiple major enhancements to address the critical needs of all users, including:
 - **Emergency Access**: Bitwarden's new Emergency Access feature enables users to designate and manage trusted emergency contacts, who may request access to their Vault in a Zero Knowledge/Zero Trust environment (see [here]({{site.baseurl}}/emergency-access/) for details).[here]({{site.baseurl}}/emergency-access/)
 - **Encrypted Exports**: Personal users and Organizations can now export Vault data in an encrypted `.json` file (see [here]({{site.baseurl}}/encrypted-export/) for details).
-- **New Role**: A Custom role is now available to allow for granular control over user permissions (see [here](https://bitwarden.com/help/user-types-access-control/#custom-role) for details).
-- **New Enterprise Policy**: The Personal Ownership policy is now available for use by Enterprise Organization (see [here](https://bitwarden.com/help/policies/#personal-ownership) for details).
-- **Biometric Unlock for Browser Extensions**: Using an integration with a native Desktop application, you can now use Biometric input to unlock Chromium-based Browser Extensions (see [here](https://bitwarden.com/help/biometrics/#browser-extensions) for details).
+- **New Role**: A Custom role is now available to allow for granular control over user permissions (see [here]({{site.baseurl}}/user-types-access-control/#custom-role) for details).
+- **New Enterprise Policy**: The Personal Ownership policy is now available for use by Enterprise Organization (see [here]({{site.baseurl}}/policies/#personal-ownership) for details).
+- **Biometric Unlock for Browser Extensions**: Using an integration with a native Desktop application, you can now use Biometric input to unlock Chromium-based Browser Extensions (see [here]({{site.baseurl}}/biometrics/#browser-extensions) for details).
 
 ## 2020-11-12
 The latest release of Bitwarden adds SSO-related enhancements to all client applications, including:
-- **New Enterprise Policies:** The Single Organization and Single Sign-On Authentication polices are now available for use by Enterprise Organizations (see [here](https://bitwarden.com/help/policies/) for details).
-- **API Key for CLI:** Authenticate into the Bitwarden CLI using an API Key newly available from your Web Vault (see [here](https://bitwarden.com/help/personal-api-key/) for details).
+- **New Enterprise Policies:** The Single Organization and Single Sign-On Authentication polices are now available for use by Enterprise Organizations (see [here]({{site.baseurl}}/policies/) for details).
+- **API Key for CLI:** Authenticate into the Bitwarden CLI using an API Key newly available from your Web Vault (see [here]({{site.baseurl}}/personal-api-key/) for details).
 - **Improvements to SSO Onboarding:** We've made some improvements to the way users are onboarded via SSO to prevent potential security risks (see [here](https://github.com/bitwarden/server/pull/945) for details).
 - **GDPR Acknowledgement:** From now on, new users of Bitwarden will be asked to acknowledge a Privacy Policy on registration.
 - **Android 11 Inline Auto-fill**: For devices using Android 11+, enabling the Auto-fill Service will display suggestions inline for IMEs that also support [this feature](https://developer.android.com/guide/topics/text/ime-autofill#workflow) (see [here](https://github.com/bitwarden/mobile/pull/1145) for details).
 
 ## 2020-9-30
-The latest release of Bitwarden adds much-anticipated **Login with SSO** functionality for all client applications, and the Business Portal for Web Vaults. Read this [blog post](https://bitwarden.com/blog/post/bitwarden-launches-sso-authentication/) for more information about Login with SSO, and refer to our [documentation](https://bitwarden.com/help/login-with-sso).
+The latest release of Bitwarden adds much-anticipated **Login with SSO** functionality for all client applications, and the Business Portal for Web Vaults. Read this [blog post](https://bitwarden.com/blog/post/bitwarden-launches-sso-authentication/) for more information about Login with SSO, and refer to our [documentation]({{site.baseurl}}/login-with-sso).
 
 ## Early 2020 releases
 
 The following items were released between March and September of 2020.
 
-- [Enterprise Policies](https://bitwarden.com/help/policies/)
-- [Vault Timeout Options](https://bitwarden.com/help/vault-timeout/)
-- [Trash functionality](https://bitwarden.com/help/managing-items/#deleting-an-item)
-- [Password View Permissions - "Hide Passwords"](https://bitwarden.com/help/user-types-access-control/#granular-access-control)
-- [Touch ID / Windows Hello for Desktop Applications](https://bitwarden.com/help/biometrics/#desktop-applications)
+- [Enterprise Policies]({{site.baseurl}}/policies/)
+- [Vault Timeout Options]({{site.baseurl}}/vault-timeout/)
+- [Trash functionality]({{site.baseurl}}/managing-items/#deleting-an-item)
+- [Password View Permissions - "Hide Passwords"]({{site.baseurl}}/user-types-access-control/#granular-access-control)
+- [Touch ID / Windows Hello for Desktop Applications]({{site.baseurl}}/biometrics/#desktop-applications)

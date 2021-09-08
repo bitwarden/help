@@ -23,7 +23,7 @@ Members of an Organization will find shared items ({% icon fa-cube%}) in their *
 
 ### Types of Organizations
 
-Bitwarden offers a variety of types of Organizations to meet your business's or family's needs. For feature-by-feature breakdowns of each Organization type, see [About Bitwarden Plans](https://bitwarden.com/help/about-bitwarden-plans/).
+Bitwarden offers a variety of types of Organizations to meet your business's or family's needs. For feature-by-feature breakdowns of each Organization type, see [About Bitwarden Plans]({{site.baseurl}}/about-bitwarden-plans/).
 
 |Type|Description|
 |----|-----------|

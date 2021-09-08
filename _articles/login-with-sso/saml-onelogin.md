@@ -20,7 +20,7 @@ Configuration involves working simultaneously within the Bitwarden [Business Por
 
 ## Open the Business Portal
 
-If you're coming straight from [SAML 2.0 Configuration]({{site.baseurl}}/sso-configure-saml/), you should already have an [Organization ID created](https://bitwarden.com/help/configure-sso-saml/#step-1-enabling-login-with-sso) and the SSO Configuration screen open. If you don't, open your [Business Portal]({{site.baseurl}}/about-business-portal/) and navigate to the SSO Configuration screen:
+If you're coming straight from [SAML 2.0 Configuration]({{site.baseurl}}/sso-configure-saml/), you should already have an [Organization ID created]({{site.baseurl}}/configure-sso-saml/#step-1-enabling-login-with-sso) and the SSO Configuration screen open. If you don't, open your [Business Portal]({{site.baseurl}}/about-business-portal/) and navigate to the SSO Configuration screen:
 
 {% image sso/sso-saml1.png SAML 2.0 Configuration %}
 

@@ -16,11 +16,11 @@ You **will not** be moved to a current plan automatically, and are **not require
 
 ## Free Individual
 
-There have been no changes made to the **Free** plan for individual users. For more information on what this plan includes, see [About Bitwarden Plans](https://bitwarden.com/help/about-bitwarden-plans/).
+There have been no changes made to the **Free** plan for individual users. For more information on what this plan includes, see [About Bitwarden Plans]({{site.baseurl}}/about-bitwarden-plans/).
 
 ## Premium Individual
 
-There have been no changes made to the **Premium** plan for individual users. For more information on what this plan includes, see [About Bitwarden Plans](https://bitwarden.com/help/about-bitwarden-plans/).
+There have been no changes made to the **Premium** plan for individual users. For more information on what this plan includes, see [About Bitwarden Plans]({{site.baseurl}}/about-bitwarden-plans/).
 
 ## Families Organizations
 
@@ -108,8 +108,8 @@ Additional enterprise-only capabilities are planned which will only be available
 
 #### Q: I have an Enterprise Organization, how do I upgrade my plan so that I can use Login with SSO?
 
-**A:** [Contact Us](https://bitwarden.com/contact/) and select **Upgrade/Change Plan** from the **Subject** dropdown menu. We highly recommend you test Login with SSO by starting a [7 Day Enterprise Free Trial](https://bitwarden.com/help/enterprise-free-trial).
+**A:** [Contact Us](https://bitwarden.com/contact/) and select **Upgrade/Change Plan** from the **Subject** dropdown menu. We highly recommend you test Login with SSO by starting a [7 Day Enterprise Free Trial]({{site.baseurl}}/enterprise-free-trial).
 
 #### Q: I would like to test Login with SSO. If I decide I don't need it, can I revert to my Classic 2019 plan?
 
-**A:** Unfortunately, we aren't able to revert you back to a Classic 2019 plan once you've upgraded. We recommend creating a new Organization to start a [7 Day Enterprise Free Trial](https://bitwarden.com/help/enterprise-free-trial/) to test Login with SSO outside of your Primary Organization.
+**A:** Unfortunately, we aren't able to revert you back to a Classic 2019 plan once you've upgraded. We recommend creating a new Organization to start a [7 Day Enterprise Free Trial]({{site.baseurl}}/enterprise-free-trial/) to test Login with SSO outside of your Primary Organization.

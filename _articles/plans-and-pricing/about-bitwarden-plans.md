@@ -12,7 +12,7 @@ redirect_from:
 
 In this article, we'll define each Bitwarden subscription plan to help you along your password management and secure data storage journey.
 
-*This article reflects current Bitwarden plans, updated on September 06, 2020. Users who created accounts prior to that date can learn how to opt-in to the updates **[here](https://bitwarden.com/help/2020-plan-updates/)**.*
+*This article reflects current Bitwarden plans, updated on September 06, 2020. Users who created accounts prior to that date can learn how to opt-in to the updates **[here]({{site.baseurl}}/2020-plan-updates/)**.*
 
 ## Bitwarden For You
 
@@ -118,13 +118,13 @@ In the following table, "premium features" (included for **Teams Organizations**
 ### Next Steps
 
 For help choosing the right plan, see:
-- [What Plan is Right for Me?](https://bitwarden.com/help/what-plan-is-right-for-me/)
+- [What Plan is Right for Me?]({{site.baseurl}}/what-plan-is-right-for-me/)
 
 For help moving from an individual plan to an Organization, see:
-- [Upgrade From Individual to Organization](https://bitwarden.com/help/upgrade-from-individual-to-org/)
+- [Upgrade From Individual to Organization]({{site.baseurl}}/upgrade-from-individual-to-org/)
 
 For help starting a free trial of Bitwarden Enterprise, see:
-- [Start a Free Trial of Bitwarden Enterprise](https://bitwarden.com/help/enterprise-free-trial/)
+- [Start a Free Trial of Bitwarden Enterprise]({{site.baseurl}}/enterprise-free-trial/)
 
 Still can't find what you're looking for?
-- Try our [Billing FAQs](https://bitwarden.com/help/billing-faqs/)
+- Try our [Billing FAQs]({{site.baseurl}}/billing-faqs/)

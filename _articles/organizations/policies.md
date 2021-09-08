@@ -24,7 +24,7 @@ Bitwarden highly recommends setting Enterprise Policies prior to inviting users 
 Policies can be set in two locations:
 
 - In your Organization, open the **Manage** tab and select **Policies** from the left menu.
-- Navigate to the Business Portal, and select the **Policies** button. For more information, see [About the Business Portal](https://bitwarden.com/help/about-business-portal/).
+- Navigate to the Business Portal, and select the **Policies** button. For more information, see [About the Business Portal]({{site.baseurl}}/about-business-portal/).
 
 ## Available Policies
 
@@ -87,7 +87,7 @@ Users who are removed as a result of this policy will be notified via email, and
 
 ### Single Sign-On Authentication
 
-Enabling the **Single Sign-On Authentication** policy will require non-Owner/non-Admin users to log in with Enterprise Single Sign-On. For more information, see [Access Your Vault using SSO](https://bitwarden.com/help/sso-access-your-vault/).
+Enabling the **Single Sign-On Authentication** policy will require non-Owner/non-Admin users to log in with Enterprise Single Sign-On. For more information, see [Access Your Vault using SSO]({{site.baseurl}}/sso-access-your-vault/).
 
 {% callout info %}
 The **Single Organization** policy must be enabled before activating this policy.

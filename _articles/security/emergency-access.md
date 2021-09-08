@@ -52,7 +52,7 @@ Trusted emergency contacts can be granted one of the following user access level
 
 - **Takeover**: When an emergency access request is granted, this user can create a Master Password for permanent read/write access to your Vault (this will **replace** your previous Master Password). Takeover disables any [Two-step Login Methods]({{site.baseurl}}/setup-two-step-login/) enabled for the account.
 
-**When the grantor is a member of an Organization**, they will be automatically removed from any Organization(s) for which they are not an [Owner]({{site.baseurl}}/user-types-access-control/). Owners will not be removed from or lose permissions to their Organization(s), however a [Master Password Policy](https://bitwarden.com/help/policies/#master-password) will be enforced on takeover if enabled. Policies that are not usually enforced on Owners (e.g. [Two-step Login](https://bitwarden.com/help/policies/#two-step-login)) will not be enforced on takeover.
+**When the grantor is a member of an Organization**, they will be automatically removed from any Organization(s) for which they are not an [Owner]({{site.baseurl}}/user-types-access-control/). Owners will not be removed from or lose permissions to their Organization(s), however a [Master Password Policy]({{site.baseurl}}/policies/#master-password) will be enforced on takeover if enabled. Policies that are not usually enforced on Owners (e.g. [Two-step Login]({{site.baseurl}}/policies/#two-step-login)) will not be enforced on takeover.
 
 ## Using Emergency Access
 

@@ -208,7 +208,7 @@ Bitwarden Organizations include access to [Event Logs]({{site.baseurl}}/event-lo
 - Much, much more
 
 {% callout success%}
-In addition to these benefits, customers appreciate the ability to tightly integrate Bitwarden into their existing systems. Bitwarden offers a robust public [API](https://bitwarden.com/help/api/) and a fully-featured command line interface ([CLI](https://bitwarden.com/help/cli/)) for further integration into existing Organization workflows.
+In addition to these benefits, customers appreciate the ability to tightly integrate Bitwarden into their existing systems. Bitwarden offers a robust public [API]({{site.baseurl}}/api/) and a fully-featured command line interface ([CLI]({{site.baseurl}}/cli/)) for further integration into existing Organization workflows.
 {% endcallout %}
 
 ### Self-hosting

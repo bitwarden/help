@@ -27,7 +27,7 @@ This article contains Frequently Asked Questions (FAQs) regarding **Two-step Log
 
 **A:** In most cases, one of two things is happening:
 
-1. You may be already logged in to Bitwarden and only unlocking your Vault. Two-step Login is required to **Log In** but not to **Unlock** your Vault. For more information on the difference between Logging In and Unlocking, see [Vault Timeout Action](https://bitwarden.com/help/vault-timeout/#vault-timeout-action).
+1. You may be already logged in to Bitwarden and only unlocking your Vault. Two-step Login is required to **Log In** but not to **Unlock** your Vault. For more information on the difference between Logging In and Unlocking, see [Vault Timeout Action]({{site.baseurl}}/vault-timeout/#vault-timeout-action).
 
 2. You may have previously checked the **Remember me** checkbox on a device when accessing your Vault using Two-step Login.
 

@@ -38,7 +38,7 @@ We've seen a lot of deployments and have found that taking the following actions
 |Day|Action|Key Person|Description|Resource(s)|Duration (hrs)|
 |:-:|:----:|:--------:|:---------:|:---------:|:------------:|
 |4-6|Determine timeline for rollout to first-wave users|Senior Leadership & Security teams|There are lots of different strategies for rolling out Bitwarden. Take things at whatever pace best suits your team.| | |
-|7|Craft internal messaging about Bitwarden rollout|Internal Training & Managers|Bitwarden provides a lot of resources to help users quickly adopt, check some out on [Youtube](http://youtube.com/bitwarden) and on the [Help Center](https://bitwarden.com/help/).|[Youtube](http://youtube.com/bitwarden)<br><br>[Help Center](https://bitwarden.com/help/)||  
+|7|Craft internal messaging about Bitwarden rollout|Internal Training & Managers|Bitwarden provides a lot of resources to help users quickly adopt, check some out on [Youtube](http://youtube.com/bitwarden) and on the [Help Center]({{site.baseurl}}/).|[Youtube](http://youtube.com/bitwarden)<br><br>[Help Center]({{site.baseurl}}/)||  
 |7|Communicate to internal leaders about Password Management policies|Internal leaders / Security teams|Make sure your teams know about any [Enterprise Policies]({{site.baseurl}}/policies), [2FA]({{site.baseurl}}/setup-two-step-login-duo/) or [SSO]({{site.baseurl}}/about-sso/) requirements, and password management best practices.| | |
 | | | | | | |
 | | | | |**Total Hours (Cloud-hosted)**|**7.35**|

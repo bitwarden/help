@@ -109,4 +109,4 @@ To remove users from your Organization:
 Depending on the particulars of your implementation, you may be able to use one of the following methods to delete a Bitwarden user account that belongs to an offboarded user:
 
 1. If you're self-hosting Bitwarden, an authorized admin can delete the account from the [System Administrator Portal]({{site.baseurl}}/admin-portal/).
-2. If the account has an `@yourcompany.com` email address that your company controls, you can use the [delete without logging in](https://vault.bitwarden.com/#/recover-delete){:target="\_blank"} tool and confirm deletion within the `@yourcompany.com` inbox. For more information, see [Delete an Account Without Logging In](https://bitwarden.com/help/delete-your-account/#without-logging-in).
+2. If the account has an `@yourcompany.com` email address that your company controls, you can use the [delete without logging in](https://vault.bitwarden.com/#/recover-delete){:target="\_blank"} tool and confirm deletion within the `@yourcompany.com` inbox. For more information, see [Delete an Account Without Logging In]({{site.baseurl}}/delete-your-account/#without-logging-in).

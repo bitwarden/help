@@ -14,14 +14,14 @@ Event Logs are timestamped records of events that occur within your Organization
 
 {% image organizations/event-logs-updated.png Event Logs %}
 
-Events Logs are [exportable](#export-events) and accessible from the `/events` endpoint of the [Bitwarden Public API](https://bitwarden.com/help/public-api/).
+Events Logs are [exportable](#export-events) and accessible from the `/events` endpoint of the [Bitwarden Public API]({{site.baseurl}}/public-api/).
 
 ## Events
 
 Event Logs record roughly 40 different types of events. The Event Logs screen captures a **Timestamp** for the event, client app information including application type and IP (accessed by hoving over the {% icon fa-globe %} globe icon), the **User** connected to the event, and an **Event** description.
 
 {% callout info %}
-Each **Event** is associated with type code (`1000`, `1001`, etc.) that identifies the action captured by the event. Type codes are used by the [Bitwarden Public API](https://bitwarden.com/help/public-api/) to identify the action documented by an event.
+Each **Event** is associated with type code (`1000`, `1001`, etc.) that identifies the action captured by the event. Type codes are used by the [Bitwarden Public API]({{site.baseurl}}/public-api/) to identify the action documented by an event.
 {% endcallout %}
 
 All Event types are listed below, with their corresponding type codes:
@@ -112,7 +112,7 @@ Edited organization settings.,fa-globe,Web Vault - Chrome,9876dcba-65ed-87fe-19h
 
 ## API Responses
 
-Accessing Event Logs from the `/events` endpoint of the [Bitwarden Public API](https://bitwarden.com/help/public-api/) will return a JSON response like the following:
+Accessing Event Logs from the `/events` endpoint of the [Bitwarden Public API]({{site.baseurl}}/public-api/) will return a JSON response like the following:
 
 ```
 {
@@ -151,4 +151,4 @@ Once you have the unique ID for each member, group, and collection, you can now 
 - Collections
 - Groups
 
-After gathering this data, you can join rows on their unique Ids to build a reference to all parts of your Bitwarden Organization. For more information on using the Bitwarden CLI, see [The Bitwarden command-line tool (CLI)](https://bitwarden.com/help/cli/).
+After gathering this data, you can join rows on their unique Ids to build a reference to all parts of your Bitwarden Organization. For more information on using the Bitwarden CLI, see [The Bitwarden command-line tool (CLI)]({{site.baseurl}}/cli/).

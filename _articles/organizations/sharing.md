@@ -39,7 +39,7 @@ Moving an item to an Organization **will transfer ownership to the Organization*
 
 ## Create an Organization Item
 
-Organization members can create new items directly for any assigned Collection(s) unless they're given [**Read Only** access](https://bitwarden.com/help/user-types-access-control/) to that Collection. Shared items can only be created **from the Web Vault**, either in your My Vault view or in the Organization view:
+Organization members can create new items directly for any assigned Collection(s) unless they're given [**Read Only** access]({{site.baseurl}}/user-types-access-control/) to that Collection. Shared items can only be created **from the Web Vault**, either in your My Vault view or in the Organization view:
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">

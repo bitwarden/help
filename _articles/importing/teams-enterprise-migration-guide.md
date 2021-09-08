@@ -60,7 +60,7 @@ It's important that you create your Organization first and [import data to it di
    {% callout note %}To self-host Bitwarden, create an Organization on the Bitwarden cloud, generate a [license key](https://bitwarden.com/host/), and use the key to [unlock Organizations]({{site.baseurl}}/licensing-on-premise/#organization-license) on your server.{% endcallout %}
 
 2. **Onboard Administrative Users**. With your Organization created, further setup procedures can be made easier by onboarding some [administrative users]({{siter.baseurl}}/user-types-access-control). It's important that you **do not begin end-user onboarding** at this point, as there are a few steps left to prepare your Organization. Learn how to invite admins [here]({{site.baseurl}}/managing-users/#onboard-users).
-3. **Configure Identity Services**. Bitwarden Enterprise Organizations support [Login with Single-Sign-On]({{site.baseurl}}/about-sso/) using either SAML 2.0 or OpenID Connect (OIDC). To configure SSO, navigate to the [Business Portal](https://bitwarden.com/help/about-business-portal/), accessible from the Web Vault by [Organization Owners and Administrators]({{site.baseurl}}/user-types-access-control/).
+3. **Configure Identity Services**. Bitwarden Enterprise Organizations support [Login with Single-Sign-On]({{site.baseurl}}/about-sso/) using either SAML 2.0 or OpenID Connect (OIDC). To configure SSO, navigate to the [Business Portal]({{site.baseurl}}/about-business-portal/), accessible from the Web Vault by [Organization Owners and Administrators]({{site.baseurl}}/user-types-access-control/).
 
 4. **Enable Enterprise Policies**. [Enterprise Policies]({{site.baseurl}}/) enable Enterprise Organizations to implement roles for users, for example requiring use of Two-step Login. It is highly recommended that you configure Policies before onboarding users.
 
@@ -105,7 +105,7 @@ To ensure the security of your Organization, Bitwarden applies a 3-step process 
 
 Automated user onboarding is available through [Bitwarden Directory Connector]({{site.baseurl}}/directory-sync), a standalone application available in a [Desktop app]({{site.baseurl}}/directory-sync-desktop/) and [CLI]({{site.baseurl}}/directory-sync-cli/) that will synchronize users and groups from your existing directory service.
 
-Users are automatically invited to join the Organization, and can be confirmed manually or automatically using the [Bitwarden CLI tool](https://bitwarden.com/help/cli/#confirm).
+Users are automatically invited to join the Organization, and can be confirmed manually or automatically using the [Bitwarden CLI tool]({{site.baseurl}}/cli/#confirm).
 
 - Learn more about how syncing works [here]({{site.baseurl}}/directory-sync/).
 - Discover how to configure user and group filters for Directory Connector [here]({{site.baseurl}}/user-group-filters/).
@@ -121,7 +121,7 @@ Bitwarden empowers Teams and Organizations to share sensitive data easily, secur
 
 Collections can organize secure items in many ways, including but not limited to business function, group assignment, application access levels, or even security protocols. Collections function as shared folders, allowing for consistent access control and sharing amongst groups of users.
 
-Shared folders from other password managers can be imported as Collections into Bitwarden by using the Organization Import template found [here](https://bitwarden.com/help/files/bitwarden_export_org.csv) and placing the name of the shared folder in the `Collection` column:
+Shared folders from other password managers can be imported as Collections into Bitwarden by using the Organization Import template found [here]({{site.baseurl}}/files/bitwarden_export_org.csv) and placing the name of the shared folder in the `Collection` column:
 
 Example Export:
 

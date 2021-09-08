@@ -62,7 +62,7 @@ This document describes and references the features available to Bitwarden Enter
 |Biometric Authentication|Available for:<br>-Android (fingerprint unlock or face unlock) and iOS (Touch ID and Face ID)<br>-Windows Desktop Apps (Windows Hello using PIN, Facial Recognition, and more) and macOS Desktop Apps (Touch ID)<br>-Chromium, Firefox 87+, and Safari Browser Extensions<br><br>[Learn more]({{site.baseurl}}/biometrics/).|
 |Emergency Access|Users can designate and manage trusted emergency contacts, who may request access to their Vault in case of emergency. [Learn more]({{site.baseurl}}/emergency-access/).|
 |Account Fingerprint Phrase|Security measure that uniquely and securely identifies a Bitwarden user account when encryption-related or onboarding operations are performed. [Learn more]({{site.baseurl}}/fingerprint-phrase/).|
-|Subprocessors|See our full list of subprocessors: [Bitwarden Subprocessors](https://bitwarden.com/help/subprocessors/).|
+|Subprocessors|See our full list of subprocessors: [Bitwarden Subprocessors]({{site.baseurl}}/subprocessors/).|
 
 #### Compliance, Audits, Certifications
 

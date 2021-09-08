@@ -120,7 +120,7 @@ When this **optional feature** is enabled, clipboard clear will clear any Bitwar
 ### Q: Why does the Browser Extension need `nativeMessaging` permission?
 
 **A:**
-Version 1.48.0 of the browser extension enables [Biometric Unlock for Browser Extensions](https://bitwarden.com/help/biometrics/#browser-extensions).
+Version 1.48.0 of the browser extension enables [Biometric Unlock for Browser Extensions]({{site.baseurl}}/biometrics/#browser-extensions).
 
 This permission, also known as `nativeMessaging`, is safe to accept and allows the browser extension to communicate with the Bitwarden desktop app, which is required to enabled Unlock with Biometrics.
 
@@ -128,7 +128,7 @@ Note that when your browser updates to this version, you may be asked to accept 
 
 ### Q: Is Bitwarden FIPS Compliant?
 
-**A:** Bitwarden uses [FIPS compliant libraries and cryptography](https://bitwarden.com/help/what-encryption-is-used/#invoked-crypto-libraries), however the Bitwarden platform has not performed any FIPs certifications. Most FIPS installations of Bitwarden leverage the self-hosting option to make evaluations (i.e. Cybersecurity Maturity Model Certification) easier.
+**A:** Bitwarden uses [FIPS compliant libraries and cryptography]({{site.baseurl}}/what-encryption-is-used/#invoked-crypto-libraries), however the Bitwarden platform has not performed any FIPs certifications. Most FIPS installations of Bitwarden leverage the self-hosting option to make evaluations (i.e. Cybersecurity Maturity Model Certification) easier.
 
 ### Q: Can I restrict access to Bitwarden to certain devices?
 
