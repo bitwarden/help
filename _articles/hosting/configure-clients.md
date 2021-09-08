@@ -51,16 +51,18 @@ To centrally configure the  Desktop app for deployment, first complete the follo
 4. Edit `data.json` to configure the Desktop app as desired. In particular, create the following object to configure the app with your self-hosted Server URL:
 
    ```
-   "environmentUrls": {
- 		"base": "https://my.bitwarden.server.com",
- 		"api": null,
- 		"identity": null,
- 		"webVault": null,
- 		"icons": null,
- 		"notifications": null,
- 		"events": null,
- 		"enterprise": null
- 	}
+ }
+    "environmentUrls": {
+ 		     "base": "https://my.bitwarden.server.com",
+ 		     "api": null,
+ 		     "identity": null,
+ 		     "webVault": null,
+ 		     "icons": null,
+ 		     "notifications": null,
+ 		     "events": null,
+ 		     "enterprise": null
+ 	  }
+}
    ```
 5. Once configured the way you want it, use your endpoint management solution of choice (like [Jamf](https://www.jamf.com/){:target="\_blank"}) to deploy the pre-configured Desktop app as a template.
 
