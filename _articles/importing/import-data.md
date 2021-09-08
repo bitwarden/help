@@ -13,10 +13,10 @@ Bitwarden provides a data import tool for easy migration from any password manag
 For a full list of supported import formats, see [What file formats does Bitwarden support for import?]({{site.baseurl}}/import-faqs/#q-what-file-formats-does-bitwarden-support-for-import), or use one of these articles for importing from the most popular solutions:
 
 - [Import from LastPass]({{site.baseurl}}/import-from-lastpass/)[Import from LastPass]({{site.baseurl}}/import-from-lastpass/)[Import from LastPass]({{site.baseurl}}/import-from-lastpass/)[Import from LastPass]({{site.baseurl}}/import-from-lastpass/)[Import from LastPass]({{site.baseurl}}/import-from-lastpass/)
-- [Import from 1Password]({% link _articles/importing/import-from-1password.md %})
-- [Import from Firefox]({% link _articles/importing/import-from-firefox.md %})
-- [Import from Google Chrome]({% link _articles/importing/import-from-chrome.md %})
-- [Import from Password Safe]({% link _articles/importing/import-from-passwordsafe.md %})
+- [Import from 1Password]({{site.baseurl}}/import-from-1password/)
+- [Import from Firefox]({{site.baseurl}}/import-from-firefox/)
+- [Import from Google Chrome]({{site.baseurl}}/import-from-chrome/)
+- [Import from Password Safe]({{site.baseurl}}/import-from-passwordsafe/)
 
 {% callout success %}
 **Not already signed up?** Choose from one of [Bitwarden's plans](https://bitwarden.com/pricing/business/){:target="\_blank"} and get started today:

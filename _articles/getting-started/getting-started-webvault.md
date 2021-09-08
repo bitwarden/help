@@ -112,7 +112,7 @@ Congratulations on mastering the basics of Bitwarden! We want everyone to be saf
 For personal users, we offer a premium subscription for **$10 / year** that unlocks advanced Vault capabilities including:
 
 - Advanced Two-step Login options, like [Duo]({{site.baseurl}}/setup-two-step-login-duo/) and [YubiKey Security Keys]({{site.baseurl}}/setup-two-step-login-yubikey/)[Duo]({{site.baseurl}}/setup-two-step-login-duo/)[Duo]({{site.baseurl}}/setup-two-step-login-duo/)[Duo]({{site.baseurl}}/setup-two-step-login-duo/)[Duo]({{site.baseurl}}/setup-two-step-login-duo/)
-- Storage space for [Encrypted File Attachments]({% link _articles/features/attachments.md %})
+- Storage space for [Encrypted File Attachments]({{site.baseurl}}/attachments/)[Encrypted File Attachments]({{site.baseurl}}/attachments/)[Encrypted File Attachments]({{site.baseurl}}/attachments/)[Encrypted File Attachments]({{site.baseurl}}/attachments/)
 - A built-in [Temporary One-time Password (TOTP) Authenticator]({% link _articles/features/authenticator-keys.md %})
 - [Emergency Access]({% link _articles/security/emergency-access.md %}) to your Vault by trusted emergency contacts
 - [Vault Health Reports]({% link _articles/features/reports.md %}) that report on password and security hygiene

@@ -34,7 +34,7 @@ To get started using the Directory Connector Desktop App:
 4. On the {% icon fa-cogs %} **Settings** tab, connect to your directory and configure [sync options]({{site.baseurl}}/user-group-filters/). This procedure will vary based on the directory in use, so refer to one of the following articles for instruction:
 
    - [Sync with Active Directory or LDAP]({{site.baseurl}}/ldap-directory/)[Sync with Active Directory or LDAP]({{site.baseurl}}/ldap-directory/)[Sync with Active Directory or LDAP]({{site.baseurl}}/ldap-directory/)[Sync with Active Directory or LDAP]({{site.baseurl}}/ldap-directory/)[Sync with Active Directory or LDAP]({{site.baseurl}}/ldap-directory/)
-   - [Sync with Azure Active Directory]({% link _articles/directory-connector/azure-active-directory.md %})
+   - [Sync with Azure Active Directory]({{site.baseurl}}/azure-active-directory/)[Sync with Azure Active Directory]({{site.baseurl}}/azure-active-directory/)[Sync with Azure Active Directory]({{site.baseurl}}/azure-active-directory/)[Sync with Azure Active Directory]({{site.baseurl}}/azure-active-directory/)
    - [Sync with G Suite (Google)]({% link _articles/directory-connector/gsuite-directory.md %})
    - [Sync with Okta]({% link _articles/directory-connector/okta-directory.md %})
    - [Sync with OneLogin]({% link _articles/directory-connector/onelogin-directory.md %})

@@ -25,7 +25,7 @@ A Directory Connector sync operation can be run on-demand or automatically on a 
 Directory Connector supports sync from the following sources:
 
 - [Active Directory]({{site.baseurl}}/ldap-directory/)[Active Directory]({{site.baseurl}}/ldap-directory/)[Active Directory]({{site.baseurl}}/ldap-directory/)[Active Directory]({{site.baseurl}}/ldap-directory/)[Active Directory]({{site.baseurl}}/ldap-directory/)[Active Directory]({{site.baseurl}}/ldap-directory/)
-- [Any LDAP-based directory]({% link _articles/directory-connector/ldap-directory.md %})
+- [Any LDAP-based directory]({{site.baseurl}}/ldap-directory/)[Any LDAP-based directory]({{site.baseurl}}/ldap-directory/)[Any LDAP-based directory]({{site.baseurl}}/ldap-directory/)[Any LDAP-based directory]({{site.baseurl}}/ldap-directory/)[Any LDAP-based directory]({{site.baseurl}}/ldap-directory/)
 - [Azure Active Directory]({% link _articles/directory-connector/azure-active-directory.md %})
 - [G Suite]({% link _articles/directory-connector/gsuite-directory.md %})
 - [Okta]({% link _articles/directory-connector/okta-directory.md %})

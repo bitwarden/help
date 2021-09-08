@@ -71,6 +71,6 @@ To enable Browser App Extension auto-fill on iOS:
    {% image features/auto-fill-ios/extension.png Bitwarden in the Share menu %}
 
    {% callout info %}If you have [Unlock with Biometrics]({{site.baseurl}}/biometrics/) enabled, the first time you tap this option you will be prompted to verify your Master Password.{% endcallout %}[Unlock with Biometrics]({{site.baseurl}}/biometrics/)
-8. A Bitwarden screen will slide up on your device and will list [matching Login items]({% link _articles/features/uri-match-detection.md %}) for the website. Tap the item to auto-fill.
+8. A Bitwarden screen will slide up on your device and will list [matching Login items]({{site.baseurl}}/uri-match-detection/) for the website. Tap the item to auto-fill.
 
    {% callout success %}If there are no Login items listed, it's probably because there isn't an item in your Vault with a [matching URI]({{site.baseurl}}/uri-match-detection/).{% endcallout %}

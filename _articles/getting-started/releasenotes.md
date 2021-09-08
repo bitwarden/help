@@ -85,8 +85,8 @@ Prior to 5/15/2021, we recommend digging through your Trash for anything you mig
 Bitwarden is proud to announce the release of Bitwarden Send, and end-to-end encrypted solution for ephemeral sharing. This release includes:
 
 - **Bitwarden Send**: Bitwarden Send is end-to-end encrypted solution for ephemeral sharing. There's lot of material about Send on our website and Help Center, but you can start [here](https://bitwarden.com/products/send){:target="\_blank"} or [here]({{site.baseurl}}/about-send/).[here]({{site.baseurl}}/about-send/)[here]({{site.baseurl}}/about-send/)
-- **FIDO U2F Support for Edge**: Two-step Login via FIDO U2F is now available for the Web Vault and Browser Extensions in Microsoft Edge (see [here]({% link _articles/two-step-login/setup-two-step-login-fido.md %}) for details).
-- **Domain Exclusion in Browser Extensions**: Bitwarden Browser Extensions can now be configured with domains to explicitly not offer to remember passwords for (see [here]({% link _articles/miscellaneous/exclude-domains.md %}) for details).
+- **FIDO U2F Support for Edge**: Two-step Login via FIDO U2F is now available for the Web Vault and Browser Extensions in Microsoft Edge (see [here]({{site.baseurl}}/setup-two-step-login-fido/) for details).
+- **Domain Exclusion in Browser Extensions**: Bitwarden Browser Extensions can now be configured with domains to explicitly not offer to remember passwords for (see [here]({{site.baseurl}}/exclude-domains/) for details).
 - **Improved Import Error Messages**: We've had lots of folks migrating to Bitwarden recently, so we cleaned up an import error message to help you reconcile issues faster (see [here]({{site.baseurl}}/import-data/#length-related-import-errors) for details).
 - **Safari Web Extension Port**: Our Safari App Extension has officially been ported to a Web Extension for use with Safari 14+. Due to changes to Safari, Web Extension use is now limited to only those obtained through Mac App Store downloads (see [here]({{site.baseurl}}/install-safari-app-extension/) for details).
 
@@ -108,7 +108,7 @@ The Bitwarden team is investigating these and will provide updates as things pro
 ## 2021-01-19
 For the first major release of 2021, the Bitwarden team combined multiple major enhancements to address the critical needs of all users, including:
 - **Emergency Access**: Bitwarden's new Emergency Access feature enables users to designate and manage trusted emergency contacts, who may request access to their Vault in a Zero Knowledge/Zero Trust environment (see [here]({{site.baseurl}}/emergency-access/) for details).[here]({{site.baseurl}}/emergency-access/)
-- **Encrypted Exports**: Personal users and Organizations can now export Vault data in an encrypted `.json` file (see [here]({% link _articles/importing/encrypted-export.md %}) for details).
+- **Encrypted Exports**: Personal users and Organizations can now export Vault data in an encrypted `.json` file (see [here]({{site.baseurl}}/encrypted-export/) for details).
 - **New Role**: A Custom role is now available to allow for granular control over user permissions (see [here](https://bitwarden.com/help/user-types-access-control/#custom-role) for details).
 - **New Enterprise Policy**: The Personal Ownership policy is now available for use by Enterprise Organization (see [here](https://bitwarden.com/help/policies/#personal-ownership) for details).
 - **Biometric Unlock for Browser Extensions**: Using an integration with a native Desktop application, you can now use Biometric input to unlock Chromium-based Browser Extensions (see [here](https://bitwarden.com/help/biometrics/#browser-extensions) for details).

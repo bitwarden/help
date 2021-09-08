@@ -57,8 +57,8 @@ If your format is not listed below, manually [condition a Bitwarden .csv or .jso
 {% endcallout %}
 
   - [1Password (1pif)]({{site.baseurl}}/import-from-1password/)[1Password (1pif)]({{site.baseurl}}/import-from-1password/)[1Password (1pif)]({{site.baseurl}}/import-from-1password/)
-  - [1Password 6 &amp; 7 Windows (.sv)]({% link _articles/importing/import-from-1password.md %})
-  - [1Password 6 &amp; 7 Mac (csv)]({% link _articles/importing/import-from-1password.md %})
+  - [1Password 6 &amp; 7 Windows (.sv)]({{site.baseurl}}/import-from-1password/)
+  - [1Password 6 &amp; 7 Mac (csv)]({{site.baseurl}}/import-from-1password/)
   - Ascendo DataVault (csv)
   - Avast Passwords (csv)
   - Avast Passwords (json)

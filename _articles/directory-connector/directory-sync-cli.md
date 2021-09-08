@@ -37,7 +37,7 @@ To get started using the Bitwarden Directory Connector CLI:
 
    Available **Sync Options** depend on the directory type in use, so refer to one of the following articles for a list of options available to you:
    - [Sync with Active Directory or LDAP]({{site.baseurl}}/ldap-directory/)[Sync with Active Directory or LDAP]({{site.baseurl}}/ldap-directory/)[Sync with Active Directory or LDAP]({{site.baseurl}}/ldap-directory/)[Sync with Active Directory or LDAP]({{site.baseurl}}/ldap-directory/)[Sync with Active Directory or LDAP]({{site.baseurl}}/ldap-directory/)
-   - [Sync with Azure Active Directory]({% link _articles/directory-connector/azure-active-directory.md %})
+   - [Sync with Azure Active Directory]({{site.baseurl}}/azure-active-directory/)[Sync with Azure Active Directory]({{site.baseurl}}/azure-active-directory/)[Sync with Azure Active Directory]({{site.baseurl}}/azure-active-directory/)[Sync with Azure Active Directory]({{site.baseurl}}/azure-active-directory/)
    - [Sync with G Suite (Google)]({% link _articles/directory-connector/gsuite-directory.md %})
    - [Sync with Okta]({% link _articles/directory-connector/okta-directory.md %})
    - [Sync with OneLogin]({% link _articles/directory-connector/onelogin-directory.md %})

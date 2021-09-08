@@ -13,9 +13,9 @@ Bitwarden provides a data import tool for easy migration from any password manag
 For a full list of supported import formats, see [What file formats does Bitwarden support for import?]({{site.baseurl}}/import-faqs/#q-what-file-formats-does-bitwarden-support-for-import), or refer to one of these articles for guidance on the most popular solutions:
 
 - [Import from LastPass]({{site.baseurl}}/import-from-lastpass/)[Import from LastPass]({{site.baseurl}}/import-from-lastpass/)[Import from LastPass]({{site.baseurl}}/import-from-lastpass/)[Import from LastPass]({{site.baseurl}}/import-from-lastpass/)
-- [Import from 1Password]({% link _articles/importing/import-from-1password.md %})
-- [Import from Firefox]({% link _articles/importing/import-from-firefox.md %})
-- [Import from Google Chrome]({% link _articles/importing/import-from-chrome.md %})
+- [Import from 1Password]({{site.baseurl}}/import-from-1password/)
+- [Import from Firefox]({{site.baseurl}}/import-from-firefox/)
+- [Import from Google Chrome]({{site.baseurl}}/import-from-chrome/)
 
 {% callout info %}
 **The above listed articles** describe importing to a Personal Bitwarden Vault. While the guidance for exporting from each solution will be appropriate, it's important to know that importing to an Organization is a slightly different procedure and is [documented below](#import-to-your-organization).
