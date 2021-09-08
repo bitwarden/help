@@ -39,7 +39,7 @@ When you setup Two-step Login, you should logout of all your Bitwarden apps to i
 
 ## Use Email Verification
 
-The following assumes that **Email** is your [highest-priority enabled method](https://bitwarden.com/help/article/setup-two-step-login/#using-multiple-methods). Complete the following steps to access your Vault using Two-step Login:
+The following assumes that **Email** is your [highest-priority enabled method](https://bitwarden.com/help/setup-two-step-login/#using-multiple-methods). Complete the following steps to access your Vault using Two-step Login:
 
 1. Log in to your Bitwarden Vault on any any app and enter your Email Address and Master Password.
 

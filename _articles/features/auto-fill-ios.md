@@ -24,7 +24,7 @@ Auto-fill on iOS comes in two flavors:
 - **Browser App Extension**: Use this option to make Bitwarden auto-fill accessible *only* in Web Browser apps, like Safari, through the Share menu.
 
 {% callout success %}
-It is currently not possible to use auto-fill on iOS if the [Vault Timeout Action]({{site.baseurl}}/article/vault-timeout/#vault-timeout-action) for the device is set to **Log Out** and your *only* enabled [Two-step Login Method]({{site.baseurl}}/article/setup-two-step-login) requires NFC (e.g. an NFC YubiKey), as iOS will not allow NFC inputs to interrupt auto-fill workflows.
+It is currently not possible to use auto-fill on iOS if the [Vault Timeout Action]({{site.baseurl}}/vault-timeout/#vault-timeout-action) for the device is set to **Log Out** and your *only* enabled [Two-step Login Method]({{site.baseurl}}/setup-two-step-login) requires NFC (e.g. an NFC YubiKey), as iOS will not allow NFC inputs to interrupt auto-fill workflows.
 
 Either change your Vault Timeout Action to **Lock**, or enable another Two-step Login Method.
 {% endcallout %}
@@ -50,7 +50,7 @@ To enable keyboard auto-fill on iOS:
 
    If a [matching Login]({% link _articles/features/uri-match-detection.md %}) is displayed, tap it to auto-fill. If the {% icon fa-key %} **Passwords** button is displayed, tap it to browse your Vault for the Login item to use. In cases where the {% icon fa-key %} **Passwords** button is displayed, it's probably because there isn't an item in your Vault with a [matching URI]({% link _articles/features/uri-match-detection.md %}).
 
-   {% callout info %}Are you getting a `Biometric unlock disabled pending verification of master password` message? [Learn what to do]({{site.baseurl}}/article/autofill-faqs/#q-what-do-i-do-about-biometric-unlock-disabled-pending-verification-of-master-password).{% endcallout%}
+   {% callout info %}Are you getting a `Biometric unlock disabled pending verification of master password` message? [Learn what to do]({{site.baseurl}}/autofill-faqs/#q-what-do-i-do-about-biometric-unlock-disabled-pending-verification-of-master-password).{% endcallout%}
 
 ### Browser App Extension Auto-fill
 

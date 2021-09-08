@@ -16,7 +16,7 @@ What to do when you've lost access to your secondary device(s) depends on whethe
 
 ## Have a Recovery Code?
 
-Excellent! If you have have your Recovery Code saved somewhere, you can use it to disable all Two-step Login methods from outside your Vault. Learn more [here]({{site.baseurl}}/article/two-step-recovery-code/#use-your-recovery-code).
+Excellent! If you have have your Recovery Code saved somewhere, you can use it to disable all Two-step Login methods from outside your Vault. Learn more [here]({{site.baseurl}}/two-step-recovery-code/#use-your-recovery-code).
 
 {% callout success %}
 Recovery Codes **won't disable Duo for Organizations**. You can tell that a Duo prompt is Organization-wide by the **(Organization)** header, as in the following screenshot:

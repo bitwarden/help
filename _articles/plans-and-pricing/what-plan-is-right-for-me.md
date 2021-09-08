@@ -8,7 +8,7 @@ hidden: false
 tags: [free, personal, organization, enterprise, teams, family, plans, subscription]
 order: "02"
 redirect_from:
-  - /article/picking-bitwarden-for-personal-or-business/
+  - /picking-bitwarden-for-personal-or-business/
 ---
 
 Hi there! Bitwarden is here to help you take your first steps, whether you're a convert from another solution or new to password managers all-together.
@@ -62,7 +62,7 @@ Bitwarden is a great way to securely share data like Logins, Notes, Cards, and I
 
 |If your answer is "Family & Friends"...|If your answer is "Business"...|If your answer is "Not sure...|
 |--------------------|--------------------|--------------------|
-|...we recommend a Families Organization for:<br><br>- Premium features for up to 6 users<br>- Unlimited sharing between up to 6 users<br><br>[**Create your Families Organization.**](https://bitwarden.com/help/article/upgrade-from-individual-to-org/)|...we have one last question.<br><br>**Continue to:** [What tools will you need?](#what-tools-will-you-need)|...we recommend trying a Free Organization for:<br><br>- Core Bitwarden features for 2 users<br>- Limited sharing between 2 users<br><br>[**Create your Free Organization.**](https://bitwarden.com/help/article/upgrade-from-individual-to-org/)|
+|...we recommend a Families Organization for:<br><br>- Premium features for up to 6 users<br>- Unlimited sharing between up to 6 users<br><br>[**Create your Families Organization.**](https://bitwarden.com/help/upgrade-from-individual-to-org/)|...we have one last question.<br><br>**Continue to:** [What tools will you need?](#what-tools-will-you-need)|...we recommend trying a Free Organization for:<br><br>- Core Bitwarden features for 2 users<br>- Limited sharing between 2 users<br><br>[**Create your Free Organization.**](https://bitwarden.com/help/upgrade-from-individual-to-org/)|
 
 ## What tools will you need?
 
@@ -82,8 +82,8 @@ However, only Enterprise Organizations include:
 
 |If your answer is "Almost all of them"...|If your answer is "I need all of them"...|
 |------------------------------------------------|------------------------------------------------|
-|...we recommend a Teams Organization.<br><br>[**Create your Teams Organization.**](https://bitwarden.com/help/article/upgrade-from-individual-to-org/)|...we recommend an Enterprise Organization.<br><br>[**Create your Enterprise Organization.**](https://bitwarden.com/help/article/upgrade-from-individual-to-org/)|
+|...we recommend a Teams Organization.<br><br>[**Create your Teams Organization.**](https://bitwarden.com/help/upgrade-from-individual-to-org/)|...we recommend an Enterprise Organization.<br><br>[**Create your Enterprise Organization.**](https://bitwarden.com/help/upgrade-from-individual-to-org/)|
 
 ## Still not sure?
 
-If you're still not sure which plan is right for you, you can find comparisons of each plan at [About Bitwarden Plans](https://bitwarden.com/help/article/about-bitwarden-plans/). Or, [Contact Us](https://bitwarden.com/contact/) at any time for further help.
+If you're still not sure which plan is right for you, you can find comparisons of each plan at [About Bitwarden Plans](https://bitwarden.com/help/about-bitwarden-plans/). Or, [Contact Us](https://bitwarden.com/contact/) at any time for further help.

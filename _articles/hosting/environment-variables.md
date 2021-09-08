@@ -22,7 +22,7 @@ The following variables are among those that already exist in `global.override.e
 
 |Variable|Description|
 |--------|-----------|
-|globalSettings__sqlServer__connectionString=|Use this field to [connect to an exernal MSSQL database]({{site.baseurl}}/article/external-db/).|
+|globalSettings__sqlServer__connectionString=|Use this field to [connect to an exernal MSSQL database]({{site.baseurl}}/external-db/).|
 |globalSettings__oidcIdentityClientKey=|A randomly generated OpenID Connect client key. For more information, see [OpenID Documentation](https://openid.net/specs/openid-connect-registration-1_0.html#RegistrationResponse){:target="\_blank"}.|
 |globalSettings__duo__aKey=|A randomly generated Duo akey. For more information, see [Duo's Documentation](https://duo.com/docs/duoweb#1.-generate-an-akey){:target="\_blank"}.|
 |globalSettings__yubico__clientId=|Client ID for YubiCloud Validation Service or Self-hosted Yubico Validation Server.<br><br>If YubiCloud, get your Client ID and Secret Key [here](https://upgrade.yubico.com/getapikey/){:target="\_blank"}.<br><br>If self-hosted, see Optional Variable `globalSettings__yubico__validationUrls`.|

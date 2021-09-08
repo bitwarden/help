@@ -52,7 +52,7 @@ This page will also list any **Saved Passwords** that are being stored by the br
 
 {% image features/chrome-delete-passwords.png Chrome Saved Passwords %}
 
-If you haven't already saved these passwords in Bitwarden, [export them]({{site.baseurl}}/article/import-from-chrome/#export-from-chrome) to prepare for future import to Bitwarden. Once exported, you should delete these passwords from the browser's storage.
+If you haven't already saved these passwords in Bitwarden, [export them]({{site.baseurl}}/import-from-chrome/#export-from-chrome) to prepare for future import to Bitwarden. Once exported, you should delete these passwords from the browser's storage.
 
 {% endcapture %}
 {{ chrome | markdownify }}
@@ -69,7 +69,7 @@ You should also find out which Logins Firefox has already saved by selecting the
 
 {% image features/firefox-delete.png Firefox Saved Logins %}
 
-If you haven't already saved these passwords in Bitwarden, [export them]({{site.baseurl}}/article/import-from-firefox) for future import to Bitwarden. Once exported, you should {% icon fa-trash %} **Remove** these passwords from Firefox.
+If you haven't already saved these passwords in Bitwarden, [export them]({{site.baseurl}}/import-from-firefox) for future import to Bitwarden. Once exported, you should {% icon fa-trash %} **Remove** these passwords from Firefox.
 
 {% endcapture %}
 {{ firefox | markdownify }}

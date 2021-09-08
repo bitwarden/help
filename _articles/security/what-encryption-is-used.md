@@ -7,8 +7,8 @@ popular: false
 tags: [encryption]
 order: "03"
 redirect_from:
-  - /article/password-salt-hash/
-  - /article/how-is-data-securely-transmitted-and-stored/
+  - /password-salt-hash/
+  - /how-is-data-securely-transmitted-and-stored/
 ---
 
 Bitwarden uses [AES-CBC](#aes-cbc) 256-bit encryption for your Vault data, and [PBKDF2](#pbkdf2) SHA-256 to derive your encryption key.

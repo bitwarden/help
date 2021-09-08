@@ -82,7 +82,7 @@ This also means no one from the Bitwarden team can ever see, read, or reverse en
 After creating your account and specifying your Master Password , Bitwarden next generates several keys that are used in protecting your account’s data.
 
 {% callout note %}
-In mid 2021, Bitwarden introduced Admin Password Reset for Enterprise plans. With this option, users and organizations have the opportunity to implement a new policy allowing Administrators and Owners to reset passwords for users. For more detail on this feature, visit our help site at [https://bitwarden.com/help/article/releasenotes/](https://bitwarden.com/help/article/releasenotes/)
+In mid 2021, Bitwarden introduced Admin Password Reset for Enterprise plans. With this option, users and organizations have the opportunity to implement a new policy allowing Administrators and Owners to reset passwords for users. For more detail on this feature, visit our help site at [https://bitwarden.com/help/releasenotes/](https://bitwarden.com/help/releasenotes/)
 {% endcallout %}
 
 
@@ -139,18 +139,18 @@ You can enable multiple two-step login methods. If you have multiple two-step lo
 **It is very important that you never lose your two-step login recovery codes.** Bitwarden offers an account protection security model that does not support users losing their Master Password or two-step login recovery codes. If you have two-step login enabled on your account and lose access to your two-step login recovery codes you will not be able login to your Bitwarden account.
 
 {% callout note %}
-In mid 2021, Bitwarden introduced Admin Password Reset for Enterprise plans. With this option, users and organizations have the opportunity to implement a new policy allowing Administrators and Owners to reset passwords for users. For more detail on this feature, visit our help site at [https://bitwarden.com/help/article/releasenotes/](https://bitwarden.com/help/article/releasenotes/)
+In mid 2021, Bitwarden introduced Admin Password Reset for Enterprise plans. With this option, users and organizations have the opportunity to implement a new policy allowing Administrators and Owners to reset passwords for users. For more detail on this feature, visit our help site at [https://bitwarden.com/help/releasenotes/](https://bitwarden.com/help/releasenotes/)
 {% endcallout %}
 
 
 #### Changing User Password
-Your Master Password can only be changed from the [Web Vault](https://vault.bitwarden.com/#/). For specific steps on how to change your user password, see this Bitwarden Help [article](https://bitwarden.com/help/article/change-your-master-password/).
+Your Master Password can only be changed from the [Web Vault](https://vault.bitwarden.com/#/). For specific steps on how to change your user password, see this Bitwarden Help [article](https://bitwarden.com/help/change-your-master-password/).
 
 #### Rotating Your Accounts Encryption Key
 During a password change operation you also have the option to rotate (change) your account’s encryption key. Rotating the encryption key is a good idea if you believe that your previous Master Password was compromised or that your Bitwarden Vault’s data was stolen from one of your devices.
 
 {% callout warning %}
-Rotating your account’s encryption key is a sensitive operation, which is why it is not a default option. A key rotation involves generating a new, random encryption key for your account and **re-encrypting all Vault data** using this new key. See additional details in this Bitwarden Help [article](https://bitwarden.com/help/article/change-your-master-password/).
+Rotating your account’s encryption key is a sensitive operation, which is why it is not a default option. A key rotation involves generating a new, random encryption key for your account and **re-encrypting all Vault data** using this new key. See additional details in this Bitwarden Help [article](https://bitwarden.com/help/change-your-master-password/).
 {% endcallout %}
 
 #### Data Protection in Transit
@@ -167,7 +167,7 @@ AES is a standard in cryptography and used by the U.S. government and other gove
 
 PBKDF-SHA256 is used to derive the encryption key from your Master Password. Then this key is salted and hashed for authenticating with the Bitwarden servers. The default iteration count used with PBKDF2 is 100,001 iterations on the client (this client-side iteration count is configurable from your account settings), and then an additional 100,000 iterations when stored on our servers (for a total of 200,001 iterations by default).
 
-Learn more: [How end-to-end encryption paves the way for zero knowledge](https://bitwarden.com/blog/post/end-to-end-encryption-and-zero-knowledge/) and [What encryption is being used](https://bitwarden.com/help/article/what-encryption-is-used/)
+Learn more: [How end-to-end encryption paves the way for zero knowledge](https://bitwarden.com/blog/post/end-to-end-encryption-and-zero-knowledge/) and [What encryption is being used](https://bitwarden.com/help/what-encryption-is-used/)
 
 ### How Vault Items Are Secured
 All information (Logins, Cards, Identities, Notes) associated with your stored Vault data is protected with end-to-end encryption. Items that you choose to store in your Bitwarden Vault are first stored with an item called a Cipher object. Cipher objects are encrypted with your Generated Symmetric Key, which can only be known by decrypting your protected Symmetric Key using your Stretched Master Key. This encryption and decryption are done entirely on the Bitwarden Client because your Master Password or Stretched Master Key is never stored on or transmitted to Bitwarden servers.
@@ -185,14 +185,14 @@ For Personal Vaults, individuals have access to the following:
 
 For business users, a similar set of reports exists for Organization Vault items.
 
-Read more:[Vault Health reports](https://bitwarden.com/help/article/reports/)
+Read more:[Vault Health reports](https://bitwarden.com/help/reports/)
 
 For more information on Bitwarden Event Logs and external reporting, see [Event Logs](#event-logs).
 
 ### Importing Passwords and Other Secrets into Bitwarden
-You can easily import your data from over 40 different services, including all the popular password manager applications, to Bitwarden. The full list of supported applications and some additional information, including troubleshooting steps for importing your data into Bitwarden, are documented in [Bitwarden Help Center](https://bitwarden.com/help/article/import-data/).
+You can easily import your data from over 40 different services, including all the popular password manager applications, to Bitwarden. The full list of supported applications and some additional information, including troubleshooting steps for importing your data into Bitwarden, are documented in [Bitwarden Help Center](https://bitwarden.com/help/import-data/).
 
-If you are exporting your sites from the LastPass.com Web Vault, please refer to the specific information on this Help note [Import your data from LastPass](https://bitwarden.com/help/article/import-from-lastpass/).
+If you are exporting your sites from the LastPass.com Web Vault, please refer to the specific information on this Help note [Import your data from LastPass](https://bitwarden.com/help/import-from-lastpass/).
 
 ### Sharing Data between Users
 
@@ -206,28 +206,28 @@ You can create a new Bitwarden Organization from the Web Vault or request that a
 
 When you create an Organization, an Organization Symmetric key is generated using a Cryptographically Secure Pseudorandom Number Generator (CSPRNG). The Organization Symmetric Key is encrypted using the public key from your Generated RSA Key Pair. The private key from your Generated RSA Key Pair is encrypted with your Generated Symmetric Key using AES-256. The Generated RSA Key Pair and Generated Symmetric Key were created when you first signed up and registered your account.
 
-Read More: [What are Organizations?](https://bitwarden.com/help/article/what-is-an-organization/)
+Read More: [What are Organizations?](https://bitwarden.com/help/what-is-an-organization/)
 
 #### Access Controls and Managing Bitwarden Collections
 As your Organization’s use of Bitwarden grows, it helps to have users who can manage Collections independently, without requiring access to everything within the Organizational Vault.
 
 Managing Collections and Groups is a simple way to separate, grant, or limit access to Vault items in Bitwarden, thereby controlling user visibility of resources.
 
-A complete list of roles and access control is documented in the [User Types and Access Control](https://bitwarden.com/help/article/user-types-access-control/) section of Bitwarden Help Center.
+A complete list of roles and access control is documented in the [User Types and Access Control](https://bitwarden.com/help/user-types-access-control/) section of Bitwarden Help Center.
 
-Read more: [how to manage Collections](https://bitwarden.com/help/article/how-to-manage-collections/)
+Read more: [how to manage Collections](https://bitwarden.com/help/how-to-manage-collections/)
 
 #### Event Logs
 Event logs contain time-stamped, detailed information about what actions or changes have occurred within an Organization. These logs are helpful with researching changes in credentials or configuration and very useful for audit trail investigation and troubleshooting purposes.
 
-Additional information on [Event Logs](https://bitwarden.com/help/article/event-logs/) is documented in Bitwarden Help Center. Event logs are available for Teams and Business plans only.
+Additional information on [Event Logs](https://bitwarden.com/help/event-logs/) is documented in Bitwarden Help Center. Event logs are available for Teams and Business plans only.
 
 To gather more data, plans with API access can use the Bitwarden API. API responses will contain the type of event and relevant data.
 
 #### SIEM Integration and External Systems
 For Security Information and Event Management (SIEM) systems like Splunk, when exporting data from Bitwarden, a combination of data from the API and CLI may be used to gather data.
 
-This process is outlined in the help center note on **Organization event logs** under [SIEM and External Systems Integrations](https://bitwarden.com/help/article/event-logs/#siem-and-external-system-integrations).
+This process is outlined in the help center note on **Organization event logs** under [SIEM and External Systems Integrations](https://bitwarden.com/help/event-logs/#siem-and-external-system-integrations).
 
 ### Account Protection and Avoiding Lockout
 Today, for Basic, Premium, Family and Teams Plans, Bitwarden offers account protection with a security model that does not support users losing their passwords or two-step login recovery codes.
@@ -254,7 +254,7 @@ If you choose or are required by your Organization to set up two-step login, be 
 
 ### Admin Password Reset in Enterprise Plans
 
-In mid 2021, Bitwarden introduced Admin Password Reset for Enterprise plans. With this option, users and organizations have the opportunity to implement a new policy allowing Administrators and Owners to reset passwords for users. For more detail on this feature, visit our help site at [https://bitwarden.com/help/article/releasenotes/](https://bitwarden.com/help/article/releasenotes/)
+In mid 2021, Bitwarden introduced Admin Password Reset for Enterprise plans. With this option, users and organizations have the opportunity to implement a new policy allowing Administrators and Owners to reset passwords for users. For more detail on this feature, visit our help site at [https://bitwarden.com/help/releasenotes/](https://bitwarden.com/help/releasenotes/)
 
 ### Bitwarden Cloud Platform and Web Application Security
 
@@ -302,7 +302,7 @@ Bitwarden processes and stores all data securely in the Microsoft Azure cloud us
 Azure Service Configurations are leveraged by Bitwarden to ensure applications are configured and deployed in a repeatable and consistent manner.
 
 #### Bitwarden Platform Key Management Procedures
-Keys and other secrets utilized by the Bitwarden platform itself, include credentials for the Bitwarden cloud provider accounts. All such keys are generated, securely stored, and rotated as needed, in accordance with industry-standard practices. Bitwarden uses an internal Bitwarden vault for secure storage and backup of sensitive keys or other secrets utilized by the Bitwarden platform. Access control to the Bitwarden vault leverages [User Types and Access Control](https://bitwarden.com/help/article/user-types-access-control/).
+Keys and other secrets utilized by the Bitwarden platform itself, include credentials for the Bitwarden cloud provider accounts. All such keys are generated, securely stored, and rotated as needed, in accordance with industry-standard practices. Bitwarden uses an internal Bitwarden vault for secure storage and backup of sensitive keys or other secrets utilized by the Bitwarden platform. Access control to the Bitwarden vault leverages [User Types and Access Control](https://bitwarden.com/help/user-types-access-control/).
 
 #### Data Types and Data Retention
 Bitwarden processes two kinds of user data to deliver the Bitwarden Service: (i) Vault Data and (ii) Administrative Data.
@@ -392,7 +392,7 @@ Bitwarden leverages [HTTP Security headers](#http-security-headers) as an additi
 #### Code Assessments
 Bitwarden is an open source password manager. All of our source code is hosted and publicly available on [GitHub](https://github.com/bitwarden) for review. Bitwarden source code has been and continues to be audited annually by reputable third-party security auditing firms as well as independent security researchers. In addition, The Bitwarden Vulnerability Disclosure Program enlists the help of the hacker community at HackerOne to make Bitwarden more secure.
 
-Read more: [Bitwarden Security FAQs](https://bitwarden.com/help/article/security-faqs/)
+Read more: [Bitwarden Security FAQs](https://bitwarden.com/help/security-faqs/)
 [Bitwarden Threat Prevention and Response](#threat-prevention-and-response)
 [Bitwarden Security and Compliance Assessments, Reviews, Vulnerability Scans, PenTesting](#auditability-and-compliance)
 

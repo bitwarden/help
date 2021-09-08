@@ -12,7 +12,7 @@ The Bitwarden Authenticator is an alternative solution to dedicated authenticati
 
 {% callout info %}Authenticator key (TOTP) storage is available to all accounts. TOTP code generation requires Premium or membership to a Paid Organization (Families, Teams, or Enterprise).{% endcallout %}
 
-If you're new to using TOTPs for Two-step Login, refer to the [Field Guide to Two-step Login](https://bitwarden.com/help/article/bitwarden-field-guide-two-step-login/#securing-important-websites) for more information.
+If you're new to using TOTPs for Two-step Login, refer to the [Field Guide to Two-step Login](https://bitwarden.com/help/bitwarden-field-guide-two-step-login/#securing-important-websites) for more information.
 
 ## Generate TOTP Codes
 

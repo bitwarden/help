@@ -9,7 +9,7 @@ order: "05"
 ---
 Protect the contents of your Send by optionally configuring a [password for access](#send-passwords) so that no unintended recipients can see the contained information, and/or to [hide your email from recipients](). For text Sends, you can also optionally require recipients to [toggle visibility](#hide-text) to prevent exposure to unintentional onlookers.
 
-The **Password**, **Hide Email**, and **Hide Text** options are configurable from the Create New Send view, or from the Edit Send views at any time prior to the Send's [deletion]({{site.baseurl}}/article/send-lifespan/#deletion-behavior).
+The **Password**, **Hide Email**, and **Hide Text** options are configurable from the Create New Send view, or from the Edit Send views at any time prior to the Send's [deletion]({{site.baseurl}}/send-lifespan/#deletion-behavior).
 
 ## Send Passwords
 
@@ -32,7 +32,7 @@ You can remove a Send's password at any time using the {% icon fa-undo %} **Remo
 ## Hide Email
 
 {% callout success %}
-For Enterprise Organizations, the availability of this option can be set using an [Enterprise Policy]({{site.baseurl}}/article/policies/#send-options).
+For Enterprise Organizations, the availability of this option can be set using an [Enterprise Policy]({{site.baseurl}}/policies/#send-options).
 {% endcallout %}
 
 By default, Send objects will display the email address of the Sender to recipients:

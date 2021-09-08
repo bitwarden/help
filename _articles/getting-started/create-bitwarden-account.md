@@ -27,7 +27,7 @@ Once you've created your account, prompt Bitwarden to send you a verification em
 
 We recommend using any one of these resources to learn the ropes:
 
-- [Get Started with the Web Vault]({{site.baseurl}}/article/getting-started-webvault/)
-- [Get Started with Browser Extensions]({{site.baseurl}}/article/getting-started-browserext/)
-- [Get Started with the Mobile Apps]({{site.baseurl}}/article/getting-started-mobile/)
-- [Get Started with Desktop Apps]({{site.baseurl}}/article/getting-started-desktop/)
+- [Get Started with the Web Vault]({{site.baseurl}}/getting-started-webvault/)
+- [Get Started with Browser Extensions]({{site.baseurl}}/getting-started-browserext/)
+- [Get Started with the Mobile Apps]({{site.baseurl}}/getting-started-mobile/)
+- [Get Started with Desktop Apps]({{site.baseurl}}/getting-started-desktop/)

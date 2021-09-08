@@ -10,7 +10,7 @@ order: "03"
 
 ## Step 1: Set an Organization Identifier
 
-Users who [authenticate their identity using SSO]({{site.baseurl}}/article/sso-access-your-vault/) will be required to enter an **Organization Identifier** that indicates the Organization (and therefore, the SSO integration) to authenticate against. to set a unique Organization Identifier:
+Users who [authenticate their identity using SSO]({{site.baseurl}}/sso-access-your-vault/) will be required to enter an **Organization Identifier** that indicates the Organization (and therefore, the SSO integration) to authenticate against. to set a unique Organization Identifier:
 
 1. Log in to your [Web Vault](https://vault.bitwarden.com){:target="\_blank"} and open your Organization.
 2. Open the **Settings** tab and enter a unique **Identifier** for your Organizations.
@@ -33,7 +33,7 @@ Once you have your Organization Identifier, you can proceed to enabling and conf
 
    {% image sso/sso-bp-1.png Business Portal Menu %}
 3. Check the **Enabled** checkbox.
-4. From the **Type** dropdown menu, select the **SAML 2.0** option. If you intend to use OIDC instead, switch over to the [OIDC Configuration Guide]({{site.baseurl}}/article/configure-sso-oidc).
+4. From the **Type** dropdown menu, select the **SAML 2.0** option. If you intend to use OIDC instead, switch over to the [OIDC Configuration Guide]({{site.baseurl}}/configure-sso-oidc).
 
 ## Step 3: Configuration
 
@@ -41,21 +41,21 @@ From this point on, **implementation will vary provider-to-provider**. Jump to o
 
 |Provider|Guide|
 |--------|-----|
-|AD FS|[AD FS Implementation Guide]({{site.baseurl}}/article/saml-adfs/)|
-|Auth0|[Auth0 Implementation Guide]({{site.baseurl}}/article/saml-auth0/)|
-|AWS|[AWS Implementation Guide]({{site.baseurl}}/article/saml-aws/)|
-|Azure|[Azure Implementation Guide]({{site.baseurl}}/article/saml-azure/)|
-|Duo|[Duo Implementation Guide]({{site.baseurl}}/article/saml-duo/)|
-|Google|[Google Implementation Guide]({{site.baseurl}}/article/saml-google/)|
-|JumpCloud|[JumpCloud Implementation Guide]({{site.baseurl}}/article/saml-jumpcloud/)|
-|Keycloak|[Keycloak Implementation Guide]({{site.baseurl}}/article/saml-keycloak/)|
-|Okta|[Okta Implementation Guide]({{site.baseurl}}/article/saml-okta/)|
-|OneLogin|[OneLogin Implementation Guide]({{site.baseurl}}/article/saml-onelogin/)|
-|PingFederate|[PingFederate Implementation Guide]({{site.baseurl}}/article/saml-pingfederate/)|
+|AD FS|[AD FS Implementation Guide]({{site.baseurl}}/saml-adfs/)|
+|Auth0|[Auth0 Implementation Guide]({{site.baseurl}}/saml-auth0/)|
+|AWS|[AWS Implementation Guide]({{site.baseurl}}/saml-aws/)|
+|Azure|[Azure Implementation Guide]({{site.baseurl}}/saml-azure/)|
+|Duo|[Duo Implementation Guide]({{site.baseurl}}/saml-duo/)|
+|Google|[Google Implementation Guide]({{site.baseurl}}/saml-google/)|
+|JumpCloud|[JumpCloud Implementation Guide]({{site.baseurl}}/saml-jumpcloud/)|
+|Keycloak|[Keycloak Implementation Guide]({{site.baseurl}}/saml-keycloak/)|
+|Okta|[Okta Implementation Guide]({{site.baseurl}}/saml-okta/)|
+|OneLogin|[OneLogin Implementation Guide]({{site.baseurl}}/saml-onelogin/)|
+|PingFederate|[PingFederate Implementation Guide]({{site.baseurl}}/saml-pingfederate/)|
 
 ### Configuration Reference Materials
 
-The following sections will define fields configured in the [Bitwarden Business Portal]({{site.baseurl}}/article/about-business-portal/), agnostic of which IdP you're integration with. Fields that must be configured will be marked (**Required**).
+The following sections will define fields configured in the [Bitwarden Business Portal]({{site.baseurl}}/about-business-portal/), agnostic of which IdP you're integration with. Fields that must be configured will be marked (**Required**).
 
 {% callout success %}
 **Unless you're comfortable with SAML 2.0**, we recommend using one of the [above Implementation Guides](#step-3-configuration) instead of the following generic material.
@@ -70,9 +70,9 @@ The Business Portal separates configuration into two sections:
 
 |Field|Description|
 |-----|-----------|
-|SP Entity ID|(**Automatically generated**) The Bitwarden endpoint for authentication requests. For Cloud-hosted customers, this is always `https://sso.bitwarden.com/saml2`. For self-hosted instances, this is determined by your [configured Server URL]({{site.baseurl}}/article/install-on-premise/#configure-your-domain), for example `https://your.domain.com/sso/saml2`.|
-|SAML 2.0 Metadata URL|(**Automatically generated**) Metadata URL for the Bitwarden endpoint. For Cloud-hosted customers, this is always `https://sso.bitwarden.com/saml2/your-org-id`. For self-hosted instances, this is determined by your [configured Server URL]({{site.baseurl}}/article/install-on-premise/#configure-your-domain), for example `https://your.domain.com/sso/saml2/your-org-id`.|
-|Assertion Consumer Service (ACS) URL|(**Automatically generated**) Location where the SAML assertion is sent from the IdP. For Cloud-hosted customers, this is always `https://sso.bitwarden.com/saml2/your-org-id/Acs`. For self-hosted instances, this is determined by your [configured Server URL]({{site.baseurl}}/article/install-on-premise/#configure-your-domain), for example `https://your.domain.com/sso/saml2/your-org-id/Acs`.|
+|SP Entity ID|(**Automatically generated**) The Bitwarden endpoint for authentication requests. For Cloud-hosted customers, this is always `https://sso.bitwarden.com/saml2`. For self-hosted instances, this is determined by your [configured Server URL]({{site.baseurl}}/install-on-premise/#configure-your-domain), for example `https://your.domain.com/sso/saml2`.|
+|SAML 2.0 Metadata URL|(**Automatically generated**) Metadata URL for the Bitwarden endpoint. For Cloud-hosted customers, this is always `https://sso.bitwarden.com/saml2/your-org-id`. For self-hosted instances, this is determined by your [configured Server URL]({{site.baseurl}}/install-on-premise/#configure-your-domain), for example `https://your.domain.com/sso/saml2/your-org-id`.|
+|Assertion Consumer Service (ACS) URL|(**Automatically generated**) Location where the SAML assertion is sent from the IdP. For Cloud-hosted customers, this is always `https://sso.bitwarden.com/saml2/your-org-id/Acs`. For self-hosted instances, this is determined by your [configured Server URL]({{site.baseurl}}/install-on-premise/#configure-your-domain), for example `https://your.domain.com/sso/saml2/your-org-id/Acs`.|
 |Name ID Format|Format Bitwarden will request of the SAML assertion. Options include:<br>-Unspecific (*default*)<br>-Email Address<br>-X.509 Subject Name<br>-Windows Domain Qualified Name<br>-Kerberos Principal Name<br>-Entity Identifier<br>-Persistent<br>-Transient|
 |Outbound Signing Algorithm|The algorithm Bitwarden will use to sign SAML requests. Options include:<br>-<http://www.w3.org/2001/04/xmldsig-more#rsa-sha256> (*default*)<br>-<http://www.w3.org/2000/09/xmldsig#rsa-sha1><br>-<http://www.w3.org/2000/09/xmldsig#rsa-sha384><br>-<http://www.w3.org/2000/09/xmldsig#rsa-sha512>|
 |Signing Behavior|Whether/when SAML requests will be signed. Options include:<br>-If IdP Wants Authn Requests Signed (*default*)<br>-Always<br>-Never|

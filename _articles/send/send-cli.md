@@ -37,9 +37,9 @@ will create a file Send object with the specified file at the specified `path` a
 **Options:**
 
 - Use `-n <name>` or `--name <name>` to specify a name for the Send. If none is specified, name will default to the `id` for text Sends and file name for file Sends. For multi-word names, use quotations `"<name>"`.
-- Use `-d <days>` or `--deleteInDays <days>` to specify a [deletion date]({{site.baseurl}}/article/send-lifespan/#deletion-date) for the Send (defaults to 7 days if unspecified).
-- Use `--maxAccessCount` or `-a` to specify the [maximum access count]({{site.baseurl}}/article/send-lifespan/#maximum-access-count) for the Send.
-- Use `--hidden` to specify that a text Send require recipients to [toggle visibility]({{site.baseurl}}/article/send-privacy/#hide-text).
+- Use `-d <days>` or `--deleteInDays <days>` to specify a [deletion date]({{site.baseurl}}/send-lifespan/#deletion-date) for the Send (defaults to 7 days if unspecified).
+- Use `--maxAccessCount` or `-a` to specify the [maximum access count]({{site.baseurl}}/send-lifespan/#maximum-access-count) for the Send.
+- Use `--hidden` to specify that a text Send require recipients to [toggle visibility]({{site.baseurl}}/send-privacy/#hide-text).
 - Use `--notes <notes>` to add private notes to the Send. For multi-word notes, use quotations `"<notes>"`.
 - Use `--fullObject` to output the full Send object as JSON rather than only the Send link (pair this option with the `--pretty` option for formatted JSON).
 
@@ -61,7 +61,7 @@ A typical workflow might look something like:
 
 1. Use the `template` command (see [details](#template)) to output the appropriate JSON template for your Send type.
 2. Use a [command-line JSON processor like jq](https://stedolan.github.io/jq/){:target="\_blank"} to manipulate the outputted template as required.
-3. Use the `encode` command (see [details]({{site.baseurl}}/article/cli/#encode)) to encode the manipulated JSON.
+3. Use the `encode` command (see [details]({{site.baseurl}}/cli/#encode)) to encode the manipulated JSON.
 4. Use the `create` command to create a Send from the encoded JSON.
 
 For example:
@@ -86,8 +86,8 @@ Notice in the final example that the jq invocation must be wrapped in double quo
 
 - Use `--file <path>` to specify the file to Send (this can also be specified in encoded JSON).
 - Use `--text <text>` to specify the text to Send (this can also be specified in encoded JSON).
-- Use `--hidden` to specify that a text Send require recipients to [toggle visibility]({{site.baseurl}}/article/send-privacy/#hide-text).
-- Use `--password <password>` to specify the password needed to access [password-protected]({{site.baseurl}}/article/send-privacy/#send-passwords).
+- Use `--hidden` to specify that a text Send require recipients to [toggle visibility]({{site.baseurl}}/send-privacy/#hide-text).
+- Use `--password <password>` to specify the password needed to access [password-protected]({{site.baseurl}}/send-privacy/#send-passwords).
 - Use `--fullObject` to output the full Send object as JSON rather than only the Send link (pair this option with the `--pretty` option for formatted JSON).
 
 ### get
@@ -118,7 +118,7 @@ A typical workflow might look something like:
 
 1. Use the `get` command (see [details](#get)) to retrieve the desired Send according to its `<id>`.
 2. Use a [command-line JSON processor like jq](https://stedolan.github.io/jq/){:target="\_blank"} to manipulate the retrieved Send as required.
-3. Use the `encode` command (see [details]({{site.baseurl}}/article/cli/#encode)) to encode the manipulated JSON.
+3. Use the `encode` command (see [details]({{site.baseurl}}/cli/#encode)) to encode the manipulated JSON.
 4. Use the `edit` command to write the edits to the Send.
 
 For example:
@@ -193,8 +193,8 @@ bw send receive [options] <url>
 
 **Options:**
 
-- Use `--password <password>` to provide the password needed to access [password-protected]({{site.baseurl}}/article/send-privacy/#send-passwords) Sends as a string.
-- Use `--passwordenv <passwordenv>` to specify the password needed to access [password-protected]({{site.baseurl}}/article/send-privacy/#send-passwords) Sends as a stored environment variable.
-- Use `--passwordfile <passwordfile>` to specify the password needed to access [password-protected]({{site.baseurl}}/article/send-privacy/#send-passwords) Sends as a file with the password as its first line.
+- Use `--password <password>` to provide the password needed to access [password-protected]({{site.baseurl}}/send-privacy/#send-passwords) Sends as a string.
+- Use `--passwordenv <passwordenv>` to specify the password needed to access [password-protected]({{site.baseurl}}/send-privacy/#send-passwords) Sends as a stored environment variable.
+- Use `--passwordfile <passwordfile>` to specify the password needed to access [password-protected]({{site.baseurl}}/send-privacy/#send-passwords) Sends as a file with the password as its first line.
 - Use `--obj` to output the full Send object as JSON rather than only the Send link (pair this option with the `--pretty` option for formatted JSON).
 - Use `--ouput <output>` to specify the output directory for the contents of a file Send.

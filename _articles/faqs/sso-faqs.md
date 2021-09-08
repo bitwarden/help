@@ -11,8 +11,8 @@ order: "07"
 This article contains Frequently Asked Questions (FAQs) regarding **Login with SSO**.
 
 For more high-level information about **Login with SSO**, refer to the following articles:
-- [Getting Started with Login with SSO](https://bitwarden.com/help/article/getting-started-with-sso/)
-- [About the Business Portal](https://bitwarden.com/help/article/about-business-portal/)
+- [Getting Started with Login with SSO](https://bitwarden.com/help/getting-started-with-sso/)
+- [About the Business Portal](https://bitwarden.com/help/about-business-portal/)
 
 ## Using Login with SSO
 
@@ -26,7 +26,7 @@ For more high-level information about **Login with SSO**, refer to the following
 
 ### Q: Can I still log in with my Master Password if my Organization has SSO enabled?
 
-  **A:** By default, yes, you can use your email address and Master Password to login to Bitwarden. However, if your Organization enables both the [Single Organization](https://bitwarden.com/help/article/policies/#single-organization) and [Single Sign-On Authentication](https://bitwarden.com/help/article/policies/#single-sign-on-authentication) policies, all non-administrator users will be required to login with SSO.
+  **A:** By default, yes, you can use your email address and Master Password to login to Bitwarden. However, if your Organization enables both the [Single Organization](https://bitwarden.com/help/policies/#single-organization) and [Single Sign-On Authentication](https://bitwarden.com/help/policies/#single-sign-on-authentication) policies, all non-administrator users will be required to login with SSO.
 
 ### Q: How does Login with SSO work for new users ("just-in-time")?
 
@@ -53,15 +53,15 @@ For more high-level information about **Login with SSO**, refer to the following
 
 ### Q: What plans offer Login with SSO?
 
-**A:** Only our current Enterprise Plan offers this feature. For more information, see [here](https://bitwarden.com/help/article/2020-plan-updates/).
+**A:** Only our current Enterprise Plan offers this feature. For more information, see [here](https://bitwarden.com/help/2020-plan-updates/).
 
 ### Q: How do I upgrade my plan so that I can use Login with SSO?
 
-**A:** [Contact Us](https://bitwarden.com/contact/) and select **Upgrade/Change Plan** from the **Subject** dropdown menu. We highly recommend you test Login with SSO by starting a [7 Day Enterprise Free Trial](https://bitwarden.com/help/article/enterprise-free-trial).
+**A:** [Contact Us](https://bitwarden.com/contact/) and select **Upgrade/Change Plan** from the **Subject** dropdown menu. We highly recommend you test Login with SSO by starting a [7 Day Enterprise Free Trial](https://bitwarden.com/help/enterprise-free-trial).
 
 ### Q: I would like to test Login with SSO. If I decide I don't need it, can I revert to my Classic 2019 plan?
 
-**A:** Unfortunately, we aren't able to revert you back to a Classic 2019 plan once you've upgraded. We recommend creating a new Organization to start a [7 Day Enterprise Free Trial](https://bitwarden.com/help/article/enterprise-free-trial/) to test Login with SSO outside of your Primary Organization.
+**A:** Unfortunately, we aren't able to revert you back to a Classic 2019 plan once you've upgraded. We recommend creating a new Organization to start a [7 Day Enterprise Free Trial](https://bitwarden.com/help/enterprise-free-trial/) to test Login with SSO outside of your Primary Organization.
 
 ## Supportability
 

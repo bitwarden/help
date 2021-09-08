@@ -7,7 +7,7 @@ popular: false
 tags: []
 order: "01"
 redirect_from:
-  - /article/what-information-is-encrypted/
+  - /what-information-is-encrypted/
 ---
 
 All Vault data is encrypted by Bitwarden before being stored anywhere. To learn how, see [Encryption]({% link _articles/security/what-encryption-is-used.md %}).

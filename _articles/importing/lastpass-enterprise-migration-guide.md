@@ -44,8 +44,8 @@ Data imported into Bitwarden is defined as one of four item types:
 
 Bitwarden currently limits the length of item fields to 1,000 characters, and Secure Notes to 10,000 characters.  Items that exceed that criteria should be saved as separate files (text, key, pem, ssh, etc.) and added as attachments to an item.
 
-- [More on Items](https://bitwarden.com/help/article/managing-items/)
-- [Attaching a file to an item](https://bitwarden.com/help/article/attachments/)
+- [More on Items](https://bitwarden.com/help/managing-items/)
+- [Attaching a file to an item](https://bitwarden.com/help/attachments/)
 
 Gathering a full export of your data across your LastPass Organization may require assigning all shared folders to a single user, or performing multiple exports - one for each segment of shared folders.
 
@@ -55,9 +55,9 @@ Exported data from LastPass will contain data from both your Personal vault, as 
 
 Shared or company-level data is stored in a Bitwarden Organization. The best practice is to create this Organization first and import it directly, instead of importing the data into an individual account and then sharing it with the organization secondarily.
 
-For more on creating a Bitwarden Organization, visit [this article.](https://bitwarden.com/help/article/about-organizations/)
+For more on creating a Bitwarden Organization, visit [this article.](https://bitwarden.com/help/about-organizations/)
 
-Self-hosted instances will need to create an Organization on the Bitwarden cloud instance to generate their [license key](https://bitwarden.com/host/) and can then proceed with [installing and configuring a Bitwarden Server instance.](https://bitwarden.com/help/article/install-on-premise/)
+Self-hosted instances will need to create an Organization on the Bitwarden cloud instance to generate their [license key](https://bitwarden.com/host/) and can then proceed with [installing and configuring a Bitwarden Server instance.](https://bitwarden.com/help/install-on-premise/)
 
 {%callout%}
 Self-hosting is available for Enterprise plans.
@@ -67,15 +67,15 @@ Self-hosting is available for Enterprise plans.
 
 Bitwarden Enterprise plans support Login with Single-Sign-On using either SAML 2.0 or OpenID Connect (OIDC).
 
-Each Bitwarden Organization can configure one SSO provider. Configuration for this is located in the [Business Portal](https://bitwarden.com/help/article/about-business-portal/), accessible from the Web Vault by Organization Owners and Administrators.
+Each Bitwarden Organization can configure one SSO provider. Configuration for this is located in the [Business Portal](https://bitwarden.com/help/about-business-portal/), accessible from the Web Vault by Organization Owners and Administrators.
 
-For more details on Login with SSO configurations and examples of Identity Provider (IdP) settings and naming conventions, please visit [these help articles](https://bitwarden.com/help/article/about-sso/).
+For more details on Login with SSO configurations and examples of Identity Provider (IdP) settings and naming conventions, please visit [these help articles](https://bitwarden.com/help/about-sso/).
 
 ### Enabling enterprise policies
 
-Policies are found in the [Business Portal](https://bitwarden.com/help/article/about-business-portal/)
+Policies are found in the [Business Portal](https://bitwarden.com/help/about-business-portal/)
 
-Policies allow you to control the actions of users within your Organization. It is recommended to configure these policies prior to onboarding users. For a complete list and details for Enterprise Policies, please see our helpful article [here.](https://bitwarden.com/help/article/policies/)
+Policies allow you to control the actions of users within your Organization. It is recommended to configure these policies prior to onboarding users. For a complete list and details for Enterprise Policies, please see our helpful article [here.](https://bitwarden.com/help/policies/)
 
 ## Importing data
 
@@ -88,7 +88,7 @@ Creating a Bitwarden specific CSV from your exported data
 
 The best practice for most Organizations is to format your data into a Bitwarden CSV, or for advanced users, a Bitwarden JSON file for import into your Organization vault.
 
-For instructions on shaping a Bitwarden specific import file, please refer to the guide [here.](https://bitwarden.com/help/article/condition-bitwarden-import/)
+For instructions on shaping a Bitwarden specific import file, please refer to the guide [here.](https://bitwarden.com/help/condition-bitwarden-import/)
 
  A collection of data import and export documentation is available [here.](https://bitwarden.com/help/import-export/) to assist with imports from additional sources.
 
@@ -108,14 +108,14 @@ Bitwarden supports both manual and automated user invitation and boarding. Best 
 
 ### Manual onboarding
 
-Manual boarding is done via the Web Vault. More information on manual user boarding can be found in this [helpful article](https://bitwarden.com/help/article/managing-users/)
+Manual boarding is done via the Web Vault. More information on manual user boarding can be found in this [helpful article](https://bitwarden.com/help/managing-users/)
 
 ### Automated onboarding
 
-Automated user boarding is also available when leveraging Bitwarden Directory Connector - a standalone application available in a [Desktop app](https://bitwarden.com/help/article/directory-sync-desktop/) and a [CLI tool](https://bitwarden.com/help/article/directory-sync-cli/) -  synchronizing user and group information to the Bitwarden Organization. These users are automatically invited to join the Organization, and can be confirmed manually or automatically using the [Bitwarden CLI tool](https://bitwarden.com/help/article/cli/#confirm).
+Automated user boarding is also available when leveraging Bitwarden Directory Connector - a standalone application available in a [Desktop app](https://bitwarden.com/help/directory-sync-desktop/) and a [CLI tool](https://bitwarden.com/help/directory-sync-cli/) -  synchronizing user and group information to the Bitwarden Organization. These users are automatically invited to join the Organization, and can be confirmed manually or automatically using the [Bitwarden CLI tool](https://bitwarden.com/help/cli/#confirm).
 
-- Learn more about how syncing works [here.](https://bitwarden.com/help/article/directory-sync/)
-- Discover how to configure user and group filters for Directory Connector [here.](https://bitwarden.com/help/article/user-group-filters/)
+- Learn more about how syncing works [here.](https://bitwarden.com/help/directory-sync/)
+- Discover how to configure user and group filters for Directory Connector [here.](https://bitwarden.com/help/user-group-filters/)
 - Documentation for multiple Directory Connector options is available [here.](https://bitwarden.com/help/directory-connector/)
 
 ## Sharing Collections and items
@@ -138,7 +138,7 @@ Example Bitwarden Organization Import
 
 Collections can be shared with both Groups and Individual users. Limiting the number of individual users that can access a Collection will make management more efficient for Administrators.
 
-For more information on assigning Collections to Users and Groups, please refer to our help article [here.](https://bitwarden.com/help/article/about-collections/)
+For more information on assigning Collections to Users and Groups, please refer to our help article [here.](https://bitwarden.com/help/about-collections/)
 
 ### Groups
 
@@ -146,7 +146,7 @@ Leveraging Groups for sharing is the most effective way to provide credential an
 
 As a part of deployment preparations, it is possible to synchronize **just** groups from the LDAP directory before synchronization of Users begins, such that Collections can be assigned to Groups before users begin accessing Bitwarden.
 
-For more information on filtering and synchronization of Users with the Bitwarden Directory Connector, please check out the article [here.](https://bitwarden.com/help/article/user-group-filters/)
+For more information on filtering and synchronization of Users with the Bitwarden Directory Connector, please check out the article [here.](https://bitwarden.com/help/user-group-filters/)
 
 ### Permissions
 
@@ -165,7 +165,7 @@ Bitwarden uses an union of permissions to determine final access permissions for
 - User A is also a member of the Support Management group, which has access to the  Support Collection, with read-write access.
 - In this scenario, User A will be able to read-write to the Collection.
 
-More information on permissions can be found on our help site [here.](https://bitwarden.com/help/article/user-types-access-control/#access-control)
+More information on permissions can be found on our help site [here.](https://bitwarden.com/help/user-types-access-control/#access-control)
 
 ## Migration support
 
@@ -175,7 +175,7 @@ The Bitwarden Customer Success team is available 24/7 with priority support for 
 
 ### Organization
 
-- A Bitwarden Organization is the encompassing “object” that relates all data for a given sharing entity. Click [here](https://bitwarden.com/help/article/about-organizations/) for more information on Organizations.
+- A Bitwarden Organization is the encompassing “object” that relates all data for a given sharing entity. Click [here](https://bitwarden.com/help/about-organizations/) for more information on Organizations.
 
 ### Folders for Individual Vaults
 

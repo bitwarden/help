@@ -8,7 +8,7 @@ tags: [categories, folders, sub-folders]
 order: "06"
 ---
 
-Folders are structures used to organize your Personal Vault by gathering together Logins, Cards, Identities, and Secure Notes. Using Folders is a great way to make all Vault items easy to find. Any Vault item can be added to a Folder, including [items shared with you from an Organization]({{site.baseurl}}/article/sharing/).
+Folders are structures used to organize your Personal Vault by gathering together Logins, Cards, Identities, and Secure Notes. Using Folders is a great way to make all Vault items easy to find. Any Vault item can be added to a Folder, including [items shared with you from an Organization]({{site.baseurl}}/sharing/).
 
 {% callout success %}
 Items added to a Folder will still appear in your Vault when {% icon fa-th %} **All Items** is selected from the Filter menu, and deleting a Folder **will not** delete the items in that Folder.
@@ -98,7 +98,7 @@ To create a Folder, use the command:
 bw create folder <foldername>
 ```
 
-You can edit an existing folder using `bw edit <folderId>` and delete one using `bw delete folder <folderId>`. For more information, refer to our [CLI documentation]({{site.baseurl}}/article/cli).
+You can edit an existing folder using `bw edit <folderId>` and delete one using `bw delete folder <folderId>`. For more information, refer to our [CLI documentation]({{site.baseurl}}/cli).
 
 {% endcapture %}
 {{ cli_info | markdownify}}
@@ -108,7 +108,7 @@ You can edit an existing folder using `bw edit <folderId>` and delete one using 
 {% callout info %}
 If you're a member of an Organization, **Collections** will be shown below your Folders in the Filters menu.
 
-There are similarities between Folders and Collections. **Folders organize your Personal Vault** (but can include [shared items]({{site.baseurl}}/article/sharing/)) and are unique to you, where Collections are shared between members of Organizations.
+There are similarities between Folders and Collections. **Folders organize your Personal Vault** (but can include [shared items]({{site.baseurl}}/sharing/)) and are unique to you, where Collections are shared between members of Organizations.
 {% endcallout %}
 
 ### Nested Folders
@@ -213,7 +213,7 @@ Using `edit` will require you to:
 - Manipulate the JSON object (specifically, the `folderId` attribute) with a [command-line JSON processor like jq](https://stedolan.github.io/jq/){:target="\_blank"}.
 - Use the `encode` command to encode changes to the JSON object.
 
-If you're unfamiliar with using any of these parts, refer to our [CLI documentation]({{site.baseurl}}/article/cli).
+If you're unfamiliar with using any of these parts, refer to our [CLI documentation]({{site.baseurl}}/cli).
 {% endcallout %}
 
 {% endcapture %}
@@ -222,5 +222,5 @@ If you're unfamiliar with using any of these parts, refer to our [CLI documentat
 </div>
 
 {% callout success %}
-Items [shared with you from an Organization]({{site.baseurl}}/article/sharing/) can be added to your personal Folders, and doing so will only impact how the item appears in your Personal Vault (i.e. adding an item to a Folder won't give anyone access to that Folder, or change whether it's in a Folder in their Vaults).
+Items [shared with you from an Organization]({{site.baseurl}}/sharing/) can be added to your personal Folders, and doing so will only impact how the item appears in your Personal Vault (i.e. adding an item to a Folder won't give anyone access to that Folder, or change whether it's in a Folder in their Vaults).
 {% endcallout %}

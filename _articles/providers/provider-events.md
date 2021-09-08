@@ -11,7 +11,7 @@ order: "07"
 
 ## What are Event Logs?
 
-Event logs are timestamped records of events that occur within your Provider. Event logs for the Provider are accessible only to [Provider Admins]({{site.baseurl}}/article/provider-users/) from the {% icon fa-sliders %} **Manage** tab of the Provider Portal:
+Event logs are timestamped records of events that occur within your Provider. Event logs for the Provider are accessible only to [Provider Admins]({{site.baseurl}}/provider-users/) from the {% icon fa-sliders %} **Manage** tab of the Provider Portal:
 
 {% image providers/provider-events.png Provider Event Logs %}
 
@@ -28,10 +28,10 @@ Event Logs record several different types of events for Providers. The Event Log
 - Edited user *user-identifier*
 - Removed user *user-identifier*
 - Accessed *organization-identifier* organization vault.
-- Created organization *organization-identifier* (triggered when [a new Organization is created within Provider]({{site.baseurl}}/article/client-org-setup/#create-a-client-organization))
-- Added organization *organization-identifier* (triggered when [an existing Organization is added to Provider]({{site.baseurl}}/article/providers-faqs/#q-can-i-add-an-existing-organizations-to-my-provider))
+- Created organization *organization-identifier* (triggered when [a new Organization is created within Provider]({{site.baseurl}}/client-org-setup/#create-a-client-organization))
+- Added organization *organization-identifier* (triggered when [an existing Organization is added to Provider]({{site.baseurl}}/providers-faqs/#q-can-i-add-an-existing-organizations-to-my-provider))
 - Removed organization *organization-identifier*
 
 {% callout success %}
-Provider Events do not currently roll up the events logged for each [Client Organization]({{site.baseurl}}/article/providers/#client-organizations). Provider users can access Organization Event Logs from the Client Organization's Vault. [Learn more]({{site.baseurl}}/article/event-logs/).
+Provider Events do not currently roll up the events logged for each [Client Organization]({{site.baseurl}}/providers/#client-organizations). Provider users can access Organization Event Logs from the Client Organization's Vault. [Learn more]({{site.baseurl}}/event-logs/).
 {% endcallout %}

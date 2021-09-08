@@ -42,7 +42,7 @@ To enable the autofill service:
 
 You'll be prompted to confirm you trust Bitwarden. Tapping **OK** will let Bitwarden read content on the screen to know when to offer auto-fill. Learn more from [our blog post](https://bitwarden.com/blog/post/the-oreo-autofill-framework){:target="_blank"}.
 
-**Autofill Service not working?** See [Troubleshooting the Autofill Service]({{site.baseurl}}/article/auto-fill-android-troubleshooting/#troubleshooting-the-autofill-service).
+**Autofill Service not working?** See [Troubleshooting the Autofill Service]({{site.baseurl}}/auto-fill-android-troubleshooting/#troubleshooting-the-autofill-service).
 
 #### Inline Autofill
 
@@ -80,7 +80,7 @@ To enable the accessibility method:
 {% callout warning %}
 If you're using Android 6+, you must also enable **Draw-Over**.
 
-**Accessibility not working?** See [Troubleshooting the Accessibility Service]({{site.baseurl}}/article/auto-fill-android-troubleshooting/#troubleshooting-the-accessibility-service).
+**Accessibility not working?** See [Troubleshooting the Accessibility Service]({{site.baseurl}}/auto-fill-android-troubleshooting/#troubleshooting-the-accessibility-service).
 {% endcallout %}
 
 #### Draw-Over

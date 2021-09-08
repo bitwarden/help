@@ -7,7 +7,7 @@ popular: false
 tags: [encryption key, account]
 order: "04"
 redirect_from:
-  - /article/update-encryption-key/
+  - /update-encryption-key/
 ---
 
 Each unique Bitwarden account has an encryption key derived from your Master Password, according to the methods defined in [Encryption]({% link _articles/security/what-encryption-is-used.md %}). This encryption key is used to encrypt all Vault data.

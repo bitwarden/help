@@ -7,7 +7,7 @@ popular: false
 tags: [cli, captcha]
 ---
 
-The August 2021 release of Bitwarden (**2021-08-18**) introduced [Captcha](https://www.hcaptcha.com/about){:target="\_blank"} requirements to increase security against bot traffic. On the CLI, Captcha challenges are substituted with authentication challenges that can validated using your account's [Personal API Key]({{site.baseurl}}/article/personal-api-key) `client_secret`.
+The August 2021 release of Bitwarden (**2021-08-18**) introduced [Captcha](https://www.hcaptcha.com/about){:target="\_blank"} requirements to increase security against bot traffic. On the CLI, Captcha challenges are substituted with authentication challenges that can validated using your account's [Personal API Key]({{site.baseurl}}/personal-api-key) `client_secret`.
 
 ## Get your Personal API Key
 
@@ -23,7 +23,7 @@ To get your Personal API Key:
 Depending on your preferences, you can [save an environment variable](#answer-challenges-with-an-environment-variable) to automatically pass authentication challenges or [manually enter](#using-the-prompt) your `client_secret` whenever a challenge is made:
 
 {% callout success %}
-Aside from using environment variable, any possible challenge is automatically bypassed when using the `bw login --apikey` method. [Learn more]({{site.baseurl}}/article/cli/#using-an-api-key).
+Aside from using environment variable, any possible challenge is automatically bypassed when using the `bw login --apikey` method. [Learn more]({{site.baseurl}}/cli/#using-an-api-key).
 {% endcallout %}
 
 ### Answer Challenges with an Environment Variable
@@ -41,7 +41,7 @@ env:BW_CLIENTSECRET="client_secret"
 ```
 
 {% callout warning %}
-If your `client_secret` is incorrect, you will receive an error. In most cases, this is because you have [rotated your API Key]({{site.baseurl}}/article/personal-api-key/#rotate-your-api-key) since saving the variable. [Use the above steps](#get-your-personal-api-key) to retrieve the correct value.
+If your `client_secret` is incorrect, you will receive an error. In most cases, this is because you have [rotated your API Key]({{site.baseurl}}/personal-api-key/#rotate-your-api-key) since saving the variable. [Use the above steps](#get-your-personal-api-key) to retrieve the correct value.
 {% endcallout %}
 
 ### Answer Challenges Manually
@@ -51,5 +51,5 @@ When an authentication challenge is made and no `BW_CLIENTSECRET` value is found
 {% image cli/cli-captcha-1-markup.png Login Prompt with Auth Challenge %}
 
 {% callout warning %}
-If your `client_secret` is incorrect, you will receive an error. In most cases, this is because you have [rotated your API Key]({{site.baseurl}}/article/personal-api-key/#rotate-your-api-key) since saving the variable. [Use the above steps](#get-your-personal-api-key) to retrieve the correct value.
+If your `client_secret` is incorrect, you will receive an error. In most cases, this is because you have [rotated your API Key]({{site.baseurl}}/personal-api-key/#rotate-your-api-key) since saving the variable. [Use the above steps](#get-your-personal-api-key) to retrieve the correct value.
 {% endcallout %}

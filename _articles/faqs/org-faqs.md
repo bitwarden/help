@@ -11,9 +11,9 @@ order: "18"
 This article contains Frequently Asked Questions (FAQs) regarding **Organizations**.
 
 For more high-level information about **Organizations**, refer to the following articles:
-- [About Organizations](https://bitwarden.com/help/article/about-organizations/)
-- [About Collections](https://bitwarden.com/help/article/about-collections/)
-- [About Groups](https://bitwarden.com/help/article/about-groups/)
+- [About Organizations](https://bitwarden.com/help/about-organizations/)
+- [About Collections](https://bitwarden.com/help/about-collections/)
+- [About Groups](https://bitwarden.com/help/about-groups/)
 
 ## Organizations General
 
@@ -37,7 +37,7 @@ Paid Organizations (Families, Teams, or Enterprise) automatically include premiu
 
 ### Q: What events are audited for my Organization?
 
-**A:** For a full list of what's included in Bitwarden Event Logs, see [Event Logs](https://bitwarden.com/help/article/event-logs/).
+**A:** For a full list of what's included in Bitwarden Event Logs, see [Event Logs](https://bitwarden.com/help/event-logs/).
 
 ### Q: Can I prevent users from self-registering into my Organization?
 
@@ -66,7 +66,7 @@ Alternatively, you can unshare items by moving them to a different Collection wi
 
 ### Q: How do I hide a password from my Organization's users?
 
-**A:** Use the **Hide Passwords** option in the **Access Control** section when adding new users or editing existing ones in order to hide a given Collection's passwords and hidden fields from them. For more information, see [Access Control](https://bitwarden.com/help/article/user-types-access-control/#access-control).
+**A:** Use the **Hide Passwords** option in the **Access Control** section when adding new users or editing existing ones in order to hide a given Collection's passwords and hidden fields from them. For more information, see [Access Control](https://bitwarden.com/help/user-types-access-control/#access-control).
 
 ### Q: Does an item I move to the Organization stay after I leave?
 

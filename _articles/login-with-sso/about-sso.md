@@ -7,7 +7,7 @@ popular: true
 tags: [saml, saml2.0, single sign-on, sso, oidc, openid, openid connect, idp, identity provider]
 order: "01"
 redirect_from:
-  - /article/getting-started-with-sso/
+  - /getting-started-with-sso/
 ---
 
 ## What is Login with SSO?
@@ -16,9 +16,9 @@ Login with SSO separates user authentication from Vault decryption by leveraging
 
 Login with SSO currently supports SAML 2.0 and OpenID Connect authentication for customers on the current Enterprise Plan.
 
-Users of Bitwarden authenticate into their vaults using the **Enterprise Single Sign-On** button located on the login screen of any Bitwarden client application. For more information, see [Access Your Vault Using SSO](https://bitwarden.com/help/article/sso-access-your-vault/).
+Users of Bitwarden authenticate into their vaults using the **Enterprise Single Sign-On** button located on the login screen of any Bitwarden client application. For more information, see [Access Your Vault Using SSO](https://bitwarden.com/help/sso-access-your-vault/).
 
-Administrators can configure Login with SSO in the Business Portal. For more information, see [About the Business Portal](https://bitwarden.com/help/article/about-business-portal/).
+Administrators can configure Login with SSO in the Business Portal. For more information, see [About the Business Portal](https://bitwarden.com/help/about-business-portal/).
 
 {% image sso/sso-button-lg.png Enterprise Single Sign-On button %}
 
@@ -32,7 +32,7 @@ Login with SSO is available for all customers on the current Enterprise plan (fo
 
 <a role="button" class="btn btn-primary" href="https://vault.bitwarden.com/#/register?org=enterprise">Start your Enterprise Free Trial</a>
 
-If you're an experienced Bitwarden user, refer to the [this article]({% link _articles/plans-and-pricing/enterprise-free-trial.md %}) for help. If you're self-hosting Bitwarden, you will need to generate a new license file after starting your 7 Day Free Trial. We recommend using a separate Bitwarden instance for testing Login with SSO. For more information, see [Licensing Paid Features](https://bitwarden.com/help/article/licensing-on-premise).
+If you're an experienced Bitwarden user, refer to the [this article]({% link _articles/plans-and-pricing/enterprise-free-trial.md %}) for help. If you're self-hosting Bitwarden, you will need to generate a new license file after starting your 7 Day Free Trial. We recommend using a separate Bitwarden instance for testing Login with SSO. For more information, see [Licensing Paid Features](https://bitwarden.com/help/licensing-on-premise).
 
 ## Requirements
 
@@ -54,7 +54,7 @@ Your Bitwarden client applications require the following versions:
 ### Self-Hosting Requirements
 If you are self-hosting Bitwarden, your installation must be on v1.37+.
 
-For information on updating your self-hosted instance, see [Updating your Self-Hosted Installation](https://bitwarden.com/help/article/updating-on-premise/).
+For information on updating your self-hosted instance, see [Updating your Self-Hosted Installation](https://bitwarden.com/help/updating-on-premise/).
 
 ## Workflow Diagram
 The following diagram is an overview of the workflow used by Bitwarden to authenticate using SSO:
@@ -63,12 +63,12 @@ The following diagram is an overview of the workflow used by Bitwarden to authen
 
 ## Next Steps
 For administrators configuring Login with SSO, see:
-- [Configure Login with SSO (SAML 2.0)](https://bitwarden.com/help/article/configure-sso-saml/)
-- [Configure Login with SSO (OIDC)](https://bitwarden.com/help/article/configure-sso-oidc)
+- [Configure Login with SSO (SAML 2.0)](https://bitwarden.com/help/configure-sso-saml/)
+- [Configure Login with SSO (OIDC)](https://bitwarden.com/help/configure-sso-oidc)
 
 For existing users, see:
-- [Link an Existing Account to SSO](https://bitwarden.com/help/article/link-to-sso/)
-- [Access Your Vault Using SSO](https://bitwarden.com/help/article/sso-access-your-vault/)
+- [Link an Existing Account to SSO](https://bitwarden.com/help/link-to-sso/)
+- [Access Your Vault Using SSO](https://bitwarden.com/help/sso-access-your-vault/)
 
 For more information, see:
-- [SSO FAQs](https://bitwarden.com/help/article/sso-faqs)
+- [SSO FAQs](https://bitwarden.com/help/sso-faqs)

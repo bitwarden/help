@@ -7,9 +7,9 @@ popular: false
 tags: [cloud]
 order: "06"
 redirect_from:
-  - /article/where-is-data-stored-cloud/
-  - /article/where-is-data-stored-computer/
-  - /article/cloud-server-security/
+  - /where-is-data-stored-cloud/
+  - /where-is-data-stored-computer/
+  - /cloud-server-security/
 ---
 
 This articles describes **where** Bitwarden stores your Vault Data and Administrative Data.

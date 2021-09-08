@@ -7,15 +7,15 @@ popular: false
 tags: [collections, access control, best practices]
 order: "02"
 redirect_from:
-  - /article/collections/
-  - /article/create-collections/
+  - /collections/
+  - /create-collections/
 ---
 
 ## What are Collections?
 
-Collections gather together Logins, Notes, Cards, and Identities for [secure sharing]({{site.baseurl}}/article/sharing/) from an Organization. Think of Collections as Organization-equivalents to the [Folders]({{site.baseurl}}/article/folders/) used to organize a Personal Vault, with a few key differences:
+Collections gather together Logins, Notes, Cards, and Identities for [secure sharing]({{site.baseurl}}/sharing/) from an Organization. Think of Collections as Organization-equivalents to the [Folders]({{site.baseurl}}/folders/) used to organize a Personal Vault, with a few key differences:
 
-- Organizations control access to Organization-owned items by assigning users or [Groups]({{site.baseurl}}/article/about-groups/) to Collections.
+- Organizations control access to Organization-owned items by assigning users or [Groups]({{site.baseurl}}/about-groups/) to Collections.
 - Organization-owned items **must** be included in at least one Collection.
 
 ### Using Collections
@@ -24,7 +24,7 @@ For many Organizations, using Collections means adding a set of Vault items and 
 
 {% image organizations/collections-graphic-1.png Using Collections %}
 
-Teams and Enterprise Organizations can also designate access to Collections based on user [Groups]({{site.baseurl}}/article/about-groups/), rather than individual users. Group-Collection associations provide a deeper level of access control and scalability to sharing resources. One common Group-Collection methodology is to create **Groups by Department** and **Collections by Function**, for example:
+Teams and Enterprise Organizations can also designate access to Collections based on user [Groups]({{site.baseurl}}/about-groups/), rather than individual users. Group-Collection associations provide a deeper level of access control and scalability to sharing resources. One common Group-Collection methodology is to create **Groups by Department** and **Collections by Function**, for example:
 
 {% image organizations/collections-graphic-2.png Using Collections with Groups%}
 
@@ -32,15 +32,15 @@ Other common methodologies include **Collections by Vendor or System** (i.e. use
 
 ## Create a Collection
 
-Organization [Managers (or higher)]({{site.baseurl}}/article/user-types-access-control/) and [Provider Users]({{site.baseurl}}/article/provider-users/provider-user-types) can create and manage Collections. To create a Collection:
+Organization [Managers (or higher)]({{site.baseurl}}/user-types-access-control/) and [Provider Users]({{site.baseurl}}/provider-users/provider-user-types) can create and manage Collections. To create a Collection:
 
 1. Log in to your [Web Vault](https://vault.bitwarden.com){:target="\_blank"} and open your Organization.
 2. Open the **Manage** tab and select the {% icon fa-plus %} **New Collection** button:
 
    {% image organizations/collection-list-overlay.png Select New Collection %}
-3. Give your Collection a **Name** and, if you're a Teams or Enterprise Organization, assign **Group Access** to any existing [Group]({{site.baseurl}}/article/about-groups/).
+3. Give your Collection a **Name** and, if you're a Teams or Enterprise Organization, assign **Group Access** to any existing [Group]({{site.baseurl}}/about-groups/).
 
-   {% callout success %}The **External Id** field is only relevant if you're using [Directory Connector]({{site.baseurl}}/article/directory-sync/).{% endcallout %}
+   {% callout success %}The **External Id** field is only relevant if you're using [Directory Connector]({{site.baseurl}}/directory-sync/).{% endcallout %}
 4. Select **Save** to finish creating your Collection.
 
 ### Nested Collections

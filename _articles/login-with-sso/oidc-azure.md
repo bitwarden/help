@@ -9,15 +9,15 @@ tags: [sso, oidc, azure]
 order:
 ---
 
-This article contains **Azure-specific** help for configuring Login with SSO via OpenID Connect (OIDC). For help configuring Login with SSO for another OIDC IdP, or for configuring Azure via SAML 2.0, see [OIDC Configuration]({{site.baseurl}}/article/configure-sso-oidc/) or [Azure SAML Implementation]({{site.baseurl}}/article/saml-azure/).
+This article contains **Azure-specific** help for configuring Login with SSO via OpenID Connect (OIDC). For help configuring Login with SSO for another OIDC IdP, or for configuring Azure via SAML 2.0, see [OIDC Configuration]({{site.baseurl}}/configure-sso-oidc/) or [Azure SAML Implementation]({{site.baseurl}}/saml-azure/).
 
-Configuration involves working simultaneously within the Bitwarden [Bitwarden Business Portal]({{site.baseurl}}/article/about-business-portal/) and the Azure Portal. As you proceed, we recommend having both readily available and completing steps in the order they're documented.
+Configuration involves working simultaneously within the Bitwarden [Bitwarden Business Portal]({{site.baseurl}}/about-business-portal/) and the Azure Portal. As you proceed, we recommend having both readily available and completing steps in the order they're documented.
 
 ## Open the Business Portal
 
-If you're coming straight from [OIDC Configuration]({{site.baseurl}}/article/configure-sso-oidc/), you should already have an **Organization ID** created and SSO **Enabled**. If you don't, follow [steps 1 and 2 of that document]({{site.baseurl}}/article/configure-sso-oidc/) and return to this guide.
+If you're coming straight from [OIDC Configuration]({{site.baseurl}}/configure-sso-oidc/), you should already have an **Organization ID** created and SSO **Enabled**. If you don't, follow [steps 1 and 2 of that document]({{site.baseurl}}/configure-sso-oidc/) and return to this guide.
 
-Open your [Business Portal]({{site.baseurl}}/article/about-business-portal/) and navigate to the SSO Configuration screen:
+Open your [Business Portal]({{site.baseurl}}/about-business-portal/) and navigate to the SSO Configuration screen:
 
 {% image sso/sso-oidc1.png OIDC Configuration %}
 
@@ -40,7 +40,7 @@ Select **Authentication** from the navigation and select the **Add a platform** 
 Select the **Web** option on the Configure platforms screen and enter your **Callback Path** in the Redirect URIs input.
 
 {% callout info %}
-Callback Path can be retrieved from the Bitwarden SSO Configuration screen. For Cloud-hosted customers, this is always `https://sso.bitwarden.com/oidc-signin`. For self-hosted instances, this is determined by your [configured server URL]({{site.baseurl}}/article/install-on-premise/#configure-your-domain), for example `https://your.domain.com/sso/oidc-signin`.
+Callback Path can be retrieved from the Bitwarden SSO Configuration screen. For Cloud-hosted customers, this is always `https://sso.bitwarden.com/oidc-signin`. For self-hosted instances, this is determined by your [configured server URL]({{site.baseurl}}/install-on-premise/#configure-your-domain), for example `https://your.domain.com/sso/oidc-signin`.
 {% endcallout %}
 
 ### Create a Client Secret
@@ -80,7 +80,7 @@ Once your configuration is complete, test it by navigating to [https://vault.bit
 
 {% image sso/sso-button-lg.png Enterprise Single Sign-On button %}
 
-Enter the [configured Organization Identifier]({{site.baseurl}}/article/configure-sso-saml/#step-1-enabling-login-with-sso) and select **Log In**. If your implementation is successfully configured, you'll be redirected to the Microsoft login screen:
+Enter the [configured Organization Identifier]({{site.baseurl}}/configure-sso-saml/#step-1-enabling-login-with-sso) and select **Log In**. If your implementation is successfully configured, you'll be redirected to the Microsoft login screen:
 
 {% image sso/cheatsheets/saml-azure/az-login.png Azure login screen %}
 

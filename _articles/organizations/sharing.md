@@ -8,11 +8,11 @@ hidden: false
 tags: [sharing, how to]
 order: "04"
 redirect_from:
-  - /article/share-to-a-collection/
+  - /share-to-a-collection/
 ---
 
 {% callout info %}
-In order to share items you need to be a member of an Organization. Learn more about [Organizations]({% link _articles/organizations/about-organizations.md %}) or learn how to [start your own two-person Organization]({{site.baseurl}}/article/getting-started-organizations/).
+In order to share items you need to be a member of an Organization. Learn more about [Organizations]({% link _articles/organizations/about-organizations.md %}) or learn how to [start your own two-person Organization]({{site.baseurl}}/getting-started-organizations/).
 {% endcallout %}
 
 Sharing items with Bitwarden means moving them into an Organization and Collection, a structure used to gather together Logins, Notes, Cards, and Identities for access by multiple users. There are a few different ways you can create Organization items for sharing:
@@ -39,7 +39,7 @@ Moving an item to an Organization **will transfer ownership to the Organization*
 
 ## Create an Organization Item
 
-Organization members can create new items directly for any assigned Collection(s) unless they're given [**Read Only** access](https://bitwarden.com/help/article/user-types-access-control/) to that Collection. Shared items can only be created **from the Web Vault**, either in your My Vault view or in the Organization view:
+Organization members can create new items directly for any assigned Collection(s) unless they're given [**Read Only** access](https://bitwarden.com/help/user-types-access-control/) to that Collection. Shared items can only be created **from the Web Vault**, either in your My Vault view or in the Organization view:
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">

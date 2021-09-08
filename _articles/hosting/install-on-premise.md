@@ -33,7 +33,7 @@ The following is a summary of the Installation Procedure in this article. Links 
 2. [**Install Docker and Docker Compose**](#install-docker-and-docker-compose) on your machine, and complete the optional [**Docker Post-Installation**](#docker-post-installation-linux-only).
 3. Retrieve an installation id and key from [**https://bitwarden.com/host**](https://bitwarden.com/host){:target="_blank"} for use in installation.
 
-   For more information, see [What are my installation id and installation key used for?](https://bitwarden.com/help/article/hosting-faqs/#general).
+   For more information, see [What are my installation id and installation key used for?](https://bitwarden.com/help/hosting-faqs/#general).
 4. [**Install Bitwarden**](#install-bitwarden) on your machine.
 5. [**Configure your Environment**](#configure-your-environment) by adjusting settings in `./bwdata/env/global.override.env`.
    {% callout success %}At a minimum, configure the `globalSettings__mail__smtp...` variables to setup an email server for inviting and verifying users.{% endcallout %}
@@ -146,10 +146,10 @@ Bitwarden provides a shell script for easy installation on Linux and macOS (Bash
 
    - **Enter your installation id:**
 
-     Retrieve an installation id using a valid email at [https://bitwarden.com/host](https://bitwarden.com/host). For more information, see [What are my installation id and installation key used for?](https://bitwarden.com/help/article/hosting-faqs/#general).
+     Retrieve an installation id using a valid email at [https://bitwarden.com/host](https://bitwarden.com/host). For more information, see [What are my installation id and installation key used for?](https://bitwarden.com/help/hosting-faqs/#general).
    - **Enter your installation key:**
 
-     Retrieve an installation key using a valid email at [https://bitwarden.com/host](https://bitwarden.com/host). For more information, see [What are my installation id and installation key used for?](https://bitwarden.com/help/article/hosting-faqs/#general).
+     Retrieve an installation key using a valid email at [https://bitwarden.com/host](https://bitwarden.com/host). For more information, see [What are my installation id and installation key used for?](https://bitwarden.com/help/hosting-faqs/#general).
    - **Do you have a SSL certificate to use? (y/n):**
 
      If you already have your own SSL certificate, specify `y` and place the necessary files in the `.bwdata/ssl/your.domain` directory. You will be asked whether it is a trusted SSL certificate (y/n). For more information, see [Certificate Options]({% link _articles/hosting/certificates.md %}).

@@ -10,10 +10,10 @@ order: "05"
 
 ## Manage User Seats
 
-Bitwarden [Teams and Enterprise Organizations]({{site.baseurl}}/article/about-organizations/#types-of-organizations) allow you to add or remove user seats on-the-fly to best fit your business's needs. Only an [Organization Owner]({{site.baseurl}}/article/user-types-access-control/#user-types) or [Provider Service User]({{site.baseurl}}/article/provider-users/#provider-user-types) can add and remove seats, as this directly affects billing.
+Bitwarden [Teams and Enterprise Organizations]({{site.baseurl}}/about-organizations/#types-of-organizations) allow you to add or remove user seats on-the-fly to best fit your business's needs. Only an [Organization Owner]({{site.baseurl}}/user-types-access-control/#user-types) or [Provider Service User]({{site.baseurl}}/provider-users/#provider-user-types) can add and remove seats, as this directly affects billing.
 
 {% callout info %}
-If you have a [Free or Families Organization]({{site.baseurl}}/article/about-organizations/#types-of-organizations), your user seats are pre-loaded and fixed at 2 and 6, respectively.
+If you have a [Free or Families Organization]({{site.baseurl}}/about-organizations/#types-of-organizations), your user seats are pre-loaded and fixed at 2 and 6, respectively.
 {% endcallout %}
 
 ### Add Seats
@@ -41,13 +41,13 @@ Removing user seats will adjust your future billing totals. The next charge will
 To ensure the security of your Organization, Bitwarden applies a 3-step process for onboarding a new member, [Invite](#invite) &rarr; [Accept](#accept) &rarr; [Confirm](#confirm).
 
 {% callout success %}
-Teams and Enterprise Organizations can sync Bitwarden to an existing user directory to automatically add or remove new users using the [**Bitwarden Directory Connector**]({{site.baseurl}}/article/directory-sync).
+Teams and Enterprise Organizations can sync Bitwarden to an existing user directory to automatically add or remove new users using the [**Bitwarden Directory Connector**]({{site.baseurl}}/directory-sync).
 {% endcallout %}
 
 ### Invite
 
 {% callout success %}
-**For Enterprise Organizations**, we recommend configuring [Enterprise Policies]({{site.baseurl}}/article/policies) prior to inviting users to ensure compliance on-entrance to your Organization.
+**For Enterprise Organizations**, we recommend configuring [Enterprise Policies]({{site.baseurl}}/policies) prior to inviting users to ensure compliance on-entrance to your Organization.
 {% endcallout %}
 
 To invite users to your Organization:
@@ -60,8 +60,8 @@ To invite users to your Organization:
 4. On the Invite User panel:
 
    - Enter the **Email** address where new users should receive invites. You can add up to 20 users at a time by comma-separating email addresses.
-   - Select the **User Type** to be applied to new users. [User Type]({{site.baseurl}}/article/user-types-access-control/#user-type) will determine what permissions these users will have at an Organizational level.
-   - Select the **Access Control** to be applied to new users. [Access Control]({{site.baseurl}}/article/user-types-access-control/#access-control) will determine which Collections these users will have access to, and what level of access within those Collections.  
+   - Select the **User Type** to be applied to new users. [User Type]({{site.baseurl}}/user-types-access-control/#user-type) will determine what permissions these users will have at an Organizational level.
+   - Select the **Access Control** to be applied to new users. [Access Control]({{site.baseurl}}/user-types-access-control/#access-control) will determine which Collections these users will have access to, and what level of access within those Collections.  
 5. Click **Save** to invite the designated users to your Organization.
 
 {% callout info %}
@@ -69,7 +69,7 @@ To invite users to your Organization:
 
 {% image organizations/org-people-reinvite.png Bulk Reinvite %}
 
-If you're self-hosting Bitwarden, you can configure the invitation expiration period [using an environment variable]({{site.baseurl}}/article/environment-variables/).
+If you're self-hosting Bitwarden, you can configure the invitation expiration period [using an environment variable]({{site.baseurl}}/environment-variables/).
 {% endcallout %}  
 ### Accept
 
@@ -86,7 +86,7 @@ To confirm accepted invitations into your Organization:
 3. Select any `Accepted` users and use the {% icon fa-cog %} gear dropdown to {% icon fa-check %} **Confirm Selected**:
 
    {% image organizations/org-people-options-overlay.png Confirm an Accepted user %}
-3. Verify that the [fingerprint phrase]({{site.baseurl}}/article/fingerprint-phrase) on your screen matches the one your new member can find in **Settings** &rarr; **My Account**:
+3. Verify that the [fingerprint phrase]({{site.baseurl}}/fingerprint-phrase) on your screen matches the one your new member can find in **Settings** &rarr; **My Account**:
 
    {% image fingerprint-phrase.png Sample Fingerprint Phrase %}
 
@@ -108,5 +108,5 @@ To remove users from your Organization:
 
 Depending on the particulars of your implementation, you may be able to use one of the following methods to delete a Bitwarden user account that belongs to an offboarded user:
 
-1. If you're self-hosting Bitwarden, an authorized admin can delete the account from the [System Administrator Portal]({{site.baseurl}}/article/admin-portal/).
-2. If the account has an `@yourcompany.com` email address that your company controls, you can use the [delete without logging in](https://vault.bitwarden.com/#/recover-delete){:target="\_blank"} tool and confirm deletion within the `@yourcompany.com` inbox. For more information, see [Delete an Account Without Logging In](https://bitwarden.com/help/article/delete-your-account/#without-logging-in).
+1. If you're self-hosting Bitwarden, an authorized admin can delete the account from the [System Administrator Portal]({{site.baseurl}}/admin-portal/).
+2. If the account has an `@yourcompany.com` email address that your company controls, you can use the [delete without logging in](https://vault.bitwarden.com/#/recover-delete){:target="\_blank"} tool and confirm deletion within the `@yourcompany.com` inbox. For more information, see [Delete an Account Without Logging In](https://bitwarden.com/help/delete-your-account/#without-logging-in).

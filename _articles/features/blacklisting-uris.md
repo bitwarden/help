@@ -31,7 +31,7 @@ Auto-fill relies on the attribution of URIs to Login items. If you're unfamiliar
 
 For websites accessed via a web browser, a proper URI will be the `https://..` address of the Login page, for example `https://twitter.com` or `https://twitter.com/login`.
 
-**For Android Apps**, the [URI scheme]({{site.baseurl}}/article/uri-match-detection/#uri-schemes) always starts with `androidapp://` and is usually a bit different from a typical web browser URI. For example,
+**For Android Apps**, the [URI scheme]({{site.baseurl}}/uri-match-detection/#uri-schemes) always starts with `androidapp://` and is usually a bit different from a typical web browser URI. For example,
 
 - The Twitter Android app has the URI `androidapp://com.twitter.android`
 - The Reddit Android app has the URI `androidapp://com.reddit.frontpage`

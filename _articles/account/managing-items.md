@@ -30,7 +30,7 @@ Effectively managing the items in your Vault is key to making sure that you secu
 {% capture logins %}
 ### Logins
 
-Login items are most often used to store username and password combinations, and support [TOTP seeds]({{site.baseurl}}/article/authenticator-keys/) for Premium users. Whatever plan you're on, we recommend giving every Login a [URI for easy auto-fill]({{site.baseurl}}/article/uri-match-detection):
+Login items are most often used to store username and password combinations, and support [TOTP seeds]({{site.baseurl}}/authenticator-keys/) for Premium users. Whatever plan you're on, we recommend giving every Login a [URI for easy auto-fill]({{site.baseurl}}/uri-match-detection):
 
 {% image manage-items/login-item.png Login Vault Item %}
 
@@ -173,7 +173,7 @@ Master password re-prompt **is not** an encryption mechanism. This feature is an
 
 ## Move Items to an Organization
 
-If you're a member of an [Organization]({{site.baseurl}}/article/about-organizations/), you can move Vault items to your Organization for sharing with other Organization members. Learn more about [Organizations]({{site.baseurl}}/article/about-organizations/), [Collections]({{site.baseurl}}/article/about-collections), and [Sharing]({{site.baseurl}}/article/sharing/).
+If you're a member of an [Organization]({{site.baseurl}}/about-organizations/), you can move Vault items to your Organization for sharing with other Organization members. Learn more about [Organizations]({{site.baseurl}}/about-organizations/), [Collections]({{site.baseurl}}/about-collections), and [Sharing]({{site.baseurl}}/sharing/).
 
 ## Clone Vault Items
 

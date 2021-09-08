@@ -10,7 +10,7 @@ tags: [api key, cli]
 Your Bitwarden Personal API Key can be used as an alternative method for authenticating into the Command Line Interface (CLI).
 
 {% callout info %}
-Your Personal API Key is **not the same** as the [Organization API Key]({{site.baseurl}}/article/public-api/#authentication) used to access the [Bitwarden Public API]({{site.baseurl}}/article/public-api/) or [Directory Connector]({{site.baseurl}}/article/directory-sync/). Personal API Keys will have a `client_id` with format `"user.clientId"`, while Organization API Keys will have a `client_id` with format `"organization.ClientId"`.
+Your Personal API Key is **not the same** as the [Organization API Key]({{site.baseurl}}/public-api/#authentication) used to access the [Bitwarden Public API]({{site.baseurl}}/public-api/) or [Directory Connector]({{site.baseurl}}/directory-sync/). Personal API Keys will have a `client_id` with format `"user.clientId"`, while Organization API Keys will have a `client_id` with format `"organization.ClientId"`.
 {% endcallout %}
 
 ## Get Your Personal API Key
@@ -39,7 +39,7 @@ To use your API Key to authenticate into the CLI, enter the following command:
 ```
 bw login --apikey
 ```
-which will prompt you to enter the obtained `client_id` and  `client_secret` to authenticate. Once you enter these values, enter your Master Password to decrypt your Vault. For more information, see [Bitwarden command line tool (CLI)](https://bitwarden.com/help/article/cli/).
+which will prompt you to enter the obtained `client_id` and  `client_secret` to authenticate. Once you enter these values, enter your Master Password to decrypt your Vault. For more information, see [Bitwarden command line tool (CLI)](https://bitwarden.com/help/cli/).
 
 ### Environment Variables
 

@@ -119,7 +119,7 @@ Follow the on-screen prompts to configure a Secondary Device to use Duo (for exa
 
 ## Use Duo
 
-The following assumes that **Duo** is your [highest-priority enabled method](https://bitwarden.com/help/article/setup-two-step-login/#using-multiple-methods). Complete the following steps to access your Vault using Two-step Login:
+The following assumes that **Duo** is your [highest-priority enabled method](https://bitwarden.com/help/setup-two-step-login/#using-multiple-methods). Complete the following steps to access your Vault using Two-step Login:
 
 1. Login to your Bitwarden Vault on any app and enter your Email Address and Master Password.
 

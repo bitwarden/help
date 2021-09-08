@@ -19,25 +19,25 @@ This article will help you get started with a **free 2-person Organization** so 
 
 ### What are Organizations?
 
-Bitwarden Organizations relate users and Vault items together for [secure sharing]({{site.baseurl}}/article/sharing/) of Logins, Notes, Cards, and Identities owned by the Organization. Organizations could be a family, team, company or any group of people that needs to securely share data. Organizations have a unique Vault, where [administrators]({{site.baseurl}}/article/user-types-access-control/) can manage the Organization's items, users, and settings:
+Bitwarden Organizations relate users and Vault items together for [secure sharing]({{site.baseurl}}/sharing/) of Logins, Notes, Cards, and Identities owned by the Organization. Organizations could be a family, team, company or any group of people that needs to securely share data. Organizations have a unique Vault, where [administrators]({{site.baseurl}}/user-types-access-control/) can manage the Organization's items, users, and settings:
 
 {% image organizations/org-vault-admin.png Organization Vault %}
 
 #### Comparing Organizations with Premium
 
-The key thing to know is that Organizations enable **secure sharing from Organizations to users**. [Premium Individual plans]({{site.baseurl}}/article/about-bitwarden-plans/#premium-individual) unlock premium password security and management features, including advanced 2FA options, the Bitwarden Authenticator (TOTP), encrypted file attachments, and more, but Premium Individual **does not include secure data sharing.**
+The key thing to know is that Organizations enable **secure sharing from Organizations to users**. [Premium Individual plans]({{site.baseurl}}/about-bitwarden-plans/#premium-individual) unlock premium password security and management features, including advanced 2FA options, the Bitwarden Authenticator (TOTP), encrypted file attachments, and more, but Premium Individual **does not include secure data sharing.**
 
 Paid Organizations (Families, Teams, or Enterprise) automatically include those premium features (advanced 2FA options, Bitwarden Authenticator (TOTP), etc.) for **every** user enrolled in the Organization.
 
 ## Setup Bitwarden Accounts
 
-Free Bitwarden Organizations allow for 2 users to securely share Organization-owned credentials. You might use a free Organization to share with friend or partner, or to test Organizations before [upgrading to a different plan]({{site.baseurl}}/article/about-bitwarden-plans/).
+Free Bitwarden Organizations allow for 2 users to securely share Organization-owned credentials. You might use a free Organization to share with friend or partner, or to test Organizations before [upgrading to a different plan]({{site.baseurl}}/about-bitwarden-plans/).
 
 Bitwarden provides applications on lots of devices, including Browser Extensions, Mobile Apps, Desktop Apps, and a CLI, but for the purposes of this guide we'll focus on the [Web Vault](https://vault.bitwarden.com){:target="\_blank"}. **The Web Vault provides the richest Bitwarden experience** for administering your Organization.
 
 ### Sign up for Bitwarden
 
-[Create a Bitwarden account](https://vault.bitwarden.com/#/register){:target="\_blank"}, and make sure that you pick a strong and memorable [Master Password]({{site.baseurl}}/article/master-password/). We even recommend writing down your Master Password and storing it in a safe location.
+[Create a Bitwarden account](https://vault.bitwarden.com/#/register){:target="\_blank"}, and make sure that you pick a strong and memorable [Master Password]({{site.baseurl}}/master-password/). We even recommend writing down your Master Password and storing it in a safe location.
 
 {% callout success %}
 **Don't forget your Master Password!** Bitwarden is a Zero knowledge/Zero Trust solution, meaning that the team at Bitwarden, as well as Bitwarden systems themselves, have no knowledge of, way to retrieve, or way to reset your Master Password.
@@ -52,7 +52,7 @@ Once your account is created, log in to your [Web Vault](https://vault.bitwarden
 In order to use your free 2-person Organization for secure sharing, you'll need to have 2 Bitwarden accounts. Once your first Bitwarden account is setup, follow the same procedure (or help your friend or partner to do so) to setup the other account.
 
 {% callout success %}
-Bitwarden Organizations have a deep level of [user-level access controls]({{site.baseurl}}/article/user-types-access-control/). Whichever user you proceed to [setup your Organization](#setup-your-organization) with will be the **Owner**.
+Bitwarden Organizations have a deep level of [user-level access controls]({{site.baseurl}}/user-types-access-control/). Whichever user you proceed to [setup your Organization](#setup-your-organization) with will be the **Owner**.
 {% endcallout %}
 
 ## Setup your Organization
@@ -68,7 +68,7 @@ To setup your Organization:
 
 ### Get to know your Organization
 
-Once created, you'll land in your Organization Vault, which is the central hub for all things sharing and Organization administration. As the [Organization Owner]({{site.baseurl}}/article/user-types-access-control/), you'll be able to see your **Vault**, to **Manage** users and [Collections](#get-to-know-collections), to use some Bitwarden **Tools**, and to configure your Organization's **Settings**:
+Once created, you'll land in your Organization Vault, which is the central hub for all things sharing and Organization administration. As the [Organization Owner]({{site.baseurl}}/user-types-access-control/), you'll be able to see your **Vault**, to **Manage** users and [Collections](#get-to-know-collections), to use some Bitwarden **Tools**, and to configure your Organization's **Settings**:
 
 {% image getting-started/org-vault.png Organization Vault %}
 
@@ -79,7 +79,7 @@ Collections are an important part of a Bitwarden Organization; they represent th
 {% image getting-started/collections.png Collections %}
 
 {% callout success %}
-In a lot of ways, Collections are like the [Folders]({{site.baseurl}}/article/folders/) you might use to organize your Personal Vault. A key difference is that items that [belong to your Organization](#shared-items) **must be included in at least 1 Collection**.
+In a lot of ways, Collections are like the [Folders]({{site.baseurl}}/folders/) you might use to organize your Personal Vault. A key difference is that items that [belong to your Organization](#shared-items) **must be included in at least 1 Collection**.
 {% endcallout %}
 
 ## Add a User to your Organization
@@ -93,7 +93,7 @@ As the Organization Owner, invite a new member:
 1. In your Organization Vault, open the **Manage** tab and select the {% icon fa-plus %} **Invite User** button:
 
    {% image organizations/org-people-invite.png %}
-2. Enter the **Email** of your second member, which should match the email they [signed up for Bitwarden](#sign-up-for-bitwarden-again) with. You can also choose the [User Type]({{site.baseurl}}/article/user-types-access-control/#user-types) and [Access Controls]({{site.baseurl}}/article/user-types-access-control/#access-control) assigned to this user, including which [Collections](#get-to-know-collections) they can access.
+2. Enter the **Email** of your second member, which should match the email they [signed up for Bitwarden](#sign-up-for-bitwarden-again) with. You can also choose the [User Type]({{site.baseurl}}/user-types-access-control/#user-types) and [Access Controls]({{site.baseurl}}/user-types-access-control/#access-control) assigned to this user, including which [Collections](#get-to-know-collections) they can access.
 3. Select **Save** to send the invitation to the designated email address.
 
 Once your invitation is sent, inform your new member and help them [accept the invitation](#accept).
@@ -119,7 +119,7 @@ Confirm accepted Organization to complete the loop:
 3. Select any `Accepted` users and use the {% icon fa-cog %} gear dropdown to {% icon fa-check %} **Confirm Selected**:
 
    {% image organizations/org-people-options-overlay.png Confirm an Accepted user %}
-3. Verify that the [fingerprint phrase]({{site.baseurl}}/article/fingerprint-phrase) on your screen matches the one your new member can find in **Settings** &rarr; **My Account**:
+3. Verify that the [fingerprint phrase]({{site.baseurl}}/fingerprint-phrase) on your screen matches the one your new member can find in **Settings** &rarr; **My Account**:
 
    {% image fingerprint-phrase.png Sample Fingerprint Phrase %}
 
@@ -131,7 +131,7 @@ Part of the magic of Bitwarden Organizations is that items that belong to you an
 
 {% image organizations/personal-vault-org-enabled.png Organization-enabled Vault %}
 
-[Collections](#get-to-know-collections) are a lot like [Folders]({{site.baseurl}}/article/folders/) in that they organize the Organization-owned items in your Vault. Like anything else in the **Filters** menu, selecting a Collection will filter listed Vault items down to only the ones in that Collection.
+[Collections](#get-to-know-collections) are a lot like [Folders]({{site.baseurl}}/folders/) in that they organize the Organization-owned items in your Vault. Like anything else in the **Filters** menu, selecting a Collection will filter listed Vault items down to only the ones in that Collection.
 
 ### Items Shared from an Organization
 
@@ -143,7 +143,7 @@ Shared items are **owned** by the Organization. This means that anyone with perm
 
 ## Move an Item to the Organization
 
-The last step on the road to secure sharing is to create an item and move it to the Organization so it can be shared. An existing [Vault item]({{site.baseurl}}/article/managing-items/#add-a-vault-item) can be moved to the Organization after it's created, but for this guide, we'll focus on creating a **new** Login from your Personal Vault:
+The last step on the road to secure sharing is to create an item and move it to the Organization so it can be shared. An existing [Vault item]({{site.baseurl}}/managing-items/#add-a-vault-item) can be moved to the Organization after it's created, but for this guide, we'll focus on creating a **new** Login from your Personal Vault:
 
 1. On the {% icon fa-lock %} **My Vault** page, select the {% icon fa-plus %} **Add Item** button.
 2. Fill in all the relevant information for your new Login item (e.g. Username and Password). The item can be anything you want both yourself and the other Organization user to have access to, for example a family streaming account.

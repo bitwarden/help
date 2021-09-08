@@ -11,7 +11,7 @@ order: "08"
 Custom fields, available for any [Vault item type]({% link _articles/account/managing-items.md %}), allow you to store additional well-structured data fields for a Vault item. Custom fields are saved as `Name:Value` pairs, and can be one of three types:
 
 - **Text**: Field value stores a freeform input (text, numbers, etc.)
-- **Hidden**: Field value stores freeform input that is hidden from view (particularly useful for Organizations using the [Hide Password access control](https://bitwarden.com/help/article/user-types-access-control/#granular-access-control)).
+- **Hidden**: Field value stores freeform input that is hidden from view (particularly useful for Organizations using the [Hide Password access control](https://bitwarden.com/help/user-types-access-control/#granular-access-control)).
 - **Boolean**: Field value stores a boolean value (true/false).
 
 ## Custom Fields for Keys

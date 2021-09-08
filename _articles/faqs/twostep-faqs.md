@@ -17,7 +17,7 @@ This article contains Frequently Asked Questions (FAQs) regarding **Two-step Log
 
 ### Q: Can I require my Organization's users to use Two-step Login?
 
-**A:** You can require your Organization's users to use Two-step Login by enabling the [Two-step Login Policy]({{site.baseurl}}/article/policies/#two-step-login). Additionally, you can setup [Organization-wide Duo 2FA]({{site.baseurl}}/article/two-step-login-duo) to ensure that all of your users have a secure Two-step Login method at their disposal.
+**A:** You can require your Organization's users to use Two-step Login by enabling the [Two-step Login Policy]({{site.baseurl}}/policies/#two-step-login). Additionally, you can setup [Organization-wide Duo 2FA]({{site.baseurl}}/two-step-login-duo) to ensure that all of your users have a secure Two-step Login method at their disposal.
 
 ### Q: Is FIDO U2F or FIDO2 WebAuthn supported on my iOS or Android App?
 
@@ -27,7 +27,7 @@ This article contains Frequently Asked Questions (FAQs) regarding **Two-step Log
 
 **A:** In most cases, one of two things is happening:
 
-1. You may be already logged in to Bitwarden and only unlocking your Vault. Two-step Login is required to **Log In** but not to **Unlock** your Vault. For more information on the difference between Logging In and Unlocking, see [Vault Timeout Action](https://bitwarden.com/help/article/vault-timeout/#vault-timeout-action).
+1. You may be already logged in to Bitwarden and only unlocking your Vault. Two-step Login is required to **Log In** but not to **Unlock** your Vault. For more information on the difference between Logging In and Unlocking, see [Vault Timeout Action](https://bitwarden.com/help/vault-timeout/#vault-timeout-action).
 
 2. You may have previously checked the **Remember me** checkbox on a device when accessing your Vault using Two-step Login.
 

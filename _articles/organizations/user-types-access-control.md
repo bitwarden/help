@@ -8,7 +8,7 @@ tags: [user types, access control]
 order: "06"
 ---
 
-Users in Bitwarden Organizations can be granted a variety of User Types and Access Controls in order to manage their permissions and access. You can set User Types and Access Controls when you [invite users to your Organization]({{site.baseurl}}/article/managing-users/), or at any time from the **Manage** &rarr; **People** screen in your Organization:
+Users in Bitwarden Organizations can be granted a variety of User Types and Access Controls in order to manage their permissions and access. You can set User Types and Access Controls when you [invite users to your Organization]({{site.baseurl}}/managing-users/), or at any time from the **Manage** &rarr; **People** screen in your Organization:
 
 {% image organizations/user-types-access-control.png Editing User Types and Access Control %}
 

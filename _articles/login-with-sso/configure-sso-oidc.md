@@ -10,7 +10,7 @@ order: "04"
 
 ## Step 1: Set an Organization Identifier
 
-Users who [authenticate their identity using SSO]({{site.baseurl}}/article/sso-access-your-vault) will be required to enter an **Organization Identifier** that indicates the Organization (and therefore, the SSO integration) to authenticate against. To set a unique Organization Identifier:
+Users who [authenticate their identity using SSO]({{site.baseurl}}/sso-access-your-vault) will be required to enter an **Organization Identifier** that indicates the Organization (and therefore, the SSO integration) to authenticate against. To set a unique Organization Identifier:
 
 1. Log in to your [Web Vault](https://vault.bitwarden.com){:target="\_blank"} and open your Organization.
 2. Open the **Settings** tab and enter a unique **Identifier** for your Organization.
@@ -34,7 +34,7 @@ Once you have your Organization Identifier, you can proceed to enabling and conf
 
 {% image sso/sso-bp-1.png Business Portal Menu%}
 3. Check the **Enabled** checkbox.
-4. From the **Type** dropdown menu, select the **OpenID Connect** option. If you intend to use SAML instead, switch over the the [SAML Configuration Guide]({{site.baseurl}}/article/configure-sso-saml/).
+4. From the **Type** dropdown menu, select the **OpenID Connect** option. If you intend to use SAML instead, switch over the the [SAML Configuration Guide]({{site.baseurl}}/configure-sso-saml/).
 
 ## Step 3: Configuration
 
@@ -42,12 +42,12 @@ From this point on, **implementation will vary provider-to-provider**. Jump to o
 
 |Provider|Guide|
 |--------|-----|
-|Azure|[Azure Implementation Guide]({{site.baseurl}}/article/oidc-azure/)|
-|Okta|[Okta Implementation Guide]({{site.baseurl}}/article/oidc-okta/)|
+|Azure|[Azure Implementation Guide]({{site.baseurl}}/oidc-azure/)|
+|Okta|[Okta Implementation Guide]({{site.baseurl}}/oidc-okta/)|
 
 ### Configuration Reference Materials
 
-The following sections will define fields configured in the [Bitwarden Business Portal]({{site.baseurl}}/article/about-business-portal), agnostic of which IdP you're integrating with. Fields that must be configured will be marked (**Required**).
+The following sections will define fields configured in the [Bitwarden Business Portal]({{site.baseurl}}/about-business-portal), agnostic of which IdP you're integrating with. Fields that must be configured will be marked (**Required**).
 
 {% callout success %}
 **Unless you're comfortable with OpenID Connect**, we recommend using one of the [above Implementation Guides](#step-3-configuration) instead of the following generic material.
@@ -55,11 +55,11 @@ The following sections will define fields configured in the [Bitwarden Business 
 
 |Field|Description|
 |-----|-----------|
-|Callback Path|(**Automatically generated**) The URL for authentication automatic redirect. For Cloud-hosted customers, this is always `https://sso.bitwarden.com/oidc-signin`. For self-hosted instances, this is determined by your [configured server URL]({{site.baseurl}}/article/install-on-premise/#configure-your-domain), for example `https://your.domain.com/sso/oidc-signin`.|
-|Signed Out Callback Path|(**Automatically generated**) The URL for sign-out automatic redirect. For Cloud-hosted customers, this is always `https://sso.bitwarden.com/oidc-signedout`. For self-hosted instances, this is determined by your [configured server URL]({{site.baseurl}}/article/install-on-premise/#configure-your-domain), for example `https://your.domain.com/sso/oidc-signedout`.|
+|Callback Path|(**Automatically generated**) The URL for authentication automatic redirect. For Cloud-hosted customers, this is always `https://sso.bitwarden.com/oidc-signin`. For self-hosted instances, this is determined by your [configured server URL]({{site.baseurl}}/install-on-premise/#configure-your-domain), for example `https://your.domain.com/sso/oidc-signin`.|
+|Signed Out Callback Path|(**Automatically generated**) The URL for sign-out automatic redirect. For Cloud-hosted customers, this is always `https://sso.bitwarden.com/oidc-signedout`. For self-hosted instances, this is determined by your [configured server URL]({{site.baseurl}}/install-on-premise/#configure-your-domain), for example `https://your.domain.com/sso/oidc-signedout`.|
 |Authority|(**Required**) The URL of your Authorization Server ("Authority"), which Bitwarden will perform authentication against. For example, `https://your.domain.okta.com/oauth2/default` or `https://login.microsoft.com/<TENANT_ID>/v2.0`.|
-|Client ID|(**Required**) An identifier for the OIDC Client. This value is typically specific to a constructed IdP App Integration, for example an [Azure App Registration]({{site.baseurl}}/article/oidc-azure/) or [Okta Web App]({{site.baseurl}}/article/oidc-okta/).|
-|Client Secret|(**Required**) The client secret used in conjunction with the Client ID to exchange for an access token. This value is typically specific to a constructed IdP App Integration, for example an [Azure App Registration]({{site.baseurl}}/article/oidc-azure/) or [Okta Web App]({{site.baseurl}}/article/oidc-okta/).|
+|Client ID|(**Required**) An identifier for the OIDC Client. This value is typically specific to a constructed IdP App Integration, for example an [Azure App Registration]({{site.baseurl}}/oidc-azure/) or [Okta Web App]({{site.baseurl}}/oidc-okta/).|
+|Client Secret|(**Required**) The client secret used in conjunction with the Client ID to exchange for an access token. This value is typically specific to a constructed IdP App Integration, for example an [Azure App Registration]({{site.baseurl}}/oidc-azure/) or [Okta Web App]({{site.baseurl}}/oidc-okta/).|
 |Metadata Address|(**Required if Authority is not valid**) A Metadata URL where Bitwarden can access Authorization Server metadata as a JSON object. For example, `https://your.domain.okta.com/oauth2/default/.well-known/oauth-authorization-server`.|
 |OIDC Redirect Behavior|(**Required**) Method used by the IdP to response to authentication requests from Bitwarden. Options include **Form POST** and **Redirect GET**.|
 |Get Claims From User Info Endpoint|Enable this option if you receive URL too long errors (HTTP 414), truncated URLS, and/or failures during SSO.|

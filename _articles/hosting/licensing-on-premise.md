@@ -28,7 +28,7 @@ To retrieve your license from your Cloud account and apply it to your self-hoste
 
 1. Log in to your self-hosted Web Vault with an email address that matches the Cloud-hosted account from which you downloaded the license.
 
-   {% callout success %}If you haven't already, verify your email address before proceeding. You will need to have [configured SMTP-related environment variables]({{site.baseurl}}/article/environment-variables) to do so.{% endcallout %}
+   {% callout success %}If you haven't already, verify your email address before proceeding. You will need to have [configured SMTP-related environment variables]({{site.baseurl}}/environment-variables) to do so.{% endcallout %}
 2. Select the **Settings** tab from the top navigation.
 3. Select **Go Premium** from the left menu.
 4. In the License File section, select the **Browse...** button and add the downloaded license file.
@@ -39,7 +39,7 @@ To retrieve your license from your Cloud account and apply it to your self-hoste
 To retrieve your Organization license from your Cloud Organization and apply it to you self-hosted server:
 
 {% callout info %}
-You must be an [Organization Owner]({{site.baseurl}}/article/user-types-access-control) to both retrieve and apply a license.
+You must be an [Organization Owner]({{site.baseurl}}/user-types-access-control) to both retrieve and apply a license.
 {% endcallout %}
 
 #### Retrieve your License
@@ -65,4 +65,4 @@ Once downloaded, open your self-hosted Web Vault and update the license from the
 
 {% image hosting/update-license.png Update a self-hosting license %}
 
-If you receive a `version not supported` error message, you'll need to update your server before proceeding. Make a backup or copy of the `bwdata` directory, then follow [these instructions]({{site.baseurl}}/article/updating-on-premise/).
+If you receive a `version not supported` error message, you'll need to update your server before proceeding. Make a backup or copy of the `bwdata` directory, then follow [these instructions]({{site.baseurl}}/updating-on-premise/).

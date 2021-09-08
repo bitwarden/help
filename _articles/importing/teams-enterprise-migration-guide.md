@@ -23,7 +23,7 @@ If you need assistance during your migration, our [Customer Success team is here
 
 ## Scope
 
-This document describes the best practices for migrating secure data from your current password manager(s) to a Bitwarden [Teams or Enterprise Organization]({{site.baseurl}}/article/about-organizations/), building an infrastructure for security based on simple and scalable methods.
+This document describes the best practices for migrating secure data from your current password manager(s) to a Bitwarden [Teams or Enterprise Organization]({{site.baseurl}}/about-organizations/), building an infrastructure for security based on simple and scalable methods.
 
 Password management is crucial for organizational security and operational efficiency. Providing insight into the best methods to perform migration and configuration is designed to minimize the trial-and-error approach that is often needed when exchanging enterprise tools.
 
@@ -31,7 +31,7 @@ Steps in this document **are listed in the recommended order** for ease of use a
 
 ## Step 1: Export your Data
 
-Exporting data from another password manager will be different for each solution, and in some cases may be a bit tricky. Use one of our [Import & Export Guides]({{site.baseurl}}/import-export/) for help, for example with exporting from [Lastpass]({{site.baseurl}}/article/import-from-lastpass/#export-from-lastpass) or [1Password]({{site.baseurl}}/article/import-from-1password/#export-from-1password).
+Exporting data from another password manager will be different for each solution, and in some cases may be a bit tricky. Use one of our [Import & Export Guides]({{site.baseurl}}/import-export/) for help, for example with exporting from [Lastpass]({{site.baseurl}}/import-from-lastpass/#export-from-lastpass) or [1Password]({{site.baseurl}}/import-from-1password/#export-from-1password).
 
 Gathering a full export of your data may require assigning shared folders or items to a single user for export, or performing multiple exports between users with appropriate permissions. Additionally, exported data may include personal data alongside shared/organizational data, so be sure to remove personal items from the export file before [importing to Bitwarden](#).
 
@@ -49,20 +49,20 @@ We recommend paying special attention to the location of the following types of 
 
 ## Step 2: Setup your Bitwarden Organization
 
-Bitwarden Organizations relate users and Vault items together for [secure sharing]({{site.baseurl}}/article/sharing/) of Logins, Notes, Cards, and Identities.
+Bitwarden Organizations relate users and Vault items together for [secure sharing]({{site.baseurl}}/sharing/) of Logins, Notes, Cards, and Identities.
 
 {% callout success %}
-It's important that you create your Organization first and [import data to it directly]({{site.baseurl}}/article/import-to-org/), rather than importing the data to an individual account and then [moving items]({{site.baseurl}}/article/sharing/) to the Organization secondarily.
+It's important that you create your Organization first and [import data to it directly]({{site.baseurl}}/import-to-org/), rather than importing the data to an individual account and then [moving items]({{site.baseurl}}/sharing/) to the Organization secondarily.
 {% endcallout %}
 
-1. **Create your Organization**. Start by creating your Organization. To learn how, check out [this article]({{site.baseurl}}/article/about-organizations/#create-an-organization).
+1. **Create your Organization**. Start by creating your Organization. To learn how, check out [this article]({{site.baseurl}}/about-organizations/#create-an-organization).
 
-   {% callout note %}To self-host Bitwarden, create an Organization on the Bitwarden cloud, generate a [license key](https://bitwarden.com/host/), and use the key to [unlock Organizations]({{site.baseurl}}/article/licensing-on-premise/#organization-license) on your server.{% endcallout %}
+   {% callout note %}To self-host Bitwarden, create an Organization on the Bitwarden cloud, generate a [license key](https://bitwarden.com/host/), and use the key to [unlock Organizations]({{site.baseurl}}/licensing-on-premise/#organization-license) on your server.{% endcallout %}
 
-2. **Onboard Administrative Users**. With your Organization created, further setup procedures can be made easier by onboarding some [administrative users]({{siter.baseurl}}/article/user-types-access-control). It's important that you **do not begin end-user onboarding** at this point, as there are a few steps left to prepare your Organization. Learn how to invite admins [here]({{site.baseurl}}/article/managing-users/#onboard-users).
-3. **Configure Identity Services**. Bitwarden Enterprise Organizations support [Login with Single-Sign-On]({{site.baseurl}}/article/about-sso/) using either SAML 2.0 or OpenID Connect (OIDC). To configure SSO, navigate to the [Business Portal](https://bitwarden.com/help/article/about-business-portal/), accessible from the Web Vault by [Organization Owners and Administrators]({{site.baseurl}}/article/user-types-access-control/).
+2. **Onboard Administrative Users**. With your Organization created, further setup procedures can be made easier by onboarding some [administrative users]({{siter.baseurl}}/user-types-access-control). It's important that you **do not begin end-user onboarding** at this point, as there are a few steps left to prepare your Organization. Learn how to invite admins [here]({{site.baseurl}}/managing-users/#onboard-users).
+3. **Configure Identity Services**. Bitwarden Enterprise Organizations support [Login with Single-Sign-On]({{site.baseurl}}/about-sso/) using either SAML 2.0 or OpenID Connect (OIDC). To configure SSO, navigate to the [Business Portal](https://bitwarden.com/help/about-business-portal/), accessible from the Web Vault by [Organization Owners and Administrators]({{site.baseurl}}/user-types-access-control/).
 
-4. **Enable Enterprise Policies**. [Enterprise Policies]({{site.baseurl}}/article/) enable Enterprise Organizations to implement roles for users, for example requiring use of Two-step Login. It is highly recommended that you configure Policies before onboarding users.
+4. **Enable Enterprise Policies**. [Enterprise Policies]({{site.baseurl}}/) enable Enterprise Organizations to implement roles for users, for example requiring use of Two-step Login. It is highly recommended that you configure Policies before onboarding users.
 
 ## Step 3: Import Data to your Organization
 
@@ -91,7 +91,7 @@ When importing data to your Organization, you have two options:
 1. To import the default file format from your prior password manager.
 2. To condition a Bitwarden-specific `.CSV` for import.
 
-We recommend formatting your file for import as a Bitwarden `.CSV` for best results, or for advanced users, as a Bitwarden `.JSON` file. For instructions on shaping a Bitwarden-specific import file, refer to [this import guide]({{site.baseurl}}/article/condition-bitwarden-import/). For more import documentation, see [these articles]({{site.baseurl}}/import-export/).
+We recommend formatting your file for import as a Bitwarden `.CSV` for best results, or for advanced users, as a Bitwarden `.JSON` file. For instructions on shaping a Bitwarden-specific import file, refer to [this import guide]({{site.baseurl}}/condition-bitwarden-import/). For more import documentation, see [these articles]({{site.baseurl}}/import-export/).
 
 ## Step 4: Onboard Users to the Organization
 
@@ -99,16 +99,16 @@ Bitwarden supports both manual onboarding via the Web Vault and automated onboar
 
 ### Manual Onboarding
 
-To ensure the security of your Organization, Bitwarden applies a 3-step process for onboarding a new member, [Invite](#invite) &rarr; [Accept](#accept) &rarr; [Confirm](#confirm). Learn how to invite new users [here]({{site.baseurl}}/article/managing-users/#onboard-users).
+To ensure the security of your Organization, Bitwarden applies a 3-step process for onboarding a new member, [Invite](#invite) &rarr; [Accept](#accept) &rarr; [Confirm](#confirm). Learn how to invite new users [here]({{site.baseurl}}/managing-users/#onboard-users).
 
 ### Automated Onboarding
 
-Automated user onboarding is available through [Bitwarden Directory Connector]({{site.baseurl}}/article/directory-sync), a standalone application available in a [Desktop app]({{site.baseurl}}/article/directory-sync-desktop/) and [CLI]({{site.baseurl}}/article/directory-sync-cli/) that will synchronize users and groups from your existing directory service.
+Automated user onboarding is available through [Bitwarden Directory Connector]({{site.baseurl}}/directory-sync), a standalone application available in a [Desktop app]({{site.baseurl}}/directory-sync-desktop/) and [CLI]({{site.baseurl}}/directory-sync-cli/) that will synchronize users and groups from your existing directory service.
 
-Users are automatically invited to join the Organization, and can be confirmed manually or automatically using the [Bitwarden CLI tool](https://bitwarden.com/help/article/cli/#confirm).
+Users are automatically invited to join the Organization, and can be confirmed manually or automatically using the [Bitwarden CLI tool](https://bitwarden.com/help/cli/#confirm).
 
-- Learn more about how syncing works [here]({{site.baseurl}}/article/directory-sync/).
-- Discover how to configure user and group filters for Directory Connector [here]({{site.baseurl}}/article/user-group-filters/).
+- Learn more about how syncing works [here]({{site.baseurl}}/directory-sync/).
+- Discover how to configure user and group filters for Directory Connector [here]({{site.baseurl}}/user-group-filters/).
 - See more Directory Connector documentation [here]({{site.baseurl}}/directory-connector/).
 
 ## Step 5: Configure Access to Collections and Items
@@ -131,19 +131,19 @@ Example Bitwarden Organization Import:
 
 {%image /migration/bw-import.png Note: shared folders are now in the Collections column %}
 
-Collections can be shared with both Groups and Individual users. Limiting the number of individual users that can access a Collection will make management more efficient for Administrators. Learn more [here]({{site.baseurl}}/article/about-collections/).
+Collections can be shared with both Groups and Individual users. Limiting the number of individual users that can access a Collection will make management more efficient for Administrators. Learn more [here]({{site.baseurl}}/about-collections/).
 
 ### Groups
 
 Leveraging Groups for sharing is the most effective way to provide credential and secret access. Ideally Groups are mirrored from an LDAP service, however Bitwarden supports automatic Group synchronization via the Directory Connector application, as well as manually created ad-hoc Groups.
 
-As a part of deployment preparations, it is possible to synchronize **just** groups from the LDAP directory before synchronization of Users begins, such that Collections can be assigned to Groups before users begin accessing Bitwarden. Learn more about syncing Groups with Directory Connector [here]({{site.baseurl}}/article/user-group-filters/).
+As a part of deployment preparations, it is possible to synchronize **just** groups from the LDAP directory before synchronization of Users begins, such that Collections can be assigned to Groups before users begin accessing Bitwarden. Learn more about syncing Groups with Directory Connector [here]({{site.baseurl}}/user-group-filters/).
 
 ### Permissions
 
 Permissions for Bitwarden Collections can be assigned on the Group or User-level. This means that each Group or User can be configured with permissions for the same Collection. Collection permissions include options for **Read Only** and **Hide Passwords**.
 
-Bitwarden uses an union of permissions to determine final access permissions for a User and a Collection Item. Learn more [here]({{site.baseurl}}/article/user-types-access-control/#access-control).
+Bitwarden uses an union of permissions to determine final access permissions for a User and a Collection Item. Learn more [here]({{site.baseurl}}/user-types-access-control/#access-control).
 
 **Example:**
 

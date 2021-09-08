@@ -17,7 +17,7 @@ order: "08"
 
 ### Q: How are Client Organizations billed?
 
-**A:** Currently, each Client Organization is billed separately using the payment method registered during [Client Organization creation]({{site.baseurl}}/article/client-org-setup/). In the future, we'll be developing functionality to aggregate billing across Client Organizations to improve the Provider experience.
+**A:** Currently, each Client Organization is billed separately using the payment method registered during [Client Organization creation]({{site.baseurl}}/client-org-setup/). In the future, we'll be developing functionality to aggregate billing across Client Organizations to improve the Provider experience.
 
 ### What customer support do MSPs receive?
 
@@ -41,7 +41,7 @@ The Provider Portal is an all-in-one portal, designed to streamline client manag
 
 ### Q: I'm already providing Bitwarden as a service for my clients, what do I need to do to move to the Provider Portal?
 
-**A:** It's quick and easy! [Contact Us](https://bitwarden.com/contact/){:target="\_blank"} and a member of the Bitwarden team will issue you an invitation. Once in the Provider Portal, you can [add existing Client Organizations]({{site.baseurl}}/article/add-existing-client-org/) to begin centralizing client management.
+**A:** It's quick and easy! [Contact Us](https://bitwarden.com/contact/){:target="\_blank"} and a member of the Bitwarden team will issue you an invitation. Once in the Provider Portal, you can [add existing Client Organizations]({{site.baseurl}}/add-existing-client-org/) to begin centralizing client management.
 
 ### Q: How many clients can I manage through the Provider Portal?
 
@@ -61,11 +61,11 @@ The Provider Portal is an all-in-one portal, designed to streamline client manag
 
 ### Q: Is there a recommended workflow for onboarding new clients?
 
-**A:** Yes! We've outlined one recommended workflow [here]({{site.baseurl}}/article/client-org-setup/).
+**A:** Yes! We've outlined one recommended workflow [here]({{site.baseurl}}/client-org-setup/).
 
 ### Q: How does an MSP access Client Organizations?
 
-**A:** MSPs can access all Client Organizations under management from the Provider Portal. Learn more [here]({{site.baseurl}}/article/manage-client-orgs/).
+**A:** MSPs can access all Client Organizations under management from the Provider Portal. Learn more [here]({{site.baseurl}}/manage-client-orgs/).
 
 ### Q: Can an MSP administrator see or manage credentials for all clients?
 
@@ -73,4 +73,4 @@ The Provider Portal is an all-in-one portal, designed to streamline client manag
 
 ### Q: Can we set default Enterprise Policies that apply to all clients?
 
-**A:** Each Client Organization operates independently with individually configured policies. [Learn more about configuring Enterprise Policies]({{site.baseurl}}/article/policies/).
+**A:** Each Client Organization operates independently with individually configured policies. [Learn more about configuring Enterprise Policies]({{site.baseurl}}/policies/).

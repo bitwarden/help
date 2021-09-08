@@ -8,7 +8,7 @@ tags: [hosting, database, mssql]
 order: "12"
 ---
 
-By default, self-hosted instances of Bitwarden will use a Microsoft SQL Server (MSSQL) database created as a normal part of [installation setup]({{site.baseurl}}/article/install-on-premise), however you configure Bitwarden to use an external MSSQL database.
+By default, self-hosted instances of Bitwarden will use a Microsoft SQL Server (MSSQL) database created as a normal part of [installation setup]({{site.baseurl}}/install-on-premise), however you configure Bitwarden to use an external MSSQL database.
 
 {% callout info %}
 Currently, self-hosted installations of Bitwarden support **only** MSSQL databases. Stay tuned for future updates on this topic.
@@ -36,7 +36,7 @@ To setup your self-hosted instance with an external database:
 {% comment %}
 6. Run `./bitwarden.sh updatedb` to migrate the **database schema**.
 
-   {% callout success %}`updatedb` does not migrate data, it only migrates the database schema. To move existing data to the new database, [restore a backup]({{site.baseurl}}/article/backup-on-premise/#restore-a-nightly-backup) from `./bwdata/mssql/backups`.{% endcallout %}
+   {% callout success %}`updatedb` does not migrate data, it only migrates the database schema. To move existing data to the new database, [restore a backup]({{site.baseurl}}/backup-on-premise/#restore-a-nightly-backup) from `./bwdata/mssql/backups`.{% endcallout %}
 {% endcomment %}
 
 Once the above steps are complete, you can test the connection by creating a new user through the Web Vault and querying the external `vault` database for creation of the new user.

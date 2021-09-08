@@ -24,7 +24,7 @@ Bitwarden highly recommends setting Enterprise Policies prior to inviting users 
 Policies can be set in two locations:
 
 - In your Organization, open the **Manage** tab and select **Policies** from the left menu.
-- Navigate to the Business Portal, and select the **Policies** button. For more information, see [About the Business Portal](https://bitwarden.com/help/article/about-business-portal/).
+- Navigate to the Business Portal, and select the **Policies** button. For more information, see [About the Business Portal](https://bitwarden.com/help/about-business-portal/).
 
 ## Available Policies
 
@@ -87,7 +87,7 @@ Users who are removed as a result of this policy will be notified via email, and
 
 ### Single Sign-On Authentication
 
-Enabling the **Single Sign-On Authentication** policy will require non-Owner/non-Admin users to log in with Enterprise Single Sign-On. For more information, see [Access Your Vault using SSO](https://bitwarden.com/help/article/sso-access-your-vault/).
+Enabling the **Single Sign-On Authentication** policy will require non-Owner/non-Admin users to log in with Enterprise Single Sign-On. For more information, see [Access Your Vault using SSO](https://bitwarden.com/help/sso-access-your-vault/).
 
 {% callout info %}
 The **Single Organization** policy must be enabled before activating this policy.
@@ -117,16 +117,16 @@ Enabling the **Send Options** policy will allow Owners and Admins to specify opt
 
 |Option|Description|
 |------|-----------|
-|Do not allow users to hide their email address|Enabling this option disables the [Hide Email option]({{site.baseurl}}/article/send-privacy/#hide-email), meaning that all [received Sends]({{site.baseurl}}/article/receive-send) will include whom they are sent from.|
+|Do not allow users to hide their email address|Enabling this option disables the [Hide Email option]({{site.baseurl}}/send-privacy/#hide-email), meaning that all [received Sends]({{site.baseurl}}/receive-send) will include whom they are sent from.|
 
 ### Master Password Reset
 
-Enabling the **Master Password Reset** policy will allow Owners and Admins to use [Password Reset]({{site.baseurl}}/article/admin-reset/) to reset the master password of enrolled users. By default, users will need to [self-enroll in Password Reset]({{site.baseurl}}/article/admin-reset/#self-enroll-in-password-reset), however the [Automatic Enrollment](#automatic-enrollment) option can be used to automatically enroll invited users:
+Enabling the **Master Password Reset** policy will allow Owners and Admins to use [Password Reset]({{site.baseurl}}/admin-reset/) to reset the master password of enrolled users. By default, users will need to [self-enroll in Password Reset]({{site.baseurl}}/admin-reset/#self-enroll-in-password-reset), however the [Automatic Enrollment](#automatic-enrollment) option can be used to automatically enroll invited users:
 
 #### Automatic Enrollment
 
-Enabling the **Automatic Enrollment** option will automatically enroll new users in Password Reset when their [invitation to the Organization is accepted]({{site.baseurl}}/article/managing-users/#accept).
+Enabling the **Automatic Enrollment** option will automatically enroll new users in Password Reset when their [invitation to the Organization is accepted]({{site.baseurl}}/managing-users/#accept).
 
 {% callout info %}
-Users already in the Organization will not be retroactively enrolled in Password Reset, and will be required to [self-enroll]({{site.baseurl}}/article/admin-reset/#self-enroll-in-password-reset).
+Users already in the Organization will not be retroactively enrolled in Password Reset, and will be required to [self-enroll]({{site.baseurl}}/admin-reset/#self-enroll-in-password-reset).
 {% endcallout %}

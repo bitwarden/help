@@ -52,7 +52,7 @@ Trusted emergency contacts can be granted one of the following user access level
 
 - **Takeover**: When an emergency access request is granted, this user can create a Master Password for permanent read/write access to your Vault (this will **replace** your previous Master Password). Takeover disables any [Two-step Login Methods]({% link _articles/two-step-login/setup-two-step-login.md %}) enabled for the account.
 
-**When the grantor is a member of an Organization**, they will be automatically removed from any Organization(s) for which they are not an [Owner]({% link _articles/organizations/user-types-access-control.md %}). Owners will not be removed from or lose permissions to their Organization(s), however a [Master Password Policy](https://bitwarden.com/help/article/policies/#master-password) will be enforced on takeover if enabled. Policies that are not usually enforced on Owners (e.g. [Two-step Login](https://bitwarden.com/help/article/policies/#two-step-login)) will not be enforced on takeover.
+**When the grantor is a member of an Organization**, they will be automatically removed from any Organization(s) for which they are not an [Owner]({% link _articles/organizations/user-types-access-control.md %}). Owners will not be removed from or lose permissions to their Organization(s), however a [Master Password Policy](https://bitwarden.com/help/policies/#master-password) will be enforced on takeover if enabled. Policies that are not usually enforced on Owners (e.g. [Two-step Login](https://bitwarden.com/help/policies/#two-step-login)) will not be enforced on takeover.
 
 ## Using Emergency Access
 
@@ -151,4 +151,4 @@ Trusted emergency contacts who are given **View** access will be able to view yo
 Trusted emergency contacts who are given **Takeover** access will, once used, have created a new Master Password for your account. As a result, the only way to revoke access involves:
 
 1. Obtaining the new Master Password they created for your account and using it to log in the [Web Vault](https://vault.bitwarden.com){:target="\_blank"}.
-2. [Changing your Master Password]({{site.baseurl}}/article/master-password/#change-your-master-password) to one that they do not know.
+2. [Changing your Master Password]({{site.baseurl}}/master-password/#change-your-master-password) to one that they do not know.

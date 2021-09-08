@@ -17,7 +17,7 @@ Depending on the version of Android your device is running, there are a few diff
 |Draw-Over|Android 6+|Accessibility|
 |Accessibility|All Android Versions|-|
 
-For instructions on setting up auto-fill on Android, see [Auto-fill Logins]({{site.baseurl}}/article/auto-fill-android/).
+For instructions on setting up auto-fill on Android, see [Auto-fill Logins]({{site.baseurl}}/auto-fill-android/).
 
 ### Troubleshooting the Autofill Service
 

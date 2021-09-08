@@ -104,7 +104,7 @@ Understandably, some users are skeptical about using Bitwarden for token authent
 
    Bitwarden Mobile apps and Browser Extensions provide Auto-fill capabilities for verification codes. When you use Bitwarden to Auto-fill a Username and Password, it will automatically copy the verification code to your clipboard for easy pasting.
 
-   If you're using a Browser Extension, you can chain together the [Login Keyboard Shortcut](https://bitwarden.com/help/article/auto-fill-browser/#keyboard-shortcuts-hot-keys) (Windows: `Ctrl + Shift + L` / macOS: `Cmd + Shift + L` ), following by the Paste shortcut (Windows: `Ctrl + V` / macOS: `Cmd + V`) for lightning-fast logins.
+   If you're using a Browser Extension, you can chain together the [Login Keyboard Shortcut](https://bitwarden.com/help/auto-fill-browser/#keyboard-shortcuts-hot-keys) (Windows: `Ctrl + Shift + L` / macOS: `Cmd + Shift + L` ), following by the Paste shortcut (Windows: `Ctrl + V` / macOS: `Cmd + V`) for lightning-fast logins.
 2. **Sharing**
 
    For Organizations, a large benefit of using Bitwarden Authenticator for token verification is the ability to share the token generation among team members. This allows Organizations to protect their accounts with Two-step Login without sacrificing the ability for multiple users to access that account or requiring coordination between two employees to share tokens in an unsafe way.

@@ -12,10 +12,10 @@ order: "01"
 
 The Bitwarden Directory Connector application syncs users and groups to a Bitwarden Organization from a selection of directory services. Directory Connector **will automatically provision and de-provision users, groups, and group associations** from the source directory.
 
-Directory Connector will issue invitations to synced users, however it will not automatically construct Bitwarden credentials based on any credentials stored in the source directory. Invited users will be required to follow the normal Organization [onboarding procedure]({{site.baseurl}}/article/managing-users/#onboard-users) and log in with the created Bitwarden Master Password.
+Directory Connector will issue invitations to synced users, however it will not automatically construct Bitwarden credentials based on any credentials stored in the source directory. Invited users will be required to follow the normal Organization [onboarding procedure]({{site.baseurl}}/managing-users/#onboard-users) and log in with the created Bitwarden Master Password.
 
 {% callout info %}
-Directory Connector functionality is available to **Teams** and **Enterprise** Organizations. To use Directory Connector, you must have access to your [Organization API Key]({{site.baseurl}}/article/public-api/#authentication) which can only be retrieved by an [Organization Owner]({{site.baseurl}}/article/user-types-access-control/) and securely shared using [Bitwarden Send]({{site.baseurl}}/article/about-send/).
+Directory Connector functionality is available to **Teams** and **Enterprise** Organizations. To use Directory Connector, you must have access to your [Organization API Key]({{site.baseurl}}/public-api/#authentication) which can only be retrieved by an [Organization Owner]({{site.baseurl}}/user-types-access-control/) and securely shared using [Bitwarden Send]({{site.baseurl}}/about-send/).
 {% endcallout %}
 
 {% image directory-connector/dc-diagram.png %}

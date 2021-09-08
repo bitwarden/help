@@ -8,8 +8,8 @@ hidden: false
 tags: [tutorial, getting started, mobile, android, ios]
 order: "04"
 redirect_from:
-  - /article/getting-started-android/
-  - /article/getting-started-ios/
+  - /getting-started-android/
+  - /getting-started-ios/
 ---
 
 Bitwarden's Mobile App lets you take your password manager on the go. Download Bitwarden from the App Store or Google Play Store, or by navigating to [get.bitwarden.com](https://get.bitwarden.com) on any device.

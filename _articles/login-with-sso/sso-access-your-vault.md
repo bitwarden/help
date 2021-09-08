@@ -9,7 +9,7 @@ order: "06"
 ---
 
 ## Before You Begin
-If you are an existing Bitwarden user, you must [Link an Existing Account to SSO](https://bitwarden.com/help/article/link-to-sso/) before authenticating into your Vault using Login with SSO.
+If you are an existing Bitwarden user, you must [Link an Existing Account to SSO](https://bitwarden.com/help/link-to-sso/) before authenticating into your Vault using Login with SSO.
 
 ## Logging in with SSO
 
@@ -39,5 +39,5 @@ In both cases, your account now has an *accepted* status within your Organizatio
 
 
   {% callout info %}
-  Users that are created via Login with SSO **will still be properly organized into their groups and collections** if leveraging the [Directory Connector](https://bitwarden.com/help/article/directory-sync/) utility.
+  Users that are created via Login with SSO **will still be properly organized into their groups and collections** if leveraging the [Directory Connector](https://bitwarden.com/help/directory-sync/) utility.
   {% endcallout %}

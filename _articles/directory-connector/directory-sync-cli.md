@@ -48,7 +48,7 @@ To get started using the Bitwarden Directory Connector CLI:
 
 ### login
 
-Use the `login` command to login to Directory Connector with your [Organization API Key]({{site.baseurl}}/article/public-api/#authentication).  If you don't have the API Key, reach out to an [Organization Owner]({{site.baseurl}}/article/user-types-access-control/). There are a few ways to use the `login` command:
+Use the `login` command to login to Directory Connector with your [Organization API Key]({{site.baseurl}}/public-api/#authentication).  If you don't have the API Key, reach out to an [Organization Owner]({{site.baseurl}}/user-types-access-control/). There are a few ways to use the `login` command:
 
 - By itself:
 

@@ -7,12 +7,12 @@ popular: false
 tags: [free, personal, organization, enterprise, teams, family, plans, subscription]
 order: "01"
 redirect_from:
-  - /article/choosing-the-right-subscription-plan/
+  - /choosing-the-right-subscription-plan/
 ---
 
 In this article, we'll define each Bitwarden subscription plan to help you along your password management and secure data storage journey.
 
-*This article reflects current Bitwarden plans, updated on September 06, 2020. Users who created accounts prior to that date can learn how to opt-in to the updates **[here](https://bitwarden.com/help/article/2020-plan-updates/)**.*
+*This article reflects current Bitwarden plans, updated on September 06, 2020. Users who created accounts prior to that date can learn how to opt-in to the updates **[here](https://bitwarden.com/help/2020-plan-updates/)**.*
 
 ## Bitwarden For You
 
@@ -51,7 +51,7 @@ In the following table, "premium features" (included for **Premium Individual** 
 |Secure Password Generator|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
 |Cloud or Self-hosting|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
 |[Encrypted Export]({% link _articles/importing/encrypted-export.md %})|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
-|[Bitwarden Send]({{site.baseurl}}/article/about-send/)|Text Sharing|Text + File Sharing|Text + File Sharing|
+|[Bitwarden Send]({{site.baseurl}}/about-send/)|Text Sharing|Text + File Sharing|Text + File Sharing|
 |*[Two-step login]({% link _articles/two-step-login/setup-two-step-login.md %})|via authenticator apps or email|via authenticator apps, email, Yubikey, FIDO2, and Duo|via authenticator apps, email, Yubikey, FIDO2, and Duo (does not include [Duo for Organizations]({% link _articles/two-step-login/setup-two-step-login-duo.md %}))|
 |*[Encrypted file attachments]({% link _articles/features/attachments.md %})|-|1 GB|1 GB per user + 1 GB shared|
 |*[Bitwarden Authenticator]({% link _articles/features/authenticator-keys.md %}) (TOTP)|-|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
@@ -96,7 +96,7 @@ In the following table, "premium features" (included for **Teams Organizations**
 |Max no. of users|2|Unlimited|Unlimited|
 |Max no. of Collections|2|Unlimited|Unlimited|
 |[Encrypted Export]({% link _articles/importing/encrypted-export.md %})|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
-|[Bitwarden Send]({{site.baseurl}}/article/about-send/)|Text Sharing|Text + File Sharing|Text + File Sharing|
+|[Bitwarden Send]({{site.baseurl}}/about-send/)|Text Sharing|Text + File Sharing|Text + File Sharing|
 |*[Two-step login]({% link _articles/two-step-login/setup-two-step-login.md %})|via authenticator apps or email|via authenticator apps, email, Yubikey, FIDO2, and Duo|via authenticator apps, email, Yubikey, FIDO2, and Duo|
 |[Duo for Organizations]({% link _articles/two-step-login/setup-two-step-login-duo.md %})|-|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
 |*[Encrypted file attachments]({% link _articles/features/attachments.md %})|-|1 GB per user + 1 GB shared|1 GB per user + 1 GB shared|
@@ -110,7 +110,7 @@ In the following table, "premium features" (included for **Teams Organizations**
 |[Directory Connector]({% link _articles/directory-connector/directory-sync.md %})|-|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
 |[Login with SSO]({% link _articles/login-with-sso/about-sso.md %})|-|-|<i class="fa fa-check" aria-hidden="true"></i>|
 |[Enterprise Policies]({% link _articles/organizations/policies.md %})|-|-|<i class="fa fa-check" aria-hidden="true"></i>|
-|[Admin Password Reset]({{site.baseurl}}/article/admin-reset/)|-|-|<i class="fa fa-check" aria-hidden="true"></i>|
+|[Admin Password Reset]({{site.baseurl}}/admin-reset/)|-|-|<i class="fa fa-check" aria-hidden="true"></i>|
 |[Custom Management Role]({% link _articles/organizations/user-types-access-control.md %})|-|-|<i class="fa fa-check" aria-hidden="true"></i>|
 |[Self-host option]({% link _articles/hosting/install-on-premise.md %})|-|-|<i class="fa fa-check" aria-hidden="true"></i>|
 |Cost to you|Free|$3 Per User Per Month, billed annually<br>or<br>$4 Per User Per Month, billed monthly|$5 Per User Per Month, billed annually<br>or<br>$6 Per User Per Month, billed monthly|
@@ -118,13 +118,13 @@ In the following table, "premium features" (included for **Teams Organizations**
 ### Next Steps
 
 For help choosing the right plan, see:
-- [What Plan is Right for Me?](https://bitwarden.com/help/article/what-plan-is-right-for-me/)
+- [What Plan is Right for Me?](https://bitwarden.com/help/what-plan-is-right-for-me/)
 
 For help moving from an individual plan to an Organization, see:
-- [Upgrade From Individual to Organization](https://bitwarden.com/help/article/upgrade-from-individual-to-org/)
+- [Upgrade From Individual to Organization](https://bitwarden.com/help/upgrade-from-individual-to-org/)
 
 For help starting a free trial of Bitwarden Enterprise, see:
-- [Start a Free Trial of Bitwarden Enterprise](https://bitwarden.com/help/article/enterprise-free-trial/)
+- [Start a Free Trial of Bitwarden Enterprise](https://bitwarden.com/help/enterprise-free-trial/)
 
 Still can't find what you're looking for?
-- Try our [Billing FAQs](https://bitwarden.com/help/article/billing-faqs/)
+- Try our [Billing FAQs](https://bitwarden.com/help/billing-faqs/)

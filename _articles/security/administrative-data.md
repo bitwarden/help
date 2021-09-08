@@ -14,7 +14,7 @@ Users provide personal information in connection with your account creation, usa
 We encourage you to review our [Privacy Policy](https://bitwarden.com/privacy){:target="\_blank"} for more information.
 {% endcallout %}
 
-Bitwarden **does not log user activity or access information such as IP addresses, authentication, access, or use**. Information related to user activity is only available for Teams or Enterprise Organizations via [Event Logs]({{site.baseurl}}/article/event-logs). As described above, Bitwarden uses some data to provide the Bitwarden Service to you, including:
+Bitwarden **does not log user activity or access information such as IP addresses, authentication, access, or use**. Information related to user activity is only available for Teams or Enterprise Organizations via [Event Logs]({{site.baseurl}}/event-logs). As described above, Bitwarden uses some data to provide the Bitwarden Service to you, including:
 
 #### Personal Information
 

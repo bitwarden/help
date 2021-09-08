@@ -8,9 +8,9 @@ hidden: false
 tags: []
 order: "11"
 redirect_from:
-  - /article/why-should-i-trust-bitwarden/
-  - /article/what-happens-if-bitwarden-is-hacked/
-  - /article/can-bitwarden-see-my-passwords/
+  - /why-should-i-trust-bitwarden/
+  - /what-happens-if-bitwarden-is-hacked/
+  - /can-bitwarden-see-my-passwords/
 ---
 
 This article contains Frequently Asked Questions (FAQs) regarding **Security**.
@@ -88,9 +88,9 @@ Bitwarden takes user security and privacy seriously. Bitwarden maintains secure,
 
 - Offline Vault sessions will expire after 30 days.
   - **Except** for mobile client applications, which will expire after 90 days.
-- [Two-step Login]({{site.baseurl}}/article/setup-two-step-login) **Remember Me** selections will expire after 30 days.
-- Directory Connector [sync cache]({{site.baseurl}}/article/clear-sync-cache/) will be cleared after 30 days.
-- Organization invites will expire after 5 days. Self-hosted customers can configure this [using an environment variable]({{site.baseurl}}/article/environment-variables/#optional-variables).
+- [Two-step Login]({{site.baseurl}}/setup-two-step-login) **Remember Me** selections will expire after 30 days.
+- Directory Connector [sync cache]({{site.baseurl}}/clear-sync-cache/) will be cleared after 30 days.
+- Organization invites will expire after 5 days. Self-hosted customers can configure this [using an environment variable]({{site.baseurl}}/environment-variables/#optional-variables).
 
 ### Questions Regarding Specific Client Apps
 
@@ -120,7 +120,7 @@ When this **optional feature** is enabled, clipboard clear will clear any Bitwar
 ### Q: Why does the Browser Extension need `nativeMessaging` permission?
 
 **A:**
-Version 1.48.0 of the browser extension enables [Biometric Unlock for Browser Extensions](https://bitwarden.com/help/article/biometrics/#browser-extensions).
+Version 1.48.0 of the browser extension enables [Biometric Unlock for Browser Extensions](https://bitwarden.com/help/biometrics/#browser-extensions).
 
 This permission, also known as `nativeMessaging`, is safe to accept and allows the browser extension to communicate with the Bitwarden desktop app, which is required to enabled Unlock with Biometrics.
 
@@ -128,7 +128,7 @@ Note that when your browser updates to this version, you may be asked to accept 
 
 ### Q: Is Bitwarden FIPS Compliant?
 
-**A:** Bitwarden uses [FIPS compliant libraries and cryptography](https://bitwarden.com/help/article/what-encryption-is-used/#invoked-crypto-libraries), however the Bitwarden platform has not performed any FIPs certifications. Most FIPS installations of Bitwarden leverage the self-hosting option to make evaluations (i.e. Cybersecurity Maturity Model Certification) easier.
+**A:** Bitwarden uses [FIPS compliant libraries and cryptography](https://bitwarden.com/help/what-encryption-is-used/#invoked-crypto-libraries), however the Bitwarden platform has not performed any FIPs certifications. Most FIPS installations of Bitwarden leverage the self-hosting option to make evaluations (i.e. Cybersecurity Maturity Model Certification) easier.
 
 ### Q: Can I restrict access to Bitwarden to certain devices?
 

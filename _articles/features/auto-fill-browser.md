@@ -11,7 +11,7 @@ tags: [browser, auto-fill, autofill]
 {% callout success %}
 Most auto-fill functionality relies on the attribution of URIs to Login items. If you're unfamiliar with using URIs, see [Using URIs]({% link _articles/features/uri-match-detection.md %}).
 
-Additionally, **basic authentication prompts** work a little differently than regular auto-fills. See our breakout article on [Basic Auth Prompts]({{site.baseurl}}/article/basic-auth-autofill)
+Additionally, **basic authentication prompts** work a little differently than regular auto-fills. See our breakout article on [Basic Auth Prompts]({{site.baseurl}}/basic-auth-autofill)
 {% endcallout %}
 
 Bitwarden Browser Extensions have a unique **Tab** view, which automatically detects the URI (e.g. `myturbotax.intuit.com`) of the page displayed in the open tab and surfaces any Vault items with corresponding URIs.
@@ -92,7 +92,7 @@ You can auto-fill items manually that don't have saved URIs by opening them in t
 
 ## TOTP Copy
 
-If you use [Bitwarden Authenticator]({{site.baseurl}}/article/authenticator-keys/), Bitwarden will automatically copy a Login item's TOTP code to the clipboard when the Login item is autofilled by any of the above methods.
+If you use [Bitwarden Authenticator]({{site.baseurl}}/authenticator-keys/), Bitwarden will automatically copy a Login item's TOTP code to the clipboard when the Login item is autofilled by any of the above methods.
 
 {% callout success %}
 You can disable this option and set a custom interval with which to clear your clipboard from the Browser Extension's {% icon fa-cogs %} **Settings** tab: 

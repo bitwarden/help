@@ -14,7 +14,7 @@ When self-hosting Bitwarden, you are responsible for implementing your own backu
 
 Bitwarden's Docker containers use volume mapping to persist all important data on the host machine, meaning stopping your containers will not delete any data. Docker containers, on the other hand, are to be considered ephemeral and do not persist data or state.
 
-All Bitwarden data is stored on the host machine in the `./bwdata` directory, relative to the location in which you installed Bitwarden. For more information, see [Install and Deploy](https://bitwarden.com/help/article/install-on-premise/#install-bitwarden).
+All Bitwarden data is stored on the host machine in the `./bwdata` directory, relative to the location in which you installed Bitwarden. For more information, see [Install and Deploy](https://bitwarden.com/help/install-on-premise/#install-bitwarden).
 
 ## Backup Hosted Data
 

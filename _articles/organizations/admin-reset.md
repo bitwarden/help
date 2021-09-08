@@ -9,16 +9,16 @@ order: "15"
 ---
 
 {% callout info %}
-Admin Password Reset is available for **Enterprise Organizations** on a current plan. Like Login with SSO, Password Reset is not available to [Classic 2019 Enterprise Organizations]({{site.baseurl}}/article/2020-plan-updates).
+Admin Password Reset is available for **Enterprise Organizations** on a current plan. Like Login with SSO, Password Reset is not available to [Classic 2019 Enterprise Organizations]({{site.baseurl}}/2020-plan-updates).
 {% endcallout %}
 
 ## What is Admin Password Reset?
 
-Admin Password Reset allows [designated administrators](#permissions) to recover Enterprise Organization user accounts and restore access in the event that an employee forgets their [Master Password]({{site.baseurl}}/article/master-password/). Admin Password Reset can be activated for an Organization by [enabling the Admin Password Reset Policy](#activate-admin-password-reset).
+Admin Password Reset allows [designated administrators](#permissions) to recover Enterprise Organization user accounts and restore access in the event that an employee forgets their [Master Password]({{site.baseurl}}/master-password/). Admin Password Reset can be activated for an Organization by [enabling the Admin Password Reset Policy](#activate-admin-password-reset).
 
 Individual users must be enrolled (either through [self-enrollment](#self-enroll-in-password-reset) or using the [automatic enrollment policy option](#automatic-enrollment)) to be eligible for password reset, as enrollment triggers the key exchange that makes Admin Password Reset secure.
 
-**Admin Password Reset does not bypass Two-step Login or Login with SSO**. If a [Two-step Login method]({{site.baseurl}}/article/setup-two-step-login/) is enabled for the account or if your Organization [requires SSO Authentication]({{site.baseurl}}/article/policies/#single-sign-on-authentication), you will still be required to use that method to access your Vault after password reset.
+**Admin Password Reset does not bypass Two-step Login or Login with SSO**. If a [Two-step Login method]({{site.baseurl}}/setup-two-step-login/) is enabled for the account or if your Organization [requires SSO Authentication]({{site.baseurl}}/policies/#single-sign-on-authentication), you will still be required to use that method to access your Vault after password reset.
 
 ### Encryption
 
@@ -32,12 +32,12 @@ The key pair is generated and encrypted client-side upon creation of a new Organ
 - Upgrades from one Organization type to another.
 {% endcallout %}
 
-When a member of the Organization [enrolls](#automatic-enrollment) in Admin Password Reset, that user's [encryption key]({{site.baseurl}}/article/account-encryption-key) is encrypted with the Organization's public key. The result is stored as the **Password Reset Key**.
+When a member of the Organization [enrolls](#automatic-enrollment) in Admin Password Reset, that user's [encryption key]({{site.baseurl}}/account-encryption-key) is encrypted with the Organization's public key. The result is stored as the **Password Reset Key**.
 
 When an Admin Password Reset action is taken:
 
 1. The Organization private key is decrypted with the Organization symmetric key.
-2. The user's **Reset Password Key** is decrypted with the decrypted Organization private key, resulting in the users's [encryption key]({{site.baseurl}}/article/account-encryption-key).
+2. The user's **Reset Password Key** is decrypted with the decrypted Organization private key, resulting in the users's [encryption key]({{site.baseurl}}/account-encryption-key).
 3. The user's encryption key and Master Password hash are replaced with a *new* encryption key and *new* Master Password hash, seeded from a new Master Password.
 4. The user's new encryption key is encrypted with the Organization's public key, replacing the previous **Password Reset Key** with a new one.
 
@@ -45,21 +45,21 @@ When an Admin Password Reset action is taken:
 
 ### Permissions
 
-Admin Password Reset can be executed by [Owners, Admins, and permitted Custom users]({{site.baseurl}}/article/user-types-access-control/). Admin Password Reset uses a hierarchical permission structure to determine who can reset whose Master Password, meaning:
+Admin Password Reset can be executed by [Owners, Admins, and permitted Custom users]({{site.baseurl}}/user-types-access-control/). Admin Password Reset uses a hierarchical permission structure to determine who can reset whose Master Password, meaning:
 - Any Owner, Admin, or permitted Custom user can reset a **User**, **Manager**, or **Custom User**'s Master Password.
 - Only an Admin or Owner can reset an **Admin**'s Master Password.
 - Only an Owner can reset another **Owner**'s Master Password.
 
 ### Event Logging
 
-[Events]({{site.baseurl}}/article/event-logs/) are logged when:
+[Events]({{site.baseurl}}/event-logs/) are logged when:
 - A Master Password is reset.
 - A user enrolls in Admin Password Reset.
 - A user withdraws from Admin Password Reset.
 
 ## Activate Admin Password Reset
 
-To activate Master Password Reset for your Enterprise Organization, navigate to the [Business Portal]({{site.baseurl}}/article/about-business-portal/) and enable the [Master Password Reset Policy]({{site.baseurl}}/article/policies/#master-password-reset):
+To activate Master Password Reset for your Enterprise Organization, navigate to the [Business Portal]({{site.baseurl}}/about-business-portal/) and enable the [Master Password Reset Policy]({{site.baseurl}}/policies/#master-password-reset):
 
 {% image organizations/pwreset-activate.png Activate Password Reset %}
 
@@ -67,7 +67,7 @@ Users will need to [self-enroll](#self-enroll-in-password-reset) or [be auto-enr
 
 ### Automatic Enrollment
 
-Enabling the Automatic Enrollment policy option will automatically enroll new users in Admin Password Reset when their [invitation to the Organization is accepted]({{site.baseurl}}/article/managing-users/#accept). Users already in the Organization will not be retroactively enrolled in Admin Password Reset, and will be required to [self-enroll](#self-enroll-in-password-reset).
+Enabling the Automatic Enrollment policy option will automatically enroll new users in Admin Password Reset when their [invitation to the Organization is accepted]({{site.baseurl}}/managing-users/#accept). Users already in the Organization will not be retroactively enrolled in Admin Password Reset, and will be required to [self-enroll](#self-enroll-in-password-reset).
 
 {% callout success %}
 If you're automatically enrolling Organization members in Admin Password Reset, we **highly recommend notifying them of this feature**. Many Bitwarden Organization users store personal credentials in their Personal Vault, and should be made aware that Admin Password Reset could allow an administrator to access their Personal Vault.
@@ -87,7 +87,7 @@ Once enrolled, you can **Withdraw** from Password Reset from the same dropdown u
 
 {% image organizations/pwreset-withdraw.png Withdraw from Password Reset %}
 
-Manually changing your Master Password or [rotating your encryption key]({{site.baseurl}}/article/account-encryption-key/) **will not** withdraw you from Admin Password Reset.
+Manually changing your Master Password or [rotating your encryption key]({{site.baseurl}}/account-encryption-key/) **will not** withdraw you from Admin Password Reset.
 
 ## Reset a Master Password
 
@@ -103,16 +103,16 @@ To reset a Master Password for a member of your Enterprise Organization:
 
    {% image organizations/pwreset-reset.png Reset Password %}
 
-4. On the Reset Password window, create a **New Password** for the user. If your Organization has enabled the [Master Password Policy]({{site.baseurl}}/article/policies/#master-password), you will need to create a password that meets the implemented requirements (e.g. min 8 characters, contains numbers):
+4. On the Reset Password window, create a **New Password** for the user. If your Organization has enabled the [Master Password Policy]({{site.baseurl}}/policies/#master-password), you will need to create a password that meets the implemented requirements (e.g. min 8 characters, contains numbers):
 
    {% image organizations/pwreset-newpw.png Create a New Password %}
 
-   Copy the new Master Password and contact the user to coordinate secure communication of it, for example using [Bitwarden Send]({{site.baseurl}}/article/create-send/).
+   Copy the new Master Password and contact the user to coordinate secure communication of it, for example using [Bitwarden Send]({{site.baseurl}}/create-send/).
 
 5. Select **Save** to execute the Password Reset. Doing so will log the user out of their current sessions.  Active sessions on some client applications, like Mobile Apps, may remain active for up to one hour.
 
 ### After a Password Reset
 
-When your Master Password is reset, you will receive an email from Bitwarden to inform you of this. On receiving this email, contact your Organization administrator to obtain your new Master Password through a secure channel like [Bitwarden Send]({{site.baseurl}}/article/create-send/).
+When your Master Password is reset, you will receive an email from Bitwarden to inform you of this. On receiving this email, contact your Organization administrator to obtain your new Master Password through a secure channel like [Bitwarden Send]({{site.baseurl}}/create-send/).
 
 Once you have regained access to your Vault using the new Master Password, you should immediately change your Master Password to something **strong** and **memorable**. Changing your Master Password after a reset will help to protect your privacy.

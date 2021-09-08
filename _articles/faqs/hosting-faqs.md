@@ -45,7 +45,7 @@ Retrieve an installation id and key from [https://bitwarden.com/host](https://bi
 
 Check that your server name or FQDN has been proliferated to all `globalSettings_baseServiceUri__*` variables in `./bwdata/env/global.override.env`, and that your certificate contains a Subject Alternative Name (SAN) with the new server FQDN
 
-If you are using Let's Encrypt certificate, you'll need to [Manually Update Your Certificate](https://bitwarden.com/help/article/certificates/#manually-update-a-lets-encrypt-certificate){:target="\_blank"}.
+If you are using Let's Encrypt certificate, you'll need to [Manually Update Your Certificate](https://bitwarden.com/help/certificates/#manually-update-a-lets-encrypt-certificate){:target="\_blank"}.
 
 ## SMTP Configuration
 
@@ -82,7 +82,7 @@ Check that the custom port values have been proliferated to `./bwdata/env/global
 
 ### Q: How do I add Bitwarden to system boot?
 
-**A:** Before adding Bitwarden to system boot, complete [Docker Post-Installation](https://bitwarden.com/help/article/install-on-premise/#docker-post-installation-linux-only) to setup a dedicated `bitwarden` service account.
+**A:** Before adding Bitwarden to system boot, complete [Docker Post-Installation](https://bitwarden.com/help/install-on-premise/#docker-post-installation-linux-only) to setup a dedicated `bitwarden` service account.
 
 Then, complete the following steps:
 

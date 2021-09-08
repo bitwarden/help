@@ -24,15 +24,15 @@ For help selecting the right Bitwarden plan for you, refer to [What Plan is Righ
 
 ### Q: How do I view my billing information?
 
-**A:** Viewing Billing information is different depending on whether you're viewing it for an Individual or Organization subscription. Use [Update Your Billing Information](https://bitwarden.com/help/article/update-billing-info/) to guide you through both processes.
+**A:** Viewing Billing information is different depending on whether you're viewing it for an Individual or Organization subscription. Use [Update Your Billing Information](https://bitwarden.com/help/update-billing-info/) to guide you through both processes.
 
 ### Q: How do I delete my account?
 
-**A:** We're sad to see you go! Use [Delete Your Account](https://help.bitwarden.com/article/delete-your-account/) to guide you through this process.
+**A:** We're sad to see you go! Use [Delete Your Account](https://help.bitwarden.com/delete-your-account/) to guide you through this process.
 
 ### Q: How do I upgrade from an Individual subscription to an Organization?
 
-**A:** Use [Upgrade from Individual to Organization](https://bitwarden.com/help/article/upgrade-from-individual-to-org/) to guide you through this process.
+**A:** Use [Upgrade from Individual to Organization](https://bitwarden.com/help/upgrade-from-individual-to-org/) to guide you through this process.
 
 ### Q: How do I add or remove a user seat from my Organization?
 
@@ -66,7 +66,7 @@ Legacy Families plans do not automatically provide premium features, so users wo
 
 ### Q: Can I pay with Bitcoin?
 
-**A:** Yes! Refer to [Update Your Billing Information](https://bitwarden.com/help/article/update-billing-info/) for more information.
+**A:** Yes! Refer to [Update Your Billing Information](https://bitwarden.com/help/update-billing-info/) for more information.
 
 [Contact Us](https://bitwarden.com/contact/) once you have added the credit for the subscription amount. We will generate and send you an invoice and activate the new account. You will also receive an invoice from our payment processor (BitPay) at the time the Bitcoin is sent.
 

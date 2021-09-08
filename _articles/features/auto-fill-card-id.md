@@ -8,7 +8,7 @@ popular: false
 tags: [browser, autofill, auto-fill, identity, card, form fill]
 ---
 
-Bitwarden can do more than just [auto-fill your usernames and passwords]({% link _articles/features/auto-fill-browser.md %})! **Bitwarden Browser Extensions** can auto-fill [Cards]({{site.baseurl}}/article/managing-items/#cards) and [Identities]({{site.baseurl}}/article/managing-items/#identities) to simplify online purchases, account creation, and more using the [unique Tab view]({% link _articles/features/auto-fill-browser.md %}).
+Bitwarden can do more than just [auto-fill your usernames and passwords]({% link _articles/features/auto-fill-browser.md %})! **Bitwarden Browser Extensions** can auto-fill [Cards]({{site.baseurl}}/managing-items/#cards) and [Identities]({{site.baseurl}}/managing-items/#identities) to simplify online purchases, account creation, and more using the [unique Tab view]({% link _articles/features/auto-fill-browser.md %}).
 
 {% callout info %}Currently, Autofill for Cards & Identities is **only available for Browser Extensions**. Mobile platforms including Android and iOS do not currently support this type of auto-fill function.{% endcallout %}
 

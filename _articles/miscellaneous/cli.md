@@ -144,7 +144,7 @@ Logging in with email and password authenticates you with Bitwarden servers, syn
 bw login
 ```
 
-This command will initiate a prompt for your **Email address**, **Master password**, and (if [enabled]({{site.baseurl}}/article/setup-two-step-login/)) a **Two-step login code**.
+This command will initiate a prompt for your **Email address**, **Master password**, and (if [enabled]({{site.baseurl}}/setup-two-step-login/)) a **Two-step login code**.
 
 {% callout info %}
 You *can* string this together into a single command as in the following example, however this is not recommended for security reasons.
@@ -159,10 +159,10 @@ See [Appendices &rarr; Enums](#enums) for `<method>` values.
 ### Using an API key
 
 {% callout success %}
-**Getting prompted for additional authentication** or getting a `Your authentication request appears to be coming from a bot.` error? Use your API Key `client_secret` to answer the authentication challenge. [Learn more]({{site.baseurl}}/article/cli-auth-challenges/).
+**Getting prompted for additional authentication** or getting a `Your authentication request appears to be coming from a bot.` error? Use your API Key `client_secret` to answer the authentication challenge. [Learn more]({{site.baseurl}}/cli-auth-challenges/).
 {% endcallout %}
 
-Logging in with a [Personal API Key]({{site.baseurl}}/article/personal-api-key/) authenticates you with Bitwarden servers, syncs your Vault, but **does not unlock your Vault**. After logging in with an API key, you will be required to unlock your Vault using your Master Password. To log in with an API key use:
+Logging in with a [Personal API Key]({{site.baseurl}}/personal-api-key/) authenticates you with Bitwarden servers, syncs your Vault, but **does not unlock your Vault**. After logging in with an API key, you will be required to unlock your Vault using your Master Password. To log in with an API key use:
 
 ```
 bw login --apikey
@@ -177,7 +177,7 @@ If you don't want to be prompted for the `client_id` and `client_secret` every t
 
 ### Using SSO
 
-Logging in with [SSO]({{site.baseurl}}/article/about-sso/) authenticates you with Bitwarden servers, syncs your Vault, but **does not unlock your Vault**. After logging in with SSO, you will be required to unlock your Vault using your Master Password. To log in with SSO use:
+Logging in with [SSO]({{site.baseurl}}/about-sso/) authenticates you with Bitwarden servers, syncs your Vault, but **does not unlock your Vault**. After logging in with SSO, you will be required to unlock your Vault using your Master Password. To log in with SSO use:
 
 ```
 bw login --sso
@@ -187,7 +187,7 @@ This command will initiate the SSO authentication flow in your web browser.
 
 ### Two-step login
 
-The CLI currently supports [two-step login]({{site.baseurl}}/article/setup-two-step-login/) via [authenticator]({{site.baseurl}}/article/setup-two-step-login-authenticator/), [email]({{site.baseurl}}/article/setup-two-step-login-email/), or [Yubikey]({{site.baseurl}}/article/setup-two-step-login-yubikey/). If you have one of these methods enabled, you will be required to enter your two-step login code to log in. If you have multiple methods enabled, you will be prompted first to select which method to use.
+The CLI currently supports [two-step login]({{site.baseurl}}/setup-two-step-login/) via [authenticator]({{site.baseurl}}/setup-two-step-login-authenticator/), [email]({{site.baseurl}}/setup-two-step-login-email/), or [Yubikey]({{site.baseurl}}/setup-two-step-login-yubikey/). If you have one of these methods enabled, you will be required to enter your two-step login code to log in. If you have multiple methods enabled, you will be prompted first to select which method to use.
 
 {% callout info %}
 You *can* pass your two-step login method and code as options, as in the following example.
@@ -418,7 +418,7 @@ The `delete` command deletes an object from your Vault. `delete` takes **only an
 bw delete (item|attachment|folder|org-collection) <id> [options]
 ```
 
-By default, `delete` will "soft delete" an item (i.e. send it to the [Trash]({{site.baseurl}}/article/managing-items/#items-in-the-trash)). You can permanently delete an item using the `-p, --permanent` option.
+By default, `delete` will "soft delete" an item (i.e. send it to the [Trash]({{site.baseurl}}/managing-items/#items-in-the-trash)). You can permanently delete an item using the `-p, --permanent` option.
 
 ```
 bw delete item 7063feab-4b10-472e-b64c-785e2b870b92 --permanent
@@ -446,7 +446,7 @@ bw restore item 7063feab-4b10-472e-b64c-785e2b870b92
 
 ### send
 
-The `send` command creates a [Bitwarden Send]({{site.baseurl}}/article/about-send) object for ephemeral sharing. This section will detail simple `send` operations, however Send is a highly flexible tool and we recommend referring to the dedicated article on [Send from CLI]({{site.baseurl}}/article/send-cli).
+The `send` command creates a [Bitwarden Send]({{site.baseurl}}/about-send) object for ephemeral sharing. This section will detail simple `send` operations, however Send is a highly flexible tool and we recommend referring to the dedicated article on [Send from CLI]({{site.baseurl}}/send-cli).
 
 To create a simple text Send:
 
@@ -462,7 +462,7 @@ bw send -n "A Sensitive File" -d 14 -f /Users/my_account/Documents/sensitive_fil
 
 ### receive
 
-The `receive` command accesses a [Bitwarden Send]({{site.baseurl}}/article/about-send) object. To receive a Send object:
+The `receive` command accesses a [Bitwarden Send]({{site.baseurl}}/about-send) object. To receive a Send object:
 
 ```
 bw receive --password passwordforaccess https://vault.bitwarden.com/#/send/yawoill8rk6VM6zCATXv2A/9WN8wD-hzsDJjfnXLeNc2Q
@@ -472,7 +472,7 @@ bw receive --password passwordforaccess https://vault.bitwarden.com/#/send/yawoi
 
 ### Organization IDs
 
-Accessing an Organization from the CLI frequently requires knowledge of an ID for your Organization, as well as IDs for individual [members]({{site.baseurl}}/article/managing-users/) and [Collections]({{site.baseurl}}/article/about-collections/).
+Accessing an Organization from the CLI frequently requires knowledge of an ID for your Organization, as well as IDs for individual [members]({{site.baseurl}}/managing-users/) and [Collections]({{site.baseurl}}/about-collections/).
 
 Retrieve this information directly from the CLI using `bw list`, for example:
 
@@ -489,10 +489,10 @@ You can `bw list` both `collections` and `org-collections`. `bw list collections
 ### move
 
 {% callout info %}
-**August 2021**: The `share` command has been changed to `move`. [Find out more]({{site.baseurl}}/article/releasenotes/).
+**August 2021**: The `share` command has been changed to `move`. [Find out more]({{site.baseurl}}/releasenotes/).
 {% endcallout %}
 
-The `move` command transfers a Vault item [to an Organization]({{site.baseurl}}/article/sharing/):
+The `move` command transfers a Vault item [to an Organization]({{site.baseurl}}/sharing/):
 
 ```
 bw move <itemid> <organizationid> [encodedJson]
@@ -508,7 +508,7 @@ Upon success, the updated item will be returned.
 
 ### confirm
 
-The `confirm` command confirms [invited members]({{site.baseurl}}/article/managing-users/#confirm-invited-users) to your Organization who have accepted their invitation:
+The `confirm` command confirms [invited members]({{site.baseurl}}/managing-users/#confirm-invited-users) to your Organization who have accepted their invitation:
 
 ```
 bw confirm org-member <id> --organizationid <orgid>
@@ -530,7 +530,7 @@ The `config` command specifies settings for the Bitwarden CLI to use:
 bw config <setting> [value]
 ```
 
-A primary use of `bw config` is to [connect your CLI to a self-hosted]({{site.baseurl}}/article/change-client-environment/#cli) Bitwarden server:
+A primary use of `bw config` is to [connect your CLI to a self-hosted]({{site.baseurl}}/change-client-environment/#cli) Bitwarden server:
 
 ```
 bw config server https://your.bw.domain.com
@@ -590,7 +590,7 @@ bw import lastpasscsv /Users/myaccount/Documents/mydata.csv
 ```
 
 {% callout success %}
-Bitwarden supports lots of formats for import, too many to list here! Use `bw import --formats` to return the list in your CLI, or [see here]({{site.baseurl}}/article/import-faqs/#q-what-file-formats-does-bitwarden-support-for-import).
+Bitwarden supports lots of formats for import, too many to list here! Use `bw import --formats` to return the list in your CLI, or [see here]({{site.baseurl}}/import-faqs/#q-what-file-formats-does-bitwarden-support-for-import).
 {% endcallout %}
 
 ### export
@@ -759,7 +759,7 @@ The following tables enumerate values required in documented scenarios:
 
 #### Two-step Login Methods
 
-Used to specify which [Two-step Login method]({{site.baseurl}}/article/setup-two-step-login/) to use when [logging in](#log-in):
+Used to specify which [Two-step Login method]({{site.baseurl}}/setup-two-step-login/) to use when [logging in](#log-in):
 
 | Name          | Value |
 |---------------|-------|
@@ -773,7 +773,7 @@ FIDO2 and Duo are not supported by the CLI.
 
 #### Item Types
 
-Used with the `create` command to specify a [Vault item type]({{site.baseurl}}/article/managing-items/):
+Used with the `create` command to specify a [Vault item type]({{site.baseurl}}/managing-items/):
 
 | Name        | Value |
 |-------------|-------|
@@ -784,7 +784,7 @@ Used with the `create` command to specify a [Vault item type]({{site.baseurl}}/a
 
 #### Login URI Match Types
 
-Used with the `create` and `edit` commands to specify [URI match detection]({{site.baseurl}}/article/uri-match-detection/) behavior:
+Used with the `create` and `edit` commands to specify [URI match detection]({{site.baseurl}}/uri-match-detection/) behavior:
 
 | Name               | Value |
 |--------------------|-------|
@@ -797,7 +797,7 @@ Used with the `create` and `edit` commands to specify [URI match detection]({{si
 
 #### Field Types
 
-Used with the `create` and `edit` commands to configure [custom fields]({{site.baseurl}}/article/custom-fields/):
+Used with the `create` and `edit` commands to configure [custom fields]({{site.baseurl}}/custom-fields/):
 
 | Name    | Value |
 |---------|-------|
@@ -807,7 +807,7 @@ Used with the `create` and `edit` commands to configure [custom fields]({{site.b
 
 #### Organization User Types
 
-Indicates a [user's type]({{site.baseurl}}/article/user-types-access-control/):
+Indicates a [user's type]({{site.baseurl}}/user-types-access-control/):
 
 | Name    | Value |
 |---------|-------|
@@ -818,7 +818,7 @@ Indicates a [user's type]({{site.baseurl}}/article/user-types-access-control/):
 
 #### Organization User Statuses
 
-Indicates a user's [status within the Organization]({{site.baseurl}}/article/managing-users/):
+Indicates a user's [status within the Organization]({{site.baseurl}}/managing-users/):
 
 | Name      | Value |
 |-----------|-------|

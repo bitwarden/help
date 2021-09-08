@@ -8,9 +8,9 @@ hidden: true
 tags: [sso, saml, duo]
 order:
 ---
-This article contains **Duo-specific** help for configuring Login with SSO via SAML 2.0 For help configuring Login with SSO for another IdP, refer to [SAML 2.0 Configuration]({{site.baseurl}}/article/configure-sso-saml/).
+This article contains **Duo-specific** help for configuring Login with SSO via SAML 2.0 For help configuring Login with SSO for another IdP, refer to [SAML 2.0 Configuration]({{site.baseurl}}/configure-sso-saml/).
 
-Configuration involves working simultaneously between the Bitwarden [Business Portal]({{site.baseurl}}/article/about-business-portal/) and the Duo Admin Portal. As you proceed, we recommend having both readily available and completing steps in the order they're documented.
+Configuration involves working simultaneously between the Bitwarden [Business Portal]({{site.baseurl}}/about-business-portal/) and the Duo Admin Portal. As you proceed, we recommend having both readily available and completing steps in the order they're documented.
 
 {% callout success %}
 **Already an SSO expert?** Skip the instructions in this article and download screenshots of sample configurations to compare against your own.
@@ -24,7 +24,7 @@ Configuration involves working simultaneously between the Bitwarden [Business Po
 This article assumes that you have already set up Duo with an Identity Provider. If you haven't, see [Duo's documentation](https://duo.com/docs/sso#saml){:target="\_blank"} for details.
 {% endcallout %}
 
-If you're coming straight from [SAML 2.0 Configuration]({{site.baseurl}}/article/sso-configure-saml/), you should already have an [Organization ID created](https://bitwarden.com/help/article/configure-sso-saml/#step-1-enabling-login-with-sso) and the SSO Configuration screen open. If you don't, open your [Business Portal]({{site.baseurl}}/article/about-business-portal/) and navigate to the SSO Configuration screen:
+If you're coming straight from [SAML 2.0 Configuration]({{site.baseurl}}/sso-configure-saml/), you should already have an [Organization ID created](https://bitwarden.com/help/configure-sso-saml/#step-1-enabling-login-with-sso) and the SSO Configuration screen open. If you don't, open your [Business Portal]({{site.baseurl}}/about-business-portal/) and navigate to the SSO Configuration screen:
 
 {% image sso/sso-saml1.png SAML 2.0 Configuration %}
 
@@ -62,9 +62,9 @@ Select the **Download certificate** button to download your X.509 Certificate, a
 
 |Field|Description|
 |-----|-----------|
-|Entity ID|Set this field to the pre-generated **SP Entity ID** retrieved from the Bitwarden SSO configuration screen.<br><br>For Cloud-hosted customers, this is always `https://sso.bitwarden.com/saml2`. For self-hosted instances, this is determined by your [configured server URL]({{site.baseurl}}/article/install-on-premise/#configure-your-domain), for example `https://your.domain.com/sso.saml2`.|
-|Assertion Consumer Service (ACS) URL|Set this field to the pre-generated **Assertion Consumer Service (ACS) URL** retrieved from the Bitwarden SSO Configuration screen.<br><br>For Cloud-hosted customers, this is always `https://sso.bitwarden.com/saml2/your-org-id/Acs`. For self-hosted instances, this is determined by your [configured server URL]({{site.baseurl}}/article/install-on-premise/#configure-your-domain), for example `https://your.domain.com/sso/saml2/your-org-id/Acs`.|
-|Service Provider Login URL|Set this field to the login URL from which users will access Bitwarden.<br><br>For Cloud-hosted customers, this is always `https://vault.bitwarden.com/#/sso`. For self-hosted instances, this is determined by your [configured server URL]({{site.baseurl}}/article/install-on-premise/#configure-your-domain), for example `https://your.domain.com/#/sso`.|
+|Entity ID|Set this field to the pre-generated **SP Entity ID** retrieved from the Bitwarden SSO configuration screen.<br><br>For Cloud-hosted customers, this is always `https://sso.bitwarden.com/saml2`. For self-hosted instances, this is determined by your [configured server URL]({{site.baseurl}}/install-on-premise/#configure-your-domain), for example `https://your.domain.com/sso.saml2`.|
+|Assertion Consumer Service (ACS) URL|Set this field to the pre-generated **Assertion Consumer Service (ACS) URL** retrieved from the Bitwarden SSO Configuration screen.<br><br>For Cloud-hosted customers, this is always `https://sso.bitwarden.com/saml2/your-org-id/Acs`. For self-hosted instances, this is determined by your [configured server URL]({{site.baseurl}}/install-on-premise/#configure-your-domain), for example `https://your.domain.com/sso/saml2/your-org-id/Acs`.|
+|Service Provider Login URL|Set this field to the login URL from which users will access Bitwarden.<br><br>For Cloud-hosted customers, this is always `https://vault.bitwarden.com/#/sso`. For self-hosted instances, this is determined by your [configured server URL]({{site.baseurl}}/install-on-premise/#configure-your-domain), for example `https://your.domain.com/#/sso`.|
 
 ### SAML Response
 

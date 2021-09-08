@@ -7,7 +7,7 @@ popular: false
 tags: [master password, account]
 order: "01"
 redirect_from:
-  - /article/change-your-master-password/
+  - /change-your-master-password/
 ---
 
 ## About your Master Password

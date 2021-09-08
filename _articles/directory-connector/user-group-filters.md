@@ -29,7 +29,7 @@ Regardless of which directory you're syncing from, enable the **More than 2000 u
 
 {% image directory-connector/largesync.png Signal a Large Sync%}
 
-You may also enable this option directly in the Directory Connector [configuration file]({{site.baseurl}}/article/directory-sync-shared/#config-file) (`data.json`) by setting `"largeImport": true`:
+You may also enable this option directly in the Directory Connector [configuration file]({{site.baseurl}}/directory-sync-shared/#config-file) (`data.json`) by setting `"largeImport": true`:
 
 ```
 "syncConfig": {
