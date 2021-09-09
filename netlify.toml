@@ -15,3 +15,8 @@
   # Default build command.
 
   command = "npm run build:prod:sub"
+
+
+  [[redirects]]
+  from = "/help/article/*"
+  to = "/help/:splat"
