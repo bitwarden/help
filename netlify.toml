@@ -18,8 +18,8 @@
 
 
   [[redirects]]
-  from = "/help/article/*"
-  to = "/help/:splat"
+  from = "https://bitwarden-help.netlify.app/help/article/*"
+  to = "https://bitwarden-help.netlify.app/help/:splat"
   status = 200
   force = true
 
