@@ -8,7 +8,7 @@ hidden: false
 tags: []
 order: "16"
 redirect_from:
-  - /change-your-email/
+  - /article/change-your-email/
 ---
 
 This article contains Frequently Asked Questions (FAQs) about general Vault Management and Bitwarden functionality.
@@ -17,11 +17,11 @@ This article contains Frequently Asked Questions (FAQs) about general Vault Mana
 
 ### Q: What do I do if I forgot my Master Password?
 
-**A:** As a zero knowledge solution, Bitwarden and its systems have no knowledge of, way to retrieve, or way to reset your Master Password. If you've already lost your Master Password, there is unfortunately no way for the team to recover the account. For help understanding what to do next, or what to do proactively to protect yourself from such a scenario, refer to the article on [Your Master Password]({{site.baseurl}}/master-password/).
+**A:** As a zero knowledge solution, Bitwarden and its systems have no knowledge of, way to retrieve, or way to reset your Master Password. If you've already lost your Master Password, there is unfortunately no way for the team to recover the account. For help understanding what to do next, or what to do proactively to protect yourself from such a scenario, refer to the article on [Your Master Password]({{site.baseurl}}/article/master-password/).
 
 ### Q: Is there a way for someone to access my Vault items in case of emergency?
 
-**A:** There is! Users with a Premium subscription can proactively setup trusted emergency contacts who can access your Vault in case of emergency. For more information, see [Emergency Access]({{site.baseurl}}/emergency-access/).
+**A:** There is! Users with a Premium subscription can proactively setup trusted emergency contacts who can access your Vault in case of emergency. For more information, see [Emergency Access]({{site.baseurl}}/article/emergency-access/).
 
 ### Q: How do I change my Master Password hint?
 
@@ -48,11 +48,11 @@ When you change your email address, you should immediately logout of all Bitward
 
 ### Q: Why is a Vault item missing from my Mobile App, Desktop App, or Browser Extension?
 
-**A:** Typically, this is because client application's Vault data has fallen behind a Web Vault or other client application's. Performing a Vault Sync should bring everything up to date. For more information, see [Sync Your Vault]({{site.baseurl}}/vault-sync/).
+**A:** Typically, this is because client application's Vault data has fallen behind a Web Vault or other client application's. Performing a Vault Sync should bring everything up to date. For more information, see [Sync Your Vault]({{site.baseurl}}/article/vault-sync/).
 
 ### Q: What's the safest way to make a backup of my Vault data?
 
-**A:** You can use [Encrypted Exports]({{site.baseurl}}/encrypted-export/) to make secure long-term backups of your Vault data that are encrypted with your [Account Encryption Key]({{site.baseurl}}/account-encryption-key/).
+**A:** You can use [Encrypted Exports]({{site.baseurl}}/article/encrypted-export/) to make secure long-term backups of your Vault data that are encrypted with your [Account Encryption Key]({{site.baseurl}}/article/account-encryption-key/).
 
 Alternatively, you can use something like PeaZip to create an encrypted archive of the file after exporting a plaintext file from Bitwarden.
 
@@ -105,4 +105,4 @@ Clicking on the number will expose the historical password values in plain text 
 
 ### Q: Can I print my Vault data?
 
-**A:** Not directly from Bitwarden, however you can [export your Vault data]({{site.baseurl}}/export-your-data/) as a `.csv` or `.json` file and print it out from your text editor.
+**A:** Not directly from Bitwarden, however you can [export your Vault data]({{site.baseurl}}/article/export-your-data/) as a `.csv` or `.json` file and print it out from your text editor.

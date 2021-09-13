@@ -193,7 +193,7 @@ To disable a Send from the CLI, you'll need to use the `edit` command to change 
 bw send get <id> | jq '.disabled=false' | bw encode | bw send edit
 ```
 
-We recommend reading the [Send from CLI]({{site.baseurl}}/send-cli/) article for complete information on using Send from the CLI.
+We recommend reading the [Send from CLI]({{site.baseurl}}/article/send-cli/) article for complete information on using Send from the CLI.
 
 #### Delete from the CLI
 
@@ -203,7 +203,7 @@ To delete a Send from the CLI, use the `delete` command with the Send's exact un
 bw send delete <id>
 ```
 
-We recommend reading the [Send from CLI]({{site.baseurl}}/send-cli/) article for complete information on using Send from the CLI.
+We recommend reading the [Send from CLI]({{site.baseurl}}/article/send-cli/) article for complete information on using Send from the CLI.
 
 {% endcapture %}
 {{ cli_info | markdownify}}

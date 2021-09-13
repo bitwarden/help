@@ -33,7 +33,7 @@ The following is a summary of the Installation Procedure in this article. Links 
 2. [**Install Docker and Docker Compose**](#install-docker-and-docker-compose) on your machine, and complete the optional [**Docker Post-Installation**](#docker-post-installation-linux-only).
 3. Retrieve an installation id and key from [**https://bitwarden.com/host**](https://bitwarden.com/host){:target="_blank"} for use in installation.
 
-   For more information, see [What are my installation id and installation key used for?]({{site.baseurl}}/hosting-faqs/#general).
+   For more information, see [What are my installation id and installation key used for?]({{site.baseurl}}/article/hosting-faqs/#general).
 4. [**Install Bitwarden**](#install-bitwarden) on your machine.
 5. [**Configure your Environment**](#configure-your-environment) by adjusting settings in `./bwdata/env/global.override.env`.
    {% callout success %}At a minimum, configure the `globalSettings__mail__smtp...` variables to setup an email server for inviting and verifying users.{% endcallout %}
@@ -140,24 +140,24 @@ Bitwarden provides a shell script for easy installation on Linux and macOS (Bash
      Typically, this value should be the configured DNS record.
    - **Do you want to use Let's Encrypt to generate a free SSL certificate? (y/n):**
 
-     Specify `y` to generate a trusted SSL certificate using Let's Encrypt. You will be prompted to enter an email address for expiration reminders from Let's Encrypt. For more information, see [Certificate Options]({{site.baseurl}}/certificates/).
+     Specify `y` to generate a trusted SSL certificate using Let's Encrypt. You will be prompted to enter an email address for expiration reminders from Let's Encrypt. For more information, see [Certificate Options]({{site.baseurl}}/article/certificates/).
 
      Alternatively, specify `n` and use the **Do you have a SSL certificate to use?** option.
 
    - **Enter your installation id:**
 
-     Retrieve an installation id using a valid email at [https://bitwarden.com/host](https://bitwarden.com/host). For more information, see [What are my installation id and installation key used for?]({{site.baseurl}}/hosting-faqs/#general).
+     Retrieve an installation id using a valid email at [https://bitwarden.com/host](https://bitwarden.com/host). For more information, see [What are my installation id and installation key used for?]({{site.baseurl}}/article/hosting-faqs/#general).
    - **Enter your installation key:**
 
-     Retrieve an installation key using a valid email at [https://bitwarden.com/host](https://bitwarden.com/host). For more information, see [What are my installation id and installation key used for?]({{site.baseurl}}/hosting-faqs/#general).
+     Retrieve an installation key using a valid email at [https://bitwarden.com/host](https://bitwarden.com/host). For more information, see [What are my installation id and installation key used for?]({{site.baseurl}}/article/hosting-faqs/#general).
    - **Do you have a SSL certificate to use? (y/n):**
 
-     If you already have your own SSL certificate, specify `y` and place the necessary files in the `.bwdata/ssl/your.domain` directory. You will be asked whether it is a trusted SSL certificate (y/n). For more information, see [Certificate Options]({{site.baseurl}}/certificates/).
+     If you already have your own SSL certificate, specify `y` and place the necessary files in the `.bwdata/ssl/your.domain` directory. You will be asked whether it is a trusted SSL certificate (y/n). For more information, see [Certificate Options]({{site.baseurl}}/article/certificates/).
 
      Alternatively, specify `n` and use the **self-signed SSL certificate?** option, which is only recommended for testing purposes.
    - **Do you want to generate a self-signed SSL certificate? (y/n):**
 
-     Specify `y` to have Bitwarden generate a self-signed certificate for you. This option is only recommended for testing. For more information, see [Certificate Options]({{site.baseurl}}/certificates/).
+     Specify `y` to have Bitwarden generate a self-signed certificate for you. This option is only recommended for testing. For more information, see [Certificate Options]({{site.baseurl}}/article/certificates/).
 
      If you specify `n`, your instance will not use an SSL certificate and you will be required to front your installation with a HTTPS proxy, or else Bitwarden applications will not function properly.
 
@@ -210,7 +210,7 @@ After editing `global.override.env`, run one of the following commands to apply 
 
     .\bitwarden.ps1 -restart
 
-For more information about configuring Environment Variables, see [Configure Environment Variables]({{site.baseurl}}/environment-variables/).
+For more information about configuring Environment Variables, see [Configure Environment Variables]({{site.baseurl}}/article/environment-variables/).
 
 ### Start Bitwarden
 

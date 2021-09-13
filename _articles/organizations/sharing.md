@@ -8,18 +8,18 @@ hidden: false
 tags: [sharing, how to]
 order: "04"
 redirect_from:
-  - /share-to-a-collection/
+  - /article/share-to-a-collection/
 ---
 
 {% callout info %}
-In order to share items you need to be a member of an Organization. Learn more about [Organizations]({{site.baseurl}}/about-organizations/) or learn how to [start your own two-person Organization]({{site.baseurl}}/getting-started-organizations/).
+In order to share items you need to be a member of an Organization. Learn more about [Organizations]({{site.baseurl}}/article/about-organizations/) or learn how to [start your own two-person Organization]({{site.baseurl}}/article/getting-started-organizations/).
 {% endcallout %}
 
 Sharing items with Bitwarden means moving them into an Organization and Collection, a structure used to gather together Logins, Notes, Cards, and Identities for access by multiple users. There are a few different ways you can create Organization items for sharing:
 
 ## Move an Item to an Organization
 
-Organization members can move items to any assigned Collection(s) unless they're given [**Read Only** access]({{site.baseurl}}/user-types-access-control/) to that Collection. Items can only be moved to Organizations **from the Web Vault**:
+Organization members can move items to any assigned Collection(s) unless they're given [**Read Only** access]({{site.baseurl}}/article/user-types-access-control/) to that Collection. Items can only be moved to Organizations **from the Web Vault**:
 
 1. Hover over the item you want to share and select the {% icon fa-cog %} gear dropdown:
 
@@ -39,7 +39,7 @@ Moving an item to an Organization **will transfer ownership to the Organization*
 
 ## Create an Organization Item
 
-Organization members can create new items directly for any assigned Collection(s) unless they're given [**Read Only** access]({{site.baseurl}}/user-types-access-control/) to that Collection. Shared items can only be created **from the Web Vault**, either in your My Vault view or in the Organization view:
+Organization members can create new items directly for any assigned Collection(s) unless they're given [**Read Only** access]({{site.baseurl}}/article/user-types-access-control/) to that Collection. Shared items can only be created **from the Web Vault**, either in your My Vault view or in the Organization view:
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">

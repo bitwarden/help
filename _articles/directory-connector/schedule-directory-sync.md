@@ -18,7 +18,7 @@ In Unix-like environments, including Linux and macOS, use cron to schedule Direc
 
 When running a cron job, we recommend doing so as a dedicated Directory Connector user. Create a `bwdc` user if you haven't already, and add that user to the `etc/cron.allow` list. This will allow a non-Root user to set up and run cron jobs.
 
-In order to continue, you will also need your Organization's [API Key]({{site.baseurl}}/public-api/#authentication) `client_id` and `client_secret`, which can be obtained by an Organization **Owner** from the Web Vault by navigating to Organization **Settings** &rarr; **My Organization**.
+In order to continue, you will also need your Organization's [API Key]({{site.baseurl}}/article/public-api/#authentication) `client_id` and `client_secret`, which can be obtained by an Organization **Owner** from the Web Vault by navigating to Organization **Settings** &rarr; **My Organization**.
 
 ### Setup a Sync Script
 

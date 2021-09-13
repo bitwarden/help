@@ -44,7 +44,7 @@ collections:
       - miscellaneous.md
   articles:
     output: true
-    permalink: /:name/
+    permalink: /article/:name/
 
 plugins:
   - jekyll-redirect-from

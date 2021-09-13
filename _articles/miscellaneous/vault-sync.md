@@ -81,7 +81,7 @@ Use the `sync` command to manually sync your Vault:
 bw sync
 ```
 
-For more information, refer to our [CLI documentation]({{site.baseurl}}/cli/).
+For more information, refer to our [CLI documentation]({{site.baseurl}}/article/cli/).
 {% endcapture %}
 {{ cli_sync | markdownify }}
   </div>

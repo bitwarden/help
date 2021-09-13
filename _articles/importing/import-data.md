@@ -8,15 +8,15 @@ tags: [import]
 order: "01"
 ---
 
-Bitwarden provides a data import tool for easy migration from any password management solution to your personal Vault or Organization Vault. You can also use the data import tool to import from one Bitwarden Vault to another, or to import a Bitwarden [Encrypted Export]({{site.baseurl}}/encrypted-export/).
+Bitwarden provides a data import tool for easy migration from any password management solution to your personal Vault or Organization Vault. You can also use the data import tool to import from one Bitwarden Vault to another, or to import a Bitwarden [Encrypted Export]({{site.baseurl}}/article/encrypted-export/).
 
-For a full list of supported import formats, see [What file formats does Bitwarden support for import?]({{site.baseurl}}/import-faqs/#q-what-file-formats-does-bitwarden-support-for-import), or use one of these articles for importing from the most popular solutions:
+For a full list of supported import formats, see [What file formats does Bitwarden support for import?]({{site.baseurl}}/article/import-faqs/#q-what-file-formats-does-bitwarden-support-for-import), or use one of these articles for importing from the most popular solutions:
 
-- [Import from LastPass]({{site.baseurl}}/import-from-lastpass/)[Import from LastPass]({{site.baseurl}}/import-from-lastpass/)[Import from LastPass]({{site.baseurl}}/import-from-lastpass/)[Import from LastPass]({{site.baseurl}}/import-from-lastpass/)[Import from LastPass]({{site.baseurl}}/import-from-lastpass/)
-- [Import from 1Password]({{site.baseurl}}/import-from-1password/)
-- [Import from Firefox]({{site.baseurl}}/import-from-firefox/)
-- [Import from Google Chrome]({{site.baseurl}}/import-from-chrome/)
-- [Import from Password Safe]({{site.baseurl}}/import-from-passwordsafe/)
+- [Import from LastPass]({{site.baseurl}}/article/import-from-lastpass/)[Import from LastPass]({{site.baseurl}}/article/import-from-lastpass/)[Import from LastPass]({{site.baseurl}}/article/import-from-lastpass/)[Import from LastPass]({{site.baseurl}}/article/import-from-lastpass/)[Import from LastPass]({{site.baseurl}}/article/import-from-lastpass/)
+- [Import from 1Password]({{site.baseurl}}/article/import-from-1password/)
+- [Import from Firefox]({{site.baseurl}}/article/import-from-firefox/)
+- [Import from Google Chrome]({{site.baseurl}}/article/import-from-chrome/)
+- [Import from Password Safe]({{site.baseurl}}/article/import-from-passwordsafe/)
 
 {% callout success %}
 **Not already signed up?** Choose from one of [Bitwarden's plans](https://bitwarden.com/pricing/business/){:target="\_blank"} and get started today:
@@ -26,11 +26,11 @@ For a full list of supported import formats, see [What file formats does Bitward
 
 ## Import to your Personal Vault
 
-Importing data to Bitwarden **can only be done from the** [**Web Vault**](https://vault.bitwarden.com){:target="\_blank"} or [CLI]({{site.baseurl}}/cli/#import). Data is [encrypted]({{site.baseurl}}/what-encryption-is-used/) locally before being sent to the server for storage. To import your data:
+Importing data to Bitwarden **can only be done from the** [**Web Vault**](https://vault.bitwarden.com){:target="\_blank"} or [CLI]({{site.baseurl}}/article/cli/#import). Data is [encrypted]({{site.baseurl}}/article/what-encryption-is-used/) locally before being sent to the server for storage. To import your data:
 
  1. In the Web Vault, select **Tools** from the top navigation bar.
  2. Select **Import Data** from the left-hand Tools menu.
- 3. From the format dropdown, choose a **File Format** (see [What file formats does Bitwarden support for import?]({{site.baseurl}}/import-faqs/#q-what-file-formats-does-bitwarden-support-for-import)).
+ 3. From the format dropdown, choose a **File Format** (see [What file formats does Bitwarden support for import?]({{site.baseurl}}/article/import-faqs/#q-what-file-formats-does-bitwarden-support-for-import)).
 
  5. Select the **Choose File** button and add the file to import or **copy/paste** the contents of your file into the input box.
 
@@ -38,7 +38,7 @@ Importing data to Bitwarden **can only be done from the** [**Web Vault**](https:
  6. Select the **Import Data** button to complete your import.
  7. After successful import, delete the import source file from your computer. This will protect you in the event your computer is compromised.
 
-Currently, file attachments are not included in Bitwarden import operations and will need to be uploaded to your Vault manually. For more information, see [File Attachments]({{site.baseurl}}/attachments/#attach-a-file).
+Currently, file attachments are not included in Bitwarden import operations and will need to be uploaded to your Vault manually. For more information, see [File Attachments]({{site.baseurl}}/article/attachments/#attach-a-file).
 
 ## Troubleshooting
 

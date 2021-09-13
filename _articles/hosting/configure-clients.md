@@ -46,7 +46,7 @@ Most Mobile Device Management (MDM) or Enterprise Mobility Management (EMM) solu
 To centrally configure the  Desktop app for deployment, first complete the following steps on a single workstation:
 
 1. Install the Desktop app. If you're using Windows, silent install Bitwarden using `installer.exe /S` (see [NSIS documentation](https://nsis.sourceforge.io/Docs/Chapter4.html#silent){:target="\_blank"}).
-2. Navigate to the Desktop app's locally stored settings. This directory is different depending on your OS (e.g. `%AppData%\Bitwarden` on Windows, `~/Library/Application Support/Bitwarden` on macOS). [Find your directory.]({{site.baseurl}}/data-storage/)
+2. Navigate to the Desktop app's locally stored settings. This directory is different depending on your OS (e.g. `%AppData%\Bitwarden` on Windows, `~/Library/Application Support/Bitwarden` on macOS). [Find your directory.]({{site.baseurl}}/article/data-storage/)
 3. In the directory, open the `data.json` file.
 4. Edit `data.json` to configure the Desktop app as desired. In particular, create the following object to configure the app with your self-hosted Server URL:
 
@@ -76,7 +76,7 @@ To centrally configure the  Desktop app for deployment, first complete the follo
 
 While it is possible to deploy Bitwarden Browser Extensions using an endpoint management solution like [Jamf](https://www.jamf.com/){:target="\_blank"} or Microsoft Endpoint Manager (formerly SCCM), it is currently **not possible** to alter the configuration in this way.
 
-Instruct your end-users to follow [these steps]({{site.baseurl}}/change-client-environment/#browser-extensions-desktop-apps-and-mobile-apps) to connect a Browser Extension to your self-hosted server.
+Instruct your end-users to follow [these steps]({{site.baseurl}}/article/change-client-environment/#browser-extensions-desktop-apps-and-mobile-apps) to connect a Browser Extension to your self-hosted server.
 
 {% endcapture %}
 {{ browser_extension | markdownify}}

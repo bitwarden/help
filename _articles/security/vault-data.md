@@ -7,10 +7,10 @@ popular: false
 tags: []
 order: "01"
 redirect_from:
-  - /what-information-is-encrypted/
+  - /article/what-information-is-encrypted/
 ---
 
-All Vault data is encrypted by Bitwarden before being stored anywhere. To learn how, see [Encryption]({{site.baseurl}}/what-encryption-is-used/).
+All Vault data is encrypted by Bitwarden before being stored anywhere. To learn how, see [Encryption]({{site.baseurl}}/article/what-encryption-is-used/).
 
 Vault data can only be decrypted using a key derived from your master password. Bitwarden is a zero knowledge solution, meaning you are the only party with access to your key and the ability to decrypt your Vault data.
 

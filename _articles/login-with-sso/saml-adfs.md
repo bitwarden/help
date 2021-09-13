@@ -8,19 +8,19 @@ hidden: true
 tags: [sso, saml, adfs]
 order:
 ---
-This article contains **Active Directory Federation Services (AD FS)-specific** help for configuring Login with SSO via SAML 2.0. For help configuring Login with SSO for another IdP, refer to [SAML 2.0 Configuration]({{site.baseurl}}/configure-sso-saml/).
+This article contains **Active Directory Federation Services (AD FS)-specific** help for configuring Login with SSO via SAML 2.0. For help configuring Login with SSO for another IdP, refer to [SAML 2.0 Configuration]({{site.baseurl}}/article/configure-sso-saml/).
 
-Configuration involves working simultaneously within the Bitwarden [Business Portal]({{site.baseurl}}/about-business-portal/) and the AD FS Server Manager. As you proceed, we recommend having both readily available and completing steps in the order they're documented.
+Configuration involves working simultaneously within the Bitwarden [Business Portal]({{site.baseurl}}/article/about-business-portal/) and the AD FS Server Manager. As you proceed, we recommend having both readily available and completing steps in the order they're documented.
 
 {% callout success %}
 **Already an SSO expert?** Skip the instructions in this article and download screenshots of sample configurations to compare against your own.
 
-[{% icon fa-download %} Download Sample]({{site.baseurl}}/files/saml-adfs-sample.zip)
+[{% icon fa-download %} Download Sample]({{site.baseurl}}/article/files/saml-adfs-sample.zip)
 {% endcallout %}
 
 ## Open the Business Portal
 
-If you're coming straight from [SAML 2.0 Configuration]({{site.baseurl}}/configure-sso-saml/), you should already have an [Organization ID created]({{site.baseurl}}/configure-sso-saml/#step-1-enabling-login-with-sso) and the SSO Configuration screen open. If you don't, refer to that article to create an Organization ID and open your Business Portal to the SSO Configuration section:
+If you're coming straight from [SAML 2.0 Configuration]({{site.baseurl}}/article/configure-sso-saml/), you should already have an [Organization ID created]({{site.baseurl}}/article/configure-sso-saml/#step-1-enabling-login-with-sso) and the SSO Configuration screen open. If you don't, refer to that article to create an Organization ID and open your Business Portal to the SSO Configuration section:
 
 {% image sso/sso-saml1.png SAML 2.0 Configuration %}
 
@@ -37,11 +37,11 @@ In the AD FS Server Manager, select **Tools** &rarr; **AD FS Management** &rarr;
 
    - In the **Relying party SAML 2.0 SSO service URL** input, enter the Assertion Consumer Service (ACS) URL retrieved from the Bitwarden SSO Configuration screen.
 
-     For Cloud-hosted customers, this is always `https://sso.bitwarden.com/saml2/your-org-id/Acs`. For self-hosted instances, this is determined by your [configured Server URL]({{site.baseurl}}/install-on-premise/#configure-your-domain), for example `https://your.domain.com/sso/saml2/your-org-id/Acs`.
+     For Cloud-hosted customers, this is always `https://sso.bitwarden.com/saml2/your-org-id/Acs`. For self-hosted instances, this is determined by your [configured Server URL]({{site.baseurl}}/article/install-on-premise/#configure-your-domain), for example `https://your.domain.com/sso/saml2/your-org-id/Acs`.
   6. On the **Choose Access Control Policy** screen, select the
 5. On the **Configure Identifiers** screen, add the SP Entity ID (retrieved from the Bitwarden SSO Configuration screen) as a relying party trust identifier.
 
-   For Cloud-hosted customers, this is always `https://sso.bitwarden.com/saml2`. For self-hosted instances, this is determined by your [configured Server URL]({{site.baseurl}}/install-on-premise/#configure-your-domain), for example `https://your.domain.com/sso/saml2`.
+   For Cloud-hosted customers, this is always `https://sso.bitwarden.com/saml2`. For self-hosted instances, this is determined by your [configured Server URL]({{site.baseurl}}/article/install-on-premise/#configure-your-domain), for example `https://your.domain.com/sso/saml2`.
 6. On the **Choose Access Control Policy** screen, select the desired policy (by default, **Permit Everyone**).
 7. On the **Ready to Add Trust** screen, review your selections.
 
@@ -170,7 +170,7 @@ Once your configuration is complete, test it by navigating to [https://vault.bit
 
 {% image sso/sso-button-lg.png Enterprise Single Sign-On button %}
 
-Enter the [configured Organization Identifier]({{site.baseurl}}/configure-sso-saml/#step-1-set-an-organization-identifier) and select **Log In**. If your implementation is successfully configured, you'll be redirected to the AD FS SSO login screen. After you authenticate with your AD FS credentials, enter your Bitwarden Master Password to decrypt your Vault!
+Enter the [configured Organization Identifier]({{site.baseurl}}/article/configure-sso-saml/#step-1-set-an-organization-identifier) and select **Log In**. If your implementation is successfully configured, you'll be redirected to the AD FS SSO login screen. After you authenticate with your AD FS credentials, enter your Bitwarden Master Password to decrypt your Vault!
 
 {% comment %}
 {% image sso/cheatsheets/saml-adfs/saml-adfs2.png %}

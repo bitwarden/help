@@ -12,7 +12,7 @@ tags: [android, autofill, auto-fill]
 Blacklisting URIs is currently only available for Bitwarden Mobile on **Android 8.0 (Oreo)** or higher.
 {% endcallout %}
 
-Auto-fill relies on the attribution of URIs to Login items. If you're unfamiliar with using URIs, brush up using our [Using URIs]({{site.baseurl}}/uri-match-detection/) article. **Android** users can explicitly blacklist URIs to prevent Bitwarden from offering them for auto-fill. To specify URIs to blacklist:
+Auto-fill relies on the attribution of URIs to Login items. If you're unfamiliar with using URIs, brush up using our [Using URIs]({{site.baseurl}}/article/uri-match-detection/) article. **Android** users can explicitly blacklist URIs to prevent Bitwarden from offering them for auto-fill. To specify URIs to blacklist:
 
 1. In the Bitwarden Android app, open the {% icon fa-cog %} **Settings** tab.
 2. Tap **Options**.
@@ -31,7 +31,7 @@ Auto-fill relies on the attribution of URIs to Login items. If you're unfamiliar
 
 For websites accessed via a web browser, a proper URI will be the `https://..` address of the Login page, for example `https://twitter.com` or `https://twitter.com/login`.
 
-**For Android Apps**, the [URI scheme]({{site.baseurl}}/uri-match-detection/#uri-schemes) always starts with `androidapp://` and is usually a bit different from a typical web browser URI. For example,
+**For Android Apps**, the [URI scheme]({{site.baseurl}}/article/uri-match-detection/#uri-schemes) always starts with `androidapp://` and is usually a bit different from a typical web browser URI. For example,
 
 - The Twitter Android app has the URI `androidapp://com.twitter.android`
 - The Reddit Android app has the URI `androidapp://com.reddit.frontpage`

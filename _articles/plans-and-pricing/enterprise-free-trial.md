@@ -14,7 +14,7 @@ If you're new to Bitwarden, we'd love to help you through the process of setting
 
 <a role="button" class="btn btn-primary" href="https://vault.bitwarden.com/#/register?org=enterprise">Start your Enterprise Free Trial</a>
 
-Or, to learn more about the Bitwarden Enterprise offering, see [Bitwarden Plans and Pricing](https://bitwarden.com/pricing/business) or [About Bitwarden Plans]({{site.baseurl}}/about-bitwarden-plans/#enterprise-organizations).
+Or, to learn more about the Bitwarden Enterprise offering, see [Bitwarden Plans and Pricing](https://bitwarden.com/pricing/business) or [About Bitwarden Plans]({{site.baseurl}}/article/about-bitwarden-plans/#enterprise-organizations).
 
 ## Already a User?
 
@@ -43,8 +43,8 @@ If you already have a Bitwarden account, complete the following steps to start y
 
 Now that you've created your trial Enterprise Organization, we recommend that you:
 
-- [Add Users to your Organization]({{site.baseurl}}/managing-users/)
-- [Create a Collection]({{site.baseurl}}/about-collections/#create-a-collection)
-- Use the [Business Portal]({{site.baseurl}}/about-business-portal) to:
-  - Set up [Login with SSO]({{site.baseurl}}/getting-started-with-sso)
-  - Create [Enterprise Policies]({{site.baseurl}}/policies)
+- [Add Users to your Organization]({{site.baseurl}}/article/managing-users/)
+- [Create a Collection]({{site.baseurl}}/article/about-collections/#create-a-collection)
+- Use the [Business Portal]({{site.baseurl}}/article/about-business-portal) to:
+  - Set up [Login with SSO]({{site.baseurl}}/article/getting-started-with-sso)
+  - Create [Enterprise Policies]({{site.baseurl}}/article/policies)

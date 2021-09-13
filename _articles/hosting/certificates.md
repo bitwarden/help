@@ -8,7 +8,7 @@ tags: [hosting, docker, install, deploy]
 order: "04"
 ---
 
-This article defines the certificate options available to Self-hosted instances of Bitwarden. You will select your certificate option during installation. For installation instructions, see [Install and Deploy On-premise]({{site.baseurl}}/install-on-premise/).
+This article defines the certificate options available to Self-hosted instances of Bitwarden. You will select your certificate option during installation. For installation instructions, see [Install and Deploy On-premise]({{site.baseurl}}/article/install-on-premise/).
 
 ## Generate a Certificate with Let's Encrypt
 

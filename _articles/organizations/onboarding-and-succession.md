@@ -8,7 +8,7 @@ hidden: false
 tags: [onboarding]
 order: "10"
 redirect_from:
-  - /employee-onboarding-and-succession-white-paper/
+  - /article/employee-onboarding-and-succession-white-paper/
 ---
 
 {% callout success %}
@@ -25,15 +25,15 @@ This guide covers the Bitwarden approach to onboarding and succession planning f
 
 The Bitwarden vision is to imagine a world where no one gets hacked. We carry this forward in our mission to help individuals and companies manage their sensitive information easily and securely. Bitwarden believes that:
 
-- Basic password management for individuals can and should be **free**. We provide just that, a [basic free account for individuals]({{site.baseurl}}/about-bitwarden-plans/#free-individual).
-- Individuals and Families should take an active role in their security using [TOTPs, Emergency Access, and other supporting security features]({{site.baseurl}}/about-bitwarden-plans/#premium-individual).
-- Organizations can greatly improve their security profile through [Organizational password management and secure sharing]({{site.baseurl}}/about-bitwarden-plans/#bitwarden-for-your-business).
+- Basic password management for individuals can and should be **free**. We provide just that, a [basic free account for individuals]({{site.baseurl}}/article/about-bitwarden-plans/#free-individual).
+- Individuals and Families should take an active role in their security using [TOTPs, Emergency Access, and other supporting security features]({{site.baseurl}}/article/about-bitwarden-plans/#premium-individual).
+- Organizations can greatly improve their security profile through [Organizational password management and secure sharing]({{site.baseurl}}/article/about-bitwarden-plans/#bitwarden-for-your-business).
 
 {% callout success %}
-For Bitwarden, [different plans]({{site.baseurl}}/about-bitwarden-plans/) and options are connected and complementary, all originating in our vision of a hack-free world. Empowering everyone at work **and** at home with password management gets us one step closer to that goal.
+For Bitwarden, [different plans]({{site.baseurl}}/article/about-bitwarden-plans/) and options are connected and complementary, all originating in our vision of a hack-free world. Empowering everyone at work **and** at home with password management gets us one step closer to that goal.
 {% endcallout %}
 
-A key aspect of Bitwarden is that, unlike many software applications, everything in every a Vault is [end-to-end encrypted]({{site.baseurl}}/what-encryption-is-used/). To maintain this security model, every person using Bitwarden must have a unique account with a unique [Master Password]({{site.baseurl}}/master-password). Master Passwords should be **strong** and **memorable**.
+A key aspect of Bitwarden is that, unlike many software applications, everything in every a Vault is [end-to-end encrypted]({{site.baseurl}}/article/what-encryption-is-used/). To maintain this security model, every person using Bitwarden must have a unique account with a unique [Master Password]({{site.baseurl}}/article/master-password). Master Passwords should be **strong** and **memorable**.
 
 Each user is in charge of their Master Password. Bitwarden is a Zero-knowledge encryption solution, meaning that the team at Bitwarden, as well as Bitwarden systems themselves, have no knowledge of, way to retrieve, or way to reset any Master Password.
 
@@ -49,11 +49,11 @@ Security everywhere means security anywhere, so the best password managers provi
 
 ### Users' Personal Vaults
 
-Anyone who creates a Bitwarden account will have their own Personal Vault. Accessible from any client application, Personal Vaults are unique to each user and only that user holds the key to access it, using a combination of their Email Address and Master Password. Personal accounts, and the personal [Vault items]({{site.baseurl}}/managing-items/) stored therein, are the account owners responsibility. Organization [Owners, Admins, and Managers]({{site.baseurl}}/user-types-access-control) cannot see any other user's Personal Vault by design, guaranteeing someone's personal data remains their own.
+Anyone who creates a Bitwarden account will have their own Personal Vault. Accessible from any client application, Personal Vaults are unique to each user and only that user holds the key to access it, using a combination of their Email Address and Master Password. Personal accounts, and the personal [Vault items]({{site.baseurl}}/article/managing-items/) stored therein, are the account owners responsibility. Organization [Owners, Admins, and Managers]({{site.baseurl}}/article/user-types-access-control) cannot see any other user's Personal Vault by design, guaranteeing someone's personal data remains their own.
 
 {% image ../images/onboarding-succession/bitwarden-individual-personal-vault.png Personal Vaults %}
 
-Families, Teams, and Enterprise Organizations automatically provide members individually with premium features, like [Emergency Access]({{site.baseurl}}/emergency-access/) and [encrypted Attachment storage]({{site.baseurl}}/attachments/), which they can choose to use. A Personal Vault is just that, **Personal**, but Personal Vaults do not enable sharing, [Organization do](#bitwarden-organizations).
+Families, Teams, and Enterprise Organizations automatically provide members individually with premium features, like [Emergency Access]({{site.baseurl}}/article/emergency-access/) and [encrypted Attachment storage]({{site.baseurl}}/article/attachments/), which they can choose to use. A Personal Vault is just that, **Personal**, but Personal Vaults do not enable sharing, [Organization do](#bitwarden-organizations).
 
 {% callout success %}
 **Why provide Personal Vaults by default?**
@@ -73,7 +73,7 @@ Anyone can start an Organization directly from the Web Vault:
 
 {% image organizations/new-org-button-overlay.png Create New Organization %}
 
-Once created, you'll land in your Organization Vault, which is the central hub for all things sharing and Organization administration. Whoever launches the Organization will be the [Owner]({{site.baseurl}}/user-types-access-control), giving them full control to oversee the **Vault**, to **Manage** users, [Collections](#), [Groups](#), and [Policies](#), to use a suite of Bitwarden **Tools**, and to configure the Organization's **Settings**:
+Once created, you'll land in your Organization Vault, which is the central hub for all things sharing and Organization administration. Whoever launches the Organization will be the [Owner]({{site.baseurl}}/article/user-types-access-control), giving them full control to oversee the **Vault**, to **Manage** users, [Collections](#), [Groups](#), and [Policies](#), to use a suite of Bitwarden **Tools**, and to configure the Organization's **Settings**:
 
 {% image getting-started/org-vault.png Organization Vault %}
 
@@ -81,13 +81,13 @@ Once created, you'll land in your Organization Vault, which is the central hub f
 
 Bitwarden Organizations manage users and data in a scalable and secure fashion. Managing users and data on an individual basis is inefficient for large businesses and can leave room for error. To solve this, Organizations provide Collections and [Groups](#groups).
 
-**Collections** gather together Logins, Notes, Cards, and Identities for [secure sharing]({{site.baseurl}}/sharing/) within an Organization:
+**Collections** gather together Logins, Notes, Cards, and Identities for [secure sharing]({{site.baseurl}}/article/sharing/) within an Organization:
 
 {% image organizations/collections-graphic-1.png Using Collections %}
 
 ### Onboarding Users
 
-Once your Organization is established and Collections are setup to store your data, Owners and Administrators should invite new members. To ensure the security of your Organization, Bitwarden applies a 3-step process for onboarding new members, [Invite]({{site.baseurl}}/managing-users/#invite) &rarr; [Accept]({{site.baseurl}}/managing-users/#accept) &rarr; [Confirm]({{site.baseurl}}/managing-users/#confirm).
+Once your Organization is established and Collections are setup to store your data, Owners and Administrators should invite new members. To ensure the security of your Organization, Bitwarden applies a 3-step process for onboarding new members, [Invite]({{site.baseurl}}/article/managing-users/#invite) &rarr; [Accept]({{site.baseurl}}/article/managing-users/#accept) &rarr; [Confirm]({{site.baseurl}}/article/managing-users/#confirm).
 
 Users can be onboarded [directly from the Web Vault](#adding-users) or [using the Directory Connector](#directory-connector) application to sync individual users and [Groups](#groups).
 
@@ -95,7 +95,7 @@ Users can be onboarded [directly from the Web Vault](#adding-users) or [using th
 
 In the simplest cases, users can be added to your Organization directly from the Web Vault. When adding users, you can designate which [Collection](#collections) to grant them access to, which [role](#comprehensive-role--based-access-controls) to give them, and more.
 
-[Learn step-by-step how to add users to your Organization]({{site.baseurl}}/managing-users/#onboard-users).
+[Learn step-by-step how to add users to your Organization]({{site.baseurl}}/article/managing-users/#onboard-users).
 
 Once users are fully onboarded to your Organization, you can assign access to your Organization's Vault data by assigning them to [Collections](#collections). Teams and Enterprise Organizations can assign users to [Groups](#groups) for scalable permissions assignment, and construct Group-Collection associations instead of assigning access on the individual level.
 
@@ -112,7 +112,7 @@ Groups relate together individual users, and provide a scaleable way to assign p
 
 #### Comprehensive Role-based Access Controls
 
-Bitwarden takes an enterprise-friendly approach to sharing at scale. Users can be added to the Organization with [a number of different roles]({{site.baseurl}}/user-types-access-control/), belong to different [Groups](#groups), and have those Groups assigned to various [Collections](#collections) to regulate access. Among the available roles is a [Custom Role]({{site.baseurl}}/user-types-access-control/#custom-role) for granular configuration of administrative permissions.
+Bitwarden takes an enterprise-friendly approach to sharing at scale. Users can be added to the Organization with [a number of different roles]({{site.baseurl}}/article/user-types-access-control/), belong to different [Groups](#groups), and have those Groups assigned to various [Collections](#collections) to regulate access. Among the available roles is a [Custom Role]({{site.baseurl}}/article/user-types-access-control/#custom-role) for granular configuration of administrative permissions.
 
 ### Offboarding Users
 
@@ -127,8 +127,8 @@ Alice is a **Manager** in your Organization, which is hosted on the Bitwarden Cl
 |**Client Applications**|Uses Bitwarden on Mobile and a Browser Extension personally and professionally, and the Web Vault for occasional Organization-related work.|
 |**Email & Master Password**|Logs in to Bitwarden using `alice@company.com` and `p@ssw0rD`.|
 |**Personal Items**|Stores assorted personal items, including Logins and Credit Cards, in her Personal Vault.|
-|**Permissions in the Organization**|As a [Manager]({{site.baseurl}}/user-types-access-control/), Jane can manage many aspects of Collections.|
-|**Two-step Login**|Uses Organization-wide [Duo 2FA]({{site.baseurl}}/setup-two-step-login-duo).|
+|**Permissions in the Organization**|As a [Manager]({{site.baseurl}}/article/user-types-access-control/), Jane can manage many aspects of Collections.|
+|**Two-step Login**|Uses Organization-wide [Duo 2FA]({{site.baseurl}}/article/setup-two-step-login-duo).|
 |**Created Collections**|Created a Collection for her team, "Jane's Team Collection".|
 |**Shared Items**|Created and shared several Vault items that are owned by by the Organization and reside in her team's Collection.|
 
@@ -199,7 +199,7 @@ The **Personal Ownership** policy, for example, fits into earlier discussion reg
 
 ### Event Logs
 
-Bitwarden Organizations include access to [Event Logs]({{site.baseurl}}/event-logs), which can be viewed directly from the Web Vault or [exported to be analyzed]({{site.baseurl}}/event-logs/#siem-and-external-systems-integrations) within security information and event management (SIEM) systems like Splunk. Event Logs include information about:
+Bitwarden Organizations include access to [Event Logs]({{site.baseurl}}/article/event-logs), which can be viewed directly from the Web Vault or [exported to be analyzed]({{site.baseurl}}/article/event-logs/#siem-and-external-systems-integrations) within security information and event management (SIEM) systems like Splunk. Event Logs include information about:
 
 - User-Item interactions
 - Changes made to Vault items
@@ -208,7 +208,7 @@ Bitwarden Organizations include access to [Event Logs]({{site.baseurl}}/event-lo
 - Much, much more
 
 {% callout success%}
-In addition to these benefits, customers appreciate the ability to tightly integrate Bitwarden into their existing systems. Bitwarden offers a robust public [API]({{site.baseurl}}/api/) and a fully-featured command line interface ([CLI]({{site.baseurl}}/cli/)) for further integration into existing Organization workflows.
+In addition to these benefits, customers appreciate the ability to tightly integrate Bitwarden into their existing systems. Bitwarden offers a robust public [API]({{site.baseurl}}/article/api/) and a fully-featured command line interface ([CLI]({{site.baseurl}}/article/cli/)) for further integration into existing Organization workflows.
 {% endcallout %}
 
 ### Self-hosting
@@ -247,4 +247,4 @@ Directory Connector, Login with SSO, Enterprise Policies, and your Vault work we
 
 #### Q: Can we prevent employees from duplicating credentials from the company Organization to their Personal Vault
 
-**A:** Yes! Using our [comprehensive suite of role-based access controls]({{site.baseurl}}/user-types-access-control/#access-control) you can make credentials **Read Only** to prevent duplication.
+**A:** Yes! Using our [comprehensive suite of role-based access controls]({{site.baseurl}}/article/user-types-access-control/#access-control) you can make credentials **Read Only** to prevent duplication.

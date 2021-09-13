@@ -30,7 +30,7 @@ Effectively managing the items in your Vault is key to making sure that you secu
 {% capture logins %}
 ### Logins
 
-Login items are most often used to store username and password combinations, and support [TOTP seeds]({{site.baseurl}}/authenticator-keys/) for Premium users. Whatever plan you're on, we recommend giving every Login a [URI for easy auto-fill]({{site.baseurl}}/uri-match-detection):
+Login items are most often used to store username and password combinations, and support [TOTP seeds]({{site.baseurl}}/article/authenticator-keys/) for Premium users. Whatever plan you're on, we recommend giving every Login a [URI for easy auto-fill]({{site.baseurl}}/article/uri-match-detection):
 
 {% image manage-items/login-item.png Login Vault Item %}
 
@@ -73,7 +73,7 @@ Secure Notes can be used to store encrypted freeform text for anything you want 
 </div>
 
 {% callout success %}
-You can import items into your Vault from a variety of password management solutions. For more information, see [Import Data to your Vault]({{site.baseurl}}/import-data/).
+You can import items into your Vault from a variety of password management solutions. For more information, see [Import Data to your Vault]({{site.baseurl}}/article/import-data/).
 {% endcallout %}
 
 ## Manage Vault Items
@@ -142,7 +142,7 @@ You can add, edit, and delete Vault items from any Bitwarden client application:
 {% capture cli_sync%}
 ### CLI
 
-For more information, refer to our [CLI documentation]({{site.baseurl}}/cli/).
+For more information, refer to our [CLI documentation]({{site.baseurl}}/article/cli/).
 
 {% endcapture %}
 {{ cli_sync | markdownify }}
@@ -151,7 +151,7 @@ For more information, refer to our [CLI documentation]({{site.baseurl}}/cli/).
 
 ### Folders and Favorites
 
-Items in your Vault can be organized into Folders, or marked as Favorites. For more information, see [Folders]({{site.baseurl}}/folders/) and [Favorites]({{site.baseurl}}/favorites/).
+Items in your Vault can be organized into Folders, or marked as Favorites. For more information, see [Folders]({{site.baseurl}}/article/folders/) and [Favorites]({{site.baseurl}}/article/favorites/).
 
 ### Items in the Trash
 
@@ -173,7 +173,7 @@ Master password re-prompt **is not** an encryption mechanism. This feature is an
 
 ## Move Items to an Organization
 
-If you're a member of an [Organization]({{site.baseurl}}/about-organizations/), you can move Vault items to your Organization for sharing with other Organization members. Learn more about [Organizations]({{site.baseurl}}/about-organizations/), [Collections]({{site.baseurl}}/about-collections), and [Sharing]({{site.baseurl}}/sharing/).
+If you're a member of an [Organization]({{site.baseurl}}/article/about-organizations/), you can move Vault items to your Organization for sharing with other Organization members. Learn more about [Organizations]({{site.baseurl}}/article/about-organizations/), [Collections]({{site.baseurl}}/article/about-collections), and [Sharing]({{site.baseurl}}/article/sharing/).
 
 ## Clone Vault Items
 

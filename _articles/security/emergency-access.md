@@ -35,7 +35,7 @@ Emergency Access uses public key exchange and encryption/decryption to allow use
 
 Emergency Access relies on public key exchange within Bitwarden, therefore trusted emergency contacts must be existing Bitwarden users, or will be prompted to create a Bitwarden account before they can accept an invitation. Trusted emergency contacts do not need to have Premium to be designated as such.
 
-A user's status as a trusted emergency contact is tied to a unique Bitwarden account ID, meaning that if a grantee [changes their email address]({{site.baseurl}}/product-faqs/) there is no reconfiguration required to maintain their emergency access. If a grantee creates a **new Bitwarden account** and [deletes]({{site.baseurl}}/delete-your-account/) the old account which had been specified as a trusted emergency contact, they will automatically be removed from the grantor's list and must be [re-invited](#invite-a-trusted-emergency-contact).
+A user's status as a trusted emergency contact is tied to a unique Bitwarden account ID, meaning that if a grantee [changes their email address]({{site.baseurl}}/article/product-faqs/) there is no reconfiguration required to maintain their emergency access. If a grantee creates a **new Bitwarden account** and [deletes]({{site.baseurl}}/article/delete-your-account/) the old account which had been specified as a trusted emergency contact, they will automatically be removed from the grantor's list and must be [re-invited](#invite-a-trusted-emergency-contact).
 
 There is no limit to the number of trusted emergency contacts a user can have.
 
@@ -50,9 +50,9 @@ Trusted emergency contacts can be granted one of the following user access level
 
    {% callout success %}As the grantor, you may [revoke access](#revoking-access) to a grantee with **View** access at any time.{% endcallout %}
 
-- **Takeover**: When an emergency access request is granted, this user can create a Master Password for permanent read/write access to your Vault (this will **replace** your previous Master Password). Takeover disables any [Two-step Login Methods]({{site.baseurl}}/setup-two-step-login/) enabled for the account.
+- **Takeover**: When an emergency access request is granted, this user can create a Master Password for permanent read/write access to your Vault (this will **replace** your previous Master Password). Takeover disables any [Two-step Login Methods]({{site.baseurl}}/article/setup-two-step-login/) enabled for the account.
 
-**When the grantor is a member of an Organization**, they will be automatically removed from any Organization(s) for which they are not an [Owner]({{site.baseurl}}/user-types-access-control/). Owners will not be removed from or lose permissions to their Organization(s), however a [Master Password Policy]({{site.baseurl}}/policies/#master-password) will be enforced on takeover if enabled. Policies that are not usually enforced on Owners (e.g. [Two-step Login]({{site.baseurl}}/policies/#two-step-login)) will not be enforced on takeover.
+**When the grantor is a member of an Organization**, they will be automatically removed from any Organization(s) for which they are not an [Owner]({{site.baseurl}}/article/user-types-access-control/). Owners will not be removed from or lose permissions to their Organization(s), however a [Master Password Policy]({{site.baseurl}}/article/policies/#master-password) will be enforced on takeover if enabled. Policies that are not usually enforced on Owners (e.g. [Two-step Login]({{site.baseurl}}/article/policies/#two-step-login)) will not be enforced on takeover.
 
 ## Using Emergency Access
 
@@ -151,4 +151,4 @@ Trusted emergency contacts who are given **View** access will be able to view yo
 Trusted emergency contacts who are given **Takeover** access will, once used, have created a new Master Password for your account. As a result, the only way to revoke access involves:
 
 1. Obtaining the new Master Password they created for your account and using it to log in the [Web Vault](https://vault.bitwarden.com){:target="\_blank"}.
-2. [Changing your Master Password]({{site.baseurl}}/master-password/#change-your-master-password) to one that they do not know.
+2. [Changing your Master Password]({{site.baseurl}}/article/master-password/#change-your-master-password) to one that they do not know.

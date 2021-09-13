@@ -33,11 +33,11 @@ To get started using the Bitwarden Directory Connector CLI:
    bwdc --help
    ```
 4. Connect Directory Connector to your Directory using the `bwdc config <setting> <value>` command (see [command reference](#config)).
-5. Configure Sync Options by editing your `data.json` file (to learn more, see [Directory Connector File Storage]({{site.baseurl}}/directory-sync-shared/)). Use the `bwdc data-file` command to obtain the absolute path of your `data.json` file.
+5. Configure Sync Options by editing your `data.json` file (to learn more, see [Directory Connector File Storage]({{site.baseurl}}/article/directory-sync-shared/)). Use the `bwdc data-file` command to obtain the absolute path of your `data.json` file.
 
    Available **Sync Options** depend on the directory type in use, so refer to one of the following articles for a list of options available to you:
-   - [Sync with Active Directory or LDAP]({{site.baseurl}}/ldap-directory/)[Sync with Active Directory or LDAP]({{site.baseurl}}/ldap-directory/)[Sync with Active Directory or LDAP]({{site.baseurl}}/ldap-directory/)[Sync with Active Directory or LDAP]({{site.baseurl}}/ldap-directory/)[Sync with Active Directory or LDAP]({{site.baseurl}}/ldap-directory/)
-   - [Sync with Azure Active Directory]({{site.baseurl}}/azure-active-directory/)[Sync with Azure Active Directory]({{site.baseurl}}/azure-active-directory/)[Sync with Azure Active Directory]({{site.baseurl}}/azure-active-directory/)[Sync with Azure Active Directory]({{site.baseurl}}/azure-active-directory/)
+   - [Sync with Active Directory or LDAP]({{site.baseurl}}/article/ldap-directory/)[Sync with Active Directory or LDAP]({{site.baseurl}}/article/ldap-directory/)[Sync with Active Directory or LDAP]({{site.baseurl}}/article/ldap-directory/)[Sync with Active Directory or LDAP]({{site.baseurl}}/article/ldap-directory/)[Sync with Active Directory or LDAP]({{site.baseurl}}/article/ldap-directory/)
+   - [Sync with Azure Active Directory]({{site.baseurl}}/article/azure-active-directory/)[Sync with Azure Active Directory]({{site.baseurl}}/article/azure-active-directory/)[Sync with Azure Active Directory]({{site.baseurl}}/article/azure-active-directory/)[Sync with Azure Active Directory]({{site.baseurl}}/article/azure-active-directory/)
    - [Sync with G Suite (Google)]({% link _articles/directory-connector/gsuite-directory.md %})
    - [Sync with Okta]({% link _articles/directory-connector/okta-directory.md %})
    - [Sync with OneLogin]({% link _articles/directory-connector/onelogin-directory.md %})
@@ -48,7 +48,7 @@ To get started using the Bitwarden Directory Connector CLI:
 
 ### login
 
-Use the `login` command to login to Directory Connector with your [Organization API Key]({{site.baseurl}}/public-api/#authentication).  If you don't have the API Key, reach out to an [Organization Owner]({{site.baseurl}}/user-types-access-control/). There are a few ways to use the `login` command:
+Use the `login` command to login to Directory Connector with your [Organization API Key]({{site.baseurl}}/article/public-api/#authentication).  If you don't have the API Key, reach out to an [Organization Owner]({{site.baseurl}}/article/user-types-access-control/). There are a few ways to use the `login` command:
 
 - By itself:
 
@@ -140,7 +140,7 @@ Options include:
 - `onelogin.secret <secret>`
 
 {% callout success %}
-`ldap.password`, `azure.key`, `gsuite.key`, `okta.token`, and `onelogin.secret` can **only** be modified from the CLI using `bwdc config`, or from the [Desktop Application]({{site.baseurl}}/directory-sync-desktop/).
+`ldap.password`, `azure.key`, `gsuite.key`, `okta.token`, and `onelogin.secret` can **only** be modified from the CLI using `bwdc config`, or from the [Desktop Application]({{site.baseurl}}/article/directory-sync-desktop/).
 {% endcallout %}
 
 ### data-file
@@ -154,7 +154,7 @@ Configuration settings can be modified for the Directory Connector CLI by editin
 
 ### clear-cache
 
-The `clear-cache` command allows you to clear cached data that the application stores while performing sync operations. For more information, see [Clear Sync Cache]({{site.baseurl}}/clear-sync-cache/).
+The `clear-cache` command allows you to clear cached data that the application stores while performing sync operations. For more information, see [Clear Sync Cache]({{site.baseurl}}/article/clear-sync-cache/).
 
 ```
 bwdc clear-cache

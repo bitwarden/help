@@ -7,7 +7,7 @@ popular: false
 tags: [master password, account]
 order: "01"
 redirect_from:
-  - /change-your-master-password/
+  - /article/change-your-master-password/
 ---
 
 ## About your Master Password
@@ -16,7 +16,7 @@ Your Master Password is the primary method for accessing your Vault. It's critic
 
 - **Memorable**: Bitwarden is a Zero Knowledge/Zero Trust solution. This means that the team at Bitwarden, as well as Bitwarden systems themselves, have no knowledge of, way to retrieve, or way to reset your Master Password. **Don't forget your Master Password!** Bitwarden won't be able to reset it or recover your Vault data if you do.
 
-   For our technically-inclined users, see the article on [Encryption]({{site.baseurl}}/what-encryption-is-used/) to find out how we accomplish Zero Trust.
+   For our technically-inclined users, see the article on [Encryption]({{site.baseurl}}/article/what-encryption-is-used/) to find out how we accomplish Zero Trust.
 - **Strong**: The longer, more complex, and less common your Master Password is, the safer your Vault data will be. Using something like `password` for your Master Password could let a capable attacker crack your Vault in **less than a second**!
 
    Use Bitwarden's free [**Password Strength Testing Tool**](https://bitwarden.com/password-strength){:target="\_blank"} to test the strength of some Master Passwords you'd consider using.
@@ -27,7 +27,7 @@ Your Master Password is the primary method for accessing your Vault. It's critic
 If you're worried about forgetting your Master Password, the team at Bitwarden has a few recommendations for you:
 
 1. **Setup a Master Password Hint**. Once setup, a Master Password Hint can be requested on the Login Screen. The hint will be emailed to you, not displayed on the web page, so as long as your inbox isn't compromised you won't have to worry about prying eyes (that said, we don't recommend using a hint that would give away your Master Password to anyone other than yourself).
-2. **Designate a [Trusted Emergency Contact]({{site.baseurl}}/emergency-access/)**. If you have a Premium subscription, you can proactively configure your Vault to grant access in the case of emergency to another Bitwarden user.
+2. **Designate a [Trusted Emergency Contact]({{site.baseurl}}/article/emergency-access/)**. If you have a Premium subscription, you can proactively configure your Vault to grant access in the case of emergency to another Bitwarden user.
 
 {% endcallout %}
 
@@ -36,7 +36,7 @@ If you're worried about forgetting your Master Password, the team at Bitwarden h
 Provided you **know your current Master Password**, change your Master Password at any time from the [Web Vault](https://vault.bitwarden.com){:target="\_blank"}:
 
 {% callout success %}
-If you don't know your Master Password, see [I Forgot my Master Password]({{site.baseurl}}/forgot-master-password/).
+If you don't know your Master Password, see [I Forgot my Master Password]({{site.baseurl}}/article/forgot-master-password/).
 {% endcallout %}
 
 1. In your Web Vault, Select the **Settings** tab from the top navigation.
@@ -44,7 +44,7 @@ If you don't know your Master Password, see [I Forgot my Master Password]({{site
 3. Enter your **Current Master Password**.
 4. Enter and Confirm your **New Master Password**.
 
-   {% callout warning %}Don't check the **rotate account's encryption key** box unless you fully understand the ramifications and required follow-up procedures. Learn more [here]({{site.baseurl}}/account-encryption-key/).{% endcallout %}
+   {% callout warning %}Don't check the **rotate account's encryption key** box unless you fully understand the ramifications and required follow-up procedures. Learn more [here]({{site.baseurl}}/article/account-encryption-key/).{% endcallout %}
 5. Select the **Change Master Password** button.
 
 Changing your Master Password will log you out of your current Web Vault session, requiring you to log back in with your new Master Password.

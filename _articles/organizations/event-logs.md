@@ -10,18 +10,18 @@ order: "13"
 
 ## What are Event Logs?
 
-Event Logs are timestamped records of events that occur within your Organization. Event Logs are accessible to [Admins and Owners]({{site.baseurl}}/event-logs/) from the **Manage** tab of your Organization Vault:
+Event Logs are timestamped records of events that occur within your Organization. Event Logs are accessible to [Admins and Owners]({{site.baseurl}}/article/event-logs/) from the **Manage** tab of your Organization Vault:
 
 {% image organizations/event-logs-updated.png Event Logs %}
 
-Events Logs are [exportable](#export-events) and accessible from the `/events` endpoint of the [Bitwarden Public API]({{site.baseurl}}/public-api/).
+Events Logs are [exportable](#export-events) and accessible from the `/events` endpoint of the [Bitwarden Public API]({{site.baseurl}}/article/public-api/).
 
 ## Events
 
 Event Logs record roughly 40 different types of events. The Event Logs screen captures a **Timestamp** for the event, client app information including application type and IP (accessed by hoving over the {% icon fa-globe %} globe icon), the **User** connected to the event, and an **Event** description.
 
 {% callout info %}
-Each **Event** is associated with type code (`1000`, `1001`, etc.) that identifies the action captured by the event. Type codes are used by the [Bitwarden Public API]({{site.baseurl}}/public-api/) to identify the action documented by an event.
+Each **Event** is associated with type code (`1000`, `1001`, etc.) that identifies the action captured by the event. Type codes are used by the [Bitwarden Public API]({{site.baseurl}}/article/public-api/) to identify the action documented by an event.
 {% endcallout %}
 
 All Event types are listed below, with their corresponding type codes:
@@ -35,7 +35,7 @@ All Event types are listed below, with their corresponding type codes:
 - Login attempted failed with incorrect password. (`1005`)
 - Login attempt failed with incorrect two-step login. (`1006`)
 - Exported Vault. (`1007`)
-- User updated a password issued through [Admin Password Reset]({{site.baseurl}}/admin-reset/). (`1008`)
+- User updated a password issued through [Admin Password Reset]({{site.baseurl}}/article/admin-reset/). (`1008`)
 
 ### Item Events
 - Created item *item-identifier*. (`1100`)
@@ -79,7 +79,7 @@ All Event types are listed below, with their corresponding type codes:
 - Master Password was reset for *user-identifier*. (`1508`)
 - Edited organization settings. (`1600`)
 - Purged organization vault. (`1601`)
-- Organization Vault access by a managing [Provider]({{site.baseurl}}/providers/). (`1603`)
+- Organization Vault access by a managing [Provider]({{site.baseurl}}/article/providers/). (`1603`)
 - Updated a Policy. (`1700`)
 
 {% comment %}
@@ -91,7 +91,7 @@ https://github.com/bitwarden/web/blob/master/src/locales/en/messages.json
 
 ### Provider Events
 
-When any of the above events is executed by a member of an [administering Provider]({{site.baseurl}}/providers/), the **User** column will record the name of the Provider. Additionally, a Provider-specific event will record whenever a member of an administering Provider accesses your Organization Vault:
+When any of the above events is executed by a member of an [administering Provider]({{site.baseurl}}/article/providers/), the **User** column will record the name of the Provider. Additionally, a Provider-specific event will record whenever a member of an administering Provider accesses your Organization Vault:
 
 {% image organizations/event-logs-provider.png Provider Access Event %}
 
@@ -112,7 +112,7 @@ Edited organization settings.,fa-globe,Web Vault - Chrome,9876dcba-65ed-87fe-19h
 
 ## API Responses
 
-Accessing Event Logs from the `/events` endpoint of the [Bitwarden Public API]({{site.baseurl}}/public-api/) will return a JSON response like the following:
+Accessing Event Logs from the `/events` endpoint of the [Bitwarden Public API]({{site.baseurl}}/article/public-api/) will return a JSON response like the following:
 
 ```
 {
@@ -151,4 +151,4 @@ Once you have the unique ID for each member, group, and collection, you can now 
 - Collections
 - Groups
 
-After gathering this data, you can join rows on their unique Ids to build a reference to all parts of your Bitwarden Organization. For more information on using the Bitwarden CLI, see [The Bitwarden command-line tool (CLI)]({{site.baseurl}}/cli/).
+After gathering this data, you can join rows on their unique Ids to build a reference to all parts of your Bitwarden Organization. For more information on using the Bitwarden CLI, see [The Bitwarden command-line tool (CLI)]({{site.baseurl}}/article/cli/).

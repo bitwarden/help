@@ -11,9 +11,9 @@ order: "18"
 This article contains Frequently Asked Questions (FAQs) regarding **Organizations**.
 
 For more high-level information about **Organizations**, refer to the following articles:
-- [About Organizations]({{site.baseurl}}/about-organizations/)
-- [About Collections]({{site.baseurl}}/about-collections/)
-- [About Groups]({{site.baseurl}}/about-groups/)
+- [About Organizations]({{site.baseurl}}/article/about-organizations/)
+- [About Collections]({{site.baseurl}}/article/about-collections/)
+- [About Groups]({{site.baseurl}}/article/about-groups/)
 
 ## Organizations General
 
@@ -37,11 +37,11 @@ Paid Organizations (Families, Teams, or Enterprise) automatically include premiu
 
 ### Q: What events are audited for my Organization?
 
-**A:** For a full list of what's included in Bitwarden Event Logs, see [Event Logs]({{site.baseurl}}/event-logs/).
+**A:** For a full list of what's included in Bitwarden Event Logs, see [Event Logs]({{site.baseurl}}/article/event-logs/).
 
 ### Q: Can I prevent users from self-registering into my Organization?
 
-**A:** If you're self-hosting, [configure the environment variable]({{site.baseurl}}/environment-variables/) `globalSettings__disableUserRegistration=` to `true` to prevent users from signing up for an account via the Registration page. Once configured, Organization Admins or Owners must invite users to signup for an account on the self-hosted instance.
+**A:** If you're self-hosting, [configure the environment variable]({{site.baseurl}}/article/environment-variables/) `globalSettings__disableUserRegistration=` to `true` to prevent users from signing up for an account via the Registration page. Once configured, Organization Admins or Owners must invite users to signup for an account on the self-hosted instance.
 
 ### Q: My users don't have permission to update desktop apps on their workstations. Can I turn off automatic updates for Bitwarden?
 
@@ -66,7 +66,7 @@ Alternatively, you can unshare items by moving them to a different Collection wi
 
 ### Q: How do I hide a password from my Organization's users?
 
-**A:** Use the **Hide Passwords** option in the **Access Control** section when adding new users or editing existing ones in order to hide a given Collection's passwords and hidden fields from them. For more information, see [Access Control]({{site.baseurl}}/user-types-access-control/#access-control).
+**A:** Use the **Hide Passwords** option in the **Access Control** section when adding new users or editing existing ones in order to hide a given Collection's passwords and hidden fields from them. For more information, see [Access Control]({{site.baseurl}}/article/user-types-access-control/#access-control).
 
 ### Q: Does an item I move to the Organization stay after I leave?
 

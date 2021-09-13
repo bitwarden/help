@@ -7,12 +7,12 @@ popular: false
 tags: [free, personal, organization, enterprise, teams, family, plans, subscription]
 order: "01"
 redirect_from:
-  - /choosing-the-right-subscription-plan/
+  - /article/choosing-the-right-subscription-plan/
 ---
 
 In this article, we'll define each Bitwarden subscription plan to help you along your password management and secure data storage journey.
 
-*This article reflects current Bitwarden plans, updated on September 06, 2020. Users who created accounts prior to that date can learn how to opt-in to the updates **[here]({{site.baseurl}}/2020-plan-updates/)**.*
+*This article reflects current Bitwarden plans, updated on September 06, 2020. Users who created accounts prior to that date can learn how to opt-in to the updates **[here]({{site.baseurl}}/article/2020-plan-updates/)**.*
 
 ## Bitwarden For You
 
@@ -50,10 +50,10 @@ In the following table, "premium features" (included for **Premium Individual** 
 |Storage sync across devices|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
 |Secure Password Generator|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
 |Cloud or Self-hosting|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
-|[Encrypted Export]({{site.baseurl}}/encrypted-export/)|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
-|[Bitwarden Send]({{site.baseurl}}/about-send/)|Text Sharing|Text + File Sharing|Text + File Sharing|
-|*[Two-step login]({{site.baseurl}}/setup-two-step-login/)|via authenticator apps or email|via authenticator apps, email, Yubikey, FIDO2, and Duo|via authenticator apps, email, Yubikey, FIDO2, and Duo (does not include [Duo for Organizations]({{site.baseurl}}/setup-two-step-login-duo/))|[Two-step login]({{site.baseurl}}/setup-two-step-login/)[Two-step login]({{site.baseurl}}/setup-two-step-login/)[Two-step login]({{site.baseurl}}/setup-two-step-login/)[Two-step login]({{site.baseurl}}/setup-two-step-login/)
-|*[Encrypted file attachments]({{site.baseurl}}/attachments/)|-|1 GB|1 GB per user + 1 GB shared|[Encrypted file attachments]({{site.baseurl}}/attachments/)[Encrypted file attachments]({{site.baseurl}}/attachments/)[Encrypted file attachments]({{site.baseurl}}/attachments/)
+|[Encrypted Export]({{site.baseurl}}/article/encrypted-export/)|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
+|[Bitwarden Send]({{site.baseurl}}/article/about-send/)|Text Sharing|Text + File Sharing|Text + File Sharing|
+|*[Two-step login]({{site.baseurl}}/article/setup-two-step-login/)|via authenticator apps or email|via authenticator apps, email, Yubikey, FIDO2, and Duo|via authenticator apps, email, Yubikey, FIDO2, and Duo (does not include [Duo for Organizations]({{site.baseurl}}/article/setup-two-step-login-duo/))|[Two-step login]({{site.baseurl}}/article/setup-two-step-login/)[Two-step login]({{site.baseurl}}/article/setup-two-step-login/)[Two-step login]({{site.baseurl}}/article/setup-two-step-login/)[Two-step login]({{site.baseurl}}/article/setup-two-step-login/)
+|*[Encrypted file attachments]({{site.baseurl}}/article/attachments/)|-|1 GB|1 GB per user + 1 GB shared|[Encrypted file attachments]({{site.baseurl}}/article/attachments/)[Encrypted file attachments]({{site.baseurl}}/article/attachments/)[Encrypted file attachments]({{site.baseurl}}/article/attachments/)
 |*[Bitwarden Authenticator]({% link _articles/features/authenticator-keys.md %}) (TOTP)|-|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
 |*[Vault Health Reports]({% link _articles/features/reports.md %})|-|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
 |*[Emergency Access]({% link _articles/security/emergency-access.md %})|-|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
@@ -95,36 +95,36 @@ In the following table, "premium features" (included for **Teams Organizations**
 |Base no. of users|2|1|1|
 |Max no. of users|2|Unlimited|Unlimited|
 |Max no. of Collections|2|Unlimited|Unlimited|
-|[Encrypted Export]({{site.baseurl}}/encrypted-export/)|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
-|[Bitwarden Send]({{site.baseurl}}/about-send/)|Text Sharing|Text + File Sharing|Text + File Sharing|
-|*[Two-step login]({{site.baseurl}}/setup-two-step-login/)|via authenticator apps or email|via authenticator apps, email, Yubikey, FIDO2, and Duo|via authenticator apps, email, Yubikey, FIDO2, and Duo|[Two-step login]({{site.baseurl}}/setup-two-step-login/)[Two-step login]({{site.baseurl}}/setup-two-step-login/)[Two-step login]({{site.baseurl}}/setup-two-step-login/)[Two-step login]({{site.baseurl}}/setup-two-step-login/)[Two-step login]({{site.baseurl}}/setup-two-step-login/)
-|[Duo for Organizations]({{site.baseurl}}/setup-two-step-login-duo/)|-|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|[Duo for Organizations]({{site.baseurl}}/setup-two-step-login-duo/)[Duo for Organizations]({{site.baseurl}}/setup-two-step-login-duo/)[Duo for Organizations]({{site.baseurl}}/setup-two-step-login-duo/)[Duo for Organizations]({{site.baseurl}}/setup-two-step-login-duo/)
+|[Encrypted Export]({{site.baseurl}}/article/encrypted-export/)|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
+|[Bitwarden Send]({{site.baseurl}}/article/about-send/)|Text Sharing|Text + File Sharing|Text + File Sharing|
+|*[Two-step login]({{site.baseurl}}/article/setup-two-step-login/)|via authenticator apps or email|via authenticator apps, email, Yubikey, FIDO2, and Duo|via authenticator apps, email, Yubikey, FIDO2, and Duo|[Two-step login]({{site.baseurl}}/article/setup-two-step-login/)[Two-step login]({{site.baseurl}}/article/setup-two-step-login/)[Two-step login]({{site.baseurl}}/article/setup-two-step-login/)[Two-step login]({{site.baseurl}}/article/setup-two-step-login/)[Two-step login]({{site.baseurl}}/article/setup-two-step-login/)
+|[Duo for Organizations]({{site.baseurl}}/article/setup-two-step-login-duo/)|-|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|[Duo for Organizations]({{site.baseurl}}/article/setup-two-step-login-duo/)[Duo for Organizations]({{site.baseurl}}/article/setup-two-step-login-duo/)[Duo for Organizations]({{site.baseurl}}/article/setup-two-step-login-duo/)[Duo for Organizations]({{site.baseurl}}/article/setup-two-step-login-duo/)
 |*[Encrypted file attachments]({% link _articles/features/attachments.md %})|-|1 GB per user + 1 GB shared|1 GB per user + 1 GB shared|
 |*[Bitwarden Authenticator]({% link _articles/features/authenticator-keys.md %}) (TOTP)|-|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
 |*[Personal Emergency Access]({% link _articles/security/emergency-access.md %})|-|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
 |*[Vault Health Reports]({% link _articles/features/reports.md %})|-|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
 |*Priority Support|-|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
-|[Event Logs]({{site.baseurl}}/event-logs/)|-|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|[Event Logs]({{site.baseurl}}/event-logs/)[Event Logs]({{site.baseurl}}/event-logs/)[Event Logs]({{site.baseurl}}/event-logs/)[Event Logs]({{site.baseurl}}/event-logs/)[Event Logs]({{site.baseurl}}/event-logs/)
-|[User Groups]({{site.baseurl}}/about-groups/)|-|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|[User Groups]({{site.baseurl}}/about-groups/)[User Groups]({{site.baseurl}}/about-groups/)[User Groups]({{site.baseurl}}/about-groups/)[User Groups]({{site.baseurl}}/about-groups/)
+|[Event Logs]({{site.baseurl}}/article/event-logs/)|-|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|[Event Logs]({{site.baseurl}}/article/event-logs/)[Event Logs]({{site.baseurl}}/article/event-logs/)[Event Logs]({{site.baseurl}}/article/event-logs/)[Event Logs]({{site.baseurl}}/article/event-logs/)[Event Logs]({{site.baseurl}}/article/event-logs/)
+|[User Groups]({{site.baseurl}}/article/about-groups/)|-|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|[User Groups]({{site.baseurl}}/article/about-groups/)[User Groups]({{site.baseurl}}/article/about-groups/)[User Groups]({{site.baseurl}}/article/about-groups/)[User Groups]({{site.baseurl}}/article/about-groups/)
 |[API access]({% link _articles/organizations/public-api.md %})|-|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
 |[Directory Connector]({% link _articles/directory-connector/directory-sync.md %})|-|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
 |[Login with SSO]({% link _articles/login-with-sso/about-sso.md %})|-|-|<i class="fa fa-check" aria-hidden="true"></i>|
 |[Enterprise Policies]({% link _articles/organizations/policies.md %})|-|-|<i class="fa fa-check" aria-hidden="true"></i>|
-|[Admin Password Reset]({{site.baseurl}}/admin-reset/)|-|-|<i class="fa fa-check" aria-hidden="true"></i>|
-|[Custom Management Role]({{site.baseurl}}/user-types-access-control/)|-|-|<i class="fa fa-check" aria-hidden="true"></i>|[Custom Management Role]({{site.baseurl}}/user-types-access-control/)
-|[Self-host option]({{site.baseurl}}/install-on-premise/)|-|-|<i class="fa fa-check" aria-hidden="true"></i>|
+|[Admin Password Reset]({{site.baseurl}}/article/admin-reset/)|-|-|<i class="fa fa-check" aria-hidden="true"></i>|
+|[Custom Management Role]({{site.baseurl}}/article/user-types-access-control/)|-|-|<i class="fa fa-check" aria-hidden="true"></i>|[Custom Management Role]({{site.baseurl}}/article/user-types-access-control/)
+|[Self-host option]({{site.baseurl}}/article/install-on-premise/)|-|-|<i class="fa fa-check" aria-hidden="true"></i>|
 |Cost to you|Free|$3 Per User Per Month, billed annually<br>or<br>$4 Per User Per Month, billed monthly|$5 Per User Per Month, billed annually<br>or<br>$6 Per User Per Month, billed monthly|
 
 ### Next Steps
 
 For help choosing the right plan, see:
-- [What Plan is Right for Me?]({{site.baseurl}}/what-plan-is-right-for-me/)
+- [What Plan is Right for Me?]({{site.baseurl}}/article/what-plan-is-right-for-me/)
 
 For help moving from an individual plan to an Organization, see:
-- [Upgrade From Individual to Organization]({{site.baseurl}}/upgrade-from-individual-to-org/)
+- [Upgrade From Individual to Organization]({{site.baseurl}}/article/upgrade-from-individual-to-org/)
 
 For help starting a free trial of Bitwarden Enterprise, see:
-- [Start a Free Trial of Bitwarden Enterprise]({{site.baseurl}}/enterprise-free-trial/)
+- [Start a Free Trial of Bitwarden Enterprise]({{site.baseurl}}/article/enterprise-free-trial/)
 
 Still can't find what you're looking for?
-- Try our [Billing FAQs]({{site.baseurl}}/billing-faqs/)
+- Try our [Billing FAQs]({{site.baseurl}}/article/billing-faqs/)

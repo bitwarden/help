@@ -8,10 +8,10 @@ tags: [fields, autofill, custom fields]
 order: "08"
 ---
 
-Custom fields, available for any [Vault item type]({{site.baseurl}}/managing-items/), allow you to store additional well-structured data fields for a Vault item. Custom fields are saved as `Name:Value` pairs, and can be one of three types:
+Custom fields, available for any [Vault item type]({{site.baseurl}}/article/managing-items/), allow you to store additional well-structured data fields for a Vault item. Custom fields are saved as `Name:Value` pairs, and can be one of three types:
 
 - **Text**: Field value stores a freeform input (text, numbers, etc.)
-- **Hidden**: Field value stores freeform input that is hidden from view (particularly useful for Organizations using the [Hide Password access control]({{site.baseurl}}/user-types-access-control/#granular-access-control)).
+- **Hidden**: Field value stores freeform input that is hidden from view (particularly useful for Organizations using the [Hide Password access control]({{site.baseurl}}/article/user-types-access-control/#granular-access-control)).
 - **Boolean**: Field value stores a boolean value (true/false).
 
 ## Custom Fields for Keys

@@ -67,7 +67,7 @@ Complete the following steps to obtain the tenant hostname to be used by Directo
 
 Complete the following steps to configure Directory Connector to use your Azure Active Directory. If you haven't already, take the proper [Azure AD Setup](#azure-ad-setup) steps before proceeding:
 
-1. Open the Directory Connector [Desktop Application]({{site.baseurl}}/directory-sync-desktop/).
+1. Open the Directory Connector [Desktop Application]({{site.baseurl}}/article/directory-sync-desktop/).
 2. Navigate to the **Settings** tab.
 3. From the **Type** dropdown, select **Azure Active Directory**.
 
@@ -78,7 +78,7 @@ Complete the following steps to configure Directory Connector to use your Azure 
 ## Configure Sync Options
 
 {% callout success %}
-When you're finished configuring, navigate to the **More** tab and select the **Clear Sync Cache** button to prevent potential conflicts with prior sync operations. For more information, see [Clear Sync Cache]({{site.baseurl}}/clear-sync-cache/).
+When you're finished configuring, navigate to the **More** tab and select the **Clear Sync Cache** button to prevent potential conflicts with prior sync operations. For more information, see [Clear Sync Cache]({{site.baseurl}}/article/clear-sync-cache/).
 {% endcallout %}
 
 Complete the following steps to configure the settings used when syncing using Directory Connector:
@@ -166,7 +166,7 @@ If you get the error message `Resource <user id> does not exist or one of its qu
 
 Once [Sync Options](#configure-sync-options) and [Filters](#specify-sync-filters) are configured and tested, you can begin syncing. Complete the following steps to start automatic syncing with Directory Connector:
 
-1. Open the Directory Connector [Desktop Application]({{site.baseurl}}/directory-sync-desktop/).
+1. Open the Directory Connector [Desktop Application]({{site.baseurl}}/article/directory-sync-desktop/).
 2. Navigate to the **Dashboard** tab.
 3. In the **Sync** section, select the **Start Sync** button.
 

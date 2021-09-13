@@ -7,7 +7,7 @@ popular: false
 tags: [hosting, docker, install, deploy]
 order: "02"
 ---
-This article will walk you through the procedure to manually install and deploy Bitwarden to your own server. **Installation using the Bitwarden installation script is recommended for most users, for instructions see [Install and Deploy]({{site.baseurl}}/install-on-premise/)**.
+This article will walk you through the procedure to manually install and deploy Bitwarden to your own server. **Installation using the Bitwarden installation script is recommended for most users, for instructions see [Install and Deploy]({{site.baseurl}}/article/install-on-premise/)**.
 
 A manual installation may be appropriate if you are intimately familiar with Docker technologies and desire more control over your Bitwarden installation.
 
@@ -88,7 +88,7 @@ Complete the following steps to install Bitwarden manually:
 9.  Replace the domain placeholder in `./web/app-id.json` with your domain name.
 10. Configure your Environment Variables in  `./env/global.override.env`.
 
-    At a minimum, we recommend configuring you SMTP Mail Server and Admin Portal Access. For more information, see [Configure Environment Variables]({{site.baseurl}}/environment-variables/).
+    At a minimum, we recommend configuring you SMTP Mail Server and Admin Portal Access. For more information, see [Configure Environment Variables]({{site.baseurl}}/article/environment-variables/).
 
 11. Map the desired user and group id for the Bitwarden containers to run under at `./env/uid.env`. For example:
 

@@ -11,17 +11,17 @@ order: "16"
 The Bitwarden Public API provides Organizations a suite of tools for managing members, collections, groups, event logs, and policies.
 
 {% callout success %}
-For automating **management of Vault items**, we recommend using the [CLI]({{site.baseurl}}/cli/). Access to Vault items relies on Vault decryption, which must be done with a Username and Master Password rather than an [API Key](#authentication).
+For automating **management of Vault items**, we recommend using the [CLI]({{site.baseurl}}/article/cli/). Access to Vault items relies on Vault decryption, which must be done with a Username and Master Password rather than an [API Key](#authentication).
 {% endcallout %}
 
 The Public API is a RESTful API with predictable resource-oriented URLs, accepts JSON-encoded request bodies, returns JSON-encoded responses, and uses standard HTTP response codes, authentication, and verbs.
 
-The Public API is compatible with the OpenAPI Specification (OAS3) and publishes a compliant [`swagger.json`]({{site.baseurl}}/api/specs/public/swagger.json) definition file. Explore the OpenAPI Specification using the Swagger UI:
-- For Public Cloud-hosted instances: [https://bitwarden.com/help/api/]({{site.baseurl}}/api/){:target="\_blank"}
+The Public API is compatible with the OpenAPI Specification (OAS3) and publishes a compliant [`swagger.json`]({{site.baseurl}}/article/api/specs/public/swagger.json) definition file. Explore the OpenAPI Specification using the Swagger UI:
+- For Public Cloud-hosted instances: [https://bitwarden.com/help/api/]({{site.baseurl}}/article/api/){:target="\_blank"}
 - For Self-hosted instances: https://your.domain.com/api/docs/
 
 {% callout info %}
-Access to the Bitwarden Public API is available customers on the following plans, **Classic 2019 Enterprise Organizations**, current **Enterprise Organizations**, and current **Teams Organizations**. For more information, see [About Bitwarden Plans]({{site.baseurl}}/about-bitwarden-plans/#compare-the-plans-1).
+Access to the Bitwarden Public API is available customers on the following plans, **Classic 2019 Enterprise Organizations**, current **Enterprise Organizations**, and current **Teams Organizations**. For more information, see [About Bitwarden Plans]({{site.baseurl}}/article/about-bitwarden-plans/#compare-the-plans-1).
 {% endcallout %}
 
 ## Endpoints
@@ -46,7 +46,7 @@ The API Key `client_id` and `client_secret` can be obtained by an **Owner** from
 
 {% image organizations/org-api-key.png Get Organization API Key %}
 
-If, as an owner, you want to share the API Key with an Admin or other user, use a secure communication method like [Bitwarden Send]({{site.baseurl}}/about-send/).
+If, as an owner, you want to share the API Key with an Admin or other user, use a secure communication method like [Bitwarden Send]({{site.baseurl}}/article/about-send/).
 
 {% callout warning %}
 Your API key enables full access to your Organization. Keep your API key private. If you believe your API key has been compromised, select the **Rotate API Key** button on this screen. Active uses of your current API key will need to be reconfigured with the new key before use.
@@ -134,5 +134,5 @@ The Bitwarden Public API uses conventional HTTP response codes to indicate the s
 ## Further Reading
 
 For more information about using the Bitwarden Public API, see the following articles:
-- [Bitwarden Public API OAS Specification]({{site.baseurl}}/api/){:target="\_blank"}
-- [Event Logs]({{site.baseurl}}/event-logs/)
+- [Bitwarden Public API OAS Specification]({{site.baseurl}}/article/api/){:target="\_blank"}
+- [Event Logs]({{site.baseurl}}/article/event-logs/)

@@ -9,19 +9,19 @@ tags: [sso, saml, jumpcloud]
 order:
 ---
 
-This article contains **JumpCloud-specific** help for configuring Login with SSO via SAML 2.0. For help configuring Login with SSO for another IdP, refer to [SAML 2.0 Configuration]({{site.baseurl}}/configure-sso-saml/).
+This article contains **JumpCloud-specific** help for configuring Login with SSO via SAML 2.0. For help configuring Login with SSO for another IdP, refer to [SAML 2.0 Configuration]({{site.baseurl}}/article/configure-sso-saml/).
 
-Configuration involves working simultaneously within the Bitwarden [Business Portal]({{site.baseurl}}/about-business-portal/) and the JumpCloud Portal. As you proceed, we recommend having both readily available and completing steps in the order they're documented.
+Configuration involves working simultaneously within the Bitwarden [Business Portal]({{site.baseurl}}/article/about-business-portal/) and the JumpCloud Portal. As you proceed, we recommend having both readily available and completing steps in the order they're documented.
 
 {% callout success %}
 **Already an SSO expert?** Skip the instructions in this article and download screenshots of sample configurations to compare against your own.
 
-[{% icon fa-download %} Download Sample]({{site.baseurl}}/files/saml-jumpcloud-sample.zip)
+[{% icon fa-download %} Download Sample]({{site.baseurl}}/article/files/saml-jumpcloud-sample.zip)
 {% endcallout %}
 
 ## Open the Business Portal
 
-If you're coming straight from [SAML 2.0 Configuration]({{site.baseurl}}/sso-configure-saml/), you should already have an [Organization ID created]({{site.baseurl}}/configure-sso-saml/#step-1-enabling-login-with-sso) and the SSO Configuration screen open. If you don't, open your [Business Portal]({{site.baseurl}}/about-business-portal/) and navigate to the SSO Configuration screen:
+If you're coming straight from [SAML 2.0 Configuration]({{site.baseurl}}/article/sso-configure-saml/), you should already have an [Organization ID created]({{site.baseurl}}/article/configure-sso-saml/#step-1-enabling-login-with-sso) and the SSO Configuration screen open. If you don't, open your [Business Portal]({{site.baseurl}}/article/about-business-portal/) and navigate to the SSO Configuration screen:
 
 {% image sso/sso-saml1.png SAML 2.0 Configuration %}
 
@@ -56,8 +56,8 @@ In the **Single Sign-On Configuration** section, configure the following informa
 |Field|Description|
 |-----|-----------|
 |IdP Entity ID|Set this field to a unique, Bitwarden-specific value, e.g. `bitwardensso_yourcompany`.|
-|SP Entity ID|Set this field to the pre-generated **SP Entity ID** retrieved from the Bitwarden SSO Configuration screen.<br><br>For Cloud-hosted customers, this is always `https://sso.bitwarden.com/saml2`. For self-hosted instances, this is determined by your [configured server URL]({{site.baseurl}}/install-on-premise/#configure-your-domain), for example `https://your.domain.com/sso/saml2`.|
-|ACS URL|Set this field to the pre-generated **Assertion Consumer Service (ACS) URL** retrieved from the Bitwarden SSO Configuration screen.<br><br>For Cloud-hosted customers, this is always `https://sso.bitwarden.com/saml2/your-org-id/Acs`. For self-hosted instances, this is determined by your [configured server URL]({{site.baseurl}}/install-on-premise/#configure-your-domain), for example `https://your.domain.com/sso/saml2/your-org-id/Acs`.|
+|SP Entity ID|Set this field to the pre-generated **SP Entity ID** retrieved from the Bitwarden SSO Configuration screen.<br><br>For Cloud-hosted customers, this is always `https://sso.bitwarden.com/saml2`. For self-hosted instances, this is determined by your [configured server URL]({{site.baseurl}}/article/install-on-premise/#configure-your-domain), for example `https://your.domain.com/sso/saml2`.|
+|ACS URL|Set this field to the pre-generated **Assertion Consumer Service (ACS) URL** retrieved from the Bitwarden SSO Configuration screen.<br><br>For Cloud-hosted customers, this is always `https://sso.bitwarden.com/saml2/your-org-id/Acs`. For self-hosted instances, this is determined by your [configured server URL]({{site.baseurl}}/article/install-on-premise/#configure-your-domain), for example `https://your.domain.com/sso/saml2/your-org-id/Acs`.|
 
 #### Custom SAML App Only
 
@@ -69,7 +69,7 @@ If you created a Custom SAML App, you'll also need to configure the following **
 |SAMLSubject NameID Format|Specify the format of the NameID sent in SAML responses.|
 |Signature Algoritm|Select the algorithm to use to sign SAML assertions or reponses.|
 |Sign Assertion|By default, JumpCloud will sign the SAML response. Check this box the sign the SAML assertion.|
-|Login URL|Specify the URL from which your users will login to Bitwarden via SSO. For Cloud-hosted customers, this is always `https://vault.bitwarden.com/#/sso`. For self-hosted instances, this is determined by your [configured server URL]({{site.baseurl}}/install-on-premise/#configure-your-domain), for example `https://your.domain.com/#/sso`. |
+|Login URL|Specify the URL from which your users will login to Bitwarden via SSO. For Cloud-hosted customers, this is always `https://vault.bitwarden.com/#/sso`. For self-hosted instances, this is determined by your [configured server URL]({{site.baseurl}}/article/install-on-premise/#configure-your-domain), for example `https://your.domain.com/#/sso`. |
 
 ### Attributes
 

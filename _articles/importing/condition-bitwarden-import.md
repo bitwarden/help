@@ -8,7 +8,7 @@ tags: [import]
 order: "09"
 ---
 
-This article defines the format you should use when manually conditioning a `.csv` or `.json` for import into Bitwarden. This format is identical to that used by `.csv` or `.json` files created by [Exporting your Bitwarden Vault]({{site.baseurl}}/export-your-data/).
+This article defines the format you should use when manually conditioning a `.csv` or `.json` for import into Bitwarden. This format is identical to that used by `.csv` or `.json` files created by [Exporting your Bitwarden Vault]({{site.baseurl}}/article/export-your-data/).
 
 Make sure that you're using the format for Personal Vaults or Organizations depending on your export/import operation, as they are slightly different.
 
@@ -36,7 +36,7 @@ Social,1,login,Twitter,,,0,twitter.com,me@example.com,password123,
 
 When importing this file, select **Bitwarden (csv)** as your file format.
 
-[{% icon fa-download %} Download sample csv]({{site.baseurl}}/files/bitwarden_export.csv)
+[{% icon fa-download %} Download sample csv]({{site.baseurl}}/article/files/bitwarden_export.csv)
 
 ### For your Organization
 
@@ -55,7 +55,7 @@ collections,type,name,notes,fields,reprompt,login_uri,login_username,login_passw
 ```
 When importing this file, select **Bitwarden (csv)** as your file format.
 
-[{% icon fa-download %} Download sample csv]({{site.baseurl}}/files/bitwarden_export_org.csv)
+[{% icon fa-download %} Download sample csv]({{site.baseurl}}/article/files/bitwarden_export_org.csv)
 
 ### Minimum Required Values
 
@@ -119,7 +119,7 @@ Create a UTF-8 encoded plaintext file in the following format:
 ```
 When importing this file, select **Bitwarden (json)** as your file format.
 
-[{% icon fa-download %} Download sample json]({{site.baseurl}}/files/bitwarden_export.json)
+[{% icon fa-download %} Download sample json]({{site.baseurl}}/article/files/bitwarden_export.json)
 
 ### For your Organization
 
@@ -174,7 +174,7 @@ Create a UTF-8 encoded plaintext file in the following format:
 ```
 When importing this file, select **Bitwarden (json)** as your file format.
 
-[{% icon fa-download %} Download sample json]({{site.baseurl}}/files/bitwarden_org_export.json)
+[{% icon fa-download %} Download sample json]({{site.baseurl}}/article/files/bitwarden_org_export.json)
 
 ### Minimum Required Key-Value Pairs
 

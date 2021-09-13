@@ -8,7 +8,7 @@ hidden: false
 tags: [account, individual, organization, premium, subscription]
 order: "03"
 ---
-This article will guide existing individual Bitwarden users ([**Free**]({{site.baseurl}}/about-bitwarden-plans/#free-individual) or [**Premium**]({{site.baseurl}}/about-bitwarden-plans/#premium-individual)) through the process of transitioning to an Organizations plan ([**Free**]({{site.baseurl}}/about-bitwarden-plans/#free-organizations), [**Families**]({{site.baseurl}}/about-bitwarden-plans/#families-organizations), [**Teams**]({{site.baseurl}}/about-bitwarden-plans/#teams-organizations), or [**Enterprise**]({{site.baseurl}}/about-bitwarden-plans/#enterprise-organizations)) in order to start securely sharing data from Organizations with friends, family, co-workers, a department, or an entire company.
+This article will guide existing individual Bitwarden users ([**Free**]({{site.baseurl}}/article/about-bitwarden-plans/#free-individual) or [**Premium**]({{site.baseurl}}/article/about-bitwarden-plans/#premium-individual)) through the process of transitioning to an Organizations plan ([**Free**]({{site.baseurl}}/article/about-bitwarden-plans/#free-organizations), [**Families**]({{site.baseurl}}/article/about-bitwarden-plans/#families-organizations), [**Teams**]({{site.baseurl}}/article/about-bitwarden-plans/#teams-organizations), or [**Enterprise**]({{site.baseurl}}/article/about-bitwarden-plans/#enterprise-organizations)) in order to start securely sharing data from Organizations with friends, family, co-workers, a department, or an entire company.
 
 ## Start Your Organization
 
@@ -30,12 +30,12 @@ Complete the following steps to start your Organization:
 
    Checking the **This account is owned by a business** checkbox will automatically filter your plan options to those suited to businesses. If you represent a business interested in testing secure sharing using a Free Organization, leave this option unchecked.
 5. In the **Choose Your Plan** section, select which type of Organization to create. Options include:
-   - **Free:** For testing or personal users to share with 1 other user. **[Learn more]({{site.baseurl}}/about-bitwarden-plans/#free-organizations)**.
-   - **Families:** For personal use, to share with family & friends. **[Learn more]({{site.baseurl}}/about-bitwarden-plans/#families-organizations)**.
-   - **Teams:** For businesses and other team organizations. **[Learn more]({{site.baseurl}}/about-bitwarden-plans/#teams-organizations)**.
-   - **Enterprise:** For businesses and other large organizations. **[Learn more]({{site.baseurl}}/about-bitwarden-plans/#enterprise-organizations)**.
+   - **Free:** For testing or personal users to share with 1 other user. **[Learn more]({{site.baseurl}}/article/about-bitwarden-plans/#free-organizations)**.
+   - **Families:** For personal use, to share with family & friends. **[Learn more]({{site.baseurl}}/article/about-bitwarden-plans/#families-organizations)**.
+   - **Teams:** For businesses and other team organizations. **[Learn more]({{site.baseurl}}/article/about-bitwarden-plans/#teams-organizations)**.
+   - **Enterprise:** For businesses and other large organizations. **[Learn more]({{site.baseurl}}/article/about-bitwarden-plans/#enterprise-organizations)**.
 
-   {% callout info %}Paid Organizations (Families, Teams, or Enterprise) include premium features for all enrolled users. For more information about Premium features, see [About Bitwarden Plans]({{site.baseurl}}/about-bitwarden-plans/#compare-the-plans/).
+   {% callout info %}Paid Organizations (Families, Teams, or Enterprise) include premium features for all enrolled users. For more information about Premium features, see [About Bitwarden Plans]({{site.baseurl}}/article/about-bitwarden-plans/#compare-the-plans/).
    {% endcallout %}
 6. If you selected a Paid Organization, enter the following information:
    - For **Teams** or **Enterprise**, enter the number of **User Seats** you need. You can add additional seats later if required.
@@ -64,6 +64,6 @@ Complete the following steps to cancel your Premium Individual subscription:
 
 Now that you've created your Organization, we recommend that you:
 
-- [Invite Users to Your Organization]({{site.baseurl}}/managing-users)
-- [Create a Collection]({{site.baseurl}}/about-collections/#create-a-collection)
-- [Share Items to a Collection]({{site.baseurl}}/sharing/)
+- [Invite Users to Your Organization]({{site.baseurl}}/article/managing-users)
+- [Create a Collection]({{site.baseurl}}/article/about-collections/#create-a-collection)
+- [Share Items to a Collection]({{site.baseurl}}/article/sharing/)

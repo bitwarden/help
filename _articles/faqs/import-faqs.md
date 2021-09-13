@@ -13,7 +13,7 @@ This article contains Frequently Asked Questions (FAQs) regarding **Import &amp;
 
 ### Q: How do I import my data if I don’t see my service on the import options list?
 
-**A:** If we don't have official support for the service you are using, manually condition a `.csv` or `.json` for import into Bitwarden. For more information about how to do this, see [Condition a Bitwarden .csv or .json]({{site.baseurl}}/condition-bitwarden-import/).
+**A:** If we don't have official support for the service you are using, manually condition a `.csv` or `.json` for import into Bitwarden. For more information about how to do this, see [Condition a Bitwarden .csv or .json]({{site.baseurl}}/article/condition-bitwarden-import/).
 
 ### Q: Can I import to Bitwarden from iCloud/Mac Keychain?
 
@@ -27,11 +27,11 @@ Here are some third-party programs available to export this data:
 **Disclaimer**: These 3rd party scripts/programs are unsupported by Bitwarden or Apple, and should be used at your own risk.
 {% endcallout %}
 
-Once exported from iCloud, Mac Keychain, or Safari, see [Import Data to your Vault]({{site.baseurl}}/import-data/).
+Once exported from iCloud, Mac Keychain, or Safari, see [Import Data to your Vault]({{site.baseurl}}/article/import-data/).
 
 ### Q: How do I import items directly to Collections?
 
-**A:** To import items directly to Collections, format your import as a Bitwarden `.csv` (for more information, see [Condition a Bitwarden .csv or .json]({{site.baseurl}}/condition-bitwarden-import/)) and specify Collections to import each item to within the file.
+**A:** To import items directly to Collections, format your import as a Bitwarden `.csv` (for more information, see [Condition a Bitwarden .csv or .json]({{site.baseurl}}/article/condition-bitwarden-import/)) and specify Collections to import each item to within the file.
 
 ### Q: How do I import file attachments to Bitwarden?
 
@@ -53,42 +53,42 @@ Please note that storage of File Attachments is available only for Premium users
   **A:** The following formats are supported out-of-the-box:
 
 {% callout info %}
-If your format is not listed below, manually [condition a Bitwarden .csv or .json]({{site.baseurl}}/condition-bitwarden-import/).
+If your format is not listed below, manually [condition a Bitwarden .csv or .json]({{site.baseurl}}/article/condition-bitwarden-import/).
 {% endcallout %}
 
-  - [1Password (1pif)]({{site.baseurl}}/import-from-1password/)[1Password (1pif)]({{site.baseurl}}/import-from-1password/)[1Password (1pif)]({{site.baseurl}}/import-from-1password/)
-  - [1Password 6 &amp; 7 Windows (.sv)]({{site.baseurl}}/import-from-1password/)
-  - [1Password 6 &amp; 7 Mac (csv)]({{site.baseurl}}/import-from-1password/)
+  - [1Password (1pif)]({{site.baseurl}}/article/import-from-1password/)[1Password (1pif)]({{site.baseurl}}/article/import-from-1password/)[1Password (1pif)]({{site.baseurl}}/article/import-from-1password/)
+  - [1Password 6 &amp; 7 Windows (.sv)]({{site.baseurl}}/article/import-from-1password/)
+  - [1Password 6 &amp; 7 Mac (csv)]({{site.baseurl}}/article/import-from-1password/)
   - Ascendo DataVault (csv)
   - Avast Passwords (csv)
   - Avast Passwords (json)
   - Avira (json)
   - BlackBerry Password Keeper (csv)
   - Blur (csv)
-  - [Brave (csv)]({{site.baseurl}}/import-from-chrome/)
+  - [Brave (csv)]({{site.baseurl}}/article/import-from-chrome/)
   - Buttercup (csv)
-  - [Chrome (csv)]({{site.baseurl}}/import-from-chrome/)
+  - [Chrome (csv)]({{site.baseurl}}/article/import-from-chrome/)
   - Clipperz (html)
   - Codebook (csv)
   - Dashlane (json)
   - Encryptr (csv)
   - Enpass (csv)
   - Enpass (json)
-  - [Firefox (csv)]({{site.baseurl}}/import-from-firefox/)
+  - [Firefox (csv)]({{site.baseurl}}/article/import-from-firefox/)
   - F-Secure KEY (fsk)
   - GNOME Passwords and Keys/Seahorse (json)
   - Kaspersky Password Manager (txt)
   - KeePass 2 (xml)
   - KeePassX (csv)
   - Keeper (csv)
-  - [LastPass (csv)]({{site.baseurl}}/import-from-lastpass/)
+  - [LastPass (csv)]({{site.baseurl}}/article/import-from-lastpass/)
   - LogMeOnce (csv)
   - Meldium (csv)
   - mSecure (csv)
   - Myki (csv)
-  - [Microsoft Edge (Chromium) (csv)]({{site.baseurl}}/import-from-chrome/)
+  - [Microsoft Edge (Chromium) (csv)]({{site.baseurl}}/article/import-from-chrome/)
   - Nordpass (csv)
-  - [Opera (csv)]({{site.baseurl}}/import-from-chrome/)
+  - [Opera (csv)]({{site.baseurl}}/article/import-from-chrome/)
   - Padlock (csv)
   - Passbolt (csv)
   - PassKeep (csv)
@@ -108,6 +108,6 @@ If your format is not listed below, manually [condition a Bitwarden .csv or .jso
   - Sticky Password (xml)
   - True Key (csv)
   - Universal Password Manager (csv)
-  - [Vivaldi (csv)]({{site.baseurl}}/import-from-chrome/)
+  - [Vivaldi (csv)]({{site.baseurl}}/article/import-from-chrome/)
   - Yoti (csv)
   - Zoho Vault (csv)

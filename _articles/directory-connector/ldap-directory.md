@@ -24,7 +24,7 @@ This article will help you get started using Directory Connector to sync users a
 
 Complete the following steps to configure Directory Connector to use your LDAP or Active Directory:
 
-1. Open the Directory Connector [Desktop Application]({{site.baseurl}}/directory-sync-desktop/).
+1. Open the Directory Connector [Desktop Application]({{site.baseurl}}/article/directory-sync-desktop/).
 2. Navigate to the **Settings** tab.
 3. From the **Type** dropdown, select **Active Directory / LDAP**.
 
@@ -47,7 +47,7 @@ Complete the following steps to configure Directory Connector to use your LDAP o
 ## Configure Sync Options
 
 {% callout success %}
-When you're finished configuring, navigate to the **More** tab and select the **Clear Sync Cache** button to prevent potential conflicts with prior sync operations. For more information, see [Clear Sync Cache]({{site.baseurl}}/clear-sync-cache/).
+When you're finished configuring, navigate to the **More** tab and select the **Clear Sync Cache** button to prevent potential conflicts with prior sync operations. For more information, see [Clear Sync Cache]({{site.baseurl}}/article/clear-sync-cache/).
 {% endcallout %}
 
 Complete the following steps to configure the settings used when syncing using Directory Connector:
@@ -56,7 +56,7 @@ Complete the following steps to configure the settings used when syncing using D
 If you are using Active Directory, many of these settings are predetermined for you and are therefore are not shown.
 {% endcallout %}
 
-1. Open the Directory Connector [Desktop Application]({{site.baseurl}}/directory-sync-desktop/).
+1. Open the Directory Connector [Desktop Application]({{site.baseurl}}/article/directory-sync-desktop/).
 2. Navigate to the **Settings** tab.
 3. In the **Sync** section, configure the following options as disired:
 
@@ -126,7 +126,7 @@ To test whether Directory Connector will successfully connect to your Directory 
 
 Once [Sync Options](#configure-sync-options) and [Filters](#specify-sync-filters) are configured and tested, you can begin syncing. Complete the following steps to start automatic syncing with Directory Connector:
 
-1. Open the Directory Connector [Desktop Application]({{site.baseurl}}/directory-sync-desktop/).
+1. Open the Directory Connector [Desktop Application]({{site.baseurl}}/article/directory-sync-desktop/).
 2. Navigate to the **Dashboard** tab.
 3. In the **Sync** section, select the **Start Sync** button.
 

@@ -13,14 +13,14 @@ When configuring the Directory Connector application, you can use a variety of S
 
 Available Sync Options and Filter syntaxes are different for each directory server type. Refer to the **Configure Sync Options** and **Specify Sync Filters** sections of one of the following articles for help:
 
-- [Sync with Active Directory or LDAP]({{site.baseurl}}/ldap-directory/)[Sync with Active Directory or LDAP]({{site.baseurl}}/ldap-directory/)[Sync with Active Directory or LDAP]({{site.baseurl}}/ldap-directory/)[Sync with Active Directory or LDAP]({{site.baseurl}}/ldap-directory/)[Sync with Active Directory or LDAP]({{site.baseurl}}/ldap-directory/)
-- [Sync with Azure Active Directory]({{site.baseurl}}/azure-active-directory/)[Sync with Azure Active Directory]({{site.baseurl}}/azure-active-directory/)[Sync with Azure Active Directory]({{site.baseurl}}/azure-active-directory/)[Sync with Azure Active Directory]({{site.baseurl}}/azure-active-directory/)
+- [Sync with Active Directory or LDAP]({{site.baseurl}}/article/ldap-directory/)[Sync with Active Directory or LDAP]({{site.baseurl}}/article/ldap-directory/)[Sync with Active Directory or LDAP]({{site.baseurl}}/article/ldap-directory/)[Sync with Active Directory or LDAP]({{site.baseurl}}/article/ldap-directory/)[Sync with Active Directory or LDAP]({{site.baseurl}}/article/ldap-directory/)
+- [Sync with Azure Active Directory]({{site.baseurl}}/article/azure-active-directory/)[Sync with Azure Active Directory]({{site.baseurl}}/article/azure-active-directory/)[Sync with Azure Active Directory]({{site.baseurl}}/article/azure-active-directory/)[Sync with Azure Active Directory]({{site.baseurl}}/article/azure-active-directory/)
 - [Sync with G Suite (Google)]({% link _articles/directory-connector/gsuite-directory.md %})
 - [Sync with Okta]({% link _articles/directory-connector/okta-directory.md %})
 - [Sync with OneLogin]({% link _articles/directory-connector/onelogin-directory.md %})
 
 {% callout success%}
-If you're using the Directory Connector CLI, see [Directory Connector File Storage]({{site.baseurl}}/directory-sync-shared/) for help editing your `data.json` configuration file.
+If you're using the Directory Connector CLI, see [Directory Connector File Storage]({{site.baseurl}}/article/directory-sync-shared/) for help editing your `data.json` configuration file.
 {% endcallout %}
 
 ## Large Syncs
@@ -29,7 +29,7 @@ Regardless of which directory you're syncing from, enable the **More than 2000 u
 
 {% image directory-connector/largesync.png Signal a Large Sync%}
 
-You may also enable this option directly in the Directory Connector [configuration file]({{site.baseurl}}/directory-sync-shared/#config-file) (`data.json`) by setting `"largeImport": true`:
+You may also enable this option directly in the Directory Connector [configuration file]({{site.baseurl}}/article/directory-sync-shared/#config-file) (`data.json`) by setting `"largeImport": true`:
 
 ```
 "syncConfig": {
