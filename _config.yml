@@ -4,6 +4,7 @@ permalink: pretty
 encoding: utf-8
 port: 4009
 main_baseurl: https://bitwarden.com
+destination: _site/help
 
 sass:
   sass_dir: ./_scss
@@ -20,7 +21,6 @@ exclude:
 
 include:
   - '.nojekyll'
-  - '_redirects'
 
 collections:
   categories:
