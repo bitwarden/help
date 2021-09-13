@@ -21,7 +21,7 @@ This article contains Frequently Asked Questions (FAQs) regarding **Two-step Log
 
 ### Q: Is FIDO U2F or FIDO2 WebAuthn supported on my iOS or Android App?
 
-**A:** At this time, due to platform/OS limitations, FIDO is **only supported for Web Vaults, Browser Extensions, and Windows Desktop Apps**, however we are currently investigating ways to implement this. In the meantime, we recommend enabling another [Two-step Login Method]({% link _articles/two-step-login/setup-two-step-login.md %}) for use with unsupported client applications.
+**A:** Yes! Please see [Two-step Login via FIDO2 WebAuthn]({{site.baseurl}}/article/setup-two-step-login-fido/).
 
 ### Q: Why is Bitwarden not asking for my enabled Two-step Login method?
 

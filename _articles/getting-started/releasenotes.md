@@ -25,6 +25,16 @@ Bitwarden believes source code transparency is an absolute requirement for secur
 
 To be notified of Release Announcements, subscribe to the [Bitwarden Status RSS Feed](https://status.bitwarden.com/){:target="\_blank"}.
 
+## 2021-09-21
+
+The latest release of Bitwarden focuses on often requested improvements to existing functionality:
+
+- **FIDO2 WebAuthn on Mobile**: Two-step Login via FIDO2 WebAuthn is now supported on iOS and Android, including F-Droid (see [here]({{site.baseurl}}/article/setup-two-step-login-fido/) for details).
+- **Admin Password Reset - Automatic Enrollment Improvement**: The Automatic Enrollment policy option will now prevent users from withdrawing from Admin Password Reset.
+- **Browser Extension - Save Bar Improvement**: You can now select which [Folder]({{site.baseurl}}/article/folders) to save an item to directly from the Browser Extension save prompt (see [here]({{site.baseurl}}/article/getting-started-browserext/#add-a-login) for details).
+- **Custom Fields - New Context Menu Item**: ?
+- **CAPTCHA**: ?
+
 ## 2021-08-18
 
 {% callout success %}

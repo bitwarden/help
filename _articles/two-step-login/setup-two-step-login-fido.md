@@ -23,6 +23,7 @@ FIDO2 WebAuthn cannot be used on all Bitwarden applications. Enable another Two-
 - **Web Vault** on a device with a [FIDO2-supported Browser](https://fidoalliance.org/fido2/fido2-web-authentication-webauthn/){:target="\_blank"}.
 - **Browser Extensions** for a [FIDO2-supported Browser](https://fidoalliance.org/fido2/fido2-web-authentication-webauthn/){:target="\_blank"}.
 - **Desktop Application** on Windows 10 and above.
+- **Mobile Apps** for iOS and Android (including F-Droid).
 
 ## Setup FIDO2 WebAuthn
 
@@ -61,7 +62,7 @@ When you setup Two-step Login, you should logout of all your Bitwarden apps to i
 
 The following assumes that **FIDO2 WebAuthn** is your [highest-priority enabled method](https://bitwarden.com/help/article/setup-two-step-login/#using-multiple-methods). Complete the following steps to access your Vault using Two-step Login:
 
-1. Log in to your Bitwarden Vault (*Web Vault* or *Browser Extension*) and enter your Email Address and Master Password.
+1. Log in to your Bitwarden Vault and enter your Email Address and Master Password.
 
    You will be prompted to insert your security key into your device's USB port. If it has a button, touch it.
 
@@ -72,3 +73,23 @@ Check the **Remember Me** box to remember your device for 30 days. Remembering y
 {% endcallout %}
 
 You will not be required to complete your secondary Two-step Login setup to **Unlock** your Vault once logged in. For help configuring Log Out vs. Lock behavior, see [Vault Timeout Options]({% link _articles/account/vault-timeout.md %}).
+
+## NFC Troubleshooting
+
+If you're using a FIDO2 authenticator with NFC functionality like a YubiKey or other hardware security key, you may need to practice finding the NFC Reader in your device as different devices have NFC readers in different physical locations (e.g. top of phone vs. bottom of phone, or front vs. back).
+
+{% callout success %}
+Hardware security keys typically have a physical plug, which will work more reliably in cases where NFC is difficult.
+{% endcallout %}
+
+### Troubleshooting YubiKey NFC
+
+On mobile devices, you may encounter a scenario where your YubiKey is read twice consecutively. You will know this has occurred when your device's browser opens the YubiKey OTP website (`https://demo/yubico.com/yk`) and if your device vibrates multiple times to signal multiple NFC reads.
+
+**To solve this**, use the [YubiKey Manager](https://www.yubico.com/support/download/yubikey-manager/) application to disable the **NFC** &rarr; **OTP** interface for your key:
+
+{% image two-step/yubikey/yubikey_manager.png YubiKey Manager %}
+
+{% callout warning %}
+Disabling **NFC** &rarr; **OTP** will prevent you from being able to use [Two-step Login via YubiKey]({{site.baseurl}}/article/setup-two-step-login-yubikey/) (OTP) over NFC with this key. In this scenario, OTP via USB will still function as expected.
+{% endcallout %}
