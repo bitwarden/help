@@ -22,8 +22,9 @@ In order to continue, you will also need your Organization's [API Key]({{site.ba
 
 ### Setup a Sync Script
 
-In order avoid session timeouts, we recommend creating a shell script to run through cron, for example:
+In order avoid session timeouts, we recommend creating a shell script to run through cron. This script should securely read your `client_secret` to complete the login, and run a `bwdc sync` command that writes output to `bwdc.log`. If you need help creating a sync script, [Contact Us](https://bitwarden.com/contact).
 
+{% comment %}
 ```
 #!/bin/bash
 
@@ -39,8 +40,7 @@ bwdc login
 ​
 bwdc sync >> bwdc.log
 ```
-
-This script will securely read your `client_secret` to complete the login, and run a `bwdc sync` command that writes output to `bwdc.log`.
+{% endcomment %}
 
 ### Setup the Cron Job
 
