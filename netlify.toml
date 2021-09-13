@@ -18,7 +18,7 @@
 
 
   [[redirects]]
-  from = "https://bitwarden-help.netlify.app/help/article/*"
+  from = "https://bitwarden-help.netlify.app/help/*"
   to = "https://deploy-preview-913--bitwarden-website-contentful.netlify.app/help/:splat"
   status = 200
   force = true
