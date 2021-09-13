@@ -61,7 +61,7 @@ At this point, you've configured everything you need within the context of the A
 |-----|-----------|
 |Authority|Enter `https://login.microsoft.com/<TENANT_ID>/v2.0`, where `TENANT_ID` is the **Directory (tenant) ID** value retrieved from the App registration's Overview screen.|
 |Client ID|Enter the App registration's **Application (client) ID**, which can be retrieved from the Overview screen.|
-|Client Secret|Enter the **Secret ID** of the [created Client Secret](#create-a-client-secret).|
+|Client Secret|Enter the **Secret Value** of the [created Client Secret](#create-a-client-secret).|
 |Metadata Address|For Azure implementations as documented, you can leave this field blank.|
 |OIDC Redirect Behavior|Select either **Form POST** or **Redirect GET**.|
 |Get Claims From User Info Endpoint|Enable this option if you receive URL too long errors (HTTP 414), truncated URLS, and/or failures during SSO.|
