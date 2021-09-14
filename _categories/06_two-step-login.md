@@ -1,6 +1,6 @@
 ---
 layout: category
-title: Directory Connector
+title: Two-step Login
 featured: true
-order: true
+order: "06"
 ---
