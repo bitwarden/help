@@ -22,6 +22,7 @@ You will **not** be locked out of your Vault, however you will not be able to us
 - If you have a core Two-step Login option enabled (authenticator app or email), you will be prompted to use the enabled option.
 - If you do not have another Two-step Login option enabled, you will authenticate into your Vault without Two-step Login.
 
+<br>
 **Bitwarden Authenticator (TOTP)**
 
 Your secret keys will remain stored in Vault items in the **Authenticator Key (TOTP)** field, however Bitwarden will not generate TOTP codes.
