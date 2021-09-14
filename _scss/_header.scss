@@ -1,5 +1,11 @@
+nav.navbar {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+}
+
 nav.navbar-dark {
     background: $primary;
+    padding: 1rem;
 
     .navbar-brand {
         font-size: 1.5rem;
@@ -8,6 +14,7 @@ nav.navbar-dark {
     .navbar-nav {
         .nav-link {
             color: #fff;
+            margin: 0 4.5px;
 
             &:hover {
                 opacity: 0.75;

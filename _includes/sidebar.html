@@ -1,5 +1,7 @@
 {% assign sorted_articles = site.articles | sort: 'order' %}
 
+{% assign sorted_categories = site.categories | sort: 'order' %}
+
 <nav class="bd-links collapse" id="bd-docs-nav" aria-label="Main navigation">
     <div class="bd-toc-search">
         <form class="search-header" action="{{site.baseurl}}/search/" id="search" method="get">

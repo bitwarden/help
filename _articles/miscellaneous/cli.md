@@ -300,7 +300,7 @@ The `get` command takes an item `id` or string for its argument. If you use a st
 bw get password Github
 ```
 
-{% callout note %}
+{% callout info %}
 The `get` command can **only return one result**, so you should use specific search terms. If multiple results are found, the CLI will return an error.
 {% endcallout %}
 

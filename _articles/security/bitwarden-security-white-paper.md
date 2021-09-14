@@ -39,7 +39,7 @@ Bitwarden utilizes the following key security measures to protect user data.
 
 **Zero knowledge encryption:** Bitwarden team members can not see your passwords. Your data remains encrypted end-to-end with your individual email and Master Password. We never store and cannot access your Master Password or your cryptographic keys.
 
-{% callout note %}
+{% callout info %}
 The mid 2021 release of Admin Password Reset introduced a new RSA public/private key pair for all Organizations. The private key is further encrypted with the Organizationʼs pre-existing symmetric key before being stored. The key pair is generated and encrypted client-side upon creation of a new Organization, or for an existing Organization upon:
 
 - Navigation to the Manage→ People screen.
@@ -81,7 +81,7 @@ This also means no one from the Bitwarden team can ever see, read, or reverse en
 
 After creating your account and specifying your Master Password , Bitwarden next generates several keys that are used in protecting your account’s data.
 
-{% callout note %}
+{% callout info %}
 In mid 2021, Bitwarden introduced Admin Password Reset for Enterprise plans. With this option, users and organizations have the opportunity to implement a new policy allowing Administrators and Owners to reset passwords for users. For more detail on this feature, visit our help site at [https://bitwarden.com/help/releasenotes/]({{site.baseurl}}/article/releasenotes/)
 {% endcallout %}
 
@@ -138,7 +138,7 @@ You can enable multiple two-step login methods. If you have multiple two-step lo
 
 **It is very important that you never lose your two-step login recovery codes.** Bitwarden offers an account protection security model that does not support users losing their Master Password or two-step login recovery codes. If you have two-step login enabled on your account and lose access to your two-step login recovery codes you will not be able login to your Bitwarden account.
 
-{% callout note %}
+{% callout info %}
 In mid 2021, Bitwarden introduced Admin Password Reset for Enterprise plans. With this option, users and organizations have the opportunity to implement a new policy allowing Administrators and Owners to reset passwords for users. For more detail on this feature, visit our help site at [https://bitwarden.com/help/releasenotes/]({{site.baseurl}}/article/releasenotes/)
 {% endcallout %}
 

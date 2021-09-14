@@ -23,6 +23,6 @@ The below animation shows the authentication flow in Google Chrome for autofille
 
 {% image autofill/saving-basic-auth.gif Basic Auth Autofill flow %}
 
-{% callout note %}
+{% callout info %}
 Due to the way basic auth prompts are designed, auto-filling must be non-interactive. This means you cannot auto-fill on a basic auth prompt using the {% icon fa-folder %} **Tab** view, context-menu, or keyboard shortcuts.
 {% endcallout %}

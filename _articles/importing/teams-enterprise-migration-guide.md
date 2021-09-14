@@ -57,7 +57,7 @@ It's important that you create your Organization first and [import data to it di
 
 1. **Create your Organization**. Start by creating your Organization. To learn how, check out [this article]({{site.baseurl}}/article/about-organizations/#create-an-organization).
 
-   {% callout note %}To self-host Bitwarden, create an Organization on the Bitwarden cloud, generate a [license key](https://bitwarden.com/host/), and use the key to [unlock Organizations]({{site.baseurl}}/article/licensing-on-premise/#organization-license) on your server.{% endcallout %}
+   {% callout info %}To self-host Bitwarden, create an Organization on the Bitwarden cloud, generate a [license key](https://bitwarden.com/host/), and use the key to [unlock Organizations]({{site.baseurl}}/article/licensing-on-premise/#organization-license) on your server.{% endcallout %}
 
 2. **Onboard Administrative Users**. With your Organization created, further setup procedures can be made easier by onboarding some [administrative users]({{siter.baseurl}}/user-types-access-control). It's important that you **do not begin end-user onboarding** at this point, as there are a few steps left to prepare your Organization. Learn how to invite admins [here]({{site.baseurl}}/article/managing-users/#onboard-users).
 3. **Configure Identity Services**. Bitwarden Enterprise Organizations support [Login with Single-Sign-On]({{site.baseurl}}/article/about-sso/) using either SAML 2.0 or OpenID Connect (OIDC). To configure SSO, navigate to the [Business Portal]({{site.baseurl}}/article/about-business-portal/), accessible from the Web Vault by [Organization Owners and Administrators]({{site.baseurl}}/article/user-types-access-control/).
