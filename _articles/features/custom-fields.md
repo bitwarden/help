@@ -61,9 +61,8 @@ If you're naming a custom field manually, you should use one of the following HT
 
 1. HTML form element's `id` attribute.
 2. HTML form element's `name` attribute.
-3. HTML form element's corresponding `label` value.
-4. HTML form element's `aria-label` attribute.
-5. HTML form element's `placeholder` attribute.
+3. HTML form element's `aria-label` attribute.
+4. HTML form element's `placeholder` attribute.
 
 #### Matching
 
