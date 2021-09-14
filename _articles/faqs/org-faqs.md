@@ -51,6 +51,18 @@ Paid Organizations (Families, Teams, or Enterprise) automatically include premiu
 Like with any software, running old versions may present a security risk.
 {% endcallout %}
 
+### Q: How do I change the name of my Organization?
+
+**A:** To change the name of your Organization:
+
+1. In the [Web Vault](https://vault.bitwarden.com){:target="\_blank"}, open your Organization.
+2. Navigate to the Organization's {% icon fa-cogs %} **Settings** page.
+3. Edit the **Organization Name** field and select the **Save** button.
+
+**If you're self-hosting**, you will also need to:
+1. Navigate to the {% icon fa-cogs %} **Settings** &rarr; **Subscription** page.
+2. Select the **Download License** button to download a license with the updated Organization name.
+3. [Upload the new license]({{site.baseurl}}/article/licensing-on-premise/#organization-license) to your self-hosted server.
 
 ## Sharing with an Organization
 
