@@ -34,7 +34,7 @@ The specified **Name** is important to get right in order to successfully auto-f
 
 {% image features/custom-fields-contextmenu.png %}
 
-Selecting this context menu option will copy the form element's `id`, `name`, `label`, `aria-label`, or `placeholder` value (**in that order of preference**).
+Selecting this context menu option will copy the form element's `id`, `name`, `aria-label`, or `placeholder` value (**in that order of preference**).
 
 #### Find Custom Field Names Manually
 
@@ -77,4 +77,4 @@ Field name matching is an **exact** and **case-insensitive** comparison. For exa
 There are two cases in which you can exercise more control over [name to attribute mapping](#name-to-attribute-mapping) by using prefixes:
 
 - **csv**: Prefixing your custom field's name with `csv=` allows you to specify multiple names to search for and compare against for auto-fill, for example `csv=pin,mypin,pincode`.
-- **regex**: Prefixing your custom field's name with `regex=` allows you to perform [regular expression comparisons](https://regexone.com){:target="\_blank"} when auto-fill is performed. For example, `regex=^first.*name` will offer auto-fill for `firstName`, `First_name`, and `First Name`. 
+- **regex**: Prefixing your custom field's name with `regex=` allows you to perform [regular expression comparisons](https://regexone.com){:target="\_blank"} when auto-fill is performed. For example, `regex=^first.*name` will offer auto-fill for `firstName`, `First_name`, and `First Name`.
