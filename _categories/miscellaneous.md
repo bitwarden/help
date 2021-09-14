@@ -2,5 +2,5 @@
 layout: category
 title: Miscellaneous
 featured: true
-order: true
+order: "15"
 ---

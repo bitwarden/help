@@ -2,5 +2,5 @@
 layout: category
 title: Login with SSO
 featured: true
-order: true
+order: "11"
 ---

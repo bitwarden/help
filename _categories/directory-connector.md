@@ -2,5 +2,5 @@
 layout: category
 title: Directory Connector
 featured: true
-order: true
+order: "10"
 ---

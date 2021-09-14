@@ -2,5 +2,5 @@
 layout: category
 title: Auto-fill
 featured: true
-order: true
+order: "05"
 ---

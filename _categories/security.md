@@ -2,5 +2,5 @@
 layout: category
 title: Security
 featured: true
-order: true
+order: "12"
 ---

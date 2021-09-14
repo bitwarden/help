@@ -2,5 +2,5 @@
 layout: category
 title: Plans and Pricing
 featured: true
-order: true
+order: "14"
 ---
