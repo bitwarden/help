@@ -1,6 +1,6 @@
 ---
 layout: category
-title: Organizations
+title: Auto-fill
 featured: true
-order: "08"
+order: true
 ---

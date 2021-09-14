@@ -1,6 +1,6 @@
 ---
 layout: category
-title: On-premises Hosting
+title: Security
 featured: true
-order: "07"
+order: true
 ---

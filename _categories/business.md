@@ -1,6 +1,6 @@
 ---
 layout: category
-title: Login with SSO
+title: Business Resources
 featured: true
-order: "11"
+order: true
 ---

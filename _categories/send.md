@@ -1,6 +1,6 @@
 ---
 layout: category
-title: Miscellaneous
+title: Bitwarden Send
 featured: true
-order: "15"
+order: true
 ---

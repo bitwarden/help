@@ -1,6 +1,6 @@
 ---
 layout: category
-title: Plans and Pricing
+title: On-premises Hosting
 featured: true
-order: "13"
+order: true
 ---

@@ -1,6 +1,6 @@
 ---
 layout: category
-title: Business Resources
+title: Organizations
 featured: true
-order: "14"
+order: true
 ---

@@ -1,6 +1,6 @@
 ---
 layout: category
-title: Getting Started
+title: Miscellaneous
 featured: true
-order: "01"
+order: true
 ---

@@ -1,6 +1,6 @@
 ---
 layout: category
-title: Bitwarden Send
+title: Two-step Login
 featured: true
-order: "03"
+order: true
 ---

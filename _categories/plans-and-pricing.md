@@ -1,6 +1,6 @@
 ---
 layout: category
-title: Directory Connector
+title: Plans and Pricing
 featured: true
-order: "10"
+order: true
 ---

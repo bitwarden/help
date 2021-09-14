@@ -1,6 +1,6 @@
 ---
 layout: category
-title: Import &amp; Export
+title: Getting Started
 featured: true
-order: "04"
+order: true
 ---
