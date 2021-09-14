@@ -43,9 +43,9 @@ Client Organizations are any [Organization]({{site.baseurl}}/article/about-organ
 {% image providers/provider-diagram.png Structure of a Provider %}
 
 {% callout info %}
-**As denoted in the above diagram**, if Providers want to use an [Organization]({{site.baseurl}}/article/about-organizations) to manage their own credentials, they **should not** include it as a Client Organization that's administered by the Provider.
+**As denoted in the above diagram**, if Providers want to use an [Organization]({{site.baseurl}}/article/about-organizations/) to manage their own credentials, they **should not** include it as a Client Organization that's administered by the Provider.
 
-Creating an independent Organization for this case will ensure users can be given the appropriate [user types and access controls]({{site.baseurl}}/article/user-types-access-control) over credentials.
+Creating an independent Organization for this case will ensure users can be given the appropriate [user types and access controls]({{site.baseurl}}/article/user-types-access-control/) over credentials.
 {% endcallout %}
 
 Organizations relate Bitwarden users and Vault items together for [secure sharing]({{site.baseurl}}/article/sharing/) of Logins, Cards, Notes, and Identities. Organizations have a unique Vault, where Provider Service Users can manage the Organization's items, users, and settings:
@@ -56,4 +56,4 @@ Members of a Client Organization (i.e. your customer's end-users) will find shar
 
 {% image organizations/personal-vault-org-enabled.png End-user Vault %}
 
-Once you've filled out the [Provider Registration form](#) and been setup with a Provider by a member of the Bitwarden team, [start a Client Organization]({{site.baseurl}}/article/client-org-setup).
+Once you've filled out the [Provider Registration form](#) and been setup with a Provider by a member of the Bitwarden team, [start a Client Organization]({{site.baseurl}}/article/client-org-setup/).
