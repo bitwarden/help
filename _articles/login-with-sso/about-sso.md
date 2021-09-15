@@ -16,7 +16,7 @@ Login with SSO separates user authentication from Vault decryption by leveraging
 
 Login with SSO currently supports SAML 2.0 and OpenID Connect authentication for customers on the current Enterprise Plan.
 
-Users of Bitwarden authenticate into their vaults using the **Enterprise Single Sign-On** button located on the login screen of any Bitwarden client application. For more information, see [Access Your Vault Using SSO](https://bitwarden.com/help/article/sso-access-your-vault/).
+Users of Bitwarden authenticate into their vaults using the **Enterprise Single Sign-On** button located on the login screen of any Bitwarden client application. For more information, see [Using Login with SSO]({{site.baseurl}}/article/using-sso/).
 
 Administrators can configure Login with SSO in the Business Portal. For more information, see [About the Business Portal](https://bitwarden.com/help/article/about-business-portal/).
 
@@ -60,15 +60,3 @@ For information on updating your self-hosted instance, see [Updating your Self-H
 The following diagram is an overview of the workflow used by Bitwarden to authenticate using SSO:
 
 {%image /sso/sso-workflow.png Bitwarden SSO Workflow %}
-
-## Next Steps
-For administrators configuring Login with SSO, see:
-- [Configure Login with SSO (SAML 2.0)](https://bitwarden.com/help/article/configure-sso-saml/)
-- [Configure Login with SSO (OIDC)](https://bitwarden.com/help/article/configure-sso-oidc)
-
-For existing users, see:
-- [Link an Existing Account to SSO](https://bitwarden.com/help/article/link-to-sso/)
-- [Access Your Vault Using SSO](https://bitwarden.com/help/article/sso-access-your-vault/)
-
-For more information, see:
-- [SSO FAQs](https://bitwarden.com/help/article/sso-faqs)
