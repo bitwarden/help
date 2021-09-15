@@ -87,7 +87,7 @@ Users who are removed as a result of this policy will be notified via email, and
 
 ### Single Sign-On Authentication
 
-Enabling the **Single Sign-On Authentication** policy will require non-Owner/non-Admin users to log in with Enterprise Single Sign-On. For more information, see [Access Your Vault using SSO](https://bitwarden.com/help/article/sso-access-your-vault/).
+Enabling the **Single Sign-On Authentication** policy will require non-Owner/non-Admin users to log in with Enterprise Single Sign-On. For more information, see [Using SSO]({{site.baseurl}}/article/using-sso/#login-using-sso).
 
 {% callout info %}
 The **Single Organization** policy must be enabled before activating this policy.
