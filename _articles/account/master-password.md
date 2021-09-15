@@ -14,9 +14,9 @@ redirect_from:
 
 Your Master Password is the primary method for accessing your Vault. It's critically important that your Master Password is:
 
-- **Memorable**: Bitwarden is a Zero Knowledge/Zero Trust solution. This means that the team at Bitwarden, as well as Bitwarden systems themselves, have no knowledge of, way to retrieve, or way to reset your Master Password. **Don't forget your Master Password!** Bitwarden won't be able to reset it or recover your Vault data if you do.
+- **Memorable**: Bitwarden is a zero knowledge solution. This means that the team at Bitwarden, as well as Bitwarden systems themselves, have no knowledge of, way to retrieve, or way to reset your Master Password. **Don't forget your Master Password!** Bitwarden won't be able to reset it or recover your Vault data if you do.
 
-   For our technically-inclined users, see the article on [Encryption]({% link _articles/security/what-encryption-is-used.md %}) to find out how we accomplish Zero Trust.
+   For our technically-inclined users, see the article on [Encryption]({% link _articles/security/what-encryption-is-used.md %}) to find out how we accomplish zero knowledge.
 - **Strong**: The longer, more complex, and less common your Master Password is, the safer your Vault data will be. Using something like `password` for your Master Password could let a capable attacker crack your Vault in **less than a second**!
 
    Use Bitwarden's free [**Password Strength Testing Tool**](https://bitwarden.com/password-strength){:target="\_blank"} to test the strength of some Master Passwords you'd consider using.

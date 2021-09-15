@@ -19,7 +19,7 @@ Establishing Emergency Access to a Vault is available for Premium users, includi
 
 ## How it Works
 
-Emergency Access uses public key exchange and encryption/decryption to allow users to give a [trusted emergency contact](#trusted-emergency-contacts) permission to [access Vault data](#user-access) in a Zero Knowledge/Zero Trust environment:
+Emergency Access uses public key exchange and encryption/decryption to allow users to give a [trusted emergency contact](#trusted-emergency-contacts) permission to [access Vault data](#user-access) in a zero knowledge environment:
 
 1. A Bitwarden user (the *grantor*) [invites another Bitwarden user](#invite-a-trusted-emergency-contact) to become a trusted emergency contact (the *grantee*). The invitation (valid for only 5 days) specifies a [user access level](#user-access) and includes a request for the grantee's public key.
 2. Grantee is notified of invitation via email and [accepts the invitation](#accept-an-invitation) to become a trusted emergency contact. On acceptance, the grantee's public key is stored with the invite.
