@@ -67,7 +67,9 @@ Users will need to [self-enroll](#self-enroll-in-password-reset) or [be auto-enr
 
 ### Automatic Enrollment
 
-Enabling the Automatic Enrollment policy option will automatically enroll new users in Admin Password Reset when their [invitation to the Organization is accepted]({{site.baseurl}}/article/managing-users/#accept). Users already in the Organization will not be retroactively enrolled in Admin Password Reset, and will be required to [self-enroll](#self-enroll-in-password-reset).
+Enabling the Automatic Enrollment policy option will automatically enroll new users in Admin Password Reset when their [invitation to the Organization is accepted]({{site.baseurl}}/article/managing-users/#accept) and will prevent them from [withdrawing](#withdraw-enrollment) from Admin Password Reset
+
+Users already in the Organization will not be retroactively enrolled in Admin Password Reset, and will be required to [self-enroll](#self-enroll-in-password-reset).
 
 {% callout success %}
 If you're automatically enrolling Organization members in Admin Password Reset, we **highly recommend notifying them of this feature**. Many Bitwarden Organization users store personal credentials in their Personal Vault, and should be made aware that Admin Password Reset could allow an administrator to access their Personal Vault.
@@ -87,7 +89,7 @@ Once enrolled, you can **Withdraw** from Password Reset from the same dropdown u
 
 {% image organizations/pwreset-withdraw.png Withdraw from Password Reset %}
 
-Manually changing your Master Password or [rotating your encryption key]({{site.baseurl}}/article/account-encryption-key/) **will not** withdraw you from Admin Password Reset.
+Users in Organizations that have enabled the [Automatic Enrollment](#automatic-enrollment) policy option **will not be allowed to withdraw** from Admin Password Reset. Additionally, manually changing your Master Password or [rotating your encryption key]({{site.baseurl}}/article/account-encryption-key/) **will not** withdraw you from Admin Password Reset.
 
 ## Reset a Master Password
 
