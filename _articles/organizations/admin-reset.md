@@ -67,7 +67,7 @@ Users will need to [self-enroll](#self-enroll-in-password-reset) or [be auto-enr
 
 ### Automatic Enrollment
 
-Enabling the Automatic Enrollment policy option will automatically enroll new users in Admin Password Reset when their [invitation to the Organization is accepted]({{site.baseurl}}/article/managing-users/#accept) and will prevent them from [withdrawing](#withdraw-enrollment) from Admin Password Reset
+Enabling the Automatic Enrollment policy option will automatically enroll new users in Admin Password Reset when their [invitation to the Organization is accepted]({{site.baseurl}}/article/managing-users/#accept) and will prevent them from [withdrawing](#withdraw-enrollment) from Admin Password Reset.
 
 Users already in the Organization will not be retroactively enrolled in Admin Password Reset, and will be required to [self-enroll](#self-enroll-in-password-reset).
 

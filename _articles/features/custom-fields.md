@@ -30,7 +30,7 @@ Custom fields can be added to a Vault item from any Bitwarden client using the *
 
 ### Custom Field Names
 
-The specified **Name** is important to get right in order to successfully auto-fill a custom field. Using the Browser Extension, you can quickly get the correct field name using the **Copy Custom Field Name** option in context menu (in most cases, by right-clicking on the form element):
+The specified **Name** is important to get right in order to successfully auto-fill a custom field. Using the Browser Extension, you can quickly get the correct field name using the **Copy Custom Field Name** option in the context menu (in most cases, by right-clicking on the form element):
 
 {% image features/custom-fields-contextmenu.png %}
 
@@ -73,7 +73,7 @@ Field name matching is an **exact** and **case-insensitive** comparison. For exa
 
 #### Prefixing
 
-There are two cases in which you can exercise more control over [name to attribute mapping](#name-to-attribute-mapping) by using prefixes:
+There are two cases in which you can exercise more control over [matching](#matching) by using prefixes:
 
 - **csv**: Prefixing your custom field's name with `csv=` allows you to specify multiple names to search for and compare against for auto-fill, for example `csv=pin,mypin,pincode`.
 - **regex**: Prefixing your custom field's name with `regex=` allows you to perform [regular expression comparisons](https://regexone.com){:target="\_blank"} when auto-fill is performed. For example, `regex=^first.*name` will offer auto-fill for `firstName`, `First_name`, and `First Name`.
