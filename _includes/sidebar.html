@@ -23,7 +23,8 @@
         </a>
     </div>
 
-    {% for category in site.categories %}
+    {% assign sorted_categories = site.categories | sort: 'order' %}
+    {% for category in sorted_categories %}
     {% if category.hidden != true %}
     {% assign catFilename = category.path | filename %}
 

@@ -2,5 +2,5 @@
 layout: category
 title: Business Resources
 featured: true
-order: "13"
+order: 13
 ---

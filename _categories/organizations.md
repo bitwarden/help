@@ -2,5 +2,5 @@
 layout: category
 title: Organizations
 featured: true
-order: "08"
+order: 08
 ---

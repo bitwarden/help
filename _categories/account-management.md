@@ -2,5 +2,5 @@
 layout: category
 title: Your Vault
 featured: true
-order: "02"
+order: 02
 ---

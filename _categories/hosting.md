@@ -2,5 +2,5 @@
 layout: category
 title: On-premises Hosting
 featured: true
-order: "07"
+order: 07
 ---
