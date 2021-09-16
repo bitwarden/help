@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Change Theme
+title: Change App Theme
 categories: [miscellaneous]
 featured: true
 popular: false
