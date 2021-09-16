@@ -40,7 +40,7 @@ Bitwarden provides applications on lots of devices, including Browser Extensions
 [Create a Bitwarden account](https://vault.bitwarden.com/#/register){:target="\_blank"}, and make sure that you pick a strong and memorable [Master Password]({{site.baseurl}}/article/master-password/). We even recommend writing down your Master Password and storing it in a safe location.
 
 {% callout success %}
-**Don't forget your Master Password!** Bitwarden is a Zero knowledge/Zero Trust solution, meaning that the team at Bitwarden, as well as Bitwarden systems themselves, have no knowledge of, way to retrieve, or way to reset your Master Password.
+**Don't forget your Master Password!** Bitwarden is a zero knowledge solution, meaning that the team at Bitwarden, as well as Bitwarden systems themselves, have no knowledge of, way to retrieve, or way to reset your Master Password.
 {% endcallout %}
 
 Once your account is created, log in to your [Web Vault](https://vault.bitwarden.com){:target="\_blank"} and verify your account's email address to unlock access to all features:
