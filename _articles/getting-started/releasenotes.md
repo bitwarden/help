@@ -29,7 +29,7 @@ To be notified of Release Announcements, subscribe to the [Bitwarden Status RSS 
 
 The latest release of Bitwarden focuses on often requested improvements to existing functionality:
 
-- **FIDO2 WebAuthn on Mobile**: Two-step Login via FIDO2 WebAuthn is now supported on iOS and Android, including F-Droid (see [here]({{site.baseurl}}/article/setup-two-step-login-fido/) for details).
+- **FIDO2 WebAuthn on Mobile**: Two-step Login via FIDO2 WebAuthn is now supported on iOS and Android (see [here]({{site.baseurl}}/article/setup-two-step-login-fido/) for details).
 - **Admin Password Reset - Automatic Enrollment Improvement**: The Automatic Enrollment policy option will now prevent users from withdrawing from Admin Password Reset (see [here]({{site.baseurl}}/article/admin-reset/#automatic-enrollment) for details).
 - **Browser Extension - Select Folder from Save Bar**: You can now select which [Folder]({{site.baseurl}}/article/folders) to save an item to directly from the Browser Extension's save prompt (see [here]({{site.baseurl}}/article/getting-started-browserext/#add-a-login) for details).
 - **Browser Extension - Custom Field Context Menu Item**: You can now copy an HTML element name directly from the Browser Extension's context menu for easy custom field creation (see [here]({{site.baseurl}}/article/custom-fields/#custom-field-names) for details).

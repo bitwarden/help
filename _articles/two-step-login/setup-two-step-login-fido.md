@@ -23,7 +23,7 @@ FIDO2 WebAuthn cannot be used on all Bitwarden applications. Enable another Two-
 - **Web Vault** on a device with a [FIDO2-supported Browser](https://fidoalliance.org/fido2/fido2-web-authentication-webauthn/){:target="\_blank"}.
 - **Browser Extensions** for a [FIDO2-supported Browser](https://fidoalliance.org/fido2/fido2-web-authentication-webauthn/){:target="\_blank"}.
 - **Desktop Application** on Windows 10 and above.
-- **Mobile Apps** for iOS and Android (including F-Droid).
+- **Mobile Apps** for Android and iOS 13.3+ with a [FIDO2-supported Browser](https://fidoalliance.org/fido2/fido2-web-authentication-webauthn/){:target="\_blank"}.
 
 ## Setup FIDO2 WebAuthn
 
