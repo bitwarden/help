@@ -9,16 +9,9 @@ tags: [tutorial, getting started, browser extensions]
 order: 03
 ---
 
-Bitwarden Browser Extensions integrate password management directly into your favorite browser. Download a Bitwarden Browser Extension from your browser's marketplace or app store, or from the [Bitwarden Downloads](https://bitwarden.com/download){:target="\_blank"} page. Browser Extensions are available for:
+Bitwarden Browser Extensions integrate password management directly into your favorite browser. Download a Bitwarden Browser Extension from your browser's marketplace or app store, or from the [Bitwarden Downloads](https://bitwarden.com/download){:target="\_blank"} page.
 
-- Google Chrome
-- Mozilla Firefox
-- Opera
-- Microsoft Edge
-- Vivaldi
-- Brave
-- Tor Browser
-- Safari
+Browser Extensions are supported for the two most recent versions of **Google Chrome**, **Mozilla Firefox**, **Opera**, **Microsoft Edge**, and **Safari**. For **Vivaldi**, **Brave**, and **Tor**, only the most recent version is supported.
 
 {% callout success %}
 **The Safari Browser Extension is packaged with the Desktop Application**, available for download from the App Store. For more information, see [Safari App Extension]({% link _articles/account/install-safari-app-extension.md %}).
