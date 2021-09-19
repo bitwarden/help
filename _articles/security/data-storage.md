@@ -23,7 +23,7 @@ Bitwarden processes and stores all data securely in the [Microsoft Azure Cloud](
 Don't trust Bitwarden Servers? You don't have to. Open source is beautiful. You can easily host the entire Bitwarden stack yourself. You control your data. Learn more [here]({% link _articles/hosting/install-on-premise.md %}).
 ## On your Local Machine
 
-Data that is stored on your computer/device is also encrypted and only decrypted when you unlock your Vault. Decrypted data is stored **in memory** in the following locations and is **never written to persistent storage**:
+Data that is stored on your computer/device is encrypted and only decrypted when you unlock your Vault. Decrypted data is stored **in memory** only and is **never written to persistent storage**. BitWarden encrypted data at rest is stored in the following locations:
 
 #### Desktop App
 
