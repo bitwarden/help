@@ -60,7 +60,7 @@ Families, Teams, and Enterprise Organizations automatically provide members indi
 
 Personal Vaults are an instrumental component of the [Bitwarden approach](#the-bitwarden-approach). Employees use a range of credentials every day, personally and professionally, and **habits formed in one area typically become habits in the other**. In our view, employees that use proper security practices in their personal lives will carry over that good behavior to their professional lives, **protecting your business** in the process.
 
-Using the same tool in both areas helps that habit form faster and easier. Enterprise Organizations have the option to [configure policies](#), including to disable Personal Vaults.
+Using the same tool in both areas helps that habit form faster and easier. Enterprise Organizations have the option to [configure policies](#enterprise-policies), including to disable Personal Vaults.
 {% endcallout %}
 
 ## Bitwarden Organizations
@@ -73,7 +73,7 @@ Anyone can start an Organization directly from the Web Vault:
 
 {% image organizations/new-org-button-overlay.png Create New Organization %}
 
-Once created, you'll land in your Organization Vault, which is the central hub for all things sharing and Organization administration. Whoever launches the Organization will be the [Owner]({{site.baseurl}}/article/user-types-access-control), giving them full control to oversee the **Vault**, to **Manage** users, [Collections](#), [Groups](#), and [Policies](#), to use a suite of Bitwarden **Tools**, and to configure the Organization's **Settings**:
+Once created, you'll land in your Organization Vault, which is the central hub for all things sharing and Organization administration. Whoever launches the Organization will be the [Owner]({{site.baseurl}}/article/user-types-access-control), giving them full control to oversee the **Vault**, to **Manage** users, [Collections](#collections), [Groups](#groups), and [Policies](#enterprise-policies), to use a suite of Bitwarden **Tools**, and to configure the Organization's **Settings**:
 
 {% image getting-started/org-vault.png Organization Vault %}
 
@@ -116,7 +116,7 @@ Bitwarden takes an enterprise-friendly approach to sharing at scale. Users can b
 
 ### Offboarding Users
 
-At Bitwarden, we see sharing of credentials as a vital aspect to getting work done efficiently and securely. We also recognize that once a credential is shared, it is *technically* possible for the recipient to keep it. For that reason, secure onboarding using appropriate [role-based access controls](#comprehensive-role--based-access-controls) and [implementing policies](#) plays an important role in facilitating secure offboarding.
+At Bitwarden, we see sharing of credentials as a vital aspect to getting work done efficiently and securely. We also recognize that once a credential is shared, it is *technically* possible for the recipient to keep it. For that reason, secure onboarding using appropriate [role-based access controls](#comprehensive-role--based-access-controls) and [implementing policies](#enterprise-policies) plays an important role in facilitating secure offboarding.
 
 Offboarding users from Bitwarden involves removing users from your Organization, and like onboarding can be done [directly from the Web Vault](#adding-users) or in automated fashion [using the Directory Connector](#directory-connector).
 
@@ -208,7 +208,7 @@ Bitwarden Organizations include access to [Event Logs]({{site.baseurl}}/article/
 - Much, much more
 
 {% callout success%}
-In addition to these benefits, customers appreciate the ability to tightly integrate Bitwarden into their existing systems. Bitwarden offers a robust public [API]({{site.baseurl}}/article/api/) and a fully-featured command line interface ([CLI]({{site.baseurl}}/article/cli/)) for further integration into existing Organization workflows.
+In addition to these benefits, customers appreciate the ability to tightly integrate Bitwarden into their existing systems. Bitwarden offers a robust public [API]({{site.baseurl}}/api/) and a fully-featured command line interface ([CLI]({{site.baseurl}}/article/cli/)) for further integration into existing Organization workflows.
 {% endcallout %}
 
 ### Self-hosting

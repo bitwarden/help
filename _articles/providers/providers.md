@@ -31,7 +31,7 @@ The Provider Portal is an all-in-one management experience that enables Provider
 
 {% image providers/provider.png Provider Portal %}
 
-Providers are built with two distinct [user types]({{site.baseurl}}/article/artice/provider-users/#user-types):
+Providers are built with two distinct [user types]({{site.baseurl}}/article/provider-users/#provider-user-types):
 
 - **Service Users** can fully administer [Client Organizations](#client-organizations).
 - **Provider Admins** can administer [Client Organizations](#client-organizations) and administer the Provider itself, including adding new Service Users to the team.
@@ -56,4 +56,4 @@ Members of a Client Organization (i.e. your customer's end-users) will find shar
 
 {% image organizations/personal-vault-org-enabled.png End-user Vault %}
 
-Once you've filled out the [Provider Registration form](#) and been setup with a Provider by a member of the Bitwarden team, [start a Client Organization]({{site.baseurl}}/article/client-org-setup/).
+Once you've [contacted us](https://bitwarden.com/contact) and been setup with a Provider by a member of the Bitwarden team, [start a Client Organization]({{site.baseurl}}/article/client-org-setup/).
