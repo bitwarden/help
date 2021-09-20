@@ -41,10 +41,10 @@ To migrate from the Cloud to a self-hosted server:
    {% callout success %}There are separate files for an [Organization license]({{site.baseurl}}/article/licensing-on-premise/#organization-license) and an [Individual license]({{site.baseurl}}/article/licensing-on-premise/#individual-license). **You don't need both license files.** If you're migrating an Organization, you only need to retrieve the Organization license and must be an [Organization Owner]({{site.baseurl}}/article/user-types-access-control/) to do so.{% endcallout %}
 4. Still in the Cloud Web Vault, [export your personal Vault data]({{site.baseurl}}/article/export-your-data/#export-a-personal-vault) or [export your Organization Vault data]({{site.baseurl}}/article/export-your-data/#export-an-organization-vault). If you're migrating an Organization, encourage your end-users to export their Personal Vaults as well.
 5. Open your self-hosted Web Vault and create an account. This account **must use the same email address** as the Cloud account you downloaded the license with.
-5. Still in your self-hosted Web Vault, upload your [license]({{site.baseurl}}/article/licensing-on-premise).
+6. Still in your self-hosted Web Vault, upload your [license]({{site.baseurl}}/article/licensing-on-premise).
 
    {% callout success %}There are separate locations in which to upload an [Organization license]({{site.baseurl}}/article/licensing-on-premise/#organization-license) versus an [Individual license]({{site.baseurl}}/article/licensing-on-premise/#individual-license). As before, only upload the one that's relevant for you.{% endcallout %}
-6. Still in the self-hosted Web Vault, import data to your [Personal Vault]({{site.baseurl}}/article/import-your-data/) or [Organization Vault]({{site.baseurl}}/article/import-to-org/).
+7. Still in the self-hosted Web Vault, import data to your [Personal Vault]({{site.baseurl}}/article/import-data/) or [Organization Vault]({{site.baseurl}}/article/import-to-org/).
 
    {% callout info %}Importing data to an Organization will automatically re-create your [Collections]({{site.baseurl}}/article/about-collections/) and add the relevant Vault items to them.{% endcallout %}
 
@@ -73,7 +73,7 @@ To migrate from a self-hosted server to the Cloud:
 3. Open the Cloud Web Vault. Most users will have previously created Cloud accounts for billing purposes, so log in to that account. If you were previously a free user without a Cloud account for billing, create an account now.
 
    {% callout success %}If you're migrating an Organization, you'll already have a Cloud Organization established for billing and licensing purposes. For smoothest transition, we recommend using this already-established Organization rather than [creating a new one]({{site.baseurl}}/article/about-organizations/#create-an-organization).{% endcallout %}
-4. Still in the self-hosted Web Vault, import data to your [Personal Vault]({{site.baseurl}}/article/import-your-data/) or [Organization Vault]({{site.baseurl}}/article/import-to-org/).
+4. Still in the self-hosted Web Vault, import data to your [Personal Vault]({{site.baseurl}}/article/import-data/) or [Organization Vault]({{site.baseurl}}/article/import-to-org/).
 
    {% callout info %}Importing data to an Organization will automatically re-create your [Collections]({{site.baseurl}}/article/about-collections/) and add the relevant Vault items to them.{% endcallout %}
 5. Manually upload [file attachments]({{site.baseurl}}/article/attachments/) to your Personal or Organization Vault.

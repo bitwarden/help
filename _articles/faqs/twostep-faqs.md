@@ -17,7 +17,7 @@ This article contains Frequently Asked Questions (FAQs) regarding **Two-step Log
 
 ### Q: Can I require my Organization's users to use Two-step Login?
 
-**A:** You can require your Organization's users to use Two-step Login by enabling the [Two-step Login Policy]({{site.baseurl}}/article/policies/#two-step-login). Additionally, you can setup [Organization-wide Duo 2FA]({{site.baseurl}}/article/two-step-login-duo) to ensure that all of your users have a secure Two-step Login method at their disposal.
+**A:** You can require your Organization's users to use Two-step Login by enabling the [Two-step Login Policy]({{site.baseurl}}/article/policies/#two-step-login). Additionally, you can setup [Organization-wide Duo 2FA]({{site.baseurl}}/article/setup-two-step-login-duo/) to ensure that all of your users have a secure Two-step Login method at their disposal.
 
 ### Q: Is FIDO U2F or FIDO2 WebAuthn supported on my iOS or Android App?
 

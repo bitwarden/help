@@ -219,13 +219,13 @@ Share your Send link with intended recipients however you prefer. Sends are end-
 
 The following are sample commands to help you get started using Send from the CLI.
 
-To create a simple text Send with a [deletion date]({{site.baseurl}}s/send-lifespan/#deletion-date) set to 14 days from creation:
+To create a simple text Send with a [deletion date]({{site.baseurl}}/article/send-lifespan/#deletion-date) set to 14 days from creation:
 
 ```
 bw send -n "My Text Send" -d 14 "My first secret message."
 ```
 
-To create a simple file Send with a [deletion date]({{site.baseurl}}s/send-lifespan/#deletion-date) set to 14 days from creation:
+To create a simple file Send with a [deletion date]({{site.baseurl}}/article/send-lifespan/#deletion-date) set to 14 days from creation:
 
 ```
 bw send -n "My File Send" - d 14 -f /Users/myaccount/Documents/my_file.pdf

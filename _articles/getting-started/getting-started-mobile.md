@@ -65,7 +65,7 @@ You can create new Logins, Cards, Identities, and Secure Notes directly from any
 1. In your Bitwarden Android app, tap the {% icon fa-plus %} Add icon in the bottom-right corner.
 2. Choose which **Type** of item to create (for example, *Login*).
 3. Enter all the information for the item (for example, *Username* and *Password*).
-4. For Logins, enter the website the login is used for in the **URI** field (for example, [www.amazon.com](##create-items)).
+4. For Logins, enter the website the login is used for in the **URI** field (for example, [www.amazon.com](#create-items)).
 5. Tap **Folder** or toggle the **Favorite** switch to sort the item in your Vault.
 6. When you're finished, tap **Save** in the top-right corner of your screen.
 

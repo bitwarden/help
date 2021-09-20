@@ -16,7 +16,7 @@ For automating **management of Vault items**, we recommend using the [CLI]({{sit
 
 The Public API is a RESTful API with predictable resource-oriented URLs, accepts JSON-encoded request bodies, returns JSON-encoded responses, and uses standard HTTP response codes, authentication, and verbs.
 
-The Public API is compatible with the OpenAPI Specification (OAS3) and publishes a compliant [`swagger.json`]({{site.baseurl}}/article/api/specs/public/swagger.json) definition file. Explore the OpenAPI Specification using the Swagger UI:
+The Public API is compatible with the OpenAPI Specification (OAS3) and publishes a compliant [`swagger.json`]({{site.baseurl}}/api/specs/public/swagger.json) definition file. Explore the OpenAPI Specification using the Swagger UI:
 - For Public Cloud-hosted instances: [https://bitwarden.com/help/api/]({{site.baseurl}}/article/api/){:target="\_blank"}
 - For Self-hosted instances: https://your.domain.com/api/docs/
 
@@ -134,5 +134,5 @@ The Bitwarden Public API uses conventional HTTP response codes to indicate the s
 ## Further Reading
 
 For more information about using the Bitwarden Public API, see the following articles:
-- [Bitwarden Public API OAS Specification]({{site.baseurl}}/article/api/){:target="\_blank"}
+- [Bitwarden Public API OAS Specification]({{site.baseurl}}/api/){:target="\_blank"}
 - [Event Logs]({{site.baseurl}}/article/event-logs/)
