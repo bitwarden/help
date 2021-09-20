@@ -215,7 +215,7 @@ Managing Collections and Groups is a simple way to separate, grant, or limit acc
 
 A complete list of roles and access control is documented in the [User Types and Access Control]({{site.baseurl}}/article/user-types-access-control/) section of Bitwarden Help Center.
 
-Read more: [how to manage Collections]({{site.baseurl}}/article/how-to-manage-collections/)
+Read more: [About Collections]({{site.baseurl}}/article/about-collections/)
 
 #### Event Logs
 Event logs contain time-stamped, detailed information about what actions or changes have occurred within an Organization. These logs are helpful with researching changes in credentials or configuration and very useful for audit trail investigation and troubleshooting purposes.
@@ -401,4 +401,4 @@ This overview of the Bitwarden Security and Compliance program is offered for yo
 
 The Bitwarden Security and Compliance Program is based on the ISO27001 Information Security Management System (ISMS). We defined policies that govern our security policies and processes and continually update our security program to be consistent with applicable legal, industry, and regulatory requirements for services that we provide to you under our [Terms of Service Agreement](https://bitwarden.com/terms/).
 
-If you have any questions, please [contact us](www.bitwarden.com/contact).
+If you have any questions, please [contact us](https://bitwarden.com/contact).

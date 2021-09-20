@@ -119,7 +119,7 @@ Create a UTF-8 encoded plaintext file in the following format:
 ```
 When importing this file, select **Bitwarden (json)** as your file format.
 
-[{% icon fa-download %} Download sample json]({{site.baseurl}}/article/files/bitwarden_export.json)
+[{% icon fa-download %} Download sample json]({{site.baseurl}}/files/bitwarden_export.json)
 
 ### For your Organization
 
@@ -174,7 +174,7 @@ Create a UTF-8 encoded plaintext file in the following format:
 ```
 When importing this file, select **Bitwarden (json)** as your file format.
 
-[{% icon fa-download %} Download sample json]({{site.baseurl}}/article/files/bitwarden_org_export.json)
+[{% icon fa-download %} Download sample json]({{site.baseurl}}/files/bitwarden_org_export.json)
 
 ### Minimum Required Key-Value Pairs
 
