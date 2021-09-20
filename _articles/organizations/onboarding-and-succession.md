@@ -33,7 +33,7 @@ The Bitwarden vision is to imagine a world where no one gets hacked. We carry th
 For Bitwarden, [different plans]({{site.baseurl}}/article/about-bitwarden-plans/) and options are connected and complementary, all originating in our vision of a hack-free world. Empowering everyone at work **and** at home with password management gets us one step closer to that goal.
 {% endcallout %}
 
-A key aspect of Bitwarden is that, unlike many software applications, everything in every a Vault is [end-to-end encrypted]({{site.baseurl}}/article/what-encryption-is-used/). To maintain this security model, every person using Bitwarden must have a unique account with a unique [Master Password]({{site.baseurl}}/article/master-password). Master Passwords should be **strong** and **memorable**.
+A key aspect of Bitwarden is that, unlike many software applications, everything in every a Vault is [end-to-end encrypted]({{site.baseurl}}/article/what-encryption-is-used/). To maintain this security model, every person using Bitwarden must have a unique account with a unique [Master Password]({{site.baseurl}}/article/master-password/). Master Passwords should be **strong** and **memorable**.
 
 Each user is in charge of their Master Password. Bitwarden is a Zero-knowledge encryption solution, meaning that the team at Bitwarden, as well as Bitwarden systems themselves, have no knowledge of, way to retrieve, or way to reset any Master Password.
 
@@ -49,7 +49,7 @@ Security everywhere means security anywhere, so the best password managers provi
 
 ### Users' Personal Vaults
 
-Anyone who creates a Bitwarden account will have their own Personal Vault. Accessible from any client application, Personal Vaults are unique to each user and only that user holds the key to access it, using a combination of their Email Address and Master Password. Personal accounts, and the personal [Vault items]({{site.baseurl}}/article/managing-items/) stored therein, are the account owners responsibility. Organization [Owners, Admins, and Managers]({{site.baseurl}}/article/user-types-access-control) cannot see any other user's Personal Vault by design, guaranteeing someone's personal data remains their own.
+Anyone who creates a Bitwarden account will have their own Personal Vault. Accessible from any client application, Personal Vaults are unique to each user and only that user holds the key to access it, using a combination of their Email Address and Master Password. Personal accounts, and the personal [Vault items]({{site.baseurl}}/article/managing-items/) stored therein, are the account owners responsibility. Organization [Owners, Admins, and Managers]({{site.baseurl}}/article/user-types-access-control/) cannot see any other user's Personal Vault by design, guaranteeing someone's personal data remains their own.
 
 {% image ../images/onboarding-succession/bitwarden-individual-personal-vault.png Personal Vaults %}
 
@@ -73,7 +73,7 @@ Anyone can start an Organization directly from the Web Vault:
 
 {% image organizations/new-org-button-overlay.png Create New Organization %}
 
-Once created, you'll land in your Organization Vault, which is the central hub for all things sharing and Organization administration. Whoever launches the Organization will be the [Owner]({{site.baseurl}}/article/user-types-access-control), giving them full control to oversee the **Vault**, to **Manage** users, [Collections](#collections), [Groups](#groups), and [Policies](#enterprise-policies), to use a suite of Bitwarden **Tools**, and to configure the Organization's **Settings**:
+Once created, you'll land in your Organization Vault, which is the central hub for all things sharing and Organization administration. Whoever launches the Organization will be the [Owner]({{site.baseurl}}/article/user-types-access-control/), giving them full control to oversee the **Vault**, to **Manage** users, [Collections](#collections), [Groups](#groups), and [Policies](#enterprise-policies), to use a suite of Bitwarden **Tools**, and to configure the Organization's **Settings**:
 
 {% image getting-started/org-vault.png Organization Vault %}
 
@@ -128,7 +128,7 @@ Alice is a **Manager** in your Organization, which is hosted on the Bitwarden Cl
 |**Email & Master Password**|Logs in to Bitwarden using `alice@company.com` and `p@ssw0rD`.|
 |**Personal Items**|Stores assorted personal items, including Logins and Credit Cards, in her Personal Vault.|
 |**Permissions in the Organization**|As a [Manager]({{site.baseurl}}/article/user-types-access-control/), Jane can manage many aspects of Collections.|
-|**Two-step Login**|Uses Organization-wide [Duo 2FA]({{site.baseurl}}/article/setup-two-step-login-duo).|
+|**Two-step Login**|Uses Organization-wide [Duo 2FA]({{site.baseurl}}/article/setup-two-step-login-duo/).|
 |**Created Collections**|Created a Collection for her team, "Jane's Team Collection".|
 |**Shared Items**|Created and shared several Vault items that are owned by by the Organization and reside in her team's Collection.|
 
@@ -199,7 +199,7 @@ The **Personal Ownership** policy, for example, fits into earlier discussion reg
 
 ### Event Logs
 
-Bitwarden Organizations include access to [Event Logs]({{site.baseurl}}/article/event-logs), which can be viewed directly from the Web Vault or [exported to be analyzed]({{site.baseurl}}/article/event-logs/#siem-and-external-systems-integrations) within security information and event management (SIEM) systems like Splunk. Event Logs include information about:
+Bitwarden Organizations include access to [Event Logs]({{site.baseurl}}/article/event-logs/), which can be viewed directly from the Web Vault or [exported to be analyzed]({{site.baseurl}}/article/event-logs/#siem-and-external-systems-integrations) within security information and event management (SIEM) systems like Splunk. Event Logs include information about:
 
 - User-Item interactions
 - Changes made to Vault items

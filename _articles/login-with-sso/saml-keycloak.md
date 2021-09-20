@@ -10,7 +10,7 @@ order:
 ---
 This article contains **Keycloak-specific** help for configuring Login with SSO via SAML 2.0. For help configuring Login with SSO for another IdP, refer to [SAML 2.0 Configuration]({{site.baseurl}}/article/configure-sso-saml/).
 
-Configuration involves working simultaneously with the Bitwarden [Business Portal]({{site.baseurl}}/article/about-business-portal) and the Keycloak Portal. As you proceed, we recommend having both readily available and completing steps in the order they're documented.
+Configuration involves working simultaneously with the Bitwarden [Business Portal]({{site.baseurl}}/article/about-business-portal/) and the Keycloak Portal. As you proceed, we recommend having both readily available and completing steps in the order they're documented.
 
 {% callout success %}
 **Already an SSO expert?** Skip the instructions in this article and download screenshots of sample configurations to compare against your own.

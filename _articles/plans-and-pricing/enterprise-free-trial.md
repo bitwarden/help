@@ -45,6 +45,6 @@ Now that you've created your trial Enterprise Organization, we recommend that yo
 
 - [Add Users to your Organization]({{site.baseurl}}/article/managing-users/)
 - [Create a Collection]({{site.baseurl}}/article/about-collections/#create-a-collection)
-- Use the [Business Portal]({{site.baseurl}}/article/about-business-portal) to:
-  - Set up [Login with SSO]({{site.baseurl}}/article/getting-started-with-sso)
-  - Create [Enterprise Policies]({{site.baseurl}}/article/policies)
+- Use the [Business Portal]({{site.baseurl}}/article/about-business-portal/) to:
+  - Set up [Login with SSO]({{site.baseurl}}/article/getting-started-with-sso/)
+  - Create [Enterprise Policies]({{site.baseurl}}/article/policies/)

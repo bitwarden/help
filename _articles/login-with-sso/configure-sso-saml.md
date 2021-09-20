@@ -33,7 +33,7 @@ Once you have your Organization Identifier, you can proceed to enabling and conf
 
    {% image sso/sso-bp-1.png Business Portal Menu %}
 3. Check the **Enabled** checkbox.
-4. From the **Type** dropdown menu, select the **SAML 2.0** option. If you intend to use OIDC instead, switch over to the [OIDC Configuration Guide]({{site.baseurl}}/article/configure-sso-oidc).
+4. From the **Type** dropdown menu, select the **SAML 2.0** option. If you intend to use OIDC instead, switch over to the [OIDC Configuration Guide]({{site.baseurl}}/article/configure-sso-oidc/).
 
 ## Step 3: Configuration
 

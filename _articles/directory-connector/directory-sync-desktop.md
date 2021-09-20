@@ -12,7 +12,7 @@ The Directory Connector Desktop App is a standalone desktop application that can
 
 {% image directory-connector/app.png Directory Connector Desktop App %}
 
-Directory Connector is also available as a [CLI Tool]({{site.baseurl}}/article/directory-sync-cli). The Desktop App and CLI [share a database and configurations]({{site.baseurl}}/article/directory-sync-shared/), so you may choose to use both, however simultaneous use is not recommended.
+Directory Connector is also available as a [CLI Tool]({{site.baseurl}}/article/directory-sync-cli/). The Desktop App and CLI [share a database and configurations]({{site.baseurl}}/article/directory-sync-shared/), so you may choose to use both, however simultaneous use is not recommended.
 
 ## Getting Started
 

@@ -47,7 +47,7 @@ From this point on, **implementation will vary provider-to-provider**. Jump to o
 
 ### Configuration Reference Materials
 
-The following sections will define fields configured in the [Bitwarden Business Portal]({{site.baseurl}}/article/about-business-portal), agnostic of which IdP you're integrating with. Fields that must be configured will be marked (**Required**).
+The following sections will define fields configured in the [Bitwarden Business Portal]({{site.baseurl}}/article/about-business-portal/), agnostic of which IdP you're integrating with. Fields that must be configured will be marked (**Required**).
 
 {% callout success %}
 **Unless you're comfortable with OpenID Connect**, we recommend using one of the [above Implementation Guides](#step-3-configuration) instead of the following generic material.

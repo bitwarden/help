@@ -119,7 +119,7 @@ Confirm accepted Organization to complete the loop:
 3. Select any `Accepted` users and use the {% icon fa-cog %} gear dropdown to {% icon fa-check %} **Confirm Selected**:
 
    {% image organizations/org-people-options-overlay.png Confirm an Accepted user %}
-3. Verify that the [fingerprint phrase]({{site.baseurl}}/article/fingerprint-phrase) on your screen matches the one your new member can find in **Settings** &rarr; **My Account**:
+3. Verify that the [fingerprint phrase]({{site.baseurl}}/article/fingerprint-phrase/) on your screen matches the one your new member can find in **Settings** &rarr; **My Account**:
 
    {% image fingerprint-phrase.png Sample Fingerprint Phrase %}
 

@@ -46,7 +46,7 @@ To login to Bitwarden using SSO:
 {% callout success %}
 **Why is my Master Password still required?**
 
-All Vault data, including credentials [shared by your Organization]({{site.baseurl}}/article/sharing), is kept by Bitwarden **only** in its encrypted form. This means that in order to use any of those credentials, **you** need a way to decrypt that data (we can't).
+All Vault data, including credentials [shared by your Organization]({{site.baseurl}}/article/sharing/), is kept by Bitwarden **only** in its encrypted form. This means that in order to use any of those credentials, **you** need a way to decrypt that data (we can't).
 
 Your Master Password is the source of that decryption key. Even though you're authenticating (proving your identity) to Bitwarden using SSO, you still must use that decryption key (your Master Password) to see any meaningful data.
 {% endcallout %}

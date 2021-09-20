@@ -64,6 +64,6 @@ Complete the following steps to cancel your Premium Individual subscription:
 
 Now that you've created your Organization, we recommend that you:
 
-- [Invite Users to Your Organization]({{site.baseurl}}/article/managing-users)
+- [Invite Users to Your Organization]({{site.baseurl}}/article/managing-users/)
 - [Create a Collection]({{site.baseurl}}/article/about-collections/#create-a-collection)
 - [Share Items to a Collection]({{site.baseurl}}/article/sharing/)

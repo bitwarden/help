@@ -98,7 +98,7 @@ To create a Folder, use the command:
 bw create folder <foldername>
 ```
 
-You can edit an existing folder using `bw edit <folderId>` and delete one using `bw delete folder <folderId>`. For more information, refer to our [CLI documentation]({{site.baseurl}}/article/cli).
+You can edit an existing folder using `bw edit <folderId>` and delete one using `bw delete folder <folderId>`. For more information, refer to our [CLI documentation]({{site.baseurl}}/article/cli/).
 
 {% endcapture %}
 {{ cli_info | markdownify}}
@@ -213,7 +213,7 @@ Using `edit` will require you to:
 - Manipulate the JSON object (specifically, the `folderId` attribute) with a [command-line JSON processor like jq](https://stedolan.github.io/jq/){:target="\_blank"}.
 - Use the `encode` command to encode changes to the JSON object.
 
-If you're unfamiliar with using any of these parts, refer to our [CLI documentation]({{site.baseurl}}/article/cli).
+If you're unfamiliar with using any of these parts, refer to our [CLI documentation]({{site.baseurl}}/article/cli/).
 {% endcallout %}
 
 {% endcapture %}

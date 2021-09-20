@@ -9,7 +9,7 @@ tags: []
 order: "07"
 ---
 
-Login prompts like the one pictured below, called "basic" or "native" authentication prompts, will be automatically auto-filled by the Bitwarden Browser Extension **if there is only 1 Login item with a** [**matching URI**]({{site.baseurl}}/article/uri-match-detection). You can also use the Browser Extension's {% icon fa-share-square %} **Launch** button to automatically open and log in to a basic auth-protected resource.
+Login prompts like the one pictured below, called "basic" or "native" authentication prompts, will be automatically auto-filled by the Bitwarden Browser Extension **if there is only 1 Login item with a** [**matching URI**]({{site.baseurl}}/article/uri-match-detection/). You can also use the Browser Extension's {% icon fa-share-square %} **Launch** button to automatically open and log in to a basic auth-protected resource.
 
 Auto-filling on basic auth prompts will, by default, use the [Host]({{site.baseurl}}/article/uri-match-detection/#host) URI match detection option so that auto-filling is more restrictive. This can be changed by setting the [match detection option]({{site.baseurl}}/article/uri-match-detection/) for the relevant Vault item.
 

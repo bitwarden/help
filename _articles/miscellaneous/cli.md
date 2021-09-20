@@ -446,7 +446,7 @@ bw restore item 7063feab-4b10-472e-b64c-785e2b870b92
 
 ### send
 
-The `send` command creates a [Bitwarden Send]({{site.baseurl}}/article/about-send) object for ephemeral sharing. This section will detail simple `send` operations, however Send is a highly flexible tool and we recommend referring to the dedicated article on [Send from CLI]({{site.baseurl}}/article/send-cli).
+The `send` command creates a [Bitwarden Send]({{site.baseurl}}/article/about-send/) object for ephemeral sharing. This section will detail simple `send` operations, however Send is a highly flexible tool and we recommend referring to the dedicated article on [Send from CLI]({{site.baseurl}}/article/send-cli/).
 
 To create a simple text Send:
 
@@ -462,7 +462,7 @@ bw send -n "A Sensitive File" -d 14 -f /Users/my_account/Documents/sensitive_fil
 
 ### receive
 
-The `receive` command accesses a [Bitwarden Send]({{site.baseurl}}/article/about-send) object. To receive a Send object:
+The `receive` command accesses a [Bitwarden Send]({{site.baseurl}}/article/about-send/) object. To receive a Send object:
 
 ```
 bw receive --password passwordforaccess https://vault.bitwarden.com/#/send/yawoill8rk6VM6zCATXv2A/9WN8wD-hzsDJjfnXLeNc2Q

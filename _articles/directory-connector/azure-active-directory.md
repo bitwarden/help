@@ -83,7 +83,7 @@ When you're finished configuring, navigate to the **More** tab and select the **
 
 Complete the following steps to configure the settings used when syncing using Directory Connector:
 
-1. Open the Directory Connector [Desktop Application]({{site.baseurl}}/article/directory-sync-desktop).
+1. Open the Directory Connector [Desktop Application]({{site.baseurl}}/article/directory-sync-desktop/).
 2. Navigate to the **Settings** tab.
 3. In the **Sync** section, configure the following options as desired:
 

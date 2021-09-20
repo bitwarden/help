@@ -41,13 +41,13 @@ Removing user seats will adjust your future billing totals. The next charge will
 To ensure the security of your Organization, Bitwarden applies a 3-step process for onboarding a new member, [Invite](#invite) &rarr; [Accept](#accept) &rarr; [Confirm](#confirm).
 
 {% callout success %}
-Teams and Enterprise Organizations can sync Bitwarden to an existing user directory to automatically add or remove new users using the [**Bitwarden Directory Connector**]({{site.baseurl}}/article/directory-sync).
+Teams and Enterprise Organizations can sync Bitwarden to an existing user directory to automatically add or remove new users using the [**Bitwarden Directory Connector**]({{site.baseurl}}/article/directory-sync/).
 {% endcallout %}
 
 ### Invite
 
 {% callout success %}
-**For Enterprise Organizations**, we recommend configuring [Enterprise Policies]({{site.baseurl}}/article/policies) prior to inviting users to ensure compliance on-entrance to your Organization.
+**For Enterprise Organizations**, we recommend configuring [Enterprise Policies]({{site.baseurl}}/article/policies/) prior to inviting users to ensure compliance on-entrance to your Organization.
 {% endcallout %}
 
 To invite users to your Organization:
@@ -86,7 +86,7 @@ To confirm accepted invitations into your Organization:
 3. Select any `Accepted` users and use the {% icon fa-cog %} gear dropdown to {% icon fa-check %} **Confirm Selected**:
 
    {% image organizations/org-people-options-overlay.png Confirm an Accepted user %}
-3. Verify that the [fingerprint phrase]({{site.baseurl}}/article/fingerprint-phrase) on your screen matches the one your new member can find in **Settings** &rarr; **My Account**:
+3. Verify that the [fingerprint phrase]({{site.baseurl}}/article/fingerprint-phrase/) on your screen matches the one your new member can find in **Settings** &rarr; **My Account**:
 
    {% image fingerprint-phrase.png Sample Fingerprint Phrase %}
 

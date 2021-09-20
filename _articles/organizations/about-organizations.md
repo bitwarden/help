@@ -40,7 +40,7 @@ Paid Organizations (Families, Teams, or Enterprise) automatically include those 
 
 ### Comparing Organizations with Providers
 
-[Providers]({{site.baseurl}}/article/providers) are Vault-administration entities that allow businesses like Managed Service Providers (MSPs) to quickly create and administer **multiple Bitwarden Organizations** on behalf of business customers.
+[Providers]({{site.baseurl}}/article/providers/) are Vault-administration entities that allow businesses like Managed Service Providers (MSPs) to quickly create and administer **multiple Bitwarden Organizations** on behalf of business customers.
 
 ## Create an Organization
 
@@ -64,4 +64,4 @@ Organizations are created and managed from the [Web Vault](https://vault.bitward
 
    {% callout success %}New Families, Teams, and Enterprise Organization have a 7 day free trial built in! We won't charge you until your trial is over, and you can cancel your subscription at any time from the Organization **Settings** tab.{% endcallout %}
 
-Once you've created your Organization, create a [collection]({{site.baseurl}}/article/about-collections/), [invite users]({{site.baseurl}}/article/managing-users/), and [start sharing]({{site.baseurl}}/article/sharing).
+Once you've created your Organization, create a [collection]({{site.baseurl}}/article/about-collections/), [invite users]({{site.baseurl}}/article/managing-users/), and [start sharing]({{site.baseurl}}/article/sharing/).

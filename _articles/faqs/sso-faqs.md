@@ -57,7 +57,7 @@ For more high-level information about **Login with SSO**, refer to the following
 
 ### Q: How do I upgrade my plan so that I can use Login with SSO?
 
-**A:** [Contact Us](https://bitwarden.com/contact/) and select **Upgrade/Change Plan** from the **Subject** dropdown menu. We highly recommend you test Login with SSO by starting a [7 Day Enterprise Free Trial]({{site.baseurl}}/article/enterprise-free-trial).
+**A:** [Contact Us](https://bitwarden.com/contact/) and select **Upgrade/Change Plan** from the **Subject** dropdown menu. We highly recommend you test Login with SSO by starting a [7 Day Enterprise Free Trial]({{site.baseurl}}/article/enterprise-free-trial/).
 
 ### Q: I would like to test Login with SSO. If I decide I don't need it, can I revert to my Classic 2019 plan?
 

@@ -107,6 +107,6 @@ With the infrastructure for securely and scalably sharing credentials in place, 
 
    {% image organizations/org-people-invite.png %}
 
-2. **For larger customers** who leverage a directory service (Active Directory, LDAP, Okta, etc.), use [Directory Connector]({{site.baseurl}}/article/directory-sync) to sync Organization users from the source directory and automatically issue invitations.
+2. **For larger customers** who leverage a directory service (Active Directory, LDAP, Okta, etc.), use [Directory Connector]({{site.baseurl}}/article/directory-sync/) to sync Organization users from the source directory and automatically issue invitations.
 
 Regardless of whether you've invited users from the Organization Vault or using Directory Connector, the same 3-step process (Invite &rarr; Accept &rarr; Confirm) that you followed when [onboarding Provider users](#onboard-users) will apply here as well.

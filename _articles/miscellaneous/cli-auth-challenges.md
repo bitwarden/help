@@ -7,7 +7,7 @@ popular: false
 tags: [cli, captcha]
 ---
 
-The August 2021 release of Bitwarden (**2021-08-18**) introduced [Captcha](https://www.hcaptcha.com/about){:target="\_blank"} requirements to increase security against bot traffic. On the CLI, Captcha challenges are substituted with authentication challenges that can validated using your account's [Personal API Key]({{site.baseurl}}/article/personal-api-key) `client_secret`.
+The August 2021 release of Bitwarden (**2021-08-18**) introduced [Captcha](https://www.hcaptcha.com/about){:target="\_blank"} requirements to increase security against bot traffic. On the CLI, Captcha challenges are substituted with authentication challenges that can validated using your account's [Personal API Key]({{site.baseurl}}/article/personal-api-key/) `client_secret`.
 
 ## Get your Personal API Key
 

@@ -32,7 +32,7 @@ Login with SSO is available for all customers on the current Enterprise plan (fo
 
 <a role="button" class="btn btn-primary" href="https://vault.bitwarden.com/#/register?org=enterprise">Start your Enterprise Free Trial</a>
 
-If you're an experienced Bitwarden user, refer to the [this article]({{site.baseurl}}/article/enterprise-free-trial/) for help. If you're self-hosting Bitwarden, you will need to generate a new license file after starting your 7 Day Free Trial. We recommend using a separate Bitwarden instance for testing Login with SSO. For more information, see [Licensing Paid Features]({{site.baseurl}}/article/licensing-on-premise).
+If you're an experienced Bitwarden user, refer to the [this article]({{site.baseurl}}/article/enterprise-free-trial/) for help. If you're self-hosting Bitwarden, you will need to generate a new license file after starting your 7 Day Free Trial. We recommend using a separate Bitwarden instance for testing Login with SSO. For more information, see [Licensing Paid Features]({{site.baseurl}}/article/licensing-on-premise/).
 
 ## Requirements
 

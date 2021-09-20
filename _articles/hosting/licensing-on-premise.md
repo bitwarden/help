@@ -28,7 +28,7 @@ To retrieve your license from your Cloud account and apply it to your self-hoste
 
 1. Log in to your self-hosted Web Vault with an email address that matches the Cloud-hosted account from which you downloaded the license.
 
-   {% callout success %}If you haven't already, verify your email address before proceeding. You will need to have [configured SMTP-related environment variables]({{site.baseurl}}/article/environment-variables) to do so.{% endcallout %}
+   {% callout success %}If you haven't already, verify your email address before proceeding. You will need to have [configured SMTP-related environment variables]({{site.baseurl}}/article/environment-variables/) to do so.{% endcallout %}
 2. Select the **Settings** tab from the top navigation.
 3. Select **Go Premium** from the left menu.
 4. In the License File section, select the **Browse...** button and add the downloaded license file.
@@ -39,7 +39,7 @@ To retrieve your license from your Cloud account and apply it to your self-hoste
 To retrieve your Organization license from your Cloud Organization and apply it to you self-hosted server:
 
 {% callout info %}
-You must be an [Organization Owner]({{site.baseurl}}/article/user-types-access-control) to both retrieve and apply a license.
+You must be an [Organization Owner]({{site.baseurl}}/article/user-types-access-control/) to both retrieve and apply a license.
 {% endcallout %}
 
 #### Retrieve your License

@@ -18,7 +18,7 @@ If we cannot process your payment method, or if you have cancelled your subscrip
 
 **Organization-owned Vault Items**
 
-[Owners]({{site.baseurl}}/article/user-types-access-control/) will retain access to [shared Vault items]({{site.baseurl}}/article/sharing), however all other users will lose access to these items. Organization Vault items and existing [Collections]({{site.baseurl}}/article/about-collections/) **will not be deleted**.
+[Owners]({{site.baseurl}}/article/user-types-access-control/) will retain access to [shared Vault items]({{site.baseurl}}/article/sharing/), however all other users will lose access to these items. Organization Vault items and existing [Collections]({{site.baseurl}}/article/about-collections/) **will not be deleted**.
 
 **Organization Users**
 

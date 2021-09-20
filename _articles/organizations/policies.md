@@ -117,7 +117,7 @@ Enabling the **Send Options** policy will allow Owners and Admins to specify opt
 
 |Option|Description|
 |------|-----------|
-|Do not allow users to hide their email address|Enabling this option disables the [Hide Email option]({{site.baseurl}}/article/send-privacy/#hide-email), meaning that all [received Sends]({{site.baseurl}}/article/receive-send) will include whom they are sent from.|
+|Do not allow users to hide their email address|Enabling this option disables the [Hide Email option]({{site.baseurl}}/article/send-privacy/#hide-email), meaning that all [received Sends]({{site.baseurl}}/article/receive-send/) will include whom they are sent from.|
 
 ### Master Password Reset
 
