@@ -110,7 +110,7 @@ Notice in this example that the jq invocation must be wrapped in double quotes (
 #### macOS
 
 ```
-bw send template send.text | jq ".name=\"My Send\" | .text.text=\"Secrets I want to share.\" | .password=\"mypassword\" | .deletionDate=\"$(date -uv+14d + "%Y-%m-%dT%H:%M:%SZ")\"" | bw encode | bw send create
+bw send template send.text | jq ".name=\"My Send\" | .text.text=\"Secrets I want to share.\" | .password=\"mypassword\" | .deletionDate=\"$(date -uv+14d +"%Y-%m-%dT%H:%M:%SZ")\"" | bw encode | bw send create
 ```
 
 Notice in this example that the jq invocation must be wrapped in double quotes (`" "`) and use escapes (`\`) for each filter due to a nested `date` variable that configures a `.deletionDate` in the Send.
