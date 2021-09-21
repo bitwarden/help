@@ -12,7 +12,7 @@ Bitwarden provides a data import tool for easy migration from any password manag
 
 For a full list of supported import formats, see [What file formats does Bitwarden support for import?]({{site.baseurl}}/article/import-faqs/#q-what-file-formats-does-bitwarden-support-for-import), or refer to one of these articles for guidance on the most popular solutions:
 
-- [Import from LastPass]({{site.baseurl}}/article/import-from-lastpass/)[Import from LastPass]({{site.baseurl}}/article/import-from-lastpass/)[Import from LastPass]({{site.baseurl}}/article/import-from-lastpass/)[Import from LastPass]({{site.baseurl}}/article/import-from-lastpass/)
+- [Import from LastPass]({{site.baseurl}}/article/import-from-lastpass/)
 - [Import from 1Password]({{site.baseurl}}/article/import-from-1password/)
 - [Import from Firefox]({{site.baseurl}}/article/import-from-firefox/)
 - [Import from Google Chrome]({{site.baseurl}}/article/import-from-chrome/)

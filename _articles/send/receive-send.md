@@ -13,6 +13,7 @@ Unlike traditional Bitwarden Vault items, a Send can be received and opened by a
 - `https://send.bitwarden.com/#...`, which will automatically resolve to `https://vault.bitwarden/com/#/send/...`
 - `https://your.selfhosted.domain.com/#/send/....` if you're self-hosting
 
+<br>
 These links can be opened in any modern web browser, and will open a simple no-navigation web page, for example:
 
 {% image send/received-send.png A received Send%}

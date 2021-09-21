@@ -121,7 +121,7 @@ And now that you're a Two-step Login Expert, we recommend that you:
 - [Signup for a Bitwarden Account](https://vault.bitwarden.com/#/register)
 - [Setup Two-step Login]({{site.baseurl}}/article/setup-two-step-login/)
 - [Get Premium for access to advanced Two-step Login methods](https://vault.bitwarden.com/#/?premium=purchase)
-- [Setup the Bitwarden Authenticator]({{site.baseurl}}/article/authenticator-keys/)[Setup the Bitwarden Authenticator]({{site.baseurl}}/article/authenticator-keys/)
+- [Setup the Bitwarden Authenticator]({{site.baseurl}}/article/authenticator-keys/)
 - [Customize your Vault Timeout behavior]({{site.baseurl}}/article/vault-timeout/)
 
 Here’s to many happy logins!

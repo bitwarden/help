@@ -20,7 +20,7 @@ This article contains Frequently Asked Questions (FAQs) regarding **Security**.
 **A:** You can trust us for a few reasons:
 
 1. Bitwarden is **open source** software. All of our source code is hosted on [GitHub](https://github.com/bitwarden){:target="_blank"} and is free for anyone to review. Thousands of software developers follow Bitwarden's source code projects (and you should too!).
-2. Bitwarden [is **audited**]({{site.baseurl}}/article/is-bitwarden-audited/) **by reputable third-party security firms** as well as independent security researchers.[is **audited**]({{site.baseurl}}/article/is-bitwarden-audited/)
+2. Bitwarden [is **audited**]({{site.baseurl}}/article/is-bitwarden-audited/) **by reputable third-party security firms** as well as independent security researchers.
 3. Bitwarden **does not store your passwords**. Bitwarden stores encrypted versions of your passwords [that only you can unlock]({{site.baseurl}}/article/what-encryption-is-used/). Your sensitive information is encrypted locally on your personal device before ever being sent to our cloud servers.
 4. **Bitwarden has a reputation.** Bitwarden is used by millions of individuals and businesses. If we did anything questionable or risky, we'd be out of business!
 

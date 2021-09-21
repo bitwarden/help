@@ -21,9 +21,7 @@ Use the following table to check the **Minimum** and **Recommended** specificati
 |Storage|10GB|25GB|
 |Docker Version|Engine 19+ and Compose 1.24+|Engine 19+ and Compose 1.24+|
 
-If you are looking for a quality provider with affordable prices, we recommend:
-
-[![Digital Ocean](/help/images/digital-ocean.png "Digital Ocean")](https://m.do.co/c/512986b01931){:target="_blank"}
+If you are looking for a quality provider with affordable prices, we recommend **Digital Ocean**.
 
 ## TL;DR
 

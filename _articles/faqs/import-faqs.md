@@ -56,7 +56,7 @@ Please note that storage of File Attachments is available only for Premium users
 If your format is not listed below, manually [condition a Bitwarden .csv or .json]({{site.baseurl}}/article/condition-bitwarden-import/).
 {% endcallout %}
 
-  - [1Password (1pif)]({{site.baseurl}}/article/import-from-1password/)[1Password (1pif)]({{site.baseurl}}/article/import-from-1password/)[1Password (1pif)]({{site.baseurl}}/article/import-from-1password/)
+  - [1Password (1pif)]({{site.baseurl}}/article/import-from-1password/)
   - [1Password 6 &amp; 7 Windows (.sv)]({{site.baseurl}}/article/import-from-1password/)
   - [1Password 6 &amp; 7 Mac (csv)]({{site.baseurl}}/article/import-from-1password/)
   - Ascendo DataVault (csv)
