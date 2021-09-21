@@ -15,6 +15,7 @@ Bitwarden Browser Extensions will dynamically change to use the language set by 
 - [Learn how to change Chrome's language](https://support.google.com/chrome/answer/173424?co=GENIE.Platform%3DDesktop&hl=en){:target="\_blank"}
 - [Learn how to change Firefox's language](https://support.mozilla.org/en-US/kb/use-firefox-another-language){:target="\_blank"}
 
+<br>
 Bitwarden Mobile Apps will dynamically change use the language set by your Operating System.
 
 ### Don't See Your Language?
@@ -25,4 +26,5 @@ Bitwarden uses a translation tool called [Crowdin](https://crowdin.com){:target=
 - To contribute to or make corrections to an existing translation, [join our project](https://crowdin.com/projects/kspearrin){:target="\_blank"}.
 - To start translating Bitwarden to a new language, join our project and contact the [Project Owner](https://crowdin.com/profile/tgreer){:target="\_blank"}.
 
+<br>
 Read [Crowdin's Getting Started Guide](https://support.crowdin.com/crowdin-intro/){:target="\_blank"}.

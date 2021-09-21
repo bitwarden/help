@@ -22,7 +22,7 @@ Bitwarden offers several Two-step Login methods for free, including:
 
 |Method|Setup Instructions|
 |------|------------------|
-|via an Authenticator app (for example, [Authy](https://authy.com/){:target="_blank"} or [Google Authenticator](https://support.google.com/accounts/answer/1066447?hl=en){:target="_blank"})|Click [**here**]({{site.baseurl}}/article/setup-two-step-login-authenticator/).|[**here**]({{site.baseurl}}/article/setup-two-step-login-authenticator/)
+|via an Authenticator app (for example, [Authy](https://authy.com/){:target="_blank"} or [Google Authenticator](https://support.google.com/accounts/answer/1066447?hl=en){:target="_blank"})|Click [**here**]({{site.baseurl}}/article/setup-two-step-login-authenticator/).|
 |via Email|Click [**here**]({{site.baseurl}}/article/setup-two-step-login-email/).|
 
 ### Premium Methods
@@ -31,8 +31,8 @@ For Premium users (including members of Paid Organizations), Bitwarden offers se
 
 |Method|Setup Instructions|
 |------|------------------|
-|via Duo Security with Duo Push, SMS, phone call, and security keys|Click [**here**]({{site.baseurl}}/article/setup-two-step-login-duo/).|[**here**]({{site.baseurl}}/article/setup-two-step-login-duo/)[**here**]({{site.baseurl}}/article/setup-two-step-login-duo/)
-|via YubiKey (any 4/5 series device or YubiKey NEO/NFC)|Click [**here**]({{site.baseurl}}/article/setup-two-step-login-yubikey/).|[**here**]({{site.baseurl}}/article/setup-two-step-login-yubikey/)
+|via Duo Security with Duo Push, SMS, phone call, and security keys|Click [**here**]({{site.baseurl}}/article/setup-two-step-login-duo/).|
+|via YubiKey (any 4/5 series device or YubiKey NEO/NFC)|Click [**here**]({{site.baseurl}}/article/setup-two-step-login-yubikey/).
 |via FIDO2 WebAuthn (any FIDO2 WebAuthn Certified authenticator)|Click [**here**]({% link _articles/two-step-login/setup-two-step-login-fido.md %}).|
 
 ## Two-step Login for Teams and Enterprise

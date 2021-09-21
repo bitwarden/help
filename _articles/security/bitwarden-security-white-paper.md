@@ -392,9 +392,10 @@ Bitwarden leverages [HTTP Security headers](#http-security-headers) as an additi
 #### Code Assessments
 Bitwarden is an open source password manager. All of our source code is hosted and publicly available on [GitHub](https://github.com/bitwarden) for review. Bitwarden source code has been and continues to be audited annually by reputable third-party security auditing firms as well as independent security researchers. In addition, The Bitwarden Vulnerability Disclosure Program enlists the help of the hacker community at HackerOne to make Bitwarden more secure.
 
-Read more: [Bitwarden Security FAQs]({{site.baseurl}}/article/security-faqs/)
-[Bitwarden Threat Prevention and Response](#threat-prevention-and-response)
-[Bitwarden Security and Compliance Assessments, Reviews, Vulnerability Scans, PenTesting](#auditability-and-compliance)
+Read more:
+- [Bitwarden Security FAQs]({{site.baseurl}}/article/security-faqs/)
+- [Bitwarden Threat Prevention and Response](#threat-prevention-and-response)
+- [Bitwarden Security and Compliance Assessments, Reviews, Vulnerability Scans, PenTesting](#auditability-and-compliance)
 
 ## Conclusion
 This overview of the Bitwarden Security and Compliance program is offered for your review. Bitwarden’s solution, software, infrastructure, and security processes have been designed from the ground up with a multi-layered, defense-in-depth approach.

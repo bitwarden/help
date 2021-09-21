@@ -52,6 +52,7 @@ When constructing a full-text search, an indexed field name should immediately f
 - `login.username`: Login item's username.
 - `login.uris`: Login item's URI [hostname](https://developer.mozilla.org/en-US/docs/Web/API/HTMLHyperlinkElementUtils/hostname){:target="_blank"} value.
 
+<br>
 Once a field is specified, search for a value in that field using a colon (`:`) delimiter, for example:
 
 - `>login.username:jsmith` will search for Login items with `jsmith` specified as the **Username**.

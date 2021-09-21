@@ -33,8 +33,8 @@ To get started using the Directory Connector Desktop App:
 3. Log in to Directory Connector using your [Organization API Key]({{site.baseurl}}/article/public-api/#authentication). If you don't have the API Key, reach out to an [Organization Owner]({{site.baseurl}}/article/user-types-access-control/).
 4. On the {% icon fa-cogs %} **Settings** tab, connect to your directory and configure [sync options]({{site.baseurl}}/article/user-group-filters/). This procedure will vary based on the directory in use, so refer to one of the following articles for instruction:
 
-   - [Sync with Active Directory or LDAP]({{site.baseurl}}/article/ldap-directory/)[Sync with Active Directory or LDAP]({{site.baseurl}}/article/ldap-directory/)[Sync with Active Directory or LDAP]({{site.baseurl}}/article/ldap-directory/)[Sync with Active Directory or LDAP]({{site.baseurl}}/article/ldap-directory/)[Sync with Active Directory or LDAP]({{site.baseurl}}/article/ldap-directory/)
-   - [Sync with Azure Active Directory]({{site.baseurl}}/article/azure-active-directory/)[Sync with Azure Active Directory]({{site.baseurl}}/article/azure-active-directory/)[Sync with Azure Active Directory]({{site.baseurl}}/article/azure-active-directory/)[Sync with Azure Active Directory]({{site.baseurl}}/article/azure-active-directory/)
+   - [Sync with Active Directory or LDAP]({{site.baseurl}}/article/ldap-directory/)
+   - [Sync with Azure Active Directory]({{site.baseurl}}/article/azure-active-directory/)
    - [Sync with G Suite (Google)]({% link _articles/directory-connector/gsuite-directory.md %})
    - [Sync with Okta]({% link _articles/directory-connector/okta-directory.md %})
    - [Sync with OneLogin]({% link _articles/directory-connector/onelogin-directory.md %})
