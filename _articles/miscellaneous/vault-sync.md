@@ -5,7 +5,7 @@ categories: [account-management]
 featured: false
 popular: false
 tags: [vault, sync, automatic, FAQ]
-order: 04
+order: "04"
 ---
 
 Adding, editing, or deleting Vault items from any Bitwarden client application will automatically push changes to your Bitwarden server, whether Cloud-hosted or self-hosted.
@@ -81,7 +81,7 @@ Use the `sync` command to manually sync your Vault:
 bw sync
 ```
 
-For more information, refer to our [CLI documentation]({% link _articles/miscellaneous/cli.md %}).
+For more information, refer to our [CLI documentation]({{site.baseurl}}/article/cli/).
 {% endcapture %}
 {{ cli_sync | markdownify }}
   </div>

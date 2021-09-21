@@ -6,7 +6,7 @@ featured: false
 popular: false
 hidden: false
 tags: [import, teams, enterprise, onboarding, security]
-order: 04
+order: "04"
 ---
 
 Secure migration of your Organization with Bitwarden is straightforward and secure. Simply follow the steps in this guide to migrate data and users from your existing password manager:
@@ -33,7 +33,7 @@ Steps in this document **are listed in the recommended order** for ease of use a
 
 Exporting data from another password manager will be different for each solution, and in some cases may be a bit tricky. Use one of our [Import & Export Guides]({{site.baseurl}}/import-export/) for help, for example with exporting from [Lastpass]({{site.baseurl}}/article/import-from-lastpass/#export-from-lastpass) or [1Password]({{site.baseurl}}/article/import-from-1password/#export-from-1password).
 
-Gathering a full export of your data may require assigning shared folders or items to a single user for export, or performing multiple exports between users with appropriate permissions. Additionally, exported data may include personal data alongside shared/organizational data, so be sure to remove personal items from the export file before [importing to Bitwarden](#).
+Gathering a full export of your data may require assigning shared folders or items to a single user for export, or performing multiple exports between users with appropriate permissions. Additionally, exported data may include personal data alongside shared/organizational data, so be sure to remove personal items from the export file before [importing to Bitwarden](#step-3-import-data-to-your-organization).
 
 {% callout info %}
 We recommend paying special attention to the location of the following types of data during export:
@@ -57,12 +57,12 @@ It's important that you create your Organization first and [import data to it di
 
 1. **Create your Organization**. Start by creating your Organization. To learn how, check out [this article]({{site.baseurl}}/article/about-organizations/#create-an-organization).
 
-   {% callout note %}To self-host Bitwarden, create an Organization on the Bitwarden cloud, generate a [license key](https://bitwarden.com/host/), and use the key to [unlock Organizations]({{site.baseurl}}/article/licensing-on-premise/#organization-license) on your server.{% endcallout %}
+   {% callout info %}To self-host Bitwarden, create an Organization on the Bitwarden cloud, generate a [license key](https://bitwarden.com/host/), and use the key to [unlock Organizations]({{site.baseurl}}/article/licensing-on-premise/#organization-license) on your server.{% endcallout %}
 
-2. **Onboard Administrative Users**. With your Organization created, further setup procedures can be made easier by onboarding some [administrative users]({{siter.baseurl}}/article/user-types-access-control). It's important that you **do not begin end-user onboarding** at this point, as there are a few steps left to prepare your Organization. Learn how to invite admins [here]({{site.baseurl}}/article/managing-users/#onboard-users).
-3. **Configure Identity Services**. Bitwarden Enterprise Organizations support [Login with Single-Sign-On]({{site.baseurl}}/article/about-sso/) using either SAML 2.0 or OpenID Connect (OIDC). To configure SSO, navigate to the [Business Portal](https://bitwarden.com/help/article/about-business-portal/), accessible from the Web Vault by [Organization Owners and Administrators]({{site.baseurl}}/article/user-types-access-control/).
+2. **Onboard Administrative Users**. With your Organization created, further setup procedures can be made easier by onboarding some [administrative users]({{siter.baseurl}}/article/user-types-access-control/). It's important that you **do not begin end-user onboarding** at this point, as there are a few steps left to prepare your Organization. Learn how to invite admins [here]({{site.baseurl}}/article/managing-users/#onboard-users).
+3. **Configure Identity Services**. Bitwarden Enterprise Organizations support [Login with Single-Sign-On]({{site.baseurl}}/article/about-sso/) using either SAML 2.0 or OpenID Connect (OIDC). To configure SSO, navigate to the [Business Portal]({{site.baseurl}}/article/about-business-portal/), accessible from the Web Vault by [Organization Owners and Administrators]({{site.baseurl}}/article/user-types-access-control/).
 
-4. **Enable Enterprise Policies**. [Enterprise Policies]({{site.baseurl}}/article/) enable Enterprise Organizations to implement roles for users, for example requiring use of Two-step Login. It is highly recommended that you configure Policies before onboarding users.
+4. **Enable Enterprise Policies**. [Enterprise Policies]({{site.baseurl}}/article/policies/) enable Enterprise Organizations to implement roles for users, for example requiring use of Two-step Login. It is highly recommended that you configure Policies before onboarding users.
 
 ## Step 3: Import Data to your Organization
 
@@ -78,10 +78,10 @@ To import data to your Organization:
    {% callout warning %}Import to Bitwarden can't check whether items in the file to import are duplicative of items in your Vault. This means that **importing multiple files will create duplicative** Vault items if an item is already in the Vault and in the file to import.{% endcallout %}
 5. Select the **Import Data** button to complete your import.
 
-Currently, file attachments are not included in Bitwarden import operations and will need to be uploaded to your Vault manually. For more information, see [File Attachments]({% link _articles/features/attachments.md %}).
+Currently, file attachments are not included in Bitwarden import operations and will need to be uploaded to your Vault manually. For more information, see [File Attachments]({{site.baseurl}}/article/attachments/).
 
 {% callout success %}
-You should also recommend to employees that they export their personal data from your existing password manager and prepare it for import into Bitwarden. Learn more [here]({{site.baseurl}}/import-export/).
+You should also recommend to employees that they export their personal data from your existing password manager and prepare it for import into Bitwarden. Learn more [here]({{site.baseurl}}/article/import-data/).
 {% endcallout %}
 
 ### Import Recommendations
@@ -103,9 +103,9 @@ To ensure the security of your Organization, Bitwarden applies a 3-step process 
 
 ### Automated Onboarding
 
-Automated user onboarding is available through [Bitwarden Directory Connector]({{site.baseurl}}/article/directory-sync), a standalone application available in a [Desktop app]({{site.baseurl}}/article/directory-sync-desktop/) and [CLI]({{site.baseurl}}/article/directory-sync-cli/) that will synchronize users and groups from your existing directory service.
+Automated user onboarding is available through [Bitwarden Directory Connector]({{site.baseurl}}/article/directory-sync/), a standalone application available in a [Desktop app]({{site.baseurl}}/article/directory-sync-desktop/) and [CLI]({{site.baseurl}}/article/directory-sync-cli/) that will synchronize users and groups from your existing directory service.
 
-Users are automatically invited to join the Organization, and can be confirmed manually or automatically using the [Bitwarden CLI tool](https://bitwarden.com/help/article/cli/#confirm).
+Users are automatically invited to join the Organization, and can be confirmed manually or automatically using the [Bitwarden CLI tool]({{site.baseurl}}/article/cli/#confirm).
 
 - Learn more about how syncing works [here]({{site.baseurl}}/article/directory-sync/).
 - Discover how to configure user and group filters for Directory Connector [here]({{site.baseurl}}/article/user-group-filters/).
@@ -121,7 +121,7 @@ Bitwarden empowers Teams and Organizations to share sensitive data easily, secur
 
 Collections can organize secure items in many ways, including but not limited to business function, group assignment, application access levels, or even security protocols. Collections function as shared folders, allowing for consistent access control and sharing amongst groups of users.
 
-Shared folders from other password managers can be imported as Collections into Bitwarden by using the Organization Import template found [here](https://bitwarden.com/help/files/bitwarden_export_org.csv) and placing the name of the shared folder in the `Collection` column:
+Shared folders from other password managers can be imported as Collections into Bitwarden by using the Organization Import template found [here]({{site.baseurl}}/files/bitwarden_export_org.csv) and placing the name of the shared folder in the `Collection` column:
 
 Example Export:
 

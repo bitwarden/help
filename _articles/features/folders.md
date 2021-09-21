@@ -5,7 +5,7 @@ categories: [account-management]
 featured: false
 popular: false
 tags: [categories, folders, sub-folders]
-order: 06
+order: "06"
 ---
 
 Folders are structures used to organize your Personal Vault by gathering together Logins, Cards, Identities, and Secure Notes. Using Folders is a great way to make all Vault items easy to find. Any Vault item can be added to a Folder, including [items shared with you from an Organization]({{site.baseurl}}/article/sharing/).
@@ -98,7 +98,7 @@ To create a Folder, use the command:
 bw create folder <foldername>
 ```
 
-You can edit an existing folder using `bw edit <folderId>` and delete one using `bw delete folder <folderId>`. For more information, refer to our [CLI documentation]({{site.baseurl}}/article/cli).
+You can edit an existing folder using `bw edit <folderId>` and delete one using `bw delete folder <folderId>`. For more information, refer to our [CLI documentation]({{site.baseurl}}/article/cli/).
 
 {% endcapture %}
 {{ cli_info | markdownify}}
@@ -116,7 +116,7 @@ There are similarities between Folders and Collections. **Folders organize your 
 Folders can be "nested" in order to logically organize them within your Vault. There's no limit to the depth with which you can nest Folders, but creating too many levels may interfere with your Vault's interface.
 
 {% callout info %}
-Searching inside a "parent" Folder will not include items in Folders nested inside it as potential search results. For more information, see [Search your Vault]({% link _articles/features/searching-vault.md %}).
+Searching inside a "parent" Folder will not include items in Folders nested inside it as potential search results. For more information, see [Search your Vault]({{site.baseurl}}/article/searching-vault/).
 {% endcallout %}
 
 {% image manage-items/subfolders.png Nested folders %}
@@ -213,7 +213,7 @@ Using `edit` will require you to:
 - Manipulate the JSON object (specifically, the `folderId` attribute) with a [command-line JSON processor like jq](https://stedolan.github.io/jq/){:target="\_blank"}.
 - Use the `encode` command to encode changes to the JSON object.
 
-If you're unfamiliar with using any of these parts, refer to our [CLI documentation]({{site.baseurl}}/article/cli).
+If you're unfamiliar with using any of these parts, refer to our [CLI documentation]({{site.baseurl}}/article/cli/).
 {% endcallout %}
 
 {% endcapture %}

@@ -5,10 +5,10 @@ categories: [directory-connector]
 featured: true
 popular: false
 tags: []
-order: 04
+order: "04"
 ---
 
-The Directory Connector [Desktop Application]({% link _articles/directory-connector/directory-sync-desktop.md %}) and [CLI]({% link _articles/directory-connector/directory-sync-cli.md %}) share the same database and configuration settings. You may install and use both applications, however **it is not recommended to use them simultaneously**.
+The Directory Connector [Desktop Application]({{site.baseurl}}/article/directory-sync-desktop/) and [CLI]({{site.baseurl}}/article/directory-sync-cli/) share the same database and configuration settings. You may install and use both applications, however **it is not recommended to use them simultaneously**.
 
 {% callout success %}
 Though not required, it may be helpful to use the Desktop Application first to setup and configure all of your settings before using the Directory Connector CLI.
@@ -20,9 +20,9 @@ The Directory Connector configuration file (`data.json`) contains objects you ma
 - Set the connection to your Directory
 - Configure Sync Options
 
-It is not possible to setup the *entirety* of Directory Connector from `data.json`. Authentication values, like keys or secrets, must be set from either the [Desktop Application]({% link _articles/directory-connector/directory-sync-desktop.md %}) or [CLI]({% link _articles/directory-connector/directory-sync-cli.md %}).
+It is not possible to setup the *entirety* of Directory Connector from `data.json`. Authentication values, like keys or secrets, must be set from either the [Desktop Application]({{site.baseurl}}/article/directory-sync-desktop/) or [CLI]({{site.baseurl}}/article/directory-sync-cli/).
 
-[{% icon fa-download %} Download a sample configuration file]({{site.baseurl}}/files/data.json)
+[{% icon fa-download %} Download a sample configuration file]({{site.baseurl}}/files/data.json/)
 
 {% callout warning %}
 Avoid opening or modifying `data.json` while the Directory Connector Desktop Application or CLI executable is running.
@@ -38,13 +38,13 @@ The location of `data.json` depends on which platform is in use:
 - Linux: `~/.config/Bitwarden Directory Connector`
 
 {% callout success %}
-Using the Directory Connector [CLI]({% link _articles/directory-connector/directory-sync-cli.md %}), run the `data-file` command to discover the absolute path to the `data.json`.
+Using the Directory Connector [CLI]({{site.baseurl}}/article/directory-sync-cli/), run the `data-file` command to discover the absolute path to the `data.json`.
 {% endcallout %}
 
 
 ## Secret Storage
 
-By default, the Directory Connector [Desktop Application]({% link _articles/directory-connector/directory-sync-desktop.md %}) and [CLI]({% link _articles/directory-connector/directory-sync-cli.md %}) both use a secure method for persisting sensitive data (such as your directory account password, API keys, etc).
+By default, the Directory Connector [Desktop Application]({{site.baseurl}}/article/directory-sync-desktop/) and [CLI]({{site.baseurl}}/article/directory-sync-cli/) both use a secure method for persisting sensitive data (such as your directory account password, API keys, etc).
 
 On Linux systems this requires [GNOME Keyring](https://wiki.archlinux.org/index.php/GNOME/Keyring){:target="\_blank"} and [X11](https://en.wikipedia.org/wiki/X_Window_System){:target="\_blank"}, which are usually reserved for desktop environments. If you are using a headless Linux environment you may encounter errors such as:
 ```

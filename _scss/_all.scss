@@ -5,6 +5,10 @@ html {
     -moz-osx-font-smoothing: grayscale;
 }
 
+body {
+    font-family: "Roboto", sans-serif, "Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
 :target::before {
     content: '';
     display: block;

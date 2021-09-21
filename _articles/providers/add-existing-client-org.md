@@ -6,7 +6,7 @@ featured: false
 popular: false
 hidden: false
 tags: []
-order: 05
+order: "05"
 ---
 
 MSPs, Resellers, and other Bitwarden Partners that are already administering Organizations on behalf of their clients can add pre-existing Organizations to their Provider Portal.

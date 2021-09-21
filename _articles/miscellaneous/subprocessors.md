@@ -5,7 +5,7 @@ categories: [security]
 featured: false
 popular: false
 tags: []
-order: 10
+order: "10"
 ---
 
 Reference the table below for a list of Bitwarden subprocessors.

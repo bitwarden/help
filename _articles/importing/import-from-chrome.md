@@ -5,7 +5,7 @@ categories: [import-export]
 featured: true
 popular: false
 tags: [import, chrome, opera, vivaldi, edge]
-order: 04
+order: "04"
 ---
 
 Use this article for help exporting data from Google Chrome and importing into Bitwarden.

@@ -5,7 +5,7 @@ categories: [directory-connector]
 featured: true
 popular: false
 tags: [directory connector, directory sync, teams, enterprise]
-order: 01
+order: "01"
 ---
 
 ## What is Directory Connector?
@@ -24,8 +24,8 @@ A Directory Connector sync operation can be run on-demand or automatically on a 
 
 Directory Connector supports sync from the following sources:
 
-- [Active Directory]({% link _articles/directory-connector/ldap-directory.md%})
-- [Any LDAP-based directory]({% link _articles/directory-connector/ldap-directory.md %})
+- [Active Directory]({{site.baseurl}}/article/ldap-directory/)
+- [Any LDAP-based directory]({{site.baseurl}}/article/ldap-directory/)
 - [Azure Active Directory]({% link _articles/directory-connector/azure-active-directory.md %})
 - [G Suite]({% link _articles/directory-connector/gsuite-directory.md %})
 - [Okta]({% link _articles/directory-connector/okta-directory.md %})
@@ -33,7 +33,7 @@ Directory Connector supports sync from the following sources:
 
 ## Directory Connector Applications
 
-Directory Connector is available as a cross-platform [Desktop Application]({% link _articles/directory-connector/directory-sync-desktop.md %}) and as a [Command Line Interface (CLI)]({% link _articles/directory-connector/directory-sync-cli.md %}). The Desktop App and CLI [share a database and configurations]({% link _articles/directory-connector/directory-sync-shared.md %}), so you may choose to use both, however simultaneous use is not recommended.
+Directory Connector is available as a cross-platform [Desktop Application]({{site.baseurl}}/article/directory-sync-desktop/) and as a [Command Line Interface (CLI)]({{site.baseurl}}/article/directory-sync-cli/). The Desktop App and CLI [share a database and configurations]({{site.baseurl}}/article/directory-sync-shared/), so you may choose to use both, however simultaneous use is not recommended.
 
 {% image directory-connector/app.png Directory Connector Desktop App %}
 

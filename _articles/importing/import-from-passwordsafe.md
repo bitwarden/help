@@ -5,7 +5,7 @@ categories: [import-export]
 featured: true
 popular: false
 tags: [import, passwordsafe]
-order: 06
+order: "06"
 ---
 
 Use this article for help exporting data from Password Safe and importing into Bitwarden. Password Safe (V8) currently only supports exporting as `.csv` file. Older versions also supported `.xml`.
@@ -35,7 +35,7 @@ Complete the following steps to export data from the Password Safe Desktop App:
 ## Prepare exported file before import
 Currently we do not offer a specific importer for this type of file.
 
-To prepare the exported file for import, please follow the instructions in this guide: [Condition a Bitwarden .csv or .json]({% link _articles/importing/condition-bitwarden-import.md %})
+To prepare the exported file for import, please follow the instructions in this guide: [Condition a Bitwarden .csv or .json]({{site.baseurl}}/article/condition-bitwarden-import/)
 
 ## Import to Bitwarden
 

@@ -5,10 +5,10 @@ categories: [send]
 featured: true
 popular: false
 tags: [bitwarden send, send, cli]
-order: 06
+order: "06"
 ---
 
-Bitwarden Send is available as a set of fully-featured CLI commands. This article documents the breadth of `bw send` commands, however Send **is not a separate tool** from the Bitwarden Command-line Interface (CLI). Therefore, many of the commands, options, and concepts in the [CLI documentation]({% link _articles/miscellaneous/cli.md %}) are relevant here.
+Bitwarden Send is available as a set of fully-featured CLI commands. This article documents the breadth of `bw send` commands, however Send **is not a separate tool** from the Bitwarden Command-line Interface (CLI). Therefore, many of the commands, options, and concepts in the [CLI documentation]({{site.baseurl}}/article/cli/) are relevant here.
 
 {% image send/send-cli.png Send's --help text %}
 
@@ -149,7 +149,7 @@ The `get` command will retrieve a Send owned by you and output it as a JSON obje
 bw send get [options] <id / string>
 ```
 
-If you create a Send in another Bitwarden application while this session is still active, use the `bw sync` command to pull recent sends. For more information, refer to our [CLI documentation]({% link _articles/miscellaneous/cli.md %}).
+If you create a Send in another Bitwarden application while this session is still active, use the `bw sync` command to pull recent sends. For more information, refer to our [CLI documentation]({{site.baseurl}}/article/cli/).
 
 **Options:**
 
@@ -194,7 +194,7 @@ The `list` command will list all Sends owned by you and output them as JSON:
 bw send list [options]
 ```
 
-If you create a Send in another Bitwarden application while this session is still active, use the `bw sync` command to pull recent sends. For more information, refer to our [CLI documentation]({% link _articles/miscellaneous/cli.md %}).
+If you create a Send in another Bitwarden application while this session is still active, use the `bw sync` command to pull recent sends. For more information, refer to our [CLI documentation]({{site.baseurl}}/article/cli/).
 
 **Options:**
 

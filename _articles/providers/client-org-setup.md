@@ -6,7 +6,7 @@ featured: false
 popular: false
 hidden: false
 tags: []
-order: 04
+order: "04"
 ---
 
 This article will walk you through the [creation of a Client Organization](#create-a-client-organization) and outline a typical [setup procedure](#initial-setup-procedure) for getting started administering a customer's Organization.
@@ -24,7 +24,7 @@ To create a Client Organization you must be a [Provider Admin]({{site.baseurl}}/
    {% image providers/provider-add-client.png Create a Client Organization %}
 2. On the New Client Organization screen, enter an **Organization Name**, **Billing Email**, and **Client Owner Email**.
 
-   {% callout info %}An invitation will automatically be sent to the **Client Owner Email** to join the Organization as an [Owner]({{site.baseurl}}/article/user-types-access-control).{% endcallout %}
+   {% callout info %}An invitation will automatically be sent to the **Client Owner Email** to join the Organization as an [Owner]({{site.baseurl}}/article/user-types-access-control/).{% endcallout %}
 3. From the **Choose Your Plan** list, select the [type of Organization]({{site.baseurl}}/article/about-bitwarden-plans/#compare-the-plans-1) to create.
 
    {% callout success %}Teams and Enterprise Organizations include premium features for all enrolled users.{% endcallout %}

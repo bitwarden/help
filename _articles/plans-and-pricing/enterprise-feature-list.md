@@ -6,7 +6,7 @@ featured: false
 popular: false
 hidden: false
 tags: [enterprise, plans, organization]
-order: 03
+order: "03"
 ---
 
 This document describes and references the features available to Bitwarden Enterprise Organizations in several categories:
@@ -58,11 +58,11 @@ This document describes and references the features available to Bitwarden Enter
 |Secure storage for Logins, Notes, Cards, and Identities|Bitwarden [Vault items]({{site.baseurl}}/article/managing-items/) are encrypted before being stored anywhere. [Learn more]({{site.baseurl}}/article/what-encryption-is-used/).|
 |Zero Knowledge Encryption |All Vault data is end-to-end encrypted. [Learn more](https://bitwarden.com/blog/post/bitwarden-network-security-assessment-2020/).|
 |Secure Password Generator|Generate secure, random, and unique passwords for every Vault item. [Learn more](https://bitwarden.com/password-generator/).|
-|Encrypted Export|Download encrypted exports for secure storage of Vault data backups. [Learn more]({{site.baseurl}}/article/encrypted-exports/).|
+|Encrypted Export|Download encrypted exports for secure storage of Vault data backups. [Learn more]({{site.baseurl}}/article/encrypted-export/).|
 |Biometric Authentication|Available for:<br>-Android (fingerprint unlock or face unlock) and iOS (Touch ID and Face ID)<br>-Windows Desktop Apps (Windows Hello using PIN, Facial Recognition, and more) and macOS Desktop Apps (Touch ID)<br>-Chromium, Firefox 87+, and Safari Browser Extensions<br><br>[Learn more]({{site.baseurl}}/article/biometrics/).|
 |Emergency Access|Users can designate and manage trusted emergency contacts, who may request access to their Vault in case of emergency. [Learn more]({{site.baseurl}}/article/emergency-access/).|
 |Account Fingerprint Phrase|Security measure that uniquely and securely identifies a Bitwarden user account when encryption-related or onboarding operations are performed. [Learn more]({{site.baseurl}}/article/fingerprint-phrase/).|
-|Subprocessors|See our full list of subprocessors: [Bitwarden Subprocessors](https://bitwarden.com/help/article/subprocessors/).|
+|Subprocessors|See our full list of subprocessors: [Bitwarden Subprocessors]({{site.baseurl}}/article/subprocessors/).|
 
 #### Compliance, Audits, Certifications
 

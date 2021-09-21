@@ -5,12 +5,12 @@ categories: [account-management]
 featured: true
 popular: false
 tags: [favorites, features, tutorial]
-order: 07
+order: "07"
 ---
 
 Any item can be designated as a **Favorite** allow quick access to your most used items.
 
-Even items [shared with you from an Organization]({% link _articles/organizations/sharing.md %}) can be designated a Favorite, but this will only impact how they appear in your Personal Vault (i.e. you won't make that item a Favorite for other users with access to the Organization or Collection).
+Even items [shared with you from an Organization]({{site.baseurl}}/article/sharing/) can be designated a Favorite, but this will only impact how they appear in your Personal Vault (i.e. you won't make that item a Favorite for other users with access to the Organization or Collection).
 
 {% callout success %}
 Items marked as a **Favorite** will appear at the top of your {% icon fa-lock %} **My Vault** view in Browser Extensions and Mobile Apps, and in the {% icon fa-star %} **Favorites** filter in your Web Vault and Desktop Apps.

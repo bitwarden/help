@@ -6,7 +6,7 @@ featured: false
 popular: false
 hidden: true
 tags: [free, personal, organization, enterprise, teams, family, plans, subscription]
-order: 08
+order: "08"
 ---
 In continuing our mission to empower individuals and organizations to store and share sensitive data easily and securely, we've recently made some upgrades to our offerings. **This article is for users who created their Bitwarden accounts prior to September 06, 2020 and want to understand the difference between Classic 2019 and current plans.**
 
@@ -16,11 +16,11 @@ You **will not** be moved to a current plan automatically, and are **not require
 
 ## Free Individual
 
-There have been no changes made to the **Free** plan for individual users. For more information on what this plan includes, see [About Bitwarden Plans](https://bitwarden.com/help/article/about-bitwarden-plans/).
+There have been no changes made to the **Free** plan for individual users. For more information on what this plan includes, see [About Bitwarden Plans]({{site.baseurl}}/article/about-bitwarden-plans/).
 
 ## Premium Individual
 
-There have been no changes made to the **Premium** plan for individual users. For more information on what this plan includes, see [About Bitwarden Plans](https://bitwarden.com/help/article/about-bitwarden-plans/).
+There have been no changes made to the **Premium** plan for individual users. For more information on what this plan includes, see [About Bitwarden Plans]({{site.baseurl}}/article/about-bitwarden-plans/).
 
 ## Families Organizations
 
@@ -108,8 +108,8 @@ Additional enterprise-only capabilities are planned which will only be available
 
 #### Q: I have an Enterprise Organization, how do I upgrade my plan so that I can use Login with SSO?
 
-**A:** [Contact Us](https://bitwarden.com/contact/) and select **Upgrade/Change Plan** from the **Subject** dropdown menu. We highly recommend you test Login with SSO by starting a [7 Day Enterprise Free Trial](https://bitwarden.com/help/article/enterprise-free-trial).
+**A:** [Contact Us](https://bitwarden.com/contact/) and select **Upgrade/Change Plan** from the **Subject** dropdown menu. We highly recommend you test Login with SSO by starting a [7 Day Enterprise Free Trial]({{site.baseurl}}/article/enterprise-free-trial/).
 
 #### Q: I would like to test Login with SSO. If I decide I don't need it, can I revert to my Classic 2019 plan?
 
-**A:** Unfortunately, we aren't able to revert you back to a Classic 2019 plan once you've upgraded. We recommend creating a new Organization to start a [7 Day Enterprise Free Trial](https://bitwarden.com/help/article/enterprise-free-trial/) to test Login with SSO outside of your Primary Organization.
+**A:** Unfortunately, we aren't able to revert you back to a Classic 2019 plan once you've upgraded. We recommend creating a new Organization to start a [7 Day Enterprise Free Trial]({{site.baseurl}}/article/enterprise-free-trial/) to test Login with SSO outside of your Primary Organization.

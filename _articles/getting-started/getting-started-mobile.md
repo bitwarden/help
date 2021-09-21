@@ -6,7 +6,7 @@ featured: false
 popular: false
 hidden: false
 tags: [tutorial, getting started, mobile, android, ios]
-order: 04
+order: "04"
 redirect_from:
   - /article/getting-started-android/
   - /article/getting-started-ios/
@@ -56,7 +56,7 @@ Organizing your Vault into **Favorites** and **Folders** makes navigating your V
 3. Tap **Folder** to select a folder for this item, or toggle the **Favorite** switch to add it to your Favorites.
 3. Tap **Save** in the top-right corner of your screen.
 
-For more information, see [Folders]({% link _articles/features/folders.md %}) and [Favorites]({% link _articles/features/favorites.md %}).
+For more information, see [Folders]({{site.baseurl}}/article/folders/) and [Favorites]({{site.baseurl}}/article/favorites/).
 
 ### Create New Logins
 
@@ -65,7 +65,7 @@ You can create new Logins, Cards, Identities, and Secure Notes directly from any
 1. In your Bitwarden Android app, tap the {% icon fa-plus %} Add icon in the bottom-right corner.
 2. Choose which **Type** of item to create (for example, *Login*).
 3. Enter all the information for the item (for example, *Username* and *Password*).
-4. For Logins, enter the website the login is used for in the **URI** field (for example, [www.amazon.com](##create-items)).
+4. For Logins, enter the website the login is used for in the **URI** field (for example, `www.amazon.com`).
 5. Tap **Folder** or toggle the **Favorite** switch to sort the item in your Vault.
 6. When you're finished, tap **Save** in the top-right corner of your screen.
 
@@ -82,11 +82,11 @@ Setup Auto-fill to automatically enter logins from your Android device to a Web 
    Depending on which version of Android you're using, a number of Auto-fill options could be listed.
 2. Tap your available Auto-fill option, and toggle it on. A green `Enabled` message will indicate that Auto-fill is active.
 
-   Once toggled, you might be required to change some Android-native settings, depending on your available or enabled Auto-fill options. For more information, see [Auto-fill logins on Android]({% link _articles/features/auto-fill-android.md %}).
+   Once toggled, you might be required to change some Android-native settings, depending on your available or enabled Auto-fill options. For more information, see [Auto-fill logins on Android]({{site.baseurl}}/article/auto-fill-android/).
 
 ### Launch from Mobile Apps
 
-You can launch a website directly from the Bitwarden Mobile App by selecting the {% icon fa-share-square %} **Launch** button in any Vault item with a valid URI. If you're unfamiliar with using URIs, see [Using URIs]({% link _articles/features/uri-match-detection.md %}).
+You can launch a website directly from the Bitwarden Mobile App by selecting the {% icon fa-share-square %} **Launch** button in any Vault item with a valid URI. If you're unfamiliar with using URIs, see [Using URIs]({{site.baseurl}}/article/uri-match-detection/).
 
 {% image getting-started/mobile-launch.png %}
 
@@ -152,7 +152,7 @@ Organizing your Vault into **Favorites** and **Folders** makes navigating your V
 3. Tap **Folder** to select a folder for this item, or toggle the **Favorite** switch to add it to your Favorites.
 3. Tap **Save** in the top-right corner of your screen.
 
-For more information, see [Folders]({% link _articles/features/folders.md %}) and [Favorites]({% link _articles/features/favorites.md %}).
+For more information, see [Folders]({{site.baseurl}}/article/folders/) and [Favorites]({{site.baseurl}}/article/favorites/).
 
 ### Create New Logins
 
@@ -161,7 +161,7 @@ You can create new Logins, Cards, Identities, and Secure Notes directly from any
 1. Tap the {% icon fa-plus %} Add icon in the top-right corner.
 2. Choose which **Type** of item to create (for example, *Login*).
 3. Enter all the information for the item (for example, *Username* and *Password*).
-4. For Logins, enter the website the login is used for in the **URI** field (for example, [www.amazon.com](#)).
+4. For Logins, enter the website the login is used for in the **URI** field (for example, `www.amazon.com`).
 5. Tap **Folder** or toggle the **Favorite** switch to organize the item in your Vault.
 6. When you're finished, tap **Save** in the top-right corner of your screen.
 
@@ -183,7 +183,7 @@ When you create new logins, make sure you enter a website in the [URI field](#cr
 
 ### Launch from Mobile Apps
 
-You can launch a website directly from the Bitwarden Mobile App by selecting the {% icon fa-share-square %} **Launch** button in any Vault item with a valid URI. If you're unfamiliar with using URIs, see [Using URIs]({% link _articles/features/uri-match-detection.md %}).
+You can launch a website directly from the Bitwarden Mobile App by selecting the {% icon fa-share-square %} **Launch** button in any Vault item with a valid URI. If you're unfamiliar with using URIs, see [Using URIs]({{site.baseurl}}/article/uri-match-detection/).
 
 {% image getting-started/mobile-launch.png %}
 

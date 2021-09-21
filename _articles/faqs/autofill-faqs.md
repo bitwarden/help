@@ -6,7 +6,7 @@ featured: true
 popular: true
 hidden: false
 tags: []
-order: 10
+order: "10"
 ---
 
 ### Q: Can I auto-fill on a split login-workflow?
@@ -38,4 +38,4 @@ order: 10
 2. Log out of your Bitwarden mobile app.
 3. Check that your device settings are [setup to use Bitwarden for autofill]({{site.baseurl}}/article/auto-fill-ios/#keyboard-auto-fill).
 4. Log back in to your Bitwarden mobile app.
-5. Re-enable [PIN Code]({{site.baseurl}}/article/unlock-with-pin/) verification if you want to use it as a backup for [biometrics]({{site.baseurl}}/article/unlock-with-biometrics/).
+5. Re-enable [PIN Code]({{site.baseurl}}/article/unlock-with-pin/) verification if you want to use it as a backup for [biometrics]({{site.baseurl}}/article/biometrics/).

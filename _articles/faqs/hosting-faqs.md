@@ -6,7 +6,7 @@ featured: true
 popular: true
 hidden: false
 tags: []
-order: 13
+order: "13"
 ---
 
 This article contains Frequently Asked Questions (FAQs) regarding **Self-hosting**.
@@ -25,7 +25,7 @@ You can read more about Docker and container technologies at [Docker's Website](
 
 ### Q: How do I backup and restore my self-hosted instance?
 
-**A:** Bitwarden takes automated nightly backups of the `bitwarden-mssql` database container in order to protect your stored credentials. For help with manual backups, or help restoring a backup, see [Backup your Hosted Data]({% link _articles/hosting/backup-on-premise.md %}).
+**A:** Bitwarden takes automated nightly backups of the `bitwarden-mssql` database container in order to protect your stored credentials. For help with manual backups, or help restoring a backup, see [Backup your Hosted Data]({{site.baseurl}}/article/backup-on-premise/).
 
 ### Q: What are my installation id and installation key used for?
 
@@ -45,13 +45,13 @@ Retrieve an installation id and key from [https://bitwarden.com/host](https://bi
 
 Check that your server name or FQDN has been proliferated to all `globalSettings_baseServiceUri__*` variables in `./bwdata/env/global.override.env`, and that your certificate contains a Subject Alternative Name (SAN) with the new server FQDN
 
-If you are using Let's Encrypt certificate, you'll need to [Manually Update Your Certificate](https://bitwarden.com/help/article/certificates/#manually-update-a-lets-encrypt-certificate){:target="\_blank"}.
+If you are using Let's Encrypt certificate, you'll need to [Manually Update Your Certificate]({{site.baseurl}}/article/certificates/#manually-update-a-lets-encrypt-certificate){:target="\_blank"}.
 
 ## SMTP Configuration
 
 ### Q: How do I set up an SMTP Mail Server?
 
-**A:** Connect your self-hosted instance to an existing SMTP Mail Server by editing all `globalSettings__mail__smtp__*` values in `./bwdata/env/global.overide.env`. For more information, see [Configure Environment Variables]({% link _articles/hosting/environment-variables.md %}).
+**A:** Connect your self-hosted instance to an existing SMTP Mail Server by editing all `globalSettings__mail__smtp__*` values in `./bwdata/env/global.overide.env`. For more information, see [Configure Environment Variables]({{site.baseurl}}/article/environment-variables/).
 
 If you don't yet have an existing SMTP Mail Server from which you can relay emails, consider services like [Mailgun](https://www.mailgun.com/){:target="\_blank"} or [SparkPost](https://www.sparkpost.com){:target="\_blank"}, or use Gmail an SMTP Mail Server.
 
@@ -82,7 +82,7 @@ Check that the custom port values have been proliferated to `./bwdata/env/global
 
 ### Q: How do I add Bitwarden to system boot?
 
-**A:** Before adding Bitwarden to system boot, complete [Docker Post-Installation](https://bitwarden.com/help/article/install-on-premise/#docker-post-installation-linux-only) to setup a dedicated `bitwarden` service account.
+**A:** Before adding Bitwarden to system boot, complete [Docker Post-Installation]({{site.baseurl}}/article/install-on-premise/#docker-post-installation-linux-only) to setup a dedicated `bitwarden` service account.
 
 Then, complete the following steps:
 

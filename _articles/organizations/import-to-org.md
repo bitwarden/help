@@ -5,17 +5,17 @@ categories: [organizations]
 featured: true
 popular: false
 tags: [organizations, import]
-order: 08
+order: "08"
 ---
 
-Bitwarden provides a data import tool for easy migration from any password management solution to your Organization Vault. You can also use the data import tool to import from one Bitwarden Organization to another, or to import a Bitwarden [Encrypted Export]({% link _articles/importing/encrypted-export.md %}).
+Bitwarden provides a data import tool for easy migration from any password management solution to your Organization Vault. You can also use the data import tool to import from one Bitwarden Organization to another, or to import a Bitwarden [Encrypted Export]({{site.baseurl}}/article/encrypted-export/).
 
 For a full list of supported import formats, see [What file formats does Bitwarden support for import?]({{site.baseurl}}/article/import-faqs/#q-what-file-formats-does-bitwarden-support-for-import), or refer to one of these articles for guidance on the most popular solutions:
 
-- [Import from LastPass]({% link _articles/importing/import-from-lastpass.md %})
-- [Import from 1Password]({% link _articles/importing/import-from-1password.md %})
-- [Import from Firefox]({% link _articles/importing/import-from-firefox.md %})
-- [Import from Google Chrome]({% link _articles/importing/import-from-chrome.md %})
+- [Import from LastPass]({{site.baseurl}}/article/import-from-lastpass/)[Import from LastPass]({{site.baseurl}}/article/import-from-lastpass/)[Import from LastPass]({{site.baseurl}}/article/import-from-lastpass/)[Import from LastPass]({{site.baseurl}}/article/import-from-lastpass/)
+- [Import from 1Password]({{site.baseurl}}/article/import-from-1password/)
+- [Import from Firefox]({{site.baseurl}}/article/import-from-firefox/)
+- [Import from Google Chrome]({{site.baseurl}}/article/import-from-chrome/)
 
 {% callout info %}
 **The above listed articles** describe importing to a Personal Bitwarden Vault. While the guidance for exporting from each solution will be appropriate, it's important to know that importing to an Organization is a slightly different procedure and is [documented below](#import-to-your-organization).
@@ -35,7 +35,7 @@ Importing data to Bitwarden **can only be done from the** [**Web Vault**](https:
    {% callout warning %}Import to Bitwarden can't check whether items in the file to import are duplicative of items in your Vault. This means that **importing multiple files will create duplicative** Vault items if an item is already in the Vault and in the file to import.{% endcallout %}
 5. Select the **Import Data** button to complete your import.
 
-Currently, file attachments are not included in Bitwarden import operations and will need to be uploaded to your Vault manually. For more information, see [File Attachments]({% link _articles/features/attachments.md %}).
+Currently, file attachments are not included in Bitwarden import operations and will need to be uploaded to your Vault manually. For more information, see [File Attachments]({{site.baseurl}}/article/attachments/).
 
 ## Length-related Import Errors
 

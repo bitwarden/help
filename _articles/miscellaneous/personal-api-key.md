@@ -39,7 +39,7 @@ To use your API Key to authenticate into the CLI, enter the following command:
 ```
 bw login --apikey
 ```
-which will prompt you to enter the obtained `client_id` and  `client_secret` to authenticate. Once you enter these values, enter your Master Password to decrypt your Vault. For more information, see [Bitwarden command line tool (CLI)](https://bitwarden.com/help/article/cli/).
+which will prompt you to enter the obtained `client_id` and  `client_secret` to authenticate. Once you enter these values, enter your Master Password to decrypt your Vault. For more information, see [Bitwarden command line tool (CLI)]({{site.baseurl}}/article/cli/).
 
 ### Environment Variables
 

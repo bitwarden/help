@@ -5,7 +5,7 @@ categories: [send]
 featured: true
 popular: false
 tags: [bitwarden send, send, ephemeral sharing, deletion, expiration, access count]
-order: 04
+order: "04"
 ---
 
 Unlike traditional Bitwarden Vault items and File Attachments, Sends are ephemeral and have a **default lifespan of 7 days**. The lifespan of a Send is entirely configurable using the [Deletion Date](#deletion-date) option, each having a maximum allowed lifespan of 31 days. When a Send has reached its Deletion Date, it will be purged from Bitwarden systems and inaccessible to both its Sender and recipients.
@@ -193,7 +193,7 @@ To disable a Send from the CLI, you'll need to use the `edit` command to change 
 bw send get <id> | jq '.disabled=false' | bw encode | bw send edit
 ```
 
-We recommend reading the [Send from CLI]({% link _articles/send/send-cli.md %}) article for complete information on using Send from the CLI.
+We recommend reading the [Send from CLI]({{site.baseurl}}/article/send-cli/) article for complete information on using Send from the CLI.
 
 #### Delete from the CLI
 
@@ -203,7 +203,7 @@ To delete a Send from the CLI, use the `delete` command with the Send's exact un
 bw send delete <id>
 ```
 
-We recommend reading the [Send from CLI]({% link _articles/send/send-cli.md %}) article for complete information on using Send from the CLI.
+We recommend reading the [Send from CLI]({{site.baseurl}}/article/send-cli/) article for complete information on using Send from the CLI.
 
 {% endcapture %}
 {{ cli_info | markdownify}}

@@ -5,7 +5,7 @@ categories: [hosting]
 featured: false
 popular: false
 tags: [hosting, docker, install, deploy]
-order: 05
+order: "05"
 ---
 
 Some features of Bitwarden are not configured by the `bitwarden.sh` installer. Configure these settings by editing the environment file, located at `./bwdata/env/global.override.env`. `global.override.env` comes pre-baked with configurable variables (see [Included Variables](#included-variables)), however there are additional variables which can be manually added (see [Optional Variables](#optional-variables)).
@@ -35,7 +35,7 @@ The following variables are among those that already exist in `global.override.e
 |globalSettings__mail__smtp__password=|A valid password for the `smtp__host`.|
 |globalSettings__disableUserRegistration=|Specify `true` to disable new users signing up for an account on this instance via the Registration page.|
 |globalSettings__hibpApiKey=|Your HaveIBeenPwned (HIBP) API Key, available [here](https://haveibeenpwned.com/API/Key).|
-|adminSettings__admins=|Email addresses which may access the [System Administrator Portal]({% link _articles/hosting/admin-portal.md%}).|
+|adminSettings__admins=|Email addresses which may access the [System Administrator Portal]({{site.baseurl}}/article/admin-portal/).|
 
 ## Optional Variables
 

@@ -5,7 +5,7 @@ categories: [account-management]
 featured: false
 popular: false
 tags: [account, report, breach, reused, unsecured, weak]
-order: 15
+order: "15"
 ---
 
 Vault Health Reports can be used to evaluate the security of your Bitwarden Personal or Organization Vault.
@@ -60,7 +60,7 @@ Once identified, you should use Bitwarden's Password Generator to create a stron
 
 ### Unsecured Websites Report
 
-The **Unsecured Websites Report** identifies Login items that use unsecured (`http://`) schemes in URIs. It's much safer to use `https://` to encrypt communications with TLS/SSL. To learn more, see [Using URIs]({% link _articles/features/uri-match-detection.md %}).
+The **Unsecured Websites Report** identifies Login items that use unsecured (`http://`) schemes in URIs. It's much safer to use `https://` to encrypt communications with TLS/SSL. To learn more, see [Using URIs]({{site.baseurl}}/article/uri-match-detection/).
 
 Once identified, you should change offending URIs from `http://` to  `https://`.
 
@@ -91,5 +91,5 @@ Once you have the key, open your `./bwdata/env/global.override.env` and REPLACE 
 globalSettings__hibpApiKey=REPLACE
 ```
 
-For more information, see [Configure Environment Variables]({% link _articles/hosting/environment-variables.md %}).
+For more information, see [Configure Environment Variables]({{site.baseurl}}/article/environment-variables/).
 {% endcallout %}

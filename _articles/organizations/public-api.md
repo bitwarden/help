@@ -5,7 +5,7 @@ categories: [organizations]
 featured: true
 popular: false
 tags: [public api, oas, organizations]
-order: 16
+order: "16"
 ---
 
 The Bitwarden Public API provides Organizations a suite of tools for managing members, collections, groups, event logs, and policies.
@@ -16,12 +16,12 @@ For automating **management of Vault items**, we recommend using the [CLI]({{sit
 
 The Public API is a RESTful API with predictable resource-oriented URLs, accepts JSON-encoded request bodies, returns JSON-encoded responses, and uses standard HTTP response codes, authentication, and verbs.
 
-The Public API is compatible with the OpenAPI Specification (OAS3) and publishes a compliant [`swagger.json`](https://bitwarden.com/help/api/specs/public/swagger.json) definition file. Explore the OpenAPI Specification using the Swagger UI:
-- For Public Cloud-hosted instances: [https://bitwarden.com/help/api/](https://bitwarden.com/help/api/){:target="\_blank"}
+The Public API is compatible with the OpenAPI Specification (OAS3) and publishes a compliant [`swagger.json`]({{site.baseurl}}/api/specs/public/swagger.json) definition file. Explore the OpenAPI Specification using the Swagger UI:
+- For Public Cloud-hosted instances: [https://bitwarden.com/help/api/]({{site.baseurl}}/api/){:target="\_blank"}
 - For Self-hosted instances: https://your.domain.com/api/docs/
 
 {% callout info %}
-Access to the Bitwarden Public API is available customers on the following plans, **Classic 2019 Enterprise Organizations**, current **Enterprise Organizations**, and current **Teams Organizations**. For more information, see [About Bitwarden Plans](https://bitwarden.com/help/article/about-bitwarden-plans/#compare-the-plans-1).
+Access to the Bitwarden Public API is available customers on the following plans, **Classic 2019 Enterprise Organizations**, current **Enterprise Organizations**, and current **Teams Organizations**. For more information, see [About Bitwarden Plans]({{site.baseurl}}/article/about-bitwarden-plans/#compare-the-plans-1).
 {% endcallout %}
 
 ## Endpoints
@@ -134,5 +134,5 @@ The Bitwarden Public API uses conventional HTTP response codes to indicate the s
 ## Further Reading
 
 For more information about using the Bitwarden Public API, see the following articles:
-- [Bitwarden Public API OAS Specification](https://bitwarden.com/help/api/){:target="\_blank"}
-- [Event Logs](https://bitwarden.com/help/article/event-logs/)
+- [Bitwarden Public API OAS Specification]({{site.baseurl}}/api/){:target="\_blank"}
+- [Event Logs]({{site.baseurl}}/article/event-logs/)

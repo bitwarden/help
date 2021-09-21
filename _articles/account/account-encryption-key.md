@@ -5,12 +5,12 @@ categories: [security]
 featured: false
 popular: false
 tags: [encryption key, account]
-order: 04
+order: "04"
 redirect_from:
   - /article/update-encryption-key/
 ---
 
-Each unique Bitwarden account has an encryption key derived from your Master Password, according to the methods defined in [Encryption]({% link _articles/security/what-encryption-is-used.md %}). This encryption key is used to encrypt all Vault data.
+Each unique Bitwarden account has an encryption key derived from your Master Password, according to the methods defined in [Encryption]({{site.baseurl}}/article/what-encryption-is-used/). This encryption key is used to encrypt all Vault data.
 
 ## Rotate your Encryption Key
 
@@ -31,7 +31,7 @@ When you rotate an encryption key, you **must immediately** log out of any logge
 
 #### Re-create any Encrypted Exports
 
-If you're using [Encrypted Exports]({% link _articles/importing/encrypted-export.md %}) to store long-term secure backups, you should immediately re-create the encrypted export of your Vault data using the new encryption key.
+If you're using [Encrypted Exports]({{site.baseurl}}/article/encrypted-export/) to store long-term secure backups, you should immediately re-create the encrypted export of your Vault data using the new encryption key.
 
 Encrypted Exports use your encryption key to encrypt **and decrypt** your Vault data, meaning that a rotated encryption key will not be able to decrypt an export created with the "stale" (prior-to-rotation) key.
 

@@ -6,7 +6,7 @@ featured: false
 popular: false
 hidden: false
 tags: []
-order: 02
+order: "02"
 redirect_from:
   - /article/deploying-bitwarden-as-a-msp/
 ---
@@ -43,7 +43,7 @@ Selecting the **Setup Provider Now** button will prompt you to log in to Bitward
 
 ### Onboard Users
 
-As the creator of the Provider, you'll be automatically given [Provider Admin]({{site.baseurl}}/provider-users/#provider-user-types) status, allowing you to fully manage all aspects of the Provider and all [Client Organizations](#client-organizations). Bitwarden strongly recommends that you provision a second Provider Admin for failover purposes.
+As the creator of the Provider, you'll be automatically given [Provider Admin]({{site.baseurl}}/article/provider-users/#provider-user-types) status, allowing you to fully manage all aspects of the Provider and all [Client Organizations](#client-organizations). Bitwarden strongly recommends that you provision a second Provider Admin for failover purposes.
 
 Now, begin adding your employees as [Service Users]({{site.baseurl}}/article/provider-users/#provider-user-types), which will allow them to fully administer all Client Organizations and create new ones or manage the Provider itself:
 
@@ -107,6 +107,6 @@ With the infrastructure for securely and scalably sharing credentials in place, 
 
    {% image organizations/org-people-invite.png %}
 
-2. **For larger customers** who leverage a directory service (Active Directory, LDAP, Okta, etc.), use [Directory Connector]({{site.baseurl}}/article/directory-sync) to sync Organization users from the source directory and automatically issue invitations.
+2. **For larger customers** who leverage a directory service (Active Directory, LDAP, Okta, etc.), use [Directory Connector]({{site.baseurl}}/article/directory-sync/) to sync Organization users from the source directory and automatically issue invitations.
 
 Regardless of whether you've invited users from the Organization Vault or using Directory Connector, the same 3-step process (Invite &rarr; Accept &rarr; Confirm) that you followed when [onboarding Provider users](#onboard-users) will apply here as well.
