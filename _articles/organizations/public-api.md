@@ -49,7 +49,7 @@ The API Key `client_id` and `client_secret` can be obtained by an **Owner** from
 If, as an owner, you want to share the API Key with an Admin or other user, use a secure communication method like [Bitwarden Send]({{site.baseurl}}/article/about-send/).
 
 {% callout warning %}
-Your API key enables full access to your Organization. Keep your API key private. If you believe your API key has been compromised, select the **Rotate API Key** button on this screen. Active uses of your current API key will need to be reconfigured with the new key before use.
+Your API key enables full access to your Organization. Keep your API key private. If you believe your API key has been compromised, select the **Rotate API Key** button on this screen. Active implementations of your current API key will need to be reconfigured with the new key before use.
 {% endcallout %}
 
 ### Bearer Access Tokens
