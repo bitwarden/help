@@ -4,6 +4,7 @@ permalink: pretty
 encoding: utf-8
 port: 4009
 main_baseurl: https://bitwarden.com
+destination: _site/help
 
 sass:
   sass_dir: ./_scss
@@ -25,22 +26,7 @@ collections:
   categories:
     output: true
     permalink: /:path/
-    order:
-      - getting-started.md
-      - account-management.md
-      - send.md
-      - import-export.md
-      - auto-fill.md
-      - two-step-login.md
-      - hosting.md
-      - organizations.md
-      - providers.md
-      - directory-connector.md
-      - login-with-sso.md
-      - security.md
-      - plans-and-pricing.md
-      - business.md
-      - miscellaneous.md
+    order: true
   articles:
     output: true
     permalink: /article/:name/

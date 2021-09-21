@@ -5,7 +5,7 @@ categories: [hosting]
 featured: true
 popular: false
 tags: []
-order: 10
+order: "10"
 ---
 
 When operating a self-hosted Bitwarden server in a business setting, administrators may want to centrally configure client application settings (particularly, Server URL) before deploying to users with an endpoint management platform.

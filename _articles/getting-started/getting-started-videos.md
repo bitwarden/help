@@ -6,7 +6,7 @@ featured: true
 popular: false
 hidden: true
 tags: [getting started, videos, bitwarden 101]
-order: 08
+order: "08"
 ---
 
 ## Bitwarden 101 - Getting Started

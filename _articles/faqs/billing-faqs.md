@@ -6,12 +6,12 @@ featured: true
 popular: false
 hidden: false
 tags: []
-order: 09
+order: "09"
 ---
 
 This article contains Frequently Asked Questions (FAQs) regarding **Plans and Pricing**.
 
-For help selecting the right Bitwarden plan for you, refer to [What Plan is Right for Me?]({% link _articles/plans-and-pricing/what-plan-is-right-for-me.md %}) and [About Bitwarden Plans]({% link _articles/plans-and-pricing/about-bitwarden-plans.md %}).
+For help selecting the right Bitwarden plan for you, refer to [What Plan is Right for Me?]({{site.baseurl}}/article/what-plan-is-right-for-me/) and [About Bitwarden Plans]({{site.baseurl}}/article/about-bitwarden-plans/).
 
 ## Account Management
 
@@ -24,15 +24,15 @@ For help selecting the right Bitwarden plan for you, refer to [What Plan is Righ
 
 ### Q: How do I view my billing information?
 
-**A:** Viewing Billing information is different depending on whether you're viewing it for an Individual or Organization subscription. Use [Update Your Billing Information](https://bitwarden.com/help/article/update-billing-info/) to guide you through both processes.
+**A:** Viewing Billing information is different depending on whether you're viewing it for an Individual or Organization subscription. Use [Update Your Billing Information]({{site.baseurl}}/article/update-billing-info/) to guide you through both processes.
 
 ### Q: How do I delete my account?
 
-**A:** We're sad to see you go! Use [Delete Your Account](https://help.bitwarden.com/article/delete-your-account/) to guide you through this process.
+**A:** We're sad to see you go! Use [Delete Your Account](https://help.bitwarden.com/delete-your-account/) to guide you through this process.
 
 ### Q: How do I upgrade from an Individual subscription to an Organization?
 
-**A:** Use [Upgrade from Individual to Organization](https://bitwarden.com/help/article/upgrade-from-individual-to-org/) to guide you through this process.
+**A:** Use [Upgrade from Individual to Organization]({{site.baseurl}}/article/upgrade-from-individual-to-org/) to guide you through this process.
 
 ### Q: How do I add or remove a user seat from my Organization?
 
@@ -46,7 +46,7 @@ You can add or remove seats from your Organization at any time. The cost will be
 
 **A:** In order to pay for a self-hosted instance of Bitwarden, you'll need to create an account in the Bitwarden cloud via the [Web Vault](https://vault.bitwarden.com). From there, you can download the license file to apply to your self-hosted instance. Your license file will flag your access to Premium features, so make sure that you download a new license file if you were previously on a free plan.
 
-For more information, see [Hosting](https://bitwarden.com/help/hosting).
+For more information, see [Hosting]({{site.baseurl}}/article/hosting).
 
 ### Q: If I have a Families Organization, do I need Premium?
 
@@ -66,7 +66,7 @@ Legacy Families plans do not automatically provide premium features, so users wo
 
 ### Q: Can I pay with Bitcoin?
 
-**A:** Yes! Refer to [Update Your Billing Information](https://bitwarden.com/help/article/update-billing-info/) for more information.
+**A:** Yes! Refer to [Update Your Billing Information]({{site.baseurl}}/article/update-billing-info/) for more information.
 
 [Contact Us](https://bitwarden.com/contact/) once you have added the credit for the subscription amount. We will generate and send you an invoice and activate the new account. You will also receive an invoice from our payment processor (BitPay) at the time the Bitcoin is sent.
 

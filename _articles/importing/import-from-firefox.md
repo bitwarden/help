@@ -5,7 +5,7 @@ categories: [import-export]
 featured: true
 popular: false
 tags: [import, firefox]
-order: 05
+order: "05"
 ---
 
 Use this article for help exporting data from Firefox and importing into Bitwarden.

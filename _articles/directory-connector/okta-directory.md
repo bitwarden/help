@@ -6,7 +6,7 @@ featured: true
 popular: false
 hidden: false
 tags: []
-order: 11
+order: "11"
 ---
 
 This article will help you get starting using Directory Connector to sync users and groups from your Okta directory to your Bitwarden Organization.
@@ -25,7 +25,7 @@ Directory Connector requires knowledge of an Okta-generated token to connect to 
 
 Complete the following steps to configure Directory Connector to use your Okta Directory:
 
-1. Open the Directory Connector [Desktop Application]({% link _articles/directory-connector/directory-sync-desktop.md %}).
+1. Open the Directory Connector [Desktop Application]({{site.baseurl}}/article/directory-sync-desktop/).
 2. Navigate to the **Settings** tab.
 3. From the **Type** dropdown, select **Okta**.
 
@@ -37,12 +37,12 @@ Complete the following steps to configure Directory Connector to use your Okta D
 ## Configure Sync Options
 
 {% callout success %}
-When you're finished configuring, navigate to the **More** tab and select the **Clear Sync Cache** button to prevent potential conflicts with prior sync operations. For more information, see [Clear Sync Cache]({% link _articles/directory-connector/clear-sync-cache.md %}).
+When you're finished configuring, navigate to the **More** tab and select the **Clear Sync Cache** button to prevent potential conflicts with prior sync operations. For more information, see [Clear Sync Cache]({{site.baseurl}}/article/clear-sync-cache/).
 {% endcallout %}
 
 Complete the following steps to configure the settings used when syncing using Directory Connector:
 
-1. Open the Directory Connector [Desktop Application]({% link _articles/directory-connector/directory-sync-desktop.md %}).
+1. Open the Directory Connector [Desktop Application]({{site.baseurl}}/article/directory-sync-desktop/).
 2. Navigate to the **Settings** tab.
 3. In the **Sync** section, configure the following options as desired:
 
@@ -125,7 +125,7 @@ To test whether Directory Connector will successfully connect to your directory 
 
 Once [Sync Options](#configured-sync-options) and [Filters](#specify-sync-filters) are configured as desired, you can begin syncing. Complete the following steps to start automatic sync with Directory Connector:
 
-1. Open the Directory Connector [Desktop Application]({% link _articles/directory-connector/directory-sync-desktop.md %}).
+1. Open the Directory Connector [Desktop Application]({{site.baseurl}}/article/directory-sync-desktop/).
 2. Navigate to the **Dashboard** tab.
 3. In the **Sync** section, select the **Start Sync** button.
 

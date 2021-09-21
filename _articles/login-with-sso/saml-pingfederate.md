@@ -11,7 +11,7 @@ order:
 
 This article contains sample configurations for Bitwarden **Login with SSO** (SAML 2.0) implementations with PingFederate.
 
-Use this as reference material for the [Configuring Login with SSO (SAML 2.0)]({% link _articles/login-with-sso/configure-sso-saml.md%}) article.
+Use this as reference material for the [Configuring Login with SSO (SAML 2.0)]({{site.baseurl}}/article/configure-sso-saml/) article.
 
 ## PingFederate Portal
 

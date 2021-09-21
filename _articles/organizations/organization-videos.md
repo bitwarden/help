@@ -5,7 +5,7 @@ categories: [organizations]
 featured: true
 popular: false
 tags: [organizations, videos, bitwarden 101]
-order: 17
+order: "17"
 ---
 
 ## Bitwarden 101 - Organizations

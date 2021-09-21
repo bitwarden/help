@@ -5,7 +5,7 @@ categories: [hosting]
 featured: false
 popular: false
 tags: [hosting, environment]
-order: 11
+order: "11"
 ---
 
 By default, Bitwarden client applications (Browser Extensions, Mobile Apps, etc.) will connect to Bitwarden-hosted servers. Client applications can be configured to connect to your self-hosted Bitwarden instance.

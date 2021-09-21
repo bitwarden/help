@@ -5,10 +5,10 @@ categories: [import-export]
 featured: true
 popular: false
 tags: [import]
-order: 09
+order: "09"
 ---
 
-This article defines the format you should use when manually conditioning a `.csv` or `.json` for import into Bitwarden. This format is identical to that used by `.csv` or `.json` files created by [Exporting your Bitwarden Vault]({% link _articles/account/export-your-data.md %}).
+This article defines the format you should use when manually conditioning a `.csv` or `.json` for import into Bitwarden. This format is identical to that used by `.csv` or `.json` files created by [Exporting your Bitwarden Vault]({{site.baseurl}}/article/export-your-data/).
 
 Make sure that you're using the format for Personal Vaults or Organizations depending on your export/import operation, as they are slightly different.
 

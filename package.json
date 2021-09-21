@@ -9,7 +9,7 @@
   },
   "devDependencies": {
     "bootstrap": "^4.5.3",
-    "browser-sync": "^2.26.13",
+    "browser-sync": "^2.27.5",
     "cross-env": "^5.2.0",
     "del": "^3.0.0",
     "fluidbox": "2.0.5",

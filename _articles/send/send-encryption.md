@@ -5,12 +5,12 @@ categories: [send]
 featured: true
 popular: false
 tags: [bitwarden send, send, about send, ephemeral sharing]
-order: 07
+order: "07"
 ---
 
 ## Send Encryption
 
-Sends are a secure and ephemeral mechanism for transmitting sensitive information to anyone, include plaintext and files. As the [About Send]({% link _articles/send/about-send.md %}) article notes, Sends are **end-to-end encrypted**, meaning that encryption (*described below*) and decryption occur client-side. When you create a Send:
+Sends are a secure and ephemeral mechanism for transmitting sensitive information to anyone, include plaintext and files. As the [About Send]({{site.baseurl}}/article/about-send/) article notes, Sends are **end-to-end encrypted**, meaning that encryption (*described below*) and decryption occur client-side. When you create a Send:
 
 1. A new 128-bit secret key is generated for the Send.
 2. Using HKDF-SHA256, a 512-bit encryption key is derived from the secret key.
@@ -21,7 +21,7 @@ Sends are a secure and ephemeral mechanism for transmitting sensitive informatio
 
 ## Send Decryption
 
-Sends are decrypted by opening the [Send link]({% link _articles/send/receive-send.md %}), which are constructed from a unique Send ID and the derived encryption key:
+Sends are decrypted by opening the [Send link]({{site.baseurl}}/article/receive-send/), which are constructed from a unique Send ID and the derived encryption key:
 
 `https://vault.bitwarden.com/#/send/send_id/encryption_key`
 

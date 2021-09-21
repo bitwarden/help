@@ -5,14 +5,14 @@ categories: [account-management]
 featured: true
 popular: false
 tags: [autofill, auto-fill, totp, 2fa, two-step login, two factor authentication, authenticator]
-order: 12
+order: "12"
 ---
 
 The Bitwarden Authenticator is an alternative solution to dedicated authentication apps like Authy, which you can use to verify your identity for websites and apps that use Two-step Login. The Bitwarden Authenticator generates 6-digit [Time-based One-time Passwords](https://en.wikipedia.org/wiki/Time-based_One-time_Password_algorithm) (TOTPs) using SHA-1 and rotates them every 30 seconds.
 
 {% callout info %}Authenticator key (TOTP) storage is available to all accounts. TOTP code generation requires Premium or membership to a Paid Organization (Families, Teams, or Enterprise).{% endcallout %}
 
-If you're new to using TOTPs for Two-step Login, refer to the [Field Guide to Two-step Login](https://bitwarden.com/help/article/bitwarden-field-guide-two-step-login/#securing-important-websites) for more information.
+If you're new to using TOTPs for Two-step Login, refer to the [Field Guide to Two-step Login]({{site.baseurl}}/article/bitwarden-field-guide-two-step-login/#securing-important-websites) for more information.
 
 ## Generate TOTP Codes
 

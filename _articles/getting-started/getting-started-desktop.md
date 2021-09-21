@@ -6,7 +6,7 @@ featured: false
 popular: false
 hidden: false
 tags: [tutorial, getting started, desktop, windows, mac, linux]
-order: 05
+order: "05"
 ---
 
 Bitwarden's Desktop App brings a full Vault experience straight out of your browser and into your desktop. Using a 3-column layout, the Bitwarden Desktop App is designed to help you quickly locate the Vault item you want to use or edit:
@@ -53,7 +53,7 @@ Organizing your Vault into **Favorites** and **Folders** makes filtering your Va
 3. Select a **Folder** from the dropdown to add this item to a folder, or check the **Favorite** checkbox to add it to your Favorites.
 4. Select the {% icon fa-save %} **Save** icon.
 
-For more information, see [Folders]({% link _articles/features/folders.md %}) and [Favorites]({% link _articles/features/favorites.md %}).
+For more information, see [Folders]({{site.baseurl}}/article/folders/) and [Favorites]({{site.baseurl}}/article/favorites/).
 
 ### Create New Logins
 
@@ -121,7 +121,7 @@ Organizing your Vault into **Favorites** and **Folders** makes filtering your Va
 3. Select a **Folder** from the dropdown to add this item to a folder, or check the **Favorite** checkbox to add it to your Favorites.
 4. Select the {% icon fa-save %} **Save** icon.
 
-For more information, see [Folders]({% link _articles/features/folders.md %}) and [Favorites]({% link _articles/features/favorites.md %}).
+For more information, see [Folders]({{site.baseurl}}/article/folders/) and [Favorites]({{site.baseurl}}/article/favorites/).
 
 ### Create New Logins
 
@@ -187,7 +187,7 @@ Organizing your Vault into **Favorites** and **Folders** makes filtering your Va
 3. Select a **Folder** from the dropdown to add this item to a folder, or check the **Favorite** checkbox to add it to your Favorites.
 3. Select the {% icon fa-save %} **Save** icon.
 
-For more information, see [Folders]({% link _articles/features/folders.md %}) and [Favorites]({% link _articles/features/favorites.md %}).
+For more information, see [Folders]({{site.baseurl}}/article/folders/) and [Favorites]({{site.baseurl}}/article/favorites/).
 
 ### Create New Logins
 

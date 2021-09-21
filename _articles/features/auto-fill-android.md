@@ -4,14 +4,14 @@ title: Auto-fill Logins on Android
 categories: [auto-fill]
 featured: false
 popular: false
-order: 02
+order: "02"
 tags: [android, autofill, auto-fill]
 ---
 
 Bitwarden makes your passwords available for auto-fill so that you can seamlessly log in to websites and apps while also maintaining strong and secure passwords. Auto-fill cuts the copying and pasting out of your login routine by detecting Vault items that match the service you're logging in to.
 
 {% callout success %}
-*Most* auto-fill scenarios rely on the attribution of URIs to Login items. If you're unfamiliar with using URIs, brush up using our [Using URIs]({% link _articles/features/uri-match-detection.md %}) article.
+*Most* auto-fill scenarios rely on the attribution of URIs to Login items. If you're unfamiliar with using URIs, brush up using our [Using URIs]({{site.baseurl}}/article/uri-match-detection/) article.
 
 Please note that custom fields are not currently supported in Mobile auto-fill.
 {% endcallout %}
@@ -29,7 +29,7 @@ Depending on the version of Android your device is running, there are a few diff
 
 #### Autofill Service
 
-The Autofill Service (*requires Android 8+*) will overlay a popup when the device is focused on an input that has a [matching Login item]({% link _articles/features/uri-match-detection.md %}). When your Vault is unlocked, you'll be provided the options to immediately auto-fill or to open your Vault:
+The Autofill Service (*requires Android 8+*) will overlay a popup when the device is focused on an input that has a [matching Login item]({{site.baseurl}}/article/uri-match-detection/). When your Vault is unlocked, you'll be provided the options to immediately auto-fill or to open your Vault:
 
 {% image features/auto-fill-android/only-autofill-service.png Android Autofill Service%}
 
@@ -64,7 +64,7 @@ If your auto-fill overlay doesn't move into your keyboard, check whether the IME
 
 #### Accessibility
 
-The Accessibility method will overlap a popup offering to open your Vault to browse [matching Login items]({% link _articles/features/uri-match-detection.md %}) when the device is focused on an input:
+The Accessibility method will overlap a popup offering to open your Vault to browse [matching Login items]({{site.baseurl}}/article/uri-match-detection/) when the device is focused on an input:
 
 {% image features/auto-fill-android/drawover.png Accessiblity Popup %}
 
@@ -89,7 +89,7 @@ If you're using Android 6+, you must also enable **Draw-Over**.
 Before you can enable Draw-Over, enable **Accessibility**.
 {% endcallout %}
 
-Draw-Over (*required to use Accesibility on Android 6+*) will overlap a popup offering to open your Vault to browse [matching Login items]({% link _articles/features/uri-match-detection.md %}) when the device is focused on an input:
+Draw-Over (*required to use Accesibility on Android 6+*) will overlap a popup offering to open your Vault to browse [matching Login items]({{site.baseurl}}/article/uri-match-detection/) when the device is focused on an input:
 
 {% image features/auto-fill-android/drawover.png Accessiblity Popup %}
 To enable the Draw-Over method:
@@ -100,7 +100,7 @@ To enable the Draw-Over method:
 4. Tap Bitwarden from the list and toggle the **Permit drawing over other apps** option.
 
 {% callout success %}
-**Still having problems?** Refer to our break-out guide on [Troubleshooting Android Auto-fill]({% link _articles/miscellaneous/auto-fill-android-troubleshooting.md %}).
+**Still having problems?** Refer to our break-out guide on [Troubleshooting Android Auto-fill]({{site.baseurl}}/article/auto-fill-android-troubleshooting/).
 
 If you're still not able to get Android auto-fill working, [Contact Us](https://bitwarden.com/contact){:target="\_blank"}.
 {% endcallout %}

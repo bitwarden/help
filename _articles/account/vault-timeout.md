@@ -5,7 +5,7 @@ categories: [account-management]
 featured: false
 popular: false
 tags: [account, vault, timeout, 2FA, two-step]
-order: 14
+order: "14"
 ---
 
 Vault Timeout behavior will determine how your Vault will behave after a customizable period of inactivity. Timeout is configured individually from and for each Bitwarden client application that you use (Mobile, Web, Desktop, Browser Extension, etc.).
@@ -32,7 +32,7 @@ Configuring this option will dictate what Bitwarden will do once the Vault Timeo
 
 - **Lock** (*default*).
 
-  Locking your Vault will maintain Vault data on the device. You will only be prompted to enter your Master Password to decrypt your Vault, however no [Two-step Login]({% link _articles/two-step-login/setup-two-step-login.md %}) method will be required to unlock your Vault.
+  Locking your Vault will maintain Vault data on the device. You will only be prompted to enter your Master Password to decrypt your Vault, however no [Two-step Login]({{site.baseurl}}/article/setup-two-step-login/) method will be required to unlock your Vault.
 
   Bitwarden client applications don't need to be online to unlock.
 
@@ -42,6 +42,6 @@ Due to the storage and reference of your decryption keys within the Web Vault, u
 
 - **Log Out**.
 
-  Logging Out of your Vault completely removes all Vault data from your device, and will therefore require you to re-authenticate to access your Vault. You will be required to enter your Email Address, Master Password, and any enabled [Two-step Login]({% link _articles/two-step-login/setup-two-step-login.md %}) method in order to access your Vault.
+  Logging Out of your Vault completely removes all Vault data from your device, and will therefore require you to re-authenticate to access your Vault. You will be required to enter your Email Address, Master Password, and any enabled [Two-step Login]({{site.baseurl}}/article/setup-two-step-login/) method in order to access your Vault.
 
   Bitwarden client applications must be online to log in.

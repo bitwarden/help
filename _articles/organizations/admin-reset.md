@@ -5,11 +5,11 @@ categories: [organizations]
 featured: true
 popular: false
 tags: [master password, reset, administrator, owner]
-order: 15
+order: "15"
 ---
 
 {% callout info %}
-Admin Password Reset is available for **Enterprise Organizations** on a current plan. Like Login with SSO, Password Reset is not available to [Classic 2019 Enterprise Organizations]({{site.baseurl}}/article/2020-plan-updates).
+Admin Password Reset is available for **Enterprise Organizations** on a current plan. Like Login with SSO, Password Reset is not available to [Classic 2019 Enterprise Organizations]({{site.baseurl}}/article/2020-plan-updates/).
 {% endcallout %}
 
 ## What is Admin Password Reset?
@@ -32,12 +32,12 @@ The key pair is generated and encrypted client-side upon creation of a new Organ
 - Upgrades from one Organization type to another.
 {% endcallout %}
 
-When a member of the Organization [enrolls](#automatic-enrollment) in Admin Password Reset, that user's [encryption key]({{site.baseurl}}/article/account-encryption-key) is encrypted with the Organization's public key. The result is stored as the **Password Reset Key**.
+When a member of the Organization [enrolls](#automatic-enrollment) in Admin Password Reset, that user's [encryption key]({{site.baseurl}}/article/account-encryption-key/) is encrypted with the Organization's public key. The result is stored as the **Password Reset Key**.
 
 When an Admin Password Reset action is taken:
 
 1. The Organization private key is decrypted with the Organization symmetric key.
-2. The user's **Reset Password Key** is decrypted with the decrypted Organization private key, resulting in the users's [encryption key]({{site.baseurl}}/article/account-encryption-key).
+2. The user's **Reset Password Key** is decrypted with the decrypted Organization private key, resulting in the users's [encryption key]({{site.baseurl}}/article/account-encryption-key/).
 3. The user's encryption key and Master Password hash are replaced with a *new* encryption key and *new* Master Password hash, seeded from a new Master Password.
 4. The user's new encryption key is encrypted with the Organization's public key, replacing the previous **Password Reset Key** with a new one.
 
@@ -67,7 +67,9 @@ Users will need to [self-enroll](#self-enroll-in-password-reset) or [be auto-enr
 
 ### Automatic Enrollment
 
-Enabling the Automatic Enrollment policy option will automatically enroll new users in Admin Password Reset when their [invitation to the Organization is accepted]({{site.baseurl}}/article/managing-users/#accept). Users already in the Organization will not be retroactively enrolled in Admin Password Reset, and will be required to [self-enroll](#self-enroll-in-password-reset).
+Enabling the Automatic Enrollment policy option will automatically enroll new users in Admin Password Reset when their [invitation to the Organization is accepted]({{site.baseurl}}/article/managing-users/#accept) and will prevent them from [withdrawing](#withdraw-enrollment) from Admin Password Reset.
+
+Users already in the Organization will not be retroactively enrolled in Admin Password Reset, and will be required to [self-enroll](#self-enroll-in-password-reset).
 
 {% callout success %}
 If you're automatically enrolling Organization members in Admin Password Reset, we **highly recommend notifying them of this feature**. Many Bitwarden Organization users store personal credentials in their Personal Vault, and should be made aware that Admin Password Reset could allow an administrator to access their Personal Vault.
@@ -87,7 +89,7 @@ Once enrolled, you can **Withdraw** from Password Reset from the same dropdown u
 
 {% image organizations/pwreset-withdraw.png Withdraw from Password Reset %}
 
-Manually changing your Master Password or [rotating your encryption key]({{site.baseurl}}/article/account-encryption-key/) **will not** withdraw you from Admin Password Reset.
+Users in Organizations that have enabled the [Automatic Enrollment](#automatic-enrollment) policy option **will not be allowed to withdraw** from Admin Password Reset. Additionally, manually changing your Master Password or [rotating your encryption key]({{site.baseurl}}/article/account-encryption-key/) **will not** withdraw you from Admin Password Reset.
 
 ## Reset a Master Password
 

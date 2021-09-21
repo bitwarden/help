@@ -5,7 +5,7 @@ categories: [hosting]
 featured: false
 popular: false
 tags: [hosting, update]
-order: 06
+order: "06"
 ---
 
 {% callout success %}
@@ -17,7 +17,7 @@ Please be aware that self-hosted server releases lag several days behind Cloud s
  Additionally, newer versions of client applications may not support older versions of your self-hosted instance.
 
 {% callout warning %}
-We highly recommend backing up your data before updating your self-hosted instance. For more information, see [Backup your Hosted Data]({% link _articles/hosting/backup-on-premise.md %}).
+We highly recommend backing up your data before updating your self-hosted instance. For more information, see [Backup your Hosted Data]({{site.baseurl}}/article/backup-on-premise/).
 {% endcallout %}
 
 Update your Bitwarden instance using the same Bash (Linux or macOS) or Powershell (Windows) script (`bitwarden.sh`) used to install Bitwarden. Run the following sequence of commands:

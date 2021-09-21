@@ -5,7 +5,7 @@ categories: [send]
 featured: true
 popular: false
 tags: [bitwarden send, send, passwords, hidden text]
-order: 05
+order: "05"
 ---
 Protect the contents of your Send by optionally configuring a [password for access](#send-passwords) so that no unintended recipients can see the contained information, and/or to [hide your email from recipients](). For text Sends, you can also optionally require recipients to [toggle visibility](#hide-text) to prevent exposure to unintentional onlookers.
 

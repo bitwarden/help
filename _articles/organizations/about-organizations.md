@@ -5,7 +5,7 @@ categories: [organizations]
 featured: true
 popular: true
 tags: [organizations]
-order: 01
+order: "01"
 redirect_from:
   - /article/what-is-an-organization/
   - /article/create-an-organization/
@@ -23,7 +23,7 @@ Members of an Organization will find shared items ({% icon fa-cube%}) in their *
 
 ### Types of Organizations
 
-Bitwarden offers a variety of types of Organizations to meet your business's or family's needs. For feature-by-feature breakdowns of each Organization type, see [About Bitwarden Plans](https://bitwarden.com/help/article/about-bitwarden-plans/).
+Bitwarden offers a variety of types of Organizations to meet your business's or family's needs. For feature-by-feature breakdowns of each Organization type, see [About Bitwarden Plans]({{site.baseurl}}/article/about-bitwarden-plans/).
 
 |Type|Description|
 |----|-----------|
@@ -40,7 +40,7 @@ Paid Organizations (Families, Teams, or Enterprise) automatically include those 
 
 ### Comparing Organizations with Providers
 
-[Providers]({{site.baseurl}}/article/providers) are Vault-administration entities that allow businesses like Managed Service Providers (MSPs) to quickly create and administer **multiple Bitwarden Organizations** on behalf of business customers.
+[Providers]({{site.baseurl}}/article/providers/) are Vault-administration entities that allow businesses like Managed Service Providers (MSPs) to quickly create and administer **multiple Bitwarden Organizations** on behalf of business customers.
 
 ## Create an Organization
 
@@ -64,4 +64,4 @@ Organizations are created and managed from the [Web Vault](https://vault.bitward
 
    {% callout success %}New Families, Teams, and Enterprise Organization have a 7 day free trial built in! We won't charge you until your trial is over, and you can cancel your subscription at any time from the Organization **Settings** tab.{% endcallout %}
 
-Once you've created your Organization, create a [collection]({{site.baseurl}}/article/about-collections/), [invite users]({{site.baseurl}}/article/managing-users/), and [start sharing]({{site.baseurl}}/article/sharing).
+Once you've created your Organization, create a [collection]({{site.baseurl}}/article/about-collections/), [invite users]({{site.baseurl}}/article/managing-users/), and [start sharing]({{site.baseurl}}/article/sharing/).

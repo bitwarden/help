@@ -5,7 +5,7 @@ categories: [account-management]
 featured: false
 popular: false
 tags: [search, lunr]
-order: 05
+order: "05"
 ---
 
 Bitwarden Vaults can be easily searched to quickly surface relevant Vault items. [Basic search](#basic-search) queries can be made in any Bitwarden client application, and advanced [full-text search](#full-text-search) queries can be made in Web Vaults, Desktop Apps, and Browser Extensions.

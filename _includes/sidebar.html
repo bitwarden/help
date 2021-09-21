@@ -2,15 +2,15 @@
 
 <nav class="bd-links collapse" id="bd-docs-nav" aria-label="Main navigation">
     <div class="bd-toc-search">
-      <form class="search-header" action="{{site.baseurl}}/search/" id="search" method="get">
-          <div class="input-group input-group-lg">
-              <input type="search" class="form-control" placeholder="Search..." id="search-box" name="q">
-              <button class="btn btn-light" type="submit" onclick="gaEvent('Search')">
-                  <i class="fa fa-search"></i>
-                  <span class="sr-only">Search</span>
-              </button>
-          </div>
-      </form>
+        <form class="search-header" action="{{site.baseurl}}/search/" id="search" method="get">
+            <div class="input-group input-group-lg">
+                <input type="search" class="form-control" placeholder="Search..." id="search-box" name="q">
+                <button class="btn btn-light" type="submit" onclick="gaEvent('Search')">
+                    <i class="fa fa-search"></i>
+                    <span class="sr-only">Search</span>
+                </button>
+            </div>
+        </form>
     </div>
     <div class="bd-toc-item">
         <a class="bd-toc-link" href="{{site.baseurl}}/">
@@ -23,7 +23,8 @@
         </a>
     </div>
 
-    {% for category in site.categories %}
+    {% assign sorted_categories = site.categories | sort: 'order' %}
+    {% for category in sorted_categories %}
     {% if category.hidden != true %}
     {% assign catFilename = category.path | filename %}
 

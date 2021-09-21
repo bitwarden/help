@@ -6,7 +6,7 @@ featured: true
 popular: false
 hidden: false
 tags: []
-order: 10
+order: "10"
 ---
 
 This article contains Frequently Asked Questions (FAQs) regarding **Two-step Login**.
@@ -17,17 +17,17 @@ This article contains Frequently Asked Questions (FAQs) regarding **Two-step Log
 
 ### Q: Can I require my Organization's users to use Two-step Login?
 
-**A:** You can require your Organization's users to use Two-step Login by enabling the [Two-step Login Policy]({{site.baseurl}}/article/policies/#two-step-login). Additionally, you can setup [Organization-wide Duo 2FA]({{site.baseurl}}/article/two-step-login-duo) to ensure that all of your users have a secure Two-step Login method at their disposal.
+**A:** You can require your Organization's users to use Two-step Login by enabling the [Two-step Login Policy]({{site.baseurl}}/article/policies/#two-step-login). Additionally, you can setup [Organization-wide Duo 2FA]({{site.baseurl}}/article/setup-two-step-login-duo/) to ensure that all of your users have a secure Two-step Login method at their disposal.
 
 ### Q: Is FIDO U2F or FIDO2 WebAuthn supported on my iOS or Android App?
 
-**A:** At this time, due to platform/OS limitations, FIDO is **only supported for Web Vaults, Browser Extensions, and Windows Desktop Apps**, however we are currently investigating ways to implement this. In the meantime, we recommend enabling another [Two-step Login Method]({% link _articles/two-step-login/setup-two-step-login.md %}) for use with unsupported client applications.
+**A:** Yes! Please see [Two-step Login via FIDO2 WebAuthn]({{site.baseurl}}/article/setup-two-step-login-fido/).
 
 ### Q: Why is Bitwarden not asking for my enabled Two-step Login method?
 
 **A:** In most cases, one of two things is happening:
 
-1. You may be already logged in to Bitwarden and only unlocking your Vault. Two-step Login is required to **Log In** but not to **Unlock** your Vault. For more information on the difference between Logging In and Unlocking, see [Vault Timeout Action](https://bitwarden.com/help/article/vault-timeout/#vault-timeout-action).
+1. You may be already logged in to Bitwarden and only unlocking your Vault. Two-step Login is required to **Log In** but not to **Unlock** your Vault. For more information on the difference between Logging In and Unlocking, see [Vault Timeout Action]({{site.baseurl}}/article/vault-timeout/#vault-timeout-action).
 
 2. You may have previously checked the **Remember me** checkbox on a device when accessing your Vault using Two-step Login.
 

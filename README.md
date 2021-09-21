@@ -3,7 +3,7 @@
 
 # Bitwarden Help Center
 
-The Bitwarden help center project is written using Jekyll, which is deployed at ([https://bitwarden.com/help/](https://bitwarden.com/help/)).
+The Bitwarden help center project is written using Jekyll, which is deployed at ([https://bitwarden.com/help/]({{site.baseurl}}/)).
 
 # Build/Run
 
