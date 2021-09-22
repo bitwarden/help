@@ -42,10 +42,10 @@ Additionally, creation of file Sends requires your Email Address to be verified.
 
 During the initial rollout of Send in March 2021, Organizations that already had the [Personal Ownership policy]({{site.baseurl}}/article/policies/#personal-ownership) enabled will find that the Disable Send policy was enabled for their Organizations. This was to allow for customers with this security profile to opt-in to Send on their own schedule.
 
-If you do want to use Bitwarden Send as an end-to-end encrypted solution for ephemeral sharing within your Organization, all you need to do is turn the Disable Send policy off from the [Business Portal]({{site.baseurl}}/article/about-business-portal/) or from your Organization's **Manage** &rarr; **Policies** page.
+If you do want to use Bitwarden Send as an end-to-end encrypted solution for ephemeral sharing within your Organization, all you need to do is turn the Disable Send policy off from your Organization's **Manage** &rarr; **Policies** page.
 
 Learn more about Send [here](https://bitwarden.com/products/send).
 
 ### Q: Can I disable Send for my Organization?
 
-**A:** Enterprise Organizations can disable Send at any time using the [Disable Send policy]({{site.baseurl}}/article/policies/#disable-send). Admins and Owners can implement this policy from the [Business Portal]({{site.baseurl}}/article/about-business-portal/) or from your Organization's **Manage** &rarr; **Policies** page. Enabling the policy will prevent Organization members from creating or editing any Sends.
+**A:** Enterprise Organizations can disable Send at any time using the [Disable Send policy]({{site.baseurl}}/article/policies/#disable-send). Admins and Owners can implement this policy from the Organization's **Manage** &rarr; **Policies** page. Enabling the policy will prevent Organization members from creating or editing any Sends.
