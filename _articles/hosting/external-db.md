@@ -28,8 +28,8 @@ To setup your self-hosted instance with an external database:
 4. Edit the `globalSettings__sqlServer__connectionString=` value for the following information.
 
    - Replace `"Data Source=tcp:mssql,1443";` with your MSSQL Server name, for example `"Data Source=protocol:server_url,port"`.
-   - If you created a DBO, replace `User ID=sa;` with your DBO User ID.
-   - Replace `Password=<default_pw>;` with your DBO or SA password.
+   - Replace `User ID=sa;` with your DBO User ID.
+   - Replace `Password=<default_pw>;` with your DBO password.
 5. Save your changes to `global.override.env`.
 6. Start Bitwarden (`./bitwarden.sh start`).
 
