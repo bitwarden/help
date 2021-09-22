@@ -73,7 +73,7 @@ For more details on Login with SSO configurations and examples of Identity Provi
 
 ### Enabling enterprise policies
 
-Policies are found in the [Business Portal]({{site.baseurl}}/article/about-business-portal/)
+Policies are found in the Organization's **Manage** &rarr; **Policies** screen (see [here]({{site.baseurl}}/article/policies/) for details).
 
 Policies allow you to control the actions of users within your Organization. It is recommended to configure these policies prior to onboarding users. For a complete list and details for Enterprise Policies, please see our helpful article [here.]({{site.baseurl}}/article/policies/)
 

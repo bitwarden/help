@@ -21,10 +21,9 @@ Bitwarden highly recommends setting Enterprise Policies prior to inviting users 
 
 ## Setting Enterprise Policies
 
-Policies can be set in two locations:
+Policies can be set in your Organization by opening the the **Manage** tab and selecting **Policies** from the left menu:
 
-- In your Organization, open the **Manage** tab and select **Policies** from the left menu.
-- Navigate to the Business Portal, and select the **Policies** button. For more information, see [About the Business Portal]({{site.baseurl}}/article/about-business-portal/).
+{% image organizations/policies.png Set Policies %}
 
 ## Available Policies
 

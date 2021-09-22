@@ -33,6 +33,7 @@ The latest release of Bitwarden focuses on often requested improvements to exist
 - **Admin Password Reset - Automatic Enrollment Improvement**: The Automatic Enrollment policy option will now prevent users from withdrawing from Admin Password Reset (see [here]({{site.baseurl}}/article/admin-reset/#automatic-enrollment) for details).
 - **Browser Extension - Select Folder from Save Bar**: You can now select which [Folder]({{site.baseurl}}/article/folders) to save an item to directly from the Browser Extension's save prompt (see [here]({{site.baseurl}}/article/getting-started-browserext/#add-a-login) for details).
 - **Browser Extension - Custom Field Context Menu Item**: You can now copy an HTML element name directly from the Browser Extension's context menu for easy custom field creation (see [here]({{site.baseurl}}/article/custom-fields/#custom-field-names) for details).
+- **Web Vault - Policies Relocation**: [Enterprise Policies]({{site.baseurl}}/article/policies/) can now only be configured from your Organization's **Manage** &rarr; **Policies** screen, rather than from the Business Portal.
 - **CAPTCHA Validation**: Starting with this release, we're turning on [hCaptcha](https://www.hcaptcha.com/about){:target="\_blank"} validation to protect against bot attacks like credential stuffing. Please note, challenges in the CLI are delivered differently than in other client applications (see [here]({{site.baseurl}}/article/cli-auth-challenges/) for CLI details).
 
 ## 2021-08-18
