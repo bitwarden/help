@@ -18,7 +18,7 @@ Subscriptions to individual plans and Organizations plans are **separate**; you 
 
 Complete the following steps to update the billing information for your individual subscription:
 
-1. In the [Web Vault](https://vault.bitwarden.com), select **Settings** from the top navigation bar.
+1. In the [Web Vault]({{site.baseurl}}/article/getting-started-webvault), select **Settings** from the top navigation bar.
 
    {% image plans-and-pricing/billing-individual-overlay.png Select Billing %}
 
@@ -35,7 +35,7 @@ Complete the following steps to update the billing information for your individu
 
 Complete the following steps to update the billing information for your Organizations subscription:
 
-1. In the [Web Vault](https://vault.bitwarden.com), select your Organization.
+1. In the [Web Vault]({{site.baseurl}}/article/getting-started-webvault), select your Organization.
 
    {% image organizations/open-org-overlay.png Open your Organization %}
 

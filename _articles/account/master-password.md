@@ -33,7 +33,7 @@ If you're worried about forgetting your Master Password, the team at Bitwarden h
 
 ## Change your Master Password
 
-Provided you **know your current Master Password**, change your Master Password at any time from the [Web Vault](https://vault.bitwarden.com){:target="\_blank"}:
+Provided you **know your current Master Password**, change your Master Password at any time from the [Web Vault]({{site.baseurl}}/article/getting-started-webvault):
 
 {% callout success %}
 If you don't know your Master Password, see [I Forgot my Master Password]({{site.baseurl}}/article/forgot-master-password/).

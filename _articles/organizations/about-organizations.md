@@ -44,7 +44,7 @@ Paid Organizations (Families, Teams, or Enterprise) automatically include those 
 
 ## Create an Organization
 
-Organizations are created and managed from the [Web Vault](https://vault.bitwarden.com){:target="\_blank"}. If you're new to Bitwarden, [create an account](https://vault.bitwarden.com/#/register){:target="\_blank"} before you start your Organization, then proceed with these instructions:
+Organizations are created and managed from the [Web Vault]({{site.baseurl}}/article/getting-started-webvault). If you're new to Bitwarden, [create an account](https://vault.bitwarden.com/#/register){:target="\_blank"} before you start your Organization, then proceed with these instructions:
 
 1. Select the **New Organization** button in your Web Vault:
 

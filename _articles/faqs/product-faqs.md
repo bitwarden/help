@@ -27,7 +27,7 @@ This article contains Frequently Asked Questions (FAQs) about general Vault Mana
 
 **A:** To change your Master Password hint:
 
-1. Open the [Web Vault](https://vault.bitwarden.com){:target="\_blank"}, select **Settings** from the top navigation bar.
+1. Open the [Web Vault]({{site.baseurl}}/article/getting-started-webvault), select **Settings** from the top navigation bar.
 2. On the **My Account** page, find the **Master Password Hint** input box.
 3. Enter a hint and select the **Save** button.
 
@@ -35,7 +35,7 @@ This article contains Frequently Asked Questions (FAQs) about general Vault Mana
 
 **A:** To change the email address attached to your account:
 
-1. Open the [Web Vault](https://vault.bitwarden.com){:target="\_blank"}, select **Settings** from the top navigation bar.
+1. Open the [Web Vault]({{site.baseurl}}/article/getting-started-webvault), select **Settings** from the top navigation bar.
 2. On the **My Account** page, find the **Change Email** section.
 3. Enter your current **Master Password** to prove you have the authority to take this action, and specify the **New Email** you'd like to change to.
 4. Select the **Change Email** button.

@@ -18,13 +18,13 @@ Vault Health Reports are available for Premium users, including members of Paid 
 
 Complete the following steps to view any Vault Health Report for your **Personal Vault**:
 
-1. Log in to the [Web Vault](https://vault.bitwarden.com){:target-"\_blank"}.
+1. Log in to the [Web Vault]({{site.baseurl}}/article/getting-started-webvault).
 2. Select **Tools** from the top navigation bar.
 3. Select a report from the **Reports** section of the left menu.
 
 Complete the following steps to view any Vault Health Reports for your **Organization Vault**:
 
-1. Log in to the [Web Vault](https://vault.bitwarden.com){:target-"\_blank"} and open your Organization.
+1. Log in to the [Web Vault]({{site.baseurl}}/article/getting-started-webvault) and open your Organization.
 2. In your Organization, open the **Tools** tab.
 
    {% image features/reports/tools-section.png Organization Reports %}

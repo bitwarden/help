@@ -53,7 +53,7 @@ Setting up Duo in Bitwarden is slightly different depending on whether you're en
 
 To enable Two-step Login using Duo for your Personal Vault:
 
-1. Log in to your [Web Vault](https://vault.bitwarden.com){:target="\_blank"}.
+1. Log in to your [Web Vault]({{site.baseurl}}/article/getting-started-webvault).
 2. Select **Settings** from the top navigation bar.
 
    {% image two-step/wv-settingstab.png Select Settings %}
@@ -86,7 +86,7 @@ This is because Duo for Organizations does not currently support [Recovery Codes
 
 You must be an [Organization Owner]({{site.baseurl}}/article/user-types-access-control/) to setup Duo for your Organization. To enable Two-step Login using Duo for your Organization:
 
-1. Log in to your [Web Vault](https://vault.bitwarden.com){:target="\_blank"}.
+1. Log in to your [Web Vault]({{site.baseurl}}/article/getting-started-webvault).
 2. Open your Organization and select **Settings** from the Organization navigation.
 
    {% image two-step/wv-orgsettingstab.png Select Settings %}
@@ -108,7 +108,7 @@ A green `Enabled` message should appear to indicate that Duo has been enabled fo
 
 ### Register a Device
 
-Once [Duo is setup](#setup-duo), navigate to the [Web Vault](https://vault.bitwarden.com){:target="\_blank"} in a new tab. If Duo is your highest-priority Two-step Login method, you will be prompted by a Duo setup screen.
+Once [Duo is setup](#setup-duo), navigate to the [Web Vault]({{site.baseurl}}/article/getting-started-webvault) in a new tab. If Duo is your highest-priority Two-step Login method, you will be prompted by a Duo setup screen.
 
 {% image two-step/duo/enroll1.png Duo Setup Screen %}
 

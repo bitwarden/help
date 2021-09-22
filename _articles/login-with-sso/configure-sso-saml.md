@@ -12,7 +12,7 @@ order: "03"
 
 Users who [authenticate their identity using SSO]({{site.baseurl}}/article/using-sso/#login-using-sso) will be required to enter an **Organization Identifier** that indicates the Organization (and therefore, the SSO integration) to authenticate against. to set a unique Organization Identifier:
 
-1. Log in to your [Web Vault](https://vault.bitwarden.com){:target="\_blank"} and open your Organization.
+1. Log in to your [Web Vault]({{site.baseurl}}/article/getting-started-webvault) and open your Organization.
 2. Open the **Settings** tab and enter a unique **Identifier** for your Organizations.
 
    {% image sso/org-id.png Enter an Identifier %}

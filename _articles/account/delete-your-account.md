@@ -24,7 +24,7 @@ This action is permanent and cannot be undone.
 
 Complete the following steps to delete your Bitwarden account:
 
-1. In the [Web Vault](https://vault.bitwarden.com){:target="\_blank"}, select **Settings** from the top navigation bar.
+1. In the [Web Vault]({{site.baseurl}}/article/getting-started-webvault), select **Settings** from the top navigation bar.
 3. On the **My Account** page, scroll down to the **Danger Zone** and select the **Delete Account**.
 
    You'll be prompted to enter your Master Password to confirm you have the authority to take this action.
@@ -45,7 +45,7 @@ If you're deleting the account because you lost your Master Password, you can no
 Only the **Owner** of an Organization has the authority to delete the Organization. For more information, see [User Types and Access Controls]({{site.baseurl}}/article/user-types-access-control/).
 {% endcallout %}
 
-1. In the [Web Vault](https://vault.bitwarden.com){:target="\_blank"}, open your Organization.
+1. In the [Web Vault]({{site.baseurl}}/article/getting-started-webvault), open your Organization.
 2. In the Organization Vault, select the **Settings** tab.
 3. On the **My Organization** page, scroll down to the **Danger Zone** and select the **Delete Organization**.
 

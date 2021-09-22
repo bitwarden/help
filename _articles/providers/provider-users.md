@@ -17,7 +17,7 @@ To ensure the secure administration of your Client Organizations, Bitwarden appl
 
 To invite users to your Provider:
 
-1. Log in to the [Web Vault](https://vault.bitwarden.com){:target="\_blank"} and open your Provider.
+1. Log in to the [Web Vault]({{site.baseurl}}/article/getting-started-webvault) and open your Provider.
 2. Open the {% icon fa-sliders %} **Manage** tab and select **People** from the left-hand menu.
 3. Select the {% icon fa-plus %} **Invite User** button:
 
@@ -44,7 +44,7 @@ Invited users will receive an email from Bitwaden inviting them to join the Prov
 
 To confirm accepted invitations to your Provider:
 
-1. Log in to the [Web Vault](https://vault.bitwarden.com){:target="\_blank"} and open your Provider.
+1. Log in to the [Web Vault]({{site.baseurl}}/article/getting-started-webvault) and open your Provider.
 2. Open the {% icon fa-sliders %} **Manage** tab and select **People** from the left-hand menu.
 3. Select any `Accepted` users and use the {% icon fa-cog %} gear dropdown to {% icon fa-check %} **Confirm Selected**:
 
@@ -57,7 +57,7 @@ To confirm accepted invitations to your Provider:
 
 To remove users from your Provider:
 
-1. Log in to the [Web Vault](https://vault.bitwarden.com){:target="\_blank"} and open your Provider.
+1. Log in to the [Web Vault]({{site.baseurl}}/article/getting-started-webvault) and open your Provider.
 2. Open the {% icon fa-sliders %} **Manage** tab and select **People** from the left-hand menu.
 3. Select the users you want to remove from the Provider and use the {% icon fa-cog %} gear dropdown to {% icon fa-times %} **Remove**:
 

@@ -17,7 +17,7 @@ For help selecting the right Bitwarden plan for you, refer to [What Plan is Righ
 
 ### Q: How do I find out what subscription plan I'm on?
 
-**A:** Login to your [Web Vault](https://vault.bitwarden.com):
+**A:** Login to your [Web Vault]({{site.baseurl}}/article/getting-started-webvault):
 
 - For individual subscriptions, navigate to your **Settings** tab. If the left menu bar has a **Go Premium** option, this account is on a free plan. If the left menu bar has a **Premium Membership** option, this account is on a Premium plan.
 - For Organization subscriptions, open your Organization. In your Organization's **Settings** tab, select **Subscription** from the left menu. The **Plan** section will log this Organization's plan.
@@ -36,7 +36,7 @@ For help selecting the right Bitwarden plan for you, refer to [What Plan is Righ
 
 ### Q: How do I add or remove a user seat from my Organization?
 
-**A:** Login to your [Web Vault](https://vault.bitwarden.com) and open your Organization. In your Organization's **Settings** tab, select the **Subscription** from the left menu:
+**A:** Login to your [Web Vault]({{site.baseurl}}/article/getting-started-webvault) and open your Organization. In your Organization's **Settings** tab, select the **Subscription** from the left menu:
 
 {% image organizations/org-subscription-screen-overlay-addseats.png Add or Remove seats %}
 
@@ -44,7 +44,7 @@ You can add or remove seats from your Organization at any time. The cost will be
 
 ### Q: How do I pay for Premium on a self-hosted instance?
 
-**A:** In order to pay for a self-hosted instance of Bitwarden, you'll need to create an account in the Bitwarden cloud via the [Web Vault](https://vault.bitwarden.com). From there, you can download the license file to apply to your self-hosted instance. Your license file will flag your access to Premium features, so make sure that you download a new license file if you were previously on a free plan.
+**A:** In order to pay for a self-hosted instance of Bitwarden, you'll need to create an account in the Bitwarden cloud via the [Web Vault]({{site.baseurl}}/article/getting-started-webvault). From there, you can download the license file to apply to your self-hosted instance. Your license file will flag your access to Premium features, so make sure that you download a new license file if you were previously on a free plan.
 
 For more information, see [Hosting]({{site.baseurl}}/article/hosting).
 
@@ -72,7 +72,7 @@ Legacy Families plans do not automatically provide premium features, so users wo
 
 ### Q: How do I enter my tax information (VAT)?
 
-**A:** Login to your [Web Vault](https://vault.bitwarden.com) and open your Organization. In your Organization's **Settings** tab, scroll down to **Tax Information** section:
+**A:** Login to your [Web Vault]({{site.baseurl}}/article/getting-started-webvault) and open your Organization. In your Organization's **Settings** tab, scroll down to **Tax Information** section:
 
 - If you are a customer based in the United States, select **United States** from the **Country** dropdown menu and enter your **Zip / Postal Code**.
 - If you are a customer based outside the United States, select your country from the **Country** dropdown menu. Check the **Include VAT/GST Information** checkbox and enter your relevant tax identification information.

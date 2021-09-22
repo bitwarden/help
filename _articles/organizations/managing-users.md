@@ -20,7 +20,7 @@ If you have a [Free or Families Organization]({{site.baseurl}}/article/about-org
 
 To add seats to your Organization:
 
-1. Log in to your [Web Vault](https://vault.bitwarden.com){:target="\_blank"} and open your Organization.
+1. Log in to your [Web Vault]({{site.baseurl}}/article/getting-started-webvault) and open your Organization.
 2. Open the **Settings** tab and select **Subscription** from the left-hand menu.
 3. Select the **Add Seats** button.
 
@@ -30,7 +30,7 @@ Adding user seats will adjust your future billing totals and immediately charge 
 
 To remove seats from your Organization:
 
-1. Log in to your [Web Vault](https://vault.bitwarden.com){:target="\_blank"} and open your Organization.
+1. Log in to your [Web Vault]({{site.baseurl}}/article/getting-started-webvault) and open your Organization.
 2. Open the **Settings** tab and select **Subscription** from the left-hand menu.
 3. Select the **Add Seats** button.
 
@@ -52,7 +52,7 @@ Teams and Enterprise Organizations can sync Bitwarden to an existing user direct
 
 To invite users to your Organization:
 
-1. Log in to your [Web Vault](https://vault.bitwarden.com){:target="\_blank"} and open your Organization.
+1. Log in to your [Web Vault]({{site.baseurl}}/article/getting-started-webvault) and open your Organization.
 2. Open the **Manage** tab and select **People** from the left-hand menu.
 3. Select the {% icon fa-plus %} **Invite User** button:
 
@@ -81,7 +81,7 @@ Invited users will receive an email from Bitwarden inviting them to join the Org
 
 To confirm accepted invitations into your Organization:
 
-1. Log in to your [Web Vault](https://vault.bitwarden.com){:target="\_blank"} and open your Organization.
+1. Log in to your [Web Vault]({{site.baseurl}}/article/getting-started-webvault) and open your Organization.
 2. Open the **Manage** tab and select **People** from the left-hand menu.
 3. Select any `Accepted` users and use the {% icon fa-cog %} gear dropdown to {% icon fa-check %} **Confirm Selected**:
 
@@ -96,7 +96,7 @@ Each fingerprint phrase is unique to its account, and ensures a final layer of o
 
 To remove users from your Organization:
 
-1. Login to your [Web Vault](https://vault.bitwarden.com){:target="\_blank"} and open your Organization.
+1. Login to your [Web Vault]({{site.baseurl}}/article/getting-started-webvault) and open your Organization.
 2. In your Organization, open the **Manage** tab and select **People** from the left menu.
 3. Select the users you want to remove from the Organization and use the {% icon fa-cog %} gear dropdown to {% icon fa-times %} **Remove**:
 

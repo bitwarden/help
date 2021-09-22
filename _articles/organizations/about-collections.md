@@ -34,7 +34,7 @@ Other common methodologies include **Collections by Vendor or System** (i.e. use
 
 Organization [Managers (or higher)]({{site.baseurl}}/article/user-types-access-control/) and [Provider Users]({{site.baseurl}}/article/provider-users/#provider-user-types) can create and manage Collections. To create a Collection:
 
-1. Log in to your [Web Vault](https://vault.bitwarden.com){:target="\_blank"} and open your Organization.
+1. Log in to your [Web Vault]({{site.baseurl}}/article/getting-started-webvault) and open your Organization.
 2. Open the **Manage** tab and select the {% icon fa-plus %} **New Collection** button:
 
    {% image organizations/collection-list-overlay.png Select New Collection %}
