@@ -15,7 +15,7 @@ Configuration involves working simultaneously within the Bitwarden [Business Por
 {% callout success %}
 **Already an SSO expert?** Skip the instructions in this article and download screenshots of sample configurations to compare against your own.
 
-[{% icon fa-download %} Download Sample]({{site.baseurl}}/article/files/saml-auth0-sample.zip)
+[{% icon fa-download %} Download Sample]({{site.baseurl}}/files/saml-auth0-sample.zip)
 {% endcallout %}
 
 ## Open the Business Portal

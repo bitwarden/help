@@ -126,7 +126,7 @@ Bitwarden empowers Teams and Organizations to share sensitive data easily, secur
 
 Collections organize secure items in many ways, including but not limited to: business function, group assignment, application access levels, or even security protocols. Collections perform the same functions as shared folders, allowing for consistent access control and sharing amongst groups of users.
 
-Shared folders from LastPass can be imported as Collections into Bitwarden by using the Organization Import template found [here]({{site.baseurl}}/article/files/bitwarden_export_org.csv) and placing the name of the shared folder in the Collection column.
+Shared folders from LastPass can be imported as Collections into Bitwarden by using the Organization Import template found [here]({{site.baseurl}}/files/bitwarden_export_org.csv) and placing the name of the shared folder in the Collection column.
 
 Example LastPass Export:
 

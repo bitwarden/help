@@ -31,7 +31,7 @@ tags: [sso, saml, oidc, openid, saml2.0, idp, identity]
 
 ## Screenshots of Sample Configurations
 
-[{% icon fa-download %} Download Okta Sample]({{site.baseurl}}/article/files/bitwarden_export.csv)
+[{% icon fa-download %} Download Okta Sample]({{site.baseurl}}/files/bitwarden_export.csv)
 
 {% callout info %}
 This table is meant to make locating some fields and values easier. Some configurations and provider versions may differ depending on your Organization's policies and procedures. If you are having trouble configuring Login with SSO for your Bitwarden Organization, please [contact us](https://bitwarden.com/contact/) for assitance.
