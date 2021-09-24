@@ -6,6 +6,8 @@ featured: true
 popular: false
 tags: []
 order: "05"
+redirect_from:
+  - /article/user-seats/
 ---
 
 ## Manage User Seats
