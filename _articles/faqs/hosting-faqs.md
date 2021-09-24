@@ -7,6 +7,8 @@ popular: true
 hidden: false
 tags: []
 order: "13"
+redirect_from:
+  - /article/what-hosted-plaforms-are-supported/
 ---
 
 This article contains Frequently Asked Questions (FAQs) regarding **Self-hosting**.
