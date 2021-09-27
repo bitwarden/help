@@ -12,7 +12,7 @@ order: "02"
 **The Bitwarden Web Vault provides the richest Bitwarden experience** for personal users and Organizations. Lots of important functions, like setting up [Two-step Login]({{site.baseurl}}/article/setup-two-step-login/) or administering an [Organization]({{site.baseurl}}/article/about-organizations/), can only be done from the Web Vault.
 
 {% callout success %}
-The Web Vault is accessible from any modern web browser at [vault.bitwarden.com](https://vault.bitwarden.com){:target="\_blank"}. Or, **if you're self-hosting Bitwarden**, at your [configured domain]({{site.baseurl}}/article-install-on-premise/) (e.g. `https://my.bitwarden.server.com`).
+The Web Vault is accessible from any modern web browser at [vault.bitwarden.com](https://vault.bitwarden.com){:target="\_blank"}. Or, **if you're self-hosting Bitwarden**, at your [configured domain]({{site.baseurl}}/article/install-on-premise/) (e.g. `https://my.bitwarden.server.com`).
 {% endcallout %}
 
 {% image getting-started/webvault.png The Bitwarden Web Vault %}

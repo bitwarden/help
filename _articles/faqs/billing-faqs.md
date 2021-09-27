@@ -28,7 +28,7 @@ For help selecting the right Bitwarden plan for you, refer to [What Plan is Righ
 
 ### Q: How do I delete my account?
 
-**A:** We're sad to see you go! Use [Delete Your Account](https://help.bitwarden.com/delete-your-account/) to guide you through this process.
+**A:** We're sad to see you go! Use [Delete Your Account]({{site.baseurl}}/article/delete-your-account/) to guide you through this process.
 
 ### Q: How do I upgrade from an Individual subscription to an Organization?
 
@@ -46,7 +46,7 @@ You can add or remove seats from your Organization at any time. The cost will be
 
 **A:** In order to pay for a self-hosted instance of Bitwarden, you'll need to create an account in the Bitwarden cloud via the [Web Vault]({{site.baseurl}}/article/getting-started-webvault). From there, you can download the license file to apply to your self-hosted instance. Your license file will flag your access to Premium features, so make sure that you download a new license file if you were previously on a free plan.
 
-For more information, see [Hosting]({{site.baseurl}}/article/hosting).
+For more information, see [Hosting]({{site.baseurl}}/article/licensing-on-premise/#organization-license).
 
 ### Q: If I have a Families Organization, do I need Premium?
 

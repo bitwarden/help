@@ -16,4 +16,4 @@ The files attached to File Sends are stored in a `send` subdirectory of the exis
 globalSettings__send__baseDirectory=/etc/bitwarden/core/attachments/send
 ```
 
-If you want to store the files attached to File Sends in your non-default attachments volume, you'll need to point `globalSettings__send__baseDirectory=` to the new volume. For more information, see [Configure Environment Variables](/article/environment-variables/).
+If you want to store the files attached to File Sends in your non-default attachments volume, you'll need to point `globalSettings__send__baseDirectory=` to the new volume. For more information, see [Configure Environment Variables]({{site.baseurl}}/article/environment-variables/).

@@ -25,7 +25,7 @@ To invite users to your Provider:
 4. On the Invite User panel:
 
    - Enter the **Email** address where new users should receive their invites. You can add up to 20 users at a time by comma-separating email addresses.
-   - Select the **User Type** to be applied to this batch of users. [User Type](#provider-user-types) will determine what access these users will have to the Provider. **Both User Types** will be able to fully administer any [Client Organization]({{site.baseurl}}/article/client-orgs/).
+   - Select the **User Type** to be applied to this batch of users. [User Type](#provider-user-types) will determine what access these users will have to the Provider. **Both User Types** will be able to fully administer any [Client Organization]({{site.baseurl}}/article/client-org-setup/).
 5. Click **Save** to invite the designated users to join the Provider.
 
 {% callout info %}
