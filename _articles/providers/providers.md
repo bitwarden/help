@@ -29,8 +29,9 @@ Providers are administration entities in Bitwarden that allow Managed Service Pr
 
 The Provider Portal is an all-in-one management experience that enables Providers to manage customers' Bitwarden Organizations at scale. The Provider Portal streamlines administration tasks by centralizing a dedicated space to access and support each client, or to create a new one:
 
-{% image providers/provider.png Provider Portal %}
+<iframe src="https://player.vimeo.com/video/591278367?h=72db756912" width="800" height="450" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
 
+<br>
 Providers are built with two distinct [user types]({{site.baseurl}}/article/provider-users/#provider-user-types):
 
 - **Service Users** can fully administer [Client Organizations](#client-organizations).
