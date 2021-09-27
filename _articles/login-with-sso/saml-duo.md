@@ -52,7 +52,9 @@ Complete the following steps and configurations on the Application configuration
 
 ### Metadata
 
-You don't need to edit anything in the **Metadata** section (*see the above screenshot*), but you'll need to [reference these values later](#identity-provider-configuration).
+You don't need to edit anything in the **Metadata** section, but you'll need to [use these values later](#identity-provider-configuration):
+
+{% image sso/cheatsheets/saml-duo/duo-urls.png URLs for Configuration %}
 
 ### Downloads
 

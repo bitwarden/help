@@ -80,7 +80,9 @@ Download the Base64 Certificate for use [during a later step](#identity-provider
 
 ### Set up your Application
 
-Copy or take note of the **Login URL** and **Azure AD Identifier** in this section for use [during a later step](#identity-provider-configuration).
+Copy or take note of the **Login URL** and **Azure AD Identifier** in this section for use [during a later step](#identity-provider-configuration):
+
+{% image sso/cheatsheets/saml-azure/az-urls.png Azure URLs%}
 
 ### Users and Groups
 
@@ -120,9 +122,9 @@ Identity Provider Configuration will often require you to refer back to the Azur
 
 |Field|Description|
 |-----|-----------|
-|Entity ID|Enter your **Azure AD Identifier**, retrieved [from the Azure Portal](#set-up-your-application).|
+|Entity ID|Enter your **Azure AD Identifier**, retrieved from the Azure Portal's [Set up your Application](#set-up-your-application) section.|
 |Binding Type|Set to **HTTP POST** or **Redirect**.|
-|Single Sign On Service URL|Enter your **Login URL**, retrieved [from the Azure Portal](#set-up-your-application).|
+|Single Sign On Service URL|Enter your **Login URL**, retrieved from the Azure Portal's [Set up your Application](#set-up-your-application) section.|
 |Single Log Out Service URL|Login with SSO currently **does not** support SLO. This option is planned for future development, however you may preconfigure it with your **Logout URL** if you wish.|
 |Artifact Resolution Service URL|Azure currently does not support Artifact binding, so leave this field blank.|
 |X509 Public Certificate|Paste the [downloaded certificate](#saml-signing-certificate), removing `-----BEGIN CERTIFICATE-----` and `-----END CERTIFICATE-----`.<br><br>Extra spaces, carriage returns, and other extraneous characters **will cause certificate validation to fail**.|
