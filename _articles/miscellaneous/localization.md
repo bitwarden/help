@@ -9,7 +9,7 @@ tags: [localize, l10n, translate, i18n, internationalization, language]
 
 ## Change App Language
 
-In the [Web Vault](https://vault.bitwarden.com){:target="\_blank"} and Desktop App, Bitwarden will default to American English. You can manually change the language by navigating to **Settings** &rarr; **Options** and selecting your language from the **Language** dropdown.
+In the [Web Vault]({{site.baseurl}}/article/getting-started-webvault) and Desktop App, Bitwarden will default to American English. You can manually change the language by navigating to **Settings** &rarr; **Options** and selecting your language from the **Language** dropdown.
 
 Bitwarden Browser Extensions will dynamically change to use the language set by your Web Browser.
 - [Learn how to change Chrome's language](https://support.google.com/chrome/answer/173424?co=GENIE.Platform%3DDesktop&hl=en){:target="\_blank"}

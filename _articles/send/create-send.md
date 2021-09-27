@@ -10,7 +10,7 @@ order: "02"
 
 Creation of file Sends is available for Premium users, including members of a Paid Organization (Families, Teams, or Enterprise). Free users may still create text Sends.
 
-Sends can be created and edited from the [Web Vault](https://vault.bitwarden.com){:target="\_blank"} or any Bitwarden client application. Choose the Bitwarden application you want to Send from to get started:
+Sends can be created and edited from the [Web Vault]({{site.baseurl}}/article/getting-started-webvault) or any Bitwarden client application. Choose the Bitwarden application you want to Send from to get started:
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
@@ -34,7 +34,7 @@ Sends can be created and edited from the [Web Vault](https://vault.bitwarden.com
 {% capture web_vault %}
 ### Send from the Web Vault
 
-Complete the following steps to create a new Send from the Bitwarden [Web Vault](https://vault.bitwarden.com){:target="\_blank"}:
+Complete the following steps to create a new Send from the Bitwarden [Web Vault]({{site.baseurl}}/article/getting-started-webvault):
 
 1. Select **Send** from the top navigation bar.
 

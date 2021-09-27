@@ -53,6 +53,8 @@ In the **General Info** section, configure the following information:
 
 In the **Single Sign-On Configuration** section, configure the following information:
 
+{% image sso/cheatsheets/saml-jumpcloud/jc-config.png Single Sign-On Configuration %}
+
 |Field|Description|
 |-----|-----------|
 |IdP Entity ID|Set this field to a unique, Bitwarden-specific value, e.g. `bitwardensso_yourcompany`.|
@@ -129,7 +131,7 @@ Identity Provider Configuration will often require you to refer back to the OneL
 
 |Field|Description|
 |-----|-----------|
-|Entity ID|Enter your JumpCloud **IdP Entity ID**, which can be retrieved from the JumpCloud [Single Sign-On Configuration screen](##single-sign-on-configuration).|
+|Entity ID|Enter your JumpCloud **IdP Entity ID**, which can be retrieved from the JumpCloud [Single Sign-On Configuration screen](#single-sign-on-configuration).|
 |Binding Type|Set to **Redirect**.|
 |Single Sign On Service URL|Enter your JumpCloud **IdP URL**, which can be retrieved from the JumpCloud [Single Sign-On Configuration screen](##single-sign-on-configuration).|
 |Single Log Out Service URL|Login with SSO currently **does not** support SLO. This option is planned for future development.|

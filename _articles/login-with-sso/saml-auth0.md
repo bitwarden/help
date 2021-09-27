@@ -34,9 +34,12 @@ In the Auth0 Portal, use the Applications menu to create a **Regular Web Applica
 
 Click the **Settings** tab and configure the following information, some of which you'll need to retrieve from the Bitwarden Business Portal:
 
+{% image sso/cheatsheets/saml-auth0/auth0-appsettings.png Auth0 Settings %}
+
 |Auth0 Setting|Description|
 |-------------|-----------|
 |Name|Give the application a Bitwarden-specific name.|
+|Domain|Take note of this value. You'll need it [during a later step](#identity-provider-configuration).|
 |Application Type|Select **Regular Web Application**.|
 |Token Endpoint Authentication Method|Select **Post** (HTTP Post), which will map to a **Binding Type** attribute you will [configure later](#identity-provider-configuration).|
 |Application Login URI|Set this field to the pre-generated **SP Entity ID** retrieved from the Bitwarden SSO Configuration screen.<br><br>For Cloud-hosted customers, this is always `https://sso.bitwarden.com/saml2`. For self-hosted instances, this is determined by your [configured server URL]({{site.baseurl}}/article/install-on-premise/#configure-your-domain), for example `https://your.domain.com/sso/saml2`.|
@@ -122,7 +125,7 @@ Identity Provider Configuration will often require you to refer back to the Auth
 
 |Field|Description|
 |-----|-----------|
-|Entity ID|Enter the **Domain** value of your Auth0 application, prefixed by `urn:`, for example `urn:bw-help.us.auth0.com`.|
+|Entity ID|Enter the **Domain** value of your Auth0 application (see [here](#create-an-auth0-application)), prefixed by `urn:`, for example `urn:bw-help.us.auth0.com`.|
 |Binding Type|Select **HTTP POST** to match the [Token Endpoint Authentication Method](#create-an-auth0-application) value specified in your Auth0 application.|
 |Single Sign On Service URL|Enter the **SAML Protocol URL** (see [Endpoints](#endpoints)) of your Auth0 application. For example, `https://bw-help.us.auth0.com/samlp/HcpxD63h7Qzl420u8qachPWoZEG0Hho2`.|
 |Single Log Out Service URL|Login with SSO currently **does not** support SLO. This option is planned for future development, however you may pre-configure it if you wish.|

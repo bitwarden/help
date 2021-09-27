@@ -17,7 +17,7 @@ Your Personal API Key is **not the same** as the [Organization API Key]({{site.b
 
 Complete the following steps to get your Personal API Key:
 
-1. Login to your [Web Vault](https://vault.bitwarden.com){:target="_blank"} and select the **Settings** tab.
+1. Login to your [Web Vault]({{site.baseurl}}/article/getting-started-webvault) and select the **Settings** tab.
 2. From the **My Account** screen, scroll down to the **API Key** section.
 3. Select the **View API Key** button will prompt you to enter your Master Password.
 

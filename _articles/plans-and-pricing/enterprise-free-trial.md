@@ -20,7 +20,7 @@ Or, to learn more about the Bitwarden Enterprise offering, see [Bitwarden Plans 
 
 If you already have a Bitwarden account, complete the following steps to start your 7 Day Free Trial of Bitwarden Enterprise:
 
-1. Log in to your [Web Vault](https://vault.bitwarden.com){:target="\_blank"}.
+1. Log in to your [Web Vault]({{site.baseurl}}/article/getting-started-webvault).
 2. Select the **New Organization** button.
 
    {%image /organizations/new-org-button-overlay.png Select New Organization %}

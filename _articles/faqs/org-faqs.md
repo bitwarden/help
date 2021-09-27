@@ -55,7 +55,7 @@ Like with any software, running old versions may present a security risk.
 
 **A:** To change the name of your Organization:
 
-1. In the [Web Vault](https://vault.bitwarden.com){:target="\_blank"}, open your Organization.
+1. In the [Web Vault]({{site.baseurl}}/article/getting-started-webvault), open your Organization.
 2. Navigate to the Organization's {% icon fa-cogs %} **Settings** page.
 3. Edit the **Organization Name** field and select the **Save** button.
 

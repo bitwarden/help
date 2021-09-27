@@ -22,7 +22,7 @@ Complete the following steps to enable Two-step Login using Yubikey:
 [Get your Recovery Code]({{site.baseurl}}/article/two-step-recovery-code/) from the **Two-step Login** screen immediately after enabling any method.
 {% endcallout %}
 
-1. Log in to the [Web Vault](https://vault.bitwarden.com){:target="\_blank"}.
+1. Log in to the [Web Vault]({{site.baseurl}}/article/getting-started-webvault).
 2. Select **Settings** from the top navigation bar.
 3. Select **Two-step Login** from the left-side menu.
 4. Locate the **YubiKey OTP Security Key** option and select the **Manage** button.

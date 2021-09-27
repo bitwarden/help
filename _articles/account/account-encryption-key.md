@@ -39,7 +39,7 @@ Encrypted Exports use your encryption key to encrypt **and decrypt** your Vault 
 
 Complete the following steps to rotate your account encryption key:
 
-1. Log in to your [Web Vault](https://vault.bitwarden.com){:target="\_blank"}.
+1. Log in to your [Web Vault]({{site.baseurl}}/article/getting-started-webvault).
 2. Select **Settings** from the top navigation bar.
 3. On the **My Account** page, locate the **Change Master Password** section.
 4. Enter your **Current Master Password** and create/confirm a **New Master Password**.

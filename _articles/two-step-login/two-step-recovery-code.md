@@ -18,7 +18,7 @@ You should [get your Recovery Code](#get-your-recovery-code) **immediately** aft
 
 ## Get your Recovery Code
 
-To get your Recovery Code from your [Web Vault](https://vault.bitwarden.com){:target="\_blank"}:
+To get your Recovery Code from your [Web Vault]({{site.baseurl}}/article/getting-started-webvault):
 
 1. Select **Settings** from the top navigation bar.
 2. Select **Two-step Login** from the left-side Settings menu.

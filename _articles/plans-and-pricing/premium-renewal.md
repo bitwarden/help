@@ -9,7 +9,7 @@ tags: [plans, premium, renewal]
 order: "06"
 ---
 
-Premium Individual subscriptions renew automatically on an annual basis. You can check your renewal date from your [Web Vault](https://vault.bitwarden.com){:target="\_blank"} by navigating to **Settings** &rarr; **Premium Membership**.
+Premium Individual subscriptions renew automatically on an annual basis. You can check your renewal date from your [Web Vault]({{site.baseurl}}/article/getting-started-webvault) by navigating to **Settings** &rarr; **Premium Membership**.
 
 As your renewal date approaches, Bitwarden recommends that you validate the payment method by navigating to **Settings** &rarr; **Billing**. For help updating your payment method, see [Update Your Billing Information]({{site.baseurl}}/article/update-billing-info/).
 

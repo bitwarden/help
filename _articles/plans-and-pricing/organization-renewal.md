@@ -9,7 +9,7 @@ tags: [plans, premium, renewal]
 order: "07"
 ---
 
-Organization subscriptions renew automatically on an annual or monthly basis. You can check your renewal date from your [Web Vault](https://vault.bitwarden.com){:target="\_blank"} by navigating to Organization **Settings** &rarr; **Subscription**.
+Organization subscriptions renew automatically on an annual or monthly basis. You can check your renewal date from your [Web Vault]({{site.baseurl}}/article/getting-started-webvault) by navigating to Organization **Settings** &rarr; **Subscription**.
 
 As your renewal date approaches, Bitwarden recommends that you validate the payment method by navigating to Organization **Settings** &rarr; **Billing**. For help updating your payment method, see [Update Your Billing Information]({{site.baseurl}}/article/update-billing-info/#update-billing-information-for-organizations).
 

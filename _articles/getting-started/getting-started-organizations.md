@@ -33,7 +33,7 @@ Paid Organizations (Families, Teams, or Enterprise) automatically include those 
 
 Free Bitwarden Organizations allow for 2 users to securely share Organization-owned credentials. You might use a free Organization to share with friend or partner, or to test Organizations before [upgrading to a different plan]({{site.baseurl}}/article/about-bitwarden-plans/).
 
-Bitwarden provides applications on lots of devices, including Browser Extensions, Mobile Apps, Desktop Apps, and a CLI, but for the purposes of this guide we'll focus on the [Web Vault](https://vault.bitwarden.com){:target="\_blank"}. **The Web Vault provides the richest Bitwarden experience** for administering your Organization.
+Bitwarden provides applications on lots of devices, including Browser Extensions, Mobile Apps, Desktop Apps, and a CLI, but for the purposes of this guide we'll focus on the [Web Vault]({{site.baseurl}}/article/getting-started-webvault). **The Web Vault provides the richest Bitwarden experience** for administering your Organization.
 
 ### Sign up for Bitwarden
 
@@ -43,7 +43,7 @@ Bitwarden provides applications on lots of devices, including Browser Extensions
 **Don't forget your Master Password!** Bitwarden is a zero knowledge solution, meaning that the team at Bitwarden, as well as Bitwarden systems themselves, have no knowledge of, way to retrieve, or way to reset your Master Password.
 {% endcallout %}
 
-Once your account is created, log in to your [Web Vault](https://vault.bitwarden.com){:target="\_blank"} and verify your account's email address to unlock access to all features:
+Once your account is created, log in to your [Web Vault]({{site.baseurl}}/article/getting-started-webvault) and verify your account's email address to unlock access to all features:
 
 {% image getting-started/verify-email.png Send Verification Email %}
 
@@ -59,7 +59,7 @@ Bitwarden Organizations have a deep level of [user-level access controls]({{site
 
 To setup your Organization:
 
-1. In your [Web Vault](https://vault.bitwarden.com){:target="\_blank"}, select the **New Organization** button:
+1. In your [Web Vault]({{site.baseurl}}/article/getting-started-webvault), select the **New Organization** button:
 
    {%image /organizations/new-org-button-overlay.png Create New Organization %}
 2. Enter an **Organization Name** and a **Billing Email** we can reach you at. In this guide we're setting up a free Organization, so you won't be billed for anything!
@@ -114,7 +114,7 @@ Invitations expire after 5 days. Make sure you accept the invitation within that
 
 Confirm accepted Organization to complete the loop:
 
-1. Log in to your [Web Vault](https://vault.bitwarden.com){:target="\_blank"} and open your Organization.
+1. Log in to your [Web Vault]({{site.baseurl}}/article/getting-started-webvault) and open your Organization.
 2. Open the **Manage** tab and select **People** from the left-hand menu.
 3. Select any `Accepted` users and use the {% icon fa-cog %} gear dropdown to {% icon fa-check %} **Confirm Selected**:
 

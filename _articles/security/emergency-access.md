@@ -62,7 +62,7 @@ The following sections will walk you through establishing a trusted emergency co
 
 As a grantor, complete the following steps to invite a trusted emergency contact for your Vault:
 
-1. Log in to the [Web Vault](https://vault.bitwarden.com){:target="\_blank"}.
+1. Log in to the [Web Vault]({{site.baseurl}}/article/getting-started-webvault).
 2. Select **Settings** from the top navigation bar.
 3. Select **Emergency Access** from the left-hand Settings menu.
 4. Select the {% icon fa-plus %} **Add emergency contact** button. In the Invite Emergency Contact window:
@@ -90,7 +90,7 @@ As a grantee, complete the following steps to accept an invitation to become a t
 
 As a grantor, complete the following steps to confirm an accepted invitation:
 
-1. Log in to the [Web Vault](https://vault.bitwarden.com){:target="\_blank"}.
+1. Log in to the [Web Vault]({{site.baseurl}}/article/getting-started-webvault).
 2. Select **Settings** from the top navigation bar.
 3. Select **Emergency Access** from the left-hand Settings menu.
 
@@ -105,7 +105,7 @@ To ensure the integrity of your encryption keys, verify the displayed fingerprin
 
 As a grantee, complete the following steps to initiate an emergency access request:
 
-1. Log in to the [Web Vault](https://vault.bitwarden.com){:target="\_blank"}.
+1. Log in to the [Web Vault]({{site.baseurl}}/article/getting-started-webvault).
 2. Select **Settings** from the top navigation bar.
 3. Select **Emergency Access** from the left-hand Settings menu.
 4. In the **Designated as emergency contact** section, select the grantor whose Vault you wish to access.
@@ -118,7 +118,7 @@ As a grantee, complete the following steps to initiate an emergency access reque
 
 As a grantor, you may manually approve or reject an emergency access request before the configured wait time lapses. Complete the following steps to approve or reject emergency access:
 
-1. Log in to the [Web Vault](https://vault.bitwarden.com){:target="\_blank"}.
+1. Log in to the [Web Vault]({{site.baseurl}}/article/getting-started-webvault).
 2. Select **Settings** from the top navigation bar.
 3. Select **Emergency Access** from the left-hand Settings menu.
 4. Hovering over the user with the `Emergency Access Initiated` status card, select the gear icon.
@@ -128,7 +128,7 @@ As a grantor, you may manually approve or reject an emergency access request bef
 
 As the grantee, complete the following steps to access the grantor's Vault once your request has been approved (manually or through lapsed wait time):
 
-1. Log in to the [Web Vault](https://vault.bitwarden.com){:target="\_blank"}.
+1. Log in to the [Web Vault]({{site.baseurl}}/article/getting-started-webvault).
 2. Select **Settings** from the top navigation bar.
 3. Select **Emergency Access** from the left-hand Settings menu.
 4. In the **Designated as emergency contact** section, hover over the grantor the grantor whose Vault you wish to access, and select the gear icon.
@@ -150,5 +150,5 @@ Trusted emergency contacts who are given **View** access will be able to view yo
 
 Trusted emergency contacts who are given **Takeover** access will, once used, have created a new Master Password for your account. As a result, the only way to revoke access involves:
 
-1. Obtaining the new Master Password they created for your account and using it to log in the [Web Vault](https://vault.bitwarden.com){:target="\_blank"}.
+1. Obtaining the new Master Password they created for your account and using it to log in the [Web Vault]({{site.baseurl}}/article/getting-started-webvault).
 2. [Changing your Master Password]({{site.baseurl}}/article/master-password/#change-your-master-password) to one that they do not know.

@@ -179,7 +179,7 @@ If you're a member of an [Organization]({{site.baseurl}}/article/about-organizat
 
 You can clone any Vault item that you have **Ownership** of, if you wish to create a duplicate of the item.
 
-- In the [Web Vault](https://vault.bitwarden.com){:target="\_blank"}, select **Clone** from the hover-over {% icon fa-cog %} **Gear** dropdown.
+- In the [Web Vault]({{site.baseurl}}/article/getting-started-webvault), select **Clone** from the hover-over {% icon fa-cog %} **Gear** dropdown.
 - On Mobile Applications, open the item and tap **Clone** in the {% icon fa-ellipsis-v %} **Menu**.
 - On Desktop Applications and Browser Extensions, open the item and select the {% icon fa-copy %} **Clone Item** option.
 

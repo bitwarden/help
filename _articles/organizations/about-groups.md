@@ -31,7 +31,7 @@ Other common methodologies include **Collections by Vendor or System** (i.e. use
 
 Organization [Admins (or higher)]({{site.baseurl}}/article/user-types-access-control/#user-types) and [Provider Users]({{site.baseurl}}/article/provider-users/#provider-user-types) can create and manage Groups. To create a Group:
 
-1. Log in to your [Web Vault](https://vault.bitwarden.com){:target="\_blank"} and open your Organization.
+1. Log in to your [Web Vault]({{site.baseurl}}/article/getting-started-webvault) and open your Organization.
 2. Open the **Manage** tab and select **Groups** from the left-hand menu.
 3. On the Groups screen, select the {% icon fa-plus %} **New Group** button.
 

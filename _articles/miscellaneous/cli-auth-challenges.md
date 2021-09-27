@@ -13,7 +13,7 @@ The August 2021 release of Bitwarden (**2021-09-21**) introduced [Captcha](https
 
 To get your Personal API Key:
 
-1. Log in to the [Web Vault](https://vault.bitwarden.com){:target="\_blank"} and select the **Settings** tab.
+1. Log in to the [Web Vault]({{site.baseurl}}/article/getting-started-webvault) and select the **Settings** tab.
 2. From the **My Account** screen, scroll down to the **API Key** section.
 3. Select the **View API Key** button and enter your Master Password to validate access.
 4. From the **API Key** dialog box, copy the **client_secret:** value, which is a random string like `efrbgT9C6BogEfXi5pZc48XyJjfpR`.

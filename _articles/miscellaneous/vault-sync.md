@@ -14,7 +14,7 @@ In order to pull those changes down to another Bitwarden client application, you
 
 ## Automatic Sync
 
-Your personal [Web Vault](https://vault.bitwarden.com){:target="\_blank"} will always remain in-sync. Organization Vaults will automatically sync across users and client applications every 30 minutes.
+Your personal [Web Vault]({{site.baseurl}}/article/getting-started-webvault) will always remain in-sync. Organization Vaults will automatically sync across users and client applications every 30 minutes.
 
 Bitwarden client applications (Desktop Applications, Browser Extensions, Mobile Apps, and CLI) will sync automatically on login, and with regularity when unlocked. You can also [Manually Sync](#manual-sync) your Vault to pull changes to a client application immediately.
 

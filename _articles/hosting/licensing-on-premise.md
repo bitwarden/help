@@ -8,7 +8,7 @@ tags: [hosting, licensing]
 order: "08"
 ---
 
-Self-hosting Bitwarden is free, however some features must be unlocked in your self-hosted instance with a registered license file. A license file can be obtained from the Bitwarden-hosted [Web Vault](https://vault.bitwarden.com){:target="\_blank"} by either an account with a Premium Individual subscription or by the Owner of an Organization.
+Self-hosting Bitwarden is free, however some features must be unlocked in your self-hosted instance with a registered license file. A license file can be obtained from the Bitwarden-hosted [Web Vault]({{site.baseurl}}/article/getting-started-webvault) by either an account with a Premium Individual subscription or by the Owner of an Organization.
 
 {% callout info %}
 The procedures in this article assume that you have already started a paid subscription to Bitwarden. If you haven't, refer to [About Bitwarden Plans]({{site.baseurl}}/article/about-bitwarden-plans/) and [What Plan is Right for Me?]({{site.baseurl}}/article/what-plan-is-right-for-me/).
@@ -20,7 +20,7 @@ To retrieve your license from your Cloud account and apply it to your self-hoste
 
 #### Retrieve your License
 
-1. In the Cloud [Web Vault](https://vault.bitwarden.com){:target="\_blank"}, select **Settings** from the top navigation.
+1. In the Cloud [Web Vault]({{site.baseurl}}/article/getting-started-webvault), select **Settings** from the top navigation.
 2. Select **Premium Membership** from the left menu.
 3. Select the **Download License** button.
 
@@ -44,7 +44,7 @@ You must be an [Organization Owner]({{site.baseurl}}/article/user-types-access-c
 
 #### Retrieve your License
 
-1. In the Cloud [Web Vault](https://vault.bitwarden.com){:target="\_blank"}, open your Organization.
+1. In the Cloud [Web Vault]({{site.baseurl}}/article/getting-started-webvault), open your Organization.
 2. Select the Organization **Settings** tab and select **Subscription** from the left menu.
 3. Select the **Download License** button.
 4. When prompted, enter the installation id that was used to install your self-hosted server and select **Submit**.

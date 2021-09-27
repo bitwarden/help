@@ -134,7 +134,7 @@ Viewing an attachment mimics the same procedure used to attach a file. Refer to 
 
 By default, users with a Premium subscription have access to 1GB of encrypted storage for file attachments. Additional storage can be purchased in 1GB increments. Complete the following steps to purchase additional storage:
 
-1. In the [Web Vault](https://vault.bitwarden.com){:target="\_blank"}, select the **Settings** tab.
+1. In the [Web Vault]({{site.baseurl}}/article/getting-started-webvault), select the **Settings** tab.
 2. From the **Settings** menu, select **Premium Membership**.
 3. In the Storage section, select the **Add Storage** button.
 4. Using the counter, choose the number of **GB of Storage to Add** and select **Submit**.

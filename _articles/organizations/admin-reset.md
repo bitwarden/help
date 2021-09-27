@@ -99,7 +99,7 @@ You must be a [Owner, Admin, or permitted Custom user](#permissions) to reset a 
 
 To reset a Master Password for a member of your Enterprise Organization:
 
-1. In your [Web Vault](https://vault.bitwarden.com){:target="\_blank"}, open your Organization.
+1. In your [Web Vault]({{site.baseurl}}/article/getting-started-webvault), open your Organization.
 2. Open the **Manage** tab and navigate to the **People** section.
 3. Hover over the user whose Master Password you want to reset, select the {% icon fa-cog %} gear dropdown, and choose {% icon fa-key %} **Reset Password**:
 
