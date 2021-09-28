@@ -128,7 +128,7 @@ Note that when your browser updates to this version, you may be asked to accept 
 
 ### Q: Is Bitwarden FIPS Compliant?
 
-**A:** Bitwarden uses [FIPS compliant libraries and cryptography]({{site.baseurl}}/article/what-encryption-is-used/#invoked-crypto-libraries), however the Bitwarden platform has not performed any FIPs certifications. Most FIPS installations of Bitwarden leverage the self-hosting option to make evaluations (i.e. Cybersecurity Maturity Model Certification) easier.
+**A:** Bitwarden uses [FIPS compliant libraries and cryptography]({{site.baseurl}}/article/what-encryption-is-used/#invoked-crypto-libraries), however the Bitwarden platform has not performed any FIPS certifications. Most FIPS installations of Bitwarden leverage the self-hosting option to make evaluations (i.e. Cybersecurity Maturity Model Certification) easier.
 
 ### Q: Can I restrict access to Bitwarden to certain devices?
 
