@@ -25,6 +25,17 @@ You can read more about Docker and container technologies at [Docker's Website](
 
 **A:** High availability can be achieved by either configuring multiple instances of the containers into a Docker Swarm or Kubernetes environment, and/or by pointing the database connection string that the containers reference to any MSSQL database or cluster. Then you would probably want to load balance the NGINX containers or however you choose to handle the front-end.
 
+### Q: Do I need to whitelist any URLs?
+
+**A:** In order to allow the server to **push notifications to Bitwarden clients**, you'll need to allow the following URLs through your firewall:
+
+- `api.bitwarden.com`
+- `push.bitwarden.com`
+
+{% callout success %}
+You don't **have** to use push notifications if whitelisting these URLs won't work for your environment.
+{% endcallout %}
+
 ### Q: How do I backup and restore my self-hosted instance?
 
 **A:** Bitwarden takes automated nightly backups of the `bitwarden-mssql` database container in order to protect your stored credentials. For help with manual backups, or help restoring a backup, see [Backup your Hosted Data]({{site.baseurl}}/article/backup-on-premise/).
