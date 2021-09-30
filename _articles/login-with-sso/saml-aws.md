@@ -44,7 +44,9 @@ Give the application a unique, Bitwarden-specific **Display name**.
 
 ### AWS SSO Metadata
 
-You'll need the information in this section for a later configuration step. Copy the **AWS SSO sign-in URL** and **AWS SSO issuer URL**, and download the **AWS SSO certificate**.
+You'll need the information in this section for a later configuration step. Copy the **AWS SSO sign-in URL** and **AWS SSO issuer URL**, and download the **AWS SSO certificate**:
+
+{% image sso/cheatsheets/saml-aws/aws-values.png AWS SSO Metadata %}
 
 ### Application Properties
 

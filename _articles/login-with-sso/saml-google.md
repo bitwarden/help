@@ -110,7 +110,7 @@ Identity Provider Configuration will often require you to refer back to the Work
 
 |Field|Description|
 |-----|-----------|
-|Entity ID|Set this field to Workspace's **Entity ID**, retrieved from the [Google Identity Provider details section](#identity-provider-details) or using the **Download Metadata** button.|
+|Entity ID|Set this field to Workspace's **Entity ID**, retrieved from the [Google Identity Provider details section](#google-identity-provider-details) or using the **Download Metadata** button.|
 |Binding Type|Set to **HTTP POST** or **Redirect**.|
 |Single Sign On Service URL|Set this field to Workspace's **SSO URL**, retrieved from the [Google Identity Provider details section](#identity-provider-details) or using the **Download Metadata** button.|
 |Single Log Out URL|Login with SSO currently **does not** support SLO. This option is planned for future development, however you may pre-configure it if you wish.|
