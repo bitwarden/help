@@ -29,13 +29,9 @@ You don't need to edit anything on this screen yet, but keep it open for easy re
 
 ## Create a SAML app
 
-In the Google Workspace Admin console, select **Apps** &rarr; **SAML apps** from the navigation:
+In the Google Workspace Admin console, select **Apps** &rarr; **Web and mobile apps** from the navigation. On the Web and mobile apps screen, select **Add App** &rarr; **Add custom SAML app**:
 
-{% image sso/cheatsheets/saml-google/g-addapp.png SAML Apps %}
-
-Select **Add App** &rarr; **Add custom SAML app**:
-
-{% image sso/cheatsheets/saml-google/g-addapp2.png Custom SAML App %}
+{% image sso/cheatsheets/saml-google/g-addapp.png Create a SAML App %}
 
 ### App details
 
@@ -43,7 +39,9 @@ On the App details screen, give the application a unique Bitwarden-specific name
 
 ### Google Identity Provider details
 
-On the Google Identity Provider details screen, copy your **SSO URL**, **Entity ID**, and **Certificate** for [use during a later step](#identity-provider-configuration).
+On the Google Identity Provider details screen, copy your **SSO URL**, **Entity ID**, and **Certificate** for [use during a later step](#identity-provider-configuration):
+
+{% image sso/cheatsheets/saml-google/g-details.png IdP Details %}
 
 Select **Continue** when you're finished.
 
