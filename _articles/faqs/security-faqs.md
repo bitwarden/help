@@ -133,3 +133,7 @@ Note that when your browser updates to this version, you may be asked to accept 
 ### Q: Can I restrict access to Bitwarden to certain devices?
 
 **A:** Using self-hosting, you can use custom firewall and NGINX configurations as well as VPN/VLAN access control to determine the device types and/or network layer access for your Bitwarden instance. You may also use other tools such as device-level certificates to control specific device access to the Bitwarden instance as well.
+
+### Q: Does Bitwarden have a portable application?
+
+**A:** Yes! The Bitwarden Desktop Application is available for Windows as a portable `.exe` that can be downloaded [here](https://bitwarden.com/download){:target="\_blank"}. The portable app is well suited to **always-offline** environments or scenarios where automatic updating of the app is not desired. The portable app **will not update itself**.
