@@ -29,13 +29,9 @@ You don't need to edit anything on this screen yet, but keep it open for easy re
 
 ## Create a SAML app
 
-In the Google Workspace Admin console, select **Apps** &rarr; **SAML apps** from the navigation:
+In the Google Workspace Admin console, select **Apps** &rarr; **Web and mobile apps** from the navigation. On the Web and mobile apps screen, select **Add App** &rarr; **Add custom SAML app**:
 
-{% image sso/cheatsheets/saml-google/g-addapp.png SAML Apps %}
-
-Select **Add App** &rarr; **Add custom SAML app**:
-
-{% image sso/cheatsheets/saml-google/g-addapp2.png Custom SAML App %}
+{% image sso/cheatsheets/saml-google/g-addapp.png Create a SAML App %}
 
 ### App details
 
@@ -43,7 +39,9 @@ On the App details screen, give the application a unique Bitwarden-specific name
 
 ### Google Identity Provider details
 
-On the Google Identity Provider details screen, copy your **SSO URL**, **Entity ID**, and **Certificate** for [use during a later step](#identity-provider-configuration).
+On the Google Identity Provider details screen, copy your **SSO URL**, **Entity ID**, and **Certificate** for [use during a later step](#identity-provider-configuration):
+
+{% image sso/cheatsheets/saml-google/g-details.png IdP Details %}
 
 Select **Continue** when you're finished.
 
@@ -110,7 +108,7 @@ Identity Provider Configuration will often require you to refer back to the Work
 
 |Field|Description|
 |-----|-----------|
-|Entity ID|Set this field to Workspace's **Entity ID**, retrieved from the [Google Identity Provider details section](#identity-provider-details) or using the **Download Metadata** button.|
+|Entity ID|Set this field to Workspace's **Entity ID**, retrieved from the [Google Identity Provider details section](#google-identity-provider-details) or using the **Download Metadata** button.|
 |Binding Type|Set to **HTTP POST** or **Redirect**.|
 |Single Sign On Service URL|Set this field to Workspace's **SSO URL**, retrieved from the [Google Identity Provider details section](#identity-provider-details) or using the **Download Metadata** button.|
 |Single Log Out URL|Login with SSO currently **does not** support SLO. This option is planned for future development, however you may pre-configure it if you wish.|

@@ -86,7 +86,9 @@ Once your application is created, select the **Sign On** tab for the app and sel
 
 {% image sso/cheatsheets/saml-okta/okta-ssosettings.png Get IdP Values %}
 
-Either leave this page up [for future use](#identity-provider-configuration), or copy the **Identity Provider Single Sign-On URL** and **Identity Provider Issuer** and download the **X.509 Certificate**.
+Either leave this page up [for future use](#identity-provider-configuration), or copy the **Identity Provider Single Sign-On URL** and **Identity Provider Issuer** and download the **X.509 Certificate**:
+
+{% image sso/cheatsheets/saml-okta/okta-values.png IdP Values %}
 
 ### Assignments
 
@@ -126,7 +128,7 @@ Identity Provider Configuration will often require you to refer back to the Okta
 
 |Field|Description|
 |-----|-----------|
-|Entity ID|Enter your **Identity Provider Issuer**, retrieved from the Okta [Sign On Settings](#get-idp-values) screen.|
+|Entity ID|Enter your **Identity Provider Issuer**, retrieved from the Okta [Sign On Settings](#get-idp-values) screen by selecting the **View Setup Instructions** button.|
 |Binding Type|Set to **Redirect**. Okta currently does not support HTTP POST.|
 |Single Sign On Service URL|Enter your **Identity Provider Single Sign-On URL**, retrieved from the Okta [Sign On Settings](#get-idp-values) screen.|
 |Single Log Out Service URL|Login with SSO currently **does not** support SLO. This option is planned for future development, however you may pre-configure it if you wish.|

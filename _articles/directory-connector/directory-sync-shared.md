@@ -52,7 +52,7 @@ Cannot autolaunch D-Bus without X11 $DISPLAY
 ```
 ### Secret Storage in Headless Environments
 
-If a secure storage environment is not available, you can configure the Directory Connector CLI to use plaintext storage of secrets. To do so, set the following environment variable to override secure storage:
+If a secure storage environment is not available, you can configure the Directory Connector CLI to use plaintext storage of secrets. To do so, set the following environment variable to override secure storage, for example by running `sudo -H gedit /etc/environment`:
 ```
 BITWARDENCLI_CONNECTOR_PLAINTEXT_SECRETS=true
 ```
