@@ -11,7 +11,7 @@ order: "16"
 The Bitwarden Public API provides Organizations a suite of tools for managing members, collections, groups, event logs, and policies.
 
 {% callout success %}
-For automating **management of Vault items**, we recommend using the [CLI]({{site.baseurl}}/article/cli/). Access to Vault items relies on Vault decryption, which must be done with a Username and Master Password rather than an [API Key](#authentication).
+For **management of Vault items**, use the [CLI]({{site.baseurl}}/article/cli/). Access to Vault items relies on Vault decryption, which must be done with a Master Password.
 {% endcallout %}
 
 The Public API is a RESTful API with predictable resource-oriented URLs, accepts JSON-encoded request bodies, returns JSON-encoded responses, and uses standard HTTP response codes, authentication, and verbs.
@@ -42,6 +42,10 @@ For Self-hosted, `https://your.domain.com/identity/connect/token`.
 
 The API uses bearer access tokens to authenticate with protected API endpoints. Bitwarden uses an [OAuth2 Client Credentials](https://www.oauth.com/oauth2-servers/access-tokens/client-credentials/){:target="_blank"} application request flow to grant bearer access tokens from the endpoint. Authentication requests take `client_id` and `client_secret` as required parameters.
 
+{% callout success %}
+The API Key used to authenticate with the Public API is **not the same** as the [Personal API Key]({{site.baseurl}}/article/personal-api-key). Organization API Keys will have a `client_id` with format `"organization.ClientId"`, whereas Personal API Keys will have a `client_id` with format `"user.clientId"`.
+{% endcallout %}
+
 The API Key `client_id` and `client_secret` can be obtained by an **Owner** from the Web Vault by navigating to Organization **Settings** &rarr; **My Organization** and scrolling down to the **API Key** section:
 
 {% image organizations/org-api-key.png Get Organization API Key %}
@@ -49,7 +53,7 @@ The API Key `client_id` and `client_secret` can be obtained by an **Owner** from
 If, as an owner, you want to share the API Key with an Admin or other user, use a secure communication method like [Bitwarden Send]({{site.baseurl}}/article/about-send/).
 
 {% callout warning %}
-Your API key enables full access to your Organization. Keep your API key private. If you believe your API key has been compromised, select the **Rotate API Key** button on this screen. Active implementations of your current API key will need to be reconfigured with the new key before use.
+Your Organization API Key enables full access to your Organization. Keep your API key private. If you believe your API key has been compromised, select the **Rotate API Key** button on this screen. Active implementations of your current API key will need to be reconfigured with the new key before use.
 {% endcallout %}
 
 ### Bearer Access Tokens

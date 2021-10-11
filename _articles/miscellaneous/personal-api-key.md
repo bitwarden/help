@@ -7,7 +7,7 @@ popular: false
 tags: [api key, cli]
 ---
 
-Your Bitwarden Personal API Key can be used as an alternative method for authenticating into the Command Line Interface (CLI).
+Your Bitwarden Personal API Key can be used as a method for authenticating into the Command Line Interface (CLI).
 
 {% callout info %}
 Your Personal API Key is **not the same** as the [Organization API Key]({{site.baseurl}}/article/public-api/#authentication) used to access the [Bitwarden Public API]({{site.baseurl}}/article/public-api/) or [Directory Connector]({{site.baseurl}}/article/directory-sync/). Personal API Keys will have a `client_id` with format `"user.clientId"`, while Organization API Keys will have a `client_id` with format `"organization.ClientId"`.
@@ -35,14 +35,35 @@ Rotating your key will invalidate your previous key and all active sessions usin
 
 ## Authenticate using your API Key
 
-To use your API Key to authenticate into the CLI, enter the following command:
+Logging in to the CLI with the Personal API Key is **recommended for automated workflows or providing access to an external application**. To log in with the API Key:
+
 ```
 bw login --apikey
 ```
-which will prompt you to enter the obtained `client_id` and  `client_secret` to authenticate. Once you enter these values, enter your Master Password to decrypt your Vault. For more information, see [Bitwarden command line tool (CLI)]({{site.baseurl}}/article/cli/).
 
-### Environment Variables
+This will initiate a prompt for your personal `client_id` and `client_secret`. Once your session is authenticated using these values, you'll be prompted to enter your Master Password to unlock your Vault.
 
-The Bitwarden CLI will look for non-empty environment variables `BW_CLIENTID` or `BW_CLIENTSECRET`. Save these environment variables with your `client_id` and `client_secret` to prevent Bitwarden from prompting you every time.
+#### Use Environment Variables in Automated Workflows
 
-You will still need to enter your Master Password to decrypt your Vault.
+In scenarios where automated work is being done with the Bitwarden CLI, you can save environment variables to prevent the need for manual intervention at authentication.
+
+|Environment Variable Name|Required Value|
+|-------------------------|--------------|
+|BW_CLIENTID|`client_id`|
+|BW_CLIENTSECRET|`client_secret`|
+
+
+You can also use the `--passwordenv <passwordenv>` or `--passwordfile <passwordfile>` options to retrieve your Master Password rather than enter it manually. The following examples demonstrate how these can be strung together to log in without intervention:
+
+1. ```
+bw login --apikey --passwordenv BW_PASSWORD
+```
+
+   will look for three environment variables (`BW_CLIENTID`, `BW_CLIENTSECRET`, and `BW_PASSWORD`). If all three are non-empty and have correct values, the CLI will successfully log in **and unlock**.
+2. ```
+bw login --apikey --passwordfile ~/Users/Me/Documents/mp.txt
+```
+
+   will look for two environment variables (`BW_CLIENTID` and `BW_CLIENTSECRET`) and the file `~Users/Me/Documents/mp.txt` (which must have your Master Password as the first line). If all three are non-empty and have correct values, the CLI will successfully log in **and unlock**.
+
+   {% callout warning %}If you use the `--passwordfile` option, make sure your password file is protected.{% endcallout %}

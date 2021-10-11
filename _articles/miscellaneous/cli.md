@@ -130,86 +130,89 @@ sudo snap install bw
 
 ## Log In
 
-Logging in to the Bitwarden CLI authenticates you with the [configured](#config) Bitwarden server and syncs your Vault. To log in to Bitwarden, use the `login` command with one of the following login workflow options:
+There are three methods for logging in to the Bitwarden CLI using the `login` command, each of which is suited to different situations. Please review the following options to determine which method to use:
 
- - [Using email and password](#using-email-and-password)
- - [Using an API key](#using-an-api-key)
- - [Using SSO](#using-sso)
+- [Using Email and Password](#using-email-and-password)
+- [Using an API Key](#using-an-api-key)
+- [Using SSO](#using-sso)
 
-### Using email and password
+{% callout success %}
+All three methods require you to provide your Master Password **if you will be working with Vault data directly**. Your Master Password is the source of your decryption key, so Vault data cannot be decrypted (**unlocked**) without it. There are, however, a few commands that do not require your Vault to be decrypted, including `config`, `encode`, and `generate`, `update`, and `status`.
+{% endcallout %}
 
-Logging in with email and password authenticates you with Bitwarden servers, syncs your Vault, **and unlocks your Vault**. This is the only method that automatically unlocks your Vault. To log in with email and password use:
+### Using Email and Password
+
+Logging in with email and password is **recommended for interactive sessions**. To log in with email and password:
 
 ```
 bw login
 ```
 
-This command will initiate a prompt for your **Email address**, **Master password**, and (if [enabled]({{site.baseurl}}/article/setup-two-step-login/)) a **Two-step login code**.
+This will initiate a prompt for your **Email address**, **Master password**, and ([if enabled]({{site.baseurl}}/article/setup-two-step-login/)) a **Two-step login code**. The CLI currently supports Two-step login via [authenticator]({{site.baseurl}}/article/setup-two-step-login-authenticator/), [email]({{site.baseurl}}/article/setup-two-step-login-email/), or [Yubikey]({{site.baseurl}}/article/setup-two-step-login-yubikey/).
 
-{% callout info %}
-You *can* string this together into a single command as in the following example, however this is not recommended for security reasons.
+You *can* string these factors together into a single command as in the following example, however this is not recommended for security reasons.
 
 ```
 bw login [email] [password] --method <method> --code <code>
 ```
 
-See [Appendices &rarr; Enums](#enums) for `<method>` values.
-{% endcallout %}
-
-### Using an API key
+See [Appendices &rarr; Enums](#enums) for Two-step Login `<method>` values.
 
 {% callout success %}
 **Getting prompted for additional authentication** or getting a `Your authentication request appears to be coming from a bot.` error? Use your API Key `client_secret` to answer the authentication challenge. [Learn more]({{site.baseurl}}/article/cli-auth-challenges/).
 {% endcallout %}
 
-Logging in with a [Personal API Key]({{site.baseurl}}/article/personal-api-key/) authenticates you with Bitwarden servers, syncs your Vault, but **does not unlock your Vault**. After logging in with an API key, you will be required to unlock your Vault using your Master Password. To log in with an API key use:
+### Using an API Key
+
+Logging in with the [Personal API Key]({{site.baseurl}}/article/personal-api-key/) is **recommended for automated workflows or providing access to an external application**. To log in with the API Key:
 
 ```
 bw login --apikey
 ```
-This command will initiate a prompt for your personal `client_id` and `client_secret`.
 
-{% callout success %}
-When logging in with an API key, the CLI will first look for non-empty environment variables `BW_CLIENTID` and `BW_CLIENTSECRET` before initiating a prompt for `client_id` and `client_secret`.
+This will initiate a prompt for your personal `client_id` and `client_secret`. Once your session is authenticated using these values, you'll be prompted to enter your Master Password to unlock your Vault.
 
-If you don't want to be prompted for the `client_id` and `client_secret` every time, you can save these values to `BW_CLIENTID` and `BW_CLIENTSECRET` respectively.
-{% endcallout %}
+#### Use Environment Variables in Automated Workflows
+
+In scenarios where automated work is being done with the Bitwarden CLI, you can save environment variables to prevent the need for manual intervention at authentication.
+
+|Environment Variable Name|Required Value|
+|-------------------------|--------------|
+|BW_CLIENTID|`client_id`|
+|BW_CLIENTSECRET|`client_secret`|
+
+You can also use the `--passwordenv <passwordenv>` or `--passwordfile <passwordfile>` options to retrieve your Master Password rather than enter it manually. The following examples demonstrate how these can be strung together to log in without intervention:
+
+1. ```
+bw login --apikey --passwordenv BW_PASSWORD
+```
+
+   will look for three environment variables (`BW_CLIENTID`, `BW_CLIENTSECRET`, and `BW_PASSWORD`). If all three are non-empty and have correct values, the CLI will successfully log in **and unlock**.
+2. ```
+bw login --apikey --passwordfile ~/Users/Me/Documents/mp.txt
+```
+
+   will look for two environment variables (`BW_CLIENTID` and `BW_CLIENTSECRET`) and the file `~Users/Me/Documents/mp.txt` (which must have your Master Password as the first line). If all three are non-empty and have correct values, the CLI will successfully log in **and unlock**.
+
+   {% callout warning %}If you use the `--passwordfile` option, make sure your password file is protected.{% endcallout %}
 
 ### Using SSO
 
-Logging in with [SSO]({{site.baseurl}}/article/about-sso/) authenticates you with Bitwarden servers, syncs your Vault, but **does not unlock your Vault**. After logging in with SSO, you will be required to unlock your Vault using your Master Password. To log in with SSO use:
+Logging in with the [SSO]({{site.baseurl}}/article/about-sso/) is **recommended if an Organization requires SSO Authentication**. To log in with SSO:
 
 ```
 bw login --sso
 ```
 
-This command will initiate the SSO authentication flow in your web browser.
-
-### Two-step login
-
-The CLI currently supports [two-step login]({{site.baseurl}}/article/setup-two-step-login/) via [authenticator]({{site.baseurl}}/article/setup-two-step-login-authenticator/), [email]({{site.baseurl}}/article/setup-two-step-login-email/), or [Yubikey]({{site.baseurl}}/article/setup-two-step-login-yubikey/). If you have one of these methods enabled, you will be required to enter your two-step login code to log in. If you have multiple methods enabled, you will be prompted first to select which method to use.
-
-{% callout info %}
-You *can* pass your two-step login method and code as options, as in the following example.
-
-```
-bw login [email] [password] --method <method> --code <code>
-```
-
-See [Appendices &rarr; Enums](#enums) for `<method>` values.
-{% endcallout %}
+This will initiate the [SSO authentication flow]({{site.baseurl}}/article/using-sso/#login-using-sso) in your web browser. Once your session is authenticated using these values, you'll be prompted to enter your Master Password to unlock your Vault.
 
 ## Session Management
 
-Logging in [using email and password](#using-email-and-password) is the only method which automatically **unlocks** your Vault. All other options will subsequently prompt you to unlock your Vault using your Master Password.
-
-In the CLI, unlocking your Vault generates a **session key** which acts as the decryption key used to interact with data in your Vault. The [session key must be used](#using-a-session-key) to perform any command that touches Vault data (e.g. `list`, `get`, `edit`). You can generate a new session key at any time using:
+In the CLI, unlocking your Vault using your Master Password generates a **session key** which acts as the decryption key used to interact with data in your Vault. The [session key must be used](#using-a-session-key) to perform any command that touches Vault data (e.g. `list`, `get`, `edit`). You can generate a new session key at any time using:
 
 ```
 bw unlock
 ```
-
-This command will prompt your for your Master Password and generate a new session key.
 
 You can also **lock** (i.e. destroy any active session key) using:
 
