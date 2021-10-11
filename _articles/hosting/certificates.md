@@ -5,7 +5,7 @@ categories: [hosting]
 featured: false
 popular: false
 tags: [hosting, docker, install, deploy]
-order: "04"
+order: "05"
 ---
 
 This article defines the certificate options available to Self-hosted instances of Bitwarden. You will select your certificate option during installation. For installation instructions, see [Install and Deploy On-premise]({{site.baseurl}}/article/install-on-premise/).
@@ -149,6 +149,20 @@ And run the following commands:
 sudo dpkg-reconfigure ca-certificates
 sudo update-ca-certificates
 ```
+
+#### Android
+
+To trust a self-signed certificate on an Android device, refer to Google's [Add & remove certificates documentation](https://support.google.com/pixelphone/answer/2844832?hl=en){:target="\_blank"}.
+
+{% callout info %}
+If you're **not self-hosting** and encounter the following certificate error on your android device:
+
+```
+Exception message: java.security.cert.CertPathValidatorException: Trust anchor for certification path not found.
+```
+
+You will need to upload Bitwarden's certificates to your device. Refer to [this community thread](https://community.bitwarden.com/t/android-client-login-bitwarden-https-cert-problem/12132) for help finding the certificates.
+{% endcallout %}
 
 ## Use no Certificate
 

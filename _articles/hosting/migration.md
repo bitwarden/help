@@ -5,7 +5,7 @@ categories: [hosting]
 featured: false
 popular: false
 tags: [hosting, docker, install, deploy]
-order: "03"
+order: "04"
 ---
 
 This article will walk you through procedures for transitioning from Cloud to Self-hosted, from Self-hosted to Cloud, and from one self-hosted server to another:
