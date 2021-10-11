@@ -239,7 +239,11 @@ bw list items --session "5PBYGU+5yt3RHcCjoeJKx/wByU34vokGRZjXpSH7Ylo8w=="
 ```
 
 {% callout success %}
-The `BW_SESSION` environment variable is only tied to the active terminal session, so closing your terminal window is equivalent to locking your Vault.
+The `BW_SESSION` environment variable is only tied to the active terminal session, so closing your terminal window is equivalent to locking your Vault. You can also destroy an active session key to lock your Vault by running:
+
+```
+bw lock
+```
 {% endcallout %}
 
 ## Core Commands
