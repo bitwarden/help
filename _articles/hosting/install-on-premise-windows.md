@@ -15,7 +15,7 @@ This article will walk you through the procedure to install and deploy Bitwarden
 | |Minimum|Recommended|
 |-|-------|-----------|
 |Processor|x64, 1.4GHz|x64, 2GHz Dual Core|
-|Memory|8GB RAM|`?` GB RAM|
+|Memory|6GB RAM|8+ GB RAM|
 |Storage|10GB|25GB|
 |Docker Version|Engine 19+ and Compose 1.24+|Engine 19+ and Compose 1.24+|
 
@@ -57,13 +57,7 @@ We recommend configuring a domain name with DNS records that point to your host 
 
 ### Setup Docker Desktop
 
-Bitwarden will be deployed and run on your machine using an array of [Docker containers](https://docs.docker.com/get-started/){:target="_blank"}. Docker Desktop for Windows includes both Docker Engine and Docker Compose. To setup Docker Desktop:
-
-1. Download and install [Docker Desktop for Windows](https://docs.docker.com/desktop/windows/install/){:target="\_blank"}. During installation, check the **Enable Hyper-V Windows Features** configuration option.
-2. In Docker Desktop, navigate to **Settings** &rarr; **Resources** &rarr; **Advanced** and set the following options:
-
-   - **Memory**: 2.00+ GB
-   - **Swap**: 1 GB
+Bitwarden will be deployed and run on your machine using an array of [Docker containers](https://docs.docker.com/get-started/){:target="_blank"}. Docker Desktop for Windows includes both Docker Engine and Docker Compose. Download and install [Docker Desktop for Windows](https://docs.docker.com/desktop/windows/install/){:target="\_blank"} and check the **Enable Hyper-V Windows Features** configuration option during installation.
 
 ### Create Bitwarden Local User & Directory
 
@@ -90,9 +84,14 @@ In Docker Desktop, navigate to **Settings** &rarr; **Resources** &rarr; **File S
 Bitwarden provides a Powershell Cmdlet file (`.ps1`) for easy installation on Windows machines. Complete the following steps to install Bitwarden using the Cmdlet:
 
 {% callout success %}
-If you've [created a Bitwarden User & Directory](#create-bitwarden-local-user--directory), complete the following as the `Bitwarden` user from the `C:\Bitwarden` directory.
+If you've [created a Bitwarden User & Directory](#create-bitwarden-local-user--directory), complete the following as the `Bitwarden` user.
 {% endcallout %}
 
+1. Navigate to the [created](#create-bitwarden-local-user--directory) directory:
+
+   ```
+   cd C:\Bitwarden
+   ```
 1. Run the following command to download the Bitwarden installation script (`bitwarden.ps1`):
 
    ```
@@ -191,6 +190,28 @@ docker ps
 Congratulations! Bitwarden is now up and running at `https://your.domain.com`. Visit the web vault in your web browser to confirm that it’s working.
 
 You may now register a new account and log in. You will need to have configured `smtp` environment variables (see [Environment Variables]({{site.baseurl}}/article/environment-variables/)) in order to verify the email for your new account.
+
+## Start Docker on Boot
+
+Docker Desktop will only automatically start on boot if you have a logged-in RDP session. To start Docker Desktop on boot regardless of whether there is a user logged in:
+
+{% callout warning %}
+Docker Desktop may take up to 15 minutes after boot to fully start and for containers to be accessible from the network.
+{% endcallout %}
+
+1. Open Task Scheduler and select **Create Task...** from the Actions menu.
+2. Configure the task with the following Security options:
+
+   - Set the task to use the [created](#create-bitwarden-local-user--directory) `Bitwarden` user account.
+   - Set the task to **Run whether user is logged on or not**.
+3. Select the **Triggers** tab and create the following trigger:
+
+   - From the Begin the task dropdown, select **At startup**.
+   - In the Advanced settings section, check the **Delay task for:** checkbox and select **1 minute** from the dropdown.
+4. Select the **Actions** tab and create the following action:
+
+   - In the Program/script input, specify `"C:\Program Files\Docker\Docker\Docker Desktop.exe"`.
+5. Select **OK** to finish creating the scheduled task.
 
 ## Script Commands Reference
 
