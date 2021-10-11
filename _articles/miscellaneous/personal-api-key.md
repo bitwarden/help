@@ -41,9 +41,9 @@ Logging in to the CLI with the Personal API Key is **recommended for automated w
 bw login --apikey
 ```
 
-This will initiate a prompt for your personal `client_id` and `client_secret`. Once your session is authenticated using these values, you'll be prompted to enter your Master Password to unlock your Vault.
+This will initiate a prompt for your personal `client_id` and `client_secret`. Once your session is authenticated using these values, you'll be prompted to use the `unlock` command ([learn more]({{site.baseurl}}/article/cli/#unlock)).
 
-#### Use Environment Variables in Automated Workflows
+#### Using API Key Environment Variables
 
 In scenarios where automated work is being done with the Bitwarden CLI, you can save environment variables to prevent the need for manual intervention at authentication.
 
@@ -51,19 +51,3 @@ In scenarios where automated work is being done with the Bitwarden CLI, you can 
 |-------------------------|--------------|
 |BW_CLIENTID|`client_id`|
 |BW_CLIENTSECRET|`client_secret`|
-
-
-You can also use the `--passwordenv <passwordenv>` or `--passwordfile <passwordfile>` options to retrieve your Master Password rather than enter it manually. The following examples demonstrate how these can be strung together to log in without intervention:
-
-1. ```
-bw login --apikey --passwordenv BW_PASSWORD
-```
-
-   will look for three environment variables (`BW_CLIENTID`, `BW_CLIENTSECRET`, and `BW_PASSWORD`). If all three are non-empty and have correct values, the CLI will successfully log in **and unlock**.
-2. ```
-bw login --apikey --passwordfile ~/Users/Me/Documents/mp.txt
-```
-
-   will look for two environment variables (`BW_CLIENTID` and `BW_CLIENTSECRET`) and the file `~Users/Me/Documents/mp.txt` (which must have your Master Password as the first line). If all three are non-empty and have correct values, the CLI will successfully log in **and unlock**.
-
-   {% callout warning %}If you use the `--passwordfile` option, make sure your password file is protected.{% endcallout %}

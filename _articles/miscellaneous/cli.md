@@ -137,7 +137,9 @@ There are three methods for logging in to the Bitwarden CLI using the `login` co
 - [Using SSO](#using-sso)
 
 {% callout success %}
-All three methods require you to provide your Master Password **if you will be working with Vault data directly**. Your Master Password is the source of your decryption key, so Vault data cannot be decrypted (**unlocked**) without it. There are, however, a few commands that do not require your Vault to be decrypted, including `config`, `encode`, and `generate`, `update`, and `status`.
+Logging in [Using Email and Password](#using-email-and-password) uses your Master Password and can therefore string together the `login` and `unlock` commands to authenticate your identity and decrypt your Vault in tandem. [Using an API Key](#using-an-api-key) or [SSO](#using-sso) will require you to follow-up the `login` command with an explicit `bw unlock` if you will be working with Vault data directly.
+
+This is because your Master Password is the source of the key needed to decrypt Vault data. There are, however, a few commands that do not require your Vault to be decrypted, including `config`, `encode`, and `generate`, `update`, and `status`.
 {% endcallout %}
 
 ### Using Email and Password
@@ -170,9 +172,9 @@ Logging in with the [Personal API Key]({{site.baseurl}}/article/personal-api-key
 bw login --apikey
 ```
 
-This will initiate a prompt for your personal `client_id` and `client_secret`. Once your session is authenticated using these values, you'll be prompted to enter your Master Password to unlock your Vault.
+This will initiate a prompt for your personal `client_id` and `client_secret`. Once your session is authenticated using these values, you'll be prompted to use the `unlock` command ([learn more](#unlock)).
 
-#### Use Environment Variables in Automated Workflows
+#### Using API Key Environment Variables
 
 In scenarios where automated work is being done with the Bitwarden CLI, you can save environment variables to prevent the need for manual intervention at authentication.
 
@@ -180,21 +182,6 @@ In scenarios where automated work is being done with the Bitwarden CLI, you can 
 |-------------------------|--------------|
 |BW_CLIENTID|`client_id`|
 |BW_CLIENTSECRET|`client_secret`|
-
-You can also use the `--passwordenv <passwordenv>` or `--passwordfile <passwordfile>` options to retrieve your Master Password rather than enter it manually. The following examples demonstrate how these can be strung together to log in without intervention:
-
-1. ```
-bw login --apikey --passwordenv BW_PASSWORD
-```
-
-   will look for three environment variables (`BW_CLIENTID`, `BW_CLIENTSECRET`, and `BW_PASSWORD`). If all three are non-empty and have correct values, the CLI will successfully log in **and unlock**.
-2. ```
-bw login --apikey --passwordfile ~/Users/Me/Documents/mp.txt
-```
-
-   will look for two environment variables (`BW_CLIENTID` and `BW_CLIENTSECRET`) and the file `~Users/Me/Documents/mp.txt` (which must have your Master Password as the first line). If all three are non-empty and have correct values, the CLI will successfully log in **and unlock**.
-
-   {% callout warning %}If you use the `--passwordfile` option, make sure your password file is protected.{% endcallout %}
 
 ### Using SSO
 
@@ -204,27 +191,40 @@ Logging in with the [SSO]({{site.baseurl}}/article/about-sso/) is **recommended 
 bw login --sso
 ```
 
-This will initiate the [SSO authentication flow]({{site.baseurl}}/article/using-sso/#login-using-sso) in your web browser. Once your session is authenticated using these values, you'll be prompted to enter your Master Password to unlock your Vault.
+This will initiate the [SSO authentication flow]({{site.baseurl}}/article/using-sso/#login-using-sso) in your web browser. Once your session is authenticated, you'll be prompted to use the `unlock` command ([learn more](#unlock)).
 
-## Session Management
+## Unlock
 
-In the CLI, unlocking your Vault using your Master Password generates a **session key** which acts as the decryption key used to interact with data in your Vault. The [session key must be used](#using-a-session-key) to perform any command that touches Vault data (e.g. `list`, `get`, `edit`). You can generate a new session key at any time using:
+[Using an API Key](#using-an-api-key) or [SSO](#using-sso) to log in will require you to follow-up the `login` command with an explicit `bw unlock` if you will be working with Vault data directly.
+
+Unlocking your Vault generates a **session key** which acts as a session-specific decryption key used to interact with data in your Vault. The [session key must be used](#using-a-session-key) to perform any command that touches Vault data (e.g. `list`, `get`, `edit`). Generate a new session key at any time using:
 
 ```
 bw unlock
 ```
 
-You can also **lock** (i.e. destroy any active session key) using:
+### Unlock Options
 
+You can use the `--passwordenv <passwordenv>` or `--passwordfile <passwordfile>` options with `bw unlock` to retrieve your Master Password rather than enter it manually as in the following examples:
+
+1. ```
+bw unlock --passwordenv BW_PASSWORD
 ```
-bw lock
+
+   will look for an environment variable `BW_PASSWORD`. If `BW_PASSWORD` is non-empty and has correct values, the CLI will successfully and unlock and return a session key.
+2. ```
+bw unlock --passwordfile ~/Users/Me/Documents/mp.txt
 ```
+
+   will look for the file `~Users/Me/Documents/mp.txt` (which must have your Master Password as the first line). If the file is non-empty and has a correct value, the CLI will successfully unlock and return a session key.
+
+   {% callout warning %}If you use the `--passwordfile` option, protect your password file by locking access down to only the user who needs run `bw unlock` and only providing read access to that user.{% endcallout %}
 
 ### Using a Session Key
 
-The typical way to use a session key is to set a `BW_SESSION` environment variable with the session key's value. When you log in and unlock your Vault using any one of the [above methods](#log-in), the CLI will return both a `export BW_SESSION` (Bash) and `env:BW_SESSION` (PowerShell) command, including your session key, that can be easily copied and pasted to save the required environment variable.
+When you unlock your Vault using `bw login` with [email and password](#using-email-and-password) or `bw unlock`, the CLI will return both a `export BW_SESSION` (Bash) and `env:BW_SESSION` (PowerShell) command, including your session key. Copy and paste the relevant entry to save the required environment variable.
 
-When you set the `BW_SESSION` environment variable, `bw` commands will reference that variable and can be run cleanly, for example:
+With the `BW_SESSION` environment variable set, `bw` commands will reference that variable and can be run cleanly, for example:
 
 ```
 export BW_SESSION="5PBYGU+5yt3RHcCjoeJKx/wByU34vokGRZjXpSH7Ylo8w=="
@@ -232,16 +232,14 @@ export BW_SESSION="5PBYGU+5yt3RHcCjoeJKx/wByU34vokGRZjXpSH7Ylo8w=="
 bw list items
 ```
 
-The `BW_SESSION` environment variable is only tied to the active terminal session, so closing your terminal window is equivalent to locking your Vault.
-
 Alternatively, if you don't set the environment variable, you can pass the session key as an option with each `bw` command:
 
 ```
 bw list items --session "5PBYGU+5yt3RHcCjoeJKx/wByU34vokGRZjXpSH7Ylo8w=="
 ```
 
-{% callout info %}
-It is *possible* to persist your session key to your environment (for example, exporting it in `.bashrc`), however, **we do not recommend doing so**. Considering their use, session keys are not well-suited to persisting on an unprotected disk.
+{% callout success %}
+The `BW_SESSION` environment variable is only tied to the active terminal session, so closing your terminal window is equivalent to locking your Vault.
 {% endcallout %}
 
 ## Core Commands
