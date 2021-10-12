@@ -11,7 +11,7 @@ The August 2021 release of Bitwarden (**2021-09-21**) introduced [Captcha](https
 
 
 {% callout success %}
-**For automated workflows or for providing access to an external application**, we recommend using the `bw login --apikey` method, as this will automatically bypass Captcha challenges. [Learn more]({{site.baseurl}}/article/cli/#using-an-api-key).
+**For automated workflows or for providing access to an external application**, we recommend using the `bw login --apikey` [method]({{site.baseurl}}/article/cli/#using-an-api-key). This method follows a more predictable authentication flow and revoking an application or machine's access can be achieved by rotating the [API Key]({{site.baseurl}}/article/personal-api-key/#rotate-your-api-key).
 {% endcallout %}
 
 ## Get your Personal API Key
