@@ -172,7 +172,7 @@ Logging in with the [Personal API Key]({{site.baseurl}}/article/personal-api-key
 bw login --apikey
 ```
 
-This will initiate a prompt for your personal `client_id` and `client_secret`. Once your session is authenticated using these values, you'll be prompted to use the `unlock` command ([learn more](#unlock)).
+This will initiate a prompt for your personal `client_id` and `client_secret`. Once your session is authenticated using these values, you can use the `unlock` command ([learn more](#unlock)).
 
 #### Using API Key Environment Variables
 
@@ -191,7 +191,7 @@ Logging in with the [SSO]({{site.baseurl}}/article/about-sso/) is **recommended 
 bw login --sso
 ```
 
-This will initiate the [SSO authentication flow]({{site.baseurl}}/article/using-sso/#login-using-sso) in your web browser. Once your session is authenticated, you'll be prompted to use the `unlock` command ([learn more](#unlock)).
+This will initiate the [SSO authentication flow]({{site.baseurl}}/article/using-sso/#login-using-sso) in your web browser. Once your session is authenticated, you can use the `unlock` command ([learn more](#unlock)).
 
 ## Unlock
 
