@@ -6,7 +6,7 @@ featured: true
 popular: true
 hidden: false
 tags: []
-order: "13"
+order: "14"
 redirect_from:
   - /article/what-hosted-plaforms-are-supported/
 ---

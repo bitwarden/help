@@ -1,18 +1,18 @@
 ---
 layout: article
-title: Install and Deploy
+title: Install and Deploy - Linux
 categories: [hosting]
 featured: false
 popular: false
 tags: [hosting, docker, install, deploy]
 order: "01"
+redirect_from:
+  - /article/install-on-premise/
 ---
 
-This article will walk you through the procedure to install and deploy Bitwarden to your own server. Bitwarden can be installed and deployed on Linux, macOS, and Windows machines.
+This article will walk you through the procedure to install and deploy Bitwarden to your own Linux Server. Bitwarden can also be installed and deployed on [Windows]({{site.baseurl}}/article/install-on-premise-windows) machines.
 
 ## System Specifications
-
-Use the following table to check the **Minimum** and **Recommended** specifications when deploying Bitwarden to your own server:
 
 |    |Minimum|Recommended|
 |----|-------|-----------|
@@ -21,19 +21,22 @@ Use the following table to check the **Minimum** and **Recommended** specificati
 |Storage|10GB|25GB|
 |Docker Version|Engine 19+ and Compose 1.24+|Engine 19+ and Compose 1.24+|
 
+{% callout success %}
 If you are looking for a quality provider with affordable prices, we recommend **Digital Ocean**.
+{% endcallout %}
 
 ## TL;DR
 
 The following is a summary of the Installation Procedure in this article. Links in this section will jump to detailed **Installation Procedure** sections:
 
 1. [**Configure your Domain**](#configure-your-domain). Set DNS records for a domain name pointing to your machine, and open ports 80 and 443 on the machine.
-2. [**Install Docker and Docker Compose**](#install-docker-and-docker-compose) on your machine, and complete the optional [**Docker Post-Installation**](#docker-post-installation-linux-only).
+2. [**Install Docker and Docker Compose**](#install-docker-and-docker-compose) on your machine.
+3. [**Create a Bitwarden User & Directory**](#create-bitwarden-local-user--directory) from which to complete installation.
 3. Retrieve an installation id and key from [**https://bitwarden.com/host**](https://bitwarden.com/host){:target="_blank"} for use in installation.
 
    For more information, see [What are my installation id and installation key used for?]({{site.baseurl}}/article/hosting-faqs/#general).
 4. [**Install Bitwarden**](#install-bitwarden) on your machine.
-5. [**Configure your Environment**](#configure-your-environment) by adjusting settings in `./bwdata/env/global.override.env`.
+5. [**Configure your Environment**](#post-install-configuration) by adjusting settings in `./bwdata/env/global.override.env`.
    {% callout success %}At a minimum, configure the `globalSettings__mail__smtp...` variables to setup an email server for inviting and verifying users.{% endcallout %}
 6. [**Start your instance**](#start-bitwarden).
 6. Test your installation by opening your configured domain in a Web Browser.
@@ -44,26 +47,22 @@ The following is a summary of the Installation Procedure in this article. Links 
 
 By default, Bitwarden will be served through ports 80 (`http`) and 443 (`https`) on the host machine. Open these ports so that Bitwarden can be accessed from within and/or outside of the network. You may opt to choose different ports during installation.
 
-{% callout success %}
-**If you're using Windows Firewall**, Docker Desktop for Windows will not automatically add an exception for itself in Windows Firewall. Add exceptions for TCP ports 80 and 443 (or chosen alternative ports) to prevent some errors.
-{% endcallout %}
-
-Bitwarden recommends configuring a domain name with DNS records that point to your host machine (for example, `bitwarden.example.com`), especially if you are serving Bitwarden over the internet.
+We recommend configuring a domain name with DNS records that point to your host machine (for example, `bitwarden.example.com`), especially if you are serving Bitwarden over the internet.
 
 ### Install Docker and Docker Compose
 
 Bitwarden will be deployed and run on your machine using an array of [Docker containers](https://docs.docker.com/get-started/){:target="_blank"}. Bitwarden can be run with any Docker Edition or plan. Evaluate which edition is best for your installation.
 
-Deployment of containers is orchestrated using [Docker Compose](https://docs.docker.com/compose/){:target="_blank"}. Some Docker installations, including Windows and macOS, come with Docker Compose already installed.
+Deployment of containers is orchestrated using [Docker Compose](https://docs.docker.com/compose/){:target="_blank"}. Some Docker installations, including Docker for macOS, come with Docker Compose already installed.
 
 **Install Docker and Docker Compose on your machine before proceeding with installation.** Refer to the following Docker documentation for help:
 
 - [Install Docker Engine](https://docs.docker.com/engine/installation/){:target="_blank"}
 - [Install Docker Compose](https://docs.docker.com/compose/install/){:target="_blank"}
 
-### Docker Post-Installation (*Linux Only*)
+### Create Bitwarden Local User & Directory
 
-Bitwarden recommends configuring your Linux server with a dedicated `bitwarden` service account, from which to install and run Bitwarden. Doing so will isolate your bitwarden instance from other applications running on your server.
+We recommend configuring your Linux server with a dedicated `bitwarden` service account, from which to install and run Bitwarden. Doing so will isolate your Bitwarden instance from other applications running on your server.
 
  **These steps are Bitwarden-recommended best practices, but are not required.** For more information, see Docker's [Post-installation steps for Linux](https://docs.docker.com/engine/install/linux-postinstall/){:target="\_blank"} documentation.
 
@@ -107,29 +106,21 @@ Bitwarden recommends configuring your Linux server with a dedicated `bitwarden` 
 
 Bitwarden provides a shell script for easy installation on Linux and macOS (Bash), or Windows (PowerShell). Complete the following steps to install Bitwarden using the shell script:
 
-(*Linux Only*) If you've completed the [Docker Post-Installation](#docker-post-installation) steps, do so as the `bitwarden` user from the `/opt/bitwarden` directory.
+{% callout success %}
+If you've [created a Bitwarden User & Directory](#create-bitwarden-local-user--directory), complete the following as the `bitwarden` user from the `/opt/bitwarden` directory.
+{% endcallout %}
 
 1. Download the Bitwarden installation script (`bitwarden.sh`) to your machine:
 
-    {% icon fa-linux %} {% icon fa-apple %} Bash
-
-       curl -Lso bitwarden.sh https://go.btwrdn.co/bw-sh \
-           && chmod 700 bitwarden.sh
-
-    {% icon fa-windows %} PowerShell
-
-       Invoke-RestMethod -OutFile bitwarden.ps1 `
-           -Uri https://go.btwrdn.co/bw-ps
+   ```
+   curl -Lso bitwarden.sh https://go.btwrdn.co/bw-sh && chmod 700 bitwarden.sh
+   ```
 
 2. Run the installer script. A `./bwdata` directory will be created relative to the location of `bitwarden.sh`.
 
-    {% icon fa-linux %} {% icon fa-apple %} Bash
-
-       ./bitwarden.sh install
-
-    {% icon fa-windows %} PowerShell
-
-       .\bitwarden.ps1 -install
+   ```
+   ./bitwarden.sh install
+   ```
 
 3. Complete the prompts in the installer:
 
@@ -159,29 +150,13 @@ Bitwarden provides a shell script for easy installation on Linux and macOS (Bash
 
      If you specify `n`, your instance will not use an SSL certificate and you will be required to front your installation with a HTTPS proxy, or else Bitwarden applications will not function properly.
 
-### Configure your Environment
+### Post-Install Configuration
 
-Configuring your environment involves two procedures; Installation Configuration and Environment Variable Configuration. The degree to which you will be required to configure your environment will depend on your unique needs.
+Configuring your environment can involve making changes to two files; an [environment variables file](#environment-variables) and an [installation file](#installation-configuration):
 
-#### Installation Configuration
+#### Environment Variables (*Required*)
 
-The Bitwarden installation script uses settings in `./bwdata/config.yml` to generate the necessary assets for installation. Some installation scenarios (e.g. installations behind a proxy with alternate ports) may require adjustments to `config.yml` that were not provided during standard installation.
-
-Edit `config.yml` as necessary, and apply changes using one of the following commands:
-
-{% icon fa-linux %} {% icon fa-apple %} Bash
-
-    ./bitwarden.sh rebuild
-
-{% icon fa-windows %} PowerShell
-
-    .\bitwarden.ps1 -rebuild
-
-#### Environment Variables
-
-Some features of Bitwarden are not configured by the `bitwarden.sh` installer. Configure these settings by editing the environment file, located at `./bwdata/env/global.override.env`.
-
-**At a minimum, you should replace the values for:**
+Some features of Bitwarden are not configured by the `bitwarden.sh` script. Configure these settings by editing the environment file, located at `./bwdata/env/global.override.env`. **At a minimum, you should replace the values for:**
 
 ```
 ...
@@ -192,36 +167,34 @@ globalSettings__mail__smtp__username=<placeholder>
 globalSettings__mail__smtp__password=<placeholder>
 ...
 adminSettings__admins=
+...
 ```
 
-Replacing `globalSettings__mail__smtp...=` placeholders will configure the SMTP Mail Server settings that will be used to verify new users and send invitations.
+Replacing `globalSettings__mail__smtp...=` placeholdesr will configure the SMTP Mail Server that will be used to send verification emails to new users and invitations to Organizations. Adding an email address to `adminSettings__admins=` will provision access to the Admin Portal.
 
-Adding an email address to `adminSettings__admins=` will provision access to the Admin Portal.
+After editing `global.override.env`, run the following command to apply your changes:
 
-After editing `global.override.env`, run one of the following commands to apply your changes:
+```
+./bitwarden.sh restart
+```
 
-{% icon fa-linux %} {% icon fa-apple %} Bash
+#### Installation File
 
-    ./bitwarden.sh restart
+The Bitwarden installation script uses settings in `./bwdata/config.yml` to generate the necessary assets for installation. Some installation scenarios (e.g. installations behind a proxy with alternate ports) may require adjustments to `config.yml` that were not provided during standard installation.
 
-{% icon fa-windows %} PowerShell
+Edit `config.yml` as necessary and apply your changes by running:
 
-    .\bitwarden.ps1 -restart
-
-For more information about configuring Environment Variables, see [Configure Environment Variables]({{site.baseurl}}/article/environment-variables/).
+```
+./bitwarden.sh rebuild
+```
 
 ### Start Bitwarden
 
 Once you've completed all previous steps, start your Bitwarden instance:
 
-{% icon fa-linux %} {% icon fa-apple %} Bash
-
-    ./bitwarden.sh start
-
-{% icon fa-windows %} PowerShell
-
-    .\bitwarden.ps1 -start
-
+```
+./bitwarden.sh start
+```
 
 {% callout info %}
 The first time you start Bitwarden it may take some time as it downloads all of the images from Docker Hub.
