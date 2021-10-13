@@ -71,7 +71,7 @@ Enabling the **Password Generator** policy will enforce a configurable set of mi
 {% callout warning %}
 Existing non-compliant passwords **will not** be changed when this policy is enabled, nor will the items be removed from the Organization. When changing or generating a password after this policy is enabled, configured policy rules will be enforced.
 
-A banner is displayed to users on the Password Generator screen to indicate that a policy will affect their generator settings.
+A banner is displayed to users on the Password Generator screen to indicate that a policy is affecting their generator settings.
 {% endcallout %}
 
 ### Single Organization
@@ -98,7 +98,7 @@ As a result, you must disable the **Single Sign-On Authentication** policy befor
 
 Enabling the **Personal Ownership** policy will require non-Owner/non-Admin users to save Vault Items to an Organization by disabling personal ownership of Vault items for organization users.
 
-A banner is displayed to users on the Add Item screen indicating that a policy will affect their ownership options.
+A banner is displayed to users on the Add Item screen indicating that a policy is affecting their ownership options.
 
 {% callout info %}
 Vault Items that were created prior to the implementation of this policy or prior to joining the Organization will remain in the user's personal Vault.
@@ -129,3 +129,21 @@ Enabling the **Automatic Enrollment** option will automatically enroll new users
 {% callout info %}
 Users already in the Organization will not be retroactively enrolled in Password Reset, and will be required to [self-enroll]({{site.baseurl}}/article/admin-reset/#self-enroll-in-password-reset).
 {% endcallout %}
+
+### Vault Timeout
+
+Enabling the **Vault Timeout** policy will implement a maximum [Vault Timeout]({{site.baseurl}}/article/vault-timeout/#vault-timeout-time-constraint) duration for all members of your Organization. This policy applies the timeout restriction to all client applications (Mobile, Desktop, Browser Extension, etc.).
+
+A banner is displayed to users during Vault Timeout configuration indicating that a policy is affecting their options.
+
+{% callout info %}
+The **Single Organization** policy must be enabled before activating this policy.
+
+As a result, you must disable the **Vault Timewout** policy before you can disable the **Single Organization** policy.
+{% endcallout %}
+
+### Disable Personal Vault Export
+
+Enabling the **Disable Personal Vault Export** policy will prohibit all members of your Organization from [exporting their private Vault data]({{site.baseurl}}/article/export-your-data/#export-a-personal-vault).
+
+In the Web Vault and CLI, a message is displayed to users indicating that a policy is affecting their options. In other clients, the option will simply be disabled.
