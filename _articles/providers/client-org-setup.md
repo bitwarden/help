@@ -30,7 +30,7 @@ To create a Client Organization you must be a [Provider Admin]({{site.baseurl}}/
    {% callout success %}Teams and Enterprise Organizations include premium features for all enrolled users.{% endcallout %}
 4. Set the following options for the Organization:
 
-   - **User Seats**: Specify the number of User Seats you need for the Client Organization. You can always add more seats later.
+   - **User Seats**: Specify the number of User Seats you need for the Client Organization. Seats will be added if you exceed this number, unless you [specify a limit]({{site.baseurl}}/article/managing-users/#set-a-seat-limit).
    - **Additional Storage (GB)**: Organizations come with 1GB of encrypted [storage for attachments]({{site.baseurl}}/article/attachments/). Add additional storage for $0.33 per GB per month.
    - **Billing Cadence**: Choose whether you'd like to be billed for this Organization Annually or Monthly.
 

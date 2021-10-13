@@ -34,7 +34,7 @@ If you already have a Bitwarden account, complete the following steps to start y
    - Check the **This account is owned by a business** checkbox.
    - Provide your **Business Name**.
 5. Select the **Enterprise** plan option. Doing so will trigger additional enterprise-oriented fields to be displayed.
-6. In the **Users** section, enter the number of **User Seats** you need. You can add additional seats later if required.
+6. In the **Users** section, enter the number of **User Seats** you need. Seats will be added if you exceed this number, unless you [specify a limit]({{site.baseurl}}/article/managing-users/#set-a-seat-limit).
 7. In the **Addons** section, enter the amount of **Additional Storage (GB)** you need. Your plan comes with 1 GB of shared encrypted file attachments, and you can add additional storage later if required.
 8. In the **Summary** section, select whether you'd like to be billed **Annually** or **Monthly**.
 9. Enter your **Payment Information** and select **Submit**.

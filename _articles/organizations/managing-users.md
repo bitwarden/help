@@ -10,33 +10,46 @@ redirect_from:
   - /article/user-seats/
 ---
 
-## Manage User Seats
+## User Seats
 
-Bitwarden [Teams and Enterprise Organizations]({{site.baseurl}}/article/about-organizations/#types-of-organizations) allow you to add or remove user seats on-the-fly to best fit your business's needs. Only an [Organization Owner]({{site.baseurl}}/article/user-types-access-control/#user-types) or [Provider Service User]({{site.baseurl}}/article/provider-users/#provider-user-types) can add and remove seats, as this directly affects billing.
+Bitwarden [Teams and Enterprise Organizations]({{site.baseurl}}/article/about-organizations/#types-of-organizations) will **automatically scale up** user seats as you [invite](#invite) new users. You can set a [seat limit](#seat-limit) on scaling to prevent your seat count from exceeding a specified number, or [manually add seats](#manually-add-or-remove-seats) as desired. Regardless of how you choose to add seats, you will need to [manually remove](#manually-add-or-remove-seats) seats you're no longer using.
+
+Adding and removing user seats will adjust your future billing totals. Adding seats will immediately charge your payment method on file at an adjusted rate so that **you'll only pay for the remainder of the billing cycle** (month/year). Removing seats will cause your next charge to be adjusted so that you're **credited for time not used** by the already-paid-for seat.
 
 {% callout info %}
-If you have a [Free or Families Organization]({{site.baseurl}}/article/about-organizations/#types-of-organizations), your user seats are pre-loaded and fixed at 2 and 6, respectively.
+Only an an [Organization Owner]({{site.baseurl}}/article/user-types-access-control/#user-types) or [Provider Service User]({{site.baseurl}}/article/provider-users/#provider-user-types) can add or remove seats, as this directly affects billing.
 {% endcallout %}
 
-### Add Seats
+### Set a Seat Limit
 
-To add seats to your Organization:
-
-1. Log in to your [Web Vault]({{site.baseurl}}/article/getting-started-webvault) and open your Organization.
-2. Open the **Settings** tab and select **Subscription** from the left-hand menu.
-3. Select the **Add Seats** button.
-
-Adding user seats will adjust your future billing totals and immediately charge your payment method on file. That immediate charge will be pro-rated such that you'll only pay for the remainder of the billing cycle (month/year).
-
-### Remove Seats
-
-To remove seats from your Organization:
+To set a limit on the number of seats your Organization can scale up to:
 
 1. Log in to your [Web Vault]({{site.baseurl}}/article/getting-started-webvault) and open your Organization.
 2. Open the **Settings** tab and select **Subscription** from the left-hand menu.
-3. Select the **Add Seats** button.
+3. Check the **Limit Subscription (Optional)** checkbox:
 
-Removing user seats will adjust your future billing totals. The next charge will be pro-rated such that you are credited back for time not used by the already-paid-for seat.
+   {% image organizations/user-seats.png Set a Seat Limit %}
+4. In the **Maximum Seat Limit (Optional)** input, specify a seat limit.
+5. Select **Save**.
+
+{% callout info %}
+Once the specified limit is reached, you will not be able to invite new users unless you increase the limit.
+{% endcallout %}
+
+### Manually Add or Remove Seats
+
+To manually add or remove seats to your Organization:
+
+1. Log in to your [Web Vault]({{site.baseurl}}/article/getting-started-webvault) and open your Organization.
+2. Open the **Settings** tab and select **Subscription** from the left-hand menu.
+3. In the **Subscription Seats** input, add or remove seats using the hover-over arrows:
+
+   {% image organizations/user-seats-add-remove.png Add or Remove Users Seats %}
+4. Select **Save**.
+
+{% callout info %}
+If you're increasing your **Subscription Seats** above a  specified **Maximum Seat Limit**, you must also increase the seat limit so that it is equal to or greater than the desired subscription seat count.
+{% endcallout %}
 
 ## Onboard Users
 

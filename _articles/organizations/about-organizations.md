@@ -58,7 +58,7 @@ Organizations are created and managed from the [Web Vault]({{site.baseurl}}/arti
 4. If you chose a **Free Organization**, you're all set! If you chose one of our paid Organizations,
 
    - **Families/Teams/Enterprise:** Your plan comes with 1GB of encrypted [storage for attachments]({{site.baseurl}}/article/attachments/). Add **Additional Storage (GB)** for $0.33 per GB per month.
-   - **Teams/Enterprise:** Specify the number of **User Seats** you need for your Organization. You can always add more seats later.
+   - **Teams/Enterprise:** Specify the number of **User Seats** you need for your Organization. Seats will be added if you exceed this number, unless you [specify a limit]({{site.baseurl}}/article/managing-users/#set-a-seat-limit).
    - **Teams/Enterprise:** Choose whether you'd like to be billed **Annually** or **Monthly**. Families Organizations can only be billed annually.
 5. Once you're happy with your Organization, enter your **Payment Information** and select **Submit**.
 
