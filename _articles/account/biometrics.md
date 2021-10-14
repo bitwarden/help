@@ -127,7 +127,7 @@ To enable Unlock with Biometrics for your Browser Extension:
 
    You should be prompted by your Desktop app to input your biometric. Doing so will complete the initial setup procedure. If you've opted to require verification (**Step 2**), you'll need to approve a fingerprint validation check.
 
-Once enabled, a new button will be presented on the Unlock screen:
+Once enabled, the Browser Extension will automatically prompt for your biometric when you open it. You can disable the automatic prompt from the {% icon fa-cogs %} **Settings** menu and instead use the **Unlock with biometrics** button on the Unlock screen:
 
 {% image biometrics/be-bio-unlock.png Unlock with Biometrics %}
 
