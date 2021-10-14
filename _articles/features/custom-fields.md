@@ -30,11 +30,13 @@ Custom fields can be added to a Vault item from any Bitwarden client using the *
 
 ### Custom Field Names
 
-The specified **Name** is important to get right in order to successfully auto-fill a custom field. Using the Browser Extension, you can quickly get the correct field name using the **Copy Custom Field Name** option in the context menu (in most cases, by right-clicking on the form element):
+The specified **Name** is important to get right in order to successfully [auto-fill a custom field]({{site.baseurl}}/article/auto-fill-custom-fields/). Using the Browser Extension, you can quickly get the correct field name using the **Copy Custom Field Name** option in the context menu (in most cases, by right-clicking on the form element):
 
 {% image features/custom-fields-contextmenu.png %}
 
 Selecting this context menu option will copy the form element's `id`, `name`, `aria-label`, or `placeholder` value (**in that order of preference**).
+
+Once you've saved a custom field, you can [auto-fill it from the Browser Extension]({{site.baseurl}}/article/auto-fill-custom-fields/).
 
 #### Find Custom Field Names Manually
 
@@ -52,6 +54,8 @@ If you don't use the Browser Extension, the best way to find a field name is to 
 
    {% image features/custom-fields/custom-field-eg.png Custom field example %}
 6. Save the Vault item.
+
+Once you've saved a custom field, you can [auto-fill it from the Browser Extension]({{site.baseurl}}/article/auto-fill-custom-fields/).
 
 ### More About Custom Field Names
 
