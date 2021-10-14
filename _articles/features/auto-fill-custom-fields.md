@@ -29,7 +29,7 @@ The Browser Extension will find any fields that match the [custom field name]({{
 
 ## Special Auto-fill Scenarios
 
-### HTML <span> Elements
+### HTML `<span>` Elements
 
 Typically custom fields are auto-filled in HTML `<form>` or `<input>` elements, however Bitwarden Browser Extensions can auto-fill custom field values into the `innerText` of HTML `<span>` elements as well.
 

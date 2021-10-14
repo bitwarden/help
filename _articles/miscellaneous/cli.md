@@ -658,6 +658,8 @@ You can generate a complex passphrase using the options available to the command
 
 - `--words <words>` (number of words)
 - `--separator <separator>` (separator character)
+- `--capitalize, -c` (include to title-case the passphrase)
+- `--includeNumber` (include numbers in the passphrase)
 
 ### update
 
