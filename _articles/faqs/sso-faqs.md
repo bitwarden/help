@@ -10,9 +10,7 @@ order: "07"
 ---
 This article contains Frequently Asked Questions (FAQs) regarding **Login with SSO**.
 
-For more high-level information about **Login with SSO**, refer to the following articles:
-- [Getting Started with Login with SSO]({{site.baseurl}}/article/getting-started-with-sso/)
-- [About the Business Portal]({{site.baseurl}}/article/about-business-portal/)
+For more high-level information about **Login with SSO**, refer to [About Login with SSO]({{site.baseurl}}/article/about-sso/)
 
 ## Using Login with SSO
 

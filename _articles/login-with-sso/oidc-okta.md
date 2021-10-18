@@ -10,13 +10,13 @@ order:
 ---
 This article contains **Okta-specific** help for configuring Login with SSO via OpenID Connect (OIDC). For help configuring Login with SSO for another OIDC IdP, or for configuring Okta via SAML 2.0, see [OIDC Configuration]({{site.baseurl}}/article/configure-sso-oidc/) or [Okta SAML Implementation]({{site.baseurl}}/article/saml-okta/).
 
-Configuration involves working simultaneously within the Bitwarden [Business Portal]({{site.baseurl}}/article/about-business-portal/) and the Okta Admin Portal. As you proceed, we recommend having both readily available and completing steps in the order they're documentated.
+Configuration involves working simultaneously within the Bitwarden Web Vault and the Okta Admin Portal. As you proceed, we recommend having both readily available and completing steps in the order they're documentated.
 
-## Open the Business Portal
+## Open SSO in the Web Vault
 
-If you're coming straight from [OIDC Configuration]({{site.baseurl}}/article/configure-sso-oidc/), you should already have an **Organization ID** created and SSO **Enabled**. If you don't, follow [steps 1 and 2 of that document]({{site.baseurl}}/article/configure-sso-oidc/) and return to this document.
+If you're coming straight from [OIDC Configuration]({{site.baseurl}}/article/configure-sso-oidc/), you should already have an [Organization ID created]({{site.baseurl}}/article/configure-sso-oidc/#step-1-enabling-login-with-sso). If you don't refer to that article to create an Organization ID for SSO.
 
-Open your [Business Portal]({{site.baseurl}}/article/about-business-portal/) and navigate to the SSO Configuration screen:
+Navigate to your Organization's **Manage** &rarr; **Single Sign-On** screen:
 
 {% image sso/sso-oidc1.png OIDC Configuration %}
 
@@ -46,7 +46,7 @@ On the Application screen, copy the **Client ID** and **Client secret** for the 
 
 {% image sso/cheatsheets/oidc-okta/okta-clientcredentials.png App Client Credentials %}
 
-You'll need to use both values [during a later step](#bitwarden-business-portal-configuration).
+You'll need to use both values [during a later step](#back-to-the-web-vault).
 
 ### Get Authorization Server Information
 
@@ -54,11 +54,11 @@ Select **Security** &rarr; **API** from the navigation. From the **Authorization
 
 {% image sso/cheatsheets/oidc-okta/okta-authserver.png Okta Authorization Server Settings %}
 
-You'll need to use both values [during the next step](#bitwarden-business-portal-configuration).
+You'll need to use both values [during the next step](#back-to-the-web-vault).
 
-## Bitwarden Business Portal Configuration
+## Back to the Web Vault
 
-At this point, you've configured everything you need within the context of the Okta Admin Portal. Jump back over to the Bitwarden Business Portal to configure the following fields:
+At this point, you've configured everything you need within the context of the Okta Admin Portal. Jump back over to the Bitwarden Web Vault to configure the following fields:
 
 |Field|Description|
 |-----|-----------|

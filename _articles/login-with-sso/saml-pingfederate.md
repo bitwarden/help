@@ -19,8 +19,8 @@ The following is a sample SAML 2.0 implementation with Bitwarden in the PingFede
 
 {% image sso/cheatsheets/saml-pingfederate/saml-pingfederate.png %}
 
-## Bitwarden Business Portal
+## Bitwarden SSO Screen
 
-The following is a sample SAML 2.0 implementation with PingFederate in the Bitwarden Business Portal:
+The following is a sample SAML 2.0 implementation with PingFederate in the Bitwarden Single Sign-On screen:
 
 {% image sso/cheatsheets/saml-pingfederate/saml-pingfederate-bitwarden.png %}

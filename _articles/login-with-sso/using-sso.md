@@ -5,7 +5,7 @@ categories: [login-with-sso]
 featured: false
 popular: false
 tags: [sso]
-order: 04
+order: "04"
 redirect_from:
   - /article/link-to-sso/
   - /article/sso-access-your-vault/

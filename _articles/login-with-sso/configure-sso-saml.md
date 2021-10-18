@@ -5,7 +5,7 @@ categories: [login-with-sso]
 featured: false
 popular: false
 tags: [sso, saml, saml2.0, idp, identity]
-order: "03"
+order: "02"
 ---
 
 ## Step 1: Set an Organization Identifier
@@ -26,13 +26,10 @@ You'll need to share this value with users once the configuration is ready to be
 
 Once you have your Organization Identifier, you can proceed to enabling and configuring your integration. To enable Login with SSO:
 
-1. From the Organization Vault, navigate to the **Business Portal**:
+1. From the Organization Vault, navigate to the **Manage** tab and select **Single Sign-On** from the left-hand menu:
 
-   {% image organizations/business-portal-button-overlay.png Business Portal %}
-2. From the Business Portal menu bar, check that the correct Organization is listed and select the **Single Sign-On** button:
-
-   {% image sso/sso-bp-1.png Business Portal Menu %}
-3. Check the **Enabled** checkbox.
+   {% image sso/manage-sso.png Enable SSO %}
+2. On the Single Sign-On Screen, check the **Enabled** checkbox.
 4. From the **Type** dropdown menu, select the **SAML 2.0** option. If you intend to use OIDC instead, switch over to the [OIDC Configuration Guide]({{site.baseurl}}/article/configure-sso-oidc/).
 
 ## Step 3: Configuration
@@ -55,13 +52,13 @@ From this point on, **implementation will vary provider-to-provider**. Jump to o
 
 ### Configuration Reference Materials
 
-The following sections will define fields configured in the [Bitwarden Business Portal]({{site.baseurl}}/article/about-business-portal/), agnostic of which IdP you're integration with. Fields that must be configured will be marked (**Required**).
+The following sections will define fields configured on the Single Sign-On configuration screen, agnostic of which IdP you're integration with. Fields that must be configured will be marked (**Required**).
 
 {% callout success %}
 **Unless you're comfortable with SAML 2.0**, we recommend using one of the [above Implementation Guides](#step-3-configuration) instead of the following generic material.
 {% endcallout %}
 
-The Business Portal separates configuration into two sections:
+The Single Sign-On screen separates configuration into two sections:
 
 - **SAML Service Provider Configuration** will determine the format of SAML requests.
 - **SAML Identity Provider Configuration** will determine the format to expect for SAML responses.

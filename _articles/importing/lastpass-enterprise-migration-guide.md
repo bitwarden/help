@@ -67,7 +67,7 @@ Self-hosting is available for Enterprise plans.
 
 Bitwarden Enterprise plans support Login with Single-Sign-On using either SAML 2.0 or OpenID Connect (OIDC).
 
-Each Bitwarden Organization can configure one SSO provider. Configuration for this is located in the [Business Portal]({{site.baseurl}}/article/about-business-portal/), accessible from the Web Vault by Organization Owners and Administrators.
+Each Bitwarden Organization can configure one SSO provider. Configuration for this is accessible in the Web Vault by Organization Owners and Administrators.
 
 For more details on Login with SSO configurations and examples of Identity Provider (IdP) settings and naming conventions, please visit [these help articles]({{site.baseurl}}/article/about-sso/).
 
