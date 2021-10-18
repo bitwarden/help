@@ -23,7 +23,27 @@ Bitwarden believes source code transparency is an absolute requirement for secur
 
 **Dates on this page represent Cloud Server and Web releases.** Bitwarden incrementally updates each client application (Desktop, Browser Extension, Mobile, etc.) and for self-hosted servers following the initial release date to ensure feature efficacy and stability. As a result, client applications and self-hosted servers should expect listed features following the initial release.
 
-To be notified of Release Announcements, subscribe to the [Bitwarden Status RSS Feed](https://status.bitwarden.com/){:target="\_blank"}.
+{% callout success %}
+Want Release Announcements delivered straight to your inbox?
+
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#subscribeModal">
+  Subscribe Now
+</button>
+
+<div class="modal fade" id="subscribeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <script src="https://bitwarden.freshsales.io/web_forms/febb971fb39fe1d085622308a7cccb21769c33fcd2913a927478252dbde41d64/form.js"
+        crossorigin="anonymous"
+        id="fs_febb971fb39fe1d085622308a7cccb21769c33fcd2913a927478252dbde41d64"></script>
+      </div>
+    </div>
+  </div>
+</div>
+
+Or subscribe to the [Bitwarden Status RSS Feed](https://status.bitwarden.com/){:target="\_blank"}.
+{% endcallout %}
 
 ## 2021-10-26
 
