@@ -139,7 +139,7 @@ A banner is displayed to users during Vault Timeout configuration indicating tha
 {% callout info %}
 The **Single Organization** policy must be enabled before activating this policy.
 
-As a result, you must disable the **Vault Timewout** policy before you can disable the **Single Organization** policy.
+As a result, you must disable the **Vault Timeout** policy before you can disable the **Single Organization** policy.
 {% endcallout %}
 
 ### Disable Personal Vault Export
