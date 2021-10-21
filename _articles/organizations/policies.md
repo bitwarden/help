@@ -144,6 +144,6 @@ As a result, you must disable the **Vault Timeout** policy before you can disabl
 
 ### Disable Personal Vault Export
 
-Enabling the **Disable Personal Vault Export** policy will prohibit all members of your Organization from [exporting their private Vault data]({{site.baseurl}}/article/export-your-data/#export-a-personal-vault).
+Enabling the **Disable Personal Vault Export** policy will prohibit non-Owner/non-Admin members of your Organization from [exporting their private Vault data]({{site.baseurl}}/article/export-your-data/#export-a-personal-vault).
 
 In the Web Vault and CLI, a message is displayed to users indicating that a policy is affecting their options. In other clients, the option will simply be disabled.
