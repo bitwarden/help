@@ -1,6 +1,7 @@
 ---
 layout: article
 title: Bitwarden Security Whitepaper
+description: "This whitepaper is an overview of the Bitwarden Security and Compliance Program"
 categories: [business]
 featured: false
 popular: false
