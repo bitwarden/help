@@ -6,6 +6,7 @@ featured: false
 popular: false
 tags: [search, lunr]
 order: "05"
+description: "You store hundreds of similarly labeled login credentials and other sensitive items in your Bitwarden password manager. Here are a few tips on how to search your Vault easily."
 ---
 
 Bitwarden Vaults can be easily searched to quickly surface relevant Vault items. [Basic search](#basic-search) queries can be made in any Bitwarden client application, and advanced [full-text search](#full-text-search) queries can be made in Web Vaults, Desktop Apps, and Browser Extensions.

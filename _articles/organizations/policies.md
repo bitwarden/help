@@ -7,6 +7,7 @@ popular: false
 hidden: false
 tags: [organizations, enterprise, policies]
 order: "14"
+description: "Our guide to enterprise policies for the Bitwarden password manager explains how admins can ensure good security habits are implemented through the company."
 ---
 
 ## What are Enterprise Policies?

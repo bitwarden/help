@@ -6,6 +6,7 @@ featured: false
 popular: false
 tags: [hosting, licensing]
 order: "09"
+description: "Some Bitwarden plans require a license file for self-hosting and use on-premises. This Help article explains licensing for on-premises environments and how to acquire or update a license."
 ---
 
 Self-hosting Bitwarden is free, however some features must be unlocked in your self-hosted instance with a registered license file. A license file can be obtained from the Bitwarden-hosted [Web Vault]({{site.baseurl}}/article/getting-started-webvault) by either an account with a Premium Individual subscription or by the Owner of an Organization.

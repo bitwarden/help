@@ -6,6 +6,7 @@ featured: false
 popular: false
 tags: [vault, sync, automatic, FAQ]
 order: "04"
+description: "Personal Vaults always remain in sync, while Organization Vaults update ever 30 minutes. Learn how to perform a manually Vault sync if necessary."
 ---
 
 Adding, editing, or deleting Vault items from any Bitwarden client application will automatically push changes to your Bitwarden server, whether Cloud-hosted or self-hosted.

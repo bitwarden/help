@@ -7,6 +7,7 @@ popular: false
 hidden: false
 tags: []
 order: "08"
+description: "The emergency access feature of the Bitwarden password manager enables you to designate trusted emergency contacts to access your Vault in an emergency."
 ---
 
 Emergency Access enables users to designate and manage trusted emergency contacts, who may request access to their Vault with a configurable level of permissions.

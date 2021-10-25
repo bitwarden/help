@@ -6,6 +6,7 @@ featured: false
 popular: false
 tags: [fields, autofill, custom fields]
 order: "08"
+description: "Custom fields in the Bitwarden password manager enable you to add custom fields to a login for autofill. Learn how to create one with just a few clicks."
 ---
 
 Custom fields, available for any [Vault item type]({{site.baseurl}}/article/managing-items/), allow you to store additional well-structured data fields for a Vault item. Custom fields are saved as `Name:Value` pairs, and can be one of three types:

@@ -6,6 +6,7 @@ featured: false
 popular: false
 tags: [uri, match detection, autofill]
 order: "05"
+description: "Find out more about how URI match detection works in the Bitwarden password manager."
 ---
 
 Any Login item in your Vault can be created with or edited to include one or more URI (Uniform Resource Identifier). A URI can be a website address (i.e. a URL), a Server IP Address, a Mobile App Package ID, and more.

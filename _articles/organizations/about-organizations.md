@@ -9,6 +9,7 @@ order: "01"
 redirect_from:
   - /article/what-is-an-organization/
   - /article/create-an-organization/
+description: "Share logins, notes, cards, and identities via Organization Vaults in the Bitwarden password manager."
 ---
 
 ## What are Organizations?

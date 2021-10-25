@@ -6,6 +6,7 @@ featured: false
 popular: false
 order: "01"
 tags: [browser, auto-fill, autofill]
+description: "Learn how to autofill logins stored in the Bitwarden password manager from a browser extension."
 ---
 
 {% callout success %}
@@ -95,7 +96,7 @@ You can auto-fill items manually that don't have saved URIs by opening them in t
 If you use [Bitwarden Authenticator]({{site.baseurl}}/article/authenticator-keys/), Bitwarden will automatically copy a Login item's TOTP code to the clipboard when the Login item is autofilled by any of the above methods.
 
 {% callout success %}
-You can disable this option and set a custom interval with which to clear your clipboard from the Browser Extension's {% icon fa-cogs %} **Settings** tab: 
+You can disable this option and set a custom interval with which to clear your clipboard from the Browser Extension's {% icon fa-cogs %} **Settings** tab:
 
 {% image autofill/clipboard.png Clipboard Settings %}
 

@@ -7,6 +7,7 @@ popular: true
 hidden: false
 tags: [release notes]
 order:
+description: "Bitwarden frequently updates its leading password manager to improve the user experience and fulfill feature requests from customers."
 ---
 
 Bitwarden believes source code transparency is an absolute requirement for security solutions like ours. View full, detailed Release Notes in GitHub using any of the following links:

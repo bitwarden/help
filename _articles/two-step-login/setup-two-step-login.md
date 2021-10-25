@@ -6,6 +6,7 @@ featured: false
 popular: true
 order: "02"
 tags: [two-step login, 2fa, two factor authentication, account]
+description: "The Bitwarden password manager supports multiple two-step login methods, also know as 2FA and two-factor authentication, such as through an authenticator app or email. Learn how to set up and use each method."
 ---
 
 Using Two-step Login (also called *Two-factor Authentication*, or *2FA*) to protect your Bitwarden Vault prevents a malicious actor from accessing your Vault even if they discover your Master Password by requiring authentication from a secondary device when you log in. If you're unfamiliar with the basics of 2FA, check out our [Field Guide]({{site.baseurl}}/article/bitwarden-field-guide-two-step-login/).

@@ -6,6 +6,7 @@ featured: true
 popular: false
 tags: [master password, account]
 order: "02"
+description: "This help article explains what to do if you forgot your master password, as Bitwarden has no way to retrieve or reset it."
 ---
 
 As described in the [Your Master Password]({{site.baseurl}}/article/master-password/) article, Bitwarden has no knowledge of, way to retrieve, or way to reset your Master Password.

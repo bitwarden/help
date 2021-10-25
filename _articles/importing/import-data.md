@@ -6,6 +6,7 @@ featured: true
 popular: true
 tags: [import]
 order: "01"
+description: "The import data feature of the Bitwarden password manager enabled you to migrate items from a different password manager to your Personal or Organization Vault."
 ---
 
 Bitwarden provides a data import tool for easy migration from any password management solution to your personal Vault or Organization Vault. You can also use the data import tool to import from one Bitwarden Vault to another, or to import a Bitwarden [Encrypted Export]({{site.baseurl}}/article/encrypted-export/).
