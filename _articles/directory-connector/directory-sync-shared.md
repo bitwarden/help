@@ -6,6 +6,7 @@ featured: true
 popular: false
 tags: []
 order: "04"
+description: "Learn how to use the Bitwarden Directory Connector Desktop App and CLI for the same Organization."
 ---
 
 The Directory Connector [Desktop Application]({{site.baseurl}}/article/directory-sync-desktop/) and [CLI]({{site.baseurl}}/article/directory-sync-cli/) share the same database and configuration settings. You may install and use both applications, however **it is not recommended to use them simultaneously**.

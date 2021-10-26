@@ -46,7 +46,7 @@ Want Release Announcements delivered straight to your inbox?
 Or subscribe to the [Bitwarden Status RSS Feed](https://status.bitwarden.com/){:target="\_blank"}.
 {% endcallout %}
 
-## 2021-09-21
+## 2021-09-21 
 
 The latest release of Bitwarden focuses on often requested improvements to existing functionality:
 

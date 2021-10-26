@@ -8,6 +8,7 @@ tags: [hosting, docker, install, deploy]
 order: "01"
 redirect_from:
   - /article/install-on-premise/
+description: "This Help article guides you through the process of installing and deploying the Bitwarden password manager to a Linux server."
 ---
 
 This article will walk you through the procedure to install and deploy Bitwarden to your own Linux Server. Bitwarden can also be installed and deployed on [Windows]({{site.baseurl}}/article/install-on-premise-windows) machines.

@@ -6,6 +6,7 @@ featured: false
 popular: false
 tags: [sso, oidc, openid, idp, identity]
 order: "04"
+description: "With a Bitwarden enterprise plan, you can enable Login with SSO for OpenID Connect (OIDC) authentication."
 ---
 
 ## Step 1: Set an Organization Identifier

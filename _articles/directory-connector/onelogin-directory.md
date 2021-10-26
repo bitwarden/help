@@ -7,6 +7,7 @@ popular: false
 hidden: false
 tags: []
 order: "12"
+"This article explains how you can sync your Bitwarden Organization with OneLogin to reduce management overhead."
 ---
 
 This article will help you get started using Directory Connector to sync users and groups from your OneLogin directory to your Bitwarden Organization.

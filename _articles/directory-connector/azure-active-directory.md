@@ -7,6 +7,7 @@ popular: false
 hidden: false
 tags: []
 order: "09"
+description: "This article explains how you can sync your Bitwarden Organization with Azure Active Directory to reduce management overhead."
 ---
 
 This article will help you get started using Directory Connector to sync users and groups from your Azure Active Directory to your Bitwarden Organization.

@@ -7,6 +7,7 @@ popular: false
 hidden: false
 tags: []
 order: "11"
+description: "This article explains how you can sync your Bitwarden Organization with your Okta directory to reduce management overhead."
 ---
 
 This article will help you get starting using Directory Connector to sync users and groups from your Okta directory to your Bitwarden Organization.

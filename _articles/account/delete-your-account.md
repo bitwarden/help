@@ -6,7 +6,7 @@ featured: false
 popular: false
 tags: [account, delete]
 order: "08"
-description: "This Help article explains the process for deleting a Bitwarden account or Organization if you forget your master password and need to create a new account."
+description: "This article explains how to delete a Bitwarden account or Organization if you forget your master password and need to create a new account."
 ---
 
 Deleting a Bitwarden account or Organization permanently deletes the account or Organization and **all data that is associated with it**. Bitwarden does not "soft delete" any data.

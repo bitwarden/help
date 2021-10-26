@@ -6,6 +6,7 @@ featured: false
 popular: false
 tags: [two-step login, 2fa, two factor authentication, account]
 order: "09"
+description: "If you have lost the two step device that enables you to unlock your Bitwarden password manager, learn what you can do if you have a saved recovery code to access your account."
 ---
 
 Losing access to your secondary device(s) (e.g. a Mobile device with an installed Authenticator, a Security Key, or a linked Email inbox) has the potential to lock you out of your Bitwarden Vault.

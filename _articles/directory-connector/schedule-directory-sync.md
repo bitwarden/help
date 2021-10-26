@@ -6,6 +6,7 @@ featured: true
 popular: false
 tags: [directory connector, directory sync, schedule, cronjob]
 order: "07"
+description: "Learn how to use a cronjob to schedule Bitwarden Directory Connector syncs of users and groups."
 ---
 
 For Organizations using the Directory Connector CLI, automatic syncs can be scheduled on defined intervals as an alternative to using the Desktop Applications **Interval** setting. This is particularly useful in headless environments, on in circumstances where a Desktop Application cannot be left running in the background.

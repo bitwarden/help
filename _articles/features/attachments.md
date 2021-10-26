@@ -6,6 +6,7 @@ featured: false
 popular: false
 tags: [attachments, storage, files]
 order: "13"
+description: "Premium users of the Bitwarden password manager can attach files to Vault items from any Bitwarden client app. Learn how to attach a file, view an attached file, or add storage space."
 ---
 
 Files can be attached to Vault items from any Bitwarden application. An individual file attachment must be 500 MB (100 MB if uploading from Mobile) or smaller. By default, paid users have access to 1GB of encrypted storage for file attachments. Additional storage can be purchased in 1GB increments.

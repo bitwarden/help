@@ -7,6 +7,7 @@ popular: false
 hidden: false
 tags: []
 order: "05"
+description: "This article explains the user and group filters and sync options used to customize how the Bitwarden password manager will sync with your directory service."
 ---
 
 When configuring the Directory Connector application, you can use a variety of Sync Options and Filters to customize your sync operation and limit the users and/or groups that are processed to your Bitwarden Organization.

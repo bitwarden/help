@@ -6,6 +6,7 @@ featured: false
 popular: false
 tags: [keyboard, shortcut, mouseless]
 order: "15"
+description: "Learn keyboard shortcuts for the Bitwarden password manager for lightning fast password management."
 ---
 
 ## Browser extension shortcuts

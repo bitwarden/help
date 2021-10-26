@@ -6,6 +6,7 @@ featured: true
 popular: true
 tags: [import, lastpass]
 order: "02"
+description: "Start an import of data from Lastpass to Bitwarden. This Help article explains how to export data from the Lastpass web vault and browser extension and import it into Bitwarden."
 ---
 
 Use this article for help exporting data from LastPass and importing into Bitwarden.

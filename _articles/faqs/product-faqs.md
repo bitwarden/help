@@ -9,6 +9,7 @@ tags: []
 order: "16"
 redirect_from:
   - /article/change-your-email/
+description: "Here are general FAQs about the Bitwarden password manager, such as how to change your email address or tips on backup up your vault data."
 ---
 
 This article contains Frequently Asked Questions (FAQs) about general Vault Management and Bitwarden functionality.

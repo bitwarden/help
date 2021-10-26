@@ -6,6 +6,7 @@ featured: false
 popular: false
 tags: [unlock, face id, touch id, hello, windows, mac, ios, android]
 order: "11"
+description: "This article describes how to unlock Bitwarden with biometrics and explains the difference between unlocking and logging in to a Vault."
 ---
 
 Bitwarden can be configured to accept biometrics as a method to unlock your Vault.

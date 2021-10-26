@@ -6,6 +6,7 @@ featured: true
 popular: false
 tags: [active directory, ldap, ad]
 order: "08"
+description: "Bitwarden provides built-in connectors for the most popular LDAP directory servers. This article explains how to sync your Bitwarden Organization to Active Directory or LDAP."
 ---
 
 This article will help you get started using Directory Connector to sync users and groups from your LDAP or Active Directory service to your Bitwarden Organization. Bitwarden provides built-in connectors for the most popular LDAP directory servers, including:

@@ -6,6 +6,7 @@ featured: true
 popular: false
 tags: [import]
 order: "09"
+description: "This Help article describes the format you should use when manually conditioning a .csv or .json file for import into the Bitwarden password manager."
 ---
 
 This article defines the format you should use when manually conditioning a `.csv` or `.json` for import into Bitwarden. This format is identical to that used by `.csv` or `.json` files created by [Exporting your Bitwarden Vault]({{site.baseurl}}/article/export-your-data/).

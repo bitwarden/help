@@ -6,6 +6,7 @@ featured: false
 popular: false
 tags: [account, items, import, delete, trash, clone]
 order: "03"
+description: "Learn about managing items in your Bitwarden Vault so you have seamless access to stored items and can safely share sensitive information with others."
 ---
 
 Effectively managing the items in your Vault is key to making sure that you secure and have seamless access to your information, and can safely share information with friends, family, teams, and colleagues. There are 4 types of items you can store in your Vault; Logins, Cards, Identities, and Secure Notes:

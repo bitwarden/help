@@ -6,6 +6,7 @@ featured: false
 popular: false
 tags: [unlock, pin]
 order: "10"
+description: "Learn how to add a PIN code to lock and unlock your Bitwarden Vault."
 ---
 
 Bitwarden can be configured to accept a Personal Identification Number (PIN) as a method to unlock your Vault.

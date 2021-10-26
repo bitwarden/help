@@ -6,6 +6,7 @@ featured: true
 popular: false
 tags: [organizations  events  event logs  audit  access control]
 order: "13"
+description: "Event Logs are time stamped records of events that occur within your password manager. Learn how to access logs and export to integrate with other SIEM solutions."
 ---
 
 ## What are Event Logs?

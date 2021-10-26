@@ -6,6 +6,7 @@ featured: true
 popular: false
 tags: []
 order: "02"
+description: "Learn how to use the Bitwarden Directory Connector Desktop App to sync users and groups from a selection of directory services."
 ---
 
 The Directory Connector Desktop App is a standalone desktop application that can be used to sync users, groups, and group associations from a selection of directory services.

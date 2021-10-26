@@ -6,6 +6,7 @@ featured: false
 popular: false
 tags: [hosting, environment]
 order: "12"
+description: "Bitwarden client applications connect to Bitwarden-hosted servers by default, but you can also connect to to self-hosted servers in your datacenter or in the cloud."
 ---
 
 By default, Bitwarden client applications (Browser Extensions, Mobile Apps, etc.) will connect to Bitwarden-hosted servers. Client applications can be configured to connect to your self-hosted Bitwarden instance.

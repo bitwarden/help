@@ -8,6 +8,7 @@ tags: [two-step login, 2fa, two factor authentication, account, u2f, fido]
 order: "07"
 redirect_from:
   - /article/setup-two-step-login-u2f/
+description: "This Help article explains how existing Bitwarden users can set up two-step login using FIDO2 WebAuthn authenticators when logging into a Bitwarden vault."
 ---
 
 Two-step Login using FIDO2 WebAuthn authenticators is available for Premium users, including members of Paid Organizations (Families, Teams, or Enterprise).
