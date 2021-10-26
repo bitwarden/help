@@ -15,19 +15,9 @@ This article contains Frequently Asked Questions (FAQs) regarding **Import &amp;
 
 **A:** If we don't have official support for the service you are using, manually condition a `.csv` or `.json` for import into Bitwarden. For more information about how to do this, see [Condition a Bitwarden .csv or .json]({{site.baseurl}}/article/condition-bitwarden-import/).
 
-### Q: Can I import to Bitwarden from iCloud/Mac Keychain?
+### Q: Can I import to Bitwarden from iCloud/Mac Keychain/Safari?
 
-**A:** Currently, Apple does not provide an official way to export data from iCloud, Mac Keychain, or Safari.
-
-Here are some third-party programs available to export this data:
-- <https://gist.github.com/rmondello/b933231b1fcc83a7db0b>
-- <https://github.com/lifepillar/CSVKeychain>
-
-{% callout warning %}
-**Disclaimer**: These 3rd party scripts/programs are unsupported by Bitwarden or Apple, and should be used at your own risk.
-{% endcallout %}
-
-Once exported from iCloud, Mac Keychain, or Safari, see [Import Data to your Vault]({{site.baseurl}}/article/import-data/).
+**A:** As of Safari 15.0, you can export passwords from Safari in a `.csv` file. Once you do, [condition your .csv]({{site.baseurl}}/article/condition-bitwarden-import/)) to meet Bitwarden's format and [import your data]({{site.baseurl/article/import-data/}}).
 
 ### Q: How do I import items directly to Collections?
 
