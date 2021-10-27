@@ -11,11 +11,24 @@ description: "This article contains FAQs regarding Login with SSO - an enterpris
 ---
 This article contains Frequently Asked Questions (FAQs) regarding **Login with SSO**.
 
-For more high-level information about **Login with SSO**, refer to the following articles:
-- [Getting Started with Login with SSO]({{site.baseurl}}/article/getting-started-with-sso/)
-- [About the Business Portal]({{site.baseurl}}/article/about-business-portal/)
+For more high-level information about **Login with SSO**, refer to [About Login with SSO]({{site.baseurl}}/article/about-sso/)
 
 ## Using Login with SSO
+
+### Q: Why does Login with SSO require my Master Password?
+
+**A:** Today’s employees are surrounded by software-as-a-service (SaaS) applications. As a result, many companies are leveraging Single Sign-On (SSO) as a way to unify employees’ access to increasingly large numbers of accounts.
+
+Some applications don’t have SSO integrations yet; and even for those that do, it’s still mission critical to protect sensitive information and practice good security habits - the perfect job for a password manager, like Bitwarden.
+
+Bitwarden, recognizing the importance of SSO to today’s enterprises, has an SSO integration of its own; allowing your employees to use your existing Identity Provider (IdP) to **authenticate** their identities (i.e. prove they are who they say they are).
+
+What makes the Bitwarden SSO implementation unique compared to other tools is that it retains our end-to-end zero-knowledge encryption model. Nobody at Bitwarden should have access to your Vault data and, importantly, **neither should your Identity Provider**.
+
+That’s why the Bitwarden Login with SSO offering **decouples authentication and decryption**. Your IdP can confirm that Alice is, in fact, Alice, but cannot and should not have the tools to decrypt Alice’s Vault. Only Alice can have that tool and, conveniently, it’s her Master Password!
+
+In practice, that means that anytime an employee logs in to Bitwarden using SSO, they’ll need to use their Master Password to decrypt their Vault, protecting your businesses’ critical credentials and secrets.
+
 
 ### Q: Will changing my SSO password affect my Bitwarden Master Password?
 

@@ -12,13 +12,13 @@ description: "This article contains instructions for configuring Bitwarden Login
 
 This article contains **Azure-specific** help for configuring Login with SSO via OpenID Connect (OIDC). For help configuring Login with SSO for another OIDC IdP, or for configuring Azure via SAML 2.0, see [OIDC Configuration]({{site.baseurl}}/article/configure-sso-oidc/) or [Azure SAML Implementation]({{site.baseurl}}/article/saml-azure/).
 
-Configuration involves working simultaneously within the Bitwarden [Bitwarden Business Portal]({{site.baseurl}}/article/about-business-portal/) and the Azure Portal. As you proceed, we recommend having both readily available and completing steps in the order they're documented.
+Configuration involves working simultaneously within the Bitwarden Web Vault and the Azure Portal. As you proceed, we recommend having both readily available and completing steps in the order they're documented.
 
-## Open the Business Portal
+## Open SSO in the Web Vault
 
-If you're coming straight from [OIDC Configuration]({{site.baseurl}}/article/configure-sso-oidc/), you should already have an **Organization ID** created and SSO **Enabled**. If you don't, follow [steps 1 and 2 of that document]({{site.baseurl}}/article/configure-sso-oidc/) and return to this guide.
+If you're coming straight from [OIDC Configuration]({{site.baseurl}}/article/configure-sso-oidc/), you should already have an [Organization ID created]({{site.baseurl}}/article/configure-sso-oidc/#step-1-enabling-login-with-sso). If you don't refer to that article to create an Organization ID for SSO.
 
-Open your [Business Portal]({{site.baseurl}}/article/about-business-portal/) and navigate to the SSO Configuration screen:
+Navigate to your Organization's **Manage** &rarr; **Single Sign-On** screen:
 
 {% image sso/sso-oidc1.png OIDC Configuration %}
 
@@ -52,11 +52,9 @@ Select **Certificates & secrets** from the navigation, and select the **New clie
 
 Give the certificate a Bitwarden-specific name, and choose an expiration timeframe.
 
+## Back to the Web Vault
 
-
-## Bitwarden Business Portal Configuration
-
-At this point, you've configured everything you need within the context of the Azure Portal. Jump back over to the Bitwarden Business Portal to configure the following fields:
+At this point, you've configured everything you need within the context of the Azure Portal. Jump back over to the Bitwarden Web Vault to configure the following fields:
 
 |Field|Description|
 |-----|-----------|

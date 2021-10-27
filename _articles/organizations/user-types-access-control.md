@@ -33,12 +33,16 @@ User Type determines the permissions a user will have within your Organization. 
 
 Selecting the **Custom** role for a user allows for granular control of permissions on a user-by-user basis. A Custom role user can have a configurable selection of Manager and Admin capabilities, including:
 
-- Manage Assigned collections
-- Access Business Portal
+- Manage Assigned Collections (provides the following 2 options)
+  - Edit Assigned Collections
+  - Delete Assigned Collections
 - Access Event Logs
 - Access Import/Export
 - Access Reports
-- Manage All Collections
+- Manage All Collections (provides the following 3 options)
+  - Create New Collections
+  - Edit Any Collection
+  - Delete Any Collection
 - Manage Groups
 - Manage SSO
 - Manage Policies
@@ -46,8 +50,8 @@ Selecting the **Custom** role for a user allows for granular control of permissi
 - Manage Password Reset
 
 {% callout success %}
-As an example, the Custom role allows for the creation of a user that can fully manage a User-Group-Collection relationship, without the ability to see anything in a Collection to which they are not assigned. This scenario would involve selecting only the following boxes for this Custom user:
-- Manage Assigned Collections
+As an example, the Custom role allows for the creation of a user that can manage a User-Group-Collection relationship, without the ability to see anything in a Collection to which they are not assigned or delete any Collection. This scenario would involve selecting only the following boxes for this Custom user:
+- Manage Assigned Collections &rarr; Edit Assigned Collections
 - Manage Groups
 - Manage Users
 {% endcallout %}

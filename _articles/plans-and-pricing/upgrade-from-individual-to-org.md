@@ -39,7 +39,7 @@ Complete the following steps to start your Organization:
    {% callout info %}Paid Organizations (Families, Teams, or Enterprise) include premium features for all enrolled users. For more information about Premium features, see [About Bitwarden Plans]({{site.baseurl}}/article/about-bitwarden-plans/#compare-the-plans/).
    {% endcallout %}
 6. If you selected a Paid Organization, enter the following information:
-   - For **Teams** or **Enterprise**, enter the number of **User Seats** you need. You can add additional seats later if required.
+   - For **Teams** or **Enterprise**, enter the number of **User Seats** you need. Seats will be added if you exceed this number, unless you [specify a limit]({{site.baseurl}}/article/managing-users/#set-a-seat-limit).
    - For **Families**, **Teams**, or **Enterprise**, enter the amount of **Additional Storage (GB)** you need. You plan comes with 1 GB of shared encrypted file attachments, and you can add additional storage later if needed.
    - For **Teams** or **Enterprise**, select whether you'd like to be billed **Annually** or **Monthly**. Families Organizations may only be billed annually.
    - For any Paid Organization, enter your **Payment Information**

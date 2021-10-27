@@ -111,7 +111,7 @@ Unlock with Biometrics is supported for Extensions on **Chromium-based** browser
 
 To enable Unlock with Biometrics for your Browser Extension:
 
-{% callout success %}Biometrics (Windows Hello or Touch Id) must be enabled in your Desktop App before proceeding. IIf you don't see the Windows Hello option in your Desktop app, you may need to [install the Microsoft Visual C++ Redistributable.](https://support.microsoft.com/en-us/topic/the-latest-supported-visual-c-downloads-2647da03-1eea-4433-9aff-95f26a218cc0){:target="\_blank} Additionally, **if you're using Safari**, you can skip straight to **Step 4**.{% endcallout %}
+{% callout success %}Biometrics (Windows Hello or Touch Id) must be enabled in your Desktop App before proceeding. If you don't see the Windows Hello option in your Desktop app, you may need to [install the Microsoft Visual C++ Redistributable.](https://support.microsoft.com/en-us/topic/the-latest-supported-visual-c-downloads-2647da03-1eea-4433-9aff-95f26a218cc0){:target="\_blank} Additionally, **if you're using Safari**, you can skip straight to **Step 4**.{% endcallout %}
 
 1. In your Bitwarden Desktop app, navigate to Settings (on Windows, **File** &rarr; **Settings**) (on macOS, **Bitwarden** &rarr; **Preferences**).
 2. Scroll down to the Options section, and check the **Enable Browser Integration** box.
@@ -127,8 +127,11 @@ To enable Unlock with Biometrics for your Browser Extension:
    {% callout success %}You may be prompted at this stage to allow Bitwarden to `communicate with cooperating native applications`. This permission is safe, but **optional** and solely enables the Browser Extension to communicate with Desktop as described above.{% endcallout %}
 
    You should be prompted by your Desktop app to input your biometric. Doing so will complete the initial setup procedure. If you've opted to require verification (**Step 2**), you'll need to approve a fingerprint validation check.
+6. If you want the Browser Extension to automatically prompt for your biometric input when launched, make sure the **Do not prompt for biometrics on launch** option is not checked:
 
-Once enabled, a new button will be presented on the Unlock screen:
+   {% image biometrics/extension-launch.png Biometrics Options %}
+
+Browser Extension will automatically prompt for your biometric when you open it. If you disable the no-prompt option (**Step 6**), use the **Unlock with biometrics** button on the Unlock screen:
 
 {% image biometrics/be-bio-unlock.png Unlock with Biometrics %}
 

@@ -11,7 +11,7 @@ description: "This article contains instructions for configuring Bitwarden Login
 ---
 This article contains **Active Directory Federation Services (AD FS)-specific** help for configuring Login with SSO via SAML 2.0. For help configuring Login with SSO for another IdP, refer to [SAML 2.0 Configuration]({{site.baseurl}}/article/configure-sso-saml/).
 
-Configuration involves working simultaneously within the Bitwarden [Business Portal]({{site.baseurl}}/article/about-business-portal/) and the AD FS Server Manager. As you proceed, we recommend having both readily available and completing steps in the order they're documented.
+Configuration involves working simultaneously within the Bitwarden Web Vault and the AD FS Server Manager. As you proceed, we recommend having both readily available and completing steps in the order they're documented.
 
 {% callout success %}
 **Already an SSO expert?** Skip the instructions in this article and download screenshots of sample configurations to compare against your own.
@@ -19,9 +19,11 @@ Configuration involves working simultaneously within the Bitwarden [Business Por
 [{% icon fa-download %} Download Sample]({{site.baseurl}}/files/saml-adfs-sample.zip)
 {% endcallout %}
 
-## Open the Business Portal
+## Open SSO in the Web Vault
 
-If you're coming straight from [SAML 2.0 Configuration]({{site.baseurl}}/article/configure-sso-saml/), you should already have an [Organization ID created]({{site.baseurl}}/article/configure-sso-saml/#step-1-enabling-login-with-sso) and the SSO Configuration screen open. If you don't, refer to that article to create an Organization ID and open your Business Portal to the SSO Configuration section:
+If you're coming straight from [SAML 2.0 Configuration]({{site.baseurl}}/article/configure-sso-saml/), you should already have an [Organization ID created]({{site.baseurl}}/article/configure-sso-saml/#step-1-enabling-login-with-sso). If you don't refer to that article to create an Organization ID for SSO.
+
+Navigate to your Organization's **Manage** &rarr; **Single Sign-On** screen:
 
 {% image sso/sso-saml1.png SAML 2.0 Configuration %}
 
@@ -123,11 +125,11 @@ In the left-hand file navigator, select **AD FS** and from the right-hand option
 
 You will need this identifier [during a later step](#identity-provider-configuration).
 
-## Back to the Business Portal
+## Back to the Web Vault
 
-At this point, you've configured everything you need within the context of the AD FS Server Manager. Jump back over to the Bitwarden Business Portal to complete configuration.
+At this point, you've configured everything you need within the context of the AD FS Server Manager. Jump back over to the Bitwarden Web Vault to complete configuration.
 
-The Business Portal separates configuration into two sections:
+The Single Sign-On screen separates configuration into two sections:
 
 - **SAML Service Provider Configuration** will determine the format of SAML requests.
 - **SAML Identity Provider Configuration** will determine the format to expect for SAML responses.

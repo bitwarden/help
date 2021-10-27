@@ -8,11 +8,14 @@ tags: []
 description: "Learn how to change the theme of you Bitwarden client applications."
 ---
 
-Bitwarden Browser Extensions, Desktop Apps, and Mobile apps come packed with stylish themes:
+The Bitwarden Web Vault, Browser Extensions, Desktop Apps, and Mobile apps come packed with stylish themes:
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
-    <a class="nav-link active" id="betab" data-target="#browserextension" role="tab" aria-controls="browserextension" aria-selected="false">Browser Extension</a>
+    <a class="nav-link active" id="wvtab" data-target="#webvault" role="tab" aria-controls="webvault" aria-selected="false">Web Vault</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="betab" data-target="#browserextension" role="tab" aria-controls="browserextension" aria-selected="false">Browser Extension</a>
   </li>
   <li class="nav-item" role="presentation">
     <a class="nav-link" id="desktab" data-target="#desktop" role="tab" aria-controls="desktop" aria-selected="false">Desktop</a>
@@ -22,7 +25,22 @@ Bitwarden Browser Extensions, Desktop Apps, and Mobile apps come packed with sty
   </li>
 </ul>
 <div class="tab-content" id="clientsContent">
-  <div class="tab-pane show active" id="browserextension" role="tabpanel" aria-labelledby="betab">
+  <div class="tab-pane show active" id="webvault" role="tabpanel" aria-labelledby="wvtab">
+{% capture web_vault %}
+#### Web Vault
+
+To change the theme of your Web Vault:
+
+1. Select **Settings** from the navigation.
+2. From the left-hand Settings menu, select **Options**.
+3. From the **Theme** dropdown, select your favorite theme!
+
+   {% image features/theme-webvault.png Change Theme %}
+
+{% endcapture %}
+{{ web_vault | markdownify}}
+  </div>
+  <div class="tab-pane" id="browserextension" role="tabpanel" aria-labelledby="betab">
 {% capture browser_extension %}
 #### Browser Extension
 

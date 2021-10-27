@@ -19,7 +19,7 @@ Login with SSO currently supports SAML 2.0 and OpenID Connect authentication for
 
 Users of Bitwarden authenticate into their vaults using the **Enterprise Single Sign-On** button located on the login screen of any Bitwarden client application. For more information, see [Using Login with SSO]({{site.baseurl}}/article/using-sso/).
 
-Administrators can configure Login with SSO in the Business Portal. For more information, see [About the Business Portal]({{site.baseurl}}/article/about-business-portal/).
+Administrators can configure Login with SSO from the Organization **Manage** screen.
 
 {% image sso/sso-button-lg.png Enterprise Single Sign-On button %}
 

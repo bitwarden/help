@@ -9,40 +9,36 @@ order: "14"
 description: "Learn how to set a Vault timeout timer and behavior for your Bitwarden password manager."
 ---
 
-Vault Timeout behavior will determine how your Vault will behave after a customizable period of inactivity. Timeout is configured individually from and for each Bitwarden client application that you use (Mobile, Web, Desktop, Browser Extension, etc.).
+Vault Timeout determines how your Vault will behave after a specified period of inactivity. Timeout is configured individually for each Bitwarden Client application (Web Vault, Browser Extension, Mobile, Desktop). Vault Timeout can be configured from the **Settings** menu of any Bitwarden app. When configuring your Vault Timeout settings, you can set both the **Vault Timeout** (time-constraint) and **Vault Timeout Action**:
 
-{% callout warning %}
-Regardless of Vault Timeout settings, **closing the Browser or Browser Tab will end your Web Vault or Browser Extension session**, meaning you'll be required to log in to access your Vault.
+## Vault Timeout
 
+This option determines how long the Bitwarden app can be inactive before timing out. "Inactivity" is determined by time since interacting with Bitwarden, not system idle time. Each app will have standardized options (e.g. 1 minute, 15 minutes, 1 hour) as well as options specific to certain apps (e.g. On System Idle) and a Custom time input.
+
+{% callout info %}
+Enterprise Organizations can implement a maximum allowable Timeout option using an [Enterprise Policy]({{site.baseurl}}/article/policies/). 
+{% endcallout %}
+
+### Web and Browser Extension Timeouts
+
+Due to the Web Vault and Browser Extension depending on your Web Browser, unique "timeout" scenarios to take into account:
+
+1. **If you refresh your browser** (`CMD/CTRL + R`), your Web Vault will lock. Refreshing will not affect a Browser Extension.
+2. **If you close your browser tab**, you will be logged out of your Web Vault. Closing a single tab will not affect a Browser Extension.
+3. **If you close your browser**, you will be logged out of both your Web Vault and Browser Extension.
+
+{% callout success %}
 If you're using a Browser Extension, you can bypass this by enabling the **Unlock with PIN** option and unchecking the **Lock with master password on browser restart** checkbox.
 {% endcallout %}
 
-## Options
+## Vault Timeout Action
 
-You can configure the following options from the **Settings** menu of any Bitwarden client application:
+This option determines what Bitwarden will do once the [Vault Timeout](#vault-timeout) is reached. Options include:
 
-### Vault Timeout (time-constraint)
+- **Lock** (default)
 
-Configuring this option will dictate how long Bitwarden can be inactive before timing-out. "Inactivity" is determined by the time since interacting with Bitwarden, not system idle time.
+   Locking your Vault will maintain Vault data on the device, so unlocking your Vault can be done offline. You'll only be required to enter your [Master Password]({{site.baseurl}}/article/master-password/) to decrypt your Vault data, **not** any active Two-step Login methods.
 
-Each client application will have unique options (e.g. On System Idle, or On App Restart), however all applications include standard time-based options (e.g. 1 minute, 15 minutes, 1 hour).
+- **Log Out**
 
-### Vault Timeout Action
-
-Configuring this option will dictate what Bitwarden will do once the Vault Timeout time-constraint has lapsed. Bitwarden can either:
-
-- **Lock** (*default*).
-
-  Locking your Vault will maintain Vault data on the device. You will only be prompted to enter your Master Password to decrypt your Vault, however no [Two-step Login]({{site.baseurl}}/article/setup-two-step-login/) method will be required to unlock your Vault.
-
-  Bitwarden client applications don't need to be online to unlock.
-
-{% callout warning %}
-Due to the storage and reference of your decryption keys within the Web Vault, using the Browser refresh button on the Web Vault will cause it to lock.
-{% endcallout %}
-
-- **Log Out**.
-
-  Logging Out of your Vault completely removes all Vault data from your device, and will therefore require you to re-authenticate to access your Vault. You will be required to enter your Email Address, Master Password, and any enabled [Two-step Login]({{site.baseurl}}/article/setup-two-step-login/) method in order to access your Vault.
-
-  Bitwarden client applications must be online to log in.
+   Logging out of your Vault completely removes all Vault data from your device. Logging back in will require you to re-authenticate your identity, so logging in can only be done when online. You'll be required to enter your [Master Password]({{site.baseurl}}/article/master-password/) and any active [Two-step Login]({{site.baseurl}}/article/setup-two-step-login/) method.

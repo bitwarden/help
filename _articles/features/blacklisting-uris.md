@@ -4,7 +4,7 @@ title: Blacklisting URIs
 categories: [auto-fill]
 featured: false
 popular: false
-order: "06"
+order: "07"
 tags: [android, autofill, auto-fill]
 description: "The Bitwarden Android app gives users the option to blacklist specific URIs so the password manager does not offer them for autofill."
 ---

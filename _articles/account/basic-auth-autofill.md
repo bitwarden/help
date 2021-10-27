@@ -6,7 +6,7 @@ featured: true
 popular: true
 hidden: false
 tags: []
-order: "07"
+order: "08"
 description: "Automatically log in to a basic auth-protected resource when only one set of login credentials is saved in a Bitwarden client app."
 ---
 
