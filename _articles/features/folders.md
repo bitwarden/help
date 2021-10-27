@@ -86,7 +86,7 @@ Once created, you can **rename or delete** a folder at any time using the hover-
 {% capture mobile_info %}
 ### Mobile App
 
-To create a Folder, tap the {% icon fa-cogs %} **Settings** menu, tap the **Folders** option, and tap/select the {% icon fa-plus %} **Add** icon. Once created, you can **rename or delete** a folder at any time from the same menu by tapping the {% icon fa-ellipsis-v %} menu in an existing folder.
+To create a Folder, tap the {% icon fa-cogs %} **Settings** menu, tap the **Folders** option, and tap/select the {% icon fa-plus %} **Add** icon. Once created, you can **rename** a folder from the same menu by tapping the folder, or **delete** the folder using the {% icon fa-ellipsis-v %} menu:
 
 {% image manage-items/folders-mobile.png Folders on mobile %}
 
