@@ -33,7 +33,6 @@ Complete the following steps to configure Directory Connector to use your Okta D
    The available fields in this section will change according to your selected Type.
 4. Enter your Okta Organization URL in the **Organization URL** field (e.g. `https://yourdomain.okta.com`).
 5. Paste the API Token Value in the **Token** field.
-6. In the **Account** section, select Organization to connect to your directory from the dropdown.
 
 ## Configure Sync Options
 

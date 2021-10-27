@@ -87,7 +87,6 @@ Complete the following steps to configure Directory Connector to use your Google
 5. Enter the email address of an **Admin User** with full access to your Google Directory.
 6. If you have one, enter the **Customer ID** of your directory. Many users will not have or be required to enter a Customer ID.
 7. Select the **Choose File** button and select the [downloaded JSON key](#obtain-service-account-credentials).
-8. In the **Account** section, select Organization to connect to your directory from the dropdown.
 
 ## Configure Sync Options
 

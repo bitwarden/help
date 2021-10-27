@@ -74,7 +74,6 @@ Complete the following steps to configure Directory Connector to use your Azure 
 
    The available fields in this section will change according to your selected Type.
 4. Enter the collected [**Tenant** hostname](#get-tenant-hostname), [**Application Id**](#get-app-id), and [**Secret Key**](#create-app-secret-key).
-5. In the **Account** section, select Organization to connect to your directory from the dropdown.
 
 ## Configure Sync Options
 
