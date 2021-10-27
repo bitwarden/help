@@ -36,11 +36,11 @@ For help selecting the right Bitwarden plan for you, refer to [What Plan is Righ
 
 ### Q: How do I add or remove a user seat from my Organization?
 
-**A:** Login to your [Web Vault]({{site.baseurl}}/article/getting-started-webvault) and open your Organization. In your Organization's **Settings** tab, select the **Subscription** from the left menu:
+**A:** For Teams and Enterprise Organizations, user seats will be automatically added as you invite new users. You can [specify a limit]({{site.baseurl}}/article/managing-users/#set-a-seat-limit) to prevent your seat count from exceeding a specific number.
 
-{% image organizations/org-subscription-screen-overlay-addseats.png Add or Remove seats %}
+To remove user seats, navigate to your Organization's **Settings** &rarr; **Subscription** screen and use the **Subscription Seats** input to remove seats ([learn more]({{site.baseurl}}/article/managing-users/#manually-add-or-remove-seats)).
 
-You can add or remove seats from your Organization at any time. The cost will be automatically pro-rated and debited or credited accordingly.
+Adding and removing user seats will adjust your future billing totals. Adding seats will immediately charge your payment method on file at an adjusted rate so that **you’ll only pay for the remainder of the billing cycle** (month/year). Removing seats will cause your next charge to be adjusted so that you’re **credited for time not used** by the already-paid-for seat.
 
 ### Q: How do I pay for Premium on a self-hosted instance?
 

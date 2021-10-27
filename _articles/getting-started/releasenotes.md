@@ -45,6 +45,24 @@ Want Release Announcements delivered straight to your inbox?
 Or subscribe to the [Bitwarden Status RSS Feed](https://status.bitwarden.com/){:target="\_blank"}.
 {% endcallout %}
 
+## 2021-10-26
+
+The Bitwarden team is pleased to release a set of features and updates continuing our mission of making password management easy and accessible for individuals and businesses:
+
+{% callout info %}
+**Deprecation Announcement**: The Business Portal has been deprecated. Enterprise Organizations can configure [Policies]({{site.baseurl}}/article/policies) and [Login with SSO]({{site.baseurl}}/article/about-sso) from the Organization **Manage** tab.
+{% endcallout %}
+
+- **Vault Timeout Policy**: The Vault Timeout policy will apply a maximum [Vault timeout duration]({{site.baseurl}}/article/vault-timeout/#vault-timeout-time-constraint) for all members of your Organization (see [here]({{site.baseurl}}/article/policies/#vault-timeout) for details).
+- **Disable Personal Vault Export Policy**: The Disable Personal Vault Export policy will prohibit non-Owner/non-Admin members of your Organization from exporting private Vault data (see [here]({{site.baseurl}}/article/policies/#disable-personal-vault-export) for details).
+- **Auto-scale Organization Seats**: Teams and Enterprise Organizations will automatically scale up user seats as new users are invited. Organizations can set a limit on scaling to prevent the seat count from exceeding a specified number (see [here]({{site.baseurl}}/article/managing-users) for details).
+- **Custom Role - Improved Collection Permissions**: Collection-management permissions for the Custom role have been expanded to include granular controls over whether the user can create, edit, or delete assigned or all Collections (see [here]({{site.baseurl}}/article/user-types-access-control/#custom-role) for details).
+- **Admin Password Reset - Update Password after Reset**: Passwords reset by an Admin must now be updated by the user they belong to immediately when they log in to Bitwarden (see [here]({{site.baseurl}}/article/admin-reset/#after-a-password-reset) for details).
+- **Browser Extension - Autofill Span Elements**: The Browser Extension can now auto-fill [custom fields]({{site.baseurl}}/article/custom-fields) in the innerText of HTML `<span>` elements (see [here]({{site.baseurl}}/article/auto-fill-custom-fields/#html-span-elements) for details).
+- **Browser Extension - Automatic Biometrics Prompt**: The Browser Extension can now automatically prompt for your biometric input when opened. You can toggle this behavior from the {% icon fa-cogs %} **Settings** menu (see [here]({{site.baseurl}}/article/biometrics/) for details).
+- **Web Vault - Dark Mode**: The Web Vault now has dark mode (see [here]({{site.baseurl}}/article/change-theme/) for details)!
+- **CLI - `generate` Passphrase Options**: The `bw generate --passphrase` command now includes the options `--capitalize` and `--includeNumber` (see [here]({{site.baseurl}}/article/cli/#generate) for details).
+
 ## 2021-09-21
 
 The latest release of Bitwarden focuses on often requested improvements to existing functionality:

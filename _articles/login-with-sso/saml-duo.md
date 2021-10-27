@@ -10,7 +10,7 @@ order:
 ---
 This article contains **Duo-specific** help for configuring Login with SSO via SAML 2.0 For help configuring Login with SSO for another IdP, refer to [SAML 2.0 Configuration]({{site.baseurl}}/article/configure-sso-saml/).
 
-Configuration involves working simultaneously between the Bitwarden [Business Portal]({{site.baseurl}}/article/about-business-portal/) and the Duo Admin Portal. As you proceed, we recommend having both readily available and completing steps in the order they're documented.
+Configuration involves working simultaneously between the Bitwarden Web Vault and the Duo Admin Portal. As you proceed, we recommend having both readily available and completing steps in the order they're documented.
 
 {% callout success %}
 **Already an SSO expert?** Skip the instructions in this article and download screenshots of sample configurations to compare against your own.
@@ -18,23 +18,19 @@ Configuration involves working simultaneously between the Bitwarden [Business Po
 [{% icon fa-download %} Download Sample]({{site.baseurl}}/files/saml-duo-sample.zip)
 {% endcallout %}
 
-## Open the Business Portal
+## Open SSO in the Web Vault
 
 {% callout info %}
 This article assumes that you have already set up Duo with an Identity Provider. If you haven't, see [Duo's documentation](https://duo.com/docs/sso#saml){:target="\_blank"} for details.
 {% endcallout %}
 
-If you're coming straight from [SAML 2.0 Configuration]({{site.baseurl}}/article/sso-configure-saml/), you should already have an [Organization ID created]({{site.baseurl}}/article/configure-sso-saml/#step-1-enabling-login-with-sso) and the SSO Configuration screen open. If you don't, open your [Business Portal]({{site.baseurl}}/article/about-business-portal/) and navigate to the SSO Configuration screen:
+If you're coming straight from [SAML 2.0 Configuration]({{site.baseurl}}/article/configure-sso-saml/), you should already have an [Organization ID created]({{site.baseurl}}/article/configure-sso-saml/#step-1-enabling-login-with-sso). If you don't refer to that article to create an Organization ID for SSO.
+
+Navigate to your Organization's **Manage** &rarr; **Single Sign-On** screen:
 
 {% image sso/sso-saml1.png SAML 2.0 Configuration %}
 
 You don't need to edit anything on this screen yet, but keep it open for easy reference.
-
-{% comment %}
-add authenticaiton source?
-
-{% image sso/cheatsheets/saml-duo/saml-duo1.png %}
-{% endcomment %}
 
 ## Protect an Application
 
@@ -46,7 +42,7 @@ In the search bar, type `generic service provider` and select **Generic Service 
 
 {% image sso/cheatsheets/saml-duo/duo-search.png Generic Service Provider %}
 
-Complete the following steps and configurations on the Application configuration screen, some of which you'll need to retrieve from the Bitwarden Business Portal:
+Complete the following steps and configurations on the Application configuration screen, some of which you'll need to retrieve from the Bitwarden Single Sign-On screen:
 
 {% image sso/cheatsheets/saml-duo/duo-appconfig.png Configuration Screen %}
 
@@ -82,11 +78,11 @@ Select the **Download certificate** button to download your X.509 Certificate, a
 
 Once you've finished configuring these fields, **Save** your changes.
 
-## Back to the Business Portal
+## Back to the Web Vault
 
-At this point, you’ve configured everything you need within the context of the DUO Portal. Jump back over to the Bitwarden Business Portal to complete configuration.
+At this point, you’ve configured everything you need within the context of the Duo Portal. Jump back over to the Bitwarden Web Vault to complete configuration.
 
-The Business Portal separates configuration into two sections:
+The Single Sign-On screen separates configuration into two sections:
 
 - **SAML Service Provider Configuration** will determine the format of SAML requests.
 - **SAML Identity Provider Configuration** will determine the format to expect for SAML responses.
