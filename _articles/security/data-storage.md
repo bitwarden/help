@@ -10,7 +10,7 @@ redirect_from:
   - /article/where-is-data-stored-cloud/
   - /article/where-is-data-stored-computer/
   - /article/cloud-server-security/
-description: "This Bitwarden Help article describes how Vault data is encrypted and hashed on local devices before being sent to the Cloud for secure storage."
+description: "This article describes how Vault data is encrypted and hashed on local devices before being sent to the Cloud for secure storage."
 ---
 
 This articles describes **where** Bitwarden stores your Vault Data and Administrative Data.

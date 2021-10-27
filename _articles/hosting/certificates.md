@@ -6,6 +6,7 @@ featured: false
 popular: false
 tags: [hosting, docker, install, deploy]
 order: "05"
+description: "This article explains the options self-hosting users have for generating certificates, including using Let's Encrypt or existing SSL certificates."
 ---
 
 This article defines the certificate options available to Self-hosted instances of Bitwarden. You will select your certificate option during installation. For installation instructions, see [Install and Deploy On-premise]({{site.baseurl}}/article/install-on-premise/).

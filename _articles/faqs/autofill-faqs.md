@@ -7,6 +7,7 @@ popular: true
 hidden: false
 tags: []
 order: "10"
+description: "This article contains FAQs regarding the Bitwarden password manager autofill functionality."
 ---
 
 ### Q: Can I auto-fill on a split login-workflow?

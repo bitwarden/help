@@ -5,6 +5,7 @@ categories: [miscellaneous]
 featured: false
 popular: false
 tags: [cli, captcha]
+description: "Learn how to your a personal API key to respond to hCaptcha challenges in the Bitwarden command-line interface (CLI)."
 ---
 
 The August 2021 release of Bitwarden (**2021-09-21**) introduced [Captcha](https://www.hcaptcha.com/about){:target="\_blank"} requirements to increase security against bot traffic. On the CLI, Captcha challenges are substituted with authentication challenges that can validated using your account's [Personal API Key]({{site.baseurl}}/article/personal-api-key) `client_secret`.

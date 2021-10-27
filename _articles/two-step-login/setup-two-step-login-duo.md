@@ -6,7 +6,7 @@ featured: false
 popular: false
 tags: [two-step login, 2fa, two factor authentication, account, duo, sms]
 order: "05"
-description: "This Bitwarden Help article explains how you can add an extra layer of protection to your Bitwarden Vault by setting up two-step login with Duo."
+description: "This article explains how you can add an extra layer of protection to your Bitwarden Vault by setting up two-step login with Duo."
 ---
 
 Two-step Login using Duo is unique among Bitwarden's [available Two-step Login methods]({{site.baseurl}}/article/setup-two-step-login/) in that it can be enabled for a Personal Vault (like the other methods) or **enabled for an entire Organization** by [Teams and Enterprise Organizations]({{site.baseurl}}/article/about-organizations/).

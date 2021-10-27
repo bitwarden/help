@@ -9,6 +9,7 @@ tags: []
 order: "02"
 redirect_from:
   - /article/deploying-bitwarden-as-a-msp/
+description: "Bitwarden Providers are administration entities that allow MSPs and resellers to create and manage Bitwarden Organizations. Learn how to get started with the Provide Portal."
 ---
 
 {% callout success %}

@@ -2,8 +2,8 @@
 layout: article
 title: Encryption
 categories: [security]
-featured: true
-popular: false
+featured: false
+popular: true
 tags: [encryption]
 order: "03"
 redirect_from:

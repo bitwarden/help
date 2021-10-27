@@ -6,6 +6,7 @@ featured: false
 popular: false
 tags: [hosting, docker, backup]
 order: "08"
+description: "If you self-host Bitwarden, this guide will help you backup on-premises installations and restore data to your password manager from a backup."
 ---
 
 When self-hosting Bitwarden, you are responsible for implementing your own backup procedures in order to keep data safe.

@@ -6,6 +6,7 @@ featured: true
 popular: false
 tags: [master password, reset, administrator, owner]
 order: "15"
+description: "This article explains how Bitwarden Enterprise Organization admins can reset access if an Organization members forgets their master password."
 ---
 
 {% callout info %}

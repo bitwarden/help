@@ -6,6 +6,7 @@ featured: false
 popular: false
 order: "03"
 tags: [two-step login, 2fa, two factor authentication, account, google authenticator, authy]
+description: "This article explains how you can add an extra layer of protection to your Bitwarden Vault by setting up two-step login with an authenticator app like Authy."
 ---
 
 Two-step Login using a third-party authenticator app (for example, [Authy](https://authy.com/){:target="_blank"}, [Google Authenticator](https://support.google.com/accounts/answer/1066447?hl=en){:target="_blank"}, or [FreeOTP](https://freeotp.github.io/){:target="_blank"}) is available for free to all Bitwarden users.

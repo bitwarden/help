@@ -7,6 +7,7 @@ popular: false
 hidden: false
 tags: [organization, enterprise, teams, plans, subscription]
 order: "02"
+description: "Compare capabilities, costs, and deployment options for the Bitwarden Teams plans against other password managers."
 ---
 Use a Bitwarden Teams [Organization]({{site.baseurl}}/article/about-organizations/) to securely share data with coworkers, department, or an entire company. With many choices out there, Bitwarden stands apart with a comprehensive Teams offering.
 

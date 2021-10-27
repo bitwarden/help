@@ -9,6 +9,7 @@ tags: []
 order: "14"
 redirect_from:
   - /article/what-hosted-plaforms-are-supported/
+description: "This article contains FAQs regarding self-hosting the Bitwarden password manager."
 ---
 
 This article contains Frequently Asked Questions (FAQs) regarding **Self-hosting**.

@@ -8,7 +8,7 @@ tags: [saml, saml2.0, single sign-on, sso, oidc, openid, openid connect, idp, id
 order: "01"
 redirect_from:
   - /article/getting-started-with-sso/
-description: "Bitwarden enterprise plan users can take advantage of Single Sign On (SSO). Find out more about Login with SSO and how it works with Bitwarden in our useful Help article."
+description: "Bitwarden enterprise plan users can take advantage of Single Sign On (SSO). Find out more about Login with SSO and how it works with Bitwarden in this useful article."
 ---
 
 ## What is Login with SSO?

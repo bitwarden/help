@@ -8,7 +8,7 @@ tags: []
 order: "05"
 redirect_from:
   - /article/user-seats/
-description: "This Help article explains how you can add, delete, and manage users of your Bitwarden password manager, including assigning user types and access controls."
+description: "This article explains how you can add, delete, and manage users of your Bitwarden password manager, including assigning user types and access controls."
 ---
 
 ## Manage User Seats

@@ -6,6 +6,7 @@ featured: false
 popular: false
 tags: [two-step login, 2fa, two factor authentication, account, yubikey, yubi, yubico]
 order: "06"
+description: "This article explains how you can add an extra layer of protection to your Bitwarden Vault by setting up two-step login with a YubiKey."
 ---
 
 Two-step Login using [YubiKey](https://www.yubico.com){:target="\_blank"} is available for Premium users, including members of Paid Organizations (Families, Teams, or Enterprise).

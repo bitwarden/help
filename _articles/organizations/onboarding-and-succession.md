@@ -9,6 +9,7 @@ tags: [onboarding]
 order: "10"
 redirect_from:
   - /article/employee-onboarding-and-succession-white-paper/
+description: "This guide covers the Bitwarden approach to onboarding and succession planning for your Organization, including establishing the relationship between users and Organizations."
 ---
 
 {% callout success %}

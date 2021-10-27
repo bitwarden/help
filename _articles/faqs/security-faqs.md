@@ -11,7 +11,7 @@ redirect_from:
   - /article/why-should-i-trust-bitwarden/
   - /article/what-happens-if-bitwarden-is-hacked/
   - /article/can-bitwarden-see-my-passwords/
-description: "This article helps visitors navigate Bitwarden security FAQs more easily. Explore questions about the Bitwarden password manager in general, about Bitwarden apps, and more."
+description: "This article contains FAQs regarding Bitwarden security practices. Learn about zero knowledge encryption, Bitwarden processes, and more."
 ---
 
 This article contains Frequently Asked Questions (FAQs) regarding **Security**.

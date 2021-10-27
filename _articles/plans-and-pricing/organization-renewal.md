@@ -7,6 +7,7 @@ popular: false
 hidden: false
 tags: [plans, premium, renewal]
 order: "07"
+description: "Learn what to do when your Bitwarden Organization subscription renewal date approaches."
 ---
 
 Organization subscriptions renew automatically on an annual or monthly basis. You can check your renewal date from your [Web Vault]({{site.baseurl}}/article/getting-started-webvault) by navigating to Organization **Settings** &rarr; **Subscription**.

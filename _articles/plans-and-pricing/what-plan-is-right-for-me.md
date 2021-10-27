@@ -9,6 +9,7 @@ tags: [free, personal, organization, enterprise, teams, family, plans, subscript
 order: "02"
 redirect_from:
   - /article/picking-bitwarden-for-personal-or-business/
+description: "Bitwarden offers a wide selection of plans to accommodate all use cases. This article contains helpful information you can use to determine what plan is right for you."
 ---
 
 Hi there! Bitwarden is here to help you take your first steps, whether you're a convert from another solution or new to password managers all-together.

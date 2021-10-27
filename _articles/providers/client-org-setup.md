@@ -7,6 +7,7 @@ popular: false
 hidden: false
 tags: []
 order: "04"
+description: "As a Bitwarden Provider, learn how to setup a client Organization for you to administer."
 ---
 
 This article will walk you through the [creation of a Client Organization](#create-a-client-organization) and outline a typical [setup procedure](#initial-setup-procedure) for getting started administering a customer's Organization.

@@ -6,6 +6,7 @@ featured: true
 popular: false
 tags: []
 order: "11"
+description: "This article explains how to centrally configure client applications settings to connect to your self-hosted server."
 ---
 
 When operating a self-hosted Bitwarden server in a business setting, administrators may want to centrally configure client application settings (particularly, Server URL) before deploying to users with an endpoint management platform.

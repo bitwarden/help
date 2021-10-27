@@ -7,6 +7,7 @@ popular: false
 hidden: true
 tags: [free, personal, organization, enterprise, teams, family, plans, subscription]
 order: "08"
+description: "This article describes the difference between legacy (2019) plans and our current subscription options."
 ---
 In continuing our mission to empower individuals and organizations to store and share sensitive data easily and securely, we've recently made some upgrades to our offerings. **This article is for users who created their Bitwarden accounts prior to September 06, 2020 and want to understand the difference between Classic 2019 and current plans.**
 
@@ -65,7 +66,7 @@ There is no longer a minimum number of users required for a Teams Organization (
 
 ## Enterprise Organizations
 
-Upgrading from Classic 2019 to the current Enterprise plan unlocks the highly anticipated Login with SSO feature-set, simplifying access for enterprise users by fully integrating with your existing Identity Management solution. It also unlocks [Admin Password Reset]({{site.baseurl}}/article/admin-reset/), allowing designated administrators to recover Enterprise Organization user accounts and restore access in the event that an employee forgets their Master Password. 
+Upgrading from Classic 2019 to the current Enterprise plan unlocks the highly anticipated Login with SSO feature-set, simplifying access for enterprise users by fully integrating with your existing Identity Management solution. It also unlocks [Admin Password Reset]({{site.baseurl}}/article/admin-reset/), allowing designated administrators to recover Enterprise Organization user accounts and restore access in the event that an employee forgets their Master Password.
 
 As before, all members of your Enterprise Organization will automatically get all premium features, including advanced 2FA options, the Bitwarden Authenticator (TOTP), encrypted file attachments, and more.
 

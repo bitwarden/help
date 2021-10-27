@@ -6,7 +6,7 @@ featured: false
 popular: false
 tags: [account, enterprise, free trial, organization]
 order: "04"
-description: "This Help article explains how to start an enterprise free trial and taking the next steps in using Bitwarden as an enterprise password manager."
+description: "This article explains how to start an enterprise free trial and taking the next steps in using Bitwarden as an enterprise password manager."
 ---
 
 ## New to Bitwarden?

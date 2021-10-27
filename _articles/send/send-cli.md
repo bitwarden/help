@@ -6,7 +6,7 @@ featured: true
 popular: false
 tags: [bitwarden send, send, cli]
 order: "06"
-description: "This Help article explains how to create a Send (an encrypted transmission of sensitive data) from the Bitwarden command-line interface (CLI)."
+description: "This article explains how to create a Send (an encrypted transmission of sensitive data) from the Bitwarden command-line interface (CLI)."
 ---
 
 Bitwarden Send is available as a set of fully-featured CLI commands. This article documents the breadth of `bw send` commands, however Send **is not a separate tool** from the Bitwarden Command-line Interface (CLI). Therefore, many of the commands, options, and concepts in the [CLI documentation]({{site.baseurl}}/article/cli/) are relevant here.

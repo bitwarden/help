@@ -6,6 +6,7 @@ featured: true
 popular: false
 tags: []
 order: "17"
+description: "This article explains how to use GPOs and other templates to automate deployment of Bitwarden Browser Extensions to users with an endpoint management platform."
 ---
 
 When operating Bitwarden in a business setting, administrators may want to automate deployment of Bitwarden Browser Extensions to users with an endpoint management platform or Group Policy.

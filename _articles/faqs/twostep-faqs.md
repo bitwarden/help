@@ -7,6 +7,7 @@ popular: false
 hidden: false
 tags: []
 order: "10"
+description: "This article contains FAQs about two-step login - an important piece of good security practice when using Bitwarden."
 ---
 
 This article contains Frequently Asked Questions (FAQs) regarding **Two-step Login**.

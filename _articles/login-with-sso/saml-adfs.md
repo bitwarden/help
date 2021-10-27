@@ -7,6 +7,7 @@ popular: false
 hidden: true
 tags: [sso, saml, adfs]
 order:
+description: "This article contains instructions for configuring Bitwarden Login with SSO for AD FS SAML 2.0 implementations."
 ---
 This article contains **Active Directory Federation Services (AD FS)-specific** help for configuring Login with SSO via SAML 2.0. For help configuring Login with SSO for another IdP, refer to [SAML 2.0 Configuration]({{site.baseurl}}/article/configure-sso-saml/).
 

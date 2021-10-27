@@ -5,6 +5,7 @@ categories: [miscellaneous]
 featured: true
 popular: false
 tags: []
+description: "Learn how to change the theme of you Bitwarden client applications."
 ---
 
 Bitwarden Browser Extensions, Desktop Apps, and Mobile apps come packed with stylish themes:

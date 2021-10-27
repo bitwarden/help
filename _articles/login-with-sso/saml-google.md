@@ -7,6 +7,7 @@ popular: false
 hidden: true
 tags: [sso, saml, google]
 order:
+description: "This article contains instructions for configuring Bitwarden Login with SSO for Google Workspace SAML 2.0 implementations."
 ---
 
 This article contains **Google Workspace-specific** help for configuring Login with SSO via SAML 2.0. For help configuring Login with SSO for another IdP, refer to [SAML 2.0 Configuration]({{site.baseurl}}/article/configure-sso-saml/).

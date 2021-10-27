@@ -5,6 +5,7 @@ categories: [miscellaneous]
 featured: false
 popular: false
 tags: [localize, l10n, translate, i18n, internationalization, language]
+description: "The localization setting in Bitwarden enables you to change the language of your password manager. This article explains how to change your language settings."
 ---
 
 ## Change App Language

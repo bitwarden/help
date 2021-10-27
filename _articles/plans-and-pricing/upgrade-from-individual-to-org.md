@@ -7,6 +7,7 @@ popular: false
 hidden: false
 tags: [account, individual, organization, premium, subscription]
 order: "03"
+description: "Learn how to add an Organization subscription to your individual Bitwarden account."
 ---
 This article will guide existing individual Bitwarden users ([**Free**]({{site.baseurl}}/article/about-bitwarden-plans/#free-individual) or [**Premium**]({{site.baseurl}}/article/about-bitwarden-plans/#premium-individual)) through the process of transitioning to an Organizations plan ([**Free**]({{site.baseurl}}/article/about-bitwarden-plans/#free-organizations), [**Families**]({{site.baseurl}}/article/about-bitwarden-plans/#families-organizations), [**Teams**]({{site.baseurl}}/article/about-bitwarden-plans/#teams-organizations), or [**Enterprise**]({{site.baseurl}}/article/about-bitwarden-plans/#enterprise-organizations)) in order to start securely sharing data from Organizations with friends, family, co-workers, a department, or an entire company.
 
