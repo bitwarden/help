@@ -45,7 +45,9 @@ To create a Folder, select the {% icon fa-plus %} **Add** icon in the Folders li
 
 {% image manage-items/folder-add-web.png Add a folder %}
 
-Once created, you can **rename or delete** a folder at any time using the hover-over {% icon fa-pencil %} **Pencil** icon.
+Once created, you can **rename or delete** a folder at any time by selecting the folder and clicking the {% icon fa-pencil %} **Pencil** icon:
+
+{% image manage-items/folder-delete-wv.png Edit or delete a folder %}
 
 {% endcapture %}
 {{ web_vault | markdownify}}
@@ -58,7 +60,9 @@ To create a Folder, select the {% icon fa-cogs %} **Settings** menu, select the 
 
 {% image manage-items/folder-add-extension.gif Add a folder %}
 
-Once created, you can **rename or delete** a folder at any time from the same menu by selecting an existing folder.
+Once created, you can **rename or delete** a folder at any time from the same menu by selecting an existing folder:
+
+{% image manage-items/folder-delete-extension.gif Edit or delete a folder %}
 
 {% endcapture %}
 {{ browser_extension | markdownify}}
@@ -71,7 +75,9 @@ To create a Folder, select the {% icon fa-plus %} **Add** icon in the Folders li
 
 {% image manage-items/folder-add-desk.png Add a folder %}
 
-Once created, you can **rename or delete** a folder at any time using the hover-over {% icon fa-pencil %} **Pencil** icon.
+Once created, you can **rename or delete** a folder at any time using the hover-over {% icon fa-pencil %} **Pencil** icon:
+
+{% image manage-items/folder-delete-desktop.png Edit or delete a folder %}
 
 {% endcapture %}
 {{ desktop_info | markdownify}}
@@ -80,11 +86,11 @@ Once created, you can **rename or delete** a folder at any time using the hover-
 {% capture mobile_info %}
 ### Mobile App
 
-To create a Folder, tap the {% icon fa-cogs %} **Settings** menu, tap the **Folders** option, and tap/select the {% icon fa-plus %} **Add** icon:
+To create a Folder, tap the {% icon fa-cogs %} **Settings** menu, tap the **Folders** option, and tap/select the {% icon fa-plus %} **Add** icon. Once created, you can **rename or delete** a folder at any time from the same menu by tapping the {% icon fa-ellipsis-v %} menu in an existing folder.
 
-{% image manage-items/folder-add-mob.jpeg Add a folder %}
+{% image manage-items/folders-mobile.png Folders on mobile %}
 
-Once created, you can **rename or delete** a folder at any time from the same menu by tapping an existing folder.
+
 
 {% endcapture %}
 {{ mobile_info | markdownify}}
