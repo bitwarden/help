@@ -8,7 +8,7 @@ popular: false
 tags: [browser, autofill, auto-fill, custom fields, form fill]
 ---
 
-Bitwarden can do more than just [auto-fill your usernames and passwords]({{site.baseurl}}/article/auto-fill-browser/)! **Bitwarden Browser Extensions** can auto-fill [custom fields]({{site.baseurl}}/article/custom-fields) to simplify fill-in of security questions, PINS, and more using the [unique Tab view](({{site.baseurl}}/article/auto-fill-browser/)).
+Bitwarden can do more than just [auto-fill your usernames and passwords]({{site.baseurl}}/article/auto-fill-browser/)! **Bitwarden Browser Extensions** can auto-fill [custom fields]({{site.baseurl}}/article/custom-fields) to simplify fill-in of security questions, PINS, and more using the [unique Tab view]({{site.baseurl}}/article/auto-fill-browser/)).
 
 ## Auto-fill Custom Fields
 
