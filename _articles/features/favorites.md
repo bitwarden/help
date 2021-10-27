@@ -6,6 +6,7 @@ featured: true
 popular: false
 tags: [favorites, features, tutorial]
 order: "07"
+description: "The Bitwarden password manager lets users save Vault items and passwords as favorites for easy access. This guide explains how to set up and use favorites."
 ---
 
 Any item can be designated as a **Favorite** allow quick access to your most used items.

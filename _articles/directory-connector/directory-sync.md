@@ -6,6 +6,7 @@ featured: true
 popular: false
 tags: [directory connector, directory sync, teams, enterprise]
 order: "01"
+description: "The Bitwarden Directory Connector application syncs users and groups to a Bitwarden Organization from a selection of directory services for easier user provisioning and deprovisioning."
 ---
 
 ## What is Directory Connector?

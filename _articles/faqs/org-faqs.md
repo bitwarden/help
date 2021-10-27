@@ -6,6 +6,7 @@ featured: true
 popular: false
 tags: []
 order: "19"
+description: "This article contains FAQs regarding Bitwarden Organizations, which can be used to facilitate secure sharing between users."
 ---
 
 This article contains Frequently Asked Questions (FAQs) regarding **Organizations**.

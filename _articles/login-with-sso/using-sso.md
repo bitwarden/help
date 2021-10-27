@@ -9,6 +9,7 @@ order: "04"
 redirect_from:
   - /article/link-to-sso/
   - /article/sso-access-your-vault/
+description: "This article explains how to get started using Login with SSO as a Bitwarden password manager end-user."
 ---
 
 As an end-user of Bitwarden, you will need to [link your account to SSO](#link-your-account-to-sso) and get your [Organization identifier](#get-your-organization-identifier) before you can [login using SSO](#login-using-sso):

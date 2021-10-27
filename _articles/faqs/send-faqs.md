@@ -6,6 +6,7 @@ featured: true
 popular: false
 tags: []
 order: "09"
+description: "This article contains FAQs regarding Bitwarden Send, a tool for transmitting encrypted plaintext and file attachments to anybody securely"
 ---
 
 ### Q: Why can't I create a file Send?

@@ -8,6 +8,7 @@ tags: [master password, account]
 order: "01"
 redirect_from:
   - /article/change-your-master-password/
+description: "Find out why you should make your Bitwarden master password memorable and how to set up hints to prompt your memory."
 ---
 
 ## About your Master Password

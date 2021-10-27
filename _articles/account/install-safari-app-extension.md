@@ -5,6 +5,7 @@ categories: [miscellaneous]
 featured: false
 popular: false
 tags: [browser, safari]
+description: "This article explains how Bitwarden customers using Safari 13 or earlier can download and install the Safari app extension."
 ---
 
 Bitwarden's Safari Web Extension is a port of the prior *App Extension* designed for use with [Safari 14](https://developer.apple.com/documentation/safariservices/safari_web_extensions/converting_a_safari_app_extension_to_a_safari_web_extension?language=objc){:target="\_blank"}.    The Safari Web Extension is packaged with the Bitwarden Desktop App available on the App Store.

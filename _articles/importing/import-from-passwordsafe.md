@@ -6,6 +6,7 @@ featured: true
 popular: false
 tags: [import, passwordsafe]
 order: "06"
+description: "If you are switching password managers from Password Sage to Bitwarden, use this article guide you to export data from Password Safe and import into Bitwarden."
 ---
 
 Use this article for help exporting data from Password Safe and importing into Bitwarden. Password Safe (V8) currently only supports exporting as `.csv` file. Older versions also supported `.xml`.

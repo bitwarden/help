@@ -7,6 +7,7 @@ popular: false
 hidden: false
 tags: [two-step login, 2fa, two factor authentication]
 order: "01"
+description: "The Bitwarden field guide to two-step login explains what two-step login is and how to use it to help prevent unauthorized access to your Bitwarden password manager."
 ---
 
 ## What is Two-Step Login?

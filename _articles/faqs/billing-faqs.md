@@ -7,6 +7,7 @@ popular: false
 hidden: false
 tags: []
 order: "09"
+description: "This article contains FAQs regarding billing and subscriptions for the Bitwarden password manager."
 ---
 
 This article contains Frequently Asked Questions (FAQs) regarding **Plans and Pricing**.

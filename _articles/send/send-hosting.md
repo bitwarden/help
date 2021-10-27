@@ -6,6 +6,7 @@ featured: true
 popular: false
 tags: []
 order: "08"
+description: "This article describes steps you may need to take to use Bitwarden Send in a self-hosted environment."
 ---
 
 Once you [update your instance]({{site.baseurl}}/article/updating-on-premise/), most implementations will be already setup to begin [using Send]({{site.baseurl}}/article/create-send/). An exception to this is if you're using a non-default **mapped volume for attachment storage**.

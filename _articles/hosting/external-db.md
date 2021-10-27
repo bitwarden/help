@@ -6,6 +6,7 @@ featured: false
 popular: false
 tags: [hosting, database, mssql]
 order: "13"
+description: "This article explains how to connect your self-hosted Bitwarden server to an external MSSQL database instead of the included container."
 ---
 
 By default, self-hosted instances of Bitwarden will use a Microsoft SQL Server (MSSQL) database created as a normal part of [installation setup]({{site.baseurl}}/article/install-on-premise/), however you configure Bitwarden to use an external MSSQL database.

@@ -7,6 +7,7 @@ popular: false
 hidden: true
 tags: [sso, oidc, azure]
 order:
+description: "This article contains instructions for configuring Bitwarden Login with SSO for Azure OIDC implementations."
 ---
 
 This article contains **Azure-specific** help for configuring Login with SSO via OpenID Connect (OIDC). For help configuring Login with SSO for another OIDC IdP, or for configuring Azure via SAML 2.0, see [OIDC Configuration]({{site.baseurl}}/article/configure-sso-oidc/) or [Azure SAML Implementation]({{site.baseurl}}/article/saml-azure/).

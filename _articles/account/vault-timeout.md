@@ -6,6 +6,7 @@ featured: false
 popular: false
 tags: [account, vault, timeout, 2FA, two-step]
 order: "14"
+description: "Learn how to set a Vault timeout timer and behavior for your Bitwarden password manager."
 ---
 
 Vault Timeout determines how your Vault will behave after a specified period of inactivity. Timeout is configured individually for each Bitwarden Client application (Web Vault, Browser Extension, Mobile, Desktop). Vault Timeout can be configured from the **Settings** menu of any Bitwarden app. When configuring your Vault Timeout settings, you can set both the **Vault Timeout** (time-constraint) and **Vault Timeout Action**:

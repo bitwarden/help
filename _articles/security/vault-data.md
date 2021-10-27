@@ -8,6 +8,7 @@ tags: []
 order: "01"
 redirect_from:
   - /article/what-information-is-encrypted/
+description: "This article explains the different types of Vault data you can store in your Bitwarden password manager Vaults and how items are encrypted."
 ---
 
 All Vault data is encrypted by Bitwarden before being stored anywhere. To learn how, see [Encryption]({{site.baseurl}}/article/what-encryption-is-used/).

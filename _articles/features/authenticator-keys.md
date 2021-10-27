@@ -6,6 +6,7 @@ featured: true
 popular: false
 tags: [autofill, auto-fill, totp, 2fa, two-step login, two factor authentication, authenticator]
 order: "12"
+description: "The Bitwarden Authenticator is an alternative to dedicated authentication apps which you can use to verify your identity for websites and apps that use two-step login and offers greater convenience."
 ---
 
 The Bitwarden Authenticator is an alternative solution to dedicated authentication apps like Authy, which you can use to verify your identity for websites and apps that use Two-step Login. The Bitwarden Authenticator generates 6-digit [Time-based One-time Passwords](https://en.wikipedia.org/wiki/Time-based_One-time_Password_algorithm) (TOTPs) using SHA-1 and rotates them every 30 seconds.

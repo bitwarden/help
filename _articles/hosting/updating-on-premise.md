@@ -6,6 +6,7 @@ featured: false
 popular: false
 tags: [hosting, update]
 order: "07"
+description: "If you self-host Bitwarden, this article will explain how to keep your password manager up to date. "
 ---
 
 {% callout success %}

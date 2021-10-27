@@ -6,6 +6,7 @@ featured: true
 popular: false
 tags: [import]
 order: "08"
+description: "This article explains how to create an encrypted export of your Vault data in the Bitwarden password manager for backup."
 ---
 
 Vault data can be [exported]({{site.baseurl}}/article/export-your-data/) in an encrypted JSON file. These exports are encrypted using your [account's encryption key]({{site.baseurl}}/article/account-encryption-key/), which are generated on account creation and unique to each Bitwarden user account.

@@ -6,6 +6,7 @@ order: "04"
 featured: true
 popular: false
 tags: [browser, autofill, auto-fill, identity, card, form fill]
+description: "Learn how the autofill capability of the Bitwarden password manager can autofill card details and identity information."
 ---
 
 Bitwarden can do more than just [auto-fill your usernames and passwords]({{site.baseurl}}/article/auto-fill-browser/)! **Bitwarden Browser Extensions** can auto-fill [Cards]({{site.baseurl}}/article/managing-items/#cards) and [Identities]({{site.baseurl}}/article/managing-items/#identities) to simplify online purchases, account creation, and more using the [unique Tab view]({{site.baseurl}}/article/auto-fill-browser/).

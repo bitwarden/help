@@ -7,6 +7,7 @@ popular: false
 hidden: false
 tags: []
 order: "07"
+description: "This article explains the Event Logs that are captured in the Bitwarden Provider Portal for MSPs and resellers."
 ---
 
 ## What are Event Logs?

@@ -7,6 +7,7 @@ popular: false
 hidden: false
 tags: [tutorial, getting started, browser extensions]
 order: "03"
+description: "Learn how to get started with Bitwarden browser extensions. Explore your vault, launch a website, and autofill a login directly from the browser extension."
 ---
 
 Bitwarden Browser Extensions integrate password management directly into your favorite browser. Download a Bitwarden Browser Extension from your browser's marketplace or app store, or from the [Bitwarden Downloads](https://bitwarden.com/download){:target="\_blank"} page.

@@ -6,6 +6,7 @@ featured: false
 popular: false
 tags: [two-step login, 2fa, two factor authentication, account]
 order: "08"
+description: "This article explains how to generate a recovery code to disable two-step login services if you lose access to your secondary device."
 ---
 
 If you enable any [Two-step Login methods]({{site.baseurl}}/article/setup-two-step-login/), it's important to understand that losing access to your secondary device(s) (e.g. a Mobile device with an installed Authenticator, a Security Key, or a linked Email inbox) has the potential to lock you out of your Bitwarden Vault.

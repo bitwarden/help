@@ -7,6 +7,7 @@ popular: false
 hidden: false
 tags: [import, teams, enterprise, onboarding, security]
 order: "04"
+description: "The teams and enterprise migration guide explains how to export data from another source, create and configure your Bitwarden Organization, and more."
 ---
 
 Secure migration of your Organization with Bitwarden is straightforward and secure. Simply follow the steps in this guide to migrate data and users from your existing password manager:

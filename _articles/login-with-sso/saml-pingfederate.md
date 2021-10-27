@@ -7,6 +7,7 @@ popular: false
 hidden: true
 tags: [sso, saml, pingfederate]
 order:
+description: "This article contains instructions for configuring Bitwarden Login with SSO for PingFederate SAML 2.0 implementations."
 ---
 
 This article contains sample configurations for Bitwarden **Login with SSO** (SAML 2.0) implementations with PingFederate.

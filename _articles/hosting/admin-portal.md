@@ -6,6 +6,7 @@ featured: false
 popular: false
 tags: [hosting, docker, admin]
 order: "10"
+description: "Bitwarden self-hosted customers can use the admin portal to view environment configurations and view and delete registered users and organizations."
 ---
 
 The Bitwarden System Administrator Portal can be used to:

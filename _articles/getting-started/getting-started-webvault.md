@@ -7,6 +7,7 @@ popular: false
 hidden: false
 tags: [tutorial, getting started, web vault]
 order: "02"
+description: "Learn how to get started with the Bitwarden password manager web vault, including creating your first login, generating a strong password, and creating an organization."
 ---
 
 **The Bitwarden Web Vault provides the richest Bitwarden experience** for personal users and Organizations. Lots of important functions, like setting up [Two-step Login]({{site.baseurl}}/article/setup-two-step-login/) or administering an [Organization]({{site.baseurl}}/article/about-organizations/), can only be done from the Web Vault.

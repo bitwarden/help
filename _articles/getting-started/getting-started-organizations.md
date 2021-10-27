@@ -7,6 +7,7 @@ popular: false
 hidden: false
 tags: [tutorial]
 order: "06"
+description: "Bitwarden Organizations enable your family, team, or enterprise to securely share common information like office WiFi passwords, online credentials, or shared company credit cards."
 ---
 
 ## Why Bitwarden Organizations?

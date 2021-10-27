@@ -8,6 +8,7 @@ tags: [free, personal, organization, enterprise, teams, family, plans, subscript
 order: "01"
 redirect_from:
   - /article/choosing-the-right-subscription-plan/
+description: "The Bitwarden password manager offers a selection of plans to individuals and businesses. Learn how to open a free individual account or start a free business trial."
 ---
 
 In this article, we'll define each Bitwarden subscription plan to help you along your password management and secure data storage journey.

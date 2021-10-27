@@ -7,6 +7,7 @@ popular: true
 hidden: false
 tags: []
 order: "09"
+description: "An active built-in browser-based password manager can interfere with your Bitwarden experience. Learn how to disable built-in password managers with this guide."
 ---
 
 If you're new to Bitwarden, it's likely that the web browser you use has been saving and auto-filling your passwords. Most web browsers enable this by default, but experts generally agree that [built-in password managers are more vulnerable](https://www.wired.com/2016/08/browser-password-manager-probably-isnt-enough/){:target="\_blank"} than dedicated solutions like Bitwarden.

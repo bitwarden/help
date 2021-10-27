@@ -6,6 +6,7 @@ featured: false
 popular: false
 tags: [hosting, docker, install, deploy]
 order: "02"
+description: "This article guides you through the process of installing and deploying the Bitwarden password manager to a Windows server."
 ---
 
 This article will walk you through the procedure to install and deploy Bitwarden to your own Windows Server. Bitwarden can also be installed and deployed on [Linux and macOS]({{site.baseurl}}/article/install-on-premise/) machines.

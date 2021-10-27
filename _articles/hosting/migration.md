@@ -6,6 +6,7 @@ featured: false
 popular: false
 tags: [hosting, docker, install, deploy]
 order: "04"
+description: "This article explains how to migrate from the Bitwarden Cloud to a self-hosted server and vice versa."
 ---
 
 This article will walk you through procedures for transitioning from Cloud to Self-hosted, from Self-hosted to Cloud, and from one self-hosted server to another:

@@ -6,6 +6,7 @@ featured: true
 popular: false
 tags: []
 order: "06"
+description: "Clearing the sync cache can help if you encounter a sync error when using the Bitwarden Directory Connector."
 ---
 
 Directory Connector keeps a local cache while syncing changes to your Bitwarden Organization. This cache allows Directory Connector to **only send the deltas between the two directories** (before / after).

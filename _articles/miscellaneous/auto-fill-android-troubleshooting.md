@@ -6,6 +6,7 @@ order: "10"
 featured: false
 popular: false
 tags: [android, autofill, auto-fill]
+description: "Learn how to troubleshoot autofill using the Bitwarden password manager for Android devices."
 ---
 
 Depending on the version of Android your device is running, there are a few different ways to enable auto-fill from Bitwarden:

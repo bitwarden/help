@@ -7,6 +7,7 @@ popular: false
 hidden: false
 tags: []
 order: "10"
+description: "This article explains how you can sync your Bitwarden Organization with Google Workspace (formerly "G Suite") to reduce management overhead."
 ---
 
 This article will help you get started using Directory Connector to sync users and groups from your Google Workspace (formerly "G Suite") Directory to your Bitwarden Organization.

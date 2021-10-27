@@ -6,6 +6,7 @@ featured: false
 popular: false
 tags: [sso, saml, saml2.0, idp, identity]
 order: "02"
+description: "With a Bitwarden enterprise plan, you can enable Login with SSO for SAML 2.0 authentication."
 ---
 
 ## Step 1: Set an Organization Identifier

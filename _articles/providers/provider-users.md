@@ -7,6 +7,7 @@ popular: false
 hidden: false
 tags: []
 order: "03"
+description: "This article will help you onboard users to your Bitwarden Provider who can administer client Organizations under your management."
 ---
 
 ## Onboard Provider Users

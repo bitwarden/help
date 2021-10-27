@@ -7,6 +7,7 @@ popular: false
 hidden: false
 tags: []
 order: "06"
+description: "As a Bitwarden Provider, learn how to manage individual client Organizations."
 ---
 
 To access a [Client Organization]({{site.baseurl}}/article/providers/#client-organizations) as a [Service User]({{site.baseurl}}/article/provider-users/#provider-user-types), select **Provider** from the top navigation and select your Provider from the Providers list. In the Provider Portal, select the Client Organization to administer from the {% icon fa-bank %} **Clients** tab:

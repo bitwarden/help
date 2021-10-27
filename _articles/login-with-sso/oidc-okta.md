@@ -7,6 +7,7 @@ popular: false
 hidden: true
 tags: [sso, oidc, okta]
 order:
+description: "This article contains instructions for configuring Bitwarden Login with SSO for Okta OIDC implementations."
 ---
 This article contains **Okta-specific** help for configuring Login with SSO via OpenID Connect (OIDC). For help configuring Login with SSO for another OIDC IdP, or for configuring Okta via SAML 2.0, see [OIDC Configuration]({{site.baseurl}}/article/configure-sso-oidc/) or [Okta SAML Implementation]({{site.baseurl}}/article/saml-okta/).
 

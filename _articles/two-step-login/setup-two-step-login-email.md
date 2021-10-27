@@ -6,6 +6,7 @@ featured: false
 popular: false
 order: "04"
 tags: [two-step login, 2fa, two factor authentication, account, email]
+description: "This article explains how you can add an extra layer of protection to your Bitwarden Vault by setting up two-step login with an email account."
 ---
 
 Two-step Login using email is available for free to all Bitwarden users.

@@ -5,6 +5,7 @@ categories: [miscellaneous]
 featured: false
 popular: false
 tags: []
+description: "This article explains how you can exclude domains when you don't want credentials saved in the Bitwarden password manager."
 ---
 
 Bitwarden Browser Extensions can be configured to exclude (i.e. explicitly not offer to save passwords for) specific domains. When a domain is in the **Excluded Domains** list, Bitwarden won't issue the popup offering to remember an entered password:

@@ -9,6 +9,7 @@ tags: [sharing, how to]
 order: "04"
 redirect_from:
   - /article/share-to-a-collection/
+description: "Placing items in a collection within the Bitwarden password manager makes it easy to share among multiple users securely." 
 ---
 
 {% callout info %}

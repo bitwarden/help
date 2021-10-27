@@ -6,6 +6,7 @@ featured: false
 popular: false
 tags: [account, billing, billing information, individual, organization, subscription]
 order: "05"
+description: "Learn how to update billing info in Bitwarden, including steps for individual and Organization subscriptions."
 ---
 
 Your billing information can only be updated from the [Bitwarden Web Vault](https://vault.bitwarden.com).

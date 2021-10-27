@@ -6,6 +6,7 @@ featured: true
 popular: false
 tags: []
 order: "03"
+description: "Learn how to get started with the Bitwarden Directory Connector CLI for easier user provisioning and deprovisioning."
 ---
 
 The Directory Connector CLI is suited toward work in environments where a desktop GUI is unavailable, or if you want to programmatically script directory sync operations using tools provided by the operating system (cron job, scheduled task, etc.). The Directory Connector CLI can be used cross-platform on Windows, macOS, and Linux distributions.

@@ -6,6 +6,7 @@ featured: false
 popular: false
 tags: [icons, website icons, privacy]
 order: "09"
+description: "This article explains how you can disable website icons to enhance your privacy when using Bitwarden."
 ---
 
 *Bitwarden does not collect any information when you download icons for website logins stored in your Bitwarden vault.*

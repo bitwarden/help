@@ -6,6 +6,7 @@ featured: true
 popular: false
 tags: [import, firefox]
 order: "05"
+description: "This article explains how you can export data from Firefox and import into Bitwarden."
 ---
 
 Use this article for help exporting data from Firefox and importing into Bitwarden.

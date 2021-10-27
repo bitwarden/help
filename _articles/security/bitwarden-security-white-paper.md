@@ -8,6 +8,7 @@ popular: false
 hidden: false
 tags: []
 order: "99"
+description: "The Bitwarden Security Whitepaper highlights the security and compliance program, elaborating on security principles like password hashing and key derivation."
 ---
 {% callout success %}
 Read the full paper below or [download the PDF](https://bitwarden.com/images/resources/security-white-paper-2021.pdf).

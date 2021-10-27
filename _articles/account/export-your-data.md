@@ -6,6 +6,7 @@ featured: false
 popular: false
 tags: [export, accounts, csv]
 order: "07"
+description: "This article explains how to export your personal Vault data from any client application, or export an Organization Vault from the Web Vault or CLI."
 ---
 
 You can export your personal Vault data from any client application, or export an Organization Vault from the Web Vault or CLI. Exports can be downloaded as plaintext `.json` or `.csv` files, or as a `.json` [encrypted export]({{site.baseurl}}/article/encrypted-export/).

@@ -6,6 +6,7 @@ featured: true
 popular: false
 tags: [organizations, import]
 order: "08"
+description: "This article explains how to import data from a third-party password manager to a Bitwarden Organization."
 ---
 
 Bitwarden provides a data import tool for easy migration from any password management solution to your Organization Vault. You can also use the data import tool to import from one Bitwarden Organization to another, or to import a Bitwarden [Encrypted Export]({{site.baseurl}}/article/encrypted-export/).

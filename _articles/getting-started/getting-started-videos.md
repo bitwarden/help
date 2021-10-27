@@ -7,6 +7,7 @@ popular: false
 hidden: true
 tags: [getting started, videos, bitwarden 101]
 order: "08"
+description: "Watch our Getting Started videos to learn how to create a Bitwarden account, manage your Vault, and more."
 ---
 
 ## Bitwarden 101 - Getting Started

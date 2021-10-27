@@ -9,6 +9,7 @@ order: "03"
 redirect_from:
   - /article/groups/
   - /article/create-groups/
+description: "Groups in the Bitwarden password manager provide a scalable way to assign permissions and other access controls."
 ---
 
 ## What are Groups?

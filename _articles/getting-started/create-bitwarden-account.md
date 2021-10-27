@@ -6,6 +6,7 @@ featured: true
 popular: true
 tags: [getting started, create account]
 order: "01"
+description: "This article explains how to create a Bitwarden account when you start your secure password management journey or more from another password manager."
 ---
 ## Welcome to Bitwarden
 

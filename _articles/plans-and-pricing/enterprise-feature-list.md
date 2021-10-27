@@ -7,6 +7,7 @@ popular: false
 hidden: false
 tags: [enterprise, plans, organization]
 order: "03"
+description: "The Bitwarden password manager offers many benefits to enterprise customers, including role based access controls, single sign on options, and more."
 ---
 
 This document describes and references the features available to Bitwarden Enterprise Organizations in several categories:

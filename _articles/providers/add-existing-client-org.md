@@ -7,6 +7,7 @@ popular: false
 hidden: false
 tags: []
 order: "05"
+description: "Learn how to add an existing Organization to your Bitwarden Provider Portal."
 ---
 
 MSPs, Resellers, and other Bitwarden Partners that are already administering Organizations on behalf of their clients can add pre-existing Organizations to their Provider Portal.

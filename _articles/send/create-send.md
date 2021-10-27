@@ -6,6 +6,7 @@ featured: true
 popular: false
 tags: [bitwarden send, send, create a send, how to, ephemeral sharing]
 order: "02"
+description: "Learn how to use Bitwarden Send to transmit encrypted plaintext and file attachments from the web vault, browser extension, desktop app, mobile app, or CLI."
 ---
 
 Creation of file Sends is available for Premium users, including members of a Paid Organization (Families, Teams, or Enterprise). Free users may still create text Sends.

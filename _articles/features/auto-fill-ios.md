@@ -6,6 +6,7 @@ featured: true
 popular: false
 order: "03"
 tags: [iOS, Auto-fill, autofill]
+description: "The Bitwarden password manager makes passwords available for auto-fill on iOS devices so you can seamlessly log into websites and apps while maintaining strong passwords."
 ---
 
 Bitwarden makes your passwords available for auto-fill so that you can seamlessly log in to websites and apps while also maintaining strong and secure passwords. Auto-fill cuts the copying and pasting out of your login routine by detecting Vault items that match the service you're logging in to.

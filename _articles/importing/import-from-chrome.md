@@ -6,6 +6,7 @@ featured: true
 popular: false
 tags: [import, chrome, opera, vivaldi, edge]
 order: "04"
+description: "This article explains how you can export data from Google Chrome or any chromium-based browser and import into Bitwarden."
 ---
 
 Use this article for help exporting data from Google Chrome and importing into Bitwarden.

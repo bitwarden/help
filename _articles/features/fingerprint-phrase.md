@@ -6,6 +6,7 @@ featured: false
 popular: false
 tags: [fingerprint]
 order: "05"
+description: "Your fingerprint phrase in the Bitwarden password manager uniquely and securely identifies a user account when encryption-related operations and performed."
 ---
 
 Each Bitwarden account has a public "fingerprint phrase" associated with it. Your account's fingerprint phrase is permanent and composed of five random english words that appear in a specific order, for example:

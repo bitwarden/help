@@ -9,6 +9,7 @@ order: "02"
 redirect_from:
   - /article/collections/
   - /article/create-collections/
+description: "Learn about collections in the Bitwarden password manager and how they facilitate scalable, secure sharing of login credentials and other sensitive data with individuals and groups."
 ---
 
 ## What are Collections?

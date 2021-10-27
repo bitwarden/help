@@ -6,6 +6,7 @@ featured: true
 popular: false
 tags: [bitwarden send, send, about send, ephemeral sharing]
 order: "07"
+description: "This article explains the security practices and implementation of Bitwarden Send - a tool for secure and ephemeral sharing."
 ---
 
 ## Send Encryption

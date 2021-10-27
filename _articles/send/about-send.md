@@ -6,6 +6,7 @@ featured: true
 popular: false
 tags: [bitwarden send, send, about send, ephemeral sharing]
 order: "01"
+description: "Bitwarden Send enables users to transmit encrypted plaintext and file attachments to anybody securely."
 ---
 
 ## What is Send?

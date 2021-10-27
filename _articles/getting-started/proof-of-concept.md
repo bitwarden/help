@@ -9,6 +9,7 @@ tags: [project guide, poc]
 order: "05"
 redirect_from:
   - /article/bitwarden-proof-of-concept-project-guide/
+description: "This proof-of-concept project checklist has been designed for businesses by Bitwarden product, implementation, and sales specialists."
 ---
 
 This guide is designed by our Product, Implementation, and Sales specialists at Bitwarden to help guide your business in running a PoC of Bitwarden. Bitwarden offers a free trial for [Enterprise Organizations]({{site.baseurl}}/article/about-organizations/), and we're confident that spreading out these steps over that time will help shape a successful PoC.

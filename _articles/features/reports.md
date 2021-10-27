@@ -6,6 +6,7 @@ featured: false
 popular: false
 tags: [account, report, breach, reused, unsecured, weak]
 order: "15"
+description: "Vault health reports are a much-used capability of the Bitwarden password manager that enable you to identify weak, re-used, and compromised passwords."
 ---
 
 Vault Health Reports can be used to evaluate the security of your Bitwarden Personal or Organization Vault.

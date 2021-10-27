@@ -10,6 +10,7 @@ order: "04"
 redirect_from:
   - /article/getting-started-android/
   - /article/getting-started-ios/
+description: "Learn how to get started with Bitwarden mobile apps, setup auto-fill, organize folders and favorites, and unlock with biometrics."
 ---
 
 Bitwarden's Mobile App lets you take your password manager on the go. Download Bitwarden from the App Store or Google Play Store, or by navigating to [get.bitwarden.com](https://get.bitwarden.com) on any device.

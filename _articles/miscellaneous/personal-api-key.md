@@ -5,6 +5,7 @@ categories: [miscellaneous]
 featured: false
 popular: false
 tags: [api key, cli]
+description: "Your Bitwarden Personal API Key can be used for authenticating to the command-line interface (CLI). Learn how to get, use, and rotate your Personal API Key."
 ---
 
 Your Bitwarden Personal API Key can be used as a method for authenticating into the Command Line Interface (CLI).
