@@ -43,8 +43,6 @@ Complete the following steps to configure Directory Connector to use your LDAP o
    |Username|The Distinguished Name of an administrative user that the application will use when connecting to the directory server.<br><br>For Active Directory, the user should be a member of the built-in administrators group.|`cn=admin,cn=users,dc=ad,dc=company,dc=com`<br><br>`company\admin`|
    |Password|The password of the user specified above. The password is safely stored in the operating system's native credential manager.||
 
-5. In the **Account** section, select Organization to connect to your directory from the dropdown.
-
 ## Configure Sync Options
 
 {% callout success %}
