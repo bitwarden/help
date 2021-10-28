@@ -7,6 +7,8 @@ popular: false
 hidden: false
 tags: []
 order: "01"
+redirect_from:
+  - /article/about-providers/
 description: "Bitwarden Providers are administration entities that allow MSPs and resellers to create and manage Bitwarden Organizations. Get a high-level look at the Provider Portal."
 ---
 

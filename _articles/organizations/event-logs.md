@@ -35,7 +35,7 @@ All Event types are listed below, with their corresponding type codes:
 - Recovered account from two-step login. (`1004`)
 - Login attempted failed with incorrect password. (`1005`)
 - Login attempt failed with incorrect two-step login. (`1006`)
-- Exported Vault. (`1007`)
+- User Exported their personal Vault items. (`1007`)
 - User updated a password issued through [Admin Password Reset]({{site.baseurl}}/article/admin-reset/). (`1008`)
 
 ### Item Events
