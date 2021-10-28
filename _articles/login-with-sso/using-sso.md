@@ -12,18 +12,11 @@ redirect_from:
 description: "This article explains how to get started using Login with SSO as a Bitwarden password manager end-user."
 ---
 
-As an end-user of Bitwarden, you will need to [link your account to SSO](#link-your-account-to-sso) and get your [Organization identifier](#get-your-organization-identifier) before you can [login using SSO](#login-using-sso):
+As an end-user of Bitwarden, you will need to have your [Organization identifier](#get-your-organization-identifier) before you can [login using SSO](#login-using-sso):
 
-## Link your Account
-
-To link your account:
-
-1. Open the Web Vault, navigate to your **Settings** tab and open your **Organizations**.
-2. Hover over the desired Organization and select the {% icon fa-cog %} gear dropdown:
-
-   {%image /sso/sso-link-button-overlay.png Link SSO Dropdown Option %}
-
-3. From the dropdown menu, select {% icon fa-link %} **Link SSO**.
+{% callout success %}
+Depending on how your Organization is set up, you may also need to [link your account to SSO](#link-your-account). This is typically required if you **already have a Bitwarden account that's a member of an Organization** or if **your Organization does not require you to use SSO**.
+{% endcallout %}
 
 ## Get your Organization Identifier
 
@@ -42,7 +35,7 @@ To login to Bitwarden using SSO:
    {% image sso/org-id-input.png Organization Identifier field %}
 
    {% callout success %}We recommend bookmarking this page with your Organization Identifier included as a query string so that you don't have to enter it each time, for example `https://vault.bitwarden.com/#/sso?identifier=YOUR-ORG-ID` or `https://your.domain.com/#/sso?identifier=YOUR-ORG-ID`.{% endcallout %}
-3. Now that you've authenticated your identity using Login with SSO, enter your [Master Password]({{site.baseurl}}/article/master-password/) on the Login screen to **decrypt** your Vault.
+3. Now that you've authenticated your identity using Login with SSO, you'll be prompted to either **create** a [Master Password]({{site.baseurl}}/article/master-password/) for your new account or if you already have a Bitwarden account, to enter your [Master Password]({{site.baseurl}}/article/master-password/) on the Login screen to **decrypt** your Vault.
 
 {% callout success %}
 **Why is my Master Password still required?**
@@ -51,3 +44,16 @@ All Vault data, including credentials [shared by your Organization]({{site.baseu
 
 Your Master Password is the source of that decryption key. Even though you're authenticating (proving your identity) to Bitwarden using SSO, you still must use that decryption key (your Master Password) to see any meaningful data.
 {% endcallout %}
+
+## Link your Account
+
+You should only need to link your account to SSO if you already have a Bitwarden account that's a member of the Organization or if your Organization does not require you to use SSO:
+
+1. Open the Web Vault, navigate to your **Settings** tab and open your **Organizations**.
+2. Hover over the desired Organization and select the {% icon fa-cog %} gear dropdown:
+
+   {%image /sso/sso-link-button-overlay.png Link SSO Dropdown Option %}
+
+3. From the dropdown menu, select {% icon fa-link %} **Link SSO**.
+
+Once linked, you should be able to [login using SSO](#login-using-sso) as documented above.
