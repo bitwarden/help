@@ -39,8 +39,8 @@ To export your data from the LastPass Web Vault:
 1. Select the {% icon fa-rocket %} **Advanced Options** option on the left sidebar:
 
    {% image importing/lastpassadvancedoptions.png Export from Web Vault %}
-2. From the Manage Your Vault section, select the **Export** option.
-3. Enter your Master Password to validate the export attempt.
+2. From the Manage Your Vault section, select the **Export** option. At this stage, LastPass will send you an email to confirm the export.
+3. In your inbox, confirm the export, return to your LastPass Web Vault, and select the **Export** option again to complete export.
 
    Depending on your browser, your Vault data will either be automatically saved as a `.csv` or printed to the screen in a `.csv` format:
 
