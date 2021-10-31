@@ -9,6 +9,11 @@ tags: []
 order: "11"
 description: "This article contains FAQs regarding the Bitwarden password manager autofill functionality."
 ---
+### Q: How do I disable the Bitwarden accessbility bubble?
+1. Open the Settings in your android device.
+2. Naviagate to Accessibility
+3. Select Bitwarden
+4. Turn off the toggle for Bitwarden shortcut
 
 ### Q: Can I auto-fill on a split login-workflow?
 
