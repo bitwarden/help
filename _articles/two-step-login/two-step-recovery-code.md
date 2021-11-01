@@ -14,7 +14,7 @@ If you enable any [Two-step Login methods]({{site.baseurl}}/article/setup-two-st
 To protect against this, Bitwarden generates a **Recovery Code** that can be used with your Master Password to disable any enabled Two-step Login methods from outside your Vault.
 
 {% callout success %}
-You should [get your Recovery Code](#get-your-recovery-code) **immediately** after enabling any Two-step Login method.
+You should [get your Recovery Code](#get-your-recovery-code) **immediately** after enabling any Two-step Login method. Additionally, get a new Recovery Code every time you [use it](#use-your-recovery-code), as it will change with each use.
 {% endcallout %}
 
 ## Get your Recovery Code
@@ -41,10 +41,7 @@ To use your Recovery Code, navigate to [https://vault.bitwarden.com/#/recover-2f
 
 Using your Recovery Code is like a normal log in procedure, requiring your Email Address and Master Password, but will also take your Recovery Code. On successful authentication of all three, you'll be logged in to your Vault and **all Two-step Login methods will be disabled**.
 
-Once used, you'll need to:
-
-- Re-enable any Two-step Login methods you want to use in the future.
-- [Get your Recovery Code](#get-your-recovery-code) again, as it'll be reset upon use.
+**Once used, get a new Recovery Code, as it will change with each use.** You should also at this point re-enable any Two-step Login methods you want to use in the future.
 
 {% callout info %}
 Recovery Codes **won't disable Duo for Organizations**. You can tell that a Duo prompt is Organization-wide by the **(Organization)** header, as in the following screenshot:
