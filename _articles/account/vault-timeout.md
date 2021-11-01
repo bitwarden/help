@@ -16,7 +16,7 @@ Vault Timeout determines how your Vault will behave after a specified period of 
 This option determines how long the Bitwarden app can be inactive before timing out. "Inactivity" is determined by time since interacting with Bitwarden, not system idle time. Each app will have standardized options (e.g. 1 minute, 15 minutes, 1 hour) as well as options specific to certain apps (e.g. On System Idle) and a Custom time input.
 
 {% callout info %}
-Enterprise Organizations can implement a maximum allowable Timeout option using an [Enterprise Policy]({{site.baseurl}}/article/policies/). 
+Enterprise Organizations can implement a maximum allowable Timeout option using an [Enterprise Policy]({{site.baseurl}}/article/policies/).
 {% endcallout %}
 
 ### Web and Browser Extension Timeouts
@@ -25,7 +25,7 @@ Due to the Web Vault and Browser Extension depending on your Web Browser, unique
 
 1. **If you refresh your browser** (`CMD/CTRL + R`), your Web Vault will lock. Refreshing will not affect a Browser Extension.
 2. **If you close your browser tab**, you will be logged out of your Web Vault. Closing a single tab will not affect a Browser Extension.
-3. **If you close your browser**, you will be logged out of both your Web Vault and Browser Extension.
+3. **If you quit your browser**, you will be logged out of both your Web Vault and Browser Extension.
 
 {% callout success %}
 If you're using a Browser Extension, you can bypass this by enabling the **Unlock with PIN** option and unchecking the **Lock with master password on browser restart** checkbox.
