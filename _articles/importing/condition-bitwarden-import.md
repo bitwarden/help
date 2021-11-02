@@ -30,9 +30,10 @@ For example:
 ```
 folder,favorite,type,name,notes,fields,reprompt,login_uri,login_username,login_password,login_totp
 Social,1,login,Twitter,,,0,twitter.com,me@example.com,password123,
-,,login,EVGA,,,https://www.evga.com/support/login.asp,hello@bitwarden.com,fakepassword,TOTPSEED123
-,,login,My Bank,Bank PIN is 1234,"PIN: 1234",https://www.wellsfargo.com/home.jhtml,john.smith,password123456,
+,,login,EVGA,,,,https://www.evga.com/support/login.asp,hello@bitwarden.com,fakepassword,TOTPSEED123
+,,login,My Bank,Bank PIN is 1234,"PIN: 1234",,https://www.wellsfargo.com/home.jhtml,john.smith,password123456,
 ,,note,My Note,"This is a secure note.",,,,,
+
 ```
 
 When importing this file, select **Bitwarden (csv)** as your file format.
