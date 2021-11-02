@@ -13,10 +13,10 @@ Vault Timeout determines how your Vault will behave after a specified period of 
 
 ## Vault Timeout
 
-This option determines how long the Bitwarden app can be inactive before timing out. "Inactivity" is determined by time since interacting with Bitwarden, not system idle time. Each app will have standardized options (e.g. 1 minute, 15 minutes, 1 hour) as well as options specific to certain apps (e.g. On System Idle) and a Custom time input.
+This option determines how long the Bitwarden app can be inactive before timing out. "Inactivity" is determined by time since interacting with Bitwarden, not system idle time. Each app will have standardized options (e.g. 1 minute, 15 minutes, 1 hour) as well as options specific to certain apps (e.g. On System Idle) and a Custom time input. Enterprise Organizations can implement a maximum allowable Timeout option using an [Enterprise Policy]({{site.baseurl}}/article/policies/).
 
 {% callout info %}
-Enterprise Organizations can implement a maximum allowable Timeout option using an [Enterprise Policy]({{site.baseurl}}/article/policies/).
+On Chromebooks, there is no way to fully close or restart the browser. Therefore, the **On Browser Restart** option will only lock the extension when you restart your device.
 {% endcallout %}
 
 ### Web and Browser Extension Timeouts
