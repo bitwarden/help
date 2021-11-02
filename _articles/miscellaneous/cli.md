@@ -278,6 +278,27 @@ bw get template item | jq ".name=\"My Login Item\" | .login=$(bw get template it
 
 Upon successful creation, the newly created object will be returned as JSON.
 
+#### create Other Item Types
+
+The `create` command defaults to creating a Login item, but you can use a [command-line JSON processor like jq](https://stedolan.github.io/jq/){:target="\_blank"} to change a `.type=` attribute in to create other [item types]({{site.baseurl}}/article/managing-items/):
+
+|Name|Value|
+|----|-----|
+|Login|`.type=1`|
+|Secure Note| `.type=2`|
+|Card| `.type=3`|
+|Identity| `.type=4`|
+
+For example, the following command will create a Secure Note:
+
+```
+bw get template item | jq '.type = 2 | .secureNote.type = 0 | .notes = "Contents of my Secure Note." | .name = "My Secure Note"' | bw encode | bw create item
+```
+
+{% callout info %}
+Notice in the above example that Secure Notes require a sub-template (`.secureNote.type`). You can view Item type sub-templates using `bw get template` (see [here](#get-template) for details).
+{% endcallout %}
+
 #### create attachment
 
 The `create attachment` command attaches a file to an **existing** item.
