@@ -53,7 +53,7 @@ As a Bitwarden Solo-Practicioner, will you be a Bitwarden Black Belt using Premi
 |---------------------------------|-----------------------------------------------|
 |...we recommend a Premium Individual plan.<br><br>[**Upgrade now!**](https://vault.bitwarden.com/#/?premium=purchase)|...we recommend staying on the free individual plan.<br><br>[**Download the Apps!**](https://bitwarden.com/download/)|
 
-## Who will you share with?
+## Whom will you share with?
 
 Bitwarden is a great way to securely share data like Logins, Notes, Cards, and Identities. Will your Organization be used to share data with:
 

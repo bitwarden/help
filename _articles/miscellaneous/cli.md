@@ -604,7 +604,7 @@ bw get item 7ac9cae8-5067-4faf-b6ab-acfd00e2c328 | jq '.login.password="newp@ssw
 
 ### import
 
-The `import` command imports data from a prior Bitwarden export or other [supported password management application]({{site.baseurl}}/article/import-data/):
+The `import` command imports data from a prior Bitwarden export or other [supported password management application]({{site.baseurl}}/article/import-data/). The command must be pointed to a **file** and include the following arguments:
 
 ```
 bw import <format> <path>
