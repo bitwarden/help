@@ -156,4 +156,6 @@ This new item will be accessible to both yourself and the other Organization use
 
 ## Congratulations!
 
-You've setup your new Bitwarden accounts, created an Organization, learned a bit about your Vaults, and shared an item! Nice work!
+You've setup your new Bitwarden accounts, created an Organization, learned a bit about your Vaults, and shared an item! Nice work! If you want to upgrade to a paid Organization to unlock [lots of additional features]({{site.baseurl}}/article/about-bitwarden-plans/), navigate to your Organization **Settings** &rarr; **Subscription** view and select the **Upgrade Plan** button:
+
+{% image plans-and-pricing/upgrade-org.png Upgrade your Organization %}
