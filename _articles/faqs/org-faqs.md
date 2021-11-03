@@ -65,6 +65,12 @@ Like with any software, running old versions may present a security risk.
 2. Select the **Download License** button to download a license with the updated Organization name.
 3. [Upload the new license]({{site.baseurl}}/article/licensing-on-premise/#organization-license) to your self-hosted server.
 
+### Q: How do I upgrade my Free Organization?
+
+**A**: If you want to upgrade to a paid Organization to unlock [lots of additional features]({{site.baseurl}}/article/about-bitwarden-plans/), navigate to your Organization **Settings** &rarr; **Subscription** view and select the **Upgrade Plan** button:
+
+{% image plans-and-pricing/upgrade-org.png Upgrade your Organization %}
+
 ## Sharing with an Organization
 
 ### Q: How do I "unshare" an item from my Organization?
