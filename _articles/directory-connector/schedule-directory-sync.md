@@ -9,11 +9,22 @@ order: "07"
 description: "Learn how to use a cronjob to schedule Bitwarden Directory Connector syncs of users and groups."
 ---
 
-For Organizations using the Directory Connector CLI, automatic syncs can be scheduled on defined intervals as an alternative to using the Desktop Applications **Interval** setting. This is particularly useful in headless environments, on in circumstances where a Desktop Application cannot be left running in the background.
+For Organizations using the Directory Connector CLI, automatic syncs can be scheduled on defined intervals as an alternative to using the Desktop Applications **Interval** setting. This is particularly useful in headless environments, or in circumstances where a Desktop Application cannot be left running in the background.
 
-## Cron
+To schedule syncs, use **Cron** in Unix-like environments including Linux and MacOS, and use **Task Scheduler** in Windows environments:
 
-In Unix-like environments, including Linux and macOS, use cron to schedule Directory Connector sync jobs:
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a class="nav-link active" id="crontab" data-bs-toggle="tab" data-target="#cron" role="tab" aria-controls="crontab" aria-selected="true">Cron</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="tstab" data-bs-toggle="tab" data-target="#ts" role="tab" aria-controls="tstab" aria-selected="false">Task Scheduler</a>
+  </li>
+</ul>
+
+<div class="tab-content" id="clientsContent">
+  <div class="tab-pane show active" id="cron" role="tabpanel" aria-labelledby="crontab">
+{% capture cap_cron %}
 
 ### Cron Permissions
 
@@ -79,3 +90,39 @@ If you're not yet comfortable with cron job scheduling expressions, check out [h
 
 Please note, this is a third-party resource that is not operated or maintained by Bitwarden.
 {% endcallout %}
+
+{% endcapture %}
+{{ cap_cron | markdownify }}
+  </div>
+  <div class="tab-pane" id="ts" role="tabpanel" aria-labelledby="tstab">
+{% capture cap_ts %}
+
+### Task Scheduler Permissions
+
+When running a task, we recommend doing so as a dedicated Directory Connector user. Create a `bwdc` user if you haven't already.
+
+In order to continue, you will also need your Organization's [API Key]({{site.baseurl}}/article/public-api/#authentication) `client_id` and `client_secret`, which can be obtained by an Organization **Owner** from the Web Vault by navigating to Organization **Settings** &rarr; **My Organization**.
+
+### Setup a Sync Script
+
+In order to avoid session timeouts, you'll need to create a script to run as the Task Scheduler Action. This script should securely read your `client_secret` to complete the login, and run a `bwdc sync` command that writes output to `bwdc.log`. If you need help creating a script, [Contact Us](https://bitwarden.com/contact/).
+
+### Create a Task
+
+As the dedicated `bwdc` user:
+
+1. Open Task Scheduler and select **Create Task** from the Actions menu.
+2. Configure the task with the following Security options:
+
+   - Set the task to use the created `bwdc` user.
+   - Set the task to **Run whether user is logged on or not**.
+3. Select the **Triggers** tab and select the **New...** button to create a trigger that fits your directory sync needs.
+
+   {% callout success %}For example, you could create a Weekly Trigger that runs at 8:00 PM every Sunday or every week:<br><br>{% image directory-connector/taskscheduler-trigger.png %}{% endcallout %}
+4. Select the **Actions** tab and select the **New...** button to create an Action that runs the [created sync script](#setup-a-sync-script).
+5. Select **OK** to finish creating the scheduled task.
+
+{% endcapture %}
+{{ cap_ts | markdownify }}
+  </div>
+</div>
