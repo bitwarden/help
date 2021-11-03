@@ -36,9 +36,11 @@ Complete the following steps to grant the created app registration the required 
    - User > User.ReadBasic.All (Read all users' basic profiles)
    - User > User.Read.All (Read all users' full profiles)
    - Group > Group.Read.All (Read all groups)
+   - AdministrativeUnit > AdministrativeUnit.Read.All (Only required if you'll be syncing [Administrative Units](#specify-sync-filters))
 5. Set the following **Application Permissions**:
    - User > User.Read.All (Read all users' full profiles)
    - Group > Group.Read.All (Read all groups)
+   - AdministrativeUnit > Administrative.Unit.Read.All (Only required if you'll be syncing [Administrative Units](#specify-sync-filters))
 6. Back on the API Permissions page, select the **Grant admin consent for...** button.
 
 ### Create App Secret Key
@@ -142,12 +144,12 @@ exclude:Group A,Group B
 
 ##### Group by Administrative Unit (AU)
 
-You can include or exclude groups from a sync based on their tagged [Azure Active Directory Administrative Units (AUs)](https://docs.microsoft.com/en-us/azure/active-directory/roles/administrative-units){:target="\_blank"} by using the `includeadministrativeunit` and `excludeadministrativeunit` keywords. `includeadministrativeunit` and `excludeadministrativeunit` use the name of the Administrative Unit:
+You can include or exclude groups from a sync based on their tagged [Azure Active Directory Administrative Units (AUs)](https://docs.microsoft.com/en-us/azure/active-directory/roles/administrative-units){:target="\_blank"} by using the `includeadministrativeunit` and `excludeadministrativeunit` keywords. `includeadministrativeunit` and `excludeadministrativeunit` use the **Object ID** of the Administrative Unit:
 ```
-includeadministrativeunit:bitwarden
+includeadministrativeunit:7ckcq6e5-d733-4b96-be17-5bad81fe679d
 ```
 ```
-excludeadministrativeunit:not-bitwarden
+excludeadministrativeunit:7ckcq6e5-d733-4b96-be17-5bad81fe679d
 ```
 
 ## Test a Sync
