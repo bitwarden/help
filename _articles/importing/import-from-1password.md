@@ -9,7 +9,7 @@ order: "03"
 description: "If you are switching password managers from 1Password to Bitwarden, use this article guide you to export data from 1Password and import into Bitwarden."
 ---
 
-Use this article for help exporting data from 1Passwords and importing into Bitwarden. 1Password data exports are available as `.1pif` or `.csv` files, depending on which client version and operating system you are using.
+Use this article for help exporting data from 1Password and importing into Bitwarden. 1Password data exports are available as `.1pif` or `.csv` files, depending on which client version and operating system you are using.
 
 ## Export from 1Password
 
