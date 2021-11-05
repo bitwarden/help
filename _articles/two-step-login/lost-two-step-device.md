@@ -44,6 +44,4 @@ To delete your account:
 2. Enter the **Email Address** associated with your account.
 3. In your email inbox, open the email and verify that you want to delete this Bitwarden account.
 
-Once deleted, you're free to create a new Bitwarden account with that email address.
-
-If you delete a Bitwarden account that has a Premium subscription associated with it, [Contact Us](https://bitwarden.com/contact/){:target="\_blank"} and we'll reapply your existing subscription to the new account. If you were able to successfully export your Vault data prior to deletion, you can easily [import it into the new account]({{site.baseurl}}/article/import-data/).
+If any of your client applications were logged in (see the above **Tip**), log out of them. If you delete a Bitwarden account that has a Premium subscription associated with it, [Contact Us](https://bitwarden.com/contact/){:target="\_blank"} and we'll reapply your existing subscription to the new account. If you were able to successfully export your Vault data prior to deletion, you can easily [import it into the new account]({{site.baseurl}}/article/import-data/).

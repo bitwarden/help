@@ -5,7 +5,7 @@ categories: [import-export]
 featured: true
 popular: false
 tags: [import]
-order: "09"
+order: "10"
 description: "This article describes the format you should use when manually conditioning a .csv or .json file for import into the Bitwarden password manager."
 ---
 
