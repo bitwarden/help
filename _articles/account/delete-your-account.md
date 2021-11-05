@@ -38,7 +38,7 @@ Complete the following steps to delete your account without logging in (e.g. if 
 2. Enter the **Email Address** associated with the account.
 3. In the email inbox, open the email to verify that you want to delete this Bitwarden account.
 
-If you're deleting the account because you lost your Master Password, you can now create a new Bitwarden account with that email address. If the deleted account had a Premium subscription associated with it, [Contact Us](https://bitwarden.com/contact/){:target="\_blank"} and we'll reapply your subscription to the new account.
+If any of your client applications were logged in to the old account, log out of them. If you delete a Bitwarden account that has a Premium subscription associated with it, [Contact Us](https://bitwarden.com/contact/){:target="\_blank"} and we'll reapply your existing subscription to the new account. If you were able to successfully export your Vault data prior to deletion, you can easily [import it into the new account]({{site.baseurl}}/article/import-data/).
 
 ## Delete an Organization
 
