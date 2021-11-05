@@ -36,5 +36,17 @@ Update your Bitwarden instance using the same Bash (Linux or macOS) or Powershel
 Your Bitwarden installation should now be fully up to date and running.
 
 {% callout success %}
-We recommend creating a cronjob or scheduled task to run these update commands weekly, or even nightly. This will automatically keep your instance up to date.
+We recommend creating a cronjob or scheduled task to run these update commands weekly, or even nightly, to keep your instance up to date. For example, the following cron job would check for an update every Sunday at 2:00 and turn off email output for the job:
+
+```
+0 2 * * 0 /opt/bitwarden/bwdata/scripts/updatebw.sh >/dev/null 2>&1
+```
+
+In the above example, `updatebw.sh` is a script you must save manually that contains:
+
+```
+#!/bin/bash
+./bitwarden.sh updateself
+./bitwarden.sh update
+```
 {% endcallout %}
