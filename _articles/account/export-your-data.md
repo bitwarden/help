@@ -5,7 +5,7 @@ categories: [import-export]
 featured: false
 popular: false
 tags: [export, accounts, csv]
-order: "07"
+order: "08"
 description: "This article explains how to export your personal Vault data from any client application, or export an Organization Vault from the Web Vault or CLI."
 ---
 

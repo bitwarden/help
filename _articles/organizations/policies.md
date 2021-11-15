@@ -82,7 +82,7 @@ Enabling the **Single Organization** policy will restrict non-Owner/non-Admin me
 {% callout warning %}
 **Users in the Organization who are members of multiple Organizations will be removed from the Organization when you enable this policy.**
 
-Users who are removed as a result of this policy will be notified via email, and must be re-invited to the Organization. Users will not be able to be confirmed to the Organization until they have removed themselves from all other Organizations.
+Users who are removed as a result of this policy will be notified via email, and must be re-invited to the Organization. Users will not be able to be accept the invitation to the Organization until they have removed themselves from all other Organizations.
 {% endcallout %}
 
 ### Single Sign-On Authentication
