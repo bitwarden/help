@@ -206,12 +206,12 @@ If the certificate is stored in Hashicorp Vault, specify the following values:
 ```
 keyConnectorSettings__rsaKey__provider=certificate
 keyConnectorSettings__certificate__provider=vault
-keyConnectorSettings__certificate__vaultServerUri={ServerURI}
+keyConnectorSettings__certificate__vaultServerUri={Server_URI}
 keyConnectorSettings__certificate__vaultToken={Token}
-keyConnectorSettings__certificate__vaultSecretMountPoint={SecretMountPoint}
-keyConnectorSettings__certificate__vaultSecretPath={SecretPath}
-keyConnectorSettings__certificate__vaultSecretDataKey={SecretDataKey}
-keyConnectorSettings__certificate__vaultSecretFilePassword={SecretFilePassword}
+keyConnectorSettings__certificate__vaultSecretMountPoint={Secret_MountPoint}
+keyConnectorSettings__certificate__vaultSecretPath={Secret_Path}
+keyConnectorSettings__certificate__vaultSecretDataKey={Secret_DataKey}
+keyConnectorSettings__certificate__vaultSecretFilePassword={Secret_FilePassword}
 ```
 
 {% endcapture %}
