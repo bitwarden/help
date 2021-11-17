@@ -48,13 +48,13 @@ You must be an [Organization Owner]({{site.baseurl}}/article/user-types-access-c
 1. In the Cloud [Web Vault]({{site.baseurl}}/article/getting-started-webvault), open your Organization.
 2. Select the Organization **Settings** tab and select **Subscription** from the left menu.
 3. Select the **Download License** button.
-4. When prompted, enter the installation id that was used to install your self-hosted server and select **Submit**.
+4. When prompted, enter the installation ID that was used to install your self-hosted server and select **Submit**.
 
-   If you don't know the installation id off-hand, you can retrieve it from `./bwdata/env/global.override.env`.
+   If you don't know the installation ID off-hand, you can retrieve it from `./bwdata/env/global.override.env`.
 
 #### Apply your License
 
-1. Log in to your self-hosted Web Vault with an email address that matches the Cloud-hosted account from which you downloaded the license.
+1. Log in to your self-hosted Web Vault.
 2. Start a new Organization by selecting the {% icon fa-plus %} **Add Organization** button.
 3. When prompted, upload the Organization license file and select **Submit**.
 
