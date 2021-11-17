@@ -175,6 +175,10 @@ bw login --apikey
 
 This will initiate a prompt for your personal `client_id` and `client_secret`. Once your session is authenticated using these values, you can use the `unlock` command ([learn more](#unlock)).
 
+{% callout success %}
+If your Organization [requires SSO]({{site.baseurl}}/article/policies/#single-sign-on-authentication), you can still use `--apikey` to log in to the CLI.
+{% endcallout %}
+
 #### Using API Key Environment Variables
 
 In scenarios where automated work is being done with the Bitwarden CLI, you can save environment variables to prevent the need for manual intervention at authentication.
@@ -193,6 +197,10 @@ bw login --sso
 ```
 
 This will initiate the [SSO authentication flow]({{site.baseurl}}/article/using-sso/#login-using-sso) in your web browser. Once your session is authenticated, you can use the `unlock` command ([learn more](#unlock)).
+
+{% callout success %}
+If your Organization [requires SSO]({{site.baseurl}}/article/policies/#single-sign-on-authentication), you may alternatively use `--apikey` to log in to the CLI.
+{% endcallout %}
 
 ## Unlock
 

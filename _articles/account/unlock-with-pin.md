@@ -13,6 +13,10 @@ Bitwarden can be configured to accept a Personal Identification Number (PIN) as 
 
 PINs can **only be used to unlock** your Vault, you will still be required to use your Master Password and any enabled [Two-step Login method]({{site.baseurl}}/article/setup-two-step-login/) when you **log in**. If you're not sure of the difference, scroll down to [Understanding Unlock vs. Log In](#understanding-unlock-vs-log-in).
 
+{% callout info %}
+After 5 failed PIN attempts, the Bitwarden app will automatically log out of your account.
+{% endcallout %}
+
 ## Enable Unlock with PIN
 
 Unlock with PIN can be enabled for Bitwarden Browser Extensions, Desktop, and Mobile:

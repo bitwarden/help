@@ -56,7 +56,7 @@ Other logged-in client applications (Mobile Apps, Browser Extensions, etc.) may 
 
 As described in the [About Your Master Password](#about-your-master-password) section, Bitwarden has no knowledge of, way to retrieve, or way to reset your Master Password.
 
-If you've already lost your Master Password, there is unfortunately no way for the team to recover the account or the data therein. You will need to delete your account and start a new one.
+If you've already lost your Master Password, there is unfortunately no way for anyone to recover the account or the data stored in your Personal Vault unless you're enrolled in [Organization Master Password Reset]({{site.baseurl}}/article/admin-reset/) or have a designated [trusted emergency contact]({{site.baseurl}}/article/emergency-access). You will need to delete your account and start a new one.
 
 {% callout success %}
 If you're using any Bitwarden client applications (Mobile Apps, Browser Extensions, etc.) you should check whether any of these sessions are still logged in prior to deleting your account. If a client application is still logged in, you should manually catalogue your Vault items to preserve your data.

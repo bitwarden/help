@@ -55,6 +55,8 @@ To export your personal Vault data from the Web Vault:
 1. Select **Tools** from the top navigation bar.
 2. Select **Export Vault** from the left-hand Tools menu.
 3. On the Vault Export page, choose a **File Format** (`.json`, `.csv`, or `.json (Encrypted)`).
+
+   {% callout success %}If you need to import this data into a new Bitwarden account, choose the regular `.json` format (**not** `.json (Encrypted)`).{% endcallout %}
 4. Enter your **Master Password** and select the **Export Vault** button.
 
 {% endcapture %}
@@ -70,6 +72,8 @@ To export your personal Vault data from a Browser Extension:
 1. Open the {% icon fa-cogs %} **Settings** tab.
 2. Scroll down to the **Tools** section and select the **Export Vault** option.
 3. On the Export Vault view, choose a **File Format** (`.json`, `.csv`, or `.json (Encrypted)`).
+
+   {% callout success %}If you need to import this data into a new Bitwarden account, choose the regular `.json` format (**not** `.json (Encrypted)`).{% endcallout %}
 4. Enter your **Master Password** and select **Submit**.
 
 {% callout info %}
@@ -90,6 +94,8 @@ To export your personal Vault data from a Desktop app:
 
 1. From the menu bar, navigate to **File** &rarr; **Export Vault**.
 2. In the Export Vault window, choose a **File Format** (`.json`, `.csv`, or `.json (Encryped)`).
+
+   {% callout success %}If you need to import this data into a new Bitwarden account, choose the regular `.json` format (**not** `.json (Encrypted)`).{% endcallout %}
 3. Enter your **Master Password** and select the {% icon fa-download %} **Download** button.
 
 {% endcapture %}
@@ -105,6 +111,8 @@ To export your personal Vault data from a Mobile app:
 1. Tap the {% icon fa-cogs %} **Settings** tab.
 2. Scroll down to the **Tools** section and tap the **Export Vault** option.
 3. On the Export Vault view, choose a **File Format** (`.json`, `.csv`, or `.json (Encrypted)`).
+
+   {% callout success %}If you need to import this data into a new Bitwarden account, choose the regular `.json` format (**not** `.json (Encrypted)`).{% endcallout %} 
 4. Enter your **Master Password** and tap the **Export Vault** button.
 
 {% endcapture %}
