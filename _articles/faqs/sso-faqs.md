@@ -57,6 +57,10 @@ In practice, that means that anytime an employee logs in to Bitwarden using SSO,
   - `https://vault.bitwarden.com/#/sso?identifier=your-org-id` for Cloud-hosted instances
   - `https://your.domain.com/#/sso?identifier=your-org-id` for Self-hosted instances
 
+### Q: How do I change pre-generated SSO configuration values?
+
+**A:** Pre-generated SSO configuration values including **SP Entity ID**, **SAML 2.0 Metadata URL**, **ACS URL**, and **Callback Path** can be changed in self-hosted environments by changing the `url:` value in `.bwdata/config.yml` and running the `./bitwarden.sh rebuild` command to apply your change.
+
 ## Security
 
 ### Q: How does Login with SSO work with the zero-knowledge model?
