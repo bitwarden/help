@@ -6,7 +6,7 @@ featured: true
 popular: false
 hidden: false
 tags: [sso, enterprise, security]
-order: "09"
+order: "08"
 description: "This article contains FAQs regarding Login with SSO - an enterprise feature of the Bitwarden password manager."
 ---
 This article contains Frequently Asked Questions (FAQs) regarding **Login with SSO**.

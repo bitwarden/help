@@ -5,7 +5,7 @@ categories: [login-with-sso]
 featured: false
 popular: false
 tags: [key connector, customer-managed encryption, login with sso]
-order: "07"
+order: "05"
 description: "..."
 ---
 
@@ -39,17 +39,18 @@ For this reason, we **highly recommend** that Organizations Owners and Admins **
 
 |Feature|Impact|
 |-------|------|
-|**Verification**|There are a number of features in Bitwarden client applications that ordinarily require entry of a Master Password in order to be used, including [exporting]({{site.baseurl}}/article/export-your-data/) Vault data, protecting items with [Master Password re-prompt]({{site.baseurl}}/article/managing-items/#protect-individual-items), changing [Two-step Login]({{site.baseurl}}/article/setup-two-step-login) settings, retrieving [API Keys]({{site.baseurl}}/article/personal-api-key/), and more.<br><br>**All these features** will replace Master Password confirmation with email-based TOTP verification.|
-|**Vault Lock/Unlock**|Under ordinary circumstances, a [locked Vault can be unlocked]({{site.baseurl}}/article/vault-timeout/#vault-timeout-action) using a Master Password. When your Organization is using Key Connector, locked client applications can only be unlocked with a [PIN]({{site.baseurl}}/article/unlock-with-pin/) or with [Biometrics]({{site.baseurl}}/article/biometrics/).|
+|**Verification**|There are a number of features in Bitwarden client applications that ordinarily require entry of a Master Password in order to be used, including [exporting]({{site.baseurl}}/article/export-your-data/) Vault data, changing [Two-step Login]({{site.baseurl}}/article/setup-two-step-login) settings, retrieving [API Keys]({{site.baseurl}}/article/personal-api-key/), and more.<br><br>**All these features** will replace Master Password confirmation with email-based TOTP verification.|
+|**Vault Lock/Unlock**|Under ordinary circumstances, a [locked Vault can be unlocked]({{site.baseurl}}/article/vault-timeout/#vault-timeout-action) using a Master Password. When your Organization is using Key Connector, locked client applications can only be unlocked with a [PIN]({{site.baseurl}}/article/unlock-with-pin/) or with [Biometrics]({{site.baseurl}}/article/biometrics/).<br><br>If neither PIN nor Biometrics are enabled for a client application, the Vault will always log out instead of lock.|
+|**Master Password re-prompt**|When Key Connector is being used, [Master Password re-prompt]({{site.baseurl}}/article/managing-items/#protect-individual-items) will be disabled for any user that has removed their Master Password as a result of your Key Connector implementation.|
 |**Admin Password Reset**|When Key Connector is being used, [Admin Password Reset]({{site.baseurl}}/article/admin-reset/) will be disabled for any user that has removed their Master Password as a result of your Key Connector implementation.|
-|**Emergency Access**|When Key Connector is being used, [Emergency Access]({{site.baseurl}}/article/emergency-access/) will be disabled for any user that has removed their Master Password as a result of your Key Connector implementation.|
+|**Emergency Access**|When Key Connector is being used, the Emergency Access [Account Takeover option]({{site.baseurl}}/article/emergency-access/#user-access) will be disabled for any user that has removed their Master Password as a result of your Key Connector implementation.<br><br>Trusted emergency contacts may still **View** a grantor's personal Vault data, subject to the established [emergency access workflow]({{site.baseurl}}/article/emergency-access/#initiate-emergency-access).|
 
 ## How do I start using Key Connector?
 
 In order to get started using Key Connector, please review the following requirements:
 
 {% callout warning %}
-Management of cryptographic keys is incredibly sensitive and **only recommended for enterprises with a team and infrastructure** that can securely support deploying and managing a key server.
+Management of cryptographic keys is incredibly sensitive and is **only recommended for enterprises with a team and infrastructure** that can securely support deploying and managing a key server.
 {% endcallout %}
 
 In order to use Key Connector you must also:
@@ -60,4 +61,4 @@ In order to use Key Connector you must also:
 - [Activate the Single Organization and Single Sign-On policies]({{site.baseurl}}/article/policies/)
 
 <br>
-If your Organization meets or can meet these requirements, including a team and infrastructure that can support management of a key server, [Contact Us](https://bitwarden.com/contact) and we'll reach out to kick off a Key Connector discussion.
+If your Organization meets or can meet these requirements, including a team and infrastructure that can support management of a key server, [Contact Us](https://bitwarden.com/contact) and we'll set up a time to help you get started.

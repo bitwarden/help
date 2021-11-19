@@ -5,7 +5,7 @@ categories: [login-with-sso]
 featured: false
 popular: false
 tags: []
-order: "08"
+order: "06"
 description: "..."
 ---
 
@@ -14,7 +14,7 @@ This article will walk you through the procedure for enabling and configuring Ke
 ## Requirements
 
 {% callout warning %}
-Management of cryptographic keys is incredibly sensitive and **only recommended for enterprises with a team and infrastructure** that can securely support deploying and managing a key server.
+Management of cryptographic keys is incredibly sensitive and is **only recommended for enterprises with a team and infrastructure** that can securely support deploying and managing a key server.
 {% endcallout %}
 
 In order to use Key Connector you must:
@@ -25,7 +25,7 @@ In order to use Key Connector you must:
 - [Activate the Single Organization and Single Sign-On policies]({{site.baseurl}}/article/policies/)
 
 <br>
-If your Organization meets or can meet these requirements, including a team and infrastructure that can support management of a key server, [Contact Us](https://bitwarden.com/contact) and we'll reach out to kick off a Key Connector discussion.
+If your Organization meets or can meet these requirements, including a team and infrastructure that can support management of a key server, [Contact Us](https://bitwarden.com/contact) and we'll set up a time to help you get started.
 
 ## Setup & Deploy Key Connector
 
@@ -45,7 +45,7 @@ You won't need your license file immediately, but you will be required to upload
 
 To prepare your Bitwarden server for Key Connector:
 
-1. Save a [backup]({{site.baseurl}}/article/backup-on-premise/) of, at a minimum, `.bwdata/mssql`. Once Key Connector is in use, it's recommended that you have access to a pre-Key Connector backup image in case of issue.
+1. Save a [backup]({{site.baseurl}}/article/backup-on-premise/) of, at a minimum, `.bwdata/mssql`. Once Key Connector is in use, it's recommended that you have access to a pre-Key Connector backup image in case of an issue.
 
    {% callout info %}If you're using an [external MSSQL database]({{site.baseurl}}/article/external-db/), take a backup of your database in whatever way fits your implementation.{% endcallout %}
 2. Update your self-hosted Bitwarden installation in order to retrieve the latest changes:
@@ -78,7 +78,7 @@ To configure Key Connector:
 
 #### Endpoints
 
-Key Connector will automatically populate endpoint values based on your installation configuration, however it's recommended that you confirm the following values in `key-connector.override.env` are accurate for your setup:
+Automated setup will populate endpoint values based on your installation configuration, however it's recommended that you confirm the following values in `key-connector.override.env` are accurate for your setup:
 
 ```
 keyConnectorSettings__webVaultUri=https://your.bitwarden.domain.com
@@ -97,9 +97,9 @@ Migration from one database to another is **not supported** at this time. Regard
 |--------|---------------|
 |Local JSON (**default**)|**Not recommended outside of testing.**<br><br>`keyConnectorSettings__database__provider=json`<br>`keyConnectorSettings__database__jsonFilePath={File_Path}`|
 |Microsoft SQL Server|`keyConnectorSettings__database__provider=sqlserver`<br> `keyConnectorSettings__database__sqlServerConnectionString={Connection_String}`<br><br>[Learn how to format MSSQL Connection Strings](https://docs.microsoft.com/en-us/sql/connect/ado-net/connection-string-syntax?view=sql-server-ver15){:target="\_blank"}|
-|PostgreSQL|`keyConnectorSettings__database__provider=postgresql`<br>`keyConnectorSettings__database__postgreSqlConnectionString={Connection_String}`<br><br>[Learn how to format PostgreSQL Connection Strings](https://www.postgresql.org/docs/current/libpq-connect.html#LIBPQ-CONNSTRING)|
+|PostgreSQL|`keyConnectorSettings__database__provider=postgresql`<br>`keyConnectorSettings__database__postgreSqlConnectionString={Connection_String}`<br><br>[Learn how to format PostgreSQL Connection Strings](https://www.postgresql.org/docs/current/libpq-connect.html#LIBPQ-CONNSTRING){:target="\_blank"}|
 |MySQL/MariaDB|`keyConnectorSettings__database__provider=mysql`<br>`keyConnectorSettings__database__mySqlConnectionString={Connection_String}`<br><br>[Learn how to format MySQL Connection Strings](https://dev.mysql.com/doc/connector-net/en/connector-net-connections-string.html){:target="\_blank"}|
-|SQLite|`keyConnectorSettings__database__provider=sqlite`<br>`keyConnectorSettings__database__sqliteConnectionString={Connection_String}`<br><br>[Learn how to format MySQL Connection Strings](https://docs.microsoft.com/en-us/dotnet/standard/data/sqlite/connection-strings){:target="\_blank"}|
+|SQLite|`keyConnectorSettings__database__provider=sqlite`<br>`keyConnectorSettings__database__sqliteConnectionString={Connection_String}`<br><br>[Learn how to format SQLite Connection Strings](https://docs.microsoft.com/en-us/dotnet/standard/data/sqlite/connection-strings){:target="\_blank"}|
 |MongoDB|`keyConnectorSettings__database__provider=mongo`<br>`keyConnectorSettings__database__mongoConnectionString={Connection_String}`<br>`keyConnectorSettings__database__mongoDatabaseName={DatabaseName}`<br><br>[Learn how to format MongoDB Connection Strings](https://docs.mongodb.com/manual/reference/connection-string/){:target="\_blank"}|
 
 #### RSA Key Pair
@@ -306,10 +306,10 @@ If you're using the PKCS11 provider to store your private key on an HSM device, 
 
 Now that Key Connector is [fully configured](#configure-key-connector) and you have a [Key Connector-enabled license](#obtain-a-new-license), complete the following steps:
 
-1. Update your self-hosted Bitwarden installation in order to apply the configuration changes:
+1. Restart your self-hosted Bitwarden installation in order to apply the configuration changes:
 
    ```
-   ./bitwarden.sh update
+   ./bitwarden.sh restart
    ```
 2. Log in to your self-hosted Bitwarden as an **Organization Owner** and navigate to the Organization **Settings** &rarr; **Subscription** screen.
 3. Select the **Update License** button and upload the Key Connector-enabled license [retrieved in an earlier step](#obtain-new-license-file):
