@@ -46,7 +46,7 @@ To redeem your sponsorship:
      <div class="tab-pane show active" id="mobile" role="tabpanel" aria-labelledby="mobtab">
       <br>
       <p>Select <b>New Families Organization</b> from the dropdown:</p>
-      <img src="../../images/plans-and-pricing/f4e/f4e-4.png" style="border-style: solid; border-width: 2.5px; border-color: #DEE2E6;">
+      <img src="../../images/plans-and-pricing/f4e/f4e-4.png" style="border-style: solid; border-width: 2.5px; border-color: #DEE2E6; width: 100%;">
       <br>
       <br>
       <p>Fill in the following information:</p>
@@ -62,7 +62,7 @@ To redeem your sponsorship:
      <div class="tab-pane" id="desktop" role="tabpanel" aria-labelledby="desktab">
       <br>
       <p>Select the Organization from the dropdown and select <b>Accept Offer</b>:</p>
-      <img src="../../images/plans-and-pricing/f4e/f4e-3.png" style="border-style: solid; border-width: 2.5px; border-color: #DEE2E6;">
+      <img src="../../images/plans-and-pricing/f4e/f4e-3.png" style="border-style: solid; border-width: 2.5px; border-color: #DEE2E6; width: 100%;">
       <br>
       <br>
       <p>When you accept the offer, your old subscription will be replaced by the Enterprise Sponsorship. You won't have to make any payments for the Families Organization as long as you are an active member of the sponsoring Organization.</p>

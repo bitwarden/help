@@ -30,8 +30,12 @@ Once you have your Organization Identifier, you can proceed to enabling and conf
 1. From the Organization Vault, navigate to the **Manage** tab and select **Single Sign-On** from the left-hand menu:
 
    {% image sso/manage-sso.png Enable SSO %}
-2. On the Single Sign-On Screen, check the **Enabled** checkbox.
+2. On the Single Sign-On Screen, check the **Allow SSO Authentication** checkbox.
 4. From the **Type** dropdown menu, select the **SAML 2.0** option. If you intend to use OIDC instead, switch over to the [OIDC Configuration Guide]({{site.baseurl}}/article/configure-sso-oidc/).
+
+{% callout success %}
+If you're self-hosting Bitwarden, you can use alternative **Member Decryption Options**. This feature is disabled by default, so continue with **Master Password** decryption for now and learn how to get started using [Key Connector]({{site.baseurl}}/article/about-key-connector/) once your configuration is complete and successfully working.
+{% endcallout %}
 
 ## Step 3: Configuration
 
