@@ -5,7 +5,7 @@ categories: [plans-and-pricing]
 featured: false
 popular: false
 tags: []
-order: "99"
+order: "05"
 description: "..."
 ---
 

@@ -46,6 +46,15 @@ Want Release Announcements delivered straight to your inbox?
 Or subscribe to the [Bitwarden Status RSS Feed](https://status.bitwarden.com/){:target="\_blank"}.
 {% endcallout %}
 
+## 2021-12-07
+
+Bitwarden is proud to announce a release centered on robust offerings to promote yada yada...:
+
+- **Key Connector**: Key Connector is a self-hosted application that serves cryptographic keys to Bitwarden clients and can be used with [Login with SSO]({{site.baseurl}}/article/about-sso/) to serve keys for an Organization as an alternative to requiring a Master Password for Vault decryption (see [here]({{site.baseurl}}/article/about-key-connector)).
+- **Families for Enterprise**: Starting with this release, members of Enterprise Organizations can redeem a free [Bitwarden Families Organization]({{site.baseurl}}/article/about-bitwarden-plans/#families-organizations) for sharing with up to 5 friends or family members. Families Organizations include all premium features for all 6 users and unlimited secure data sharing (see [here]({{site.baseurl}}/article/families-for-enterprise/) for details).
+- **MacOS and Safari Importer**:
+- **??**: ??
+
 ## 2021-10-26
 
 The Bitwarden team is pleased to release a set of features and updates continuing our mission of making password management easy and accessible for individuals and businesses:

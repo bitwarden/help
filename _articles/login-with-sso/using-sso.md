@@ -24,26 +24,73 @@ Every Bitwarden Organization has a unique identifier specifically for Login with
 
 ## Login using SSO
 
-To login to Bitwarden using SSO:
+The steps required to login using SSO will be slightly different depending on whether your Organization is using [Key Connector]({{site.baseurl}}/article/about-key-connector/) or not. Don't worry, you don't personally need to know whether   
 
-1. Open your Bitwarden Web Vault or App and select the **Enterprise Single Sign-On** button:
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" id="tab" role="presentation">
+    <a class="nav-link active" id="certtab" data-bs-toggle="tab" data-target="#cert" role="tab" aria-controls="cert" aria-selected="true">Login with SSO & Master Password</a>
+  </li>
+  <li class="nav-item" id="tab" role="presentation">
+    <a class="nav-link" id="azuretab" data-bs-toggle="tab" data-target="#azure" role="tab" aria-controls="azure" aria-selected="false">Login with SSO & Key Connector</a>
+  </li>
+</ul>
+
+<div class="tab-content" id="clientsContent">
+  <div class="tab-pane show active" id="cert" role="tabpanel" aria-labelledby="certtab">
+{% capture cert_content %}
+### Login with SSO & Master Password
+
+To login using SSO and your Master Password:
+
+1. Open your Bitwarden Web Vault and select the **Enterprise Single Sign-On** button:
 
    {% image sso/sso-button-lg.png Enterprise Single Sign-On button %}
-
 2. Enter your **Organization Identifier** and select **Log In**:
 
    {% image sso/org-id-input.png Organization Identifier field %}
 
-   {% callout success %}We recommend bookmarking this page with your Organization Identifier included as a query string so that you don't have to enter it each time, for example `https://vault.bitwarden.com/#/sso?identifier=YOUR-ORG-ID` or `https://your.domain.com/#/sso?identifier=YOUR-ORG-ID`.{% endcallout %}
-3. Now that you've authenticated your identity using Login with SSO, you'll be prompted to either **create** a [Master Password]({{site.baseurl}}/article/master-password/) for your new account or if you already have a Bitwarden account, to enter your [Master Password]({{site.baseurl}}/article/master-password/) on the Login screen to **decrypt** your Vault.
+   {% callout success %}We recommend bookmarking this page with your Organization Identifier included as a query string so that you don't have to enter it each time, for example `https://vault.bitwarden.com/#/sso?identifier=YOUR-ORG-ID` or `https://your.domain.com/#/sso?identifier=YOUR-ORG-ID`. {% endcallout %}
+3. Now that you've authenticated your identity using SSO, you'll be prompted to either **create** a [Master Password]({{site.baseurl}}/article/master-password/) for your new account or, if you already have a Bitwarden account, to enter your Master Password to decrypt your Vault.
 
-{% callout success %}
+{% callout info %}
 **Why is my Master Password still required?**
 
-All Vault data, including credentials [shared by your Organization]({{site.baseurl}}/article/sharing/), is kept by Bitwarden **only** in its encrypted form. This means that in order to use any of those credentials, **you** need a way to decrypt that data (we can't).
+All Vault data, including credentials [shared by your Organization]({{site.baseurl}}/article/sharing/), is kept by Bitwarden **only** in its encrypted form. This means that in order to use any of those credentials, **you** need a way to decrypt that data. We can't.
 
-Your Master Password is the source of that decryption key. Even though you're authenticating (proving your identity) to Bitwarden using SSO, you still must use that decryption key (your Master Password) to see any meaningful data.
+Your Master Password is the source of that decryption key. Even though you're authenticating (proving your identity) to Bitwarden using SSO, you still need to use a decryption key (your Master Password) to unscramble Vault data.
 {% endcallout %}
+
+{% endcapture %}
+{{ cert_content | markdownify }}
+  </div>
+  <div class="tab-pane" id="azure" role="tabpanel" aria-labelledby="azuretab">
+{% capture key_content %}
+### Login with SSO & Key Connector
+
+To login using SSO and Key Connector:
+
+1. Open your Bitwarden Web Vault and select the **Enterprise Single Sign-On**:
+
+   {% image sso/sso-button-lg.png Enterprise Single Sign-On button %}
+2. Enter your **Organization Identifier** and select **Log In**:
+
+   {% image sso/org-id-input.png Organization Identifier field %}
+
+   {% callout success %}We recommend bookmarking this page with your Organization Identifier includes as a query string so that you don't have to enter it each time, for example `https://vault.bitwarden.com/#/sso?identifier=YOUR-ORG-ID` or `https://your.domain.com/#/sso?identifier=YOUR-ORG-UD`.{% endcallout %}
+3. **If this is your first time logging in since your Organization implemented Key Connector**, you'll still be required to enter your Master Password. Once you do, the following dialog will prompt you to remove your Master Password:
+
+   `IMAGE PLACEHOLDER`
+
+   {% callout success %}We encourage you to read [this]({{site.baseurl}}/article/about-key-connector/#impact-on-master-passwords) and [this]({{site.baseurl}}/article/about-key-connector/#impact-on-organization-membership) to fully understand what it means to remove a Master Password from your account. You can instead elect to **Leave the Organization** instead, however this will remove access to both Organization-owned Vault items and Collections and to Single Sign-On.{% endcallout %}
+
+Once you're removed your Master Password, or if this isn't your first time logging in since your Organization implemented Key Connector, you'll be logged in to your Vault with no further steps required!
+
+
+{% endcapture %}
+{{ key_content | markdownify }}
+  </div>
+</div>
+
 
 ## Link your Account
 

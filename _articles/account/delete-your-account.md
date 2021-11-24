@@ -5,7 +5,7 @@ categories: [plans-and-pricing]
 featured: false
 popular: false
 tags: [account, delete]
-order: "08"
+order: "09"
 description: "This article explains how to delete a Bitwarden account or Organization if you forget your master password and need to create a new account."
 ---
 

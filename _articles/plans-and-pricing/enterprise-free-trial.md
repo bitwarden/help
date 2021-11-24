@@ -32,6 +32,7 @@ If you already have a Bitwarden account, complete the following steps to start y
    {% endcallout %}
 
 4. If you're trialing the Enterprise Plan on behalf of a business:
+
    - Check the **This account is owned by a business** checkbox.
    - Provide your **Business Name**.
 5. Select the **Enterprise** plan option. Doing so will trigger additional enterprise-oriented fields to be displayed.

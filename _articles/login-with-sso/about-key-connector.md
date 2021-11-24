@@ -19,21 +19,27 @@ Key Connector is a self-hosted application that serves cryptographic keys to Bit
 
 ## Why use Key Connector?
 
-**In typical SSO implementations**, your Identity Provider handles authentication and a member's Master Password is required for Vault decryption. This separation of concerns is an important step that ensures that only an Organization member has access to the key which is required to decrypt your Organization's sensitive Vault data.
+**In implementations that leverage Master Password decryption**, your Identity Provider handles authentication and a member's Master Password is required for Vault decryption. This separation of concerns is an important step that ensures that only an Organization member has access to the key which is required to decrypt your Organization's sensitive Vault data.
 
-**In Key Connector SSO implementations**, your Identity Provider still handles authentication, but Vault decryption is handled by Key Connector. By accessing an encrypted Key Database (*see the above diagram*), Key Connector provides a user their decryption key when they log in, without requiring a Master Password.
+**In implementations that leverage Key Connector for decryption**, your Identity Provider still handles authentication, but Vault decryption is handled by Key Connector. By accessing an encrypted Key Database (*see the above diagram*), Key Connector provides a user their decryption key when they log in, without requiring a Master Password.
 
 We often refer to Key Connector implementations as leveraging **Customer-Managed Encryption**, because your business has sole responsibility for the management of the Key Connector application and of the Vault decryption keys it serves. For enterprises ready to deploy and maintain a Customer-Managed Encryption environment, Key Connector facilitates a streamlined Vault login experience.
 
 ### Impact on Master Passwords
 
-Because Key Connector replaces Master Password-based decryption with customer-managed decryption keys, Organization members will be **required to remove the Master Password from their account**. Once removed, all Vault decryption actions will be conducted using the stored user key. Besides logging in, this will have some [impacts on other features](#impact-on-other-features) you should be aware of.
+Because Key Connector replaces Master Password-based decryption with customer-managed decryption keys, Organization members will be **required to remove the Master Password from their account**. Once removed, all Vault decryption actions will be conducted using the stored user key. Besides logging in, this will have some impacts on [offboarding](#impact-on-offboarding) and [on other features](#impact-on-other-features) you should be aware of.
 
 {% callout warning %}
 Currently, there is not a way to re-create Master Passwords for accounts that have removed them.
 
 For this reason, we **highly recommend** that Organizations Owners and Admins **do not** log in using SSO and Key Connector and therefore do not remove their Master Password. This is possible due to their exemption from the [SSO Authentication Policy]({{site.baseurl}}/article/policies/#single-sign-on-authentication) and will mitigate some risk by ensuring all Vault data and functionality is always accessible by *someone*.
 {% endcallout %}
+
+### Impact on Organization Membership
+
+Key Connector required users to [remove their Master Passwords](#impact-on-master-passwords) and instead uses a company-owned database of cryptographic keys to decrypt users' Vaults. Because Master Passwords can not be re-created for accounts that have removed them, this means that once an account uses Key Connector decryption it is for all intents and purposes **owned by the Organization**.
+
+These accounts **may not leave the Organization**, as in doing so they would lose any means of decrypting Vault data. Similarly, if an Organization administrator removes the account from the Organization, the account is lost.
 
 ### Impact on other Features
 
