@@ -554,7 +554,7 @@ bw confirm org-member 7063feab-4b10-472e-b64c-785e2b870b92 --organizationid 310d
 The `config` command specifies settings for the Bitwarden CLI to use:
 
 ```
-bw config <setting> [value]
+bw config server <setting> [value]
 ```
 
 A primary use of `bw config` is to [connect your CLI to a self-hosted]({{site.baseurl}}/article/change-client-environment/#cli) Bitwarden server:
@@ -570,13 +570,18 @@ You can read the currently connected server by passing `bw config server` withou
 Users with unique setups may elect to specify the URL of each service independently using:
 
 ```
-bw config --web-vault <url>
-bw config --api <url>
-bw config --identity <url>
-bw config --icons <url>
-bw config --notifications <url>
-bw config --events <url>
+bw config server --web-vault <url>
+bw config server --api <url>
+bw config server --identity <url>
+bw config server --icons <url>
+bw config server --notifications <url>
+bw config server --events <url>
+bw config server --key-connector <url>
 ```
+
+{% callout info %}
+The `bw config server --key-connector <url>` command is required if your Organization uses [Key Connector]({{site.baseurl}}/article/about-key-connector) and you're using the `--apikey` option to login.
+{% endcallout %}
 
 ### sync
 
