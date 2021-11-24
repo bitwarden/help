@@ -20,12 +20,10 @@ To redeem your sponsorship:
 1. Log in to the Bitwarden account attached to the sponsoring Organization.
 2. Navigate to **Settings** &rarr; **Free Bitwarden Families**:
 
-   {% image plans-and-pricing/f4e/f4e-1.png Redeem your Free Bitwarden Families Sponsorship %}
-3. On this screen, provide the following information and select **Redeem**:
+   {% image plans-and-pricing/f4e/f4e-1-alt.png Redeem your Free Bitwarden Families Sponsorship %}
+3. On this screen, provide a **personal email** you want to redeem the sponsorship with and select **Redeem**:
 
-   - The **personal email** you want to redeem the sponsorship with.
-      {% callout success%}If you already have a separate personal Bitwarden account, use the email address attached to that account. If you don't already have a separate personal Bitwarden account, you'll need to create one with the personal email you enter here.<br><br>**Do not** use the email address or Bitwarden account attached to the sponsoring Organization.{% endcallout %}
-   - A **Friendly Name** for the sponsorship.
+   {% callout success%}If you already have a separate personal Bitwarden account, use the email address attached to that account. If you don't already have a separate personal Bitwarden account, you'll need to create one with the personal email you enter here.<br><br>**Do not** use the email address or Bitwarden account attached to the sponsoring Organization.{% endcallout %}
 4. In your inbox, you'll get an email from Bitwarden inviting you to accept the sponsorship:
 
    {% image plans-and-pricing/f4e/f4e-2.png Families Sponsorship Email %}
