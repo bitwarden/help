@@ -6,7 +6,7 @@ featured: true
 popular: false
 hidden: false
 tags: []
-order: "11"
+order: "12"
 description: "This article contains FAQs regarding importing and exporting data to and from the Bitwarden password manager."
 ---
 
