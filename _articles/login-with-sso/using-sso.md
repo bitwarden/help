@@ -79,7 +79,7 @@ To login using SSO and Key Connector:
    {% callout success %}We recommend bookmarking this page with your Organization Identifier includes as a query string so that you don't have to enter it each time, for example `https://vault.bitwarden.com/#/sso?identifier=YOUR-ORG-ID` or `https://your.domain.com/#/sso?identifier=YOUR-ORG-UD`.{% endcallout %}
 3. **If this is your first time logging in since your Organization implemented Key Connector**, you'll still be required to enter your Master Password. Once you do, the following dialog will prompt you to remove your Master Password:
 
-   `IMAGE PLACEHOLDER`
+   {% image sso/keyconnector/remove-mpw.png Remove Master Password %}
 
    {% callout success %}We encourage you to read [this]({{site.baseurl}}/article/about-key-connector/#impact-on-master-passwords) and [this]({{site.baseurl}}/article/about-key-connector/#impact-on-organization-membership) to fully understand what it means to remove a Master Password from your account. You can instead elect to **Leave the Organization** instead, however this will remove access to both Organization-owned Vault items and Collections and to Single Sign-On.{% endcallout %}
 
