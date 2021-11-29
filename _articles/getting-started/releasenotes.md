@@ -54,8 +54,7 @@ Bitwarden is proud to announce a release centered on robust offerings to promote
 - **Families for Enterprise**: Starting with this release, members of Enterprise Organizations can redeem a free [Bitwarden Families Organization]({{site.baseurl}}/article/about-bitwarden-plans/#families-organizations) for sharing with up to 5 friends or family members. Families Organizations include all premium features for all 6 users and unlimited secure data sharing (see [here]({{site.baseurl}}/article/families-for-enterprise/) for details).
 - **MacOS and Safari Importer**: We've added a custom importer for passwords exported from Safari and macOS (see [here]({{site.baseurl}}/article/import-from-safari/) for details).
 - **Custom Field Type - Linked**: Linked custom fields can be used to solve issues where your Browser Extension has trouble auto-filling usernames and passwords for a particular site (see [here]({{site.baseurl}}/article/auto-fill-custom-fields/#using-linked-custom-fields) for details).
-- **Browser Extension - Unlock Vault while Auto-filling**: As of this release, if you try to auto-fill using the context menu or keyboard shortcut when your Vault is locked,
-- **Browser Extension - Improved Save Bar**:
+- **Browser Extension - Unlock Vault while Auto-filling**: Trying to auto-fill with the context menu or keyboard shortcut when your Vault is locked will now prompt you to unlock your Vault and automatically auto-fill your credentials once it's unlocked.
 - **Mobile - Send from App Extension**: Sends can now be created directly from the iOS app extension tray (see [here] for details)
 
 ## 2021-10-26
