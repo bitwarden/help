@@ -32,7 +32,7 @@ Because Key Connector replaces Master Password-based decryption with customer-ma
 {% callout warning %}
 Currently, there is not a way to re-create Master Passwords for accounts that have removed them.
 
-For this reason, we **highly recommend** that Organizations Owners and Admins **do not** log in using SSO and Key Connector and therefore do not remove their Master Password. This is possible due to their exemption from the [SSO Authentication Policy]({{site.baseurl}}/article/policies/#single-sign-on-authentication) and will mitigate some risk by ensuring all Vault data and functionality is always accessible by *someone*.
+For this reason, Organization Owners and Admins are not able to remove their Master Password and must continue using their Master Password even if using SSO. It is possible to elevate a user who has removed their Master Password to Owner or Admin, however we **strongly recommend** that your Organization always have at least one Owner with a Master Password.
 {% endcallout %}
 
 ### Impact on Organization Membership

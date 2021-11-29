@@ -58,6 +58,11 @@ To prepare your Bitwarden server for Key Connector:
    ```
    nano bwdata/config.yml
    ```
+4. Update your self-hosted Bitwarden installation again in order to apply the change made in **Step 3**:
+
+   ```
+   ./bitwarden.sh update
+   ```
 
 ### Configure Key Connector
 
