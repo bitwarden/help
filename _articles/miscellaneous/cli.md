@@ -580,7 +580,9 @@ bw config server --key-connector <url>
 ```
 
 {% callout info %}
-The `bw config server --key-connector <url>` command is required if your Organization uses [Key Connector]({{site.baseurl}}/article/about-key-connector) and you're using the `--apikey` option to login.
+The `bw config server --key-connector <url>` command is required if your Organization uses [Key Connector]({{site.baseurl}}/article/about-key-connector) and you're using the `--apikey` option to login after having [removed your Master Password]({{site.baseurl}}/article/using-sso/#login-using-sso).
+
+Contact an Organization Owner to get the required URL.
 {% endcallout %}
 
 ### sync
