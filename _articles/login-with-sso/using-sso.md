@@ -28,16 +28,16 @@ The steps required to login using SSO will be slightly different depending on wh
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" id="tab" role="presentation">
-    <a class="nav-link active" id="certtab" data-bs-toggle="tab" data-target="#cert" role="tab" aria-controls="cert" aria-selected="true">Login with SSO & Master Password</a>
+    <a class="nav-link active" id="mptab" data-bs-toggle="tab" data-target="#mp" role="tab" aria-controls="mp" aria-selected="true">Login with SSO & Master Password</a>
   </li>
   <li class="nav-item" id="tab" role="presentation">
-    <a class="nav-link" id="azuretab" data-bs-toggle="tab" data-target="#azure" role="tab" aria-controls="azure" aria-selected="false">Login with SSO & Key Connector</a>
+    <a class="nav-link" id="kctab" data-bs-toggle="tab" data-target="#kc" role="tab" aria-controls="kc" aria-selected="false">Login with SSO & Key Connector</a>
   </li>
 </ul>
 
 <div class="tab-content" id="clientsContent">
-  <div class="tab-pane show active" id="cert" role="tabpanel" aria-labelledby="certtab">
-{% capture cert_content %}
+  <div class="tab-pane show active" id="mp" role="tabpanel" aria-labelledby="mptab">
+{% capture mp_content %}
 ### Login with SSO & Master Password
 
 To login using SSO and your Master Password:
@@ -61,22 +61,22 @@ Your Master Password is the source of that decryption key. Even though you're au
 {% endcallout %}
 
 {% endcapture %}
-{{ cert_content | markdownify }}
+{{ mp_content | markdownify }}
   </div>
-  <div class="tab-pane" id="azure" role="tabpanel" aria-labelledby="azuretab">
-{% capture key_content %}
+  <div class="tab-pane" id="kc" role="tabpanel" aria-labelledby="kctab">
+{% capture kc_content %}
 ### Login with SSO & Key Connector
 
 To login using SSO and Key Connector:
 
-1. Open your Bitwarden Web Vault and select the **Enterprise Single Sign-On**:
+1. Open your Bitwarden Web Vault and select the **Enterprise Single Sign-On** button:
 
    {% image sso/sso-button-lg.png Enterprise Single Sign-On button %}
 2. Enter your **Organization Identifier** and select **Log In**:
 
    {% image sso/org-id-input.png Organization Identifier field %}
 
-   {% callout success %}We recommend bookmarking this page with your Organization Identifier includes as a query string so that you don't have to enter it each time, for example `https://vault.bitwarden.com/#/sso?identifier=YOUR-ORG-ID` or `https://your.domain.com/#/sso?identifier=YOUR-ORG-UD`.{% endcallout %}
+   {% callout success %}We recommend bookmarking this page with your Organization Identifier includes as a query string so that you don't have to enter it each time, for example `https://vault.bitwarden.com/#/sso?identifier=YOUR-ORG-ID` or `https://your.domain.com/#/sso?identifier=YOUR-ORG-ID`.{% endcallout %}
 3. Depending on your account status, you might be required to enter or create a Master Password the first time you login with SSO and Key Connector. If you do, the following dialog should prompt you to remove your Master Password:
 
    {% image sso/keyconnector/remove-mpw.png Remove Master Password %}
@@ -85,9 +85,8 @@ To login using SSO and Key Connector:
 
 Once you're removed your Master Password, or if this isn't your first time logging in using SSO and Key Connector, you'll be logged in to your Vault with no further steps required!
 
-
 {% endcapture %}
-{{ key_content | markdownify }}
+{{ kc_content | markdownify }}
   </div>
 </div>
 
