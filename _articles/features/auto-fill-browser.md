@@ -35,13 +35,13 @@ Simply clicking on the Vault item inside the Browser Extension **Tab** view will
 Currently unavailable in the Safari Browser Extension.
 {% endcallout %}
 
-Without opening your Browser Extension, you can right-click on the username or password input field and use the **Bitwarden** &rarr; **Auto-fill** option. Your Vault must be unlocked for this option to be available.
+Without opening your Browser Extension, you can right-click on the username or password input field and use the **Bitwarden** &rarr; **Auto-fill** option. If your Vault isn't locked when you attempt this, a new tab will open prompting you to unlock. When unlocked, the Browser Extension will automatically proceed with auto-filling your credentials.
 
 {% image getting-started/browserext/browserext-context.png %}
 
 ## Using Keyboard Shortcuts
 
-Bitwarden Browser Extensions provide a set of keyboard shortcuts (a.k.a *hot keys*) to auto-fill login information. Your Vault must be unlocked for these options to be available.
+Bitwarden Browser Extensions provide a set of keyboard shortcuts (a.k.a *hot keys*) to auto-fill login information. If your Vault isn't locked when you attempt this, a new tab will open prompting you to unlock. When unlocked, the Browser Extension will automatically proceed with auto-filling your credentials.
 
 To auto-fill login information, use the following **default** shortcuts. If there are multiple Login items with the detected URI, the last-used login will be used for the auto-fill operation. You can cycle through multiple Logins by repeatedly using the keyboard shortcut:
 
