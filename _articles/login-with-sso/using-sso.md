@@ -24,7 +24,7 @@ Every Bitwarden Organization has a unique identifier specifically for Login with
 
 ## Login using SSO
 
-The steps required to login using SSO will be slightly different depending on whether your Organization is using [Key Connector]({{site.baseurl}}/article/about-key-connector/) or not. Don't worry, you don't personally need to know whether   
+The steps required to login using SSO will be slightly different depending on whether your Organization is using [Key Connector]({{site.baseurl}}/article/about-key-connector/) or not:
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" id="tab" role="presentation">
