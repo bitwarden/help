@@ -55,7 +55,9 @@ Bitwarden is proud to announce a release centered on robust offerings to promote
 - **MacOS and Safari Importer**: We've added a custom importer for passwords exported from Safari and macOS (see [here]({{site.baseurl}}/article/import-from-safari/) for details).
 - **New Custom Field Type**: Linked custom fields can be used to solve issues where your Browser Extension has trouble auto-filling usernames and passwords for a particular site by linking usernames and passwords to bespoke form elements (see [here]({{site.baseurl}}/article/auto-fill-custom-fields/#using-linked-custom-fields) for details).
 - **Browser Extension - Unlock Vault while Auto-filling**: Trying to auto-fill with the context menu or keyboard shortcut when your Vault is locked will now prompt you to unlock your Vault and automatically auto-fill your credentials once it's unlocked.
+{% comment %}
 - **iOS - Send from Extension**: Sends can now be created directly from the iOS Extension list (see [here]({{site.baseurl}}/article/send-ios/) for details).
+{% endcomment %}
 
 ## 2021-10-26
 
