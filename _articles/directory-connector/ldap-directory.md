@@ -92,7 +92,7 @@ Active Directory provides some advanced options and limitations for writing sear
 
 To filter a sync for all entries that have `objectClass=user` and `cn` (common name) that contains `Marketing`:
 ```
-(&(objectClass-user)(cn=*Marketing*))
+(&(objectClass=user)(cn=*Marketing*))
 ```
 
 (**LDAP-only**) To filter a sync for all entries with an `ou` (organization unit) component of their `dn` (distinguished name) that is either `Miami` or `Orlando`:
