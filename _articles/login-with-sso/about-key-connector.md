@@ -39,7 +39,7 @@ For this reason, Organization Owners and Admins are not able to remove their Mas
 
 Key Connector required users to [remove their Master Passwords](#impact-on-master-passwords) and instead uses a company-owned database of cryptographic keys to decrypt users' Vaults. Because Master Passwords can not be re-created for accounts that have removed them, this means that once an account uses Key Connector decryption it is for all intents and purposes **owned by the Organization**.
 
-These accounts **may not leave the Organization**, as in doing so they would lose any means of decrypting Vault data. Similarly, if an Organization administrator removes the account from the Organization, the account is lost.
+These accounts **may not leave the Organization**, as in doing so they would lose any means of decrypting Vault data. Similarly, if an Organization administrator removes the account from the Organization, the account will lose any means of decrypting Vault data.
 
 ### Impact on other Features
 
