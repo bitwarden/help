@@ -54,7 +54,7 @@ Complete the following steps to start your Organization:
 Paid Organizations (Families, Teams, or Enterprise) automatically provide all users with access to premium features. If you had a Premium Individual subscription at the time of creating the Organization, you can cancel your Premium Individual subscription without losing access to premium features.
 
 {% callout warning %}
-Bitwarden offers refunds for cancelled Premium Individual plans **within 30 days of account creation**. If you create a paid Organization within 30 days of creating a Premium individual account, [Contact Us](https://bitwarden.com/contact) to initiation your refund.
+Bitwarden offers refunds for cancelled Premium Individual plans **within 30 days of account creation**. If you create a paid Organization within 30 days of creating a Premium individual account, [Contact Us](https://bitwarden.com/contact) to initiate your refund.
 
 At this time, Bitwarden does not offer refunds to paid subscriptions older than 30 days.
 {% endcallout %}
