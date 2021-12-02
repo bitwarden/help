@@ -11,7 +11,7 @@ description: "Bitwarden enterprise plan users can take advantage of Single Sign 
 
 ## What is Key Connector?
 
-Key Connector is a self-hosted application that serves cryptographic keys to Bitwarden clients. Key Connector runs as a docker container on the same network as existing services, and can be used with [Login with SSO]({{site.baseurl}}/article/about-sso/) to serve cryptographic keys for an Organization as an alternative to requiring a Master Password for Vault decryption ([learn more](#why-use-key-connector)).
+Key Connector is a self-hosted application that facilitates **Customer-managed Encryption**, allowing Enterprise Organizations to serve cryptographic keys to Bitwarden clients. Key Connector runs as a docker container on the same network as existing services, and can be used with [Login with SSO]({{site.baseurl}}/article/about-sso/) to serve cryptographic keys for an Organization as an alternative to requiring a Master Password for Vault decryption ([learn more](#why-use-key-connector)).
 
  Key Connector requires connection to a **database where encrypted user keys are stored** and an **RSA Key Pair to encrypt and decrypt stored user keys**. Key Connector can be [configured]({{site.baseurl}}/article/deploy-key-connector/) with a variety of both database providers (e.g. MSSQL, PostgreSQL, MySQL) and Key Pair storage providers (e.g. Hashicorp Vault, Cloud KMS Providers, On-prem HSM devices) in order to fit your business' infrastructure requirements.
 
@@ -53,7 +53,7 @@ These accounts **may not leave the Organization**, as in doing so they would los
 
 ## How do I start using Key Connector?
 
-In order to get started using Key Connector, please review the following requirements:
+In order to get started using Key Connector for Customer-managed Encryption, please review the following requirements:
 
 {% callout warning %}
 Management of cryptographic keys is incredibly sensitive and is **only recommended for enterprises with a team and infrastructure** that can securely support deploying and managing a key server.
