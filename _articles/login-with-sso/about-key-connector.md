@@ -6,7 +6,7 @@ featured: false
 popular: false
 tags: [key connector, customer-managed encryption, login with sso]
 order: "05"
-description: "..."
+description: "Bitwarden enterprise plan users can take advantage of Single Sign On (SSO) Customer-managed Encryption through Key Connector to streamline Vault authentication and decryption. Find out more in this article."
 ---
 
 ## What is Key Connector?

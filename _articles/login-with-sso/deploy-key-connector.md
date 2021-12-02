@@ -4,9 +4,9 @@ title: Deploy Key Connector
 categories: [login-with-sso]
 featured: false
 popular: false
-tags: []
+tags: [key connector, customer-managed encryption, login with sso]
 order: "06"
-description: "..."
+description: "This article guides you through the process of installing and deploying the Key Connector Bitwarden service to your self-hosted Bitwarden server."
 ---
 
 This article will walk you through the procedure for enabling and configuring Key Connector in an existing self-hosted environment. **Before proceeding**, please thoroughly review the [About Key Connector]({{site.baseurl}}/article/about-key-connector/) article to ensure a full understanding of what Key Connector is, how it works, and the impacts of implementation.

@@ -4,9 +4,9 @@ title: Redeem Families Sponsorship
 categories: [plans-and-pricing]
 featured: false
 popular: false
-tags: []
+tags: [families organizations, enterprise organizations, sponsorship]
 order: "05"
-description: "..."
+description: "This article explains how Enterprise Organization users can redeem a free Families Organization for use in their personal lives."
 ---
 
 Members of [Enterprise Organizations]({{site.baseurl}}/article/about-organizations/#types-of-organizations) are offered a **free Families Organization** sponsorship that can be applied to a new or pre-existing Families Organization and redeemed directly from the Web Vault.

@@ -4,9 +4,9 @@ title: Member Decryption Options
 categories: [login-with-sso]
 featured: false
 popular: false
-tags: [key connector, customer-managed encryption, login with sso]
+tags: [key connector, customer-managed encryption, login with sso, master password decryption]
 order: "04"
-description: "..."
+description: "This article covers the Vault decryption options available for Enterprise Organizations leveraging Login with SSO."
 ---
 
 What makes Login with SSO unique is that it retains our zero-knowledge encryption model. Nobody at Bitwarden has access to your Vault data and, similarly, **neither should your Identity Provider**. That's why Login with SSO **decouples authentication and decryption**. In all Login with SSO implementations, your Identity Provider cannot and will not have access to the decryption key needed to decrypt Vault data.
