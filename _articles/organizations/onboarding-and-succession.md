@@ -174,15 +174,19 @@ Directory Connector will:
 
 Bitwarden Enterprise Organizations can integrate with your existing Identity Provider (IdP) using SAML 2.0 or OIDC to allow members of your Organization to login to Bitwarden using SSO. Login with SSO separates user authentication from Vault decryption:
 
-**Authentication** is completed to your chosen IdP and retains any two-factor authentication processes connected to that IdP. **Decryption** of Vault data requires the user's individual key, through the Master Password. Using Login with SSO, new Bitwarden users can authenticate into their Bitwarden Vault using their regular SSO credentials and perform decryption of this Vault with their newly created master password. Users that removed from your IdP will no longer be able to authenticate with that path.
+**Authentication** is completed throught your chosen IdP and retains any two-factor authentication processes connected to that IdP. **Decryption** of Vault data requires the user's individual key, which is derived in part from the Master Password. There are two [decryption options]({{site.baseurl}}/article/sso-decryption-options/), both of which will have users authenticate using their regular SSO credentials.
 
+- **Master Password**: Once authenticated, Organization members will decrypt Vault data using their [Master Passwords]({{site.baseurl}}/article/master-password/).
+- **Customer Managed Encryption**: Connect Login with SSO to your self-hosted decryption key server. Using this option, Organization members won't need to use their Master Passwords to decrypt Vault data. Instead, [Key Connector]({{site.baseurl}}/article/about-key-connector/) will retrieve a decryption key securely stored in a database owned and managed by you.
+
+<br>
 This approach ensures that you can:
 
 - Leverage your existing Identity Provider
 - Protect the end-to-end encryption of your data
 - Provision users automatically
 - Configure access with or without SSO
-- Decrypt Vault data wile offline
+- Decrypt Vault data according to your company's security needs
 
 ### Enterprise Policies
 

@@ -35,7 +35,7 @@ Linked custom fields can be used to solve issues where your Browser Extension ca
 
 1. In the **Custom Fields** section of a Vault item's **Edit Item** panel, choose **Linked** from the dropdown and select {% icon fa-plus %} **New Custom Field**:
 
-   {% image features/custom-fields.png Add a Linked Custom Field %}
+   {% image features/linked-custom-field.png Add a Linked Custom Field %}
 2. In the **Name** input, [give the custom field a name]({{site.baseurl}}/article/custom-fields/#custom-field-names) that corresponds to the username or password's HTML form element `id`, `name`, `aria-label`, or `placeholder`.
 
    {% callout success %}You can get the right value by right-clicking the form element and using the **Copy Custom Field Name** context menu option:<br><br>{% image features/custom-fields-contextmenu.png %}{% endcallout %}

@@ -25,7 +25,7 @@ In order to use Key Connector you must:
 - [Activate the Single Organization and Single Sign-On policies]({{site.baseurl}}/article/policies/)
 
 <br>
-If your Organization meets or can meet these requirements, including a team and infrastructure that can support management of a key server, [Contact Us](https://bitwarden.com/contact) and we'll set up a time to help you get started.
+If your Organization meets or can meet these requirements, including a team and infrastructure that can support management of a key server, [Contact Us](https://bitwarden.com/contact) and we'll activate Key Connector.
 
 ## Setup & Deploy Key Connector
 

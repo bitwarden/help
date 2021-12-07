@@ -50,7 +50,7 @@ This document describes and references the features available to Bitwarden Enter
 |2FA for Individuals|A robust set of 2FA options for any Bitwarden user. [Learn more]({{site.baseurl}}/article/setup-two-step-login/).|
 |2FA at Organization-level|Enable 2FA via Duo for your entire Organization. [Learn more]({{site.baseurl}}/article/setup-two-step-login-duo/).|
 |Biometric Authentication|Available for:<br>-Android (fingerprint unlock or face unlock) and iOS (Touch ID and Face ID)<br>-Windows Desktop Apps (Windows Hello using PIN, Facial Recognition, and more) and macOS Desktop Apps (Touch ID)<br>-Chromium, Firefox 87+, and Safari Browser Extensions<br><br>[Learn more]({{site.baseurl}}/article/biometrics/).|
-|Login with SSO|Leverage your existing Identity Provider to authenticate your Bitwarden Organization users via SAML 2.0 or OpenID Connect (OIDC). [Learn more]({{site.baseurl}}/article/about-sso/).|
+|Login with SSO|Leverage your existing Identity Provider to authenticate your Bitwarden Organization users via SAML 2.0 or OpenID Connect (OIDC). [Learn more]({{site.baseurl}}/article/about-sso/).<br><br>Using Login with SSO, you can use one of two decryption options to determine how users decrypt Vault data once authenticated. [Learn more]({{site.baseurl}}/article/sso-decryption-options).|
 
 #### Security
 
