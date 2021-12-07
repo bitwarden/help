@@ -23,6 +23,7 @@ This document describes and references the features available to Bitwarden Enter
 |Desktop Applications|Available for Windows, Mac, and Linux. [Learn more]({{site.baseurl}}/article/directory-sync-desktop/).|
 |CLI|Fully featured and self-documented command-line tool. [Learn more]({{site.baseurl}}/article/cli/).
 |Streamlined UI Design|Simple and uniform interfaces across apps for complete ease-of-use.|
+|Complimentary Families Plan for Employees|All Enterprise Organization members can redeem a complimentary Bitwarden families plan for a new or existing personal Bitwarden account. [Learn more]({{site.baseurl}}/article/families-for-enterprise/).|
 
 #### Administrative Features and Capabilities
 
