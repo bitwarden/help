@@ -9,7 +9,7 @@ order: "05"
 description: "This article explains how Enterprise Organization users can redeem a free Families Organization for use in their personal lives."
 ---
 
-Members of [Enterprise Organizations]({{site.baseurl}}/article/about-organizations/#types-of-organizations) are offered a **free Families Organization** sponsorship that can be applied to a new or pre-existing Families Organization and redeemed directly from the Web Vault.
+Members of Cloud [Enterprise Organizations]({{site.baseurl}}/article/about-organizations/#types-of-organizations) are offered a **free Families Organization** sponsorship that can be applied to a new or pre-existing Families Organization and redeemed directly from the Web Vault.
 
 Using a **Families Organization**, you can securely share Vault data between yourself and up to 5 friends or family members. Families Organizations include premium Bitwarden features for all 6 users, including [advanced Two-step Login methods]({{site.baseurl}}/article/setup-two-step-login), [encrypted file attachments]({{site.baseurl}}/article/attachments), [Emergency Access]({{site.baseurl}}/article/emergency-access/), and [more]({{site.baseurl}}/article/about-bitwarden-plans/#compare-the-plans).
 
