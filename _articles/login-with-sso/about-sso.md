@@ -13,51 +13,34 @@ description: "Bitwarden enterprise plan users can take advantage of Single Sign 
 
 ## What is Login with SSO?
 
-Login with SSO separates user authentication from Vault decryption by leveraging your existing Identity Provider (IdP) to authenticate users into their Bitwarden Vault and using Master Passwords for decryption of Vault data.
+Login with SSO is the Bitwarden solution for Single Sign-On. Using Login with SSO, [Enterprise Organizations]({{site.baseurl}}/article/about-organizations/#types-of-organizations) can leverage their existing Identity Provider to authenticate users with Bitwarden using the **SAMl 2.0** or **Open ID Connect (OIDC)** protocols.
 
-Login with SSO currently supports SAML 2.0 and OpenID Connect authentication for customers on the current Enterprise Plan.
+What makes Login with SSO unique is that it retains our zero-knowledge encryption model. Nobody at Bitwarden has access to your Vault data and, similarly, **neither should your Identity Provider**. That's why Login with SSO **decouples authentication and decryption**. In all Login with SSO implementations, your Identity Provider cannot and will not have access to the decryption key needed to decrypt Vault data.
 
-Users of Bitwarden authenticate into their vaults using the **Enterprise Single Sign-On** button located on the login screen of any Bitwarden client application. For more information, see [Using Login with SSO]({{site.baseurl}}/article/using-sso/).
+In most scenarios, that decryption key is the user's [Master Password]({{site.baseurl}}/article/master-password/), which they retain sole responsibility for, however Organizations self-hosting Bitwarden can use [Key Connector]({{site.baseurl}}/article/about-key-connector/) as an alternative means of decrypting Vault data.
 
-Administrators can configure Login with SSO from the Organization **Manage** screen.
+{% image sso/sso-workflow-2.png Login with SSO & Master Password Decryption %}
 
-{% image sso/sso-button-lg.png Enterprise Single Sign-On button %}
+## Why use Login with SSO?
 
-### Requiring SSO for Users
+Login with SSO is a flexible solution that can fit your enterprise's needs. Login with SSO includes:
 
-Using the **Single Sign-On Authentication** policy, Enterprise Organizations can require non-Owner/non-Admin users to log in to Bitwarden with Enterprise Single Sign-On. For more information about setting up this policy, see [Policies]({{site.baseurl}}/article/policies/).
+- [SAML 2.0]({{site.baseurl}}/article/configure-sso-saml/) and [OIDC]({{site.baseurl}}/article/configure-sso-oidc/) configuration options that support integration with a wide variety of Identity Providers.
+- An [Enterprise Policy]({{site.baseurl}}/article/policies/#single-sign-on-authentication) to optionally require non-Owner/non-Admin users to log in to Bitwarden with Single Sign-On.
+- Two distinct [Member Decryption Options]({{site.baseurl}}/article/sso-decryption-options/) for safe data access workflows.
+- "Just-in-time" end-user onboarding via SSO.
 
-## Enterprise Free Trial
 
-Login with SSO is available for all customers on the current Enterprise plan (for more information, see [About Bitwarden Plans]({{site.baseurl}}/article/about-bitwarden-plans/). If you're new to Bitwarden, we'd love to help you through the process of setting up an account and starting your 7 Day Free Trial Enterprise Organization with our dedicated signup page:
+## How do I start using Login with SSO?
+
+Login with SSO is available for all customers with an [Enterprise Organization]({{site.baseurl}}/article/about-bitwarden-plans/#enterprise-organizations). If you're new to Bitwarden, we'd love to help you through the process of setting up an account and starting your 7 Day Free Trial Enterprise Organization with our dedicated signup page:
 
 <a role="button" class="btn btn-primary" href="https://vault.bitwarden.com/#/register?org=enterprise">Start your Enterprise Free Trial</a>
 
-If you're an experienced Bitwarden user, refer to the [this article]({{site.baseurl}}/article/enterprise-free-trial/) for help. If you're self-hosting Bitwarden, you will need to generate a new license file after starting your 7 Day Free Trial. We recommend using a separate Bitwarden instance for testing Login with SSO. For more information, see [Licensing Paid Features]({{site.baseurl}}/article/licensing-on-premise/).
+**Once you have an Enterprise Organization**, deployment should include the following steps:
 
-## Requirements
-
-Login with SSO has the following requirements:
-
-### Identity Server Requirements
-Your Identity Provider must support one of the following:
-- SAML 2.0
-- OpenID Connect (OIDC)
-
-### Client Application Requirements
-Your Bitwarden client applications require the following versions:
-
-- **Desktop Application**: v1.2+
-- **Browser Extension**: v1.46+
-- **Mobile App** (Android or iOS): v2.6+
-- **CLI**: v1.12+ (Must run on systems with an available web browser)
-
-### Self-Hosting Requirements
-If you are self-hosting Bitwarden, your installation must be on v1.37+.
-
-For information on updating your self-hosted instance, see [Updating your Self-Hosted Installation]({{site.baseurl}}/article/updating-on-premise/).
-
-## Workflow Diagram
-The following diagram is an overview of the workflow used by Bitwarden to authenticate using SSO:
-
-{%image /sso/sso-workflow.png Bitwarden SSO Workflow %}
+1. Follow one of our [SAML 2.0]({{site.baseurl}}/article/configure-sso-saml/) or [OIDC]({{site.baseurl}}/article/configure-sso-oidc/) Implementation Guides to configure and deploy Login with SSO with Master Password decryption.
+2. Test [the end-user Login with SSO experience]({{site.baseurl}}/article/using-sso/) using Master Password decryption.
+3. (**If self-hosting**) Review our different [Member Decryption Options]({{site.baseurl}}/article/sso-decryption-options/) to determine whether using [Key Connector]({{site.baseurl}}/article/about-key-connector/) might be right for your Organization.
+4. (**If self-hosting**) If you're interested in implementing Key Connector, [Contact Us](https://bitwarden.com/contact/) and we'll help you get started [deploying Key Connector]({{site.baseurl}}/article/deploy-key-connector/).
+5. Educate your Organization members on how to [use Login with SSO]({{site.baseurl}}/article/using-sso/).

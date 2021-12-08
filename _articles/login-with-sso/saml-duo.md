@@ -33,6 +33,10 @@ Navigate to your Organization's **Manage** &rarr; **Single Sign-On** screen:
 
 You don't need to edit anything on this screen yet, but keep it open for easy reference.
 
+{% callout success %}
+If you're self-hosting Bitwarden, you can use alternative **Member Decryption Options**. This feature is disabled by default, so continue with **Master Password** decryption for now and learn how to get started using [Key Connector]({{site.baseurl}}/article/about-key-connector/) once your configuration is complete and successfully working.
+{% endcallout %}
+
 ## Protect an Application
 
 In the Duo Admin Portal, navigate to the **Applications** screen and select the **Protect an Application** button:

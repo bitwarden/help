@@ -6,7 +6,7 @@ featured: false
 popular: false
 hidden: false
 tags: [plans, premium, renewal]
-order: "07"
+order: "08"
 description: "Learn what to do when your Bitwarden Organization subscription renewal date approaches."
 ---
 

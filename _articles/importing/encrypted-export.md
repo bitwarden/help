@@ -5,7 +5,7 @@ categories: [import-export]
 featured: true
 popular: false
 tags: [import]
-order: "09"
+order: "10"
 description: "This article explains how to create an encrypted export of your Vault data in the Bitwarden password manager for backup."
 ---
 

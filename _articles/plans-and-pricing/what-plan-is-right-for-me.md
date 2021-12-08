@@ -4,7 +4,7 @@ title: What Plan is Right for Me?
 categories: [plans-and-pricing]
 featured: false
 popular: false
-hidden: false
+hidden: true
 tags: [free, personal, organization, enterprise, teams, family, plans, subscription]
 order: "02"
 redirect_from:

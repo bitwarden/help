@@ -5,7 +5,7 @@ categories: [send]
 featured: true
 popular: false
 tags: []
-order: "08"
+order: "09"
 description: "This article describes steps you may need to take to use Bitwarden Send in a self-hosted environment."
 ---
 

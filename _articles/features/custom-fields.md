@@ -14,6 +14,7 @@ Custom fields, available for any [Vault item type]({{site.baseurl}}/article/mana
 - **Text**: Field value stores a freeform input (text, numbers, etc.)
 - **Hidden**: Field value stores freeform input that is hidden from view (particularly useful for Organizations using the [Hide Password access control]({{site.baseurl}}/article/user-types-access-control/#granular-access-control)).
 - **Boolean**: Field value stores a boolean value (true/false).
+- **Linked**: Field value is linked to the item's Username or Password. Given the [right field name](#custom-field-names), Linked custom fields can be used to solve issues where your Browser Extension can't auto-fill usernames and passwords for a particular site ([learn more]({{site.baseurl}}/article/auto-fill-custom-fields/#using-linked-custom-fields)).
 
 {% callout success %}
 #### Custom Fields for Keys

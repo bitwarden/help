@@ -12,7 +12,7 @@ description: "Learn how to add an Organization subscription to your individual B
 This article will guide existing individual Bitwarden users ([**Free**]({{site.baseurl}}/article/about-bitwarden-plans/#free-individual) or [**Premium**]({{site.baseurl}}/article/about-bitwarden-plans/#premium-individual)) through the process of transitioning to an Organizations plan ([**Free**]({{site.baseurl}}/article/about-bitwarden-plans/#free-organizations), [**Families**]({{site.baseurl}}/article/about-bitwarden-plans/#families-organizations), [**Teams**]({{site.baseurl}}/article/about-bitwarden-plans/#teams-organizations), or [**Enterprise**]({{site.baseurl}}/article/about-bitwarden-plans/#enterprise-organizations)) in order to start securely sharing data from Organizations with friends, family, co-workers, a department, or an entire company.
 
 {% callout success %}
-If you're looking for how to upgrade an existing Free Organization to a paid Organization, see [this FAQ item]({{site.baseurl}}/article/org-faqs/#q-how-do-i-upgrade-my-free-organization) instead.
+If you're looking for how to upgrade an existing Free Organization to a paid Organization, see [this FAQ]({{site.baseurl}}/article/org-faqs/#q-how-do-i-upgrade-my-free-organization) instead.
 {% endcallout %}
 
 ## Start Your Organization
@@ -30,11 +30,14 @@ Complete the following steps to start your Organization:
    {% endcallout %}
 
 4. If you're creating an Organization on behalf of a business:
+
    - Check the **This account is owned by a business** checkbox.
    - Provide your **Business Name**.
 
+   <br>
    Checking the **This account is owned by a business** checkbox will automatically filter your plan options to those suited to businesses. If you represent a business interested in testing secure sharing using a Free Organization, leave this option unchecked.
 5. In the **Choose Your Plan** section, select which type of Organization to create. Options include:
+
    - **Free:** For testing or personal users to share with 1 other user. **[Learn more]({{site.baseurl}}/article/about-bitwarden-plans/#free-organizations)**.
    - **Families:** For personal use, to share with family & friends. **[Learn more]({{site.baseurl}}/article/about-bitwarden-plans/#families-organizations)**.
    - **Teams:** For businesses and other team organizations. **[Learn more]({{site.baseurl}}/article/about-bitwarden-plans/#teams-organizations)**.
@@ -43,6 +46,7 @@ Complete the following steps to start your Organization:
    {% callout info %}Paid Organizations (Families, Teams, or Enterprise) include premium features for all enrolled users. For more information about Premium features, see [About Bitwarden Plans]({{site.baseurl}}/article/about-bitwarden-plans/#compare-the-plans/).
    {% endcallout %}
 6. If you selected a Paid Organization, enter the following information:
+
    - For **Teams** or **Enterprise**, enter the number of **User Seats** you need. Seats will be added if you exceed this number, unless you [specify a limit]({{site.baseurl}}/article/managing-users/#set-a-seat-limit).
    - For **Families**, **Teams**, or **Enterprise**, enter the amount of **Additional Storage (GB)** you need. You plan comes with 1 GB of shared encrypted file attachments, and you can add additional storage later if needed.
    - For **Teams** or **Enterprise**, select whether you'd like to be billed **Annually** or **Monthly**. Families Organizations may only be billed annually.
