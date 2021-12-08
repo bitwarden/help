@@ -41,7 +41,7 @@ In the event of data loss, complete the following steps to restore a nightly bac
 
 1. Retrieve your database password from the `globalSettings__sqlServer__connectionString=...Password=` value found in `global.override.env`.
 2. Identify the Container ID of the `mssql` container using the `docker ps` command.
-3. Run the following commmand to open a bash session for your `mssql` docker container:
+3. Run the following command to open a bash session for your `mssql` docker container:
 
    ```
    docker exec -it bitwarden-mssql /bin/bash
