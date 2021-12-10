@@ -332,5 +332,5 @@ Now that Key Connector is [fully configured](#configure-key-connector) and you h
    {% callout success %}The next few steps assume that you already have an active [Login with SSO]({{site.baseurl}}/article/about-sso/) implementation using [SAML 2.0]({{site.baseurl}}/article/configure-sso-saml/) or [OIDC]({{site.baseurl}}/article/configure-sso-oidc/). **If you don't**, please implement and test Login with SSO before proceeding.{% endcallout %}
    {% image sso/keyconnector/enable-keyconnector.png %}
 6. In the **Member Decryption Options** section, select **Key Connector**.
-7. In the **Key Connector URL** input, enter the address Key Connector is running at (by default, `http://localhost:5000`) and select the **Test** button to ensure you can reach Key Connector.
+7. In the **Key Connector URL** input, enter the address Key Connector is running at (by default, `https://your.domain/key-connector`) and select the **Test** button to ensure you can reach Key Connector.
 8. Scroll to the bottom of the screen and select **Save**.
