@@ -63,7 +63,7 @@ To prepare your Bitwarden server for Key Connector:
    ```
    ./bitwarden.sh rebuild
    ```
-5. Update your self-hosted Bitwarden installation again in order to apply the changes.
+5. Update your self-hosted Bitwarden installation again in order to apply the changes:
 
    ```
    ./bitwarden.sh update
