@@ -37,6 +37,7 @@ All Event types are listed below, with their corresponding type codes:
 - Login attempt failed with incorrect two-step login. (`1006`)
 - User Exported their personal Vault items. (`1007`)
 - User updated a password issued through [Admin Password Reset]({{site.baseurl}}/article/admin-reset/). (`1008`)
+- User migrated their decryption key with [Key Connector]({{site.baseurl}}/article/about-key-connector/). (`1009`)
 
 ### Item Events
 - Created item *item-identifier*. (`1100`)
@@ -79,9 +80,14 @@ All Event types are listed below, with their corresponding type codes:
 - *user-identifier* withdrew from Master Password Reset. (`1507`)
 - Master Password was reset for *user-identifier*. (`1508`)
 - Reset SSO link for user *user-identifier*. (`1509`)
+- *user-identifer* logged in using SSO for the first time. (`1510`)
 - Edited organization settings. (`1600`)
 - Purged organization vault. (`1601`)
 - Organization Vault access by a managing [Provider]({{site.baseurl}}/article/providers/). (`1603`)
+- Organization enabled SSO. (`1604`)
+- Organization disabled SSO. (`1605`)
+- Organization enabled Key Connector. (`1606`)
+- Organization disabled Key Connector. (`1607`)
 - Updated a Policy. (`1700`)
 
 {% comment %}

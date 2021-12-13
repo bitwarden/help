@@ -30,6 +30,10 @@ Navigate to your Organization's **Manage** &rarr; **Single Sign-On** screen:
 
 You don't need to edit anything on this screen yet, but keep it open for easy reference.
 
+{% callout success %}
+If you're self-hosting Bitwarden, you can use alternative **Member Decryption Options**. This feature is disabled by default, so continue with **Master Password** decryption for now and learn how to get started using [Key Connector]({{site.baseurl}}/article/about-key-connector/) once your configuration is complete and successfully working.
+{% endcallout %}
+
 ## Create a JumpCloud SAML App
 
 In the JumpCloud Portal, select **SSO** from the menu and select the {% icon fa-plus %} **Add** icon:

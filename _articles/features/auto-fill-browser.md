@@ -10,12 +10,12 @@ description: "Learn how to autofill logins stored in the Bitwarden password mana
 ---
 
 {% callout success %}
-Most auto-fill functionality relies on the attribution of URIs to Login items. If you're unfamiliar with using URIs, see [Using URIs]({{site.baseurl}}/article/uri-match-detection/).
+**If your Browser Extension is having issues auto-filling usernames and passwords for a particular site**, using [Linked custom fields]({{site.baseurl}}/article/auto-fill-custom-fields/#using-linked-custom-fields) can force an auto-fill.
 
-Additionally, **basic authentication prompts** work a little differently than regular auto-fills. See our breakout article on [Basic Auth Prompts]({{site.baseurl}}/article/basic-auth-autofill/)
+Additionally, **basic authentication prompts** work a little differently than regular auto-fills. For more information, see the separate article on [Basic Auth Prompts]({{site.baseurl}}/article/basic-auth-autofill/).
 {% endcallout %}
 
-Bitwarden Browser Extensions have a unique **Tab** view, which automatically detects the URI (e.g. `myturbotax.intuit.com`) of the page displayed in the open tab and surfaces any Vault items with corresponding URIs.
+Bitwarden Browser Extensions have a unique **Tab** view, which automatically detects the URI (e.g. `myturbotax.intuit.com`) of the page displayed in the open tab and surfaces any Vault items with corresponding URIs. If you're unfamiliar with using URIs, we recommend reading [this article]({{site.baseurl}}/article/uri-match-detection/).
 
 When a Vault item has a corresponding URI, the Bitwarden icon will overlay a badge counter reporting the number of Vault items for that web page (*pictured below*).
 
@@ -27,11 +27,7 @@ If you want, you can disable the badge counter using a toggle in the {% icon fa-
 {% image autofill/disable-counter-badge.png Disable Badge Counter %}
 {% endcallout %}
 
-Simply clicking on the Vault item inside the Browser Extension **Tab** view will auto-fill login information to the detected input fields.
-
-There are a few alternative auto-fill options for Browser Extensions. In all cases (except [manually](#manually-auto-fill)):
-- The Browser Extension must be unlocked for the auto-fill functionality to operate.
-- In cases where a web page or service has **multiple** Login items with relevant URIs, it will auto-fill the last-used Login.
+Simply clicking on the Vault item inside the Browser Extension **Tab** view will auto-fill login information to the detected input fields.  In cases where a web page or service has **multiple** Login items with relevant URIs, it will auto-fill the last-used Login.
 
 ## Using the Context-Menu
 
@@ -39,13 +35,13 @@ There are a few alternative auto-fill options for Browser Extensions. In all cas
 Currently unavailable in the Safari Browser Extension.
 {% endcallout %}
 
-Without opening your Browser Extension, you can right-click on the username or password input field and use the **Bitwarden** &rarr; **Auto-fill** option. Your Vault must be unlocked for this option to be available.
+Without opening your Browser Extension, you can right-click on the username or password input field and use the **Bitwarden** &rarr; **Auto-fill** option. If your Vault isn't locked when you attempt this, a new tab will open prompting you to unlock. When unlocked, the Browser Extension will automatically proceed with auto-filling your credentials.
 
 {% image getting-started/browserext/browserext-context.png %}
 
 ## Using Keyboard Shortcuts
 
-Bitwarden Browser Extensions provide a set of keyboard shortcuts (a.k.a *hot keys*) to auto-fill login information. Your Vault must be unlocked for these options to be available.
+Bitwarden Browser Extensions provide a set of keyboard shortcuts (a.k.a *hot keys*) to auto-fill login information. If your Vault isn't locked when you attempt this, a new tab will open prompting you to unlock. When unlocked, the Browser Extension will automatically proceed with auto-filling your credentials.
 
 To auto-fill login information, use the following **default** shortcuts. If there are multiple Login items with the detected URI, the last-used login will be used for the auto-fill operation. You can cycle through multiple Logins by repeatedly using the keyboard shortcut:
 

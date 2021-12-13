@@ -5,7 +5,7 @@ categories: [import-export]
 featured: true
 popular: false
 tags: [import, passwordsafe]
-order: "07"
+order: "08"
 description: "If you are switching password managers from Password Sage to Bitwarden, use this article guide you to export data from Password Safe and import into Bitwarden."
 ---
 

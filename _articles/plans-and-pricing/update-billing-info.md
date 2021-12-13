@@ -5,7 +5,7 @@ categories: [plans-and-pricing]
 featured: false
 popular: false
 tags: [account, billing, billing information, individual, organization, subscription]
-order: "05"
+order: "06"
 description: "Learn how to update billing info in Bitwarden, including steps for individual and Organization subscriptions."
 ---
 

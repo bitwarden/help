@@ -6,7 +6,7 @@ featured: true
 popular: false
 hidden: false
 tags: []
-order: "11"
+order: "12"
 description: "This article contains FAQs regarding importing and exporting data to and from the Bitwarden password manager."
 ---
 
@@ -18,7 +18,7 @@ This article contains Frequently Asked Questions (FAQs) regarding **Import &amp;
 
 ### Q: Can I import to Bitwarden from iCloud/Mac Keychain/Safari?
 
-**A:** As of Safari 15.0, you can export passwords from Safari in a `.csv` file. Once you do, [condition your .csv]({{site.baseurl}}/article/condition-bitwarden-import/) to meet Bitwarden's format and [import your data]({{site.baseurl/article/import-data/}}).
+**A:** As of Safari 15.0, you can export passwords from Safari in a `.csv` file. Once you do, [condition your .csv]({{site.baseurl}}/article/condition-bitwarden-import/) to meet Bitwarden's format and [import your data]({{site.baseurl}}/article/import-data/}}).
 
 ### Q: How do I import items directly to Collections?
 

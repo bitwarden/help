@@ -110,22 +110,10 @@ In the following table, "premium features" (included for **Teams Organizations**
 |[API access]({% link _articles/organizations/public-api.md %})|-|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
 |[Directory Connector]({% link _articles/directory-connector/directory-sync.md %})|-|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
 |[Login with SSO]({% link _articles/login-with-sso/about-sso.md %})|-|-|<i class="fa fa-check" aria-hidden="true"></i>|
+|[Key Connector]({{site.baseurl}}/article/about-key-connector/)|-|-|<i class="fa fa-check" aria-hidden="true"></i>|
 |[Enterprise Policies]({% link _articles/organizations/policies.md %})|-|-|<i class="fa fa-check" aria-hidden="true"></i>|
 |[Admin Password Reset]({{site.baseurl}}/article/admin-reset/)|-|-|<i class="fa fa-check" aria-hidden="true"></i>|
+|[Self-host Option]({{site.baseurl}}/article/install-on-premise/)|-|-|<i class="fa fa-check" aria-hidden="true"></i>|
 |[Custom Management Role]({{site.baseurl}}/article/user-types-access-control/)|-|-|<i class="fa fa-check" aria-hidden="true"></i>|
-|[Self-host option]({{site.baseurl}}/article/install-on-premise/)|-|-|<i class="fa fa-check" aria-hidden="true"></i>|
+|[Families Sponsorship for Members]({{site.baseurl}}/article/families-for-enterprise/)|-|-|<i class="fa fa-check" aria-hidden="true"></i>|
 |Cost to you|Free|$3 Per User Per Month, billed annually<br>or<br>$4 Per User Per Month, billed monthly|$5 Per User Per Month, billed annually<br>or<br>$6 Per User Per Month, billed monthly|
-
-### Next Steps
-
-For help choosing the right plan, see:
-- [What Plan is Right for Me?]({{site.baseurl}}/article/what-plan-is-right-for-me/)
-
-For help moving from an individual plan to an Organization, see:
-- [Upgrade From Individual to Organization]({{site.baseurl}}/article/upgrade-from-individual-to-org/)
-
-For help starting a free trial of Bitwarden Enterprise, see:
-- [Start a Free Trial of Bitwarden Enterprise]({{site.baseurl}}/article/enterprise-free-trial/)
-
-Still can't find what you're looking for?
-- Try our [Billing FAQs]({{site.baseurl}}/article/billing-faqs/)

@@ -5,7 +5,7 @@ categories: [send]
 featured: true
 popular: false
 tags: []
-order: "09"
+order: "10"
 description: "This article contains FAQs regarding Bitwarden Send, a tool for transmitting encrypted plaintext and file attachments to anybody securely"
 ---
 
