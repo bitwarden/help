@@ -70,3 +70,21 @@ To redeem your sponsorship:
 {% callout success %}
 **Congratulations!** If you're new to using Bitwarden Families Organizations, we recommend checking out [this article]({{site.baseurl}}/article/getting-started-organizations/#get-to-know-your-organization) to learn the basics.
 {% endcallout %}
+
+## Frequently Asked Questions
+
+#### Q: Can I redeem with the account that's a member of the sponsoring Enterprise?
+
+**A:** No. Upon redemption, you'll be asked to enter a **personal email address** that you own. If you already have a personal Bitwarden account, enter that account's email address. If you don't, enter a personal email address for which you want to create a personal Bitwarden account.
+
+#### Q: Can I redeem for my existing Families Organization?
+
+**A:** Yes! Redeeming a sponsorship for an active Families Organization will immediately switch you to a sponsored subscription and add prorated account credit for the time remaining on the subscription you've paid for.
+
+#### Q: Can I add additional storage?
+
+**A:** Yes, however only 1 GB is included in your sponsorship. More storage can be added at any time and doing so will charge your payment method on file.
+
+#### Q: What happens if I leave the Organization sponsoring me?
+
+**A:** If you leave or are removed from the sponsoring Organization, your payment method on file will be charged at the next billing interval. If, however, you manually end your sponsorship from the **Settings** &rarr; **Free Bitwarden Families** screen, your payment method will be immediately charged.
