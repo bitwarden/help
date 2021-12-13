@@ -46,9 +46,9 @@ Complete the following steps to enable Two-step Login using FIDO2 WebAuthn:
    You will be prompted to enter your Master Password to continue.
 
 5. Give your security key a friendly **Name**.
-6. Plug the security key into your device's USB port and select **Read Key**.
+6. Plug the security key into your device's USB port and select **Read Key**. If your security key has a button, touch it.
 
-   If your security key has a button, touch it.
+   {% callout info %}Windows Hello is natively a FIDO2 authenticator. If you're using **Windows Hello** but want to register a key or other device, you may need to dismiss the native Windows Hello prompt by selecting **Cancel** on the following screen: <br><br>{% image two-step/windowshello.png %}{% endcallout %}
 
 7. Select **Save**. A green `Enabled` message will indicate that Two-step Login using FIDO2 WebAuthn has been successfully enabled and your key will appear with a green checkbox ( {% icon fa-check %} ).
 8. Select the **Close** button and confirm that the **FIDO2 WebAuthn** option is now enabled, as indicated by a green checkbox ( {% icon fa-check %} ).
