@@ -15,7 +15,7 @@ Key Connector is a self-hosted application that facilitates **Customer-managed E
 
  Key Connector requires connection to a **database where encrypted user keys are stored** and an **RSA Key Pair to encrypt and decrypt stored user keys**. Key Connector can be [configured]({{site.baseurl}}/article/deploy-key-connector/) with a variety of both database providers (e.g. MSSQL, PostgreSQL, MySQL) and Key Pair storage providers (e.g. Hashicorp Vault, Cloud KMS Providers, On-prem HSM devices) in order to fit your business' infrastructure requirements.
 
-{% image sso/keyconnector/keyconnector-diagram.png Key Connector Architecture %}
+{% image sso/keyconnector/keyconnector-diagram-2.png Key Connector Architecture %}
 
 ## Why use Key Connector?
 

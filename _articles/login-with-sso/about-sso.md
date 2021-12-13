@@ -19,7 +19,7 @@ What makes Login with SSO unique is that it retains our zero-knowledge encryptio
 
 In most scenarios, that decryption key is the user's [Master Password]({{site.baseurl}}/article/master-password/), which they retain sole responsibility for, however Organizations self-hosting Bitwarden can use [Key Connector]({{site.baseurl}}/article/about-key-connector/) as an alternative means of decrypting Vault data.
 
-{% image sso/sso-workflow-2.png Login with SSO & Master Password Decryption %}
+{% image sso/sso-workflow-3.png Login with SSO & Master Password Decryption %}
 
 ## Why use Login with SSO?
 
