@@ -67,9 +67,7 @@ Legacy Families plans do not automatically provide premium features, so users wo
 
 ### Q: Can I pay with Bitcoin?
 
-**A:** Yes! Refer to [Update Your Billing Information]({{site.baseurl}}/article/update-billing-info/) for more information.
-
-[Contact Us](https://bitwarden.com/contact/) once you have added the credit for the subscription amount. We will generate and send you an invoice and activate the new account. You will also receive an invoice from our payment processor (BitPay) at the time the Bitcoin is sent.
+**A:** Yes! Please note, you will need to **Add Credit** using Bitcoin on the **Settings** &rarr; **Billing** screen before purchasing the subscription.
 
 ### Q: How do I enter my tax information (VAT)?
 

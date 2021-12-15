@@ -9,13 +9,12 @@ order: "15"
 description: "Learn keyboard shortcuts for the Bitwarden password manager for lightning fast password management."
 ---
 
-## Browser extension shortcuts
+## Browser Extension Shortcuts
+
+Some browsers, including Microsoft Edge, may use the below key combinations for other default shortcuts. In these cases, you'll need to configure your browsers shortcuts. For Chromium-based browsers (Chrome, Edge, Vivaldi, Brave, etc.) this can be done from `chrome://extensions/shortcuts`, `edge://extensions/shortcts`, and so on. For Firefox, use [this article](https://support.mozilla.org/en-US/kb/manage-extension-shortcuts-firefox) to help you manage extension shortcuts.
 
 {% callout info %}
-- Autofill for Microsoft Edge requires the latest Chromium-based version.
-- Some browsers may use the below key combinations for other default shortcuts and may require configuration.
-- You can configure browser extension shortcuts on most Chrome-based browsers (Chrome, Edge, Vivaldi, Brave, etc.) by visiting `chrome://extensions/shortcuts`.
-- Firefox shortcuts can be changed by [managing extension shortcuts](https://support.mozilla.org/en-US/kb/manage-extension-shortcuts-firefox).
+Autofill for Microsoft Edge requires the latest Chromium-based version.
 {% endcallout %}
 
 - Ctrl/CMD `+` Shift `+` Y  `→` Activate extension
@@ -26,18 +25,19 @@ description: "Learn keyboard shortcuts for the Bitwarden password manager for li
 {% callout success %}If a login uses the [Bitwarden Authenticator]({{site.baseurl}}/article/authenticator-keys/) for TOTPs, using the `Cmd/Ctrl + Shift + L` will automatically copy your TOTP to your clipboard after auto-filling. All you have to do is `Cmd/Ctrl + V` to paste!
 {% endcallout %}
 
-## Desktop application shortcuts
+## Desktop Application Shortcuts
 
 **General:**
 - Ctrl/CMD `+` , `→` Preferences
 - Ctrl/CMD `+` L `→` Lock Now
 - Ctrl/CMD `+` Q `→` Quit
 
-
+<br>
 **File:**
 
 - Ctrl/CMD `+` N `→` Add New Login
 
+<br>
 **Edit:**
 
 - Ctrl/CMD `+` Z `→` Undo
@@ -50,7 +50,7 @@ description: "Learn keyboard shortcuts for the Bitwarden password manager for li
 - Ctrl/CMD `+` P `→` Copy Password
 - Ctrl/CMD `+` T `→` Copy TOTP
 
-
+<br>
 **View:**
 
 - Ctrl/CMD `+` F `→` Search in vault
@@ -62,6 +62,7 @@ description: "Learn keyboard shortcuts for the Bitwarden password manager for li
 - Ctrl/CMD `+` Shift `+` R `→` Reload
 - F12 `→` Developer options
 
+<br>
 **Window:**
 
 - Ctrl/CMD `+` M `→` Minimize

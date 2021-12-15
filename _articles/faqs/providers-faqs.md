@@ -6,7 +6,7 @@ featured: false
 popular: false
 hidden: false
 tags: []
-order: "08"
+order: "09"
 description: "This article contains FAQs regarding the Provider Portal, a Bitwarden password manager product for MSPs and resellers."
 ---
 
