@@ -48,6 +48,8 @@ Or subscribe to the [Bitwarden Status RSS Feed](https://status.bitwarden.com/){:
 
 ## 2021-12-07
 
+*Server 1.45.0, Web 2.25.0, Desktop 1.30.0, Browser Extension 1.55.0, Mobile 2.15.0, CLI 1.20.0*
+
 Bitwarden is proud to announce new enterprise features in the December release that add flexibility and value to the enterprise plans:
 
 - **Key Connector**: (*Only available to customers self-hosting Bitwarden*) When using Login with SSO with customer-managed encryption, the self-hosted Key Connector application serves cryptographic keys to Bitwarden clients as an alternative to requiring a Master Password for Vault decryption (see [here]({{site.baseurl}}/article/about-key-connector)).
@@ -60,6 +62,8 @@ Bitwarden is proud to announce new enterprise features in the December release t
 {% endcomment %}
 
 ## 2021-10-26
+
+*Server 1.44.0, Web 2.24.0, Desktop 1.29.0, Browser Extension 1.54.0, Mobile 2.14.0, CLI 1.19.0*
 
 The Bitwarden team is pleased to release a set of features and updates continuing our mission of making password management easy and accessible for individuals and businesses:
 
@@ -79,6 +83,8 @@ The Bitwarden team is pleased to release a set of features and updates continuin
 - **CLI - `generate` Passphrase Options**: The `bw generate --passphrase` command now includes the options `--capitalize` and `--includeNumber` (see [here]({{site.baseurl}}/article/cli/#generate) for details).
 
 ## 2021-09-21
+
+*Server 1.43.0, Web 2.23.0, Desktop 1.28.3, Browser Extension 1.53.0, Mobile 2.13.0, CLI 1.18.1*
 
 The latest release of Bitwarden focuses on often requested improvements to existing functionality:
 
