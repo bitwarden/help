@@ -97,7 +97,7 @@ To change your PIN, disable and re-enable Unlock with PIN. You will be prompted 
 </div>
 
 {% callout info %}
-When using the **Lock with master password on restart** PIN option, the Bitwarden application may not fully purge sensitive data from application memory when entering a locked state. If you are concerned about your device's local memory being compromised, you should not use this option.
+If you turn off the **Lock with master password on restart** PIN option, the Bitwarden application may not fully purge sensitive data from application memory when entering a locked state. If you are concerned about your device's local memory being compromised, you should not use this option.
 {% endcallout %}
 
 ## Understanding Unlock vs. Log In
