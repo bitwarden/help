@@ -142,7 +142,7 @@ If you've [created a Bitwarden User & Directory](#create-bitwarden-local-user--d
      Retrieve an installation key using a valid email at [https://bitwarden.com/host](https://bitwarden.com/host). For more information, see [What are my installation id and installation key used for?]({{site.baseurl}}/article/hosting-faqs/#general).
    - **Do you have a SSL certificate to use? (y/n):**
 
-     If you already have your own SSL certificate, specify `y` and place the necessary files in the `.bwdata/ssl/your.domain` directory. You will be asked whether it is a trusted SSL certificate (y/n). For more information, see [Certificate Options]({{site.baseurl}}/article/certificates/).
+     If you already have your own SSL certificate, specify `y` and place the necessary files in the `./bwdata/ssl/your.domain` directory. You will be asked whether it is a trusted SSL certificate (y/n). For more information, see [Certificate Options]({{site.baseurl}}/article/certificates/).
 
      Alternatively, specify `n` and use the **self-signed SSL certificate?** option, which is only recommended for testing purposes.
    - **Do you want to generate a self-signed SSL certificate? (y/n):**
