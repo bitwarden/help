@@ -27,7 +27,7 @@ If you want, you can disable the badge counter using a toggle in the {% icon fa-
 {% image autofill/disable-counter-badge.png Disable Badge Counter %}
 {% endcallout %}
 
-Simply clicking on the Vault item inside the Browser Extension **Tab** view will auto-fill login information to the detected input fields.  In cases where a web page or service has **multiple** Login items with relevant URIs, it will auto-fill the last-used Login.
+Simply clicking on the Vault item inside the Browser Extension **Tab** view will auto-fill login information to the detected input fields.  In cases where a web page or service has **multiple** Login items with relevant URIs, Bitwarden will always auto-fill the last-used Login.
 
 ## Using the Context-Menu
 
@@ -79,8 +79,8 @@ Using this convention, you can setup your Browser extension to, for example:
 - Auto-fill on page load for a only select few items (i.e. **off by default** for all Vault items and **manually turned on** for select items).
 - Auto-fill on page for all but a select few items (i.e. **on by default** for all Vault items and **manually turned off** for select items).
 
-{% callout info %}
-If there are multiple Login items with the detected URI, the last-used login will be used for the auto-fill operation.
+{% callout warning %}
+This feature is marked **experimental** and is disabled by default because, while generally safe, attackers with fake websites could take advantage of this to steal credentials.
 {% endcallout %}
 
 ## Manually Auto-fill
