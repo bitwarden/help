@@ -27,7 +27,7 @@ The icon server is fronted with a CDN that caches the icons on Cloudflare's edge
 
 ### Privacy Considerations
 
-Because a request for an icon contains the hostname of the website stored in your vault, it is important to understand that this feature will "leak" otherwise cryptographically protected information to Bitwarden servers and/or CDN endpoints. An example of a icon request looks like the following:
+Because a request for an icon contains the hostname of the website stored in your vault, it is important to understand that this feature will "leak" otherwise cryptographically protected information to Bitwarden servers and/or CDN endpoints. An example of an icon request looks like the following:
 
 `https://icons.bitwarden.net/google.com/icon.png`
 
