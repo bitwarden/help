@@ -19,6 +19,8 @@ For our privacy policy, visit [bitwarden.com/privacy](https://bitwarden.com/priv
 
 Bitwarden is GDPR compliant. We use applicable, approved information transfer mechanisms where required, such as EU Standard Contractual Clauses (SCCs), or the EU - U.S. Privacy Shield.
 
+Bitwarden uses Standard Contractual Clauses pursuant to Regulation (EU) 2016/679 of the European Parliament and the Council approved by European Commission Implementing Decision (EU) 2021/914 of 4 June 2021, as currently set out at https://eur-lex.europa.eu/eli/dec_impl/2021/914/oj.
+
 ### CCPA
 
 Bitwarden is compliant with the California Consumer Privacy Act (CCPA).
