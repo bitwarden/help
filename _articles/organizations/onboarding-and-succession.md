@@ -28,7 +28,7 @@ The Bitwarden vision is to imagine a world where no one gets hacked. We carry th
 
 - Basic password management for individuals can and should be **free**. We provide just that, a [basic free account for individuals]({{site.baseurl}}/article/about-bitwarden-plans/#free-individual).
 - Individuals and Families should take an active role in their security using [TOTPs, Emergency Access, and other supporting security features]({{site.baseurl}}/article/about-bitwarden-plans/#premium-individual).
-- Organizations can greatly improve their security profile through [Organizational password management and secure sharing]({{site.baseurl}}/article/about-bitwarden-plans/#bitwarden-for-your-business).
+- Organizations can greatly improve their security profile through [Organizational password management and secure sharing]({{site.baseurl}}/article/about-bitwarden-plans/#bitwarden-business-plans).
 
 {% callout success %}
 For Bitwarden, [different plans]({{site.baseurl}}/article/about-bitwarden-plans/) and options are connected and complementary, all originating in our vision of a hack-free world. Empowering everyone at work **and** at home with password management gets us one step closer to that goal.
