@@ -64,8 +64,7 @@ You may alternatively opt to use an existing SSL Certificate, which will require
 - A Private Key (`private.key`)
 - A CA Certificate (`ca.crt`)
 
-You may need to bundle your primary certificate with Intermediate CA certificates to prevent SSL trust errors. All CA Certificates should be included in the CA Certificate Chain file when using a Root CA and Intermediate CA certificate.
-
+You may need to bundle your primary certificate with Intermediate CA certificates to prevent SSL trust errors. All certificates should be included in the Server Certificate file when using a Root CA and Intermediate CA certificate.
 
 Under the default configuration, place your files in `./bwdata/ssl/your.domain`. You may specify a different location for your certificate files by editing the following values in `./bwdata/config.yml`:
 
