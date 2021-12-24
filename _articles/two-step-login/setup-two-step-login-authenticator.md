@@ -12,7 +12,7 @@ description: "This article explains how you can add an extra layer of protection
 Two-step Login using a third-party authenticator app (for example, [Authy](https://authy.com/){:target="_blank"}, [Google Authenticator](https://support.google.com/accounts/answer/1066447?hl=en){:target="_blank"}, or [FreeOTP](https://freeotp.github.io/){:target="_blank"}) is available for free to all Bitwarden users.
 
 {% callout info %}
-Some authenticator apps, like Google Authenticator, do not automatically backup your 2FA tokens for easy migration to a new mobile device. In these cases, you should manually save the each token's authenticator recovery codes.
+Some authenticator apps, like Google Authenticator, do not automatically backup your 2FA tokens for easy migration to a new mobile device. In these cases, you should manually save each token's authenticator recovery codes.
 
 Other apps, like Authy, do support backup and sync across devices. In these cases, be sure to set a strong backup password and keep a record of it in your Bitwarden Vault.
 {% endcallout %}
