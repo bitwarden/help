@@ -11,7 +11,7 @@ description: "Learn keyboard shortcuts for the Bitwarden password manager for li
 
 ## Browser Extension Shortcuts
 
-Some browsers, including Microsoft Edge, may use the below key combinations for other default shortcuts. In these cases, you'll need to configure your browsers shortcuts. For Chromium-based browsers (Chrome, Edge, Vivaldi, Brave, etc.) this can be done from `chrome://extensions/shortcuts`, `edge://extensions/shortcts`, and so on. For Firefox, use [this article](https://support.mozilla.org/en-US/kb/manage-extension-shortcuts-firefox) to help you manage extension shortcuts.
+Some browsers, including Microsoft Edge, may use the below key combinations for other default shortcuts. In these cases, you'll need to configure your browsers shortcuts. For Chromium-based browsers (Chrome, Edge, Vivaldi, Brave, etc.) this can be done from `chrome://extensions/shortcuts`, `edge://extensions/shortcuts`, and so on. For Firefox, use [this article](https://support.mozilla.org/en-US/kb/manage-extension-shortcuts-firefox) to help you manage extension shortcuts.
 
 {% callout info %}
 Autofill for Microsoft Edge requires the latest Chromium-based version.
