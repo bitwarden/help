@@ -5,10 +5,11 @@ categories: [account-management]
 featured: false
 popular: false
 tags: [categories, folders, sub-folders]
-order: 06
+order: "06"
+description: "Folders in the Bitwarden password manager organize your Personal Vault by gathering together login credentials, cards, identities, and secure notes."
 ---
 
-Folders are structures used to organize your Personal Vault by gathering together Logins, Cards, Identities, and Secure Notes. Using Folders is a great way to make all Vault items easy to find. Any Vault item can be added to a Folder, including [shared items]({{site.baseurl}}/article/share-to-a-collection/).
+Folders are structures used to organize your Personal Vault by gathering together Logins, Cards, Identities, and Secure Notes. Using Folders is a great way to make all Vault items easy to find. Any Vault item can be added to a Folder, including [items shared with you from an Organization]({{site.baseurl}}/article/sharing/).
 
 {% callout success %}
 Items added to a Folder will still appear in your Vault when {% icon fa-th %} **All Items** is selected from the Filter menu, and deleting a Folder **will not** delete the items in that Folder.
@@ -42,9 +43,11 @@ Folders can be created, renamed, and deleted from any Bitwarden client applicati
 
 To create a Folder, select the {% icon fa-plus %} **Add** icon in the Folders list:
 
-{% image /manage-items/folder-add-web.png Add a folder %}
+{% image manage-items/folder-add-web.png Add a folder %}
 
-Once created, you can **rename or delete** a folder at any time using the hover-over {% icon fa-pencil %} **Pencil** icon.
+Once created, you can **rename or delete** a folder at any time by selecting the folder and clicking the {% icon fa-pencil %} **Pencil** icon:
+
+{% image manage-items/folder-delete-wv.png Edit or delete a folder %}
 
 {% endcapture %}
 {{ web_vault | markdownify}}
@@ -55,9 +58,11 @@ Once created, you can **rename or delete** a folder at any time using the hover-
 
 To create a Folder, select the {% icon fa-cogs %} **Settings** menu, select the **Folders** option, and tap/select the {% icon fa-plus %} **Add** icon:
 
-{% image /manage-items/folder-add-extension.gif Add a folder %}
+{% image manage-items/folder-add-extension.gif Add a folder %}
 
-Once created, you can **rename or delete** a folder at any time from the same menu by selecting an existing folder.
+Once created, you can **rename or delete** a folder at any time from the same menu by selecting an existing folder:
+
+{% image manage-items/folder-delete-extension.gif Edit or delete a folder %}
 
 {% endcapture %}
 {{ browser_extension | markdownify}}
@@ -68,9 +73,11 @@ Once created, you can **rename or delete** a folder at any time from the same me
 
 To create a Folder, select the {% icon fa-plus %} **Add** icon in the Folders list:
 
-{% image /manage-items/folder-add-desk.png Add a folder %}
+{% image manage-items/folder-add-desk.png Add a folder %}
 
-Once created, you can **rename or delete** a folder at any time using the hover-over {% icon fa-pencil %} **Pencil** icon.
+Once created, you can **rename or delete** a folder at any time using the hover-over {% icon fa-pencil %} **Pencil** icon:
+
+{% image manage-items/folder-delete-desktop.png Edit or delete a folder %}
 
 {% endcapture %}
 {{ desktop_info | markdownify}}
@@ -79,11 +86,11 @@ Once created, you can **rename or delete** a folder at any time using the hover-
 {% capture mobile_info %}
 ### Mobile App
 
-To create a Folder, tap the {% icon fa-cogs %} **Settings** menu, tap the **Folders** option, and tap/select the {% icon fa-plus %} **Add** icon:
+To create a Folder, tap the {% icon fa-cogs %} **Settings** menu, tap the **Folders** option, and tap/select the {% icon fa-plus %} **Add** icon. Once created, you can **rename** a folder from the same menu by tapping the folder, or **delete** the folder using the {% icon fa-ellipsis-v %} menu:
 
-{% image /manage-items/folder-add-mob.jpeg Add a folder %}
+{% image manage-items/folders-mobile.png Folders on mobile %}
 
-Once created, you can **rename or delete** a folder at any time from the same menu by tapping an existing folder.
+
 
 {% endcapture %}
 {{ mobile_info | markdownify}}
@@ -98,7 +105,7 @@ To create a Folder, use the command:
 bw create folder <foldername>
 ```
 
-You can edit an existing folder using `bw edit <folderId>` and delete one using `bw delete folder <folderId>`. For more information, refer to our [CLI documentation]({{site.baseurl}}/article/cli).
+You can edit an existing folder using `bw edit <folderId>` and delete one using `bw delete folder <folderId>`. For more information, refer to our [CLI documentation]({{site.baseurl}}/article/cli/).
 
 {% endcapture %}
 {{ cli_info | markdownify}}
@@ -108,7 +115,7 @@ You can edit an existing folder using `bw edit <folderId>` and delete one using 
 {% callout info %}
 If you're a member of an Organization, **Collections** will be shown below your Folders in the Filters menu.
 
-There are similarities between Folders and Collections. **Folders organize your Personal Vault** (but can include [shared items]({{site.baseurl}}/article/share-to-a-collection/)) and are unique to you, where Collections are shared between members of Organizations.
+There are similarities between Folders and Collections. **Folders organize your Personal Vault** (but can include [shared items]({{site.baseurl}}/article/sharing/)) and are unique to you, where Collections are shared between members of Organizations.
 {% endcallout %}
 
 ### Nested Folders
@@ -116,10 +123,10 @@ There are similarities between Folders and Collections. **Folders organize your 
 Folders can be "nested" in order to logically organize them within your Vault. There's no limit to the depth with which you can nest Folders, but creating too many levels may interfere with your Vault's interface.
 
 {% callout info %}
-Searching inside a "parent" Folder will not include items in Folders nested inside it as potential search results. For more information, see [Search your Vault]({% link _articles/features/searching-vault.md %}).
+Searching inside a "parent" Folder will not include items in Folders nested inside it as potential search results. For more information, see [Search your Vault]({{site.baseurl}}/article/searching-vault/).
 {% endcallout %}
 
-{% image /manage-items/subfolders.png Nested folders %}
+{% image manage-items/subfolders.png Nested folders %}
 
 To create a nested Folder, give a new Folder a **Name** that includes the "parent" Folder following by a forward slash (`/`) delimiter, for example `Personal/Email`.
 
@@ -169,7 +176,7 @@ From the Web Vault, you can either:
 
 Open the Vault item you want to move, select the **Folders** dropdown, and choose the folder to move the item to:
 
-{% image /manage-items/folder-move-be.png Move item to a folder %}
+{% image manage-items/folder-move-be.png Move item to a folder %}
 
 {% endcapture %}
 {{ browser_extension | markdownify}}
@@ -180,7 +187,7 @@ Open the Vault item you want to move, select the **Folders** dropdown, and choos
 
 Open the Vault item you want to move, select the **Folders** dropdown, and choose the folder to move the item to:
 
-{% image /manage-items/folder-move-desk.png Move item to a folder %}
+{% image manage-items/folder-move-desk.png Move item to a folder %}
 
 {% endcapture %}
 {{ desktop_info | markdownify}}
@@ -191,7 +198,7 @@ Open the Vault item you want to move, select the **Folders** dropdown, and choos
 
 Open the Vault item you want to move, tap the **Folders** dropdown, and choose the folder to move the item to:
 
-{% image /manage-items/folder-move-mob.jpeg Move item to a folder %}
+{% image manage-items/folder-move-mob.jpeg Move item to a folder %}
 
 {% endcapture %}
 {{ mobile_info | markdownify}}
@@ -213,7 +220,7 @@ Using `edit` will require you to:
 - Manipulate the JSON object (specifically, the `folderId` attribute) with a [command-line JSON processor like jq](https://stedolan.github.io/jq/){:target="\_blank"}.
 - Use the `encode` command to encode changes to the JSON object.
 
-If you're unfamiliar with using any of these parts, refer to our [CLI documentation]({{site.baseurl}}/article/cli).
+If you're unfamiliar with using any of these parts, refer to our [CLI documentation]({{site.baseurl}}/article/cli/).
 {% endcallout %}
 
 {% endcapture %}
@@ -222,5 +229,5 @@ If you're unfamiliar with using any of these parts, refer to our [CLI documentat
 </div>
 
 {% callout success %}
-Items [shared from an Organization]({{site.baseurl}}/article/share-to-a-collection/) can be added to your personal Folders, and doing so will only impact how the item appears in your Personal Vault (i.e. adding an item to a Folder won't give anyone access to that Folder, or change whether it's in a Folder in their Vaults).
+Items [shared with you from an Organization]({{site.baseurl}}/article/sharing/) can be added to your personal Folders, and doing so will only impact how the item appears in your Personal Vault (i.e. adding an item to a Folder won't give anyone access to that Folder, or change whether it's in a Folder in their Vaults).
 {% endcallout %}

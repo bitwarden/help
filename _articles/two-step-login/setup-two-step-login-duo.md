@@ -5,10 +5,11 @@ categories: [two-step-login]
 featured: false
 popular: false
 tags: [two-step login, 2fa, two factor authentication, account, duo, sms]
-order: 05
+order: "05"
+description: "This article explains how you can add an extra layer of protection to your Bitwarden Vault by setting up two-step login with Duo."
 ---
 
-Two-step Login using Duo is unique among Bitwarden's [available Two-step Login methods]({% link _articles/two-step-login/setup-two-step-login.md %}) in that it can be enabled for a Personal Vault (like the other methods) or **enabled for an entire Organization** by [Teams and Enterprise Organizations]({% link _articles/organizations/about-organizations.md %}).
+Two-step Login using Duo is unique among Bitwarden's [available Two-step Login methods]({{site.baseurl}}/article/setup-two-step-login/) in that it can be enabled for a Personal Vault (like the other methods) or **enabled for an entire Organization** by [Teams and Enterprise Organizations]({{site.baseurl}}/article/about-organizations/).
 
 Enabling Duo for an Organization will prompt all enrolled members to register a device for Duo Two-step Login on their next login.
 
@@ -48,15 +49,15 @@ Setting up Duo in Bitwarden is slightly different depending on whether you're en
 {% callout warning %}
 **Losing access to your Duo-enabled device can permanently lock you out of your Vault,** unless you write down and keep your Two-step Login Recovery Code in a safe place or have an alternate Two-step Login method enabled and available.
 
-[Get your Recovery Code]({% link _articles/two-step-login/two-step-recovery-code.md %}) from the **Two-step Login** screen immediately after completeting the following steps.
+[Get your Recovery Code]({{site.baseurl}}/article/two-step-recovery-code/) from the **Two-step Login** screen immediately after completeting the following steps.
 {% endcallout %}
 
 To enable Two-step Login using Duo for your Personal Vault:
 
-1. Log in to your [Web Vault](https://vault.bitwarden.com){:target="\_blank"}.
+1. Log in to your [Web Vault]({{site.baseurl}}/article/getting-started-webvault).
 2. Select **Settings** from the top navigation bar.
 
-   {% image /two-step/wv-settingstab.png Select Settings %}
+   {% image two-step/wv-settingstab.png Select Settings %}
 3. Select **Two-step Login** from the left-side Settings menu.
 4. Locate the **Duo** option and select the **Manage** button.
 
@@ -68,7 +69,7 @@ To enable Two-step Login using Duo for your Personal Vault:
 
 A green `Enabled` message should appear to indicate that Duo has been enabled for your Vault. You can double-check by selecting the **Close** button and seeing that the **Duo** option has a green checkmark ( {% icon fa-check %} ) on it.
 
-Once enabled, make sure you get your [Recovery Code]({% link _articles/two-step-login/two-step-recovery-code.md %}). You should also log out of all Bitwarden client apps (mobile, browser extension, etc.) to immediately trigger the Two-step Login requirement. If you don't, you will be automatically logged out of these apps eventually.
+Once enabled, make sure you get your [Recovery Code]({{site.baseurl}}/article/two-step-recovery-code/). You should also log out of all Bitwarden client apps (mobile, browser extension, etc.) to immediately trigger the Two-step Login requirement. If you don't, you will be automatically logged out of these apps eventually.
 
 {% endcapture %}
 {{ and_gs | markdownify }}
@@ -81,19 +82,19 @@ Once enabled, make sure you get your [Recovery Code]({% link _articles/two-step-
 {% callout warning %}
 **Organizations Only:** Once you initially [Configure](#configure-duo) and [Setup](#setup-duo) Duo, it is **critically important** that you disable it for the Organization before making any further application configuration changes from the Duo Admin Panel. To make configuration changes; disable Duo in Bitwarden, make the required changes in the Duo Admin Panel, and re-enable Duo in Bitwarden.
 
-This is because Duo for Organizations does not currently support [Recovery Codes]({% link _articles/two-step-login/two-step-recovery-code.md %}), instead you will need to rely on the Duo Admin panel to bypass Two-step Login for members who lose access to Duo. Altering the application configuration from the Duo Admin Panel while Duo is active risks losing the ability to bypass Two-step Login for you or your Organization's members.
+This is because Duo for Organizations does not currently support [Recovery Codes]({{site.baseurl}}/article/two-step-recovery-code/), instead you will need to rely on the Duo Admin panel to bypass Two-step Login for members who lose access to Duo. Altering the application configuration from the Duo Admin Panel while Duo is active risks losing the ability to bypass Two-step Login for you or your Organization's members.
 {% endcallout %}
 
-You must be an [Organization Owner]({% link _articles/organizations/user-types-access-control.md%}) to setup Duo for your Organization. To enable Two-step Login using Duo for your Organization:
+You must be an [Organization Owner]({{site.baseurl}}/article/user-types-access-control/) to setup Duo for your Organization. To enable Two-step Login using Duo for your Organization:
 
-1. Log in to your [Web Vault](https://vault.bitwarden.com){:target="\_blank"}.
+1. Log in to your [Web Vault]({{site.baseurl}}/article/getting-started-webvault).
 2. Open your Organization and select **Settings** from the Organization navigation.
 
-   {% image /two-step/wv-orgsettingstab.png Select Settings %}
+   {% image two-step/wv-orgsettingstab.png Select Settings %}
 3. Select **Two-step Login** from the left-side Settings menu.
 4. Locate the **Duo (Organization)** option and select the **Manage** button.
 
-   {% image /two-step/duo/enable-org.png Select Manage %}
+   {% image two-step/duo/enable-org.png Select Manage %}
 
    You will be prompted to enter your Master Password to continue.
 5. Enter the **Integration Key**, **Secret Key**, and **API Hostname** [retrieved from your Duo Admin Portal](#configure-duo).
@@ -108,7 +109,7 @@ A green `Enabled` message should appear to indicate that Duo has been enabled fo
 
 ### Register a Device
 
-Once [Duo is setup](#setup-duo), navigate to the [Web Vault](https://vault.bitwarden.com){:target="\_blank"} in a new tab. If Duo is your highest-priority Two-step Login method, you will be prompted by a Duo setup screen.
+Once [Duo is setup](#setup-duo), navigate to the [Web Vault]({{site.baseurl}}/article/getting-started-webvault) in a new tab. If Duo is your highest-priority Two-step Login method, you will be prompted by a Duo setup screen.
 
 {% image two-step/duo/enroll1.png Duo Setup Screen %}
 
@@ -119,7 +120,7 @@ Follow the on-screen prompts to configure a Secondary Device to use Duo (for exa
 
 ## Use Duo
 
-The following assumes that **Duo** is your [highest-priority enabled method](https://bitwarden.com/help/article/setup-two-step-login/#using-multiple-methods). Complete the following steps to access your Vault using Two-step Login:
+The following assumes that **Duo** is your [highest-priority enabled method]({{site.baseurl}}/article/setup-two-step-login/#using-multiple-methods). Complete the following steps to access your Vault using Two-step Login:
 
 1. Login to your Bitwarden Vault on any app and enter your Email Address and Master Password.
 
@@ -129,4 +130,6 @@ The following assumes that **Duo** is your [highest-priority enabled method](htt
    - Approving the **Duo Push** request from your registered device.
    - Finding the 6 digit verification code in your **Duo Mobile** app or **SMS** messages, and enter the code on the Vault login screen.
 
-You will not be required to complete your secondary Two-step Login step to **Unlock** your Vault once logged in. For help configuring Log Out vs. Lock behavior, see [Vault Timeout Options]({% link _articles/account/vault-timeout.md %}).
+   {% callout success %}Check the **Remember Me** box to remember your device for 30 days. Remembering your device will mean you won't be required to complete your Two-step Login step.{% endcallout %}
+
+You will not be required to complete your secondary Two-step Login step to **Unlock** your Vault once logged in. For help configuring Log Out vs. Lock behavior, see [Vault Timeout Options]({{site.baseurl}}/article/vault-timeout/).

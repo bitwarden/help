@@ -4,9 +4,9 @@ title: Sync with OneLogin
 categories: [directory-connector]
 featured: true
 popular: false
-hidden: false
 tags: []
-order: 11
+order: "12"
+description: "This article explains how you can sync your Bitwarden Organization with OneLogin to reduce management overhead."
 ---
 
 This article will help you get started using Directory Connector to sync users and groups from your OneLogin directory to your Bitwarden Organization.
@@ -24,24 +24,23 @@ Directory Connector requires knowledge of OneLogin-generated API Credentials to 
 
 Complete the following steps to configure Directory Connector to use your OneLogin directory:
 
-1. Open the Directory Connector [Desktop Application]({% link _articles/directory-connector/directory-sync-desktop.md %}).
+1. Open the Directory Connector [Desktop Application]({{site.baseurl}}/article/directory-sync-desktop/).
 2. Navigate to the **Settings** tab.
 3. From the **Type** dropdown, select **OneLogin**.
 
    The available fields in this section will change according to your selected Type.
 4. Enter the **Client ID** and **Client Secret** [obtained from OneLogin](#create-api-credentials).
 5. From the **Region** dropdown, select your region.
-6. In the **Account** section, select Organization to connect to your directory from the dropdown.
 
 ## Configure Sync Options
 
 {% callout success %}
-When you're finished configuring, navigate to the **More** tab and select the **Clear Sync Cache** button to prevent potential conflicts with prior sync operations. For more information, see [Clear Sync Cache]({% link _articles/directory-connector/clear-sync-cache.md %}).
+When you're finished configuring, navigate to the **More** tab and select the **Clear Sync Cache** button to prevent potential conflicts with prior sync operations. For more information, see [Clear Sync Cache]({{site.baseurl}}/article/clear-sync-cache/).
 {% endcallout %}
 
 Complete the following steps to configure the settings used when syncing using Directory Connector:
 
-1. Open the Directory Connector [Desktop Application]({% link _articles/directory-connector/directory-sync-desktop.md %}).
+1. Open the Directory Connector [Desktop Application]({{site.baseurl}}/article/directory-sync-desktop/).
 2. Navigate to the **Settings** tab.
 3. In the **Sync** section, configure the following options as desired:
 
@@ -50,6 +49,7 @@ Complete the following steps to configure the settings used when syncing using D
 |Interval|Time between automatic sync checks (in minutes).|
 |Remove disabled users during sync|Check this box to remove users from the Bitwarden Organization that have been disabled in your directory.|
 |Overwrite existing organization users based on current sync settings|Check this box to always perform a full sync and remove any users from the Bitwarden Organization if they are not in the synced user set.<br><br>**Recommended for OneLogin directories.**|
+|More than 2000 users or groups are expected to sync.|Check this box if you expect to sync 2000+ users or groups. If you don't check this box, Directory Connector will limit a sync at 2000 users or groups.|
 |If a user has no email address, combine a username prefix with a suffix value to form an email|Check this box to form valid email options for users that do not have an email address. **Users without real or formed email addresses will be skipped by Directory Connector.**<br><br>Formed Email = `username` + **Email Suffix**|
 |Email Suffix|A string (`@example.com`) used to create a suffix for formed email addresses.|
 |Sync users|Check this box to sync users to your Organization.<br><br>Checking this box will allow you to specify **User Filters**.|
@@ -90,13 +90,13 @@ exclude:Role A,Role B
 
 To test whether Directory Connector will successfully connect to your directory and return the desired users and groups, navigate to the **Dashboard** tab and select the **Test Now** button. If successful, users and groups will be printed to the Directory Connector window according to specified [Sync Options](#configure-sync-options) and [Filters](#specify-sync-filters):
 
-{% image /directory-connector/okta/dc-okta-test.png Test sync results %}
+{% image directory-connector/okta/dc-okta-test.png Test sync results %}
 
 ## Start Automatic Sync
 
 Once [Sync Options](#configure-sync-options) and [Filters](#specify-sync-filters) are configured as desired, you can begin syncing. Complete the following steps to start automatic sync with Directory Connector:
 
-1. Open the Directory Connector [Desktop Application]({% link _articles/directory-connector/directory-sync-desktop.md %}).
+1. Open the Directory Connector [Desktop Application]({{site.baseurl}}/article/directory-sync-desktop/).
 2. Navigate to the **Dashboard** tab.
 3. In the **Sync** section, select the **Start Sync** button.
 

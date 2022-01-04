@@ -5,7 +5,8 @@ categories: [account-management]
 featured: false
 popular: false
 tags: [account, report, breach, reused, unsecured, weak]
-order: 15
+order: "15"
+description: "Vault health reports are a much-used capability of the Bitwarden password manager that enable you to identify weak, re-used, and compromised passwords."
 ---
 
 Vault Health Reports can be used to evaluate the security of your Bitwarden Personal or Organization Vault.
@@ -18,17 +19,17 @@ Vault Health Reports are available for Premium users, including members of Paid 
 
 Complete the following steps to view any Vault Health Report for your **Personal Vault**:
 
-1. Log in to the [Web Vault](https://vault.bitwarden.com){:target-"\_blank"}.
+1. Log in to the [Web Vault]({{site.baseurl}}/article/getting-started-webvault).
 2. Select **Tools** from the top navigation bar.
 3. Select a report from the **Reports** section of the left menu.
 
 Complete the following steps to view any Vault Health Reports for your **Organization Vault**:
 
-1. Log in to the [Web Vault](https://vault.bitwarden.com){:target-"\_blank"} and open your Organization.
+1. Log in to the [Web Vault]({{site.baseurl}}/article/getting-started-webvault) and open your Organization.
 2. In your Organization, open the **Tools** tab.
 
-   {% image /features/reports/tools-section.png Organization Reports %}
-3. Select a reports from the **Reports** section of the left menu.
+   {% image features/reports/tools-section.png Organization Reports %}
+3. Select a report from the **Reports** section of the left menu.
 
 ## Available Reports
 
@@ -60,7 +61,7 @@ Once identified, you should use Bitwarden's Password Generator to create a stron
 
 ### Unsecured Websites Report
 
-The **Unsecured Websites Report** identifies Login items that use unsecured (`http://`) schemes in URIs. It's much safer to use `https://` to encrypt communications with TLS/SSL. To learn more, see [Using URIs]({% link _articles/features/uri-match-detection.md %}).
+The **Unsecured Websites Report** identifies Login items that use unsecured (`http://`) schemes in URIs. It's much safer to use `https://` to encrypt communications with TLS/SSL. To learn more, see [Using URIs]({{site.baseurl}}/article/uri-match-detection/).
 
 Once identified, you should change offending URIs from `http://` to  `https://`.
 
@@ -74,7 +75,7 @@ Two-factor Authentication (2FA) is an important security step that helps secure 
 
 Once identified, setup 2FA using the `Instructions` hyperlink for each offending item:
 
-{% image /features/reports/inactive-2fa.png %}
+{% image features/reports/inactive-2fa.png %}
 
 ### Data Breach Report (*Personal Vaults only*)
 
@@ -85,11 +86,11 @@ A “breach” is defined by HIBP as "an incident where data is inadvertantly ex
 {% callout info %}
 If you are self-hosting Bitwarden, in order to run the **Data Breach Report** report in your instance you will need to buy an HIBP subscription key that will authorize you to make calls to the API, obtained [here](https://haveibeenpwned.com/API/Key){:target="_blank"}.
 
-Once you have the key, open your `./bwdata/env/golbal.override.env` and REPLACE the placeholders value for `globalSettnigs_hibpApiKey=` with your purchased API key:
+Once you have the key, open your `./bwdata/env/global.override.env` and REPLACE the placeholders value for `globalSettings__hibpApiKey` with your purchased API key:
 
 ```
 globalSettings__hibpApiKey=REPLACE
 ```
 
-For more information, see [Configure Environment Variables]({% link _articles/hosting/environment-variables.md %}).
+For more information, see [Configure Environment Variables]({{site.baseurl}}/article/environment-variables/).
 {% endcallout %}

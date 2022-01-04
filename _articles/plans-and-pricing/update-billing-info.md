@@ -5,7 +5,8 @@ categories: [plans-and-pricing]
 featured: false
 popular: false
 tags: [account, billing, billing information, individual, organization, subscription]
-order: 05
+order: "06"
+description: "Learn how to update billing info in Bitwarden, including steps for individual and Organization subscriptions."
 ---
 
 Your billing information can only be updated from the [Bitwarden Web Vault](https://vault.bitwarden.com).
@@ -18,9 +19,9 @@ Subscriptions to individual plans and Organizations plans are **separate**; you 
 
 Complete the following steps to update the billing information for your individual subscription:
 
-1. In the [Web Vault](https://vault.bitwarden.com), select **Settings** from the top navigation bar.
+1. In the [Web Vault]({{site.baseurl}}/article/getting-started-webvault), select **Settings** from the top navigation bar.
 
-   {% image /plans-and-pricing/billing-individual-overlay.png Select Billing %}
+   {% image plans-and-pricing/billing-individual-overlay.png Select Billing %}
 
 2. Select **Billing** from the left menu.
 
@@ -35,9 +36,9 @@ Complete the following steps to update the billing information for your individu
 
 Complete the following steps to update the billing information for your Organizations subscription:
 
-1. In the [Web Vault](https://vault.bitwarden.com), select your Organization.
+1. In the [Web Vault]({{site.baseurl}}/article/getting-started-webvault), select your Organization.
 
-   {% image /organizations/open-org-overlay.png Open your Organization %}
+   {% image organizations/open-org-overlay.png Open your Organization %}
 
 2. In your Organization, select the **Settings** tab.
 3. On the Settings screen, select **Billing** from the left menu.

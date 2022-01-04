@@ -5,7 +5,8 @@ categories: [directory-connector]
 featured: true
 popular: false
 tags: [active directory, ldap, ad]
-order: 07
+order: "08"
+description: "Bitwarden provides built-in connectors for the most popular LDAP directory servers. This article explains how to sync your Bitwarden Organization to Active Directory or LDAP."
 ---
 
 This article will help you get started using Directory Connector to sync users and groups from your LDAP or Active Directory service to your Bitwarden Organization. Bitwarden provides built-in connectors for the most popular LDAP directory servers, including:
@@ -24,7 +25,7 @@ This article will help you get started using Directory Connector to sync users a
 
 Complete the following steps to configure Directory Connector to use your LDAP or Active Directory:
 
-1. Open the Directory Connector [Desktop Application]({% link _articles/directory-connector/directory-sync-desktop.md %}).
+1. Open the Directory Connector [Desktop Application]({{site.baseurl}}/article/directory-sync-desktop/).
 2. Navigate to the **Settings** tab.
 3. From the **Type** dropdown, select **Active Directory / LDAP**.
 
@@ -42,12 +43,10 @@ Complete the following steps to configure Directory Connector to use your LDAP o
    |Username|The Distinguished Name of an administrative user that the application will use when connecting to the directory server.<br><br>For Active Directory, the user should be a member of the built-in administrators group.|`cn=admin,cn=users,dc=ad,dc=company,dc=com`<br><br>`company\admin`|
    |Password|The password of the user specified above. The password is safely stored in the operating system's native credential manager.||
 
-5. In the **Account** section, select Organization to connect to your directory from the dropdown.
-
 ## Configure Sync Options
 
 {% callout success %}
-When you're finished configuring, navigate to the **More** tab and select the **Clear Sync Cache** button to prevent potential conflicts with prior sync operations. For more information, see [Clear Sync Cache]({% link _articles/directory-connector/clear-sync-cache.md %}).
+When you're finished configuring, navigate to the **More** tab and select the **Clear Sync Cache** button to prevent potential conflicts with prior sync operations. For more information, see [Clear Sync Cache]({{site.baseurl}}/article/clear-sync-cache/).
 {% endcallout %}
 
 Complete the following steps to configure the settings used when syncing using Directory Connector:
@@ -56,7 +55,7 @@ Complete the following steps to configure the settings used when syncing using D
 If you are using Active Directory, many of these settings are predetermined for you and are therefore are not shown.
 {% endcallout %}
 
-1. Open the Directory Connector [Desktop Application]({% link _articles/directory-connector/directory-sync-desktop.md %}).
+1. Open the Directory Connector [Desktop Application]({{site.baseurl}}/article/directory-sync-desktop/).
 2. Navigate to the **Settings** tab.
 3. In the **Sync** section, configure the following options as disired:
 
@@ -65,6 +64,7 @@ If you are using Active Directory, many of these settings are predetermined for 
 |Interval|Time between automatic sync check (in minutes).|
 |Remove disabled users during sync|Check this box to remove users from the Bitwarden Organization that have been disabled in your Organization.|
 |Overwrite existing organization users based on current sync settings|Check this box to fully overwrite the user set on each sync, including removing users from your Organization when they're absent from the directory user set.<br><br>**If for any reason an empty sync is run when this options is enabled, Directory Connector will remove all users.** Always run a [Test Sync](#test-a-sync) prior to syncing after enabling this option.|
+|More than 2000 users or groups are expected to sync.|Check this box if you expect to sync 2000+ users or groups. If you don't check this box, Directory Connector will limit a sync at 2000 users or groups.|
 |Member Attribute|Name of the attribute used by the directory to define a group's membership (e.g. `uniqueMember`).|
 |Creation Data Attribute|Name of the attribute used by the directory to specify when an entry was created (e.g. `whenCreated`).|
 |Revision Date Attribute|Name of the attribute used by the directory to specify when an entry was last changed (e.g. `whenChanged`).|
@@ -92,7 +92,7 @@ Active Directory provides some advanced options and limitations for writing sear
 
 To filter a sync for all entries that have `objectClass=user` and `cn` (common name) that contains `Marketing`:
 ```
-(&(objectClass-user)(cn=*Marketing*))
+(&(objectClass=user)(cn=*Marketing*))
 ```
 
 (**LDAP-only**) To filter a sync for all entries with an `ou` (organization unit) component of their `dn` (distinguished name) that is either `Miami` or `Orlando`:
@@ -117,15 +117,15 @@ To filter a sync for all entries that have `objectClass=user` and `cn` (common n
 
 ## Test a Sync
 
-To test whether Directory Connector will successfully connect to your Directory and return the desired users and groups, navigate to teh **Dashbaord** tab and select the **Test Now** button. If successful, users and groups will be printed to the Directory Connector window according the specified [Sync Options](#configure-sync-options) and [Filters](#specify-sync-filters):
+To test whether Directory Connector will successfully connect to your Directory and return the desired users and groups, navigate to the **Dashboard** tab and select the **Test Now** button. If successful, users and groups will be printed to the Directory Connector window according the specified [Sync Options](#configure-sync-options) and [Filters](#specify-sync-filters):
 
-{% image /directory-connector/okta/dc-okta-test.png Test sync results %}
+{% image directory-connector/okta/dc-okta-test.png Test sync results %}
 
 ## Start Automatic Sync
 
 Once [Sync Options](#configure-sync-options) and [Filters](#specify-sync-filters) are configured and tested, you can begin syncing. Complete the following steps to start automatic syncing with Directory Connector:
 
-1. Open the Directory Connector [Desktop Application]({% link _articles/directory-connector/directory-sync-desktop.md %}).
+1. Open the Directory Connector [Desktop Application]({{site.baseurl}}/article/directory-sync-desktop/).
 2. Navigate to the **Dashboard** tab.
 3. In the **Sync** section, select the **Start Sync** button.
 

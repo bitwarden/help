@@ -6,7 +6,8 @@ featured: false
 popular: false
 hidden: false
 tags: [two-step login, 2fa, two factor authentication]
-order: 01
+order: "01"
+description: "The Bitwarden field guide to two-step login explains what two-step login is and how to use it to help prevent unauthorized access to your Bitwarden password manager."
 ---
 
 ## What is Two-Step Login?
@@ -53,9 +54,9 @@ Enabling Two-step Login will require you to complete a secondary step each time 
 - YubiKey (any 4/5 series device or YubiKey NEO/NFC)
 - FIDO (any FIDO2 WebAuthn certified key)
 
-To learn more about your options, and for help setting up any method, see [Two-step Login Methods]({% link _articles/two-step-login/setup-two-step-login.md %}).
+To learn more about your options, and for help setting up any method, see [Two-step Login Methods]({{site.baseurl}}/article/setup-two-step-login/).
 
-You can enable any number of methods you'd like, for more information see [Using Multiple Two-step Login Methods]({% link _articles/two-step-login/setup-two-step-login.md %}).
+You can enable any number of methods you'd like, for more information see [Using Multiple Two-step Login Methods]({{site.baseurl}}/article/setup-two-step-login/).
 
 ## Securing Important Websites
 
@@ -94,7 +95,7 @@ Bitwarden for iOS and Android can scan QR codes and generate 6-digit tokens just
 
 {% image two-step/field-guide/two-step-login-bitwarden-authenticator.png Two-step Login using Bitwarden %}
 
-For more help setting up and using the Bitwarden Authenticator, see [Bitwarden Authenticator]({% link _articles/features/authenticator-keys.md %}).
+For more help setting up and using the Bitwarden Authenticator, see [Bitwarden Authenticator]({{site.baseurl}}/article/authenticator-keys/).
 
 #### Why Use Bitwarden Authenticator?
 
@@ -104,7 +105,7 @@ Understandably, some users are skeptical about using Bitwarden for token authent
 
    Bitwarden Mobile apps and Browser Extensions provide Auto-fill capabilities for verification codes. When you use Bitwarden to Auto-fill a Username and Password, it will automatically copy the verification code to your clipboard for easy pasting.
 
-   If you're using a Browser Extension, you can chain together the [Login Keyboard Shortcut](https://bitwarden.com/help/article/auto-fill-browser/#keyboard-shortcuts-hot-keys) (Windows: `Ctrl + Shift + L` / macOS: `Cmd + Shift + L` ), following by the Paste shortcut (Windows: `Ctrl + V` / macOS: `Cmd + V`) for lightning-fast logins.
+   If you're using a Browser Extension, you can chain together the [Login Keyboard Shortcut]({{site.baseurl}}/article/auto-fill-browser/#keyboard-shortcuts-hot-keys) (Windows: `Ctrl + Shift + L` / macOS: `Cmd + Shift + L` ), following by the Paste shortcut (Windows: `Ctrl + V` / macOS: `Cmd + V`) for lightning-fast logins.
 2. **Sharing**
 
    For Organizations, a large benefit of using Bitwarden Authenticator for token verification is the ability to share the token generation among team members. This allows Organizations to protect their accounts with Two-step Login without sacrificing the ability for multiple users to access that account or requiring coordination between two employees to share tokens in an unsafe way.
@@ -119,9 +120,9 @@ Whichever path you choose, remember the basics:
 And now that you're a Two-step Login Expert, we recommend that you:
 
 - [Signup for a Bitwarden Account](https://vault.bitwarden.com/#/register)
-- [Setup Two-step Login]({% link _articles/two-step-login/setup-two-step-login.md %})
+- [Setup Two-step Login]({{site.baseurl}}/article/setup-two-step-login/)
 - [Get Premium for access to advanced Two-step Login methods](https://vault.bitwarden.com/#/?premium=purchase)
-- [Setup the Bitwarden Authenticator]({% link _articles/features/authenticator-keys.md %})
-- [Customize your Vault Timeout behavior]({% link _articles/account/vault-timeout.md %})
+- [Setup the Bitwarden Authenticator]({{site.baseurl}}/article/authenticator-keys/)
+- [Customize your Vault Timeout behavior]({{site.baseurl}}/article/vault-timeout/)
 
 Here’s to many happy logins!

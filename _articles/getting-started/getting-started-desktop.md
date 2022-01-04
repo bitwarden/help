@@ -6,12 +6,13 @@ featured: false
 popular: false
 hidden: false
 tags: [tutorial, getting started, desktop, windows, mac, linux]
-order: 05
+order: "05"
+description: "Learn how to get started with the Bitwarden desktop app by organizing favorites and folders, creating new logins, and unlocking the app with biometrics."
 ---
 
 Bitwarden's Desktop App brings a full Vault experience straight out of your browser and into your desktop. Using a 3-column layout, the Bitwarden Desktop App is designed to help you quickly locate the Vault item you want to use or edit:
 
-{% image /getting-started/desktop-app2.png Bitwarden Desktop App%}
+{% image getting-started/desktop-app2.png Bitwarden Desktop App%}
 
 - The left-most column contains your **Vault Filters**. Vault items are sorted into Types (*Login*, *Card*, *Identity*, or *Secure Note*), Folders, and Collections if you're a member of an Organization.
 
@@ -53,7 +54,7 @@ Organizing your Vault into **Favorites** and **Folders** makes filtering your Va
 3. Select a **Folder** from the dropdown to add this item to a folder, or check the **Favorite** checkbox to add it to your Favorites.
 4. Select the {% icon fa-save %} **Save** icon.
 
-For more information, see [Folders]({% link _articles/features/folders.md %}) and [Favorites]({% link _articles/features/favorites.md %}).
+For more information, see [Folders]({{site.baseurl}}/article/folders/) and [Favorites]({{site.baseurl}}/article/favorites/).
 
 ### Create New Logins
 
@@ -81,13 +82,13 @@ Windows Hello must be enabled on your computer **before** it can be enabled in B
 1. In your Desktop App, select **File** &rarr; **Settings**.
 2. In the Security section, an **Unlock with Windows Hello** option will appear if Windows Hello is supported and enabled on your computer:
 
-   {% image /biometrics/windows.png Windows unlock options %}
+   {% image biometrics/windows.png Windows unlock options %}
 
    Check the **Unlock with Windows Hello** option to proceed. Your computer will prompt you to input your biometric.
 
 Once enabled, a new button will be presented on the Unlock screen. Selecting **Unlock with Windows Hello** will prompt you to input your biometric to initiate unlock.
 
-{% image /biometrics/hello-unlock.png Unlock with Windows Hello %}
+{% image biometrics/hello-unlock.png Unlock with Windows Hello %}
 
 ### Start Bitwarden Automatically
 
@@ -121,7 +122,7 @@ Organizing your Vault into **Favorites** and **Folders** makes filtering your Va
 3. Select a **Folder** from the dropdown to add this item to a folder, or check the **Favorite** checkbox to add it to your Favorites.
 4. Select the {% icon fa-save %} **Save** icon.
 
-For more information, see [Folders]({% link _articles/features/folders.md %}) and [Favorites]({% link _articles/features/favorites.md %}).
+For more information, see [Folders]({{site.baseurl}}/article/folders/) and [Favorites]({{site.baseurl}}/article/favorites/).
 
 ### Create New Logins
 
@@ -147,13 +148,13 @@ Touch ID must be enabled on your computer **before** it can be enabled in Bitwar
 1. From the macOS menu bar, select **Bitwarden** &rarr; **Preferences**.
 2. In the Security section, an **Unlock with Touch ID** option will appear if Touch ID is supported and enabled on your computer:
 
-   {% image /getting-started/macos-bio1.png macOS unlock options%}
+   {% image getting-started/macos-bio1.png macOS unlock options%}
 
    Check the **Unlock with Touch ID** checkbox to proceed. Your computer will prompt your to input your fingerprint to confirm.
 
 Once enabled, a new button will be presented on the Unlock screen. Selecting **Unlock with Touch ID** will prompt you to input your fingerprint and initiate unlock once authenticated.
 
-{% image /getting-started/macos-bio2.png Unlock with Touch ID %}
+{% image getting-started/macos-bio2.png Unlock with Touch ID %}
 
 ### Start Bitwarden Automatically
 
@@ -187,7 +188,7 @@ Organizing your Vault into **Favorites** and **Folders** makes filtering your Va
 3. Select a **Folder** from the dropdown to add this item to a folder, or check the **Favorite** checkbox to add it to your Favorites.
 3. Select the {% icon fa-save %} **Save** icon.
 
-For more information, see [Folders]({% link _articles/features/folders.md %}) and [Favorites]({% link _articles/features/favorites.md %}).
+For more information, see [Folders]({{site.baseurl}}/article/folders/) and [Favorites]({{site.baseurl}}/article/favorites/).
 
 ### Create New Logins
 

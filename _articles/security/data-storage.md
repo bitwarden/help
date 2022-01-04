@@ -5,30 +5,32 @@ categories: [security]
 featured: true
 popular: false
 tags: [cloud]
-order: 06
+order: "06"
 redirect_from:
   - /article/where-is-data-stored-cloud/
   - /article/where-is-data-stored-computer/
   - /article/cloud-server-security/
+description: "This article describes how Vault data is encrypted and hashed on local devices before being sent to the Cloud for secure storage."
 ---
 
 This articles describes **where** Bitwarden stores your Vault Data and Administrative Data.
 
-Bitwarden **always** encrypts and/or hashes your data on your local device before anything is sent to cloud servers for storage. **Bitwarden servers are only used for storing encrypted data.** For more information, see [Encryption]({% link _articles/security/what-encryption-is-used.md %}).
+Bitwarden **always** encrypts and/or hashes your data on your local device before anything is sent to cloud servers for storage. **Bitwarden servers are only used for storing encrypted data.** For more information, see [Encryption]({{site.baseurl}}/article/what-encryption-is-used/).
 
 ## On Bitwarden Servers
 
 Bitwarden processes and stores all data securely in the [Microsoft Azure Cloud](https://en.wikipedia.org/wiki/Microsoft_Azure){:target="\_blank"} in the US using services that are managed by the team at Microsoft. Since Bitwarden only uses service offerings provided by Azure, there is no server infrastructure to manage and maintain. All uptime, scalability, security updates, and guarantees are backed by Microsoft and their cloud infrastructure. Review the [Microsoft Azure Compliance Offerings](https://azure.microsoft.com/en-us/resources/microsoft-azure-compliance-offerings/) documentation for more detail.
 
-Don't trust Bitwarden Servers? You don't have to. Open source is beautiful. You can easily host the entire Bitwarden stack yourself. You control your data. Learn more [here]({% link _articles/hosting/install-on-premise.md %}).
+Don't trust Bitwarden Servers? You don't have to. Open source is beautiful. You can easily host the entire Bitwarden stack yourself. You control your data. Learn more [here]({{site.baseurl}}/article/install-on-premise/).
 ## On your Local Machine
 
-Data that is stored on your computer/device is also encrypted and only decrypted when you unlock your Vault. Vault data can be found in the following locations based on the client application in use:
+Data that is stored on your computer/device is encrypted and only decrypted when you unlock your Vault. Decrypted data is stored **in memory** only and is **never written to persistent storage**. Encrypted data is stored in the following locations at rest:
 
 #### Desktop App
 
 - Windows
-  - Standard Installations &amp; Store: `%AppData%\Bitwarden`
+  - Standard Installation: `%AppData%\Bitwarden`
+  - Microsoft Store Installation: `%LocalAppData%\Packages\8bitSolutionsLLC.bitwardendesktop_h4e712dmw3xyy\LocalCache\Roaming\Bitwarden`
   - Portable: `.\bitwarden-appdata`
 - macOS
   - Standard Installations: `~/Library/Application Support/Bitwarden`
@@ -44,7 +46,7 @@ You can override the storage location for your Bitwarden desktop application dat
 #### Browser Extension
 
 - Windows
-  - Chrome: `%AppData%\Local\Google\Chrome\User Data\Default\Local Extension Settings\nngceckbapebfimnlniiiahkandclblb`
+  - Chrome: `%LocalAppData%\Google\Chrome\User Data\Default\Local Extension Settings\nngceckbapebfimnlniiiahkandclblb`
   - Firefox: `%AppData%\Roaming\Mozilla\Firefox\Profiles\your_profile\storage\default\moz-extension+++[UUID]^userContextId=[integer]`
   - Opera: `%AppData%\Opera Software\Opera Stable\Local Extension Settings\ccnckbpmaceehanjmeomladnmlffdjgn`
   - Vivaldi: `%LocalAppData%\Vivaldi\User Data\Default\Local Extension Settings\nngceckbapebfimnlniiiahkandclblb`

@@ -5,7 +5,8 @@ categories: [hosting]
 featured: false
 popular: false
 tags: [hosting, docker, backup]
-order: 07
+order: "08"
+description: "If you self-host Bitwarden, this guide will help you backup on-premises installations and restore data to your password manager from a backup."
 ---
 
 When self-hosting Bitwarden, you are responsible for implementing your own backup procedures in order to keep data safe.
@@ -14,7 +15,7 @@ When self-hosting Bitwarden, you are responsible for implementing your own backu
 
 Bitwarden's Docker containers use volume mapping to persist all important data on the host machine, meaning stopping your containers will not delete any data. Docker containers, on the other hand, are to be considered ephemeral and do not persist data or state.
 
-All Bitwarden data is stored on the host machine in the `./bwdata` directory, relative to the location in which you installed Bitwarden. For more information, see [Install and Deploy](https://bitwarden.com/help/article/install-on-premise/#install-bitwarden).
+All Bitwarden data is stored on the host machine in the `./bwdata` directory, relative to the location in which you installed Bitwarden. For more information, see [Install and Deploy]({{site.baseurl}}/article/install-on-premise/#install-bitwarden).
 
 ## Backup Hosted Data
 
@@ -40,7 +41,7 @@ In the event of data loss, complete the following steps to restore a nightly bac
 
 1. Retrieve your database password from the `globalSettings__sqlServer__connectionString=...Password=` value found in `global.override.env`.
 2. Identify the Container ID of the `mssql` container using the `docker ps` command.
-3. Run the following commmand to open a bash session for your `mssql` docker container:
+3. Run the following command to open a bash session for your `mssql` docker container:
 
    ```
    docker exec -it bitwarden-mssql /bin/bash

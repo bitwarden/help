@@ -6,10 +6,11 @@ featured: true
 popular: true
 hidden: false
 tags: []
-order: 07
+order: "08"
+description: "Automatically log in to a basic auth-protected resource when only one set of login credentials is saved in a Bitwarden client app."
 ---
 
-Login prompts like the one pictured below, called "basic" or "native" authentication prompts, will be automatically auto-filled by the Bitwarden Browser Extension **if there is only 1 Login item with a** [**matching URI**]({{site.baseurl}}/article/uri-match-detection). You can also use the Browser Extension's {% icon fa-share-square %} **Launch** button to automatically open and log in to a basic auth-protected resource.
+Login prompts like the one pictured below, called "basic" or "native" authentication prompts, will be automatically auto-filled by the Bitwarden Browser Extension **if there is only 1 Login item with a** [**matching URI**]({{site.baseurl}}/article/uri-match-detection/). You can also use the Browser Extension's {% icon fa-share-square %} **Launch** button to automatically open and log in to a basic auth-protected resource.
 
 Auto-filling on basic auth prompts will, by default, use the [Host]({{site.baseurl}}/article/uri-match-detection/#host) URI match detection option so that auto-filling is more restrictive. This can be changed by setting the [match detection option]({{site.baseurl}}/article/uri-match-detection/) for the relevant Vault item.
 
@@ -23,6 +24,6 @@ The below animation shows the authentication flow in Google Chrome for autofille
 
 {% image autofill/saving-basic-auth.gif Basic Auth Autofill flow %}
 
-{% callout note %}
+{% callout info %}
 Due to the way basic auth prompts are designed, auto-filling must be non-interactive. This means you cannot auto-fill on a basic auth prompt using the {% icon fa-folder %} **Tab** view, context-menu, or keyboard shortcuts.
 {% endcallout %}

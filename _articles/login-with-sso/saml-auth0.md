@@ -7,18 +7,31 @@ popular: false
 hidden: true
 tags: [sso, saml, auth0]
 order:
+description: "This article contains instructions for configuring Bitwarden Login with SSO for Auth0 SAML 2.0 implementations."
 ---
 This article contains **Auth0-specific** help for configuring Login with SSO via SAML 2.0. For help configuring Login with SSO for another IdP, refer to [SAML 2.0 Configuration]({{site.baseurl}}/article/configure-sso-saml/).
 
-Configuration involves working simultaneously within the Bitwarden [Business Portal]({{site.baseurl}}/article/about-business-portal/) and the Auth0 Portal. As you proceed, we recommend having both readily available and completing steps in the order they're documented.
+Configuration involves working simultaneously within the Bitwarden Web Vault and the Auth0 Portal. As you proceed, we recommend having both readily available and completing steps in the order they're documented.
 
-## Open the Business Portal
+{% callout success %}
+**Already an SSO expert?** Skip the instructions in this article and download screenshots of sample configurations to compare against your own.
 
-If you're coming straight from [SAML 2.0 Configuration]({{site.baseurl}}/article/sso-configure-saml/), you should already have an [Organization ID created](https://bitwarden.com/help/article/configure-sso-saml/#step-1-enabling-login-with-sso) and the SSO Configuration screen open. If you don't, open your [Business Portal]({{site.baseurl}}/article/about-business-portal/) and navigate to the SSO Configuration screen:
+[{% icon fa-download %} Download Sample]({{site.baseurl}}/files/saml-auth0-sample.zip)
+{% endcallout %}
+
+## Open SSO in the Web Vault
+
+If you're coming straight from [SAML 2.0 Configuration]({{site.baseurl}}/article/configure-sso-saml/), you should already have an [Organization ID created]({{site.baseurl}}/article/configure-sso-saml/#step-1-enabling-login-with-sso). If you don't refer to that article to create an Organization ID for SSO.
+
+Navigate to your Organization's **Manage** &rarr; **Single Sign-On** screen:
 
 {% image sso/sso-saml1.png SAML 2.0 Configuration %}
 
 You don't need to edit anything on this screen yet, but keep it open for easy reference.
+
+{% callout success %}
+If you're self-hosting Bitwarden, you can use alternative **Member Decryption Options**. This feature is disabled by default, so continue with **Master Password** decryption for now and learn how to get started using [Key Connector]({{site.baseurl}}/article/about-key-connector/) once your configuration is complete and successfully working.
+{% endcallout %}
 
 ## Create an Auth0 Application
 
@@ -26,11 +39,14 @@ In the Auth0 Portal, use the Applications menu to create a **Regular Web Applica
 
 {% image sso/cheatsheets/saml-auth0/auth0-createapp.png Auth0 Create Application %}
 
-Click the **Settings** tab and configure the following information, some of which you'll need to retrieve from the Bitwarden Business Portal:
+Click the **Settings** tab and configure the following information, some of which you'll need to retrieve from the Bitwarden Single Sign-On screen:
+
+{% image sso/cheatsheets/saml-auth0/auth0-appsettings.png Auth0 Settings %}
 
 |Auth0 Setting|Description|
 |-------------|-----------|
 |Name|Give the application a Bitwarden-specific name.|
+|Domain|Take note of this value. You'll need it [during a later step](#identity-provider-configuration).|
 |Application Type|Select **Regular Web Application**.|
 |Token Endpoint Authentication Method|Select **Post** (HTTP Post), which will map to a **Binding Type** attribute you will [configure later](#identity-provider-configuration).|
 |Application Login URI|Set this field to the pre-generated **SP Entity ID** retrieved from the Bitwarden SSO Configuration screen.<br><br>For Cloud-hosted customers, this is always `https://sso.bitwarden.com/saml2`. For self-hosted instances, this is determined by your [configured server URL]({{site.baseurl}}/article/install-on-premise/#configure-your-domain), for example `https://your.domain.com/sso/saml2`.|
@@ -86,11 +102,11 @@ function (user, context, callback) {
 }
 ```
 
-## Back to the Business Portal
+## Back to the Web Vault
 
-At this point, you've configured everything you need within the context of the Auth0 Portal. Jump back over to the Bitwarden Business Portal to complete configuration.
+At this point, you've configured everything you need within the context of the Auth0 Portal. Jump back over to the Bitwarden Web Vault to complete configuration.
 
-The Business Portal separates configuration into two sections:
+The Single Sign-On screen separates configuration into two sections:
 
 - **SAML Service Provider Configuration** will determine the format of SAML requests.
 - **SAML Identity Provider Configuration** will determine the format to expect for SAML responses.
@@ -116,7 +132,7 @@ Identity Provider Configuration will often require you to refer back to the Auth
 
 |Field|Description|
 |-----|-----------|
-|Entity ID|Enter the **Domain** value of your Auth0 application, prefixed by `urn:`, for example `urn:bw-help.us.auth0.com`.|
+|Entity ID|Enter the **Domain** value of your Auth0 application (see [here](#create-an-auth0-application)), prefixed by `urn:`, for example `urn:bw-help.us.auth0.com`.|
 |Binding Type|Select **HTTP POST** to match the [Token Endpoint Authentication Method](#create-an-auth0-application) value specified in your Auth0 application.|
 |Single Sign On Service URL|Enter the **SAML Protocol URL** (see [Endpoints](#endpoints)) of your Auth0 application. For example, `https://bw-help.us.auth0.com/samlp/HcpxD63h7Qzl420u8qachPWoZEG0Hho2`.|
 |Single Log Out Service URL|Login with SSO currently **does not** support SLO. This option is planned for future development, however you may pre-configure it if you wish.|
@@ -133,7 +149,7 @@ When you're done with the Identity Provider Configuration section, **Save** your
 
 Once your configuration is complete, test it by navigating to [https://vault.bitwarden.com](https://vault.bitwarden.com) and selecting the **Enterprise Single Sign-On** button:
 
-{% image /sso/sso-button-lg.png Enterprise Single Sign-On button %}
+{% image sso/sso-button-lg.png Enterprise Single Sign-On button %}
 
 Enter the [configured Organization Identifier](#) and select **Log In**. If your implementation is successfully configured, you'll be redirected to the Auth0 login screen:
 

@@ -6,7 +6,8 @@ featured: true
 popular: false
 hidden: false
 tags: []
-order: 08
+order: "09"
+description: "This article explains how you can sync your Bitwarden Organization with Azure Active Directory to reduce management overhead."
 ---
 
 This article will help you get started using Directory Connector to sync users and groups from your Azure Active Directory to your Bitwarden Organization.
@@ -35,9 +36,11 @@ Complete the following steps to grant the created app registration the required 
    - User > User.ReadBasic.All (Read all users' basic profiles)
    - User > User.Read.All (Read all users' full profiles)
    - Group > Group.Read.All (Read all groups)
+   - AdministrativeUnit > AdministrativeUnit.Read.All (Only required if you'll be syncing [Administrative Units](#specify-sync-filters))
 5. Set the following **Application Permissions**:
    - User > User.Read.All (Read all users' full profiles)
    - Group > Group.Read.All (Read all groups)
+   - AdministrativeUnit > Administrative.Unit.Read.All (Only required if you'll be syncing [Administrative Units](#specify-sync-filters))
 6. Back on the API Permissions page, select the **Grant admin consent for...** button.
 
 ### Create App Secret Key
@@ -67,23 +70,22 @@ Complete the following steps to obtain the tenant hostname to be used by Directo
 
 Complete the following steps to configure Directory Connector to use your Azure Active Directory. If you haven't already, take the proper [Azure AD Setup](#azure-ad-setup) steps before proceeding:
 
-1. Open the Directory Connector [Desktop Application]({% link _articles/directory-connector/directory-sync-desktop.md %}).
+1. Open the Directory Connector [Desktop Application]({{site.baseurl}}/article/directory-sync-desktop/).
 2. Navigate to the **Settings** tab.
 3. From the **Type** dropdown, select **Azure Active Directory**.
 
    The available fields in this section will change according to your selected Type.
 4. Enter the collected [**Tenant** hostname](#get-tenant-hostname), [**Application Id**](#get-app-id), and [**Secret Key**](#create-app-secret-key).
-5. In the **Account** section, select Organization to connect to your directory from the dropdown.
 
 ## Configure Sync Options
 
 {% callout success %}
-When you're finished configuring, navigate to the **More** tab and select the **Clear Sync Cache** button to prevent potential conflicts with prior sync operations. For more information, see [Clear Sync Cache]({% link _articles/directory-connector/clear-sync-cache.md %}).
+When you're finished configuring, navigate to the **More** tab and select the **Clear Sync Cache** button to prevent potential conflicts with prior sync operations. For more information, see [Clear Sync Cache]({{site.baseurl}}/article/clear-sync-cache/).
 {% endcallout %}
 
 Complete the following steps to configure the settings used when syncing using Directory Connector:
 
-1. Open the Directory Connector [Desktop Application]({% link _articles/directory-connector/directory-sync-desktop.md %}}).
+1. Open the Directory Connector [Desktop Application]({{site.baseurl}}/article/directory-sync-desktop/).
 2. Navigate to the **Settings** tab.
 3. In the **Sync** section, configure the following options as desired:
 
@@ -92,6 +94,7 @@ Complete the following steps to configure the settings used when syncing using D
 |Interval|Time between automatic sync checks (in minutes).|
 |Remove disabled users during sync|Check this box to remove users from the Bitwarden Organization that have been disabled in your directory.|
 |Overwrite existing organization users based on current sync settings|Check this box to always perform a full sync and remove any users from the Bitwarden Organization if they are not in the synced user set.|
+|More than 2000 users or groups are expected to sync.|Check this box if you expect to sync 2000+ users or groups. If you don't check this box, Directory Connector will limit a sync at 2000 users or groups.|
 |Sync users|Check this box to sync users to your Organization.<br><br>Checking this box will allow you to specify **User Filters**.|
 |User Filter|See [Specify Sync Filters](#specify-sync-filters).|
 |Sync Groups|Check this box to sync groups to your Organization. Checking this box will allow you to specify **Group Filters**.|
@@ -141,12 +144,12 @@ exclude:Group A,Group B
 
 ##### Group by Administrative Unit (AU)
 
-You can include or exclude groups from a sync based on their tagged [Azure Active Directory Administrative Units (AUs)](https://docs.microsoft.com/en-us/azure/active-directory/roles/administrative-units){:target="\_blank"} by using the `includeadministrativeunit` and `excludeadministrativeunit` keywords. `includeadministrativeunit` and `excludeadministrativeunit` use the name of the Administrative Unit:
+You can include or exclude groups from a sync based on their tagged [Azure Active Directory Administrative Units (AUs)](https://docs.microsoft.com/en-us/azure/active-directory/roles/administrative-units){:target="\_blank"} by using the `includeadministrativeunit` and `excludeadministrativeunit` keywords. `includeadministrativeunit` and `excludeadministrativeunit` use the **Object ID** of the Administrative Unit:
 ```
-includeadministrativeunit:bitwarden
+includeadministrativeunit:7ckcq6e5-d733-4b96-be17-5bad81fe679d
 ```
 ```
-excludeadministrativeunit:not-bitwarden
+excludeadministrativeunit:7ckcq6e5-d733-4b96-be17-5bad81fe679d
 ```
 
 ## Test a Sync
@@ -159,13 +162,13 @@ It may take up to 15 minutes for permissions for your application to properly pr
 If you get the error message `Resource <user id> does not exist or one of its queried reference-property objects are not present`, you'll need to permanently delete or restore the user(s) with `<user id>`. **Please note**, this was fixed in a recent version of Directory Connector. Update your application if you're still experiencing this error.
 {% endcallout %}
 
-{% image /directory-connector/okta/dc-okta-test.png Test sync results %}
+{% image directory-connector/okta/dc-okta-test.png Test sync results %}
 
 ## Start Automatic Sync
 
 Once [Sync Options](#configure-sync-options) and [Filters](#specify-sync-filters) are configured and tested, you can begin syncing. Complete the following steps to start automatic syncing with Directory Connector:
 
-1. Open the Directory Connector [Desktop Application]({% link _articles/directory-connector/directory-sync-desktop.md %}).
+1. Open the Directory Connector [Desktop Application]({{site.baseurl}}/article/directory-sync-desktop/).
 2. Navigate to the **Dashboard** tab.
 3. In the **Sync** section, select the **Start Sync** button.
 

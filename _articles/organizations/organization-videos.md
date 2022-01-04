@@ -5,7 +5,8 @@ categories: [organizations]
 featured: true
 popular: false
 tags: [organizations, videos, bitwarden 101]
-order: 16
+order: "18"
+description: "Bitwarden 101 videos show how to manage Organizations, Collections, Groups, and members within an Organization."
 ---
 
 ## Bitwarden 101 - Organizations

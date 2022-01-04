@@ -5,7 +5,8 @@ categories: [auto-fill]
 featured: false
 popular: false
 tags: [uri, match detection, autofill]
-order: 05
+order: "06"
+description: "Find out more about how URI match detection works in the Bitwarden password manager."
 ---
 
 Any Login item in your Vault can be created with or edited to include one or more URI (Uniform Resource Identifier). A URI can be a website address (i.e. a URL), a Server IP Address, a Mobile App Package ID, and more.
@@ -35,7 +36,9 @@ An easy way to obtain the proper URI for an Android app is to **use a web browse
 
 ## Match Detection Options
 
-Each URI assigned to a Login item has an associated **Match Detection** option. This option determines when and whether Bitwarden will offer the Login as an available option for auto-fill.
+Each URI assigned to a Login item has an associated **Match Detection** option. This option determines when and whether Bitwarden will offer the Login as an available option for auto-fill, typically determined by matching against specific component pieces. The following graphic breaks down component pieces of a URI:
+
+{% image autofill/urlgraphic.png %}
 
 ### Default match detection
 
@@ -82,7 +85,7 @@ For example, if the URI value `https://sub.domain.com/path/` uses starts with ma
 |https://sub.domain.com/path/ |<i class="fa fa-check" aria-hidden="true"></i>|
 |https://sub.domain.com/path/page.html |<i class="fa fa-check" aria-hidden="true"></i>|
 |https://sub.domain.com |<i class="fa fa-times" aria-hidden="true"></i>|
-|https://sub.domain.com:4000/path/page.html (interrupted with a port |<i class="fa fa-times" aria-hidden="true"></i>|
+|https://sub.domain.com:4000/path/page.html (interrupted with a port) |<i class="fa fa-times" aria-hidden="true"></i>|
 |https://sub.domain.com/path (absent trailing slash) |<i class="fa fa-times" aria-hidden="true"></i>|
 
 ### Regular expression

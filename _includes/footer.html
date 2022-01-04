@@ -1,56 +1,63 @@
 <footer class="default-footer">
+    
+    <div class="container mb-4">
+        <div class="row" style="border-bottom: 1px solid rgba(255, 255, 255, .2)">
+            <a href="/" class="footer-logo">
+                <img src="{{site.baseurl}}/images/logo-horizontal-white.svg" class="img-responsive" width="190" alt="Bitwarden logo" />
+            </a>
+        </div>
+    </div>
+    
     <div class="container">
         <div class="row">
-            <div class="col-sm-2 hidden-xs">
-                <a href="/" class="footer-logo">
-                    <img src="/images/logo-vertical-white.svg" class="img-responsive" width="132" alt="Bitwarden logo" />
-                </a>
+            <div class="col-sm-3 col-xs-6">
+                <h4>Products</h4>
+                <ul class="list-unstyled">
+                    <li><a href="{{site.main_baseurl}}/products/#how-bitwarden-works">How Bitwarden works</a></li>
+                    <li><a href="{{site.main_baseurl}}/products/send/">Bitwarden Send</a></li>
+                    <li><a href="{{site.main_baseurl}}/pricing/business/">Pricing for Business</a></li>
+                    <li><a href="{{site.main_baseurl}}/pricing/">Pricing for Individuals</a></li>
+                    <li><a href="{{site.main_baseurl}}/download/">Download Options</a></li>
+                    <li><a href="{{site.main_baseurl}}/msp/">Managed Service Providers</a></li>
+                </ul>
             </div>
-            <div class="col-sm-1 hidden-xs"></div>
-            <div class="col-sm-9 col-xs-12">
-                <div class="row">
-                    <div class="col-sm-4 col-xs-6">
-                        <h4>Products</h4>
-                        <ul class="list-unstyled">
-                            <li><a href="{{site.main_baseurl}}/products/">How it works</a></li>
-                            <li><a href="{{site.main_baseurl}}/products/#features">Features</a></li>
-                            <li><a href="{{site.main_baseurl}}/blog/post/bitwarden-network-security-assessment-2020/">3rd Party Audited</a></li>
-                            <li><a href="{{site.main_baseurl}}/pricing/">Pricing</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-4 col-xs-6">
-                        <h4>Company</h4>
-                        <ul class="list-unstyled">
-                            <li><a href="{{site.main_baseurl}}/about/">About</a></li>
-                            <li><a href="{{site.main_baseurl}}/careers/">Careers</a></li>
-                            <li><a href="{{site.main_baseurl}}/newsfeed/">Newsfeed</a></li>
-                            <li><a href="{{site.main_baseurl}}/blog/" onclick="gaEvent('Footer Blog')">Blog</a></li>
-                            <li><a href="{{site.main_baseurl}}/contact/">Contact</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-4 col-xs-6">
-                        <h4>Resources</h4>
-                        <ul class="list-unstyled">
-                            <li><a href="{{site.main_baseurl}}/download/" onclick="gaEvent('Footer Download')">Download</a></li>
-                            <li><a href="{{site.main_baseurl}}/open-source/">Open Source</a></li>
-                            <li><a href="{{site.baseurl}}/" onclick="gaEvent('Footer Help')">Help/Support</a></li>
-                            <li><a href="{{site.main_baseurl}}/resources/">Resources</a></li>
-                            <li>
-                                <a href="https://community.bitwarden.com" target="_blank" rel="noopener" onclick="gaEvent('Footer Forums')">
-                                    Community
-                                </a>
-                            </li>
-                            <li><a href="{{site.main_baseurl}}/credits/">Credits</a></li>
-                            <li><a href="{{site.main_baseurl}}/sitemap/">Sitemap</a></li>
-                        </ul>
-                    </div>
-                </div>
+            <div class="col-sm-3 col-xs-6">
+                <h4>Company</h4>
+                <ul class="list-unstyled">
+                    <li><a href="{{site.main_baseurl}}/about/">About</a></li>
+                    <li><a href="{{site.main_baseurl}}/open-source/">Open Source</a></li>
+                    <li><a href="{{site.main_baseurl}}/careers/">Careers</a></li>
+                    <li><a href="{{site.main_baseurl}}/events/">Events</a></li>
+                    <li><a href="{{site.main_baseurl}}/newsfeed/">Newsfeed</a></li>
+                    <li><a href="{{site.main_baseurl}}/blog/" onclick="gaEvent('Footer Blog')">Blog</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-3 col-xs-6">
+                <h4>Resources</h4>
+                <ul class="list-unstyled">
+                    <li><a href="{{site.main_baseurl}}/resources/">Resource Center</a></li>
+                    <li><a href="https://community.bitwarden.com" target="_blank" rel="noopener" onclick="gaEvent('Footer Forums')">Community Forums</a></li>
+                    <li><a href="{{site.main_baseurl}}/compliance/">Security and Compliance</a></li>
+                    <li><a href="{{site.main_baseurl}}/bitwarden-reviews/">Success Stories</a></li>
+                    <li><a href="{{site.main_baseurl}}/user-reviews/">User Reviews</a></li>
+                    <li><a href="{{site.main_baseurl}}/newsletter-subscribe/">Subscribe to Bitwarden Updates</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-3 col-xs-6">
+                <h4>Tools & Help</h4>
+                <ul class="list-unstyled">
+                    <li><a href="{{site.main_baseurl}}/password-generator/" onclick="gaEvent('Footer Download')">Password Generator</a></li>
+                    <li><a href="{{site.main_baseurl}}/password-strength/">Password Strength Tester</a></li>
+                    <li><a href="{{site.baseurl}}/" onclick="gaEvent('Footer Help')">Help Center</a></li>
+                    <li><a href="{{site.main_baseurl}}/contact-sales/">Talk to Sales</a></li>
+                    <li><a href="{{site.main_baseurl}}/contact/">Contact Support</a></li>
+                </ul>
             </div>
         </div>
         <div class="row copyright">
             <div class="col-sm-8 col-xs-12">
-                <p><a href="{{site.main_baseurl}}/terms/">Terms of Service</a> · <a href="{{site.main_baseurl}}/privacy/">Privacy Policy</a> · <a href="javascript:void(0);" onclick="Osano.cm.showDrawer()">Cookies</a></p>
-                <p>&copy; Copyright {{ 'now' | date: "%Y" }} Bitwarden, Inc.</p>
+                <p>&copy; Copyright {{ 'now' | date: "%Y" }} Bitwarden, Inc. · <a href="{{site.main_baseurl}}/terms/">Terms of Service</a> · <a href="{{site.main_baseurl}}/privacy/">Privacy Policy</a> · <a href="javascript:void(0);" onclick="Osano.cm.showDrawer()">Cookies</a></p>
+                
             </div>
             <div class="col-sm-4 col-xs-12 social">
                 <ul class="list-inline">

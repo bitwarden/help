@@ -4,15 +4,16 @@ title: Blacklisting URIs
 categories: [auto-fill]
 featured: false
 popular: false
-order: 06
+order: "07"
 tags: [android, autofill, auto-fill]
+description: "The Bitwarden Android app gives users the option to blacklist specific URIs so the password manager does not offer them for autofill."
 ---
 
 {% callout info %}
 Blacklisting URIs is currently only available for Bitwarden Mobile on **Android 8.0 (Oreo)** or higher.
 {% endcallout %}
 
-Auto-fill relies on the attribution of URIs to Login items. If you're unfamiliar with using URIs, brush up using our [Using URIs]({% link _articles/features/uri-match-detection.md %}) article. **Android** users can explicitly blacklist URIs to prevent Bitwarden from offering them for auto-fill. To specify URIs to blacklist:
+Auto-fill relies on the attribution of URIs to Login items. If you're unfamiliar with using URIs, brush up using our [Using URIs]({{site.baseurl}}/article/uri-match-detection/) article. **Android** users can explicitly blacklist URIs to prevent Bitwarden from offering them for auto-fill. To specify URIs to blacklist:
 
 1. In the Bitwarden Android app, open the {% icon fa-cog %} **Settings** tab.
 2. Tap **Options**.

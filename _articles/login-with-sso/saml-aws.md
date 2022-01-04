@@ -1,26 +1,38 @@
 ---
 layout: article
 title: AWS SAML Implementation
-categories: []
+categories: [login-with-sso]
 featured: false
 popular: false
 hidden: true
 tags: [sso, saml, aws]
 order:
+description: "This article contains instructions for configuring Bitwarden Login with SSO for AWS SAML 2.0 implementations."
 ---
 
 This article contains **AWS-specific** help for configuring Login with SSO via SAML 2.0. For help configuring Login with SSO for another IdP, refer to [SAML 2.0 Configuration]({{site.baseurl}}/article/configure-sso-saml/).
 
-Configuration involves working simultaneously within the Bitwarden [Business Portal]({{site.baseurl}}/article/about-business-portal/) and the AWS Console. As you proceed, we recommend having both readily available and completing steps in the order they're documented.
+Configuration involves working simultaneously within the Bitwarden Web Vault and the AWS Console. As you proceed, we recommend having both readily available and completing steps in the order they're documented.
 
-## Open the Business Portal
+{% callout success %}
+**Already an SSO expert?** Skip the instructions in this article and download screenshots of sample configurations to compare against your own.
 
-If you're coming straight from [SAML 2.0 Configuration]({{site.baseurl}}/article/configure-sso-saml/), you should already have an [Organization ID created](https://bitwarden.com/help/article/configure-sso-saml/#step-1-enabling-login-with-sso) and the SSO Configuration screen open. If you don't, open your
-[Business Portal]({{site.baseurl}}/article/about-business-portal/) and navigate to the SSO Configuration screen:
+[{% icon fa-download %} Download Sample]({{site.baseurl}}/files/saml-aws-sample.zip)
+{% endcallout %}
+
+## Open SSO in the Web Vault
+
+If you're coming straight from [SAML 2.0 Configuration]({{site.baseurl}}/article/configure-sso-saml/), you should already have an [Organization ID created]({{site.baseurl}}/article/configure-sso-saml/#step-1-enabling-login-with-sso). If you don't refer to that article to create an Organization ID for SSO.
+
+Navigate to your Organization's **Manage** &rarr; **Single Sign-On** screen:
 
 {% image sso/sso-saml1.png SAML 2.0 Configuration %}
 
 You don't need to edit anything on this screen yet, but keep it open for easy reference.
+
+{% callout success %}
+If you're self-hosting Bitwarden, you can use alternative **Member Decryption Options**. This feature is disabled by default, so continue with **Master Password** decryption for now and learn how to get started using [Key Connector]({{site.baseurl}}/article/about-key-connector/) once your configuration is complete and successfully working.
+{% endcallout %}
 
 ## Create an AWS SSO Application
 
@@ -38,7 +50,9 @@ Give the application a unique, Bitwarden-specific **Display name**.
 
 ### AWS SSO Metadata
 
-You'll need the information in this section for a later configuration step. Copy the **AWS SSO sign-in URL** and **AWS SSO issuer URL**, and download the **AWS SSO certificate**.
+You'll need the information in this section for a later configuration step. Copy the **AWS SSO sign-in URL** and **AWS SSO issuer URL**, and download the **AWS SSO certificate**:
+
+{% image sso/cheatsheets/saml-aws/aws-values.png AWS SSO Metadata %}
 
 ### Application Properties
 
@@ -78,11 +92,11 @@ Navigate to the **Assigned users** tab and select the **Assign users** button:
 
 You can assign users to the application on an individual level, or by Group.
 
-## Back to the Business Portal
+## Back to the Web Vault
 
-At this point, you've configured everything you need within the context of the AWS Console. Jump back over to the Bitwarden Business Portal to complete configuration.
+At this point, you've configured everything you need within the context of the AWS Console. Jump back over to the Bitwarden Web Vault to complete configuration.
 
-The Business Portal separates configuration into two sections:
+The Single Sign-On screen separates configuration into two sections:
 
 - **SAML Service Provider Configuration** will determine the format of SAML requests.
 - **SAML Identity Provider Configuration** will determine the format to expect for SAML responses.
@@ -125,7 +139,7 @@ When you're done with the Identity Provider Configuration section, **Save** your
 
 Once your configuration is complete, test it by navigating to [https://vault.bitwarden.com](https://vault.bitwarden.com){:target="\_blank"} and selecting the **Enterprise Single Sign-On** button:
 
-{% image /sso/sso-button-lg.png Enterprise Single Sign-On button %}
+{% image sso/sso-button-lg.png Enterprise Single Sign-On button %}
 
 Enter the [configured Organiztion Identifier]({{site.baseurl}}/article/configure-sso-saml/#step-1-enabling-login-with-sso) and select **Log In**. If your implementation is successfully configured, you'll be redirected to the AWS SSO login screen:
 

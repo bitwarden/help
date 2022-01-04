@@ -5,7 +5,8 @@ categories: [security]
 featured: false
 popular: false
 tags: []
-order: 10
+order: "10"
+description: "Bitwarden operates with a zero-knowledge encryption model for all Vault data. This article shares a list of Bitwarden subprocessors."
 ---
 
 Reference the table below for a list of Bitwarden subprocessors.

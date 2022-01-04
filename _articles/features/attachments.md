@@ -5,7 +5,8 @@ categories: [account-management]
 featured: false
 popular: false
 tags: [attachments, storage, files]
-order: 13
+order: "13"
+description: "Premium users of the Bitwarden password manager can attach files to Vault items from any Bitwarden client app. Learn how to attach a file, view an attached file, or add storage space."
 ---
 
 Files can be attached to Vault items from any Bitwarden application. An individual file attachment must be 500 MB (100 MB if uploading from Mobile) or smaller. By default, paid users have access to 1GB of encrypted storage for file attachments. Additional storage can be purchased in 1GB increments.
@@ -111,7 +112,7 @@ Use `bw create attachment` to attach a file to an existing Vault item, for exapl
 bw create attachment --file /path/to/myfile.ext --itemid <itemid>
 ```
 
-For more information, refer to our [CLI documentation]({% link _articles/miscellaneous/cli.md %}).
+For more information, refer to our [CLI documentation]({{site.baseurl}}/article/cli/).
 
 {% endcapture %}
 {{ cli_sync | markdownify }}
@@ -134,7 +135,7 @@ Viewing an attachment mimics the same procedure used to attach a file. Refer to 
 
 By default, users with a Premium subscription have access to 1GB of encrypted storage for file attachments. Additional storage can be purchased in 1GB increments. Complete the following steps to purchase additional storage:
 
-1. In the [Web Vault](https://vault.bitwarden.com){:target="\_blank"}, select the **Settings** tab.
+1. In the [Web Vault]({{site.baseurl}}/article/getting-started-webvault), select the **Settings** tab.
 2. From the **Settings** menu, select **Premium Membership**.
 3. In the Storage section, select the **Add Storage** button.
 4. Using the counter, choose the number of **GB of Storage to Add** and select **Submit**.

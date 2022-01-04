@@ -5,14 +5,15 @@ categories: [directory-connector]
 featured: true
 popular: false
 tags: []
-order: 03
+order: "03"
+description: "Learn how to get started with the Bitwarden Directory Connector CLI for easier user provisioning and deprovisioning."
 ---
 
 The Directory Connector CLI is suited toward work in environments where a desktop GUI is unavailable, or if you want to programmatically script directory sync operations using tools provided by the operating system (cron job, scheduled task, etc.). The Directory Connector CLI can be used cross-platform on Windows, macOS, and Linux distributions.
 
 ## Getting Started
 
-Complete the following steps to get started with the Bitwarden Directory Connector CLI:
+To get started using the Bitwarden Directory Connector CLI:
 
 1. Download the CLI from one of the following links:
    - [{% icon fa-windows %} Windows CLI](https://vault.bitwarden.com/download/?app=connector&platform=windows&variant=cli-zip)
@@ -33,11 +34,11 @@ Complete the following steps to get started with the Bitwarden Directory Connect
    bwdc --help
    ```
 4. Connect Directory Connector to your Directory using the `bwdc config <setting> <value>` command (see [command reference](#config)).
-5. Configure Sync Options by editing your `data.json` file (to learn more, see [Directory Connector File Storage]({% link _articles/directory-connector/directory-sync-shared.md %})). Use the `bwdc data-file` command to obtain the absolute path of your `data.json` file.
+5. Configure Sync Options by editing your `data.json` file (to learn more, see [Directory Connector File Storage]({{site.baseurl}}/article/directory-sync-shared/)). Use the `bwdc data-file` command to obtain the absolute path of your `data.json` file.
 
    Available **Sync Options** depend on the directory type in use, so refer to one of the following articles for a list of options available to you:
-   - [Sync with Active Directory or LDAP]({% link _articles/directory-connector/ldap-directory.md %})
-   - [Sync with Azure Active Directory]({% link _articles/directory-connector/azure-active-directory.md %})
+   - [Sync with Active Directory or LDAP]({{site.baseurl}}/article/ldap-directory/)
+   - [Sync with Azure Active Directory]({{site.baseurl}}/article/azure-active-directory/)
    - [Sync with G Suite (Google)]({% link _articles/directory-connector/gsuite-directory.md %})
    - [Sync with Okta]({% link _articles/directory-connector/okta-directory.md %})
    - [Sync with OneLogin]({% link _articles/directory-connector/onelogin-directory.md %})
@@ -48,28 +49,32 @@ Complete the following steps to get started with the Bitwarden Directory Connect
 
 ### login
 
-Use the `login` command to login to Directory Connector with your Bitwarden Account. You must be an Admin or Owner for your Organization to use Directory Connector (for more information, see [User Types and Access Controls]({% link _articles/organizations/user-types-access-control.md %})).
-```
-bwdc login [options] [email] [password]
-```
+Use the `login` command to login to Directory Connector with your [Organization API Key]({{site.baseurl}}/article/public-api/#authentication).  If you don't have the API Key, reach out to an [Organization Owner]({{site.baseurl}}/article/user-types-access-control/). There are a few ways to use the `login` command:
 
-Options include:
-- `--method`: Use this options to specify the [Two-step Login method]({% link _articles/two-step-login/setup-two-step-login.md %}) to use.
-   - `0` = Authenticator App
-   - `1` = Email
-   - `3` =  YubiKey
-- `--code`: Use this option to specify the [Two-step Login]({% link _articles/two-step-login/setup-two-step-login.md %}) code for the specified `method`.
-- `--sso`: Use this option to [Login with SSO]({% link _articles/login-with-sso/about-sso.md %}). Selecting this option will open the SSO Login Flow in your Web Browser. For more information, see [Access your Vault Using SSO]({% link _articles/login-with-sso/sso-access-your-vault.md %}).
+- By itself:
 
-For example:
+  ```
+  bwdc login
+  ```
 
-{% callout warning %}
-Contrary to the following example, it's generally not recommended to enter your password inline, as this will save it to the history of the shell. Leaving the password out of the initial command will cause Bitwarden to prompt for it, which will not save it.
-{% endcallout %}
+  Passing `bwdc login` by itself will prompt you to subsequently enter `client_id` and `client_secret`.
+- With parameters:
 
-```
-bwdc login bwuser@gmail.com mystrongpassword --method 0 --code 204678
-```
+  ```
+  bwdc login organization.b5351047-89b6-820f-ad21016b6222 yUMB4trbqV1bavhEHGqbuGpz4AlHm9
+  ```
+- With saved environment variables:
+
+  ```
+  BW_CLIENTID="organization.b5351047-89b6-820f-ad21016b6222"
+  BW_CLIENTSECRET="yUMB4trbqV1bavhEHGqbuGpz4AlHm9"
+
+  bwdc login
+  ```
+
+  Saving the environment variables `BW_CLIENTID` and `BW_CLIENTSECRET` allows you to login to Directory Connector using only `bwdc login`, which will check for those variables and use them if present.
+
+  If these environment variables aren't present, you will be prompted to enter your `client_id` and `client_secret`.
 
 ### logout
 
@@ -135,7 +140,9 @@ Options include:
 - `okta.token <token>`
 - `onelogin.secret <secret>`
 
-`ldap.password`, `azure.key`, `gsuite.key`, `okta.token`, and `onelogin.secret` can **only** be modified from the CLI using `bwdc config`, or from the [Desktop Application]({% link _articles/directory-connector/directory-sync-desktop.md %}).
+{% callout success %}
+`ldap.password`, `azure.key`, `gsuite.key`, `okta.token`, and `onelogin.secret` can **only** be modified from the CLI using `bwdc config`, or from the [Desktop Application]({{site.baseurl}}/article/directory-sync-desktop/).
+{% endcallout %}
 
 ### data-file
 
@@ -148,7 +155,7 @@ Configuration settings can be modified for the Directory Connector CLI by editin
 
 ### clear-cache
 
-The `clear-cache` command allows you to clear cached data that the application stores while performing sync operations. For more information, see [Clear Sync Cache]({% link _articles/directory-connector/clear-sync-cache.md %}).
+The `clear-cache` command allows you to clear cached data that the application stores while performing sync operations. For more information, see [Clear Sync Cache]({{site.baseurl}}/article/clear-sync-cache/).
 
 ```
 bwdc clear-cache
@@ -169,4 +176,14 @@ Check the version of the Directory Connector CLI using the `--version` global op
 
 ## Troubleshooting
 
+### libsecret Missing
+
 If you receive an error message referring to the libsecret shared object `Error: libsecret-1.so.0: cannot open shared object file: No such file or directory`, you may need to install libsecret which is required to store things securely on the host.
+
+### dbus Errors
+
+If you receive an error message referring to the dbus when using `bwdc config`, for example `Failed to execute child process "dbus-launch" (No such file or directory)` or `Cannot autolaunch D-Bus without X11`, assign the following environment variable to allow plaintext storage of secrets in `data.json`:
+
+```
+export BITWARDENCLI_CONNECTOR_PLAINTEXT_SECRETS=true
+```

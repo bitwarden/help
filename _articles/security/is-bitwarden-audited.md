@@ -5,7 +5,8 @@ categories: [security]
 featured: true
 popular: false
 tags: [audit]
-order: 07
+order: "07"
+description: "Review information about third-party security audits, our open source codebase, and our zero knowledge encryption model."
 ---
 
 Bitwarden is a global company with customers located all over the world. Our business is to help customers protect, store, and share their sensitive data. We prioritize protecting the personal data of our customers and their end-users as paramount to our company mission. Bitwarden complies with industry standards, and conducts regular audits shared transparently with our customers and users. Our open source approach puts us in a unique position, where our software is viewed and scrutinized by a globally engaged community.
@@ -17,6 +18,8 @@ For our privacy policy, visit [bitwarden.com/privacy](https://bitwarden.com/priv
 ### GDPR
 
 Bitwarden is GDPR compliant. We use applicable, approved information transfer mechanisms where required, such as EU Standard Contractual Clauses (SCCs), or the EU - U.S. Privacy Shield.
+
+Bitwarden uses Standard Contractual Clauses pursuant to Regulation (EU) 2016/679 of the European Parliament and the Council approved by European Commission Implementing Decision (EU) 2021/914 of 4 June 2021, as currently set out at https://eur-lex.europa.eu/eli/dec_impl/2021/914/oj.
 
 ### CCPA
 

@@ -5,6 +5,7 @@ categories: [miscellaneous]
 featured: false
 popular: false
 tags: [firefox, extension, private window, private mode, private browsing]
+description: "If the Bitwarden browser extension does not load in private mode in a Firefox browser, here are a few workaround for auto-filling a login."
 ---
 
 The Bitwarden browser extension does not completely function in Firefox's private browsing mode. This is a known issue specific only to Firefox. You will see a message indicating so when you try to open the Bitwarden popup window in a private window. We have discussed the problem with Mozilla, however, they seem unable to fix it so that extensions like Bitwarden can function entirely in private mode.

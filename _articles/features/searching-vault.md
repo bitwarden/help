@@ -5,7 +5,8 @@ categories: [account-management]
 featured: false
 popular: false
 tags: [search, lunr]
-order: 05
+order: "05"
+description: "You store hundreds of similarly labeled login credentials and other sensitive items in your Bitwarden password manager. Here are a few tips on how to search your Vault easily."
 ---
 
 Bitwarden Vaults can be easily searched to quickly surface relevant Vault items. [Basic search](#basic-search) queries can be made in any Bitwarden client application, and advanced [full-text search](#full-text-search) queries can be made in Web Vaults, Desktop Apps, and Browser Extensions.
@@ -18,7 +19,7 @@ The potential results available to any search operation is dependent on what is 
 
 The placeholder text in the search box will transform to indicate the current search location:
 
-{% image /manage-items/search.png Search a Folder%}
+{% image manage-items/search.png Search a Folder%}
 
 ## Basic Search
 
@@ -52,6 +53,7 @@ When constructing a full-text search, an indexed field name should immediately f
 - `login.username`: Login item's username.
 - `login.uris`: Login item's URI [hostname](https://developer.mozilla.org/en-US/docs/Web/API/HTMLHyperlinkElementUtils/hostname){:target="_blank"} value.
 
+<br>
 Once a field is specified, search for a value in that field using a colon (`:`) delimiter, for example:
 
 - `>login.username:jsmith` will search for Login items with `jsmith` specified as the **Username**.

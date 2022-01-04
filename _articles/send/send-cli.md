@@ -5,12 +5,13 @@ categories: [send]
 featured: true
 popular: false
 tags: [bitwarden send, send, cli]
-order: 06
+order: "06"
+description: "This article explains how to create a Send (an encrypted transmission of sensitive data) from the Bitwarden command-line interface (CLI)."
 ---
 
-Bitwarden Send is available as a set of fully-featured CLI commands. This article documents the breadth of `bw send` commands, however Send **is not a separate tool** from the Bitwarden Command-line Interface (CLI). Therefore, many of the commands, options, and concepts in the [CLI documentation]({% link _articles/miscellaneous/cli.md %}) are relevant here.
+Bitwarden Send is available as a set of fully-featured CLI commands. This article documents the breadth of `bw send` commands, however Send **is not a separate tool** from the Bitwarden Command-line Interface (CLI). Therefore, many of the commands, options, and concepts in the [CLI documentation]({{site.baseurl}}/article/cli/) are relevant here.
 
-{% image /send/send-cli.png Send's --help text %}
+{% image send/send-cli.png Send's --help text %}
 
 ## send
 
@@ -38,6 +39,7 @@ will create a file Send object with the specified file at the specified `path` a
 
 - Use `-n <name>` or `--name <name>` to specify a name for the Send. If none is specified, name will default to the `id` for text Sends and file name for file Sends. For multi-word names, use quotations `"<name>"`.
 - Use `-d <days>` or `--deleteInDays <days>` to specify a [deletion date]({{site.baseurl}}/article/send-lifespan/#deletion-date) for the Send (defaults to 7 days if unspecified).
+- Use `--maxAccessCount` or `-a` to specify the [maximum access count]({{site.baseurl}}/article/send-lifespan/#maximum-access-count) for the Send.
 - Use `--hidden` to specify that a text Send require recipients to [toggle visibility]({{site.baseurl}}/article/send-privacy/#hide-text).
 - Use `--notes <notes>` to add private notes to the Send. For multi-word notes, use quotations `"<notes>"`.
 - Use `--fullObject` to output the full Send object as JSON rather than only the Send link (pair this option with the `--pretty` option for formatted JSON).
@@ -63,19 +65,74 @@ A typical workflow might look something like:
 3. Use the `encode` command (see [details]({{site.baseurl}}/article/cli/#encode)) to encode the manipulated JSON.
 4. Use the `create` command to create a Send from the encoded JSON.
 
-For example:
+For example, to create a text Send:
 
 ```
 bw send template send.text | jq '.name="My First Send" | .text.text="Secrets I want to share."' | bw encode | bw send create
 ```
-or
+
+For example, to create a password-protected file Send:
+
 ```
-bw send template send.text | jq ".name=\"My First Send\" | .text.text=\"Secrets I want to share.\" | .password=\"mypassword\" | .deletionDate=\"$(date -uv+14d + "%Y-%m-%dT%H:%M:%SZ")\"" | bw encode | bw send create
+bw send template send.file | jq '.name="My File Send" | .type=1 | .file.fileName="paperwork.png" | .password="p@ssw0rd"' | bw encode | bw send create
 ```
 
-{% callout success %}
-Notice in the 2nd example that the jq invocation must be wrapped in double quotes (`" "`) and use escapes (`\`) for each filter due to a nested `date` variable that configures a `.deletionDate` in the Send.
-{% endcallout %}
+For example, to create a password-protected file Send with an explicit [deletion date]({{site.baseurl}}/article/send-lifespan/#deletion-date). This example is broken out by operating system due to the way `.deletionDate=` should be specified:
+
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a class="nav-link active" id="wintab" data-bs-toggle="tab" data-target="#windows" role="tab" aria-controls="windows" aria-selected="true"><i class="fa fa-windows"></i> Windows</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="mactab" data-bs-toggle="tab" data-target="#macos" role="tab" aria-controls="macos" aria-selected="false"><i class="fa fa-apple"></i> macOS</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="lintab" data-bs-toggle="tab" data-target="#linux" role="tab" aria-controls="linux" aria-selected="false"><i class="fa fa-linux"></i> Linux</a>
+  </li>
+</ul>
+<div class="tab-content" id="clientsContent">
+  <div class="tab-pane show active" id="windows" role="tabpanel" aria-labelledby="wintab">
+{% capture winfo %}
+#### Windows
+
+```
+$delDate = (Get-Date).AddDays(14) | date -UFormat "%Y-%m-%dT%H:%M:%SZ"
+
+bw send template send.text | jq ".name=\`"My Send\`" | .text.text=\`"Secrets I want to share.\`" | .password=\`"password\`" | .deletionDate=\`"$delDate\`"" | bw encode | bw send create
+```
+
+Notice in this example that the jq invocation must be wrapped in double quotes (`" "`) and use escapes (`\`) for each filter due to a nested `date` variable that configures a `.deletionDate` in the Send.
+
+{% endcapture %}
+{{ winfo | markdownify }}
+  </div>
+  <div class="tab-pane" id="macos" role="tabpanel" aria-labelledby="mactab">
+{% capture minfo %}
+#### macOS
+
+```
+bw send template send.text | jq ".name=\"My Send\" | .text.text=\"Secrets I want to share.\" | .password=\"mypassword\" | .deletionDate=\"$(date -uv+14d +"%Y-%m-%dT%H:%M:%SZ")\"" | bw encode | bw send create
+```
+
+Notice in this example that the jq invocation must be wrapped in double quotes (`" "`) and use escapes (`\`) for each filter due to a nested `date` variable that configures a `.deletionDate` in the Send.
+
+{% endcapture %}
+{{ minfo | markdownify }}
+  </div>
+  <div class="tab-pane" id="linux" role="tabpanel" aria-labelledby="lintab">
+{% capture linfo %}
+#### Linux
+
+```
+bw send template send.text | jq ".name=\"My Send\" | .text.text=\"Secrets I want to share.\" | .password=\"mypassword\" | .deletionDate=\"$(date "+%Y-%m-%dT%H:%M:%SZ" -d "+14 days")\"" | bw encode | bw send create
+```
+
+Notice in this example that the jq invocation must be wrapped in double quotes (`" "`) and use escapes (`\`) for each filter due to a nested `date` variable that configures a `.deletionDate` in the Send.
+
+{% endcapture %}
+{{ linfo | markdownify }}
+  </div>
+</div>
 
 **Options:**
 
@@ -93,7 +150,7 @@ The `get` command will retrieve a Send owned by you and output it as a JSON obje
 bw send get [options] <id / string>
 ```
 
-If you create a Send in another Bitwarden application while this session is still active, use the `bw sync` command to pull recent sends. For more information, refer to our [CLI documentation]({% link _articles/miscellaneous/cli.md %}).
+If you create a Send in another Bitwarden application while this session is still active, use the `bw sync` command to pull recent sends. For more information, refer to our [CLI documentation]({{site.baseurl}}/article/cli/).
 
 **Options:**
 
@@ -138,7 +195,7 @@ The `list` command will list all Sends owned by you and output them as JSON:
 bw send list [options]
 ```
 
-If you create a Send in another Bitwarden application while this session is still active, use the `bw sync` command to pull recent sends. For more information, refer to our [CLI documentation]({% link _articles/miscellaneous/cli.md %}).
+If you create a Send in another Bitwarden application while this session is still active, use the `bw sync` command to pull recent sends. For more information, refer to our [CLI documentation]({{site.baseurl}}/article/cli/).
 
 **Options:**
 

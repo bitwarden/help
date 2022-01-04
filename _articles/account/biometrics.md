@@ -5,12 +5,13 @@ categories: [account-management]
 featured: false
 popular: false
 tags: [unlock, face id, touch id, hello, windows, mac, ios, android]
-order: 11
+order: "11"
+description: "This article describes how to unlock Bitwarden with biometrics and explains the difference between unlocking and logging in to a Vault."
 ---
 
 Bitwarden can be configured to accept biometrics as a method to unlock your Vault.
 
-Biometrics can **only be used to unlock** your Vault, you will still be required to use your Master Password and any enabled [Two-step Login method]({% link _articles/two-step-login/setup-two-step-login.md %}) when you **log in**. If you're not sure of the difference, scroll down to [Understanding Unlock vs. Log In](#understanding-unlock-vs-log-in).
+Biometrics can **only be used to unlock** your Vault, you will still be required to use your Master Password and any enabled [Two-step Login method]({{site.baseurl}}/article/setup-two-step-login/) when you **log in**. If you're not sure of the difference, scroll down to [Understanding Unlock vs. Log In](#understanding-unlock-vs-log-in).
 
 {% callout success %}
 Biometric features are part of the built-in security in your device and/or operating system. Bitwarden leverages native APIs to perform this validation, and therefore **Bitwarden does not receive any biometrics information** from the device.
@@ -45,7 +46,7 @@ To enable Unlock with Biometrics for your Mobile device:
 2. In your Bitwarden app, open the {% icon fa-cogs %} **Settings** tab.
 3. Scroll down to the Security section and tap the biometrics option you want to enable. What's available on this screen is determined by your device's hardware capabilities and what you've enabled (**Step 1**), for example:
 
- {% image /biometrics/ios_faceid.jpeg Enable Face ID in iOS%}
+ {% image biometrics/ios_faceid.jpeg Enable Face ID in iOS%}
 
 Tapping the option should prompt you to input your biometric (i.e. face or thumb-print). A green `Enabled` status indicator (pictured above) will indicate when Unlock with Biometrics is successfully enabled.
 
@@ -67,11 +68,15 @@ To enable Unlock with Biometrics for your Desktop app:
 2. In your Bitwarden app, open your Settings (on Windows, **File** &rarr; **Settings**) (on macOS, **Bitwarden** &rarr; **Preferences**).
 3. Scroll down to the Security section and select the biometrics option you want to enable. What's available on this screen is determined by your device's hardware capabilities and what you've turned on (**Step 1**), for example:
 
-   {% image /biometrics/windows.png Unlock with Windows Hello %}
+   {% image biometrics/windows.png Unlock with Windows Hello %}
 
-Once enabled, a new button will be presented on the Unlock screen:
+Once enabled, the Desktop app will automatically prompt for your biometric method to unlock your Vault. You can turn off automatic-prompting from the same menu using the **Do not prompt...** option:
 
-{% image /biometrics/hello-unlock.png Unlock with Windows Hello %}
+{% image biometrics/auto-off.png Unlock with Windows Hello %}
+
+Regardless of your auto-prompt selection, a new button will be presented on the Unlock screen for unlocking your Vault:
+
+{% image biometrics/hello-unlock.png Unlock with Windows Hello %}
 
 {% endcapture %}
 {{ desktop_info | markdownify}}
@@ -106,12 +111,12 @@ Unlock with Biometrics is supported for Extensions on **Chromium-based** browser
 
 To enable Unlock with Biometrics for your Browser Extension:
 
-{% callout success %}Biometrics must be enabled in your Desktop App before proceeding. Additionally, **if you're using Safari**, you can skip straight to **Step 4**.{% endcallout %}
+{% callout success %}Biometrics (Windows Hello or Touch Id) must be enabled in your Desktop App before proceeding. If you don't see the Windows Hello option in your Desktop app, you may need to [install the Microsoft Visual C++ Redistributable.](https://support.microsoft.com/en-us/topic/the-latest-supported-visual-c-downloads-2647da03-1eea-4433-9aff-95f26a218cc0){:target="\_blank} Additionally, **if you're using Safari**, you can skip straight to **Step 4**.{% endcallout %}
 
 1. In your Bitwarden Desktop app, navigate to Settings (on Windows, **File** &rarr; **Settings**) (on macOS, **Bitwarden** &rarr; **Preferences**).
 2. Scroll down to the Options section, and check the **Enable Browser Integration** box.
 
-   {% callout info %}Optionally, check the **Require verification for browser integration** option to require [account fingerprint]({% link _articles/features/fingerprint-phrase.md %}) verification when you activate the integration.{% endcallout %}
+   {% callout info %}Optionally, check the **Require verification for browser integration** option to require [account fingerprint]({{site.baseurl}}/article/fingerprint-phrase/) verification when you activate the integration.{% endcallout %}
 3. In your Browser, navigate to the Extensions manager (e.g. `chrome://extensions` or `brave://extensions`), open Bitwarden, and toggle the **Allow access to file URLs** option.
 
 
@@ -122,10 +127,17 @@ To enable Unlock with Biometrics for your Browser Extension:
    {% callout success %}You may be prompted at this stage to allow Bitwarden to `communicate with cooperating native applications`. This permission is safe, but **optional** and solely enables the Browser Extension to communicate with Desktop as described above.{% endcallout %}
 
    You should be prompted by your Desktop app to input your biometric. Doing so will complete the initial setup procedure. If you've opted to require verification (**Step 2**), you'll need to approve a fingerprint validation check.
+6. If you want the Browser Extension to automatically prompt for your biometric input when launched, make sure the **Do not prompt for biometrics on launch** option is not checked:
 
-Once enabled, a new button will be presented on the Unlock screen:
+   {% image biometrics/extension-launch.png Biometrics Options %}
 
-{% image /biometrics/be-bio-unlock.png Unlock with Biometrics %}
+Browser Extension will automatically prompt for your biometric when you open it. If you disable the no-prompt option (**Step 6**), use the **Unlock with biometrics** button on the Unlock screen:
+
+{% image biometrics/be-bio-unlock.png Unlock with Biometrics %}
+
+{% callout success %}
+Your Desktop app needs to be **Logged In** but does not need to be **Unlocked** to unlock a Browser Extension with biometrics.
+{% endcallout %}
 
 {% endcapture %}
 {{ browser_extension | markdownify}}
@@ -134,14 +146,14 @@ Once enabled, a new button will be presented on the Unlock screen:
 
 ## Understanding Unlock vs. Log In
 
-In order to understand why unlocking and logging in aren't the same, it's important to remember that Bitwarden [never stores unencrypted data]({% link _articles/security/vault-data.md %}) on its servers. **When your Vault is neither unlocked nor logged in**, your Vault data only exists on the server in its [encrypted form]({% link _articles/security/what-encryption-is-used.md %}).
+In order to understand why unlocking and logging in aren't the same, it's important to remember that Bitwarden [never stores unencrypted data]({{site.baseurl}}/article/vault-data/) on its servers. **When your Vault is neither unlocked nor logged in**, your Vault data only exists on the server in its [encrypted form]({{site.baseurl}}/article/what-encryption-is-used/).
 
 **Logging in** to Bitwarden **decrypts** your Vault data to your device. In practice, that means two things:
 
-1. Logging in will always require your Master Password, because your Master Password is the source of the key needed to decrypt your Vault data. Additionally, because decryption is an operation that needs to be protected, this stage is where [any enabled Two-step Login methods]({% link _articles/two-step-login/setup-two-step-login.md %}) would be required.
+1. Logging in will always require your Master Password, because your Master Password is the source of the key needed to decrypt your Vault data. Additionally, because decryption is an operation that needs to be protected, this stage is where [any enabled Two-step Login methods]({{site.baseurl}}/article/setup-two-step-login/) would be required.
 2.  Logging in will always require you to be connected to the internet (or, if you're self-hosting, connected to the server), because you need access to the encrypted Vault in order to decrypt it.
 
 **Unlocking** can only be done when you're already logged in. In other words, only when your Vault data is already stored (encrypted) on your device. Because your Vault is already downloaded and your decryption key stored in memory:
 
-1. You don't need the decryption key derived from your Master Password, so you're free to use other access methods, like [PIN codes]({% link _articles/account/unlock-with-pin.md %}) and [biometrics]({% link _articles/account/biometrics.md %}).
+1. You don't need the decryption key derived from your Master Password, so you're free to use other access methods, like [PIN codes]({{site.baseurl}}/article/unlock-with-pin/) and [biometrics]({{site.baseurl}}/article/biometrics/).
 2. You don't need to be connected to the internet (or, if you're self-hosting, connected to the server).

@@ -5,18 +5,19 @@ categories: [account-management]
 featured: true
 popular: false
 tags: [master password, account]
-order: 01
+order: "01"
 redirect_from:
   - /article/change-your-master-password/
+description: "Find out why you should make your Bitwarden master password memorable and how to set up hints to prompt your memory."
 ---
 
 ## About your Master Password
 
 Your Master Password is the primary method for accessing your Vault. It's critically important that your Master Password is:
 
-- **Memorable**: Bitwarden is a Zero Knowledge/Zero Trust solution. This means that the team at Bitwarden, as well as Bitwarden systems themselves, have no knowledge of, way to retrieve, or way to reset your Master Password. **Don't forget your Master Password!** Bitwarden won't be able to reset it or recover your Vault data if you do.
+- **Memorable**: Bitwarden is a zero knowledge solution. This means that the team at Bitwarden, as well as Bitwarden systems themselves, have no knowledge of, way to retrieve, or way to reset your Master Password. **Don't forget your Master Password!** Bitwarden won't be able to reset it or recover your Vault data if you do.
 
-   For our technically-inclined users, see the article on [Encryption]({% link _articles/security/what-encryption-is-used.md %}) to find out how we accomplish Zero Trust.
+   For our technically-inclined users, see the article on [Encryption]({{site.baseurl}}/article/what-encryption-is-used/) to find out how we accomplish Zero Trust.
 - **Strong**: The longer, more complex, and less common your Master Password is, the safer your Vault data will be. Using something like `password` for your Master Password could let a capable attacker crack your Vault in **less than a second**!
 
    Use Bitwarden's free [**Password Strength Testing Tool**](https://bitwarden.com/password-strength){:target="\_blank"} to test the strength of some Master Passwords you'd consider using.
@@ -27,16 +28,16 @@ Your Master Password is the primary method for accessing your Vault. It's critic
 If you're worried about forgetting your Master Password, the team at Bitwarden has a few recommendations for you:
 
 1. **Setup a Master Password Hint**. Once setup, a Master Password Hint can be requested on the Login Screen. The hint will be emailed to you, not displayed on the web page, so as long as your inbox isn't compromised you won't have to worry about prying eyes (that said, we don't recommend using a hint that would give away your Master Password to anyone other than yourself).
-2. **Designate a [Trusted Emergency Contact]({% link _articles/security/emergency-access.md %})**. If you have a Premium subscription, you can proactively configure your Vault to grant access in the case of emergency to another Bitwarden user.
+2. **Designate a [Trusted Emergency Contact]({{site.baseurl}}/article/emergency-access/)**. If you have a Premium subscription, you can proactively configure your Vault to grant access in the case of emergency to another Bitwarden user.
 
 {% endcallout %}
 
 ## Change your Master Password
 
-Provided you **know your current Master Password**, change your Master Password at any time from the [Web Vault](https://vault.bitwarden.com){:target="\_blank"}:
+Provided you **know your current Master Password**, change your Master Password at any time from the [Web Vault]({{site.baseurl}}/article/getting-started-webvault):
 
 {% callout success %}
-If you don't know your Master Password, see [I Forgot my Master Password]({% link _articles/account/forgot-master-password.md %}).
+If you don't know your Master Password, see [I Forgot my Master Password]({{site.baseurl}}/article/forgot-master-password/).
 {% endcallout %}
 
 1. In your Web Vault, Select the **Settings** tab from the top navigation.
@@ -44,7 +45,7 @@ If you don't know your Master Password, see [I Forgot my Master Password]({% lin
 3. Enter your **Current Master Password**.
 4. Enter and Confirm your **New Master Password**.
 
-   {% callout warning %}Don't check the **rotate account's encryption key** box unless you fully understand the ramifications and required follow-up procedures. Learn more [here]({% link _articles/account/account-encryption-key.md %}).{% endcallout %}
+   {% callout warning %}Don't check the **rotate account's encryption key** box unless you fully understand the ramifications and required follow-up procedures. Learn more [here]({{site.baseurl}}/article/account-encryption-key/).{% endcallout %}
 5. Select the **Change Master Password** button.
 
 Changing your Master Password will log you out of your current Web Vault session, requiring you to log back in with your new Master Password.
@@ -55,7 +56,7 @@ Other logged-in client applications (Mobile Apps, Browser Extensions, etc.) may 
 
 As described in the [About Your Master Password](#about-your-master-password) section, Bitwarden has no knowledge of, way to retrieve, or way to reset your Master Password.
 
-If you've already lost your Master Password, there is unfortunately no way for the team to recover the account or the data therein. You will need to delete your account and start a new one.
+If you've already lost your Master Password, there is unfortunately no way for anyone to recover the account or the data stored in your Personal Vault unless you're enrolled in [Organization Master Password Reset]({{site.baseurl}}/article/admin-reset/) or have a designated [trusted emergency contact]({{site.baseurl}}/article/emergency-access). You will need to delete your account and start a new one.
 
 {% callout success %}
 If you're using any Bitwarden client applications (Mobile Apps, Browser Extensions, etc.) you should check whether any of these sessions are still logged in prior to deleting your account. If a client application is still logged in, you should manually catalogue your Vault items to preserve your data.
@@ -67,4 +68,4 @@ To delete your account:
 2. Enter the **Email Address** associated with your account and select **Submit**.
 3. In your email inbox, open the email and verify that you want to delete this Bitwarden account.
 
-Once deleted, you're free to create a new Bitwarden account with that email address. If you delete a Bitwarden account that has a Premium subscription associated with it, [Contact Us](https://bitwarden.com/contact/){:target="\_blank"} and we'll reapply your existing subscription to the new account.
+If any of your client applications were logged in (see the above **Tip**), log out of them. If you delete a Bitwarden account that has a Premium subscription associated with it, [Contact Us](https://bitwarden.com/contact/){:target="\_blank"} and we'll reapply your existing subscription to the new account. If you were able to successfully export your Vault data prior to deletion, you can easily [import it into the new account]({{site.baseurl}}/article/import-data/).

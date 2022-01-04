@@ -5,7 +5,8 @@ categories: [organizations]
 featured: true
 popular: false
 tags: [user types, access control]
-order: 06
+order: "06"
+description: "A variety of user types and access controls can be applied to users in Bitwarden Organizations to manage permissions and access."
 ---
 
 Users in Bitwarden Organizations can be granted a variety of User Types and Access Controls in order to manage their permissions and access. You can set User Types and Access Controls when you [invite users to your Organization]({{site.baseurl}}/article/managing-users/), or at any time from the **Manage** &rarr; **People** screen in your Organization:
@@ -20,7 +21,7 @@ User Type determines the permissions a user will have within your Organization. 
 |---------|-----------|
 |User|Access shared items in assigned Collections<br>Add, edit, or remove items from assigned Collections (unless **Read Only**)|
 |Manager|All of the above,<br>+ Assign Users to Collections<br>+ Assign User Groups to Collections<br>+ Create or delete Collections|
-|Admin|All of the above,<br>+ Assign Users to User Groups<br>+ Create or delete User Groups<br>+ Invite and confirm new Users<br>+ Manage Enterprise Policies<br>+ View Event Logs<br>+ Export Organization Vault data<br><br>**Admin Users automatically have access to all Collections.**|
+|Admin|All of the above,<br>+ Assign Users to User Groups<br>+ Create or delete User Groups<br>+ Invite and confirm new Users<br>+ Manage Enterprise Policies<br>+ View Event Logs<br>+ Export Organization Vault data<br>+ Manage Password Reset<br><br>**Admin Users automatically have access to all Collections.**|
 |Owner|All of the above,<br>+ Manage Billing, Subscription, and Integrations<br><br>**Owner Users automatically have access to all Collections.**|
 |Custom|Allows for granular control of user permissions on a user-by-user basis, see [Custom Role](#custom-role).|
 
@@ -32,20 +33,25 @@ User Type determines the permissions a user will have within your Organization. 
 
 Selecting the **Custom** role for a user allows for granular control of permissions on a user-by-user basis. A Custom role user can have a configurable selection of Manager and Admin capabilities, including:
 
-- Manage Assigned collections
-- Access Business Portal
+- Manage Assigned Collections (provides the following 2 options)
+  - Edit Assigned Collections
+  - Delete Assigned Collections
 - Access Event Logs
 - Access Import/Export
 - Access Reports
-- Manage All Collections
+- Manage All Collections (provides the following 3 options)
+  - Create New Collections
+  - Edit Any Collection
+  - Delete Any Collection
 - Manage Groups
 - Manage SSO
 - Manage Policies
 - Manage Users
+- Manage Password Reset
 
 {% callout success %}
-As an example, the Custom role allows for the creation of a user that can fully manage a User-Group-Collection relationship, without the ability to see anything in a Collection to which they are not assigned. This scenario would involve selecting only the following boxes for this Custom user:
-- Manage Assigned Collections
+As an example, the Custom role allows for the creation of a user that can manage a User-Group-Collection relationship, without the ability to see anything in a Collection to which they are not assigned or delete any Collection. This scenario would involve selecting only the following boxes for this Custom user:
+- Manage Assigned Collections &rarr; Edit Assigned Collections
 - Manage Groups
 - Manage Users
 {% endcallout %}
@@ -54,7 +60,7 @@ As an example, the Custom role allows for the creation of a user that can fully 
 
 Access Control determines access to Collections, as well as permissions within each individual Collection:
 
-{% image /organizations/collection-access-control.png Configure Access Control options %}
+{% image organizations/collection-access-control.png Configure Access Control options %}
 
 {% callout info %}
 Recall that [Admins and Owners](#user-types) can automatically access all Collections. For these user types, configuring Access Control will determine **which Collections are readily accessible** in their Personal Vault and client applications (Browser Extension, Mobile, etc.). Admins and Owners will still be able to access "unassigned" Collections from the Organization Vault.

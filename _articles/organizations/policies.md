@@ -6,7 +6,8 @@ featured: true
 popular: false
 hidden: false
 tags: [organizations, enterprise, policies]
-order: 14
+order: "14"
+description: "Our guide to enterprise policies for the Bitwarden password manager explains how admins can ensure good security habits are implemented through the company."
 ---
 
 ## What are Enterprise Policies?
@@ -21,10 +22,9 @@ Bitwarden highly recommends setting Enterprise Policies prior to inviting users 
 
 ## Setting Enterprise Policies
 
-Policies can be set in two locations:
+Policies can be set in your Organization by opening the the **Manage** tab and selecting **Policies** from the left menu:
 
-- In your Organization, open the **Manage** tab and select **Policies** from the left menu.
-- Navigate to the Business Portal, and select the **Policies** button. For more information, see [About the Business Portal](https://bitwarden.com/help/article/about-business-portal/).
+{% image organizations/policies.png Set Policies %}
 
 ## Available Policies
 
@@ -72,7 +72,7 @@ Enabling the **Password Generator** policy will enforce a configurable set of mi
 {% callout warning %}
 Existing non-compliant passwords **will not** be changed when this policy is enabled, nor will the items be removed from the Organization. When changing or generating a password after this policy is enabled, configured policy rules will be enforced.
 
-A banner is displayed to users on the Password Generator screen to indicate that a policy will affect their generator settings.
+A banner is displayed to users on the Password Generator screen to indicate that a policy is affecting their generator settings.
 {% endcallout %}
 
 ### Single Organization
@@ -82,24 +82,24 @@ Enabling the **Single Organization** policy will restrict non-Owner/non-Admin me
 {% callout warning %}
 **Users in the Organization who are members of multiple Organizations will be removed from the Organization when you enable this policy.**
 
-Users who are removed as a result of this policy will be notified via email, and must be re-invited to the Organization. Users will not be able to be confirmed to the Organization until they have removed themselves from all other Organizations.
+Users who are removed as a result of this policy will be notified via email, and must be re-invited to the Organization. Users will not be able to be accept the invitation to the Organization until they have removed themselves from all other Organizations.
 {% endcallout %}
 
 ### Single Sign-On Authentication
 
-Enabling the **Single Sign-On Authentication** policy will require non-Owner/non-Admin users to log in with Enterprise Single Sign-On. For more information, see [Access Your Vault using SSO](https://bitwarden.com/help/article/sso-access-your-vault/).
+Enabling the **Single Sign-On Authentication** policy will require non-Owner/non-Admin users to log in with Enterprise Single Sign-On. For more information, see [Access Your Vault using SSO]({{site.baseurl}}/article/sso-access-your-vault/).
 
 {% callout info %}
 The **Single Organization** policy must be enabled before activating this policy.
 
-As a result, you must disable the **Single Sign-On Authentication** policy before you can disable the **Single Ownership** policy.
+As a result, you must disable the **Single Sign-On Authentication** policy before you can disable the **Single Organization** policy.
 {% endcallout %}
 
 ### Personal Ownership
 
 Enabling the **Personal Ownership** policy will require non-Owner/non-Admin users to save Vault Items to an Organization by disabling personal ownership of Vault items for organization users.
 
-A banner is displayed to users on the Add Item screen indicating that a policy will affect their ownership options.
+A banner is displayed to users on the Add Item screen indicating that a policy is affecting their ownership options.
 
 {% callout info %}
 Vault Items that were created prior to the implementation of this policy or prior to joining the Organization will remain in the user's personal Vault.
@@ -107,7 +107,7 @@ Vault Items that were created prior to the implementation of this policy or prio
 
 ### Disable Send
 
-Enabling the **Disable Send** policy will prevent non-Owner/non-Admin users from creating or editing a Send using [Bitwarden Send]({% link _articles/send/about-send.md %}). Users subject to this policy will still be able to delete existing Sends that have not yet reached their [Deletion Date]({% link _articles/send/send-lifespan.md %}).
+Enabling the **Disable Send** policy will prevent non-Owner/non-Admin users from creating or editing a Send using [Bitwarden Send]({{site.baseurl}}/article/about-send/). Users subject to this policy will still be able to delete existing Sends that have not yet reached their [Deletion Date]({{site.baseurl}}/article/send-lifespan/).
 
 A banner is displayed to users in the Send view and on opening any existing Send to indicate that a policy is restricting them to only deleting Sends.
 
@@ -117,4 +117,34 @@ Enabling the **Send Options** policy will allow Owners and Admins to specify opt
 
 |Option|Description|
 |------|-----------|
-|Do not allow users to hide their email address|Enabling this option disables the [Hide Email option]({{site.baseurl}}/article/send-privacy/#hide-email), meaning that all [received Sends]({{site.baseurl}}/article/receive-send) will include whom they are sent from.|
+|Do not allow users to hide their email address|Enabling this option disables the [Hide Email option]({{site.baseurl}}/article/send-privacy/#hide-email), meaning that all [received Sends]({{site.baseurl}}/article/receive-send/) will include whom they are sent from.|
+
+### Master Password Reset
+
+Enabling the **Master Password Reset** policy will allow Owners and Admins to use [Password Reset]({{site.baseurl}}/article/admin-reset/) to reset the master password of enrolled users. By default, users will need to [self-enroll in Password Reset]({{site.baseurl}}/article/admin-reset/#self-enroll-in-password-reset), however the [Automatic Enrollment](#automatic-enrollment) option can be used to force automatic enrollment of invited users:
+
+#### Automatic Enrollment
+
+Enabling the **Automatic Enrollment** option will automatically enroll new users in Password Reset when their [invitation to the Organization is accepted]({{site.baseurl}}/article/managing-users/#accept) and prevent them from withdrawing.
+
+{% callout info %}
+Users already in the Organization will not be retroactively enrolled in Password Reset, and will be required to [self-enroll]({{site.baseurl}}/article/admin-reset/#self-enroll-in-password-reset).
+{% endcallout %}
+
+### Vault Timeout
+
+Enabling the **Vault Timeout** policy will implement a maximum [Vault Timeout]({{site.baseurl}}/article/vault-timeout/#vault-timeout-time-constraint) duration for all members of your Organization. This policy applies the timeout restriction to all client applications (Mobile, Desktop, Browser Extension, etc.).
+
+A banner is displayed to users during Vault Timeout configuration indicating that a policy is affecting their options.
+
+{% callout info %}
+The **Single Organization** policy must be enabled before activating this policy.
+
+As a result, you must disable the **Vault Timeout** policy before you can disable the **Single Organization** policy.
+{% endcallout %}
+
+### Disable Personal Vault Export
+
+Enabling the **Disable Personal Vault Export** policy will prohibit non-Owner/non-Admin members of your Organization from [exporting their private Vault data]({{site.baseurl}}/article/export-your-data/#export-a-personal-vault).
+
+In the Web Vault and CLI, a message is displayed to users indicating that a policy is affecting their options. In other clients, the option will simply be disabled.

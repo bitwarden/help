@@ -2,13 +2,14 @@
 layout: article
 title: Auto-fill Cards & Identities
 categories: [auto-fill]
-order: 04
+order: "04"
 featured: true
 popular: false
 tags: [browser, autofill, auto-fill, identity, card, form fill]
+description: "Learn how the autofill capability of the Bitwarden password manager can autofill card details and identity information."
 ---
 
-Bitwarden can do more than just [auto-fill your usernames and passwords]({% link _articles/features/auto-fill-browser.md %})! **Bitwarden Browser Extensions** can auto-fill [Cards]({{site.baseurl}}/article/managing-items/#cards) and [Identities]({{site.baseurl}}/article/managing-items/#identities) to simplify online purchases, account creation, and more using the [unique Tab view]({% link _articles/features/auto-fill-browser.md %}).
+Bitwarden can do more than just [auto-fill your usernames and passwords]({{site.baseurl}}/article/auto-fill-browser/)! **Bitwarden Browser Extensions** can auto-fill [Cards]({{site.baseurl}}/article/managing-items/#cards) and [Identities]({{site.baseurl}}/article/managing-items/#identities) to simplify online purchases, account creation, and more using the [unique Tab view]({{site.baseurl}}/article/auto-fill-browser/).
 
 {% callout info %}Currently, Autofill for Cards & Identities is **only available for Browser Extensions**. Mobile platforms including Android and iOS do not currently support this type of auto-fill function.{% endcallout %}
 
@@ -18,7 +19,7 @@ To auto-fill Cards and Identities:
 
 1. Open the Browser Extension or, if your Browser Extension is already open, navigate to the {% icon fa-folder %} **Tab** view.
 
-   Unless you've [hidden Cards and/or Identities from this view](#hide-cards--identities), all your Cards and Identities will be listed here alongside any [matched Login items]({% link _articles/features/uri-match-detection.md %}).
+   Unless you've [hidden Cards and/or Identities from this view](#hide-cards--identities), all your Cards and Identities will be listed here alongside any [matched Login items]({{site.baseurl}}/article/uri-match-detection/).
 2. Select the Card or Identity you want to auto-fill:
 
    {% image features/auto-fill-card-id/autofill-cardsidentities.png Auto-fill an Identity %}

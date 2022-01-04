@@ -6,47 +6,54 @@ featured: true
 popular: false
 hidden: false
 tags: []
-order: 09
+order: "10"
+description: "This article contains FAQs regarding billing and subscriptions for the Bitwarden password manager."
 ---
 
 This article contains Frequently Asked Questions (FAQs) regarding **Plans and Pricing**.
 
-For help selecting the right Bitwarden plan for you, refer to [What Plan is Right for Me?]({% link _articles/plans-and-pricing/what-plan-is-right-for-me.md %}) and [About Bitwarden Plans]({% link _articles/plans-and-pricing/about-bitwarden-plans.md %}).
+For help selecting the right Bitwarden plan for you, refer to [What Plan is Right for Me?]({{site.baseurl}}/article/what-plan-is-right-for-me/) and [About Bitwarden Plans]({{site.baseurl}}/article/about-bitwarden-plans/).
 
 ## Account Management
 
 ### Q: How do I find out what subscription plan I'm on?
 
-**A:** Login to your [Web Vault](https://vault.bitwarden.com):
+**A:** Login to your [Web Vault]({{site.baseurl}}/article/getting-started-webvault):
 
 - For individual subscriptions, navigate to your **Settings** tab. If the left menu bar has a **Go Premium** option, this account is on a free plan. If the left menu bar has a **Premium Membership** option, this account is on a Premium plan.
 - For Organization subscriptions, open your Organization. In your Organization's **Settings** tab, select **Subscription** from the left menu. The **Plan** section will log this Organization's plan.
 
 ### Q: How do I view my billing information?
 
-**A:** Viewing Billing information is different depending on whether you're viewing it for an Individual or Organization subscription. Use [Update Your Billing Information](https://bitwarden.com/help/article/update-billing-info/) to guide you through both processes.
+**A:** Viewing Billing information is different depending on whether you're viewing it for an Individual or Organization subscription. Use [Update Your Billing Information]({{site.baseurl}}/article/update-billing-info/) to guide you through both processes.
 
 ### Q: How do I delete my account?
 
-**A:** We're sad to see you go! Use [Delete Your Account](https://help.bitwarden.com/article/delete-your-account/) to guide you through this process.
+**A:** We're sad to see you go! Use [Delete Your Account]({{site.baseurl}}/article/delete-your-account/) to guide you through this process.
 
 ### Q: How do I upgrade from an Individual subscription to an Organization?
 
-**A:** Use [Upgrade from Individual to Organization](https://bitwarden.com/help/article/upgrade-from-individual-to-org/) to guide you through this process.
+**A:** Use [Upgrade from Individual to Organization]({{site.baseurl}}/article/upgrade-from-individual-to-org/) to guide you through this process.
 
 ### Q: How do I add or remove a user seat from my Organization?
 
-**A:** Login to your [Web Vault](https://vault.bitwarden.com) and open your Organization. In your Organization's **Settings** tab, select the **Subscription** from the left menu:
+**A:** For Teams and Enterprise Organizations, user seats will be automatically added as you invite new users. You can [specify a limit]({{site.baseurl}}/article/managing-users/#set-a-seat-limit) to prevent your seat count from exceeding a specific number.
 
-{% image /organizations/org-subscription-screen-overlay-addseats.png Add or Remove seats %}
+To remove user seats, navigate to your Organization's **Settings** &rarr; **Subscription** screen and use the **Subscription Seats** input to remove seats ([learn more]({{site.baseurl}}/article/managing-users/#manually-add-or-remove-seats)).
 
-You can add or remove seats from your Organization at any time. The cost will be automatically pro-rated and debited or credited accordingly.
+Adding and removing user seats will adjust your future billing totals. Adding seats will immediately charge your payment method on file at an adjusted rate so that **you’ll only pay for the remainder of the billing cycle** (month/year). Removing seats will cause your next charge to be adjusted so that you’re **credited for time not used** by the already-paid-for seat.
 
 ### Q: How do I pay for Premium on a self-hosted instance?
 
-**A:** In order to pay for a self-hosted instance of Bitwarden, you'll need to create an account in the Bitwarden cloud via the [Web Vault](https://vault.bitwarden.com). From there, you can download the license file to apply to your self-hosted instance. Your license file will flag your access to Premium features, so make sure that you download a new license file if you were previously on a free plan.
+**A:** In order to pay for a self-hosted instance of Bitwarden, you'll need to create an account in the Bitwarden cloud via the [Web Vault]({{site.baseurl}}/article/getting-started-webvault). From there, you can download the license file to apply to your self-hosted instance. Your license file will flag your access to Premium features, so make sure that you download a new license file if you were previously on a free plan.
 
-For more information, see [Hosting](https://bitwarden.com/help/hosting).
+For more information, see [Hosting]({{site.baseurl}}/article/licensing-on-premise/#organization-license).
+
+### Q: If I have a Families Organization, do I need Premium?
+
+**A:** The current Families plan (introduced Sep. 2020) automatically provides premium features for all 6 members of the Organization, so no!
+
+Legacy Families plans do not automatically provide premium features, so users would need to upgrade to premium individually or the Families Organization Owner could upgrade the organization.
 
 ## Payment Options
 
@@ -60,13 +67,11 @@ For more information, see [Hosting](https://bitwarden.com/help/hosting).
 
 ### Q: Can I pay with Bitcoin?
 
-**A:** Yes! Refer to [Update Your Billing Information](https://bitwarden.com/help/article/update-billing-info/) for more information.
-
-[Contact Us](https://bitwarden.com/contact/) once you have added the credit for the subscription amount. We will generate and send you an invoice and activate the new account. You will also receive an invoice from our payment processor (BitPay) at the time the Bitcoin is sent.
+**A:** Yes! Please note, you will need to **Add Credit** using Bitcoin on the **Settings** &rarr; **Billing** screen before purchasing the subscription.
 
 ### Q: How do I enter my tax information (VAT)?
 
-**A:** Login to your [Web Vault](https://vault.bitwarden.com) and open your Organization. In your Organization's **Settings** tab, scroll down to **Tax Information** section:
+**A:** Login to your [Web Vault]({{site.baseurl}}/article/getting-started-webvault) and open your Organization. In your Organization's **Settings** tab, scroll down to **Tax Information** section:
 
 - If you are a customer based in the United States, select **United States** from the **Country** dropdown menu and enter your **Zip / Postal Code**.
 - If you are a customer based outside the United States, select your country from the **Country** dropdown menu. Check the **Include VAT/GST Information** checkbox and enter your relevant tax identification information.

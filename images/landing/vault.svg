@@ -1,0 +1,19 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="6" y="15" width="188" height="154.082" rx="6" stroke="#175DDC" stroke-width="4"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M24.5361 29.5361C22.327 29.5361 20.5361 31.3269 20.5361 33.5361V151.515C20.5361 153.725 22.327 155.515 24.5361 155.515H175.464C177.673 155.515 179.464 153.725 179.464 151.515V33.5361C179.464 31.3269 177.673 29.5361 175.464 29.5361H24.5361ZM82.0722 118.691C96.7903 118.691 108.722 106.759 108.722 92.0412C108.722 77.3231 96.7903 65.3917 82.0722 65.3917C67.3541 65.3917 55.4227 77.3231 55.4227 92.0412C55.4227 106.759 67.3541 118.691 82.0722 118.691Z" fill="#E8F0FF"/>
+<rect x="20.5361" y="29.5361" width="158.928" height="125.979" rx="4" stroke="#175DDC" stroke-width="2"/>
+<path d="M82 118.691L82 134.196" stroke="#175DDC" stroke-width="4" stroke-linecap="round"/>
+<path d="M82 49.8866L82 65.3918" stroke="#175DDC" stroke-width="4" stroke-linecap="round"/>
+<path d="M63.156 110.885L52.1922 121.849" stroke="#175DDC" stroke-width="4" stroke-linecap="round"/>
+<path d="M111.808 62.2334L100.844 73.1972" stroke="#175DDC" stroke-width="4" stroke-linecap="round"/>
+<path d="M63.156 73.1973L52.1922 62.2335" stroke="#175DDC" stroke-width="4" stroke-linecap="round"/>
+<path d="M111.808 121.849L100.844 110.885" stroke="#175DDC" stroke-width="4" stroke-linecap="round"/>
+<path d="M124.505 92L109 92" stroke="#175DDC" stroke-width="4" stroke-linecap="round"/>
+<path d="M54.5051 92L39 92.0002" stroke="#175DDC" stroke-width="4" stroke-linecap="round"/>
+<ellipse cx="82" cy="92" rx="26" ry="26" stroke="#175DDC" stroke-width="4"/>
+<ellipse cx="82" cy="92" rx="18" ry="18" stroke="#175DDC" stroke-width="2"/>
+<path d="M20.5361 169.082V178.649C20.5361 180.859 22.327 182.649 24.5361 182.649H46.5774C48.7865 182.649 50.5774 180.859 50.5774 178.649V169.082" stroke="#175DDC" stroke-width="4"/>
+<path d="M149.423 169.082V178.649C149.423 180.859 151.213 182.649 153.423 182.649H175.464C177.673 182.649 179.464 180.859 179.464 178.649V169.082" stroke="#175DDC" stroke-width="4"/>
+<path d="M179.464 68.299L182.247 68.299C184.457 68.299 186.247 66.5081 186.247 64.299L186.247 42.2577C186.247 40.0486 184.457 38.2577 182.247 38.2577L179.464 38.2577" stroke="#175DDC" stroke-width="2"/>
+<path d="M179.464 145.825L182.247 145.825C184.457 145.825 186.247 144.034 186.247 141.825L186.247 119.784C186.247 117.574 184.457 115.784 182.247 115.784L179.464 115.784" stroke="#175DDC" stroke-width="2"/>
+</svg>

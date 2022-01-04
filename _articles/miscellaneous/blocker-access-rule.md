@@ -5,6 +5,7 @@ categories: [miscellaneous]
 featured: false
 popular: false
 tags: [umatrix, firefox]
+description: "If you use uMatrix or NoScript extensions on Firefox, use the blocker access rule to whitelist Bitwarden servers, so your password manager works effectively on Firefox."
 ---
 
 By default, the uMatrix and NoScript extensions may block the Bitwarden Firefox extension from accessing the Bitwarden API servers. Without adding proper rules to whitelist the Bitwarden API servers, logging in and other API operations will fail.

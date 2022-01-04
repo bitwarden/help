@@ -5,7 +5,8 @@ categories: [security]
 featured: false
 popular: false
 tags: [fingerprint]
-order: 05
+order: "05"
+description: "Your fingerprint phrase in the Bitwarden password manager uniquely and securely identifies a user account when encryption-related operations and performed."
 ---
 
 Each Bitwarden account has a public "fingerprint phrase" associated with it. Your account's fingerprint phrase is permanent and composed of five random english words that appear in a specific order, for example:
@@ -31,3 +32,11 @@ You can find your account's fingerprint phrase from any Bitwarden client applica
 - **Browser Extensions**: Settings &rarr; Account &rarr; Fingerprint Phrase
 - **Mobile Apps**: Settings &rarr; Account &rarr; Fingerprint Phrase
 - **CLI**: Using the command `bw get fingerprint me`
+
+## Do I need to write down my fingerprint phrase?
+
+Not knowing your fingerprint phrase will never result in you being locked out of your Vault. As a result, it's not critical to write down and store your fingerprint phrase in a secure location, however some users may choose to do so.
+
+{% callout success %}
+[Recovery Codes]({{site.baseurl}}/article/two-step-recovery-code/), on the other hand, are used for Two-step Login and should **always** be stored outside of Bitwarden in a way that makes sense for you. This will ensure that you're not locked out of your account in the event that you [lose your Two-step Login secondary device]({{site.baseurl}}/article/lost-two-step-device/).
+{% endcallout %}

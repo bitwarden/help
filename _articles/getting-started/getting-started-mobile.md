@@ -6,15 +6,16 @@ featured: false
 popular: false
 hidden: false
 tags: [tutorial, getting started, mobile, android, ios]
-order: 04
+order: "04"
 redirect_from:
   - /article/getting-started-android/
   - /article/getting-started-ios/
+description: "Learn how to get started with Bitwarden mobile apps, setup auto-fill, organize folders and favorites, and unlock with biometrics."
 ---
 
 Bitwarden's Mobile App lets you take your password manager on the go. Download Bitwarden from the App Store or Google Play Store, or by navigating to [get.bitwarden.com](https://get.bitwarden.com) on any device.
 
-{% image /getting-started/bitwarden-ios-trio.png Bitwarden on Android and iOS%}
+{% image getting-started/bitwarden-ios-trio.png Bitwarden on Android and iOS%}
 
 Bitwarden's Mobile App is available for iOS and Android. For help getting started, select which device you use:
 
@@ -56,7 +57,7 @@ Organizing your Vault into **Favorites** and **Folders** makes navigating your V
 3. Tap **Folder** to select a folder for this item, or toggle the **Favorite** switch to add it to your Favorites.
 3. Tap **Save** in the top-right corner of your screen.
 
-For more information, see [Folders]({% link _articles/features/folders.md %}) and [Favorites]({% link _articles/features/favorites.md %}).
+For more information, see [Folders]({{site.baseurl}}/article/folders/) and [Favorites]({{site.baseurl}}/article/favorites/).
 
 ### Create New Logins
 
@@ -65,7 +66,7 @@ You can create new Logins, Cards, Identities, and Secure Notes directly from any
 1. In your Bitwarden Android app, tap the {% icon fa-plus %} Add icon in the bottom-right corner.
 2. Choose which **Type** of item to create (for example, *Login*).
 3. Enter all the information for the item (for example, *Username* and *Password*).
-4. For Logins, enter the website the login is used for in the **URI** field (for example, [www.amazon.com](##create-items)).
+4. For Logins, enter the website the login is used for in the **URI** field (for example, `www.amazon.com`).
 5. Tap **Folder** or toggle the **Favorite** switch to sort the item in your Vault.
 6. When you're finished, tap **Save** in the top-right corner of your screen.
 
@@ -82,13 +83,13 @@ Setup Auto-fill to automatically enter logins from your Android device to a Web 
    Depending on which version of Android you're using, a number of Auto-fill options could be listed.
 2. Tap your available Auto-fill option, and toggle it on. A green `Enabled` message will indicate that Auto-fill is active.
 
-   Once toggled, you might be required to change some Android-native settings, depending on your available or enabled Auto-fill options. For more information, see [Auto-fill logins on Android]({% link _articles/features/auto-fill-android.md %}).
+   Once toggled, you might be required to change some Android-native settings, depending on your available or enabled Auto-fill options. For more information, see [Auto-fill logins on Android]({{site.baseurl}}/article/auto-fill-android/).
 
 ### Launch from Mobile Apps
 
-You can launch a website directly from the Bitwarden Mobile App by selecting the {% icon fa-share-square %} **Launch** button in any Vault item with a valid URI. If you're unfamiliar with using URIs, see [Using URIs]({% link _articles/features/uri-match-detection.md %}).
+You can launch a website directly from the Bitwarden Mobile App by selecting the {% icon fa-share-square %} **Launch** button in any Vault item with a valid URI. If you're unfamiliar with using URIs, see [Using URIs]({{site.baseurl}}/article/uri-match-detection/).
 
-{% image /getting-started/mobile-launch.png %}
+{% image getting-started/mobile-launch.png %}
 
 ### Unlock with Biometrics
 
@@ -109,7 +110,7 @@ Once you've setup [Auto-fill](#setup-auto-fill) and [Biometrics](#unlock-with-bi
 1. Tap the Email/Username or Password input box in the app or website.
 2. Depending on which auto-fill option your device uses, tap the available overlay:
 
-   {% image /getting-started/autofill-android-2.png Android Auto-fill varieties %}
+   {% image getting-started/autofill-android-2.png Android Auto-fill varieties %}
 3. You'll be prompted for your Face ID or Fingerprint. If you aren't using [Biometrics](#unlock-with-biometrics), enter your Master Password.
 4. If you've connected a login to this website or app using the [URI field](#create-items), that login will appear in this window. If you haven't, tap {% icon fa-search %} **Search** to find it.
 
@@ -152,7 +153,7 @@ Organizing your Vault into **Favorites** and **Folders** makes navigating your V
 3. Tap **Folder** to select a folder for this item, or toggle the **Favorite** switch to add it to your Favorites.
 3. Tap **Save** in the top-right corner of your screen.
 
-For more information, see [Folders]({% link _articles/features/folders.md %}) and [Favorites]({% link _articles/features/favorites.md %}).
+For more information, see [Folders]({{site.baseurl}}/article/folders/) and [Favorites]({{site.baseurl}}/article/favorites/).
 
 ### Create New Logins
 
@@ -161,7 +162,7 @@ You can create new Logins, Cards, Identities, and Secure Notes directly from any
 1. Tap the {% icon fa-plus %} Add icon in the top-right corner.
 2. Choose which **Type** of item to create (for example, *Login*).
 3. Enter all the information for the item (for example, *Username* and *Password*).
-4. For Logins, enter the website the login is used for in the **URI** field (for example, [www.amazon.com](#)).
+4. For Logins, enter the website the login is used for in the **URI** field (for example, `www.amazon.com`).
 5. Tap **Folder** or toggle the **Favorite** switch to organize the item in your Vault.
 6. When you're finished, tap **Save** in the top-right corner of your screen.
 
@@ -183,9 +184,9 @@ When you create new logins, make sure you enter a website in the [URI field](#cr
 
 ### Launch from Mobile Apps
 
-You can launch a website directly from the Bitwarden Mobile App by selecting the {% icon fa-share-square %} **Launch** button in any Vault item with a valid URI. If you're unfamiliar with using URIs, see [Using URIs]({% link _articles/features/uri-match-detection.md %}).
+You can launch a website directly from the Bitwarden Mobile App by selecting the {% icon fa-share-square %} **Launch** button in any Vault item with a valid URI. If you're unfamiliar with using URIs, see [Using URIs]({{site.baseurl}}/article/uri-match-detection/).
 
-{% image /getting-started/mobile-launch.png %}
+{% image getting-started/mobile-launch.png %}
 
 ### Unlock with Biometrics
 
@@ -206,7 +207,7 @@ Once you've setup [Auto-fill](#setup-auto-fill) and [Biometrics](#unlock-with-bi
 1. Tap the Email/Username or Password input box in the app or website.
 2. Above your keyboard, tap **Passwords**.
 
-   {% image /getting-started/autofill-ios.png %}
+   {% image getting-started/autofill-ios.png %}
 3. You'll be prompted for your Face ID or Touch ID. If you aren't using [Biometrics](#unlock-with-biometrics), enter your Master Password.
 4. If you've connected a login to this website or app using the [URI field](#create-items), that login will appear in this window. If you haven't, tap {% icon fa-search %} **Search** to find it.
 

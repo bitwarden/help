@@ -5,14 +5,15 @@ categories: [account-management]
 featured: true
 popular: false
 tags: [autofill, auto-fill, totp, 2fa, two-step login, two factor authentication, authenticator]
-order: 12
+order: "12"
+description: "The Bitwarden Authenticator is an alternative to dedicated authentication apps which you can use to verify your identity for websites and apps that use two-step login and offers greater convenience."
 ---
 
 The Bitwarden Authenticator is an alternative solution to dedicated authentication apps like Authy, which you can use to verify your identity for websites and apps that use Two-step Login. The Bitwarden Authenticator generates 6-digit [Time-based One-time Passwords](https://en.wikipedia.org/wiki/Time-based_One-time_Password_algorithm) (TOTPs) using SHA-1 and rotates them every 30 seconds.
 
 {% callout info %}Authenticator key (TOTP) storage is available to all accounts. TOTP code generation requires Premium or membership to a Paid Organization (Families, Teams, or Enterprise).{% endcallout %}
 
-If you're new to using TOTPs for Two-step Login, refer to the [Field Guide to Two-step Login](https://bitwarden.com/help/article/bitwarden-field-guide-two-step-login/#securing-important-websites) for more information.
+If you're new to using TOTPs for Two-step Login, refer to the [Field Guide to Two-step Login]({{site.baseurl}}/article/bitwarden-field-guide-two-step-login/#securing-important-websites) for more information.
 
 ## Generate TOTP Codes
 
@@ -22,6 +23,10 @@ In Bitwarden, you can generate TOTPs using two methods:
 
 - From a Bitwarden mobile app by [**Scanning a QR Code**](#scan-a-qr-code)
 - From any Bitwarden app by [**Manually Entering a Secret**](#manually-enter-a-secret)
+
+{% callout success %}
+TOTPs rely on *time-based* code generation. If your device has an incorrect time compared to the server, it'll generate codes that don't work.
+{% endcallout %}
 
 ### Scan a QR Code
 
@@ -43,7 +48,7 @@ Once setup, Bitwarden Authenticator will continuously generate 6-digit TOTPs rot
 
 Bitwarden Mobile applications and Browser Extensions will automatically copy the TOTP code to your device's clipboard after Auto-fill, unless the **Enable Auto-fill on Page Load** option is active. Paste from your clipboard immediately after successful Auto-fill to use your TOTP or (if you're using a Browser Extension) use the context menu:
 
-{% image /two-step/be-totpcopy.png Browser Extension Context Menu %}
+{% image two-step/be-totpcopy.png Browser Extension Context Menu %}
 
 {% callout success %}Automatic TOTP copying can be toggled off under **Settings** &rarr; **Options** &rarr; **Disable Automatic TOTP Copy**.{% endcallout %}
 

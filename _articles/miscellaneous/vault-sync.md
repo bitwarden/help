@@ -5,7 +5,8 @@ categories: [account-management]
 featured: false
 popular: false
 tags: [vault, sync, automatic, FAQ]
-order: 04
+order: "04"
+description: "Personal Vaults always remain in sync, while Organization Vaults update ever 30 minutes. Learn how to perform a manually Vault sync if necessary."
 ---
 
 Adding, editing, or deleting Vault items from any Bitwarden client application will automatically push changes to your Bitwarden server, whether Cloud-hosted or self-hosted.
@@ -14,7 +15,7 @@ In order to pull those changes down to another Bitwarden client application, you
 
 ## Automatic Sync
 
-Your personal [Web Vault](https://vault.bitwarden.com){:target="\_blank"} will always remain in-sync. Organization Vaults will automatically sync across users and client applications every 30 minutes.
+Your personal [Web Vault]({{site.baseurl}}/article/getting-started-webvault) will always remain in-sync. Organization Vaults will automatically sync across users and client applications every 30 minutes.
 
 Bitwarden client applications (Desktop Applications, Browser Extensions, Mobile Apps, and CLI) will sync automatically on login, and with regularity when unlocked. You can also [Manually Sync](#manual-sync) your Vault to pull changes to a client application immediately.
 
@@ -81,7 +82,7 @@ Use the `sync` command to manually sync your Vault:
 bw sync
 ```
 
-For more information, refer to our [CLI documentation]({% link _articles/miscellaneous/cli.md %}).
+For more information, refer to our [CLI documentation]({{site.baseurl}}/article/cli/).
 {% endcapture %}
 {{ cli_sync | markdownify }}
   </div>

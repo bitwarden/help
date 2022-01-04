@@ -5,7 +5,8 @@ categories: [import-export]
 featured: true
 popular: true
 tags: [import, lastpass]
-order: 02
+order: "02"
+description: "If you are switching password managers from LastPass to Bitwarden, use this article guide you to export data from LastPass and import into Bitwarden."
 ---
 
 Use this article for help exporting data from LastPass and importing into Bitwarden.
@@ -37,9 +38,9 @@ To export your data from the LastPass Web Vault:
 
 1. Select the {% icon fa-rocket %} **Advanced Options** option on the left sidebar:
 
-   {% image /importing/lastpassadvancedoptions.png Export from Web Vault %}
-2. From the Manage Your Vault section, select the **Export** option.
-3. Enter your Master Password to validate the export attempt.
+   {% image importing/lastpassadvancedoptions.png Export from Web Vault %}
+2. From the Manage Your Vault section, select the **Export** option. At this stage, LastPass will send you an email to confirm the export.
+3. In your inbox, confirm the export, return to your LastPass Web Vault, and select the **Export** option again to complete export.
 
    Depending on your browser, your Vault data will either be automatically saved as a `.csv` or printed to the screen in a `.csv` format:
 
@@ -64,7 +65,7 @@ To export your data from a LastPass Browser Extension:
 
 1. In the Browser Extension, navigate to **Account Options** &rarr; **Advanced** &rarr; **Export** &rarr; **LastPass CSV File**:
 
-   {% image /importing/lp-be.png Export from Browser Extension %}
+   {% image importing/lp-be.png Export from Browser Extension %}
 2. Enter your Master Password to validate the export attempt.
 
    Depending on your browser, your Vault data will either be automatically saved as a `.csv` or printed to the screen in a `.csv` format:
@@ -79,18 +80,19 @@ To export your data from a LastPass Browser Extension:
 
 ## Import to Bitwarden
 
-Importing data to Bitwarden **can only be done from the** [**Web Vault**](https://vault.bitwarden.com){:target="\_blank"}. To import your data:
+Importing data to Bitwarden **can only be done from the** [**Web Vault**](https://vault.bitwarden.com){:target="\_blank"} or [CLI]({{site.baseurl}}/article/cli/#import). Data is [encrypted]({{site.baseurl}}/article/what-encryption-is-used/) locally before being sent to the server for storage. To import your data:
 
  1. In the Web Vault, select **Tools** from the top navigation bar.
  2. Select **Import Data** from the left-hand Tools menu.
  3. From the format dropdown, choose **LastPass (csv)** from the File Format dropdown.
 
- 5. Paste the contents of your `.csv` export into the text box, or select the **Choose File** button and add the file to import.
+ 4. Select the **Choose File** button and add the file to import or **copy/paste** the contents of your `.csv` into the input box.
 
     {% callout warning %}Import to Bitwarden can't check whether items in the file to import are duplicative of items in your Vault. This means that **importing multiple files will create duplicative** Vault items if an item is already in the Vault and in the file to import.{% endcallout %}
- 6. Select the **Import Data** button to complete your import.
+ 5. Select the **Import Data** button to complete your import.
+ 6. After successful import, delete the source `.csv` file from your computer. This will protect you in the event your computer is compromised.
 
- Currently, file attachments are not included in Bitwarden import operations and will need to be uploaded to your Vault manually. For more information, see [File Attachments]({% link _articles/features/attachments.md %}).
+ Currently, file attachments are not included in Bitwarden import operations and will need to be uploaded to your Vault manually. For more information, see [File Attachments]({{site.baseurl}}/article/attachments/#attach-a-file).
 
 ## Import Troubleshooting
 
@@ -98,7 +100,7 @@ Importing data to Bitwarden **can only be done from the** [**Web Vault**](https:
 
 The following error messages, typically received when attempting to import a `.csv`, indicate that an item in your import file has a specified value that exceeds the allowed **encrypted** character limit for its field type:
 
-{% image /importing/ciphererror_2021.png Cipher errors in the Web Vault%}
+{% image importing/ciphererror_2021.png Cipher errors in the Web Vault%}
 
 To solve this issue, open the `.csv` file in a text editor or spreadsheet program and **remove** or **reduce the character count** of the offending item. Bitwarden won't import your `.csv` file until it is free of offenses. The contents of the error messages contain several pieces of pertinent data to help you identify the offending item. For example, in the above example:
 
@@ -114,11 +116,11 @@ If you continue to have trouble locating the offending item using the data provi
 
 ### Maximum Collections Error
 
-When importing Lastpass `.csv` exports to a [Free Organization]({% link _articles/plans-and-pricing/about-bitwarden-plans.md %}), you may observe the following error:
+When importing Lastpass `.csv` exports to a [Free Organization]({{site.baseurl}}/article/about-bitwarden-plans/), you may observe the following error:
 
-{% image /importing/lpcollectionserror.png Free Organization Max Collections Error%}
+{% image importing/lpcollectionserror.png Free Organization Max Collections Error%}
 
-This error occurs when the Lastpass export contains 3 or more `grouping` values. The values in the `grouping` field are interpreted by Bitwarden as [Collections]({% link _articles/organizations/about-collections.md %}), however [Free Organizations]({% link _articles/plans-and-pricing/about-bitwarden-plans.md %}) are limited to only two Collections. The following `.csv`, for example, would cause this error:
+This error occurs when the Lastpass export contains 3 or more `grouping` values. The values in the `grouping` field are interpreted by Bitwarden as [Collections]({{site.baseurl}}/article/about-collections/), however [Free Organizations]({{site.baseurl}}/article/about-bitwarden-plans/) are limited to only two Collections. The following `.csv`, for example, would cause this error:
 
 ```
 url,username,password,totp,extra,name,grouping,fav
