@@ -11,6 +11,8 @@ description: "If you are switching password managers from 1Password to Bitwarden
 
 Use this article for help exporting data from 1Password and importing into Bitwarden. 1Password data exports are available as `.1pif` or `.csv` files, depending on which client version and operating system you are using.
 
+{% callout info %}Exports from the **1Password 8 Desktop App** are in a new format (`.1pux`) that is not currently supported for import into Bitwarden. To export in a format compatible with Bitwarden download and install **1Password 7** and export from this version with the instructions below.{% endcallout %}
+
 ## Export from 1Password
 
 Complete the following steps to export data from the 1Password Desktop App:
