@@ -13,7 +13,7 @@ Two-step Login using Duo is unique among Bitwarden's [available Two-step Login m
 
 Enabling Duo for an Organization will prompt all enrolled members to register a device for Duo Two-step Login on their next login.
 
-[Configuring Duo](#activate-bitwarden-in-duo) in the Admin Panel and [registering a device](#register-a-device) will follow the same procedure in either case, but the interstitial [setup procedure](#setup-duo) varies slightly depending on whether you're setting up Duo for yourself or for an Organization.
+[Configuring Duo](#activate-bitwarden-in-duo) in the Admin Panel and [registering a device](#register-a-device) will follow the same procedure in either case, but the initial [setup procedure](#setup-duo) varies slightly depending on whether you're setting up Duo for yourself or for an Organization.
 
 ## Configure Duo
 
