@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Two-step Login via YubiKey
+title: Two-step Login via YubiKey OTP
 categories: [two-step-login]
 featured: false
 popular: false
@@ -9,9 +9,11 @@ order: "06"
 description: "This article explains how you can add an extra layer of protection to your Bitwarden Vault by setting up two-step login with a YubiKey."
 ---
 
-Two-step Login using [YubiKey](https://www.yubico.com){:target="\_blank"} is available for Premium users, including members of Paid Organizations (Families, Teams, or Enterprise).
+Two-step Login using [YubiKey](https://www.yubico.com){:target="\_blank"} is available for Premium users, including members of Paid Organizations (Families, Teams, or Enterprise). Any [YubiKey that supports OTP](https://www.yubico.com/products/yubikey-hardware/compare-yubikeys/){:target="_blank"} can be used. This includes all YubiKey 4 and 5 series devices, as well as YubiKey NEO and YubiKey NFC. You can add up to 5 YubiKeys to your account.
 
-Any [YubiKey that supports OTP](https://www.yubico.com/products/yubikey-hardware/compare-yubikeys/){:target="_blank"} can be used. This includes all YubiKey 4 and 5 series devices, as well as YubiKey NEO and YubiKey NFC. You can add up to 5 YubiKeys to your account.
+{% callout success %}
+Most modern YubiKeys, including 5 series keys, support the FIDO2 WebAuthn protocol. If your key supports it, which you can determine using the [YubiKey Manager](https://www.yubico.com/support/download/yubikey-manager/){:target="\_blank"} application, we recommend setting your key up as a FIDO2 WebAuth device by following [these instructions]({{site.baseurl}}/article/setup-two-step-login-fido/#setup-fido2-webauthn).
+{% endcallout %}
 
 ## Setup YubiKey
 
