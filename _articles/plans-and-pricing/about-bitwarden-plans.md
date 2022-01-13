@@ -37,6 +37,8 @@ Premium does not include secure data sharing. In order to access sharing feature
 
 Start a Free Organization to store and securely share data with one other user. Free Organizations offer both users all the core features of Bitwarden and secure data sharing in up to two Collections. Any user of any plan can be the owner of one Free Organization.
 
+**Free Organizations are only available with Bitwarden Cloud.**
+
 ### Families Organizations
 
 Start a Families Organization to share private data between you and 5 friends or family members. Families Organizations include all premium features for all 6 users and unlimited secure data sharing within the Families Organization.
@@ -55,7 +57,7 @@ In the following table, "premium features" (included for **Premium Individual** 
 |Access to Bitwarden across devices|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
 |Storage sync across devices|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
 |Secure Password Generator|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
-|Cloud or Self-hosting|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
+|Cloud or Self-hosting|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|-|<i class="fa fa-check" aria-hidden="true"></i>|
 |[Encrypted Export]({{site.baseurl}}/article/encrypted-export/)|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|<i class="fa fa-check" aria-hidden="true"></i>|
 |[Bitwarden Send]({{site.baseurl}}/article/about-send/)|Text Only|Text and Files|Text Only|Text and Files|
 |*[Two-step login]({{site.baseurl}}/article/setup-two-step-login/)|Authenticator apps or email|Authenticator apps, email, Yubikey, FIDO2, and Duo|Authenticator apps or email|Authenticator apps, email, Yubikey, FIDO2, and Duo (does not include [Duo for Organizations]({{site.baseurl}}/article/setup-two-step-login-duo/))|
