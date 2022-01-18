@@ -1,8 +1,17 @@
 {
-	"installedVersion": "2.9.2",
-	"appId": "app-id-string",
+	"installedVersion": "2.9.8",
 	"rememberEmail": true,
 	"rememberedEmail": "username@email.com",
+	"environmentUrls": {
+		"base": "https://bitwarden.pari.com",
+		"api": null,
+		"identity": null,
+		"webVault": null,
+		"icons": null,
+		"notifications": null,
+		"events": null,
+		"enterprise": null
+	},
 	"mainWindowSize": {
 		"width": 1122,
 		"height": 733,
@@ -16,7 +25,13 @@
 		"x": 89,
 		"y": 62
 	},
-	"organizationId": "your-organization-id",
+	"appId": null,
+	"accessToken": null,
+	"apikey_clientId": "organization.yourOrgID",
+	"entityId": "yourOrgID",
+	"entityType": "organization",
+	"apikey_clientSecret": "yourOrgApiKey",
+	"organizationId": "yourOrgID",
 	"directoryType": 1,
 	"directoryConfig_0": {
 		"ssl": false,
@@ -32,7 +47,9 @@
 		"privateKey": null
 	},
 	"directoryConfig_1": {
-		"key": null
+		"key": "yourAzureKey",
+		"tenant": "tenantname.onmicrosoft.com",
+		"applicationId": "yourAzureAppID"
 	},
 	"directoryConfig_3": {
 		"token": null
@@ -45,8 +62,9 @@
 		"users": true,
 		"groups": true,
 		"interval": 5,
-		"removeDisabled": false,
-		"overwriteExisting": false,
+		"removeDisabled": true,
+		"overwriteExisting": true,
+		"largeImport": false,
 		"useEmailPrefixSuffix": false,
 		"creationDateAttribute": "whenCreated",
 		"revisionDateAttribute": "whenChanged",
@@ -58,14 +76,7 @@
 		"groupNameAttribute": "name",
 		"groupPath": "CN=Users",
 		"userPath": "CN=Users",
-		"largeImport": true
-	},
-	"accessToken": "bearer-access-token",
-	"userEmail": "username@email.com",
-	"userId": "user-identifier",
-	"kdf": 0,
-	"kdfIterations": 100000,
-	"clientId": "organization-api-clientid",
-	"entityId": "organization-id-string",
-	"entityType": "organization"
+		"userFilter": "include:my@email.com,my2@email.com",
+		"groupFilter": "include:myADGroupName,myADGroupName2"
+	}
 }
